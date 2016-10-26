@@ -90,6 +90,7 @@ body {
 .section h3 {
   color: rgb(245, 245, 245);
   font-size: 26px;
+  cursor: pointer;
 }
 
 .section span {
@@ -110,6 +111,7 @@ body {
   height: 21px;
   margin-right: 4px;
   float: left;
+  cursor: pointer;
 }
 
 #legendary-skins {
