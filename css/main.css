@@ -18,10 +18,7 @@
 body {
   font-family: "Big Noodle Too";
   background-color: rgb(245, 245, 245);
-  min-width: 1600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-width: 1540px;
 }
 
 #header {
@@ -30,6 +27,7 @@ body {
   color: orange;
   padding: 0 15px;
   display: flex;
+  justify-content: space-between;
 }
 
 #header .left {
@@ -45,16 +43,12 @@ body {
   font-style: italic;
 }
 
-#header .middle {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+#header .right {
+  margin-right: 11px;
 }
 
-#header .right {
-  position: absolute;
-  right: 20px;
-  top: -4px;
+#header .right .reset {
+  position: relative;
 }
 
 #header .reset .x {
@@ -125,7 +119,7 @@ body {
 }
 
 .section h2 {
-  font-size: 45px;
+  font-size: 42px;
   display: inline-block;
   margin-bottom: 4px;
   font-style: italic;
