@@ -98,108 +98,156 @@ OWI.controller('MainCtrl', ["$scope", function($scope) {
     victoryposes: heroes,
     "sprays": [{
       "name": "Ana",
-      "img": "./img/halloween2016/sprays/ana.png"
+      "img": "./img/halloween2016/sprays/ana.jpg"
     }, {
       "name": "Bastion",
-      "img": "./img/halloween2016/sprays/bastion.png"
+      "img": "./img/halloween2016/sprays/bastion.jpg"
     }, {
       "name": "D.Va",
-      "img": "./img/halloween2016/sprays/dva.png"
+      "img": "./img/halloween2016/sprays/dva.jpg"
     }, {
       "name": "Genji",
-      "img": "./img/halloween2016/sprays/genji.png"
+      "img": "./img/halloween2016/sprays/genji.jpg"
     }, {
       "name": "Hanzo",
-      "img": "./img/halloween2016/sprays/hanzo.png"
+      "img": "./img/halloween2016/sprays/hanzo.jpg"
     }, {
       "name": "Junkrat",
-      "img": "./img/halloween2016/sprays/junkrat.png"
+      "img": "./img/halloween2016/sprays/junkrat.jpg"
     }, {
       "name": "Lucio",
-      "img": "./img/halloween2016/sprays/lucio.png"
+      "img": "./img/halloween2016/sprays/lucio.jpg"
     }, {
       "name": "McCree",
-      "img": "./img/halloween2016/sprays/mccree.png"
+      "img": "./img/halloween2016/sprays/mccree.jpg"
     }, {
       "name": "Mei",
-      "img": "./img/halloween2016/sprays/mei.png"
+      "img": "./img/halloween2016/sprays/mei.jpg"
     }, {
       "name": "Mercy",
-      "img": "./img/halloween2016/sprays/mercy.png"
+      "img": "./img/halloween2016/sprays/mercy.jpg"
     }, {
       "name": "Pharah",
-      "img": "./img/halloween2016/sprays/pharah.png"
+      "img": "./img/halloween2016/sprays/pharah.jpg"
     }, {
       "name": "Reaper",
-      "img": "./img/halloween2016/sprays/reaper.png"
+      "img": "./img/halloween2016/sprays/reaper.jpg"
     }, {
       "name": "Reinhardt",
-      "img": "./img/halloween2016/sprays/reinhardt.png"
+      "img": "./img/halloween2016/sprays/reinhardt.jpg"
     }, {
       "name": "Roadhog",
-      "img": "./img/halloween2016/sprays/roadhog.png"
+      "img": "./img/halloween2016/sprays/roadhog.jpg"
     }, {
       "name": "Soldier: 76",
-      "img": "./img/halloween2016/sprays/soldier76.png"
+      "img": "./img/halloween2016/sprays/soldier76.jpg"
     }, {
       "name": "Symmetra",
-      "img": "./img/halloween2016/sprays/symmetra.png"
+      "img": "./img/halloween2016/sprays/symmetra.jpg"
     }, {
       "name": "Torbjorn",
-      "img": "./img/halloween2016/sprays/torbjorn.png"
+      "img": "./img/halloween2016/sprays/torbjorn.jpg"
     }, {
       "name": "Tracer",
-      "img": "./img/halloween2016/sprays/tracer.png"
+      "img": "./img/halloween2016/sprays/tracer.jpg"
     }, {
       "name": "Widowmaker",
-      "img": "./img/halloween2016/sprays/widowmaker.png"
+      "img": "./img/halloween2016/sprays/widowmaker.jpg"
     }, {
       "name": "Winston",
-      "img": "./img/halloween2016/sprays/winston.png"
+      "img": "./img/halloween2016/sprays/winston.jpg"
     }, {
       "name": "Zarya",
-      "img": "./img/halloween2016/sprays/zarya.png"
+      "img": "./img/halloween2016/sprays/zarya.jpg"
     }, {
       "name": "Zenyatta",
-      "img": "./img/halloween2016/sprays/zenyatta.png"
+      "img": "./img/halloween2016/sprays/zenyatta.jpg"
     }, {
       "name": "...Never Die",
-      "img": "./img/halloween2016/sprays/neverdie.png"
+      "img": "./img/halloween2016/sprays/neverdie.jpg"
     }, {
       "name": "Bats",
-      "img": "./img/halloween2016/sprays/bats.png"
+      "img": "./img/halloween2016/sprays/bats.jpg"
     }, {
       "name": "Boo!",
-      "img": "./img/halloween2016/sprays/boo.png"
+      "img": "./img/halloween2016/sprays/boo.jpg"
     }, {
       "name": "Boop!",
-      "img": "./img/halloween2016/sprays/boop.png"
+      "img": "./img/halloween2016/sprays/boop.jpg"
     }, {
       "name": "Candyball",
-      "img": "./img/halloween2016/sprays/candyball.png"
+      "img": "./img/halloween2016/sprays/candyball.jpg"
     }, {
       "name": "Fangs",
-      "img": "./img/halloween2016/sprays/fangs.png"
+      "img": "./img/halloween2016/sprays/fangs.jpg"
     }, {
       "name": "Gummy Hog",
-      "img": "./img/halloween2016/sprays/gummyhog.png"
+      "img": "./img/halloween2016/sprays/gummyhog.jpg"
     }, {
       "name": "Halloween Terror",
-      "img": "./img/halloween2016/sprays/halloweenterror.png"
+      "img": "./img/halloween2016/sprays/halloweenterror.jpg"
     }, {
       "name": "Pumpkins",
-      "img": "./img/halloween2016/sprays/pumpkins.png"
+      "img": "./img/halloween2016/sprays/pumpkins.jpg"
     }, {
       "name": "Witch's Brew",
-      "img": "./img/halloween2016/sprays/witchsbrew.png"
+      "img": "./img/halloween2016/sprays/witchsbrew.jpg"
     }],
-    icons: [
-      "Halloween Terror 2016", "The Doctor", "The Monster",
-      "The Reaper", "The Witch", "...Never Die", "Candle",
-      "Bewitching", "Ghostymari", "Eyeball", "Calavera",
-      "Spider", "Witch's Brew", "Vampachimari", "Superstition",
-      "Witch's Hat", "Tombstone", "The Wolf"
-    ]
+    "icons": [{
+      "name": "...Never Die",
+      "img": "./img/halloween2016/icons/neverdie.png"
+    }, {
+      "name": "Bewitching",
+      "img": "./img/halloween2016/icons/bewitching.png"
+    }, {
+      "name": "Calavera",
+      "img": "./img/halloween2016/icons/calavera.png"
+    }, {
+      "name": "Candle",
+      "img": "./img/halloween2016/icons/candle.png"
+    }, {
+      "name": "Eyeball",
+      "img": "./img/halloween2016/icons/eyeball.png"
+    }, {
+      "name": "Ghostymari",
+      "img": "./img/halloween2016/icons/ghostymari.png"
+    }, {
+      "name": "Halloween Terror 2016",
+      "img": "./img/halloween2016/icons/halloweenterror.png"
+    }, {
+      "name": "Spider",
+      "img": "./img/halloween2016/icons/spider.png"
+    }, {
+      "name": "Superstition",
+      "img": "./img/halloween2016/icons/superstition.png"
+    }, {
+      "name": "The Doctor",
+      "img": "./img/halloween2016/icons/thedoctor.png"
+    }, {
+      "name": "The Monster",
+      "img": "./img/halloween2016/icons/themonster.png"
+    }, {
+      "name": "The Reaper",
+      "img": "./img/halloween2016/icons/thereaper.png"
+    }, {
+      "name": "The Witch",
+      "img": "./img/halloween2016/icons/thewitch.png"
+    }, {
+      "name": "The Wolf",
+      "img": "./img/halloween2016/icons/thewolf.png"
+    }, {
+      "name": "Tombstone",
+      "img": "./img/halloween2016/icons/tombstone.png"
+    }, {
+      "name": "Vampachimari",
+      "img": "./img/halloween2016/icons/vampachimari.png"
+    }, {
+      "name": "Witch's Brew",
+      "img": "./img/halloween2016/icons/witchsbrew.png"
+    }, {
+      "name": "Witch's Hat",
+      "img": "./img/halloween2016/icons/witchshat.png"
+    }]
   }
 
   // Defer the starup so the initial digest finishes
