@@ -288,6 +288,11 @@ body {
   margin: 0 auto;
 }
 
+#image-preview video {
+  width: 100%;
+  height: calc(100% - 52px);
+}
+
 #image-preview.show {
   opacity: 1;
   transition-delay: 0.1s;

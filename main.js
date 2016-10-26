@@ -108,9 +108,16 @@ OWI.controller('MainCtrl', ["$scope", function($scope) {
         img: "./img/halloween2016/skins/epic/zenyatta.jpg"
       }]
     },
-    intros: [
-      "Pumpkin Carving Genji", "Ice Scream Mei", "Eternal Rest Reaper"
-    ],
+    "intros": [{
+      "name": "Pumpkin Carving Genji",
+      "video": "./img/halloween2016/intros/genji.webm"
+    }, {
+      "name": "Ice Scream Mei",
+      "video": "./img/halloween2016/intros/mei.webm"
+    }, {
+      "name": "Eternal Rest Reaper",
+      "video": "./img/halloween2016/intros/reaper.webm"
+    }],
     emotes: [
       "Candy Ana", "Pumpkin Smashing Reinhardt", "Shadow Puppets Winston"
     ],
