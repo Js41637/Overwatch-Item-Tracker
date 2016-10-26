@@ -7,6 +7,8 @@ OWI.config(['$compileProvider', function($compileProvider) {
 OWI.controller('MainCtrl', ["$scope", function($scope) {
   var vm = this;
 
+  this.preview = false;
+
   // Load any saved data from localstorage
   var onStartup = function() {
     vm.checked = {
@@ -36,6 +38,26 @@ OWI.controller('MainCtrl', ["$scope", function($scope) {
   // Update localstorage on new data
   this.onSelect = function() {
     localStorage.setItem('data', JSON.stringify(this.checked))
+  }
+
+  var showTimeout = undefined;
+  var hideTimeout = undefined;
+  this.showPreview = function(what) {
+    if (showTimeout) return
+    clearTimeout(hideTimeout)
+    showTimeout = setTimeout(function () {
+      vm.preview = what
+      $scope.$digest()
+    }, vm.preview ? 100 : 650);
+  }
+
+  this.hidePreview = function(what) {
+    clearTimeout(showTimeout);
+    showTimeout = undefined;
+    hideTimeout = setTimeout(function () {
+      vm.preview = false;
+      $scope.$digest()
+    }, 150);
   }
 
   var heroes = [
@@ -74,11 +96,103 @@ OWI.controller('MainCtrl', ["$scope", function($scope) {
     ],
     voicelines: heroes,
     victoryposes: heroes,
-    sprays: heroes.concat([
-      "...Never Die", "Bats", "Boo!", "Boop!",
-      "Candyball", "Fangs", "Gummy Hog",
-      "Halloween Terror", "Pumpkins", "Witch's Brew",
-    ]),
+    "sprays": [{
+      "name": "Ana",
+      "img": "./img/halloween2016/sprays/ana.png"
+    }, {
+      "name": "Bastion",
+      "img": "./img/halloween2016/sprays/bastion.png"
+    }, {
+      "name": "D.Va",
+      "img": "./img/halloween2016/sprays/dva.png"
+    }, {
+      "name": "Genji",
+      "img": "./img/halloween2016/sprays/genji.png"
+    }, {
+      "name": "Hanzo",
+      "img": "./img/halloween2016/sprays/hanzo.png"
+    }, {
+      "name": "Junkrat",
+      "img": "./img/halloween2016/sprays/junkrat.png"
+    }, {
+      "name": "Lucio",
+      "img": "./img/halloween2016/sprays/lucio.png"
+    }, {
+      "name": "McCree",
+      "img": "./img/halloween2016/sprays/mccree.png"
+    }, {
+      "name": "Mei",
+      "img": "./img/halloween2016/sprays/mei.png"
+    }, {
+      "name": "Mercy",
+      "img": "./img/halloween2016/sprays/mercy.png"
+    }, {
+      "name": "Pharah",
+      "img": "./img/halloween2016/sprays/pharah.png"
+    }, {
+      "name": "Reaper",
+      "img": "./img/halloween2016/sprays/reaper.png"
+    }, {
+      "name": "Reinhardt",
+      "img": "./img/halloween2016/sprays/reinhardt.png"
+    }, {
+      "name": "Roadhog",
+      "img": "./img/halloween2016/sprays/roadhog.png"
+    }, {
+      "name": "Soldier: 76",
+      "img": "./img/halloween2016/sprays/soldier76.png"
+    }, {
+      "name": "Symmetra",
+      "img": "./img/halloween2016/sprays/symmetra.png"
+    }, {
+      "name": "Torbjorn",
+      "img": "./img/halloween2016/sprays/torbjorn.png"
+    }, {
+      "name": "Tracer",
+      "img": "./img/halloween2016/sprays/tracer.png"
+    }, {
+      "name": "Widowmaker",
+      "img": "./img/halloween2016/sprays/widowmaker.png"
+    }, {
+      "name": "Winston",
+      "img": "./img/halloween2016/sprays/winston.png"
+    }, {
+      "name": "Zarya",
+      "img": "./img/halloween2016/sprays/zarya.png"
+    }, {
+      "name": "Zenyatta",
+      "img": "./img/halloween2016/sprays/zenyatta.png"
+    }, {
+      "name": "...Never Die",
+      "img": "./img/halloween2016/sprays/neverdie.png"
+    }, {
+      "name": "Bats",
+      "img": "./img/halloween2016/sprays/bats.png"
+    }, {
+      "name": "Boo!",
+      "img": "./img/halloween2016/sprays/boo.png"
+    }, {
+      "name": "Boop!",
+      "img": "./img/halloween2016/sprays/boop.png"
+    }, {
+      "name": "Candyball",
+      "img": "./img/halloween2016/sprays/candyball.png"
+    }, {
+      "name": "Fangs",
+      "img": "./img/halloween2016/sprays/fangs.png"
+    }, {
+      "name": "Gummy Hog",
+      "img": "./img/halloween2016/sprays/gummyhog.png"
+    }, {
+      "name": "Halloween Terror",
+      "img": "./img/halloween2016/sprays/halloweenterror.png"
+    }, {
+      "name": "Pumpkins",
+      "img": "./img/halloween2016/sprays/pumpkins.png"
+    }, {
+      "name": "Witch's Brew",
+      "img": "./img/halloween2016/sprays/witchsbrew.png"
+    }],
     icons: [
       "Halloween Terror 2016", "The Doctor", "The Monster",
       "The Reaper", "The Witch", "...Never Die", "Candle",

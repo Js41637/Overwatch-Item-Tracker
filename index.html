@@ -26,13 +26,19 @@
   <div id="items">
     <div class="col" style="width: 38%">
       <div id="legendary-skins" class="section">
-        <h2>Legendary Skins</h2> <span>[3000 Coins]</span>
-        <div class="images">
-          <div class="item" ng-repeat="skin in $ctrl.items.skins.legendary track by $index">
-            <img src="{{skin.img}}" />
-            <div class="thing">
-              <input type="checkbox" id="{{'legendary' + $index}}" ng-model="$ctrl.checked.legendary[skin.name]" ng-change="$ctrl.onSelect()">
-              <label for="{{'legendary' + $index}}"><h3 class="name">{{skin.name}}</h3></label>
+        <div id="image-preview" ng-class="{ show: $ctrl.preview }">
+          <h2>Image Preview</h2> <span>{{$ctrl.preview.name}}</span>
+          <img src="{{$ctrl.preview.img}}" />
+        </div>
+        <div class="inner" ng-class="{ hide: $ctrl.preview }">
+          <h2>Legendary Skins</h2> <span>[3000 Coins]</span>
+          <div class="images">
+            <div class="item" ng-repeat="skin in $ctrl.items.skins.legendary track by $index">
+              <img src="{{skin.img}}" />
+              <div class="thing">
+                <input type="checkbox" id="{{'legendary' + $index}}" ng-model="$ctrl.checked.legendary[skin.name]" ng-change="$ctrl.onSelect()">
+                <label for="{{'legendary' + $index}}"><h3 class="name">{{skin.name}}</h3></label>
+              </div>
             </div>
           </div>
         </div>
@@ -81,8 +87,8 @@
         <div id="sprays" class="section">
           <h2>Sprays</h2> <span>[75 Coins]</span>
           <div class="items">
-            <div class="item" ng-repeat="spray in $ctrl.items.sprays track by $index">
-              <input type="checkbox" id="{{'spray' + $index}}" ng-model="$ctrl.checked.sprays[spray]" ng-change="$ctrl.onSelect()"> <label for="{{'spray' + $index}}"><h3>{{spray}}</h3></label>
+            <div class="item" ng-repeat="spray in $ctrl.items.sprays track by $index" ng-mouseover="$ctrl.showPreview(spray)" ng-mouseleave="$ctrl.hidePreview()">
+              <input type="checkbox" id="{{'spray' + $index}}" ng-model="$ctrl.checked.sprays[spray.name]" ng-change="$ctrl.onSelect()"> <label for="{{'spray' + $index}}"><h3>{{spray.name}}</h3></label>
             </div>
           </div>
         </div>
