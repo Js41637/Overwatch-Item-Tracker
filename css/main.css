@@ -114,6 +114,12 @@ body {
   font-style: italic;
 }
 
+#protip {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
 #items {
   padding: 10px 10px 15px;
   display: flex;
