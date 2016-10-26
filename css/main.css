@@ -17,8 +17,10 @@
 
 body {
   font-family: "Big Noodle Too";
-  background-color: rgb(245, 245, 245);
   min-width: 1540px;
+  background: url(../img/body-bg.jpg) no-repeat top;
+  background-color: #d0c7dc;
+  color: #405275;
 }
 
 #header {
@@ -153,7 +155,7 @@ body {
 }
 
 #legendary-skins {
-  color: orangered;
+  color: #405275;
   margin-bottom: 20px;
   position: relative;
 }
@@ -177,24 +179,35 @@ body {
   padding: 2px;
   position: relative;
   overflow: hidden;
+  background: url('../img/portrait-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1px;
+  margin-right: .5%;
 }
 
 #legendary-skins .images .item img {
   width: 100%;
-  height: 100%;
-  border: 1px solid orangered;
+  height: auto;
 }
+
 #legendary-skins .thing {
-  position: absolute;
-  bottom: 25px;
-  padding: 0 3px;
-  margin-left: 1px;
-  display: flex;
-  height: 32px;
+	position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4rem;
+  background: rgba(40, 53, 79, 0.9);
+  padding: 8px 6px 0px 2px;
+  box-sizing: border-box;
 }
+
 #legendary-skins .images .item h3 {
-  font-size: 25px;
-  text-shadow: 2px 1px 1px orangered;
+ 	font-size: 25px;
+  font-style: italic;
+  color: #d0d0dc;
+  width: 100%;
 }
 
 #epic-skins {
@@ -250,6 +263,7 @@ body {
 #footer {
   text-align: right;
   padding-right: 20px;
+  color: #405275;
 }
 
 #image-preview {
@@ -276,11 +290,8 @@ body {
 /* Colors */
 
 /* Purple */
-#epic-skins, #emotes, #highlight-intros, #epic-skins input, #emotes input, #highlight-intros input {
+#epic-skins, #emotes, #highlight-intros, #epic-skins input, #emotes input, #highlight-intros input, #highlight-intros h3, #epic-skins h3, #emotes h3 {
   color: rgb(146, 37, 146)
-}
-#epic-skins h3, #emotes h3, #highlight-intros h3 {
-  text-shadow: 2px 1px 1px rgb(146, 37, 146);
 }
 
 #epic-skins .item, #emotes .item, #highlight-intros .item {
@@ -291,52 +302,40 @@ body {
 }
 
 /* Blue */
-#voicelines, #victoryposes, #voicelines input, #victoryposes input {
+#voicelines, #victoryposes, #voicelines input, #victoryposes input, #victoryposes h3, #voicelines h3 {
   color: rgb(14, 116, 188);
 }
 
-#voicelines h3, #victoryposes h3 {
-  text-shadow: 2px 1px 1px rgb(14, 116, 188);
-}
-
 #voicelines .item, #victoryposes .item {
-  background-color: rgb(198, 229, 247);
+  background-color: rgba(198, 229, 247,0.5);
 }
 
 #voicelines .item:nth-of-type(even), #victoryposes .item:nth-of-type(even) {
-  background-color: rgb(147, 200, 234);
+  background-color: rgba(147, 200, 234,0.5);
 }
 
 /* Green */
-#sprays, #sprays input {
+#sprays, #sprays input, #sprays h3 {
   color: rgb(6, 104, 58);
 }
 
-#sprays h3 {
-  text-shadow: 2px 1px 1px rgb(6, 104, 58);
-}
-
 #sprays .item {
-  background-color: rgb(208, 229, 173);
+  background-color: rgba(208, 229, 173,0.5);
 }
 
 #sprays .item:nth-of-type(even) {
-  background-color: rgb(172, 213, 137);
+  background-color: rgba(172, 213, 137,0.5);
 }
 
 /* Pink */
-#icons, #icons input {
+#icons, #icons input, #icons h3 {
   color: rgb(237, 12, 108);
 }
 
-#icons h3 {
-  text-shadow: 2px 1px 1px rgb(237, 12, 108);
-}
-
 #icons .item {
-  background-color: rgb(245, 202, 221);
+  background-color: rgba(245, 202, 221,0.5);
 }
 
 #icons .item:nth-of-type(even) {
-  background-color: rgb(239, 172, 205);
+  background-color: rgba(239, 172, 205,0.5);
 }

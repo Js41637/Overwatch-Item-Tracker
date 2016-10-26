@@ -1,31 +1,45 @@
 {
   "halloween2016": {
-  	"skins": {
-  		"legendary": [{
-  				"name": "Junkenstein Junkrat",
-  				"img": "./img/junkrat.jpg"
-  			}, {
-  				"name": "Monster Roadhog",
-  				"img": "./img/roadhog.jpg"
-  			}, {
-  				"name": "Witch Mercy",
-  				"img": "./img/mercy.jpg"
-  			}, {
-  				"name": "Pumpkin Reaper",
-  				"img": "./img/reaper.jpg"
-  			}
-  		],
-  		"epic": [
-  			"Ghoul Ana",
-  			"Tombstone Bastion",
-  			"Demon Hanzo",
-  			"Possessed Pharah",
-  			"Coldhardt Reinhart",
-  			"Immortal Soldier: 76",
-  			"Vampire Symmetra",
-  			"Skullyata Zenyatta"
-  		]
-  	},
+    "skins": {
+      "legendary": [{
+        "name": "Junkenstein Junkrat",
+        "img": "./img/halloween2016/skins/legendary/junkrat.jpg"
+      }, {
+        "name": "Monster Roadhog",
+        "img": "./img/halloween2016/skins/legendary/roadhog.jpg"
+      }, {
+        "name": "Witch Mercy",
+        "img": "./img/halloween2016/skins/legendary/mercy.jpg"
+      }, {
+        "name": "Pumpkin Reaper",
+        "img": "./img/halloween2016/skins/legendary/reaper.jpg"
+      }],
+      "epic": [{
+        "name": "Ghoul Ana",
+        "img": "./img/halloween2016/skins/epic/ana.jpg"
+      }, {
+        "name": "Tombstone Bastion",
+        "img": "./img/halloween2016/skins/epic/bastion.jpg"
+      }, {
+        "name": "Demon Hanzo",
+        "img": "./img/halloween2016/skins/epic/hanzo.jpg"
+      }, {
+        "name": "Possessed Pharah",
+        "img": "./img/halloween2016/skins/epic/pharah.jpg"
+      }, {
+        "name": "Coldhardt Reinhardt",
+        "img": "./img/halloween2016/skins/epic/reinhardt.jpg"
+      }, {
+        "name": "Immortal Soldier: 76",
+        "img": "./img/halloween2016/skins/epic/soldier76.jpg"
+      }, {
+        "name": "Vampire Symmetra",
+        "img": "./img/halloween2016/skins/epic/symmetra.jpg"
+      }, {
+        "name": "Skullyata Zenyatta",
+        "img": "./img/halloween2016/skins/epic/zenyatta.jpg"
+      }]
+    },
   	"intros": [
   		"Pumpkin Carving Genji",
   		"Ice Scream Mei",
