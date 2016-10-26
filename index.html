@@ -1,0 +1,101 @@
+<html ng-app="OWI">
+<head>
+  <title>Overwatch Halloween Items Tracker</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./angular.min.js"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="left">
+      <img src="./img/logo.png">
+      <h1>Halloween Items Checklist 2016</h1>
+    </div>
+    <div class="seperator">|</div>
+    <div class="right">
+      <h2>Event ends on Nov. 1, 2016</h2>
+      <h3>Be sure to get everything you want by Oct. 31, 2016 to be safe!</h3>
+    </div>
+  </div>
+  <div id="items" ng-controller="MainCtrl as $ctrl">
+    <div class="col" style="width: 38%">
+      <div id="legendary-skins" class="section">
+        <h2>Legendary Skins</h2> <span>[3000 Coins]</span>
+        <div class="images">
+          <div class="item" ng-repeat="skin in $ctrl.items.skins.legendary track by $index">
+            <img src="{{skin.img}}" />
+            <div class="thing">
+              <input type="checkbox" ng-model="$ctrl.checked.legendary[skin.name]" ng-change="$ctrl.onSelect()">
+              <h3 class="name">{{skin.name}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="epic-skins" class="section">
+        <h2>Epic Skins</h2> <span>[750 Coins]</span>
+        <div class="item" ng-repeat="skin in $ctrl.items.skins.epic track by $index">
+          <input type="checkbox" ng-model="$ctrl.checked.epic[skin]" ng-change="$ctrl.onSelect()"> <h3>{{skin}}</h3>
+        </div>
+      </div>
+      <div class="right">
+        <div id="highlight-intros" class="section">
+          <h2>Highlight Intros</h2> <span>[750 Coins]</span>
+          <div class="item" ng-repeat="intro in $ctrl.items.intros track by $index">
+            <input type="checkbox" ng-model="$ctrl.checked.intros[intro]" ng-change="$ctrl.onSelect()"> <h3>{{intro}}</h3>
+          </div>
+        </div>
+        <div id="emotes" class="section">
+          <h2>Emotes</h2> <span>[750 Coins]</span>
+          <div class="item" ng-repeat="emote in $ctrl.items.emotes track by $index">
+            <input type="checkbox" ng-model="$ctrl.checked.emotes[emote]" ng-change="$ctrl.onSelect()"> <h3>{{emote}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col" style="width: 46%">
+      <div class="top">
+        <div id="voicelines" class="section">
+          <h2>Voice Lines</h2> <span>[75 Coins]</span>
+          <div class="items">
+            <div class="item" ng-repeat="voice in $ctrl.items.voicelines track by $index">
+              <input type="checkbox" ng-model="$ctrl.checked.voicelines[voice]" ng-change="$ctrl.onSelect()"> <h3>{{voice}}</h3>
+            </div>
+          </div>
+        </div>
+        <div id="victoryposes" class="section">
+          <h2>Victory Poses</h2> <span>[225 Coins]</span>
+          <div class="items">
+            <div class="item" ng-repeat="pose in $ctrl.items.victoryposes track by $index">
+              <input type="checkbox" ng-model="$ctrl.checked.victoryposes[pose]" ng-change="$ctrl.onSelect()"> <h3>{{pose}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div id="sprays" class="section">
+          <h2>Sprays</h2> <span>[75 Coins]</span>
+          <div class="items">
+            <div class="item" ng-repeat="spray in $ctrl.items.sprays track by $index">
+              <input type="checkbox" ng-model="$ctrl.checked.sprays[spray]" ng-change="$ctrl.onSelect()"> <h3>{{spray}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col" style="width: 16%">
+      <div id="icons" class="section">
+        <h2>Sprays</h2> <span>[75 Coins]</span>
+        <div class="items">
+          <div class="item" ng-repeat="icon in $ctrl.items.icons track by $index">
+            <input type="checkbox" ng-model="$ctrl.checked.icons[icon]" ng-change="$ctrl.onSelect()"> <h3>{{icon}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    Designed by Lalato & Izzepizze on <a href="https://www.reddit.com/r/Overwatch/comments/59bo66">Reddit</a> | Site made by Js41637
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

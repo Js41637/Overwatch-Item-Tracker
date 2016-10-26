@@ -1,0 +1,271 @@
+@font-face {
+    font-family: "Big Noodle Too";
+    src: url(../fonts/big-noodle-too.eot);
+    src: url(../fonts/big-noodle-too.woff) format("woff"),
+         url(../fonts/big-noodle-too.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+@font-face {
+    font-family: "Big Noodle Too";
+    src: url(../fonts/big-noodle-too-oblique.eot);
+    src: url(../fonts/big-noodle-too-oblique.woff) format("woff"),
+         url(../fonts/big-noodle-too-oblique.ttf) format("truetype");
+    font-weight: 400;
+    font-style: italic
+}
+
+body {
+  font-family: "Big Noodle Too";
+  background-color: rgb(245, 245, 245);
+  min-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#header {
+  height: 75px;
+  background-color: rgb(45, 45, 45);
+  color: orange;
+  padding: 0 15px;
+  display: flex;
+}
+
+#header .left {
+  display: flex;
+  align-items: center;
+}
+
+#header .seperator {
+  margin: 0 60px;
+  font-size: 60px;
+  padding-top: 7px;
+  color: rgb(245, 245, 245);
+  font-style: italic;
+}
+
+#header .right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#header img {
+  height: 55px;
+  margin-right: 20px;
+}
+
+#header h1 {
+  font-size: 64px;
+  display: inline-block;
+  font-style: italic;
+}
+
+#header h2 {
+  font-size: 40px;
+  color: rgb(245, 245, 245);
+  font-style: italic;
+}
+
+#header h3 {
+  font-size: 22px;
+  color: rgb(254, 242, 0);
+  font-style: italic;
+}
+
+#items {
+  padding: 10px 10px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.section h2 {
+  font-size: 45px;
+  display: inline-block;
+  margin-bottom: 4px;
+  font-style: italic;
+}
+
+.section h3 {
+  color: rgb(245, 245, 245);
+  font-size: 26px;
+}
+
+.section span {
+  font-size: 28px;
+  margin-left: 3px;
+  font-style: italic;
+}
+
+.section .item {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  padding: 5px 2px;
+}
+
+.section .item input {
+  width: 21px;
+  height: 21px;
+  margin-right: 4px;
+  float: left;
+}
+
+#legendary-skins {
+  color: orangered;
+  margin-bottom: 20px;
+}
+
+#legendary-skins .images {
+  height: 374px;
+  display: flex;
+}
+
+#legendary-skins .images .item {
+  width: 25%;
+  padding: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+#legendary-skins .images .item img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid orangered;
+}
+#legendary-skins .thing {
+  position: absolute;
+  bottom: 25px;
+  padding: 0 3px;
+  margin-left: 1px;
+  display: flex;
+  height: 32px;
+}
+#legendary-skins .images .item h3 {
+  font-size: 25px;
+  text-shadow: 2px 1px 1px orangered;
+}
+
+#epic-skins {
+  float: left;
+  width: 40%;
+  margin-right: 20px;
+}
+
+#emotes h2 {
+  margin-top: 24px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+#voicelines, #victoryposes {
+  width: 49%;
+}
+
+#voicelines .items, #victoryposes .items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 431px;
+}
+
+#voicelines .item, #victoryposes .item {
+  width: 48%;
+}
+
+.bottom {
+  padding: 0 10px;
+}
+
+#sprays .items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 260px;
+}
+
+#sprays .item {
+  width: 19%;
+}
+
+#sprays h3 {
+  font-size: 25px;
+}
+
+#footer {
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* Colors */
+
+/* Purple */
+#epic-skins, #emotes, #highlight-intros, #epic-skins input, #emotes input, #highlight-intros input {
+  color: rgb(146, 37, 146)
+}
+#epic-skins h3, #emotes h3, #highlight-intros h3 {
+  text-shadow: 2px 1px 1px rgb(146, 37, 146);
+}
+
+#epic-skins .item, #emotes .item, #highlight-intros .item {
+  background-color: rgb(188, 161, 204);
+}
+#epic-skins .item:nth-of-type(even), #emotes .item:nth-of-type(even), #highlight-intros .item:nth-of-type(even) {
+  background-color: rgb(202, 185, 217);
+}
+
+/* Blue */
+#voicelines, #victoryposes, #voicelines input, #victoryposes input {
+  color: rgb(14, 116, 188);
+}
+
+#voicelines h3, #victoryposes h3 {
+  text-shadow: 2px 1px 1px rgb(14, 116, 188);
+}
+
+#voicelines .item, #victoryposes .item {
+  background-color: rgb(198, 229, 247);
+}
+
+#voicelines .item:nth-of-type(even), #victoryposes .item:nth-of-type(even) {
+  background-color: rgb(147, 200, 234);
+}
+
+/* Green */
+#sprays, #sprays input {
+  color: rgb(6, 104, 58);
+}
+
+#sprays h3 {
+  text-shadow: 2px 1px 1px rgb(6, 104, 58);
+}
+
+#sprays .item {
+  background-color: rgb(208, 229, 173);
+}
+
+#sprays .item:nth-of-type(even) {
+  background-color: rgb(172, 213, 137);
+}
+
+/* Pink */
+#icons, #icons input {
+  color: rgb(237, 12, 108);
+}
+
+#icons h3 {
+  text-shadow: 2px 1px 1px rgb(237, 12, 108);
+}
+
+#icons .item {
+  background-color: rgb(245, 202, 221);
+}
+
+#icons .item:nth-of-type(even) {
+  background-color: rgb(239, 172, 205);
+}
