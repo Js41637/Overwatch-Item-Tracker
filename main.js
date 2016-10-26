@@ -43,16 +43,16 @@ OWI.controller('MainCtrl', ["$scope", function($scope) {
     skins: {
       legendary: [{
         name: "Junkenstein Junkrat",
-        img: "http://i.imgur.com/lAO6RF2.jpg"
+        img: "./img/junkrat.jpg"
       }, {
         name: "Monster Roadhog",
-        img: "http://i.imgur.com/SlfYFA9.jpg"
+        img: "./img/roadhog.jpg"
       }, {
         name: "Witch Mercy",
-        img: "http://i.imgur.com/kNx73l3.jpg"
+        img: "./img/mercy.jpg"
       }, {
         name: "Pumpkin Reaper",
-        img: "http://i.imgur.com/7WDuXPq.jpg"
+        img: "./img/reaper.jpg"
       }],
       epic: [
         "Ghoul Ana", "Tombstone Bastion", "Demon Hanzo",
