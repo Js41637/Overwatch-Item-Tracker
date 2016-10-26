@@ -5,19 +5,25 @@
   <link rel="stylesheet" href="./css/main.css">
   <script src="./angular.min.js"></script>
 </head>
-<body>
+<body ng-controller="MainCtrl as $ctrl">
   <div id="header">
     <div class="left">
       <img src="./img/logo.png">
       <h1>Halloween Items Checklist 2016</h1>
     </div>
     <div class="seperator">|</div>
-    <div class="right">
+    <div class="middle">
       <h2>Event ends on Nov. 1, 2016</h2>
       <h3>Be sure to get everything you want by Oct. 31, 2016 to be safe!</h3>
     </div>
+    <div class="right">
+      <div class="reset">
+        <div class="x" ng-click="$ctrl.reset()" ng-mouseover="reset = true" ng-mouseleave="reset = false">+</div>
+        <div class="tooltip" ng-class="{show : reset}">Reset Selected</div>
+      </div>
+    </div>
   </div>
-  <div id="items" ng-controller="MainCtrl as $ctrl">
+  <div id="items">
     <div class="col" style="width: 38%">
       <div id="legendary-skins" class="section">
         <h2>Legendary Skins</h2> <span>[3000 Coins]</span>

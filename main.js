@@ -7,29 +7,35 @@ OWI.config(['$compileProvider', function($compileProvider) {
 OWI.controller('MainCtrl', ["$scope", function($scope) {
   var vm = this;
 
-  this.checked = {
-    legendary: {},
-    epic: {},
-    emotes: {},
-    intros: {},
-    sprays: {},
-    voicelines: {},
-    victoryposes: {},
-    icons: {}
-  }
-
-  // Update localstorage on new data
-  this.onSelect = function() {
-    localStorage.setItem('data', JSON.stringify(this.checked))
-  }
-
   // Load any saved data from localstorage
   var onStartup = function() {
+    vm.checked = {
+      legendary: {},
+      epic: {},
+      emotes: {},
+      intros: {},
+      sprays: {},
+      voicelines: {},
+      victoryposes: {},
+      icons: {}
+    }
+
     var data = localStorage.getItem('data')
     if (data) {
       vm.checked = JSON.parse(data)
       $scope.$digest()
     }
+  }
+
+  this.reset = function() {
+    console.log("reset")
+    localStorage.removeItem('data')
+    onStartup()
+  }
+
+  // Update localstorage on new data
+  this.onSelect = function() {
+    localStorage.setItem('data', JSON.stringify(this.checked))
   }
 
   var heroes = [

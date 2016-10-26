@@ -45,10 +45,54 @@ body {
   font-style: italic;
 }
 
-#header .right {
+#header .middle {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+#header .right {
+  position: absolute;
+  right: 20px;
+  top: -4px;
+}
+
+#header .reset .x {
+  font-size: 80px;
+  transform: rotateZ(-45deg);
+  cursor: pointer;
+}
+
+#header .tooltip.show {
+  opacity: 1;
+}
+
+#header .tooltip {
+  opacity: 0;
+  transition: opacity 0.125s ease-in-out;
+  position: absolute;
+  width: 105px;
+  bottom: -10px;
+  right: -8px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #4d4d4d;
+  padding: 2px 0;
+}
+
+#header .tooltip:before {
+  left: 80%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(221, 215, 227, 0);
+  border-bottom-color: #4d4d4d;
+  border-width: 10px;
+  margin-left: -13px;
+  top: -20px;
 }
 
 #header img {
