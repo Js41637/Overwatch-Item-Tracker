@@ -98,8 +98,8 @@
       <div id="icons" class="section">
         <h2>Player Icons</h2>
         <div class="items">
-          <div class="item" ng-repeat="icon in $ctrl.items.icons track by $index">
-            <input type="checkbox" id="{{'icon' + $index}}" ng-model="$ctrl.checked.icons[icon]" ng-change="$ctrl.onSelect()"> <label for="{{'icon' + $index}}"><h3>{{icon}}</h3></label>
+          <div class="item" ng-repeat="icon in $ctrl.items.icons track by $index" ng-mouseover="$ctrl.showPreview(icon)" ng-mouseleave="$ctrl.hidePreview()">
+            <input type="checkbox" id="{{'icon' + $index}}" ng-model="$ctrl.checked.icons[icon.name]" ng-change="$ctrl.onSelect()"> <label for="{{'icon' + $index}}"><h3>{{icon.name}}</h3></label>
           </div>
         </div>
       </div>

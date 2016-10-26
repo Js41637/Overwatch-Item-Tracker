@@ -193,13 +193,61 @@ OWI.controller('MainCtrl', ["$scope", function($scope) {
       "name": "Witch's Brew",
       "img": "./img/halloween2016/sprays/witchsbrew.jpg"
     }],
-    icons: [
-      "Halloween Terror 2016", "The Doctor", "The Monster",
-      "The Reaper", "The Witch", "...Never Die", "Candle",
-      "Bewitching", "Ghostymari", "Eyeball", "Calavera",
-      "Spider", "Witch's Brew", "Vampachimari", "Superstition",
-      "Witch's Hat", "Tombstone", "The Wolf"
-    ]
+    "icons": [{
+      "name": "...Never Die",
+      "img": "./img/halloween2016/icons/neverdie.png"
+    }, {
+      "name": "Bewitching",
+      "img": "./img/halloween2016/icons/bewitching.png"
+    }, {
+      "name": "Calavera",
+      "img": "./img/halloween2016/icons/calavera.png"
+    }, {
+      "name": "Candle",
+      "img": "./img/halloween2016/icons/candle.png"
+    }, {
+      "name": "Eyeball",
+      "img": "./img/halloween2016/icons/eyeball.png"
+    }, {
+      "name": "Ghostymari",
+      "img": "./img/halloween2016/icons/ghostymari.png"
+    }, {
+      "name": "Halloween Terror 2016",
+      "img": "./img/halloween2016/icons/halloweenterror.png"
+    }, {
+      "name": "Spider",
+      "img": "./img/halloween2016/icons/spider.png"
+    }, {
+      "name": "Superstition",
+      "img": "./img/halloween2016/icons/superstition.png"
+    }, {
+      "name": "The Doctor",
+      "img": "./img/halloween2016/icons/thedoctor.png"
+    }, {
+      "name": "The Monster",
+      "img": "./img/halloween2016/icons/themonster.png"
+    }, {
+      "name": "The Reaper",
+      "img": "./img/halloween2016/icons/thereaper.png"
+    }, {
+      "name": "The Witch",
+      "img": "./img/halloween2016/icons/thewitch.png"
+    }, {
+      "name": "The Wolf",
+      "img": "./img/halloween2016/icons/thewolf.png"
+    }, {
+      "name": "Tombstone",
+      "img": "./img/halloween2016/icons/tombstone.png"
+    }, {
+      "name": "Vampachimari",
+      "img": "./img/halloween2016/icons/vampachimari.png"
+    }, {
+      "name": "Witch's Brew",
+      "img": "./img/halloween2016/icons/witchsbrew.png"
+    }, {
+      "name": "Witch's Hat",
+      "img": "./img/halloween2016/icons/witchshat.png"
+    }]
   }
 
   // Defer the starup so the initial digest finishes
