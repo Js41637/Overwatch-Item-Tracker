@@ -84,7 +84,7 @@
     </div>
     <div class="col" style="width: 16%">
       <div id="icons" class="section">
-        <h2>Sprays</h2> <span>[75 Coins]</span>
+        <h2>Player Icons</h2>
         <div class="items">
           <div class="item" ng-repeat="icon in $ctrl.items.icons track by $index">
             <input type="checkbox" id="{{'icon' + $index}}" ng-model="$ctrl.checked.icons[icon]" ng-change="$ctrl.onSelect()"> <label for="{{'icon' + $index}}"><h3>{{icon}}</h3></label>

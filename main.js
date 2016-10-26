@@ -70,8 +70,8 @@ OWI.controller('MainCtrl', ["$scope", function($scope) {
     victoryposes: heroes,
     sprays: heroes.concat([
       "...Never Die", "Bats", "Boo!", "Boop!",
-      "Candyball", "Witch's Brew", "Fangs",
-      "Gummy Hog", "Halloween",  "Terror", "Pumpkins"
+      "Candyball", "Fangs", "Gummy Hog",
+      "Halloween Terror", "Pumpkins", "Witch's Brew",
     ]),
     icons: [
       "Halloween Terror 2016", "The Doctor", "The Monster",
