@@ -31,10 +31,9 @@
           <img src="{{$ctrl.preview.img}}" />
         </div>
         <div class="inner" ng-class="{ hide: $ctrl.preview }">
-          <h2>Legendary Skins</h2> <span>[3000 Coins]</span>
+          <h2>Legendary Skins</h2> <span>(3000 Coins)</span>
           <div class="images">
-            <div class="item" ng-repeat="skin in $ctrl.items.skins.legendary track by $index">
-              <img src="{{skin.img}}" />
+            <div class="item" ng-repeat="skin in $ctrl.items.skins.legendary track by $index" style="background-image:url({{skin.img}});">
               <div class="thing">
                 <input type="checkbox" id="{{'legendary' + $index}}" ng-model="$ctrl.checked.legendary[skin.name]" ng-change="$ctrl.onSelect()">
                 <label for="{{'legendary' + $index}}"><h3 class="name">{{skin.name}}</h3></label>
@@ -44,20 +43,20 @@
         </div>
       </div>
       <div id="epic-skins" class="section">
-        <h2>Epic Skins</h2> <span>[750 Coins]</span>
+        <h2>Epic Skins</h2> <span>(750 Coins)</span>
         <div class="item" ng-repeat="skin in $ctrl.items.skins.epic track by $index">
           <input type="checkbox" id="{{'epic' + $index}}" ng-model="$ctrl.checked.epic[skin]" ng-change="$ctrl.onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin}}</h3></label>
         </div>
       </div>
       <div class="right">
         <div id="highlight-intros" class="section">
-          <h2>Highlight Intros</h2> <span>[750 Coins]</span>
+          <h2>Highlight Intros</h2> <span>(750 Coins)</span>
           <div class="item" ng-repeat="intro in $ctrl.items.intros track by $index">
             <input type="checkbox" id="{{'intro' + $index}}" ng-model="$ctrl.checked.intros[intro]" ng-change="$ctrl.onSelect()"> <label for="{{'intro' + $index}}"><h3>{{intro}}</h3></label>
           </div>
         </div>
         <div id="emotes" class="section">
-          <h2>Emotes</h2> <span>[750 Coins]</span>
+          <h2>Emotes</h2> <span>(750 Coins)</span>
           <div class="item" ng-repeat="emote in $ctrl.items.emotes track by $index">
             <input type="checkbox" id="{{'emote' + $index}}" ng-model="$ctrl.checked.emotes[emote]" ng-change="$ctrl.onSelect()"> <label for="{{'emote' + $index}}"><h3>{{emote}}</h3></label>
           </div>
@@ -67,7 +66,7 @@
     <div class="col" style="width: 46%">
       <div class="top">
         <div id="voicelines" class="section">
-          <h2>Voice Lines</h2> <span>[75 Coins]</span>
+          <h2>Voice Lines</h2> <span>(75 Coins)</span>
           <div class="items">
             <div class="item" ng-repeat="voice in $ctrl.items.voicelines track by $index">
               <input type="checkbox" id="{{'voice' + $index}}" ng-model="$ctrl.checked.voicelines[voice]" ng-change="$ctrl.onSelect()"> <label for="{{'voice' + $index}}"><h3>{{voice}}</h3></label>
@@ -75,7 +74,7 @@
           </div>
         </div>
         <div id="victoryposes" class="section">
-          <h2>Victory Poses</h2> <span>[225 Coins]</span>
+          <h2>Victory Poses</h2> <span>(225 Coins)</span>
           <div class="items">
             <div class="item" ng-repeat="pose in $ctrl.items.victoryposes track by $index">
               <input type="checkbox" id="{{'pose' + $index}}" ng-model="$ctrl.checked.victoryposes[pose]" ng-change="$ctrl.onSelect()"> <label for="{{'pose' + $index}}"><h3>{{pose}}</h3></label>
@@ -85,7 +84,7 @@
       </div>
       <div class="bottom">
         <div id="sprays" class="section">
-          <h2>Sprays</h2> <span>[75 Coins]</span>
+          <h2>Sprays</h2> <span>(75 Coins)</span>
           <div class="items">
             <div class="item" ng-repeat="spray in $ctrl.items.sprays track by $index" ng-mouseover="$ctrl.showPreview(spray)" ng-mouseleave="$ctrl.hidePreview()">
               <input type="checkbox" id="{{'spray' + $index}}" ng-model="$ctrl.checked.sprays[spray.name]" ng-change="$ctrl.onSelect()"> <label for="{{'spray' + $index}}"><h3>{{spray.name}}</h3></label>
@@ -106,7 +105,7 @@
     </div>
   </div>
   <div id="footer">
-    Designed by Lalato & Izzepizze on <a href="https://www.reddit.com/r/Overwatch/comments/59bo66">Reddit</a> | Site made by Js41637 | View source on <a href="https://github.com/Js41637/Overwatch-Halloween-Item-Tracker">Github</a>
+    Designed by Lalato &amp; Izzepizze on <a href="https://www.reddit.com/r/Overwatch/comments/59bo66">Reddit</a> | Site made by Js41637 | View source on <a href="https://github.com/Js41637/Overwatch-Halloween-Item-Tracker">Github</a>
   </div>
   <script src="./main.js"></script>
 </body>
