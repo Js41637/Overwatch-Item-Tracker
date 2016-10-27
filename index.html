@@ -63,7 +63,7 @@
         <div id="emotes" class="section">
           <h2>Emotes</h2> <span>(750 Coins)</span>
           <div class="item" ng-repeat="emote in $ctrl.items.emotes track by $index">
-            <input type="checkbox" id="{{'emote' + $index}}" ng-model="$ctrl.checked.emotes[emote]" ng-change="$ctrl.onSelect()"> <label for="{{'emote' + $index}}"><h3>{{emote}}</h3></label>
+            <input type="checkbox" id="{{'emote' + $index}}" ng-model="$ctrl.checked.emotes[emote.name]" ng-change="$ctrl.onSelect()"> <label for="{{'emote' + $index}}"><h3>{{emote.name}}</h3></label>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@
           <h2>Victory Poses</h2> <span>(225 Coins)</span>
           <div class="items">
             <div class="item" ng-repeat="pose in $ctrl.items.victoryposes track by $index">
-              <input type="checkbox" id="{{'pose' + $index}}" ng-model="$ctrl.checked.victoryposes[pose]" ng-change="$ctrl.onSelect()"> <label for="{{'pose' + $index}}"><h3>{{pose}}</h3></label>
+              <input type="checkbox" id="{{'pose' + $index}}" ng-model="$ctrl.checked.victoryposes[pose.name]" ng-change="$ctrl.onSelect()"> <label for="{{'pose' + $index}}"><h3>{{pose.name}}</h3></label>
             </div>
           </div>
         </div>
