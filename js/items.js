@@ -54,13 +54,13 @@ OWI.factory('Items', function() {
     // Emotes
     emotes: [{
       name: "Candy Ana",
-      video: ""
+      video: "./resources/halloween2016/emotes/ana.webm"
     }, {
       name: "Pumpkin Smashing Reinhardt",
-      video: ""
+      video: "./resources/halloween2016/emotes/reinhardt.webm"
     }, {
       name: "Shadow Puppets Winston",
-      video: ""
+      video: "./resources/halloween2016/emotes/winston.webm"
     }],
     // Voice Lines
     voicelines: [

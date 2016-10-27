@@ -62,7 +62,7 @@
         </div>
         <div id="emotes" class="section">
           <h2>Emotes</h2> <span>(750 Coins)</span>
-          <div class="item" ng-repeat="emote in $ctrl.items.emotes track by $index">
+          <div class="item" ng-repeat="emote in $ctrl.items.emotes track by $index" ng-mouseover="$ctrl.showPreview(emote)" ng-mouseleave="$ctrl.hidePreview()">
             <input type="checkbox" id="{{'emote' + $index}}" ng-model="$ctrl.checked.emotes[emote.name]" ng-change="$ctrl.onSelect()"> <label for="{{'emote' + $index}}"><h3>{{emote.name}}</h3></label>
           </div>
         </div>
