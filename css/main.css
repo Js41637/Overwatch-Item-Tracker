@@ -17,14 +17,14 @@
 
 body {
   font-family: "Big Noodle Too";
-  min-width: 1540px;
-  background: url(../img/body-bg.jpg) no-repeat top;
+  min-width: 1000px;
+  background: url(../resources/body-bg.jpg) no-repeat top;
   background-color: #d0c7dc;
   color: #405275;
 }
 
 #header {
-  height: 75px;
+  height: 80px;
   background-color: rgb(45, 45, 45);
   color: orange;
   padding: 0 15px;
@@ -118,6 +118,18 @@ body {
   text-align: center;
   font-size: 20px;
   margin-top: 2px;
+}
+
+#col1 {
+  width: 38%;
+}
+
+#col2 {
+  width: 46%;
+}
+
+#col3 {
+  width: 16%;
 }
 
 #items {
@@ -298,6 +310,13 @@ body {
   transition-delay: 0.1s;
 }
 
+#image-preview.fixed {
+  position: fixed;
+  width: 700px;
+  height: 420px;
+  margin-top: -170px;
+}
+
 /* Colors */
 
 /* Purple */
@@ -349,4 +368,95 @@ body {
 
 #icons .item:nth-of-type(even) {
   background-color: rgba(239, 172, 205,0.5);
+}
+
+@media screen and (max-width: 1340px) {
+  #header {
+    height: 65px;
+  }
+  #header .seperator {
+    font-size: 50px;
+    margin: 0 15px;
+  }
+  #header h1 {
+    font-size: 50px;
+  }
+  #header h2 {
+    font-size: 32px;
+  }
+  #header h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  #items {
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #col1, #col2 {
+    width: 1000px;
+  }
+
+  #col1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #legendary-skins {
+    width: 70%;
+    margin-bottom: 15px;
+  }
+
+  #epic-skins {
+    width: 29%;
+    margin: 0;
+  }
+
+  #col1 .right {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  #highlight-intros, #emotes {
+    width: 34%;
+  }
+
+  #emotes {
+    margin-left: 2%;
+  }
+
+  #emotes h2 {
+    margin-top: 0;
+  }
+
+  #col2 .top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 70%;
+    padding: 0;
+  }
+
+  #voicelines .items, #victoryposes .items {
+    height: 422px;
+  }
+
+  #col2 .bottom {
+    width: 70%;
+    padding: 0;
+  }
+
+  #col3 {
+    width: 290px;
+    position: absolute;
+    top: 362px;
+    right: 12px;
+  }
 }

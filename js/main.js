@@ -60,3 +60,13 @@ OWI.controller('MainCtrl', ["$scope", "Items", function($scope, Items) {
     onStartup()
   }, 0);
 }])
+
+OWI.directive("scroll", function ($window) {
+  return function($scope, $element) {
+    angular.element($window).bind("scroll", function() {
+      if (this.innerWidth > 1540) return
+      $scope.isFixed = this.pageYOffset >= 170 ? true : false;
+      $scope.$apply();
+    });
+  };
+});

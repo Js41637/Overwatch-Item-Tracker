@@ -25,15 +25,17 @@
   </div>
   <div id="protip">Pro Tip: Hover over items to view a preview.</div>
   <div id="items">
-    <div class="col" style="width: 38%">
+    <div id="col1" class="col">
       <div id="legendary-skins" class="section">
-        <div ng-show="$ctrl.preview.img" id="image-preview" ng-class="{ show: $ctrl.preview }">
-          <h2>Image Preview</h2> <span>{{$ctrl.preview.name}}</span>
-          <img src="{{$ctrl.preview.img}}" />
-        </div>
-        <div ng-if="$ctrl.preview.video" id="image-preview" ng-class="{ show: $ctrl.preview }">
-          <h2>Video Preview</h2> <span>{{$ctrl.preview.name}}</span>
-          <video autoplay="true" autostart="true" loop="true" src="{{$ctrl.preview.video}}"></video>
+        <div id="image-preview" scroll ng-class="{ show: $ctrl.preview, fixed: isFixed }">
+          <div class="preview" ng-show="$ctrl.preview.img">
+            <h2>Image Preview</h2> <span>{{$ctrl.preview.name}}</span>
+            <img src="{{$ctrl.preview.img}}" />
+          </div>
+          <div class="preview" ng-if="$ctrl.preview.video">
+            <h2>Video Preview</h2> <span>{{$ctrl.preview.name}}</span>
+            <video autoplay="true" autostart="true" loop="true" src="{{$ctrl.preview.video}}"></video>
+          </div>
         </div>
         <div class="inner" ng-class="{ hide: $ctrl.preview }">
           <h2>Legendary Skins</h2> <span>(3000 Coins)</span>
@@ -68,7 +70,7 @@
         </div>
       </div>
     </div>
-    <div class="col" style="width: 46%">
+    <div id="col2" class="col">
       <div class="top">
         <div id="voicelines" class="section">
           <h2>Voice Lines</h2> <span>(75 Coins)</span>
@@ -98,7 +100,7 @@
         </div>
       </div>
     </div>
-    <div class="col" style="width: 16%">
+    <div id="col3" class="col">
       <div id="icons" class="section">
         <h2>Player Icons</h2>
         <div class="items">
