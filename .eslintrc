@@ -1,0 +1,23 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 5,
+        "sourceType": "script",
+        "ecmaFeatures": {}
+    },
+    "env": {
+        "browser": true
+    },
+    "globals": {
+        "OWI": true,
+        "angular": true,
+        "document": true
+    },
+    "plugins": [
+        "angular"
+    ],
+    "extends": "eslint:recommended",
+    "rules": {
+        "no-console": "off"
+    }
+}

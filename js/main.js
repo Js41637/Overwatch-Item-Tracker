@@ -1,72 +1,73 @@
-OWI.controller('MainCtrl', ["$scope", "Items", function($scope, Items) {
-  var vm = this;
-
+OWI.controller('MainCtrl', ["Data", function(Data) {
   this.preview = false;
-  this.items = Items
-
-  // Load any saved data from localstorage
-  var onStartup = function() {
-    vm.checked = {
-      legendary: {},
-      epic: {},
-      emotes: {},
-      intros: {},
-      sprays: {},
-      voicelines: {},
-      victoryposes: {},
-      icons: {}
-    }
-
-    var data = localStorage.getItem('data')
-    if (data) {
-      vm.checked = JSON.parse(data)
-      $scope.$digest()
-    }
-  }
+  this.updates = Data.updates;
+  this.selectedUpdate = 1;
 
   this.reset = function() {
-    console.log("reset")
-    localStorage.removeItem('data')
-    onStartup()
-  }
+    localStorage.removeItem('data');
+  };
 
-  // Update localstorage on new data
-  this.onSelect = function() {
-    localStorage.setItem('data', JSON.stringify(this.checked))
+  var storedData = localStorage.getItem('data')
+  if (storedData) {
+    var data = JSON.parse(storedData)
+    if (!data.halloween2016) { // Migrate data to new format
+      data = Object.assign({}, Data.checked, { halloween2016: data });
+      localStorage.setItem('data', JSON.stringify(data));
+      Data.checked = data;
+    } else {
+      Data.checked = Object.assign({}, Data.checked, data);
+    }
   }
-
-  var showTimeout = undefined;
-  var hideTimeout = undefined;
-  this.showPreview = function(what) {
-    if (showTimeout) return
-    clearTimeout(hideTimeout)
-    showTimeout = setTimeout(function () {
-      vm.preview = what
-      $scope.$digest()
-    }, vm.preview ? 100 : 650);
-  }
-
-  this.hidePreview = function(what) {
-    clearTimeout(showTimeout);
-    showTimeout = undefined;
-    hideTimeout = setTimeout(function () {
-      vm.preview = false;
-      $scope.$digest()
-    }, 150);
-  }
-
-  // Defer the starup so the initial digest finishes
-  setTimeout(function () {
-    onStartup()
-  }, 0);
-}])
+}]);
 
 OWI.directive("scroll", function ($window) {
-  return function($scope, $element) {
+  return function($scope) {
     angular.element($window).bind("scroll", function() {
-      if (this.innerWidth > 1540) return
+      if (this.innerWidth > 1540) return;
       $scope.isFixed = this.pageYOffset >= 170 ? true : false;
       $scope.$apply();
     });
   };
 });
+
+OWI.directive("update", ["Data", function(Data) {
+  return {
+    restrict: 'E',
+    scope: {
+      data: '='
+    },
+    templateUrl: function(element, attrs) {
+      return './templates/' + attrs.template + '.html';
+    },
+    controller: function($scope) {
+      $scope.preview = false;
+
+      $scope.checked = Data.checked[$scope.data.id];
+
+      $scope.onSelect = function() {
+        Data.checked[$scope.data.id] = $scope.checked;
+        localStorage.setItem('data', JSON.stringify(Data.checked));
+      };
+
+      var showTimeout = undefined;
+      var hideTimeout = undefined;
+      $scope.showPreview = function(what) {
+        if (showTimeout) return;
+        clearTimeout(hideTimeout)
+        showTimeout = setTimeout(function () {
+          $scope.preview = what;
+          $scope.$digest();
+        }, $scope.preview ? 100 : 650);
+      };
+
+      $scope.hidePreview = function() {
+        clearTimeout(showTimeout);
+        showTimeout = undefined;
+        hideTimeout = setTimeout(function () {
+          $scope.preview = false;
+          $scope.$digest();
+        }, 150);
+      };
+    }
+  };
+}]);

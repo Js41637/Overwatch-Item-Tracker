@@ -24,99 +24,16 @@
     </div>
   </div>
   <div id="protip">Pro Tip: Hover over items to view a preview.</div>
-  <div id="items">
-    <div id="col1" class="col">
-      <div id="legendary-skins" class="section">
-        <div id="image-preview" scroll ng-class="{ show: $ctrl.preview, fixed: isFixed }">
-          <div class="preview" ng-show="$ctrl.preview.img">
-            <h2>Image Preview</h2> <span>{{$ctrl.preview.name}}</span>
-            <img src="{{$ctrl.preview.img}}" />
-          </div>
-          <div class="preview" ng-if="$ctrl.preview.video">
-            <h2>Video Preview</h2> <span>{{$ctrl.preview.name}}</span>
-            <video autoplay="true" autostart="true" loop="true" src="{{$ctrl.preview.video}}"></video>
-          </div>
-        </div>
-        <div class="inner" ng-class="{ hide: $ctrl.preview }">
-          <h2>Legendary Skins</h2> <span>(3000 Coins)</span>
-          <div class="images">
-            <div class="item" ng-repeat="skin in $ctrl.items.skins.legendary track by $index" style="background-image:url({{skin.img}});">
-              <div class="thing">
-                <input type="checkbox" id="{{'legendary' + $index}}" ng-model="$ctrl.checked.legendary[skin.name]" ng-change="$ctrl.onSelect()">
-                <label for="{{'legendary' + $index}}"><h3 class="name">{{skin.name}}</h3></label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="epic-skins" class="section">
-        <h2>Epic Skins</h2> <span>(750 Coins)</span>
-        <div class="item" ng-repeat="skin in $ctrl.items.skins.epic track by $index" ng-mouseover="$ctrl.showPreview(skin)" ng-mouseleave="$ctrl.hidePreview()">
-          <input type="checkbox" id="{{'epic' + $index}}" ng-model="$ctrl.checked.epic[skin.name]" ng-change="$ctrl.onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin.name}}</h3></label>
-        </div>
-      </div>
-      <div class="right">
-        <div id="highlight-intros" class="section">
-          <h2>Highlight Intros</h2> <span>(750 Coins)</span>
-          <div class="item" ng-repeat="intro in $ctrl.items.intros track by $index" ng-mouseover="$ctrl.showPreview(intro)" ng-mouseleave="$ctrl.hidePreview()">
-            <input type="checkbox" id="{{'intro' + $index}}" ng-model="$ctrl.checked.intros[intro.name]" ng-change="$ctrl.onSelect()"> <label for="{{'intro' + $index}}"><h3>{{intro.name}}</h3></label>
-          </div>
-        </div>
-        <div id="emotes" class="section">
-          <h2>Emotes</h2> <span>(750 Coins)</span>
-          <div class="item" ng-repeat="emote in $ctrl.items.emotes track by $index" ng-mouseover="$ctrl.showPreview(emote)" ng-mouseleave="$ctrl.hidePreview()">
-            <input type="checkbox" id="{{'emote' + $index}}" ng-model="$ctrl.checked.emotes[emote.name]" ng-change="$ctrl.onSelect()"> <label for="{{'emote' + $index}}"><h3>{{emote.name}}</h3></label>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="col2" class="col">
-      <div class="top">
-        <div id="voicelines" class="section">
-          <h2>Voice Lines</h2> <span>(75 Coins)</span>
-          <div class="items">
-            <div class="item" ng-repeat="voice in $ctrl.items.voicelines track by $index">
-              <input type="checkbox" id="{{'voice' + $index}}" ng-model="$ctrl.checked.voicelines[voice]" ng-change="$ctrl.onSelect()"> <label for="{{'voice' + $index}}"><h3>{{voice}}</h3></label>
-            </div>
-          </div>
-        </div>
-        <div id="victoryposes" class="section">
-          <h2>Victory Poses</h2> <span>(225 Coins)</span>
-          <div class="items">
-            <div class="item" ng-repeat="pose in $ctrl.items.victoryposes track by $index" ng-mouseover="$ctrl.showPreview(pose)" ng-mouseleave="$ctrl.hidePreview()">
-              <input type="checkbox" id="{{'pose' + $index}}" ng-model="$ctrl.checked.victoryposes[pose.name]" ng-change="$ctrl.onSelect()"> <label for="{{'pose' + $index}}"><h3>{{pose.name}}</h3></label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bottom">
-        <div id="sprays" class="section">
-          <h2>Sprays</h2> <span>(75 Coins)</span>
-          <div class="items">
-            <div class="item" ng-repeat="spray in $ctrl.items.sprays track by $index" ng-mouseover="$ctrl.showPreview(spray)" ng-mouseleave="$ctrl.hidePreview()">
-              <input type="checkbox" id="{{'spray' + $index}}" ng-model="$ctrl.checked.sprays[spray.name]" ng-change="$ctrl.onSelect()"> <label for="{{'spray' + $index}}"><h3>{{spray.name}}</h3></label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="col3" class="col">
-      <div id="icons" class="section">
-        <h2>Player Icons</h2>
-        <div class="items">
-          <div class="item" ng-repeat="icon in $ctrl.items.icons track by $index" ng-mouseover="$ctrl.showPreview(icon)" ng-mouseleave="$ctrl.hidePreview()">
-            <input type="checkbox" id="{{'icon' + $index}}" ng-model="$ctrl.checked.icons[icon.name]" ng-change="$ctrl.onSelect()"> <label for="{{'icon' + $index}}"><h3>{{icon.name}}</h3></label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <Update template="summergames2016" data="$ctrl.updates[0]" ng-if="$ctrl.selectedUpdate == 0"></Update>
+  <Update template="halloween2016" data="$ctrl.updates[1]" ng-if="$ctrl.selectedUpdate == 1"></Update>
+
   <div id="footer">
     <div>Note: This site uses localstorage to store your selections, clearing cookies or using 3rd party cleaners may erase saved data</div>
     Initial Design by Lalato &amp; Izzepizze on <a href="https://www.reddit.com/r/Overwatch/comments/59bo66">Reddit</a> | Site made by Js41637 | View source on <a href="https://github.com/Js41637/Overwatch-Halloween-Item-Tracker">Github</a>
   </div>
   <script src="./js/app.js"></script>
-  <script src="./js/items.js"></script>
+  <script src="./js/data.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

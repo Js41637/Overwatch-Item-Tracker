@@ -120,162 +120,23 @@ body {
   margin-top: 2px;
 }
 
-#col1 {
-  width: 38%;
-}
-
-#col2 {
-  width: 46%;
-}
-
-#col3 {
-  width: 16%;
-}
-
-#items {
-  padding: 10px 10px 15px;
-  display: flex;
-  justify-content: center;
-}
-
-.section h2 {
-  font-size: 42px;
-  display: inline-block;
-  margin-bottom: 4px;
-  font-style: italic;
-}
-
-.section h3 {
-  color: rgb(245, 245, 245);
-  font-size: 26px;
-  cursor: pointer;
-}
-
-.section span {
-  font-size: 28px;
-  margin-left: 3px;
-  font-style: italic;
-}
-
-.section .item {
-  font-size: 26px;
-  display: flex;
-  align-items: center;
-  padding: 5px 2px;
-}
-
-.section .item input {
-  width: 21px;
-  height: 21px;
-  margin-right: 4px;
-  float: left;
-  cursor: pointer;
-}
-
-#legendary-skins {
-  color: #405275;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-#legendary-skins .inner {
-  opacity: 1;
-  transition: opacity 0.125s ease-in-out;
-}
-
-#legendary-skins .inner.hide {
-  opacity: 0;
-}
-
-#legendary-skins .images {
-  height: 374px;
-  display: flex;
-}
-
-#legendary-skins .images .item {
-  width: 25%;
-  padding: 2px;
-  position: relative;
-  overflow: hidden;
-  background: url('../img/portrait-bg.jpg') no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 1px;
-  margin-right: .5%;
-}
-
-#legendary-skins .images .item img {
-  width: 100%;
-  height: auto;
-}
-
-#legendary-skins .thing {
-	position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 4rem;
-  background: rgba(40, 53, 79, 0.9);
-  padding: 8px 6px 0px 2px;
-  box-sizing: border-box;
-}
-
-#legendary-skins .images .item h3 {
- 	font-size: 25px;
-  font-style: italic;
-  color: #d0d0dc;
-  width: 100%;
-}
-
-#epic-skins {
-  float: left;
-  width: 40%;
-  margin-right: 20px;
-}
-
-#emotes h2 {
-  margin-top: 24px;
-}
-
-.top {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-}
-
-#voicelines, #victoryposes {
-  width: 49%;
-}
-
-#voicelines .items, #victoryposes .items {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 431px;
-}
-
-#voicelines .item, #victoryposes .item {
-  width: 48%;
-}
-
-.bottom {
-  padding: 0 10px;
-}
-
-#sprays .items {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 260px;
-}
-
-#sprays .item {
-  width: 19%;
-}
-
-#sprays h3 {
-  font-size: 25px;
+@media screen and (max-width: 1340px) {
+  #header {
+    height: 65px;
+  }
+  #header .seperator {
+    font-size: 50px;
+    margin: 0 15px;
+  }
+  #header h1 {
+    font-size: 50px;
+  }
+  #header h2 {
+    font-size: 32px;
+  }
+  #header h3 {
+    font-size: 16px;
+  }
 }
 
 #footer {
@@ -284,40 +145,49 @@ body {
   color: #405275;
 }
 
-#image-preview {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.155s ease-in-out;
-  pointer-events: none;
+.item-container {
+  padding: 10px 10px 15px;
+  display: flex;
+  justify-content: center;
 }
 
-#image-preview img {
-  display: block;
-  height: calc(100% - 52px);
-  margin: 0 auto;
+.item-container  .section h2 {
+  font-size: 42px;
+  display: inline-block;
+  margin-bottom: 4px;
+  font-style: italic;
 }
 
-#image-preview video {
-  width: 100%;
-  height: calc(100% - 52px);
+.item-container .section h3 {
+  color: rgb(245, 245, 245);
+  font-size: 26px;
+  cursor: pointer;
 }
 
-#image-preview.show {
-  opacity: 1;
-  transition-delay: 0.1s;
+.item-container .section span {
+  font-size: 28px;
+  margin-left: 3px;
+  font-style: italic;
 }
 
-#image-preview.fixed {
-  position: fixed;
-  width: 700px;
-  height: 420px;
-  margin-top: -170px;
+.item-container .section .item {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  padding: 5px 2px;
 }
 
-/* Colors */
+.item-container .section .item input {
+  width: 21px;
+  height: 21px;
+  margin-right: 4px;
+  float: left;
+  cursor: pointer;
+}
+
+/**
+ * COLORS
+ */
 
 /* Purple */
 #epic-skins, #emotes, #highlight-intros, #epic-skins input, #emotes input, #highlight-intros input, #highlight-intros h3, #epic-skins h3, #emotes h3 {
@@ -370,27 +240,163 @@ body {
   background-color: rgba(239, 172, 205,0.5);
 }
 
-@media screen and (max-width: 1340px) {
-  #header {
-    height: 65px;
-  }
-  #header .seperator {
-    font-size: 50px;
-    margin: 0 15px;
-  }
-  #header h1 {
-    font-size: 50px;
-  }
-  #header h2 {
-    font-size: 32px;
-  }
-  #header h3 {
-    font-size: 16px;
-  }
+/**
+ * HALLOWEEN 2016 CSS
+ */
+
+#halloween2016 #col1 {
+  width: 38%;
+}
+
+#halloween2016 #col2 {
+  width: 46%;
+}
+
+#halloween2016 #col3 {
+  width: 16%;
+}
+
+#halloween2016 #legendary-skins {
+  color: #405275;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#halloween2016 #legendary-skins .inner {
+  opacity: 1;
+  transition: opacity 0.125s ease-in-out;
+}
+
+#halloween2016 #legendary-skins .inner.hide {
+  opacity: 0;
+}
+
+#halloween2016 #legendary-skins .images {
+  height: 374px;
+  display: flex;
+}
+
+#halloween2016 #legendary-skins .images .item {
+  width: 25%;
+  padding: 2px;
+  position: relative;
+  overflow: hidden;
+  background: url('../img/portrait-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1px;
+  margin-right: .5%;
+}
+
+#halloween2016 #legendary-skins .images .item img {
+  width: 100%;
+  height: auto;
+}
+
+#halloween2016 #legendary-skins .thing {
+	position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4rem;
+  background: rgba(40, 53, 79, 0.9);
+  padding: 8px 6px 0px 2px;
+  box-sizing: border-box;
+}
+
+#halloween2016 #legendary-skins .images .item h3 {
+ 	font-size: 25px;
+  font-style: italic;
+  color: #d0d0dc;
+  width: 100%;
+}
+
+#halloween2016 #epic-skins {
+  float: left;
+  width: 40%;
+  margin-right: 20px;
+}
+
+#halloween2016 #emotes h2 {
+  margin-top: 24px;
+}
+
+#halloween2016 .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+#halloween2016 #voicelines, #halloween2016 #victoryposes {
+  width: 49%;
+}
+
+#halloween2016 #voicelines .items, #halloween2016 #victoryposes .items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 431px;
+}
+
+#halloween2016 #voicelines .item, #halloween2016 #victoryposes .item {
+  width: 48%;
+}
+
+#halloween2016 .bottom {
+  padding: 0 10px;
+}
+
+#halloween2016 #sprays .items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 260px;
+}
+
+#halloween2016 #sprays .item {
+  width: 19%;
+}
+
+#halloween2016 #sprays h3 {
+  font-size: 25px;
+}
+
+#halloween2016 #image-preview {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.155s ease-in-out;
+  pointer-events: none;
+}
+
+#halloween2016 #image-preview img {
+  display: block;
+  height: calc(100% - 52px);
+  margin: 0 auto;
+}
+
+#halloween2016 #image-preview video {
+  width: 100%;
+  height: calc(100% - 52px);
+}
+
+#halloween2016 #image-preview.show {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+#halloween2016 #image-preview.fixed {
+  position: fixed;
+  width: 700px;
+  height: 420px;
+  margin-top: -170px;
 }
 
 @media screen and (max-width: 1540px) {
-  #items {
+  #halloween2016 {
     flex-direction: column;
     align-items: center;
     width: 1000px;
@@ -398,45 +404,45 @@ body {
     margin: 0 auto;
   }
 
-  #col1, #col2 {
+  #halloween2016 #col1, #halloween2016 #col2 {
     width: 1000px;
   }
 
-  #col1 {
+  #halloween2016 #col1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
-  #legendary-skins {
+  #halloween2016 #legendary-skins {
     width: 70%;
     margin-bottom: 15px;
   }
 
-  #epic-skins {
+  #halloween2016 #epic-skins {
     width: 29%;
     margin: 0;
   }
 
-  #col1 .right {
+  #halloween2016 #col1 .right {
     display: flex;
     width: 100%;
     flex-direction: row;
   }
 
-  #highlight-intros, #emotes {
+  #halloween2016 #highlight-intros, #halloween2016 #emotes {
     width: 34%;
   }
 
-  #emotes {
+  #halloween2016 #emotes {
     margin-left: 2%;
   }
 
-  #emotes h2 {
+  #halloween2016 #emotes h2 {
     margin-top: 0;
   }
 
-  #col2 .top {
+  #halloween2016 #col2 .top {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
@@ -444,16 +450,16 @@ body {
     padding: 0;
   }
 
-  #voicelines .items, #victoryposes .items {
+  #halloween2016 #voicelines .items, #halloween2016 #victoryposes .items {
     height: 422px;
   }
 
-  #col2 .bottom {
+  #halloween2016 #col2 .bottom {
     width: 70%;
     padding: 0;
   }
 
-  #col3 {
+  #halloween2016 #col3 {
     width: 290px;
     position: absolute;
     top: 362px;
