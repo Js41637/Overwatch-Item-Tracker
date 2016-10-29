@@ -5,6 +5,7 @@ OWI.controller('MainCtrl', ["Data", function(Data) {
 
   this.reset = function() {
     localStorage.removeItem('data');
+    location.reload();
   };
 
   var storedData = localStorage.getItem('data')
