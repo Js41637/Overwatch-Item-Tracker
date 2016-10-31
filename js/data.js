@@ -20,19 +20,19 @@ OWI.factory('Data', function() {
       items: {
         skinsLegendary: [{
           name: "Selecao",
-          img: "./resources/summergames2016/skins/legendary/lucio1.jpg"
+          img: "./resources/summergames2016/skins/legendary/lucio.jpg"
         }, {
           name: "Striker",
           img: "./resources/summergames2016/skins/legendary/lucio2.jpg"
         }, {
           name: "Sprinter",
-          img: "./resources/summergames2016/skins/legendary/tracer1.jpg"
+          img: "./resources/summergames2016/skins/legendary/tracer.jpg"
         }, {
           name: "Track & Field",
           img: "./resources/summergames2016/skins/legendary/tracer2.jpg"
         }, {
           name: "Champion",
-          img: "./resources/summergames2016/skins/legendary/zarya1.jpg"
+          img: "./resources/summergames2016/skins/legendary/zarya.jpg"
         }, {
           name: "Weightifter",
           img: "./resources/summergames2016/skins/legendary/zarya2.jpg"
@@ -80,7 +80,7 @@ OWI.factory('Data', function() {
           "Ana", "Bastion", "D.Va", "Genji", "Hanzo",
           "Junkrat", "Lucio", "McCree", "Mei", "Mercy",
           "Pharah", "Reaper", "Reinhardt", "Roadhog",
-          "Soldier: 76", "Symetra", "Torbjorn", "Tracer",
+          "Soldier: 76", "Symmetra", "Torbjorn", "Tracer",
           "Widowmaker", "Winston", "Zarya", "Zenyatta"
         ],
         victoryposes: [{
@@ -182,9 +182,6 @@ OWI.factory('Data', function() {
           img: "./resources/summergames2016/sprays/summergames2016.jpg"
         }],
         icons: [{
-          name: "Summer Games",
-          img: "./resources/summergames2016/icons/summergames.png"
-        }, {
           name: "Archery",
           img: "./resources/summergames2016/icons/archery.png"
         }, {
@@ -250,8 +247,10 @@ OWI.factory('Data', function() {
         }, {
           name: "Wrestling",
           img: "./resources/summergames2016/icons/wrestling.png"
-        }],
-        flags: [{
+        }, {
+          name: "Summer Games",
+          img: "./resources/summergames2016/icons/summergames.png"
+        }, {
           name: "Australia",
           img: "./resources/summergames2016/icons/flags/australia.png"
         }, {
@@ -302,7 +301,7 @@ OWI.factory('Data', function() {
         }, {
           name: "United States",
           img: "./resources/summergames2016/icons/flags/unitedstates.png"
-        }]
+        }],
       }
     }, {
       name: 'Halloween 2016',
@@ -370,7 +369,7 @@ OWI.factory('Data', function() {
           "Ana", "Bastion", "D.Va", "Genji", "Hanzo",
           "Junkrat", "Lucio", "McCree", "Mei", "Mercy",
           "Pharah", "Reaper", "Reinhardt", "Roadhog",
-          "Soldier: 76", "Symetra", "Torbjorn", "Tracer",
+          "Soldier: 76", {dn: "Symmetra", name: "Symetra"}, "Torbjorn", "Tracer",
           "Widowmaker", "Winston", "Zarya", "Zenyatta"
         ],
         victoryposes: [{
