@@ -16,6 +16,16 @@ OWI.controller('MainCtrl', ["Data", function(Data) {
       localStorage.setItem('data', JSON.stringify(data));
       Data.checked = data;
     } else {
+      // Temp cheat to fix renamed data
+      var tempData = JSON.stringify(data)
+      if (tempData.indexOf('Lucio') >= 0) {
+        tempData = tempData.replace(/Lucio/g, 'L\u00DAcio')
+        tempData = tempData.replace(/Torbjorn/g, 'T\u00D6rbjorn')
+        tempData = tempData.replace(/Symetra/, 'Symmetra')
+        tempData = tempData.replace(/The Wolf/, 'Wolf')
+        localStorage.setItem('data', tempData);
+        data = JSON.parse(tempData)
+      }
       Data.checked = Object.assign({}, Data.checked, data);
     }
   }

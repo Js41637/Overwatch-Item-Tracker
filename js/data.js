@@ -50,7 +50,7 @@ OWI.factory('Data', function() {
           name: "Edigenossin Mercy",
           img: "./resources/summergames2016/skins/epic/mercy.jpg"
         }, {
-          name: "Tre Kronor Torbjorn",
+          name: "Tre Kronor T\u00D6rbjorn",
           img: "./resources/summergames2016/skins/epic/torbjorn.jpg"
         }, {
           name: "Tricolore Widowmaker",
@@ -60,7 +60,7 @@ OWI.factory('Data', function() {
           name: "Shotput Junkrat",
           video: "./resources/summergames2016/intros/junkrat.webm"
         }, {
-          name: "Bicycle Kick Lucio",
+          name: "Bicycle Kick L\u00DAcio",
           video: "./resources/summergames2016/intros/lucio.webm"
         }, {
           name: "Hurdle Tracer",
@@ -70,7 +70,7 @@ OWI.factory('Data', function() {
           name: "Boxing Bastion",
           video: "./resources/summergames2016/intros/bastion.webm"
         }, {
-          name: "Juggle Lucio",
+          name: "Juggle L\u00DAcio",
           video: "./resources/summergames2016/intros/lucio.webm"
         }, {
           name: "Ribbon Symmetra",
@@ -78,9 +78,9 @@ OWI.factory('Data', function() {
         }],
         voicelines: [
           "Ana", "Bastion", "D.Va", "Genji", "Hanzo",
-          "Junkrat", "Lucio", "McCree", "Mei", "Mercy",
+          "Junkrat", "L\u00DAcio", "McCree", "Mei", "Mercy",
           "Pharah", "Reaper", "Reinhardt", "Roadhog",
-          "Soldier: 76", "Symmetra", "Torbjorn", "Tracer",
+          "Soldier: 76", "Symmetra", "T\u00D6rbjorn", "Tracer",
           "Widowmaker", "Winston", "Zarya", "Zenyatta"
         ],
         victoryposes: [{
@@ -99,7 +99,7 @@ OWI.factory('Data', function() {
           name: "Soldier: 76",
           img: "./resources/summergames2016/poses/soldier76.jpg"
         }, {
-          name: "Torbjorn",
+          name: "T\u00D6rbjorn",
           img: "./resources/summergames2016/poses/torbjorn.jpg"
         }, {
           name: "Widowmaker",
@@ -130,7 +130,7 @@ OWI.factory('Data', function() {
           name: "Junkrat",
           img: "./resources/summergames2016/sprays/junkrat.jpg"
         }, {
-          name: "Lucio",
+          name: "L\u00DAcio",
           img: "./resources/summergames2016/sprays/lucio.jpg"
         }, {
           name: "McCree",
@@ -160,7 +160,7 @@ OWI.factory('Data', function() {
           name: "Symmetra",
           img: "./resources/summergames2016/sprays/symmetra.jpg"
         }, {
-          name: "Torbjorn",
+          name: "T\u00D6rbjorn",
           img: "./resources/summergames2016/sprays/torbjorn.jpg"
         }, {
           name: "Tracer",
@@ -367,9 +367,9 @@ OWI.factory('Data', function() {
         }],
         voicelines: [
           "Ana", "Bastion", "D.Va", "Genji", "Hanzo",
-          "Junkrat", "Lucio", "McCree", "Mei", "Mercy",
+          "Junkrat", "L\u00DAcio", "McCree", "Mei", "Mercy",
           "Pharah", "Reaper", "Reinhardt", "Roadhog",
-          "Soldier: 76", {dn: "Symmetra", name: "Symetra"}, "Torbjorn", "Tracer",
+          "Soldier: 76", "Symmetra", "T\u00D6rbjorn", "Tracer",
           "Widowmaker", "Winston", "Zarya", "Zenyatta"
         ],
         victoryposes: [{
@@ -391,7 +391,7 @@ OWI.factory('Data', function() {
           name: "Junkrat",
           img: "./resources/halloween2016/poses/junkrat.jpg"
         }, {
-          name: "Lucio",
+          name: "L\u00DAcio",
           img: "./resources/halloween2016/poses/lucio.jpg"
         }, {
           name: "McCree",
@@ -421,7 +421,7 @@ OWI.factory('Data', function() {
           name: "Symmetra",
           img: "./resources/halloween2016/poses/symmetra.jpg"
         }, {
-          name: "Torbjorn",
+          name: "T\u00D6rbjorn",
           img: "./resources/halloween2016/poses/torbjorn.jpg"
         }, {
           name: "Tracer",
@@ -458,7 +458,7 @@ OWI.factory('Data', function() {
           name: "Junkrat",
           img: "./resources/halloween2016/sprays/junkrat.jpg"
         }, {
-          name: "Lucio",
+          name: "L\u00DAcio",
           img: "./resources/halloween2016/sprays/lucio.jpg"
         }, {
           name: "McCree",
@@ -488,7 +488,7 @@ OWI.factory('Data', function() {
           name: "Symmetra",
           img: "./resources/halloween2016/sprays/symmetra.jpg"
         }, {
-          name: "Torbjorn",
+          name: "T\u00D6rbjorn",
           img: "./resources/halloween2016/sprays/torbjorn.jpg"
         }, {
           name: "Tracer",
@@ -576,9 +576,6 @@ OWI.factory('Data', function() {
           name: "The Witch",
           img: "./resources/halloween2016/icons/thewitch.png"
         }, {
-          name: "The Wolf",
-          img: "./resources/halloween2016/icons/thewolf.png"
-        }, {
           name: "Tombstone",
           img: "./resources/halloween2016/icons/tombstone.png"
         }, {
@@ -590,6 +587,9 @@ OWI.factory('Data', function() {
         }, {
           name: "Witch's Hat",
           img: "./resources/halloween2016/icons/witchshat.png"
+        }, {
+          name: "Wolf",
+          img: "./resources/halloween2016/icons/wolf.png"
         }]
       }
     }]
