@@ -50,7 +50,7 @@
         <h2>Voice Lines</h2> <span>(75 Coins)</span>
         <div class="items">
           <div class="item" ng-repeat="voice in data.items.voicelines track by $index">
-            <input type="checkbox" id="{{'voice' + $index}}" ng-model="checked.voicelines[voice.name ? voice.name : voice]" ng-change="onSelect()"> <label for="{{'voice' + $index}}"><h3>{{voice.dn ? voice.dn : voice}}</h3></label>
+            <input type="checkbox" id="{{'voice' + $index}}" ng-model="checked.voicelines[voice]" ng-change="onSelect()"> <label for="{{'voice' + $index}}"><h3>{{voice}}</h3></label>
           </div>
         </div>
       </div>
