@@ -2,7 +2,7 @@
   <div id="col1">
     <div id="row1" class="col">
       <div id="legendary-skins" class="section">
-        <div id="image-preview" scroll ng-class="{ show: preview, fixed: isFixed }">
+        <div id="image-preview" scroll ng-class="{ show: preview, small: preview.isSmall, fixed: isFixed }">
           <div class="preview" ng-show="preview.img">
             <h2>Image Preview</h2> <span>{{preview.name}}</span>
             <img src="{{preview.img}}" />
@@ -26,8 +26,10 @@
       </div>
       <div id="epic-skins" class="section">
         <h2>Epic Skins</h2>
-        <div class="item" ng-repeat="skin in data.items.skinsEpic track by $index" ng-mouseover="showPreview(skin)" ng-mouseleave="hidePreview()">
-          <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.epic[skin.name]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin.name}}</h3></label>
+        <div class="items">
+          <div class="item" ng-repeat="skin in data.items.skinsEpic track by $index" ng-mouseover="showPreview(skin)" ng-mouseleave="hidePreview()">
+            <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.epic[skin.name]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin.name}}</h3></label>
+          </div>
         </div>
       </div>
       <div class="right">
@@ -76,7 +78,7 @@
     <div id="icons" class="section">
       <h2>Player Icons</h2>
       <div class="items">
-        <div class="item" ng-repeat="icon in data.items.icons track by $index" ng-mouseover="showPreview(icon)" ng-mouseleave="hidePreview()">
+        <div class="item" ng-repeat="icon in data.items.icons track by $index" ng-mouseover="showPreview(icon, true)" ng-mouseleave="hidePreview()">
           <input type="checkbox" id="{{'icon' + $index}}" ng-model="checked.icons[icon.name]" ng-change="onSelect()"> <label for="{{'icon' + $index}}"><h3>{{icon.name}}</h3></label>
         </div>
       </div>

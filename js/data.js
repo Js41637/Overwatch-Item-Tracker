@@ -57,24 +57,24 @@ OWI.factory('Data', function() {
           img: "./resources/summergames2016/skins/epic/widowmaker.jpg"
         }],
         intros: [{
-          name: "Shotput Junkrat",
-          video: "./resources/summergames2016/intros/junkrat.webm"
+          name: "Shotput Junkrat"
+          //video: "./resources/summergames2016/intros/junkrat.webm"
         }, {
-          name: "Bicycle Kick L\u00DAcio",
-          video: "./resources/summergames2016/intros/lucio.webm"
+          name: "Bicycle Kick L\u00DAcio"
+          //video: "./resources/summergames2016/intros/lucio.webm"
         }, {
-          name: "Hurdle Tracer",
-          video: "./resources/summergames2016/intros/tracer.webm"
+          name: "Hurdle Tracer"
+          //video: "./resources/summergames2016/intros/tracer.webm"
         }],
         emotes: [{
-          name: "Boxing Bastion",
-          video: "./resources/summergames2016/intros/bastion.webm"
+          name: "Boxing Bastion"
+          //video: "./resources/summergames2016/intros/bastion.webm"
         }, {
-          name: "Juggle L\u00DAcio",
-          video: "./resources/summergames2016/intros/lucio.webm"
+          name: "Juggle L\u00DAcio"
+          //video: "./resources/summergames2016/intros/lucio.webm"
         }, {
-          name: "Ribbon Symmetra",
-          video: "./resources/summergames2016/intros/symmetra.webm"
+          name: "Ribbon Symmetra"
+          //video: "./resources/summergames2016/intros/symmetra.webm"
         }],
         voicelines: [
           "Ana", "Bastion", "D.Va", "Genji", "Hanzo",
@@ -192,7 +192,7 @@ OWI.factory('Data', function() {
           img: "./resources/summergames2016/icons/basketball.png"
         }, {
           name: "Boxing",
-          img: "./resources/summergames2016/icons/Boxing.png"
+          img: "./resources/summergames2016/icons/boxing.png"
         }, {
           name: "Cycling",
           img: "./resources/summergames2016/icons/cycling.png"
@@ -221,8 +221,8 @@ OWI.factory('Data', function() {
           name: "Martial Arts",
           img: "./resources/summergames2016/icons/martialarts.png"
         }, {
-          name: "Rhythmic",
-          img: "./resources/summergames2016/icons/rhythmic.png"
+          name: "Rhythmic Gymnastics",
+          img: "./resources/summergames2016/icons/rhythmicgymnastics.png"
         }, {
           name: "Shooting",
           img: "./resources/summergames2016/icons/shooting.png"

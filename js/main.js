@@ -10,24 +10,8 @@ OWI.controller('MainCtrl', ["Data", function(Data) {
 
   var storedData = localStorage.getItem('data')
   if (storedData) {
-    var data = JSON.parse(storedData)
-    if (!data.halloween2016) { // Migrate data to new format
-      data = Object.assign({}, Data.checked, { halloween2016: data });
-      localStorage.setItem('data', JSON.stringify(data));
-      Data.checked = data;
-    } else {
-      // Temp cheat to fix renamed data
-      var tempData = JSON.stringify(data)
-      if (tempData.indexOf('Lucio') >= 0) {
-        tempData = tempData.replace(/Lucio/g, 'L\u00DAcio')
-        tempData = tempData.replace(/Torbjorn/g, 'T\u00D6rbjorn')
-        tempData = tempData.replace(/Symetra/, 'Symmetra')
-        tempData = tempData.replace(/The Wolf/, 'Wolf')
-        localStorage.setItem('data', tempData);
-        data = JSON.parse(tempData)
-      }
-      Data.checked = Object.assign({}, Data.checked, data);
-    }
+    var data = JSON.parse(storedData);
+    Data.checked = Object.assign({}, Data.checked, data);
   }
 }]);
 
@@ -35,7 +19,7 @@ OWI.directive("scroll", function ($window) {
   return function($scope) {
     angular.element($window).bind("scroll", function() {
       if (this.innerWidth > 1540) return;
-      $scope.isFixed = this.pageYOffset >= 170 ? true : false;
+      $scope.isFixed = this.pageYOffset >= 200 ? true : false;
       $scope.$apply();
     });
   };
@@ -62,10 +46,12 @@ OWI.directive("update", ["Data", function(Data) {
 
       var showTimeout = undefined;
       var hideTimeout = undefined;
-      $scope.showPreview = function(what) {
+      $scope.showPreview = function(what, small) {
+        if (!what.img && !what.video) return;
         if (showTimeout) return;
         clearTimeout(hideTimeout)
         showTimeout = setTimeout(function () {
+          what.isSmall = small;
           $scope.preview = what;
           $scope.$digest();
         }, $scope.preview ? 100 : 650);

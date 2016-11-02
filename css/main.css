@@ -24,7 +24,7 @@ body {
 }
 
 #header {
-  height: 80px;
+  height: 65px;
   background-color: rgb(45, 45, 45);
   color: orange;
   padding: 0 15px;
@@ -39,8 +39,8 @@ body {
 
 #header .seperator {
   margin: 0 60px;
-  font-size: 60px;
-  padding-top: 7px;
+  font-size: 50px;
+  padding-top: 3px;
   color: rgb(250, 250, 250);
   font-style: italic;
 }
@@ -57,6 +57,7 @@ body {
   font-size: 80px;
   transform: rotateZ(-45deg);
   cursor: pointer;
+  margin-top: -8px;
 }
 
 #header .tooltip.show {
@@ -67,7 +68,7 @@ body {
   opacity: 0;
   transition: opacity 0.125s ease-in-out;
   position: absolute;
-  width: 105px;
+  width: 135px;
   bottom: -10px;
   right: -8px;
   text-align: center;
@@ -97,7 +98,7 @@ body {
 }
 
 #header h1 {
-  font-size: 64px;
+  font-size: 58px;
   display: inline-block;
   font-style: italic;
 }
@@ -114,10 +115,42 @@ body {
   font-style: italic;
 }
 
-#protip {
+#menu {
   text-align: center;
+  font-size: 21px;
+  padding: 4px;
+}
+
+#menu .button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 3px 9px;
+  border-top: 2px solid rgb(250, 250, 250);
+  border-bottom: 2px solid rgb(250, 250, 250);
+  background-color: rgb(81, 105, 145);
+  color: rgb(250, 250, 250);
+  transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out;
+  letter-spacing: 0.3;
+}
+
+#menu .button.selected, #menu .button:hover {
+  background-color: rgb(250, 250, 250);
+  color: rgb(51, 51, 51);
+}
+
+#menu .button:first-of-type {
+  border-left: 2px solid rgb(250, 250, 250);
+}
+
+#menu .button:last-of-type {
+  border-right: 2px solid rgb(250, 250, 250);
+}
+
+#protip {
   font-size: 20px;
   margin-top: 2px;
+  margin-left: 10px;
+  position: absolute;
 }
 
 @media screen and (max-width: 1340px) {
@@ -143,10 +176,11 @@ body {
   text-align: right;
   padding-right: 20px;
   color: #405275;
+  font-size: 14px;
 }
 
 .item-container {
-  padding: 10px 10px 15px;
+  padding: 8px 6px 13px;
   display: flex;
   justify-content: center;
 }
@@ -238,6 +272,43 @@ body {
 
 #icons .item:nth-of-type(even) {
   background-color: rgba(239, 172, 205,0.5);
+}
+
+#image-preview {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.155s ease-in-out;
+  pointer-events: none;
+}
+
+#image-preview img {
+  display: block;
+  height: calc(100% - 52px);
+  margin-left: 40px;
+}
+
+#image-preview video {
+  width: 100%;
+  height: calc(100% - 52px);
+}
+
+#image-preview.show {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+#image-preview.fixed {
+  position: fixed;
+  width: 700px;
+  height: 420px;
+  margin-top: -170px;
+}
+
+#image-preview.small img {
+    height: calc(80% - 52px);
 }
 
 /**
@@ -366,39 +437,6 @@ body {
   font-size: 25px;
 }
 
-#halloween2016 #image-preview {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.155s ease-in-out;
-  pointer-events: none;
-}
-
-#halloween2016 #image-preview img {
-  display: block;
-  height: calc(100% - 52px);
-  margin: 0 auto;
-}
-
-#halloween2016 #image-preview video {
-  width: 100%;
-  height: calc(100% - 52px);
-}
-
-#halloween2016 #image-preview.show {
-  opacity: 1;
-  transition-delay: 0.1s;
-}
-
-#halloween2016 #image-preview.fixed {
-  position: fixed;
-  width: 700px;
-  height: 420px;
-  margin-top: -170px;
-}
-
 @media screen and (max-width: 1540px) {
   #halloween2016 {
     flex-direction: column;
@@ -458,6 +496,10 @@ body {
     height: 422px;
   }
 
+  #halloween2016 #victoryposes .item {
+    z-index: 1;
+  }
+
   #halloween2016 #col2 .bottom {
     width: 70%;
     padding: 0;
@@ -476,11 +518,11 @@ body {
  */
 
 #summergames2016 #col1 {
-  width: 81%;
+  width: 78%;
 }
 
 #summergames2016 #col2 {
-  width: 18%;
+  width: 21%;
 }
 
 #summergames2016 #row1, #summergames2016 #row2 {
@@ -489,9 +531,9 @@ body {
 
 #summergames2016 #legendary-skins {
   color: #405275;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   position: relative;
-  width: 60%;
+  width: 62%;
 }
 
 #summergames2016 #legendary-skins .inner {
@@ -504,7 +546,7 @@ body {
 }
 
 #summergames2016 #legendary-skins .images {
-  height: 370px;
+  height: 348px;
   display: flex;
   justify-content: space-between;
 }
@@ -545,7 +587,7 @@ body {
 }
 
 #summergames2016 #epic-skins, #summergames2016 .right {
-  width: 19%;
+  width: 18%;
 }
 
 #summergames2016 #epic-skins {
@@ -572,30 +614,29 @@ body {
 }
 
 #summergames2016 #victoryposes {
-  width: 21%;
+  width: 15%;
   margin-right: 0.7%;
 }
 
 #summergames2016 #sprays {
-  width: 39%;
+  width: 45%;
+}
+
+#summergames2016 #voicelines .item, #summergames2016 #sprays .item {
+    width: 31.6%;
 }
 
 #summergames2016 #voicelines .items, #summergames2016 #sprays .items {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 300px;
+  height: 333px;
 }
 
 #summergames2016 #victoryposes .items {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 200px;
-}
-
-#summergames2016 #sprays .item {
-  width: 32%;
 }
 
 #summergames2016 #sprays h3 {
@@ -609,45 +650,15 @@ body {
   height: 745px;
 }
 
+#summergames2016 #icons .item:nth-of-type(14) h3 {
+  font-size: 21px;
+}
+
 #summergames2016 #icons .items .item {
   width: 49%;
 }
 
-
-#summergames2016 #image-preview {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.155s ease-in-out;
-  pointer-events: none;
-}
-
-#summergames2016 #image-preview img {
-  display: block;
-  height: calc(100% - 52px);
-  margin: 0 auto;
-}
-
-#summergames2016 #image-preview video {
-  width: 100%;
-  height: calc(100% - 52px);
-}
-
-#summergames2016 #image-preview.show {
-  opacity: 1;
-  transition-delay: 0.1s;
-}
-
-#summergames2016 #image-preview.fixed {
-  position: fixed;
-  width: 700px;
-  height: 420px;
-  margin-top: -170px;
-}
-
-@media screen and (max-width: 1540px) {
+@media screen and (max-width: 1655px) {
   #summergames2016 {
     flex-direction: column;
     align-items: center;
@@ -662,59 +673,86 @@ body {
 
   #summergames2016 #col1 {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-direction: column;
+  }
+
+  #summergames2016 #row1, #summergames2016 #row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #summergames2016 #row2 {
+    margin-top: 13px;
   }
 
   #summergames2016 #legendary-skins {
-    width: 70%;
-    margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 13px;
   }
 
   #summergames2016 #epic-skins {
-    width: 29%;
+    width: 50%;
     margin: 0;
+  }
+
+  #summergames2016 #epic-skins .items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 111px;
+  }
+
+  #summergames2016 #epic-skins .items .item {
+    width: 48%;
+    padding: 5px 2px;
   }
 
   #summergames2016 #col1 .right {
     display: flex;
-    width: 100%;
+    width: 50%;
     flex-direction: row;
   }
 
   #summergames2016 #highlight-intros, #summergames2016 #emotes {
-    width: 34%;
+    width: 49%;
   }
 
   #summergames2016 #emotes {
-    margin-left: 2%;
+    margin-left: 1%;
   }
 
   #summergames2016 #emotes h2 {
     margin-top: 0;
   }
 
-  #summergames2016 #col2 .top {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-    width: 70%;
-    padding: 0;
+  #summergames2016 #victoryposes {
+    width: 19%;
   }
 
-  #summergames2016 #voicelines .items, #summergames2016 #victoryposes .items {
-    height: 422px;
+  #summergames2016 #victoryposes .item {
+    z-index: 1;
   }
 
-  #summergames2016 #col2 .bottom {
-    width: 70%;
-    padding: 0;
+  #summergames2016 #sprays {
+    width: 41%;
   }
 
-  #summergames2016 #col3 {
-    width: 290px;
-    position: absolute;
-    top: 362px;
-    right: 12px;
+  #summergames2016 #sprays .items, #summergames2016 #victoryposes .items {
+    height: 333px;
   }
+
+  #summergames2016 #icons .item h3, #summergames2016 #sprays .item h3, #summergames2016 #victoryposes .item h3, #summergames2016 #voicelines .item h3 {
+    font-size: 23px;
+  }
+
+  #summergames2016 #icons .items {
+    height: 259px;
+  }
+
+  #summergames2016 #icons .items .item {
+    width: 15.6%;
+  }
+
 }
