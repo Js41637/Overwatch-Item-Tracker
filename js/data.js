@@ -57,7 +57,7 @@ OWI.factory('Data', function() {
           img: "./resources/summergames2016/skins/epic/widowmaker.jpg"
         }],
         intros: [{
-          name: "Shotput Junkrat"
+          name: "Shotput Junkrat",
           video: "./resources/summerg,ames2016/intros/junkrat.webm"
         }, {
           name: "Bicycle Kick L\u00DAcio",
