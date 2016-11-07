@@ -58,7 +58,7 @@ OWI.factory('Data', function() {
         }],
         intros: [{
           name: "Shotput Junkrat",
-          video: "./resources/summerg,ames2016/intros/junkrat.webm"
+          video: "./resources/summergames2016/intros/junkrat.webm"
         }, {
           name: "Bicycle Kick L\u00DAcio",
           video: "./resources/summergames2016/intros/lucio.webm"
@@ -68,13 +68,13 @@ OWI.factory('Data', function() {
         }],
         emotes: [{
           name: "Boxing Bastion",
-          video: "./resources/summergames2016/intros/bastion.webm"
+          video: "./resources/summergames2016/emotes/bastion.webm"
         }, {
           name: "Juggle L\u00DAcio",
-          video: "./resources/summergames2016/intros/lucio.webm"
+          video: "./resources/summergames2016/emotes/lucio.webm"
         }, {
           name: "Ribbon Symmetra",
-          video: "./resources/summergames2016/intros/symmetra.webm"
+          video: "./resources/summergames2016/emotes/symmetra.webm"
         }],
         voicelines: [
           "Ana", "Bastion", "D.Va", "Genji", "Hanzo",
