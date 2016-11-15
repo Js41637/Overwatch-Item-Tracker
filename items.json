@@ -1,0 +1,8339 @@
+{
+  "reaper": {
+    "name": "Reaper",
+    "class": "Assault",
+    "id": "reaper",
+    "items": {
+      "skins": [
+        {
+          "name": "Blackwatch Reyes",
+          "quality": "legendary",
+          "id": "blackwatch-reyes"
+        },
+        {
+          "name": "Royal",
+          "quality": "rare",
+          "id": "royal"
+        },
+        {
+          "name": "Blood",
+          "quality": "rare",
+          "id": "blood"
+        },
+        {
+          "name": "Midnight",
+          "quality": "rare",
+          "id": "midnight"
+        },
+        {
+          "name": "Moss",
+          "quality": "rare",
+          "id": "moss"
+        },
+        {
+          "name": "Desert",
+          "quality": "epic",
+          "id": "desert"
+        },
+        {
+          "name": "Wight",
+          "quality": "epic",
+          "id": "wight"
+        },
+        {
+          "name": "Mariachi",
+          "quality": "legendary",
+          "id": "mariachi"
+        },
+        {
+          "name": "El Blanco",
+          "quality": "legendary",
+          "id": "el-blanco"
+        },
+        {
+          "name": "Nevermore",
+          "quality": "legendary",
+          "id": "nevermore"
+        },
+        {
+          "name": "Plague Doctor",
+          "quality": "legendary",
+          "id": "plague-doctor"
+        },
+        {
+          "name": "Pumpkin",
+          "quality": "legendary",
+          "id": "pumpkin"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Slice",
+          "quality": "epic",
+          "id": "slice"
+        },
+        {
+          "name": "Slow Clap",
+          "quality": "epic",
+          "id": "slow-clap"
+        },
+        {
+          "name": "Not Impressed",
+          "quality": "epic",
+          "id": "not-impressed"
+        },
+        {
+          "name": "Cackle",
+          "quality": "epic",
+          "id": "cackle"
+        },
+        {
+          "name": "Take a knee",
+          "quality": "epic",
+          "id": "take-a-knee"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Executioner",
+          "quality": "epic",
+          "id": "executioner"
+        },
+        {
+          "name": "SHADOW STEP",
+          "quality": "epic",
+          "id": "shadow-step"
+        },
+        {
+          "name": "Death Blossom",
+          "quality": "epic",
+          "id": "death-blossom"
+        },
+        {
+          "name": "Eternal Rest",
+          "quality": "epic",
+          "id": "eternal-rest"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Reaper",
+          "quality": "rare",
+          "id": "reaper"
+        },
+        {
+          "name": "Soul",
+          "quality": "rare",
+          "id": "soul"
+        },
+        {
+          "name": "Emblem",
+          "quality": "rare",
+          "id": "emblem"
+        },
+        {
+          "name": "BMX",
+          "quality": "rare",
+          "id": "bmx"
+        },
+        {
+          "name": "The Reaper",
+          "quality": "rare",
+          "id": "the-reaper"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Psst",
+          "quality": "common",
+          "id": "psst"
+        },
+        {
+          "name": "Everywhere",
+          "quality": "common",
+          "id": "everywhere"
+        },
+        {
+          "name": "Revenge",
+          "quality": "common",
+          "id": "revenge"
+        },
+        {
+          "name": "Soul Globe",
+          "quality": "common",
+          "id": "soul-globe"
+        },
+        {
+          "name": "Oops",
+          "quality": "common",
+          "id": "oops"
+        },
+        {
+          "name": "Blossom",
+          "quality": "common",
+          "id": "blossom"
+        },
+        {
+          "name": "Shadow",
+          "quality": "common",
+          "id": "shadow"
+        },
+        {
+          "name": "Cloaked",
+          "quality": "common",
+          "id": "cloaked"
+        },
+        {
+          "name": "Blackwatch",
+          "quality": "common",
+          "id": "blackwatch"
+        },
+        {
+          "name": "Hooded",
+          "quality": "common",
+          "id": "hooded"
+        },
+        {
+          "name": "Death Blossom",
+          "quality": "common",
+          "id": "death-blossom"
+        },
+        {
+          "name": "Shadow Step",
+          "quality": "common",
+          "id": "shadow-step"
+        },
+        {
+          "name": "Scythes",
+          "quality": "common",
+          "id": "scythes"
+        },
+        {
+          "name": "Grave",
+          "quality": "common",
+          "id": "grave"
+        },
+        {
+          "name": "Silent",
+          "quality": "common",
+          "id": "silent"
+        },
+        {
+          "name": "Reaping",
+          "quality": "common",
+          "id": "reaping"
+        },
+        {
+          "name": "Death Comes",
+          "quality": "common",
+          "id": "death-comes"
+        },
+        {
+          "name": "Time to Kill",
+          "quality": "common",
+          "id": "time-to-kill"
+        },
+        {
+          "name": "Die Die Die",
+          "quality": "common",
+          "id": "die-die-die"
+        },
+        {
+          "name": "Reap On",
+          "quality": "common",
+          "id": "reap-on"
+        },
+        {
+          "name": "Hellfire",
+          "quality": "common",
+          "id": "hellfire"
+        },
+        {
+          "name": "Horns",
+          "quality": "common",
+          "id": "horns"
+        },
+        {
+          "name": "BMX",
+          "quality": "common",
+          "id": "bmx"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "What are you looking at",
+          "quality": "common",
+          "id": "what-are-you-looking-at"
+        },
+        {
+          "name": "Dead man walking",
+          "quality": "common",
+          "id": "dead-man-walking"
+        },
+        {
+          "name": "Next",
+          "quality": "common",
+          "id": "next"
+        },
+        {
+          "name": "Haven't I killed you",
+          "quality": "common",
+          "id": "havent-i-killed-you"
+        },
+        {
+          "name": "Too easy",
+          "quality": "common",
+          "id": "too-easy"
+        },
+        {
+          "name": "Was that all?",
+          "quality": "common",
+          "id": "was-that-all"
+        },
+        {
+          "name": "Give me a break",
+          "quality": "common",
+          "id": "give-me-a-break"
+        },
+        {
+          "name": "Psychopath",
+          "quality": "common",
+          "id": "psychopath"
+        },
+        {
+          "name": "Seen a ghost?",
+          "quality": "common",
+          "id": "seen-a-ghost"
+        },
+        {
+          "name": "If it lives, I can kill it",
+          "quality": "common",
+          "id": "if-it-lives-i-can-kill-it"
+        },
+        {
+          "name": "I'm back in black",
+          "quality": "common",
+          "id": "im-back-in-black"
+        },
+        {
+          "name": "It's in the refrigerator",
+          "quality": "common",
+          "id": "its-in-the-refrigerator"
+        },
+        {
+          "name": "I work the graveyard shift",
+          "quality": "common",
+          "id": "i-work-the-graveyard-shift"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Enigmatic",
+          "quality": "rare",
+          "id": "enigmatic"
+        },
+        {
+          "name": "Menacing",
+          "quality": "rare",
+          "id": "menacing"
+        },
+        {
+          "name": "Casual",
+          "quality": "rare",
+          "id": "casual"
+        },
+        {
+          "name": "Medal",
+          "quality": "rare",
+          "id": "medal"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "zarya": {
+    "name": "Zarya",
+    "class": "Tank",
+    "id": "zarya",
+    "items": {
+      "skins": [
+        {
+          "name": "Taiga",
+          "quality": "rare",
+          "id": "taiga"
+        },
+        {
+          "name": "Violet",
+          "quality": "rare",
+          "id": "violet"
+        },
+        {
+          "name": "Brick",
+          "quality": "rare",
+          "id": "brick"
+        },
+        {
+          "name": "Goldenrod",
+          "quality": "rare",
+          "id": "goldenrod"
+        },
+        {
+          "name": "Dawn",
+          "quality": "epic",
+          "id": "dawn"
+        },
+        {
+          "name": "Midnight",
+          "quality": "epic",
+          "id": "midnight"
+        },
+        {
+          "name": "Industrial",
+          "quality": "legendary",
+          "id": "industrial"
+        },
+        {
+          "name": "Cybergoth",
+          "quality": "legendary",
+          "id": "cybergoth"
+        },
+        {
+          "name": "Siberian Front",
+          "quality": "legendary",
+          "id": "siberian-front"
+        },
+        {
+          "name": "Arctic",
+          "quality": "legendary",
+          "id": "arctic"
+        },
+        {
+          "name": "Champion",
+          "quality": "legendary",
+          "id": "champion"
+        },
+        {
+          "name": "Weightlifter",
+          "quality": "legendary",
+          "id": "weightlifter"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Pumping Iron",
+          "quality": "epic",
+          "id": "pumping-iron"
+        },
+        {
+          "name": "Bring It On",
+          "quality": "epic",
+          "id": "bring-it-on"
+        },
+        {
+          "name": "Crush You",
+          "quality": "epic",
+          "id": "crush-you"
+        },
+        {
+          "name": "Comedy gold",
+          "quality": "epic",
+          "id": "comedy-gold"
+        },
+        {
+          "name": "Take a Knee",
+          "quality": "epic",
+          "id": "take-a-knee"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "This Is Strength",
+          "quality": "epic",
+          "id": "this-is-strength"
+        },
+        {
+          "name": "DEADLIFT",
+          "quality": "epic",
+          "id": "deadlift"
+        },
+        {
+          "name": "Maximum Charge",
+          "quality": "epic",
+          "id": "maximum-charge"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Zarya",
+          "quality": "rare",
+          "id": "zarya"
+        },
+        {
+          "name": "Particle Barrier",
+          "quality": "rare",
+          "id": "particle-barrier"
+        },
+        {
+          "name": "512",
+          "quality": "rare",
+          "id": "512"
+        },
+        {
+          "name": "Weightlifting",
+          "quality": "rare",
+          "id": "weightlifting"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Shield",
+          "quality": "common",
+          "id": "shield"
+        },
+        {
+          "name": "Surge",
+          "quality": "common",
+          "id": "surge"
+        },
+        {
+          "name": "Pumped",
+          "quality": "common",
+          "id": "pumped"
+        },
+        {
+          "name": "512",
+          "quality": "common",
+          "id": "512"
+        },
+        {
+          "name": "Barrier",
+          "quality": "common",
+          "id": "barrier"
+        },
+        {
+          "name": "Lift",
+          "quality": "common",
+          "id": "lift"
+        },
+        {
+          "name": "Focused",
+          "quality": "common",
+          "id": "focused"
+        },
+        {
+          "name": "Defender",
+          "quality": "common",
+          "id": "defender"
+        },
+        {
+          "name": "Weights",
+          "quality": "common",
+          "id": "weights"
+        },
+        {
+          "name": "For the People",
+          "quality": "common",
+          "id": "for-the-people"
+        },
+        {
+          "name": "Cannon",
+          "quality": "common",
+          "id": "cannon"
+        },
+        {
+          "name": "Gun Show",
+          "quality": "common",
+          "id": "gun-show"
+        },
+        {
+          "name": "Pink",
+          "quality": "common",
+          "id": "pink"
+        },
+        {
+          "name": "Champion",
+          "quality": "common",
+          "id": "champion"
+        },
+        {
+          "name": "Wrestle",
+          "quality": "common",
+          "id": "wrestle"
+        },
+        {
+          "name": "Bear",
+          "quality": "common",
+          "id": "bear"
+        },
+        {
+          "name": "Smile",
+          "quality": "common",
+          "id": "smile"
+        },
+        {
+          "name": "Strength",
+          "quality": "common",
+          "id": "strength"
+        },
+        {
+          "name": "Avenger",
+          "quality": "common",
+          "id": "avenger"
+        },
+        {
+          "name": "We Are Strong",
+          "quality": "common",
+          "id": "we-are-strong"
+        },
+        {
+          "name": "Tobelstein",
+          "quality": "common",
+          "id": "tobelstein"
+        },
+        {
+          "name": "Alexandra",
+          "quality": "common",
+          "id": "alexandra"
+        },
+        {
+          "name": "Weightlifting",
+          "quality": "common",
+          "id": "weightlifting"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Strong as the mountain",
+          "quality": "common",
+          "id": "strong-as-the-mountain"
+        },
+        {
+          "name": "Need personal training?",
+          "quality": "common",
+          "id": "need-personal-training"
+        },
+        {
+          "name": "Get down, give me 20",
+          "quality": "common",
+          "id": "get-down-give-me-20"
+        },
+        {
+          "name": "No mercy",
+          "quality": "common",
+          "id": "no-mercy"
+        },
+        {
+          "name": "Welcome to the gun show",
+          "quality": "common",
+          "id": "welcome-to-the-gun-show"
+        },
+        {
+          "name": "Together we are strong",
+          "quality": "common",
+          "id": "together-we-are-strong"
+        },
+        {
+          "name": "I can bench more than you",
+          "quality": "common",
+          "id": "i-can-bench-more-than-you"
+        },
+        {
+          "name": "Siberian bear",
+          "quality": "common",
+          "id": "siberian-bear"
+        },
+        {
+          "name": "I am Mother Russia",
+          "quality": "common",
+          "id": "i-am-mother-russia"
+        },
+        {
+          "name": "In Russia, game plays you",
+          "quality": "common",
+          "id": "in-russia-game-plays-you"
+        },
+        {
+          "name": "I will break you",
+          "quality": "common",
+          "id": "i-will-break-you"
+        },
+        {
+          "name": "No pain, no gain",
+          "quality": "common",
+          "id": "no-pain-no-gain"
+        },
+        {
+          "name": "Never forget the fallen",
+          "quality": "common",
+          "id": "never-forget-the-fallen"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Casual",
+          "quality": "rare",
+          "id": "casual"
+        },
+        {
+          "name": "Flexing",
+          "quality": "rare",
+          "id": "flexing"
+        },
+        {
+          "name": "Check out this gun",
+          "quality": "rare",
+          "id": "check-out-this-gun"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "mccree": {
+    "name": "McCree",
+    "class": "Assault",
+    "id": "mccree",
+    "items": {
+      "skins": [
+        {
+          "name": "Lake",
+          "quality": "rare",
+          "id": "lake"
+        },
+        {
+          "name": "Sage",
+          "quality": "rare",
+          "id": "sage"
+        },
+        {
+          "name": "Wheat",
+          "quality": "rare",
+          "id": "wheat"
+        },
+        {
+          "name": "Ebony",
+          "quality": "rare",
+          "id": "ebony"
+        },
+        {
+          "name": "On the Range",
+          "quality": "epic",
+          "id": "on-the-range"
+        },
+        {
+          "name": "White Hat",
+          "quality": "epic",
+          "id": "white-hat"
+        },
+        {
+          "name": "Gambler",
+          "quality": "legendary",
+          "id": "gambler"
+        },
+        {
+          "name": "Riverboat",
+          "quality": "legendary",
+          "id": "riverboat"
+        },
+        {
+          "name": "Mystery Man",
+          "quality": "legendary",
+          "id": "mystery-man"
+        },
+        {
+          "name": "Vigilante",
+          "quality": "legendary",
+          "id": "vigilante"
+        },
+        {
+          "name": "American",
+          "quality": "epic",
+          "id": "american"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Gunspinning",
+          "quality": "epic",
+          "id": "gunspinning"
+        },
+        {
+          "name": "Hat Tip",
+          "quality": "epic",
+          "id": "hat-tip"
+        },
+        {
+          "name": "Spit",
+          "quality": "epic",
+          "id": "spit"
+        },
+        {
+          "name": "Joker",
+          "quality": "epic",
+          "id": "joker"
+        },
+        {
+          "name": "Take a load off",
+          "quality": "epic",
+          "id": "take-a-load-off"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "The name's McCree",
+          "quality": "epic",
+          "id": "the-names-mccree"
+        },
+        {
+          "name": "The Duel",
+          "quality": "epic",
+          "id": "the-duel"
+        },
+        {
+          "name": "Rolling into Action",
+          "quality": "epic",
+          "id": "rolling-into-action"
+        }
+      ],
+      "icons": [
+        {
+          "name": "McCree",
+          "quality": "rare",
+          "id": "mccree"
+        },
+        {
+          "name": "Badge",
+          "quality": "rare",
+          "id": "badge"
+        },
+        {
+          "name": "Deadeye",
+          "quality": "rare",
+          "id": "deadeye"
+        },
+        {
+          "name": "Equestrian",
+          "quality": "rare",
+          "id": "equestrian"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Badge",
+          "quality": "common",
+          "id": "badge"
+        },
+        {
+          "name": "Gunslinger",
+          "quality": "common",
+          "id": "gunslinger"
+        },
+        {
+          "name": "Tumbleweed",
+          "quality": "common",
+          "id": "tumbleweed"
+        },
+        {
+          "name": "Bullet",
+          "quality": "common",
+          "id": "bullet"
+        },
+        {
+          "name": "Skull",
+          "quality": "common",
+          "id": "skull"
+        },
+        {
+          "name": "Spin",
+          "quality": "common",
+          "id": "spin"
+        },
+        {
+          "name": "Noose",
+          "quality": "common",
+          "id": "noose"
+        },
+        {
+          "name": "Thumbs Up",
+          "quality": "common",
+          "id": "thumbs-up"
+        },
+        {
+          "name": "Bang!",
+          "quality": "common",
+          "id": "bang"
+        },
+        {
+          "name": "Deadeye",
+          "quality": "common",
+          "id": "deadeye"
+        },
+        {
+          "name": "BAMF",
+          "quality": "common",
+          "id": "bamf"
+        },
+        {
+          "name": "Target",
+          "quality": "common",
+          "id": "target"
+        },
+        {
+          "name": "The Name's",
+          "quality": "common",
+          "id": "the-names"
+        },
+        {
+          "name": "Draw",
+          "quality": "common",
+          "id": "draw"
+        },
+        {
+          "name": "Take It Easy",
+          "quality": "common",
+          "id": "take-it-easy"
+        },
+        {
+          "name": "Jesse",
+          "quality": "common",
+          "id": "jesse"
+        },
+        {
+          "name": "Outlaw",
+          "quality": "common",
+          "id": "outlaw"
+        },
+        {
+          "name": "Enigma",
+          "quality": "common",
+          "id": "enigma"
+        },
+        {
+          "name": "Wanted",
+          "quality": "common",
+          "id": "wanted"
+        },
+        {
+          "name": "High Noon",
+          "quality": "common",
+          "id": "high-noon"
+        },
+        {
+          "name": "Buckle",
+          "quality": "common",
+          "id": "buckle"
+        },
+        {
+          "name": "Your Face Here",
+          "quality": "common",
+          "id": "your-face-here"
+        },
+        {
+          "name": "Equestrian",
+          "quality": "common",
+          "id": "equestrian"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Watch and learn",
+          "quality": "common",
+          "id": "watch-and-learn"
+        },
+        {
+          "name": "Ain't I killed you before",
+          "quality": "common",
+          "id": "aint-i-killed-you-before"
+        },
+        {
+          "name": "You done?",
+          "quality": "common",
+          "id": "you-done"
+        },
+        {
+          "name": "Sure as hell ain't ugly",
+          "quality": "common",
+          "id": "sure-as-hell-aint-ugly"
+        },
+        {
+          "name": "I'm the quick...",
+          "quality": "common",
+          "id": "im-the-quick"
+        },
+        {
+          "name": "Happens to the best of us",
+          "quality": "common",
+          "id": "happens-to-the-best-of-us"
+        },
+        {
+          "name": "Reach for the sky",
+          "quality": "common",
+          "id": "reach-for-the-sky"
+        },
+        {
+          "name": "I tried being reasonable",
+          "quality": "common",
+          "id": "i-tried-being-reasonable"
+        },
+        {
+          "name": "I've got a bullet...",
+          "quality": "common",
+          "id": "ive-got-a-bullet"
+        },
+        {
+          "name": "I'm your huckleberry",
+          "quality": "common",
+          "id": "im-your-huckleberry"
+        },
+        {
+          "name": "Wanted: dead or alive",
+          "quality": "common",
+          "id": "wanted-dead-or-alive"
+        },
+        {
+          "name": "I don't much like losing",
+          "quality": "common",
+          "id": "i-dont-much-like-losing"
+        },
+        {
+          "name": "It's your funeral",
+          "quality": "common",
+          "id": "its-your-funeral"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Take it easy",
+          "quality": "rare",
+          "id": "take-it-easy"
+        },
+        {
+          "name": "Over the Shoulder",
+          "quality": "rare",
+          "id": "over-the-shoulder"
+        },
+        {
+          "name": "Contemplative",
+          "quality": "rare",
+          "id": "contemplative"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "soldier-76": {
+    "name": "Soldier: 76",
+    "class": "Assault",
+    "id": "soldier-76",
+    "items": {
+      "skins": [
+        {
+          "name": "Strike-Commander Morrison",
+          "quality": "legendary",
+          "id": "strikecommander-morrison"
+        },
+        {
+          "name": "Olive",
+          "quality": "rare",
+          "id": "olive"
+        },
+        {
+          "name": "Russet",
+          "quality": "rare",
+          "id": "russet"
+        },
+        {
+          "name": "Smoke",
+          "quality": "rare",
+          "id": "smoke"
+        },
+        {
+          "name": "Jet",
+          "quality": "rare",
+          "id": "jet"
+        },
+        {
+          "name": "Bone",
+          "quality": "epic",
+          "id": "bone"
+        },
+        {
+          "name": "Golden",
+          "quality": "epic",
+          "id": "golden"
+        },
+        {
+          "name": "Daredevil: 76",
+          "quality": "legendary",
+          "id": "daredevil-76"
+        },
+        {
+          "name": "Stunt Rider: 76",
+          "quality": "legendary",
+          "id": "stunt-rider-76"
+        },
+        {
+          "name": "Commando: 76",
+          "quality": "legendary",
+          "id": "commando-76"
+        },
+        {
+          "name": "Night Ops: 76",
+          "quality": "legendary",
+          "id": "night-ops-76"
+        },
+        {
+          "name": "Immortal",
+          "quality": "epic",
+          "id": "immortal"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Locked and Loaded",
+          "quality": "epic",
+          "id": "locked-and-loaded"
+        },
+        {
+          "name": "Fist",
+          "quality": "epic",
+          "id": "fist"
+        },
+        {
+          "name": "I see you",
+          "quality": "epic",
+          "id": "i-see-you"
+        },
+        {
+          "name": "Amused",
+          "quality": "epic",
+          "id": "amused"
+        },
+        {
+          "name": "Take a Knee",
+          "quality": "epic",
+          "id": "take-a-knee"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Looking at You",
+          "quality": "epic",
+          "id": "looking-at-you"
+        },
+        {
+          "name": "Target Rich Environment",
+          "quality": "epic",
+          "id": "target-rich-environment"
+        },
+        {
+          "name": "HELIX",
+          "quality": "epic",
+          "id": "helix"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Soldier: 76",
+          "quality": "rare",
+          "id": "soldier-76"
+        },
+        {
+          "name": "Strike-Commander",
+          "quality": "rare",
+          "id": "strikecommander"
+        },
+        {
+          "name": "76",
+          "quality": "rare",
+          "id": "76"
+        },
+        {
+          "name": "Golf",
+          "quality": "rare",
+          "id": "golf"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Helix",
+          "quality": "common",
+          "id": "helix"
+        },
+        {
+          "name": "Heal Up",
+          "quality": "common",
+          "id": "heal-up"
+        },
+        {
+          "name": "Jacket: 76",
+          "quality": "common",
+          "id": "jacket-76"
+        },
+        {
+          "name": "Grave",
+          "quality": "common",
+          "id": "grave"
+        },
+        {
+          "name": "Wanted",
+          "quality": "common",
+          "id": "wanted"
+        },
+        {
+          "name": "Move!",
+          "quality": "common",
+          "id": "move"
+        },
+        {
+          "name": "Coin",
+          "quality": "common",
+          "id": "coin"
+        },
+        {
+          "name": "Visor",
+          "quality": "common",
+          "id": "visor"
+        },
+        {
+          "name": "Vigilante",
+          "quality": "common",
+          "id": "vigilante"
+        },
+        {
+          "name": "Hooah",
+          "quality": "common",
+          "id": "hooah"
+        },
+        {
+          "name": "76",
+          "quality": "common",
+          "id": "76"
+        },
+        {
+          "name": "Pulse Rifle",
+          "quality": "common",
+          "id": "pulse-rifle"
+        },
+        {
+          "name": "Strike Commander",
+          "quality": "common",
+          "id": "strike-commander"
+        },
+        {
+          "name": "Rockets",
+          "quality": "common",
+          "id": "rockets"
+        },
+        {
+          "name": "Grizzled",
+          "quality": "common",
+          "id": "grizzled"
+        },
+        {
+          "name": "Muzzle",
+          "quality": "common",
+          "id": "muzzle"
+        },
+        {
+          "name": "Rifle: 76",
+          "quality": "common",
+          "id": "rifle-76"
+        },
+        {
+          "name": "Resolute",
+          "quality": "common",
+          "id": "resolute"
+        },
+        {
+          "name": "All Soldiers",
+          "quality": "common",
+          "id": "all-soldiers"
+        },
+        {
+          "name": "Old Soldier",
+          "quality": "common",
+          "id": "old-soldier"
+        },
+        {
+          "name": "Salute",
+          "quality": "common",
+          "id": "salute"
+        },
+        {
+          "name": "American Hero",
+          "quality": "common",
+          "id": "american-hero"
+        },
+        {
+          "name": "Golf",
+          "quality": "common",
+          "id": "golf"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "I've still got it",
+          "quality": "common",
+          "id": "ive-still-got-it"
+        },
+        {
+          "name": "You didn't make the cut",
+          "quality": "common",
+          "id": "you-didnt-make-the-cut"
+        },
+        {
+          "name": "Not on my watch",
+          "quality": "common",
+          "id": "not-on-my-watch"
+        },
+        {
+          "name": "That's \"sir\" to you",
+          "quality": "common",
+          "id": "thats-sir-to-you"
+        },
+        {
+          "name": "I didn't start this war...",
+          "quality": "common",
+          "id": "i-didnt-start-this-war"
+        },
+        {
+          "name": "Old soldiers",
+          "quality": "common",
+          "id": "old-soldiers"
+        },
+        {
+          "name": "What are you lookin' at?",
+          "quality": "common",
+          "id": "what-are-you-lookin-at"
+        },
+        {
+          "name": "I'm an army of one",
+          "quality": "common",
+          "id": "im-an-army-of-one"
+        },
+        {
+          "name": "You're the other one",
+          "quality": "common",
+          "id": "youre-the-other-one"
+        },
+        {
+          "name": "Smells like victory",
+          "quality": "common",
+          "id": "smells-like-victory"
+        },
+        {
+          "name": "Get off my lawn",
+          "quality": "common",
+          "id": "get-off-my-lawn"
+        },
+        {
+          "name": "You want a medal?",
+          "quality": "common",
+          "id": "you-want-a-medal"
+        },
+        {
+          "name": "Knock knock",
+          "quality": "common",
+          "id": "knock-knock"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Soldier",
+          "quality": "rare",
+          "id": "soldier"
+        },
+        {
+          "name": "Locked and Loaded",
+          "quality": "rare",
+          "id": "locked-and-loaded"
+        },
+        {
+          "name": "Fist Pump",
+          "quality": "rare",
+          "id": "fist-pump"
+        },
+        {
+          "name": "Golf Swing",
+          "quality": "rare",
+          "id": "golf-swing"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "roadhog": {
+    "name": "Roadhog",
+    "class": "Tank",
+    "id": "roadhog",
+    "items": {
+      "skins": [
+        {
+          "name": "Kiwi",
+          "quality": "rare",
+          "id": "kiwi"
+        },
+        {
+          "name": "Mud",
+          "quality": "rare",
+          "id": "mud"
+        },
+        {
+          "name": "Sand",
+          "quality": "rare",
+          "id": "sand"
+        },
+        {
+          "name": "Thistle",
+          "quality": "rare",
+          "id": "thistle"
+        },
+        {
+          "name": "Stitched",
+          "quality": "epic",
+          "id": "stitched"
+        },
+        {
+          "name": "Pigpen",
+          "quality": "epic",
+          "id": "pigpen"
+        },
+        {
+          "name": "Toa",
+          "quality": "legendary",
+          "id": "toa"
+        },
+        {
+          "name": "Islander",
+          "quality": "legendary",
+          "id": "islander"
+        },
+        {
+          "name": "Mako",
+          "quality": "legendary",
+          "id": "mako"
+        },
+        {
+          "name": "Sharkbait",
+          "quality": "legendary",
+          "id": "sharkbait"
+        },
+        {
+          "name": "Junkenstein's Monster",
+          "quality": "legendary",
+          "id": "junkensteins-monster"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Can Crusher",
+          "quality": "epic",
+          "id": "can-crusher"
+        },
+        {
+          "name": "Headbanging",
+          "quality": "epic",
+          "id": "headbanging"
+        },
+        {
+          "name": "Boo!",
+          "quality": "epic",
+          "id": "boo"
+        },
+        {
+          "name": "Belly Laugh",
+          "quality": "epic",
+          "id": "belly-laugh"
+        },
+        {
+          "name": "Tuckered out",
+          "quality": "epic",
+          "id": "tuckered-out"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Little Piggy",
+          "quality": "epic",
+          "id": "little-piggy"
+        },
+        {
+          "name": "Say \"Cheese\"",
+          "quality": "epic",
+          "id": "say-cheese"
+        },
+        {
+          "name": "WHOLE HOG",
+          "quality": "epic",
+          "id": "whole-hog"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Roadhog",
+          "quality": "rare",
+          "id": "roadhog"
+        },
+        {
+          "name": "Hook",
+          "quality": "rare",
+          "id": "hook"
+        },
+        {
+          "name": "Piggy",
+          "quality": "rare",
+          "id": "piggy"
+        },
+        {
+          "name": "Diving",
+          "quality": "rare",
+          "id": "diving"
+        },
+        {
+          "name": "The Monster",
+          "quality": "rare",
+          "id": "the-monster"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Helmet",
+          "quality": "common",
+          "id": "helmet"
+        },
+        {
+          "name": "Fresh Meat",
+          "quality": "common",
+          "id": "fresh-meat"
+        },
+        {
+          "name": "Wanted",
+          "quality": "common",
+          "id": "wanted"
+        },
+        {
+          "name": "No Pork",
+          "quality": "common",
+          "id": "no-pork"
+        },
+        {
+          "name": "Toxic",
+          "quality": "common",
+          "id": "toxic"
+        },
+        {
+          "name": "Piggy",
+          "quality": "common",
+          "id": "piggy"
+        },
+        {
+          "name": "Mako",
+          "quality": "common",
+          "id": "mako"
+        },
+        {
+          "name": "License",
+          "quality": "common",
+          "id": "license"
+        },
+        {
+          "name": "Tails",
+          "quality": "common",
+          "id": "tails"
+        },
+        {
+          "name": "Eyes",
+          "quality": "common",
+          "id": "eyes"
+        },
+        {
+          "name": "Wild Hog",
+          "quality": "common",
+          "id": "wild-hog"
+        },
+        {
+          "name": "Emblem",
+          "quality": "common",
+          "id": "emblem"
+        },
+        {
+          "name": "Free Pig",
+          "quality": "common",
+          "id": "free-pig"
+        },
+        {
+          "name": "Gotcha",
+          "quality": "common",
+          "id": "gotcha"
+        },
+        {
+          "name": "Left",
+          "quality": "common",
+          "id": "left"
+        },
+        {
+          "name": "Hogpower",
+          "quality": "common",
+          "id": "hogpower"
+        },
+        {
+          "name": "Popper",
+          "quality": "common",
+          "id": "popper"
+        },
+        {
+          "name": "Here Piggy",
+          "quality": "common",
+          "id": "here-piggy"
+        },
+        {
+          "name": "Breathin'",
+          "quality": "common",
+          "id": "breathin"
+        },
+        {
+          "name": "Deep Thoughts",
+          "quality": "common",
+          "id": "deep-thoughts"
+        },
+        {
+          "name": "Hooked",
+          "quality": "common",
+          "id": "hooked"
+        },
+        {
+          "name": "Grand Theft",
+          "quality": "common",
+          "id": "grand-theft"
+        },
+        {
+          "name": "Diving",
+          "quality": "common",
+          "id": "diving"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "The apocalypse",
+          "quality": "common",
+          "id": "the-apocalypse"
+        },
+        {
+          "name": "Candy from a baby",
+          "quality": "common",
+          "id": "candy-from-a-baby"
+        },
+        {
+          "name": "Piece of cake",
+          "quality": "common",
+          "id": "piece-of-cake"
+        },
+        {
+          "name": "Hook, line, and sinker",
+          "quality": "common",
+          "id": "hook-line-and-sinker"
+        },
+        {
+          "name": "Life is pain, so is death",
+          "quality": "common",
+          "id": "life-is-pain-so-is-death"
+        },
+        {
+          "name": "Push off",
+          "quality": "common",
+          "id": "push-off"
+        },
+        {
+          "name": "We're all animals",
+          "quality": "common",
+          "id": "were-all-animals"
+        },
+        {
+          "name": "Violence is the answer",
+          "quality": "common",
+          "id": "violence-is-the-answer"
+        },
+        {
+          "name": "Say \"bacon...\"",
+          "quality": "common",
+          "id": "say-bacon"
+        },
+        {
+          "name": "Got something to say?",
+          "quality": "common",
+          "id": "got-something-to-say"
+        },
+        {
+          "name": "HAHAHA!",
+          "quality": "common",
+          "id": "hahaha"
+        },
+        {
+          "name": "What's mine is mine",
+          "quality": "common",
+          "id": "whats-mine-is-mine"
+        },
+        {
+          "name": "Want some candy?",
+          "quality": "common",
+          "id": "want-some-candy"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Tuckered out",
+          "quality": "rare",
+          "id": "tuckered-out"
+        },
+        {
+          "name": "Pointing to the sky",
+          "quality": "rare",
+          "id": "pointing-to-the-sky"
+        },
+        {
+          "name": "Thumbs up",
+          "quality": "rare",
+          "id": "thumbs-up"
+        },
+        {
+          "name": "Medal",
+          "quality": "rare",
+          "id": "medal"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "bastion": {
+    "name": "Bastion",
+    "class": "Defence",
+    "id": "bastion",
+    "items": {
+      "skins": [
+        {
+          "name": "Overgrown",
+          "quality": "legendary",
+          "id": "overgrown"
+        },
+        {
+          "name": "BlizzCon 2016",
+          "quality": "epic",
+          "id": "blizzcon-2016"
+        },
+        {
+          "name": "Sky",
+          "quality": "rare",
+          "id": "sky"
+        },
+        {
+          "name": "Meadow",
+          "quality": "rare",
+          "id": "meadow"
+        },
+        {
+          "name": "Dawn",
+          "quality": "rare",
+          "id": "dawn"
+        },
+        {
+          "name": "Soot",
+          "quality": "rare",
+          "id": "soot"
+        },
+        {
+          "name": "Omnic Crisis",
+          "quality": "epic",
+          "id": "omnic-crisis"
+        },
+        {
+          "name": "Defense Matrix",
+          "quality": "epic",
+          "id": "defense-matrix"
+        },
+        {
+          "name": "Steambot",
+          "quality": "legendary",
+          "id": "steambot"
+        },
+        {
+          "name": "Gearbot",
+          "quality": "legendary",
+          "id": "gearbot"
+        },
+        {
+          "name": "Antique",
+          "quality": "legendary",
+          "id": "antique"
+        },
+        {
+          "name": "Woodbot",
+          "quality": "legendary",
+          "id": "woodbot"
+        },
+        {
+          "name": "Tombstone",
+          "quality": "epic",
+          "id": "tombstone"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Dizzy",
+          "quality": "epic",
+          "id": "dizzy"
+        },
+        {
+          "name": "Robot",
+          "quality": "epic",
+          "id": "robot"
+        },
+        {
+          "name": "Alert! Alert!",
+          "quality": "epic",
+          "id": "alert-alert"
+        },
+        {
+          "name": "Chortle",
+          "quality": "epic",
+          "id": "chortle"
+        },
+        {
+          "name": "Rest Mode",
+          "quality": "epic",
+          "id": "rest-mode"
+        },
+        {
+          "name": "Boxing",
+          "quality": "epic",
+          "id": "boxing"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "On Guard",
+          "quality": "epic",
+          "id": "on-guard"
+        },
+        {
+          "name": "Ganymede",
+          "quality": "epic",
+          "id": "ganymede"
+        },
+        {
+          "name": "Bullet Rain",
+          "quality": "epic",
+          "id": "bullet-rain"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Bastion",
+          "quality": "rare",
+          "id": "bastion"
+        },
+        {
+          "name": "Tank Crossing",
+          "quality": "rare",
+          "id": "tank-crossing"
+        },
+        {
+          "name": "Ganymede",
+          "quality": "rare",
+          "id": "ganymede"
+        },
+        {
+          "name": "Boxing",
+          "quality": "rare",
+          "id": "boxing"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Fire At Will",
+          "quality": "common",
+          "id": "fire-at-will"
+        },
+        {
+          "name": "Giant",
+          "quality": "common",
+          "id": "giant"
+        },
+        {
+          "name": "Recovery",
+          "quality": "common",
+          "id": "recovery"
+        },
+        {
+          "name": "Ganymede",
+          "quality": "common",
+          "id": "ganymede"
+        },
+        {
+          "name": "Omnic",
+          "quality": "common",
+          "id": "omnic"
+        },
+        {
+          "name": "Action",
+          "quality": "common",
+          "id": "action"
+        },
+        {
+          "name": "Bird",
+          "quality": "common",
+          "id": "bird"
+        },
+        {
+          "name": "Birdwatchers",
+          "quality": "common",
+          "id": "birdwatchers"
+        },
+        {
+          "name": "Black",
+          "quality": "common",
+          "id": "black"
+        },
+        {
+          "name": "Curious",
+          "quality": "common",
+          "id": "curious"
+        },
+        {
+          "name": "e54",
+          "quality": "common",
+          "id": "e54"
+        },
+        {
+          "name": "Sprout",
+          "quality": "common",
+          "id": "sprout"
+        },
+        {
+          "name": "Flower Power",
+          "quality": "common",
+          "id": "flower-power"
+        },
+        {
+          "name": "Wood and Stone",
+          "quality": "common",
+          "id": "wood-and-stone"
+        },
+        {
+          "name": "Flight",
+          "quality": "common",
+          "id": "flight"
+        },
+        {
+          "name": "Blocks",
+          "quality": "common",
+          "id": "blocks"
+        },
+        {
+          "name": "Crisis",
+          "quality": "common",
+          "id": "crisis"
+        },
+        {
+          "name": "Nest",
+          "quality": "common",
+          "id": "nest"
+        },
+        {
+          "name": "In Repair",
+          "quality": "common",
+          "id": "in-repair"
+        },
+        {
+          "name": "Overgrown",
+          "quality": "common",
+          "id": "overgrown"
+        },
+        {
+          "name": "Cannon",
+          "quality": "common",
+          "id": "cannon"
+        },
+        {
+          "name": "Retro",
+          "quality": "common",
+          "id": "retro"
+        },
+        {
+          "name": "Boxing",
+          "quality": "common",
+          "id": "boxing"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Doo-woo",
+          "quality": "common",
+          "id": "doowoo"
+        },
+        {
+          "name": "Sh-sh-sh",
+          "quality": "common",
+          "id": "shshsh"
+        },
+        {
+          "name": "Beeple",
+          "quality": "common",
+          "id": "beeple"
+        },
+        {
+          "name": "Zwee?",
+          "quality": "common",
+          "id": "zwee"
+        },
+        {
+          "name": "Dun dun boop boop",
+          "quality": "common",
+          "id": "dun-dun-boop-boop"
+        },
+        {
+          "name": "DAH-DAH WEEEEE!",
+          "quality": "common",
+          "id": "dahdah-weeeee"
+        },
+        {
+          "name": "Boo boo doo de doo",
+          "quality": "common",
+          "id": "boo-boo-doo-de-doo"
+        },
+        {
+          "name": "Hee hoo hoo",
+          "quality": "common",
+          "id": "hee-hoo-hoo"
+        },
+        {
+          "name": "Bweeeeeeeeeee",
+          "quality": "common",
+          "id": "bweeeeeeeeeee"
+        },
+        {
+          "name": "Dweet dweet dweet!",
+          "quality": "common",
+          "id": "dweet-dweet-dweet"
+        },
+        {
+          "name": "Chirr chirr chirr",
+          "quality": "common",
+          "id": "chirr-chirr-chirr"
+        },
+        {
+          "name": "WHOO-VWEEEEEE",
+          "quality": "common",
+          "id": "whoovweeeeee"
+        },
+        {
+          "name": "W-W-Wooooo...?",
+          "quality": "common",
+          "id": "wwwooooo"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Birdwatching",
+          "quality": "rare",
+          "id": "birdwatching"
+        },
+        {
+          "name": "Pop Up",
+          "quality": "rare",
+          "id": "pop-up"
+        },
+        {
+          "name": "Tank",
+          "quality": "rare",
+          "id": "tank"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "ana": {
+    "name": "Ana",
+    "class": "Support",
+    "id": "ana",
+    "items": {
+      "skins": [
+        {
+          "name": "Turquoise",
+          "quality": "rare",
+          "id": "turquoise"
+        },
+        {
+          "name": "Citrine",
+          "quality": "rare",
+          "id": "citrine"
+        },
+        {
+          "name": "Garnet",
+          "quality": "rare",
+          "id": "garnet"
+        },
+        {
+          "name": "Peridot",
+          "quality": "rare",
+          "id": "peridot"
+        },
+        {
+          "name": "Merciful",
+          "quality": "epic",
+          "id": "merciful"
+        },
+        {
+          "name": "Shrike",
+          "quality": "epic",
+          "id": "shrike"
+        },
+        {
+          "name": "Wasteland",
+          "quality": "legendary",
+          "id": "wasteland"
+        },
+        {
+          "name": "Wadjet",
+          "quality": "legendary",
+          "id": "wadjet"
+        },
+        {
+          "name": "Captain Amari",
+          "quality": "legendary",
+          "id": "captain-amari"
+        },
+        {
+          "name": "Horus",
+          "quality": "legendary",
+          "id": "horus"
+        },
+        {
+          "name": "Ghoul",
+          "quality": "epic",
+          "id": "ghoul"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Protector",
+          "quality": "epic",
+          "id": "protector"
+        },
+        {
+          "name": "Tea Time",
+          "quality": "epic",
+          "id": "tea-time"
+        },
+        {
+          "name": "Disapproving",
+          "quality": "epic",
+          "id": "disapproving"
+        },
+        {
+          "name": "Not impressed",
+          "quality": "epic",
+          "id": "not-impressed"
+        },
+        {
+          "name": "Take a Knee",
+          "quality": "epic",
+          "id": "take-a-knee"
+        },
+        {
+          "name": "Candy",
+          "quality": "epic",
+          "id": "candy"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Shh...",
+          "quality": "epic",
+          "id": "shh"
+        },
+        {
+          "name": "Locked On",
+          "quality": "epic",
+          "id": "locked-on"
+        },
+        {
+          "name": "Guardian",
+          "quality": "epic",
+          "id": "guardian"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Ana",
+          "quality": "rare",
+          "id": "ana"
+        },
+        {
+          "name": "Wedjat",
+          "quality": "rare",
+          "id": "wedjat"
+        },
+        {
+          "name": "Watcher",
+          "quality": "rare",
+          "id": "watcher"
+        },
+        {
+          "name": "Shooting",
+          "quality": "rare",
+          "id": "shooting"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Old Soldier",
+          "quality": "common",
+          "id": "old-soldier"
+        },
+        {
+          "name": "Ana",
+          "quality": "common",
+          "id": "ana"
+        },
+        {
+          "name": "Action",
+          "quality": "common",
+          "id": "action"
+        },
+        {
+          "name": "Wedjat",
+          "quality": "common",
+          "id": "wedjat"
+        },
+        {
+          "name": "Cracked",
+          "quality": "common",
+          "id": "cracked"
+        },
+        {
+          "name": "Rifle",
+          "quality": "common",
+          "id": "rifle"
+        },
+        {
+          "name": "Wrist Launcher",
+          "quality": "common",
+          "id": "wrist-launcher"
+        },
+        {
+          "name": "Gaze",
+          "quality": "common",
+          "id": "gaze"
+        },
+        {
+          "name": "Eyepatch",
+          "quality": "common",
+          "id": "eyepatch"
+        },
+        {
+          "name": "Overhead",
+          "quality": "common",
+          "id": "overhead"
+        },
+        {
+          "name": "Photograph",
+          "quality": "common",
+          "id": "photograph"
+        },
+        {
+          "name": "Sidearm",
+          "quality": "common",
+          "id": "sidearm"
+        },
+        {
+          "name": "Guardian",
+          "quality": "common",
+          "id": "guardian"
+        },
+        {
+          "name": "Hesitation",
+          "quality": "common",
+          "id": "hesitation"
+        },
+        {
+          "name": "Shadow",
+          "quality": "common",
+          "id": "shadow"
+        },
+        {
+          "name": "Grenade",
+          "quality": "common",
+          "id": "grenade"
+        },
+        {
+          "name": "Fareeha",
+          "quality": "common",
+          "id": "fareeha"
+        },
+        {
+          "name": "Zzz",
+          "quality": "common",
+          "id": "zzz"
+        },
+        {
+          "name": "Bearer",
+          "quality": "common",
+          "id": "bearer"
+        },
+        {
+          "name": "Letter",
+          "quality": "common",
+          "id": "letter"
+        },
+        {
+          "name": "Cheer",
+          "quality": "common",
+          "id": "cheer"
+        },
+        {
+          "name": "Shhh",
+          "quality": "common",
+          "id": "shhh"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Shooting",
+          "quality": "common",
+          "id": "shooting"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Justice delivered",
+          "quality": "common",
+          "id": "justice-delivered"
+        },
+        {
+          "name": "Children, behave",
+          "quality": "common",
+          "id": "children-behave"
+        },
+        {
+          "name": "What are you thinking?",
+          "quality": "common",
+          "id": "what-are-you-thinking"
+        },
+        {
+          "name": "Everyone dies",
+          "quality": "common",
+          "id": "everyone-dies"
+        },
+        {
+          "name": "someone to tuck you in?",
+          "quality": "common",
+          "id": "someone-to-tuck-you-in"
+        },
+        {
+          "name": "Mother knows best",
+          "quality": "common",
+          "id": "mother-knows-best"
+        },
+        {
+          "name": "No scope needed",
+          "quality": "common",
+          "id": "no-scope-needed"
+        },
+        {
+          "name": "Justice rains from above",
+          "quality": "common",
+          "id": "justice-rains-from-above"
+        },
+        {
+          "name": "Witness me",
+          "quality": "common",
+          "id": "witness-me"
+        },
+        {
+          "name": "It takes a woman to know it",
+          "quality": "common",
+          "id": "it-takes-a-woman-to-know-it"
+        },
+        {
+          "name": "You know nothing",
+          "quality": "common",
+          "id": "you-know-nothing"
+        },
+        {
+          "name": "Learn from the Pain",
+          "quality": "common",
+          "id": "learn-from-the-pain"
+        },
+        {
+          "name": "Are you scared?",
+          "quality": "common",
+          "id": "are-you-scared"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Protector",
+          "quality": "rare",
+          "id": "protector"
+        },
+        {
+          "name": "Seated",
+          "quality": "rare",
+          "id": "seated"
+        },
+        {
+          "name": "Mission Complete",
+          "quality": "rare",
+          "id": "mission-complete"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "zenyatta": {
+    "name": "Zenyatta",
+    "class": "Support",
+    "id": "zenyatta",
+    "items": {
+      "skins": [
+        {
+          "name": "Leaf",
+          "quality": "rare",
+          "id": "leaf"
+        },
+        {
+          "name": "Water",
+          "quality": "rare",
+          "id": "water"
+        },
+        {
+          "name": "Earth",
+          "quality": "rare",
+          "id": "earth"
+        },
+        {
+          "name": "Air",
+          "quality": "rare",
+          "id": "air"
+        },
+        {
+          "name": "Ascendant",
+          "quality": "epic",
+          "id": "ascendant"
+        },
+        {
+          "name": "Harmonious",
+          "quality": "epic",
+          "id": "harmonious"
+        },
+        {
+          "name": "Ra",
+          "quality": "legendary",
+          "id": "ra"
+        },
+        {
+          "name": "Sunyatta",
+          "quality": "legendary",
+          "id": "sunyatta"
+        },
+        {
+          "name": "Djinnyatta",
+          "quality": "legendary",
+          "id": "djinnyatta"
+        },
+        {
+          "name": "Ifrit",
+          "quality": "legendary",
+          "id": "ifrit"
+        },
+        {
+          "name": "Skullyatta",
+          "quality": "epic",
+          "id": "skullyatta"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Focusing",
+          "quality": "epic",
+          "id": "focusing"
+        },
+        {
+          "name": "Round of Applause",
+          "quality": "epic",
+          "id": "round-of-applause"
+        },
+        {
+          "name": "Taunt",
+          "quality": "epic",
+          "id": "taunt"
+        },
+        {
+          "name": "Tickled",
+          "quality": "epic",
+          "id": "tickled"
+        },
+        {
+          "name": "Meditate",
+          "quality": "epic",
+          "id": "meditate"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Focused",
+          "quality": "epic",
+          "id": "focused"
+        },
+        {
+          "name": "Harmony and Discord",
+          "quality": "epic",
+          "id": "harmony-and-discord"
+        },
+        {
+          "name": "Transcendence",
+          "quality": "epic",
+          "id": "transcendence"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Zenyatta",
+          "quality": "rare",
+          "id": "zenyatta"
+        },
+        {
+          "name": "Harmony",
+          "quality": "rare",
+          "id": "harmony"
+        },
+        {
+          "name": "Meditation",
+          "quality": "rare",
+          "id": "meditation"
+        },
+        {
+          "name": "Taekwondo",
+          "quality": "rare",
+          "id": "taekwondo"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Graphic",
+          "quality": "common",
+          "id": "graphic"
+        },
+        {
+          "name": "Balance",
+          "quality": "common",
+          "id": "balance"
+        },
+        {
+          "name": "Adorable",
+          "quality": "common",
+          "id": "adorable"
+        },
+        {
+          "name": "Together",
+          "quality": "common",
+          "id": "together"
+        },
+        {
+          "name": "Nine",
+          "quality": "common",
+          "id": "nine"
+        },
+        {
+          "name": "Tekhartha",
+          "quality": "common",
+          "id": "tekhartha"
+        },
+        {
+          "name": "Enlightened",
+          "quality": "common",
+          "id": "enlightened"
+        },
+        {
+          "name": "Orbs",
+          "quality": "common",
+          "id": "orbs"
+        },
+        {
+          "name": "Flow",
+          "quality": "common",
+          "id": "flow"
+        },
+        {
+          "name": "Throw",
+          "quality": "common",
+          "id": "throw"
+        },
+        {
+          "name": "Guru",
+          "quality": "common",
+          "id": "guru"
+        },
+        {
+          "name": "Hand",
+          "quality": "common",
+          "id": "hand"
+        },
+        {
+          "name": "Peace",
+          "quality": "common",
+          "id": "peace"
+        },
+        {
+          "name": "Taunt",
+          "quality": "common",
+          "id": "taunt"
+        },
+        {
+          "name": "Fist Bump",
+          "quality": "common",
+          "id": "fist-bump"
+        },
+        {
+          "name": "Discord",
+          "quality": "common",
+          "id": "discord"
+        },
+        {
+          "name": "Harmony",
+          "quality": "common",
+          "id": "harmony"
+        },
+        {
+          "name": "Inner Fire",
+          "quality": "common",
+          "id": "inner-fire"
+        },
+        {
+          "name": "Contemplative",
+          "quality": "common",
+          "id": "contemplative"
+        },
+        {
+          "name": "Orb",
+          "quality": "common",
+          "id": "orb"
+        },
+        {
+          "name": "Aura",
+          "quality": "common",
+          "id": "aura"
+        },
+        {
+          "name": "Foot",
+          "quality": "common",
+          "id": "foot"
+        },
+        {
+          "name": "Taekwondo",
+          "quality": "common",
+          "id": "taekwondo"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "We are in harmony",
+          "quality": "common",
+          "id": "we-are-in-harmony"
+        },
+        {
+          "name": "Hello, world!",
+          "quality": "common",
+          "id": "hello-world"
+        },
+        {
+          "name": "Death is whimsical today",
+          "quality": "common",
+          "id": "death-is-whimsical-today"
+        },
+        {
+          "name": "Peace and blessings",
+          "quality": "common",
+          "id": "peace-and-blessings"
+        },
+        {
+          "name": "The iris embraces you",
+          "quality": "common",
+          "id": "the-iris-embraces-you"
+        },
+        {
+          "name": "Free your mind",
+          "quality": "common",
+          "id": "free-your-mind"
+        },
+        {
+          "name": "I dreamt I was a butterfly",
+          "quality": "common",
+          "id": "i-dreamt-i-was-a-butterfly"
+        },
+        {
+          "name": "I will not juggle",
+          "quality": "common",
+          "id": "i-will-not-juggle"
+        },
+        {
+          "name": "Do I think?",
+          "quality": "common",
+          "id": "do-i-think"
+        },
+        {
+          "name": "Ones and zeroes",
+          "quality": "common",
+          "id": "ones-and-zeroes"
+        },
+        {
+          "name": "I think, therefore I am",
+          "quality": "common",
+          "id": "i-think-therefore-i-am"
+        },
+        {
+          "name": "Strive for improvement",
+          "quality": "common",
+          "id": "strive-for-improvement"
+        },
+        {
+          "name": "Trick or treat?",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Balance",
+          "quality": "rare",
+          "id": "balance"
+        },
+        {
+          "name": "Peace",
+          "quality": "rare",
+          "id": "peace"
+        },
+        {
+          "name": "Harmony",
+          "quality": "rare",
+          "id": "harmony"
+        },
+        {
+          "name": "Medals",
+          "quality": "rare",
+          "id": "medals"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "widowmaker": {
+    "name": "Widowmaker",
+    "class": "Defence",
+    "id": "widowmaker",
+    "items": {
+      "skins": [
+        {
+          "name": "Noire",
+          "quality": "legendary",
+          "id": "noire"
+        },
+        {
+          "name": "Ciel",
+          "quality": "rare",
+          "id": "ciel"
+        },
+        {
+          "name": "Vert",
+          "quality": "rare",
+          "id": "vert"
+        },
+        {
+          "name": "Nuit",
+          "quality": "rare",
+          "id": "nuit"
+        },
+        {
+          "name": "Rose",
+          "quality": "rare",
+          "id": "rose"
+        },
+        {
+          "name": "Winter",
+          "quality": "epic",
+          "id": "winter"
+        },
+        {
+          "name": "Patina",
+          "quality": "epic",
+          "id": "patina"
+        },
+        {
+          "name": "Odile",
+          "quality": "legendary",
+          "id": "odile"
+        },
+        {
+          "name": "Odette",
+          "quality": "legendary",
+          "id": "odette"
+        },
+        {
+          "name": "Comtesse",
+          "quality": "legendary",
+          "id": "comtesse"
+        },
+        {
+          "name": "Huntress",
+          "quality": "legendary",
+          "id": "huntress"
+        },
+        {
+          "name": "Tricolore",
+          "quality": "epic",
+          "id": "tricolore"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Widow's kiss",
+          "quality": "epic",
+          "id": "widows-kiss"
+        },
+        {
+          "name": "Curtain Call",
+          "quality": "epic",
+          "id": "curtain-call"
+        },
+        {
+          "name": "Shot Dead",
+          "quality": "epic",
+          "id": "shot-dead"
+        },
+        {
+          "name": "Delighted",
+          "quality": "epic",
+          "id": "delighted"
+        },
+        {
+          "name": "At Rest",
+          "quality": "epic",
+          "id": "at-rest"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Swinging into Action",
+          "quality": "epic",
+          "id": "swinging-into-action"
+        },
+        {
+          "name": "I see you...",
+          "quality": "epic",
+          "id": "i-see-you"
+        },
+        {
+          "name": "Hanging Around",
+          "quality": "epic",
+          "id": "hanging-around"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Widowmaker",
+          "quality": "rare",
+          "id": "widowmaker"
+        },
+        {
+          "name": "Grappling Hook",
+          "quality": "rare",
+          "id": "grappling-hook"
+        },
+        {
+          "name": "Baiser",
+          "quality": "rare",
+          "id": "baiser"
+        },
+        {
+          "name": "Gymnastics",
+          "quality": "rare",
+          "id": "gymnastics"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Blood",
+          "quality": "common",
+          "id": "blood"
+        },
+        {
+          "name": "Baiser",
+          "quality": "common",
+          "id": "baiser"
+        },
+        {
+          "name": "Widow's Kiss",
+          "quality": "common",
+          "id": "widows-kiss"
+        },
+        {
+          "name": "Emblem",
+          "quality": "common",
+          "id": "emblem"
+        },
+        {
+          "name": "Crouch",
+          "quality": "common",
+          "id": "crouch"
+        },
+        {
+          "name": "Swing",
+          "quality": "common",
+          "id": "swing"
+        },
+        {
+          "name": "Detected",
+          "quality": "common",
+          "id": "detected"
+        },
+        {
+          "name": "Noire",
+          "quality": "common",
+          "id": "noire"
+        },
+        {
+          "name": "Kneeling",
+          "quality": "common",
+          "id": "kneeling"
+        },
+        {
+          "name": "Gaze",
+          "quality": "common",
+          "id": "gaze"
+        },
+        {
+          "name": "Veuve",
+          "quality": "common",
+          "id": "veuve"
+        },
+        {
+          "name": "Widow",
+          "quality": "common",
+          "id": "widow"
+        },
+        {
+          "name": "Sniper",
+          "quality": "common",
+          "id": "sniper"
+        },
+        {
+          "name": "Une Balle",
+          "quality": "common",
+          "id": "une-balle"
+        },
+        {
+          "name": "Black Widow",
+          "quality": "common",
+          "id": "black-widow"
+        },
+        {
+          "name": "No One Escapes",
+          "quality": "common",
+          "id": "no-one-escapes"
+        },
+        {
+          "name": "Hourglass",
+          "quality": "common",
+          "id": "hourglass"
+        },
+        {
+          "name": "Scope",
+          "quality": "common",
+          "id": "scope"
+        },
+        {
+          "name": "In My Sights",
+          "quality": "common",
+          "id": "in-my-sights"
+        },
+        {
+          "name": "Je Te Vois",
+          "quality": "common",
+          "id": "je-te-vois"
+        },
+        {
+          "name": "Spider",
+          "quality": "common",
+          "id": "spider"
+        },
+        {
+          "name": "Portrait",
+          "quality": "common",
+          "id": "portrait"
+        },
+        {
+          "name": "Gymnastics",
+          "quality": "common",
+          "id": "gymnastics"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "A single death",
+          "quality": "common",
+          "id": "a-single-death"
+        },
+        {
+          "name": "Encore?",
+          "quality": "common",
+          "id": "encore"
+        },
+        {
+          "name": "What's an aimbot?",
+          "quality": "common",
+          "id": "whats-an-aimbot"
+        },
+        {
+          "name": "Ouh là là",
+          "quality": "common",
+          "id": "ouh-l-l"
+        },
+        {
+          "name": "Look for the woman",
+          "quality": "common",
+          "id": "look-for-the-woman"
+        },
+        {
+          "name": "One shot, one kill",
+          "quality": "common",
+          "id": "one-shot-one-kill"
+        },
+        {
+          "name": "Magnifique",
+          "quality": "common",
+          "id": "magnifique"
+        },
+        {
+          "name": "Let them eat cake",
+          "quality": "common",
+          "id": "let-them-eat-cake"
+        },
+        {
+          "name": "To life, to death",
+          "quality": "common",
+          "id": "to-life-to-death"
+        },
+        {
+          "name": "That's how it is",
+          "quality": "common",
+          "id": "thats-how-it-is"
+        },
+        {
+          "name": "Step into my parlor...",
+          "quality": "common",
+          "id": "step-into-my-parlor"
+        },
+        {
+          "name": "I don't miss",
+          "quality": "common",
+          "id": "i-dont-miss"
+        },
+        {
+          "name": "The party is over",
+          "quality": "common",
+          "id": "the-party-is-over"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Over the Shoulder",
+          "quality": "rare",
+          "id": "over-the-shoulder"
+        },
+        {
+          "name": "Activating Visor",
+          "quality": "rare",
+          "id": "activating-visor"
+        },
+        {
+          "name": "Gaze",
+          "quality": "rare",
+          "id": "gaze"
+        },
+        {
+          "name": "Medal",
+          "quality": "rare",
+          "id": "medal"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "reinhardt": {
+    "name": "Reinhardt",
+    "class": "Tank",
+    "id": "reinhardt",
+    "items": {
+      "skins": [
+        {
+          "name": "Copper",
+          "quality": "rare",
+          "id": "copper"
+        },
+        {
+          "name": "Viridian",
+          "quality": "rare",
+          "id": "viridian"
+        },
+        {
+          "name": "Brass",
+          "quality": "rare",
+          "id": "brass"
+        },
+        {
+          "name": "Cobalt",
+          "quality": "rare",
+          "id": "cobalt"
+        },
+        {
+          "name": "Paragon",
+          "quality": "epic",
+          "id": "paragon"
+        },
+        {
+          "name": "Bundeswehr",
+          "quality": "epic",
+          "id": "bundeswehr"
+        },
+        {
+          "name": "Blackhardt",
+          "quality": "legendary",
+          "id": "blackhardt"
+        },
+        {
+          "name": "Bloodhardt",
+          "quality": "legendary",
+          "id": "bloodhardt"
+        },
+        {
+          "name": "Lionhardt",
+          "quality": "legendary",
+          "id": "lionhardt"
+        },
+        {
+          "name": "Stonehardt",
+          "quality": "legendary",
+          "id": "stonehardt"
+        },
+        {
+          "name": "Balderich",
+          "quality": "legendary",
+          "id": "balderich"
+        },
+        {
+          "name": "Greifhardt",
+          "quality": "legendary",
+          "id": "greifhardt"
+        },
+        {
+          "name": "Coldhardt",
+          "quality": "epic",
+          "id": "coldhardt"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Flex",
+          "quality": "epic",
+          "id": "flex"
+        },
+        {
+          "name": "Warrior's Salute",
+          "quality": "epic",
+          "id": "warriors-salute"
+        },
+        {
+          "name": "Taunt",
+          "quality": "epic",
+          "id": "taunt"
+        },
+        {
+          "name": "Uproarious",
+          "quality": "epic",
+          "id": "uproarious"
+        },
+        {
+          "name": "Kneel",
+          "quality": "epic",
+          "id": "kneel"
+        },
+        {
+          "name": "Pumpkin Smash",
+          "quality": "epic",
+          "id": "pumpkin-smash"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Hammer Down",
+          "quality": "epic",
+          "id": "hammer-down"
+        },
+        {
+          "name": "More stretching required",
+          "quality": "epic",
+          "id": "more-stretching-required"
+        },
+        {
+          "name": "CHARGE",
+          "quality": "epic",
+          "id": "charge"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Reinhardt",
+          "quality": "rare",
+          "id": "reinhardt"
+        },
+        {
+          "name": "Scar",
+          "quality": "rare",
+          "id": "scar"
+        },
+        {
+          "name": "Lionhardt",
+          "quality": "rare",
+          "id": "lionhardt"
+        },
+        {
+          "name": "Wrestling",
+          "quality": "rare",
+          "id": "wrestling"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Emblem",
+          "quality": "common",
+          "id": "emblem"
+        },
+        {
+          "name": "Helm",
+          "quality": "common",
+          "id": "helm"
+        },
+        {
+          "name": "Crusader",
+          "quality": "common",
+          "id": "crusader"
+        },
+        {
+          "name": "White",
+          "quality": "common",
+          "id": "white"
+        },
+        {
+          "name": "Hammer Down",
+          "quality": "common",
+          "id": "hammer-down"
+        },
+        {
+          "name": "Cracks",
+          "quality": "common",
+          "id": "cracks"
+        },
+        {
+          "name": "Charge",
+          "quality": "common",
+          "id": "charge"
+        },
+        {
+          "name": "Fire Strike",
+          "quality": "common",
+          "id": "fire-strike"
+        },
+        {
+          "name": "Vigilant",
+          "quality": "common",
+          "id": "vigilant"
+        },
+        {
+          "name": "Royal",
+          "quality": "common",
+          "id": "royal"
+        },
+        {
+          "name": "Knight",
+          "quality": "common",
+          "id": "knight"
+        },
+        {
+          "name": "Wilhelm",
+          "quality": "common",
+          "id": "wilhelm"
+        },
+        {
+          "name": "Roar",
+          "quality": "common",
+          "id": "roar"
+        },
+        {
+          "name": "Glorious",
+          "quality": "common",
+          "id": "glorious"
+        },
+        {
+          "name": "Swing",
+          "quality": "common",
+          "id": "swing"
+        },
+        {
+          "name": "Wrestle",
+          "quality": "common",
+          "id": "wrestle"
+        },
+        {
+          "name": "Honor",
+          "quality": "common",
+          "id": "honor"
+        },
+        {
+          "name": "Stein",
+          "quality": "common",
+          "id": "stein"
+        },
+        {
+          "name": "Barrier",
+          "quality": "common",
+          "id": "barrier"
+        },
+        {
+          "name": "Earthshatter",
+          "quality": "common",
+          "id": "earthshatter"
+        },
+        {
+          "name": "Lion",
+          "quality": "common",
+          "id": "lion"
+        },
+        {
+          "name": "Shield Up",
+          "quality": "common",
+          "id": "shield-up"
+        },
+        {
+          "name": "Wrestling",
+          "quality": "common",
+          "id": "wrestling"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "I salute you",
+          "quality": "common",
+          "id": "i-salute-you"
+        },
+        {
+          "name": "Honor and glory",
+          "quality": "common",
+          "id": "honor-and-glory"
+        },
+        {
+          "name": "Are you afraid?",
+          "quality": "common",
+          "id": "are-you-afraid"
+        },
+        {
+          "name": "Crushing machine",
+          "quality": "common",
+          "id": "crushing-machine"
+        },
+        {
+          "name": "Show you how it's done",
+          "quality": "common",
+          "id": "show-you-how-its-done"
+        },
+        {
+          "name": "Crusader online",
+          "quality": "common",
+          "id": "crusader-online"
+        },
+        {
+          "name": "Bring me another",
+          "quality": "common",
+          "id": "bring-me-another"
+        },
+        {
+          "name": "Respect your elders",
+          "quality": "common",
+          "id": "respect-your-elders"
+        },
+        {
+          "name": "This old dog",
+          "quality": "common",
+          "id": "this-old-dog"
+        },
+        {
+          "name": "German engineering",
+          "quality": "common",
+          "id": "german-engineering"
+        },
+        {
+          "name": "Catch phrase!",
+          "quality": "common",
+          "id": "catch-phrase"
+        },
+        {
+          "name": "100%% German power",
+          "quality": "common",
+          "id": "100-german-power"
+        },
+        {
+          "name": "Smashing",
+          "quality": "common",
+          "id": "smashing"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Flex",
+          "quality": "rare",
+          "id": "flex"
+        },
+        {
+          "name": "Confident",
+          "quality": "rare",
+          "id": "confident"
+        },
+        {
+          "name": "Legendary",
+          "quality": "rare",
+          "id": "legendary"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "mercy": {
+    "name": "Mercy",
+    "class": "Support",
+    "id": "mercy",
+    "items": {
+      "skins": [
+        {
+          "name": "Celestial",
+          "quality": "rare",
+          "id": "celestial"
+        },
+        {
+          "name": "Verdant",
+          "quality": "rare",
+          "id": "verdant"
+        },
+        {
+          "name": "Orchid",
+          "quality": "rare",
+          "id": "orchid"
+        },
+        {
+          "name": "Mist",
+          "quality": "rare",
+          "id": "mist"
+        },
+        {
+          "name": "Cobalt",
+          "quality": "epic",
+          "id": "cobalt"
+        },
+        {
+          "name": "Amber",
+          "quality": "epic",
+          "id": "amber"
+        },
+        {
+          "name": "Devil",
+          "quality": "legendary",
+          "id": "devil"
+        },
+        {
+          "name": "Imp",
+          "quality": "legendary",
+          "id": "imp"
+        },
+        {
+          "name": "Valkyrie",
+          "quality": "legendary",
+          "id": "valkyrie"
+        },
+        {
+          "name": "Sigrún",
+          "quality": "legendary",
+          "id": "sigrun"
+        },
+        {
+          "name": "Eidgenossin",
+          "quality": "epic",
+          "id": "eidgenossin"
+        },
+        {
+          "name": "Witch",
+          "quality": "legendary",
+          "id": "witch"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Caduceus",
+          "quality": "epic",
+          "id": "caduceus"
+        },
+        {
+          "name": "Applause",
+          "quality": "epic",
+          "id": "applause"
+        },
+        {
+          "name": "No Pulse",
+          "quality": "epic",
+          "id": "no-pulse"
+        },
+        {
+          "name": "The Best Medicine",
+          "quality": "epic",
+          "id": "the-best-medicine"
+        },
+        {
+          "name": "Relax",
+          "quality": "epic",
+          "id": "relax"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Heroes Never Die",
+          "quality": "epic",
+          "id": "heroes-never-die"
+        },
+        {
+          "name": "Guardian Angel",
+          "quality": "epic",
+          "id": "guardian-angel"
+        },
+        {
+          "name": "Battle Angel",
+          "quality": "epic",
+          "id": "battle-angel"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Mercy",
+          "quality": "rare",
+          "id": "mercy"
+        },
+        {
+          "name": "Guardian Angel",
+          "quality": "rare",
+          "id": "guardian-angel"
+        },
+        {
+          "name": "Valkyrie",
+          "quality": "rare",
+          "id": "valkyrie"
+        },
+        {
+          "name": "Badminton",
+          "quality": "rare",
+          "id": "badminton"
+        },
+        {
+          "name": "The Witch",
+          "quality": "rare",
+          "id": "the-witch"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Emblem",
+          "quality": "common",
+          "id": "emblem"
+        },
+        {
+          "name": "Blaster",
+          "quality": "common",
+          "id": "blaster"
+        },
+        {
+          "name": "Support",
+          "quality": "common",
+          "id": "support"
+        },
+        {
+          "name": "Halo",
+          "quality": "common",
+          "id": "halo"
+        },
+        {
+          "name": "Light",
+          "quality": "common",
+          "id": "light"
+        },
+        {
+          "name": "Smile",
+          "quality": "common",
+          "id": "smile"
+        },
+        {
+          "name": "On Call",
+          "quality": "common",
+          "id": "on-call"
+        },
+        {
+          "name": "Valkyrie",
+          "quality": "common",
+          "id": "valkyrie"
+        },
+        {
+          "name": "Swiss",
+          "quality": "common",
+          "id": "swiss"
+        },
+        {
+          "name": "Arrow",
+          "quality": "common",
+          "id": "arrow"
+        },
+        {
+          "name": "Medic",
+          "quality": "common",
+          "id": "medic"
+        },
+        {
+          "name": "Battle Ready",
+          "quality": "common",
+          "id": "battle-ready"
+        },
+        {
+          "name": "Sting",
+          "quality": "common",
+          "id": "sting"
+        },
+        {
+          "name": "Gauze",
+          "quality": "common",
+          "id": "gauze"
+        },
+        {
+          "name": "Stethoscope",
+          "quality": "common",
+          "id": "stethoscope"
+        },
+        {
+          "name": "Bandage",
+          "quality": "common",
+          "id": "bandage"
+        },
+        {
+          "name": "Patched Up",
+          "quality": "common",
+          "id": "patched-up"
+        },
+        {
+          "name": "Ziegler",
+          "quality": "common",
+          "id": "ziegler"
+        },
+        {
+          "name": "Huge Rez!!",
+          "quality": "common",
+          "id": "huge-rez"
+        },
+        {
+          "name": "Heroes Never Die",
+          "quality": "common",
+          "id": "heroes-never-die"
+        },
+        {
+          "name": "Resurrect",
+          "quality": "common",
+          "id": "resurrect"
+        },
+        {
+          "name": "Wings",
+          "quality": "common",
+          "id": "wings"
+        },
+        {
+          "name": "Badminton",
+          "quality": "common",
+          "id": "badminton"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "I have my eye on you",
+          "quality": "common",
+          "id": "i-have-my-eye-on-you"
+        },
+        {
+          "name": "Doctor's orders",
+          "quality": "common",
+          "id": "doctors-orders"
+        },
+        {
+          "name": "Take two",
+          "quality": "common",
+          "id": "take-two"
+        },
+        {
+          "name": "The doctor will see you",
+          "quality": "common",
+          "id": "the-doctor-will-see-you"
+        },
+        {
+          "name": "On a scale of 1-10",
+          "quality": "common",
+          "id": "on-a-scale-of-110"
+        },
+        {
+          "name": "Consultation fee",
+          "quality": "common",
+          "id": "consultation-fee"
+        },
+        {
+          "name": "How Barbaric",
+          "quality": "common",
+          "id": "how-barbaric"
+        },
+        {
+          "name": "Miracle Worker",
+          "quality": "common",
+          "id": "miracle-worker"
+        },
+        {
+          "name": "Super!",
+          "quality": "common",
+          "id": "super"
+        },
+        {
+          "name": "Need a second opinion?",
+          "quality": "common",
+          "id": "need-a-second-opinion"
+        },
+        {
+          "name": "The Doctor Is In",
+          "quality": "common",
+          "id": "the-doctor-is-in"
+        },
+        {
+          "name": "Piece of cake",
+          "quality": "common",
+          "id": "piece-of-cake"
+        },
+        {
+          "name": "Superstition",
+          "quality": "common",
+          "id": "superstition"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Ready for battle",
+          "quality": "rare",
+          "id": "ready-for-battle"
+        },
+        {
+          "name": "Carefree",
+          "quality": "rare",
+          "id": "carefree"
+        },
+        {
+          "name": "Angelic",
+          "quality": "rare",
+          "id": "angelic"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "winston": {
+    "name": "Winston",
+    "class": "Tank",
+    "id": "winston",
+    "items": {
+      "skins": [
+        {
+          "name": "Forest",
+          "quality": "rare",
+          "id": "forest"
+        },
+        {
+          "name": "Atmosphere",
+          "quality": "rare",
+          "id": "atmosphere"
+        },
+        {
+          "name": "Banana",
+          "quality": "rare",
+          "id": "banana"
+        },
+        {
+          "name": "Red Planet",
+          "quality": "rare",
+          "id": "red-planet"
+        },
+        {
+          "name": "Desert",
+          "quality": "epic",
+          "id": "desert"
+        },
+        {
+          "name": "Horizon",
+          "quality": "epic",
+          "id": "horizon"
+        },
+        {
+          "name": "Undersea",
+          "quality": "legendary",
+          "id": "undersea"
+        },
+        {
+          "name": "Frogston",
+          "quality": "legendary",
+          "id": "frogston"
+        },
+        {
+          "name": "Explorer",
+          "quality": "legendary",
+          "id": "explorer"
+        },
+        {
+          "name": "Safari",
+          "quality": "legendary",
+          "id": "safari"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Roar",
+          "quality": "epic",
+          "id": "roar"
+        },
+        {
+          "name": "Peanut butter?",
+          "quality": "epic",
+          "id": "peanut-butter"
+        },
+        {
+          "name": "Monkey Business",
+          "quality": "epic",
+          "id": "monkey-business"
+        },
+        {
+          "name": "Laughing Matter",
+          "quality": "epic",
+          "id": "laughing-matter"
+        },
+        {
+          "name": "Sitting Around",
+          "quality": "epic",
+          "id": "sitting-around"
+        },
+        {
+          "name": "Shadow Puppets",
+          "quality": "epic",
+          "id": "shadow-puppets"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Primal Rage",
+          "quality": "epic",
+          "id": "primal-rage"
+        },
+        {
+          "name": "Glasses",
+          "quality": "epic",
+          "id": "glasses"
+        },
+        {
+          "name": "Excuse Me",
+          "quality": "epic",
+          "id": "excuse-me"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Winston",
+          "quality": "rare",
+          "id": "winston"
+        },
+        {
+          "name": "Peanut Butter",
+          "quality": "rare",
+          "id": "peanut-butter"
+        },
+        {
+          "name": "Lunar Ops",
+          "quality": "rare",
+          "id": "lunar-ops"
+        },
+        {
+          "name": "Volleyball",
+          "quality": "rare",
+          "id": "volleyball"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Lexigrams",
+          "quality": "common",
+          "id": "lexigrams"
+        },
+        {
+          "name": "Science!",
+          "quality": "common",
+          "id": "science"
+        },
+        {
+          "name": "Horizon",
+          "quality": "common",
+          "id": "horizon"
+        },
+        {
+          "name": "PB",
+          "quality": "common",
+          "id": "pb"
+        },
+        {
+          "name": "White",
+          "quality": "common",
+          "id": "white"
+        },
+        {
+          "name": "Ape Crossing",
+          "quality": "common",
+          "id": "ape-crossing"
+        },
+        {
+          "name": "Q.E.D.",
+          "quality": "common",
+          "id": "qed"
+        },
+        {
+          "name": "Serious",
+          "quality": "common",
+          "id": "serious"
+        },
+        {
+          "name": "Mine!",
+          "quality": "common",
+          "id": "mine"
+        },
+        {
+          "name": "Lightning",
+          "quality": "common",
+          "id": "lightning"
+        },
+        {
+          "name": "Explorer",
+          "quality": "common",
+          "id": "explorer"
+        },
+        {
+          "name": "Wow",
+          "quality": "common",
+          "id": "wow"
+        },
+        {
+          "name": "Research",
+          "quality": "common",
+          "id": "research"
+        },
+        {
+          "name": "Harold",
+          "quality": "common",
+          "id": "harold"
+        },
+        {
+          "name": "Swing",
+          "quality": "common",
+          "id": "swing"
+        },
+        {
+          "name": "Banana",
+          "quality": "common",
+          "id": "banana"
+        },
+        {
+          "name": "Baby",
+          "quality": "common",
+          "id": "baby"
+        },
+        {
+          "name": "Primal Rage",
+          "quality": "common",
+          "id": "primal-rage"
+        },
+        {
+          "name": "Angry",
+          "quality": "common",
+          "id": "angry"
+        },
+        {
+          "name": "Roar",
+          "quality": "common",
+          "id": "roar"
+        },
+        {
+          "name": "Rage",
+          "quality": "common",
+          "id": "rage"
+        },
+        {
+          "name": "Fastball",
+          "quality": "common",
+          "id": "fastball"
+        },
+        {
+          "name": "Volleyball",
+          "quality": "common",
+          "id": "volleyball"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Curious",
+          "quality": "common",
+          "id": "curious"
+        },
+        {
+          "name": "No monkey business",
+          "quality": "common",
+          "id": "no-monkey-business"
+        },
+        {
+          "name": "Natural selection",
+          "quality": "common",
+          "id": "natural-selection"
+        },
+        {
+          "name": "Don't get me angry",
+          "quality": "common",
+          "id": "dont-get-me-angry"
+        },
+        {
+          "name": "How embarrassing!",
+          "quality": "common",
+          "id": "how-embarrassing"
+        },
+        {
+          "name": "The power of science!",
+          "quality": "common",
+          "id": "the-power-of-science"
+        },
+        {
+          "name": "...Excuse me",
+          "quality": "common",
+          "id": "excuse-me"
+        },
+        {
+          "name": "Peanut butter?",
+          "quality": "common",
+          "id": "peanut-butter"
+        },
+        {
+          "name": "Sorry about that!",
+          "quality": "common",
+          "id": "sorry-about-that"
+        },
+        {
+          "name": "We have a problem",
+          "quality": "common",
+          "id": "we-have-a-problem"
+        },
+        {
+          "name": "I do not want a banana",
+          "quality": "common",
+          "id": "i-do-not-want-a-banana"
+        },
+        {
+          "name": "Playtime's over",
+          "quality": "common",
+          "id": "playtimes-over"
+        },
+        {
+          "name": "This is not a costume",
+          "quality": "common",
+          "id": "this-is-not-a-costume"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "The Thinker",
+          "quality": "rare",
+          "id": "the-thinker"
+        },
+        {
+          "name": "Glasses",
+          "quality": "rare",
+          "id": "glasses"
+        },
+        {
+          "name": "Beast",
+          "quality": "rare",
+          "id": "beast"
+        },
+        {
+          "name": "Medal",
+          "quality": "rare",
+          "id": "medal"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "genji": {
+    "name": "Genji",
+    "class": "Assault",
+    "id": "genji",
+    "items": {
+      "skins": [
+        {
+          "name": "Azurite",
+          "quality": "rare",
+          "id": "azurite"
+        },
+        {
+          "name": "Malachite",
+          "quality": "rare",
+          "id": "malachite"
+        },
+        {
+          "name": "Ochre",
+          "quality": "rare",
+          "id": "ochre"
+        },
+        {
+          "name": "Cinnabar",
+          "quality": "rare",
+          "id": "cinnabar"
+        },
+        {
+          "name": "Carbon Fiber",
+          "quality": "epic",
+          "id": "carbon-fiber"
+        },
+        {
+          "name": "Chrome",
+          "quality": "epic",
+          "id": "chrome"
+        },
+        {
+          "name": "Young Genji",
+          "quality": "legendary",
+          "id": "young-genji"
+        },
+        {
+          "name": "Sparrow",
+          "quality": "legendary",
+          "id": "sparrow"
+        },
+        {
+          "name": "Bedouin",
+          "quality": "legendary",
+          "id": "bedouin"
+        },
+        {
+          "name": "Nomad",
+          "quality": "legendary",
+          "id": "nomad"
+        },
+        {
+          "name": "Nihon",
+          "quality": "epic",
+          "id": "nihon"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Cutting Edge",
+          "quality": "epic",
+          "id": "cutting-edge"
+        },
+        {
+          "name": "Salute",
+          "quality": "epic",
+          "id": "salute"
+        },
+        {
+          "name": "Challenge",
+          "quality": "epic",
+          "id": "challenge"
+        },
+        {
+          "name": "Amusing",
+          "quality": "epic",
+          "id": "amusing"
+        },
+        {
+          "name": "Meditate",
+          "quality": "epic",
+          "id": "meditate"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Unsheathing the Sword",
+          "quality": "epic",
+          "id": "unsheathing-the-sword"
+        },
+        {
+          "name": "Warrior's Salute",
+          "quality": "epic",
+          "id": "warriors-salute"
+        },
+        {
+          "name": "Shuriken",
+          "quality": "epic",
+          "id": "shuriken"
+        },
+        {
+          "name": "Pumpkin Carving",
+          "quality": "epic",
+          "id": "pumpkin-carving"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Genji",
+          "quality": "rare",
+          "id": "genji"
+        },
+        {
+          "name": "Nin",
+          "quality": "rare",
+          "id": "nin"
+        },
+        {
+          "name": "God of War",
+          "quality": "rare",
+          "id": "god-of-war"
+        },
+        {
+          "name": "Fencing",
+          "quality": "rare",
+          "id": "fencing"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Nin",
+          "quality": "common",
+          "id": "nin"
+        },
+        {
+          "name": "God of War",
+          "quality": "common",
+          "id": "god-of-war"
+        },
+        {
+          "name": "Signature",
+          "quality": "common",
+          "id": "signature"
+        },
+        {
+          "name": "Ryugekiken",
+          "quality": "common",
+          "id": "ryugekiken"
+        },
+        {
+          "name": "Kaze no Gotoku",
+          "quality": "common",
+          "id": "kaze-no-gotoku"
+        },
+        {
+          "name": "Lunge",
+          "quality": "common",
+          "id": "lunge"
+        },
+        {
+          "name": "Green Ninja",
+          "quality": "common",
+          "id": "green-ninja"
+        },
+        {
+          "name": "Dragonblade",
+          "quality": "common",
+          "id": "dragonblade"
+        },
+        {
+          "name": "Shuriken",
+          "quality": "common",
+          "id": "shuriken"
+        },
+        {
+          "name": "Dragon",
+          "quality": "common",
+          "id": "dragon"
+        },
+        {
+          "name": "Warrior",
+          "quality": "common",
+          "id": "warrior"
+        },
+        {
+          "name": "Stoic",
+          "quality": "common",
+          "id": "stoic"
+        },
+        {
+          "name": "Assassin",
+          "quality": "common",
+          "id": "assassin"
+        },
+        {
+          "name": "Swords",
+          "quality": "common",
+          "id": "swords"
+        },
+        {
+          "name": "Draw",
+          "quality": "common",
+          "id": "draw"
+        },
+        {
+          "name": "Shimada",
+          "quality": "common",
+          "id": "shimada"
+        },
+        {
+          "name": "Stance",
+          "quality": "common",
+          "id": "stance"
+        },
+        {
+          "name": "Soul",
+          "quality": "common",
+          "id": "soul"
+        },
+        {
+          "name": "Fully Loaded",
+          "quality": "common",
+          "id": "fully-loaded"
+        },
+        {
+          "name": "Onmyodo",
+          "quality": "common",
+          "id": "onmyodo"
+        },
+        {
+          "name": "Prepared",
+          "quality": "common",
+          "id": "prepared"
+        },
+        {
+          "name": "Target Practice",
+          "quality": "common",
+          "id": "target-practice"
+        },
+        {
+          "name": "Fencing",
+          "quality": "common",
+          "id": "fencing"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "A steady blade",
+          "quality": "common",
+          "id": "a-steady-blade"
+        },
+        {
+          "name": "Come on!",
+          "quality": "common",
+          "id": "come-on"
+        },
+        {
+          "name": "I am prepared!",
+          "quality": "common",
+          "id": "i-am-prepared"
+        },
+        {
+          "name": "My soul seeks balance",
+          "quality": "common",
+          "id": "my-soul-seeks-balance"
+        },
+        {
+          "name": "Let's fight!",
+          "quality": "common",
+          "id": "lets-fight"
+        },
+        {
+          "name": "Yeah!",
+          "quality": "common",
+          "id": "yeah"
+        },
+        {
+          "name": "Measure twice, cut once",
+          "quality": "common",
+          "id": "measure-twice-cut-once"
+        },
+        {
+          "name": "You are only human",
+          "quality": "common",
+          "id": "you-are-only-human"
+        },
+        {
+          "name": "Damn!",
+          "quality": "common",
+          "id": "damn"
+        },
+        {
+          "name": "Simple",
+          "quality": "common",
+          "id": "simple"
+        },
+        {
+          "name": "Not good enough",
+          "quality": "common",
+          "id": "not-good-enough"
+        },
+        {
+          "name": "I was hoping for a challenge",
+          "quality": "common",
+          "id": "i-was-hoping-for-a-challenge"
+        },
+        {
+          "name": "My Halloween costume?",
+          "quality": "common",
+          "id": "my-halloween-costume"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Shuriken",
+          "quality": "rare",
+          "id": "shuriken"
+        },
+        {
+          "name": "Kneeling",
+          "quality": "rare",
+          "id": "kneeling"
+        },
+        {
+          "name": "Sword stance",
+          "quality": "rare",
+          "id": "sword-stance"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "symmetra": {
+    "name": "Symmetra",
+    "class": "Support",
+    "id": "symmetra",
+    "items": {
+      "skins": [
+        {
+          "name": "Hyacinth",
+          "quality": "rare",
+          "id": "hyacinth"
+        },
+        {
+          "name": "Cardamom",
+          "quality": "rare",
+          "id": "cardamom"
+        },
+        {
+          "name": "Saffron",
+          "quality": "rare",
+          "id": "saffron"
+        },
+        {
+          "name": "Technomancer",
+          "quality": "rare",
+          "id": "technomancer"
+        },
+        {
+          "name": "Regal",
+          "quality": "epic",
+          "id": "regal"
+        },
+        {
+          "name": "Utopaea",
+          "quality": "epic",
+          "id": "utopaea"
+        },
+        {
+          "name": "Devi",
+          "quality": "legendary",
+          "id": "devi"
+        },
+        {
+          "name": "Goddess",
+          "quality": "legendary",
+          "id": "goddess"
+        },
+        {
+          "name": "Vishkar",
+          "quality": "legendary",
+          "id": "vishkar"
+        },
+        {
+          "name": "Architech",
+          "quality": "legendary",
+          "id": "architech"
+        },
+        {
+          "name": "Vampire",
+          "quality": "epic",
+          "id": "vampire"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Flow",
+          "quality": "epic",
+          "id": "flow"
+        },
+        {
+          "name": "Clap",
+          "quality": "epic",
+          "id": "clap"
+        },
+        {
+          "name": "Insignificant",
+          "quality": "epic",
+          "id": "insignificant"
+        },
+        {
+          "name": "Snicker",
+          "quality": "epic",
+          "id": "snicker"
+        },
+        {
+          "name": "Have a Seat",
+          "quality": "epic",
+          "id": "have-a-seat"
+        },
+        {
+          "name": "Ribbon",
+          "quality": "epic",
+          "id": "ribbon"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Dance",
+          "quality": "epic",
+          "id": "dance"
+        },
+        {
+          "name": "My reality",
+          "quality": "epic",
+          "id": "my-reality"
+        },
+        {
+          "name": "Askew",
+          "quality": "epic",
+          "id": "askew"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Symmetra",
+          "quality": "rare",
+          "id": "symmetra"
+        },
+        {
+          "name": "Vishkar",
+          "quality": "rare",
+          "id": "vishkar"
+        },
+        {
+          "name": "Sentry",
+          "quality": "rare",
+          "id": "sentry"
+        },
+        {
+          "name": "Rhythmic Gymnastics",
+          "quality": "rare",
+          "id": "rhythmic-gymnastics"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Vishkar",
+          "quality": "common",
+          "id": "vishkar"
+        },
+        {
+          "name": "Light",
+          "quality": "common",
+          "id": "light"
+        },
+        {
+          "name": "Visor",
+          "quality": "common",
+          "id": "visor"
+        },
+        {
+          "name": "Lotus",
+          "quality": "common",
+          "id": "lotus"
+        },
+        {
+          "name": "Projector",
+          "quality": "common",
+          "id": "projector"
+        },
+        {
+          "name": "Behold",
+          "quality": "common",
+          "id": "behold"
+        },
+        {
+          "name": "Pose",
+          "quality": "common",
+          "id": "pose"
+        },
+        {
+          "name": "Glove",
+          "quality": "common",
+          "id": "glove"
+        },
+        {
+          "name": "Vaswani",
+          "quality": "common",
+          "id": "vaswani"
+        },
+        {
+          "name": "Builder",
+          "quality": "common",
+          "id": "builder"
+        },
+        {
+          "name": "Architect",
+          "quality": "common",
+          "id": "architect"
+        },
+        {
+          "name": "Superior",
+          "quality": "common",
+          "id": "superior"
+        },
+        {
+          "name": "Weaver",
+          "quality": "common",
+          "id": "weaver"
+        },
+        {
+          "name": "Design",
+          "quality": "common",
+          "id": "design"
+        },
+        {
+          "name": "Agent",
+          "quality": "common",
+          "id": "agent"
+        },
+        {
+          "name": "Will",
+          "quality": "common",
+          "id": "will"
+        },
+        {
+          "name": "Car Wash",
+          "quality": "common",
+          "id": "car-wash"
+        },
+        {
+          "name": "Lines",
+          "quality": "common",
+          "id": "lines"
+        },
+        {
+          "name": "Blueprint",
+          "quality": "common",
+          "id": "blueprint"
+        },
+        {
+          "name": "Caution",
+          "quality": "common",
+          "id": "caution"
+        },
+        {
+          "name": "The Path",
+          "quality": "common",
+          "id": "the-path"
+        },
+        {
+          "name": "Satya",
+          "quality": "common",
+          "id": "satya"
+        },
+        {
+          "name": "Rhythmic",
+          "quality": "common",
+          "id": "rhythmic"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Such a lack of imagination",
+          "quality": "common",
+          "id": "such-a-lack-of-imagination"
+        },
+        {
+          "name": "Why do you struggle?",
+          "quality": "common",
+          "id": "why-do-you-struggle"
+        },
+        {
+          "name": "Perfect harmony",
+          "quality": "common",
+          "id": "perfect-harmony"
+        },
+        {
+          "name": "How unsightly",
+          "quality": "common",
+          "id": "how-unsightly"
+        },
+        {
+          "name": "Exquisite",
+          "quality": "common",
+          "id": "exquisite"
+        },
+        {
+          "name": "Put you in your place",
+          "quality": "common",
+          "id": "put-you-in-your-place"
+        },
+        {
+          "name": "Precisely",
+          "quality": "common",
+          "id": "precisely"
+        },
+        {
+          "name": "Welcome to my reality",
+          "quality": "common",
+          "id": "welcome-to-my-reality"
+        },
+        {
+          "name": "Everything by design",
+          "quality": "common",
+          "id": "everything-by-design"
+        },
+        {
+          "name": "Impressive",
+          "quality": "common",
+          "id": "impressive"
+        },
+        {
+          "name": "I don't think so",
+          "quality": "common",
+          "id": "i-dont-think-so"
+        },
+        {
+          "name": "Hard work and dedication",
+          "quality": "common",
+          "id": "hard-work-and-dedication"
+        },
+        {
+          "name": "A frightening thought",
+          "quality": "common",
+          "id": "a-frightening-thought"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Creation",
+          "quality": "rare",
+          "id": "creation"
+        },
+        {
+          "name": "Balance",
+          "quality": "rare",
+          "id": "balance"
+        },
+        {
+          "name": "Dance",
+          "quality": "rare",
+          "id": "dance"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "mei": {
+    "name": "Mei",
+    "class": "Defence",
+    "id": "mei",
+    "items": {
+      "skins": [
+        {
+          "name": "Chrysanthemum",
+          "quality": "rare",
+          "id": "chrysanthemum"
+        },
+        {
+          "name": "Persimmon",
+          "quality": "rare",
+          "id": "persimmon"
+        },
+        {
+          "name": "Heliotrope",
+          "quality": "rare",
+          "id": "heliotrope"
+        },
+        {
+          "name": "Jade",
+          "quality": "rare",
+          "id": "jade"
+        },
+        {
+          "name": "Earthen",
+          "quality": "epic",
+          "id": "earthen"
+        },
+        {
+          "name": "Snow Plum",
+          "quality": "epic",
+          "id": "snow-plum"
+        },
+        {
+          "name": "Rescue Mei",
+          "quality": "legendary",
+          "id": "rescue-mei"
+        },
+        {
+          "name": "Firefighter",
+          "quality": "legendary",
+          "id": "firefighter"
+        },
+        {
+          "name": "Yeti Hunter",
+          "quality": "legendary",
+          "id": "yeti-hunter"
+        },
+        {
+          "name": "Abominable",
+          "quality": "legendary",
+          "id": "abominable"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Companion",
+          "quality": "epic",
+          "id": "companion"
+        },
+        {
+          "name": "Yaaaaaaaaay!",
+          "quality": "epic",
+          "id": "yaaaaaaaaay"
+        },
+        {
+          "name": "Spray",
+          "quality": "epic",
+          "id": "spray"
+        },
+        {
+          "name": "Giggle",
+          "quality": "epic",
+          "id": "giggle"
+        },
+        {
+          "name": "Kneel",
+          "quality": "epic",
+          "id": "kneel"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Going Up!",
+          "quality": "epic",
+          "id": "going-up"
+        },
+        {
+          "name": "Frosty :)",
+          "quality": "epic",
+          "id": "frosty-"
+        },
+        {
+          "name": "Skating Around",
+          "quality": "epic",
+          "id": "skating-around"
+        },
+        {
+          "name": "Ice Scream",
+          "quality": "epic",
+          "id": "ice-scream"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Mei",
+          "quality": "rare",
+          "id": "mei"
+        },
+        {
+          "name": "Snowball",
+          "quality": "rare",
+          "id": "snowball"
+        },
+        {
+          "name": "Hairpin",
+          "quality": "rare",
+          "id": "hairpin"
+        },
+        {
+          "name": "Table Tennis",
+          "quality": "rare",
+          "id": "table-tennis"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Blaster",
+          "quality": "common",
+          "id": "blaster"
+        },
+        {
+          "name": "Snowman",
+          "quality": "common",
+          "id": "snowman"
+        },
+        {
+          "name": "Eyes",
+          "quality": "common",
+          "id": "eyes"
+        },
+        {
+          "name": "Walled",
+          "quality": "common",
+          "id": "walled"
+        },
+        {
+          "name": "Reading",
+          "quality": "common",
+          "id": "reading"
+        },
+        {
+          "name": "Mei's Journal",
+          "quality": "common",
+          "id": "meis-journal"
+        },
+        {
+          "name": "Smile",
+          "quality": "common",
+          "id": "smile"
+        },
+        {
+          "name": "Dizzy",
+          "quality": "common",
+          "id": "dizzy"
+        },
+        {
+          "name": "Sketch",
+          "quality": "common",
+          "id": "sketch"
+        },
+        {
+          "name": "Explorer",
+          "quality": "common",
+          "id": "explorer"
+        },
+        {
+          "name": "Popsicle",
+          "quality": "common",
+          "id": "popsicle"
+        },
+        {
+          "name": "Hairpin",
+          "quality": "common",
+          "id": "hairpin"
+        },
+        {
+          "name": "Print",
+          "quality": "common",
+          "id": "print"
+        },
+        {
+          "name": "Snow Art",
+          "quality": "common",
+          "id": "snow-art"
+        },
+        {
+          "name": "^_^",
+          "quality": "common",
+          "id": "joy"
+        },
+        {
+          "name": ">_<",
+          "quality": "common",
+          "id": "frustration"
+        },
+        {
+          "name": "Confident",
+          "quality": "common",
+          "id": "confident"
+        },
+        {
+          "name": "Casual",
+          "quality": "common",
+          "id": "casual"
+        },
+        {
+          "name": "Snowball",
+          "quality": "common",
+          "id": "snowball"
+        },
+        {
+          "name": "Beat the Heat",
+          "quality": "common",
+          "id": "beat-the-heat"
+        },
+        {
+          "name": "Carefree",
+          "quality": "common",
+          "id": "carefree"
+        },
+        {
+          "name": "Soft Serve",
+          "quality": "common",
+          "id": "soft-serve"
+        },
+        {
+          "name": "Table Tennis",
+          "quality": "common",
+          "id": "table-tennis"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Hang in there",
+          "quality": "common",
+          "id": "hang-in-there"
+        },
+        {
+          "name": "Okay!",
+          "quality": "common",
+          "id": "okay"
+        },
+        {
+          "name": "Yay!",
+          "quality": "common",
+          "id": "yay"
+        },
+        {
+          "name": "Fight for our world",
+          "quality": "common",
+          "id": "fight-for-our-world"
+        },
+        {
+          "name": "Ouch, are you okay?",
+          "quality": "common",
+          "id": "ouch-are-you-okay"
+        },
+        {
+          "name": "That was great",
+          "quality": "common",
+          "id": "that-was-great"
+        },
+        {
+          "name": "Learned your lesson",
+          "quality": "common",
+          "id": "learned-your-lesson"
+        },
+        {
+          "name": "Sorry sorry sorry sorry",
+          "quality": "common",
+          "id": "sorry-sorry-sorry-sorry"
+        },
+        {
+          "name": "You have to let it go",
+          "quality": "common",
+          "id": "you-have-to-let-it-go"
+        },
+        {
+          "name": "Chill out!",
+          "quality": "common",
+          "id": "chill-out"
+        },
+        {
+          "name": "A-Mei-zing!",
+          "quality": "common",
+          "id": "ameizing"
+        },
+        {
+          "name": "Overcome all obstacles",
+          "quality": "common",
+          "id": "overcome-all-obstacles"
+        },
+        {
+          "name": "Scary!",
+          "quality": "common",
+          "id": "scary"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Hands on Hips",
+          "quality": "rare",
+          "id": "hands-on-hips"
+        },
+        {
+          "name": "Casual",
+          "quality": "rare",
+          "id": "casual"
+        },
+        {
+          "name": "Kneeling",
+          "quality": "rare",
+          "id": "kneeling"
+        },
+        {
+          "name": "Medal",
+          "quality": "rare",
+          "id": "medal"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "pharah": {
+    "name": "Pharah",
+    "class": "Assault",
+    "id": "pharah",
+    "items": {
+      "skins": [
+        {
+          "name": "Security Chief",
+          "quality": "legendary",
+          "id": "security-chief"
+        },
+        {
+          "name": "Emerald",
+          "quality": "rare",
+          "id": "emerald"
+        },
+        {
+          "name": "Amethyst",
+          "quality": "rare",
+          "id": "amethyst"
+        },
+        {
+          "name": "Titanium",
+          "quality": "rare",
+          "id": "titanium"
+        },
+        {
+          "name": "Copper",
+          "quality": "rare",
+          "id": "copper"
+        },
+        {
+          "name": "Anubis",
+          "quality": "epic",
+          "id": "anubis"
+        },
+        {
+          "name": "Jackal",
+          "quality": "epic",
+          "id": "jackal"
+        },
+        {
+          "name": "Mechaqueen",
+          "quality": "legendary",
+          "id": "mechaqueen"
+        },
+        {
+          "name": "Raptorion",
+          "quality": "legendary",
+          "id": "raptorion"
+        },
+        {
+          "name": "Thunderbird",
+          "quality": "legendary",
+          "id": "thunderbird"
+        },
+        {
+          "name": "Raindancer",
+          "quality": "legendary",
+          "id": "raindancer"
+        },
+        {
+          "name": "Possessed",
+          "quality": "epic",
+          "id": "possessed"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Flourish",
+          "quality": "epic",
+          "id": "flourish"
+        },
+        {
+          "name": "Cheer",
+          "quality": "epic",
+          "id": "cheer"
+        },
+        {
+          "name": "Knuckles",
+          "quality": "epic",
+          "id": "knuckles"
+        },
+        {
+          "name": "Chuckle",
+          "quality": "epic",
+          "id": "chuckle"
+        },
+        {
+          "name": "Take a knee",
+          "quality": "epic",
+          "id": "take-a-knee"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Touchdown",
+          "quality": "epic",
+          "id": "touchdown"
+        },
+        {
+          "name": "Mission Complete",
+          "quality": "epic",
+          "id": "mission-complete"
+        },
+        {
+          "name": "Barrage",
+          "quality": "epic",
+          "id": "barrage"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Pharah",
+          "quality": "rare",
+          "id": "pharah"
+        },
+        {
+          "name": "Raptora",
+          "quality": "rare",
+          "id": "raptora"
+        },
+        {
+          "name": "Wadjet",
+          "quality": "rare",
+          "id": "wadjet"
+        },
+        {
+          "name": "Basketball",
+          "quality": "rare",
+          "id": "basketball"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Raptora",
+          "quality": "common",
+          "id": "raptora"
+        },
+        {
+          "name": "Wedjat",
+          "quality": "common",
+          "id": "wedjat"
+        },
+        {
+          "name": "Statue",
+          "quality": "common",
+          "id": "statue"
+        },
+        {
+          "name": "Rocket Jump",
+          "quality": "common",
+          "id": "rocket-jump"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Hieroglyph",
+          "quality": "common",
+          "id": "hieroglyph"
+        },
+        {
+          "name": "Justice...",
+          "quality": "common",
+          "id": "justice"
+        },
+        {
+          "name": "Guardian",
+          "quality": "common",
+          "id": "guardian"
+        },
+        {
+          "name": "Wings",
+          "quality": "common",
+          "id": "wings"
+        },
+        {
+          "name": "Stone",
+          "quality": "common",
+          "id": "stone"
+        },
+        {
+          "name": "Rocket Launcher",
+          "quality": "common",
+          "id": "rocket-launcher"
+        },
+        {
+          "name": "Tattoo",
+          "quality": "common",
+          "id": "tattoo"
+        },
+        {
+          "name": "Ana",
+          "quality": "common",
+          "id": "ana"
+        },
+        {
+          "name": "Incoming",
+          "quality": "common",
+          "id": "incoming"
+        },
+        {
+          "name": "Wrist Launcher",
+          "quality": "common",
+          "id": "wrist-launcher"
+        },
+        {
+          "name": "Cobra",
+          "quality": "common",
+          "id": "cobra"
+        },
+        {
+          "name": "Scarab",
+          "quality": "common",
+          "id": "scarab"
+        },
+        {
+          "name": "Amari",
+          "quality": "common",
+          "id": "amari"
+        },
+        {
+          "name": "On Guard",
+          "quality": "common",
+          "id": "on-guard"
+        },
+        {
+          "name": "Salute",
+          "quality": "common",
+          "id": "salute"
+        },
+        {
+          "name": "Play Pharah",
+          "quality": "common",
+          "id": "play-pharah"
+        },
+        {
+          "name": "Aerial Superiority",
+          "quality": "common",
+          "id": "aerial-superiority"
+        },
+        {
+          "name": "Concussive Blast",
+          "quality": "common",
+          "id": "concussive-blast"
+        },
+        {
+          "name": "Basketball",
+          "quality": "common",
+          "id": "basketball"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Security in my hands",
+          "quality": "common",
+          "id": "security-in-my-hands"
+        },
+        {
+          "name": "Got you on my radar",
+          "quality": "common",
+          "id": "got-you-on-my-radar"
+        },
+        {
+          "name": "Leave this to a professional",
+          "quality": "common",
+          "id": "leave-this-to-a-professional"
+        },
+        {
+          "name": "Shot down",
+          "quality": "common",
+          "id": "shot-down"
+        },
+        {
+          "name": "Flying the friendly skies",
+          "quality": "common",
+          "id": "flying-the-friendly-skies"
+        },
+        {
+          "name": "Not a chance",
+          "quality": "common",
+          "id": "not-a-chance"
+        },
+        {
+          "name": "Aerial superiority achieved",
+          "quality": "common",
+          "id": "aerial-superiority-achieved"
+        },
+        {
+          "name": "Rocket jump?",
+          "quality": "common",
+          "id": "rocket-jump"
+        },
+        {
+          "name": "Sorry, but I need to jet",
+          "quality": "common",
+          "id": "sorry-but-i-need-to-jet"
+        },
+        {
+          "name": "Play nice, play Pharah",
+          "quality": "common",
+          "id": "play-nice-play-pharah"
+        },
+        {
+          "name": "Fly like an egyptian",
+          "quality": "common",
+          "id": "fly-like-an-egyptian"
+        },
+        {
+          "name": "We are in this together",
+          "quality": "common",
+          "id": "we-are-in-this-together"
+        },
+        {
+          "name": "Dead or alive",
+          "quality": "common",
+          "id": "dead-or-alive"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Jump Jet",
+          "quality": "rare",
+          "id": "jump-jet"
+        },
+        {
+          "name": "Guardian",
+          "quality": "rare",
+          "id": "guardian"
+        },
+        {
+          "name": "Kneeling",
+          "quality": "rare",
+          "id": "kneeling"
+        },
+        {
+          "name": "Medal",
+          "quality": "rare",
+          "id": "medal"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "hanzo": {
+    "name": "Hanzo",
+    "class": "Defence",
+    "id": "hanzo",
+    "items": {
+      "skins": [
+        {
+          "name": "Azuki",
+          "quality": "rare",
+          "id": "azuki"
+        },
+        {
+          "name": "Midori",
+          "quality": "rare",
+          "id": "midori"
+        },
+        {
+          "name": "Kinoko",
+          "quality": "rare",
+          "id": "kinoko"
+        },
+        {
+          "name": "Sora",
+          "quality": "rare",
+          "id": "sora"
+        },
+        {
+          "name": "Cloud",
+          "quality": "epic",
+          "id": "cloud"
+        },
+        {
+          "name": "Dragon",
+          "quality": "epic",
+          "id": "dragon"
+        },
+        {
+          "name": "Young Hanzo",
+          "quality": "legendary",
+          "id": "young-hanzo"
+        },
+        {
+          "name": "Young Master",
+          "quality": "legendary",
+          "id": "young-master"
+        },
+        {
+          "name": "Okami",
+          "quality": "legendary",
+          "id": "okami"
+        },
+        {
+          "name": "Lone Wolf",
+          "quality": "legendary",
+          "id": "lone-wolf"
+        },
+        {
+          "name": "Demon",
+          "quality": "epic",
+          "id": "demon"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Brush shoulder",
+          "quality": "epic",
+          "id": "brush-shoulder"
+        },
+        {
+          "name": "Victory",
+          "quality": "epic",
+          "id": "victory"
+        },
+        {
+          "name": "Beckon",
+          "quality": "epic",
+          "id": "beckon"
+        },
+        {
+          "name": "Chuckle",
+          "quality": "epic",
+          "id": "chuckle"
+        },
+        {
+          "name": "Meditate",
+          "quality": "epic",
+          "id": "meditate"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "My Aim Is True",
+          "quality": "epic",
+          "id": "my-aim-is-true"
+        },
+        {
+          "name": "Superior",
+          "quality": "epic",
+          "id": "superior"
+        },
+        {
+          "name": "Backflip",
+          "quality": "epic",
+          "id": "backflip"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Hanzo",
+          "quality": "rare",
+          "id": "hanzo"
+        },
+        {
+          "name": "Storm",
+          "quality": "rare",
+          "id": "storm"
+        },
+        {
+          "name": "Shimada",
+          "quality": "rare",
+          "id": "shimada"
+        },
+        {
+          "name": "Archery",
+          "quality": "rare",
+          "id": "archery"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Seal",
+          "quality": "common",
+          "id": "seal"
+        },
+        {
+          "name": "Nin",
+          "quality": "common",
+          "id": "nin"
+        },
+        {
+          "name": "Haori",
+          "quality": "common",
+          "id": "haori"
+        },
+        {
+          "name": "Duty",
+          "quality": "common",
+          "id": "duty"
+        },
+        {
+          "name": "Wanderer",
+          "quality": "common",
+          "id": "wanderer"
+        },
+        {
+          "name": "Yellow",
+          "quality": "common",
+          "id": "yellow"
+        },
+        {
+          "name": "Spray",
+          "quality": "common",
+          "id": "spray"
+        },
+        {
+          "name": "Kumo",
+          "quality": "common",
+          "id": "kumo"
+        },
+        {
+          "name": "Archer",
+          "quality": "common",
+          "id": "archer"
+        },
+        {
+          "name": "Dragonstrike",
+          "quality": "common",
+          "id": "dragonstrike"
+        },
+        {
+          "name": "Successor",
+          "quality": "common",
+          "id": "successor"
+        },
+        {
+          "name": "Challenge",
+          "quality": "common",
+          "id": "challenge"
+        },
+        {
+          "name": "Cloud",
+          "quality": "common",
+          "id": "cloud"
+        },
+        {
+          "name": "Kneeling",
+          "quality": "common",
+          "id": "kneeling"
+        },
+        {
+          "name": "Dragons",
+          "quality": "common",
+          "id": "dragons"
+        },
+        {
+          "name": "Scarf",
+          "quality": "common",
+          "id": "scarf"
+        },
+        {
+          "name": "Stoic",
+          "quality": "common",
+          "id": "stoic"
+        },
+        {
+          "name": "Moon",
+          "quality": "common",
+          "id": "moon"
+        },
+        {
+          "name": "Dragon",
+          "quality": "common",
+          "id": "dragon"
+        },
+        {
+          "name": "Sake",
+          "quality": "common",
+          "id": "sake"
+        },
+        {
+          "name": "Tea",
+          "quality": "common",
+          "id": "tea"
+        },
+        {
+          "name": "Drawn",
+          "quality": "common",
+          "id": "drawn"
+        },
+        {
+          "name": "Archery",
+          "quality": "common",
+          "id": "archery"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Expect nothing less",
+          "quality": "common",
+          "id": "expect-nothing-less"
+        },
+        {
+          "name": "Remember this moment",
+          "quality": "common",
+          "id": "remember-this-moment"
+        },
+        {
+          "name": "Flow like water",
+          "quality": "common",
+          "id": "flow-like-water"
+        },
+        {
+          "name": "Hm...",
+          "quality": "common",
+          "id": "hm"
+        },
+        {
+          "name": "I do what I must",
+          "quality": "common",
+          "id": "i-do-what-i-must"
+        },
+        {
+          "name": "Never second best",
+          "quality": "common",
+          "id": "never-second-best"
+        },
+        {
+          "name": "From one thing...",
+          "quality": "common",
+          "id": "from-one-thing"
+        },
+        {
+          "name": "Sake!",
+          "quality": "common",
+          "id": "sake"
+        },
+        {
+          "name": "Never in doubt",
+          "quality": "common",
+          "id": "never-in-doubt"
+        },
+        {
+          "name": "Spirit dragon",
+          "quality": "common",
+          "id": "spirit-dragon"
+        },
+        {
+          "name": "Step into the dojo",
+          "quality": "common",
+          "id": "step-into-the-dojo"
+        },
+        {
+          "name": "Ignore all distractions",
+          "quality": "common",
+          "id": "ignore-all-distractions"
+        },
+        {
+          "name": "You are already dead",
+          "quality": "common",
+          "id": "you-are-already-dead"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Confident",
+          "quality": "rare",
+          "id": "confident"
+        },
+        {
+          "name": "Over the Shoulder",
+          "quality": "rare",
+          "id": "over-the-shoulder"
+        },
+        {
+          "name": "Kneeling",
+          "quality": "rare",
+          "id": "kneeling"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "torbjorn": {
+    "name": "Torbjörn",
+    "class": "Defence",
+    "id": "torbjorn",
+    "items": {
+      "skins": [
+        {
+          "name": "Citron",
+          "quality": "rare",
+          "id": "citron"
+        },
+        {
+          "name": "Grön",
+          "quality": "rare",
+          "id": "gron"
+        },
+        {
+          "name": "Blå",
+          "quality": "rare",
+          "id": "bl"
+        },
+        {
+          "name": "Plommon",
+          "quality": "rare",
+          "id": "plommon"
+        },
+        {
+          "name": "Woodclad",
+          "quality": "epic",
+          "id": "woodclad"
+        },
+        {
+          "name": "Cathode",
+          "quality": "epic",
+          "id": "cathode"
+        },
+        {
+          "name": "Deadlock",
+          "quality": "legendary",
+          "id": "deadlock"
+        },
+        {
+          "name": "Chopper",
+          "quality": "legendary",
+          "id": "chopper"
+        },
+        {
+          "name": "Blackbeard",
+          "quality": "legendary",
+          "id": "blackbeard"
+        },
+        {
+          "name": "Barbarossa",
+          "quality": "legendary",
+          "id": "barbarossa"
+        },
+        {
+          "name": "Tre Kronor",
+          "quality": "epic",
+          "id": "tre-kronor"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Overload",
+          "quality": "epic",
+          "id": "overload"
+        },
+        {
+          "name": "Clicking heels",
+          "quality": "epic",
+          "id": "clicking-heels"
+        },
+        {
+          "name": "Fisticuffs",
+          "quality": "epic",
+          "id": "fisticuffs"
+        },
+        {
+          "name": "Guffaw",
+          "quality": "epic",
+          "id": "guffaw"
+        },
+        {
+          "name": "Taking a Break",
+          "quality": "epic",
+          "id": "taking-a-break"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Ride 'Em",
+          "quality": "epic",
+          "id": "ride-em"
+        },
+        {
+          "name": "Refreshing",
+          "quality": "epic",
+          "id": "refreshing"
+        },
+        {
+          "name": "In your face",
+          "quality": "epic",
+          "id": "in-your-face"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Torbjörn",
+          "quality": "rare",
+          "id": "torbjorn"
+        },
+        {
+          "name": "Forge",
+          "quality": "rare",
+          "id": "forge"
+        },
+        {
+          "name": "Gears",
+          "quality": "rare",
+          "id": "gears"
+        },
+        {
+          "name": "Water Polo",
+          "quality": "rare",
+          "id": "water-polo"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Gears",
+          "quality": "common",
+          "id": "gears"
+        },
+        {
+          "name": "Uppgradera",
+          "quality": "common",
+          "id": "uppgradera"
+        },
+        {
+          "name": "Smält",
+          "quality": "common",
+          "id": "smlt"
+        },
+        {
+          "name": "Fix It Up",
+          "quality": "common",
+          "id": "fix-it-up"
+        },
+        {
+          "name": "Kanon",
+          "quality": "common",
+          "id": "kanon"
+        },
+        {
+          "name": "Forged",
+          "quality": "common",
+          "id": "forged"
+        },
+        {
+          "name": "Armor",
+          "quality": "common",
+          "id": "armor"
+        },
+        {
+          "name": "Stoic",
+          "quality": "common",
+          "id": "stoic"
+        },
+        {
+          "name": "Ironclad",
+          "quality": "common",
+          "id": "ironclad"
+        },
+        {
+          "name": "Turret",
+          "quality": "common",
+          "id": "turret"
+        },
+        {
+          "name": "Hot",
+          "quality": "common",
+          "id": "hot"
+        },
+        {
+          "name": "Hammer",
+          "quality": "common",
+          "id": "hammer"
+        },
+        {
+          "name": "Claw",
+          "quality": "common",
+          "id": "claw"
+        },
+        {
+          "name": "Mask",
+          "quality": "common",
+          "id": "mask"
+        },
+        {
+          "name": "Beard",
+          "quality": "common",
+          "id": "beard"
+        },
+        {
+          "name": "Ready to Work",
+          "quality": "common",
+          "id": "ready-to-work"
+        },
+        {
+          "name": "Catch a Ride",
+          "quality": "common",
+          "id": "catch-a-ride"
+        },
+        {
+          "name": "Run!",
+          "quality": "common",
+          "id": "run"
+        },
+        {
+          "name": "Chef",
+          "quality": "common",
+          "id": "chef"
+        },
+        {
+          "name": "Molten Core",
+          "quality": "common",
+          "id": "molten-core"
+        },
+        {
+          "name": "Turrets",
+          "quality": "common",
+          "id": "turrets"
+        },
+        {
+          "name": "Get Ready",
+          "quality": "common",
+          "id": "get-ready"
+        },
+        {
+          "name": "Water Polo",
+          "quality": "common",
+          "id": "water-polo"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Hard work pays off",
+          "quality": "common",
+          "id": "hard-work-pays-off"
+        },
+        {
+          "name": "Leave this to an expert",
+          "quality": "common",
+          "id": "leave-this-to-an-expert"
+        },
+        {
+          "name": "Working as intended",
+          "quality": "common",
+          "id": "working-as-intended"
+        },
+        {
+          "name": "A chicken out of a feather",
+          "quality": "common",
+          "id": "a-chicken-out-of-a-feather"
+        },
+        {
+          "name": "I'm Swedish!",
+          "quality": "common",
+          "id": "im-swedish"
+        },
+        {
+          "name": "Engineers",
+          "quality": "common",
+          "id": "engineers"
+        },
+        {
+          "name": "Let's not buy the pig",
+          "quality": "common",
+          "id": "lets-not-buy-the-pig"
+        },
+        {
+          "name": "Don't get caught",
+          "quality": "common",
+          "id": "dont-get-caught"
+        },
+        {
+          "name": "Some assembly required",
+          "quality": "common",
+          "id": "some-assembly-required"
+        },
+        {
+          "name": "I'm giving it all I've got!",
+          "quality": "common",
+          "id": "im-giving-it-all-ive-got"
+        },
+        {
+          "name": "Completion date?",
+          "quality": "common",
+          "id": "completion-date"
+        },
+        {
+          "name": "More where that came from",
+          "quality": "common",
+          "id": "more-where-that-came-from"
+        },
+        {
+          "name": "If you build it",
+          "quality": "common",
+          "id": "if-you-build-it"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Hammer",
+          "quality": "rare",
+          "id": "hammer"
+        },
+        {
+          "name": "Sitting Pretty",
+          "quality": "rare",
+          "id": "sitting-pretty"
+        },
+        {
+          "name": "Take five",
+          "quality": "rare",
+          "id": "take-five"
+        },
+        {
+          "name": "Medal",
+          "quality": "rare",
+          "id": "medal"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "junkrat": {
+    "name": "Junkrat",
+    "class": "Defence",
+    "id": "junkrat",
+    "items": {
+      "skins": [
+        {
+          "name": "Bleached",
+          "quality": "rare",
+          "id": "bleached"
+        },
+        {
+          "name": "Irradiated",
+          "quality": "rare",
+          "id": "irradiated"
+        },
+        {
+          "name": "Rusted",
+          "quality": "rare",
+          "id": "rusted"
+        },
+        {
+          "name": "Drowned",
+          "quality": "rare",
+          "id": "drowned"
+        },
+        {
+          "name": "Jailbird",
+          "quality": "epic",
+          "id": "jailbird"
+        },
+        {
+          "name": "Toasted",
+          "quality": "epic",
+          "id": "toasted"
+        },
+        {
+          "name": "Jester",
+          "quality": "legendary",
+          "id": "jester"
+        },
+        {
+          "name": "Fool",
+          "quality": "legendary",
+          "id": "fool"
+        },
+        {
+          "name": "Scarecrow",
+          "quality": "legendary",
+          "id": "scarecrow"
+        },
+        {
+          "name": "Hayseed",
+          "quality": "legendary",
+          "id": "hayseed"
+        },
+        {
+          "name": "Dr. Junkenstein",
+          "quality": "legendary",
+          "id": "dr-junkenstein"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Juggling",
+          "quality": "epic",
+          "id": "juggling"
+        },
+        {
+          "name": "Vaudeville",
+          "quality": "epic",
+          "id": "vaudeville"
+        },
+        {
+          "name": "Puppet",
+          "quality": "epic",
+          "id": "puppet"
+        },
+        {
+          "name": "Can't deal",
+          "quality": "epic",
+          "id": "cant-deal"
+        },
+        {
+          "name": "Lounging",
+          "quality": "epic",
+          "id": "lounging"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "RIP-Tire",
+          "quality": "epic",
+          "id": "riptire"
+        },
+        {
+          "name": "Unfortunate",
+          "quality": "epic",
+          "id": "unfortunate"
+        },
+        {
+          "name": "I'm Flying!",
+          "quality": "epic",
+          "id": "im-flying"
+        },
+        {
+          "name": "Shot Put",
+          "quality": "epic",
+          "id": "shot-put"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Junkrat",
+          "quality": "rare",
+          "id": "junkrat"
+        },
+        {
+          "name": "Have a Nice Day!",
+          "quality": "rare",
+          "id": "have-a-nice-day"
+        },
+        {
+          "name": "AHHHH!",
+          "quality": "rare",
+          "id": "ahhhh"
+        },
+        {
+          "name": "Tennis",
+          "quality": "rare",
+          "id": "tennis"
+        },
+        {
+          "name": "The Doctor",
+          "quality": "rare",
+          "id": "the-doctor"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Smile",
+          "quality": "common",
+          "id": "smile"
+        },
+        {
+          "name": "Kaboom!",
+          "quality": "common",
+          "id": "kaboom"
+        },
+        {
+          "name": "Frag",
+          "quality": "common",
+          "id": "frag"
+        },
+        {
+          "name": "Wanted",
+          "quality": "common",
+          "id": "wanted"
+        },
+        {
+          "name": "Bang Bang",
+          "quality": "common",
+          "id": "bang-bang"
+        },
+        {
+          "name": "Spin",
+          "quality": "common",
+          "id": "spin"
+        },
+        {
+          "name": "Mad",
+          "quality": "common",
+          "id": "mad"
+        },
+        {
+          "name": "Fuse",
+          "quality": "common",
+          "id": "fuse"
+        },
+        {
+          "name": "Trapper",
+          "quality": "common",
+          "id": "trapper"
+        },
+        {
+          "name": "Crazy",
+          "quality": "common",
+          "id": "crazy"
+        },
+        {
+          "name": "Grin",
+          "quality": "common",
+          "id": "grin"
+        },
+        {
+          "name": "Minefield",
+          "quality": "common",
+          "id": "minefield"
+        },
+        {
+          "name": "Rolling",
+          "quality": "common",
+          "id": "rolling"
+        },
+        {
+          "name": "Firework",
+          "quality": "common",
+          "id": "firework"
+        },
+        {
+          "name": "Mine",
+          "quality": "common",
+          "id": "mine"
+        },
+        {
+          "name": "Smoke",
+          "quality": "common",
+          "id": "smoke"
+        },
+        {
+          "name": "Vroom!!",
+          "quality": "common",
+          "id": "vroom"
+        },
+        {
+          "name": "For You",
+          "quality": "common",
+          "id": "for-you"
+        },
+        {
+          "name": "Mayhem",
+          "quality": "common",
+          "id": "mayhem"
+        },
+        {
+          "name": "AHHHH!",
+          "quality": "common",
+          "id": "ahhhh"
+        },
+        {
+          "name": "Fireball",
+          "quality": "common",
+          "id": "fireball"
+        },
+        {
+          "name": "Junk",
+          "quality": "common",
+          "id": "junk"
+        },
+        {
+          "name": "Tennis",
+          "quality": "common",
+          "id": "tennis"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Tick-tock-tick-tock",
+          "quality": "common",
+          "id": "ticktockticktock"
+        },
+        {
+          "name": "Anyone want some bbq?",
+          "quality": "common",
+          "id": "anyone-want-some-bbq"
+        },
+        {
+          "name": "Brrring!",
+          "quality": "common",
+          "id": "brrring"
+        },
+        {
+          "name": "Coming up explodey!",
+          "quality": "common",
+          "id": "coming-up-explodey"
+        },
+        {
+          "name": "Happy birthday",
+          "quality": "common",
+          "id": "happy-birthday"
+        },
+        {
+          "name": "Kaboom",
+          "quality": "common",
+          "id": "kaboom"
+        },
+        {
+          "name": "Smile!",
+          "quality": "common",
+          "id": "smile"
+        },
+        {
+          "name": "Have a nice day!",
+          "quality": "common",
+          "id": "have-a-nice-day"
+        },
+        {
+          "name": "It's the little things",
+          "quality": "common",
+          "id": "its-the-little-things"
+        },
+        {
+          "name": "...blow it up again",
+          "quality": "common",
+          "id": "blow-it-up-again"
+        },
+        {
+          "name": "Ooh, shiny",
+          "quality": "common",
+          "id": "ooh-shiny"
+        },
+        {
+          "name": "I give it a 10!",
+          "quality": "common",
+          "id": "i-give-it-a-10"
+        },
+        {
+          "name": "Happy Halloween",
+          "quality": "common",
+          "id": "happy-halloween"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "It'll Freeze That Way",
+          "quality": "rare",
+          "id": "itll-freeze-that-way"
+        },
+        {
+          "name": "Kneeling",
+          "quality": "rare",
+          "id": "kneeling"
+        },
+        {
+          "name": "Nyah nyah",
+          "quality": "rare",
+          "id": "nyah-nyah"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "tracer": {
+    "name": "Tracer",
+    "class": "Assault",
+    "id": "tracer",
+    "items": {
+      "skins": [
+        {
+          "name": "Slipstream",
+          "quality": "legendary",
+          "id": "slipstream"
+        },
+        {
+          "name": "Neon Green",
+          "quality": "rare",
+          "id": "neon-green"
+        },
+        {
+          "name": "Royal Blue",
+          "quality": "rare",
+          "id": "royal-blue"
+        },
+        {
+          "name": "Hot Pink",
+          "quality": "rare",
+          "id": "hot-pink"
+        },
+        {
+          "name": "Electric Purple",
+          "quality": "rare",
+          "id": "electric-purple"
+        },
+        {
+          "name": "Posh",
+          "quality": "epic",
+          "id": "posh"
+        },
+        {
+          "name": "Sporty",
+          "quality": "epic",
+          "id": "sporty"
+        },
+        {
+          "name": "Punk",
+          "quality": "legendary",
+          "id": "punk"
+        },
+        {
+          "name": "Ultraviolet",
+          "quality": "legendary",
+          "id": "ultraviolet"
+        },
+        {
+          "name": "T. Racer",
+          "quality": "legendary",
+          "id": "t-racer"
+        },
+        {
+          "name": "Mach T",
+          "quality": "legendary",
+          "id": "mach-t"
+        },
+        {
+          "name": "Sprinter",
+          "quality": "legendary",
+          "id": "sprinter"
+        },
+        {
+          "name": "Track and Field",
+          "quality": "legendary",
+          "id": "track-and-field"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Spin",
+          "quality": "epic",
+          "id": "spin"
+        },
+        {
+          "name": "Cheer",
+          "quality": "epic",
+          "id": "cheer"
+        },
+        {
+          "name": "Having a laugh",
+          "quality": "epic",
+          "id": "having-a-laugh"
+        },
+        {
+          "name": "Sitting Around...",
+          "quality": "epic",
+          "id": "sitting-around"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Just in Time",
+          "quality": "epic",
+          "id": "just-in-time"
+        },
+        {
+          "name": "Serious Business",
+          "quality": "epic",
+          "id": "serious-business"
+        },
+        {
+          "name": "Backflip",
+          "quality": "epic",
+          "id": "backflip"
+        },
+        {
+          "name": "Hurdle",
+          "quality": "epic",
+          "id": "hurdle"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Tracer",
+          "quality": "rare",
+          "id": "tracer"
+        },
+        {
+          "name": "Pulse Bomb",
+          "quality": "rare",
+          "id": "pulse-bomb"
+        },
+        {
+          "name": "Patch",
+          "quality": "rare",
+          "id": "patch"
+        },
+        {
+          "name": "Track",
+          "quality": "rare",
+          "id": "track"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Wings",
+          "quality": "common",
+          "id": "wings"
+        },
+        {
+          "name": "Blink",
+          "quality": "common",
+          "id": "blink"
+        },
+        {
+          "name": "Fighter",
+          "quality": "common",
+          "id": "fighter"
+        },
+        {
+          "name": "Cheers, Love",
+          "quality": "common",
+          "id": "cheers-love"
+        },
+        {
+          "name": "Tagged",
+          "quality": "common",
+          "id": "tagged"
+        },
+        {
+          "name": "Orange",
+          "quality": "common",
+          "id": "orange"
+        },
+        {
+          "name": "Lena",
+          "quality": "common",
+          "id": "lena"
+        },
+        {
+          "name": "Clock's Tickin'",
+          "quality": "common",
+          "id": "clocks-tickin"
+        },
+        {
+          "name": "Pistols",
+          "quality": "common",
+          "id": "pistols"
+        },
+        {
+          "name": "Shaded",
+          "quality": "common",
+          "id": "shaded"
+        },
+        {
+          "name": "Pulse Bomb",
+          "quality": "common",
+          "id": "pulse-bomb"
+        },
+        {
+          "name": "Bomb's Away!",
+          "quality": "common",
+          "id": "bombs-away"
+        },
+        {
+          "name": "Ready for Action",
+          "quality": "common",
+          "id": "ready-for-action"
+        },
+        {
+          "name": "Confident",
+          "quality": "common",
+          "id": "confident"
+        },
+        {
+          "name": "Kneeling",
+          "quality": "common",
+          "id": "kneeling"
+        },
+        {
+          "name": "Whatcha' Lookin' At?",
+          "quality": "common",
+          "id": "whatcha-lookin-at"
+        },
+        {
+          "name": "Cavalry's Here",
+          "quality": "common",
+          "id": "cavalrys-here"
+        },
+        {
+          "name": "Cheers",
+          "quality": "common",
+          "id": "cheers"
+        },
+        {
+          "name": "Pew! Pew! Pew!",
+          "quality": "common",
+          "id": "pew-pew-pew"
+        },
+        {
+          "name": "Poster",
+          "quality": "common",
+          "id": "poster"
+        },
+        {
+          "name": "Salute",
+          "quality": "common",
+          "id": "salute"
+        },
+        {
+          "name": "Portrait",
+          "quality": "common",
+          "id": "portrait"
+        },
+        {
+          "name": "Track",
+          "quality": "common",
+          "id": "track"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "You got it",
+          "quality": "common",
+          "id": "you-got-it"
+        },
+        {
+          "name": "Aw, rubbish",
+          "quality": "common",
+          "id": "aw-rubbish"
+        },
+        {
+          "name": "Under control",
+          "quality": "common",
+          "id": "under-control"
+        },
+        {
+          "name": "The world needs heroes",
+          "quality": "common",
+          "id": "the-world-needs-heroes"
+        },
+        {
+          "name": "You need a time out",
+          "quality": "common",
+          "id": "you-need-a-time-out"
+        },
+        {
+          "name": "Check me out",
+          "quality": "common",
+          "id": "check-me-out"
+        },
+        {
+          "name": "She shoots, she scores",
+          "quality": "common",
+          "id": "she-shoots-she-scores"
+        },
+        {
+          "name": "Cheers, love!",
+          "quality": "common",
+          "id": "cheers-love"
+        },
+        {
+          "name": "Keep calm",
+          "quality": "common",
+          "id": "keep-calm"
+        },
+        {
+          "name": "Be right back!",
+          "quality": "common",
+          "id": "be-right-back"
+        },
+        {
+          "name": "déjà vu",
+          "quality": "common",
+          "id": "dj-vu"
+        },
+        {
+          "name": "Eat my dust",
+          "quality": "common",
+          "id": "eat-my-dust"
+        },
+        {
+          "name": "Ooh, Scary!",
+          "quality": "common",
+          "id": "ooh-scary"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Salute",
+          "quality": "rare",
+          "id": "salute"
+        },
+        {
+          "name": "Over the Shoulder",
+          "quality": "rare",
+          "id": "over-the-shoulder"
+        },
+        {
+          "name": "Sitting",
+          "quality": "rare",
+          "id": "sitting"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "dva": {
+    "name": "D.Va",
+    "class": "Tank",
+    "id": "dva",
+    "items": {
+      "skins": [
+        {
+          "name": "Blueberry",
+          "quality": "rare",
+          "id": "blueberry"
+        },
+        {
+          "name": "Lemon-Lime",
+          "quality": "rare",
+          "id": "lemonlime"
+        },
+        {
+          "name": "Tangerine",
+          "quality": "rare",
+          "id": "tangerine"
+        },
+        {
+          "name": "Watermelon",
+          "quality": "rare",
+          "id": "watermelon"
+        },
+        {
+          "name": "Carbon Fiber",
+          "quality": "epic",
+          "id": "carbon-fiber"
+        },
+        {
+          "name": "White Rabbit",
+          "quality": "epic",
+          "id": "white-rabbit"
+        },
+        {
+          "name": "B.Va",
+          "quality": "legendary",
+          "id": "bva"
+        },
+        {
+          "name": "Junebug",
+          "quality": "legendary",
+          "id": "junebug"
+        },
+        {
+          "name": "Junker",
+          "quality": "legendary",
+          "id": "junker"
+        },
+        {
+          "name": "Scavenger",
+          "quality": "legendary",
+          "id": "scavenger"
+        },
+        {
+          "name": "Taegeukgi",
+          "quality": "epic",
+          "id": "taegeukgi"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "heartbreaker",
+          "quality": "epic",
+          "id": "heartbreaker"
+        },
+        {
+          "name": "Party Time",
+          "quality": "epic",
+          "id": "party-time"
+        },
+        {
+          "name": "Bunny Hop",
+          "quality": "epic",
+          "id": "bunny-hop"
+        },
+        {
+          "name": "^o^",
+          "quality": "epic",
+          "id": "o"
+        },
+        {
+          "name": "Game On",
+          "quality": "legendary",
+          "id": "game-on"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Eject",
+          "quality": "epic",
+          "id": "eject"
+        },
+        {
+          "name": "Lying Around",
+          "quality": "epic",
+          "id": "lying-around"
+        },
+        {
+          "name": "MEKA Activated",
+          "quality": "epic",
+          "id": "meka-activated"
+        }
+      ],
+      "icons": [
+        {
+          "name": "D.Va",
+          "quality": "rare",
+          "id": "dva"
+        },
+        {
+          "name": "Bunny",
+          "quality": "rare",
+          "id": "bunny"
+        },
+        {
+          "name": "Charm",
+          "quality": "rare",
+          "id": "charm"
+        },
+        {
+          "name": "Cycling",
+          "quality": "rare",
+          "id": "cycling"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "B.Ny",
+          "quality": "common",
+          "id": "bny"
+        },
+        {
+          "name": "Diva",
+          "quality": "common",
+          "id": "diva"
+        },
+        {
+          "name": "Light Gun",
+          "quality": "common",
+          "id": "light-gun"
+        },
+        {
+          "name": "Hana",
+          "quality": "common",
+          "id": "hana"
+        },
+        {
+          "name": "Unload",
+          "quality": "common",
+          "id": "unload"
+        },
+        {
+          "name": "Bunny Hop",
+          "quality": "common",
+          "id": "bunny-hop"
+        },
+        {
+          "name": "Love D.Va",
+          "quality": "common",
+          "id": "love-dva"
+        },
+        {
+          "name": "Salt",
+          "quality": "common",
+          "id": "salt"
+        },
+        {
+          "name": "Walk of Fame",
+          "quality": "common",
+          "id": "walk-of-fame"
+        },
+        {
+          "name": "Star",
+          "quality": "common",
+          "id": "star"
+        },
+        {
+          "name": "Watching",
+          "quality": "common",
+          "id": "watching"
+        },
+        {
+          "name": "Bubble",
+          "quality": "common",
+          "id": "bubble"
+        },
+        {
+          "name": "Pixel Bunny",
+          "quality": "common",
+          "id": "pixel-bunny"
+        },
+        {
+          "name": "Headset",
+          "quality": "common",
+          "id": "headset"
+        },
+        {
+          "name": "Bubble Gum",
+          "quality": "common",
+          "id": "bubble-gum"
+        },
+        {
+          "name": "Photo",
+          "quality": "common",
+          "id": "photo"
+        },
+        {
+          "name": "Bang",
+          "quality": "common",
+          "id": "bang"
+        },
+        {
+          "name": "Nano Cola",
+          "quality": "common",
+          "id": "nano-cola"
+        },
+        {
+          "name": "MEKA",
+          "quality": "common",
+          "id": "meka"
+        },
+        {
+          "name": "Power Up!",
+          "quality": "common",
+          "id": "power-up"
+        },
+        {
+          "name": "GG",
+          "quality": "common",
+          "id": "gg"
+        },
+        {
+          "name": "Heart",
+          "quality": "common",
+          "id": "heart"
+        },
+        {
+          "name": "Cycling",
+          "quality": "common",
+          "id": "cycling"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "Love, D.Va",
+          "quality": "common",
+          "id": "love-dva"
+        },
+        {
+          "name": "LOL",
+          "quality": "common",
+          "id": "lol"
+        },
+        {
+          "name": "No hacks required",
+          "quality": "common",
+          "id": "no-hacks-required"
+        },
+        {
+          "name": "I play to win",
+          "quality": "common",
+          "id": "i-play-to-win"
+        },
+        {
+          "name": "Aw, yeah!",
+          "quality": "common",
+          "id": "aw-yeah"
+        },
+        {
+          "name": "AFK",
+          "quality": "common",
+          "id": "afk"
+        },
+        {
+          "name": "D.Va: 1, bad guys: 0",
+          "quality": "common",
+          "id": "dva-1-bad-guys-0"
+        },
+        {
+          "name": ";)",
+          "quality": "common",
+          "id": "winky-face"
+        },
+        {
+          "name": "gg!",
+          "quality": "common",
+          "id": "gg"
+        },
+        {
+          "name": "Is this easy mode?",
+          "quality": "common",
+          "id": "is-this-easy-mode"
+        },
+        {
+          "name": "A new challenger!",
+          "quality": "common",
+          "id": "a-new-challenger"
+        },
+        {
+          "name": "I'm #1",
+          "quality": "common",
+          "id": "im-1"
+        },
+        {
+          "name": "Happy Halloween!",
+          "quality": "common",
+          "id": "happy-halloween"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "I heart you",
+          "quality": "rare",
+          "id": "i-heart-you"
+        },
+        {
+          "name": "Peace",
+          "quality": "rare",
+          "id": "peace"
+        },
+        {
+          "name": "Sitting",
+          "quality": "rare",
+          "id": "sitting"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  },
+  "lucio": {
+    "name": "Lúcio",
+    "class": "Support",
+    "id": "lucio",
+    "items": {
+      "skins": [
+        {
+          "name": "Roxo",
+          "quality": "rare",
+          "id": "roxo"
+        },
+        {
+          "name": "Laranja",
+          "quality": "rare",
+          "id": "laranja"
+        },
+        {
+          "name": "Vermelho",
+          "quality": "rare",
+          "id": "vermelho"
+        },
+        {
+          "name": "Azul",
+          "quality": "rare",
+          "id": "azul"
+        },
+        {
+          "name": "Synaesthesia",
+          "quality": "epic",
+          "id": "synaesthesia"
+        },
+        {
+          "name": "Auditiva",
+          "quality": "epic",
+          "id": "auditiva"
+        },
+        {
+          "name": "Ribbit",
+          "quality": "legendary",
+          "id": "ribbit"
+        },
+        {
+          "name": "Hippityhop",
+          "quality": "legendary",
+          "id": "hippityhop"
+        },
+        {
+          "name": "Breakaway",
+          "quality": "legendary",
+          "id": "breakaway"
+        },
+        {
+          "name": "Slapshot",
+          "quality": "legendary",
+          "id": "slapshot"
+        },
+        {
+          "name": "Seleção",
+          "quality": "legendary",
+          "id": "selecao"
+        },
+        {
+          "name": "Striker",
+          "quality": "legendary",
+          "id": "striker"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "In the Groove",
+          "quality": "epic",
+          "id": "in-the-groove"
+        },
+        {
+          "name": "Capoeira",
+          "quality": "epic",
+          "id": "capoeira"
+        },
+        {
+          "name": "Nah!",
+          "quality": "epic",
+          "id": "nah"
+        },
+        {
+          "name": "Knee Slapper",
+          "quality": "epic",
+          "id": "knee-slapper"
+        },
+        {
+          "name": "Chilling",
+          "quality": "epic",
+          "id": "chilling"
+        },
+        {
+          "name": "Juggle",
+          "quality": "epic",
+          "id": "juggle"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Drop the beat",
+          "quality": "epic",
+          "id": "drop-the-beat"
+        },
+        {
+          "name": "In the Groove",
+          "quality": "epic",
+          "id": "in-the-groove"
+        },
+        {
+          "name": "Freestyle",
+          "quality": "epic",
+          "id": "freestyle"
+        },
+        {
+          "name": "Bicycle Kick",
+          "quality": "epic",
+          "id": "bicycle-kick"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Lúcio",
+          "quality": "rare",
+          "id": "lucio"
+        },
+        {
+          "name": "Kambô",
+          "quality": "rare",
+          "id": "kambo"
+        },
+        {
+          "name": "Frog",
+          "quality": "rare",
+          "id": "frog"
+        },
+        {
+          "name": "Football",
+          "quality": "rare",
+          "id": "football"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Pixel",
+          "quality": "common",
+          "id": "pixel"
+        },
+        {
+          "name": "Cute",
+          "quality": "common",
+          "id": "cute"
+        },
+        {
+          "name": "Icon",
+          "quality": "common",
+          "id": "icon"
+        },
+        {
+          "name": "Frog",
+          "quality": "common",
+          "id": "frog"
+        },
+        {
+          "name": "Deck",
+          "quality": "common",
+          "id": "deck"
+        },
+        {
+          "name": "Tag",
+          "quality": "common",
+          "id": "tag"
+        },
+        {
+          "name": "Signature",
+          "quality": "common",
+          "id": "signature"
+        },
+        {
+          "name": "Hero",
+          "quality": "common",
+          "id": "hero"
+        },
+        {
+          "name": "Confident",
+          "quality": "common",
+          "id": "confident"
+        },
+        {
+          "name": "Cereal",
+          "quality": "common",
+          "id": "cereal"
+        },
+        {
+          "name": "Scratch",
+          "quality": "common",
+          "id": "scratch"
+        },
+        {
+          "name": "Acelerar",
+          "quality": "common",
+          "id": "acelerar"
+        },
+        {
+          "name": "Break It Down",
+          "quality": "common",
+          "id": "break-it-down"
+        },
+        {
+          "name": "In Concert",
+          "quality": "common",
+          "id": "in-concert"
+        },
+        {
+          "name": "Wave",
+          "quality": "common",
+          "id": "wave"
+        },
+        {
+          "name": "Walk of Fame",
+          "quality": "common",
+          "id": "walk-of-fame"
+        },
+        {
+          "name": "Bass",
+          "quality": "common",
+          "id": "bass"
+        },
+        {
+          "name": "Vinyl",
+          "quality": "common",
+          "id": "vinyl"
+        },
+        {
+          "name": "Grin",
+          "quality": "common",
+          "id": "grin"
+        },
+        {
+          "name": "Under Control",
+          "quality": "common",
+          "id": "under-control"
+        },
+        {
+          "name": "Kambô",
+          "quality": "common",
+          "id": "kambo"
+        },
+        {
+          "name": "Spin",
+          "quality": "common",
+          "id": "spin"
+        },
+        {
+          "name": "Baixo",
+          "quality": "common",
+          "id": "baixo"
+        },
+        {
+          "name": "Triplo",
+          "quality": "common",
+          "id": "triplo"
+        },
+        {
+          "name": "Mural",
+          "quality": "common",
+          "id": "mural"
+        },
+        {
+          "name": "Football",
+          "quality": "common",
+          "id": "football"
+        },
+        {
+          "name": "Trick or Treat",
+          "quality": "common",
+          "id": "trick-or-treat"
+        }
+      ],
+      "voice": [
+        {
+          "name": "To the rhythm",
+          "quality": "common",
+          "id": "to-the-rhythm"
+        },
+        {
+          "name": "Oh, yeah!",
+          "quality": "common",
+          "id": "oh-yeah"
+        },
+        {
+          "name": "Why are you so angry?",
+          "quality": "common",
+          "id": "why-are-you-so-angry"
+        },
+        {
+          "name": "Can't stop, won't stop",
+          "quality": "common",
+          "id": "cant-stop-wont-stop"
+        },
+        {
+          "name": "Jackpot!",
+          "quality": "common",
+          "id": "jackpot"
+        },
+        {
+          "name": "Hit me!",
+          "quality": "common",
+          "id": "hit-me"
+        },
+        {
+          "name": "I could do this all day",
+          "quality": "common",
+          "id": "i-could-do-this-all-day"
+        },
+        {
+          "name": "Not hearing that noise",
+          "quality": "common",
+          "id": "not-hearing-that-noise"
+        },
+        {
+          "name": "I'm on top of the world",
+          "quality": "common",
+          "id": "im-on-top-of-the-world"
+        },
+        {
+          "name": "Tinnitus",
+          "quality": "common",
+          "id": "tinnitus"
+        },
+        {
+          "name": "You gotta believe!",
+          "quality": "common",
+          "id": "you-gotta-believe"
+        },
+        {
+          "name": "Be champions",
+          "quality": "common",
+          "id": "be-champions"
+        },
+        {
+          "name": "Killed it!",
+          "quality": "common",
+          "id": "killed-it"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "quality": "common",
+          "id": "heroic"
+        },
+        {
+          "name": "Ready for Action",
+          "quality": "rare",
+          "id": "ready-for-action"
+        },
+        {
+          "name": "Grooving",
+          "quality": "rare",
+          "id": "grooving"
+        },
+        {
+          "name": "Confident",
+          "quality": "rare",
+          "id": "confident"
+        },
+        {
+          "name": "R.I.P.",
+          "quality": "rare",
+          "id": "rip"
+        }
+      ]
+    }
+  }
+}
