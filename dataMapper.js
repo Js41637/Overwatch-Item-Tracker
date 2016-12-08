@@ -1,7 +1,15 @@
-var rawData = ``
+var rawData = `` // Raw data extracted using Overwatch Cosmetic Extractor
 
-var rawDataRegex = /Cosmetics for (.+)\.\.\.(\n.+)*/gm
-var itemGroupRegex = / {8}(.+)(\n {16}(.+))*/gm
+var splitRawData = rawData.split('\n')
+while (!splitRawData[0].includes("Cosmetics")) { // remove the first few lines
+  splitRawData = splitRawData.slice(1)
+}
+
+// Remove invalid error keys
+splitRawData = splitRawData.map(a => a.includes("Error unknown") ? '\n' : a)
+
+var rawDataRegex = /Cosmetics for (.+)(\n.+)*/gm // Match each heros items
+var itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g // Match each group of items for a hero
 var data = []
 var heroMatch
 while ((heroMatch = rawDataRegex.exec(rawData)) !== null) {
@@ -10,7 +18,7 @@ while ((heroMatch = rawDataRegex.exec(rawData)) !== null) {
   var itemMatch
   while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) {
     items.push({
-      group: itemMatch[1].split(' ')[0],
+      group: itemMatch[1].split(' ')[0], // ACHIVEMENT, STANDARD_COMMON, COMMON, EVENTS
       items: itemMatch[0].split('\n').slice(1).map(a => a.trim())
     })
   }
@@ -59,40 +67,43 @@ var stupidNames = {
   ";)": "winky-face"
 }
 
+var qualities = ['common', 'epic', 'rare', 'legendary']
+var types = [
+  { m: 'skin', name: 'skins' },
+  { m: 'icon', name: 'icons' },
+  { m: 'spray', name: 'sprays' },
+  { m: 'emote', name: 'emotes' },
+  { m: 'voice line', name: 'voice' },
+  { m: 'victory pose', name: 'poses' },
+  { m: 'heroic intro', name: 'intros' }
+  //, { m: 'weapon skin', name: 'weapons' } // Golden
+]
+var matches = {} // Generate a match for each quality for every type of item
+types.forEach(t => {
+  qualities.forEach(q => matches[`${q} ${t.m}`] = { quality: q, type: t.name })
+})
+
 var getType = type => {
-  switch (type.toLowerCase().trim()) {
-    case 'common voice line':
-      return { quality: 'common', type: 'voice' }
-    case 'legendary skin':
-      return { quality: 'legendary', type: 'skins' }
-    case 'rare skin':
-      return { quality: 'rare', type: 'skins' }
-    case 'epic skin':
-      return { quality: 'epic', type: 'skins' }
-    case 'common skin':
-      return { quality: 'common', type: 'skins' }
-    case 'common spray':
-      return { quality: 'common', type: 'sprays' }
-    case 'rare victory pose':
-      return { quality: 'rare', type: 'poses' }
-    case 'common victory pose':
-      return { quality: 'common', type: 'poses' }
-    case 'epic emote':
-      return { quality: 'epic', type: 'emotes' }
-    case 'common emote':
-      return { quality: 'common', type: 'emotes' }
-    case 'legendary emote':
-      return { quality: 'legendary', type: 'emotes' }
-    case 'rare icon':
-      return { quality: 'rare', type: 'icons' }
-    case 'epic heroic intro':
-      return { quality: 'epic', type: 'intros' }
-    case 'common heroic intro':
-      return { quality: 'common', type: 'intros' }
-    default:
-      console.log("Unknown type?", type)
-      return {}
+  let m = matches[type.toLowerCase()]
+  if (!m) {
+    console.warn("Unknown type?", type)
+    return {}
   }
+  return m
+}
+
+// http://stackoverflow.com/a/1359808
+// Makes it so it JSON.stringify's in order
+var sortObject = function(o) {
+  var sorted = {}, key, a = []
+  for (key in o) {
+    if (o.hasOwnProperty(key)) a.push(key)
+  }
+  a.sort()
+  for (key = 0; key < a.length; key++) {
+    sorted[a[key]] = o[a[key]]
+  }
+  return sorted
 }
 
 var heroes = {}
@@ -139,3 +150,6 @@ data.forEach(({ hero, items: itemGroups }) => {
   })
   heroes[heroID] = heroData
 })
+
+heroes = sortObject(heroes)
+console.log(heroes)
