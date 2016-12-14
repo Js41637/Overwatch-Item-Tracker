@@ -1,4 +1,4 @@
-<div id="halloween2016" class="item-container">
+<div id="winterwonderland2016" class="item-container">
   <div id="col1" class="col">
     <div id="legendary-skins" class="section">
       <div id="image-preview" scroll ng-class="{ show: preview, small: preview.isSmall, fixed: isFixed }">
@@ -49,16 +49,16 @@
       <div id="voicelines" class="section">
         <h2>Voice Lines</h2> <span>(75 Coins)</span>
         <div class="items">
-          <div class="item" ng-repeat="voice in data.items.voicelines track by $index">
-            <input type="checkbox" id="{{'voice' + $index}}" ng-model="checked.voicelines[voice.id]" ng-change="onSelect()"> <label for="{{'voice' + $index}}"><h3>{{voice.name}}</h3></label>
+          <div class="item" ng-repeat="voice in data.items.voice track by $index">
+            <input type="checkbox" id="{{'voice' + $index}}" ng-model="checked.voice[voice.id]" ng-change="onSelect()"> <label for="{{'voice' + $index}}"><h3>{{voice.hero}}</h3></label>
           </div>
         </div>
       </div>
       <div id="victoryposes" class="section">
         <h2>Victory Poses</h2> <span>(225 Coins)</span>
         <div class="items">
-          <div class="item" ng-repeat="pose in data.items.victoryposes track by $index" ng-mouseover="showPreview(pose)" ng-mouseleave="hidePreview()">
-            <input type="checkbox" id="{{'pose' + $index}}" ng-model="checked.victoryposes[pose.id]" ng-change="onSelect()"> <label for="{{'pose' + $index}}"><h3>{{pose.name}}</h3></label>
+          <div class="item" ng-repeat="pose in data.items.poses track by $index" ng-mouseover="showPreview(pose)" ng-mouseleave="hidePreview()">
+            <input type="checkbox" id="{{'pose' + $index}}" ng-model="checked.poses[pose.id]" ng-change="onSelect()"> <label for="{{'pose' + $index}}"><h3>{{pose.name}}</h3></label>
           </div>
         </div>
       </div>

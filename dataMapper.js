@@ -46,7 +46,7 @@ var getClassForHero = hero => {
     case "reinhardt":
     case "roadhog":
     case "winston":
-    case "zarya":
+    case "zarya":``
       return "Tank"
     case "ana":
     case "lúcio":
@@ -59,7 +59,9 @@ var getClassForHero = hero => {
   }
 }
 
-var getCleanID = name => name.toLowerCase().replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-')
+var getCleanID = (what, hero) => {
+  return (hero ? `${hero}-` : '') + what.toLowerCase().replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-')
+}
 
 var stupidNames = {
   "^_^": "joy",
@@ -134,7 +136,7 @@ data.forEach(({ hero, items: itemGroups }) => {
       var [str, name, type] = item.match(/(.+) \((.+)\)/) //eslint-disable-line
       name = name.trim()
       if (name == 'RANDOM') return
-      var id = getCleanID(name)
+      var id = getCleanID(name, heroID)
       id = id && id.length ? id : stupidNames[name] || "UNDEFINED"
       var { quality, type: itemType } = getType(type)
       if (!quality || !itemType) return
@@ -159,8 +161,8 @@ data.forEach(({ hero, items: itemGroups }) => {
 })
 heroes = sortObject(heroes)
 
-var getImageURL = (type, event, id, hero) => {
-  var baseUrl = `./resources/${event}/${type}/${hero ? hero + '-' : ''}${id}`
+var getImageURL = (type, event, id) => {
+  var baseUrl = `./resources/${event}/${type}/${id}`
   switch (type) {
     case 'emotes':
     case 'intros':
@@ -195,13 +197,14 @@ Object.keys(heroes).forEach(hKey => {
     var items = hero.items[tKey]
     items.forEach(item => {
       var event = item.event
+      var type = tKey == 'skins' ? (item.quality == 'legendary' ? 'skinsLegendary' : (item.quality == 'epic' ? 'skinsEpic' : 'skins')) : tKey
       if (!event) return
       if (!updates[event]) updates[event] = {}
-      if (!updates[event][tKey]) updates[event][tKey] = []
-      var url = getImageURL(tKey, event, item.id, hKey)
-      var newItem = Object.assign({}, { hero: hKey }, item, tKey == 'voice' ? {} : ((tKey == 'emotes' || tKey == 'intros') ? { video: url } : { img: url }))
+      if (!updates[event][type]) updates[event][type] = []
+      var url = getImageURL(type, event, item.id)
+      var newItem = Object.assign({}, { hero: hero.name }, item, type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: url } : { img: url }))
       delete newItem.event
-      updates[event][tKey].push(newItem)
+      updates[event][type].push(newItem)
     })
   })
 })
