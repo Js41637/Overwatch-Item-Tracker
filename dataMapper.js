@@ -106,6 +106,12 @@ var sortObject = o => {
   return sorted
 }
 
+var EVENTS = {
+  SUMMER16: 'SUMMER_GAMES_2016',
+  HALLOWEEN16: 'HALLOWEEN_2016',
+  CHRISTMAS16: 'WINTER_WONDERLAND_2016'
+}
+
 var heroes = {}
 data.forEach(({ hero, items: itemGroups }) => {
   var heroID = getCleanID(hero)
@@ -134,9 +140,9 @@ data.forEach(({ hero, items: itemGroups }) => {
       if (!quality || !itemType) return
       var out = { name, id, quality: quality }
       switch (group) {
-        case 'SUMMER_GAMES_2016':
-        case 'HALLOWEEN_2016':
-        case 'WINTER_WONDERLAND_2016':
+        case EVENTS.SUMMER16:
+        case EVENTS.HALLOWEEN16:
+        case EVENTS.CHRISTMAS16:
           out.event = group
           break;
         case 'ACHIEVEMENT':
@@ -153,6 +159,21 @@ data.forEach(({ hero, items: itemGroups }) => {
 })
 heroes = sortObject(heroes)
 
+var getImageExtension = (type, event) => {
+  switch (type) {
+    case 'emotes':
+    case 'intros':
+      return '.webm'
+    case 'sprays':
+      if (event === EVENTS.CHRISTMAS16) return '.png'
+      return '.jpg'
+    case 'skins':
+    case 'icons':
+    case 'poses':
+      return '.jpg'
+  }
+}
+
 var updates = {}
 Object.keys(heroes).forEach(hKey => {
   var hero = heroes[hKey]
@@ -163,7 +184,8 @@ Object.keys(heroes).forEach(hKey => {
       if (!event) return
       if (!updates[event]) updates[event] = {}
       if (!updates[event][tKey]) updates[event][tKey] = []
-      var newItem = Object.assign({}, { hero: hKey }, item, tKey == 'voice' ? {} : ((tKey == 'emotes' || tKey == 'intros') ? { video: "" } : { img: "" }))
+      var url = `./resources/${event}/${tKey}/${item.id}${getImageExtension(tKey, event)}`
+      var newItem = Object.assign({}, { hero: hKey }, item, tKey == 'voice' ? {} : ((tKey == 'emotes' || tKey == 'intros') ? { video: url } : { img: url }))
       delete newItem.event
       updates[event][tKey].push(newItem)
     })
