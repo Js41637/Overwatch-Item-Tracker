@@ -1,7 +1,7 @@
 OWI.controller('MainCtrl', ["Data", function(Data) {
   this.preview = false;
   this.updates = Data.updates;
-  this.selectedUpdate = 1;
+  this.selectedUpdate = 2;
 
   this.reset = function() {
     localStorage.removeItem('data');

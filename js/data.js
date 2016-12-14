@@ -12,7 +12,8 @@ OWI.factory('Data', function() {
   return {
     checked: {
       summergames2016: items,
-      halloween2016: items
+      halloween2016: items,
+      winterwonderland2016: items
     },
     updates: [{
       name: 'Summer Games 2016',
@@ -50,7 +51,7 @@ OWI.factory('Data', function() {
           name: "Edigenossin Mercy",
           img: "./resources/summergames2016/skins/epic/mercy.jpg"
         }, {
-          name: "Tre Kronor T\u00D6rbjorn",
+          name: "Tre Kronor Torbj\u00D6rn",
           img: "./resources/summergames2016/skins/epic/torbjorn.jpg"
         }, {
           name: "Tricolore Widowmaker",
@@ -80,7 +81,7 @@ OWI.factory('Data', function() {
           "Ana", "Bastion", "D.Va", "Genji", "Hanzo",
           "Junkrat", "L\u00DAcio", "McCree", "Mei", "Mercy",
           "Pharah", "Reaper", "Reinhardt", "Roadhog",
-          "Soldier: 76", "Symmetra", "T\u00D6rbjorn", "Tracer",
+          "Soldier: 76", "Symmetra", "Torbj\u00D6rn", "Tracer",
           "Widowmaker", "Winston", "Zarya", "Zenyatta"
         ],
         victoryposes: [{
@@ -99,7 +100,7 @@ OWI.factory('Data', function() {
           name: "Soldier: 76",
           img: "./resources/summergames2016/poses/soldier76.jpg"
         }, {
-          name: "T\u00D6rbjorn",
+          name: "Torbj\u00D6rn",
           img: "./resources/summergames2016/poses/torbjorn.jpg"
         }, {
           name: "Widowmaker",
@@ -160,7 +161,7 @@ OWI.factory('Data', function() {
           name: "Symmetra",
           img: "./resources/summergames2016/sprays/symmetra.jpg"
         }, {
-          name: "T\u00D6rbjorn",
+          name: "Torbj\u00D6rn",
           img: "./resources/summergames2016/sprays/torbjorn.jpg"
         }, {
           name: "Tracer",
@@ -369,7 +370,7 @@ OWI.factory('Data', function() {
           "Ana", "Bastion", "D.Va", "Genji", "Hanzo",
           "Junkrat", "L\u00DAcio", "McCree", "Mei", "Mercy",
           "Pharah", "Reaper", "Reinhardt", "Roadhog",
-          "Soldier: 76", "Symmetra", "T\u00D6rbjorn", "Tracer",
+          "Soldier: 76", "Symmetra", "Torbj\u00D6rn", "Tracer",
           "Widowmaker", "Winston", "Zarya", "Zenyatta"
         ],
         victoryposes: [{
@@ -421,7 +422,7 @@ OWI.factory('Data', function() {
           name: "Symmetra",
           img: "./resources/halloween2016/poses/symmetra.jpg"
         }, {
-          name: "T\u00D6rbjorn",
+          name: "Torbj\u00D6rn",
           img: "./resources/halloween2016/poses/torbjorn.jpg"
         }, {
           name: "Tracer",
@@ -488,7 +489,7 @@ OWI.factory('Data', function() {
           name: "Symmetra",
           img: "./resources/halloween2016/sprays/symmetra.jpg"
         }, {
-          name: "T\u00D6rbjorn",
+          name: "Torbj\u00D6rn",
           img: "./resources/halloween2016/sprays/torbjorn.jpg"
         }, {
           name: "Tracer",
@@ -590,6 +591,504 @@ OWI.factory('Data', function() {
         }, {
           name: "Wolf",
           img: "./resources/halloween2016/icons/wolf.png"
+        }]
+      }
+    }, {
+      name: 'Winter Wonderland 2016',
+      id: 'winterwonderland',
+      items: {
+        skinsLegendary: [{
+          hero: "mei",
+          name: "Mei-rry",
+          id: "meirry",
+          quality: "legendary"
+        }, {
+          hero: "torbjorn",
+          name: "Santaclad",
+          id: "santaclad",
+          quality: "legendary"
+        }, {
+          hero: "tracer",
+          name: "Jingle",
+          id: "jingle",
+          quality: "legendary"
+        }, {
+          hero: "winston",
+          name: "Yeti",
+          id: "yeti",
+          quality: "legendary"
+        }, {
+          hero: "zenyatta",
+          name: "Nutcracker",
+          id: "nutcracker",
+          quality: "legendary"
+        }, {
+          hero: "zarya",
+          name: "Mystery Gift",
+          id: "mystery-gift",
+          quality: "legendary"
+        }],
+        skinsEpic: [{
+          hero: "lucio",
+          name: "Andes",
+          id: "andes",
+          quality: "epic"
+        }, {
+          hero: "mccree",
+          name: "Scrooge",
+          id: "scrooge",
+          quality: "epic"
+        }, {
+          hero: "pharah",
+          name: "Frostbite",
+          id: "frostbite",
+          quality: "epic"
+        }, {
+          hero: "reaper",
+          name: "Shiver",
+          id: "shiver",
+          quality: "epic"
+        }, {
+          hero: "roadhog",
+          name: "Rudolph",
+          id: "rudolph",
+          quality: "epic"
+        }, {
+          hero: "sombra",
+          name: "Peppermint",
+          id: "peppermint",
+          quality: "epic"
+        }, {
+          hero: "zarya",
+          name: "Frosted",
+          id: "frosted",
+          quality: "epic"
+        }],
+        intros: [{
+          hero: "symmetra",
+          name: "Snowflakes",
+          id: "snowflakes",
+          quality: "epic"
+        }, {
+          hero: "widowmaker",
+          name: "Under the Mistletoe",
+          id: "under-the-mistletoe",
+          quality: "epic"
+        }],
+        emotes: [{
+          hero: "mccree",
+          name: "Hat Trick",
+          id: "hat-trick",
+          quality: "epic"
+        }, {
+          hero: "mei",
+          name: "Snowman",
+          id: "snowman",
+          quality: "epic"
+        }],
+        voicelines: [{
+          hero: "ana",
+          name: "I'm watching out for you",
+          id: "im-watching-out-for-you",
+          quality: "common"
+        }, {
+          hero: "bastion",
+          name: "DWEE DOO HOO",
+          id: "dwee-doo-hoo",
+          quality: "common"
+        }, {
+          hero: "dva",
+          name: "Aw, you shouldn't have",
+          id: "aw-you-shouldnt-have",
+          quality: "common"
+        }, {
+          hero: "genji",
+          name: "Merry Christmas!",
+          id: "merry-christmas",
+          quality: "common"
+        }, {
+          hero: "hanzo",
+          name: "A gift for you",
+          id: "a-gift-for-you",
+          quality: "common"
+        }, {
+          hero: "junkrat",
+          name: "Merry Christmas",
+          id: "merry-christmas",
+          quality: "common"
+        }, {
+          hero: "lucio",
+          name: "Happy holidays!",
+          id: "happy-holidays",
+          quality: "common"
+        }, {
+          hero: "mccree",
+          name: "Had to break the ice",
+          id: "had-to-break-the-ice",
+          quality: "common"
+        }, {
+          hero: "mei",
+          name: "I got you something!",
+          id: "i-got-you-something",
+          quality: "common"
+        }, {
+          hero: "mercy",
+          name: "Your guardian angel",
+          id: "your-guardian-angel",
+          quality: "common"
+        }, {
+          hero: "pharah",
+          name: "The forecast",
+          id: "the-forecast",
+          quality: "common"
+        }, {
+          hero: "reaper",
+          name: "Holiday spirit",
+          id: "holiday-spirit",
+          quality: "common"
+        }, {
+          hero: "reinhardt",
+          name: "You're on my naughty list",
+          id: "youre-on-my-naughty-list",
+          quality: "common"
+        }, {
+          hero: "roadhog",
+          name: "Ho ho ho",
+          id: "ho-ho-ho",
+          quality: "common"
+        }, {
+          hero: "soldier-76",
+          name: "Stay frosty",
+          id: "stay-frosty",
+          quality: "common"
+        }, {
+          hero: "sombra",
+          name: "I know who's been naughty",
+          id: "i-know-whos-been-naughty",
+          quality: "common"
+        }, {
+          hero: "symmetra",
+          name: "I made you something",
+          id: "i-made-you-something",
+          quality: "common"
+        }, {
+          hero: "torbjorn",
+          name: "Made to order",
+          id: "made-to-order",
+          quality: "common"
+        }, {
+          hero: "tracer",
+          name: "It's in the bag",
+          id: "its-in-the-bag",
+          quality: "common"
+        }, {
+          hero: "widowmaker",
+          name: "Exquisite",
+          id: "exquisite",
+          quality: "common"
+        }, {
+          hero: "winston",
+          name: "I... got you something",
+          id: "i-got-you-something",
+          quality: "common"
+        }, {
+          hero: "zarya",
+          name: "For the Motherland",
+          id: "for-the-motherland",
+          quality: "common"
+        }, {
+          hero: "zenyatta",
+          name: "No snowflake",
+          id: "no-snowflake",
+          quality: "common"
+        }],
+        sprays: [{
+          hero: "ana",
+          name: "Warm",
+          id: "warm",
+          quality: "common"
+        }, {
+          hero: "ana",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "bastion",
+          name: "FESTIVE",
+          id: "festive",
+          quality: "common"
+        }, {
+          hero: "bastion",
+          name: "ORNAMENT",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "dva",
+          name: "COOKIE",
+          id: "cookie",
+          quality: "common"
+        }, {
+          hero: "dva",
+          name: "ORNAMENT",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "genji",
+          name: "Kadomatsu",
+          id: "kadomatsu",
+          quality: "common"
+        }, {
+          hero: "genji",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "hanzo",
+          name: "Kadomatsu",
+          id: "kadomatsu",
+          quality: "common"
+        }, {
+          hero: "hanzo",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "junkrat",
+          name: "\"WINTER\"",
+          id: "winter",
+          quality: "common"
+        }, {
+          hero: "junkrat",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "lucio",
+          name: "Hockey",
+          id: "hockey",
+          quality: "common"
+        }, {
+          hero: "lucio",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "mccree",
+          name: "Ugly Sweater",
+          id: "ugly-sweater",
+          quality: "common"
+        }, {
+          hero: "mccree",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "mei",
+          name: "Sculpting",
+          id: "sculpting",
+          quality: "common"
+        }, {
+          hero: "mei",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "mercy",
+          name: "Snow Angel",
+          id: "snow-angel",
+          quality: "common"
+        }, {
+          hero: "mercy",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "pharah",
+          name: "Ice Fishing",
+          id: "ice-fishing",
+          quality: "common"
+        }, {
+          hero: "pharah",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "reaper",
+          name: "Stocking",
+          id: "stocking",
+          quality: "common"
+        }, {
+          hero: "reaper",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "reinhardt",
+          name: "Ice Fishing",
+          id: "ice-fishing",
+          quality: "common"
+        }, {
+          hero: "reinhardt",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "roadhog",
+          name: "\"Winter\"",
+          id: "winter",
+          quality: "common"
+        }, {
+          hero: "roadhog",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "soldier-76",
+          name: "Army Man: 76",
+          id: "army-man-76",
+          quality: "common"
+        }, {
+          hero: "soldier-76",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "sombra",
+          name: "Puppet",
+          id: "puppet",
+          quality: "common"
+        }, {
+          hero: "sombra",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "symmetra",
+          name: "Snowflake",
+          id: "snowflake",
+          quality: "common"
+        }, {
+          hero: "symmetra",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "torbjorn",
+          name: "Workshop",
+          id: "workshop",
+          quality: "common"
+        }, {
+          hero: "torbjorn",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "tracer",
+          name: "Snowboarding",
+          id: "snowboarding",
+          quality: "common"
+        }, {
+          hero: "tracer",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "widowmaker",
+          name: "Skiing",
+          id: "skiing",
+          quality: "common"
+        }, {
+          hero: "widowmaker",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "winston",
+          name: "Presents",
+          id: "presents",
+          quality: "common"
+        }, {
+          hero: "winston",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "zarya",
+          name: "Matryoshka",
+          id: "matryoshka",
+          quality: "common"
+        }, {
+          hero: "zarya",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }, {
+          hero: "zenyatta",
+          name: "Snowball Fight",
+          id: "snowball-fight",
+          quality: "common"
+        }, {
+          hero: "zenyatta",
+          name: "Ornament",
+          id: "ornament",
+          quality: "common"
+        }],
+        victoryposes: [{
+          hero: "ana",
+          name: "Toast",
+          id: "toast",
+          quality: "rare"
+        }, {
+          hero: "dva",
+          name: "Festive",
+          id: "festive",
+          quality: "rare"
+        }, {
+          hero: "mercy",
+          name: "Mistletoe",
+          id: "mistletoe",
+          quality: "rare"
+        }, {
+          hero: "pharah",
+          name: "Toast",
+          id: "toast",
+          quality: "rare"
+        }, {
+          hero: "reinhardt",
+          name: "Toast",
+          id: "toast",
+          quality: "rare"
+        }, {
+          hero: "soldier-76",
+          name: "Toast",
+          id: "toast",
+          quality: "rare"
+        }, {
+          hero: "torbjorn",
+          name: "Toast",
+          id: "toast",
+          quality: "rare"
+        }],
+        icons: [{
+          hero: "torbjorn",
+          name: "Santaclad",
+          id: "santaclad",
+          quality: "rare"
+        }, {
+          hero: "tracer",
+          name: "Jingle",
+          id: "jingle",
+          quality: "rare"
+        }, {
+          hero: "winston",
+          name: "Yeti",
+          id: "yeti",
+          quality: "rare"
+        }, {
+          hero: "zenyatta",
+          name: "Nutcracker",
+          id: "nutcracker",
+          quality: "rare"
         }]
       }
     }]

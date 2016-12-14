@@ -124,13 +124,18 @@ body {
 #menu .button {
   cursor: pointer;
   display: inline-block;
-  padding: 3px 9px;
-  border-top: 2px solid rgb(250, 250, 250);
-  border-bottom: 2px solid rgb(250, 250, 250);
+  padding: 4px 9px;
+  border-top: 2px solid rgb(235, 235, 235);
+  border-bottom: 2px solid rgb(235, 235, 235);
+  border-right: 1px solid rgb(200, 200, 200);
   background-color: rgb(81, 105, 145);
   color: rgb(250, 250, 250);
   transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out;
-  letter-spacing: 0.3;
+  letter-spacing: 0.4;
+}
+
+#menu .button:last-of-type {
+  border-right: 0;
 }
 
 #menu .button.selected, #menu .button:hover {
