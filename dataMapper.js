@@ -136,11 +136,8 @@ data.forEach(({ hero, items: itemGroups }) => {
       switch (group) {
         case 'SUMMER_GAMES_2016':
         case 'HALLOWEEN_2016':
-          out.event = group
-          break;
-        case 'EVENT_3':
         case 'WINTER_WONDERLAND_2016':
-          out.event = 'WINTER_WONDERLAND_2016'
+          out.event = group
           break;
         case 'ACHIEVEMENT':
           out.achievement = true
@@ -166,7 +163,7 @@ Object.keys(heroes).forEach(hKey => {
       if (!event) return
       if (!updates[event]) updates[event] = {}
       if (!updates[event][tKey]) updates[event][tKey] = []
-      var newItem = Object.assign({}, { hero: hKey }, item)
+      var newItem = Object.assign({}, { hero: hKey }, item, tKey == 'voice' ? {} : ((tKey == 'emotes' || tKey == 'intros') ? { video: "" } : { img: "" }))
       delete newItem.event
       updates[event][tKey].push(newItem)
     })
