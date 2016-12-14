@@ -160,7 +160,7 @@ data.forEach(({ hero, items: itemGroups }) => {
 heroes = sortObject(heroes)
 
 var getImageURL = (type, event, id, hero) => {
-  var baseUrl = `./resources/${event}/${type}/${hero}-${id}`
+  var baseUrl = `./resources/${event}/${type}/${hero ? hero + '-' : ''}${id}`
   switch (type) {
     case 'emotes':
     case 'intros':
@@ -172,6 +172,19 @@ var getImageURL = (type, event, id, hero) => {
     case 'icons':
     case 'poses':
       return `${baseUrl}.jpg`
+  }
+}
+
+var allClassItems = {
+  'sprays': {
+    [EVENTS.SUMMER16]: ['Summer Games'],
+    [EVENTS.HALLOWEEN16]: ['...Never Die', 'Bats', 'Boo!', 'Boop!', 'Candyball', 'Fangs', 'Gummy Hog', 'Halloween Terror 2016', 'Pumpkins', 'Witch\'s Brew'],
+    [EVENTS.CHRISTMAS16]: ['SnowCree', 'SnowHog', 'SnowMei', 'SnowReaper', 'Winter Wonderland']
+  },
+  icons: {
+    [EVENTS.SUMMER16]: ["Summer Games","Australia", "Brazil", "China", "Egypt", "France", "Germany", "Greece", "Japan", "Mexico", "Nepal", "Numbani", "Russia", "South Korea", "Sweden", "Switzerland", "United Kingdom", "United States"],
+    [EVENTS.HALLOWEEN16]: ["Halloween Terror 2016", "...Never Die", "Bewitching", "Calavera", "Candle", "Eyeball", "Ghostymari", "Spider", "Superstition", "Tombstone", "Vampachimari", "Witch's Brew", "Witch's Hat", "Wolf"],
+    [EVENTS.CHRISTMAS16]: ["Winter Wonderland 2016", "Snowman", "Present", "Pachimerry", "Gingermari", "2017", "Holly", "Tannenbaum", "Bubbly", "Gingerbread", "Candy Cane", "Ornament", "Hot Cocoa", "Cheers", "Wreath", "Mochi", "Dreidel", "Bells", "Peppermint", "Snow Globe"]
   }
 }
 
@@ -189,6 +202,20 @@ Object.keys(heroes).forEach(hKey => {
       var newItem = Object.assign({}, { hero: hKey }, item, tKey == 'voice' ? {} : ((tKey == 'emotes' || tKey == 'intros') ? { video: url } : { img: url }))
       delete newItem.event
       updates[event][tKey].push(newItem)
+    })
+  })
+})
+
+Object.keys(allClassItems).forEach(type => {
+  Object.keys(allClassItems[type]).forEach(event => {
+    allClassItems[type][event].forEach(item => {
+      var itemID = getCleanID(item)
+      updates[event][type].push({
+        name: item,
+        id: itemID,
+        url: getImageURL(type, event, itemID),
+        allClass: true
+      })
     })
   })
 })
