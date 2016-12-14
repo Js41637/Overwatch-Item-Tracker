@@ -6,13 +6,13 @@ while (!splitRawData[0].includes("Cosmetics")) { // remove the first few lines
 }
 
 // Remove invalid error keys
-splitRawData = splitRawData.map(a => a.includes("Error unknown") ? '\n' : a)
+splitRawData = splitRawData.map(a => a.includes("Error unknown") ? '\n' : a).join('\n')
 
 var rawDataRegex = /Cosmetics for (.+)(\n.+)*/gm // Match each heros items
 var itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g // Match each group of items for a hero
 var data = []
 var heroMatch
-while ((heroMatch = rawDataRegex.exec(rawData)) !== null) {
+while ((heroMatch = rawDataRegex.exec(splitRawData)) !== null) {
   var rawItems = heroMatch[0].split('\n').slice(1).join('\n')
   var items = []
   var itemMatch
@@ -94,7 +94,7 @@ var getType = type => {
 
 // http://stackoverflow.com/a/1359808
 // Makes it so it JSON.stringify's in order
-var sortObject = function(o) {
+var sortObject = o => {
   var sorted = {}, key, a = []
   for (key in o) {
     if (o.hasOwnProperty(key)) a.push(key)
@@ -138,6 +138,10 @@ data.forEach(({ hero, items: itemGroups }) => {
         case 'HALLOWEEN_2016':
           out.event = group
           break;
+        case 'EVENT_3':
+        case 'WINTER_WONDERLAND_2016':
+          out.event = 'WINTER_WONDERLAND_2016'
+          break;
         case 'ACHIEVEMENT':
           out.achievement = true
           break;
@@ -150,6 +154,24 @@ data.forEach(({ hero, items: itemGroups }) => {
   })
   heroes[heroID] = heroData
 })
-
 heroes = sortObject(heroes)
-console.log(heroes)
+
+var updates = {}
+Object.keys(heroes).forEach(hKey => {
+  var hero = heroes[hKey]
+  Object.keys(hero.items).forEach(tKey => {
+    var items = hero.items[tKey]
+    items.forEach(item => {
+      var event = item.event
+      if (!event) return
+      if (!updates[event]) updates[event] = {}
+      if (!updates[event][tKey]) updates[event][tKey] = []
+      var newItem = Object.assign({}, { hero: hKey }, item)
+      delete newItem.event
+      updates[event][tKey].push(newItem)
+    })
+  })
+})
+
+console.log("HEROES: ", heroes)
+console.log("UPDATES:", updates)
