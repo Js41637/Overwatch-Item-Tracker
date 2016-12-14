@@ -159,18 +159,19 @@ data.forEach(({ hero, items: itemGroups }) => {
 })
 heroes = sortObject(heroes)
 
-var getImageExtension = (type, event) => {
+var getImageURL = (type, event, id, hero) => {
+  var baseUrl = `./resources/${event}/${type}/${hero}-${id}`
   switch (type) {
     case 'emotes':
     case 'intros':
-      return '.webm'
+      return `${baseUrl}.webm`
     case 'sprays':
-      if (event === EVENTS.CHRISTMAS16) return '.png'
-      return '.jpg'
+      if (event === EVENTS.CHRISTMAS16) return `${baseUrl}.png`
+      return `${baseUrl}.jpg`
     case 'skins':
     case 'icons':
     case 'poses':
-      return '.jpg'
+      return `${baseUrl}.jpg`
   }
 }
 
@@ -184,7 +185,7 @@ Object.keys(heroes).forEach(hKey => {
       if (!event) return
       if (!updates[event]) updates[event] = {}
       if (!updates[event][tKey]) updates[event][tKey] = []
-      var url = `./resources/${event}/${tKey}/${item.id}${getImageExtension(tKey, event)}`
+      var url = getImageURL(tKey, event, item.id, hKey)
       var newItem = Object.assign({}, { hero: hKey }, item, tKey == 'voice' ? {} : ((tKey == 'emotes' || tKey == 'intros') ? { video: url } : { img: url }))
       delete newItem.event
       updates[event][tKey].push(newItem)
