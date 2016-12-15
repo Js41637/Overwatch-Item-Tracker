@@ -221,7 +221,7 @@ Object.keys(allClassItems).forEach(type => {
       updates[event][type].push({
         name: item,
         id: itemID,
-        url: getImageURL(type, event, itemID),
+        img: getImageURL(type, event, itemID),
         allClass: true
       })
     })

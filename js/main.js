@@ -47,7 +47,7 @@ OWI.directive("update", ["Data", function(Data) {
       var showTimeout = undefined;
       var hideTimeout = undefined;
       $scope.showPreview = function(what, small) {
-        if (what.url) return // ignore winter items for now
+        if (what.img && what.img.includes('WINTER_WONDERLAND_2016')) return // ignore winter items for now
         if (!what.img && !what.video) return;
         if (showTimeout) return;
         clearTimeout(hideTimeout)
