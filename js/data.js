@@ -1042,6 +1042,7 @@ OWI.factory('Data', function() {
           },
           {
             "hero": "Zarya",
+            "legendary": true,
             "name": "Mystery Gift",
             "id": "zarya-mystery-gift",
             "quality": "legendary",
