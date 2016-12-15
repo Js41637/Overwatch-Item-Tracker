@@ -89,8 +89,8 @@
         <div class="items">
           <div class="item" ng-repeat="spray in data.items.sprays track by $index" ng-mouseover="showPreview(spray)" ng-mouseleave="hidePreview()">
             <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked.sprays[spray.id]" ng-change="onSelect()">
-            <input type="checkbox" class="orn" ng-if="spray.hero" id="{{'sprayorn' + $index}}" ng-model="checked.sprays[spray.id + '-ornament']" ng-change="onSelect()">
-            <label for="{{'sprayorn' + $index}}" class="ornl"></label>
+            <input ng-if="spray.hero" type="checkbox" class="orn" ng-if="spray.hero" id="{{'sprayorn' + $index}}" ng-model="checked.sprays[spray.id + '-ornament']" ng-change="onSelect()">
+            <label ng-if="spray.hero" for="{{'sprayorn' + $index}}" class="ornl"></label>
             <label for="{{'spray' + $index}}">
               <h3>{{spray.hero ? spray.hero : spray.name}}</h3>
               <h4 ng-if="spray.hero">[{{spray.name}}]</h4>
