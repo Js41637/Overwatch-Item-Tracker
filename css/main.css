@@ -98,19 +98,19 @@ body {
 }
 
 #header h1 {
-  font-size: 58px;
+  font-size: 56px;
   display: inline-block;
   font-style: italic;
 }
 
 #header h2 {
-  font-size: 40px;
+  font-size: 36px;
   color: rgb(245, 245, 245);
   font-style: italic;
 }
 
 #header h3 {
-  font-size: 22px;
+  font-size: 18px;
   color: rgb(254, 242, 0);
   font-style: italic;
 }
@@ -124,13 +124,18 @@ body {
 #menu .button {
   cursor: pointer;
   display: inline-block;
-  padding: 3px 9px;
-  border-top: 2px solid rgb(250, 250, 250);
-  border-bottom: 2px solid rgb(250, 250, 250);
+  padding: 4px 9px;
+  border-top: 2px solid rgb(235, 235, 235);
+  border-bottom: 2px solid rgb(235, 235, 235);
+  border-right: 1px solid rgb(200, 200, 200);
   background-color: rgb(81, 105, 145);
   color: rgb(250, 250, 250);
   transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out;
-  letter-spacing: 0.3;
+  letter-spacing: 0.4;
+}
+
+#menu .button:last-of-type {
+  border-right: 0;
 }
 
 #menu .button.selected, #menu .button:hover {
@@ -754,5 +759,291 @@ body {
   #summergames2016 #icons .items .item {
     width: 15.6%;
   }
-
 }
+
+/* Winter Wonderland 2016 */
+
+#winterwonderland2016 {
+  flex-direction: column;
+}
+#winterwonderland2016 .row {
+  display: flex;
+}
+
+#winterwonderland2016 #row1 #col1 {
+  width: 40%;
+}
+
+#winterwonderland2016 #row1 #col2 {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#winterwonderland2016 #row1 #col2 .right {
+  width: 69%;
+}
+
+#winterwonderland2016 #row2 {
+  justify-content: space-around;
+}
+
+#winterwonderland2016 #row2 #col1 {
+  width: 35%;
+}
+
+#winterwonderland2016 #row2 #col2 {
+  width: 64%;
+}
+
+#winterwonderland2016 #legendary-skins {
+  color: #405275;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#winterwonderland2016 #legendary-skins .inner {
+  opacity: 1;
+  transition: opacity 0.125s ease-in-out;
+}
+
+#winterwonderland2016 #legendary-skins .inner.hide {
+  opacity: 0;
+}
+
+#winterwonderland2016 #legendary-skins .images {
+  height: 374px;
+  display: flex;
+}
+
+#winterwonderland2016 #legendary-skins .images .item {
+  width: 25%;
+  padding: 2px;
+  position: relative;
+  overflow: hidden;
+  background: url('../img/portrait-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1px;
+  margin-right: .5%;
+}
+
+#winterwonderland2016 #legendary-skins .images .item img {
+  width: 100%;
+  height: auto;
+}
+
+#winterwonderland2016 #legendary-skins .thing {
+	position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4rem;
+  background: rgba(40, 53, 79, 0.9);
+  padding: 8px 6px 0px 2px;
+  box-sizing: border-box;
+}
+
+#winterwonderland2016 #legendary-skins .images .item h3 {
+ 	font-size: 25px;
+  font-style: italic;
+  color: #d0d0dc;
+  width: 100%;
+}
+
+#winterwonderland2016 #epic-skins {
+  float: left;
+  width: 40%;
+  margin-right: 20px;
+}
+
+#winterwonderland2016 #emotes h2 {
+  margin-top: 24px;
+}
+
+#winterwonderland2016 .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+#winterwonderland2016 #voicelines {
+  width: 29%;
+}
+
+#winterwonderland2016 #victoryposes {
+  width: 100%;
+}
+
+#winterwonderland2016 #victoryposes .items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 157px;
+}
+
+#winterwonderland2016 #voicelines .items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 456px;
+}
+
+#winterwonderland2016 #voicelines .item {
+  width: 48%;
+}
+
+#winterwonderland2016 #victoryposes .item {
+  width: 48%;
+}
+
+#winterwonderland2016 #icons .items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 246px;
+}
+
+#winterwonderland2016 #icons .item {
+  width: 24%;
+}
+
+#winterwonderland2016 #icons .item:nth-child(22) h3 {
+  font-size: 22px;
+}
+
+#winterwonderland2016 #sprays .items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 265px;;
+}
+
+#winterwonderland2016 #sprays .item {
+  width: 24%;
+}
+
+#winterwonderland2016 #sprays h3 {
+  font-size: 24px;
+}
+
+#winterwonderland2016 #sprays h4 {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+#winterwonderland2016 #sprays .item label {
+  display: flex;
+  align-items: center;
+}
+
+#winterwonderland2016 #sprays .item .orn {
+  display: none;
+}
+
+#ornamentinfo {
+  position: relative;
+  margin-left: 10px;
+}
+
+#ornamentinfo span {
+  font-size: 22px;
+  margin-left: 26px;
+}
+
+#fakecheckbox {
+  position: absolute;
+  top: 5px;
+}
+
+#winterwonderland2016 #sprays .item .ornl, #fakecheckbox {
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: #e3e1e1;
+  box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5);
+  margin-right: 6px;
+  transition: background 200ms;
+}
+
+#winterwonderland2016 #sprays .item .orn:checked + label, #fakecb:checked + label {
+  background: #ffa500;
+}
+
+/*@media screen and (max-width: 1540px) {
+  #winterwonderland2016 {
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #winterwonderland2016 #col1, #winterwonderland2016 #col2 {
+    width: 1000px;
+  }
+
+  #winterwonderland2016 #col1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #winterwonderland2016 #legendary-skins {
+    width: 70%;
+    margin-bottom: 15px;
+  }
+
+  #winterwonderland2016 #epic-skins {
+    width: 29%;
+    margin: 0;
+  }
+
+  #winterwonderland2016 #col1 .right {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  #winterwonderland2016 #highlight-intros, #winterwonderland2016 #emotes {
+    width: 34%;
+  }
+
+  #winterwonderland2016 #emotes {
+    margin-left: 2%;
+  }
+
+  #winterwonderland2016 #emotes h2 {
+    margin-top: 0;
+  }
+
+  #winterwonderland2016 #col2 .top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 70%;
+    padding: 0;
+  }
+
+  #winterwonderland2016 #voicelines .items, #winterwonderland2016 #victoryposes .items {
+    height: 422px;
+  }
+
+  #winterwonderland2016 #victoryposes .item {
+    z-index: 1;
+  }
+
+  #winterwonderland2016 #col2 .bottom {
+    width: 70%;
+    padding: 0;
+  }
+
+  #winterwonderland2016 #col3 {
+    width: 290px;
+    position: absolute;
+    top: 362px;
+    right: 12px;
+  }
+}*/

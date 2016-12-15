@@ -1,7 +1,7 @@
 OWI.controller('MainCtrl', ["Data", function(Data) {
   this.preview = false;
   this.updates = Data.updates;
-  this.selectedUpdate = 1;
+  this.selectedUpdate = 2;
 
   this.reset = function() {
     localStorage.removeItem('data');
@@ -47,6 +47,8 @@ OWI.directive("update", ["Data", function(Data) {
       var showTimeout = undefined;
       var hideTimeout = undefined;
       $scope.showPreview = function(what, small) {
+        console.log(what)
+        if (!what.url.includes('spray')) return
         if (!what.img && !what.video) return;
         if (showTimeout) return;
         clearTimeout(hideTimeout)

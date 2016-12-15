@@ -59,7 +59,9 @@ var getClassForHero = hero => {
   }
 }
 
-var getCleanID = name => name.toLowerCase().replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-')
+var getCleanID = (what, hero) => {
+  return (hero ? `${hero}-` : '') + what.toLowerCase().replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-')
+}
 
 var stupidNames = {
   "^_^": "joy",
@@ -106,6 +108,12 @@ var sortObject = o => {
   return sorted
 }
 
+var EVENTS = {
+  SUMMER16: 'SUMMER_GAMES_2016',
+  HALLOWEEN16: 'HALLOWEEN_2016',
+  CHRISTMAS16: 'WINTER_WONDERLAND_2016'
+}
+
 var heroes = {}
 data.forEach(({ hero, items: itemGroups }) => {
   var heroID = getCleanID(hero)
@@ -128,19 +136,16 @@ data.forEach(({ hero, items: itemGroups }) => {
       var [str, name, type] = item.match(/(.+) \((.+)\)/) //eslint-disable-line
       name = name.trim()
       if (name == 'RANDOM') return
-      var id = getCleanID(name)
+      var id = getCleanID(name, heroID)
       id = id && id.length ? id : stupidNames[name] || "UNDEFINED"
       var { quality, type: itemType } = getType(type)
       if (!quality || !itemType) return
       var out = { name, id, quality: quality }
       switch (group) {
-        case 'SUMMER_GAMES_2016':
-        case 'HALLOWEEN_2016':
+        case EVENTS.SUMMER16:
+        case EVENTS.HALLOWEEN16:
+        case EVENTS.CHRISTMAS16:
           out.event = group
-          break;
-        case 'EVENT_3':
-        case 'WINTER_WONDERLAND_2016':
-          out.event = 'WINTER_WONDERLAND_2016'
           break;
         case 'ACHIEVEMENT':
           out.achievement = true
@@ -156,6 +161,38 @@ data.forEach(({ hero, items: itemGroups }) => {
 })
 heroes = sortObject(heroes)
 
+var getImageURL = (type, event, id) => {
+  var baseUrl = `./resources/${event}/${type}/${id}`
+  switch (type) {
+    case 'emotes':
+    case 'intros':
+      return `${baseUrl}.webm`
+    case 'sprays':
+      if (event === EVENTS.CHRISTMAS16) return `${baseUrl}.png`
+      return `${baseUrl}.jpg`
+    case 'skins':
+    case 'skinsEpic':
+    case 'skinsLegendary':
+    case 'icons':
+    case 'poses':
+      return `${baseUrl}.jpg`
+  }
+}
+
+var allClassItems = {
+  'sprays': {
+    [EVENTS.SUMMER16]: ['Summer Games'],
+    [EVENTS.HALLOWEEN16]: ['...Never Die', 'Bats', 'Boo!', 'Boop!', 'Candyball', 'Fangs', 'Gummy Hog', 'Halloween Terror 2016', 'Pumpkins', 'Witch\'s Brew'],
+    [EVENTS.CHRISTMAS16]: ['SnowCree', 'SnowHog', 'SnowMei', 'SnowReaper', 'Winter Wonderland']
+  },
+  icons: {
+    [EVENTS.SUMMER16]: ["Summer Games","Australia", "Brazil", "China", "Egypt", "France", "Germany", "Greece", "Japan", "Mexico", "Nepal", "Numbani", "Russia", "South Korea", "Sweden", "Switzerland", "United Kingdom", "United States"],
+    [EVENTS.HALLOWEEN16]: ["Halloween Terror", "...Never Die", "Bewitching", "Calavera", "Candle", "Eyeball", "Ghostymari", "Spider", "Superstition", "Tombstone", "Vampachimari", "Witch's Brew", "Witch's Hat", "Wolf"],
+    [EVENTS.CHRISTMAS16]: ["Winter Wonderland", "Snowman", "Present", "Pachimerry", "Gingermari", "2017", "Holly", "Tannenbaum", "Bubbly", "Gingerbread", "Candy Cane", "Ornament", "Hot Cocoa", "Cheers", "Wreath", "Mochi", "Dreidel", "Bells", "Peppermint", "Snow Globe"]
+  }
+}
+
+// Go through every heros items and create a seperate object containing every item added in events
 var updates = {}
 Object.keys(heroes).forEach(hKey => {
   var hero = heroes[hKey]
@@ -163,15 +200,56 @@ Object.keys(heroes).forEach(hKey => {
     var items = hero.items[tKey]
     items.forEach(item => {
       var event = item.event
+      var type = tKey == 'skins' ? (item.quality == 'legendary' ? 'skinsLegendary' : (item.quality == 'epic' ? 'skinsEpic' : 'skins')) : tKey
       if (!event) return
       if (!updates[event]) updates[event] = {}
-      if (!updates[event][tKey]) updates[event][tKey] = []
-      var newItem = Object.assign({}, { hero: hKey }, item)
+      if (!updates[event][type]) updates[event][type] = []
+      var url = getImageURL(type, event, item.id)
+      var newItem = Object.assign({}, { hero: hero.name }, item, type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: url } : { img: url }))
       delete newItem.event
-      updates[event][tKey].push(newItem)
+      updates[event][type].push(newItem)
     })
   })
 })
+
+// Add allclass items (which aren't detected by item extrator) manually
+Object.keys(allClassItems).forEach(type => {
+  Object.keys(allClassItems[type]).forEach(event => {
+    allClassItems[type][event].forEach(item => {
+      var itemID = getCleanID(item)
+      updates[event][type].push({
+        name: item,
+        id: itemID,
+        url: getImageURL(type, event, itemID),
+        allClass: true
+      })
+    })
+  })
+})
+
+// Sort that shit by hero or item name
+Object.keys(updates).forEach(update => {
+  Object.keys(updates[update]).forEach(type => {
+    updates[update][type].sort((a, b) => {
+      switch (type) {
+        case 'voice':
+        case 'sprays':
+          if (a.hero < b.hero) return -1;
+          if (a.hero > b.hero || !a.hero) return 1;
+          return 0;
+        default:
+          if (a.name < b.name) return -1;
+          if (a.name > b.name || !a.hero) return 1;
+          return 0;
+      }
+    })
+  })
+})
+
+// Delete ornament sprays
+updates[EVENTS.CHRISTMAS16].sprays = updates[EVENTS.CHRISTMAS16].sprays.map(spray => {
+  return spray.name.toLowerCase() == 'ornament' ? null : spray
+}).filter(Boolean)
 
 console.log("HEROES: ", heroes)
 console.log("UPDATES:", updates)
