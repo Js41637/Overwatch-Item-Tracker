@@ -775,6 +775,7 @@ body {
 
 #winterwonderland2016 {
   flex-direction: column;
+  min-width: 1550px;
 }
 #winterwonderland2016 .row {
   display: flex;
