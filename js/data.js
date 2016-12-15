@@ -23,10 +23,10 @@ OWI.factory('Data', function() {
           name: "Track & Field",
           img: "./resources/summergames2016/skins/legendary/tracer2.jpg"
         }, {
-          name: "Champion",
+          name: "Weightlifter",
           img: "./resources/summergames2016/skins/legendary/zarya.jpg"
         }, {
-          name: "Weightifter",
+          name: "Champion",
           img: "./resources/summergames2016/skins/legendary/zarya2.jpg"
         }],
         skinsEpic: [{
@@ -183,14 +183,14 @@ OWI.factory('Data', function() {
           name: "Basketball",
           img: "./resources/summergames2016/icons/basketball.png"
         }, {
+          name: "BMX",
+          img: "./resources/summergames2016/icons/dirtbiking.png"
+        }, {
           name: "Boxing",
           img: "./resources/summergames2016/icons/boxing.png"
         }, {
           name: "Cycling",
           img: "./resources/summergames2016/icons/cycling.png"
-        }, {
-          name: "Dirt Biking",
-          img: "./resources/summergames2016/icons/dirtbiking.png"
         }, {
           name: "Equestrian",
           img: "./resources/summergames2016/icons/equestrian.png"
@@ -210,9 +210,6 @@ OWI.factory('Data', function() {
           name: "Gymnastics",
           img: "./resources/summergames2016/icons/gymnastics.png"
         }, {
-          name: "Martial Arts",
-          img: "./resources/summergames2016/icons/martialarts.png"
-        }, {
           name: "Rhythmic Gymnastics",
           img: "./resources/summergames2016/icons/rhythmicgymnastics.png"
         }, {
@@ -221,6 +218,9 @@ OWI.factory('Data', function() {
         }, {
           name: "Table Tennis",
           img: "./resources/summergames2016/icons/tabletennis.png"
+        }, {
+          name: "Taekwondo",
+          img: "./resources/summergames2016/icons/martialarts.png"
         }, {
           name: "Tennis",
           img: "./resources/summergames2016/icons/tennis.png"
