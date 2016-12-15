@@ -1,19 +1,10 @@
 OWI.factory('Data', function() {
-  var items = {
-    legendary: {},
-    epic: {},
-    emotes: {},
-    intros: {},
-    sprays: {},
-    voicelines: {},
-    victoryposes: {},
-    icons: {}
-  }
+  var items = `{"legendary":{},"epic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"victoryposes":{},"icons":{}}`
   return {
     checked: {
-      summergames2016: items,
-      halloween2016: items,
-      winterwonderland2016: items
+      summergames2016: JSON.parse(items),
+      halloween2016: JSON.parse(items),
+      winterwonderland2016: JSON.parse(items)
     },
     updates: [{
       name: 'Summer Games 2016',
