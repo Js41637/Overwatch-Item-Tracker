@@ -47,8 +47,7 @@ OWI.directive("update", ["Data", function(Data) {
       var showTimeout = undefined;
       var hideTimeout = undefined;
       $scope.showPreview = function(what, small) {
-        console.log(what)
-        if (!what.url.includes('spray')) return
+        if (what.url) return // ignore winter items for now
         if (!what.img && !what.video) return;
         if (showTimeout) return;
         clearTimeout(hideTimeout)

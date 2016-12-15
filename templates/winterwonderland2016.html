@@ -60,7 +60,7 @@
         <div id="epic-skins" class="section">
           <h2>Epic Skins</h2> <span>(750 Coins)</span>
           <div class="item" ng-repeat="skin in data.items.skinsEpic track by $index" ng-mouseover="showPreview(skin)" ng-mouseleave="hidePreview()">
-            <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.epic[skin.id]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin.name}}</h3></label>
+            <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.epic[skin.id]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin.name}} {{skin.hero}}</h3></label>
           </div>
         </div>
       </div>
@@ -68,13 +68,13 @@
         <div id="highlight-intros" class="section">
           <h2>Highlight Intros</h2> <span>(750 Coins)</span>
           <div class="item" ng-repeat="intro in data.items.intros track by $index" ng-mouseover="showPreview(intro)" ng-mouseleave="hidePreview()">
-            <input type="checkbox" id="{{'intro' + $index}}" ng-model="checked.intros[intro.id]" ng-change="onSelect()"> <label for="{{'intro' + $index}}"><h3>{{intro.name}}</h3></label>
+            <input type="checkbox" id="{{'intro' + $index}}" ng-model="checked.intros[intro.id]" ng-change="onSelect()"> <label for="{{'intro' + $index}}"><h3>{{intro.name}} {{intro.hero}}</h3></label>
           </div>
         </div>
         <div id="emotes" class="section">
           <h2>Emotes</h2> <span>(750 Coins)</span>
           <div class="item" ng-repeat="emote in data.items.emotes track by $index" ng-mouseover="showPreview(emote)" ng-mouseleave="hidePreview()">
-            <input type="checkbox" id="{{'emote' + $index}}" ng-model="checked.emotes[emote.id]" ng-change="onSelect()"> <label for="{{'emote' + $index}}"><h3>{{emote.name}}</h3></label>
+            <input type="checkbox" id="{{'emote' + $index}}" ng-model="checked.emotes[emote.id]" ng-change="onSelect()"> <label for="{{'emote' + $index}}"><h3>{{emote.name}} {{emote.hero}}</h3></label>
           </div>
         </div>
       </div>
