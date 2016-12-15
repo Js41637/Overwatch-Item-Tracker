@@ -938,6 +938,40 @@ body {
   align-items: center;
 }
 
+#winterwonderland2016 #sprays .item .orn {
+  display: none;
+}
+
+#ornamentinfo {
+  position: relative;
+  margin-left: 10px;
+}
+
+#ornamentinfo span {
+  font-size: 22px;
+  margin-left: 26px;
+}
+
+#fakecheckbox {
+  position: absolute;
+  top: 5px;
+}
+
+#winterwonderland2016 #sprays .item .ornl, #fakecheckbox {
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: #e3e1e1;
+  box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5);
+  margin-right: 6px;
+  transition: background 200ms;
+}
+
+#winterwonderland2016 #sprays .item .orn:checked + label, #fakecb:checked + label {
+  background: #ffa500;
+}
+
 /*@media screen and (max-width: 1540px) {
   #winterwonderland2016 {
     flex-direction: column;
