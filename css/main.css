@@ -802,6 +802,7 @@ body {
 
 #winterwonderland2016 #row2 {
   justify-content: space-around;
+  margin-top: -15px;
 }
 
 #winterwonderland2016 #row2 #col1 {
@@ -918,7 +919,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 246px;
+  height: 261px;
 }
 
 #winterwonderland2016 #icons .item {

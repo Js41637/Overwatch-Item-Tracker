@@ -1203,6 +1203,12 @@ OWI.factory('Data', function() {
             "allClass": true
           },
           {
+            "name": "Pachireindeer",
+            "id": "pachireindeer",
+            "url": "./resources/WINTER_WONDERLAND_2016/icons/pachireindeer.jpg",
+            "allClass": true
+          },
+          {
             "name": "Peppermint",
             "id": "peppermint",
             "url": "./resources/WINTER_WONDERLAND_2016/icons/peppermint.jpg",
@@ -1231,6 +1237,12 @@ OWI.factory('Data', function() {
             "name": "Snowman",
             "id": "snowman",
             "url": "./resources/WINTER_WONDERLAND_2016/icons/snowman.jpg",
+            "allClass": true
+          },
+          {
+            "name": "Stocking",
+            "id": "stocking",
+            "url": "./resources/WINTER_WONDERLAND_2016/icons/stocking.jpg",
             "allClass": true
           },
           {
