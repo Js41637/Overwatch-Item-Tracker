@@ -2,52 +2,60 @@
   "HALLOWEEN_2016": {
     "skinsEpic": [
       {
-        "hero": "Ana",
-        "name": "Ghoul",
-        "id": "ana-ghoul",
-        "quality": "epic"
-      },
-      {
-        "hero": "Bastion",
-        "name": "Tombstone",
-        "id": "bastion-tombstone",
-        "quality": "epic"
+        "hero": "Reinhardt",
+        "name": "Coldhardt",
+        "id": "reinhardt-coldhardt",
+        "quality": "epic",
+        "img": "./resources/HALLOWEEN_2016/skinsEpic/reinhardt-coldhardt.jpg"
       },
       {
         "hero": "Hanzo",
         "name": "Demon",
         "id": "hanzo-demon",
-        "quality": "epic"
+        "quality": "epic",
+        "img": "./resources/HALLOWEEN_2016/skinsEpic/hanzo-demon.jpg"
       },
       {
-        "hero": "Pharah",
-        "name": "Possessed",
-        "id": "pharah-possessed",
-        "quality": "epic"
-      },
-      {
-        "hero": "Reinhardt",
-        "name": "Coldhardt",
-        "id": "reinhardt-coldhardt",
-        "quality": "epic"
+        "hero": "Ana",
+        "name": "Ghoul",
+        "id": "ana-ghoul",
+        "quality": "epic",
+        "img": "./resources/HALLOWEEN_2016/skinsEpic/ana-ghoul.jpg"
       },
       {
         "hero": "Soldier: 76",
         "name": "Immortal",
         "id": "soldier-76-immortal",
-        "quality": "epic"
+        "quality": "epic",
+        "img": "./resources/HALLOWEEN_2016/skinsEpic/soldier-76-immortal.jpg"
       },
       {
-        "hero": "Symmetra",
-        "name": "Vampire",
-        "id": "symmetra-vampire",
-        "quality": "epic"
+        "hero": "Pharah",
+        "name": "Possessed",
+        "id": "pharah-possessed",
+        "quality": "epic",
+        "img": "./resources/HALLOWEEN_2016/skinsEpic/pharah-possessed.jpg"
       },
       {
         "hero": "Zenyatta",
         "name": "Skullyatta",
         "id": "zenyatta-skullyatta",
-        "quality": "epic"
+        "quality": "epic",
+        "img": "./resources/HALLOWEEN_2016/skinsEpic/zenyatta-skullyatta.jpg"
+      },
+      {
+        "hero": "Bastion",
+        "name": "Tombstone",
+        "id": "bastion-tombstone",
+        "quality": "epic",
+        "img": "./resources/HALLOWEEN_2016/skinsEpic/bastion-tombstone.jpg"
+      },
+      {
+        "hero": "Symmetra",
+        "name": "Vampire",
+        "id": "symmetra-vampire",
+        "quality": "epic",
+        "img": "./resources/HALLOWEEN_2016/skinsEpic/symmetra-vampire.jpg"
       }
     ],
     "emotes": [
@@ -194,6 +202,12 @@
         "img": "./resources/HALLOWEEN_2016/sprays/torbjorn-trick-or-treat.jpg"
       },
       {
+        "name": "Boo!",
+        "id": "boo",
+        "url": "./resources/HALLOWEEN_2016/sprays/boo.jpg",
+        "allClass": true
+      },
+      {
         "hero": "Tracer",
         "name": "Trick or Treat",
         "id": "tracer-trick-or-treat",
@@ -206,6 +220,12 @@
         "id": "widowmaker-trick-or-treat",
         "quality": "common",
         "img": "./resources/HALLOWEEN_2016/sprays/widowmaker-trick-or-treat.jpg"
+      },
+      {
+        "name": "Boop!",
+        "id": "boop",
+        "url": "./resources/HALLOWEEN_2016/sprays/boop.jpg",
+        "allClass": true
       },
       {
         "hero": "Winston",
@@ -229,51 +249,9 @@
         "img": "./resources/HALLOWEEN_2016/sprays/zenyatta-trick-or-treat.jpg"
       },
       {
-        "name": "...Never Die",
-        "id": "never-die",
-        "url": "./resources/HALLOWEEN_2016/sprays/never-die.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Bats",
-        "id": "bats",
-        "url": "./resources/HALLOWEEN_2016/sprays/bats.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Boo!",
-        "id": "boo",
-        "url": "./resources/HALLOWEEN_2016/sprays/boo.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Boop!",
-        "id": "boop",
-        "url": "./resources/HALLOWEEN_2016/sprays/boop.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Candyball",
-        "id": "candyball",
-        "url": "./resources/HALLOWEEN_2016/sprays/candyball.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Fangs",
-        "id": "fangs",
-        "url": "./resources/HALLOWEEN_2016/sprays/fangs.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Gummy Hog",
-        "id": "gummy-hog",
-        "url": "./resources/HALLOWEEN_2016/sprays/gummy-hog.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Halloween Terror 2016",
-        "id": "halloween-terror-2016",
-        "url": "./resources/HALLOWEEN_2016/sprays/halloween-terror-2016.jpg",
+        "name": "Witch's Brew",
+        "id": "witchs-brew",
+        "url": "./resources/HALLOWEEN_2016/sprays/witchs-brew.jpg",
         "allClass": true
       },
       {
@@ -283,9 +261,39 @@
         "allClass": true
       },
       {
-        "name": "Witch's Brew",
-        "id": "witchs-brew",
-        "url": "./resources/HALLOWEEN_2016/sprays/witchs-brew.jpg",
+        "name": "Halloween Terror 2016",
+        "id": "halloween-terror-2016",
+        "url": "./resources/HALLOWEEN_2016/sprays/halloween-terror-2016.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Gummy Hog",
+        "id": "gummy-hog",
+        "url": "./resources/HALLOWEEN_2016/sprays/gummy-hog.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Fangs",
+        "id": "fangs",
+        "url": "./resources/HALLOWEEN_2016/sprays/fangs.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Candyball",
+        "id": "candyball",
+        "url": "./resources/HALLOWEEN_2016/sprays/candyball.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Bats",
+        "id": "bats",
+        "url": "./resources/HALLOWEEN_2016/sprays/bats.jpg",
+        "allClass": true
+      },
+      {
+        "name": "...Never Die",
+        "id": "never-die",
+        "url": "./resources/HALLOWEEN_2016/sprays/never-die.jpg",
         "allClass": true
       }
     ],
@@ -425,18 +433,18 @@
     ],
     "poses": [
       {
+        "hero": "Reaper",
+        "name": "R.I.P.",
+        "id": "reaper-rip",
+        "quality": "rare",
+        "img": "./resources/HALLOWEEN_2016/poses/reaper-rip.jpg"
+      },
+      {
         "hero": "Ana",
         "name": "R.I.P.",
         "id": "ana-rip",
         "quality": "rare",
         "img": "./resources/HALLOWEEN_2016/poses/ana-rip.jpg"
-      },
-      {
-        "hero": "Bastion",
-        "name": "R.I.P.",
-        "id": "bastion-rip",
-        "quality": "rare",
-        "img": "./resources/HALLOWEEN_2016/poses/bastion-rip.jpg"
       },
       {
         "hero": "D.Va",
@@ -502,11 +510,11 @@
         "img": "./resources/HALLOWEEN_2016/poses/pharah-rip.jpg"
       },
       {
-        "hero": "Reaper",
+        "hero": "Bastion",
         "name": "R.I.P.",
-        "id": "reaper-rip",
+        "id": "bastion-rip",
         "quality": "rare",
-        "img": "./resources/HALLOWEEN_2016/poses/reaper-rip.jpg"
+        "img": "./resources/HALLOWEEN_2016/poses/bastion-rip.jpg"
       },
       {
         "hero": "Reinhardt",
@@ -581,11 +589,11 @@
     ],
     "intros": [
       {
-        "hero": "Genji",
-        "name": "Pumpkin Carving",
-        "id": "genji-pumpkin-carving",
+        "hero": "Reaper",
+        "name": "Eternal Rest",
+        "id": "reaper-eternal-rest",
         "quality": "epic",
-        "video": "./resources/HALLOWEEN_2016/intros/genji-pumpkin-carving.webm"
+        "video": "./resources/HALLOWEEN_2016/intros/reaper-eternal-rest.webm"
       },
       {
         "hero": "Mei",
@@ -595,11 +603,11 @@
         "video": "./resources/HALLOWEEN_2016/intros/mei-ice-scream.webm"
       },
       {
-        "hero": "Reaper",
-        "name": "Eternal Rest",
-        "id": "reaper-eternal-rest",
+        "hero": "Genji",
+        "name": "Pumpkin Carving",
+        "id": "genji-pumpkin-carving",
         "quality": "epic",
-        "video": "./resources/HALLOWEEN_2016/intros/reaper-eternal-rest.webm"
+        "video": "./resources/HALLOWEEN_2016/intros/genji-pumpkin-carving.webm"
       }
     ],
     "skinsLegendary": [
@@ -607,62 +615,32 @@
         "hero": "Junkrat",
         "name": "Dr. Junkenstein",
         "id": "junkrat-dr-junkenstein",
-        "quality": "legendary"
-      },
-      {
-        "hero": "Mercy",
-        "name": "Witch",
-        "id": "mercy-witch",
-        "quality": "legendary"
-      },
-      {
-        "hero": "Reaper",
-        "name": "Pumpkin",
-        "id": "reaper-pumpkin",
-        "quality": "legendary"
+        "quality": "legendary",
+        "img": "./resources/HALLOWEEN_2016/skinsLegendary/junkrat-dr-junkenstein.jpg"
       },
       {
         "hero": "Roadhog",
         "name": "Junkenstein's Monster",
         "id": "roadhog-junkensteins-monster",
-        "quality": "legendary"
-      }
-    ],
-    "icons": [
-      {
-        "hero": "Junkrat",
-        "name": "The Doctor",
-        "id": "junkrat-the-doctor",
-        "quality": "rare",
-        "img": "./resources/HALLOWEEN_2016/icons/junkrat-the-doctor.jpg"
-      },
-      {
-        "hero": "Mercy",
-        "name": "The Witch",
-        "id": "mercy-the-witch",
-        "quality": "rare",
-        "img": "./resources/HALLOWEEN_2016/icons/mercy-the-witch.jpg"
+        "quality": "legendary",
+        "img": "./resources/HALLOWEEN_2016/skinsLegendary/roadhog-junkensteins-monster.jpg"
       },
       {
         "hero": "Reaper",
-        "name": "The Reaper",
-        "id": "reaper-the-reaper",
-        "quality": "rare",
-        "img": "./resources/HALLOWEEN_2016/icons/reaper-the-reaper.jpg"
+        "name": "Pumpkin",
+        "id": "reaper-pumpkin",
+        "quality": "legendary",
+        "img": "./resources/HALLOWEEN_2016/skinsLegendary/reaper-pumpkin.jpg"
       },
       {
-        "hero": "Roadhog",
-        "name": "The Monster",
-        "id": "roadhog-the-monster",
-        "quality": "rare",
-        "img": "./resources/HALLOWEEN_2016/icons/roadhog-the-monster.jpg"
-      },
-      {
-        "name": "Halloween Terror 2016",
-        "id": "halloween-terror-2016",
-        "url": "./resources/HALLOWEEN_2016/icons/halloween-terror-2016.jpg",
-        "allClass": true
-      },
+        "hero": "Mercy",
+        "name": "Witch",
+        "id": "mercy-witch",
+        "quality": "legendary",
+        "img": "./resources/HALLOWEEN_2016/skinsLegendary/mercy-witch.jpg"
+      }
+    ],
+    "icons": [
       {
         "name": "...Never Die",
         "id": "never-die",
@@ -700,6 +678,12 @@
         "allClass": true
       },
       {
+        "name": "Halloween Terror",
+        "id": "halloween-terror",
+        "url": "./resources/HALLOWEEN_2016/icons/halloween-terror.jpg",
+        "allClass": true
+      },
+      {
         "name": "Spider",
         "id": "spider",
         "url": "./resources/HALLOWEEN_2016/icons/spider.jpg",
@@ -710,6 +694,34 @@
         "id": "superstition",
         "url": "./resources/HALLOWEEN_2016/icons/superstition.jpg",
         "allClass": true
+      },
+      {
+        "hero": "Junkrat",
+        "name": "The Doctor",
+        "id": "junkrat-the-doctor",
+        "quality": "rare",
+        "img": "./resources/HALLOWEEN_2016/icons/junkrat-the-doctor.jpg"
+      },
+      {
+        "hero": "Roadhog",
+        "name": "The Monster",
+        "id": "roadhog-the-monster",
+        "quality": "rare",
+        "img": "./resources/HALLOWEEN_2016/icons/roadhog-the-monster.jpg"
+      },
+      {
+        "hero": "Reaper",
+        "name": "The Reaper",
+        "id": "reaper-the-reaper",
+        "quality": "rare",
+        "img": "./resources/HALLOWEEN_2016/icons/reaper-the-reaper.jpg"
+      },
+      {
+        "hero": "Mercy",
+        "name": "The Witch",
+        "id": "mercy-the-witch",
+        "quality": "rare",
+        "img": "./resources/HALLOWEEN_2016/icons/mercy-the-witch.jpg"
       },
       {
         "name": "Tombstone",
@@ -746,34 +758,6 @@
   "SUMMER_GAMES_2016": {
     "icons": [
       {
-        "hero": "Ana",
-        "name": "Shooting",
-        "id": "ana-shooting",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/ana-shooting.jpg"
-      },
-      {
-        "hero": "Bastion",
-        "name": "Boxing",
-        "id": "bastion-boxing",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/bastion-boxing.jpg"
-      },
-      {
-        "hero": "D.Va",
-        "name": "Cycling",
-        "id": "dva-cycling",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/dva-cycling.jpg"
-      },
-      {
-        "hero": "Genji",
-        "name": "Fencing",
-        "id": "genji-fencing",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/genji-fencing.jpg"
-      },
-      {
         "hero": "Hanzo",
         "name": "Archery",
         "id": "hanzo-archery",
@@ -781,32 +765,17 @@
         "img": "./resources/SUMMER_GAMES_2016/icons/hanzo-archery.jpg"
       },
       {
-        "hero": "Junkrat",
-        "name": "Tennis",
-        "id": "junkrat-tennis",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/junkrat-tennis.jpg"
+        "name": "Australia",
+        "id": "australia",
+        "url": "./resources/SUMMER_GAMES_2016/icons/australia.jpg",
+        "allClass": true
       },
       {
-        "hero": "Lúcio",
-        "name": "Football",
-        "id": "lucio-football",
+        "hero": "Reaper",
+        "name": "BMX",
+        "id": "reaper-bmx",
         "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/lucio-football.jpg"
-      },
-      {
-        "hero": "McCree",
-        "name": "Equestrian",
-        "id": "mccree-equestrian",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/mccree-equestrian.jpg"
-      },
-      {
-        "hero": "Mei",
-        "name": "Table Tennis",
-        "id": "mei-table-tennis",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/mei-table-tennis.jpg"
+        "img": "./resources/SUMMER_GAMES_2016/icons/reaper-bmx.jpg"
       },
       {
         "hero": "Mercy",
@@ -823,93 +792,11 @@
         "img": "./resources/SUMMER_GAMES_2016/icons/pharah-basketball.jpg"
       },
       {
-        "hero": "Reaper",
-        "name": "BMX",
-        "id": "reaper-bmx",
+        "hero": "Bastion",
+        "name": "Boxing",
+        "id": "bastion-boxing",
         "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/reaper-bmx.jpg"
-      },
-      {
-        "hero": "Reinhardt",
-        "name": "Wrestling",
-        "id": "reinhardt-wrestling",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/reinhardt-wrestling.jpg"
-      },
-      {
-        "hero": "Roadhog",
-        "name": "Diving",
-        "id": "roadhog-diving",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/roadhog-diving.jpg"
-      },
-      {
-        "hero": "Soldier: 76",
-        "name": "Golf",
-        "id": "soldier-76-golf",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/soldier-76-golf.jpg"
-      },
-      {
-        "hero": "Symmetra",
-        "name": "Rhythmic Gymnastics",
-        "id": "symmetra-rhythmic-gymnastics",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/symmetra-rhythmic-gymnastics.jpg"
-      },
-      {
-        "hero": "Torbjörn",
-        "name": "Water Polo",
-        "id": "torbjorn-water-polo",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/torbjorn-water-polo.jpg"
-      },
-      {
-        "hero": "Tracer",
-        "name": "Track",
-        "id": "tracer-track",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/tracer-track.jpg"
-      },
-      {
-        "hero": "Widowmaker",
-        "name": "Gymnastics",
-        "id": "widowmaker-gymnastics",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/widowmaker-gymnastics.jpg"
-      },
-      {
-        "hero": "Winston",
-        "name": "Volleyball",
-        "id": "winston-volleyball",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/winston-volleyball.jpg"
-      },
-      {
-        "hero": "Zarya",
-        "name": "Weightlifting",
-        "id": "zarya-weightlifting",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/zarya-weightlifting.jpg"
-      },
-      {
-        "hero": "Zenyatta",
-        "name": "Taekwondo",
-        "id": "zenyatta-taekwondo",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/icons/zenyatta-taekwondo.jpg"
-      },
-      {
-        "name": "Summer Games",
-        "id": "summer-games",
-        "url": "./resources/SUMMER_GAMES_2016/icons/summer-games.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Australia",
-        "id": "australia",
-        "url": "./resources/SUMMER_GAMES_2016/icons/australia.jpg",
-        "allClass": true
+        "img": "./resources/SUMMER_GAMES_2016/icons/bastion-boxing.jpg"
       },
       {
         "name": "Brazil",
@@ -924,10 +811,45 @@
         "allClass": true
       },
       {
+        "hero": "D.Va",
+        "name": "Cycling",
+        "id": "dva-cycling",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/dva-cycling.jpg"
+      },
+      {
+        "hero": "Roadhog",
+        "name": "Diving",
+        "id": "roadhog-diving",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/roadhog-diving.jpg"
+      },
+      {
         "name": "Egypt",
         "id": "egypt",
         "url": "./resources/SUMMER_GAMES_2016/icons/egypt.jpg",
         "allClass": true
+      },
+      {
+        "hero": "McCree",
+        "name": "Equestrian",
+        "id": "mccree-equestrian",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/mccree-equestrian.jpg"
+      },
+      {
+        "hero": "Genji",
+        "name": "Fencing",
+        "id": "genji-fencing",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/genji-fencing.jpg"
+      },
+      {
+        "hero": "Lúcio",
+        "name": "Football",
+        "id": "lucio-football",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/lucio-football.jpg"
       },
       {
         "name": "France",
@@ -942,10 +864,24 @@
         "allClass": true
       },
       {
+        "hero": "Soldier: 76",
+        "name": "Golf",
+        "id": "soldier-76-golf",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/soldier-76-golf.jpg"
+      },
+      {
         "name": "Greece",
         "id": "greece",
         "url": "./resources/SUMMER_GAMES_2016/icons/greece.jpg",
         "allClass": true
+      },
+      {
+        "hero": "Widowmaker",
+        "name": "Gymnastics",
+        "id": "widowmaker-gymnastics",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/widowmaker-gymnastics.jpg"
       },
       {
         "name": "Japan",
@@ -972,15 +908,35 @@
         "allClass": true
       },
       {
+        "hero": "Symmetra",
+        "name": "Rhythmic Gymnastics",
+        "id": "symmetra-rhythmic-gymnastics",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/symmetra-rhythmic-gymnastics.jpg"
+      },
+      {
         "name": "Russia",
         "id": "russia",
         "url": "./resources/SUMMER_GAMES_2016/icons/russia.jpg",
         "allClass": true
       },
       {
+        "hero": "Ana",
+        "name": "Shooting",
+        "id": "ana-shooting",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/ana-shooting.jpg"
+      },
+      {
         "name": "South Korea",
         "id": "south-korea",
         "url": "./resources/SUMMER_GAMES_2016/icons/south-korea.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Summer Games",
+        "id": "summer-games",
+        "url": "./resources/SUMMER_GAMES_2016/icons/summer-games.jpg",
         "allClass": true
       },
       {
@@ -996,6 +952,34 @@
         "allClass": true
       },
       {
+        "hero": "Mei",
+        "name": "Table Tennis",
+        "id": "mei-table-tennis",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/mei-table-tennis.jpg"
+      },
+      {
+        "hero": "Zenyatta",
+        "name": "Taekwondo",
+        "id": "zenyatta-taekwondo",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/zenyatta-taekwondo.jpg"
+      },
+      {
+        "hero": "Junkrat",
+        "name": "Tennis",
+        "id": "junkrat-tennis",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/junkrat-tennis.jpg"
+      },
+      {
+        "hero": "Tracer",
+        "name": "Track",
+        "id": "tracer-track",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/tracer-track.jpg"
+      },
+      {
         "name": "United Kingdom",
         "id": "united-kingdom",
         "url": "./resources/SUMMER_GAMES_2016/icons/united-kingdom.jpg",
@@ -1006,6 +990,34 @@
         "id": "united-states",
         "url": "./resources/SUMMER_GAMES_2016/icons/united-states.jpg",
         "allClass": true
+      },
+      {
+        "hero": "Winston",
+        "name": "Volleyball",
+        "id": "winston-volleyball",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/winston-volleyball.jpg"
+      },
+      {
+        "hero": "Torbjörn",
+        "name": "Water Polo",
+        "id": "torbjorn-water-polo",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/torbjorn-water-polo.jpg"
+      },
+      {
+        "hero": "Zarya",
+        "name": "Weightlifting",
+        "id": "zarya-weightlifting",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/zarya-weightlifting.jpg"
+      },
+      {
+        "hero": "Reinhardt",
+        "name": "Wrestling",
+        "id": "reinhardt-wrestling",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/icons/reinhardt-wrestling.jpg"
       }
     ],
     "sprays": [
@@ -1329,50 +1341,49 @@
     ],
     "skinsEpic": [
       {
-        "hero": "D.Va",
-        "name": "Taegeukgi",
-        "id": "dva-taegeukgi",
-        "quality": "epic"
-      },
-      {
-        "hero": "Genji",
-        "name": "Nihon",
-        "id": "genji-nihon",
-        "quality": "epic"
-      },
-      {
         "hero": "McCree",
         "name": "American",
         "id": "mccree-american",
-        "quality": "epic"
+        "quality": "epic",
+        "img": "./resources/SUMMER_GAMES_2016/skinsEpic/mccree-american.jpg"
       },
       {
         "hero": "Mercy",
         "name": "Eidgenossin",
         "id": "mercy-eidgenossin",
-        "quality": "epic"
+        "quality": "epic",
+        "img": "./resources/SUMMER_GAMES_2016/skinsEpic/mercy-eidgenossin.jpg"
+      },
+      {
+        "hero": "Genji",
+        "name": "Nihon",
+        "id": "genji-nihon",
+        "quality": "epic",
+        "img": "./resources/SUMMER_GAMES_2016/skinsEpic/genji-nihon.jpg"
+      },
+      {
+        "hero": "D.Va",
+        "name": "Taegeukgi",
+        "id": "dva-taegeukgi",
+        "quality": "epic",
+        "img": "./resources/SUMMER_GAMES_2016/skinsEpic/dva-taegeukgi.jpg"
       },
       {
         "hero": "Torbjörn",
         "name": "Tre Kronor",
         "id": "torbjorn-tre-kronor",
-        "quality": "epic"
+        "quality": "epic",
+        "img": "./resources/SUMMER_GAMES_2016/skinsEpic/torbjorn-tre-kronor.jpg"
       },
       {
         "hero": "Widowmaker",
         "name": "Tricolore",
         "id": "widowmaker-tricolore",
-        "quality": "epic"
+        "quality": "epic",
+        "img": "./resources/SUMMER_GAMES_2016/skinsEpic/widowmaker-tricolore.jpg"
       }
     ],
     "intros": [
-      {
-        "hero": "Junkrat",
-        "name": "Shot Put",
-        "id": "junkrat-shot-put",
-        "quality": "epic",
-        "video": "./resources/SUMMER_GAMES_2016/intros/junkrat-shot-put.webm"
-      },
       {
         "hero": "Lúcio",
         "name": "Bicycle Kick",
@@ -1386,47 +1397,67 @@
         "id": "tracer-hurdle",
         "quality": "epic",
         "video": "./resources/SUMMER_GAMES_2016/intros/tracer-hurdle.webm"
+      },
+      {
+        "hero": "Junkrat",
+        "name": "Shot Put",
+        "id": "junkrat-shot-put",
+        "quality": "epic",
+        "video": "./resources/SUMMER_GAMES_2016/intros/junkrat-shot-put.webm"
       }
     ],
     "skinsLegendary": [
       {
-        "hero": "Lúcio",
-        "name": "Seleção",
-        "id": "lucio-selecao",
-        "quality": "legendary"
+        "hero": "Zarya",
+        "name": "Champion",
+        "id": "zarya-champion",
+        "quality": "legendary",
+        "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/zarya-champion.jpg"
       },
       {
         "hero": "Lúcio",
-        "name": "Striker",
-        "id": "lucio-striker",
-        "quality": "legendary"
+        "name": "Seleção",
+        "id": "lucio-selecao",
+        "quality": "legendary",
+        "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/lucio-selecao.jpg"
       },
       {
         "hero": "Tracer",
         "name": "Sprinter",
         "id": "tracer-sprinter",
-        "quality": "legendary"
+        "quality": "legendary",
+        "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/tracer-sprinter.jpg"
+      },
+      {
+        "hero": "Lúcio",
+        "name": "Striker",
+        "id": "lucio-striker",
+        "quality": "legendary",
+        "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/lucio-striker.jpg"
       },
       {
         "hero": "Tracer",
         "name": "Track and Field",
         "id": "tracer-track-and-field",
-        "quality": "legendary"
-      },
-      {
-        "hero": "Zarya",
-        "name": "Champion",
-        "id": "zarya-champion",
-        "quality": "legendary"
+        "quality": "legendary",
+        "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/tracer-track-and-field.jpg"
       },
       {
         "hero": "Zarya",
         "name": "Weightlifter",
         "id": "zarya-weightlifter",
-        "quality": "legendary"
+        "quality": "legendary",
+        "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/zarya-weightlifter.jpg"
       }
     ],
     "poses": [
+      {
+        "hero": "Soldier: 76",
+        "name": "Golf Swing",
+        "id": "soldier-76-golf-swing",
+        "quality": "rare",
+        "img": "./resources/SUMMER_GAMES_2016/poses/soldier-76-golf-swing.jpg"
+      },
       {
         "hero": "Mei",
         "name": "Medal",
@@ -1454,13 +1485,6 @@
         "id": "roadhog-medal",
         "quality": "rare",
         "img": "./resources/SUMMER_GAMES_2016/poses/roadhog-medal.jpg"
-      },
-      {
-        "hero": "Soldier: 76",
-        "name": "Golf Swing",
-        "id": "soldier-76-golf-swing",
-        "quality": "rare",
-        "img": "./resources/SUMMER_GAMES_2016/poses/soldier-76-golf-swing.jpg"
       },
       {
         "hero": "Torbjörn",
@@ -1502,25 +1526,11 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/ana-warm.png"
       },
       {
-        "hero": "Ana",
-        "name": "Ornament",
-        "id": "ana-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/ana-ornament.png"
-      },
-      {
         "hero": "Bastion",
         "name": "FESTIVE",
         "id": "bastion-festive",
         "quality": "common",
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/bastion-festive.png"
-      },
-      {
-        "hero": "Bastion",
-        "name": "ORNAMENT",
-        "id": "bastion-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/bastion-ornament.png"
       },
       {
         "hero": "D.Va",
@@ -1530,25 +1540,11 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/dva-cookie.png"
       },
       {
-        "hero": "D.Va",
-        "name": "ORNAMENT",
-        "id": "dva-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/dva-ornament.png"
-      },
-      {
         "hero": "Genji",
         "name": "Kadomatsu",
         "id": "genji-kadomatsu",
         "quality": "common",
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/genji-kadomatsu.png"
-      },
-      {
-        "hero": "Genji",
-        "name": "Ornament",
-        "id": "genji-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/genji-ornament.png"
       },
       {
         "hero": "Hanzo",
@@ -1558,25 +1554,11 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/hanzo-kadomatsu.png"
       },
       {
-        "hero": "Hanzo",
-        "name": "Ornament",
-        "id": "hanzo-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/hanzo-ornament.png"
-      },
-      {
         "hero": "Junkrat",
         "name": "\"WINTER\"",
         "id": "junkrat-winter",
         "quality": "common",
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/junkrat-winter.png"
-      },
-      {
-        "hero": "Junkrat",
-        "name": "Ornament",
-        "id": "junkrat-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/junkrat-ornament.png"
       },
       {
         "hero": "Lúcio",
@@ -1586,25 +1568,11 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/lucio-hockey.png"
       },
       {
-        "hero": "Lúcio",
-        "name": "Ornament",
-        "id": "lucio-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/lucio-ornament.png"
-      },
-      {
         "hero": "McCree",
         "name": "Ugly Sweater",
         "id": "mccree-ugly-sweater",
         "quality": "common",
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/mccree-ugly-sweater.png"
-      },
-      {
-        "hero": "McCree",
-        "name": "Ornament",
-        "id": "mccree-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/mccree-ornament.png"
       },
       {
         "hero": "Mei",
@@ -1614,25 +1582,11 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/mei-sculpting.png"
       },
       {
-        "hero": "Mei",
-        "name": "Ornament",
-        "id": "mei-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/mei-ornament.png"
-      },
-      {
         "hero": "Mercy",
         "name": "Snow Angel",
         "id": "mercy-snow-angel",
         "quality": "common",
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/mercy-snow-angel.png"
-      },
-      {
-        "hero": "Mercy",
-        "name": "Ornament",
-        "id": "mercy-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/mercy-ornament.png"
       },
       {
         "hero": "Pharah",
@@ -1642,25 +1596,11 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/pharah-ice-fishing.png"
       },
       {
-        "hero": "Pharah",
-        "name": "Ornament",
-        "id": "pharah-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/pharah-ornament.png"
-      },
-      {
         "hero": "Reaper",
         "name": "Stocking",
         "id": "reaper-stocking",
         "quality": "common",
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/reaper-stocking.png"
-      },
-      {
-        "hero": "Reaper",
-        "name": "Ornament",
-        "id": "reaper-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/reaper-ornament.png"
       },
       {
         "hero": "Reinhardt",
@@ -1670,25 +1610,11 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/reinhardt-ice-fishing.png"
       },
       {
-        "hero": "Reinhardt",
-        "name": "Ornament",
-        "id": "reinhardt-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/reinhardt-ornament.png"
-      },
-      {
         "hero": "Roadhog",
         "name": "\"Winter\"",
         "id": "roadhog-winter",
         "quality": "common",
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/roadhog-winter.png"
-      },
-      {
-        "hero": "Roadhog",
-        "name": "Ornament",
-        "id": "roadhog-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/roadhog-ornament.png"
       },
       {
         "hero": "Soldier: 76",
@@ -1698,25 +1624,11 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/soldier-76-army-man-76.png"
       },
       {
-        "hero": "Soldier: 76",
-        "name": "Ornament",
-        "id": "soldier-76-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/soldier-76-ornament.png"
-      },
-      {
         "hero": "Sombra",
         "name": "Puppet",
         "id": "sombra-puppet",
         "quality": "common",
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/sombra-puppet.png"
-      },
-      {
-        "hero": "Sombra",
-        "name": "Ornament",
-        "id": "sombra-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/sombra-ornament.png"
       },
       {
         "hero": "Symmetra",
@@ -1726,25 +1638,11 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/symmetra-snowflake.png"
       },
       {
-        "hero": "Symmetra",
-        "name": "Ornament",
-        "id": "symmetra-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/symmetra-ornament.png"
-      },
-      {
         "hero": "Torbjörn",
         "name": "Workshop",
         "id": "torbjorn-workshop",
         "quality": "common",
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/torbjorn-workshop.png"
-      },
-      {
-        "hero": "Torbjörn",
-        "name": "Ornament",
-        "id": "torbjorn-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/torbjorn-ornament.png"
       },
       {
         "hero": "Tracer",
@@ -1754,25 +1652,11 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/tracer-snowboarding.png"
       },
       {
-        "hero": "Tracer",
-        "name": "Ornament",
-        "id": "tracer-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/tracer-ornament.png"
-      },
-      {
         "hero": "Widowmaker",
         "name": "Skiing",
         "id": "widowmaker-skiing",
         "quality": "common",
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/widowmaker-skiing.png"
-      },
-      {
-        "hero": "Widowmaker",
-        "name": "Ornament",
-        "id": "widowmaker-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/widowmaker-ornament.png"
       },
       {
         "hero": "Winston",
@@ -1782,25 +1666,11 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/winston-presents.png"
       },
       {
-        "hero": "Winston",
-        "name": "Ornament",
-        "id": "winston-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/winston-ornament.png"
-      },
-      {
         "hero": "Zarya",
         "name": "Matryoshka",
         "id": "zarya-matryoshka",
         "quality": "common",
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/zarya-matryoshka.png"
-      },
-      {
-        "hero": "Zarya",
-        "name": "Ornament",
-        "id": "zarya-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/zarya-ornament.png"
       },
       {
         "hero": "Zenyatta",
@@ -1810,28 +1680,9 @@
         "img": "./resources/WINTER_WONDERLAND_2016/sprays/zenyatta-snowball-fight.png"
       },
       {
-        "hero": "Zenyatta",
-        "name": "Ornament",
-        "id": "zenyatta-ornament",
-        "quality": "common",
-        "img": "./resources/WINTER_WONDERLAND_2016/sprays/zenyatta-ornament.png"
-      },
-      {
-        "name": "SnowCree",
-        "id": "snowcree",
-        "url": "./resources/WINTER_WONDERLAND_2016/sprays/snowcree.png",
-        "allClass": true
-      },
-      {
-        "name": "SnowHog",
-        "id": "snowhog",
-        "url": "./resources/WINTER_WONDERLAND_2016/sprays/snowhog.png",
-        "allClass": true
-      },
-      {
-        "name": "SnowMei",
-        "id": "snowmei",
-        "url": "./resources/WINTER_WONDERLAND_2016/sprays/snowmei.png",
+        "name": "Winter Wonderland",
+        "id": "winter-wonderland",
+        "url": "./resources/WINTER_WONDERLAND_2016/sprays/winter-wonderland.png",
         "allClass": true
       },
       {
@@ -1841,9 +1692,21 @@
         "allClass": true
       },
       {
-        "name": "Winter Wonderland",
-        "id": "winter-wonderland",
-        "url": "./resources/WINTER_WONDERLAND_2016/sprays/winter-wonderland.png",
+        "name": "SnowMei",
+        "id": "snowmei",
+        "url": "./resources/WINTER_WONDERLAND_2016/sprays/snowmei.png",
+        "allClass": true
+      },
+      {
+        "name": "SnowHog",
+        "id": "snowhog",
+        "url": "./resources/WINTER_WONDERLAND_2016/sprays/snowhog.png",
+        "allClass": true
+      },
+      {
+        "name": "SnowCree",
+        "id": "snowcree",
+        "url": "./resources/WINTER_WONDERLAND_2016/sprays/snowcree.png",
         "allClass": true
       }
     ],
@@ -1989,13 +1852,6 @@
     ],
     "poses": [
       {
-        "hero": "Ana",
-        "name": "Toast",
-        "id": "ana-toast",
-        "quality": "rare",
-        "img": "./resources/WINTER_WONDERLAND_2016/poses/ana-toast.jpg"
-      },
-      {
         "hero": "D.Va",
         "name": "Festive",
         "id": "dva-festive",
@@ -2008,6 +1864,13 @@
         "id": "mercy-mistletoe",
         "quality": "rare",
         "img": "./resources/WINTER_WONDERLAND_2016/poses/mercy-mistletoe.jpg"
+      },
+      {
+        "hero": "Ana",
+        "name": "Toast",
+        "id": "ana-toast",
+        "quality": "rare",
+        "img": "./resources/WINTER_WONDERLAND_2016/poses/ana-toast.jpg"
       },
       {
         "hero": "Pharah",
@@ -2043,43 +1906,50 @@
         "hero": "Lúcio",
         "name": "Andes",
         "id": "lucio-andes",
-        "quality": "epic"
-      },
-      {
-        "hero": "McCree",
-        "name": "Scrooge",
-        "id": "mccree-scrooge",
-        "quality": "epic"
+        "quality": "epic",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsEpic/lucio-andes.jpg"
       },
       {
         "hero": "Pharah",
         "name": "Frostbite",
         "id": "pharah-frostbite",
-        "quality": "epic"
-      },
-      {
-        "hero": "Reaper",
-        "name": "Shiver",
-        "id": "reaper-shiver",
-        "quality": "epic"
-      },
-      {
-        "hero": "Roadhog",
-        "name": "Rudolph",
-        "id": "roadhog-rudolph",
-        "quality": "epic"
-      },
-      {
-        "hero": "Sombra",
-        "name": "Peppermint",
-        "id": "sombra-peppermint",
-        "quality": "epic"
+        "quality": "epic",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsEpic/pharah-frostbite.jpg"
       },
       {
         "hero": "Zarya",
         "name": "Frosted",
         "id": "zarya-frosted",
-        "quality": "epic"
+        "quality": "epic",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsEpic/zarya-frosted.jpg"
+      },
+      {
+        "hero": "Sombra",
+        "name": "Peppermint",
+        "id": "sombra-peppermint",
+        "quality": "epic",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsEpic/sombra-peppermint.jpg"
+      },
+      {
+        "hero": "Roadhog",
+        "name": "Rudolph",
+        "id": "roadhog-rudolph",
+        "quality": "epic",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsEpic/roadhog-rudolph.jpg"
+      },
+      {
+        "hero": "McCree",
+        "name": "Scrooge",
+        "id": "mccree-scrooge",
+        "quality": "epic",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsEpic/mccree-scrooge.jpg"
+      },
+      {
+        "hero": "Reaper",
+        "name": "Shiver",
+        "id": "reaper-shiver",
+        "quality": "epic",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsEpic/reaper-shiver.jpg"
       }
     ],
     "emotes": [
@@ -2091,50 +1961,55 @@
         "video": "./resources/WINTER_WONDERLAND_2016/emotes/mccree-hat-trick.webm"
       },
       {
-        "hero": "Mei",
-        "name": "Snowman",
-        "id": "mei-snowman",
-        "quality": "epic",
-        "video": "./resources/WINTER_WONDERLAND_2016/emotes/mei-snowman.webm"
-      },
-      {
         "hero": "Zarya",
         "name": "Mystery Gift",
         "id": "zarya-mystery-gift",
         "quality": "legendary",
         "video": "./resources/WINTER_WONDERLAND_2016/emotes/zarya-mystery-gift.webm"
+      },
+      {
+        "hero": "Mei",
+        "name": "Snowman",
+        "id": "mei-snowman",
+        "quality": "epic",
+        "video": "./resources/WINTER_WONDERLAND_2016/emotes/mei-snowman.webm"
       }
     ],
     "skinsLegendary": [
       {
-        "hero": "Mei",
-        "name": "Mei-rry",
-        "id": "mei-meirry",
-        "quality": "legendary"
-      },
-      {
-        "hero": "Torbjörn",
-        "name": "Santaclad",
-        "id": "torbjorn-santaclad",
-        "quality": "legendary"
-      },
-      {
         "hero": "Tracer",
         "name": "Jingle",
         "id": "tracer-jingle",
-        "quality": "legendary"
+        "quality": "legendary",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsLegendary/tracer-jingle.jpg"
       },
       {
-        "hero": "Winston",
-        "name": "Yeti",
-        "id": "winston-yeti",
-        "quality": "legendary"
+        "hero": "Mei",
+        "name": "Mei-rry",
+        "id": "mei-meirry",
+        "quality": "legendary",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsLegendary/mei-meirry.jpg"
       },
       {
         "hero": "Zenyatta",
         "name": "Nutcracker",
         "id": "zenyatta-nutcracker",
-        "quality": "legendary"
+        "quality": "legendary",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsLegendary/zenyatta-nutcracker.jpg"
+      },
+      {
+        "hero": "Torbjörn",
+        "name": "Santaclad",
+        "id": "torbjorn-santaclad",
+        "quality": "legendary",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsLegendary/torbjorn-santaclad.jpg"
+      },
+      {
+        "hero": "Winston",
+        "name": "Yeti",
+        "id": "winston-yeti",
+        "quality": "legendary",
+        "img": "./resources/WINTER_WONDERLAND_2016/skinsLegendary/winston-yeti.jpg"
       }
     ],
     "intros": [
@@ -2155,133 +2030,9 @@
     ],
     "icons": [
       {
-        "hero": "Torbjörn",
-        "name": "Santaclad",
-        "id": "torbjorn-santaclad",
-        "quality": "rare",
-        "img": "./resources/WINTER_WONDERLAND_2016/icons/torbjorn-santaclad.jpg"
-      },
-      {
-        "hero": "Tracer",
-        "name": "Jingle",
-        "id": "tracer-jingle",
-        "quality": "rare",
-        "img": "./resources/WINTER_WONDERLAND_2016/icons/tracer-jingle.jpg"
-      },
-      {
-        "hero": "Winston",
-        "name": "Yeti",
-        "id": "winston-yeti",
-        "quality": "rare",
-        "img": "./resources/WINTER_WONDERLAND_2016/icons/winston-yeti.jpg"
-      },
-      {
-        "hero": "Zenyatta",
-        "name": "Nutcracker",
-        "id": "zenyatta-nutcracker",
-        "quality": "rare",
-        "img": "./resources/WINTER_WONDERLAND_2016/icons/zenyatta-nutcracker.jpg"
-      },
-      {
-        "name": "Winter Wonderland 2016",
-        "id": "winter-wonderland-2016",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/winter-wonderland-2016.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Snowman",
-        "id": "snowman",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/snowman.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Present",
-        "id": "present",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/present.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Pachimerry",
-        "id": "pachimerry",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/pachimerry.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Gingermari",
-        "id": "gingermari",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/gingermari.jpg",
-        "allClass": true
-      },
-      {
         "name": "2017",
         "id": "2017",
         "url": "./resources/WINTER_WONDERLAND_2016/icons/2017.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Holly",
-        "id": "holly",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/holly.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Tannenbaum",
-        "id": "tannenbaum",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/tannenbaum.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Bubbly",
-        "id": "bubbly",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/bubbly.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Gingerbread",
-        "id": "gingerbread",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/gingerbread.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Candy Cane",
-        "id": "candy-cane",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/candy-cane.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Ornament",
-        "id": "ornament",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/ornament.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Hot Cocoa",
-        "id": "hot-cocoa",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/hot-cocoa.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Cheers",
-        "id": "cheers",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/cheers.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Wreath",
-        "id": "wreath",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/wreath.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Mochi",
-        "id": "mochi",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/mochi.jpg",
-        "allClass": true
-      },
-      {
-        "name": "Dreidel",
-        "id": "dreidel",
-        "url": "./resources/WINTER_WONDERLAND_2016/icons/dreidel.jpg",
         "allClass": true
       },
       {
@@ -2291,16 +2042,140 @@
         "allClass": true
       },
       {
+        "name": "Bubbly",
+        "id": "bubbly",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/bubbly.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Candy Cane",
+        "id": "candy-cane",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/candy-cane.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Cheers",
+        "id": "cheers",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/cheers.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Dreidel",
+        "id": "dreidel",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/dreidel.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Gingerbread",
+        "id": "gingerbread",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/gingerbread.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Gingermari",
+        "id": "gingermari",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/gingermari.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Holly",
+        "id": "holly",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/holly.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Hot Cocoa",
+        "id": "hot-cocoa",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/hot-cocoa.jpg",
+        "allClass": true
+      },
+      {
+        "hero": "Tracer",
+        "name": "Jingle",
+        "id": "tracer-jingle",
+        "quality": "rare",
+        "img": "./resources/WINTER_WONDERLAND_2016/icons/tracer-jingle.jpg"
+      },
+      {
+        "name": "Mochi",
+        "id": "mochi",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/mochi.jpg",
+        "allClass": true
+      },
+      {
+        "hero": "Zenyatta",
+        "name": "Nutcracker",
+        "id": "zenyatta-nutcracker",
+        "quality": "rare",
+        "img": "./resources/WINTER_WONDERLAND_2016/icons/zenyatta-nutcracker.jpg"
+      },
+      {
+        "name": "Ornament",
+        "id": "ornament",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/ornament.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Pachimerry",
+        "id": "pachimerry",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/pachimerry.jpg",
+        "allClass": true
+      },
+      {
         "name": "Peppermint",
         "id": "peppermint",
         "url": "./resources/WINTER_WONDERLAND_2016/icons/peppermint.jpg",
         "allClass": true
       },
       {
+        "name": "Present",
+        "id": "present",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/present.jpg",
+        "allClass": true
+      },
+      {
+        "hero": "Torbjörn",
+        "name": "Santaclad",
+        "id": "torbjorn-santaclad",
+        "quality": "rare",
+        "img": "./resources/WINTER_WONDERLAND_2016/icons/torbjorn-santaclad.jpg"
+      },
+      {
         "name": "Snow Globe",
         "id": "snow-globe",
         "url": "./resources/WINTER_WONDERLAND_2016/icons/snow-globe.jpg",
         "allClass": true
+      },
+      {
+        "name": "Snowman",
+        "id": "snowman",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/snowman.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Tannenbaum",
+        "id": "tannenbaum",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/tannenbaum.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Winter Wonderland",
+        "id": "winter-wonderland",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/winter-wonderland.jpg",
+        "allClass": true
+      },
+      {
+        "name": "Wreath",
+        "id": "wreath",
+        "url": "./resources/WINTER_WONDERLAND_2016/icons/wreath.jpg",
+        "allClass": true
+      },
+      {
+        "hero": "Winston",
+        "name": "Yeti",
+        "id": "winston-yeti",
+        "quality": "rare",
+        "img": "./resources/WINTER_WONDERLAND_2016/icons/winston-yeti.jpg"
       }
     ]
   }

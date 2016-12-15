@@ -46,7 +46,7 @@ var getClassForHero = hero => {
     case "reinhardt":
     case "roadhog":
     case "winston":
-    case "zarya":``
+    case "zarya":
       return "Tank"
     case "ana":
     case "lúcio":
@@ -171,6 +171,8 @@ var getImageURL = (type, event, id) => {
       if (event === EVENTS.CHRISTMAS16) return `${baseUrl}.png`
       return `${baseUrl}.jpg`
     case 'skins':
+    case 'skinsEpic':
+    case 'skinsLegendary':
     case 'icons':
     case 'poses':
       return `${baseUrl}.jpg`
@@ -185,11 +187,12 @@ var allClassItems = {
   },
   icons: {
     [EVENTS.SUMMER16]: ["Summer Games","Australia", "Brazil", "China", "Egypt", "France", "Germany", "Greece", "Japan", "Mexico", "Nepal", "Numbani", "Russia", "South Korea", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    [EVENTS.HALLOWEEN16]: ["Halloween Terror 2016", "...Never Die", "Bewitching", "Calavera", "Candle", "Eyeball", "Ghostymari", "Spider", "Superstition", "Tombstone", "Vampachimari", "Witch's Brew", "Witch's Hat", "Wolf"],
-    [EVENTS.CHRISTMAS16]: ["Winter Wonderland 2016", "Snowman", "Present", "Pachimerry", "Gingermari", "2017", "Holly", "Tannenbaum", "Bubbly", "Gingerbread", "Candy Cane", "Ornament", "Hot Cocoa", "Cheers", "Wreath", "Mochi", "Dreidel", "Bells", "Peppermint", "Snow Globe"]
+    [EVENTS.HALLOWEEN16]: ["Halloween Terror", "...Never Die", "Bewitching", "Calavera", "Candle", "Eyeball", "Ghostymari", "Spider", "Superstition", "Tombstone", "Vampachimari", "Witch's Brew", "Witch's Hat", "Wolf"],
+    [EVENTS.CHRISTMAS16]: ["Winter Wonderland", "Snowman", "Present", "Pachimerry", "Gingermari", "2017", "Holly", "Tannenbaum", "Bubbly", "Gingerbread", "Candy Cane", "Ornament", "Hot Cocoa", "Cheers", "Wreath", "Mochi", "Dreidel", "Bells", "Peppermint", "Snow Globe"]
   }
 }
 
+// Go through every heros items and create a seperate object containing every item added in events
 var updates = {}
 Object.keys(heroes).forEach(hKey => {
   var hero = heroes[hKey]
@@ -209,6 +212,7 @@ Object.keys(heroes).forEach(hKey => {
   })
 })
 
+// Add allclass items (which aren't detected by item extrator) manually
 Object.keys(allClassItems).forEach(type => {
   Object.keys(allClassItems[type]).forEach(event => {
     allClassItems[type][event].forEach(item => {
@@ -222,6 +226,30 @@ Object.keys(allClassItems).forEach(type => {
     })
   })
 })
+
+// Sort that shit by hero or item name
+Object.keys(updates).forEach(update => {
+  Object.keys(updates[update]).forEach(type => {
+    updates[update][type].sort((a, b) => {
+      switch (type) {
+        case 'voice':
+        case 'sprays':
+          if (a.hero < b.hero) return -1;
+          if (a.hero > b.hero || !a.hero) return 1;
+          return 0;
+        default:
+          if (a.name < b.name) return -1;
+          if (a.name > b.name || !a.hero) return 1;
+          return 0;
+      }
+    })
+  })
+})
+
+// Delete ornament sprays
+updates[EVENTS.CHRISTMAS16].sprays = updates[EVENTS.CHRISTMAS16].sprays.map(spray => {
+  return spray.name.toLowerCase() == 'ornament' ? null : spray
+}).filter(Boolean)
 
 console.log("HEROES: ", heroes)
 console.log("UPDATES:", updates)
