@@ -21,6 +21,7 @@ body {
   background: url(../resources/body-bg.jpg) no-repeat top;
   background-color: #d0c7dc;
   color: #405275;
+  padding-top: 65px;
 }
 
 #header {
@@ -30,6 +31,10 @@ body {
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
 }
 
 #header .left {
@@ -775,7 +780,7 @@ body {
 
 #winterwonderland2016 {
   flex-direction: column;
-  min-width: 1550px;
+  min-width: 1500px;
 }
 #winterwonderland2016 .row {
   display: flex;
