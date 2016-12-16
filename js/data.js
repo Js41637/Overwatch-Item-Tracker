@@ -1126,7 +1126,7 @@ OWI.factory('Data', function() {
             "allClass": true
           },
           {
-            "name": "Cheers",
+            "name": "Cheers!",
             "id": "cheers",
             "img": "./resources/WINTER_WONDERLAND_2016/icons/cheers.jpg",
             "allClass": true

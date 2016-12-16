@@ -7,7 +7,7 @@ const checkDirectorys = who => {
         fs.mkdir(`./${who}`, () => {
           fs.mkdir(`./${who}/sprays`, resolve)
         })
-      }
+      } else resolve()
     })
   })
 }
@@ -19,6 +19,5 @@ fs.readdir('./', (err, files) => {
     checkDirectorys(hero).then(() => {
       fs.rename(`./${file}`, `./${hero}/sprays/${file}`)
     })
-
   })
 })
