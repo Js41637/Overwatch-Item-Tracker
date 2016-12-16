@@ -22,11 +22,11 @@ body {
   background-size: 100% 100%;
   background-color: #d0c7dc;
   color: #405275;
-  padding-top: 65px;
+  padding-top: 55px;
 }
 
 #header {
-  height: 65px;
+  height: 55px;
   background-color: rgb(45, 45, 45);
   color: orange;
   padding: 0 15px;
@@ -45,8 +45,8 @@ body {
 
 #header .seperator {
   margin: 0 60px;
-  font-size: 50px;
-  padding-top: 3px;
+  font-size: 44px;
+  padding-top: 1px;
   color: rgb(250, 250, 250);
   font-style: italic;
 }
@@ -60,10 +60,10 @@ body {
 }
 
 #header .reset .x {
-  font-size: 80px;
+  font-size: 78px;
   transform: rotateZ(-45deg);
   cursor: pointer;
-  margin-top: -8px;
+  margin-top: -12px;
 }
 
 #header .tooltip.show {
@@ -76,7 +76,7 @@ body {
   position: absolute;
   width: 135px;
   bottom: -10px;
-  right: -8px;
+  right: -15px;
   text-align: center;
   font-size: 20px;
   background-color: #4d4d4d;
@@ -99,24 +99,24 @@ body {
 }
 
 #header img {
-  height: 55px;
+  height: 46px;
   margin-right: 20px;
 }
 
 #header h1 {
-  font-size: 56px;
+  font-size: 50px;
   display: inline-block;
   font-style: italic;
 }
 
 #header h2 {
-  font-size: 36px;
+  font-size: 30px;
   color: rgb(245, 245, 245);
   font-style: italic;
 }
 
 #header h3 {
-  font-size: 18px;
+  font-size: 17px;
   color: rgb(254, 242, 0);
   font-style: italic;
 }
@@ -165,21 +165,30 @@ body {
 }
 
 @media screen and (max-width: 1340px) {
+  body {
+    padding-top: 40px;
+  }
   #header {
-    height: 65px;
+    height: 40px;
   }
   #header .seperator {
-    font-size: 50px;
+    font-size: 34px;
     margin: 0 15px;
   }
   #header h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   #header h2 {
-    font-size: 32px;
+    font-size: 20px;
   }
   #header h3 {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  #header img {
+    height: 34px;
+  }
+  #header .reset .x {
+    margin-top: -18px;
   }
 }
 
@@ -191,7 +200,7 @@ body {
 }
 
 .item-container {
-  padding: 8px 6px 13px;
+  padding: 8px 6px 11px;
   display: flex;
   justify-content: center;
 }
