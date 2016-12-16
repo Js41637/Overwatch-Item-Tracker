@@ -6,12 +6,14 @@
         "ecmaFeatures": {}
     },
     "env": {
-        "browser": true
+        "browser": true,
+        "node": true
     },
     "globals": {
         "OWI": true,
         "angular": true,
-        "document": true
+        "document": true,
+        "Promise": true
     },
     "plugins": [
         "angular"
