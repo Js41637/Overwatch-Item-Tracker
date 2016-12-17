@@ -1,0 +1,20 @@
+<div id="settings">
+  <div class="modal-header">
+      <h2 class="modal-title">Settings</h2>
+  </div>
+  <div class="modal-body" id="modal-body">
+    <div class="setting">
+      <h3>Reset Saved Data</h3>
+      <p><strong>Warning!</strong> Doing this will reset all items you have selected</p>
+      <button class="btn btn-danger" type="button" ng-click="settings.resetData()">Erase Data</button>
+    </div>
+    <div class="setting">
+      <h3>Particles</h3>
+      <p>Disable or enable particles (snow effect) on the page</p>
+      <button class="btn btn-info" type="button" ng-click="settings.toggleParticles()">{{::settings.particles ? 'Disable' : 'Enable'}}</button>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="settings.close()">Close</button>
+  </div>
+</div>
