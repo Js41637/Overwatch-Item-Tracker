@@ -1,0 +1,16 @@
+{
+  "name": "Overwatch Item Tracker",
+  "short_name": "Overwatch Item Tracker",
+  "description": "Tracks your progress collecting event items",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "fullscreen",
+  "theme_color": "#2d2d2d",
+  "icons": [
+    {
+      "src": "./resources/logo.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    }
+  ]
+}
