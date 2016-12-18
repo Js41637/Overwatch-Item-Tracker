@@ -4,6 +4,7 @@ OWI.config(['$compileProvider', function($compileProvider) {
   $compileProvider.debugInfoEnabled(false);
 }])
 
+// Run migrations to convert data and stuff
 OWI.run(function() {
   var storedData = localStorage.getItem('data');
   var data = storedData ? JSON.parse(storedData) : false;
@@ -51,6 +52,11 @@ OWI.run(function() {
     return
   }
   console.info("Running Migrations")
+  if (completedMigrations.length == migrations.length) {
+    console.info("No migrations needed")
+    return
+  }
+  localStorage.setItem('backup-data', JSON.stringify(data))
   migrations.forEach(function(mig) {
     if (completedMigrations.includes(mig.id)) return console.info(mig.name, "already dun");
     console.info("Running", mig.name, "migration");
