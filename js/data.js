@@ -81,7 +81,7 @@ OWI.factory('Data', function() {
           "Soldier: 76", "Symmetra", "Torbj\u00D6rn", "Tracer",
           "Widowmaker", "Winston", "Zarya", "Zenyatta"
         ],
-        victoryposes: [{
+        poses: [{
           name: "Mei",
           img: "./resources/summergames2016/poses/mei.jpg"
         }, {
@@ -370,7 +370,7 @@ OWI.factory('Data', function() {
           "Soldier: 76", "Symmetra", "Torbj\u00D6rn", "Tracer",
           "Widowmaker", "Winston", "Zarya", "Zenyatta"
         ],
-        victoryposes: [{
+        poses: [{
           name: "Ana",
           img: "./resources/halloween2016/poses/ana.jpg"
         }, {

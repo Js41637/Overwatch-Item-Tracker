@@ -59,7 +59,7 @@
       <div id="victoryposes" class="section">
         <h2>Victory Poses</h2>
         <div class="items">
-          <div class="item" ng-repeat="pose in data.items.victoryposes track by $index" ng-mouseover="showPreview(pose)" ng-mouseleave="hidePreview()">
+          <div class="item" ng-repeat="pose in data.items.poses track by $index" ng-mouseover="showPreview(pose)" ng-mouseleave="hidePreview()">
             <input type="checkbox" id="{{'pose' + $index}}" ng-model="checked.poses[pose.name]" ng-change="onSelect()"> <label for="{{'pose' + $index}}"><h3>{{pose.name}}</h3></label>
           </div>
         </div>

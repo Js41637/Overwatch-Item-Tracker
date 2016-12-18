@@ -59,7 +59,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
   Data.checked = Object.assign({}, Data.checked, savedData);
 }]);
 
-OWI.controller('SettingsCtrl', ["$uibModalInstance", "StorageService", function($uibModalInstance, StorageService) {
+OWI.controller('SettingsCtrl', ["$uibModalInstance", "StorageService", "Data", function($uibModalInstance, StorageService, Data) {
   this.particles = StorageService.getSetting('particles');
 
   this.close = function() {
@@ -76,6 +76,17 @@ OWI.controller('SettingsCtrl', ["$uibModalInstance", "StorageService", function(
     this.particles = !this.particles;
     StorageService.setSetting('particles', this.particles);
     location.reload();
+  }
+
+  this.selectAll = function() {
+    Data.updates.forEach(function(update) {
+      Object.keys(update.items).forEach(function(type) {
+        update.items[type].forEach(function(item) {
+          Data.checked[update.id][type][item.id || item.name || item] = true;
+        });
+      });
+    });
+    StorageService.setData(Data.checked);
   }
 }])
 
