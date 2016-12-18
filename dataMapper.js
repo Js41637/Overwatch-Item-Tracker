@@ -204,14 +204,25 @@ Object.keys(heroes).forEach(hKey => {
       if (!event) return
       if (!updates[event]) updates[event] = {}
       if (!updates[event][type]) updates[event][type] = []
-      var url = getImageURL(type, event, item.id)
       var legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
-      var newItem = Object.assign({}, { hero: hero.name }, legend, item, type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: url } : { img: url }))
+      var u = getImageURL(type, event, item.id)
+      var url = type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: u } : { img: u })
+      var newItem = Object.assign({}, { hero: hero.name }, legend, item, url )
       delete newItem.event
       updates[event][type].push(newItem)
     })
   })
 })
+
+// Add ornament ids to normal sprays
+updates[EVENTS.CHRISTMAS16].sprays = updates[EVENTS.CHRISTMAS16].sprays.map(spray => {
+  if (spray.hero) {
+    var ornamentID = `${getCleanID(spray.hero)}-ornament`
+    spray.ornamentID = ornamentID;
+    spray.ornamentURL = getImageURL('sprays', EVENTS.CHRISTMAS16, ornamentID);
+    return spray
+  } else return spray
+}).filter(Boolean)
 
 // Add allclass items (which aren't detected by item extrator) manually
 Object.keys(allClassItems).forEach(type => {

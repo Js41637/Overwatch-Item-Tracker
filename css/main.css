@@ -830,6 +830,14 @@ body {
   width: 64%;
 }
 
+#winterwonderland2016 #image-preview .two .imgcont {
+  display: flex;
+}
+
+#winterwonderland2016 #image-preview img:not(:first-of-type) {
+  margin-left: -50px;
+}
+
 #winterwonderland2016 #legendary-skins {
   color: #405275;
   margin-bottom: 20px;
