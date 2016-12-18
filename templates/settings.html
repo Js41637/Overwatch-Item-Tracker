@@ -13,6 +13,11 @@
       <p>Disable or enable particles (snow effect) on the page</p>
       <button class="btn btn-info" type="button" ng-click="settings.toggleParticles()">{{::settings.particles ? 'Disable' : 'Enable'}}</button>
     </div>
+    <div class="setting">
+      <h3>Select All Items</h3>
+      <p>Marks all items for every event as selected</p>
+      <button class="btn btn-info" type="button" ng-click="settings.selectAll()">Select Everything!</button>
+    </div>
   </div>
   <div class="modal-footer">
     <button class="btn btn-primary" type="button" ng-click="settings.close()">Close</button>

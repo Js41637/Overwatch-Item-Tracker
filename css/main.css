@@ -25,6 +25,13 @@ body {
   padding-top: 55px;
 }
 
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 #header {
   height: 55px;
   background-color: rgb(45, 45, 45);
@@ -180,13 +187,39 @@ body {
   font-size: 14px;
 }
 
+#cost-remaining {
+  position: absolute;
+  top: -28px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cost-remaining span {
+  margin-left: 5px;
+  font-size: 58px;
+  width: 110px;
+  font-weight: bold;
+  letter-spacing: 0.3;
+  font-style: italic;
+  color: rgba(235, 235, 235, 1);
+  text-shadow: rgba(255, 255, 255, 0.2) 0px 0px 8px;
+}
+
+#cost-remaining img {
+  width: 44px;
+  height: 40px;
+}
+
 .item-container {
   padding: 8px 6px 11px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
-.item-container  .section h2 {
+.item-container .section h2 {
   font-size: 42px;
   display: inline-block;
   margin-bottom: 4px;
@@ -804,6 +837,14 @@ body {
   width: 64%;
 }
 
+#winterwonderland2016 #image-preview .two .imgcont {
+  display: flex;
+}
+
+#winterwonderland2016 #image-preview img:not(:first-of-type) {
+  margin-left: -50px;
+}
+
 #winterwonderland2016 #legendary-skins {
   color: #405275;
   margin-bottom: 20px;
@@ -939,6 +980,7 @@ body {
 #winterwonderland2016 #sprays h4 {
   font-size: 18px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 #winterwonderland2016 #sprays .item label {
@@ -978,6 +1020,12 @@ body {
 
 #winterwonderland2016 #sprays .item .orn:checked + label, #fakecb:checked + label {
   background: #ffa500;
+}
+
+#winterwonderland2016 #sprays .wot {
+  font-size: 10px;
+  font-family: sans-serif;
+  cursor: pointer;
 }
 
 /*@media screen and (max-width: 1540px) {

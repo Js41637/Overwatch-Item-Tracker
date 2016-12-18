@@ -1,4 +1,4 @@
-var rawData = `` // Raw data extracted using Overwatch Cosmetic Extractor
+var rawData = rawData ? rawData : `` // Raw data extracted using Overwatch Cosmetic Extractor
 
 var splitRawData = rawData.split('\n')
 while (!splitRawData[0].includes("Cosmetics")) { // remove the first few lines
@@ -75,7 +75,7 @@ var types = [
   { m: 'icon', name: 'icons' },
   { m: 'spray', name: 'sprays' },
   { m: 'emote', name: 'emotes' },
-  { m: 'voice line', name: 'voice' },
+  { m: 'voice line', name: 'voicelines' },
   { m: 'victory pose', name: 'poses' },
   { m: 'heroic intro', name: 'intros' }
   //, { m: 'weapon skin', name: 'weapons' } // Golden
@@ -127,7 +127,7 @@ data.forEach(({ hero, items: itemGroups }) => {
       intros: [],
       icons: [],
       sprays: [],
-      voice: [],
+      voicelines: [],
       poses: []
     }
   }
@@ -183,7 +183,7 @@ var allClassItems = {
   'sprays': {
     [EVENTS.SUMMER16]: ['Summer Games'],
     [EVENTS.HALLOWEEN16]: ['...Never Die', 'Bats', 'Boo!', 'Boop!', 'Candyball', 'Fangs', 'Gummy Hog', 'Halloween Terror 2016', 'Pumpkins', 'Witch\'s Brew'],
-    [EVENTS.CHRISTMAS16]: ['SnowCree', 'SnowHog', 'SnowMei', 'SnowReaper', 'Winter Wonderland']
+    [EVENTS.CHRISTMAS16]: ['SnowCree', 'SnowHog', 'SnowMei', 'SnowReaper', ['Winter Wonderland']]
   },
   icons: {
     [EVENTS.SUMMER16]: ["Summer Games","Australia", "Brazil", "China", "Egypt", "France", "Germany", "Greece", "Japan", "Mexico", "Nepal", "Numbani", "Russia", "South Korea", "Sweden", "Switzerland", "United Kingdom", "United States"],
@@ -204,26 +204,42 @@ Object.keys(heroes).forEach(hKey => {
       if (!event) return
       if (!updates[event]) updates[event] = {}
       if (!updates[event][type]) updates[event][type] = []
-      var url = getImageURL(type, event, item.id)
       var legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
-      var newItem = Object.assign({}, { hero: hero.name }, legend, item, type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: url } : { img: url }))
+      var u = getImageURL(type, event, item.id)
+      var url = type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: u } : { img: u })
+      var newItem = Object.assign({}, { hero: hero.name }, legend, item, url )
       delete newItem.event
       updates[event][type].push(newItem)
     })
   })
 })
 
+// Add ornament ids to normal sprays
+updates[EVENTS.CHRISTMAS16].sprays = updates[EVENTS.CHRISTMAS16].sprays.map(spray => {
+  if (spray.hero) {
+    var ornamentID = `${getCleanID(spray.hero)}-ornament`
+    spray.ornamentID = ornamentID;
+    spray.ornamentURL = getImageURL('sprays', EVENTS.CHRISTMAS16, ornamentID);
+    return spray
+  } else return spray
+}).filter(Boolean)
+
 // Add allclass items (which aren't detected by item extrator) manually
 Object.keys(allClassItems).forEach(type => {
   Object.keys(allClassItems[type]).forEach(event => {
     allClassItems[type][event].forEach(item => {
-      var itemID = getCleanID(item)
-      updates[event][type].push({
-        name: item,
+      var isSpecial = typeof item == 'object'
+      var itemID = getCleanID(isSpecial ? item[0] : item)
+      var out = {
+        name: isSpecial ? item[0] : item,
         id: itemID,
         img: getImageURL(type, event, itemID),
         allClass: true
-      })
+      }
+      if (type == 'sprays' && isSpecial) {
+        Object.assign(out, { quality: 'common' })
+      }
+      updates[event][type].push(out)
     })
   })
 })
@@ -233,7 +249,7 @@ Object.keys(updates).forEach(update => {
   Object.keys(updates[update]).forEach(type => {
     updates[update][type].sort((a, b) => {
       switch (type) {
-        case 'voice':
+        case 'voicelines':
         case 'sprays':
           if (a.hero < b.hero) return -1;
           if (a.hero > b.hero || !a.hero) return 1;
@@ -246,11 +262,6 @@ Object.keys(updates).forEach(update => {
     })
   })
 })
-
-// Delete ornament sprays
-updates[EVENTS.CHRISTMAS16].sprays = updates[EVENTS.CHRISTMAS16].sprays.map(spray => {
-  return spray.name.toLowerCase() == 'ornament' ? null : spray
-}).filter(Boolean)
 
 console.log("HEROES: ", heroes)
 console.log("UPDATES:", updates)
