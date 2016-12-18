@@ -258,7 +258,7 @@ OWI.directive("particles", function() {
               "mode": "repulse"
             },
             "onclick": {
-              "enable": true,
+              "enable": false,
               "mode": "repulse"
             },
             "resize": true

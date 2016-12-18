@@ -18,11 +18,20 @@
 body {
   font-family: "Big Noodle Too";
   min-width: 1000px;
-  background: url(../resources/body-bg.jpg) no-repeat top;
-  background-size: 100% 100%;
   background-color: #d0c7dc;
   color: #405275;
   padding-top: 55px;
+}
+
+#background {
+  background: url(../resources/body-bg.jpg) no-repeat top;
+  background-size: 100% 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  filter: brightness(0.925);
 }
 
 * {
@@ -51,7 +60,7 @@ body {
 }
 
 #header .seperator {
-  margin: 0 60px;
+  margin: 0 45px;
   font-size: 44px;
   padding-top: 1px;
   color: rgb(250, 250, 250);
@@ -79,12 +88,12 @@ body {
 }
 
 #header img {
-  height: 46px;
+  height: 40px;
   margin-right: 20px;
 }
 
 #header h1 {
-  font-size: 50px;
+  font-size: 48px;
   display: inline-block;
   font-style: italic;
 }
@@ -115,21 +124,20 @@ body {
   padding: 4px;
 }
 
+#menu .wrapper {
+	border: 2px solid rgba(255,255,255,0.4);
+  display: inline-block;
+  padding: 3px;
+  border-radius: 6px;
+}
+
 #menu .button {
   cursor: pointer;
   display: inline-block;
-  padding: 4px 9px;
-  border-top: 2px solid rgb(235, 235, 235);
-  border-bottom: 2px solid rgb(235, 235, 235);
-  border-right: 1px solid rgb(200, 200, 200);
-  background-color: rgb(81, 105, 145);
-  color: rgb(250, 250, 250);
+  padding: 6px 18px;
+  color: rgb(240, 240, 240);
   transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out;
-  letter-spacing: 0.4;
-}
-
-#menu .button:last-of-type {
-  border-right: 0;
+  border-radius: 4px;
 }
 
 #menu .button.selected, #menu .button:hover {
@@ -138,11 +146,11 @@ body {
 }
 
 #menu .button:first-of-type {
-  border-left: 2px solid rgb(250, 250, 250);
+  margin-right: 2px;
 }
 
 #menu .button:last-of-type {
-  border-right: 2px solid rgb(250, 250, 250);
+  margin-left: 2px;
 }
 
 #protip {
@@ -203,7 +211,7 @@ body {
   font-weight: bold;
   letter-spacing: 0.3;
   font-style: italic;
-  color: rgba(235, 235, 235, 1);
+  color: rgb(240, 240, 240);
   text-shadow: rgba(255, 255, 255, 0.2) 0px 0px 8px;
 }
 
@@ -213,7 +221,7 @@ body {
 }
 
 .item-container {
-  padding: 8px 6px 11px;
+  padding: 2px 5px 8px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -245,12 +253,16 @@ body {
   padding: 5px 2px;
 }
 
+.item-container .section .item label {
+  width: 100%;
+}
+
 .item-container .section .item input {
-  width: 21px;
-  height: 21px;
-  margin-right: 4px;
+  height: 24px;
+  margin: 1px 4px;
   float: left;
   cursor: pointer;
+  min-width: 23px;
 }
 
 /**
@@ -826,7 +838,7 @@ body {
 
 #winterwonderland2016 #row2 {
   justify-content: space-around;
-  margin-top: -15px;
+  margin-top: -20px;
 }
 
 #winterwonderland2016 #row2 #col1 {
@@ -986,6 +998,8 @@ body {
 #winterwonderland2016 #sprays .item label {
   display: flex;
   align-items: center;
+  width: 100%;
+  cursor: pointer;
 }
 
 #winterwonderland2016 #sprays .item .orn {
@@ -1008,6 +1022,7 @@ body {
 }
 
 #winterwonderland2016 #sprays .item .ornl, #fakecheckbox {
+  min-width: 22px;
   width: 22px;
   height: 22px;
   border-radius: 100px;
