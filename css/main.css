@@ -200,10 +200,9 @@ body.winterwonderland2016 {
   justify-content: center;
 }
 
-.item-container  .section h2 {
+.item-container .section h2 {
   font-size: 42px;
   display: inline-block;
-  margin-bottom: 4px;
   font-style: italic;
 }
 
@@ -232,6 +231,10 @@ body.winterwonderland2016 {
   margin-right: 4px;
   float: left;
   cursor: pointer;
+}
+
+.item-container .section .item label {
+    width: 100%;
 }
 
 /**
