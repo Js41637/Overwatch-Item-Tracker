@@ -168,12 +168,11 @@ var getImageURL = (type, event, id) => {
     case 'intros':
       return `${baseUrl}.webm`
     case 'sprays':
-      if (event === EVENTS.CHRISTMAS16) return `${baseUrl}.png`
-      return `${baseUrl}.jpg`
+    case 'icons':
+      return `${baseUrl}.png`
     case 'skins':
     case 'skinsEpic':
     case 'skinsLegendary':
-    case 'icons':
     case 'poses':
       return `${baseUrl}.jpg`
   }

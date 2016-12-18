@@ -1364,61 +1364,61 @@ OWI.factory('Data', function() {
           {
             "name": "2017",
             "id": "2017",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/2017.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/2017.png",
             "allClass": true
           },
           {
             "name": "Bells",
             "id": "bells",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/bells.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/bells.png",
             "allClass": true
           },
           {
             "name": "Bubbly",
             "id": "bubbly",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/bubbly.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/bubbly.png",
             "allClass": true
           },
           {
             "name": "Candy Cane",
             "id": "candy-cane",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/candy-cane.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/candy-cane.png",
             "allClass": true
           },
           {
             "name": "Cheers!",
             "id": "cheers",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/cheers.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/cheers.png",
             "allClass": true
           },
           {
             "name": "Dreidel",
             "id": "dreidel",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/dreidel.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/dreidel.png",
             "allClass": true
           },
           {
             "name": "Gingerbread",
             "id": "gingerbread",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/gingerbread.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/gingerbread.png",
             "allClass": true
           },
           {
             "name": "Gingermari",
             "id": "gingermari",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/gingermari.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/gingermari.png",
             "allClass": true
           },
           {
             "name": "Holly",
             "id": "holly",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/holly.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/holly.png",
             "allClass": true
           },
           {
             "name": "Hot Cocoa",
             "id": "hot-cocoa",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/hot-cocoa.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/hot-cocoa.png",
             "allClass": true
           },
           {
@@ -1426,12 +1426,12 @@ OWI.factory('Data', function() {
             "name": "Jingle",
             "id": "tracer-jingle",
             "quality": "rare",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/tracer-jingle.jpg"
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/tracer-jingle.png"
           },
           {
             "name": "Mochi",
             "id": "mochi",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/mochi.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/mochi.png",
             "allClass": true
           },
           {
@@ -1439,36 +1439,36 @@ OWI.factory('Data', function() {
             "name": "Nutcracker",
             "id": "zenyatta-nutcracker",
             "quality": "rare",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/zenyatta-nutcracker.jpg"
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/zenyatta-nutcracker.png"
           },
           {
             "name": "Ornament",
             "id": "ornament",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/ornament.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/ornament.png",
             "allClass": true
           },
           {
             "name": "Pachimerry",
             "id": "pachimerry",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/pachimerry.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/pachimerry.png",
             "allClass": true
           },
           {
             "name": "Pachireindeer",
             "id": "pachireindeer",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/pachireindeer.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/pachireindeer.png",
             "allClass": true
           },
           {
             "name": "Peppermint",
             "id": "peppermint",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/peppermint.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/peppermint.png",
             "allClass": true
           },
           {
             "name": "Present",
             "id": "present",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/present.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/present.png",
             "allClass": true
           },
           {
@@ -1476,42 +1476,42 @@ OWI.factory('Data', function() {
             "name": "Santaclad",
             "id": "torbjorn-santaclad",
             "quality": "rare",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/torbjorn-santaclad.jpg"
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/torbjorn-santaclad.png"
           },
           {
             "name": "Snow Globe",
             "id": "snow-globe",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/snow-globe.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/snow-globe.png",
             "allClass": true
           },
           {
             "name": "Snowman",
             "id": "snowman",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/snowman.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/snowman.png",
             "allClass": true
           },
           {
             "name": "Stocking",
             "id": "stocking",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/stocking.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/stocking.png",
             "allClass": true
           },
           {
             "name": "Tannenbaum",
             "id": "tannenbaum",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/tannenbaum.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/tannenbaum.png",
             "allClass": true
           },
           {
             "name": "Winter Wonderland",
             "id": "winter-wonderland",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/winter-wonderland.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/winter-wonderland.png",
             "allClass": true
           },
           {
             "name": "Wreath",
             "id": "wreath",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/wreath.jpg",
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/wreath.png",
             "allClass": true
           },
           {
@@ -1519,7 +1519,7 @@ OWI.factory('Data', function() {
             "name": "Yeti",
             "id": "winston-yeti",
             "quality": "rare",
-            "img": "./resources/WINTER_WONDERLAND_2016/icons/winston-yeti.jpg"
+            "img": "./resources/WINTER_WONDERLAND_2016/icons/winston-yeti.png"
           }
         ]
       }

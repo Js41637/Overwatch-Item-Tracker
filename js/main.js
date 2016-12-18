@@ -151,7 +151,6 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       var showTimeout = undefined;
       var hideTimeout = undefined;
       $scope.showPreview = function(what, small) {
-        if (what.img && what.img.includes('WINTER_WONDERLAND_2016') && what.img.includes('icons')) return // ignore icons
         if (!what.img && !what.video) return;
         if (showTimeout) return;
         clearTimeout(hideTimeout)
