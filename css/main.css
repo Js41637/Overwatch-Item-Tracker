@@ -25,6 +25,13 @@ body {
   padding-top: 55px;
 }
 
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 #header {
   height: 55px;
   background-color: rgb(45, 45, 45);
@@ -973,6 +980,7 @@ body {
 #winterwonderland2016 #sprays h4 {
   font-size: 18px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 #winterwonderland2016 #sprays .item label {
