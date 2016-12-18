@@ -182,25 +182,27 @@ body {
 
 #cost-remaining {
   position: absolute;
-  top: -22px;
-  right: 55px;
-}
-
-#cost-remaining h3 {
-  font-size: 24px;
-  display: inline-block;
-  width: 185px;
-  text-align: right;
-  padding-right: 5px;
+  top: -28px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #cost-remaining span {
-  font-size: 26px;
+  margin-left: 5px;
+  font-size: 58px;
+  width: 110px;
   font-weight: bold;
   letter-spacing: 0.3;
   font-style: italic;
   color: rgba(235, 235, 235, 1);
   text-shadow: rgba(255, 255, 255, 0.2) 0px 0px 8px;
+}
+
+#cost-remaining img {
+  width: 44px;
+  height: 40px;
 }
 
 .item-container {

@@ -1,8 +1,6 @@
 <div id="winterwonderland2016" class="item-container">
-  <div id="cost-remaining">
-    <h3>Total cost of all items :</h3> <span>{{cost.total | number}}</span><br>
-    <h3>Cost of remaining Items :</h3> <span>{{cost.remaining | number}}
-
+  <div id="cost-remaining" uib-tooltip="Cost to purchase remaining items" tooltip-placement="bottom">
+    <img src="./resources/credit.png" /> <span>{{cost.remaining | number}}</span>
   </div>
   <div id="row1" class="row">
     <div id="col1" class="col">

@@ -104,7 +104,6 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       $scope.checked = Data.checked[$scope.data.id];
 
       $scope.onSelect = function() {
-        console.log("Onselect")
         Data.checked[$scope.data.id] = $scope.checked;
         StorageService.setData(Data.checked);
         $scope.calculateCosts();
@@ -116,6 +115,7 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       };
 
       $scope.calculateCosts = function() {
+        if ($scope.data.id !== 'winterwonderland2016') return;
         var cost = {
           total: 0,
           remaining: 0
