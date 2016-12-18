@@ -180,13 +180,37 @@ body {
   font-size: 14px;
 }
 
+#cost-remaining {
+  position: absolute;
+  top: -22px;
+  right: 55px;
+}
+
+#cost-remaining h3 {
+  font-size: 24px;
+  display: inline-block;
+  width: 185px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+#cost-remaining span {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.3;
+  font-style: italic;
+  color: rgba(235, 235, 235, 1);
+  text-shadow: rgba(255, 255, 255, 0.2) 0px 0px 8px;
+}
+
 .item-container {
   padding: 8px 6px 11px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
-.item-container  .section h2 {
+.item-container .section h2 {
   font-size: 42px;
   display: inline-block;
   margin-bottom: 4px;

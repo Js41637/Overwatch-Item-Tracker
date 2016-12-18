@@ -16,7 +16,7 @@
         <div class="images">
           <div class="item" ng-repeat="skin in data.items.skinsLegendary track by $index" style="background-image:url({{skin.img}});">
             <div class="thing">
-              <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked.legendary[skin.name]" ng-change="onSelect()">
+              <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked.skinsLegendary[skin.name]" ng-change="onSelect()">
               <label for="{{'legendary' + $index}}"><h3 class="name">{{skin.name}}</h3></label>
             </div>
           </div>
@@ -26,7 +26,7 @@
     <div id="epic-skins" class="section">
       <h2>Epic Skins</h2> <span>(750 Coins)</span>
       <div class="item" ng-repeat="skin in data.items.skinsEpic track by $index" ng-mouseover="showPreview(skin)" ng-mouseleave="hidePreview()">
-        <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.epic[skin.name]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin.name}}</h3></label>
+        <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.skinsEpic[skin.name]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin.name}}</h3></label>
       </div>
     </div>
     <div class="right">
@@ -58,7 +58,7 @@
         <h2>Victory Poses</h2> <span>(225 Coins)</span>
         <div class="items">
           <div class="item" ng-repeat="pose in data.items.victoryposes track by $index" ng-mouseover="showPreview(pose)" ng-mouseleave="hidePreview()">
-            <input type="checkbox" id="{{'pose' + $index}}" ng-model="checked.victoryposes[pose.name]" ng-change="onSelect()"> <label for="{{'pose' + $index}}"><h3>{{pose.name}}</h3></label>
+            <input type="checkbox" id="{{'pose' + $index}}" ng-model="checked.poses[pose.name]" ng-change="onSelect()"> <label for="{{'pose' + $index}}"><h3>{{pose.name}}</h3></label>
           </div>
         </div>
       </div>

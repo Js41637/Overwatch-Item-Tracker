@@ -1,10 +1,16 @@
 OWI.factory('Data', function() {
-  var items = `{"legendary":{},"epic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"victoryposes":{},"icons":{}}`
+  var items = `{"skinsLegendary":{},"skinsEpic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}`
   return {
     checked: {
       summergames2016: JSON.parse(items),
       halloween2016: JSON.parse(items),
       winterwonderland2016: JSON.parse(items)
+    },
+    prices: {
+      'common': 75,
+      'rare': 225,
+      'epic': 750,
+      'legendary': 3000
     },
     updates: [{
       name: 'Summer Games 2016',
@@ -597,11 +603,32 @@ OWI.factory('Data', function() {
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/ana-warm.png"
           },
           {
+            "hero": "Ana",
+            "name": "Ornament",
+            "id": "ana-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/ana-ornament.png"
+          },
+          {
+            "hero": "Bastion",
+            "name": "ORNAMENT",
+            "id": "bastion-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/bastion-ornament.png"
+          },
+          {
             "hero": "Bastion",
             "name": "FESTIVE",
             "id": "bastion-festive",
             "quality": "common",
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/bastion-festive.png"
+          },
+          {
+            "hero": "D.Va",
+            "name": "ORNAMENT",
+            "id": "dva-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/dva-ornament.png"
           },
           {
             "hero": "D.Va",
@@ -618,11 +645,25 @@ OWI.factory('Data', function() {
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/genji-kadomatsu.png"
           },
           {
+            "hero": "Genji",
+            "name": "Ornament",
+            "id": "genji-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/genji-ornament.png"
+          },
+          {
             "hero": "Hanzo",
             "name": "Kadomatsu",
             "id": "hanzo-kadomatsu",
             "quality": "common",
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/hanzo-kadomatsu.png"
+          },
+          {
+            "hero": "Hanzo",
+            "name": "Ornament",
+            "id": "hanzo-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/hanzo-ornament.png"
           },
           {
             "hero": "Junkrat",
@@ -632,11 +673,32 @@ OWI.factory('Data', function() {
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/junkrat-winter.png"
           },
           {
+            "hero": "Junkrat",
+            "name": "Ornament",
+            "id": "junkrat-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/junkrat-ornament.png"
+          },
+          {
+            "hero": "Lúcio",
+            "name": "Ornament",
+            "id": "lucio-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/lucio-ornament.png"
+          },
+          {
             "hero": "Lúcio",
             "name": "Hockey",
             "id": "lucio-hockey",
             "quality": "common",
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/lucio-hockey.png"
+          },
+          {
+            "hero": "McCree",
+            "name": "Ornament",
+            "id": "mccree-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/mccree-ornament.png"
           },
           {
             "hero": "McCree",
@@ -653,11 +715,25 @@ OWI.factory('Data', function() {
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/mei-sculpting.png"
           },
           {
+            "hero": "Mei",
+            "name": "Ornament",
+            "id": "mei-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/mei-ornament.png"
+          },
+          {
             "hero": "Mercy",
             "name": "Snow Angel",
             "id": "mercy-snow-angel",
             "quality": "common",
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/mercy-snow-angel.png"
+          },
+          {
+            "hero": "Mercy",
+            "name": "Ornament",
+            "id": "mercy-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/mercy-ornament.png"
           },
           {
             "hero": "Pharah",
@@ -667,11 +743,25 @@ OWI.factory('Data', function() {
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/pharah-ice-fishing.png"
           },
           {
+            "hero": "Pharah",
+            "name": "Ornament",
+            "id": "pharah-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/pharah-ornament.png"
+          },
+          {
             "hero": "Reaper",
             "name": "Stocking",
             "id": "reaper-stocking",
             "quality": "common",
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/reaper-stocking.png"
+          },
+          {
+            "hero": "Reaper",
+            "name": "Ornament",
+            "id": "reaper-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/reaper-ornament.png"
           },
           {
             "hero": "Reinhardt",
@@ -681,11 +771,32 @@ OWI.factory('Data', function() {
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/reinhardt-ice-fishing.png"
           },
           {
+            "hero": "Reinhardt",
+            "name": "Ornament",
+            "id": "reinhardt-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/reinhardt-ornament.png"
+          },
+          {
             "hero": "Roadhog",
             "name": "\"Winter\"",
             "id": "roadhog-winter",
             "quality": "common",
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/roadhog-winter.png"
+          },
+          {
+            "hero": "Roadhog",
+            "name": "Ornament",
+            "id": "roadhog-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/roadhog-ornament.png"
+          },
+          {
+            "hero": "Soldier: 76",
+            "name": "Ornament",
+            "id": "soldier-76-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/soldier-76-ornament.png"
           },
           {
             "hero": "Soldier: 76",
@@ -702,11 +813,25 @@ OWI.factory('Data', function() {
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/sombra-puppet.png"
           },
           {
+            "hero": "Sombra",
+            "name": "Ornament",
+            "id": "sombra-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/sombra-ornament.png"
+          },
+          {
             "hero": "Symmetra",
             "name": "Snowflake",
             "id": "symmetra-snowflake",
             "quality": "common",
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/symmetra-snowflake.png"
+          },
+          {
+            "hero": "Symmetra",
+            "name": "Ornament",
+            "id": "symmetra-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/symmetra-ornament.png"
           },
           {
             "hero": "Torbjörn",
@@ -716,11 +841,25 @@ OWI.factory('Data', function() {
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/torbjorn-workshop.png"
           },
           {
+            "hero": "Torbjörn",
+            "name": "Ornament",
+            "id": "torbjorn-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/torbjorn-ornament.png"
+          },
+          {
             "hero": "Tracer",
             "name": "Snowboarding",
             "id": "tracer-snowboarding",
             "quality": "common",
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/tracer-snowboarding.png"
+          },
+          {
+            "hero": "Tracer",
+            "name": "Ornament",
+            "id": "tracer-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/tracer-ornament.png"
           },
           {
             "hero": "Widowmaker",
@@ -730,11 +869,25 @@ OWI.factory('Data', function() {
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/widowmaker-skiing.png"
           },
           {
+            "hero": "Widowmaker",
+            "name": "Ornament",
+            "id": "widowmaker-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/widowmaker-ornament.png"
+          },
+          {
             "hero": "Winston",
             "name": "Presents",
             "id": "winston-presents",
             "quality": "common",
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/winston-presents.png"
+          },
+          {
+            "hero": "Winston",
+            "name": "Ornament",
+            "id": "winston-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/winston-ornament.png"
           },
           {
             "hero": "Zarya",
@@ -744,6 +897,13 @@ OWI.factory('Data', function() {
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/zarya-matryoshka.png"
           },
           {
+            "hero": "Zarya",
+            "name": "Ornament",
+            "id": "zarya-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/zarya-ornament.png"
+          },
+          {
             "hero": "Zenyatta",
             "name": "Snowball Fight",
             "id": "zenyatta-snowball-fight",
@@ -751,10 +911,18 @@ OWI.factory('Data', function() {
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/zenyatta-snowball-fight.png"
           },
           {
+            "hero": "Zenyatta",
+            "name": "Ornament",
+            "id": "zenyatta-ornament",
+            "quality": "common",
+            "img": "./resources/WINTER_WONDERLAND_2016/sprays/zenyatta-ornament.png"
+          },
+          {
             "name": "Winter Wonderland",
             "id": "winter-wonderland",
             "img": "./resources/WINTER_WONDERLAND_2016/sprays/winter-wonderland.png",
-            "allClass": true
+            "allClass": true,
+            "quality": "common"
           },
           {
             "name": "SnowReaper",
@@ -781,7 +949,7 @@ OWI.factory('Data', function() {
             "allClass": true
           }
         ],
-        "voice": [
+        "voicelines": [
           {
             "hero": "Ana",
             "name": "I'm watching out for you",

@@ -8,8 +8,11 @@ OWI.factory("StorageService", function() {
     getData: function() {
       return service.data
     },
+    isItemChecked: function(event, type, id) {
+      return (event in service.data ? (type in service.data[event] ? service.data[event][type][id] : false) : false)
+    },
     getSetting: function(key) {
-      return (key in service.settings ? service.settings[key] : (key in service.defaults ? service.defaults[key] : undefined))
+      return (key in service.settings ? service.settings[key] : (key in service.defaults ? service.defaults[key] : false))
     },
     setSetting: function(key, value) {
       service.settings[key] = value;
@@ -65,6 +68,7 @@ OWI.controller('SettingsCtrl', ["$uibModalInstance", "StorageService", function(
 
   this.resetData = function() {
     localStorage.removeItem('data');
+    localStorage.removeItem('migrations');
     location.reload();
   }
 
@@ -100,9 +104,38 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       $scope.checked = Data.checked[$scope.data.id];
 
       $scope.onSelect = function() {
+        console.log("Onselect")
         Data.checked[$scope.data.id] = $scope.checked;
         StorageService.setData(Data.checked);
+        $scope.calculateCosts();
       };
+
+      $scope.cost = {
+        total: 0,
+        remaining: 0
+      };
+
+      $scope.calculateCosts = function() {
+        var cost = {
+          total: 0,
+          remaining: 0
+        }
+        Object.keys($scope.data.items).forEach(function(type) {
+          if (type == 'icons') return; // icons have no cost
+          var items = $scope.data.items[type];
+          items.forEach(function(item) {
+            if (!item.quality) return // if it has no quality it has no cost
+            var price = Data.prices[item.quality];
+            cost.total += price;
+            if (!StorageService.isItemChecked($scope.data.id, type, item.id)) {
+              cost.remaining += price;
+            }
+          })
+        })
+        $scope.cost = cost;
+      }
+
+      $scope.calculateCosts();
 
       var showTimeout = undefined;
       var hideTimeout = undefined;

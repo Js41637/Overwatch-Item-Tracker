@@ -1,4 +1,9 @@
 <div id="winterwonderland2016" class="item-container">
+  <div id="cost-remaining">
+    <h3>Total cost of all items :</h3> <span>{{cost.total | number}}</span><br>
+    <h3>Cost of remaining Items :</h3> <span>{{cost.remaining | number}}
+
+  </div>
   <div id="row1" class="row">
     <div id="col1" class="col">
       <div id="legendary-skins" class="section">
@@ -17,7 +22,7 @@
           <div class="images">
             <div class="item" ng-repeat="skin in data.items.skinsLegendary track by $index" style="background-image:url({{skin.img}});">
               <div class="thing">
-                <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked.legendary[skin.id]" ng-change="onSelect()">
+                <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked.skinsLegendary[skin.id]" ng-change="onSelect()">
                 <label for="{{'legendary' + $index}}"><h3 class="name">{{skin.name}} {{skin.hero}}</h3></label>
               </div>
             </div>
@@ -29,8 +34,8 @@
       <div id="voicelines" class="section">
         <h2>Voice Lines</h2> <span>(75 Coins)</span>
         <div class="items">
-          <div class="item" ng-repeat="voice in data.items.voice track by $index">
-            <input type="checkbox" id="{{'voice' + $index}}" ng-model="checked.voice[voice.id]" ng-change="onSelect()"> <label for="{{'voice' + $index}}"><h3>{{voice.hero}}</h3></label>
+          <div class="item" ng-repeat="voice in data.items.voicelines track by $index">
+            <input type="checkbox" id="{{'voice' + $index}}" ng-model="checked.voicelines[voice.id]" ng-change="onSelect()"> <label for="{{'voice' + $index}}"><h3>{{voice.hero}}</h3></label>
           </div>
         </div>
       </div>
@@ -60,7 +65,7 @@
         <div id="epic-skins" class="section">
           <h2>Epic Skins</h2> <span>(750 Coins)</span>
           <div class="item" ng-repeat="skin in data.items.skinsEpic track by $index" ng-mouseover="showPreview(skin)" ng-mouseleave="hidePreview()">
-            <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.epic[skin.id]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin.name}} {{skin.hero}}</h3></label>
+            <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.skinsEpic[skin.id]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin.name}} {{skin.hero}}</h3></label>
           </div>
         </div>
       </div>
@@ -87,9 +92,9 @@
           <label for="fakecb" id="fakecheckbox"></label> <span> = Ornament Spray</span>
         </span>
         <div class="items">
-          <div class="item" ng-repeat="spray in data.items.sprays track by $index" ng-mouseover="showPreview(spray)" ng-mouseleave="hidePreview()">
+          <div class="item" ng-repeat="spray in data.items.sprays track by $index" ng-if="!spray.id.includes('ornament')" ng-mouseover="showPreview(spray)" ng-mouseleave="hidePreview()">
             <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked.sprays[spray.id]" ng-change="onSelect()">
-            <input ng-if="spray.hero" type="checkbox" class="orn" ng-if="spray.hero" id="{{'sprayorn' + $index}}" ng-model="checked.sprays[spray.id + '-ornament']" ng-change="onSelect()">
+            <input ng-if="spray.hero" type="checkbox" class="orn" ng-if="spray.hero" id="{{'sprayorn' + $index}}" ng-model="checked.sprays[spray.id.split('-')[0].replace('ier', 'ier-76') + '-ornament']" ng-change="onSelect()">
             <label ng-if="spray.hero" for="{{'sprayorn' + $index}}" class="ornl"></label>
             <label for="{{'spray' + $index}}">
               <h3>{{spray.hero ? spray.hero : spray.name}}</h3>
