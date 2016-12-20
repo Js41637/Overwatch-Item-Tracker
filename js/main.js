@@ -122,14 +122,16 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
 
       $scope.cost = {
         total: 0,
-        remaining: 0
+        remaining: 0,
+        prev: 0
       };
 
       $scope.calculateCosts = function() {
         if ($scope.data.id !== 'winterwonderland2016') return;
         var cost = {
           total: 0,
-          remaining: 0
+          remaining: 0,
+          prev: $scope.cost.remaining
         }
         Object.keys($scope.data.items).forEach(function(type) {
           if (type == 'icons') return; // icons have no cost
@@ -173,6 +175,63 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
   };
 }]);
 
+// Based off http://sparkalow.github.io/angular-count-to/
+OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
+  return {
+    replace: false,
+    scope: true,
+        link: function (scope, element, attrs) {
+          var e = element[0];
+          var num, refreshInterval, duration, steps, step, countTo, increment;
+          var calculate = function() {
+            refreshInterval = 30;
+            step = 0;
+            scope.timoutId = null;
+            countTo = parseInt(attrs.countTo) || 0;
+            scope.value = parseInt(attrs.countFrom, 10) || 0;
+            duration = (parseFloat(attrs.duration) * 1000) || 0;
+            steps = Math.ceil(duration / refreshInterval);
+            increment = ((countTo - scope.value) / steps);
+            num = scope.value;
+          }
+
+          var tick = function() {
+            scope.timoutId = $timeout(function () {
+              num += increment;
+              step++;
+              if (step >= steps) {
+                $timeout.cancel(scope.timoutId);
+                num = countTo;
+                e.textContent = $filter('number')(Math.round(countTo));
+              } else {
+                e.textContent = $filter('number')(Math.round(num));
+                tick();
+              }
+            }, refreshInterval);
+          }
+
+          var start = function () {
+            if (scope.timoutId) {
+              $timeout.cancel(scope.timoutId);
+            }
+            calculate();
+            tick();
+          }
+
+          attrs.$observe('countTo', function(val) {
+            if (val) {
+                start();
+            }
+          });
+
+          attrs.$observe('countFrom', function() {
+            start();
+          });
+          return true;
+        }
+    }
+}]);
+
 OWI.directive("particles", function() {
   return {
     restrict: 'E',
@@ -184,56 +243,26 @@ OWI.directive("particles", function() {
         "particles": {
           "number": {
             "value": 55,
-            "density": {
-              "enable": true,
-              "value_area": 600
-            }
+            "density": { "enable": true, "value_area": 600 }
           },
-          "color": {
-            "value": "#ffffff"
-          },
+          "color": { "value": "#ffffff" },
           "shape": {
             "type": "circle",
-            "stroke": {
-              "width": 0,
-              "color": "#000000"
-            },
-            "polygon": {
-              "nb_sides": 5
-            },
-            "image": {
-              "src": "img/github.svg",
-              "width": 100,
-              "height": 100
-            }
+            "stroke": { "width": 0, "color": "#000000" },
+            "polygon": { "nb_sides": 5 },
+            "image": { "src": "", "width": 100, "height": 100 }
           },
           "opacity": {
             "value": 0.5,
             "random": false,
-            "anim": {
-              "enable": false,
-              "speed": 1,
-              "opacity_min": 0.1,
-              "sync": false
-            }
+            "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false }
           },
           "size": {
             "value": 3,
             "random": true,
-            "anim": {
-              "enable": false,
-              "speed": 40,
-              "size_min": 0.1,
-              "sync": false
-            }
+            "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false }
           },
-          "line_linked": {
-            "enable": false,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
-            "width": 1
-          },
+          "line_linked": { "enable": false, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
           "move": {
             "enable": true,
             "speed": 4,
@@ -242,50 +271,22 @@ OWI.directive("particles", function() {
             "straight": false,
             "out_mode": "out",
             "bounce": false,
-            "attract": {
-              "enable": false,
-              "rotateX": 600,
-              "rotateY": 1200
-            }
+            "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 }
           }
         },
         "interactivity": {
           "detect_on": "canvas",
           "events": {
-            "onhover": {
-              "enable": false,
-              "mode": "repulse"
-            },
-            "onclick": {
-              "enable": false,
-              "mode": "repulse"
-            },
+            "onhover": { "enable": false, "mode": "repulse" },
+            "onclick": { "enable": false, "mode": "repulse" },
             "resize": true
           },
           "modes": {
-            "grab": {
-              "distance": 400,
-              "line_linked": {
-                "opacity": 1
-              }
-            },
-            "bubble": {
-              "distance": 400,
-              "size": 40,
-              "duration": 2,
-              "opacity": 8,
-              "speed": 3
-            },
-            "repulse": {
-              "distance": 200,
-              "duration": 0.4
-            },
-            "push": {
-              "particles_nb": 4
-            },
-            "remove": {
-              "particles_nb": 2
-            }
+            "grab": { "distance": 400, "line_linked": { "opacity": 1 } },
+            "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 },
+            "repulse": { "distance": 200, "duration": 0.4 },
+            "push": { "particles_nb": 4 },
+            "remove": { "particles_nb": 2 }
           }
         },
         "retina_detect": true

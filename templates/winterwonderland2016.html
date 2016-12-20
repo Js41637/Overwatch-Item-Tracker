@@ -1,6 +1,6 @@
 <div id="winterwonderland2016" class="item-container">
   <div id="cost-remaining" uib-tooltip="Cost to purchase remaining items" tooltip-placement="bottom">
-    <img src="./resources/credit.png" /> <span>{{cost.remaining | number}}</span>
+    <img src="./resources/credit.png" /> <span count-to="{{cost.remaining}}" duration="0.80" count-from="{{cost.prev}}"></span>
   </div>
   <div id="row1" class="row">
     <div id="col1" class="col">
