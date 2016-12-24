@@ -815,7 +815,6 @@ body {
 
 #winterwonderland2016 {
   flex-direction: column;
-  min-width: 1500px;
 }
 #winterwonderland2016 .row {
   display: flex;
@@ -1042,7 +1041,7 @@ body {
   cursor: pointer;
 }
 
-/*@media screen and (max-width: 1540px) {
+@media screen and (max-width: 1570px) {
   #winterwonderland2016 {
     flex-direction: column;
     align-items: center;
@@ -1051,72 +1050,22 @@ body {
     margin: 0 auto;
   }
 
-  #winterwonderland2016 #col1, #winterwonderland2016 #col2 {
-    width: 1000px;
-  }
-
-  #winterwonderland2016 #col1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  #winterwonderland2016 #legendary-skins {
-    width: 70%;
-    margin-bottom: 15px;
-  }
-
-  #winterwonderland2016 #epic-skins {
-    width: 29%;
-    margin: 0;
-  }
-
-  #winterwonderland2016 #col1 .right {
-    display: flex;
+  #winterwonderland2016 #row1 {
+    flex-direction: column;
     width: 100%;
-    flex-direction: row;
   }
-
-  #winterwonderland2016 #highlight-intros, #winterwonderland2016 #emotes {
-    width: 34%;
-  }
-
-  #winterwonderland2016 #emotes {
-    margin-left: 2%;
-  }
-
-  #winterwonderland2016 #emotes h2 {
-    margin-top: 0;
-  }
-
-  #winterwonderland2016 #col2 .top {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-    width: 70%;
-    padding: 0;
-  }
-
-  #winterwonderland2016 #voicelines .items, #winterwonderland2016 #victoryposes .items {
-    height: 422px;
-  }
-
-  #winterwonderland2016 #victoryposes .item {
+  #winterwonderland2016 #row1 #col2 .right {
     z-index: 1;
   }
-
-  #winterwonderland2016 #col2 .bottom {
-    width: 70%;
-    padding: 0;
+  #winterwonderland2016 #row1 #col1, #winterwonderland2016 #row1 #col2, #winterwonderland2016 #row2 #col1, #winterwonderland2016 #row2 #col2 {
+    width: 100%;
   }
-
-  #winterwonderland2016 #col3 {
-    width: 290px;
-    position: absolute;
-    top: 362px;
-    right: 12px;
+  #winterwonderland2016 #row2 {
+    width: 100%;
+    margin-top: 0;
+    flex-direction: column;
   }
-}*/
+}
 
 #settings h2 {
   font-size: 32px;
