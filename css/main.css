@@ -110,6 +110,38 @@ body {
   font-style: italic;
 }
 
+#header .event-selector {
+  margin-right: 10px;
+}
+
+#header .event-selector .btn,
+#header .event-selector .btn:hover,
+#header .event-selector .btn:focus {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ffa500;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Big Noodle Too';
+  padding: 0px;
+}
+#header .event-selector .btn:hover,
+#header .event-selector .btn:focus {
+  outline: none;
+}
+
+#header .event-selector .dropdown-menu {
+  background-color: #43484c;
+}
+
+#header .event-selector .dropdown-menu li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #ffa500;
+  display: block;
+  font-size: 18px;
+}
+
 #particles-js {
   position: fixed;
   width: 100%;
@@ -1497,4 +1529,48 @@ a.btn.disabled {
 .btn-danger[disabled].focus {
   background-color: #d9534f;
   border-color: #d43f3a;
+}
+
+/* dropdowns */
+.dropup,
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid \9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }
