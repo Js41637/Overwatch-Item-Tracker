@@ -140,6 +140,15 @@ body {
   color: #ffa500;
   display: block;
   font-size: 18px;
+  transition: color .1s ease-in-out;
+}
+#header .event-selector .dropdown-menu li a:hover {
+  background-color: transparent;
+  color: #ffcf76;
+}
+
+.view-mode-include {
+  width: 100%;
 }
 
 #particles-js {
@@ -229,7 +238,7 @@ body {
 
 #cost-remaining {
   position: absolute;
-  top: -28px;
+  top: -13px;
   right: 50px;
   display: flex;
   justify-content: center;
@@ -847,6 +856,7 @@ body {
 
 #winterwonderland2016 {
   flex-direction: column;
+  padding: 10px 5px 8px;
 }
 #winterwonderland2016 .row {
   display: flex;
@@ -1089,7 +1099,10 @@ body {
   #winterwonderland2016 #row1 #col2 .right {
     z-index: 1;
   }
-  #winterwonderland2016 #row1 #col1, #winterwonderland2016 #row1 #col2, #winterwonderland2016 #row2 #col1, #winterwonderland2016 #row2 #col2 {
+  #winterwonderland2016 #row1 #col1,
+  #winterwonderland2016 #row1 #col2,
+  #winterwonderland2016 #row2 #col1,
+  #winterwonderland2016 #row2 #col2 {
     width: 100%;
   }
   #winterwonderland2016 #row2 {
@@ -1097,6 +1110,70 @@ body {
     margin-top: 0;
     flex-direction: column;
   }
+}
+
+ #winterwonderland2016 #legendary-skins {
+   margin-bottom: 0;
+ }
+
+
+
+/* Per hero selection */
+.view-mode-hero {
+  padding: 40px 0 0;
+  width: 1500px;
+  margin: 0 auto;
+}
+.view-mode-hero .row {
+  margin-top: 20px;
+  display: flex;
+}
+.view-mode-hero #col1,
+.view-mode-hero #col2 {
+  width: 50%;
+  padding: 0 20px;
+}
+.view-mode-hero .section {
+  margin-bottom: 20px;
+}
+
+
+#heroes-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#heroes-selection .hero-selector {
+  flex: 1;
+  position: relative;
+  min-width: 85px;
+  max-width: 85px;
+  margin: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  background: url('../resources/portrait-bg.jpg') 0 0 / 100% 100% no-repeat #fff;
+}
+#heroes-selection .hero-selector.selected {
+  box-shadow: 0 0 20px 10px #fef200;
+}
+#heroes-selection .hero-selector img {
+  max-width: 100%;
+}
+#heroes-selection .hero-selector .hero-name {
+  position: absolute;
+  bottom: 0;
+  padding: 6px 0;
+  width: 100%;
+  background-color: rgba(45, 45, 45, 0.9);
+
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+#heroes-selection .hero-selector.hero-selector-global img {
+  transform: translateY(20px);
 }
 
 #settings h2 {
@@ -1466,17 +1543,40 @@ a.btn.disabled {
   background-color: #31b0d5;
   border-color: #1b6d85;
 }
-.btn-info:hover {
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
   color: #fff;
   background-color: #31b0d5;
   border-color: #269abc;
 }
+.btn-info:active:hover,
+.btn-info.active:hover,
+.open > .dropdown-toggle.btn-info:hover,
+.btn-info:active:focus,
+.btn-info.active:focus,
+.open > .dropdown-toggle.btn-info:focus,
+.btn-info:active.focus,
+.btn-info.active.focus,
+.open > .dropdown-toggle.btn-info.focus {
+  color: #fff;
+  background-color: #269abc;
+  border-color: #1b6d85;
+}
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  background-image: none;
+}
 .btn-info.disabled:hover,
 .btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
 .btn-info.disabled:focus,
 .btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
 .btn-info.disabled.focus,
-.btn-info[disabled].focus {
+.btn-info[disabled].focus,
+fieldset[disabled] .btn-info.focus {
   background-color: #5bc0de;
   border-color: #46b8da;
 }
@@ -1558,6 +1658,42 @@ a.btn.disabled {
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
           box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #777;
+}
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
 .open > .dropdown-menu {
