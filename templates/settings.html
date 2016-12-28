@@ -18,18 +18,6 @@
       <p>Marks all items for every event as selected</p>
       <button class="btn btn-info" type="button" ng-click="settings.selectAll()">Select Everything!</button>
     </div>
-    <div class="setting">
-      <h3>View Mode</h3>
-      <p>Change how you want to view the list of items. Per Hero only works for Winter Wonderland 2016.</p>
-      <div class="btn-group" uib-dropdown>
-        <button id="view-mode-button" type="button" class="btn btn-info" uib-dropdown-toggle>
-          {{settings.viewModes[settings.viewMode]}} <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="view-mode-button">
-          <li role="menuitem" ng-repeat="(id, label) in settings.viewModes"><a href="#" ng-click="settings.saveViewMode(id)">{{label}}</a></li>
-        </ul>
-      </div>
-    </div>
   </div>
   <div class="modal-footer">
     <button class="btn btn-primary" type="button" ng-click="settings.close()">Close</button>

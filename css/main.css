@@ -162,7 +162,7 @@ body {
 #menu {
   text-align: center;
   font-size: 21px;
-  padding: 4px;
+  padding: 10px 0 0;
 }
 
 #menu .wrapper {
@@ -238,7 +238,7 @@ body {
 
 #cost-remaining {
   position: absolute;
-  top: -13px;
+  top: -40px;
   right: 50px;
   display: flex;
   justify-content: center;
@@ -261,7 +261,7 @@ body {
 }
 
 .item-container {
-  padding: 2px 5px 8px;
+  padding: 20px 5px 8px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -309,60 +309,80 @@ body {
  * COLORS
  */
 
+/* Orange */
+.item.item-quality-legendary, .item.item-quality-legendary input, .item.item-quality-legendary h3 {
+  color: #ffa500;
+}
+
+.item.item-quality-legendary {
+  background-color: rgb(255, 232, 190);
+}
+.item:nth-of-type(even).item.item-quality-legendary {
+  background-color: rgb(255, 221, 159);
+}
+
 /* Purple */
-#epic-skins, #emotes, #highlight-intros, #epic-skins input, #emotes input, #highlight-intros input, #highlight-intros h3, #epic-skins h3, #emotes h3 {
+#epic-skins, #epic-skins input, #epic-skins h3,
+#emotes, #emotes input, #emotes h3,
+#highlight-intros, #highlight-intros input, #highlight-intros h3
+.item.item-quality-epic, .item.item-quality-epic input, .item.item-quality-epic h3 {
   color: rgb(146, 37, 146)
 }
 
-#epic-skins .item, #emotes .item, #highlight-intros .item {
+#epic-skins .item, #emotes .item, #highlight-intros .item, .item.item-quality-epic {
   background-color: rgb(188, 161, 204);
 }
-#epic-skins .item:nth-of-type(even), #emotes .item:nth-of-type(even), #highlight-intros .item:nth-of-type(even) {
+#epic-skins .item:nth-of-type(even), #emotes .item:nth-of-type(even), #highlight-intros .item:nth-of-type(even) .item:nth-of-type(even).item-quality-epic {
   background-color: rgb(202, 185, 217);
 }
 
 /* Blue */
-#voicelines, #victoryposes, #voicelines input, #victoryposes input, #victoryposes h3, #voicelines h3 {
+#voicelines, #voicelines input, #voicelines h3,
+#victoryposes, #victoryposes input, #victoryposes h3,
+.item.item-quality-rare .item.item-quality-rare input, .item.item-quality-rare h3 {
   color: rgb(14, 116, 188);
 }
 
-#voicelines .item, #victoryposes .item {
+#voicelines .item, #victoryposes .item, .item.item-quality-rare {
   background-color: rgba(198, 229, 247,0.5);
 }
 
-#voicelines .item:nth-of-type(even), #victoryposes .item:nth-of-type(even) {
+#voicelines .item:nth-of-type(even), #victoryposes .item:nth-of-type(even), .item:nth-of-type(even).item-quality-rare {
   background-color: rgba(147, 200, 234,0.5);
 }
 
 /* Green */
-#sprays, #sprays input, #sprays h3 {
+#sprays, #sprays input, #sprays h3,
+.item.item-quality-common, .item.item-quality-common input, .item.item-quality-common h3 {
   color: rgb(6, 104, 58);
 }
 
-#sprays .item {
+#sprays .item, .item.item-quality-common {
   background-color: rgba(208, 229, 173,0.5);
 }
 
-#sprays .item:nth-of-type(even) {
+#sprays .item:nth-of-type(even), .item:nth-of-type(even).item-quality-common {
   background-color: rgba(172, 213, 137,0.5);
 }
 
 /* Pink */
-#icons, #icons input, #icons h3 {
+#icons, #icons input, #icons h3,
+.item.item-quality-unknown, .item.item-quality-unknown input, .item.item-quality-unknown h3 {
   color: rgb(237, 12, 108);
 }
 
-#icons .item {
+#icons .item, .item.item-quality-unknown {
   background-color: rgba(245, 202, 221,0.5);
 }
 
-#icons .item:nth-of-type(even) {
+#icons .item:nth-of-type(even), .item:nth-of-type(even).item-quality-unknown {
   background-color: rgba(239, 172, 205,0.5);
 }
 
 #image-preview {
   width: 100%;
   height: 100%;
+  top: 0;
   position: absolute;
   z-index: 1;
   opacity: 0;
@@ -390,7 +410,8 @@ body {
   position: fixed;
   width: 700px;
   height: 420px;
-  margin-top: -170px;
+  top: 25px;
+  /* margin-top: -170px; */
 }
 
 #image-preview.small img {
@@ -1119,8 +1140,10 @@ body {
 
 
 /* Per hero selection */
+#view-mode-hero-container {
+  position: relative;
+}
 .view-mode-hero {
-  padding: 40px 0 0;
   width: 1500px;
   margin: 0 auto;
 }
@@ -1143,6 +1166,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+#heroes-selection.hide {
+  opacity: 0;
+}
 #heroes-selection .hero-selector {
   flex: 1;
   position: relative;
@@ -1150,12 +1176,19 @@ body {
   max-width: 85px;
   margin: 5px 10px;
   cursor: pointer;
-  border-radius: 10px;
   overflow: hidden;
+  border: 2px solid #fff;
   background: url('../resources/portrait-bg.jpg') 0 0 / 100% 100% no-repeat #fff;
+  transition: transform 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+#heroes-selection .hero-selector.selected,
+#heroes-selection .hero-selector:hover {
+  transform: scale(1.4, 1.4);
+  z-index: 2;
 }
 #heroes-selection .hero-selector.selected {
-  box-shadow: 0 0 20px 10px #fef200;
+  border-color: #ffa500;
+  z-index: 1;
 }
 #heroes-selection .hero-selector img {
   max-width: 100%;
@@ -1172,6 +1205,27 @@ body {
   text-align: center;
 }
 
+#heroes-selection .hero-selector .hero-name .hero-progress {
+  height: 0;
+  opacity: 0;
+  transition: height 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+#heroes-selection .hero-selector.selected .hero-name .hero-progress,
+#heroes-selection .hero-selector:hover .hero-name .hero-progress {
+  opacity: 1;
+  height: 20px;
+}
+
+#heroes-selection .hero-selector .hero-name .hero-progress .hero-progress-bar {
+  height: 4px;
+  background-color: rgba(124, 127, 132, 0.6);
+  margin: 2px 0;
+}
+#heroes-selection .hero-selector .hero-name .hero-progress .hero-progress-bar .hero-progress-bar-inner {
+  height: 100%;
+  background-color: #ffa500;
+  transition: width 0.15s ease-in-out;
+}
 #heroes-selection .hero-selector.hero-selector-global img {
   transform: translateY(20px);
 }

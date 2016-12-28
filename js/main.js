@@ -61,11 +61,6 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 
 OWI.controller('SettingsCtrl', ["$uibModalInstance", "StorageService", "Data", function($uibModalInstance, StorageService, Data) {
   this.particles = StorageService.getSetting('particles');
-  this.viewModes = {
-    'item-type': 'By item type',
-    'hero': 'By hero'
-  };
-  this.viewMode = StorageService.getSetting('viewMode') || 'item-type';
 
   this.close = function() {
     $uibModalInstance.dismiss('close')
@@ -93,12 +88,6 @@ OWI.controller('SettingsCtrl', ["$uibModalInstance", "StorageService", "Data", f
     });
     StorageService.setData(Data.checked);
   }
-
-  this.saveViewMode = function (viewMode) {
-    this.viewMode = viewMode;
-    StorageService.setSetting('viewMode', viewMode);
-    location.reload();
-  }
 }])
 
 OWI.directive("scroll", function ($window) {
@@ -124,13 +113,22 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       $scope.preview = false;
 
       $scope.checked = Data.checked[$scope.data.id];
+      
       $scope.viewMode = StorageService.getSetting('viewMode') || 'item-type';
-      console.log('checked', $scope.checked);
-
+      $scope.viewModes = {
+        'item-type': 'By item type',
+        'hero': 'By hero'
+      };
+      $scope.saveViewMode = function (viewMode) {
+        $scope.viewMode = viewMode;
+        StorageService.setSetting('viewMode', viewMode);
+      }
+      
       $scope.onSelect = function() {
         Data.checked[$scope.data.id] = $scope.checked;
         StorageService.setData(Data.checked);
         $scope.calculateCosts();
+        $scope.calculatePerHeroProgress();
       };
 
       $scope.cost = {
@@ -189,9 +187,8 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       $scope.availableHeroes = [];
       $scope.selectedHero = '';
       $scope.hasGlobalItems = false;
+      $scope.perHeroProgress = {};
       determineAvailableHeroes();
-
-      console.log('data', $scope.data);
 
       $scope.setSelectedHero = function(hero) {
         $scope.selectedHero = hero;
@@ -219,6 +216,33 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
 
         return hasItem;
       }
+
+      $scope.calculatePerHeroProgress = function() {
+        if ($scope.data.id !== 'winterwonderland2016') return;
+
+        var progress = {};
+        setProgress('global');
+        $scope.availableHeroes.forEach(setProgress);
+
+        $scope.perHeroProgress = progress;
+
+        function setProgress(hero) {
+          progress[hero] = { total: 0, current: 0 };
+          Object.keys($scope.data.items).forEach(function(type) {
+            $scope.data.items[type].forEach(function(item) {
+              if (item.hero == hero) {
+                progress[hero].total++;
+                if (StorageService.isItemChecked($scope.data.id, type, item.id)) progress[hero].current++;
+              } else if (!item.hero && hero == 'global') {
+                progress.global.total++;
+                if (StorageService.isItemChecked($scope.data.id, type, item.id)) progress.global.current++;
+              }
+            })
+          })
+        }
+      }
+
+      $scope.calculatePerHeroProgress();
 
       function determineAvailableHeroes() {
         var heroes = {};

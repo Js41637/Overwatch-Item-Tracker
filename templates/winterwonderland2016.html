@@ -1,3 +1,10 @@
+<div id="menu">
+    <div class="wrapper">
+        <div class="button" ng-repeat="(id, name) in viewModes" ng-class="{selected: id == viewMode}" ng-click="saveViewMode(id);">
+            {{name}}
+        </div>
+    </div>
+</div>
 <div class="item-container">
   <div id="cost-remaining" uib-tooltip="Cost to purchase remaining items" tooltip-placement="bottom">
     <img src="./resources/credit.png" /> <span count-to="{{cost.remaining}}" duration="0.80" count-from="{{cost.prev}}"></span>
