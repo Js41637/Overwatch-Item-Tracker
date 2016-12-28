@@ -324,7 +324,7 @@ body {
 /* Purple */
 #epic-skins, #epic-skins input, #epic-skins h3,
 #emotes, #emotes input, #emotes h3,
-#highlight-intros, #highlight-intros input, #highlight-intros h3
+#highlight-intros, #highlight-intros input, #highlight-intros h3,
 .item.item-quality-epic, .item.item-quality-epic input, .item.item-quality-epic h3 {
   color: rgb(146, 37, 146)
 }
@@ -332,7 +332,7 @@ body {
 #epic-skins .item, #emotes .item, #highlight-intros .item, .item.item-quality-epic {
   background-color: rgb(188, 161, 204);
 }
-#epic-skins .item:nth-of-type(even), #emotes .item:nth-of-type(even), #highlight-intros .item:nth-of-type(even) .item:nth-of-type(even).item-quality-epic {
+#epic-skins .item:nth-of-type(even), #emotes .item:nth-of-type(even), #highlight-intros .item:nth-of-type(even), .item:nth-of-type(even).item-quality-epic {
   background-color: rgb(202, 185, 217);
 }
 
