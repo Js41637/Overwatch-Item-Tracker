@@ -390,6 +390,10 @@ body {
   pointer-events: none;
 }
 
+#image-preview .preview, #image-preview .imgcont {
+  height: 100%;
+}
+
 #image-preview img {
   display: block;
   height: calc(100% - 52px);
