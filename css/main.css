@@ -266,6 +266,11 @@ body {
   justify-content: center;
   position: relative;
 }
+/* For pages without view selector we need extra padding */
+#summergames2016.item-container,
+#halloween2016.item-container {
+  padding: 40px 0 0;
+}
 
 .item-container .section h2 {
   font-size: 42px;
