@@ -111,7 +111,7 @@ body {
 }
 
 #header .event-selector {
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 #header .event-selector .btn,
@@ -129,20 +129,31 @@ body {
 #header .event-selector .btn:focus {
   outline: none;
 }
+#header .event-selector .btn .caret {
+  border-width: 7px;
+  margin-left: 10px;
+}
 
 #header .event-selector .dropdown-menu {
   background-color: #43484c;
 }
 
+#header .event-selector .dropdown-menu li {
+  white-space: nowrap;
+  transition: background-color .1s ease-in-out;
+}
+#header .event-selector .dropdown-menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 #header .event-selector .dropdown-menu li a {
   padding: 5px 10px;
   text-decoration: none;
   color: #ffa500;
   display: block;
-  font-size: 18px;
+  font-size: 24px;
   transition: color .1s ease-in-out;
 }
-#header .event-selector .dropdown-menu li a:hover {
+#header .event-selector .dropdown-menu li:hover a {
   background-color: transparent;
   color: #ffcf76;
 }
