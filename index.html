@@ -28,7 +28,16 @@
       <img uib-tooltip="Boop" tooltip-placement="bottom" src="./resources/logo.png">
       <h1>Overwatch Item Tracker</h1>
       <div class="seperator">|</div>
-      <div>
+      <div class="event-selector btn-group" uib-dropdown>
+        <button id="event-selector-button" type="button" class="btn" uib-dropdown-toggle>
+          {{$ctrl.updates[$ctrl.selectedUpdate].name}} <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="event-selector-button">
+          <li role="menuitem" ng-repeat="update in $ctrl.updates track by $index"><a href="#" ng-click="$ctrl.selectedUpdate = $index;">{{update.name}}</a></li>
+        </ul>
+      </div>
+      <div ng-if="$ctrl.selectedUpdate == 2">
+        <!-- TODO make date dynamically -->
         <h2>Event ends on Jan 2nd, 2017</h2>
         <h3>Be sure to get everything you want by Jan 1st to be safe!</h3>
       </div>
@@ -39,21 +48,13 @@
   </div>
   <Particles ng-if="::$ctrl.particles"></Particles>
   <div id="protip">Pro Tip: Hover over items to view a preview.</div>
-  <div id="menu">
-    <div class="wrapper">
-      <div class="button" ng-repeat="update in $ctrl.updates track by $index" ng-class="{selected: $ctrl.selectedUpdate == $index}" ng-click="$ctrl.selectedUpdate = $index">
-        {{update.name}}
-      </div>
-    </div>
-  </div>
 
   <Update template="summergames2016" data="::$ctrl.updates[0]" ng-if="$ctrl.selectedUpdate == 0"></Update>
   <Update template="halloween2016" data="::$ctrl.updates[1]" ng-if="$ctrl.selectedUpdate == 1"></Update>
   <Update template="winterwonderland2016" data="::$ctrl.updates[2]" ng-if="$ctrl.selectedUpdate == 2"></Update>
 
   <div id="footer">
-    <div>Note: This site uses localstorage to store your selections, clearing cookies or using 3rd party cleaners may erase saved data</div>
-    Initial Design by Lalato &amp; Izzepizze on <a href="https://www.reddit.com/r/Overwatch/comments/59bo66">Reddit</a> | Site made by Js41637 | View source on <a href="https://github.com/Js41637/Overwatch-Item-Tracker">Github</a>
+    Note: This site uses localstorage to store your selections, clearing cookies or using 3rd party cleaners may erase saved data | Initial Design by Lalato &amp; Izzepizze on <a href="https://www.reddit.com/r/Overwatch/comments/59bo66">Reddit</a> | Site made by Js41637 | View source on <a href="https://github.com/Js41637/Overwatch-Item-Tracker">Github</a>
   </div>
   <script> // Track page views
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

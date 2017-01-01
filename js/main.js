@@ -113,11 +113,22 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       $scope.preview = false;
 
       $scope.checked = Data.checked[$scope.data.id];
-
+      
+      $scope.viewMode = StorageService.getSetting('viewMode') || 'item-type';
+      $scope.viewModes = {
+        'item-type': 'By item type',
+        'hero': 'By hero'
+      };
+      $scope.saveViewMode = function (viewMode) {
+        $scope.viewMode = viewMode;
+        StorageService.setSetting('viewMode', viewMode);
+      }
+      
       $scope.onSelect = function() {
         Data.checked[$scope.data.id] = $scope.checked;
         StorageService.setData(Data.checked);
         $scope.calculateCosts();
+        $scope.calculatePerHeroProgress();
       };
 
       $scope.cost = {
@@ -171,9 +182,124 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
           $scope.$digest();
         }, 150);
       };
+
+      // Data for predetermined hero view
+      $scope.availableHeroes = [];
+      $scope.selectedHero = '';
+      $scope.hasGlobalItems = false;
+      $scope.perHeroProgress = {};
+      determineAvailableHeroes();
+
+      $scope.setSelectedHero = function(hero) {
+        $scope.selectedHero = hero;
+      }
+      $scope.selectedHeroHas = function(type) {
+        var possibleItems = [];
+
+        // Shortcut to prevent error with misattributed player icons eg winston-yeti (should have no hero: and allClass: set)
+        if (type == 'icons') {
+          return $scope.selectedHero == 'global';
+        }
+
+        if (type == 'skins') {
+          possibleItems = $scope.data.items.skinsLegendary.concat($scope.data.items.skinsEpic);
+        } else {
+          possibleItems = $scope.data.items[type];
+        }
+
+        let hasItem = false;
+
+        possibleItems.forEach(function(item) {
+          if ($scope.selectedHero == 'global' && !item.hero) hasItem = true;
+          else if (item.hero == $scope.selectedHero) hasItem = true;
+        });
+
+        return hasItem;
+      }
+
+      $scope.calculatePerHeroProgress = function() {
+        if ($scope.data.id !== 'winterwonderland2016') return;
+
+        var progress = {};
+        setProgress('global');
+        $scope.availableHeroes.forEach(setProgress);
+
+        $scope.perHeroProgress = progress;
+
+        function setProgress(hero) {
+          progress[hero] = { total: 0, current: 0 };
+          Object.keys($scope.data.items).forEach(function(type) {
+            $scope.data.items[type].forEach(function(item) {
+              if (item.hero == hero) {
+                progress[hero].total++;
+                if (StorageService.isItemChecked($scope.data.id, type, item.id)) progress[hero].current++;
+              } else if (!item.hero && hero == 'global') {
+                progress.global.total++;
+                if (StorageService.isItemChecked($scope.data.id, type, item.id)) progress.global.current++;
+              }
+            })
+          })
+        }
+      }
+
+      $scope.calculatePerHeroProgress();
+
+      function determineAvailableHeroes() {
+        var heroes = {};
+        Object.keys($scope.data.items).forEach(function(type) {
+          $scope.data.items[type].forEach(function(item) {
+            if (item.hero) {
+              heroes[item.hero] = true;
+            } else {
+              $scope.hasGlobalItems = true;
+            }
+          });
+        });
+        $scope.availableHeroes = Object.keys(heroes).sort();
+        $scope.selectedHero = $scope.hasGlobalItems ? 'global' : $scope.availableHeroes[0];
+      }
     }
   };
 }]);
+
+OWI.filter('heroPortraitUrl', function () {
+  var specialHeroes = {
+    'd.va': 'dva',
+    'lúcio': 'lucio',
+    'soldier: 76': 'soldier-76',
+    'torbjörn': 'torbjorn'
+  }
+  return function(hero) {
+    hero = hero.toLowerCase();
+
+    if (specialHeroes[hero]) {
+      hero = specialHeroes[hero];
+    }
+    return './resources/' + hero + '/portrait.png';
+  }
+});
+OWI.filter('itemPrice', function () {
+  return function(quality, type, eventItem) {
+    // quality is one of: legendary, epic, rare, common, ''
+    // for possible combinations see object below.
+
+    // some icons have a character, quality and hence price assigned even though they are not buyable
+    // shortcut those out
+    if (type == 'icon') return '';
+    
+    var prices = {
+      common: 25,
+      rare: 75,
+      epic: 250,
+      legendary: 1000
+    };
+
+    if (quality && prices[quality]) {
+      return '(' + prices[quality] * (eventItem ? 3 : 1) + ')';
+    }
+    return '';
+  }
+})
 
 // Based off http://sparkalow.github.io/angular-count-to/
 OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {

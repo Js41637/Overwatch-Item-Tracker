@@ -1,0 +1,111 @@
+<div id="view-mode-hero-container">
+    <div id="heroes-selection" class="row" ng-class="{ hide: preview }">
+        <div class="hero-selector hero-selector-global" ng-if="hasGlobalItems" ng-click="setSelectedHero('global');" ng-class="{ selected: selectedHero == 'global' }">
+            <img src="./resources/logo.png" />
+            <div class="hero-name">
+                All heroes
+                <div class="hero-progress">
+                    <div class="hero-progress-bar">
+                        <div class="hero-progress-bar-inner" ng-style="{ width: perHeroProgress.global.current / perHeroProgress.global.total * 100 + '%' }"></div>
+                    </div>
+                    {{perHeroProgress.global.current}}/{{perHeroProgress.global.total}}
+                </div> 
+            </div>
+        </div>
+        <div class="hero-selector" ng-repeat="hero in availableHeroes" ng-click="setSelectedHero(hero)" ng-class="{ selected: selectedHero == hero }">
+            <img src="{{ hero | heroPortraitUrl }}" />
+            <div class="hero-name">
+                {{hero}}
+                <div class="hero-progress">
+                    <div class="hero-progress-bar">
+                        <div class="hero-progress-bar-inner" ng-style="{ width: perHeroProgress[hero].current / perHeroProgress[hero].total * 100 + '%' }"></div>
+                    </div>
+                    {{perHeroProgress[hero].current}}/{{perHeroProgress[hero].total}}
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div id="image-preview" class="section" scroll ng-class="{ show: preview, small: preview.isSmall, fixed: isFixed }">
+        <div class="preview" ng-show="preview.img">
+            <h2>Image Preview</h2> <span>{{preview.name}}</span>
+            <div class="imgcont">
+                <img src="{{preview.img}}" />
+            </div>
+            </div>
+            <div class="preview" ng-if="preview.video">
+            <h2>Video Preview</h2> <span>{{preview.name}}</span>
+            <video autoplay="true" autostart="true" loop="true" src="{{preview.video}}"></video>
+        </div>
+    </div>
+</div>
+
+<div id="row1" class="row">
+    <div id="col1" class="col">
+        <div class="section" ng-if="selectedHeroHas('skins')">
+            <h2>Skins</h2>
+            <div class="items">
+                <div id="legendary-skins">
+                    <div class="item item-quality-{{skin.quality || 'unknown'}}" ng-repeat="skin in data.items.skinsLegendary track by $index" ng-if="skin.hero == selectedHero" ng-mouseover="showPreview(skin)" ng-mouseleave="hidePreview()">
+                        <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked.skinsLegendary[skin.id]" ng-change="onSelect()"> <label for="{{'legendary' + $index}}"><h3>{{skin.name}} {{ skin.quality | itemPrice:'skin':true}}</h3></label>
+                    </div>
+                </div>
+                <div id="epic-skins">
+                    <div class="item item-quality-{{skin.quality || 'unknown'}}" ng-repeat="skin in data.items.skinsEpic track by $index" ng-if="skin.hero == selectedHero" ng-mouseover="showPreview(skin)" ng-mouseleave="hidePreview()">
+                        <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.skinsEpic[skin.id]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin.name}} {{ skin.quality | itemPrice:'skin':true}}</h3></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" ng-if="selectedHeroHas('emotes')">
+            <h2>Emotes</h2>
+            <div class="items">
+                <div class="item item-quality-{{emote.quality || 'unknown'}}" ng-repeat="emote in data.items.emotes track by $index" ng-if="emote.hero == selectedHero" ng-mouseover="showPreview(emote)" ng-mouseleave="hidePreview()">
+                    <input type="checkbox" id="{{'emote' + $index}}" ng-model="checked.emotes[emote.id]" ng-change="onSelect()"> <label for="{{'emote' + $index}}"><h3>{{emote.name}} {{ emote.quality | itemPrice:'emote':true}}</h3></label>
+                </div>
+            </div>
+        </div>
+        <div class="section" ng-if="selectedHeroHas('poses')">
+            <h2>Victory Poses</h2>
+            <div class="items">
+                <div class="item item-quality-{{pose.quality || 'unknown'}}" ng-repeat="pose in data.items.poses track by $index" ng-if="pose.hero == selectedHero" ng-mouseover="showPreview(pose)" ng-mouseleave="hidePreview()">
+                    <input type="checkbox" id="{{'pose' + $index}}" ng-model="checked.poses[pose.id]" ng-change="onSelect()"> <label for="{{'pose' + $index}}"><h3>{{pose.name}} {{ pose.quality | itemPrice:'pose':true}}</h3></label>
+                </div>
+            </div>
+        </div>
+        <div class="section" ng-if="selectedHeroHas('icons')">
+            <h2>Player Icons</h2>
+            <div class="items">
+                <div class="item item-quality-unknown" ng-repeat="icon in data.items.icons track by $index" ng-mouseover="showPreview(icon, true)" ng-mouseleave="hidePreview()">
+                    <input type="checkbox" id="{{'icon' + $index}}" ng-model="checked.icons[icon.id]" ng-change="onSelect()"> <label for="{{'icon' + $index}}"><h3>{{icon.name}} {{ icon.quality | itemPrice:'icon':true}}</h3></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="col2" class="col">
+        <div class="section" ng-if="selectedHeroHas('voicelines')">
+            <h2>Voice Lines</h2>
+            <div class="items">
+                <div class="item item-quality-{{voiceline.quality || 'unknown'}}" ng-repeat="voiceline in data.items.voicelines track by $index" ng-if="voiceline.hero == selectedHero">
+                    <input type="checkbox" id="{{'voiceline' + $index}}" ng-model="checked.voicelines[voiceline.id]" ng-change="onSelect()"> <label for="{{'voiceline' + $index}}"><h3>{{voiceline.name}} {{ voiceline.quality | itemPrice:'voiceline':true}}</h3></label>
+                </div>
+            </div>
+        </div>
+        <div class="section" ng-if="selectedHeroHas('sprays')">
+            <h2>Sprays</h2>
+            <div class="items">
+                <div class="item item-quality-{{spray.quality || 'unknown'}}" ng-repeat="spray in data.items.sprays track by $index" ng-if="spray.hero == selectedHero || (!spray.hero && selectedHero == 'global')" ng-mouseover="showPreview(spray)" ng-mouseleave="hidePreview()">
+                    <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked.sprays[spray.id]" ng-change="onSelect()"> <label for="{{'spray' + $index}}"><h3>{{spray.name}} {{ spray.quality | itemPrice:'spray':true}}</h3></label>
+                </div>
+            </div>
+        </div>
+        <div class="section" ng-if="selectedHeroHas('intros')">
+            <h2>Highlight Intros</h2>
+            <div class="items">
+                <div class="item item-quality-{{intro.quality || 'unknown'}}" ng-repeat="intro in data.items.intros track by $index" ng-if="intro.hero == selectedHero" ng-mouseover="showPreview(intro)" ng-mouseleave="hidePreview()">
+                    <input type="checkbox" id="{{'intro' + $index}}" ng-model="checked.intros[intro.id]" ng-change="onSelect()"> <label for="{{'intro' + $index}}"><h3>{{intro.name}} {{ intro.quality | itemPrice:'intro':true}}</h3></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
