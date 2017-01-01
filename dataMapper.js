@@ -207,6 +207,10 @@ Object.keys(heroes).forEach(hKey => {
       var u = getImageURL(type, event, item.id)
       var url = type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: u } : { img: u })
       var newItem = Object.assign({}, { hero: hero.name }, legend, item, url )
+      if (type == 'icons') {
+        delete newItem.hero
+        delete newItem.quality
+      }
       delete newItem.event
       updates[event][type].push(newItem)
     })
@@ -232,8 +236,7 @@ Object.keys(allClassItems).forEach(type => {
       var out = {
         name: isSpecial ? item[0] : item,
         id: itemID,
-        img: getImageURL(type, event, itemID),
-        allClass: true
+        img: getImageURL(type, event, itemID)
       }
       if (type == 'sprays' && isSpecial) {
         Object.assign(out, { quality: 'common' })
