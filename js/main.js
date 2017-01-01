@@ -113,7 +113,7 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       $scope.preview = false;
 
       $scope.checked = Data.checked[$scope.data.id];
-      
+
       $scope.viewMode = StorageService.getSetting('viewMode') || 'item-type';
       $scope.viewModes = {
         'item-type': 'By item type',
@@ -123,7 +123,7 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
         $scope.viewMode = viewMode;
         StorageService.setSetting('viewMode', viewMode);
       }
-      
+
       $scope.onSelect = function() {
         Data.checked[$scope.data.id] = $scope.checked;
         StorageService.setData(Data.checked);
@@ -275,7 +275,7 @@ OWI.filter('heroPortraitUrl', function () {
     if (specialHeroes[hero]) {
       hero = specialHeroes[hero];
     }
-    return './resources/' + hero + '/portrait.png';
+    return './resources/' + hero + '/portrait-small.png';
   }
 });
 OWI.filter('itemPrice', function () {
@@ -286,7 +286,7 @@ OWI.filter('itemPrice', function () {
     // some icons have a character, quality and hence price assigned even though they are not buyable
     // shortcut those out
     if (type == 'icon') return '';
-    
+
     var prices = {
       common: 25,
       rare: 75,
