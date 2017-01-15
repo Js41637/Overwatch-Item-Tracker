@@ -16,581 +16,1433 @@ OWI.factory('Data', function() {
       name: 'Summer Games 2016',
       id: 'summergames2016',
       items: {
-        skinsLegendary: [{
-          name: "Selecao",
-          img: "./resources/summergames2016/skins/legendary/lucio.jpg"
-        }, {
-          name: "Striker",
-          img: "./resources/summergames2016/skins/legendary/lucio2.jpg"
-        }, {
-          name: "Sprinter",
-          img: "./resources/summergames2016/skins/legendary/tracer.jpg"
-        }, {
-          name: "Track & Field",
-          img: "./resources/summergames2016/skins/legendary/tracer2.jpg"
-        }, {
-          name: "Weightlifter",
-          img: "./resources/summergames2016/skins/legendary/zarya.jpg"
-        }, {
-          name: "Champion",
-          img: "./resources/summergames2016/skins/legendary/zarya2.jpg"
-        }],
-        skinsEpic: [{
-          name: "Taegeukgi D.Va",
-          img: "./resources/summergames2016/skins/epic/dva.jpg"
-        }, {
-          name: "Nihon Genji",
-          img: "./resources/summergames2016/skins/epic/genji.jpg"
-        }, {
-          name: "American Mccree",
-          img: "./resources/summergames2016/skins/epic/mccree.jpg"
-        }, {
-          name: "Edigenossin Mercy",
-          img: "./resources/summergames2016/skins/epic/mercy.jpg"
-        }, {
-          name: "Tre Kronor Torbj\u00D6rn",
-          img: "./resources/summergames2016/skins/epic/torbjorn.jpg"
-        }, {
-          name: "Tricolore Widowmaker",
-          img: "./resources/summergames2016/skins/epic/widowmaker.jpg"
-        }],
-        intros: [{
-          name: "Shotput Junkrat",
-          video: "./resources/summergames2016/intros/junkrat.webm"
-        }, {
-          name: "Bicycle Kick L\u00DAcio",
-          video: "./resources/summergames2016/intros/lucio.webm"
-        }, {
-          name: "Hurdle Tracer",
-          video: "./resources/summergames2016/intros/tracer.webm"
-        }],
-        emotes: [{
-          name: "Boxing Bastion",
-          video: "./resources/summergames2016/emotes/bastion.webm"
-        }, {
-          name: "Juggle L\u00DAcio",
-          video: "./resources/summergames2016/emotes/lucio.webm"
-        }, {
-          name: "Ribbon Symmetra",
-          video: "./resources/summergames2016/emotes/symmetra.webm"
-        }],
-        voicelines: [
-          "Ana", "Bastion", "D.Va", "Genji", "Hanzo",
-          "Junkrat", "L\u00DAcio", "McCree", "Mei", "Mercy",
-          "Pharah", "Reaper", "Reinhardt", "Roadhog",
-          "Soldier: 76", "Symmetra", "Torbj\u00D6rn", "Tracer",
-          "Widowmaker", "Winston", "Zarya", "Zenyatta"
+        "icons": [
+          {
+            "name": "Archery",
+            "id": "hanzo-archery",
+            "img": "./resources/SUMMER_GAMES_2016/icons/hanzo-archery.png"
+          },
+          {
+            "name": "Australia",
+            "id": "australia",
+            "img": "./resources/SUMMER_GAMES_2016/icons/australia.png"
+          },
+          {
+            "name": "BMX",
+            "id": "reaper-bmx",
+            "img": "./resources/SUMMER_GAMES_2016/icons/reaper-bmx.png"
+          },
+          {
+            "name": "Badminton",
+            "id": "mercy-badminton",
+            "img": "./resources/SUMMER_GAMES_2016/icons/mercy-badminton.png"
+          },
+          {
+            "name": "Basketball",
+            "id": "pharah-basketball",
+            "img": "./resources/SUMMER_GAMES_2016/icons/pharah-basketball.png"
+          },
+          {
+            "name": "Boxing",
+            "id": "bastion-boxing",
+            "img": "./resources/SUMMER_GAMES_2016/icons/bastion-boxing.png"
+          },
+          {
+            "name": "Brazil",
+            "id": "brazil",
+            "img": "./resources/SUMMER_GAMES_2016/icons/brazil.png"
+          },
+          {
+            "name": "China",
+            "id": "china",
+            "img": "./resources/SUMMER_GAMES_2016/icons/china.png"
+          },
+          {
+            "name": "Cycling",
+            "id": "dva-cycling",
+            "img": "./resources/SUMMER_GAMES_2016/icons/dva-cycling.png"
+          },
+          {
+            "name": "Diving",
+            "id": "roadhog-diving",
+            "img": "./resources/SUMMER_GAMES_2016/icons/roadhog-diving.png"
+          },
+          {
+            "name": "Egypt",
+            "id": "egypt",
+            "img": "./resources/SUMMER_GAMES_2016/icons/egypt.png"
+          },
+          {
+            "name": "Equestrian",
+            "id": "mccree-equestrian",
+            "img": "./resources/SUMMER_GAMES_2016/icons/mccree-equestrian.png"
+          },
+          {
+            "name": "Fencing",
+            "id": "genji-fencing",
+            "img": "./resources/SUMMER_GAMES_2016/icons/genji-fencing.png"
+          },
+          {
+            "name": "Football",
+            "id": "lucio-football",
+            "img": "./resources/SUMMER_GAMES_2016/icons/lucio-football.png"
+          },
+          {
+            "name": "France",
+            "id": "france",
+            "img": "./resources/SUMMER_GAMES_2016/icons/france.png"
+          },
+          {
+            "name": "Germany",
+            "id": "germany",
+            "img": "./resources/SUMMER_GAMES_2016/icons/germany.png"
+          },
+          {
+            "name": "Golf",
+            "id": "soldier-76-golf",
+            "img": "./resources/SUMMER_GAMES_2016/icons/soldier-76-golf.png"
+          },
+          {
+            "name": "Greece",
+            "id": "greece",
+            "img": "./resources/SUMMER_GAMES_2016/icons/greece.png"
+          },
+          {
+            "name": "Gymnastics",
+            "id": "widowmaker-gymnastics",
+            "img": "./resources/SUMMER_GAMES_2016/icons/widowmaker-gymnastics.png"
+          },
+          {
+            "name": "Japan",
+            "id": "japan",
+            "img": "./resources/SUMMER_GAMES_2016/icons/japan.png"
+          },
+          {
+            "name": "Mexico",
+            "id": "mexico",
+            "img": "./resources/SUMMER_GAMES_2016/icons/mexico.png"
+          },
+          {
+            "name": "Nepal",
+            "id": "nepal",
+            "img": "./resources/SUMMER_GAMES_2016/icons/nepal.png"
+          },
+          {
+            "name": "Numbani",
+            "id": "numbani",
+            "img": "./resources/SUMMER_GAMES_2016/icons/numbani.png"
+          },
+          {
+            "name": "Rhythmic Gymnastics",
+            "id": "symmetra-rhythmic-gymnastics",
+            "img": "./resources/SUMMER_GAMES_2016/icons/symmetra-rhythmic-gymnastics.png"
+          },
+          {
+            "name": "Russia",
+            "id": "russia",
+            "img": "./resources/SUMMER_GAMES_2016/icons/russia.png"
+          },
+          {
+            "name": "Shooting",
+            "id": "ana-shooting",
+            "img": "./resources/SUMMER_GAMES_2016/icons/ana-shooting.png"
+          },
+          {
+            "name": "South Korea",
+            "id": "south-korea",
+            "img": "./resources/SUMMER_GAMES_2016/icons/south-korea.png"
+          },
+          {
+            "name": "Summer Games",
+            "id": "summer-games",
+            "img": "./resources/SUMMER_GAMES_2016/icons/summer-games.png"
+          },
+          {
+            "name": "Sweden",
+            "id": "sweden",
+            "img": "./resources/SUMMER_GAMES_2016/icons/sweden.png"
+          },
+          {
+            "name": "Switzerland",
+            "id": "switzerland",
+            "img": "./resources/SUMMER_GAMES_2016/icons/switzerland.png"
+          },
+          {
+            "name": "Table Tennis",
+            "id": "mei-table-tennis",
+            "img": "./resources/SUMMER_GAMES_2016/icons/mei-table-tennis.png"
+          },
+          {
+            "name": "Taekwondo",
+            "id": "zenyatta-taekwondo",
+            "img": "./resources/SUMMER_GAMES_2016/icons/zenyatta-taekwondo.png"
+          },
+          {
+            "name": "Tennis",
+            "id": "junkrat-tennis",
+            "img": "./resources/SUMMER_GAMES_2016/icons/junkrat-tennis.png"
+          },
+          {
+            "name": "Track",
+            "id": "tracer-track",
+            "img": "./resources/SUMMER_GAMES_2016/icons/tracer-track.png"
+          },
+          {
+            "name": "United Kingdom",
+            "id": "united-kingdom",
+            "img": "./resources/SUMMER_GAMES_2016/icons/united-kingdom.png"
+          },
+          {
+            "name": "United States",
+            "id": "united-states",
+            "img": "./resources/SUMMER_GAMES_2016/icons/united-states.png"
+          },
+          {
+            "name": "Volleyball",
+            "id": "winston-volleyball",
+            "img": "./resources/SUMMER_GAMES_2016/icons/winston-volleyball.png"
+          },
+          {
+            "name": "Water Polo",
+            "id": "torbjorn-water-polo",
+            "img": "./resources/SUMMER_GAMES_2016/icons/torbjorn-water-polo.png"
+          },
+          {
+            "name": "Weightlifting",
+            "id": "zarya-weightlifting",
+            "img": "./resources/SUMMER_GAMES_2016/icons/zarya-weightlifting.png"
+          },
+          {
+            "name": "Wrestling",
+            "id": "reinhardt-wrestling",
+            "img": "./resources/SUMMER_GAMES_2016/icons/reinhardt-wrestling.png"
+          }
         ],
-        poses: [{
-          name: "Mei",
-          img: "./resources/summergames2016/poses/mei.jpg"
-        }, {
-          name: "Pharah",
-          img: "./resources/summergames2016/poses/pharah.jpg"
-        }, {
-          name: "Reaper",
-          img: "./resources/summergames2016/poses/reaper.jpg"
-        }, {
-          name: "Roadhog",
-          img: "./resources/summergames2016/poses/roadhog.jpg"
-        }, {
-          name: "Soldier: 76",
-          img: "./resources/summergames2016/poses/soldier76.jpg"
-        }, {
-          name: "Torbj\u00D6rn",
-          img: "./resources/summergames2016/poses/torbjorn.jpg"
-        }, {
-          name: "Widowmaker",
-          img: "./resources/summergames2016/poses/widowmaker.jpg"
-        }, {
-          name: "Winston",
-          img: "./resources/summergames2016/poses/winston.jpg"
-        }, {
-          name: "Zenyatta",
-          img: "./resources/summergames2016/poses/zenyatta.jpg"
-        }],
-        sprays: [{
-          name: "Ana",
-          img: "./resources/summergames2016/sprays/ana.jpg"
-        }, {
-          name: "Bastion",
-          img: "./resources/summergames2016/sprays/bastion.jpg"
-        }, {
-          name: "D.Va",
-          img: "./resources/summergames2016/sprays/dva.jpg"
-        }, {
-          name: "Genji",
-          img: "./resources/summergames2016/sprays/genji.jpg"
-        }, {
-          name: "Hanzo",
-          img: "./resources/summergames2016/sprays/hanzo.jpg"
-        }, {
-          name: "Junkrat",
-          img: "./resources/summergames2016/sprays/junkrat.jpg"
-        }, {
-          name: "L\u00DAcio",
-          img: "./resources/summergames2016/sprays/lucio.jpg"
-        }, {
-          name: "McCree",
-          img: "./resources/summergames2016/sprays/mccree.jpg"
-        }, {
-          name: "Mei",
-          img: "./resources/summergames2016/sprays/mei.jpg"
-        }, {
-          name: "Mercy",
-          img: "./resources/summergames2016/sprays/mercy.jpg"
-        }, {
-          name: "Pharah",
-          img: "./resources/summergames2016/sprays/pharah.jpg"
-        }, {
-          name: "Reaper",
-          img: "./resources/summergames2016/sprays/reaper.jpg"
-        }, {
-          name: "Reinhardt",
-          img: "./resources/summergames2016/sprays/reinhardt.jpg"
-        }, {
-          name: "Roadhog",
-          img: "./resources/summergames2016/sprays/roadhog.jpg"
-        }, {
-          name: "Soldier: 76",
-          img: "./resources/summergames2016/sprays/soldier76.jpg"
-        }, {
-          name: "Symmetra",
-          img: "./resources/summergames2016/sprays/symmetra.jpg"
-        }, {
-          name: "Torbj\u00D6rn",
-          img: "./resources/summergames2016/sprays/torbjorn.jpg"
-        }, {
-          name: "Tracer",
-          img: "./resources/summergames2016/sprays/tracer.jpg"
-        }, {
-          name: "Widowmaker",
-          img: "./resources/summergames2016/sprays/widowmaker.jpg"
-        }, {
-          name: "Winston",
-          img: "./resources/summergames2016/sprays/winston.jpg"
-        }, {
-          name: "Zarya",
-          img: "./resources/summergames2016/sprays/zarya.jpg"
-        }, {
-          name: "Zenyatta",
-          img: "./resources/summergames2016/sprays/zenyatta.jpg"
-        }, {
-          name: "Summer Games 2016",
-          img: "./resources/summergames2016/sprays/summergames2016.jpg"
-        }],
-        icons: [{
-          name: "Archery",
-          img: "./resources/summergames2016/icons/archery.png"
-        }, {
-          name: "Badminton",
-          img: "./resources/summergames2016/icons/badminton.png"
-        }, {
-          name: "Basketball",
-          img: "./resources/summergames2016/icons/basketball.png"
-        }, {
-          name: "BMX",
-          img: "./resources/summergames2016/icons/dirtbiking.png"
-        }, {
-          name: "Boxing",
-          img: "./resources/summergames2016/icons/boxing.png"
-        }, {
-          name: "Cycling",
-          img: "./resources/summergames2016/icons/cycling.png"
-        }, {
-          name: "Equestrian",
-          img: "./resources/summergames2016/icons/equestrian.png"
-        }, {
-          name: "Diving",
-          img: "./resources/summergames2016/icons/diving.png"
-        }, {
-          name: "Fencing",
-          img: "./resources/summergames2016/icons/fencing.png"
-        }, {
-          name: "Football",
-          img: "./resources/summergames2016/icons/football.png"
-        }, {
-          name: "Golf",
-          img: "./resources/summergames2016/icons/golf.png"
-        }, {
-          name: "Gymnastics",
-          img: "./resources/summergames2016/icons/gymnastics.png"
-        }, {
-          name: "Rhythmic Gymnastics",
-          img: "./resources/summergames2016/icons/rhythmicgymnastics.png"
-        }, {
-          name: "Shooting",
-          img: "./resources/summergames2016/icons/shooting.png"
-        }, {
-          name: "Table Tennis",
-          img: "./resources/summergames2016/icons/tabletennis.png"
-        }, {
-          name: "Taekwondo",
-          img: "./resources/summergames2016/icons/martialarts.png"
-        }, {
-          name: "Tennis",
-          img: "./resources/summergames2016/icons/tennis.png"
-        }, {
-          name: "Track",
-          img: "./resources/summergames2016/icons/track.png"
-        }, {
-          name: "Volleyball",
-          img: "./resources/summergames2016/icons/volleyball.png"
-        }, {
-          name: "Water Polo",
-          img: "./resources/summergames2016/icons/waterpolo.png"
-        }, {
-          name: "Weightlifting",
-          img: "./resources/summergames2016/icons/weightlifting.png"
-        }, {
-          name: "Wrestling",
-          img: "./resources/summergames2016/icons/wrestling.png"
-        }, {
-          name: "Summer Games",
-          img: "./resources/summergames2016/icons/summergames.png"
-        }, {
-          name: "Australia",
-          img: "./resources/summergames2016/icons/flags/australia.png"
-        }, {
-          name: "Brazil",
-          img: "./resources/summergames2016/icons/flags/brazil.png"
-        }, {
-          name: "China",
-          img: "./resources/summergames2016/icons/flags/china.png"
-        }, {
-          name: "Egypt",
-          img: "./resources/summergames2016/icons/flags/egypt.png"
-        }, {
-          name: "France",
-          img: "./resources/summergames2016/icons/flags/france.png"
-        }, {
-          name: "Germany",
-          img: "./resources/summergames2016/icons/flags/germany.png"
-        }, {
-          name: "Greece",
-          img: "./resources/summergames2016/icons/flags/greece.png"
-        }, {
-          name: "Japan",
-          img: "./resources/summergames2016/icons/flags/japan.png"
-        }, {
-          name: "Mexico",
-          img: "./resources/summergames2016/icons/flags/mexico.png"
-        }, {
-          name: "Nepal",
-          img: "./resources/summergames2016/icons/flags/nepal.png"
-        }, {
-          name: "Numbani",
-          img: "./resources/summergames2016/icons/flags/numbani.png"
-        }, {
-          name: "Russia",
-          img: "./resources/summergames2016/icons/flags/russia.png"
-        }, {
-          name: "South Korea",
-          img: "./resources/summergames2016/icons/flags/southkorea.png"
-        }, {
-          name: "Sweden",
-          img: "./resources/summergames2016/icons/flags/sweden.png"
-        }, {
-          name: "Switzerland",
-          img: "./resources/summergames2016/icons/flags/switzerland.png"
-        }, {
-          name: "United Kingdom",
-          img: "./resources/summergames2016/icons/flags/unitedkingdom.png"
-        }, {
-          name: "United States",
-          img: "./resources/summergames2016/icons/flags/unitedstates.png"
-        }],
+        "sprays": [
+          {
+            "hero": "Ana",
+            "name": "Shooting",
+            "id": "ana-shooting",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/ana-shooting.png"
+          },
+          {
+            "hero": "Bastion",
+            "name": "Boxing",
+            "id": "bastion-boxing",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/bastion-boxing.png"
+          },
+          {
+            "hero": "D.Va",
+            "name": "Cycling",
+            "id": "dva-cycling",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/dva-cycling.png"
+          },
+          {
+            "hero": "Genji",
+            "name": "Fencing",
+            "id": "genji-fencing",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/genji-fencing.png"
+          },
+          {
+            "hero": "Hanzo",
+            "name": "Archery",
+            "id": "hanzo-archery",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/hanzo-archery.png"
+          },
+          {
+            "hero": "Junkrat",
+            "name": "Tennis",
+            "id": "junkrat-tennis",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/junkrat-tennis.png"
+          },
+          {
+            "hero": "Lúcio",
+            "name": "Football",
+            "id": "lucio-football",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/lucio-football.png"
+          },
+          {
+            "hero": "McCree",
+            "name": "Equestrian",
+            "id": "mccree-equestrian",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/mccree-equestrian.png"
+          },
+          {
+            "hero": "Mei",
+            "name": "Table Tennis",
+            "id": "mei-table-tennis",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/mei-table-tennis.png"
+          },
+          {
+            "hero": "Mercy",
+            "name": "Badminton",
+            "id": "mercy-badminton",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/mercy-badminton.png"
+          },
+          {
+            "hero": "Pharah",
+            "name": "Basketball",
+            "id": "pharah-basketball",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/pharah-basketball.png"
+          },
+          {
+            "hero": "Reaper",
+            "name": "BMX",
+            "id": "reaper-bmx",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/reaper-bmx.png"
+          },
+          {
+            "hero": "Reinhardt",
+            "name": "Wrestling",
+            "id": "reinhardt-wrestling",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/reinhardt-wrestling.png"
+          },
+          {
+            "hero": "Roadhog",
+            "name": "Diving",
+            "id": "roadhog-diving",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/roadhog-diving.png"
+          },
+          {
+            "hero": "Soldier: 76",
+            "name": "Golf",
+            "id": "soldier-76-golf",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/soldier-76-golf.png"
+          },
+          {
+            "hero": "Symmetra",
+            "name": "Rhythmic",
+            "id": "symmetra-rhythmic",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/symmetra-rhythmic.png"
+          },
+          {
+            "hero": "Torbjörn",
+            "name": "Water Polo",
+            "id": "torbjorn-water-polo",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/torbjorn-water-polo.png"
+          },
+          {
+            "hero": "Tracer",
+            "name": "Track",
+            "id": "tracer-track",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/tracer-track.png"
+          },
+          {
+            "hero": "Widowmaker",
+            "name": "Gymnastics",
+            "id": "widowmaker-gymnastics",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/widowmaker-gymnastics.png"
+          },
+          {
+            "hero": "Winston",
+            "name": "Volleyball",
+            "id": "winston-volleyball",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/winston-volleyball.png"
+          },
+          {
+            "hero": "Zarya",
+            "name": "Weightlifting",
+            "id": "zarya-weightlifting",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/zarya-weightlifting.png"
+          },
+          {
+            "hero": "Zenyatta",
+            "name": "Taekwondo",
+            "id": "zenyatta-taekwondo",
+            "quality": "common",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/zenyatta-taekwondo.png"
+          },
+          {
+            "name": "Summer Games",
+            "id": "summer-games",
+            "img": "./resources/SUMMER_GAMES_2016/sprays/summer-games.png"
+          }
+        ],
+        "voicelines": [
+          {
+            "hero": "Ana",
+            "name": "Learn from the Pain",
+            "id": "ana-learn-from-the-pain",
+            "quality": "common"
+          },
+          {
+            "hero": "Bastion",
+            "name": "WHOO-VWEEEEEE",
+            "id": "bastion-whoovweeeeee",
+            "quality": "common"
+          },
+          {
+            "hero": "D.Va",
+            "name": "I'm #1",
+            "id": "dva-im-1",
+            "quality": "common"
+          },
+          {
+            "hero": "Genji",
+            "name": "I was hoping for a challenge",
+            "id": "genji-i-was-hoping-for-a-challenge",
+            "quality": "common"
+          },
+          {
+            "hero": "Hanzo",
+            "name": "Ignore all distractions",
+            "id": "hanzo-ignore-all-distractions",
+            "quality": "common"
+          },
+          {
+            "hero": "Junkrat",
+            "name": "I give it a 10!",
+            "id": "junkrat-i-give-it-a-10",
+            "quality": "common"
+          },
+          {
+            "hero": "Lúcio",
+            "name": "Be champions",
+            "id": "lucio-be-champions",
+            "quality": "common"
+          },
+          {
+            "hero": "McCree",
+            "name": "I don't much like losing",
+            "id": "mccree-i-dont-much-like-losing",
+            "quality": "common"
+          },
+          {
+            "hero": "Mei",
+            "name": "Overcome all obstacles",
+            "id": "mei-overcome-all-obstacles",
+            "quality": "common"
+          },
+          {
+            "hero": "Mercy",
+            "name": "Piece of cake",
+            "id": "mercy-piece-of-cake",
+            "quality": "common"
+          },
+          {
+            "hero": "Pharah",
+            "name": "We are in this together",
+            "id": "pharah-we-are-in-this-together",
+            "quality": "common"
+          },
+          {
+            "hero": "Reaper",
+            "name": "It's in the refrigerator",
+            "id": "reaper-its-in-the-refrigerator",
+            "quality": "common"
+          },
+          {
+            "hero": "Reinhardt",
+            "name": "100%% German power",
+            "id": "reinhardt-100-german-power",
+            "quality": "common"
+          },
+          {
+            "hero": "Roadhog",
+            "name": "What's mine is mine",
+            "id": "roadhog-whats-mine-is-mine",
+            "quality": "common"
+          },
+          {
+            "hero": "Soldier: 76",
+            "name": "You want a medal?",
+            "id": "soldier-76-you-want-a-medal",
+            "quality": "common"
+          },
+          {
+            "hero": "Symmetra",
+            "name": "Hard work and dedication",
+            "id": "symmetra-hard-work-and-dedication",
+            "quality": "common"
+          },
+          {
+            "hero": "Torbjörn",
+            "name": "More where that came from",
+            "id": "torbjorn-more-where-that-came-from",
+            "quality": "common"
+          },
+          {
+            "hero": "Tracer",
+            "name": "Eat my dust",
+            "id": "tracer-eat-my-dust",
+            "quality": "common"
+          },
+          {
+            "hero": "Widowmaker",
+            "name": "I don't miss",
+            "id": "widowmaker-i-dont-miss",
+            "quality": "common"
+          },
+          {
+            "hero": "Winston",
+            "name": "Playtime's over",
+            "id": "winston-playtimes-over",
+            "quality": "common"
+          },
+          {
+            "hero": "Zarya",
+            "name": "No pain, no gain",
+            "id": "zarya-no-pain-no-gain",
+            "quality": "common"
+          },
+          {
+            "hero": "Zenyatta",
+            "name": "Strive for improvement",
+            "id": "zenyatta-strive-for-improvement",
+            "quality": "common"
+          }
+        ],
+        "emotes": [
+          {
+            "hero": "Bastion",
+            "name": "Boxing",
+            "id": "bastion-boxing",
+            "quality": "epic",
+            "video": "./resources/SUMMER_GAMES_2016/emotes/bastion-boxing.webm"
+          },
+          {
+            "hero": "Lúcio",
+            "name": "Juggle",
+            "id": "lucio-juggle",
+            "quality": "epic",
+            "video": "./resources/SUMMER_GAMES_2016/emotes/lucio-juggle.webm"
+          },
+          {
+            "hero": "Symmetra",
+            "name": "Ribbon",
+            "id": "symmetra-ribbon",
+            "quality": "epic",
+            "video": "./resources/SUMMER_GAMES_2016/emotes/symmetra-ribbon.webm"
+          }
+        ],
+        "skinsEpic": [
+          {
+            "hero": "McCree",
+            "name": "American",
+            "id": "mccree-american",
+            "quality": "epic",
+            "img": "./resources/SUMMER_GAMES_2016/skinsEpic/mccree-american.jpg"
+          },
+          {
+            "hero": "Mercy",
+            "name": "Eidgenossin",
+            "id": "mercy-eidgenossin",
+            "quality": "epic",
+            "img": "./resources/SUMMER_GAMES_2016/skinsEpic/mercy-eidgenossin.jpg"
+          },
+          {
+            "hero": "Genji",
+            "name": "Nihon",
+            "id": "genji-nihon",
+            "quality": "epic",
+            "img": "./resources/SUMMER_GAMES_2016/skinsEpic/genji-nihon.jpg"
+          },
+          {
+            "hero": "D.Va",
+            "name": "Taegeukgi",
+            "id": "dva-taegeukgi",
+            "quality": "epic",
+            "img": "./resources/SUMMER_GAMES_2016/skinsEpic/dva-taegeukgi.jpg"
+          },
+          {
+            "hero": "Torbjörn",
+            "name": "Tre Kronor",
+            "id": "torbjorn-tre-kronor",
+            "quality": "epic",
+            "img": "./resources/SUMMER_GAMES_2016/skinsEpic/torbjorn-tre-kronor.jpg"
+          },
+          {
+            "hero": "Widowmaker",
+            "name": "Tricolore",
+            "id": "widowmaker-tricolore",
+            "quality": "epic",
+            "img": "./resources/SUMMER_GAMES_2016/skinsEpic/widowmaker-tricolore.jpg"
+          }
+        ],
+        "intros": [
+          {
+            "hero": "Lúcio",
+            "name": "Bicycle Kick",
+            "id": "lucio-bicycle-kick",
+            "quality": "epic",
+            "video": "./resources/SUMMER_GAMES_2016/intros/lucio-bicycle-kick.webm"
+          },
+          {
+            "hero": "Tracer",
+            "name": "Hurdle",
+            "id": "tracer-hurdle",
+            "quality": "epic",
+            "video": "./resources/SUMMER_GAMES_2016/intros/tracer-hurdle.webm"
+          },
+          {
+            "hero": "Junkrat",
+            "name": "Shot Put",
+            "id": "junkrat-shot-put",
+            "quality": "epic",
+            "video": "./resources/SUMMER_GAMES_2016/intros/junkrat-shot-put.webm"
+          }
+        ],
+        "skinsLegendary": [
+          {
+            "hero": "Zarya",
+            "name": "Champion",
+            "id": "zarya-champion",
+            "quality": "legendary",
+            "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/zarya-champion.jpg"
+          },
+          {
+            "hero": "Lúcio",
+            "name": "Seleção",
+            "id": "lucio-selecao",
+            "quality": "legendary",
+            "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/lucio-selecao.jpg"
+          },
+          {
+            "hero": "Tracer",
+            "name": "Sprinter",
+            "id": "tracer-sprinter",
+            "quality": "legendary",
+            "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/tracer-sprinter.jpg"
+          },
+          {
+            "hero": "Lúcio",
+            "name": "Striker",
+            "id": "lucio-striker",
+            "quality": "legendary",
+            "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/lucio-striker.jpg"
+          },
+          {
+            "hero": "Tracer",
+            "name": "Track and Field",
+            "id": "tracer-track-and-field",
+            "quality": "legendary",
+            "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/tracer-track-and-field.jpg"
+          },
+          {
+            "hero": "Zarya",
+            "name": "Weightlifter",
+            "id": "zarya-weightlifter",
+            "quality": "legendary",
+            "img": "./resources/SUMMER_GAMES_2016/skinsLegendary/zarya-weightlifter.jpg"
+          }
+        ],
+        "poses": [
+          {
+            "hero": "Soldier: 76",
+            "name": "Golf Swing",
+            "id": "soldier-76-golf-swing",
+            "quality": "rare",
+            "img": "./resources/SUMMER_GAMES_2016/poses/soldier-76-golf-swing.jpg"
+          },
+          {
+            "hero": "Mei",
+            "name": "Medal",
+            "id": "mei-medal",
+            "quality": "rare",
+            "img": "./resources/SUMMER_GAMES_2016/poses/mei-medal.jpg"
+          },
+          {
+            "hero": "Pharah",
+            "name": "Medal",
+            "id": "pharah-medal",
+            "quality": "rare",
+            "img": "./resources/SUMMER_GAMES_2016/poses/pharah-medal.jpg"
+          },
+          {
+            "hero": "Reaper",
+            "name": "Medal",
+            "id": "reaper-medal",
+            "quality": "rare",
+            "img": "./resources/SUMMER_GAMES_2016/poses/reaper-medal.jpg"
+          },
+          {
+            "hero": "Roadhog",
+            "name": "Medal",
+            "id": "roadhog-medal",
+            "quality": "rare",
+            "img": "./resources/SUMMER_GAMES_2016/poses/roadhog-medal.jpg"
+          },
+          {
+            "hero": "Torbjörn",
+            "name": "Medal",
+            "id": "torbjorn-medal",
+            "quality": "rare",
+            "img": "./resources/SUMMER_GAMES_2016/poses/torbjorn-medal.jpg"
+          },
+          {
+            "hero": "Widowmaker",
+            "name": "Medal",
+            "id": "widowmaker-medal",
+            "quality": "rare",
+            "img": "./resources/SUMMER_GAMES_2016/poses/widowmaker-medal.jpg"
+          },
+          {
+            "hero": "Winston",
+            "name": "Medal",
+            "id": "winston-medal",
+            "quality": "rare",
+            "img": "./resources/SUMMER_GAMES_2016/poses/winston-medal.jpg"
+          },
+          {
+            "hero": "Zenyatta",
+            "name": "Medals",
+            "id": "zenyatta-medals",
+            "quality": "rare",
+            "img": "./resources/SUMMER_GAMES_2016/poses/zenyatta-medals.jpg"
+          }
+        ]
       }
-    }, {
+    },
+    {
       name: 'Halloween 2016',
       id: 'halloween2016',
       items: {
-        skinsLegendary: [{
-          name: "Junkenstein Junkrat",
-          img: "./resources/halloween2016/skins/legendary/junkrat.jpg"
-        }, {
-          name: "Monster Roadhog",
-          img: "./resources/halloween2016/skins/legendary/roadhog.jpg"
-        }, {
-          name: "Witch Mercy",
-          img: "./resources/halloween2016/skins/legendary/mercy.jpg"
-        }, {
-          name: "Pumpkin Reaper",
-          img: "./resources/halloween2016/skins/legendary/reaper.jpg"
-        }],
-        skinsEpic: [{
-          name: "Ghoul Ana",
-          img: "./resources/halloween2016/skins/epic/ana.jpg"
-        }, {
-          name: "Tombstone Bastion",
-          img: "./resources/halloween2016/skins/epic/bastion.jpg"
-        }, {
-          name: "Demon Hanzo",
-          img: "./resources/halloween2016/skins/epic/hanzo.jpg"
-        }, {
-          name: "Possessed Pharah",
-          img: "./resources/halloween2016/skins/epic/pharah.jpg"
-        }, {
-          name: "Coldhardt Reinhardt",
-          img: "./resources/halloween2016/skins/epic/reinhardt.jpg"
-        }, {
-          name: "Immortal Soldier: 76",
-          img: "./resources/halloween2016/skins/epic/soldier76.jpg"
-        }, {
-          name: "Vampire Symmetra",
-          img: "./resources/halloween2016/skins/epic/symmetra.jpg"
-        }, {
-          name: "Skullyata Zenyatta",
-          img: "./resources/halloween2016/skins/epic/zenyatta.jpg"
-        }],
-        intros: [{
-          name: "Pumpkin Carving Genji",
-          video: "./resources/halloween2016/intros/genji.webm"
-        }, {
-          name: "Ice Scream Mei",
-          video: "./resources/halloween2016/intros/mei.webm"
-        }, {
-          name: "Eternal Rest Reaper",
-          video: "./resources/halloween2016/intros/reaper.webm"
-        }],
-        emotes: [{
-          name: "Candy Ana",
-          video: "./resources/halloween2016/emotes/ana.webm"
-        }, {
-          name: "Pumpkin Smashing Reinhardt",
-          video: "./resources/halloween2016/emotes/reinhardt.webm"
-        }, {
-          name: "Shadow Puppets Winston",
-          video: "./resources/halloween2016/emotes/winston.webm"
-        }],
-        voicelines: [
-          "Ana", "Bastion", "D.Va", "Genji", "Hanzo",
-          "Junkrat", "L\u00DAcio", "McCree", "Mei", "Mercy",
-          "Pharah", "Reaper", "Reinhardt", "Roadhog",
-          "Soldier: 76", "Symmetra", "Torbj\u00D6rn", "Tracer",
-          "Widowmaker", "Winston", "Zarya", "Zenyatta"
+        "skinsEpic": [
+          {
+            "hero": "Reinhardt",
+            "name": "Coldhardt",
+            "id": "reinhardt-coldhardt",
+            "quality": "epic",
+            "img": "./resources/HALLOWEEN_2016/skinsEpic/reinhardt-coldhardt.jpg"
+          },
+          {
+            "hero": "Hanzo",
+            "name": "Demon",
+            "id": "hanzo-demon",
+            "quality": "epic",
+            "img": "./resources/HALLOWEEN_2016/skinsEpic/hanzo-demon.jpg"
+          },
+          {
+            "hero": "Ana",
+            "name": "Ghoul",
+            "id": "ana-ghoul",
+            "quality": "epic",
+            "img": "./resources/HALLOWEEN_2016/skinsEpic/ana-ghoul.jpg"
+          },
+          {
+            "hero": "Soldier: 76",
+            "name": "Immortal",
+            "id": "soldier-76-immortal",
+            "quality": "epic",
+            "img": "./resources/HALLOWEEN_2016/skinsEpic/soldier-76-immortal.jpg"
+          },
+          {
+            "hero": "Pharah",
+            "name": "Possessed",
+            "id": "pharah-possessed",
+            "quality": "epic",
+            "img": "./resources/HALLOWEEN_2016/skinsEpic/pharah-possessed.jpg"
+          },
+          {
+            "hero": "Zenyatta",
+            "name": "Skullyatta",
+            "id": "zenyatta-skullyatta",
+            "quality": "epic",
+            "img": "./resources/HALLOWEEN_2016/skinsEpic/zenyatta-skullyatta.jpg"
+          },
+          {
+            "hero": "Bastion",
+            "name": "Tombstone",
+            "id": "bastion-tombstone",
+            "quality": "epic",
+            "img": "./resources/HALLOWEEN_2016/skinsEpic/bastion-tombstone.jpg"
+          },
+          {
+            "hero": "Symmetra",
+            "name": "Vampire",
+            "id": "symmetra-vampire",
+            "quality": "epic",
+            "img": "./resources/HALLOWEEN_2016/skinsEpic/symmetra-vampire.jpg"
+          }
         ],
-        poses: [{
-          name: "Ana",
-          img: "./resources/halloween2016/poses/ana.jpg"
-        }, {
-          name: "Bastion",
-          img: "./resources/halloween2016/poses/bastion.jpg"
-        }, {
-          name: "D.Va",
-          img: "./resources/halloween2016/poses/dva.jpg"
-        }, {
-          name: "Genji",
-          img: "./resources/halloween2016/poses/genji.jpg"
-        }, {
-          name: "Hanzo",
-          img: "./resources/halloween2016/poses/hanzo.jpg"
-        }, {
-          name: "Junkrat",
-          img: "./resources/halloween2016/poses/junkrat.jpg"
-        }, {
-          name: "L\u00DAcio",
-          img: "./resources/halloween2016/poses/lucio.jpg"
-        }, {
-          name: "McCree",
-          img: "./resources/halloween2016/poses/mccree.jpg"
-        }, {
-          name: "Mei",
-          img: "./resources/halloween2016/poses/mei.jpg"
-        }, {
-          name: "Mercy",
-          img: "./resources/halloween2016/poses/mercy.jpg"
-        }, {
-          name: "Pharah",
-          img: "./resources/halloween2016/poses/pharah.jpg"
-        }, {
-          name: "Reaper",
-          img: "./resources/halloween2016/poses/reaper.jpg"
-        }, {
-          name: "Reinhardt",
-          img: "./resources/halloween2016/poses/reinhardt.jpg"
-        }, {
-          name: "Roadhog",
-          img: "./resources/halloween2016/poses/roadhog.jpg"
-        }, {
-          name: "Soldier: 76",
-          img: "./resources/halloween2016/poses/soldier76.jpg"
-        }, {
-          name: "Symmetra",
-          img: "./resources/halloween2016/poses/symmetra.jpg"
-        }, {
-          name: "Torbj\u00D6rn",
-          img: "./resources/halloween2016/poses/torbjorn.jpg"
-        }, {
-          name: "Tracer",
-          img: "./resources/halloween2016/poses/tracer.jpg"
-        }, {
-          name: "Widowmaker",
-          img: "./resources/halloween2016/poses/widowmaker.jpg"
-        }, {
-          name: "Winston",
-          img: "./resources/halloween2016/poses/winston.jpg"
-        }, {
-          name: "Zarya",
-          img: "./resources/halloween2016/poses/zarya.jpg"
-        }, {
-          name: "Zenyatta",
-          img: "./resources/halloween2016/poses/zenyatta.jpg"
-        }],
-        sprays: [{
-          name: "Ana",
-          img: "./resources/halloween2016/sprays/ana.jpg"
-        }, {
-          name: "Bastion",
-          img: "./resources/halloween2016/sprays/bastion.jpg"
-        }, {
-          name: "D.Va",
-          img: "./resources/halloween2016/sprays/dva.jpg"
-        }, {
-          name: "Genji",
-          img: "./resources/halloween2016/sprays/genji.jpg"
-        }, {
-          name: "Hanzo",
-          img: "./resources/halloween2016/sprays/hanzo.jpg"
-        }, {
-          name: "Junkrat",
-          img: "./resources/halloween2016/sprays/junkrat.jpg"
-        }, {
-          name: "L\u00DAcio",
-          img: "./resources/halloween2016/sprays/lucio.jpg"
-        }, {
-          name: "McCree",
-          img: "./resources/halloween2016/sprays/mccree.jpg"
-        }, {
-          name: "Mei",
-          img: "./resources/halloween2016/sprays/mei.jpg"
-        }, {
-          name: "Mercy",
-          img: "./resources/halloween2016/sprays/mercy.jpg"
-        }, {
-          name: "Pharah",
-          img: "./resources/halloween2016/sprays/pharah.jpg"
-        }, {
-          name: "Reaper",
-          img: "./resources/halloween2016/sprays/reaper.jpg"
-        }, {
-          name: "Reinhardt",
-          img: "./resources/halloween2016/sprays/reinhardt.jpg"
-        }, {
-          name: "Roadhog",
-          img: "./resources/halloween2016/sprays/roadhog.jpg"
-        }, {
-          name: "Soldier: 76",
-          img: "./resources/halloween2016/sprays/soldier76.jpg"
-        }, {
-          name: "Symmetra",
-          img: "./resources/halloween2016/sprays/symmetra.jpg"
-        }, {
-          name: "Torbj\u00D6rn",
-          img: "./resources/halloween2016/sprays/torbjorn.jpg"
-        }, {
-          name: "Tracer",
-          img: "./resources/halloween2016/sprays/tracer.jpg"
-        }, {
-          name: "Widowmaker",
-          img: "./resources/halloween2016/sprays/widowmaker.jpg"
-        }, {
-          name: "Winston",
-          img: "./resources/halloween2016/sprays/winston.jpg"
-        }, {
-          name: "Zarya",
-          img: "./resources/halloween2016/sprays/zarya.jpg"
-        }, {
-          name: "Zenyatta",
-          img: "./resources/halloween2016/sprays/zenyatta.jpg"
-        }, {
-          name: "...Never Die",
-          img: "./resources/halloween2016/sprays/neverdie.jpg"
-        }, {
-          name: "Bats",
-          img: "./resources/halloween2016/sprays/bats.jpg"
-        }, {
-          name: "Boo!",
-          img: "./resources/halloween2016/sprays/boo.jpg"
-        }, {
-          name: "Boop!",
-          img: "./resources/halloween2016/sprays/boop.jpg"
-        }, {
-          name: "Candyball",
-          img: "./resources/halloween2016/sprays/candyball.jpg"
-        }, {
-          name: "Fangs",
-          img: "./resources/halloween2016/sprays/fangs.jpg"
-        }, {
-          name: "Gummy Hog",
-          img: "./resources/halloween2016/sprays/gummyhog.jpg"
-        }, {
-          name: "Halloween Terror",
-          img: "./resources/halloween2016/sprays/halloweenterror.jpg"
-        }, {
-          name: "Pumpkins",
-          img: "./resources/halloween2016/sprays/pumpkins.jpg"
-        }, {
-          name: "Witch's Brew",
-          img: "./resources/halloween2016/sprays/witchsbrew.jpg"
-        }],
-        icons: [{
-          name: "...Never Die",
-          img: "./resources/halloween2016/icons/neverdie.png"
-        }, {
-          name: "Bewitching",
-          img: "./resources/halloween2016/icons/bewitching.png"
-        }, {
-          name: "Calavera",
-          img: "./resources/halloween2016/icons/calavera.png"
-        }, {
-          name: "Candle",
-          img: "./resources/halloween2016/icons/candle.png"
-        }, {
-          name: "Eyeball",
-          img: "./resources/halloween2016/icons/eyeball.png"
-        }, {
-          name: "Ghostymari",
-          img: "./resources/halloween2016/icons/ghostymari.png"
-        }, {
-          name: "Halloween Terror 2016",
-          img: "./resources/halloween2016/icons/halloweenterror.png"
-        }, {
-          name: "Spider",
-          img: "./resources/halloween2016/icons/spider.png"
-        }, {
-          name: "Superstition",
-          img: "./resources/halloween2016/icons/superstition.png"
-        }, {
-          name: "The Doctor",
-          img: "./resources/halloween2016/icons/thedoctor.png"
-        }, {
-          name: "The Monster",
-          img: "./resources/halloween2016/icons/themonster.png"
-        }, {
-          name: "The Reaper",
-          img: "./resources/halloween2016/icons/thereaper.png"
-        }, {
-          name: "The Witch",
-          img: "./resources/halloween2016/icons/thewitch.png"
-        }, {
-          name: "Tombstone",
-          img: "./resources/halloween2016/icons/tombstone.png"
-        }, {
-          name: "Vampachimari",
-          img: "./resources/halloween2016/icons/vampachimari.png"
-        }, {
-          name: "Witch's Brew",
-          img: "./resources/halloween2016/icons/witchsbrew.png"
-        }, {
-          name: "Witch's Hat",
-          img: "./resources/halloween2016/icons/witchshat.png"
-        }, {
-          name: "Wolf",
-          img: "./resources/halloween2016/icons/wolf.png"
-        }]
+        "emotes": [
+          {
+            "hero": "Ana",
+            "name": "Candy",
+            "id": "ana-candy",
+            "quality": "epic",
+            "video": "./resources/HALLOWEEN_2016/emotes/ana-candy.webm"
+          },
+          {
+            "hero": "Reinhardt",
+            "name": "Pumpkin Smash",
+            "id": "reinhardt-pumpkin-smash",
+            "quality": "epic",
+            "video": "./resources/HALLOWEEN_2016/emotes/reinhardt-pumpkin-smash.webm"
+          },
+          {
+            "hero": "Winston",
+            "name": "Shadow Puppets",
+            "id": "winston-shadow-puppets",
+            "quality": "epic",
+            "video": "./resources/HALLOWEEN_2016/emotes/winston-shadow-puppets.webm"
+          }
+        ],
+        "sprays": [
+          {
+            "hero": "Ana",
+            "name": "Trick or Treat",
+            "id": "ana-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/ana-trick-or-treat.png"
+          },
+          {
+            "hero": "Bastion",
+            "name": "Trick or Treat",
+            "id": "bastion-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/bastion-trick-or-treat.png"
+          },
+          {
+            "hero": "D.Va",
+            "name": "Trick or Treat",
+            "id": "dva-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/dva-trick-or-treat.png"
+          },
+          {
+            "hero": "Genji",
+            "name": "Trick or Treat",
+            "id": "genji-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/genji-trick-or-treat.png"
+          },
+          {
+            "hero": "Hanzo",
+            "name": "Trick or Treat",
+            "id": "hanzo-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/hanzo-trick-or-treat.png"
+          },
+          {
+            "hero": "Junkrat",
+            "name": "Trick or Treat",
+            "id": "junkrat-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/junkrat-trick-or-treat.png"
+          },
+          {
+            "hero": "Lúcio",
+            "name": "Trick or Treat",
+            "id": "lucio-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/lucio-trick-or-treat.png"
+          },
+          {
+            "hero": "McCree",
+            "name": "Trick or Treat",
+            "id": "mccree-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/mccree-trick-or-treat.png"
+          },
+          {
+            "hero": "Mei",
+            "name": "Trick or Treat",
+            "id": "mei-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/mei-trick-or-treat.png"
+          },
+          {
+            "hero": "Mercy",
+            "name": "Trick or Treat",
+            "id": "mercy-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/mercy-trick-or-treat.png"
+          },
+          {
+            "hero": "Pharah",
+            "name": "Trick or Treat",
+            "id": "pharah-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/pharah-trick-or-treat.png"
+          },
+          {
+            "hero": "Reaper",
+            "name": "Trick or Treat",
+            "id": "reaper-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/reaper-trick-or-treat.png"
+          },
+          {
+            "hero": "Reinhardt",
+            "name": "Trick or Treat",
+            "id": "reinhardt-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/reinhardt-trick-or-treat.png"
+          },
+          {
+            "hero": "Roadhog",
+            "name": "Trick or Treat",
+            "id": "roadhog-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/roadhog-trick-or-treat.png"
+          },
+          {
+            "hero": "Soldier: 76",
+            "name": "Trick or Treat",
+            "id": "soldier-76-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/soldier-76-trick-or-treat.png"
+          },
+          {
+            "hero": "Symmetra",
+            "name": "Trick or Treat",
+            "id": "symmetra-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/symmetra-trick-or-treat.png"
+          },
+          {
+            "hero": "Torbjörn",
+            "name": "Trick or Treat",
+            "id": "torbjorn-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/torbjorn-trick-or-treat.png"
+          },
+          {
+            "name": "Boo!",
+            "id": "boo",
+            "img": "./resources/HALLOWEEN_2016/sprays/boo.png"
+          },
+          {
+            "hero": "Tracer",
+            "name": "Trick or Treat",
+            "id": "tracer-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/tracer-trick-or-treat.png"
+          },
+          {
+            "hero": "Widowmaker",
+            "name": "Trick or Treat",
+            "id": "widowmaker-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/widowmaker-trick-or-treat.png"
+          },
+          {
+            "name": "Boop!",
+            "id": "boop",
+            "img": "./resources/HALLOWEEN_2016/sprays/boop.png"
+          },
+          {
+            "hero": "Winston",
+            "name": "Trick or Treat",
+            "id": "winston-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/winston-trick-or-treat.png"
+          },
+          {
+            "hero": "Zarya",
+            "name": "Trick or Treat",
+            "id": "zarya-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/zarya-trick-or-treat.png"
+          },
+          {
+            "hero": "Zenyatta",
+            "name": "Trick or Treat",
+            "id": "zenyatta-trick-or-treat",
+            "quality": "common",
+            "img": "./resources/HALLOWEEN_2016/sprays/zenyatta-trick-or-treat.png"
+          },
+          {
+            "name": "Witch's Brew",
+            "id": "witchs-brew",
+            "img": "./resources/HALLOWEEN_2016/sprays/witchs-brew.png"
+          },
+          {
+            "name": "Pumpkins",
+            "id": "pumpkins",
+            "img": "./resources/HALLOWEEN_2016/sprays/pumpkins.png"
+          },
+          {
+            "name": "Halloween Terror 2016",
+            "id": "halloween-terror-2016",
+            "img": "./resources/HALLOWEEN_2016/sprays/halloween-terror-2016.png"
+          },
+          {
+            "name": "Gummy Hog",
+            "id": "gummy-hog",
+            "img": "./resources/HALLOWEEN_2016/sprays/gummy-hog.png"
+          },
+          {
+            "name": "Fangs",
+            "id": "fangs",
+            "img": "./resources/HALLOWEEN_2016/sprays/fangs.png"
+          },
+          {
+            "name": "Candyball",
+            "id": "candyball",
+            "img": "./resources/HALLOWEEN_2016/sprays/candyball.png"
+          },
+          {
+            "name": "Bats",
+            "id": "bats",
+            "img": "./resources/HALLOWEEN_2016/sprays/bats.png"
+          },
+          {
+            "name": "...Never Die",
+            "id": "never-die",
+            "img": "./resources/HALLOWEEN_2016/sprays/never-die.png"
+          }
+        ],
+        "voicelines": [
+          {
+            "hero": "Ana",
+            "name": "Are you scared?",
+            "id": "ana-are-you-scared",
+            "quality": "common"
+          },
+          {
+            "hero": "Bastion",
+            "name": "W-W-Wooooo...?",
+            "id": "bastion-wwwooooo",
+            "quality": "common"
+          },
+          {
+            "hero": "D.Va",
+            "name": "Happy Halloween!",
+            "id": "dva-happy-halloween",
+            "quality": "common"
+          },
+          {
+            "hero": "Genji",
+            "name": "My Halloween costume?",
+            "id": "genji-my-halloween-costume",
+            "quality": "common"
+          },
+          {
+            "hero": "Hanzo",
+            "name": "You are already dead",
+            "id": "hanzo-you-are-already-dead",
+            "quality": "common"
+          },
+          {
+            "hero": "Junkrat",
+            "name": "Happy Halloween",
+            "id": "junkrat-happy-halloween",
+            "quality": "common"
+          },
+          {
+            "hero": "Lúcio",
+            "name": "Killed it!",
+            "id": "lucio-killed-it",
+            "quality": "common"
+          },
+          {
+            "hero": "McCree",
+            "name": "It's your funeral",
+            "id": "mccree-its-your-funeral",
+            "quality": "common"
+          },
+          {
+            "hero": "Mei",
+            "name": "Scary!",
+            "id": "mei-scary",
+            "quality": "common"
+          },
+          {
+            "hero": "Mercy",
+            "name": "Superstition",
+            "id": "mercy-superstition",
+            "quality": "common"
+          },
+          {
+            "hero": "Pharah",
+            "name": "Dead or alive",
+            "id": "pharah-dead-or-alive",
+            "quality": "common"
+          },
+          {
+            "hero": "Reaper",
+            "name": "I work the graveyard shift",
+            "id": "reaper-i-work-the-graveyard-shift",
+            "quality": "common"
+          },
+          {
+            "hero": "Reinhardt",
+            "name": "Smashing",
+            "id": "reinhardt-smashing",
+            "quality": "common"
+          },
+          {
+            "hero": "Roadhog",
+            "name": "Want some candy?",
+            "id": "roadhog-want-some-candy",
+            "quality": "common"
+          },
+          {
+            "hero": "Soldier: 76",
+            "name": "Knock knock",
+            "id": "soldier-76-knock-knock",
+            "quality": "common"
+          },
+          {
+            "hero": "Symmetra",
+            "name": "A frightening thought",
+            "id": "symmetra-a-frightening-thought",
+            "quality": "common"
+          },
+          {
+            "hero": "Torbjörn",
+            "name": "If you build it",
+            "id": "torbjorn-if-you-build-it",
+            "quality": "common"
+          },
+          {
+            "hero": "Tracer",
+            "name": "Ooh, Scary!",
+            "id": "tracer-ooh-scary",
+            "quality": "common"
+          },
+          {
+            "hero": "Widowmaker",
+            "name": "The party is over",
+            "id": "widowmaker-the-party-is-over",
+            "quality": "common"
+          },
+          {
+            "hero": "Winston",
+            "name": "This is not a costume",
+            "id": "winston-this-is-not-a-costume",
+            "quality": "common"
+          },
+          {
+            "hero": "Zarya",
+            "name": "Never forget the fallen",
+            "id": "zarya-never-forget-the-fallen",
+            "quality": "common"
+          },
+          {
+            "hero": "Zenyatta",
+            "name": "Trick or treat?",
+            "id": "zenyatta-trick-or-treat",
+            "quality": "common"
+          }
+        ],
+        "poses": [
+          {
+            "hero": "Reaper",
+            "name": "R.I.P.",
+            "id": "reaper-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/reaper-rip.jpg"
+          },
+          {
+            "hero": "Ana",
+            "name": "R.I.P.",
+            "id": "ana-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/ana-rip.jpg"
+          },
+          {
+            "hero": "D.Va",
+            "name": "R.I.P.",
+            "id": "dva-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/dva-rip.jpg"
+          },
+          {
+            "hero": "Genji",
+            "name": "R.I.P.",
+            "id": "genji-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/genji-rip.jpg"
+          },
+          {
+            "hero": "Hanzo",
+            "name": "R.I.P.",
+            "id": "hanzo-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/hanzo-rip.jpg"
+          },
+          {
+            "hero": "Junkrat",
+            "name": "R.I.P.",
+            "id": "junkrat-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/junkrat-rip.jpg"
+          },
+          {
+            "hero": "Lúcio",
+            "name": "R.I.P.",
+            "id": "lucio-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/lucio-rip.jpg"
+          },
+          {
+            "hero": "McCree",
+            "name": "R.I.P.",
+            "id": "mccree-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/mccree-rip.jpg"
+          },
+          {
+            "hero": "Mei",
+            "name": "R.I.P.",
+            "id": "mei-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/mei-rip.jpg"
+          },
+          {
+            "hero": "Mercy",
+            "name": "R.I.P.",
+            "id": "mercy-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/mercy-rip.jpg"
+          },
+          {
+            "hero": "Pharah",
+            "name": "R.I.P.",
+            "id": "pharah-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/pharah-rip.jpg"
+          },
+          {
+            "hero": "Bastion",
+            "name": "R.I.P.",
+            "id": "bastion-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/bastion-rip.jpg"
+          },
+          {
+            "hero": "Reinhardt",
+            "name": "R.I.P.",
+            "id": "reinhardt-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/reinhardt-rip.jpg"
+          },
+          {
+            "hero": "Roadhog",
+            "name": "R.I.P.",
+            "id": "roadhog-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/roadhog-rip.jpg"
+          },
+          {
+            "hero": "Soldier: 76",
+            "name": "R.I.P.",
+            "id": "soldier-76-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/soldier-76-rip.jpg"
+          },
+          {
+            "hero": "Symmetra",
+            "name": "R.I.P.",
+            "id": "symmetra-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/symmetra-rip.jpg"
+          },
+          {
+            "hero": "Torbjörn",
+            "name": "R.I.P.",
+            "id": "torbjorn-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/torbjorn-rip.jpg"
+          },
+          {
+            "hero": "Tracer",
+            "name": "R.I.P.",
+            "id": "tracer-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/tracer-rip.jpg"
+          },
+          {
+            "hero": "Widowmaker",
+            "name": "R.I.P.",
+            "id": "widowmaker-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/widowmaker-rip.jpg"
+          },
+          {
+            "hero": "Winston",
+            "name": "R.I.P.",
+            "id": "winston-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/winston-rip.jpg"
+          },
+          {
+            "hero": "Zarya",
+            "name": "R.I.P.",
+            "id": "zarya-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/zarya-rip.jpg"
+          },
+          {
+            "hero": "Zenyatta",
+            "name": "R.I.P.",
+            "id": "zenyatta-rip",
+            "quality": "rare",
+            "img": "./resources/HALLOWEEN_2016/poses/zenyatta-rip.jpg"
+          }
+        ],
+        "intros": [
+          {
+            "hero": "Reaper",
+            "name": "Eternal Rest",
+            "id": "reaper-eternal-rest",
+            "quality": "epic",
+            "video": "./resources/HALLOWEEN_2016/intros/reaper-eternal-rest.webm"
+          },
+          {
+            "hero": "Mei",
+            "name": "Ice Scream",
+            "id": "mei-ice-scream",
+            "quality": "epic",
+            "video": "./resources/HALLOWEEN_2016/intros/mei-ice-scream.webm"
+          },
+          {
+            "hero": "Genji",
+            "name": "Pumpkin Carving",
+            "id": "genji-pumpkin-carving",
+            "quality": "epic",
+            "video": "./resources/HALLOWEEN_2016/intros/genji-pumpkin-carving.webm"
+          }
+        ],
+        "skinsLegendary": [
+          {
+            "hero": "Junkrat",
+            "name": "Dr. Junkenstein",
+            "id": "junkrat-dr-junkenstein",
+            "quality": "legendary",
+            "img": "./resources/HALLOWEEN_2016/skinsLegendary/junkrat-dr-junkenstein.jpg"
+          },
+          {
+            "hero": "Roadhog",
+            "name": "Junkenstein's Monster",
+            "id": "roadhog-junkensteins-monster",
+            "quality": "legendary",
+            "img": "./resources/HALLOWEEN_2016/skinsLegendary/roadhog-junkensteins-monster.jpg"
+          },
+          {
+            "hero": "Reaper",
+            "name": "Pumpkin",
+            "id": "reaper-pumpkin",
+            "quality": "legendary",
+            "img": "./resources/HALLOWEEN_2016/skinsLegendary/reaper-pumpkin.jpg"
+          },
+          {
+            "hero": "Mercy",
+            "name": "Witch",
+            "id": "mercy-witch",
+            "quality": "legendary",
+            "img": "./resources/HALLOWEEN_2016/skinsLegendary/mercy-witch.jpg"
+          }
+        ],
+        "icons": [
+          {
+            "name": "...Never Die",
+            "id": "never-die",
+            "img": "./resources/HALLOWEEN_2016/icons/never-die.png"
+          },
+          {
+            "name": "Bewitching",
+            "id": "bewitching",
+            "img": "./resources/HALLOWEEN_2016/icons/bewitching.png"
+          },
+          {
+            "name": "Calavera",
+            "id": "calavera",
+            "img": "./resources/HALLOWEEN_2016/icons/calavera.png"
+          },
+          {
+            "name": "Candle",
+            "id": "candle",
+            "img": "./resources/HALLOWEEN_2016/icons/candle.png"
+          },
+          {
+            "name": "Eyeball",
+            "id": "eyeball",
+            "img": "./resources/HALLOWEEN_2016/icons/eyeball.png"
+          },
+          {
+            "name": "Ghostymari",
+            "id": "ghostymari",
+            "img": "./resources/HALLOWEEN_2016/icons/ghostymari.png"
+          },
+          {
+            "name": "Halloween Terror",
+            "id": "halloween-terror",
+            "img": "./resources/HALLOWEEN_2016/icons/halloween-terror.png"
+          },
+          {
+            "name": "Spider",
+            "id": "spider",
+            "img": "./resources/HALLOWEEN_2016/icons/spider.png"
+          },
+          {
+            "name": "Superstition",
+            "id": "superstition",
+            "img": "./resources/HALLOWEEN_2016/icons/superstition.png"
+          },
+          {
+            "name": "The Doctor",
+            "id": "junkrat-the-doctor",
+            "img": "./resources/HALLOWEEN_2016/icons/junkrat-the-doctor.png"
+          },
+          {
+            "name": "The Monster",
+            "id": "roadhog-the-monster",
+            "img": "./resources/HALLOWEEN_2016/icons/roadhog-the-monster.png"
+          },
+          {
+            "name": "The Reaper",
+            "id": "reaper-the-reaper",
+            "img": "./resources/HALLOWEEN_2016/icons/reaper-the-reaper.png"
+          },
+          {
+            "name": "The Witch",
+            "id": "mercy-the-witch",
+            "img": "./resources/HALLOWEEN_2016/icons/mercy-the-witch.png"
+          },
+          {
+            "name": "Tombstone",
+            "id": "tombstone",
+            "img": "./resources/HALLOWEEN_2016/icons/tombstone.png"
+          },
+          {
+            "name": "Vampachimari",
+            "id": "vampachimari",
+            "img": "./resources/HALLOWEEN_2016/icons/vampachimari.png"
+          },
+          {
+            "name": "Witch's Brew",
+            "id": "witchs-brew",
+            "img": "./resources/HALLOWEEN_2016/icons/witchs-brew.png"
+          },
+          {
+            "name": "Witch's Hat",
+            "id": "witchs-hat",
+            "img": "./resources/HALLOWEEN_2016/icons/witchs-hat.png"
+          },
+          {
+            "name": "Wolf",
+            "id": "wolf",
+            "img": "./resources/HALLOWEEN_2016/icons/wolf.png"
+          }
+        ]
       }
-    }, {
+    },
+    {
       name: 'Winter Wonderland 2016',
       id: 'winterwonderland2016',
       items: {
