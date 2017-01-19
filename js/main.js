@@ -106,8 +106,9 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
     scope: {
       data: '='
     },
-    templateUrl: function(element, attrs) {
-      return './templates/' + attrs.template + '.html';
+    templateUrl: './templates/event-container.html',
+    link: function($scope, element, attrs) {
+      $scope.currentEvent = attrs.template
     },
     controller: function($scope) {
       $scope.preview = false;
@@ -138,12 +139,12 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       };
 
       $scope.calculateCosts = function() {
-        if ($scope.data.id !== 'winterwonderland2016') return;
         var cost = {
           total: 0,
           remaining: 0,
           prev: $scope.cost.remaining
         }
+
         Object.keys($scope.data.items).forEach(function(type) {
           if (type == 'icons') return; // icons have no cost
           var items = $scope.data.items[type];
@@ -218,8 +219,6 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       }
 
       $scope.calculatePerHeroProgress = function() {
-        if ($scope.data.id !== 'winterwonderland2016') return;
-
         var progress = {};
         setProgress('global');
         $scope.availableHeroes.forEach(setProgress);
