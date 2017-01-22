@@ -270,11 +270,7 @@ OWI.filter('heroPortraitUrl', function () {
   }
   return function(hero) {
     hero = hero.toLowerCase();
-
-    if (specialHeroes[hero]) {
-      hero = specialHeroes[hero];
-    }
-    return './resources/' + hero + '/portrait-small.png';
+    return './resources/heroes/' + (specialHeroes[hero] || hero) + '/portrait-small.png';
   }
 });
 OWI.filter('itemPrice', function () {
@@ -357,7 +353,7 @@ OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
     }
 }]);
 
-OWI.directive("particles", function() {
+/*OWI.directive("particles", function() {
   return {
     restrict: 'E',
     scope: {},
@@ -418,4 +414,4 @@ OWI.directive("particles", function() {
       })
     }
   }
-})
+})*/
