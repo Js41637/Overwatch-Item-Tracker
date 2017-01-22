@@ -162,7 +162,7 @@ data.forEach(({ hero, items: itemGroups }) => {
 heroes = sortObject(heroes)
 
 var getImageURL = (type, event, id) => {
-  var baseUrl = `./resources/${event}/${type}/${id}`
+  var baseUrl = `./resources/updates/${event}/${type}/${id}`
   switch (type) {
     case 'emotes':
     case 'intros':
@@ -264,6 +264,13 @@ Object.keys(updates).forEach(update => {
     })
   })
 })
+
+function copyUpdates() { //eslint-disable-line
+  copy(JSON.stringify(updates, null, 2))
+}
+function copyHeroes() { //eslint-disable-line
+  copy(JSON.stringify(heroes, null, 2))
+}
 
 console.log("HEROES: ", heroes)
 console.log("UPDATES:", updates)
