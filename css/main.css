@@ -277,11 +277,6 @@ body {
   justify-content: center;
   position: relative;
 }
-/* For pages without view selector we need extra padding */
-#summergames2016.item-container,
-#halloween2016.item-container {
-  padding: 40px 0 0;
-}
 
 .item-container .section h2 {
   font-size: 42px;
@@ -645,7 +640,7 @@ body {
   #halloween2016 #col3 {
     width: 290px;
     position: absolute;
-    top: 362px;
+    top: 357px;
     right: 12px;
   }
 }
@@ -787,7 +782,7 @@ body {
   height: 745px;
 }
 
-#summergames2016 #icons .item:nth-of-type(13) h3 {
+#summergames2016 #icons .item:nth-of-type(24) h3 {
   font-size: 21px;
 }
 
