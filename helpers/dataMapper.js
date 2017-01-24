@@ -111,7 +111,8 @@ var sortObject = o => {
 var EVENTS = {
   SUMMER16: 'SUMMER_GAMES_2016',
   HALLOWEEN16: 'HALLOWEEN_2016',
-  CHRISTMAS16: 'WINTER_WONDERLAND_2016'
+  CHRISTMAS16: 'WINTER_WONDERLAND_2016',
+  ROOSTER17: 'YEAR_OF_THE_ROOSTER_2017'
 }
 
 var heroes = {}
@@ -142,16 +143,16 @@ data.forEach(({ hero, items: itemGroups }) => {
       if (!quality || !itemType) return
       var out = { name, id, quality: quality }
       switch (group) {
-        case EVENTS.SUMMER16:
-        case EVENTS.HALLOWEEN16:
-        case EVENTS.CHRISTMAS16:
-          out.event = group
+        case 'COMMON':
           break;
         case 'ACHIEVEMENT':
           out.achievement = true
           break;
         case 'STANDARD_COMMON':
           out.standardItem = true
+          break;
+        default:
+          out.event = group
           break;
       }
       heroData.items[itemType].push(out)

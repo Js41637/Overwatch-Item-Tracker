@@ -139,6 +139,7 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       };
 
       $scope.calculateCosts = function() {
+        if ($scope.data.id == 'summergames2016') return
         var cost = {
           total: 0,
           remaining: 0,

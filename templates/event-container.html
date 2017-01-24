@@ -6,7 +6,7 @@
     </div>
 </div>
 <div class="item-container">
-  <div id="cost-remaining" uib-tooltip="Cost to purchase remaining items" tooltip-placement="bottom">
+  <div id="cost-remaining" ng-hide="currentEvent == 'summergames2016'" uib-tooltip="Cost to purchase remaining items" tooltip-placement="bottom">
     <img src="./resources/credit.png" /> <span count-to="{{cost.remaining}}" duration="0.80" count-from="{{cost.prev}}"></span>
   </div>
   <div ng-if="viewMode == 'item-type'" id="{{currentEvent}}" class="view-mode-include view-mode-item-type" ng-include src="'templates/' + currentEvent + '.html'"></div>
