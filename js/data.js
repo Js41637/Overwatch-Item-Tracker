@@ -3216,6 +3216,11 @@ OWI.factory('Data', function() {
             "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/seollal.png"
           },
           {
+            "name": "Tangerines",
+            "id": "tangerines",
+            "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/tangerines.png"
+          },
+          {
             "name": "Year of the Rooster",
             "id": "year-of-the-rooster",
             "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/year-of-the-rooster-2017.png"
