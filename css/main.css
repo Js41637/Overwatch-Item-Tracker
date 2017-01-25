@@ -421,13 +421,13 @@ body {
 
 #image-preview {
   width: auto;
-  max-width: 25%;
+  max-width: 50%;
   height: auto;
-  max-height: 25%;
+  max-height: 50%;
   top: 0;
   left: 50%;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   opacity: 0;
   transition: opacity 0.155s ease-in-out;
   pointer-events: none;
@@ -438,17 +438,31 @@ body {
 
 #image-preview .preview, #image-preview .imgcont {
   height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 #image-preview img {
   display: block;
-  height: calc(100% - 52px);
-  margin-left: 40px;
 }
 
 #image-preview video {
   width: 100%;
   height: calc(100% - 52px);
+}
+
+#image-preview h2 {
+      font-size: 42px;
+    margin-bottom: 4px;
+    font-style: italic;
+}
+
+#image-preview .preview span {
+  color: #405275;
+    text-align: left;
+    font-family: Futura,century gothic,arial,sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 
 #image-preview.show {
