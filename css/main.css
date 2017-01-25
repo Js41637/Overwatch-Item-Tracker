@@ -1239,6 +1239,10 @@ body {
    display: flex;
  }
 
+ #yearoftherooster2017 #image-preview img:not(:first-of-type) {
+   margin-left: -20px;
+ }
+
  #yearoftherooster2017 #legendary-skins {
    color: #405275;
    margin-bottom: 10px;

@@ -2805,9 +2805,9 @@ OWI.factory('Data', function() {
             "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/zenyatta-dragon-dance.png"
           },
           {
-            "name": "Year of the Rooster 2017",
-            "id": "year-of-the-rooster-2017",
-            "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/year-of-the-rooster-2017.png",
+            "name": "Year of the Rooster",
+            "id": "year-of-the-rooster",
+            "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/year-of-the-rooster.png",
             "quality": "common"
           },
           {
@@ -3216,8 +3216,13 @@ OWI.factory('Data', function() {
             "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/seollal.png"
           },
           {
-            "name": "Year of the Rooster 2017",
-            "id": "year-of-the-rooster-2017",
+            "name": "Tangerines",
+            "id": "tangerines",
+            "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/tangerines.png"
+          },
+          {
+            "name": "Year of the Rooster",
+            "id": "year-of-the-rooster",
             "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/year-of-the-rooster-2017.png"
           }
         ],
