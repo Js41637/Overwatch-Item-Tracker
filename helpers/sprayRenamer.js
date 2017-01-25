@@ -1,3 +1,6 @@
+// sprayRenamer.js
+// After extracting sprays from the game into ./OverwatchAssets
+// run this script which move all sprays into ./converted sorted by hero and their cleanIDs
 const fs = require('fs')
 
 if (!process.cwd().match(/OverwatchAssets$/)) {

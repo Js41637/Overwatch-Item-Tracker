@@ -228,7 +228,7 @@ updates[EVENTS.CHRISTMAS16].sprays = updates[EVENTS.CHRISTMAS16].sprays.map(spra
   } else return spray
 }).filter(Boolean)
 
-// Add ornament ids to normal sprays
+// Add dragon dance ids to normal sprays
 updates[EVENTS.ROOSTER17].sprays = updates[EVENTS.ROOSTER17].sprays.map(spray => {
   if (spray.hero) {
     var dragonID = `${getCleanID(spray.hero)}-dragon-dance`
