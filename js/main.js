@@ -59,7 +59,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
   Data.checked = Object.assign({}, Data.checked, savedData);
 }]);
 
-OWI.controller('SettingsCtrl', ["$uibModalInstance", "StorageService", "Data", function($uibModalInstance, StorageService, Data) {
+OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "Data", function($rootScope, $uibModalInstance, StorageService, Data) {
   this.particles = StorageService.getSetting('particles');
 
   this.close = function() {
@@ -87,6 +87,7 @@ OWI.controller('SettingsCtrl', ["$uibModalInstance", "StorageService", "Data", f
       });
     });
     StorageService.setData(Data.checked);
+    $rootScope.$emit('selectAll')
   }
 }])
 
@@ -100,7 +101,7 @@ OWI.directive("scroll", function ($window) {
   };
 });
 
-OWI.directive("update", ["Data", "StorageService", function(Data, StorageService) {
+OWI.directive("update", ["$rootScope", "Data", "StorageService", function($rootScope, Data, StorageService) {
   return {
     restrict: 'E',
     scope: {
@@ -114,6 +115,10 @@ OWI.directive("update", ["Data", "StorageService", function(Data, StorageService
       $scope.preview = false;
 
       $scope.checked = Data.checked[$scope.data.id];
+
+      $rootScope.$on('selectAll', function() {
+        $scope.calculateCosts();
+      })
 
       $scope.viewMode = StorageService.getSetting('viewMode') || 'item-type';
       $scope.viewModes = {
