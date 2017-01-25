@@ -173,7 +173,7 @@ body {
 #menu {
   text-align: center;
   font-size: 21px;
-  padding: 10px 0 0;
+  padding: 8px 0 0;
 }
 
 #menu .wrapper {
@@ -1155,8 +1155,9 @@ body {
  /* Year of the Rooster 2017 */
 
  #yearoftherooster2017 {
-   padding: 10px 5px 8px;
+   padding: 5px 5px 8px;
    display: flex;
+   min-width: 1700px;
  }
  #yearoftherooster2017 .row {
    display: flex;
@@ -1206,7 +1207,7 @@ body {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   height: 435px;
+   height: 545px;
  }
 
  #yearoftherooster2017 #sprays .item {
@@ -1238,13 +1239,9 @@ body {
    display: flex;
  }
 
- #yearoftherooster2017 #image-preview img:not(:first-of-type) {
-   margin-left: -50px;
- }
-
  #yearoftherooster2017 #legendary-skins {
    color: #405275;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
    position: relative;
    width: 100%;
  }
@@ -1259,7 +1256,7 @@ body {
  }
 
  #yearoftherooster2017 #legendary-skins .images {
-   height: 374px;
+   height: 350px;
    display: flex;
  }
 
@@ -1300,15 +1297,22 @@ body {
  }
 
  #yearoftherooster2017 #voicelines {
-   width: 43%;
+   width: 38%;
  }
 
  #yearoftherooster2017 #victoryposes {
-   width: 37%;
+   width: 26%;
  }
 
  #yearoftherooster2017 #icons {
-   width: 19%;
+   width: 35%;
+ }
+
+ #yearoftherooster2017 #icons .items {
+   height: 435px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
  }
 
  #yearoftherooster2017 #voicelines .items {
@@ -1319,7 +1323,7 @@ body {
  }
 
  #yearoftherooster2017 #voicelines .item {
-   width: 32.4%;
+   width: 31.8%;
  }
 
  #ornamentinfo {
@@ -1359,7 +1363,7 @@ body {
    cursor: pointer;
  }
 
- @media screen and (max-width: 1570px) {
+ /*@media screen and (max-width: 1570px) {
    #yearoftherooster2017 {
      flex-direction: column;
      align-items: center;
@@ -1386,7 +1390,7 @@ body {
      margin-top: 0;
      flex-direction: column;
    }
- }
+ }*/
 
 /* Per hero selection */
 #view-mode-hero-container {

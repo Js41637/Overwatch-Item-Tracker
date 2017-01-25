@@ -183,12 +183,14 @@ var allClassItems = {
   'sprays': {
     [EVENTS.SUMMER16]: ['Summer Games'],
     [EVENTS.HALLOWEEN16]: ['...Never Die', 'Bats', 'Boo!', 'Boop!', 'Candyball', 'Fangs', 'Gummy Hog', 'Halloween Terror 2016', 'Pumpkins', 'Witch\'s Brew'],
-    [EVENTS.CHRISTMAS16]: ['SnowCree', 'SnowHog', 'SnowMei', 'SnowReaper', ['Winter Wonderland']]
+    [EVENTS.CHRISTMAS16]: ['SnowCree', 'SnowHog', 'SnowMei', 'SnowReaper', ['Winter Wonderland']],
+    [EVENTS.ROOSTER17]: ['Auspicious Lion', 'Awakened Lion', ['Dragon\'s Head'], ['Lucky Pouch'], ['Red Envelope'], ['Year of the Rooster 2017']]
   },
   icons: {
     [EVENTS.SUMMER16]: ["Summer Games","Australia", "Brazil", "China", "Egypt", "France", "Germany", "Greece", "Japan", "Mexico", "Nepal", "Numbani", "Russia", "South Korea", "Sweden", "Switzerland", "United Kingdom", "United States"],
     [EVENTS.HALLOWEEN16]: ["Halloween Terror", "...Never Die", "Bewitching", "Calavera", "Candle", "Eyeball", "Ghostymari", "Spider", "Superstition", "Tombstone", "Vampachimari", "Witch's Brew", "Witch's Hat", "Wolf"],
-    [EVENTS.CHRISTMAS16]: ["Winter Wonderland", "Snowman", "Present", "Pachimerry", "Gingermari", "2017", "Holly", "Tannenbaum", "Bubbly", "Gingerbread", "Candy Cane", "Ornament", "Hot Cocoa", "Cheers!", "Wreath", "Mochi", "Dreidel", "Bells", "Peppermint", "Snow Globe", "Pachireindeer", "Stocking"]
+    [EVENTS.CHRISTMAS16]: ["Winter Wonderland", "Snowman", "Present", "Pachimerry", "Gingermari", "2017", "Holly", "Tannenbaum", "Bubbly", "Gingerbread", "Candy Cane", "Ornament", "Hot Cocoa", "Cheers!", "Wreath", "Mochi", "Dreidel", "Bells", "Peppermint", "Snow Globe", "Pachireindeer", "Stocking"],
+    [EVENTS.ROOSTER17]: ["Bokimario", "Coin", "Dragon Dance", "Fuchimari", "Gold", "Have Fish", "Lantern", "Lion Dance", "Lord of Candy", "Lucky Pouch", "Lunamari", "New Year Cake", "Pachilantern", "Piggy", "Red Envelope", "Seollal", "Year of the Rooster 2017"]
   }
 }
 
