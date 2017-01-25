@@ -420,14 +420,20 @@ body {
 }
 
 #image-preview {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  max-width: 25%;
+  height: auto;
+  max-height: 25%;
   top: 0;
+  left: 50%;
   position: absolute;
   z-index: 1;
   opacity: 0;
   transition: opacity 0.155s ease-in-out;
   pointer-events: none;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px;
 }
 
 #image-preview .preview, #image-preview .imgcont {
@@ -1113,17 +1119,20 @@ body {
 
 #ornamentinfo {
   position: relative;
-  margin-left: 10px;
+  display: block;
+  line-height: 22px;
+    height: 22px;
+        margin-top: 6px;
+    margin-bottom: 4px;
 }
 
 #ornamentinfo span {
-  font-size: 22px;
+  font-size: 0.7em;
   margin-left: 26px;
 }
 
-#fakecheckbox {
-  position: absolute;
-  top: 5px;
+#ornamentinfo .wot {
+  font-size: 0.6em;
 }
 
 #winterwonderland2016 #sprays .item .ornl, #fakecheckbox {
@@ -1260,7 +1269,8 @@ body {
    cursor: pointer;
  }
 
- #yearoftherooster2017 #sprays .item .orn {
+ #yearoftherooster2017 #sprays .item .orn,
+ .orn {
    display: none;
  }
 
@@ -1359,22 +1369,10 @@ body {
    width: 31.8%;
  }
 
- #ornamentinfo {
-   position: relative;
-   margin-left: 10px;
- }
 
- #ornamentinfo span {
-   font-size: 22px;
-   margin-left: 26px;
- }
 
- #fakecheckbox {
-   position: absolute;
-   top: 5px;
- }
-
- #yearoftherooster2017 #sprays .item .ornl, #fakecheckbox {
+ #yearoftherooster2017 #sprays .item .ornl, #fakecheckbox,
+ #yearoftherooster2017 label.ornl {
    min-width: 22px;
    width: 22px;
    height: 22px;
@@ -1384,15 +1382,21 @@ body {
    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5);
    margin-right: 6px;
    transition: background 200ms;
+   float: left;
+       margin-top: 5px;
+ }
+ #fakecheckbox {
+   position: absolute;
+   margin-top: 0;
  }
 
- #yearoftherooster2017 #sprays .item .orn:checked + label, #fakecb:checked + label {
+ #yearoftherooster2017 #sprays .item .orn:checked + label, #fakecb:checked + label,
+ #yearoftherooster2017 .orn:checked + label.ornl {
    background: #ffa500;
  }
 
- #yearoftherooster2017 #sprays .wot {
-   font-size: 10px;
-   font-family: sans-serif;
+ #yearoftherooster2017 .wot {
+   font-size: 0.6em;
    cursor: pointer;
  }
 
@@ -2294,4 +2298,8 @@ table, tbody, thead, tr {
     height: 20px;
     margin: 0;
     margin-right: 6px;
+}
+
+.data-table#player-icons input[type=checkbox] {
+  top: 0;
 }
