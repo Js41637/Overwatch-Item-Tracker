@@ -16,6 +16,7 @@ OWI.factory('Data', function() {
     updates: [{
       name: 'Summer Games 2016',
       id: 'summergames2016',
+      logo: './resources/updates/SUMMER_GAMES_2016/logo.png',
       items: {
         "icons": [
           {
@@ -718,6 +719,7 @@ OWI.factory('Data', function() {
     {
       name: 'Halloween 2016',
       id: 'halloween2016',
+      logo: './resources/updates/HALLOWEEN_2016/logo.png',
       items: {
         "skinsEpic": [
           {
@@ -1446,6 +1448,7 @@ OWI.factory('Data', function() {
     {
       name: 'Winter Wonderland 2016',
       id: 'winterwonderland2016',
+      logo: './resources/updates/WINTER_WONDERLAND_2016/logo.png',
       items: {
         "sprays": [
           {
@@ -2344,6 +2347,7 @@ OWI.factory('Data', function() {
     }, {
       name: 'Year of the Rooster 2017',
       id: 'yearoftherooster2017',
+      logo: './resources/updates/YEAR_OF_THE_ROOSTER_2017/logo.png',
       items: {
         "skinsEpic": [
           {
