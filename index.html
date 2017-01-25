@@ -36,10 +36,10 @@
           <li role="menuitem" ng-repeat="update in $ctrl.updates track by $index"><a href="#" ng-click="$ctrl.selectedUpdate = $index;">{{update.name}}</a></li>
         </ul>
       </div>
-      <!--<div>
+      <div>
         <h2></h2>
         <h3></h3>
-      </div>-->
+      </div>
     </div>
     <div class="right">
       <div class="settings-icon" ng-click="$ctrl.openSettings()" uib-tooltip="Settings" tooltip-placement="left"></div>
@@ -51,6 +51,7 @@
   <Update template="summergames2016" data="::$ctrl.updates[0]" ng-if="$ctrl.selectedUpdate == 0"></Update>
   <Update template="halloween2016" data="::$ctrl.updates[1]" ng-if="$ctrl.selectedUpdate == 1"></Update>
   <Update template="winterwonderland2016" data="::$ctrl.updates[2]" ng-if="$ctrl.selectedUpdate == 2"></Update>
+  <Update template="yearoftherooster2017" data="::$ctrl.updates[3]" ng-if="$ctrl.selectedUpdate == 3"></Update>
 
   <div id="footer">
     Note: This site uses localstorage to store your selections, clearing cookies or using 3rd party cleaners may erase saved data | Initial Design by Lalato &amp; Izzepizze on <a href="https://www.reddit.com/r/Overwatch/comments/59bo66">Reddit</a> | Site made by Js41637 | View source on <a href="https://github.com/Js41637/Overwatch-Item-Tracker">Github</a>

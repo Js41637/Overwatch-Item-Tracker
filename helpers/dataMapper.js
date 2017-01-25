@@ -228,6 +228,16 @@ updates[EVENTS.CHRISTMAS16].sprays = updates[EVENTS.CHRISTMAS16].sprays.map(spra
   } else return spray
 }).filter(Boolean)
 
+// Add ornament ids to normal sprays
+updates[EVENTS.ROOSTER17].sprays = updates[EVENTS.ROOSTER17].sprays.map(spray => {
+  if (spray.hero) {
+    var dragonID = `${getCleanID(spray.hero)}-dragon-dance`
+    spray.dragonID = dragonID;
+    spray.dragonURL = getImageURL('sprays', EVENTS.ROOSTER17, dragonID);
+    return spray
+  } else return spray
+}).filter(Boolean)
+
 // Add allclass items (which aren't detected by item extrator) manually
 Object.keys(allClassItems).forEach(type => {
   Object.keys(allClassItems[type]).forEach(event => {
