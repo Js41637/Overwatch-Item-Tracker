@@ -118,6 +118,7 @@ OWI.directive("update", ["$rootScope", "Data", "StorageService", function($rootS
 
       $rootScope.$on('selectAll', function() {
         $scope.calculateCosts();
+        $scope.calculatePerHeroProgress();
       })
 
       $scope.viewMode = StorageService.getSetting('viewMode') || 'item-type';
