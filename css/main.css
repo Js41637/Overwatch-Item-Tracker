@@ -1155,7 +1155,7 @@ body {
  /* Year of the Rooster 2017 */
 
  #yearoftherooster2017 {
-   padding: 5px 5px 8px;
+   padding: 5px 5px 0px;
    display: flex;
    min-width: 1700px;
  }
@@ -1171,10 +1171,13 @@ body {
    width: 37%;
  }
 
-
  #yearoftherooster2017 #col2 #row1,  #yearoftherooster2017 #col2 #row2 {
    display: flex;
    justify-content: space-around;
+ }
+
+ #yearoftherooster2017 #col2 #row2 {
+   margin-top: 10px;
  }
 
  #yearoftherooster2017 #col2 #row1 .left, #yearoftherooster2017 #col2 #row1 .right  {
@@ -1191,27 +1194,26 @@ body {
  }
 
  #yearoftherooster2017 #epic-skins .item {
-   padding: 9.2px 2px;
+   padding: 10px 2px;
  }
 
  #yearoftherooster2017 #emotes h2 {
-   margin-top: 4px;
+   margin-top: 15px;
  }
 
  #yearoftherooster2017 #sprays {
-   width: 99%;
-   margin-top: 6px;
+   width: 67%;
  }
 
  #yearoftherooster2017 #sprays .items {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   height: 545px;
+   height: 362px;
  }
 
  #yearoftherooster2017 #sprays .item {
-   width: 49%;
+   width: 32%;
  }
 
  #yearoftherooster2017 #sprays h3 {
@@ -1301,15 +1303,23 @@ body {
  }
 
  #yearoftherooster2017 #voicelines {
-   width: 38%;
+   width: 45%;
  }
 
  #yearoftherooster2017 #victoryposes {
-   width: 26%;
+   width: 33%;
  }
 
  #yearoftherooster2017 #icons {
-   width: 35%;
+   width: 54%;
+ }
+
+ #yearoftherooster2017 #icons .item {
+   width: 48%;
+ }
+
+ #yearoftherooster2017 #icons .item:nth-child(23) h3 {
+   font-size: 22px;
  }
 
  #yearoftherooster2017 #icons .items {
@@ -1323,11 +1333,11 @@ body {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   height: 300px;
+   height: 440px;
  }
 
  #yearoftherooster2017 #voicelines .item {
-   width: 31.8%;
+   width: 48%;
  }
 
  #ornamentinfo {

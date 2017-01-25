@@ -28,11 +28,22 @@
     </div>
   </div>
   <div id="row2" class="row">
-    <div id="voicelines" class="section">
-      <h2>Voice Lines</h2> <span>(75 Coins)</span>
+    <div id="sprays" class="section">
+      <h2>Sprays</h2> <span>(75 Coins)</span>
+      <span id="ornamentinfo">
+        <input type="checkbox" id="fakecb" style="display:none">
+        <label for="fakecb" id="fakecheckbox"></label> <span> = Dragon Dance Spray</span>
+      </span>
+      <span class="wot" tooltip-popup-delay="400" uib-tooltip="This event added two sprays for every character, the checkboxes are for the normal sprays and the circle boxes are for the other spray">What's this?</span>
       <div class="items">
-        <div class="item" ng-repeat="voice in ::data.items.voicelines track by $index">
-          <input type="checkbox" id="{{'voice' + $index}}" ng-model="checked.voicelines[voice.id]" ng-change="onSelect()"> <label for="{{'voice' + $index}}"><h3>{{::voice.hero}}</h3></label>
+        <div class="item" ng-repeat="spray in ::data.items.sprays track by $index" ng-if="::!spray.id.includes('dragon-dance')" ng-mouseover="showPreview(spray)" ng-mouseleave="hidePreview()">
+          <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked.sprays[spray.id]" ng-change="onSelect()">
+          <input ng-if="::spray.hero" type="checkbox" class="orn" ng-if="::spray.hero" id="{{'sprayorn' + $index}}" ng-model="checked.sprays[spray.dragonID]" ng-change="onSelect()">
+          <label ng-if="::spray.hero" for="{{'sprayorn' + $index}}" class="ornl"></label>
+          <label for="{{'spray' + $index}}">
+            <h3>{{::spray.hero ? spray.hero : spray.name}}</h3>
+            <h4 ng-if="spray.hero">[{{::spray.name}}]</h4>
+          </label>
         </div>
       </div>
     </div>
@@ -40,14 +51,6 @@
       <h2>Victory Poses</h2> <span>(225 Coins)</span>
       <div class="item" ng-repeat="pose in ::data.items.poses track by $index" ng-mouseover="showPreview(pose)" ng-mouseleave="hidePreview()">
         <input type="checkbox" id="{{'pose' + $index}}" ng-model="checked.poses[pose.id]" ng-change="onSelect()"> <label for="{{'pose' + $index}}"><h3>{{::pose.name}} {{::pose.hero}}</h3></label>
-      </div>
-    </div>
-    <div id="icons" class="section">
-      <h2>Player Icons</h2>
-      <div class="items">
-        <div class="item" ng-repeat="icon in ::data.items.icons track by $index" ng-mouseover="showPreview(icon, true)" ng-mouseleave="hidePreview()">
-          <input type="checkbox" id="{{'icon' + $index}}" ng-model="checked.icons[icon.id]" ng-change="onSelect()"> <label for="{{'icon' + $index}}"><h3>{{::icon.name}}</h3></label>
-        </div>
       </div>
     </div>
   </div>
@@ -78,22 +81,19 @@
     </div>
   </div>
   <div id="row2" class="row">
-    <div id="sprays" class="section">
-      <h2>Sprays</h2> <span>(75 Coins)</span>
-      <span id="ornamentinfo">
-        <input type="checkbox" id="fakecb" style="display:none">
-        <label for="fakecb" id="fakecheckbox"></label> <span> = Dragon Dance Spray</span>
-      </span>
-      <span class="wot" tooltip-popup-delay="400" uib-tooltip="This event added two sprays for every character, the checkboxes are for the normal sprays and the circle boxes are for the other spray">What's this?</span>
+    <div id="icons" class="section">
+      <h2>Player Icons</h2>
       <div class="items">
-        <div class="item" ng-repeat="spray in ::data.items.sprays track by $index" ng-if="::!spray.id.includes('dragon-dance')" ng-mouseover="showPreview(spray)" ng-mouseleave="hidePreview()">
-          <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked.sprays[spray.id]" ng-change="onSelect()">
-          <input ng-if="::spray.hero" type="checkbox" class="orn" ng-if="::spray.hero" id="{{'sprayorn' + $index}}" ng-model="checked.sprays[spray.dragonID]" ng-change="onSelect()">
-          <label ng-if="::spray.hero" for="{{'sprayorn' + $index}}" class="ornl"></label>
-          <label for="{{'spray' + $index}}">
-            <h3>{{::spray.hero ? spray.hero : spray.name}}</h3>
-            <h4 ng-if="spray.hero">[{{::spray.name}}]</h4>
-          </label>
+        <div class="item" ng-repeat="icon in ::data.items.icons track by $index" ng-mouseover="showPreview(icon, true)" ng-mouseleave="hidePreview()">
+          <input type="checkbox" id="{{'icon' + $index}}" ng-model="checked.icons[icon.id]" ng-change="onSelect()"> <label for="{{'icon' + $index}}"><h3>{{::icon.name}}</h3></label>
+        </div>
+      </div>
+    </div>
+    <div id="voicelines" class="section">
+      <h2>Voice Lines</h2> <span>(75 Coins)</span>
+      <div class="items">
+        <div class="item" ng-repeat="voice in ::data.items.voicelines track by $index">
+          <input type="checkbox" id="{{'voice' + $index}}" ng-model="checked.voicelines[voice.id]" ng-change="onSelect()"> <label for="{{'voice' + $index}}"><h3>{{::voice.hero}}</h3></label>
         </div>
       </div>
     </div>
