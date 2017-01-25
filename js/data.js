@@ -3126,6 +3126,11 @@ OWI.factory('Data', function() {
             "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/dragon-dance.png"
           },
           {
+            "name": "Fortune",
+            "id": "fortune",
+            "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/fortune.png"
+          },
+          {
             "name": "Fuchimari",
             "id": "fuchimari",
             "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/fuchimari.png"
@@ -3156,11 +3161,6 @@ OWI.factory('Data', function() {
             "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/lion-dance.png"
           },
           {
-            "name": "Lord of Candy",
-            "id": "lord-of-candy",
-            "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/lord-of-candy.png"
-          },
-          {
             "name": "Lucky Pouch",
             "id": "lucky-pouch",
             "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/lucky-pouch.png"
@@ -3184,11 +3184,6 @@ OWI.factory('Data', function() {
             "name": "Pachilantern",
             "id": "pachilantern",
             "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/pachilantern.png"
-          },
-          {
-            "name": "Piggy",
-            "id": "piggy",
-            "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/piggy.png"
           },
           {
             "name": "Piggy",
@@ -3223,7 +3218,7 @@ OWI.factory('Data', function() {
           {
             "name": "Year of the Rooster",
             "id": "year-of-the-rooster",
-            "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/year-of-the-rooster-2017.png"
+            "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/year-of-the-rooster.png"
           }
         ],
         "intros": [
