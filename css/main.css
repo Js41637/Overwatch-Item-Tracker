@@ -1156,37 +1156,44 @@ body {
  #yearoftherooster2017 {
    padding: 5px 5px 0px;
    display: flex;
-   min-width: 1700px;
+   min-width: 1600px;
+   flex-direction: column;
  }
  #yearoftherooster2017 .row {
    display: flex;
  }
 
- #yearoftherooster2017 #col1  {
+ #yearoftherooster2017 #row1 #col1  {
    width: 61%;
  }
 
- #yearoftherooster2017 #col2 {
+ #yearoftherooster2017 #row1 #col2 {
    width: 39%;
- }
-
- #yearoftherooster2017 #col2 #row1,  #yearoftherooster2017 #col2 #row2 {
    display: flex;
-   justify-content: space-around;
- }
-
- #yearoftherooster2017 #col2 #row2 {
-   margin-top: 10px;
- }
-
- #yearoftherooster2017 #col2 #row1 .left, #yearoftherooster2017 #col2 #row1 .right  {
-   width: 49%;
- }
-
- #yearoftherooster2017 #col1 #row2 {
    justify-content: space-between;
-    padding-right: 6px;
  }
+
+ #yearoftherooster2017 #row2 #col1  {
+   width: 31%;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ #yearoftherooster2017 #row2 #col2  {
+   width: 69%;
+   display: flex;
+   justify-content: space-between;
+   margin-left: 8px;
+ }
+
+ #yearoftherooster2017 #row2 #col1 .left  {
+   width: 42%;
+ }
+
+ #yearoftherooster2017 #row2 #col1 .right  {
+   width: 57%;
+ }
+
 
  #yearoftherooster2017 #epic-skins {
    width: 99%;
@@ -1200,19 +1207,47 @@ body {
    margin-top: 15px;
  }
 
+ #yearoftherooster2017 #voicelines {
+   width: 45%;
+ }
+
+ #yearoftherooster2017 #victoryposes {
+   width: 25%;
+ }
+
+ #yearoftherooster2017 #icons {
+   width: 54%;
+ }
+
+ #yearoftherooster2017 #icons .item:nth-child(23) h3 {
+   font-size: 22px;
+ }
+
+ #yearoftherooster2017 #voicelines .items, #yearoftherooster2017 #icons .items {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   height: 420px;
+ }
+
+ #yearoftherooster2017 #voicelines .item,  #yearoftherooster2017 #icons .item {
+   width: 48%;
+   padding: 4px 2px;
+ }
+
  #yearoftherooster2017 #sprays {
-   width: 67%;
+   width: 74.5%;
  }
 
  #yearoftherooster2017 #sprays .items {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   height: 362px;
+   height: 300px;
  }
 
  #yearoftherooster2017 #sprays .item {
-   width: 32%;
+   width: 24%;
  }
 
  #yearoftherooster2017 #sprays h3 {
@@ -1299,44 +1334,6 @@ body {
    font-style: italic;
    color: #d0d0dc;
    width: 100%;
- }
-
- #yearoftherooster2017 #voicelines {
-   width: 45%;
- }
-
- #yearoftherooster2017 #victoryposes {
-   width: 33%;
- }
-
- #yearoftherooster2017 #icons {
-   width: 54%;
- }
-
- #yearoftherooster2017 #icons .item {
-   width: 48%;
- }
-
- #yearoftherooster2017 #icons .item:nth-child(23) h3 {
-   font-size: 22px;
- }
-
- #yearoftherooster2017 #icons .items {
-   height: 435px;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
- }
-
- #yearoftherooster2017 #voicelines .items {
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   height: 440px;
- }
-
- #yearoftherooster2017 #voicelines .item {
-   width: 48%;
  }
 
  #ornamentinfo {
