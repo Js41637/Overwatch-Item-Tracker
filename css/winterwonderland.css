@@ -1,0 +1,73 @@
+#winterwonderland2016 #row1 #col1 {
+  width: 40%;
+}
+
+#winterwonderland2016 #row1 #col2 {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#winterwonderland2016 #row1 #col2 .right {
+  width: 69%;
+}
+
+#winterwonderland2016 #row2 {
+  margin-top: -20px;
+}
+
+#winterwonderland2016 #row2 #col1 {
+  width: 35%;
+}
+
+#winterwonderland2016 #row2 #col2 {
+  width: 64%;
+}
+
+#winterwonderland2016 #row2 .left {
+  width: 15%;
+}
+
+#winterwonderland2016 #row2 .right {
+  width: 20%;
+}
+
+#winterwonderland2016 #sprays {
+  width: 64%;
+}
+
+#winterwonderland2016 #epic-skins {
+  width: 100%;
+}
+
+#winterwonderland2016 #emotes h2 {
+  margin-top: 25px;
+}
+
+#winterwonderland2016 .top {
+  padding: 0 10px;
+}
+
+#winterwonderland2016 #voicelines {
+  width: 29%;
+}
+
+#winterwonderland2016 #victoryposes .items {
+  height: 157px;
+}
+
+#winterwonderland2016 #voicelines .items {
+  height: 456px;
+}
+
+#winterwonderland2016 #icons .items {
+  height: 261px;
+}
+
+#winterwonderland2016 #icons .item:nth-child(24) h3 {
+  font-size: 21px;
+}
+
+#winterwonderland2016 #sprays .items {
+  height: 265px;
+}

@@ -45,7 +45,7 @@ OWI.factory("StorageService", function() {
 OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data, $uibModal, StorageService) {
   this.preview = false;
   this.updates = Data.updates;
-  this.selectedUpdate = 3;
+  this.selectedUpdate = 0;
 
   this.openSettings = function() {
     $uibModal.open({

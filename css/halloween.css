@@ -1,0 +1,45 @@
+#halloween2016 .col {
+  display: initial;
+}
+
+#halloween2016 #col1 {
+  width: 41%;
+}
+
+#halloween2016 #col2 {
+  width: 44%;
+}
+
+#halloween2016 #col3 {
+  width: 15%;
+}
+
+#halloween2016 #epic-skins {
+  float: left;
+  width: 40%;
+  margin-right: 20px;
+}
+
+#halloween2016 #emotes h2 {
+  margin-top: 24px;
+}
+
+#halloween2016 .top {
+  display: flex;
+}
+
+#halloween2016 .top, #halloween2016 .bottom {
+  padding: 0 8px;
+}
+
+#halloween2016 #voicelines, #halloween2016 #victoryposes {
+  width: 49.5%;
+}
+
+#halloween2016 #voicelines .items, #halloween2016 #victoryposes .items {
+  height: 431px;
+}
+
+#halloween2016 #sprays .items {
+  height: 260px;
+}
