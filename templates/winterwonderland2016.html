@@ -18,12 +18,13 @@
         <h2>Legendary Skins <small class="color-legendary">(3000)</small></h2>
         <div class="images">
           <div class="card" ng-repeat="skin in ::data.items.skinsLegendary track by $index" style="background-image:url({{::skin.img}});">
-             <div class="bg">
+            <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked.skinsLegendary[skin.id]" ng-change="onSelect()">
+            <label for="{{'legendary' + $index}}" class="bg">
               <div class="card-content">
-                <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked.skinsLegendary[skin.id]" ng-change="onSelect()"><label for="{{'legendary' + $index}}" class="card-heading">{{skin.hero}}</label>
+                <h4 class="card-heading">{{skin.hero}}</h4>
                 <p class="card-copy">{{skin.name}}</p>
               </div>
-            </div>
+            </label>
           </div>
         </div>
       </div>
