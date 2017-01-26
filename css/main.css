@@ -856,8 +856,6 @@ strong {
   left: -9999px;
 }
 #legendary-skins [type="checkbox"]:not(:checked) + label, #legendary-skins [type="checkbox"]:checked + label {
-  position: relative;
-  padding-left: 0;
   cursor: pointer;
 }
 
@@ -865,8 +863,8 @@ strong {
 #legendary-skins [type="checkbox"]:not(:checked) + label:before, #legendary-skins [type="checkbox"]:checked + label:before {
   content: '';
     position: absolute;
-    left: -10px;
-    top: -280px;
+    left: 6px;
+    top: -264px;
     width: 17px;
     height: 17px;
     border: 2px solid rgba(255,255,255,0.6);
@@ -880,8 +878,8 @@ strong {
 #legendary-skins [type="checkbox"]:not(:checked) + label:after, #legendary-skins [type="checkbox"]:checked + label:after {
   content: '';
   position: absolute;
-  top: -278px;
-  left: -9px;
+  top: -261px;
+  left: 7px;
   width: 19px;
   height: 14px;
   color: #84ff4e;
@@ -951,7 +949,6 @@ strong {
 .card-heading {
   line-height: .8;
   font-size: 30px !important;
-  cursor: initial;
   font: italic normal normal 10px Big Noodle Too,impact,sans-serif;
   line-height: normal;
   letter-spacing: .1px;
