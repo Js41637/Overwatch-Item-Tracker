@@ -247,19 +247,25 @@ body {
     margin: 0 15px;
   }
   #header h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   #header h2 {
     font-size: 20px;
   }
   #header h3 {
-    font-size: 14px;
+    font-size: 12px;
   }
   #header img {
-    height: 34px;
+    height: 30px;
   }
   #header .reset .x {
     margin-top: -18px;
+  }
+  #header .event-selector .btn,
+  #header .event-selector .btn:hover,
+  #header .event-selector .btn:focus {
+    height: 30px;
+    line-height: 30px;
   }
 }
 
