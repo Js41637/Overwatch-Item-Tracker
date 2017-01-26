@@ -316,12 +316,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 7px; /* This accounts for the awkward overflow caused by the font choice */
 }
 
 #cost-remaining span {
   margin-left: 5px;
   font-size: 58px;
-  width: 110px;
+  width: auto;
   letter-spacing: 0.3;
   font-style: italic;
   color: rgb(240, 240, 240);
@@ -599,14 +600,22 @@ body {
   margin: 5px 10px;
   cursor: pointer;
   overflow: hidden;
-  border: 2px solid #fff;
-  background: url('../resources/portrait-bg.jpg') 0 0 / 100% 100% no-repeat #fff;
+  border: 2px solid hsla(0,0%,100%,.4);
+  background: url('../resources/portrait-bg.jpg') 0 0 / 100% 100% no-repeat;
   transition: transform 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 #heroes-selection .hero-selector.selected, #heroes-selection .hero-selector:hover {
   transform: scale(1.4, 1.4);
   z-index: 2;
+  border-color: #fff;
+}
+
+#heroes-selection .hero-selector.selected .hero-name,
+#heroes-selection .hero-selector:hover .hero-name {
+  color: #1a325e;
+  background-color: #fff;
+  padding: 10px 0 8px 0;
 }
 
 #heroes-selection .hero-selector.selected {
@@ -621,18 +630,23 @@ body {
 #heroes-selection .hero-selector .hero-name {
   position: absolute;
   bottom: 0;
-  padding: 6px 0;
+  padding: 10px 0;
   width: 100%;
-  background-color: rgba(45, 45, 45, 0.9);
+  background-color: rgba(40,53,79,.9);
   font-size: 18px;
-  color: #fff;
+  color: #d0d0dc;
   text-align: center;
+  font-style: italic;
 }
 
 #heroes-selection .hero-selector .hero-name .hero-progress {
   height: 0;
   opacity: 0;
   transition: height 0.15s ease-in-out, opacity 0.15s ease-in-out;
+  font-family: Futura;
+  font-size: 0.65em;
+  text-transform: uppercase;
+  font-style: normal;
 }
 
 #heroes-selection .hero-selector.selected .hero-name .hero-progress, #heroes-selection .hero-selector:hover .hero-name .hero-progress {
@@ -642,7 +656,7 @@ body {
 
 #heroes-selection .hero-selector .hero-name .hero-progress .hero-progress-bar {
   height: 4px;
-  background-color: rgba(124, 127, 132, 0.6);
+  background-color: rgba(124, 127, 132, 0.2);
   margin: 2px 0;
 }
 
