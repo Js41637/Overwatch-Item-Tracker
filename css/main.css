@@ -389,15 +389,24 @@ body {
   background-color: rgba(239, 172, 205,0.5);
 }
 
+label i.fa {
+  float: right;
+  display: none;
+}
+
 #image-preview {
   width: 100%;
   height: 100%;
   top: 0;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   opacity: 0;
   transition: opacity 0.155s ease-in-out;
   pointer-events: none;
+}
+
+#image-preview .imgcont {
+  padding-right: 40px;
 }
 
 #image-preview .preview, #image-preview .imgcont {
@@ -422,7 +431,7 @@ body {
 
 #image-preview.fixed {
   position: fixed;
-  width: 700px;
+  width: auto;
   height: 420px;
   top: 25px;
   /* margin-top: -170px; */
@@ -1161,7 +1170,7 @@ body {
  #yearoftherooster2017 .row {
    display: flex;
  }
-  #yearoftherooster2017 .section {
+  #yearoftherooster2017 .section, #row1col1, #row1col2 {
     padding-right: 0;
   }
 
@@ -1191,6 +1200,10 @@ body {
  #yearoftherooster2017 #voicelines .item,  #yearoftherooster2017 #icons .item {
    width: 48%;
    padding: 4px 2px;
+ }
+
+ #row2col1, #row2col2 {
+   padding: 0;
  }
 
  #yearoftherooster2017 #sprays .items {
@@ -1233,6 +1246,7 @@ body {
    color: #405275;
    margin-bottom: 10px;
    position: relative;
+   height: 400px;
  }
 
  #yearoftherooster2017 #legendary-skins .inner {
@@ -1974,16 +1988,6 @@ fieldset[disabled] .btn-info.focus {
   border-left: 4px solid transparent;
 }
 
-@media screen and (min-width: 992px) {
-  #yearoftherooster2017 #legendary-skins .item {
-    width: 14%;
-  }
-
-  #yearoftherooster2017 #legendary-skins .item:not(:last-child) {
-    margin-right: 3px;
-  }
-}
-
 @media screen and (max-width: 1600px) and (min-width: 1200px) {
   .section {
     width: 33.33%
@@ -2003,6 +2007,11 @@ fieldset[disabled] .btn-info.focus {
 }
 
 @media screen and (max-width: 1000px) {
+
+  label i.fa {
+    /* display: inline; uncomment when adding onClick preview for small screen view */
+  }
+
   #header {
     position: fixed;
     height: 5rem;
@@ -2048,10 +2057,26 @@ fieldset[disabled] .btn-info.focus {
     right: 70px;
   }
 
-   #yearoftherooster2017 #sprays .items {
-     height: auto;
-   }
+  #yearoftherooster2017 #legendary-skins {
+    height: 1100;
+  }
+
+  #yearoftherooster2017 #sprays .items {
+   height: auto;
+  }
 }
+
+@media screen and (min-width: 992px) {
+
+  #yearoftherooster2017 #legendary-skins .item {
+    width: 14%;
+  }
+
+  #yearoftherooster2017 #legendary-skins .item:not(:last-child) {
+    margin-right: 3px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   #header h1, #header .seperator {
     display: none;
@@ -2071,6 +2096,20 @@ fieldset[disabled] .btn-info.focus {
 }
 
 @media screen and (max-width: 767px) {
+
+  #yearoftherooster2017 #legendary-skins {
+    height: 1450px;
+  }
+
+  #image-preview .preview, #image-preview .imgcont {
+    background: url(../resources/body-bg.jpg) no-repeat top;
+  }
+
+  #image-preview.fixed {
+    top: calc(50% - 210px);
+    left: calc(50% - 200px)
+  }
+
   #yearoftherooster2017 #legendary-skins .item {
     width: calc(50% - 2px);
     display: inline-block;
