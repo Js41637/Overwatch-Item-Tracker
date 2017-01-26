@@ -54,6 +54,15 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
       controllerAs: 'settings'
     })
   };
+
+  this.openAbout = function() {
+    $uibModal.open({
+      templateUrl: './templates/about.html',
+      controller: 'SettingsCtrl',
+      controllerAs: 'settings'
+    })
+  };
+
   this.particles = StorageService.getSetting('particles');
   var savedData = StorageService.getData();
   Data.checked = Object.assign({}, Data.checked, savedData);
