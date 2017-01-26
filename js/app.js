@@ -61,7 +61,7 @@ OWI.run(function() {
       name: "Fix Bokimario",
       id: 3,
       run: function() {
-        if (data.yearoftherooster2017.icons.bokimario) {
+        if (data.yearoftherooster2017 && data.yearoftherooster2017.icons && data.yearoftherooster2017.icons.bokimario) {
           data.yearoftherooster2017.icons.bokimari = data.yearoftherooster2017.icons.bokimario
           delete data.yearoftherooster2017.icons.bokimario
         }
