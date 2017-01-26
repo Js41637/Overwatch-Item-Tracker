@@ -216,7 +216,7 @@ OWI.directive("update", ["$rootScope", "Data", "StorageService", function($rootS
           possibleItems = $scope.data.items[type];
         }
 
-        let hasItem = false;
+        var hasItem = false;
 
         possibleItems.forEach(function(item) {
           if ($scope.selectedHero == 'global' && !item.hero) hasItem = true;
