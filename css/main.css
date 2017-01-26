@@ -1161,7 +1161,7 @@ body {
  #yearoftherooster2017 .row {
    display: flex;
  }
-  #yearoftherooster2017 .section, #row1col1, #row1col2 {
+  #yearoftherooster2017 .section {
     padding-right: 0;
   }
 
@@ -1191,10 +1191,6 @@ body {
  #yearoftherooster2017 #voicelines .item,  #yearoftherooster2017 #icons .item {
    width: 48%;
    padding: 4px 2px;
- }
-
- #row2col1, #row2col2 {
-   padding: 0;
  }
 
  #yearoftherooster2017 #sprays .items {
