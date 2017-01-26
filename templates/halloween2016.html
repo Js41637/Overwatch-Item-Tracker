@@ -17,7 +17,7 @@
           <div class="item" ng-repeat="skin in ::data.items.skinsLegendary track by $index" style="background-image:url({{::skin.img}});">
             <div class="thing">
               <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked.skinsLegendary[skin.id]" ng-change="onSelect()">
-              <label for="{{'legendary' + $index}}"><h3 class="name">{{::skin.name}} {{::skin.hero}}</h3></label>
+              <label for="{{'legendary' + $index}}"><h3 class="name">{{::skin.name|translate}} {{::skin.hero}}</h3></label>
             </div>
           </div>
         </div>

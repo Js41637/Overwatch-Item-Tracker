@@ -18,6 +18,11 @@
       <p>Marks all items for every event as selected</p>
       <button class="btn btn-info" type="button" ng-click="settings.selectAll()">Select Everything!</button>
     </div>
+    <div class="setting">
+      <h3>Select Language</h3>
+      <p>Select a language for the itemnames</p>
+      <select class="form-control" ng-options="lang as lang.label for lang in languages track by lang.id" ng-model="langKey"  ng-change="settings.changeLanguage(langKey.id)"></select>
+    </div>
   </div>
   <div class="modal-footer">
     <button class="btn btn-primary" type="button" ng-click="settings.close()">Close</button>

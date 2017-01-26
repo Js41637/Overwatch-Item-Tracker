@@ -3,7 +3,8 @@ OWI.factory("StorageService", function() {
     data: {},
     settings: {},
     defaults: {
-      particles: true
+      particles: true,
+      langKey: 'en_US'
     },
     getData: function() {
       return service.data
@@ -55,12 +56,16 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
     })
   };
   this.particles = StorageService.getSetting('particles');
+  this.langKey = StorageService.getSetting('langKey');
   var savedData = StorageService.getData();
   Data.checked = Object.assign({}, Data.checked, savedData);
 }]);
 
-OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "Data", function($rootScope, $uibModalInstance, StorageService, Data) {
+OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "$translate", "StorageService", "Data", function($rootScope, $uibModalInstance, $translate, StorageService, Data) {
+  $rootScope.languages = [{ id: 'de_DE', label: 'German' }, { id: 'en_US', label: 'English US' }];
+
   this.particles = StorageService.getSetting('particles');
+  $rootScope.langKey = $rootScope.languages.find(function(lang) { return lang.id === StorageService.getSetting('langKey'); });
 
   this.close = function() {
     $uibModalInstance.dismiss('close')
@@ -88,6 +93,13 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
     });
     StorageService.setData(Data.checked);
     $rootScope.$emit('selectAll')
+  }
+
+  this.changeLanguage = function(langKey) {
+    $translate.use(langKey);
+    console.log('Changed language to', langKey);
+    StorageService.setSetting('langKey', langKey);
+    location.reload();
   }
 }])
 

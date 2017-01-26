@@ -1,7 +1,21 @@
-var OWI = angular.module('OWI', ['ui.bootstrap'])
+var OWI = angular.module('OWI', ['ui.bootstrap', 'pascalprecht.translate'])
 
-OWI.config(['$compileProvider', function($compileProvider) {
+OWI.config(['$compileProvider', '$translateProvider', function($compileProvider, $translateProvider) {
   $compileProvider.debugInfoEnabled(false);
+
+  $translateProvider.useStaticFilesLoader({
+    prefix: '/locales/',
+    suffix: '.json'
+  });
+  var settings = localStorage.getItem('settings');
+  if (settings) {
+    console.log('Seleced language from localStorage');
+    $translateProvider.preferredLanguage(JSON.parse(settings).langKey);
+  } else {
+    console.log('Seleced default language');
+    $translateProvider.preferredLanguage('en_US');
+  }
+  $translateProvider.fallbackLanguage('en_US');
 }])
 
 // Run migrations to convert data and stuff

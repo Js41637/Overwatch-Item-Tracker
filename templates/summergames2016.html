@@ -4,11 +4,11 @@
       <div id="legendary-skins" class="section">
         <div id="image-preview" scroll ng-class="{ show: preview, small: preview.isSmall, fixed: isFixed }">
           <div class="preview" ng-show="preview.img">
-            <h2>Image Preview</h2> <span>{{preview.name}}</span>
+            <h2>Image Preview</h2> <span>{{preview.name|translate}}</span>
             <img src="{{preview.img}}" />
           </div>
           <div class="preview" ng-if="preview.video">
-            <h2>Video Preview</h2> <span>{{preview.name}}</span>
+            <h2>Video Preview</h2> <span>{{preview.name|translate}}</span>
             <video autoplay="true" autostart="true" loop="true" src="{{preview.video}}"></video>
           </div>
         </div>
@@ -18,7 +18,7 @@
             <div class="item" ng-repeat="skin in ::data.items.skinsLegendary track by $index" style="background-image:url({{::skin.img}});">
               <div class="thing">
                 <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked.skinsLegendary[skin.id]" ng-change="onSelect()">
-                <label for="{{'legendary' + $index}}"><h3 class="name">{{::skin.name}} {{::skin.hero}}</h3></label>
+                <label for="{{'legendary' + $index}}"><h3 class="name">{{::skin.name|translate}} {{::skin.hero}}</h3></label>
               </div>
             </div>
           </div>
@@ -28,7 +28,7 @@
         <h2>Epic Skins</h2>
         <div class="items">
           <div class="item" ng-repeat="skin in ::data.items.skinsEpic track by $index" ng-mouseover="showPreview(skin)" ng-mouseleave="hidePreview()">
-            <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.skinsEpic[skin.id]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{::skin.name}} {{::skin.hero}}</h3></label>
+            <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.skinsEpic[skin.id]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{::skin.name|translate}} {{::skin.hero}}</h3></label>
           </div>
         </div>
       </div>
@@ -36,13 +36,13 @@
         <div id="highlight-intros" class="section">
           <h2>Highlight Intros</h2>
           <div class="item" ng-repeat="intro in ::data.items.intros track by $index" ng-mouseover="showPreview(intro)" ng-mouseleave="hidePreview()">
-            <input type="checkbox" id="{{'intro' + $index}}" ng-model="checked.intros[intro.id]" ng-change="onSelect()"> <label for="{{'intro' + $index}}"><h3>{{::intro.name}} {{::intro.hero}}</h3></label>
+            <input type="checkbox" id="{{'intro' + $index}}" ng-model="checked.intros[intro.id]" ng-change="onSelect()"> <label for="{{'intro' + $index}}"><h3>{{::intro.name|translate}} {{::intro.hero}}</h3></label>
           </div>
         </div>
         <div id="emotes" class="section">
           <h2>Emotes</h2>
           <div class="item" ng-repeat="emote in ::data.items.emotes track by $index" ng-mouseover="showPreview(emote)" ng-mouseleave="hidePreview()">
-            <input type="checkbox" id="{{'emote' + $index}}" ng-model="checked.emotes[emote.id]" ng-change="onSelect()"> <label for="{{'emote' + $index}}"><h3>{{::emote.name}} {{::emote.hero}}</h3></label>
+            <input type="checkbox" id="{{'emote' + $index}}" ng-model="checked.emotes[emote.id]" ng-change="onSelect()"> <label for="{{'emote' + $index}}"><h3>{{::emote.name|translate}} {{::emote.hero}}</h3></label>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
       <h2>Player Icons</h2>
       <div class="items">
         <div class="item" ng-repeat="icon in ::data.items.icons track by $index" ng-mouseover="showPreview(icon, true)" ng-mouseleave="hidePreview()">
-          <input type="checkbox" id="{{'icon' + $index}}" ng-model="checked.icons[icon.id]" ng-change="onSelect()"> <label for="{{'icon' + $index}}"><h3>{{::icon.name}}</h3></label>
+          <input type="checkbox" id="{{'icon' + $index}}" ng-model="checked.icons[icon.id]" ng-change="onSelect()"> <label for="{{'icon' + $index}}"><h3>{{::icon.name|translate}}</h3></label>
         </div>
       </div>
     </div>
