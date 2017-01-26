@@ -10,6 +10,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="msapplication-starturl" content="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
   <link rel="icon" type="image/png" sizes="300x300" href="./resources/logo.png">
   <link rel="apple-touch-icon" type="image/png" sizes="300x300" href="./resources/logo.png">
   <link rel="stylesheet" href="./css/reset.css">
@@ -36,7 +37,7 @@
           <li role="menuitem" ng-repeat="update in $ctrl.updates track by $index"><a href="#" ng-click="$ctrl.selectedUpdate = $index;">{{update.name}}</a></li>
         </ul>
       </div>
-      <div ng-show="$ctrl.selectedUpdate == 3">
+      <div id="event-info-dates" ng-show="$ctrl.selectedUpdate == 3">
         <h2>Event ends on Feb 13th, 2017 (PST)</h2>
         <h3>Be sure to get everything you want by Feb 12th to be safe!</h3>
       </div>
