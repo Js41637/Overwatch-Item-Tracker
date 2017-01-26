@@ -15,6 +15,15 @@
     font-style: italic
 }
 
+@font-face {
+    font-family: Futura;
+    src: url(../fonts/futura.eot);
+    src: url(../fonts/futura.woff) format("woff"),
+         url(../fonts/futura.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
 body {
   font-family: "Big Noodle Too";
   min-width: 1000px;
@@ -42,7 +51,7 @@ body {
 }
 
 #header {
-  height: 55px;
+  height: 45px;
   background-color: rgb(45, 45, 45);
   color: orange;
   padding: 0 15px;
@@ -88,26 +97,28 @@ body {
 }
 
 #header img {
-  height: 40px;
-  margin-right: 20px;
+  height: 30px;
+  margin-right: 8px;
 }
 
 #header h1 {
-  font-size: 48px;
+  font-size: 35px;
   display: inline-block;
   font-style: italic;
+  margin-right: 30px;
 }
 
 #header h2 {
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(245, 245, 245);
   font-style: italic;
 }
 
 #header h3 {
-  font-size: 17px;
   color: rgb(254, 242, 0);
-  font-style: italic;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-family: Futura,century gothic,arial,sans-serif;
 }
 
 #header .event-selector {
@@ -117,14 +128,23 @@ body {
 #header .event-selector .btn,
 #header .event-selector .btn:hover,
 #header .event-selector .btn:focus {
-  background-color: transparent;
-  border-color: transparent;
-  color: #ffa500;
-  font-size: 30px;
-  font-style: italic;
-  font-family: 'Big Noodle Too';
-  padding: 0px;
+    background-color: #ffa500;
+    border-color: transparent;
+    color: #2d2d2d;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: Futura,century gothic,arial,sans-serif;
+    padding: 0 0.6em;
+    height: 35px;
+    line-height: 35px;
+    box-shadow: 0 0 3px orange;
 }
+
+#header .event-selector .btn:hover,
+#header .event-selector .btn:focus {
+  background-color: #ffb833;
+}
+
 #header .event-selector .btn:hover,
 #header .event-selector .btn:focus {
   outline: none;
@@ -132,6 +152,7 @@ body {
 #header .event-selector .btn .caret {
   border-width: 7px;
   margin-left: 10px;
+  margin-top: -3px;
 }
 
 #header .event-selector .dropdown-menu {
@@ -146,11 +167,13 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 #header .event-selector .dropdown-menu li a {
-  padding: 5px 10px;
+  padding: 0.4em 1em;
   text-decoration: none;
   color: #ffa500;
   display: block;
-  font-size: 24px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-family: Futura,century gothic,arial,sans-serif;
   transition: color .1s ease-in-out;
 }
 #header .event-selector .dropdown-menu li:hover a {
@@ -224,19 +247,25 @@ body {
     margin: 0 15px;
   }
   #header h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   #header h2 {
     font-size: 20px;
   }
   #header h3 {
-    font-size: 14px;
+    font-size: 12px;
   }
   #header img {
-    height: 34px;
+    height: 30px;
   }
   #header .reset .x {
     margin-top: -18px;
+  }
+  #header .event-selector .btn,
+  #header .event-selector .btn:hover,
+  #header .event-selector .btn:focus {
+    height: 30px;
+    line-height: 30px;
   }
 }
 
