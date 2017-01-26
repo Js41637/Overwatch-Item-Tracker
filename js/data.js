@@ -3106,9 +3106,9 @@ OWI.factory('Data', function() {
         ],
         "icons": [
           {
-            "name": "Bokimario",
-            "id": "bokimario",
-            "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/bokimario.png"
+            "name": "Bokimari",
+            "id": "bokimari",
+            "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/icons/bokimari.png"
           },
           {
             "name": "Chang'e",

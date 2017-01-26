@@ -57,9 +57,18 @@ OWI.run(function() {
           });
         });
       }
+    }, {
+      name: "Fix Bokimario",
+      id: 3,
+      run: function() {
+        if (data.yearoftherooster2017.icons.bokimario) {
+          data.yearoftherooster2017.icons.bokimari = data.yearoftherooster2017.icons.bokimario
+          delete data.yearoftherooster2017.icons.bokimario
+        }
+      }
     }/*, { // NOT SURE ABOUT DIS
       name: "Rename events to their proper IDs",
-      id: 3,
+      id: 4,
       run: function() {
         if (!data.summergames2016 && !data.winterwonderland2016 && !data.halloween2016) return
         data['SUMMER_GAMES_2016'] = data.summergames2016;
