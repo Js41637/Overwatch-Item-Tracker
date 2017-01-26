@@ -84,6 +84,8 @@ OWI.run(function() {
   var storedMigrations = localStorage.getItem('migrations')
   var completedMigrations = storedMigrations ? JSON.parse(storedMigrations) : []
   if (!data) {
+    console.info("No data, no migrations needed")
+    completedMigrations = []
     migrations.forEach(function(m) {
       completedMigrations.push(m.id)
     })
