@@ -45,7 +45,7 @@ OWI.factory("StorageService", function() {
 OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data, $uibModal, StorageService) {
   this.preview = false;
   this.updates = Data.updates;
-  this.selectedUpdate = 3;
+  this.selectedUpdate = 'YEAR_OF_THE_ROOSTER_2017';
 
   this.openSettings = function() {
     $uibModal.open({
