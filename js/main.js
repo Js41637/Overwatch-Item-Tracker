@@ -45,7 +45,7 @@ OWI.factory("StorageService", function() {
 OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data, $uibModal, StorageService) {
   this.preview = false;
   this.updates = Data.updates;
-  this.selectedUpdate = 3;
+  this.selectedUpdate = 'YEAR_OF_THE_ROOSTER_2017';
 
   this.openSettings = function() {
     $uibModal.open({
@@ -54,6 +54,15 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
       controllerAs: 'settings'
     })
   };
+
+  this.openAbout = function() {
+    $uibModal.open({
+      templateUrl: './templates/about.html',
+      controller: 'SettingsCtrl',
+      controllerAs: 'settings'
+    })
+  };
+
   this.particles = StorageService.getSetting('particles');
   var savedData = StorageService.getData();
   Data.checked = Object.assign({}, Data.checked, savedData);
