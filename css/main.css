@@ -388,7 +388,6 @@ body {
 .item-container .section h3 {
   color: rgb(245, 245, 245);
   font-size: 26px;
-  cursor: pointer;
 }
 
 .item-container .section span, .item-container h2 small {
@@ -397,24 +396,22 @@ body {
   font-style: italic;
 }
 
-.item-container .section > span:before,
-.item-container h2 > small:before {
+.item-container .section>span:before, .item-container h2>small:before {
   content: "(";
 }
 
-.item-container .section > span:after,
-.item-container h2 > small:after {
+.item-container .section>span:after, .item-container h2>small:after {
   content: " Coins)";
 }
 
+
 /* Override for the Preview */
-.item-container #image-preview > span:before,
-.item-container #image-preview h2 > small:before {
+
+.item-container #image-preview>span:before, .item-container #image-preview h2>small:before {
   content: "";
 }
 
-.item-container #image-preview > span:after,
-.item-container #image-preview h2 > small:after {
+.item-container #image-preview>span:after, .item-container #image-preview h2>small:after {
   content: "";
 }
 
@@ -424,10 +421,12 @@ body {
   align-items: center;
   padding: 5px 2px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .item-container .section .item label {
   width: 100%;
+  cursor: pointer;
 }
 
 .item-container .section .item input {
@@ -754,7 +753,7 @@ strong {
 }
 
 #sprays h4:before {
-content: "[";
+  content: "[";
 }
 
 #sprays h4:after {
@@ -1009,7 +1008,9 @@ content: "[";
   text-transform: uppercase;
 }
 
+
 /* Hide or adjust information that Jayess doesn't want but is useful for other themes */
+
 #voicelines h3 {
   display: none;
 }
@@ -1022,8 +1023,7 @@ content: "[";
   font-size: 23px;
 }
 
-#sprays .item h4:before,
-#sprays .item h4:after {
+#sprays .item h4:before, #sprays .item h4:after {
   content: "";
 }
 
