@@ -1,6 +1,6 @@
 OWI.factory('Data', function() {
-  var items = `{"skinsLegendary":{},"skinsEpic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}`
-  return {
+  var items = `{"skinsLegendary":{},"skinsEpic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}`;
+  var data = {
     checked: {
       SUMMER_GAMES_2016: JSON.parse(items),
       HALLOWEEN_2016: JSON.parse(items),
@@ -3265,5 +3265,18 @@ OWI.factory('Data', function() {
         }
       }
     }
-  }
-})
+  };
+
+  Object.keys(data.updates).forEach(function(event) {
+    var items = data.updates[event].items;
+      Object.keys(items).forEach(function(type) {
+        items[type].forEach(function(item) {
+          var langKey = event + '.' + type + '.' + item.id;
+          item.name = langKey;
+          //item.langKey = langKey; //TODO: later use this?
+       });
+    });
+  });
+
+  return data;
+});
