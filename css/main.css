@@ -233,10 +233,13 @@ body {
 #menu .button {
   cursor: pointer;
   display: inline-block;
-  padding: 6px 18px;
+  padding: 8px 14px;
   color: rgb(240, 240, 240);
   transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out;
   border-radius: 4px;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 
 #menu .button.selected, #menu .button:hover {
@@ -253,10 +256,13 @@ body {
 }
 
 #protip {
-  font-size: 20px;
-  margin-top: 2px;
-  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: 15px;
   position: absolute;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
 }
 
 @media screen and (max-width: 1340px) {
@@ -294,8 +300,10 @@ body {
 #footer {
   text-align: right;
   padding-right: 20px;
-  color: #405275;
-  font-size: 14px;
+  color: rgba(64, 82, 117, 0.8);
+  font-size: 13px;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
 }
 
 #cost-remaining {
@@ -658,9 +666,9 @@ body {
   height: 0;
   opacity: 0;
   transition: height 125ms ease-in-out, opacity 150ms ease-in-out;
-  font-family: Futura;
-  font-size: 0.65em;
+  font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
+  font-size: 0.65em;
   font-style: normal;
 }
 
