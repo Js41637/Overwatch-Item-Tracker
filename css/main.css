@@ -201,6 +201,10 @@ body {
   color: #ffcf76;
 }
 
+#header .event-ended {
+  opacity: 0.6;
+}
+
 .view-mode-include {
   width: 100%;
 }

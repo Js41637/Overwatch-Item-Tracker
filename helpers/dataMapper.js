@@ -129,28 +129,28 @@ var EVENTS = {
 }
 
 var EVENTNAMES = {
-  'SUMMER_GAMES_2016': 'Summer Games 2016',
-  'HALLOWEEN_2016': 'Halloween 2016',
-  'WINTER_WONDERLAND_2016': 'Winter Wonderland 2016',
-  'YEAR_OF_THE_ROOSTER_2017': 'Year of the Rooster 2017'
+  [EVENTS.SUMMER16]: 'Summer Games 2016',
+  [EVENTS.HALLOWEEN16]: 'Halloween 2016',
+  [EVENTS.CHRISTMAS16]: 'Winter Wonderland 2016',
+  [EVENTS.ROOSTER17]: 'Year of the Rooster 2017'
 }
 
 var EVENTTIMES = {
-  SUMMER_GAMES_2016: {
-    "start": "2016-08-01T14:00:00.000Z",
-    "end": "2016-08-22T14:00:00.000Z"
+  [EVENTS.SUMMER16]: {
+    "start": "1470060000000",
+    "end": "1471874400000"
   },
-  "HALLOWEEN_2016": {
-    "start": "2016-10-10T14:00:00.000Z",
-    "end": "2016-10-31T14:00:00.000Z"
+  [EVENTS.HALLOWEEN16]: {
+    "start": "1476108000000",
+    "end": "1477922400000"
   },
-  "WINTER_WONDERLAND_2016": {
-    "start": "2016-12-12T14:00:00.000Z",
-    "end": "2017-01-02T14:00:00.000Z"
+  [EVENTS.CHRISTMAS16]: {
+    "start": "1481551200000",
+    "end": "1483365600000"
   },
-  "YEAR_OF_THE_ROOSTER_2017": {
-    "start": "2017-01-23T14:00:00.000Z",
-    "end": "2017-02-12T14:00:00.000Z"
+  [EVENTS.ROOSTER17]: {
+    "start": "1485180000000",
+    "end": "1486908000000"
   }
 }
 
