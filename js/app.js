@@ -66,19 +66,21 @@ OWI.run(function() {
           delete data.yearoftherooster2017.icons.bokimario
         }
       }
-    }/*, { // NOT SURE ABOUT DIS
+    }, {
       name: "Rename events to their proper IDs",
       id: 4,
       run: function() {
-        if (!data.summergames2016 && !data.winterwonderland2016 && !data.halloween2016) return
-        data['SUMMER_GAMES_2016'] = data.summergames2016;
-        data['HALLOWEEN_2016'] = data.halloween2016;
-        data['WINTER_WONDERLAND_2016'] = data.winterwonderland2016;
+        if (!data.summergames2016 && !data.winterwonderland2016 && !data.halloween2016 && !data.yearoftherooster2017) return
+        data['SUMMER_GAMES_2016'] = Object.assign({}, data.summergames2016, data['SUMMER_GAMES_2016']);
+        data['HALLOWEEN_2016'] = Object.assign({}, data.halloween2016, data['HALLOWEEN_2016']);
+        data['WINTER_WONDERLAND_2016'] = Object.assign({}, data.winterwonderland2016, data['WINTER_WONDERLAND_2016']);
+        data['YEAR_OF_THE_ROOSTER_2017'] = Object.assign({}, data.yearoftherooster2017, data['YEAR_OF_THE_ROOSTER_2017']);
         delete data.summergames2016;
         delete data.halloween2016;
         delete data.winterwonderland2016;
+        delete data.yearoftherooster2017;
       }
-    }*/
+    }
   ]
 
   var storedMigrations = localStorage.getItem('migrations')

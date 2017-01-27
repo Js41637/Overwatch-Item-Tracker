@@ -88,7 +88,7 @@ types.forEach(t => {
 var getType = type => {
   let m = matches[type.toLowerCase()]
   if (!m) {
-    console.warn("Unknown type?", type)
+    if (type !== 'Common Weapon Skin') console.warn("Unknown type?", type)
     return {}
   }
   return m
@@ -96,14 +96,27 @@ var getType = type => {
 
 // http://stackoverflow.com/a/1359808
 // Makes it so it JSON.stringify's in order
-var sortObject = o => {
+var sortObject = (o, update) => {
   var sorted = {}, key, a = []
   for (key in o) {
     if (o.hasOwnProperty(key)) a.push(key)
   }
-  a.sort()
+  if (update) {
+    a.sort((a, b) => {
+      if (o[a].order < o[b].order) return -1;
+      if (o[a].order > o[b].order) return 1;
+      return 0;
+    })
+  } else {
+    a.sort()
+  }
   for (key = 0; key < a.length; key++) {
     sorted[a[key]] = o[a[key]]
+  }
+  if (update) {
+    Object.keys(sorted).forEach(update => {
+      delete sorted[update].order
+    })
   }
   return sorted
 }
@@ -113,6 +126,32 @@ var EVENTS = {
   HALLOWEEN16: 'HALLOWEEN_2016',
   CHRISTMAS16: 'WINTER_WONDERLAND_2016',
   ROOSTER17: 'YEAR_OF_THE_ROOSTER_2017'
+}
+
+var EVENTNAMES = {
+  'SUMMER_GAMES_2016': 'Summer Games 2016',
+  'HALLOWEEN_2016': 'Halloween 2016',
+  'WINTER_WONDERLAND_2016': 'Winter Wonderland 2016',
+  'YEAR_OF_THE_ROOSTER_2017': 'Year of the Rooster 2017'
+}
+
+var EVENTTIMES = {
+  SUMMER_GAMES_2016: {
+    "start": "2016-08-01T14:00:00.000Z",
+    "end": "2016-08-22T14:00:00.000Z"
+  },
+  "HALLOWEEN_2016": {
+    "start": "2016-10-10T14:00:00.000Z",
+    "end": "2016-10-31T14:00:00.000Z"
+  },
+  "WINTER_WONDERLAND_2016": {
+    "start": "2016-12-12T14:00:00.000Z",
+    "end": "2017-01-02T14:00:00.000Z"
+  },
+  "YEAR_OF_THE_ROOSTER_2017": {
+    "start": "2017-01-23T14:00:00.000Z",
+    "end": "2017-02-12T14:00:00.000Z"
+  }
 }
 
 var heroes = {}
@@ -204,8 +243,14 @@ Object.keys(heroes).forEach(hKey => {
       var event = item.event
       var type = tKey == 'skins' ? (item.quality == 'legendary' ? 'skinsLegendary' : (item.quality == 'epic' ? 'skinsEpic' : 'skins')) : tKey
       if (!event) return
-      if (!updates[event]) updates[event] = {}
-      if (!updates[event][type]) updates[event][type] = []
+      if (!updates[event]) updates[event] = {
+        order: Object.keys(EVENTNAMES).indexOf(event),
+        name: EVENTNAMES[event],
+        id: event,
+        dates: EVENTTIMES[event],
+        items: {}
+      }
+      if (!updates[event].items[type]) updates[event].items[type] = []
       var legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
       var u = getImageURL(type, event, item.id)
       var url = type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: u } : { img: u })
@@ -215,13 +260,13 @@ Object.keys(heroes).forEach(hKey => {
         delete newItem.quality
       }
       delete newItem.event
-      updates[event][type].push(newItem)
+      updates[event].items[type].push(newItem)
     })
   })
 })
 
 // Add ornament ids to normal sprays
-updates[EVENTS.CHRISTMAS16].sprays = updates[EVENTS.CHRISTMAS16].sprays.map(spray => {
+updates[EVENTS.CHRISTMAS16].items.sprays = updates[EVENTS.CHRISTMAS16].items.sprays.map(spray => {
   if (spray.hero) {
     var ornamentID = `${getCleanID(spray.hero)}-ornament`
     spray.ornamentID = ornamentID;
@@ -231,7 +276,7 @@ updates[EVENTS.CHRISTMAS16].sprays = updates[EVENTS.CHRISTMAS16].sprays.map(spra
 }).filter(Boolean)
 
 // Add dragon dance ids to normal sprays
-updates[EVENTS.ROOSTER17].sprays = updates[EVENTS.ROOSTER17].sprays.map(spray => {
+updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.map(spray => {
   if (spray.hero) {
     var dragonID = `${getCleanID(spray.hero)}-dragon-dance`
     spray.dragonID = dragonID;
@@ -254,22 +299,25 @@ Object.keys(allClassItems).forEach(type => {
       if (type == 'sprays' && isSpecial) {
         Object.assign(out, { quality: 'common' })
       }
-      updates[event][type].push(out)
+      updates[event].items[type].push(out)
     })
   })
 })
 
+
+
 // Sort that shit by hero or item name
 Object.keys(updates).forEach(update => {
-  Object.keys(updates[update]).forEach(type => {
-    updates[update][type].sort((a, b) => {
+  Object.keys(updates[update].items).forEach(type => {
+    updates[update].items[type].sort((a, b) => {
       switch (type) {
         case 'voicelines':
         case 'sprays':
+        case 'skinsLegendary':
           if (a.hero < b.hero) return -1;
           if (a.hero > b.hero || !a.hero) return 1;
           return 0;
-        default:
+        default: // skinsEpic, intros, emotes
           if (a.name < b.name) return -1;
           if (a.name > b.name || !a.hero) return 1;
           return 0;
@@ -277,10 +325,12 @@ Object.keys(updates).forEach(update => {
     })
   })
 })
+updates = sortObject(updates, true)
 
 function copyUpdates() { //eslint-disable-line
   copy(JSON.stringify(updates, null, 2))
 }
+
 function copyHeroes() { //eslint-disable-line
   copy(JSON.stringify(heroes, null, 2))
 }
