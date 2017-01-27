@@ -27,7 +27,7 @@ body {
   min-width: 1000px;
   background-color: #d0c7dc;
   color: #405275;
-  padding-top: 55px;
+  padding-top: 45px;
 }
 
 #background {
@@ -224,7 +224,7 @@ body {
 #menu {
   text-align: center;
   font-size: 21px;
-  padding: 8px 0 0;
+  padding-top: 8px;
 }
 
 #menu .wrapper {
@@ -304,7 +304,7 @@ body {
 
 #cost-remaining {
   position: absolute;
-  top: 70px;
+  top: 55px;
   right: 20px;
   display: flex;
   justify-content: center;
