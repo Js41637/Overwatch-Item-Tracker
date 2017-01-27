@@ -381,6 +381,10 @@ body {
   font-style: italic;
 }
 
+.item-container .section #image-preview h2 {
+  display: block;
+}
+
 .item-container .section h3 {
   color: rgb(245, 245, 245);
   font-size: 26px;
@@ -391,6 +395,27 @@ body {
   font-size: 28px;
   margin-left: 3px;
   font-style: italic;
+}
+
+.item-container .section > span:before,
+.item-container h2 > small:before {
+  content: "(";
+}
+
+.item-container .section > span:after,
+.item-container h2 > small:after {
+  content: " Coins)";
+}
+
+/* Override for the Preview */
+.item-container #image-preview > span:before,
+.item-container #image-preview h2 > small:before {
+  content: "";
+}
+
+.item-container #image-preview > span:after,
+.item-container #image-preview h2 > small:after {
+  content: "";
 }
 
 .item-container .section .item {
@@ -725,8 +750,15 @@ strong {
 
 #sprays h4 {
   font-size: 18px;
-  margin-left: 5px;
   cursor: pointer;
+}
+
+#sprays h4:before {
+content: "[";
+}
+
+#sprays h4:after {
+  content: "]";
 }
 
 #sprays .item label {
@@ -975,4 +1007,36 @@ strong {
   color: rgba(240, 237, 242, .6);
   line-height: 1.1;
   text-transform: uppercase;
+}
+
+/* Hide or adjust information that Jayess doesn't want but is useful for other themes */
+#voicelines h3 {
+  display: none;
+}
+
+.item h3, h4 {
+  display: inline;
+}
+
+#sprays .item h4 {
+  font-size: 23px;
+}
+
+#sprays .item h4:before,
+#sprays .item h4:after {
+  content: "";
+}
+
+#sprays .item h3:not(:only-child) {
+  order: 2;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+#sprays .item h3:not(:only-child):before {
+  content: "[";
+}
+
+#sprays .item h3:not(:only-child):after {
+  content: "]";
 }

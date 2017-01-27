@@ -43,3 +43,7 @@
 #halloween2016 #sprays .items {
   height: 260px;
 }
+
+#halloween2016 #sprays .item h3:not(:only-child) {
+  display: none;
+}
