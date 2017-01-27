@@ -3,16 +3,18 @@
     <div id="legendary-skins" class="section">
       <div id="image-preview" scroll ng-class="{ show: preview, small: preview.isSmall, fixed: isFixed }">
         <div class="preview" ng-show="preview.img">
-          <h2>Image Preview</h2> <span>{{preview.name}}</span>
-          <img src="{{preview.img}}" />
+          <h2>Image Preview <small>{{preview.name}}</small></h2>
+          <div class="imgcont">
+            <img src="{{preview.img}}" />
+          </div>
         </div>
         <div class="preview" ng-if="preview.video">
-          <h2>Video Preview</h2> <span>{{preview.name}}</span>
+          <h2>Video Preview <small>{{preview.name}}</small></h2>
           <video autoplay="true" autostart="true" loop="true" src="{{preview.video}}"></video>
         </div>
       </div>
       <div class="inner" ng-class="{ hide: preview }">
-        <h2>Legendary Skins</h2>
+        <h2>Legendary Skins <small class="color-legendary">3000</small></h2>
         <div class="images">
           <div class="card" ng-repeat="skin in ::data.items.skinsLegendary track by $index" style="background-image:url({{::skin.img}});">
             <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked.skinsLegendary[skin.id]" ng-change="onSelect()">

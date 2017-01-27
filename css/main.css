@@ -560,6 +560,10 @@ body {
   height: calc(80% - 105px);
 }
 
+#image-preview h2 {
+  display: block;
+}
+
 .item.legend h3 {
   color: rgba(252, 176, 28, 0.8) !important;
   text-shadow: 1px 1px 1px black;
