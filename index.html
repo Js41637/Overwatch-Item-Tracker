@@ -38,8 +38,12 @@
         </ul>
       </div>
       <div ng-show="$ctrl.selectedUpdate == 'YEAR_OF_THE_ROOSTER_2017'">
-        <h2>Event ends on Feb 13th, 2017 (PST)</h2>
-        <h3>Be sure to get everything you want by Feb 12th to be safe!</h3>
+        <h2>Event ends on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d'}} (PST)</h2>
+        <h3>Be sure to get everything you want by {{$ctrl.updates[$ctrl.selectedUpdate].dates.end - 86400 | date:'MMM d'}} to be safe!</h3>
+      </div>
+      <div ng-show="$ctrl.selectedUpdate != 'YEAR_OF_THE_ROOSTER_2017'" class="event-ended">
+        <h2>Event ended on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d yyyy'}} (PST)</h2>
+        <h3>These items should be available again {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d'}} next year</h3>
       </div>
     </div>
     <div class="right">

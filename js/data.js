@@ -18,8 +18,8 @@ OWI.factory('Data', function() {
         "name": "Summer Games 2016",
         "id": "SUMMER_GAMES_2016",
         "dates": {
-          "start": "2016-08-01T14:00:00.000Z",
-          "end": "2016-08-22T14:00:00.000Z"
+          "start": "1470060000000",
+          "end": "1471874400000"
         },
         "items": {
           "icons": [
@@ -724,8 +724,8 @@ OWI.factory('Data', function() {
         "name": "Halloween 2016",
         "id": "HALLOWEEN_2016",
         "dates": {
-          "start": "2016-10-10T14:00:00.000Z",
-          "end": "2016-10-31T14:00:00.000Z"
+          "start": "1476108000000",
+          "end": "1477922400000"
         },
         "items": {
           "skinsEpic": [
@@ -1456,8 +1456,8 @@ OWI.factory('Data', function() {
         "name": "Winter Wonderland 2016",
         "id": "WINTER_WONDERLAND_2016",
         "dates": {
-          "start": "2016-12-12T14:00:00.000Z",
-          "end": "2017-01-02T14:00:00.000Z"
+          "start": "1481551200000",
+          "end": "1483365600000"
         },
         "items": {
           "sprays": [
@@ -2359,8 +2359,8 @@ OWI.factory('Data', function() {
         "name": "Year of the Rooster 2017",
         "id": "YEAR_OF_THE_ROOSTER_2017",
         "dates": {
-          "start": "2017-01-23T14:00:00.000Z",
-          "end": "2017-02-12T14:00:00.000Z"
+          "start": "1485180000000",
+          "end": "1486908000000"
         },
         "items": {
           "skinsEpic": [
