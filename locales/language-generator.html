@@ -1,0 +1,42 @@
+<pre id="output"></pre>
+
+<script>
+    function loadJSON(file, callback) {
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open('GET', file, true); // Replace 'my_data' with the path to your file
+        xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+                // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+                callback(xobj.responseText);
+            }
+        };
+        xobj.send(null);
+    }
+
+    loadJSON("../updates.json", function (response) {
+        var data = JSON.parse(response);
+        console.log(data);
+
+        var output = document.getElementById("output");
+        console.log(output);
+
+        String.prototype.replaceAll = function (target, replacement) {
+            return this.split(target).join(replacement);
+        };
+
+        var map = {};
+        Object.keys(data).forEach(event => {
+            var items = data[event].items;
+            Object.keys(items).sort().forEach(type => {
+                items[type].sort((i1, i2) => (type + i1.id).localeCompare(type + i2.id)).forEach(item => {
+                    var langKey = event + '.' + type + '.' + item.id;
+                    var translation = item.name;
+                    map[langKey] = translation;
+                });
+            });
+        });
+        output.innerHTML = JSON.stringify(map);
+        console.log(map);
+    });
+</script>
