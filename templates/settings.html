@@ -11,12 +11,17 @@
     <!--<div class="setting">
       <h3>Particles</h3>
       <p>Disable or enable particles (snow effect) on the page</p>
-      <button class="btn btn-info" type="button" ng-click="settings.toggleParticles()">{{::settings.particles ? 'Disable' : 'Enable'}}</button>
+      <button class="btn btn-primary" type="button" ng-click="settings.toggleSetting('particles')">{{::settings.particles ? 'Disable' : 'Enable'}}</button>
     </div>-->
     <div class="setting">
       <h3>Select All Items</h3>
       <p>Marks all items for every event as selected</p>
-      <button class="btn btn-info" type="button" ng-click="settings.selectAll()">Select Everything!</button>
+      <button class="btn btn-primary" type="button" ng-click="settings.selectAll()">Select Everything!</button>
+    </div>
+    <div class="setting">
+      <h3>HD Videos</h3>
+      <p>Disable or enable showing HD videos of Highlight Intros and Emotes</p>
+      <button class="btn btn-primary" type="button" ng-click="settings.toggleSetting('hdVideos')">{{settings.hdVideos ? 'Disable' : 'Enable'}}</button>
     </div>
     <div class="setting">
       <h3>Select Language</h3>

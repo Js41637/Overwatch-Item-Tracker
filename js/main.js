@@ -4,7 +4,8 @@ OWI.factory("StorageService", function() {
     settings: {},
     defaults: {
       particles: true,
-      langKey: 'en_US'
+      langKey: 'en_US',
+      hdVideos: false
     },
     getData: function() {
       return service.data
@@ -76,6 +77,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "$translate",
 
   this.particles = StorageService.getSetting('particles');
   $rootScope.langKey = $rootScope.languages.find(function(lang) { return lang.id === StorageService.getSetting('langKey'); });
+  this.hdVideos = StorageService.getSetting('hdVideos');
 
   this.close = function() {
     $uibModalInstance.dismiss('close')
@@ -87,10 +89,12 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "$translate",
     location.reload();
   }
 
-  this.toggleParticles = function() {
-    this.particles = !this.particles;
-    StorageService.setSetting('particles', this.particles);
-    location.reload();
+  this.toggleSetting = function(what, reload) {
+    this[what] = !this[what];
+    StorageService.setSetting(what, this[what]);
+    if (reload) {
+      location.reload();
+    }
   }
 
   this.selectAll = function() {
@@ -196,10 +200,15 @@ OWI.directive("update", ["$rootScope", "Data", "StorageService", function($rootS
       $scope.showPreview = function(what, small) {
         if (!what.img && !what.video) return;
         if (showTimeout) return;
+        var item = angular.copy(what)
         clearTimeout(hideTimeout)
         showTimeout = setTimeout(function () {
-          what.isSmall = small;
-          $scope.preview = what;
+          item.isSmall = small;
+          if (StorageService.getSetting('hdVideos') && item.video) {
+            item.video = item.video.replace('.webm', '-hd.webm');
+          }
+          $scope.preview = item;
+
           $scope.$digest();
         }, $scope.preview ? 100 : 650);
       };
