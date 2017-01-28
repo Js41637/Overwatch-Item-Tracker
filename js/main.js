@@ -73,7 +73,10 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 }]);
 
 OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "$translate", "StorageService", "Data", function($rootScope, $uibModalInstance, $translate, StorageService, Data) {
-  $rootScope.languages = [{ id: 'de_DE', label: 'German' }, { id: 'en_US', label: 'English US' }];
+  $rootScope.languages = [
+    { id: 'en_US', label: 'English US', img: '../resources/updates/SUMMER_GAMES_2016/icons/united-states.png' },
+    { id: 'de_DE', label: 'German', img: '../resources/updates/SUMMER_GAMES_2016/icons/germany.png' }
+  ];
 
   this.particles = StorageService.getSetting('particles');
   $rootScope.langKey = $rootScope.languages.find(function(lang) { return lang.id === StorageService.getSetting('langKey'); });
@@ -113,7 +116,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "$translate",
     $translate.use(langKey);
     console.log('Changed language to', langKey);
     StorageService.setSetting('langKey', langKey);
-    location.reload();
+    $rootScope.langKey = $rootScope.languages.find(function(lang) { return lang.id === StorageService.getSetting('langKey'); });
   }
 }])
 

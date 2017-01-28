@@ -26,7 +26,9 @@
     <div class="setting">
       <h3>Select Language</h3>
       <p>Select a language for the itemnames</p>
-      <select class="form-control" ng-options="lang as lang.label for lang in languages track by lang.id" ng-model="langKey"  ng-change="settings.changeLanguage(langKey.id)"></select>
+      <div class="flag-container">
+        <img class="flag-icon" ng-class="{'flag-icon-selected': lang.id == langKey.id}" ng-repeat="lang in languages" ng-click="settings.changeLanguage(lang.id)" src="{{lang.img}}" title="{{lang.label}}" alt="{{lang.label}}"/>
+      </div>
     </div>
   </div>
   <div class="modal-footer">
