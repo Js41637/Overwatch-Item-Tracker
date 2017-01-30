@@ -60,7 +60,7 @@ var getClassForHero = hero => {
 }
 
 var getCleanID = (what, hero) => {
-  return (hero ? `${hero}-` : '') + what.toLowerCase().replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-')
+  return (hero ? `${hero}-` : '') + what.toLowerCase().replace('å', 'a').replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-')
 }
 
 var stupidNames = {
