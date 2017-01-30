@@ -14,8 +14,13 @@
   <link rel="apple-touch-icon" type="image/png" sizes="300x300" href="./resources/logo.png">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/events.css">
+  <!--<link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/events.css">-->
+
+  <!-- diglett theme -->
+  <link rel="stylesheet" href="./dirtdiglett/main.css">
+  <link rel="stylesheet" href="./dirtdiglett/events.css">
+
   <script src="./js/vendor/angular.min.js"></script>
   <script src="./js/vendor/ui-bootstrap.min.js"></script>
   <script src="./js/vendor/particles.min.js"></script>
@@ -23,7 +28,7 @@
   <script src="./js/data.js"></script>
   <script src="./js/main.js"></script>
 </head>
-<body ng-controller="MainCtrl as $ctrl">
+<body ng-controller="MainCtrl as $ctrl" id="{{$ctrl.selectedUpdate}}">
   <div id="background"></div>
   <div id="header">
     <div class="left">
@@ -37,7 +42,7 @@
           <li role="menuitem" ng-repeat="update in $ctrl.updates track by $index"><a href="#" ng-click="$ctrl.selectedUpdate = update.id;">{{update.name}}</a></li>
         </ul>
       </div>
-      <div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end > $ctrl.currentDate">
+      <div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end > $ctrl.currentDate" class="event-active">
         <h2>Event ends on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d'}} (PST)</h2>
         <h3>Be sure to get everything you want by {{$ctrl.updates[$ctrl.selectedUpdate].dates.end - 86400000 | date:'MMM d'}} to be safe!</h3>
       </div>
