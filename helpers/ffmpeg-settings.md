@@ -2,9 +2,9 @@
 
 ## Standard
 ### Emotes
-`ffmpeg -i ".mp4" -c:v libvpx-vp9 -crf 52 -b:v 0 -filter:v "scale=1280:720,crop=in_w-500:in_h-80:x=295" -an -preset veryslow output.webm`
+`ffmpeg -i ".mp4" -c:v libvpx-vp9 -crf 58 -b:v 0 -filter:v "scale=1280:720,crop=in_w-500:in_h-80:x=295" -an -preset veryslow output.webm`
 ### Highlight Intros
-`ffmpeg -i ".mp4" -c:v libvpx-vp9 -crf 52 -b:v 0 -filter:v "scale=1280:720" -ac 1 -preset veryslow output.webm`
+`ffmpeg -i ".mp4" -c:v libvpx-vp9 -crf 58 -b:v 0 -filter:v "scale=1280:720" -ac 1 -preset veryslow output.webm`
 
 ## HD
 ### Emotes
