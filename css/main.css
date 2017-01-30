@@ -562,6 +562,14 @@ body {
 
 #image-preview h2 {
   display: block;
+  font-size: 42px;
+  font-style: italic;
+}
+
+#image-preview  h2 small {
+  font-size: 28px;
+  margin-left: 3px;
+  font-style: italic;
 }
 
 .item.legend h3 {
@@ -886,7 +894,7 @@ strong {
   width: 100%;
 }
 
-#legendary-skins [type="checkbox"]:not(:checked), #legendary-skins [type="checkbox"]:checked {
+.view-mode-item-type #legendary-skins [type="checkbox"]:not(:checked), .view-mode-item-type #legendary-skins [type="checkbox"]:checked {
   position: absolute;
   left: -9999px;
 }
@@ -898,7 +906,7 @@ strong {
 
 /* checkbox aspect */
 
-#legendary-skins [type="checkbox"]:not(:checked)+label:before, #legendary-skins [type="checkbox"]:checked+label:before {
+.view-mode-item-type #legendary-skins [type="checkbox"]:not(:checked)+label:before, .view-mode-item-type #legendary-skins [type="checkbox"]:checked+label:before {
   content: '';
   position: absolute;
   left: 6px;
@@ -909,14 +917,14 @@ strong {
   border-radius: 4px;
 }
 
-#legendary-skins [type="checkbox"]:checked+label:before {
+.view-mode-item-type #legendary-skins [type="checkbox"]:checked+label:before {
   border: none;
 }
 
 
 /* checked mark aspect */
 
-#legendary-skins [type="checkbox"]:not(:checked)+label:after, #legendary-skins [type="checkbox"]:checked+label:after {
+.view-mode-item-type #legendary-skins [type="checkbox"]:not(:checked)+label:after, .view-mode-item-type #legendary-skins [type="checkbox"]:checked+label:after {
   content: '';
   position: absolute;
   top: -261px;
@@ -932,12 +940,12 @@ strong {
 
 /* checked mark aspect changes */
 
-#legendary-skins [type="checkbox"]:not(:checked)+label:after {
+.view-mode-item-type #legendary-skins [type="checkbox"]:not(:checked)+label:after {
   opacity: 0;
   transform: scale(0);
 }
 
-#legendary-skins [type="checkbox"]:checked+label:after {
+.view-mode-item-type #legendary-skins [type="checkbox"]:checked+label:after {
   opacity: 1;
   transform: scale(1);
 }
@@ -945,17 +953,17 @@ strong {
 
 /* disabled checkbox */
 
-#legendary-skins [type="checkbox"]:disabled:not(:checked)+label:before, #legendary-skins [type="checkbox"]:disabled:checked+label:before {
+.view-mode-item-type #legendary-skins [type="checkbox"]:disabled:not(:checked)+label:before, .view-mode-item-type #legendary-skins [type="checkbox"]:disabled:checked+label:before {
   box-shadow: none;
   border-color: #bbb;
   background-color: #ddd;
 }
 
-#legendary-skins [type="checkbox"]:disabled:checked+label:after {
+.view-mode-item-type #legendary-skins [type="checkbox"]:disabled:checked+label:after {
   color: #999;
 }
 
-#legendary-skins [type="checkbox"]:disabled+label {
+.view-mode-item-type #legendary-skins [type="checkbox"]:disabled+label {
   color: #aaa;
 }
 
