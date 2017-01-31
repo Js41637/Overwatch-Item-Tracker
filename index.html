@@ -42,12 +42,12 @@
           <li role="menuitem" ng-repeat="update in $ctrl.updates track by $index"><a href="#" ng-click="$ctrl.selectedUpdate = update.id;">{{update.name}}</a></li>
         </ul>
       </div>
-      <div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end > $ctrl.currentDate" class="event-active">
-        <h2>Event ends on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d'}} (PST)</h2>
+      <div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end > $ctrl.currentDate">
+        <h2>Event ends on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d'}} local time</h2>
         <h3>Be sure to get everything you want by {{$ctrl.updates[$ctrl.selectedUpdate].dates.end - 86400000 | date:'MMM d'}} to be safe!</h3>
       </div>
       <div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end < $ctrl.currentDate" class="event-ended">
-        <h2>Event ended on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d yyyy'}} (PST)</h2>
+        <h2>Event ended on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d yyyy'}}  local time</h2>
         <h3>These items should be available again around {{$ctrl.updates[$ctrl.selectedUpdate].dates.start | date:'MMM d'}} next year</h3>
       </div>
     </div>
