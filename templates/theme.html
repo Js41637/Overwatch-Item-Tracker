@@ -3,11 +3,17 @@
       <h2 class="modal-title"><span uib-tooltip="Boop" tooltip-placement="right">Themes</span></h2>
   </div>
   <div class="modal-body" id="modal-body">
-    <div class="setting" ng-click="settings.selectTheme('dirtdiglett')">
-      <h3>Event Styled Layouts</h3>
+    <div class="setting">
+      <h3>Standard <span class="selected" ng-show="settings.currentTheme == 'standard'">Selected</span></h3>
+      <p>The normal theme the site is made in</p>
+      <div class="img" style="background-image: url('./css/sample.jpg')" ng-click="settings.selectTheme('standard')"></div>
+      <div class="madeBy">Made By <a target="_blank" href="https://github.com/DirtDiglett">Js41637</a>, initial design by Lalato &amp; Izzepizze</div>
+    </div>
+    <div class="setting">
+      <h3>Event Styled Layouts <span class="selected"  ng-show="settings.currentTheme == 'dirtdiglett'">Selected</span></h3>
       <p>Changes the visual design of the layouts to represent the current event</p>
-      <img src="./css/themes/dirtdiglett/sample.jpg" />
-      <span>Made By <a target="_blank" href="https://github.com/DirtDiglett">DirtDiglet</a></span>
+      <div class="img" style="background-image: url('./css/themes/dirtdiglett/sample.jpg')" ng-click="settings.selectTheme('dirtdiglett')"></div>
+      <div class="madeBy">Made By <a target="_blank" href="https://github.com/DirtDiglett">DirtDiglet</a></div>
     </div>
   </div>
   <div class="modal-footer">

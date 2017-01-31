@@ -1,0 +1,74 @@
+#settings h2 {
+  font-size: 32px;
+}
+
+#settings h3 {
+  font-size: 22px;
+  margin-left: -5px;
+  padding-bottom: 5px;
+}
+
+#settings .setting {
+  padding: 15px 10px;
+}
+
+#settings .setting p, #settings .setting a, #settings .setting li {
+  font-family: sans-serif;
+  padding-bottom: 5px;
+}
+
+#settings .setting:first-of-type {
+  padding-top: 2px;
+}
+
+#settings .setting:not(:first-of-type) {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 10px;
+}
+
+#settings.about .setting p, #settings.about .setting li a {
+  font-size: 14px;
+}
+
+#settings .setting li {
+  font-size: 13px;
+}
+
+#settings.about .setting ul {
+  list-style: circle;
+  margin-left: 20px;
+}
+
+#settings.themes .img {
+  cursor: pointer;
+  height: 160px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: height 0.125s ease-in-out;
+
+}
+#settings.themes .img:hover {
+  transition-delay: 450ms;
+  height: 260px;
+}
+
+#settings.themes .selected {
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: sans-serif;
+  padding: 2px 2px 2px;
+  margin-left: 2px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  vertical-align: middle;
+  background-color: rgb(219, 219, 219);
+  color: rgb(0, 0, 0);
+}
+
+#settings.themes .madeBy {
+  margin-top: 5px;
+}
+
+strong {
+  font-weight: bold;
+}

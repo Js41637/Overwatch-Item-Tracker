@@ -1,5 +1,4 @@
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-
 @font-face {
   font-family: "Big Noodle Too";
   src: url(../../../fonts/big-noodle-too.eot);
@@ -103,7 +102,7 @@ body {
   margin-right: 8px;
   display: flex;
   align-items: center;
-  margin-top: -4px;
+  margin-top: -1px;
 }
 
 #header .icon {
@@ -226,8 +225,8 @@ body {
   text-align: center;
   font-size: 21px;
   position: absolute;
-  top: 4px;
-  right: 100px;
+  top: -100px;
+  right: 150px;
   z-index: 10;
 }
 
@@ -302,7 +301,7 @@ body {
 #footer {
   text-align: right;
   padding-right: 16px;
-  color: rgba(255,255,255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 13px;
   font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
@@ -311,7 +310,7 @@ body {
 
 #cost-remaining {
   position: absolute;
-  top: 55px;
+  top: -53px;
   right: 20px;
   display: flex;
   justify-content: center;
@@ -334,14 +333,18 @@ body {
 }
 
 .body-container, .item-container {
-  padding: 5px 5px 0;
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  margin-top: 30px;
+}
+
+.body-container {
+  margin-top: 60px;
+  padding: 5px 5px 0;
 }
 
 .item-container {
+  padding-top: 2px;
   justify-content: space-around;
 }
 
@@ -405,7 +408,7 @@ body {
 .item-container .section h2 {
   padding: 0.4em 0.6em;
   color: #405275;
-  font-family: Futura,century gothic,arial,sans-serif;
+  font-family: Futura, century gothic, arial, sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   text-transform: uppercase;
@@ -424,7 +427,7 @@ body {
 .item-container .section h4 {
   color: rgba(114, 114, 114, 0.7);
   font-size: 0.9rem;
-  font-family: Futura,century gothic,arial,sans-serif;
+  font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -435,7 +438,7 @@ body {
 .item-container .section h3 {
   color: #727272;
   font-size: 1rem;
-  font-family: Futura,century gothic,arial,sans-serif;
+  font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -453,6 +456,7 @@ body {
 .item-container .section>span:after, .item-container h2>small:after {
   content: ")";
 }
+
 
 /* Override for the Preview */
 
@@ -499,15 +503,15 @@ body {
 }
 
 #image-preview .card.spray {
-    background-size: 100%;
-    background-color: transparent;
-    background-position: center 0;
+  background-size: 100%;
+  background-color: transparent;
+  background-position: center 0;
 }
 
 #image-preview .card.icon {
-    background-size: contain;
-    background-color: transparent;
-    background-position: center 0;
+  background-size: contain;
+  background-color: transparent;
+  background-position: center 0;
 }
 
 #image-preview .card {
@@ -516,7 +520,8 @@ body {
   box-sizing: border-box;
   display: inline-block;
   background-repeat: no-repeat;
-  width: 320px; /* 400px - 80px for the bottom gives us a nice square preview for sprays and icons */
+  width: 320px;
+  /* 400px - 80px for the bottom gives us a nice square preview for sprays and icons */
   background-color: transparent;
 }
 
@@ -699,55 +704,11 @@ body {
   transform: translateY(20px);
 }
 
-#settings h2 {
-  font-size: 32px;
-}
-
-#settings h3 {
-  font-size: 22px;
-  margin-left: -5px;
-  padding-bottom: 5px;
-}
-
-#settings .setting {
-  padding: 15px 10px;
-}
-
-#settings .setting p, #settings .setting a, #settings .setting li {
-  font-family: sans-serif;
-  padding-bottom: 5px;
-}
-
-#settings .setting:first-of-type {
-  padding-top: 2px;
-}
-
-#settings .setting:not(:first-of-type) {
-  border-top: 1px solid #e5e5e5;
-  padding-top: 10px;
-}
-
-#settings.about .setting p, #settings.about .setting li a {
-  font-size: 14px;
-}
-
-#settings .setting li {
-  font-size: 13px;
-}
-
-#settings.about .setting ul {
-  list-style: circle;
-  margin-left: 20px;
-}
-
-strong {
-  font-weight: bold;
-}
-
 
 /**
  * SPRAYS CSS
  */
+
 #sprays .item label {
   width: 100%;
   cursor: pointer;
@@ -1028,16 +989,15 @@ strong {
   content: "";
 }
 
-
 .item-container .section h2:before {
-    content: "";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    margin-right: 6px;
-    color: #2a3751;
+  content: "";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 6px;
+  color: #2a3751;
 }
 
 #icons h2:before {
@@ -1068,10 +1028,7 @@ strong {
   content: "\f21d";
 }
 
-
-#epic-skins .section-header small,
-#emotes .section-header small,
-#highlight-intros .section-header small {
+#epic-skins .section-header small, #emotes .section-header small, #highlight-intros .section-header small {
   color: #ff05f4;
 }
 
@@ -1079,7 +1036,6 @@ strong {
   color: #00c1fa;
 }
 
-#sprays .section-header small,
-#voicelines .section-header small {
+#sprays .section-header small, #voicelines .section-header small {
   color: #00db55;
 }

@@ -82,7 +82,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "Data", function($rootScope, $uibModalInstance, StorageService, Data) {
   this.particles = StorageService.getSetting('particles');
   this.hdVideos = StorageService.getSetting('hdVideos');
-  this.currentTheme = 'standard'
+  this.currentTheme = StorageService.getSetting('currentTheme');
 
   this.close = function() {
     $uibModalInstance.dismiss('close')
@@ -152,10 +152,6 @@ OWI.directive("update", ["$rootScope", "Data", "StorageService", function($rootS
       })
 
       $scope.viewMode = StorageService.getSetting('viewMode') || 'item-type';
-      $scope.viewModes = {
-        'item-type': 'By item type',
-        'hero': 'By hero'
-      };
       $scope.saveViewMode = function (viewMode) {
         $scope.viewMode = viewMode;
         StorageService.setSetting('viewMode', viewMode);
