@@ -2,24 +2,24 @@
 
 @font-face {
   font-family: "Big Noodle Too";
-  src: url(../fonts/big-noodle-too.eot);
-  src: url(../fonts/big-noodle-too.woff) format("woff"), url(../fonts/big-noodle-too.ttf) format("truetype");
+  src: url(../../../fonts/big-noodle-too.eot);
+  src: url(../../../fonts/big-noodle-too.woff) format("woff"), url(../../../fonts/big-noodle-too.ttf) format("truetype");
   font-weight: 400;
   font-style: normal
 }
 
 @font-face {
   font-family: "Big Noodle Too";
-  src: url(../fonts/big-noodle-too-oblique.eot);
-  src: url(../fonts/big-noodle-too-oblique.woff) format("woff"), url(../fonts/big-noodle-too-oblique.ttf) format("truetype");
+  src: url(../../../fonts/big-noodle-too-oblique.eot);
+  src: url(../../../fonts/big-noodle-too-oblique.woff) format("woff"), url(../../../fonts/big-noodle-too-oblique.ttf) format("truetype");
   font-weight: 400;
   font-style: italic
 }
 
 @font-face {
   font-family: Futura;
-  src: url(../fonts/futura.eot);
-  src: url(../fonts/futura.woff) format("woff"), url(../fonts/futura.ttf) format("truetype");
+  src: url(../../../fonts/futura.eot);
+  src: url(../../../fonts/futura.woff) format("woff"), url(../../../fonts/futura.ttf) format("truetype");
   font-weight: 400;
   font-style: normal
 }
@@ -30,7 +30,7 @@ body {
   background-color: #d0c7dc;
   color: #405275;
   padding-top: 45px;
-  background: url(../resources/body-bg.jpg) no-repeat top;
+  background: url(../../../resources/body-bg.jpg) no-repeat top;
   background-size: cover;
 }
 
@@ -629,7 +629,7 @@ body {
   cursor: pointer;
   overflow: hidden;
   border: 2px solid hsla(0, 0%, 100%, .4);
-  background: url('../resources/portrait-bg.jpg') 0 0 / 100% 100% no-repeat;
+  background: url('../../../resources/portrait-bg.jpg') 0 0 / 100% 100% no-repeat;
   transition: transform 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
@@ -850,7 +850,7 @@ strong {
   padding: 2px;
   position: relative;
   overflow: hidden;
-  background: url('../img/portrait-bg.jpg') no-repeat;
+  background: url('../../../img/portrait-bg.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 1px;
