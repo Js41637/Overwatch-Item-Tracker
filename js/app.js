@@ -4,6 +4,31 @@ OWI.config(['$compileProvider', function($compileProvider) {
   $compileProvider.debugInfoEnabled(false);
 }])
 
+OWI.run(function() {
+  var storedSettings = localStorage.getItem('settings');
+  if (!storedSettings) {
+    return
+  } else {
+    var settings = angular.fromJson(storedSettings) || {};
+    var theme = settings.currentTheme || 'standard';
+    if (theme != 'standard') {
+      var styles = ['./css/main.css', './css/events.css']
+      styles.forEach(function(style) {
+        var name = style.split('/')[2];
+        var elm = document.head.querySelector('link[href="' + style + '"]');
+        if (!elm) return;
+        var url = elm.href.replace(name, 'themes/' + theme + '/' + name);
+
+        var newElm = document.createElement('link');
+        newElm.rel = "stylesheet";
+        newElm.href = url;
+        document.head.appendChild(newElm);
+        elm.remove();
+      })
+    }
+  }
+})
+
 // Run migrations to convert data and stuff
 OWI.run(function() {
   var storedData = localStorage.getItem('data');

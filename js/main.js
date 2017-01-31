@@ -4,7 +4,8 @@ OWI.factory("StorageService", function() {
     settings: {},
     defaults: {
       particles: true,
-      hdVideos: false
+      hdVideos: false,
+      currentTheme: 'standard'
     },
     getData: function() {
       return service.data
@@ -65,6 +66,14 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
     })
   };
 
+  this.openTheme = function() {
+    $uibModal.open({
+      templateUrl: './templates/theme.html',
+      controller: 'SettingsCtrl',
+      controllerAs: 'settings'
+    })
+  };
+
   this.particles = StorageService.getSetting('particles');
   var savedData = StorageService.getData();
   Data.checked = Object.assign({}, Data.checked, savedData);
@@ -73,6 +82,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "Data", function($rootScope, $uibModalInstance, StorageService, Data) {
   this.particles = StorageService.getSetting('particles');
   this.hdVideos = StorageService.getSetting('hdVideos');
+  this.currentTheme = 'standard'
 
   this.close = function() {
     $uibModalInstance.dismiss('close')
@@ -92,6 +102,12 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
     }
   }
 
+  this.selectTheme = function(what) {
+    this.currentTheme = what
+    StorageService.setSetting('currentTheme', what)
+    location.reload()
+  }
+
   this.selectAll = function() {
     Data.updates.forEach(function(update) {
       Object.keys(update.items).forEach(function(type) {
@@ -108,7 +124,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
 OWI.directive("scroll", function ($window) {
   return function($scope) {
     angular.element($window).bind("scroll", function() {
-      if (this.innerWidth > 1540) return;
+      if (this.innerWidth > 1570) return;
       $scope.isFixed = this.pageYOffset >= 200 ? true : false;
       $scope.$apply();
     });
