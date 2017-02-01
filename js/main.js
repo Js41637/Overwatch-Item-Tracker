@@ -75,8 +75,8 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "$translate", "StorageService", "Data", function($rootScope, $uibModalInstance, $translate, StorageService, Data) {
   $rootScope.languages = [
     { id: 'en_US', label: 'English US', img: '../resources/updates/SUMMER_GAMES_2016/icons/united-states.png' },
-    { id: 'de_DE', label: 'German', img: '../resources/updates/SUMMER_GAMES_2016/icons/germany.png' }
-	{ id: 'fr_FR', label: 'French', img: '../resources/updates/SUMMER_GAMES_2016/icons/france.png'}
+    { id: 'de_DE', label: 'German', img: '../resources/updates/SUMMER_GAMES_2016/icons/germany.png' },
+    { id: 'fr_FR', label: 'French', img: '../resources/updates/SUMMER_GAMES_2016/icons/france.png' }
   ];
 
   this.particles = StorageService.getSetting('particles');
