@@ -76,6 +76,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "$translate",
   $rootScope.languages = [
     { id: 'en_US', label: 'English US', img: '../resources/updates/SUMMER_GAMES_2016/icons/united-states.png' },
     { id: 'de_DE', label: 'German', img: '../resources/updates/SUMMER_GAMES_2016/icons/germany.png' }
+	{ id: 'fr_FR', label: 'French', img: '../resources/updates/SUMMER_GAMES_2016/icons/france.png'}
   ];
 
   this.particles = StorageService.getSetting('particles');
