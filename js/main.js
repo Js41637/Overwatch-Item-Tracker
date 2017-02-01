@@ -185,13 +185,12 @@ OWI.directive("update", ["$rootScope", "Data", "StorageService", function($rootS
 
       var showTimeout = undefined;
       var hideTimeout = undefined;
-      $scope.showPreview = function(what, small) {
+      $scope.showPreview = function(what) {
         if (!what.img && !what.video) return;
         if (showTimeout) return;
         var item = angular.copy(what)
         clearTimeout(hideTimeout)
         showTimeout = setTimeout(function () {
-          item.isSmall = small;
           if (StorageService.getSetting('hdVideos') && item.video) {
             item.video = item.video.replace('.webm', '-hd.webm');
           }
