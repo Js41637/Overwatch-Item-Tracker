@@ -29,7 +29,7 @@
   <script src="./js/data.js"></script>
   <script src="./js/main.js"></script>
 </head>
-<body ng-controller="MainCtrl as $ctrl" id="{{$ctrl.selectedUpdate}}">
+<body ng-controller="MainCtrl as $ctrl" id="{{$ctrl.selectedUpdate}}" style="opacity: 0">
   <div id="background"></div>
   <div id="header">
     <div class="left">
@@ -43,7 +43,7 @@
           <li role="menuitem" ng-repeat="update in $ctrl.updates track by $index"><a href="#" ng-click="$ctrl.selectedUpdate = update.id;">{{update.name}}</a></li>
         </ul>
       </div>
-      <div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end > $ctrl.currentDate">
+      <div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end > $ctrl.currentDate" class="event-active">
         <h2>Event ends on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d'}} local time</h2>
         <h3>Be sure to get everything you want by {{$ctrl.updates[$ctrl.selectedUpdate].dates.end - 86400000 | date:'MMM d'}} to be safe!</h3>
       </div>

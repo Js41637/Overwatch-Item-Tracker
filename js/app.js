@@ -24,7 +24,13 @@ OWI.run(function() {
         newElm.href = url;
         document.head.appendChild(newElm);
         elm.remove();
+        
+        setTimeout(function() {
+          document.body.style.opacity = 1
+        }, 500);
       })
+    } else {
+      document.body.style.opacity = 1
     }
   }
 })

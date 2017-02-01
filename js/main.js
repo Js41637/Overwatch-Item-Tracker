@@ -391,7 +391,16 @@ OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
     }
 }]);
 
-OWI.directive('lazyBackground', ["$document", "$parse", function($document) {
+OWI.directive('loadingSpinner', function() {
+  return {
+    restrict: 'E',
+    scope: {},
+    replace: true,
+    template: '<div class="loader"><ul class="hexagon-container"><li class="hexagon hex_1"></li><li class="hexagon hex_2"></li><li class="hexagon hex_3"></li><li class="hexagon hex_4"></li><li class="hexagon hex_5"></li><li class="hexagon hex_6"></li><li class="hexagon hex_7"></li></ul></div>'
+  }
+})
+
+OWI.directive('lazyBackground', ["$document", "$compile", function($document, $compile) {
   return {
     restrict: 'A',
     scope: {},
@@ -410,11 +419,18 @@ OWI.directive('lazyBackground', ["$document", "$parse", function($document) {
          */
         $element.removeClass('img-load-error');
         $element.addClass('img-loading');
+
+        var loader = $compile('<loading-spinner  />')($scope)
+        $element.prepend(loader)
+        setTimeout(function () {
+          loader.css('opacity', '1')
+        }, 110);
         // Use some oldskool preloading techniques to load the image
         var img = $document[0].createElement('img');
         img.onload = function() {
           $element.css('background-image', 'url("'+this.src+'")');
           $element.removeClass('img-loading');
+          loader.remove()
         };
         img.onerror = function() {
           //Remove any existing background-image & loading class and apply error class
