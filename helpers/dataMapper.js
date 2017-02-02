@@ -317,22 +317,20 @@ Object.keys(updates).forEach(update => {
   Object.keys(updates[update].items).forEach(type => {
     updates[update].items[type].sort((a, b) => {
       switch (type) {
-        case 'voicelines':
-        case 'sprays':
-        case 'skinsLegendary':
-          if (a.hero < b.hero) return -1;
-          if (a.hero > b.hero || !a.hero) return 1;
-          return 0;
-        default: // skinsEpic, intros, emotes
+        case 'icons':
           if (a.name < b.name) return -1;
           if (a.name > b.name || !a.hero) return 1;
+          return 0;
+        default:
+          if (a.hero < b.hero) return -1;
+          if (a.hero > b.hero || !a.hero) return 1;
           return 0;
       }
     })
   })
 })
 
-// Add allClassItems (Sprays, Icons) to items.json file under ALL
+// Add allClassItems (Sprays, Icons) to items.json file
 try {
   heroes["all"] = JSON.parse(allClassData)
 } catch (e) {
