@@ -1,29 +1,35 @@
-var rawData = rawData ? rawData : `` // Raw data extracted using Overwatch Cosmetic Extractor
+const fs = require('fs')
+const _ = require('lodash')
 
-var splitRawData = rawData.split('\n')
-while (!splitRawData[0].includes("Cosmetics")) { // remove the first few lines
-  splitRawData = splitRawData.slice(1)
+var rawData
+try {
+  rawData = fs.readFileSync('./rawData.txt', "utf8")
+} catch (e) {
+  console.error("Error reading ./ratData.txt")
+  return
 }
 
-// Remove invalid error keys
-splitRawData = splitRawData.map(a => a.includes("Error unknown") ? '\n' : a).join('\n')
+// Load allClassItems data
+var allClassData
+try {
+  allClassData = fs.readFileSync('../data/allClassItems.json', 'utf8')
+} catch (e) {
+  console.error("Error reading ../data/allClassItems.json")
+  return
+}
 
-var rawDataRegex = /Cosmetics for (.+)(\n.+)*/gm // Match each heros items
-var itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g // Match each group of items for a hero
 var data = []
-var heroMatch
-while ((heroMatch = rawDataRegex.exec(splitRawData)) !== null) {
-  var rawItems = heroMatch[0].split('\n').slice(1).join('\n')
-  var items = []
-  var itemMatch
-  while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) {
-    items.push({
-      group: itemMatch[1].split(' ')[0], // ACHIVEMENT, STANDARD_COMMON, COMMON, EVENTS
-      items: itemMatch[0].split('\n').slice(1).map(a => a.trim())
-    })
+const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g
+const heroGroups = rawData.split('\n').filter(a => !a.includes("Error unknown")).join('\n').split('\n\n')
+heroGroups.forEach(heroData => {
+  let hero = heroData.split('\n')[0].split(' ').slice(2).join(' ') // name of hero
+  let rawItems = heroData.split('\n').slice(1).join('\n') // remove the first line containing name of hero
+  var items = {}, itemMatch;
+  while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
+    items[itemMatch[1].split(' ')[0]] = itemMatch[0].split('\n').slice(1).map(a => a.trim())
   }
-  data.push({ hero: heroMatch[1], items })
-}
+  data.push({ hero, items })
+})
 
 var getClassForHero = hero => {
   switch (hero) {
@@ -65,7 +71,7 @@ var getCleanID = (what, hero) => {
 
 var stupidNames = {
   "^_^": "joy",
-  ">_<": "frustration",
+  ">_\\<": "frustration",
   ";)": "winky-face"
 }
 
@@ -171,13 +177,13 @@ data.forEach(({ hero, items: itemGroups }) => {
       poses: []
     }
   }
-  itemGroups.forEach(({ group, items }) => {
+
+  _.forEach(itemGroups, (items, group) => {
     items.forEach(item => {
       var [str, name, type] = item.match(/(.+) \((.+)\)/) //eslint-disable-line
       name = name.trim()
       if (name == 'RANDOM') return
-      var id = getCleanID(name, heroID)
-      id = id && id.length ? id : stupidNames[name] || "UNDEFINED"
+      var id = getCleanID(stupidNames[name] || name, heroID)
       var { quality, type: itemType } = getType(type)
       if (!quality || !itemType) return
       var out = { name, id, quality: quality }
@@ -325,15 +331,17 @@ Object.keys(updates).forEach(update => {
     })
   })
 })
+
+// Add allClassItems (Sprays, Icons) to items.json file under ALL
+try {
+  heroes["all"] = JSON.parse(allClassData)
+} catch (e) {
+  console.error("Error parsing allClassItems")
+  return
+}
+
 updates = sortObject(updates, true)
+heroes = sortObject(heroes)
 
-function copyUpdates() { //eslint-disable-line
-  copy(JSON.stringify(updates, null, 2))
-}
-
-function copyHeroes() { //eslint-disable-line
-  copy(JSON.stringify(heroes, null, 2))
-}
-
-console.log("HEROES: ", heroes)
-console.log("UPDATES:", updates)
+fs.writeFileSync('../data/items.json', JSON.stringify(heroes, null, 2), 'utf8')
+fs.writeFileSync('../data/updates.json', JSON.stringify(updates, null, 2), 'utf8')
