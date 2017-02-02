@@ -11,27 +11,18 @@ OWI.run(function() {
   } else {
     var settings = angular.fromJson(storedSettings) || {};
     var theme = settings.currentTheme || 'standard';
-    if (theme != 'standard') {
-      var styles = ['./css/main.css', './css/events.css']
-      styles.forEach(function(style) {
-        var name = style.split('/')[2];
-        var elm = document.head.querySelector('link[href="' + style + '"]');
-        if (!elm) return;
-        var url = elm.href.replace(name, 'themes/' + theme + '/' + name);
+    var styles = ['main.css', 'events.css']
+    styles.forEach(function(style) {
+      var url = './css/' + (theme == 'standard' ? style : 'themes/' + theme + '/' + style)
+      var newElm = document.createElement('link');
+      newElm.rel = "stylesheet";
+      newElm.href = url;
+      document.head.appendChild(newElm);
 
-        var newElm = document.createElement('link');
-        newElm.rel = "stylesheet";
-        newElm.href = url;
-        document.head.appendChild(newElm);
-        elm.remove();
-        
-        setTimeout(function() {
-          document.body.style.opacity = 1
-        }, 500);
-      })
-    } else {
-      document.body.style.opacity = 1
-    }
+      setTimeout(function() {
+        document.body.style.opacity = 1
+      }, 500);
+    })
   }
 })
 
