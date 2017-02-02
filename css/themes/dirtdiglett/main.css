@@ -981,9 +981,6 @@ body {
   text-transform: uppercase;
 }
 
-
-/* Hide or adjust information that Jayess doesn't want but is useful for other themes */
-
 #sprays .item h4:before, #sprays .item h4:after {
   content: "";
 }
@@ -991,40 +988,41 @@ body {
 .item-container .section h2:before {
   content: "";
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   margin-right: 6px;
   color: #2a3751;
+  fill: #2a3751;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  margin-bottom: -4px;
 }
 
 #icons h2:before {
-  content: "\f03e";
+  background-image: url('resources/svg/icons.svg');
 }
 
 #highlight-intros h2:before {
-  content: "\f03d";
+  background-image: url('resources/svg/highlightintros.svg');
 }
 
 #voicelines h2:before {
-  content: "\f075";
+  background-image: url('resources/svg/voicelines.svg');
 }
 
 #victoryposes h2:before {
-  content: "\f091";
+  background-image: url('resources/svg/victoryposes.svg');
 }
 
 #sprays h2:before {
-  content: "\f1fc";
+  background-image: url('resources/svg/sprays.svg');
 }
 
 #epic-skins h2:before {
-  content: "\f005";
+  background-image: url('resources/svg/epicskins.svg');
 }
 
 #emotes h2:before {
-  content: "\f21d";
+  background-image: url('resources/svg/emotes.svg');
 }
 
 #epic-skins .section-header small, #emotes .section-header small, #highlight-intros .section-header small {
