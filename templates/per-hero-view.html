@@ -49,7 +49,7 @@
                 <p class="card-copy">{{preview.name}}</p>
               </div>
             </div>
-          </div>          
+          </div>
         </div>
       </div>
 </div>
@@ -57,17 +57,16 @@
 <div class="item-container">
   <div id="row1" class="row">
       <div id="col1" class="col">
-          <div id="epic-skins" class="section" ng-if="selectedHeroHas('skins')">
-              <div class="section-header">
+          <div class="section" ng-if="selectedHeroHas('skins')">
+              <div id="skins" class="section-header">
                 <h2>Skins</h2>
               </div>
               <div class="items">
-                  <div id="legendary-skins">
-                      <div class="item item-quality-{{skin.quality || 'unknown'}}" ng-repeat="skin in data.items.skinsLegendary track by $index" ng-if="skin.hero == selectedHero" ng-mouseover="showPreview(skin)" ng-mouseleave="hidePreview()">
+                  <div>                      <div class="item item-quality-{{skin.quality || 'unknown'}}" ng-repeat="skin in data.items.skinsLegendary track by $index" ng-if="skin.hero == selectedHero" ng-mouseover="showPreview(skin)" ng-mouseleave="hidePreview()">
                           <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked.skinsLegendary[skin.id]" ng-change="onSelect()"> <label for="{{'legendary' + $index}}"><h3>{{skin.name}} {{ skin.quality | itemPrice:'skin':true}}</h3></label>
                       </div>
                   </div>
-                  <div id="epic-skins">
+                  <div>
                       <div class="item item-quality-{{skin.quality || 'unknown'}}" ng-repeat="skin in data.items.skinsEpic track by $index" ng-if="skin.hero == selectedHero" ng-mouseover="showPreview(skin)" ng-mouseleave="hidePreview()">
                           <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.skinsEpic[skin.id]" ng-change="onSelect()"> <label for="{{'epic' + $index}}"><h3>{{skin.name}} {{ skin.quality | itemPrice:'skin':true}}</h3></label>
                       </div>

@@ -643,24 +643,25 @@ body {
   margin: 0 auto;
 }
 
-.view-mode-hero .section {
-  width: 100%;
-}
-
 .view-mode-hero .row {
   margin-top: 20px;
   display: flex;
 }
 
 .view-mode-hero .col {
-  width: 50%;
+  width: 50% !important;
   padding: 0 20px;
   display: flex;
   flex-direction: column
 }
 
 .view-mode-hero .section {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
+  width: 100% !important;
+}
+
+.view-mode-hero .section .items {
+  height: initial !important;
 }
 
 #heroes-selection {

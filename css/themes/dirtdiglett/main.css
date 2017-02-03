@@ -975,7 +975,7 @@ body {
   background-image: url('resources/svg/sprays.svg');
 }
 
-#epic-skins h2:before {
+#epic-skins h2:before, #skins h2:before {
   background-image: url('resources/svg/epicskins.svg');
 }
 
