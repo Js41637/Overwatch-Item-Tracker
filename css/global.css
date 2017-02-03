@@ -49,8 +49,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   transition: height 0.125s ease-in-out;
-
 }
+
 #settings.themes .img:hover {
   transition-delay: 450ms;
   height: 260px;
@@ -71,6 +71,9 @@ body {
 
 #settings.themes .madeBy {
   margin-top: 5px;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-style: italic;
 }
 
 strong {

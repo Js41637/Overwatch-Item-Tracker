@@ -52,7 +52,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 
   this.openSettings = function() {
     $uibModal.open({
-      templateUrl: './templates/settings.html',
+      templateUrl: './templates/modals/settings.html',
       controller: 'SettingsCtrl',
       controllerAs: 'settings'
     })
@@ -60,7 +60,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 
   this.openAbout = function() {
     $uibModal.open({
-      templateUrl: './templates/about.html',
+      templateUrl: './templates/modals/about.html',
       controller: 'SettingsCtrl',
       controllerAs: 'settings'
     })
@@ -68,7 +68,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 
   this.openTheme = function() {
     $uibModal.open({
-      templateUrl: './templates/theme.html',
+      templateUrl: './templates/modals/themes.html',
       controller: 'SettingsCtrl',
       controllerAs: 'settings'
     })
