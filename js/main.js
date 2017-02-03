@@ -197,6 +197,7 @@ OWI.directive("update", ["$rootScope", "Data", "StorageService", function($rootS
 
       var showTimeout = undefined;
       var hideTimeout = undefined;
+
       $scope.showPreview = function(what, type) {
         if (!what.img && !what.video) return;
         if (showTimeout) return;
@@ -311,6 +312,7 @@ OWI.filter('heroPortraitUrl', function () {
     return './resources/heroes/' + (specialHeroes[hero] || hero) + '/portrait.png';
   }
 });
+
 OWI.filter('itemPrice', function () {
   return function(quality, type, eventItem) {
     // quality is one of: legendary, epic, rare, common, ''
