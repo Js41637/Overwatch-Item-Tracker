@@ -109,10 +109,11 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   }
 
   this.selectAll = function() {
-    Data.updates.forEach(function(update) {
-      Object.keys(update.items).forEach(function(type) {
+    Object.keys(Data.updates).forEach(function(key) {
+      var update = Data.updates[key]
+      Object.keys(Data.updates[key].items).forEach(function(type) {
         update.items[type].forEach(function(item) {
-          Data.checked[update.id][type][item.id || item.name || item] = true;
+          Data.checked[update.id][type][item.id] = true;
         });
       });
     });
