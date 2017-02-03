@@ -76,6 +76,13 @@ body {
   font-style: italic;
 }
 
+#settings.about .copyright {
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
 strong {
   font-weight: bold;
 }
