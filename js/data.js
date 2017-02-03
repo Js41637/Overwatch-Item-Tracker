@@ -544,6 +544,20 @@ OWI.factory('Data', function() {
           ],
           "skinsEpic": [
             {
+              "hero": "D.Va",
+              "name": "Taegeukgi",
+              "id": "dva-taegeukgi",
+              "quality": "epic",
+              "img": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/dva-taegeukgi.jpg"
+            },
+            {
+              "hero": "Genji",
+              "name": "Nihon",
+              "id": "genji-nihon",
+              "quality": "epic",
+              "img": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/genji-nihon.jpg"
+            },
+            {
               "hero": "McCree",
               "name": "American",
               "id": "mccree-american",
@@ -556,20 +570,6 @@ OWI.factory('Data', function() {
               "id": "mercy-eidgenossin",
               "quality": "epic",
               "img": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/mercy-eidgenossin.jpg"
-            },
-            {
-              "hero": "Genji",
-              "name": "Nihon",
-              "id": "genji-nihon",
-              "quality": "epic",
-              "img": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/genji-nihon.jpg"
-            },
-            {
-              "hero": "D.Va",
-              "name": "Taegeukgi",
-              "id": "dva-taegeukgi",
-              "quality": "epic",
-              "img": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/dva-taegeukgi.jpg"
             },
             {
               "hero": "Torbjörn",
@@ -588,6 +588,13 @@ OWI.factory('Data', function() {
           ],
           "intros": [
             {
+              "hero": "Junkrat",
+              "name": "Shot Put",
+              "id": "junkrat-shot-put",
+              "quality": "epic",
+              "video": "./resources/updates/SUMMER_GAMES_2016/intros/junkrat-shot-put.webm"
+            },
+            {
               "hero": "Lúcio",
               "name": "Bicycle Kick",
               "id": "lucio-bicycle-kick",
@@ -600,13 +607,6 @@ OWI.factory('Data', function() {
               "id": "tracer-hurdle",
               "quality": "epic",
               "video": "./resources/updates/SUMMER_GAMES_2016/intros/tracer-hurdle.webm"
-            },
-            {
-              "hero": "Junkrat",
-              "name": "Shot Put",
-              "id": "junkrat-shot-put",
-              "quality": "epic",
-              "video": "./resources/updates/SUMMER_GAMES_2016/intros/junkrat-shot-put.webm"
             }
           ],
           "skinsLegendary": [
@@ -655,13 +655,6 @@ OWI.factory('Data', function() {
           ],
           "poses": [
             {
-              "hero": "Soldier: 76",
-              "name": "Golf Swing",
-              "id": "soldier-76-golf-swing",
-              "quality": "rare",
-              "img": "./resources/updates/SUMMER_GAMES_2016/poses/soldier-76-golf-swing.jpg"
-            },
-            {
               "hero": "Mei",
               "name": "Medal",
               "id": "mei-medal",
@@ -688,6 +681,13 @@ OWI.factory('Data', function() {
               "id": "roadhog-medal",
               "quality": "rare",
               "img": "./resources/updates/SUMMER_GAMES_2016/poses/roadhog-medal.jpg"
+            },
+            {
+              "hero": "Soldier: 76",
+              "name": "Golf Swing",
+              "id": "soldier-76-golf-swing",
+              "quality": "rare",
+              "img": "./resources/updates/SUMMER_GAMES_2016/poses/soldier-76-golf-swing.jpg"
             },
             {
               "hero": "Torbjörn",
@@ -730,46 +730,11 @@ OWI.factory('Data', function() {
         "items": {
           "skinsEpic": [
             {
-              "hero": "Reinhardt",
-              "name": "Coldhardt",
-              "id": "reinhardt-coldhardt",
-              "quality": "epic",
-              "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/reinhardt-coldhardt.jpg"
-            },
-            {
-              "hero": "Hanzo",
-              "name": "Demon",
-              "id": "hanzo-demon",
-              "quality": "epic",
-              "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/hanzo-demon.jpg"
-            },
-            {
               "hero": "Ana",
               "name": "Ghoul",
               "id": "ana-ghoul",
               "quality": "epic",
               "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/ana-ghoul.jpg"
-            },
-            {
-              "hero": "Soldier: 76",
-              "name": "Immortal",
-              "id": "soldier-76-immortal",
-              "quality": "epic",
-              "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/soldier-76-immortal.jpg"
-            },
-            {
-              "hero": "Pharah",
-              "name": "Possessed",
-              "id": "pharah-possessed",
-              "quality": "epic",
-              "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/pharah-possessed.jpg"
-            },
-            {
-              "hero": "Zenyatta",
-              "name": "Skullyatta",
-              "id": "zenyatta-skullyatta",
-              "quality": "epic",
-              "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/zenyatta-skullyatta.jpg"
             },
             {
               "hero": "Bastion",
@@ -779,11 +744,46 @@ OWI.factory('Data', function() {
               "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/bastion-tombstone.jpg"
             },
             {
+              "hero": "Hanzo",
+              "name": "Demon",
+              "id": "hanzo-demon",
+              "quality": "epic",
+              "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/hanzo-demon.jpg"
+            },
+            {
+              "hero": "Pharah",
+              "name": "Possessed",
+              "id": "pharah-possessed",
+              "quality": "epic",
+              "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/pharah-possessed.jpg"
+            },
+            {
+              "hero": "Reinhardt",
+              "name": "Coldhardt",
+              "id": "reinhardt-coldhardt",
+              "quality": "epic",
+              "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/reinhardt-coldhardt.jpg"
+            },
+            {
+              "hero": "Soldier: 76",
+              "name": "Immortal",
+              "id": "soldier-76-immortal",
+              "quality": "epic",
+              "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/soldier-76-immortal.jpg"
+            },
+            {
               "hero": "Symmetra",
               "name": "Vampire",
               "id": "symmetra-vampire",
               "quality": "epic",
               "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/symmetra-vampire.jpg"
+            },
+            {
+              "hero": "Zenyatta",
+              "name": "Skullyatta",
+              "id": "zenyatta-skullyatta",
+              "quality": "epic",
+              "img": "./resources/updates/HALLOWEEN_2016/skinsEpic/zenyatta-skullyatta.jpg"
             }
           ],
           "emotes": [
@@ -1151,18 +1151,18 @@ OWI.factory('Data', function() {
           ],
           "poses": [
             {
-              "hero": "Reaper",
-              "name": "R.I.P.",
-              "id": "reaper-rip",
-              "quality": "rare",
-              "img": "./resources/updates/HALLOWEEN_2016/poses/reaper-rip.jpg"
-            },
-            {
               "hero": "Ana",
               "name": "R.I.P.",
               "id": "ana-rip",
               "quality": "rare",
               "img": "./resources/updates/HALLOWEEN_2016/poses/ana-rip.jpg"
+            },
+            {
+              "hero": "Bastion",
+              "name": "R.I.P.",
+              "id": "bastion-rip",
+              "quality": "rare",
+              "img": "./resources/updates/HALLOWEEN_2016/poses/bastion-rip.jpg"
             },
             {
               "hero": "D.Va",
@@ -1228,11 +1228,11 @@ OWI.factory('Data', function() {
               "img": "./resources/updates/HALLOWEEN_2016/poses/pharah-rip.jpg"
             },
             {
-              "hero": "Bastion",
+              "hero": "Reaper",
               "name": "R.I.P.",
-              "id": "bastion-rip",
+              "id": "reaper-rip",
               "quality": "rare",
-              "img": "./resources/updates/HALLOWEEN_2016/poses/bastion-rip.jpg"
+              "img": "./resources/updates/HALLOWEEN_2016/poses/reaper-rip.jpg"
             },
             {
               "hero": "Reinhardt",
@@ -1307,11 +1307,11 @@ OWI.factory('Data', function() {
           ],
           "intros": [
             {
-              "hero": "Reaper",
-              "name": "Eternal Rest",
-              "id": "reaper-eternal-rest",
+              "hero": "Genji",
+              "name": "Pumpkin Carving",
+              "id": "genji-pumpkin-carving",
               "quality": "epic",
-              "video": "./resources/updates/HALLOWEEN_2016/intros/reaper-eternal-rest.webm"
+              "video": "./resources/updates/HALLOWEEN_2016/intros/genji-pumpkin-carving.webm"
             },
             {
               "hero": "Mei",
@@ -1321,11 +1321,11 @@ OWI.factory('Data', function() {
               "video": "./resources/updates/HALLOWEEN_2016/intros/mei-ice-scream.webm"
             },
             {
-              "hero": "Genji",
-              "name": "Pumpkin Carving",
-              "id": "genji-pumpkin-carving",
+              "hero": "Reaper",
+              "name": "Eternal Rest",
+              "id": "reaper-eternal-rest",
               "quality": "epic",
-              "video": "./resources/updates/HALLOWEEN_2016/intros/genji-pumpkin-carving.webm"
+              "video": "./resources/updates/HALLOWEEN_2016/intros/reaper-eternal-rest.webm"
             }
           ],
           "skinsLegendary": [
@@ -2044,6 +2044,13 @@ OWI.factory('Data', function() {
           ],
           "poses": [
             {
+              "hero": "Ana",
+              "name": "Toast",
+              "id": "ana-toast",
+              "quality": "rare",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/poses/ana-toast.jpg"
+            },
+            {
               "hero": "D.Va",
               "name": "Festive",
               "id": "dva-festive",
@@ -2056,13 +2063,6 @@ OWI.factory('Data', function() {
               "id": "mercy-mistletoe",
               "quality": "rare",
               "img": "./resources/updates/WINTER_WONDERLAND_2016/poses/mercy-mistletoe.jpg"
-            },
-            {
-              "hero": "Ana",
-              "name": "Toast",
-              "id": "ana-toast",
-              "quality": "rare",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/poses/ana-toast.jpg"
             },
             {
               "hero": "Pharah",
@@ -2102,6 +2102,13 @@ OWI.factory('Data', function() {
               "img": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/lucio-andes.jpg"
             },
             {
+              "hero": "McCree",
+              "name": "Scrooge",
+              "id": "mccree-scrooge",
+              "quality": "epic",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/mccree-scrooge.jpg"
+            },
+            {
               "hero": "Pharah",
               "name": "Frostbite",
               "id": "pharah-frostbite",
@@ -2109,18 +2116,11 @@ OWI.factory('Data', function() {
               "img": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/pharah-frostbite.jpg"
             },
             {
-              "hero": "Zarya",
-              "name": "Frosted",
-              "id": "zarya-frosted",
+              "hero": "Reaper",
+              "name": "Shiver",
+              "id": "reaper-shiver",
               "quality": "epic",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/zarya-frosted.jpg"
-            },
-            {
-              "hero": "Sombra",
-              "name": "Peppermint",
-              "id": "sombra-peppermint",
-              "quality": "epic",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/sombra-peppermint.jpg"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/reaper-shiver.jpg"
             },
             {
               "hero": "Roadhog",
@@ -2130,18 +2130,18 @@ OWI.factory('Data', function() {
               "img": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/roadhog-rudolph.jpg"
             },
             {
-              "hero": "McCree",
-              "name": "Scrooge",
-              "id": "mccree-scrooge",
+              "hero": "Sombra",
+              "name": "Peppermint",
+              "id": "sombra-peppermint",
               "quality": "epic",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/mccree-scrooge.jpg"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/sombra-peppermint.jpg"
             },
             {
-              "hero": "Reaper",
-              "name": "Shiver",
-              "id": "reaper-shiver",
+              "hero": "Zarya",
+              "name": "Frosted",
+              "id": "zarya-frosted",
               "quality": "epic",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/reaper-shiver.jpg"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/zarya-frosted.jpg"
             }
           ],
           "emotes": [
@@ -2153,19 +2153,19 @@ OWI.factory('Data', function() {
               "video": "./resources/updates/WINTER_WONDERLAND_2016/emotes/mccree-hat-trick.webm"
             },
             {
+              "hero": "Mei",
+              "name": "Snowman",
+              "id": "mei-snowman",
+              "quality": "epic",
+              "video": "./resources/updates/WINTER_WONDERLAND_2016/emotes/mei-snowman.webm"
+            },
+            {
               "hero": "Zarya",
               "legendary": true,
               "name": "Mystery Gift",
               "id": "zarya-mystery-gift",
               "quality": "legendary",
               "video": "./resources/updates/WINTER_WONDERLAND_2016/emotes/zarya-mystery-gift.webm"
-            },
-            {
-              "hero": "Mei",
-              "name": "Snowman",
-              "id": "mei-snowman",
-              "quality": "epic",
-              "video": "./resources/updates/WINTER_WONDERLAND_2016/emotes/mei-snowman.webm"
             }
           ],
           "skinsLegendary": [
@@ -2365,6 +2365,20 @@ OWI.factory('Data', function() {
         "items": {
           "skinsEpic": [
             {
+              "hero": "Ana",
+              "name": "Tal",
+              "id": "ana-tal",
+              "quality": "epic",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/ana-tal.jpg"
+            },
+            {
+              "hero": "Bastion",
+              "name": "Rooster",
+              "id": "bastion-rooster",
+              "quality": "epic",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/bastion-rooster.jpg"
+            },
+            {
               "hero": "Junkrat",
               "name": "Firework",
               "id": "junkrat-firework",
@@ -2386,25 +2400,11 @@ OWI.factory('Data', function() {
               "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/symmetra-qipao.jpg"
             },
             {
-              "hero": "Bastion",
-              "name": "Rooster",
-              "id": "bastion-rooster",
-              "quality": "epic",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/bastion-rooster.jpg"
-            },
-            {
               "hero": "Tracer",
               "name": "Rose",
               "id": "tracer-rose",
               "quality": "epic",
               "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/tracer-rose.jpg"
-            },
-            {
-              "hero": "Ana",
-              "name": "Tal",
-              "id": "ana-tal",
-              "quality": "epic",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/ana-tal.jpg"
             }
           ],
           "sprays": [
@@ -2999,11 +2999,11 @@ OWI.factory('Data', function() {
           ],
           "poses": [
             {
-              "hero": "Junkrat",
-              "name": "Bad for Your Health",
-              "id": "junkrat-bad-for-your-health",
+              "hero": "Ana",
+              "name": "Folded hands",
+              "id": "ana-folded-hands",
               "quality": "rare",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/junkrat-bad-for-your-health.jpg"
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/ana-folded-hands.jpg"
             },
             {
               "hero": "Bastion",
@@ -3013,18 +3013,18 @@ OWI.factory('Data', function() {
               "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/bastion-firework.jpg"
             },
             {
-              "hero": "Ana",
-              "name": "Folded hands",
-              "id": "ana-folded-hands",
-              "quality": "rare",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/ana-folded-hands.jpg"
-            },
-            {
               "hero": "D.Va",
               "name": "Lucky Pouch",
               "id": "dva-lucky-pouch",
               "quality": "rare",
               "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/dva-lucky-pouch.jpg"
+            },
+            {
+              "hero": "Junkrat",
+              "name": "Bad for Your Health",
+              "id": "junkrat-bad-for-your-health",
+              "quality": "rare",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/junkrat-bad-for-your-health.jpg"
             },
             {
               "hero": "Mei",
@@ -3034,18 +3034,18 @@ OWI.factory('Data', function() {
               "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/mei-lucky.jpg"
             },
             {
-              "hero": "Sombra",
-              "name": "Sparklers",
-              "id": "sombra-sparklers",
-              "quality": "rare",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/sombra-sparklers.jpg"
-            },
-            {
               "hero": "Roadhog",
               "name": "What's mine is mine",
               "id": "roadhog-whats-mine-is-mine",
               "quality": "rare",
               "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/roadhog-whats-mine-is-mine.jpg"
+            },
+            {
+              "hero": "Sombra",
+              "name": "Sparklers",
+              "id": "sombra-sparklers",
+              "quality": "rare",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/sombra-sparklers.jpg"
             }
           ],
           "skinsLegendary": [
@@ -3241,18 +3241,18 @@ OWI.factory('Data', function() {
           ],
           "intros": [
             {
-              "hero": "Roadhog",
-              "name": "Feast",
-              "id": "roadhog-feast",
-              "quality": "epic",
-              "video": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/intros/roadhog-feast.webm"
-            },
-            {
               "hero": "Mercy",
               "name": "Fortune",
               "id": "mercy-fortune",
               "quality": "epic",
               "video": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/intros/mercy-fortune.webm"
+            },
+            {
+              "hero": "Roadhog",
+              "name": "Feast",
+              "id": "roadhog-feast",
+              "quality": "epic",
+              "video": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/intros/roadhog-feast.webm"
             },
             {
               "hero": "Tracer",

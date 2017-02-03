@@ -4,7 +4,8 @@ OWI.factory("StorageService", function() {
     settings: {},
     defaults: {
       particles: true,
-      hdVideos: false
+      hdVideos: false,
+      currentTheme: 'standard'
     },
     getData: function() {
       return service.data
@@ -51,7 +52,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 
   this.openSettings = function() {
     $uibModal.open({
-      templateUrl: './templates/settings.html',
+      templateUrl: './templates/modals/settings.html',
       controller: 'SettingsCtrl',
       controllerAs: 'settings'
     })
@@ -59,7 +60,15 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 
   this.openAbout = function() {
     $uibModal.open({
-      templateUrl: './templates/about.html',
+      templateUrl: './templates/modals/about.html',
+      controller: 'SettingsCtrl',
+      controllerAs: 'settings'
+    })
+  };
+
+  this.openTheme = function() {
+    $uibModal.open({
+      templateUrl: './templates/modals/themes.html',
       controller: 'SettingsCtrl',
       controllerAs: 'settings'
     })
@@ -73,6 +82,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "Data", function($rootScope, $uibModalInstance, StorageService, Data) {
   this.particles = StorageService.getSetting('particles');
   this.hdVideos = StorageService.getSetting('hdVideos');
+  this.currentTheme = StorageService.getSetting('currentTheme');
 
   this.close = function() {
     $uibModalInstance.dismiss('close')
@@ -92,6 +102,12 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
     }
   }
 
+  this.selectTheme = function(what) {
+    this.currentTheme = what
+    StorageService.setSetting('currentTheme', what)
+    location.reload()
+  }
+
   this.selectAll = function() {
     Data.updates.forEach(function(update) {
       Object.keys(update.items).forEach(function(type) {
@@ -108,7 +124,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
 OWI.directive("scroll", function ($window) {
   return function($scope) {
     angular.element($window).bind("scroll", function() {
-      if (this.innerWidth > 1540) return;
+      if (this.innerWidth > 1570) return;
       $scope.isFixed = this.pageYOffset >= 200 ? true : false;
       $scope.$apply();
     });
@@ -136,10 +152,6 @@ OWI.directive("update", ["$rootScope", "Data", "StorageService", function($rootS
       })
 
       $scope.viewMode = StorageService.getSetting('viewMode') || 'item-type';
-      $scope.viewModes = {
-        'item-type': 'By item type',
-        'hero': 'By hero'
-      };
       $scope.saveViewMode = function (viewMode) {
         $scope.viewMode = viewMode;
         StorageService.setSetting('viewMode', viewMode);
@@ -185,12 +197,14 @@ OWI.directive("update", ["$rootScope", "Data", "StorageService", function($rootS
 
       var showTimeout = undefined;
       var hideTimeout = undefined;
-      $scope.showPreview = function(what) {
+
+      $scope.showPreview = function(what, type) {
         if (!what.img && !what.video) return;
         if (showTimeout) return;
         var item = angular.copy(what)
         clearTimeout(hideTimeout)
         showTimeout = setTimeout(function () {
+          item.type = type;
           if (StorageService.getSetting('hdVideos') && item.video) {
             item.video = item.video.replace('.webm', '-hd.webm');
           }
@@ -295,9 +309,10 @@ OWI.filter('heroPortraitUrl', function () {
   }
   return function(hero) {
     hero = hero.toLowerCase();
-    return './resources/heroes/' + (specialHeroes[hero] || hero) + '/portrait-small.png';
+    return './resources/heroes/' + (specialHeroes[hero] || hero) + '/portrait.png';
   }
 });
+
 OWI.filter('itemPrice', function () {
   return function(quality, type, eventItem) {
     // quality is one of: legendary, epic, rare, common, ''
@@ -318,6 +333,14 @@ OWI.filter('itemPrice', function () {
       return '(' + prices[quality] * (eventItem ? 3 : 1) + ')';
     }
     return '';
+  }
+})
+
+OWI.directive('legendarySkins', function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: './templates/legendary-skins.html'
   }
 })
 
@@ -376,6 +399,59 @@ OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
           return true;
         }
     }
+}]);
+
+OWI.directive('loadingSpinner', function() {
+  return {
+    restrict: 'E',
+    scope: {},
+    replace: true,
+    template: '<div class="loader"><ul class="hexagon-container"><li class="hexagon hex_1"></li><li class="hexagon hex_2"></li><li class="hexagon hex_3"></li><li class="hexagon hex_4"></li><li class="hexagon hex_5"></li><li class="hexagon hex_6"></li><li class="hexagon hex_7"></li></ul></div>'
+  }
+})
+
+OWI.directive('lazyBackground', ["$document", "$compile", function($document, $compile) {
+  return {
+    restrict: 'A',
+    scope: {},
+    link: function($scope, $element, $attrs) {
+      // Observe the lazy-background attribute so that when it changes it can fetch the new image and fade to it
+      $attrs.$observe('lazyBackground', function(newSrc) {
+        // Make sure newSrc is valid else return error
+        if (newSrc == null || newSrc == "") {
+          $element.css('background-image', '');
+          $element.addClass('img-load-error');
+          return;
+        }
+        /**
+         * Removes any error class on the element and then adds the loading class to the element.
+         * This is required in cases where the element can load more than 1 image.
+         */
+        $element.removeClass('img-load-error');
+        $element.addClass('img-loading');
+
+        var loader = $compile('<loading-spinner  />')($scope)
+        $element.prepend(loader)
+        setTimeout(function () {
+          loader.css('opacity', '1')
+        }, 110);
+        // Use some oldskool preloading techniques to load the image
+        var img = $document[0].createElement('img');
+        img.onload = function() {
+          $element.css('background-image', 'url("'+this.src+'")');
+          $element.removeClass('img-loading');
+          loader.remove()
+        };
+        img.onerror = function() {
+          //Remove any existing background-image & loading class and apply error class
+          $element.css('background-image', '');
+          $element.removeClass('img-loading');
+          $element.addClass('img-load-error');
+        };
+        img.src = encodeURI(newSrc);
+      });
+    }
+  }
 }]);
 
 /*OWI.directive("particles", function() {

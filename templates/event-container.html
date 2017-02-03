@@ -1,14 +1,18 @@
-<div id="cost-remaining" ng-hide="currentEvent == 'summergames2016'" uib-tooltip="Cost to purchase remaining items" tooltip-placement="bottom">
-  <img src="./resources/credit.png" /> <span count-to="{{cost.remaining}}" duration="0.40" count-from="{{cost.prev}}"></span>
-</div>
-<div id="menu">
-    <div class="wrapper">
-        <div class="button" ng-repeat="(id, name) in viewModes" ng-class="{selected: id == viewMode}" ng-click="saveViewMode(id);">
-            {{name}}
-        </div>
-    </div>
-</div>
 <div class="body-container">
+  <div id="cost-remaining" ng-hide="currentEvent == 'SUMMER_GAMES_2016'" uib-tooltip="Cost to purchase remaining items" tooltip-placement="bottom">
+    <img src="./resources/credit.png" /> <span count-to="{{cost.remaining}}" duration="0.40" count-from="{{cost.prev}}"></span>
+  </div>
+  <div id="menu">
+      <div class="wrapper">
+        <div class="button" ng-class="{selected: viewMode == 'item-type'}" ng-click="saveViewMode('item-type');">
+            By Item Type
+        </div>
+          <div class="button" ng-class="{selected: viewMode == 'hero'}" ng-click="saveViewMode('hero');">
+              By Hero
+          </div>
+      </div>
+  </div>
+
   <div ng-if="viewMode == 'item-type'" id="{{currentEvent}}" class="view-mode-include view-mode-item-type item-container" ng-include src="'templates/' + currentEvent + '.html'"></div>
   <div ng-if="viewMode == 'hero'" class="view-mode-include view-mode-hero" ng-include src="'templates/per-hero-view.html'"></div>
 </div>

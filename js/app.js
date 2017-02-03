@@ -4,6 +4,23 @@ OWI.config(['$compileProvider', function($compileProvider) {
   $compileProvider.debugInfoEnabled(false);
 }])
 
+OWI.run(function() {
+  var settings = angular.fromJson(localStorage.getItem('settings')) || {};
+  var theme = settings.currentTheme || 'standard';
+  var styles = ['main.css', 'events.css']
+  styles.forEach(function(style) {
+    var url = './css/' + (theme == 'standard' ? style : 'themes/' + theme + '/' + style)
+    var newElm = document.createElement('link');
+    newElm.rel = "stylesheet";
+    newElm.href = url;
+    document.head.appendChild(newElm);
+
+    setTimeout(function() {
+      document.body.style.opacity = 1
+    }, 500);
+  })
+})
+
 // Run migrations to convert data and stuff
 OWI.run(function() {
   var storedData = localStorage.getItem('data');
