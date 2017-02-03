@@ -336,6 +336,14 @@ OWI.filter('itemPrice', function () {
   }
 })
 
+OWI.directive('legendarySkins', function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: './templates/legendary-skins.html'
+  }
+})
+
 // Based off http://sparkalow.github.io/angular-count-to/
 OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
   return {
