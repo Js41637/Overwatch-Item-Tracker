@@ -1,17 +1,26 @@
 /* SUMMER GAMES 2016 */
+
 #SUMMER_GAMES_2016 #col1 {
-  width: 78%;
+  width: 50%;
 }
 
 #SUMMER_GAMES_2016 #col2 {
-  width: 21%;
+  width: 50%;
 }
 
 #SUMMER_GAMES_2016 #row1, #SUMMER_GAMES_2016 #row2 {
   display: flex;
 }
 
-#SUMMER_GAMES_2016 #epic-skins, #SUMMER_GAMES_2016 .right {
+#SUMMER_GAMES_2016 #row2 {
+  margin-top: 8px;
+}
+
+#SUMMER_GAMES_2016 #row2 .left {
+  width: 16%;
+}
+
+#SUMMER_GAMES_2016 #row2 .right {
   width: 22%;
 }
 
@@ -33,7 +42,15 @@
 }
 
 #SUMMER_GAMES_2016 #voicelines {
-  width: 38%;
+  width: 36%;
+}
+
+#SUMMER_GAMES_2016 #voicelines .items {
+  height: 399px;
+}
+
+#SUMMER_GAMES_2016 #icons {
+  width: 63%;
 }
 
 #SUMMER_GAMES_2016 #victoryposes {
@@ -44,7 +61,7 @@
   width: 46%;
 }
 
-#SUMMER_GAMES_2016 #voicelines .items, #SUMMER_GAMES_2016 #sprays .items {
+#SUMMER_GAMES_2016 #sprays .items {
   height: 333px;
 }
 
@@ -53,28 +70,30 @@
 }
 
 #SUMMER_GAMES_2016 #icons .items {
-  height: 745px;
+  height: 397px;
 }
 
 #SUMMER_GAMES_2016 #icons .item:nth-of-type(24) h3 {
   font-size: 21px;
 }
 
-#SUMMER_GAMES_2016 #victoryposes .item h3 {
+#SUMMER_GAMES_2016 #victoryposes .item h4 {
   display: none;
 }
 
+
 /* HALLOWEEN 2016 */
+
 #HALLOWEEN_2016 .col {
   display: initial;
 }
 
 #HALLOWEEN_2016 #col1 {
-  width: 41%;
+  width: 46%;
 }
 
 #HALLOWEEN_2016 #col2 {
-  width: 44%;
+  width: 53%;
 }
 
 #HALLOWEEN_2016 #col3 {
@@ -82,9 +101,7 @@
 }
 
 #HALLOWEEN_2016 #epic-skins {
-  float: left;
-  width: 40%;
-  margin-right: 20px;
+  width: 100%;
 }
 
 #HALLOWEEN_2016 #emotes h2 {
@@ -99,35 +116,68 @@
   padding: 0 8px;
 }
 
-#HALLOWEEN_2016 #voicelines, #HALLOWEEN_2016 #victoryposes {
+#HALLOWEEN_2016 #voicelines {
   width: 49.5%;
+  display: inline-block;
 }
 
-#HALLOWEEN_2016 #voicelines .items, #HALLOWEEN_2016 #victoryposes .items {
-  height: 431px;
+#HALLOWEEN_2016 #sprays {
+  width: 36%;
+}
+
+#HALLOWEEN_2016 #icons {
+  width: 49%;
+  display: inline-block;
+}
+
+#HALLOWEEN_2016 #icons .items {
+  height: 418px;
+}
+
+#HALLOWEEN_2016 #victoryposes .items {
+  height: 325px;
+}
+
+#HALLOWEEN_2016 #voicelines .items {
+  height: 397px;
 }
 
 #HALLOWEEN_2016 #sprays .items {
-  height: 260px;
+  height: 339px;
 }
 
-#HALLOWEEN_2016 #sprays .item h3:not(:only-child) {
+#HALLOWEEN_2016 #sprays .item h4:not(:only-child) {
   display: none;
 }
 
+#HALLOWEEN_2016 #row2 .left {
+  width: 14%;
+}
+
+#HALLOWEEN_2016 #row2 .right {
+  width: 18%;
+  margin: 0 8px;
+}
+
+#HALLOWEEN_2016 #victoryposes {
+  width: 31%;
+}
+
+
 /* WINTER WONDERLAND 2016 */
+
 #WINTER_WONDERLAND_2016 #row1 #col1 {
-  width: 40%;
+  width: 60%;
 }
 
 #WINTER_WONDERLAND_2016 #row1 #col2 {
-  width: 60%;
+  width: 40%;
   display: flex;
   justify-content: space-around;
 }
 
 #WINTER_WONDERLAND_2016 #row1 #col2 .right {
-  width: 69%;
+  width: 50%;
 }
 
 #WINTER_WONDERLAND_2016 #row2 {
@@ -148,10 +198,11 @@
 
 #WINTER_WONDERLAND_2016 #row2 .right {
   width: 20%;
+  margin-left: 8px;
 }
 
 #WINTER_WONDERLAND_2016 #sprays {
-  width: 64%;
+  width: 53%;
 }
 
 #WINTER_WONDERLAND_2016 #epic-skins {
@@ -167,11 +218,16 @@
 }
 
 #WINTER_WONDERLAND_2016 #voicelines {
-  width: 29%;
+  width: 50%;
+}
+
+#WINTER_WONDERLAND_2016 #victoryposes {
+  width: 17%;
+  margin: 0 8px;
 }
 
 #WINTER_WONDERLAND_2016 #victoryposes .items {
-  height: 157px;
+  height: 252px;
 }
 
 #WINTER_WONDERLAND_2016 #voicelines .items {
@@ -179,7 +235,7 @@
 }
 
 #WINTER_WONDERLAND_2016 #icons .items {
-  height: 261px;
+  height: 480px;
 }
 
 #WINTER_WONDERLAND_2016 #icons .item:nth-child(24) h3 {
@@ -190,7 +246,9 @@
   height: 265px;
 }
 
+
 /* YEAR OF THE ROOSTER 2017 */
+
 #YEAR_OF_THE_ROOSTER_2017 #row1 #col1 {
   width: 61%;
 }
@@ -247,7 +305,9 @@
   padding: 4px 2px;
 }
 
+
 /* SMALL MODE CSS */
+
 @media screen and (max-width: 1570px) {
   /* HALLOWEEN */
   #HALLOWEEN_2016 {
@@ -256,6 +316,12 @@
     width: 1000px;
     position: relative;
     margin: 0 auto;
+  }
+  #HALLOWEEN_2016 #row1 {
+    flex-direction: column;
+  }
+  #HALLOWEEN_2016 #row2 {
+    flex-wrap: wrap;
   }
   #HALLOWEEN_2016 #col1, #HALLOWEEN_2016 #col2 {
     width: 1000px;
@@ -267,53 +333,33 @@
   }
   #HALLOWEEN_2016 #legendary-skins {
     width: 71%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   #HALLOWEEN_2016 #epic-skins {
-    width: 28%;
     margin: 0;
   }
-  #HALLOWEEN_2016 #col1 .right {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
+  #HALLOWEEN_2016 #row2 .left {
+    width: 49%;
   }
-  #HALLOWEEN_2016 #highlight-intros, #HALLOWEEN_2016 #emotes {
-    width: 34%;
-  }
-  #HALLOWEEN_2016 #emotes {
-    margin-left: 2%;
+  #HALLOWEEN_2016 #row2 .right {
+    width: 49%;
   }
   #HALLOWEEN_2016 #emotes h2 {
-    margin-top: 0;
-  }
-  #HALLOWEEN_2016 #col2 .top {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-    width: 70%;
-    padding: 0;
+    margin-top: 28px;
   }
   #HALLOWEEN_2016 #voicelines .items, #HALLOWEEN_2016 #victoryposes .items {
     height: 422px;
   }
   #HALLOWEEN_2016 #victoryposes .item {
     z-index: 1;
+    width: 49%;
   }
-  #HALLOWEEN_2016 #col2 .bottom {
-    width: 70%;
-    padding: 0;
+  #HALLOWEEN_2016 #victoryposes {
+    width: 37%;
   }
-  #HALLOWEEN_2016 #col3 {
-    width: 280px;
-    position: absolute;
-    top: 350px;
-    right: 8px;
+  #HALLOWEEN_2016 #sprays {
+    width: 62%
   }
-  #HALLOWEEN_2016 #legendary-skins h3 {
-    font-size: 24px;
-  }
-
   /* WINTER */
   #WINTER_WONDERLAND_2016 {
     flex-direction: column;
@@ -343,10 +389,18 @@
   #WINTER_WONDERLAND_2016 #row2 .right {
     width: 59%;
   }
-  #WINTER_WONDERLAND_2016 #row2 #sprays {
-    width: 100%;
+  #WINTER_WONDERLAND_2016 #row2 #victoryposes {
+    width: 30%;
   }
-
+  #WINTER_WONDERLAND_2016 #row2 #sprays {
+    width: 68%;
+  }
+  #WINTER_WONDERLAND_2016 #row2 #sprays .items {
+    height: 365px;
+  }
+  #WINTER_WONDERLAND_2016 #row2 #sprays .item {
+    width: 32.5%;
+  }
   /* ROOSTER */
   #YEAR_OF_THE_ROOSTER_2017 {
     flex-direction: column;
@@ -412,14 +466,16 @@
     justify-content: space-between;
   }
   #SUMMER_GAMES_2016 #row2 {
-    margin-top: 13px;
+    margin-top: 10px;
   }
   #SUMMER_GAMES_2016 #legendary-skins {
     width: 100%;
     margin-bottom: 13px;
   }
+  #SUMMER_GAMES_2016 #highlight-intros, #SUMMER_GAMES_2016 #emotes {
+    width: 49%;
+  }
   #SUMMER_GAMES_2016 #epic-skins {
-    width: 50%;
     margin: 0;
   }
   #SUMMER_GAMES_2016 #epic-skins .items {
@@ -433,13 +489,13 @@
     padding: 5px 2px;
     z-index: 1;
   }
-  #SUMMER_GAMES_2016 #col1 .right {
+  #SUMMER_GAMES_2016 #row2 .left {
+    width: 49%;
+  }
+  #SUMMER_GAMES_2016 #row2 .right {
     display: flex;
     width: 50%;
     flex-direction: row;
-  }
-  #SUMMER_GAMES_2016 #highlight-intros, #SUMMER_GAMES_2016 #emotes {
-    width: 49%;
   }
   #SUMMER_GAMES_2016 #emotes {
     margin-left: 1%;
@@ -448,14 +504,14 @@
     margin-top: 0;
   }
   #SUMMER_GAMES_2016 #victoryposes {
-    width: 19%;
+    width: 20%;
     z-index: 100;
   }
   #SUMMER_GAMES_2016 #victoryposes .item {
     z-index: 1;
   }
   #SUMMER_GAMES_2016 #sprays {
-    width: 50%;
+    width: 79%;
   }
   #SUMMER_GAMES_2016 #sprays .items, #SUMMER_GAMES_2016 #victoryposes .items {
     height: 433px;
@@ -466,19 +522,19 @@
   #SUMMER_GAMES_2016 #icons .item h3, #SUMMER_GAMES_2016 #sprays .item h3, #SUMMER_GAMES_2016 #victoryposes .item h3, #SUMMER_GAMES_2016 #voicelines .item h3 {
     font-size: 23px;
   }
-  #SUMMER_GAMES_2016 #icons .items {
-    height: 259px;
-  }
   #SUMMER_GAMES_2016 #icons .items .item {
-    width: 15.6%;
+    width: 24%;
   }
   #SUMMER_GAMES_2016 #voicelines {
     width: 29%;
   }
-  #SUMMER_GAMES_2016 #voicelines .items {
+  #SUMMER_GAMES_2016 #voicelines .items, #SUMMER_GAMES_2016 #icons .items {
     height: 405px;
   }
   #SUMMER_GAMES_2016 #voicelines .items .item {
     width: 49%;
+  }
+  #SUMMER_GAMES_2016 #icons {
+    width: 70%;
   }
 }
