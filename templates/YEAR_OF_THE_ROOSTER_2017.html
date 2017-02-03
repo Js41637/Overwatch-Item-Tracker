@@ -12,7 +12,7 @@
           <input type="checkbox" id="{{'voice' + $index}}" ng-model="checked.voicelines[voice.id]" ng-change="onSelect()">
           <label for="{{'voice' + $index}}">
             <h3>{{::voice.hero}}</h3>
-            <h4>{{voice.name|translate}}</h4>
+            <h4>{{::voice.name|translate}}</h4>
           </label>
         </div>
       </div>
@@ -25,7 +25,7 @@
         <div class="item" ng-repeat="icon in ::data.items.icons track by $index" ng-mouseover="showPreview(icon, 'icon')" ng-mouseleave="hidePreview()">
           <input type="checkbox" id="{{'icon' + $index}}" ng-model="checked.icons[icon.id]" ng-change="onSelect()">
           <label for="{{'icon' + $index}}">
-            <h3>{{icon.name|translate}}</h3>
+            <h3>{{::icon.name|translate}}</h3>
           </label>
         </div>
       </div>
@@ -43,7 +43,7 @@
           <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.skinsEpic[skin.id]" ng-change="onSelect()">
           <label for="{{'epic' + $index}}">
             <h3>{{::skin.hero}}</h3>
-            <h4>{{skin.name|translate}}</h4>
+            <h4>{{::skin.name|translate}}</h4>
           </label>
         </div>
       </div>
@@ -59,7 +59,7 @@
           <input type="checkbox" id="{{'intro' + $index}}" ng-model="checked.intros[intro.id]" ng-change="onSelect()">
           <label for="{{'intro' + $index}}">
             <h3>{{::intro.hero}}</h3>
-            <h4>{{intro.name|translate}}</h4>
+            <h4>{{::intro.name|translate}}</h4>
           </label>
         </div>
       </div>
@@ -73,7 +73,7 @@
           <input type="checkbox" id="{{'emote' + $index}}" ng-model="checked.emotes[emote.id]" ng-change="onSelect()">
           <label for="{{'emote' + $index}}">
             <h3>{{::emote.hero}}</h3>
-            <h4>{{emote.name|translate}}</h4>
+            <h4>{{::emote.name|translate}}</h4>
           </label>
         </div>
       </div>
@@ -88,7 +88,7 @@
         <input type="checkbox" id="{{'pose' + $index}}" ng-model="checked.poses[pose.id]" ng-change="onSelect()">
         <label for="{{'pose' + $index}}">
           <h3>{{::pose.hero}}</h3>
-          <h4>{{pose.name|translate}}</h4>
+          <h4>{{::pose.name|translate}}</h4>
         </label>
       </div>
     </div>
@@ -109,7 +109,7 @@
         <label ng-if="::spray.hero" for="{{'sprayorn' + $index}}" class="ornl"></label>
         <label for="{{'spray' + $index}}">
           <h3>{{::spray.hero || spray.name|translate}}</h3>
-          <h4 ng-if="spray.hero">{{spray.name|translate}}</h4>
+          <h4 ng-if="spray.hero">{{::spray.name|translate}}</h4>
         </label>
       </div>
     </div>

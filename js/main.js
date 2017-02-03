@@ -131,10 +131,9 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "$translate",
   }
 
   this.changeLanguage = function(langKey) {
-    $translate.use(langKey);
-    console.log('Changed language to', langKey);
-    StorageService.setSetting('langKey', langKey);
-    $rootScope.langKey = $rootScope.languages.find(function(lang) { return lang.id === StorageService.getSetting('langKey'); });
+    this.langKey = langKey
+    StorageService.setSetting('langKey', langKey)
+    location.reload()
   }
 }])
 
