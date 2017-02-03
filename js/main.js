@@ -308,7 +308,7 @@ OWI.filter('heroPortraitUrl', function () {
   }
   return function(hero) {
     hero = hero.toLowerCase();
-    return './resources/heroes/' + (specialHeroes[hero] || hero) + '/portrait-small.png';
+    return './resources/heroes/' + (specialHeroes[hero] || hero) + '/portrait.png';
   }
 });
 OWI.filter('itemPrice', function () {
