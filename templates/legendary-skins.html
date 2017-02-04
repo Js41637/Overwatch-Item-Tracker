@@ -1,6 +1,6 @@
 <div id="legendary-skins" class="section">
   <div id="image-preview" scroll ng-class="{ show: preview, type: preview.type, fixed: isFixed }">
-    <div class="preview" ng-show="preview.img" ng-class="{two: preview.dragonURL}">
+    <div class="preview" ng-show="preview.img" ng-class="{two: preview[secondSprayID]}">
       <div class="card {{preview.type || ''}}" lazy-background="{{preview.img}}">
         <div class="bg2"></div>
         <div class="bg">
@@ -12,12 +12,12 @@
         </div>
       </div>
 
-      <div class="card {{preview.type || ''}}" ng-if="preview.dragonURL" lazy-background="{{preview.dragonURL}}">
+      <div class="card {{preview.type || ''}}" ng-if="preview[ssURL]" lazy-background="{{preview[ssURL]}}">
         <div class="bg2"></div>
         <div class="bg">
           <div class="card-content">
             <h4 class="card-heading">{{preview.hero}}</h4>
-            <p class="card-copy">{{preview.name}}</p>
+            <p class="card-copy">{{ss}}</p>
           </div>
         </div>
       </div>
