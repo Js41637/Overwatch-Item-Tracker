@@ -397,18 +397,25 @@ body {
   order: 2;
 }
 
-.item-container .section span, .item-container h2 small {
-  font-size: 28px;
+.item-container h2 small {
+  font-size: 0.7em;
   margin-left: 3px;
   font-style: italic;
+  vertical-align: middle;
+  top: 2px;
+  position: relative;
 }
 
-.item-container .section>span:before, .item-container h2>small:before {
+.item-container h2>small:before {
   content: "(";
+  position: relative;
+  top: -3px;
 }
 
-.item-container .section>span:after, .item-container h2>small:after {
-  content: " Coins)";
+.item-container h2>small:after {
+  content: ")";
+  position: relative;
+  top: -3px;
 }
 
 
@@ -793,6 +800,7 @@ body {
 #ornamentinfo {
   position: relative;
   margin-left: 10px;
+  vertical-align: middle;
 }
 
 #ornamentinfo span {
@@ -802,7 +810,7 @@ body {
 
 #fakecheckbox {
   position: absolute;
-  top: 5px;
+  top: -5px;
 }
 
 #sprays .item .ornl, #fakecheckbox {

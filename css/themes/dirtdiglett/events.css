@@ -475,15 +475,14 @@ body#YEAR_OF_THE_ROOSTER_2017 {
 
 #YEAR_OF_THE_ROOSTER_2017 .section {
   background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/header.png);
-  background-position: center -28px;
+  background-position: center -22px;
   background-repeat: repeat-x;
   border-radius: 4px;
 }
 
 #YEAR_OF_THE_ROOSTER_2017 .item-container .section h2 {
   color: #f0edf2;
-  padding-top: 0.2em;
-  padding-bottom: 0.3em;
+  padding: 0.3em;
 }
 
 #YEAR_OF_THE_ROOSTER_2017 .item-container .section h2:before {
