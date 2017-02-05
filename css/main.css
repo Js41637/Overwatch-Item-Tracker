@@ -649,7 +649,7 @@ body {
 }
 
 .view-mode-hero .row {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
 }
 
@@ -689,6 +689,7 @@ body {
   cursor: pointer;
   overflow: hidden;
   border: 2px solid hsla(0, 0%, 100%, .4);
+  background-color: rgb(220, 220, 220);
   transition: transform 0.15s ease-in-out, border-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
@@ -762,6 +763,11 @@ body {
 #heroes-selection .hero-selector.hero-selector-global img {
   height: 70px;
   margin: 16px 8px;
+}
+
+.view-mode-hero #image-preview {
+  top: -15px;
+  height: 380px;
 }
 
 
