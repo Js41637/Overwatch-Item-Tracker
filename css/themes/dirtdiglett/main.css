@@ -1,15 +1,13 @@
 @font-face {
-  font-family: "Big Noodle Too";
-  src: url(../../../fonts/big-noodle-too.eot);
-  src: url(../../../fonts/big-noodle-too.woff) format("woff"), url(../../../fonts/big-noodle-too.ttf) format("truetype");
+  font-family: "Big Noodle Titling";
+  src: local("BigNoodleTitling"), url(../fonts/big-noodle.woff) format("woff"), url(../fonts/big-noodle.ttf) format("truetype");
   font-weight: 400;
   font-style: normal
 }
 
 @font-face {
-  font-family: "Big Noodle Too";
-  src: url(../../../fonts/big-noodle-too-oblique.eot);
-  src: url(../../../fonts/big-noodle-too-oblique.woff) format("woff"), url(../../../fonts/big-noodle-too-oblique.ttf) format("truetype");
+  font-family: "Big Noodle Titling";
+  src: local("BigNoodleTitling"), url(../fonts/big-noodle-oblique.woff) format("woff"), url(../fonts/big-noodle-oblique.ttf) format("truetype");
   font-weight: 400;
   font-style: italic
 }
@@ -23,7 +21,7 @@
 }
 
 body {
-  font-family: "Big Noodle Too";
+  font-family: "Big Noodle Titling";
   min-width: 1000px;
   background-color: #d0c7dc;
   color: #405275;
@@ -373,7 +371,7 @@ body {
 }
 
 #legendary-skins .inner h2 {
-  font-family: "Big Noodle Too";
+  font-family: "Big Noodle Titling";
   font-size: 42px;
   display: inline-block;
   font-style: italic;
@@ -924,7 +922,7 @@ body {
 
 .card .card-content .card-heading {
   font-size: 30px !important;
-  font: italic normal normal 10px Big Noodle Too, impact, sans-serif;
+  font: italic normal normal 10px "Big Noodle Titling", impact, sans-serif;
   line-height: normal;
   letter-spacing: .1px;
   color: #f0edf2;
