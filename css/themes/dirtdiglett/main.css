@@ -57,6 +57,17 @@ body {
   color: #ffa12b;
 }
 
+.hexagon {
+  background-color: rgba(255,255,255,0.34);
+}
+.hexagon:before {
+  top: -11px;
+  border-bottom: 11px solid rgba(255,255,255,0.34);
+}
+.hexagon:after {
+  border-top: 11px solid rgba(255,255,255,0.34);
+}
+
 #header {
   height: 45px;
   background-color: rgb(45, 45, 45);
@@ -487,7 +498,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-size: contain;
+  background-size: cover;
 }
 
 #image-preview .preview, #image-preview .imgcont {

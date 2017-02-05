@@ -7,7 +7,8 @@ body#SUMMER_GAMES_2016 {
   background-image: url(resources/SUMMER_GAMES_2016/bg.jpg);
 }
 
-#SUMMER_GAMES_2016 #image-preview .card .bg2 {
+#SUMMER_GAMES_2016 #image-preview .card .bg2,
+#SUMMER_GAMES_2016 #legendary-skins .inner .card {
   background-image: url(resources/SUMMER_GAMES_2016/preview-bg.png);
 }
 
@@ -163,7 +164,8 @@ body#HALLOWEEN_2016 {
   z-index: 1;
 }
 
-#HALLOWEEN_2016 #image-preview .card .bg2 {
+#HALLOWEEN_2016 #image-preview .card .bg2,
+#HALLOWEEN_2016 #legendary-skins .inner .card {
   background-image: url(resources/HALLOWEEN_2016/preview-bg.png);
 }
 
@@ -251,7 +253,8 @@ body#WINTER_WONDERLAND_2016 {
   background-image: url(resources/WINTER_WONDERLAND_2016/bg.jpg);
 }
 
-#WINTER_WONDERLAND_2016 #image-preview .card .bg2 {
+#WINTER_WONDERLAND_2016 #image-preview .card .bg2,
+#WINTER_WONDERLAND_2016 #legendary-skins .inner .card {
   background-image: url(resources/WINTER_WONDERLAND_2016/preview-bg.png);
 }
 
@@ -397,7 +400,8 @@ body#YEAR_OF_THE_ROOSTER_2017 {
   top: 75px;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #image-preview .card .bg2 {
+#YEAR_OF_THE_ROOSTER_2017 #image-preview .card .bg2,
+#YEAR_OF_THE_ROOSTER_2017 #legendary-skins .inner .card {
   background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/preview-bg.png);
 }
 
