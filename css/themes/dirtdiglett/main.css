@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Big Noodle Titling";
-  src: local("BigNoodleTitling"), url(../fonts/big-noodle.woff) format("woff"), url(../fonts/big-noodle.ttf) format("truetype");
+  src: local("BigNoodleTitling"), url(../../../fonts/big-noodle.woff) format("woff"), url(../../../fonts/big-noodle.ttf) format("truetype");
   font-weight: 400;
   font-style: normal
 }
 
 @font-face {
   font-family: "Big Noodle Titling";
-  src: local("BigNoodleTitling"), url(../fonts/big-noodle-oblique.woff) format("woff"), url(../fonts/big-noodle-oblique.ttf) format("truetype");
+  src: local("BigNoodleTitling"), url(../../../fonts/big-noodle-oblique.woff) format("woff"), url(../../../fonts/big-noodle-oblique.ttf) format("truetype");
   font-weight: 400;
   font-style: italic
 }
@@ -361,7 +361,7 @@ body {
 }
 
 .item-container .section h2 {
-  padding: 0.3em 0.6em 0.4em;
+  padding: 0.4em;
   color: #405275;
   font-family: Futura, century gothic, arial, sans-serif;
   font-size: 1.4rem;
