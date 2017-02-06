@@ -356,7 +356,11 @@ OWI.directive('legendarySkins', function() {
   return {
     restrict: 'E',
     replace: true,
-    templateUrl: './templates/legendary-skins.html'
+    templateUrl: './templates/legendary-skins.html',
+    link: function($scope, $elm, $attr) {
+      $scope.ss = $attr.ss
+      $scope.ssURL = $attr.ssurl
+    }
   }
 })
 

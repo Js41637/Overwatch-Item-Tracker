@@ -1,15 +1,13 @@
 @font-face {
-  font-family: "Big Noodle Too";
-  src: url(../../../fonts/big-noodle-too.eot);
-  src: url(../../../fonts/big-noodle-too.woff) format("woff"), url(../../../fonts/big-noodle-too.ttf) format("truetype");
+  font-family: "Big Noodle Titling";
+  src: local("BigNoodleTitling"), url(../../../fonts/big-noodle.woff) format("woff"), url(../../../fonts/big-noodle.ttf) format("truetype");
   font-weight: 400;
   font-style: normal
 }
 
 @font-face {
-  font-family: "Big Noodle Too";
-  src: url(../../../fonts/big-noodle-too-oblique.eot);
-  src: url(../../../fonts/big-noodle-too-oblique.woff) format("woff"), url(../../../fonts/big-noodle-too-oblique.ttf) format("truetype");
+  font-family: "Big Noodle Titling";
+  src: local("BigNoodleTitling"), url(../../../fonts/big-noodle-oblique.woff) format("woff"), url(../../../fonts/big-noodle-oblique.ttf) format("truetype");
   font-weight: 400;
   font-style: italic
 }
@@ -23,7 +21,7 @@
 }
 
 body {
-  font-family: "Big Noodle Too";
+  font-family: "Big Noodle Titling";
   min-width: 1000px;
   background-color: #d0c7dc;
   color: #405275;
@@ -57,6 +55,17 @@ body {
 
 .color-legendary {
   color: #ffa12b;
+}
+
+.hexagon {
+  background-color: rgba(255,255,255,0.34);
+}
+.hexagon:before {
+  top: -11px;
+  border-bottom: 11px solid rgba(255,255,255,0.34);
+}
+.hexagon:after {
+  border-top: 11px solid rgba(255,255,255,0.34);
 }
 
 #header {
@@ -119,7 +128,7 @@ body {
 }
 
 #header img {
-  height: 30px;
+  height: 34px;
   margin-right: 4px;
 }
 
@@ -363,7 +372,7 @@ body {
 }
 
 .item-container .section h2 {
-  padding: 0.3em 0.6em 0.4em;
+  padding: 0.4em;
   color: #405275;
   font-family: Futura, century gothic, arial, sans-serif;
   font-size: 1.4rem;
@@ -373,7 +382,7 @@ body {
 }
 
 #legendary-skins .inner h2 {
-  font-family: "Big Noodle Too";
+  font-family: "Big Noodle Titling";
   font-size: 42px;
   display: inline-block;
   font-style: italic;
@@ -489,7 +498,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-size: contain;
+  background-size: cover;
 }
 
 #image-preview .preview, #image-preview .imgcont {
@@ -570,97 +579,6 @@ body {
 .view-mode-hero .section {
   margin-bottom: 20px;
 }
-
-#heroes-selection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#heroes-selection.hide {
-  opacity: 0;
-}
-
-#heroes-selection .hero-selector {
-  flex: 1;
-  position: relative;
-  height: 156px;
-  min-width: 85px;
-  max-width: 85px;
-  margin: 5px 10px;
-  cursor: pointer;
-  overflow: hidden;
-  border: 2px solid hsla(0, 0%, 100%, .4);
-  background: url('../../../resources/portrait-bg.jpg') 0 0 / 100% 100% no-repeat;
-  transition: transform 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-
-#heroes-selection .hero-selector.selected, #heroes-selection .hero-selector:hover {
-  transform: scale(1.4, 1.4);
-  z-index: 2;
-  border-color: #fff;
-}
-
-#heroes-selection .hero-selector.selected .hero-name, #heroes-selection .hero-selector:hover .hero-name {
-  color: #1a325e;
-  background-color: rgb(243, 243, 243);
-  padding: 10px 0 8px 0;
-}
-
-#heroes-selection .hero-selector.selected {
-  border-color: #ffa500;
-  z-index: 1;
-}
-
-#heroes-selection .hero-selector img {
-  max-width: 100%;
-}
-
-#heroes-selection .hero-selector .hero-name {
-  position: absolute;
-  bottom: 0;
-  padding: 10px 0;
-  width: 100%;
-  background-color: rgb(40, 53, 79);
-  font-size: 18px;
-  color: #d0d0dc;
-  text-align: center;
-  font-style: italic;
-  transition: background-color 0.15s ease-in-out;
-  transition-delay: 0.07s;
-}
-
-#heroes-selection .hero-selector .hero-name .hero-progress {
-  height: 0;
-  opacity: 0;
-  transition: height 125ms ease-in-out, opacity 150ms ease-in-out;
-  font-family: Futura, century gothic, arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 0.65em;
-  font-style: normal;
-}
-
-#heroes-selection .hero-selector.selected .hero-name .hero-progress, #heroes-selection .hero-selector:hover .hero-name .hero-progress {
-  opacity: 1;
-  height: 20px;
-}
-
-#heroes-selection .hero-selector .hero-name .hero-progress .hero-progress-bar {
-  height: 4px;
-  background-color: rgba(124, 127, 132, 0.2);
-  margin: 2px 0;
-}
-
-#heroes-selection .hero-selector .hero-name .hero-progress .hero-progress-bar .hero-progress-bar-inner {
-  height: 100%;
-  background-color: #ffa500;
-  transition: width 0.15s ease-in-out;
-}
-
-#heroes-selection .hero-selector.hero-selector-global img {
-  transform: translateY(20px);
-}
-
 
 /**
  * SPRAYS CSS
@@ -924,7 +842,7 @@ body {
 
 .card .card-content .card-heading {
   font-size: 30px !important;
-  font: italic normal normal 10px Big Noodle Too, impact, sans-serif;
+  font: italic normal normal 10px "Big Noodle Titling", impact, sans-serif;
   line-height: normal;
   letter-spacing: .1px;
   color: #f0edf2;

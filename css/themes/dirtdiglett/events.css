@@ -7,7 +7,8 @@ body#SUMMER_GAMES_2016 {
   background-image: url(resources/SUMMER_GAMES_2016/bg.jpg);
 }
 
-#SUMMER_GAMES_2016 #image-preview .card .bg2 {
+#SUMMER_GAMES_2016 #image-preview .card .bg2,
+#SUMMER_GAMES_2016 #legendary-skins .inner .card {
   background-image: url(resources/SUMMER_GAMES_2016/preview-bg.png);
 }
 
@@ -163,7 +164,8 @@ body#HALLOWEEN_2016 {
   z-index: 1;
 }
 
-#HALLOWEEN_2016 #image-preview .card .bg2 {
+#HALLOWEEN_2016 #image-preview .card .bg2,
+#HALLOWEEN_2016 #legendary-skins .inner .card {
   background-image: url(resources/HALLOWEEN_2016/preview-bg.png);
 }
 
@@ -251,7 +253,8 @@ body#WINTER_WONDERLAND_2016 {
   background-image: url(resources/WINTER_WONDERLAND_2016/bg.jpg);
 }
 
-#WINTER_WONDERLAND_2016 #image-preview .card .bg2 {
+#WINTER_WONDERLAND_2016 #image-preview .card .bg2,
+#WINTER_WONDERLAND_2016 #legendary-skins .inner .card {
   background-image: url(resources/WINTER_WONDERLAND_2016/preview-bg.png);
 }
 
@@ -397,7 +400,8 @@ body#YEAR_OF_THE_ROOSTER_2017 {
   top: 75px;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #image-preview .card .bg2 {
+#YEAR_OF_THE_ROOSTER_2017 #image-preview .card .bg2,
+#YEAR_OF_THE_ROOSTER_2017 #legendary-skins .inner .card {
   background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/preview-bg.png);
 }
 
@@ -475,13 +479,14 @@ body#YEAR_OF_THE_ROOSTER_2017 {
 
 #YEAR_OF_THE_ROOSTER_2017 .section {
   background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/header.png);
-  background-position: center -24px;
+  background-position: center -26px;
   background-repeat: repeat-x;
   border-radius: 4px;
 }
 
 #YEAR_OF_THE_ROOSTER_2017 .item-container .section h2 {
   color: #f0edf2;
+  padding: 0.25em;
 }
 
 #YEAR_OF_THE_ROOSTER_2017 .item-container .section h2:before {
@@ -530,17 +535,12 @@ body#YEAR_OF_THE_ROOSTER_2017 {
 
 #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #voicelines .items,
 #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #icons .items {
-  height: 437px;
+  height: 445px;
 }
 
 #YEAR_OF_THE_ROOSTER_2017 .items {
     padding-top: 4px;
 }
-
-
-
-
-
 
 /* SMALL MODE CSS */
 @media screen and (max-width: 1500px) {

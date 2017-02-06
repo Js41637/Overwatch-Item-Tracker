@@ -310,7 +310,7 @@
 
 @media screen and (max-width: 1570px) {
   /* HALLOWEEN */
-  #HALLOWEEN_2016 {
+  #HALLOWEEN_2016:not(body) {
     flex-direction: column;
     align-items: center;
     width: 1000px;
@@ -361,7 +361,7 @@
     width: 62%
   }
   /* WINTER */
-  #WINTER_WONDERLAND_2016 {
+  #WINTER_WONDERLAND_2016:not(body) {
     flex-direction: column;
     align-items: center;
     width: 1000px;
@@ -402,7 +402,7 @@
     width: 32.5%;
   }
   /* ROOSTER */
-  #YEAR_OF_THE_ROOSTER_2017 {
+  #YEAR_OF_THE_ROOSTER_2017:not(body) {
     flex-direction: column;
     align-items: center;
     width: 1000px;
@@ -445,7 +445,7 @@
 }
 
 @media screen and (max-width: 1655px) {
-  #SUMMER_GAMES_2016 {
+  #SUMMER_GAMES_2016:not(body) {
     flex-direction: column;
     align-items: center;
     width: 1000px;
