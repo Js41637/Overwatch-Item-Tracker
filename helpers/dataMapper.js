@@ -1,11 +1,13 @@
 const fs = require('fs')
-const _ = require('lodash')
+const { forEach } = require('lodash')
+const { EVENTS, EVENTNAMES, EVENTTIMES } = require('./dataMapper/EVENTDATA.js')
+const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject } = require('./dataMapper/helpers.js')
 
 var rawData
 try {
   rawData = fs.readFileSync('./rawData.txt', "utf8")
 } catch (e) {
-  console.error("Error reading ./ratData.txt")
+  console.error("Error reading ./rawData.txt")
   return
 }
 
@@ -31,133 +33,19 @@ heroGroups.forEach(heroData => {
   data.push({ hero, items })
 })
 
-var getClassForHero = hero => {
-  switch (hero) {
-    case "genji":
-    case "mccree":
-    case "pharah":
-    case "reaper":
-    case "soldier: 76":
-    case "sombra":
-    case "tracer":
-      return "Assault"
-    case "bastion":
-    case "hanzo":
-    case "junkrat":
-    case "mei":
-    case "torbjörn":
-    case "widowmaker":
-      return "Defence"
-    case "d.va":
-    case "reinhardt":
-    case "roadhog":
-    case "winston":
-    case "zarya":
-      return "Tank"
-    case "ana":
-    case "lúcio":
-    case "mercy":
-    case "symmetra":
-    case "zenyatta":
-      return "Support"
-    default:
-      return "Unknown"
-  }
-}
-
-var getCleanID = (what, hero) => {
-  return (hero ? `${hero}-` : '') + what.toLowerCase().replace('å', 'a').replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-')
-}
-
-var stupidNames = {
+// Can't generate IDs off these names can we :)
+const stupidNames = {
   "^_^": "joy",
   ">_\\<": "frustration",
   ";)": "winky-face"
 }
 
-var qualities = ['common', 'epic', 'rare', 'legendary']
-var types = [
-  { m: 'skin', name: 'skins' },
-  { m: 'icon', name: 'icons' },
-  { m: 'spray', name: 'sprays' },
-  { m: 'emote', name: 'emotes' },
-  { m: 'voice line', name: 'voicelines' },
-  { m: 'victory pose', name: 'poses' },
-  { m: 'heroic intro', name: 'intros' }
-  //, { m: 'weapon skin', name: 'weapons' } // Golden
-]
-var matches = {} // Generate a match for each quality for every type of item
-types.forEach(t => {
-  qualities.forEach(q => matches[`${q} ${t.m}`] = { quality: q, type: t.name })
-})
-
-var getType = type => {
-  let m = matches[type.toLowerCase()]
-  if (!m) {
-    if (type !== 'Common Weapon Skin') console.warn("Unknown type?", type)
-    return {}
-  }
-  return m
-}
-
-// http://stackoverflow.com/a/1359808
-// Makes it so it JSON.stringify's in order
-var sortObject = (o, update) => {
-  var sorted = {}, key, a = []
-  for (key in o) {
-    if (o.hasOwnProperty(key)) a.push(key)
-  }
-  if (update) {
-    a.sort((a, b) => {
-      if (o[a].order < o[b].order) return -1;
-      if (o[a].order > o[b].order) return 1;
-      return 0;
-    })
-  } else {
-    a.sort()
-  }
-  for (key = 0; key < a.length; key++) {
-    sorted[a[key]] = o[a[key]]
-  }
-  if (update) {
-    Object.keys(sorted).forEach(update => {
-      delete sorted[update].order
-    })
-  }
-  return sorted
-}
-
-var EVENTS = {
-  SUMMER16: 'SUMMER_GAMES_2016',
-  HALLOWEEN16: 'HALLOWEEN_2016',
-  CHRISTMAS16: 'WINTER_WONDERLAND_2016',
-  ROOSTER17: 'YEAR_OF_THE_ROOSTER_2017'
-}
-
-var EVENTNAMES = {
-  [EVENTS.SUMMER16]: 'Summer Games 2016',
-  [EVENTS.HALLOWEEN16]: 'Halloween 2016',
-  [EVENTS.CHRISTMAS16]: 'Winter Wonderland 2016',
-  [EVENTS.ROOSTER17]: 'Year of the Rooster 2017'
-}
-
-var EVENTTIMES = {
-  [EVENTS.SUMMER16]: {
-    "start": "1470164400000",
-    "end": "1471928400000"
-  },
-  [EVENTS.HALLOWEEN16]: {
-    "start": "1476208800000",
-    "end": "1478059200000"
-  },
-  [EVENTS.CHRISTMAS16]: {
-    "start": "1481652000000",
-    "end": "1483416000000"
-  },
-  [EVENTS.ROOSTER17]: {
-    "start": "1485280800000",
-    "end": "1487044800000"
-  }
+// Blizzard changed the names of these items thus changing their IDs,
+// I will eventually run a migration that fixes these but for now I will manually fix
+// NOTE: the reason these two IDs changed is because they are dupes of existing items
+const originalIDs = {
+  "skins/mercy-fortune": "mercy-golden",
+  "icons/roadhog-pigsy": "roadhog-piggy"
 }
 
 var heroes = {}
@@ -178,13 +66,14 @@ data.forEach(({ hero, items: itemGroups }) => {
     }
   }
 
-  _.forEach(itemGroups, (items, group) => {
+  forEach(itemGroups, (items, group) => {
     items.forEach(item => {
       var [str, name, type] = item.match(/(.+) \((.+)\)/) //eslint-disable-line
       name = name.trim()
       if (name == 'RANDOM') return
       var id = getCleanID(stupidNames[name] || name, heroID)
-      var { quality, type: itemType } = getType(type)
+      var { quality, type: itemType } = getItemType(type)
+      id = originalIDs[`${itemType}/${id}`] || id
       if (!quality || !itemType) return
       var out = { name, id, quality: quality }
       switch (group) {
@@ -207,23 +96,6 @@ data.forEach(({ hero, items: itemGroups }) => {
 })
 heroes = sortObject(heroes)
 
-var getImageURL = (type, event, id) => {
-  var baseUrl = `./resources/updates/${event}/${type}/${id}`
-  switch (type) {
-    case 'emotes':
-    case 'intros':
-      return `${baseUrl}.webm`
-    case 'sprays':
-    case 'icons':
-      return `${baseUrl}.png`
-    case 'skins':
-    case 'skinsEpic':
-    case 'skinsLegendary':
-    case 'poses':
-      return `${baseUrl}.jpg`
-  }
-}
-
 var allClassItems = {
   'sprays': {
     [EVENTS.SUMMER16]: ['Summer Games'],
@@ -241,10 +113,8 @@ var allClassItems = {
 
 // Go through every heros items and create a seperate object containing every item added in events
 var updates = {}
-Object.keys(heroes).forEach(hKey => {
-  var hero = heroes[hKey]
-  Object.keys(hero.items).forEach(tKey => {
-    var items = hero.items[tKey]
+forEach(heroes, hero => {
+  forEach(hero.items, (items, tKey) => {
     items.forEach(item => {
       var event = item.event
       var type = tKey == 'skins' ? (item.quality == 'legendary' ? 'skinsLegendary' : (item.quality == 'epic' ? 'skinsEpic' : 'skins')) : tKey
@@ -292,9 +162,9 @@ updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.
 }).filter(Boolean)
 
 // Add allclass items (which aren't detected by item extrator) manually
-Object.keys(allClassItems).forEach(type => {
-  Object.keys(allClassItems[type]).forEach(event => {
-    allClassItems[type][event].forEach(item => {
+forEach(allClassItems, (types, type) => {
+  forEach(types, (events, event) => {
+    events.forEach(item => {
       var isSpecial = typeof item == 'object'
       var itemID = getCleanID(isSpecial ? item[0] : item)
       var out = {
@@ -309,8 +179,6 @@ Object.keys(allClassItems).forEach(type => {
     })
   })
 })
-
-
 
 // Sort that shit by hero or item name
 Object.keys(updates).forEach(update => {

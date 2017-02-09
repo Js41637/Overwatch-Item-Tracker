@@ -1,0 +1,34 @@
+const EVENTS = {
+  SUMMER16: 'SUMMER_GAMES_2016',
+  HALLOWEEN16: 'HALLOWEEN_2016',
+  CHRISTMAS16: 'WINTER_WONDERLAND_2016',
+  ROOSTER17: 'YEAR_OF_THE_ROOSTER_2017'
+}
+
+const EVENTNAMES = {
+  [EVENTS.SUMMER16]: 'Summer Games 2016',
+  [EVENTS.HALLOWEEN16]: 'Halloween 2016',
+  [EVENTS.CHRISTMAS16]: 'Winter Wonderland 2016',
+  [EVENTS.ROOSTER17]: 'Year of the Rooster 2017'
+}
+
+const EVENTTIMES = {
+  [EVENTS.SUMMER16]: {
+    "start": "1470164400000",
+    "end": "1471928400000"
+  },
+  [EVENTS.HALLOWEEN16]: {
+    "start": "1476208800000",
+    "end": "1478059200000"
+  },
+  [EVENTS.CHRISTMAS16]: {
+    "start": "1481652000000",
+    "end": "1483416000000"
+  },
+  [EVENTS.ROOSTER17]: {
+    "start": "1485280800000",
+    "end": "1487044800000"
+  }
+}
+
+module.exports = { EVENTS, EVENTNAMES, EVENTTIMES }

@@ -82,6 +82,8 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", function(Data
 }]);
 
 OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "$translate", "StorageService", "Data", function($rootScope, $uibModalInstance, $translate, StorageService, Data) {
+  var vm = this;
+
   $rootScope.languages = [
     { id: 'en_US', label: 'English US', img: '../resources/updates/SUMMER_GAMES_2016/icons/united-states.png' },
     { id: 'de_DE', label: 'German', img: '../resources/updates/SUMMER_GAMES_2016/icons/germany.png' },
@@ -108,6 +110,38 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "$translate",
     StorageService.setSetting(what, this[what]);
     if (reload) {
       location.reload();
+    }
+  }
+
+  this.data = angular.toJson(StorageService.getData());
+  var dataTemplate = "emotes|icons|intros|poses|skinsEpic|skinsLegendary|sprays|voicelines";
+  var validEvents = Object.keys(Data.updates)
+  this.importData = function(data) {
+    try {
+      data = angular.fromJson(vm.data)
+      var errs = []
+      
+      if (!Object.keys(data).length) return
+
+      Object.keys(data).forEach(function(event) {
+        if (!validEvents.includes(event)) {
+          errs.push("Unknown event " + event)
+        }
+        var eventKeys = Object.keys(data[event]).sort().join('|')
+        if (eventKeys != dataTemplate) {
+          errs.push("Invalid event template for " + event)
+        }
+      })
+
+      if (errs.length) {
+        vm.importErrors = errs.join('\n')
+        return;
+      }
+      StorageService.setData(data);
+      location.reload();
+    } catch(e) {
+      console.error(e);
+      vm.importErrors = 'An error occured while parsing the JSON';
     }
   }
 
