@@ -102,6 +102,19 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
     }
   }
 
+  this.data = angular.toJson(StorageService.getData());
+
+  this.importData = function(data) {
+    try {
+      data = angular.fromJson(data);
+      //TODO: implement check data correct
+      StorageService.setData(data);
+      location.reload();
+    } catch (e) {
+      this.importDataError = 'Import not successful :(';
+    }
+  }
+
   this.selectTheme = function(what) {
     this.currentTheme = what
     StorageService.setSetting('currentTheme', what)
