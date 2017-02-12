@@ -3,7 +3,7 @@
     display: none;
 }
 
-body#SUMMER_GAMES_2016 {
+#SUMMER_GAMES_2016 #background {
   background-image: url(resources/SUMMER_GAMES_2016/bg.jpg);
 }
 
@@ -136,7 +136,7 @@ body#SUMMER_GAMES_2016 {
   font-size: 1rem;
 }
 
-body#HALLOWEEN_2016 {
+#HALLOWEEN_2016 #background {
   background-image: url(resources/HALLOWEEN_2016/bg.jpg);
 }
 
@@ -249,7 +249,7 @@ body#HALLOWEEN_2016 {
   top: 85px;
 }
 
-body#WINTER_WONDERLAND_2016 {
+#WINTER_WONDERLAND_2016 #background {
   background-image: url(resources/WINTER_WONDERLAND_2016/bg.jpg);
 }
 
@@ -379,7 +379,7 @@ body#WINTER_WONDERLAND_2016 {
 }
 
 /* YEAR OF THE ROOSTER 2017 */
-body#YEAR_OF_THE_ROOSTER_2017 {
+#YEAR_OF_THE_ROOSTER_2017 #background {
   background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/bg.jpg);
 }
 
