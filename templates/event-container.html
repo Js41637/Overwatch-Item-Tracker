@@ -13,6 +13,6 @@
       </div>
   </div>
 
-  <div ng-if="viewMode == 'item-type'" id="{{currentEvent}}" class="view-mode-include view-mode-item-type item-container" ng-include src="'templates/' + currentEvent + '.html'"></div>
+  <div ng-if="viewMode == 'item-type'" id="{{currentEvent}}" class="view-mode-include view-mode-item-type item-container" ng-include src="'templates/events/' + data.id + '.html'"></div>
   <div ng-if="viewMode == 'hero'" class="view-mode-include view-mode-hero" ng-include src="'templates/per-hero-view.html'"></div>
 </div>

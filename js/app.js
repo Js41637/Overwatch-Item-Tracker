@@ -1,7 +1,66 @@
-var OWI = angular.module('OWI', ['ui.bootstrap'])
+var OWI = angular.module('OWI', ['ui.router', 'ui.bootstrap'])
 
-OWI.config(['$compileProvider', function($compileProvider) {
+OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', '$urlRouterProvider', function($compileProvider, $urlMatcherFactoryProvider, $stateProvider, $urlRouterProvider) {
   $compileProvider.debugInfoEnabled(false);
+  $urlMatcherFactoryProvider.strictMode(false);
+
+  $stateProvider
+  .state('heroes', {
+    url: '/heroes',
+    templateUrl: './templates/heroes.html',
+    views: {
+      main: {
+        templateUrl: './templates/heroes.html',
+        controller: 'HeroesCtrl'
+      }
+    }
+  })
+
+  .state('hero', {
+    url: '/hero/:id',
+    templateUrl: './templates/hero.html',
+    views: {
+      main: {
+        templateUrl: './templates/hero.html',
+        controller: 'HeroesCtrl'
+      }
+    }
+  })
+
+  .state('update', {
+    url: '/:id',
+    resolve: {
+      event: function($q, Data, $stateParams) {
+        var deferred = $q.defer();
+        setTimeout(function() {
+          var event = Data.updates[$stateParams.id]
+          if (event) {
+            deferred.resolve(event)
+          } else {
+            deferred.reject("Invalid Event")
+          }
+        }, 0);
+        return deferred.promise
+      }
+    },
+    views: {
+      header: {
+        templateUrl: './templates/header-event.html'
+      },
+      main: {
+        templateUrl: './templates/event-container.html',
+        controller: 'UpdateCtrl'
+      }
+    }
+  })
+
+  $urlRouterProvider.otherwise('/');
+}])
+
+.run(["$rootScope", "$state", "Data", function($rootScope, $state, Data) {
+  $rootScope.$on('$stateChangeError', function() {
+    $state.go('update', { id: Data.currentEvent })
+  });
 }])
 
 OWI.run(function() {

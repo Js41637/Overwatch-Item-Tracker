@@ -1,6 +1,7 @@
 OWI.factory('Data', function() {
   var items = `{"skinsLegendary":{},"skinsEpic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}`
   return {
+    currentEvent: 'YEAR_OF_THE_ROOSTER_2017',
     checked: {
       SUMMER_GAMES_2016: JSON.parse(items),
       HALLOWEEN_2016: JSON.parse(items),

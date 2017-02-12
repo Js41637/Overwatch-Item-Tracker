@@ -1,76 +1,27 @@
 <html ng-app="OWI">
 <head>
   <title>Overwatch Items Tracker</title>
-  <link rel="manifest" href="./manifest.json">
   <meta charset="UTF-8">
-  <meta name="application-name" content="Overwatch Item Tracker">
-  <meta name="apple-mobile-web-app-title" content="Overwatch Item Tracker">
-  <meta name="theme-color" content="#2d2d2d">
-  <meta name="msapplication-navbutton-color" content="#2d2d2d">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="msapplication-starturl" content="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" sizes="300x300" href="./resources/logo.png">
-  <link rel="apple-touch-icon" type="image/png" sizes="300x300" href="./resources/logo.png">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/vendor.min.css">
   <link rel="stylesheet" href="./css/global.css">
-
+  <base href="/">
   <script src="./js/vendor/angular.min.js"></script>
+  <script src="./js/vendor/angular-ui-router.min.js"></script>
   <script src="./js/vendor/ui-bootstrap.min.js"></script>
   <script src="./js/vendor/particles.min.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/data.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/services.js"></script>
+  <script src="./js/controllers.js"></script>
+  <script src="./js/directives.js"></script>
 </head>
 <body ng-controller="MainCtrl as $ctrl" id="{{$ctrl.selectedUpdate}}" style="opacity: 0">
   <div id="background"></div>
-  <div id="header">
-    <div class="left">
-      <img uib-tooltip="Boop" tooltip-placement="bottom" src="./resources/logo.svg">
-      <h1>Overwatch Item Tracker</h1>
-      <div class="event-selector btn-group" uib-dropdown>
-        <button id="event-selector-button" type="button" class="btn" uib-dropdown-toggle>
-          {{$ctrl.updates[$ctrl.selectedUpdate].name}} <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="event-selector-button">
-          <li role="menuitem" ng-repeat="update in $ctrl.updates track by $index"><a href="#" ng-click="$ctrl.selectedUpdate = update.id;">{{update.name}}</a></li>
-        </ul>
-      </div>
-      <div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end > $ctrl.currentDate" class="event-active">
-        <h2>Event ends on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d'}} local time</h2>
-        <h3>Be sure to get everything you want by {{$ctrl.updates[$ctrl.selectedUpdate].dates.end - 86400000 | date:'MMM d'}} to be safe!</h3>
-      </div>
-      <div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end < $ctrl.currentDate" class="event-ended">
-        <h2>Event ended on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d yyyy'}}  local time</h2>
-        <h3>These items should be available again around {{$ctrl.updates[$ctrl.selectedUpdate].dates.start | date:'MMM d'}} next year</h3>
-      </div>
-    </div>
-    <div class="right">
-      <div class="icon settings-icon" ng-click="$ctrl.openSettings()" uib-tooltip="Settings" tooltip-placement="left">
-        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
-        </svg>
-      </div>
-      <div class="icon theme-icon" ng-click="$ctrl.openTheme()" uib-tooltip="Themes" tooltip-placement="left">
-        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
-            <path d="M0 0h24v24H0z" fill="none"/>
-        </svg>
-      </div>
-      <div class="icon about-icon" ng-click="$ctrl.openAbout()" uib-tooltip="About" tooltip-placement="left">
-        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-        </svg>
-      </div>
-    </div>
-  </div>
+  <div ui-view="header"></div>
   <!--<Particles ng-if="::$ctrl.particles"></Particles>-->
   <div id="protip">Pro Tip: Hover over items to view a preview.</div>
 
-  <Update ng-repeat="(update, data) in $ctrl.updates" template="{{update}}" data="data" ng-if="$ctrl.selectedUpdate == update"></Update>
+  <div ui-view="main"></div>
 
   <script> // Track page views
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
