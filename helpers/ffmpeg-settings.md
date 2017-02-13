@@ -23,3 +23,12 @@ for %%a in ("*.*") do (
 )
 pause
 ```
+
+## Batch Intros
+```
+for %%a in ("*.*") do (
+	ffmpeg -i "%%a" -c:v libvpx-vp9 -crf 58 -b:v 0 -filter:v "scale=1280:720" -r 40 -ac 1 -preset veryslow "converted\%%~na.webm"
+	ffmpeg -i "%%a" -c:v libvpx-vp9 -crf 36 -b:v 0 -r 50 -ac 1 -preset veryslow "converted\%%~na-hd.webm"
+)
+pause
+```
