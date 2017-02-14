@@ -27,7 +27,7 @@ const EVENTTIMES = {
   },
   [EVENTS.ROOSTER17]: {
     "start": "1485280800000",
-    "end": "1487044800000"
+    "end": "1487066400000"
   }
 }
 
