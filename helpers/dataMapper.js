@@ -5,7 +5,7 @@ const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject } = re
 
 var rawData
 try {
-  rawData = fs.readFileSync('./rawData.txt', "utf8")
+  rawData = fs.readFileSync(`${__dirname}/rawData.txt`, "utf8")
 } catch (e) {
   console.error("Error reading ./rawData.txt")
   return
@@ -14,7 +14,7 @@ try {
 // Load allClassItems data
 var allClassData
 try {
-  allClassData = fs.readFileSync('../data/allClassItems.json', 'utf8')
+  allClassData = fs.readFileSync(`${__dirname}/../data/allClassItems.json`, 'utf8')
 } catch (e) {
   console.error("Error reading ../data/allClassItems.json")
   return
@@ -211,5 +211,5 @@ try {
 updates = sortObject(updates, true)
 heroes = sortObject(heroes)
 
-fs.writeFileSync('../data/items.json', JSON.stringify(heroes, null, 2), 'utf8')
-fs.writeFileSync('../data/updates.json', JSON.stringify(updates, null, 2), 'utf8')
+fs.writeFileSync(`${__dirname}/../data/items.json`, JSON.stringify(heroes, null, 2), 'utf8')
+fs.writeFileSync(`${__dirname}/../data/updates.json`, JSON.stringify(updates, null, 2), 'utf8')

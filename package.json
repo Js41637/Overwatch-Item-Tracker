@@ -2,6 +2,9 @@
   "name": "overwatch-item-tracker",
   "version": "1.0.0",
   "author": "Js41637",
+  "scripts": {
+    "gen-data": "node ./helpers/dataMapper.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Js41637/Overwatch-Item-Tracker"
