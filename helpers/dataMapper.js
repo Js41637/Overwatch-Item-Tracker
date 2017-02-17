@@ -5,7 +5,7 @@ const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject } = re
 
 var rawData
 try {
-  rawData = fs.readFileSync('./rawData.txt', "utf8")
+  rawData = fs.readFileSync(`${__dirname}/rawData.txt`, "utf8")
 } catch (e) {
   console.error("Error reading ./rawData.txt")
   return
@@ -14,7 +14,7 @@ try {
 // Load allClassItems data
 var allClassData
 try {
-  allClassData = fs.readFileSync('../data/allClassItems.json', 'utf8')
+  allClassData = fs.readFileSync(`${__dirname}/../data/allClassItems.json`, 'utf8')
 } catch (e) {
   console.error("Error reading ../data/allClassItems.json")
   return
@@ -96,12 +96,14 @@ data.forEach(({ hero, items: itemGroups }) => {
 })
 heroes = sortObject(heroes)
 
+// allClassItems need to be manually added as allClass data isnt included in the rawData
+// Items surrounded by [] means they are not purchasable
 var allClassItems = {
   'sprays': {
     [EVENTS.SUMMER16]: ['Summer Games'],
     [EVENTS.HALLOWEEN16]: ['...Never Die', 'Bats', 'Boo!', 'Boop!', 'Candyball', 'Fangs', 'Gummy Hog', 'Halloween Terror 2016', 'Pumpkins', 'Witch\'s Brew'],
-    [EVENTS.CHRISTMAS16]: ['SnowCree', 'SnowHog', 'SnowMei', 'SnowReaper', ['Winter Wonderland']],
-    [EVENTS.ROOSTER17]: ['Auspicious Lion', 'Awakened Lion', ['Dragon\'s Head'], ['Lucky Pouch'], ['Red Envelope'], ['Year of the Rooster']]
+    [EVENTS.CHRISTMAS16]: [['SnowCree'], ['SnowHog'], ['SnowMei'], ['SnowReaper'], 'Winter Wonderland'],
+    [EVENTS.ROOSTER17]: [['Auspicious Lion'], ['Awakened Lion'], 'Dragon\'s Head', 'Lucky Pouch', 'Red Envelope', 'Year of the Rooster']
   },
   icons: {
     [EVENTS.SUMMER16]: ["Summer Games", "Australia", "Brazil", "China", "Egypt", "France", "Germany", "Greece", "Japan", "Mexico", "Nepal", "Numbani", "Russia", "South Korea", "Sweden", "Switzerland", "United Kingdom", "United States"],
@@ -172,7 +174,7 @@ forEach(allClassItems, (types, type) => {
         id: itemID,
         img: getImageURL(type, event, itemID)
       }
-      if (type == 'sprays' && isSpecial) {
+      if (type == 'sprays' && !isSpecial) {
         Object.assign(out, { quality: 'common' })
       }
       updates[event].items[type].push(out)
@@ -209,5 +211,5 @@ try {
 updates = sortObject(updates, true)
 heroes = sortObject(heroes)
 
-fs.writeFileSync('../data/items.json', JSON.stringify(heroes, null, 2), 'utf8')
-fs.writeFileSync('../data/updates.json', JSON.stringify(updates, null, 2), 'utf8')
+fs.writeFileSync(`${__dirname}/../data/items.json`, JSON.stringify(heroes, null, 2), 'utf8')
+fs.writeFileSync(`${__dirname}/../data/updates.json`, JSON.stringify(updates, null, 2), 'utf8')

@@ -933,7 +933,8 @@ OWI.factory('Data', function() {
             {
               "name": "Boo!",
               "id": "boo",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/boo.png"
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/boo.png",
+              "quality": "common"
             },
             {
               "hero": "Tracer",
@@ -952,7 +953,8 @@ OWI.factory('Data', function() {
             {
               "name": "Boop!",
               "id": "boop",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/boop.png"
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/boop.png",
+              "quality": "common"
             },
             {
               "hero": "Winston",
@@ -978,42 +980,50 @@ OWI.factory('Data', function() {
             {
               "name": "Witch's Brew",
               "id": "witchs-brew",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/witchs-brew.png"
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/witchs-brew.png",
+              "quality": "common"
             },
             {
               "name": "Pumpkins",
               "id": "pumpkins",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/pumpkins.png"
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/pumpkins.png",
+              "quality": "common"
             },
             {
               "name": "Halloween Terror 2016",
               "id": "halloween-terror-2016",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/halloween-terror-2016.png"
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/halloween-terror-2016.png",
+              "quality": "common"
             },
             {
               "name": "Gummy Hog",
               "id": "gummy-hog",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/gummy-hog.png"
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/gummy-hog.png",
+              "quality": "common"
             },
             {
               "name": "Fangs",
               "id": "fangs",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/fangs.png"
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/fangs.png",
+              "quality": "common"
             },
             {
               "name": "Candyball",
               "id": "candyball",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/candyball.png"
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/candyball.png",
+              "quality": "common"
             },
             {
               "name": "Bats",
               "id": "bats",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/bats.png"
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/bats.png",
+              "quality": "common"
             },
             {
               "name": "...Never Die",
               "id": "never-die",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/never-die.png"
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/never-die.png",
+              "quality": "common"
             }
           ],
           "voicelines": [
@@ -2361,7 +2371,7 @@ OWI.factory('Data', function() {
         "id": "YEAR_OF_THE_ROOSTER_2017",
         "dates": {
           "start": "1485280800000",
-          "end": "1487044800000"
+          "end": "1487066400000"
         },
         "items": {
           "skinsEpic": [

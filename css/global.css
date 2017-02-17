@@ -52,6 +52,10 @@ body {
   font-family: monospace;
   font-size: 13px;
   margin-bottom: 5px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 #settings .setting:not(:first-of-type) {
