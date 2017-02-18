@@ -19,7 +19,7 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
   .state('hero', {
     url: '/hero/:id',
     resolve: {
-      event: function($q, Data, $stateParams) {
+      hero: function($q, Data, $stateParams) {
         var deferred = $q.defer();
         setTimeout(function() {
           var hero = Data.heroes[$stateParams.id]
@@ -38,8 +38,7 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
         controller: 'HeroesCtrl'
       },
       header: {
-        templateUrl: './templates/header-hero.html',
-        controller: 'HeroesCtrl'
+        templateUrl: './templates/header-hero.html'
       }
     }
   })

@@ -146,11 +146,16 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   }
 }])
 
-OWI.controller('HeroesCtrl', function() {
+OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "Data", "StorageService", "hero", function($scope, $rootScope, Data, StorageService, hero) {
+  $scope.hero = hero
 
-})
+  $scope.getItems = function() {
+    return JSON.stringify(hero, null, 2)
+  }
+}])
 
 OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "Data", "StorageService", "event", function($scope, $rootScope, Data, StorageService, event) {
+  console.log(event)
   $scope.preview = false;
   $scope.checked = Data.checked[event.id];
   $scope.data = event;
