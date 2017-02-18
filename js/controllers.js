@@ -2,12 +2,18 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", "$rootScope",
   var vm = this;
   this.preview = false;
   this.updates = Data.updates;
+  this.heroes = Data.heroes
   this.selectedUpdate = Data.currentEvent;
   this.currentDate = Date.now();
+  this.showSidebar = false;
 
   $rootScope.$on('$stateChangeSuccess', function(a,b,c) {
     vm.selectedUpdate = c.id;
   });
+
+  this.toggleSidebar = function() {
+    this.showSidebar = !this.showSidebar;
+  }
 
   this.openSettings = function() {
     $uibModal.open({

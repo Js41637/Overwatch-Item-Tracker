@@ -21,6 +21,25 @@
   <!--<Particles ng-if="::$ctrl.particles"></Particles>-->
   <div id="protip">Pro Tip: Hover over items to view a preview.</div>
 
+  <div id="sidebar" ng-class="{open: $ctrl.showSidebar}">
+    <div class="sidebar-group">
+      <h2>Updates</h2>
+      <div>
+        <ul>
+          <li ng-repeat="update in $ctrl.updates track by $index" ui-sref="update({ id: update.id })" ui-sref-active="selected"><a href="#">{{update.name}}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar-group">
+      <h2>Heroes</h2>
+      <div>
+        <ul>
+          <li ng-repeat="hero in $ctrl.heroes track by $index" ui-sref="hero({ id: hero.id || 'all' })" ui-sref-active="selected"><a href="#">{{hero.name || 'All Class'}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <div ui-view="main"></div>
 
   <script> // Track page views

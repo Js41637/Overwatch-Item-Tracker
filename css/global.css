@@ -2,6 +2,14 @@ body {
   transition: opacity 100ms ease-in;
 }
 
+#header img {
+  cursor: pointer;
+}
+
+#header img:hover {
+  filter: brightness(0.95);
+}
+
 #background {
   background: url(../resources/body-bg.jpg) no-repeat top;
   background-size: 100% 100%;
@@ -335,4 +343,58 @@ strong {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+#sidebar {
+  position: fixed;
+  height: calc(100% - 45px);
+  padding: 8px;
+  width: 225px;
+  z-index: 10;
+  background-color: rgba(60, 60, 60, 0.9);
+  transform: translateX(-225px);
+  transition: transform 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+#sidebar.open {
+  transform: translateX(0);
+}
+
+#sidebar .sidebar-group {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+}
+
+#sidebar .sidebar-group:first-of-type {
+  margin-bottom: 8px;
+}
+
+#sidebar .sidebar-group h2 {
+  font-size: 32px;
+  text-align: center;
+  padding: 2px;
+  color: rgb(220, 220, 220);
+  text-shadow: 2px 2px black;
+}
+
+#sidebar .sidebar-group li {
+  cursor: pointer;
+  padding: 6px 8px;
+  color: rgb(240, 240, 240);
+  transition: color 0.175s ease-in-out, background-color 0.175s ease-in-out;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  text-shadow: 1px 1px black;
+}
+
+#sidebar .sidebar-group li a {
+  color: inherit;
+}
+
+#sidebar .sidebar-group li:hover, #sidebar .sidebar-group li.selected {
+  background-color: rgb(250, 250, 250);
+  color: rgb(51, 51, 51);
+  text-shadow: initial;
 }
