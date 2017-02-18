@@ -1,4 +1,4 @@
-OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", "$rootScope", function(Data, $uibModal, StorageService, $rootScope) {
+OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "Data", "StorageService", function($rootScope, $q, $document, $uibModal, Data, StorageService) {
   var vm = this;
   this.preview = false;
   this.updates = Data.updates;
@@ -7,12 +7,38 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", "$rootScope",
   this.currentDate = Date.now();
   this.showSidebar = false;
 
-  $rootScope.$on('$stateChangeSuccess', function(a,b,c) {
-    vm.selectedUpdate = c.id;
+  $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
+    vm.selectedUpdate = toParams.id;
   });
+
+  // Fired when the sidebar is open on every click, checks if a click was made
+  // outside the sidebar and if it was, close the sidebar
+  var documentClicked = function(event) {
+    if (event && event.path) {
+      $q.all(event.path.map(function(elm) {
+        if (elm.id == 'sidebar') return $q.resolve(true);
+        $q.resolve(false);
+      })).then(function(matches) {
+        var clickedSidebar = matches.filter(Boolean)[0];
+        if (!clickedSidebar) {
+          vm.showSidebar = false;
+          $document.off('click', documentClicked);
+        }
+      })
+    }
+  }
 
   this.toggleSidebar = function() {
     this.showSidebar = !this.showSidebar;
+    if (!this.showSidebar) {
+      $document.off('click', documentClicked);
+      return;
+    }
+    if (this.showSidebar) {
+      setTimeout(function () {
+        $document.on('click', documentClicked);
+      }, 0);
+    }
   }
 
   this.openSettings = function() {
@@ -20,7 +46,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", "$rootScope",
       templateUrl: './templates/modals/settings.html',
       controller: 'SettingsCtrl',
       controllerAs: 'settings'
-    })
+    });
   };
 
   this.openAbout = function() {
@@ -28,7 +54,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", "$rootScope",
       templateUrl: './templates/modals/about.html',
       controller: 'SettingsCtrl',
       controllerAs: 'settings'
-    })
+    });
   };
 
   this.openTheme = function() {
@@ -36,7 +62,7 @@ OWI.controller('MainCtrl', ["Data", "$uibModal", "StorageService", "$rootScope",
       templateUrl: './templates/modals/themes.html',
       controller: 'SettingsCtrl',
       controllerAs: 'settings'
-    })
+    });
   };
 
   this.particles = StorageService.getSetting('particles');
@@ -51,7 +77,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   this.currentTheme = StorageService.getSetting('currentTheme');
 
   this.close = function() {
-    $uibModalInstance.dismiss('close')
+    $uibModalInstance.dismiss('close');
   }
 
   this.resetData = function() {

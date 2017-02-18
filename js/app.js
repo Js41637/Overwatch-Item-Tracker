@@ -18,7 +18,20 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
 
   .state('hero', {
     url: '/hero/:id',
-    templateUrl: './templates/hero.html',
+    resolve: {
+      event: function($q, Data, $stateParams) {
+        var deferred = $q.defer();
+        setTimeout(function() {
+          var hero = Data.heroes[$stateParams.id]
+          if (hero) {
+            deferred.resolve(hero)
+          } else {
+            deferred.reject("INVALID_HERO")
+          }
+        }, 0);
+        return deferred.promise
+      }
+    },
     views: {
       main: {
         templateUrl: './templates/hero.html',
@@ -41,7 +54,7 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
           if (event) {
             deferred.resolve(event)
           } else {
-            deferred.reject("Invalid Event")
+            deferred.reject("INVALID_EVENT")
           }
         }, 0);
         return deferred.promise
@@ -62,8 +75,13 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
 }])
 
 .run(["$rootScope", "$state", "Data", function($rootScope, $state, Data) {
-  $rootScope.$on('$stateChangeError', function() {
-    $state.go('update', { id: Data.currentEvent })
+  $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
+    console.warn(error);
+    if (error == 'INVALID_HERO') {
+      $state.go('hero', { id: 'all' })
+    } else {
+      $state.go('update', { id: Data.currentEvent })
+    }
   });
 }])
 
