@@ -23,6 +23,10 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
       main: {
         templateUrl: './templates/hero.html',
         controller: 'HeroesCtrl'
+      },
+      header: {
+        templateUrl: './templates/header-hero.html',
+        controller: 'HeroesCtrl'
       }
     }
   })

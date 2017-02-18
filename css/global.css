@@ -10,6 +10,10 @@ body {
   filter: brightness(0.95);
 }
 
+#header .header-content {
+  display: flex;
+}
+
 #background {
   background: url(../resources/body-bg.jpg) no-repeat top;
   background-size: 100% 100%;
@@ -348,7 +352,7 @@ strong {
 #sidebar {
   position: fixed;
   height: calc(100% - 45px);
-  padding: 8px;
+  padding: 7px;
   width: 225px;
   z-index: 10;
   background-color: rgba(60, 60, 60, 0.9);
@@ -386,7 +390,6 @@ strong {
   font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
   font-size: 0.9em;
-  text-shadow: 1px 1px black;
 }
 
 #sidebar .sidebar-group li a {
@@ -396,5 +399,4 @@ strong {
 #sidebar .sidebar-group li:hover, #sidebar .sidebar-group li.selected {
   background-color: rgb(250, 250, 250);
   color: rgb(51, 51, 51);
-  text-shadow: initial;
 }
