@@ -1,7 +1,12 @@
+/* Datamapper.js
+ * Maps item data provided from rawData.txt to each hero sorted by the item type
+ * Items added in events are then mapped from this hero data.
+ * Code on this page is synchronous, it works it's way down.
+ */
 const fs = require('fs')
 const { forEach } = require('lodash')
-const { EVENTS, EVENTNAMES, EVENTTIMES } = require('./dataMapper/EVENTDATA.js')
-const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject } = require('./dataMapper/helpers.js')
+const { EVENTS, EVENTNAMES, EVENTTIMES, allClassEventItems } = require('./dataMapper/EVENTDATA.js')
+const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject, stupidNames } = require('./dataMapper/helpers.js')
 
 var rawData
 try {
@@ -32,13 +37,6 @@ heroGroups.forEach(heroData => {
   }
   data.push({ hero, items })
 })
-
-// Can't generate IDs off these names can we :)
-const stupidNames = {
-  "^_^": "joy",
-  ">_\\<": "frustration",
-  ";)": "winky-face"
-}
 
 // Blizzard changed the names of these items thus changing their IDs,
 // I will eventually run a migration that fixes these but for now I will manually fix
@@ -96,22 +94,7 @@ data.forEach(({ hero, items: itemGroups }) => {
 })
 heroes = sortObject(heroes)
 
-// allClassItems need to be manually added as allClass data isnt included in the rawData
-// Items surrounded by [] means they are not purchasable
-var allClassItems = {
-  'sprays': {
-    [EVENTS.SUMMER16]: ['Summer Games'],
-    [EVENTS.HALLOWEEN16]: ['...Never Die', 'Bats', 'Boo!', 'Boop!', 'Candyball', 'Fangs', 'Gummy Hog', 'Halloween Terror 2016', 'Pumpkins', 'Witch\'s Brew'],
-    [EVENTS.CHRISTMAS16]: [['SnowCree'], ['SnowHog'], ['SnowMei'], ['SnowReaper'], 'Winter Wonderland'],
-    [EVENTS.ROOSTER17]: [['Auspicious Lion'], ['Awakened Lion'], 'Dragon\'s Head', 'Lucky Pouch', 'Red Envelope', 'Year of the Rooster']
-  },
-  icons: {
-    [EVENTS.SUMMER16]: ["Summer Games", "Australia", "Brazil", "China", "Egypt", "France", "Germany", "Greece", "Japan", "Mexico", "Nepal", "Numbani", "Russia", "South Korea", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    [EVENTS.HALLOWEEN16]: ["Halloween Terror", "...Never Die", "Bewitching", "Calavera", "Candle", "Eyeball", "Ghostymari", "Spider", "Superstition", "Tombstone", "Vampachimari", "Witch's Brew", "Witch's Hat", "Wolf"],
-    [EVENTS.CHRISTMAS16]: ["Winter Wonderland", "Snowman", "Present", "Pachimerry", "Gingermari", "2017", "Holly", "Tannenbaum", "Bubbly", "Gingerbread", "Candy Cane", "Ornament", "Hot Cocoa", "Cheers!", "Wreath", "Mochi", "Dreidel", "Bells", "Peppermint", "Snow Globe", "Pachireindeer", "Stocking"],
-    [EVENTS.ROOSTER17]: ["Bokimari", "Coin", "Dragon Dance", "Fortune", "Fuchimari", "Gold", "Have Fish", "Lantern", "Lion Dance", "Lucky Pouch", "Lunamari", "New Year Cake", "Pachilantern", "Red Envelope", "Seollal", "Tangerines", "Year of the Rooster"]
-  }
-}
+
 
 // Go through every heros items and create a seperate object containing every item added in events
 var updates = {}
@@ -164,7 +147,7 @@ updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.
 }).filter(Boolean)
 
 // Add allclass items (which aren't detected by item extrator) manually
-forEach(allClassItems, (types, type) => {
+forEach(allClassEventItems, (types, type) => {
   forEach(types, (events, event) => {
     events.forEach(item => {
       var isSpecial = typeof item == 'object'
@@ -189,18 +172,28 @@ Object.keys(updates).forEach(update => {
       switch (type) {
         case 'icons':
           if (a.name < b.name) return -1;
-          if (a.name > b.name || !a.hero) return 1;
+          if (a.name > b.name) return 1;
           return 0;
         default:
-          if (a.hero < b.hero) return -1;
-          if (a.hero > b.hero || !a.hero) return 1;
-          return 0;
+          if (a.hero && b.hero) {
+            if (a.hero < b.hero) return -1;
+            if (a.hero > b.hero) return 1;
+            return 0;
+          } else {
+            if (!a.hero && !b.hero) {
+              if (a.name < b.name) return -1;
+              if (a.name > b.name) return 1;
+              return 0;
+            }
+            return a.hero ? -1 : 1;
+          }
       }
     })
   })
 })
 
-// Add allClassItems (Sprays, Icons) to items.json file
+// Add allClassData (Sprays, Icons) to items.json file
+// NOTE: This allClassData is seperate from the allClassEventItems
 try {
   heroes["all"] = JSON.parse(allClassData)
 } catch (e) {
@@ -208,8 +201,10 @@ try {
   return
 }
 
+// Sorts Updates object by the order of events and heroes alphabetically.
 updates = sortObject(updates, true)
 heroes = sortObject(heroes)
 
+// Write new items.json and updates.json files to disk
 fs.writeFileSync(`${__dirname}/../data/items.json`, JSON.stringify(heroes, null, 2), 'utf8')
 fs.writeFileSync(`${__dirname}/../data/updates.json`, JSON.stringify(updates, null, 2), 'utf8')

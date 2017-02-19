@@ -1,3 +1,10 @@
+// Can't generate IDs off these names can we :)
+const stupidNames = {
+  "^_^": "joy",
+  ">_\\<": "frustration",
+  ";)": "winky-face"
+}
+
 const qualities = ['common', 'epic', 'rare', 'legendary']
 const types = [
   { m: 'skin', name: 'skins' },
@@ -9,11 +16,13 @@ const types = [
   { m: 'heroic intro', name: 'intros' }
   //, { m: 'weapon skin', name: 'weapons' } // Golden
 ]
-const matches = {} // Generate a match for each quality for every type of item
+// Generate a match for each quality for every type of item
+const matches = {}
 types.forEach(t => {
   qualities.forEach(q => matches[`${q} ${t.m}`] = { quality: q, type: t.name })
 })
 
+// Returns the type of item, see above
 const getItemType = type => {
   let m = matches[type.toLowerCase()]
   if (!m) {
@@ -23,6 +32,7 @@ const getItemType = type => {
   return m
 }
 
+// Returns class for hero
 const getClassForHero = hero => {
   switch (hero) {
     case "genji":
@@ -57,10 +67,12 @@ const getClassForHero = hero => {
   }
 }
 
+// Returns a cleanID, replacing all bad characters and replacing unicode ones
 const getCleanID = (what, hero) => {
   return (hero ? `${hero}-` : '') + what.toLowerCase().replace('å', 'a').replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-')
 }
 
+// Returns the image or video URL for an item
 const getImageURL = (type, event, id) => {
   const baseUrl = `./resources/updates/${event}/${type}/${id}`
   switch (type) {
@@ -105,4 +117,4 @@ const sortObject = (o, update) => {
   return sorted
 }
 
-module.exports = { getCleanID, getClassForHero, getItemType, getImageURL, sortObject }
+module.exports = { getCleanID, getClassForHero, getItemType, getImageURL, sortObject, stupidNames }

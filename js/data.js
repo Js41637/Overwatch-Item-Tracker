@@ -932,12 +932,6 @@ OWI.factory('Data', function() {
               "img": "./resources/updates/HALLOWEEN_2016/sprays/torbjorn-trick-or-treat.png"
             },
             {
-              "name": "Boo!",
-              "id": "boo",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/boo.png",
-              "quality": "common"
-            },
-            {
               "hero": "Tracer",
               "name": "Trick or Treat",
               "id": "tracer-trick-or-treat",
@@ -950,12 +944,6 @@ OWI.factory('Data', function() {
               "id": "widowmaker-trick-or-treat",
               "quality": "common",
               "img": "./resources/updates/HALLOWEEN_2016/sprays/widowmaker-trick-or-treat.png"
-            },
-            {
-              "name": "Boop!",
-              "id": "boop",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/boop.png",
-              "quality": "common"
             },
             {
               "hero": "Winston",
@@ -979,39 +967,9 @@ OWI.factory('Data', function() {
               "img": "./resources/updates/HALLOWEEN_2016/sprays/zenyatta-trick-or-treat.png"
             },
             {
-              "name": "Witch's Brew",
-              "id": "witchs-brew",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/witchs-brew.png",
-              "quality": "common"
-            },
-            {
-              "name": "Pumpkins",
-              "id": "pumpkins",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/pumpkins.png",
-              "quality": "common"
-            },
-            {
-              "name": "Halloween Terror 2016",
-              "id": "halloween-terror-2016",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/halloween-terror-2016.png",
-              "quality": "common"
-            },
-            {
-              "name": "Gummy Hog",
-              "id": "gummy-hog",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/gummy-hog.png",
-              "quality": "common"
-            },
-            {
-              "name": "Fangs",
-              "id": "fangs",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/fangs.png",
-              "quality": "common"
-            },
-            {
-              "name": "Candyball",
-              "id": "candyball",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/candyball.png",
+              "name": "...Never Die",
+              "id": "never-die",
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/never-die.png",
               "quality": "common"
             },
             {
@@ -1021,9 +979,51 @@ OWI.factory('Data', function() {
               "quality": "common"
             },
             {
-              "name": "...Never Die",
-              "id": "never-die",
-              "img": "./resources/updates/HALLOWEEN_2016/sprays/never-die.png",
+              "name": "Boo!",
+              "id": "boo",
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/boo.png",
+              "quality": "common"
+            },
+            {
+              "name": "Boop!",
+              "id": "boop",
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/boop.png",
+              "quality": "common"
+            },
+            {
+              "name": "Candyball",
+              "id": "candyball",
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/candyball.png",
+              "quality": "common"
+            },
+            {
+              "name": "Fangs",
+              "id": "fangs",
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/fangs.png",
+              "quality": "common"
+            },
+            {
+              "name": "Gummy Hog",
+              "id": "gummy-hog",
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/gummy-hog.png",
+              "quality": "common"
+            },
+            {
+              "name": "Halloween Terror 2016",
+              "id": "halloween-terror-2016",
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/halloween-terror-2016.png",
+              "quality": "common"
+            },
+            {
+              "name": "Pumpkins",
+              "id": "pumpkins",
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/pumpkins.png",
+              "quality": "common"
+            },
+            {
+              "name": "Witch's Brew",
+              "id": "witchs-brew",
+              "img": "./resources/updates/HALLOWEEN_2016/sprays/witchs-brew.png",
               "quality": "common"
             }
           ],
@@ -1888,20 +1888,9 @@ OWI.factory('Data', function() {
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/zenyatta-ornament.png"
             },
             {
-              "name": "Winter Wonderland",
-              "id": "winter-wonderland",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/winter-wonderland.png",
-              "quality": "common"
-            },
-            {
-              "name": "SnowReaper",
-              "id": "snowreaper",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/snowreaper.png"
-            },
-            {
-              "name": "SnowMei",
-              "id": "snowmei",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/snowmei.png"
+              "name": "SnowCree",
+              "id": "snowcree",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/snowcree.png"
             },
             {
               "name": "SnowHog",
@@ -1909,9 +1898,20 @@ OWI.factory('Data', function() {
               "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/snowhog.png"
             },
             {
-              "name": "SnowCree",
-              "id": "snowcree",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/snowcree.png"
+              "name": "SnowMei",
+              "id": "snowmei",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/snowmei.png"
+            },
+            {
+              "name": "SnowReaper",
+              "id": "snowreaper",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/snowreaper.png"
+            },
+            {
+              "name": "Winter Wonderland",
+              "id": "winter-wonderland",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/winter-wonderland.png",
+              "quality": "common"
             }
           ],
           "voicelines": [
@@ -2835,15 +2835,19 @@ OWI.factory('Data', function() {
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/zenyatta-dragon-dance.png"
             },
             {
-              "name": "Year of the Rooster",
-              "id": "year-of-the-rooster",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/year-of-the-rooster.png",
-              "quality": "common"
+              "name": "Auspicious Lion",
+              "id": "auspicious-lion",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/auspicious-lion.png"
             },
             {
-              "name": "Red Envelope",
-              "id": "red-envelope",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/red-envelope.png",
+              "name": "Awakened Lion",
+              "id": "awakened-lion",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/awakened-lion.png"
+            },
+            {
+              "name": "Dragon's Head",
+              "id": "dragons-head",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/dragons-head.png",
               "quality": "common"
             },
             {
@@ -2853,20 +2857,16 @@ OWI.factory('Data', function() {
               "quality": "common"
             },
             {
-              "name": "Dragon's Head",
-              "id": "dragons-head",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/dragons-head.png",
+              "name": "Red Envelope",
+              "id": "red-envelope",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/red-envelope.png",
               "quality": "common"
             },
             {
-              "name": "Awakened Lion",
-              "id": "awakened-lion",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/awakened-lion.png"
-            },
-            {
-              "name": "Auspicious Lion",
-              "id": "auspicious-lion",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/auspicious-lion.png"
+              "name": "Year of the Rooster",
+              "id": "year-of-the-rooster",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/year-of-the-rooster.png",
+              "quality": "common"
             }
           ],
           "voicelines": [
