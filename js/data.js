@@ -1475,15 +1475,6 @@ OWI.factory('Data', function() {
           "sprays": [
             {
               "hero": "Ana",
-              "name": "Warm",
-              "id": "ana-warm",
-              "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/ana-warm.png",
-              "ornamentID": "ana-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/ana-ornament.png"
-            },
-            {
-              "hero": "Ana",
               "name": "Ornament",
               "id": "ana-ornament",
               "quality": "common",
@@ -1492,13 +1483,13 @@ OWI.factory('Data', function() {
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/ana-ornament.png"
             },
             {
-              "hero": "Bastion",
-              "name": "ORNAMENT",
-              "id": "bastion-ornament",
+              "hero": "Ana",
+              "name": "Warm",
+              "id": "ana-warm",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/bastion-ornament.png",
-              "ornamentID": "bastion-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/bastion-ornament.png"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/ana-warm.png",
+              "ornamentID": "ana-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/ana-ornament.png"
             },
             {
               "hero": "Bastion",
@@ -1510,13 +1501,13 @@ OWI.factory('Data', function() {
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/bastion-ornament.png"
             },
             {
-              "hero": "D.Va",
+              "hero": "Bastion",
               "name": "ORNAMENT",
-              "id": "dva-ornament",
+              "id": "bastion-ornament",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/dva-ornament.png",
-              "ornamentID": "dva-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/dva-ornament.png"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/bastion-ornament.png",
+              "ornamentID": "bastion-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/bastion-ornament.png"
             },
             {
               "hero": "D.Va",
@@ -1524,6 +1515,15 @@ OWI.factory('Data', function() {
               "id": "dva-cookie",
               "quality": "common",
               "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/dva-cookie.png",
+              "ornamentID": "dva-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/dva-ornament.png"
+            },
+            {
+              "hero": "D.Va",
+              "name": "ORNAMENT",
+              "id": "dva-ornament",
+              "quality": "common",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/dva-ornament.png",
               "ornamentID": "dva-ornament",
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/dva-ornament.png"
             },
@@ -1583,19 +1583,19 @@ OWI.factory('Data', function() {
             },
             {
               "hero": "Lúcio",
-              "name": "Ornament",
-              "id": "lucio-ornament",
+              "name": "Hockey",
+              "id": "lucio-hockey",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/lucio-ornament.png",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/lucio-hockey.png",
               "ornamentID": "lucio-ornament",
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/lucio-ornament.png"
             },
             {
               "hero": "Lúcio",
-              "name": "Hockey",
-              "id": "lucio-hockey",
+              "name": "Ornament",
+              "id": "lucio-ornament",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/lucio-hockey.png",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/lucio-ornament.png",
               "ornamentID": "lucio-ornament",
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/lucio-ornament.png"
             },
@@ -1619,15 +1619,6 @@ OWI.factory('Data', function() {
             },
             {
               "hero": "Mei",
-              "name": "Sculpting",
-              "id": "mei-sculpting",
-              "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/mei-sculpting.png",
-              "ornamentID": "mei-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/mei-ornament.png"
-            },
-            {
-              "hero": "Mei",
               "name": "Ornament",
               "id": "mei-ornament",
               "quality": "common",
@@ -1636,13 +1627,13 @@ OWI.factory('Data', function() {
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/mei-ornament.png"
             },
             {
-              "hero": "Mercy",
-              "name": "Snow Angel",
-              "id": "mercy-snow-angel",
+              "hero": "Mei",
+              "name": "Sculpting",
+              "id": "mei-sculpting",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/mercy-snow-angel.png",
-              "ornamentID": "mercy-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/mercy-ornament.png"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/mei-sculpting.png",
+              "ornamentID": "mei-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/mei-ornament.png"
             },
             {
               "hero": "Mercy",
@@ -1650,6 +1641,15 @@ OWI.factory('Data', function() {
               "id": "mercy-ornament",
               "quality": "common",
               "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/mercy-ornament.png",
+              "ornamentID": "mercy-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/mercy-ornament.png"
+            },
+            {
+              "hero": "Mercy",
+              "name": "Snow Angel",
+              "id": "mercy-snow-angel",
+              "quality": "common",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/mercy-snow-angel.png",
               "ornamentID": "mercy-ornament",
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/mercy-ornament.png"
             },
@@ -1673,19 +1673,19 @@ OWI.factory('Data', function() {
             },
             {
               "hero": "Reaper",
-              "name": "Stocking",
-              "id": "reaper-stocking",
+              "name": "Ornament",
+              "id": "reaper-ornament",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/reaper-stocking.png",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/reaper-ornament.png",
               "ornamentID": "reaper-ornament",
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/reaper-ornament.png"
             },
             {
               "hero": "Reaper",
-              "name": "Ornament",
-              "id": "reaper-ornament",
+              "name": "Stocking",
+              "id": "reaper-stocking",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/reaper-ornament.png",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/reaper-stocking.png",
               "ornamentID": "reaper-ornament",
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/reaper-ornament.png"
             },
@@ -1727,15 +1727,6 @@ OWI.factory('Data', function() {
             },
             {
               "hero": "Soldier: 76",
-              "name": "Ornament",
-              "id": "soldier-76-ornament",
-              "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/soldier-76-ornament.png",
-              "ornamentID": "soldier-76-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/soldier-76-ornament.png"
-            },
-            {
-              "hero": "Soldier: 76",
               "name": "Army Man: 76",
               "id": "soldier-76-army-man-76",
               "quality": "common",
@@ -1744,13 +1735,13 @@ OWI.factory('Data', function() {
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/soldier-76-ornament.png"
             },
             {
-              "hero": "Sombra",
-              "name": "Puppet",
-              "id": "sombra-puppet",
+              "hero": "Soldier: 76",
+              "name": "Ornament",
+              "id": "soldier-76-ornament",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/sombra-puppet.png",
-              "ornamentID": "sombra-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/sombra-ornament.png"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/soldier-76-ornament.png",
+              "ornamentID": "soldier-76-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/soldier-76-ornament.png"
             },
             {
               "hero": "Sombra",
@@ -1762,13 +1753,13 @@ OWI.factory('Data', function() {
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/sombra-ornament.png"
             },
             {
-              "hero": "Symmetra",
-              "name": "Snowflake",
-              "id": "symmetra-snowflake",
+              "hero": "Sombra",
+              "name": "Puppet",
+              "id": "sombra-puppet",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/symmetra-snowflake.png",
-              "ornamentID": "symmetra-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/symmetra-ornament.png"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/sombra-puppet.png",
+              "ornamentID": "sombra-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/sombra-ornament.png"
             },
             {
               "hero": "Symmetra",
@@ -1780,13 +1771,13 @@ OWI.factory('Data', function() {
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/symmetra-ornament.png"
             },
             {
-              "hero": "Torbjörn",
-              "name": "Workshop",
-              "id": "torbjorn-workshop",
+              "hero": "Symmetra",
+              "name": "Snowflake",
+              "id": "symmetra-snowflake",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/torbjorn-workshop.png",
-              "ornamentID": "torbjorn-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/torbjorn-ornament.png"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/symmetra-snowflake.png",
+              "ornamentID": "symmetra-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/symmetra-ornament.png"
             },
             {
               "hero": "Torbjörn",
@@ -1798,13 +1789,13 @@ OWI.factory('Data', function() {
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/torbjorn-ornament.png"
             },
             {
-              "hero": "Tracer",
-              "name": "Snowboarding",
-              "id": "tracer-snowboarding",
+              "hero": "Torbjörn",
+              "name": "Workshop",
+              "id": "torbjorn-workshop",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/tracer-snowboarding.png",
-              "ornamentID": "tracer-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/tracer-ornament.png"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/torbjorn-workshop.png",
+              "ornamentID": "torbjorn-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/torbjorn-ornament.png"
             },
             {
               "hero": "Tracer",
@@ -1816,13 +1807,13 @@ OWI.factory('Data', function() {
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/tracer-ornament.png"
             },
             {
-              "hero": "Widowmaker",
-              "name": "Skiing",
-              "id": "widowmaker-skiing",
+              "hero": "Tracer",
+              "name": "Snowboarding",
+              "id": "tracer-snowboarding",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/widowmaker-skiing.png",
-              "ornamentID": "widowmaker-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/widowmaker-ornament.png"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/tracer-snowboarding.png",
+              "ornamentID": "tracer-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/tracer-ornament.png"
             },
             {
               "hero": "Widowmaker",
@@ -1834,13 +1825,13 @@ OWI.factory('Data', function() {
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/widowmaker-ornament.png"
             },
             {
-              "hero": "Winston",
-              "name": "Presents",
-              "id": "winston-presents",
+              "hero": "Widowmaker",
+              "name": "Skiing",
+              "id": "widowmaker-skiing",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/winston-presents.png",
-              "ornamentID": "winston-ornament",
-              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/winston-ornament.png"
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/widowmaker-skiing.png",
+              "ornamentID": "widowmaker-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/widowmaker-ornament.png"
             },
             {
               "hero": "Winston",
@@ -1848,6 +1839,15 @@ OWI.factory('Data', function() {
               "id": "winston-ornament",
               "quality": "common",
               "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/winston-ornament.png",
+              "ornamentID": "winston-ornament",
+              "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/winston-ornament.png"
+            },
+            {
+              "hero": "Winston",
+              "name": "Presents",
+              "id": "winston-presents",
+              "quality": "common",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/winston-presents.png",
               "ornamentID": "winston-ornament",
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/winston-ornament.png"
             },
@@ -1871,19 +1871,19 @@ OWI.factory('Data', function() {
             },
             {
               "hero": "Zenyatta",
-              "name": "Snowball Fight",
-              "id": "zenyatta-snowball-fight",
+              "name": "Ornament",
+              "id": "zenyatta-ornament",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/zenyatta-snowball-fight.png",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/zenyatta-ornament.png",
               "ornamentID": "zenyatta-ornament",
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/zenyatta-ornament.png"
             },
             {
               "hero": "Zenyatta",
-              "name": "Ornament",
-              "id": "zenyatta-ornament",
+              "name": "Snowball Fight",
+              "id": "zenyatta-snowball-fight",
               "quality": "common",
-              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/zenyatta-ornament.png",
+              "img": "./resources/updates/WINTER_WONDERLAND_2016/sprays/zenyatta-snowball-fight.png",
               "ornamentID": "zenyatta-ornament",
               "ornamentURL": "./resources/updates/WINTER_WONDERLAND_2016/sprays/zenyatta-ornament.png"
             },
@@ -2440,15 +2440,6 @@ OWI.factory('Data', function() {
             },
             {
               "hero": "Bastion",
-              "name": "Dragon Dance",
-              "id": "bastion-dragon-dance",
-              "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/bastion-dragon-dance.png",
-              "dragonID": "bastion-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/bastion-dragon-dance.png"
-            },
-            {
-              "hero": "Bastion",
               "name": "Bast-yum",
               "id": "bastion-bastyum",
               "quality": "common",
@@ -2457,13 +2448,13 @@ OWI.factory('Data', function() {
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/bastion-dragon-dance.png"
             },
             {
-              "hero": "D.Va",
-              "name": "Seesaw",
-              "id": "dva-seesaw",
+              "hero": "Bastion",
+              "name": "Dragon Dance",
+              "id": "bastion-dragon-dance",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/dva-seesaw.png",
-              "dragonID": "dva-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/dva-dragon-dance.png"
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/bastion-dragon-dance.png",
+              "dragonID": "bastion-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/bastion-dragon-dance.png"
             },
             {
               "hero": "D.Va",
@@ -2471,6 +2462,15 @@ OWI.factory('Data', function() {
               "id": "dva-dragon-dance",
               "quality": "common",
               "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/dva-dragon-dance.png",
+              "dragonID": "dva-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/dva-dragon-dance.png"
+            },
+            {
+              "hero": "D.Va",
+              "name": "Seesaw",
+              "id": "dva-seesaw",
+              "quality": "common",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/dva-seesaw.png",
               "dragonID": "dva-dragon-dance",
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/dva-dragon-dance.png"
             },
@@ -2530,19 +2530,19 @@ OWI.factory('Data', function() {
             },
             {
               "hero": "Lúcio",
-              "name": "Keep Ups",
-              "id": "lucio-keep-ups",
+              "name": "Dragon Dance",
+              "id": "lucio-dragon-dance",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/lucio-keep-ups.png",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/lucio-dragon-dance.png",
               "dragonID": "lucio-dragon-dance",
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/lucio-dragon-dance.png"
             },
             {
               "hero": "Lúcio",
-              "name": "Dragon Dance",
-              "id": "lucio-dragon-dance",
+              "name": "Keep Ups",
+              "id": "lucio-keep-ups",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/lucio-dragon-dance.png",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/lucio-keep-ups.png",
               "dragonID": "lucio-dragon-dance",
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/lucio-dragon-dance.png"
             },
@@ -2566,19 +2566,19 @@ OWI.factory('Data', function() {
             },
             {
               "hero": "Mei",
-              "name": "Fortune",
-              "id": "mei-fortune",
+              "name": "Dragon Dance",
+              "id": "mei-dragon-dance",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/mei-fortune.png",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/mei-dragon-dance.png",
               "dragonID": "mei-dragon-dance",
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/mei-dragon-dance.png"
             },
             {
               "hero": "Mei",
-              "name": "Dragon Dance",
-              "id": "mei-dragon-dance",
+              "name": "Fortune",
+              "id": "mei-fortune",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/mei-dragon-dance.png",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/mei-fortune.png",
               "dragonID": "mei-dragon-dance",
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/mei-dragon-dance.png"
             },
@@ -2602,15 +2602,6 @@ OWI.factory('Data', function() {
             },
             {
               "hero": "Pharah",
-              "name": "Happy New Year",
-              "id": "pharah-happy-new-year",
-              "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/pharah-happy-new-year.png",
-              "dragonID": "pharah-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/pharah-dragon-dance.png"
-            },
-            {
-              "hero": "Pharah",
               "name": "Dragon Dance",
               "id": "pharah-dragon-dance",
               "quality": "common",
@@ -2619,13 +2610,13 @@ OWI.factory('Data', function() {
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/pharah-dragon-dance.png"
             },
             {
-              "hero": "Reaper",
-              "name": "Fire Blossom",
-              "id": "reaper-fire-blossom",
+              "hero": "Pharah",
+              "name": "Happy New Year",
+              "id": "pharah-happy-new-year",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/reaper-fire-blossom.png",
-              "dragonID": "reaper-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/reaper-dragon-dance.png"
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/pharah-happy-new-year.png",
+              "dragonID": "pharah-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/pharah-dragon-dance.png"
             },
             {
               "hero": "Reaper",
@@ -2637,13 +2628,13 @@ OWI.factory('Data', function() {
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/reaper-dragon-dance.png"
             },
             {
-              "hero": "Reinhardt",
-              "name": "Lion Dance",
-              "id": "reinhardt-lion-dance",
+              "hero": "Reaper",
+              "name": "Fire Blossom",
+              "id": "reaper-fire-blossom",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/reinhardt-lion-dance.png",
-              "dragonID": "reinhardt-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/reinhardt-dragon-dance.png"
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/reaper-fire-blossom.png",
+              "dragonID": "reaper-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/reaper-dragon-dance.png"
             },
             {
               "hero": "Reinhardt",
@@ -2655,13 +2646,13 @@ OWI.factory('Data', function() {
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/reinhardt-dragon-dance.png"
             },
             {
-              "hero": "Roadhog",
-              "name": "Steamed Buns",
-              "id": "roadhog-steamed-buns",
+              "hero": "Reinhardt",
+              "name": "Lion Dance",
+              "id": "reinhardt-lion-dance",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/roadhog-steamed-buns.png",
-              "dragonID": "roadhog-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/roadhog-dragon-dance.png"
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/reinhardt-lion-dance.png",
+              "dragonID": "reinhardt-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/reinhardt-dragon-dance.png"
             },
             {
               "hero": "Roadhog",
@@ -2673,13 +2664,13 @@ OWI.factory('Data', function() {
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/roadhog-dragon-dance.png"
             },
             {
-              "hero": "Soldier: 76",
-              "name": "Folded Hands",
-              "id": "soldier-76-folded-hands",
+              "hero": "Roadhog",
+              "name": "Steamed Buns",
+              "id": "roadhog-steamed-buns",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/soldier-76-folded-hands.png",
-              "dragonID": "soldier-76-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/soldier-76-dragon-dance.png"
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/roadhog-steamed-buns.png",
+              "dragonID": "roadhog-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/roadhog-dragon-dance.png"
             },
             {
               "hero": "Soldier: 76",
@@ -2687,6 +2678,15 @@ OWI.factory('Data', function() {
               "id": "soldier-76-dragon-dance",
               "quality": "common",
               "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/soldier-76-dragon-dance.png",
+              "dragonID": "soldier-76-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/soldier-76-dragon-dance.png"
+            },
+            {
+              "hero": "Soldier: 76",
+              "name": "Folded Hands",
+              "id": "soldier-76-folded-hands",
+              "quality": "common",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/soldier-76-folded-hands.png",
               "dragonID": "soldier-76-dragon-dance",
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/soldier-76-dragon-dance.png"
             },
@@ -2710,15 +2710,6 @@ OWI.factory('Data', function() {
             },
             {
               "hero": "Symmetra",
-              "name": "Lantern",
-              "id": "symmetra-lantern",
-              "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/symmetra-lantern.png",
-              "dragonID": "symmetra-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/symmetra-dragon-dance.png"
-            },
-            {
-              "hero": "Symmetra",
               "name": "Dragon Dance",
               "id": "symmetra-dragon-dance",
               "quality": "common",
@@ -2727,13 +2718,13 @@ OWI.factory('Data', function() {
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/symmetra-dragon-dance.png"
             },
             {
-              "hero": "Torbjörn",
-              "name": "Gold",
-              "id": "torbjorn-gold",
+              "hero": "Symmetra",
+              "name": "Lantern",
+              "id": "symmetra-lantern",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/torbjorn-gold.png",
-              "dragonID": "torbjorn-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/torbjorn-dragon-dance.png"
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/symmetra-lantern.png",
+              "dragonID": "symmetra-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/symmetra-dragon-dance.png"
             },
             {
               "hero": "Torbjörn",
@@ -2745,13 +2736,13 @@ OWI.factory('Data', function() {
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/torbjorn-dragon-dance.png"
             },
             {
-              "hero": "Tracer",
-              "name": "Fan Dance",
-              "id": "tracer-fan-dance",
+              "hero": "Torbjörn",
+              "name": "Gold",
+              "id": "torbjorn-gold",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/tracer-fan-dance.png",
-              "dragonID": "tracer-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/tracer-dragon-dance.png"
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/torbjorn-gold.png",
+              "dragonID": "torbjorn-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/torbjorn-dragon-dance.png"
             },
             {
               "hero": "Tracer",
@@ -2763,13 +2754,13 @@ OWI.factory('Data', function() {
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/tracer-dragon-dance.png"
             },
             {
-              "hero": "Widowmaker",
-              "name": "Hairpin",
-              "id": "widowmaker-hairpin",
+              "hero": "Tracer",
+              "name": "Fan Dance",
+              "id": "tracer-fan-dance",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/widowmaker-hairpin.png",
-              "dragonID": "widowmaker-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/widowmaker-dragon-dance.png"
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/tracer-fan-dance.png",
+              "dragonID": "tracer-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/tracer-dragon-dance.png"
             },
             {
               "hero": "Widowmaker",
@@ -2781,13 +2772,13 @@ OWI.factory('Data', function() {
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/widowmaker-dragon-dance.png"
             },
             {
-              "hero": "Winston",
-              "name": "Kite",
-              "id": "winston-kite",
+              "hero": "Widowmaker",
+              "name": "Hairpin",
+              "id": "widowmaker-hairpin",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/winston-kite.png",
-              "dragonID": "winston-dragon-dance",
-              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/winston-dragon-dance.png"
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/widowmaker-hairpin.png",
+              "dragonID": "widowmaker-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/widowmaker-dragon-dance.png"
             },
             {
               "hero": "Winston",
@@ -2795,6 +2786,15 @@ OWI.factory('Data', function() {
               "id": "winston-dragon-dance",
               "quality": "common",
               "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/winston-dragon-dance.png",
+              "dragonID": "winston-dragon-dance",
+              "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/winston-dragon-dance.png"
+            },
+            {
+              "hero": "Winston",
+              "name": "Kite",
+              "id": "winston-kite",
+              "quality": "common",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/winston-kite.png",
               "dragonID": "winston-dragon-dance",
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/winston-dragon-dance.png"
             },
@@ -2818,19 +2818,19 @@ OWI.factory('Data', function() {
             },
             {
               "hero": "Zenyatta",
-              "name": "Yut Nori",
-              "id": "zenyatta-yut-nori",
+              "name": "Dragon Dance",
+              "id": "zenyatta-dragon-dance",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/zenyatta-yut-nori.png",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/zenyatta-dragon-dance.png",
               "dragonID": "zenyatta-dragon-dance",
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/zenyatta-dragon-dance.png"
             },
             {
               "hero": "Zenyatta",
-              "name": "Dragon Dance",
-              "id": "zenyatta-dragon-dance",
+              "name": "Yut Nori",
+              "id": "zenyatta-yut-nori",
               "quality": "common",
-              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/zenyatta-dragon-dance.png",
+              "img": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/zenyatta-yut-nori.png",
               "dragonID": "zenyatta-dragon-dance",
               "dragonURL": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/sprays/zenyatta-dragon-dance.png"
             },

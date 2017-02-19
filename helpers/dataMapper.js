@@ -4,7 +4,7 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs')
-const { forEach } = require('lodash')
+const { forEach, sortBy } = require('lodash')
 const { EVENTS, EVENTNAMES, EVENTTIMES, allClassEventItems } = require('./dataMapper/EVENTDATA.js')
 const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject, stupidNames } = require('./dataMapper/helpers.js')
 
@@ -166,31 +166,15 @@ forEach(allClassEventItems, (types, type) => {
 })
 
 // Sort that shit by hero or item name
-Object.keys(updates).forEach(update => {
-  Object.keys(updates[update].items).forEach(type => {
-    updates[update].items[type].sort((a, b) => {
-      switch (type) {
-        case 'icons':
-          if (a.name < b.name) return -1;
-          if (a.name > b.name) return 1;
-          return 0;
-        default:
-          if (a.hero && b.hero) {
-            if (a.hero < b.hero) return -1;
-            if (a.hero > b.hero) return 1;
-            return 0;
-          } else {
-            if (!a.hero && !b.hero) {
-              if (a.name < b.name) return -1;
-              if (a.name > b.name) return 1;
-              return 0;
-            }
-            return a.hero ? -1 : 1;
-          }
-      }
-    })
-  })
-})
+forEach(updates, update => forEach(update.items, (items, type) => {
+  switch (type) {
+    case 'icons':
+      update.items[type] = sortBy(items, ['name'])
+      break;
+    default:
+      update.items[type] = sortBy(items, ['hero', 'name'])
+  }
+}))
 
 // Add allClassData (Sprays, Icons) to items.json file
 // NOTE: This allClassData is seperate from the allClassEventItems
