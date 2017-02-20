@@ -953,3 +953,25 @@ body {
 #sprays .item h4:not(:only-child):after {
   content: "]";
 }
+
+#hero-nav {
+  margin: 30px;
+  background-color: rgb(44, 58, 92);
+}
+
+#hero-nav .nav-group {
+  display: inline-block;
+  font-size: 38px;
+  padding: 10px 15px 13px;
+  color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+#hero-nav .nav-group.selected:hover {
+  background: linear-gradient(rgb(34, 119, 176), rgb(68, 171, 238));
+}
+
+#hero-nav .nav-group.selected {
+  background: linear-gradient(rgb(54, 148, 210), rgb(68, 171, 238));
+  border-top: 4px solid rgb(74, 227, 248);
+}

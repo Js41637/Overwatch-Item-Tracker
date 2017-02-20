@@ -1,7 +1,27 @@
-<div style="margin-left: 250px">
-  <img src="./resources/heroes/{{hero.id}}/portrait.png" />
-  <br />
-  <p style="white-space: pre-wrap; font-family: monospace">
-    {{getItems()}}
-  </p>
+<div id="hero-container" class="{{hero.id}} body-container">
+  <div id="hero-bar">
+    <div id="hero-nav">
+      <div class="nav-group selected" ui-sref="heroes">
+        Heroes
+      </div>
+      <div class="nav-group">
+        {{hero.name}}
+      </div>
+      <div class="nav-group">
+      </div>
+    </div>
+  </div>
+  <div class="item-container">
+    <div ng-repeat="(type, items) in hero.items track by $index" id="{{type}}" class="section">
+      <div class="section-header">
+        <h2>{{type}}</h2>
+      </div>
+      <div class="item" class="{{item.quality || 'unknown'}}" ng-repeat="item in items track by $index">
+        <input type="checkbox" id="{{type + item.id}}">
+        <label for="{{type + item.id}}">
+          <h3>{{item.name}}</h3>
+        </label>
+      </div>
+    </div>
+  </div>
 </div>
