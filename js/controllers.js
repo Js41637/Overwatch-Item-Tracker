@@ -6,6 +6,14 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "Data"
   this.selectedUpdate = Data.currentEvent;
   this.currentDate = Date.now();
   this.showSidebar = false;
+  this.supportsWebM = true
+
+  var v = document.createElement('video')
+  if (v.canPlayType) {
+    this.supportsWebM = ("" !== v.canPlayType('video/webm; codecs="vp8, opus"') && "" !== v.canPlayType('video/webm; codecs="vp9, opus"'))
+  } else {
+    this.supportsWebM = false;
+  }
 
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
     vm.selectedUpdate = toParams.id;

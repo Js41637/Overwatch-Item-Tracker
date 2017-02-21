@@ -22,9 +22,12 @@
       </div>
     </div>
     <div class="preview video" ng-if="preview.video">
-      <div class="card {{preview.type || ''}}" lazy-background="{{preview.img}}">
+      <div class="card {{preview.type || ''}}">
         <div class="bg2"></div>
-        <video autoplay="true" autostart="true" loop="true" src="{{preview.video}}"></video>
+        <div class="nosupport" ng-show="!$ctrl.supportsWebM">
+          Sorry, your browser doesn't support HTML5 video or WebM.
+        </div>
+        <video ng-if="$ctrl.supportsWebM" autoplay="true" autostart="true" loop="true" src="{{preview.video}}"></video>
         <div class="bg">
           <div class="card-content">
             <h4 class="card-heading">{{preview.hero || 'All Heroes'}}</h4>
