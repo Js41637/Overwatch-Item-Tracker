@@ -2,19 +2,19 @@ OWI.factory("StorageService", function() {
   var service = {
     data: {},
     settings: {},
-    defaults: {
+    defaultSettings: {
       particles: true,
       hdVideos: false,
       currentTheme: 'standard'
     },
     getData: function() {
-      return service.data
+      return service.data;
     },
     isItemChecked: function(event, type, id) {
-      return (event in service.data ? (type in service.data[event] ? service.data[event][type][id] : false) : false)
+      return (event in service.data ? (type in service.data[event] ? service.data[event][type][id] : false) : false);
     },
     getSetting: function(key) {
-      return (key in service.settings ? service.settings[key] : (key in service.defaults ? service.defaults[key] : false))
+      return (key in service.settings ? service.settings[key] : (key in service.defaultSettings ? service.defaultSettings[key] : false));
     },
     setSetting: function(key, value) {
       service.settings[key] = value;
@@ -43,3 +43,48 @@ OWI.factory("StorageService", function() {
   service.init();
   return service;
 })
+
+OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q, StorageService) {
+  var items = `{"skinsLegendary":{},"skinsEpic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}`
+  function initialize(data) {
+    var storedData = StorageService.getData() || {};
+    var out = {
+      initialized: true,
+      checked: {}
+    }
+    Object.keys(data.updates).forEach(function(event) {
+      out.checked[event] = JSON.parse(items)
+    })
+    Object.assign(out.checked, storedData)
+    Object.assign(service, out, data)
+  }
+
+  var service = {
+    initialized: false,
+    waitForInitialization: function() {
+      return $q(function(resolve) {
+        function waitForInitialize() {
+            if (service.initialized) {
+              resolve(service);
+            } else {
+              setTimeout(waitForInitialize, 50);
+            }
+        }
+        waitForInitialize();
+      });
+    },
+    init: function() {
+      $http.get('./data/master.json').then(function(resp) {
+        if (resp.status == 200) {
+          initialize(resp.data);
+        } else {
+          console.error("Failed loading master.json ???", resp.status, resp.error);
+        }
+      }, function(resp) {
+        console.error("Failed loading master.json ???", resp.status, resp.error);
+      })
+    }
+  }
+  service.init();
+  return service;
+}])

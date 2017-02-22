@@ -1,13 +1,27 @@
-OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "Data", "StorageService", function($rootScope, $q, $document, $uibModal, Data, StorageService) {
+OWI.controller('HomeCtrl', ["$scope", function($scope) {
+  $scope.getHeroImage = function(id) {
+    return id !== 'all' ? './resources/heroes/' + id + '/portrait.png' : './resources/logo.svg';
+  }
+
+  $scope.getEventImage = function(id) {
+    return './resources/updates/' + id + '/logo.png';
+  }
+}])
+
+OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", function($rootScope, $q, $document, $uibModal, DataService) {
   var vm = this;
   this.preview = false;
-  this.updates = Data.updates;
-  this.heroes = Data.heroes
-  this.selectedUpdate = Data.currentEvent;
   this.currentDate = Date.now();
   this.showSidebar = false;
   this.supportsWebM = true
 
+  DataService.waitForInitialization().then(function(data) {
+    vm.updates = data.updates;
+    vm.heroes = data.heroes
+    vm.selectedUpdate = data.currentEvent;
+  })
+
+  // Check to see if the web browser supports WebM videos
   var v = document.createElement('video')
   if (v.canPlayType) {
     this.supportsWebM = ("" !== v.canPlayType('video/webm; codecs="vp8, opus"') && "" !== v.canPlayType('video/webm; codecs="vp9, opus"'))
@@ -72,13 +86,9 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "Data"
       controllerAs: 'settings'
     });
   };
-
-  this.particles = StorageService.getSetting('particles');
-  var savedData = StorageService.getData();
-  Data.checked = Object.assign({}, Data.checked, savedData);
 }]);
 
-OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "Data", function($rootScope, $uibModalInstance, StorageService, Data) {
+OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $uibModalInstance, StorageService, Data) {
   var vm = this;
   this.particles = StorageService.getSetting('particles');
   this.hdVideos = StorageService.getSetting('hdVideos');
@@ -154,16 +164,14 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   }
 }])
 
-OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "Data", "StorageService", "hero", function($scope, $rootScope, Data, StorageService, hero) {
+OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageService", "hero", function($scope, $rootScope, Data, StorageService, hero) {
   Object.assign(this, hero)
 }])
 
-OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "Data", "StorageService", "event", function($scope, $rootScope, Data, StorageService, event) {
+OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "event", function($scope, $rootScope, Data, StorageService, event) {
   $scope.preview = false;
   $scope.checked = Data.checked[event.id];
   $scope.data = event;
-
-  $scope.checked = Data.checked[$scope.data.id];
 
   $rootScope.$on('selectAll', function() {
     $scope.calculateCosts();

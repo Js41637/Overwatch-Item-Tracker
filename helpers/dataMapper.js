@@ -6,7 +6,7 @@
 const fs = require('fs')
 const { forEach, sortBy } = require('lodash')
 const { EVENTS, EVENTNAMES, EVENTTIMES, allClassEventItems } = require('./dataMapper/EVENTDATA.js')
-const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject, stupidNames } = require('./dataMapper/helpers.js')
+const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject, stupidNames } = require('./dataMapper/utils.js')
 
 var rawData
 try {
@@ -193,6 +193,19 @@ try {
 updates = sortObject(updates, true)
 heroes = sortObject(heroes)
 
+var allData = {
+  currentEvent: 'YEAR_OF_THE_ROOSTER_2017',
+  prices: {
+    'common': 75,
+    'rare': 225,
+    'epic': 750,
+    'legendary': 3000
+  },
+  updates,
+  heroes
+}
+
 // Write new items.json and updates.json files to disk
 fs.writeFileSync(`${__dirname}/../data/items.json`, JSON.stringify(heroes, null, 2), 'utf8')
 fs.writeFileSync(`${__dirname}/../data/updates.json`, JSON.stringify(updates, null, 2), 'utf8')
+fs.writeFileSync(`${__dirname}/../data/master.json`, JSON.stringify(allData, null, 2), 'utf8')

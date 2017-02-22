@@ -5,9 +5,18 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
   $urlMatcherFactoryProvider.strictMode(false);
 
   $stateProvider
+  .state('home', {
+    url: '/',
+    views: {
+      main: {
+        templateUrl: './templates/home.html',
+        controller: 'HomeCtrl'
+      }
+    }
+  })
+
   .state('heroes', {
     url: '/heroes',
-    templateUrl: './templates/heroes.html',
     views: {
       main: {
         templateUrl: './templates/heroes.html',
@@ -19,16 +28,16 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
   .state('hero', {
     url: '/hero/:id',
     resolve: {
-      hero: function($q, Data, $stateParams) {
+      hero: function($q, DataService, $stateParams) {
         var deferred = $q.defer();
-        setTimeout(function() {
-          var hero = Data.heroes[$stateParams.id]
+        DataService.waitForInitialization().then(function(data) {
+          var hero = data.heroes[$stateParams.id];
           if (hero) {
-            deferred.resolve(hero)
+            deferred.resolve(hero);
           } else {
-            deferred.reject("INVALID_HERO")
+            deferred.reject("INVALID_HERO");
           }
-        }, 0);
+        })
         return deferred.promise
       }
     },
@@ -44,18 +53,18 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
   })
 
   .state('update', {
-    url: '/:id',
+    url: '/update/:id',
     resolve: {
-      event: function($q, Data, $stateParams) {
+      event: function($q, DataService, $stateParams) {
         var deferred = $q.defer();
-        setTimeout(function() {
-          var event = Data.updates[$stateParams.id]
+        DataService.waitForInitialization().then(function(data) {
+          var event = data.updates[$stateParams.id];
           if (event) {
-            deferred.resolve(event)
+            deferred.resolve(event);
           } else {
-            deferred.reject("INVALID_EVENT")
+            deferred.reject("INVALID_EVENT");
           }
-        }, 0);
+        })
         return deferred.promise
       }
     },
@@ -73,7 +82,7 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
   $urlRouterProvider.otherwise('/');
 }])
 
-.run(["$rootScope", "$state", "Data", function($rootScope, $state, Data) {
+.run(["$rootScope", "$state", "DataService", function($rootScope, $state, Data) {
   $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
     console.warn(error);
     if (error == 'INVALID_HERO') {

@@ -975,3 +975,98 @@ body {
   background: linear-gradient(rgb(54, 148, 210), rgb(68, 171, 238));
   border-top: 4px solid rgb(74, 227, 248);
 }
+
+#home {
+  max-width: 1700px;
+  margin: 40px auto 0;
+}
+
+#home .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#home #event-gallery > div {
+  width: 165px;
+  padding: 5px;
+}
+
+#home #hero-gallery > div {
+  width: 110px;
+}
+
+#home .gallery > div {
+  position: relative;
+  margin: 8px 5px;
+  border: 2px solid rgb(240, 240, 240);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 100ms ease-in-out;
+}
+
+#home .gallery > div:before {
+  content: "";
+  background-image: url("../../resources/portrait-bg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(3px);
+  z-index: -2;
+}
+
+#home .gallery > div:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: transparent;
+  transition: background 110ms ease-in-out;
+}
+
+#home .gallery > div:hover {
+  transform: scale(1.2);
+  z-index: 5;
+}
+
+#home .gallery > div:hover:after {
+  background: rgb(255, 165, 0);
+}
+
+#home .gallery > div > div {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#home #event-gallery > div > div {
+  height: 150px
+}
+
+#home #hero-gallery > div > div {
+  height: 190px
+}
+
+#home .gallery:first-of-type {
+  margin-bottom: 20px;
+}
+
+#home #hero-gallery h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#home .gallery h2 {
+  text-align: center;
+  font-size: 20px;
+  padding: 2px;
+  background-color: rgba(55, 55, 55,0.8);
+  color: rgb(240, 240, 240);
+}
