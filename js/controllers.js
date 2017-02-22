@@ -1,6 +1,6 @@
 OWI.controller('HomeCtrl', ["$scope", function($scope) {
   $scope.getHeroImage = function(id) {
-    return id !== 'all' ? './resources/heroes/' + id + '/portrait.png' : './resources/logo.svg';
+    return id !== 'all' ? './resources/heroes/' + id + '/icon.png' : './resources/logo.svg';
   }
 
   $scope.getEventImage = function(id) {

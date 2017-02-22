@@ -53,7 +53,7 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
   })
 
   .state('update', {
-    url: '/update/:id',
+    url: '/event/:id',
     resolve: {
       event: function($q, DataService, $stateParams) {
         var deferred = $q.defer();

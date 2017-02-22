@@ -1,0 +1,8 @@
+<div id="sub-header">
+  <div class="homebtn" ui-sref="home">
+    Home
+  </div>
+  <div id="cost-remaining" uib-tooltip="Cost to purchase remaining items" tooltip-placement="bottom">
+    <img src="./resources/credit.png" /> <span count-to="{{cost.remaining}}" duration="0.40" count-from="{{cost.prev}}"></span>
+  </div>
+</div>

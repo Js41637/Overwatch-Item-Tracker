@@ -49,6 +49,14 @@ OWI.directive('legendarySkins', function() {
   }
 })
 
+OWI.directive('subHeader', function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: './templates/sub-header.html'
+  }
+})
+
 // Based off http://sparkalow.github.io/angular-count-to/
 OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
   return {
