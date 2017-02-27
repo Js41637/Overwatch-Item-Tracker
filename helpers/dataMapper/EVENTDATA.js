@@ -15,7 +15,7 @@ const EVENTORDER = {
 
 const EVENTNAMES = {
   [EVENTS.SUMMER16]: 'Summer Games 2016',
-  [EVENTS.HALLOWEEN16]: 'Halloween 2016',
+  [EVENTS.HALLOWEEN16]: 'Halloween Terror 2016',
   [EVENTS.CHRISTMAS16]: 'Winter Wonderland 2016',
   [EVENTS.ROOSTER17]: 'Year of the Rooster 2017'
 }
