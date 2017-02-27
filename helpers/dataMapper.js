@@ -5,8 +5,8 @@
  */
 const fs = require('fs')
 const { forEach, sortBy } = require('lodash')
-const { EVENTS, EVENTNAMES, EVENTTIMES, allClassEventItems } = require('./dataMapper/EVENTDATA.js')
-const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject, stupidNames } = require('./dataMapper/utils.js')
+const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, allClassEventItems } = require('./dataMapper/EVENTDATA.js')
+const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject, stupidNames, qualityOrder } = require('./dataMapper/utils.js')
 
 var rawData
 try {
@@ -93,8 +93,6 @@ data.forEach(({ hero, items: itemGroups }) => {
   heroes[heroID] = heroData
 })
 heroes = sortObject(heroes)
-
-
 
 // Go through every heros items and create a seperate object containing every item added in events
 var updates = {}
@@ -192,6 +190,17 @@ try {
 // Sorts Updates object by the order of events and heroes alphabetically.
 updates = sortObject(updates, true)
 heroes = sortObject(heroes)
+
+// go through all hero items and sort items as they are sorted ingame
+forEach(heroes, hero => forEach(hero.items, (items, type) => {
+  hero.items[type] = sortBy(items, [
+      'standardItem', // Standard items first
+      (a => qualityOrder[a.quality]), // sort by quality. rare, epic, legendary
+      (c => c.achievement ? 1 : 0), // achievement items (origins edition/blizzcon) go at the bottom
+      (b => EVENTORDER[b.event]), // event items go below normal items
+      'name' // everything in their respective groups is sorted by name
+    ])
+}))
 
 var allData = {
   currentEvent: 'YEAR_OF_THE_ROOSTER_2017',

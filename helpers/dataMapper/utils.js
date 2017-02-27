@@ -5,6 +5,13 @@ const stupidNames = {
   ";)": "winky-face"
 }
 
+const qualityOrder = {
+  'common': 0,
+  'rare': 1,
+  'epic': 2,
+  'legendary': 3
+}
+
 const qualities = ['common', 'epic', 'rare', 'legendary']
 const types = [
   { m: 'skin', name: 'skins' },
@@ -117,4 +124,4 @@ const sortObject = (o, update) => {
   return sorted
 }
 
-module.exports = { getCleanID, getClassForHero, getItemType, getImageURL, sortObject, stupidNames }
+module.exports = { getCleanID, getClassForHero, getItemType, getImageURL, sortObject, stupidNames, qualityOrder }

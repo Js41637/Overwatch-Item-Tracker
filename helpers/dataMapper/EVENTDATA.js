@@ -5,6 +5,14 @@ const EVENTS = {
   ROOSTER17: 'YEAR_OF_THE_ROOSTER_2017'
 }
 
+const EVENTORDER = {
+  undefined: 0,
+  [EVENTS.SUMMER16]: 1,
+  [EVENTS.HALLOWEEN16]: 2,
+  [EVENTS.CHRISTMAS16]: 3,
+  [EVENTS.ROOSTER17]: 4
+}
+
 const EVENTNAMES = {
   [EVENTS.SUMMER16]: 'Summer Games 2016',
   [EVENTS.HALLOWEEN16]: 'Halloween 2016',
@@ -49,4 +57,4 @@ const allClassEventItems = {
 }
 
 
-module.exports = { EVENTS, EVENTNAMES, EVENTTIMES, allClassEventItems }
+module.exports = { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, allClassEventItems }
