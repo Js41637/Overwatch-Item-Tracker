@@ -96,7 +96,7 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', 
 OWI.run(function() {
   var settings = angular.fromJson(localStorage.getItem('settings')) || {};
   var theme = settings.currentTheme || 'standard';
-  var styles = ['main.css', 'events.css']
+  var styles = ['events.css']
   styles.forEach(function(style) {
     var url = './css/' + (theme == 'standard' ? style : 'themes/' + theme + '/' + style)
     var newElm = document.createElement('link');

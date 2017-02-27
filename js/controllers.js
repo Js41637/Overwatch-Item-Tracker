@@ -18,7 +18,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   DataService.waitForInitialization().then(function(data) {
     vm.updates = data.updates;
     vm.heroes = data.heroes
-    vm.selectedUpdate = data.currentEvent;
+    vm.selectedUpdate = '';
   })
 
   // Check to see if the web browser supports WebM videos
