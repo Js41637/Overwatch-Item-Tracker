@@ -53,7 +53,7 @@
 }
 
 #hero-container .hero-items .section .item {
-  font-size: 26px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   padding: 5px 2px;
@@ -62,6 +62,8 @@
   cursor: pointer;
   background-color: rgba(40, 53, 79, 0.6);
   position: relative;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
 }
 
 #hero-container .hero-items .section .item h3 {
@@ -73,7 +75,6 @@
   font-size: 18px;
   margin-left: 5px;
   padding-top: 3px;
-  font-family: Futura, century gothic, arial, sans-serif;
 }
 
 #hero-container .hero-items .section .item label {
