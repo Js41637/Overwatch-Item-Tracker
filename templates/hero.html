@@ -1,14 +1,29 @@
 <sub-header></sub-header>
-<div id="hero-container" class="item-container">
-  <div ng-repeat="(type, items) in hero.items track by $index" id="{{type}}" class="section">
-    <div class="section-header">
-      <h2>{{type}}</h2>
+
+<div id="hero-container">
+  <div id="hero-header">
+    <div class="hero-overview">
+      <div class="hero-image">
+        <img src="{{ hero.id | heroPortraitUrl }}" />
+      </div>
+      <div class="hero-info">
+        <h2 class="hero-name">{{hero.name}}</h2>
+        <h3 class="hero-class">{{hero.class}}</h2>
+      </div>
     </div>
-    <div class="item" class="{{item.quality || 'unknown'}}" ng-repeat="item in items track by $index">
-      <input type="checkbox" id="{{type + item.id}}">
-      <label for="{{type + item.id}}">
-        <h3>{{item.name}}</h3>
-      </label>
+  </div>
+  <div class="hero-items">
+    <div ng-repeat="(type, items) in hero.items track by $index" id="{{type}}" class="section">
+      <div class="section-header">
+        <h2>{{type}}</h2>
+      </div>
+      <div class="item" class="{{item.quality || 'unknown'}}" ng-repeat="item in items track by $index">
+        <input type="checkbox" id="{{type + item.id}}">
+        <label for="{{type + item.id}}">
+          <h3 class="color-{{item.quality}}">{{item.name}}</h3>
+          <small class="color-cost">{{ item.quality | itemPrice:type:item.event:item.standardItem:item.achievement }}</small>
+        </label>
+      </div>
     </div>
   </div>
 </div>

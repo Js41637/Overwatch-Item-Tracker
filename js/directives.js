@@ -1,26 +1,25 @@
 OWI.filter('heroPortraitUrl', function () {
-  var specialHeroes = {
-    'd.va': 'dva',
-    'lúcio': 'lucio',
-    'soldier: 76': 'soldier-76',
-    'torbjörn': 'torbjorn'
-  }
   return function(hero) {
-    hero = hero.toLowerCase();
-    return './resources/heroes/' + (specialHeroes[hero] || hero) + '/portrait.png';
+    return './resources/heroes/' + hero + '/portrait.png';
+  }
+});
+
+OWI.filter('heroIconUrl', function () {
+  return function(hero) {
+    return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + '/icon.png';
   }
 });
 
 OWI.filter('itemPrice', function () {
-  return function(quality, type, eventItem) {
+  return function(quality, type, event, isStandard, isAchievement) {
     // quality is one of: legendary, epic, rare, common, ''
     // some icons have a character, quality and hence price assigned even though they are not buyable
-    if (type == 'icon') return '';
+    if (isStandard || isAchievement || type == 'icons' || (event && event == 'SUMMER_GAMES_2016')) return '';
 
     var prices = { common: 25, rare: 75, epic: 250, legendary: 1000 };
 
     if (quality && prices[quality]) {
-      return '(' + prices[quality] * (eventItem ? 3 : 1) + ')';
+      return '(' + prices[quality] * (event ? 3 : 1) + ')';
     }
     return '';
   }

@@ -1,0 +1,93 @@
+#hero-container {
+  padding: 10px 40px 0;
+}
+
+#hero-container .hero-overview {
+  display: flex;
+}
+
+#hero-container .hero-overview .hero-image {
+  height: 230px;
+  border: 6px solid rgb(230, 230, 230);
+  box-sizing: border-box;
+}
+
+#hero-container .hero-overview .hero-image img {
+  height: 100%;
+}
+
+#hero-container .hero-overview .hero-info {
+  margin-left: 5px;
+}
+
+#hero-container .hero-overview .hero-name {
+  font-size: 70px;
+}
+
+#hero-container .hero-overview .hero-class {
+  font-size: 40px;
+}
+
+#hero-container .hero-items {
+  margin-top: 5px;
+  column-count: 3;
+  column-gap: 0;
+}
+
+#hero-container .hero-items .section {
+  break-inside: avoid;
+  padding: 10px;
+}
+
+#hero-container .hero-items .section-header {
+  margin-bottom: 4px;
+}
+
+#hero-container .hero-items .section-header h2 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+#hero-container .hero-items .section .item {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  padding: 5px 2px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: rgba(40, 53, 79, 0.6);
+
+}
+
+#hero-container .hero-items .section .item h3 {
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  letter-spacing: 0.6;
+}
+
+#hero-container .hero-items .section .item small {
+  font-size: 18px;
+  margin-left: 5px;
+  padding-top: 3px;
+  font-family: Futura, century gothic, arial, sans-serif;
+}
+
+#hero-container .hero-items .section .item label {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+}
+
+#hero-container .hero-items .section .item input {
+  height: 24px;
+  margin: 1px 4px;
+  float: left;
+  cursor: pointer;
+  min-width: 23px;
+}
+
+#hero-container .hero-items #sprays .item {
+  width: 49.7%;
+  display: inline-flex;
+  margin-right: 1px;
+}
