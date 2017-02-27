@@ -11,10 +11,10 @@ OWI.filter('heroIconUrl', function () {
 });
 
 OWI.filter('itemPrice', function () {
-  return function(quality, type, event, isStandard, isAchievement) {
-    // quality is one of: legendary, epic, rare, common, ''
-    // some icons have a character, quality and hence price assigned even though they are not buyable
-    if (isStandard || isAchievement || type == 'icons' || (event && event == 'SUMMER_GAMES_2016')) return '';
+  return function(item, type) {
+    var event = item.event
+    var quality = item.quality
+    if (item.standardItem || item.achievement || type == 'icons' || (event && event == 'SUMMER_GAMES_2016')) return '';
 
     var prices = { common: 25, rare: 75, epic: 250, legendary: 1000 };
 

@@ -17,11 +17,11 @@
       <div class="section-header">
         <h2>{{type}}</h2>
       </div>
-      <div class="item" class="{{item.quality || 'unknown'}}" ng-repeat="item in items track by $index">
+      <div class="item" class="{{item.quality || 'unknown'}}" event="{{item.event}}" achievement="{{item.achievement}}" ng-repeat="item in items track by $index">
         <input type="checkbox" id="{{type + item.id}}">
         <label for="{{type + item.id}}">
           <h3 class="color-{{item.quality}}">{{item.name}}</h3>
-          <small class="color-cost">{{ item.quality | itemPrice:type:item.event:item.standardItem:item.achievement }}</small>
+          <small class="color-cost">{{ item | itemPrice:type }}</small>
         </label>
       </div>
     </div>

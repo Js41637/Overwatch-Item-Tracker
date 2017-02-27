@@ -4,10 +4,11 @@
 
 #hero-container .hero-overview {
   display: flex;
+  justify-content: center;
 }
 
 #hero-container .hero-overview .hero-image {
-  height: 230px;
+  height: 200px;
   border: 6px solid rgb(230, 230, 230);
   box-sizing: border-box;
 }
@@ -18,19 +19,22 @@
 
 #hero-container .hero-overview .hero-info {
   margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #hero-container .hero-overview .hero-name {
-  font-size: 70px;
+  font-size: 90px;
 }
 
 #hero-container .hero-overview .hero-class {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #hero-container .hero-items {
   margin-top: 5px;
-  column-count: 3;
+  column-width: 530px;
   column-gap: 0;
 }
 
@@ -57,7 +61,7 @@
   box-sizing: border-box;
   cursor: pointer;
   background-color: rgba(40, 53, 79, 0.6);
-
+  position: relative;
 }
 
 #hero-container .hero-items .section .item h3 {
@@ -90,4 +94,47 @@
   width: 49.7%;
   display: inline-flex;
   margin-right: 1px;
+}
+
+#hero-container .section .item[event="HALLOWEEN_2016"],
+#hero-container .section .item[event="SUMMER_GAMES_2016"],
+#hero-container .section .item[event="WINTER_WONDERLAND_2016"],
+#hero-container .section .item[event="YEAR_OF_THE_ROOSTER_2017"],
+#hero-container .section .item[achievement="true"] {
+  padding-right: 35px;
+}
+
+#hero-container .item[event="HALLOWEEN_2016"]:after,
+#hero-container .item[event="SUMMER_GAMES_2016"]:after,
+#hero-container .item[event="WINTER_WONDERLAND_2016"]:after,
+#hero-container .item[event="YEAR_OF_THE_ROOSTER_2017"]:after,
+#hero-container .item[achievement="true"]:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 14px;
+}
+
+#hero-container .item[event="HALLOWEEN_2016"]:after {
+  background-image: url("../resources/icons/halloween.png");
+  margin-top: 2px;
+}
+
+#hero-container .item[event="SUMMER_GAMES_2016"]:after {
+  background-image: url("../resources/icons/summer-games.png");
+}
+
+#hero-container .item[event="WINTER_WONDERLAND_2016"]:after {
+  background-image: url("../resources/icons/winter-wonderland.png");
+}
+
+#hero-container .item[event="YEAR_OF_THE_ROOSTER_2017"]:after {
+  background-image: url("../resources/icons/year-of-the-rooster.png");
+}
+
+#hero-container .section:not(#sprays) .item[achievement="true"]:after {
+  background-image: url("../resources/icons/blizzard.png");
 }
