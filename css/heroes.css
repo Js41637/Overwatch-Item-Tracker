@@ -187,7 +187,7 @@
 
 /* Highlight Intro videos are 16:9 */
 
-#hero-container .section .tooltip .preview.video.intros {
+#hero-container #intros .tooltip .preview.video {
   width: 640px;
   height: 360px;
 }
@@ -195,7 +195,7 @@
 
 /* Emote videos should be 1:1 */
 
-#hero-container .section .tooltip .preview.video.emotes {
+#hero-container #emotes .tooltip .preview.video {
   width: 450px;
   height: 450px;
 }

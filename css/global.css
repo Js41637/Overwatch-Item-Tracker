@@ -933,17 +933,22 @@ strong {
   font-size: 45px;
 }
 
-.hero-nav .gallery>div {
+#hero-nav {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#hero-nav .gallery>div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.hero-nav .gallery:first-of-type {
+#hero-nav .gallery:first-of-type {
   margin-bottom: 20px;
 }
 
-.hero-nav .gallery h2 {
+#hero-nav .gallery h2 {
   text-align: center;
   font-size: 20px;
   padding: 6px;
@@ -951,7 +956,7 @@ strong {
   color: rgb(45, 52, 70);
 }
 
-.hero-nav .gallery .block {
+#hero-nav .gallery .block {
   position: relative;
   margin: 5px;
   border: 2px solid rgb(240, 240, 240);
@@ -962,43 +967,48 @@ strong {
   background-size: cover;
 }
 
-.hero-nav .gallery .block:hover {
-  transform: scale(1.1);
-  z-index: 5;
-}
-
-.hero-nav .gallery .block .img {
+#hero-nav .gallery .block .img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transform: skew(-25rad) translateX(-5px);
 }
 
-.hero-nav #event-gallery .block {
+#hero-nav .gallery.event .block {
   width: 165px;
 }
 
-.hero-nav #event-gallery .block .img {
+#hero-nav .gallery.event .block:hover {
+  transform: scale(1.1);
+  z-index: 5;
+}
+
+#hero-nav .gallery.event .block .img {
   height: 100px;
   transform: none;
   margin: 6px;
 }
 
-.hero-nav #hero-gallery .block {
+#hero-nav .gallery.hero .block {
   width: 91px;
   overflow: hidden;
   transform: skewX(25rad);
   height: 123px;
 }
 
-.hero-nav #hero-gallery .block .img {
+#hero-nav .gallery.hero .block:hover {
+  transform: scale(1.1) skewX(25rad);
+  z-index: 5;
+}
+
+#hero-nav .gallery.hero .block .img {
   width: calc(100% + 10px);
   height: calc(100% - 32px);
   background-size: auto 100%;
   background-position: 50% 50%;
 }
 
-.hero-nav #hero-gallery .block:hover .img {
+#hero-nav .gallery.hero .block:hover .img {
   background-color: rgb(255, 165, 0);
 }
 

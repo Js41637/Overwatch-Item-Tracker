@@ -16,6 +16,12 @@ OWI.filter('heroIconUrl', function () {
   }
 });
 
+OWI.filter('eventImageUrl', function () {
+  return function(event) {
+    return './resources/updates/' + event + '/logo.png';
+  }
+});
+
 OWI.filter('itemPrice', function () {
   return function(item, type) {
     var event = item.event
