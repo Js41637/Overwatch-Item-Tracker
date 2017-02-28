@@ -9,8 +9,6 @@
 
 #hero-container .hero-overview .hero-image {
   height: 200px;
-  border: 6px solid rgb(230, 230, 230);
-  box-sizing: border-box;
 }
 
 #hero-container .hero-overview .hero-image img {
@@ -25,15 +23,16 @@
 }
 
 #hero-container .hero-overview .hero-name {
-  font-size: 90px;
+  font-size: 120px;
+  color: #fff;
+  margin-bottom: -20px;
 }
 
 #hero-container .hero-overview .hero-class {
-  font-size: 30px;
+  font-size: 48px;
 }
 
 #hero-container .hero-items {
-  margin-top: 5px;
    -webkit-column-width: 530px;
       -moz-column-width: 530px;
            column-width: 530px;

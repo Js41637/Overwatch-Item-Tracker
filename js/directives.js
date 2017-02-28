@@ -1,3 +1,9 @@
+OWI.filter('heroCareerPortraitUrl', function () {
+  return function(hero) {
+    return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + '/career-portrait.png';
+  }
+});
+
 OWI.filter('heroPortraitUrl', function () {
   return function(hero) {
     return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + '/portrait.png';
@@ -7,12 +13,6 @@ OWI.filter('heroPortraitUrl', function () {
 OWI.filter('heroIconUrl', function () {
   return function(hero) {
     return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + '/icon.png';
-  }
-});
-
-OWI.filter('eventImageUrl', function () {
-  return function(event) {
-    return './resources/updates/' + event + '/logo.png';
   }
 });
 
@@ -96,12 +96,6 @@ OWI.directive('heroNav', function() {
     templateUrl: './templates/hero-nav.html'
   }
 })
-
-OWI.filter('eventImageUrl', function () {
-  return function(event) {
-    return './resources/updates/' + event + '/logo.png';
-  }
-});
 
 // Based off http://sparkalow.github.io/angular-count-to/
 OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
