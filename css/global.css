@@ -1021,3 +1021,46 @@ strong {
   right: 0;
   z-index: 1000;
 }
+
+.menutoggle {
+  border-radius: 4px;
+  background: orange;
+  padding: 3px;
+  transform: skewX(25rad);
+  padding-right: 8px;
+}
+
+.menutoggle:hover {
+  background: rgb(247, 179, 53);
+}
+
+.menutoggle .block {
+  position: relative;
+  display: inline-block;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 4px;
+  transition: background 100ms ease-in-out, transform 100ms ease-in-out;
+  background: url("../resources/body-bg.jpg") no-repeat top;
+  background-size: cover;
+  width: 29px;
+  overflow: hidden;
+  transform: skewX(0);
+  height: 31px;
+  vertical-align: middle;
+}
+
+.menutoggle .block .img {
+  background-repeat: no-repeat;
+  transform: skew(-25rad) translateX(-5px);
+  width: calc(100% + 10px);
+  height: calc(100%);
+  background-size: auto 100%;
+  background-position: 50% 50%;
+}
+
+.menutoggle h2 {
+  display: inline-block;
+  margin-left: 4px;
+  transform: skewX(-25rad);
+  vertical-align: middle;
+}
