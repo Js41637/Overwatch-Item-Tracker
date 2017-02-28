@@ -83,6 +83,14 @@ OWI.directive('subHeader', function() {
   }
 })
 
+OWI.directive('heroNav', function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: './templates/hero-nav.html'
+  }
+})
+
 // Based off http://sparkalow.github.io/angular-count-to/
 OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
   return {
