@@ -1,6 +1,6 @@
 OWI.filter('heroPortraitUrl', function () {
   return function(hero) {
-    return './resources/heroes/' + hero + '/portrait.png';
+    return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + '/portrait.png';
   }
 });
 
@@ -25,7 +25,6 @@ OWI.filter('itemPrice', function () {
   }
 })
 
-
 OWI.directive("scroll", function ($window) {
   return function($scope) {
     angular.element($window).bind("scroll", function() {
@@ -35,6 +34,34 @@ OWI.directive("scroll", function ($window) {
     });
   };
 });
+
+OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService) {
+  return {
+    restrict: 'E',
+    replace: true,
+    scope: {
+      item: '=data',
+      type: '=type',
+      hero: '=hero',
+      supportsWebM: '=support'
+    },
+    templateUrl: './templates/tooltip-image-preview.html',
+    link: function($scope) {
+      var item = angular.copy($scope.item);
+      item.type = $scope.type;
+      if (item.type == 'intros' || item.type == 'emotes') {
+        item.video = '/resources/heroes/' + $scope.hero + '/' + item.type + '/' + item.id + '.webm'
+      } else {
+        item.img = '/resources/heroes/' + $scope.hero + '/' + item.type + '/' + item.id + (item.type == 'sprays' || item.type == 'icons' ? '.png' : '.jpg')
+      }
+
+      if (StorageService.getSetting('hdVideos') && item.video) {
+        item.video = item.video.replace('.webm', '-hd.webm');
+      }
+      $scope.preview = item;
+    }
+  }
+}])
 
 OWI.directive('legendarySkins', function() {
   return {

@@ -17,13 +17,26 @@
       <div class="section-header">
         <h2>{{type}}</h2>
       </div>
-      <div class="item" class="{{item.quality || 'unknown'}}" event="{{item.event}}" achievement="{{item.achievement}}" ng-repeat="item in items track by $index">
+      <div
+        class="item {{item.quality || 'unknown'}}"
+        event="{{item.event}}"
+        achievement="{{item.achievement}}"
+        uib-tooltip-template="'imagePreviewTemplate.html'"
+        tooltip-popup-delay="175"
+        tooltip-enable="type !== 'voicelines'"
+        tooltip-placement="auto"
+        ng-repeat="item in items track by $index">
         <input type="checkbox" id="{{type + item.id}}">
         <label for="{{type + item.id}}">
-          <h3 class="color-{{item.quality}}">{{item.name}}</h3>
+          <h3 class="color-{{item.quality || 'common'}}">{{item.name}}</h3>
           <small class="color-cost">{{ item | itemPrice:type }}</small>
         </label>
       </div>
     </div>
   </div>
 </div>
+
+
+<script type="text/ng-template" id="imagePreviewTemplate.html">
+  <tooltip-image-preview data="item" type="type" hero="hero.id" support="$ctrl.supportsWebM"></image-preview>
+</script>
