@@ -1,4 +1,4 @@
-var OWI = angular.module('OWI', ['ui.router', 'ui.bootstrap'])
+var OWI = angular.module('OWI', ['ui.router', 'ui.bootstrap', 'ngAnimate'])
 
 OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', '$urlRouterProvider', function($compileProvider, $urlMatcherFactoryProvider, $stateProvider, $urlRouterProvider) {
   $compileProvider.debugInfoEnabled(false);

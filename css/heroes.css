@@ -2,6 +2,10 @@
   padding: 10px 40px 0;
 }
 
+#hero-container #hero-header {
+  border-bottom: 8px solid;
+}
+
 #hero-container .hero-overview {
   display: flex;
   justify-content: center;

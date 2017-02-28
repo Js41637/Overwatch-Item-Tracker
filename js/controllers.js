@@ -6,6 +6,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   this.currentDate = Date.now();
   this.showSidebar = false;
   this.supportsWebM = true
+  this.showNav = false;
 
   DataService.waitForInitialization().then(function(data) {
     vm.updates = data.updates;
@@ -23,6 +24,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
 
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
     vm.selectedUpdate = toParams.id;
+    vm.showNav = false;
   });
 
   // Fired when the sidebar is open on every click, checks if a click was made

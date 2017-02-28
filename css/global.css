@@ -936,6 +936,7 @@ strong {
 #hero-nav {
   max-width: 1600px;
   margin: 0 auto;
+  padding: 8px;
 }
 
 #hero-nav .gallery>div {
@@ -1014,5 +1015,9 @@ strong {
 
 #menuNav {
   background: rgb(45, 45, 45);
-  padding: 8px 0;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }

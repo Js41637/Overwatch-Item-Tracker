@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./css/heroes.css">
   <base href="/">
   <script src="./js/vendor/angular.min.js"></script>
+  <script src="./js/vendor/angular-animate.min.js"></script>
   <script src="./js/vendor/angular-ui-router.min.js"></script>
   <script src="./js/vendor/ui-bootstrap.min.js"></script>
   <script src="./js/vendor/particles.min.js"></script>
@@ -23,6 +24,7 @@
       <h1>Overwatch Item Tracker</h1>
 
       <div ui-view="header" class="header-content"></div>
+        <h2 ng-click="$ctrl.showNav = !$ctrl.showNav" style="cursor:pointer">TOGGLE NAV</h1>
     </div>
     <div class="right">
       <div class="icon settings-icon" ng-click="$ctrl.openSettings()" uib-tooltip="Settings" tooltip-placement="left">
@@ -47,6 +49,9 @@
   </div>
   <!--<Particles ng-if="::$ctrl.particles"></Particles>-->
 
+  <div id="menuNav" uib-collapse="!$ctrl.showNav">
+    <hero-nav></hero-nav>
+  </div>
 
   <div id="sidebar" ng-class="{open: $ctrl.showSidebar}">
     <div class="sidebar-group home">
@@ -68,10 +73,6 @@
         </ul>
       </div>
     </div>
-  </div>
-
-  <div id="menuNav" collapsed="collapsed" ng-click="collapsed = !collapsed">
-    <hero-nav></hero-nav>
   </div>
 
   <div ui-view="main"></div>
