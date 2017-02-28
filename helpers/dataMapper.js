@@ -210,11 +210,11 @@ var allData = {
     'epic': 750,
     'legendary': 3000
   },
-  updates,
+  events: updates,
   heroes
 }
 
 // Write new items.json and updates.json files to disk
 fs.writeFileSync(`${__dirname}/../data/items.json`, JSON.stringify(heroes, null, 2), 'utf8')
-fs.writeFileSync(`${__dirname}/../data/updates.json`, JSON.stringify(updates, null, 2), 'utf8')
+fs.writeFileSync(`${__dirname}/../data/events.json`, JSON.stringify(updates, null, 2), 'utf8')
 fs.writeFileSync(`${__dirname}/../data/master.json`, JSON.stringify(allData, null, 2), 'utf8')

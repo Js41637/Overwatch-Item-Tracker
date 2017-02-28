@@ -52,7 +52,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
       initialized: true,
       checked: {}
     }
-    Object.keys(data.updates).forEach(function(event) {
+    Object.keys(data.events).forEach(function(event) {
       out.checked[event] = JSON.parse(items)
     })
     Object.assign(out.checked, storedData)

@@ -1,16 +1,16 @@
 <div class="event-selector btn-group" uib-dropdown>
   <button id="event-selector-button" type="button" class="btn" uib-dropdown-toggle>
-    {{$ctrl.updates[$ctrl.selectedUpdate].name}} <span class="caret"></span>
+    {{$ctrl.item.name}} <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" uib-dropdown-menu role="menu">
-    <li ng-repeat="update in $ctrl.updates track by $index"><a href="#" ui-sref="update({ id: update.id })">{{update.name}}</a></li>
+    <li ng-repeat="event in $ctrl.events track by $index"><a href="#" ui-sref="events({ id: event.id })">{{event.name}}</a></li>
   </ul>
 </div>
-<div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end > $ctrl.currentDate" class="event-active">
-  <h2>Event ends on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d'}} local time</h2>
-  <h3>Be sure to get everything you want by {{$ctrl.updates[$ctrl.selectedUpdate].dates.end - 86400000 | date:'MMM d'}} to be safe!</h3>
+<div ng-show="$ctrl.item.dates.end > $ctrl.currentDate" class="event-active">
+  <h2>Event ends on {{$ctrl.item.dates.end | date:'MMM d'}} local time</h2>
+  <h3>Be sure to get everything you want by {{$ctrl.item.dates.end - 86400000 | date:'MMM d'}} to be safe!</h3>
 </div>
-<div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end < $ctrl.currentDate" class="event-ended">
-  <h2>Event ended on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d yyyy'}}  local time</h2>
-  <h3>These items should be available again around {{$ctrl.updates[$ctrl.selectedUpdate].dates.start | date:'MMM d'}} next year</h3>
+<div ng-show="$ctrl.item.dates.end < $ctrl.currentDate" class="event-ended">
+  <h2>Event ended on {{$ctrl.item.dates.end | date:'MMM d yyyy'}}  local time</h2>
+  <h3>These items should be available again around {{$ctrl.item.dates.start | date:'MMM d'}} next year</h3>
 </div>

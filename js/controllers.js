@@ -11,7 +11,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   this.showNav = false;
 
   DataService.waitForInitialization().then(function(data) {
-    vm.updates = data.updates;
+    vm.events = data.events;
     vm.heroes = data.heroes
     vm.selectedUpdate = '';
   })
@@ -25,7 +25,14 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   }
 
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
-    vm.selectedUpdate = toParams.id;
+    if (toState.name == 'events') {
+      vm.item = vm.events[toParams.id];
+    } else if (toState.name == 'heroes') {
+      vm.item = vm.heroes[toParams.id];
+    } else {
+      vm.item = {};
+    }
+    console.log(vm.item)
     vm.showNav = false;
   });
 
@@ -147,9 +154,9 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   }
 
   this.selectAll = function() {
-    Object.keys(Data.updates).forEach(function(key) {
-      var update = Data.updates[key]
-      Object.keys(Data.updates[key].items).forEach(function(type) {
+    Object.keys(Data.events).forEach(function(key) {
+      var update = Data.events[key]
+      Object.keys(Data.events[key].items).forEach(function(type) {
         update.items[type].forEach(function(item) {
           Data.checked[update.id][type][item.id] = true;
         });
@@ -173,12 +180,6 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
     $scope.calculateCosts();
     $scope.calculatePerHeroProgress();
   })
-
-  $scope.viewMode = StorageService.getSetting('viewMode') || 'item-type';
-  $scope.saveViewMode = function (viewMode) {
-    $scope.viewMode = viewMode;
-    StorageService.setSetting('viewMode', viewMode);
-  }
 
   $scope.onSelect = function() {
     Data.checked[$scope.data.id] = $scope.checked;
@@ -245,78 +246,4 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
       $scope.$digest();
     }, 150);
   };
-
-  // Data for predetermined hero view
-  $scope.availableHeroes = [];
-  $scope.selectedHero = '';
-  $scope.hasGlobalItems = false;
-  $scope.perHeroProgress = {};
-  determineAvailableHeroes();
-
-  $scope.setSelectedHero = function(hero) {
-    $scope.selectedHero = hero;
-  }
-  $scope.selectedHeroHas = function(type) {
-    var possibleItems = [];
-
-    // Shortcut to prevent error with misattributed player icons eg winston-yeti (should have no hero: and allClass: set)
-    if (type == 'icons') {
-      return $scope.selectedHero == 'global';
-    }
-
-    if (type == 'skins') {
-      possibleItems = $scope.data.items.skinsLegendary.concat($scope.data.items.skinsEpic);
-    } else {
-      possibleItems = $scope.data.items[type];
-    }
-
-    var hasItem = false;
-
-    possibleItems.forEach(function(item) {
-      if ($scope.selectedHero == 'global' && !item.hero) hasItem = true;
-      else if (item.hero == $scope.selectedHero) hasItem = true;
-    });
-
-    return hasItem;
-  }
-
-  $scope.calculatePerHeroProgress = function() {
-    var progress = {};
-    setProgress('global');
-    $scope.availableHeroes.forEach(setProgress);
-
-    $scope.perHeroProgress = progress;
-
-    function setProgress(hero) {
-      progress[hero] = { total: 0, current: 0 };
-      Object.keys($scope.data.items).forEach(function(type) {
-        $scope.data.items[type].forEach(function(item) {
-          if (item.hero == hero) {
-            progress[hero].total++;
-            if (StorageService.isItemChecked($scope.data.id, type, item.id)) progress[hero].current++;
-          } else if (!item.hero && hero == 'global') {
-            progress.global.total++;
-            if (StorageService.isItemChecked($scope.data.id, type, item.id)) progress.global.current++;
-          }
-        })
-      })
-    }
-  }
-
-  $scope.calculatePerHeroProgress();
-
-  function determineAvailableHeroes() {
-    var heroes = {};
-    Object.keys($scope.data.items).forEach(function(type) {
-      $scope.data.items[type].forEach(function(item) {
-        if (item.hero) {
-          heroes[item.hero] = true;
-        } else {
-          $scope.hasGlobalItems = true;
-        }
-      });
-    });
-    $scope.availableHeroes = Object.keys(heroes).sort();
-    $scope.selectedHero = $scope.hasGlobalItems ? 'global' : $scope.availableHeroes[0];
-  }
 }]);

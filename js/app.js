@@ -17,17 +17,7 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$animateProvider'
   })
 
   .state('heroes', {
-    url: '/heroes',
-    views: {
-      main: {
-        templateUrl: './templates/heroes.html',
-        controller: 'HeroesCtrl'
-      }
-    }
-  })
-
-  .state('hero', {
-    url: '/hero/:id',
+    url: '/heroes/:id',
     resolve: {
       hero: function($q, DataService, $stateParams) {
         var deferred = $q.defer();
@@ -53,13 +43,13 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$animateProvider'
     }
   })
 
-  .state('update', {
-    url: '/event/:id',
+  .state('events', {
+    url: '/events/:id',
     resolve: {
       event: function($q, DataService, $stateParams) {
         var deferred = $q.defer();
         DataService.waitForInitialization().then(function(data) {
-          var event = data.updates[$stateParams.id];
+          var event = data.events[$stateParams.id];
           if (event) {
             deferred.resolve(event);
           } else {
@@ -87,9 +77,9 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$animateProvider'
   $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
     console.warn(error);
     if (error == 'INVALID_HERO') {
-      $state.go('hero', { id: 'all' })
+      $state.go('home')
     } else {
-      $state.go('update', { id: Data.currentEvent })
+      $state.go('event', { id: Data.currentEvent })
     }
   });
 }])
