@@ -2,7 +2,7 @@
   <div class="gallery" id="event-gallery">
     <div>
       <div class="block" ng-repeat="event in $ctrl.updates track by $index" ui-sref="update({id: event.id})">
-        <div class="img" lazy-background="{{getEventImage(event.id)}}"></div>
+        <div class="img" lazy-background="{{event.id | eventImageUrl}}"></div>
       </div>
     </div>
   </div>

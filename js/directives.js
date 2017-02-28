@@ -10,6 +10,12 @@ OWI.filter('heroIconUrl', function () {
   }
 });
 
+OWI.filter('eventImageUrl', function () {
+  return function(event) {
+    return './resources/updates/' + event + '/logo.png';
+  }
+});
+
 OWI.filter('itemPrice', function () {
   return function(item, type) {
     var event = item.event
@@ -90,6 +96,12 @@ OWI.directive('heroNav', function() {
     templateUrl: './templates/hero-nav.html'
   }
 })
+
+OWI.filter('eventImageUrl', function () {
+  return function(event) {
+    return './resources/updates/' + event + '/logo.png';
+  }
+});
 
 // Based off http://sparkalow.github.io/angular-count-to/
 OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {

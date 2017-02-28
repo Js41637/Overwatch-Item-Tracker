@@ -933,17 +933,17 @@ strong {
   font-size: 45px;
 }
 
-#home .gallery>div {
+.hero-nav .gallery>div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#home .gallery:first-of-type {
+.hero-nav .gallery:first-of-type {
   margin-bottom: 20px;
 }
 
-#home .gallery h2 {
+.hero-nav .gallery h2 {
   text-align: center;
   font-size: 20px;
   padding: 6px;
@@ -951,7 +951,7 @@ strong {
   color: rgb(45, 52, 70);
 }
 
-#home .gallery .block {
+.hero-nav .gallery .block {
   position: relative;
   margin: 5px;
   border: 2px solid rgb(240, 240, 240);
@@ -962,39 +962,47 @@ strong {
   background-size: cover;
 }
 
-#home .gallery .block:hover {
+.hero-nav .gallery .block:hover {
   transform: scale(1.1);
   z-index: 5;
-  background: rgb(255, 165, 0);
 }
 
-#home .gallery .block .img {
+.hero-nav .gallery .block .img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transform: skew(-25rad) translateX(-5px);
 }
 
-#home #event-gallery .block {
+.hero-nav #event-gallery .block {
   width: 165px;
-  padding: 5px;
 }
 
-#home #event-gallery .block .img {
+.hero-nav #event-gallery .block .img {
   height: 100px;
   transform: none;
+  margin: 6px;
 }
 
-#home #hero-gallery .block {
+.hero-nav #hero-gallery .block {
   width: 91px;
   overflow: hidden;
   transform: skewX(25rad);
   height: 123px;
 }
 
-#home #hero-gallery .block .img {
+.hero-nav #hero-gallery .block .img {
   width: calc(100% + 10px);
   height: calc(100% - 32px);
   background-size: auto 100%;
   background-position: 50% 50%;
+}
+
+.hero-nav #hero-gallery .block:hover .img {
+  background-color: rgb(255, 165, 0);
+}
+
+#menuNav {
+  background: rgb(45, 45, 45);
+  padding: 8px 0;
 }

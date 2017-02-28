@@ -21,6 +21,7 @@
     <div class="left">
       <img uib-tooltip="Boop" tooltip-placement="bottom" src="./resources/logo.svg" ng-click="$ctrl.toggleSidebar()">
       <h1>Overwatch Item Tracker</h1>
+
       <div ui-view="header" class="header-content"></div>
     </div>
     <div class="right">
@@ -67,6 +68,10 @@
         </ul>
       </div>
     </div>
+  </div>
+
+  <div id="menuNav" collapsed="collapsed" ng-click="collapsed = !collapsed">
+    <hero-nav></hero-nav>
   </div>
 
   <div ui-view="main"></div>
