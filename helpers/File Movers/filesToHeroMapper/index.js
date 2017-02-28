@@ -6,6 +6,7 @@
 const fs = require('fs')
 
 const types =  ['emotes', 'poses', 'intros', 'skins', 'sprays', 'icons']
+const heroes = ["ana", "bastion", "dva", "genji", "hanzo", "junkrat", "lucio", "mccree", "mei", "mercy", "pharah", "reaper", "reinhardt", "roadhog", "soldier-76", "sombra", "symmetra", "torbjorn", "tracer", "widowmaker", "winston", "zarya", "zenyatta"]
 const type = process.argv[2]
 if (!types.includes(type)) {
   console.error("Invalid type, valid types are", types.join('|'))
@@ -33,6 +34,7 @@ fs.readdir('./', (err, files) => {
   files.forEach(file => {
     var hero = file.split('-')[0]
     hero = (hero == 'soldier' ? 'soldier-76' : hero)
+    hero = heroes.includes(hero) ? hero : 'all'
     checkDirectorys(hero).then(() => {
       fs.renameSync(`./${file}`, `./${hero}/${type}/${file}`)
     })

@@ -26,15 +26,30 @@ var data = {
   sprays: []
 }
 
+var itemIDCache = {
+  icons: {},
+  sprays: {}
+}
+
+function resolveItemIDClash(id) {
+  var lastCharacter = id.slice(-1)
+  return id + ((parseInt(lastCharacter) || 0) + 1)
+}
+
 getDirectories(`./`).then(types => {
   Promise.all(types.map(type => {
     if (type == 'Portrait') return Promise.resolve()
     return getDirectories(`./${type}`).then(files => {
       Promise.all(files.map(file => {
+        var id = getCleanID(file)
+        if (itemIDCache[TYPES[type]][id]) {
+          id = resolveItemIDClash(id)
+        }
         data[TYPES[type]].push({
           name: file.slice(0, -4),
-          id: getCleanID(file)
+          id: id
         })
+        itemIDCache[TYPES[type]][id] = true
         Promise.resolve()
       }))
     })
