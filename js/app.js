@@ -1,8 +1,9 @@
 var OWI = angular.module('OWI', ['ui.router', 'ui.bootstrap', 'ngAnimate'])
 
-OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$stateProvider', '$urlRouterProvider', function($compileProvider, $urlMatcherFactoryProvider, $stateProvider, $urlRouterProvider) {
+OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$animateProvider', '$stateProvider', '$urlRouterProvider', function($compileProvider, $urlMatcherFactoryProvider, $animateProvider, $stateProvider, $urlRouterProvider) {
   $compileProvider.debugInfoEnabled(false);
   $urlMatcherFactoryProvider.strictMode(false);
+  $animateProvider.classNameFilter(/angular-animate/);
 
   $stateProvider
   .state('home', {

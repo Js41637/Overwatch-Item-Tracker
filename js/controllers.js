@@ -1,4 +1,6 @@
-OWI.controller('HomeCtrl', ["$scope", function($scope) {}])
+OWI.controller('HomeCtrl', function() {
+
+})
 
 OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", function($rootScope, $q, $document, $uibModal, DataService) {
   var vm = this;
