@@ -24,7 +24,12 @@
       <h1>Overwatch Item Tracker</h1>
 
       <div ui-view="header" class="header-content"></div>
-        <h2 ng-click="$ctrl.showNav = !$ctrl.showNav" style="cursor:pointer">TOGGLE NAV</h1>
+        <div class="menutoggle" ng-click="$ctrl.showNav = !$ctrl.showNav" style="cursor:pointer">
+          <div class="block">
+            <div class="img" lazy-background="./resources/heroes/roadhog/icon.png" style="background-image: url("../resources/heroes/roadhog/icon.png");"></div>
+          </div>
+          <h2>Roadhog <span class="caret"></span></h2>
+        </div>
     </div>
     <div class="right">
       <div class="icon settings-icon" ng-click="$ctrl.openSettings()" uib-tooltip="Settings" tooltip-placement="left">
