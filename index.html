@@ -22,14 +22,13 @@
     <div class="left">
       <img uib-tooltip="Boop" tooltip-placement="bottom" src="./resources/logo.svg" ng-click="$ctrl.toggleSidebar()">
       <h1>Overwatch Item Tracker</h1>
-
-      <div ui-view="header" class="header-content"></div>
-        <div class="menutoggle" ng-click="$ctrl.showNav = !$ctrl.showNav" style="cursor:pointer">
-          <div class="block">
-            <div class="img" lazy-background="./resources/heroes/roadhog/icon.png" style="background-image: url("../resources/heroes/roadhog/icon.png");"></div>
-          </div>
-          <h2>Roadhog <span class="caret"></span></h2>
+      <div class="event-selector" ng-click="$ctrl.showNav = !$ctrl.showNav">
+        <div class="block" ng-if="$ctrl.item.type == 'hero'">
+          <div class="img" style="background-image: url({{$ctrl.item.id | heroIconUrl}})"></div>
         </div>
+        <h2>{{$ctrl.item.name}} <span class="caret"></span></h2>
+      </div>
+      <div ui-view="header" class="header-content"></div>
     </div>
     <div class="right">
       <div class="icon settings-icon" ng-click="$ctrl.openSettings()" uib-tooltip="Settings" tooltip-placement="left">

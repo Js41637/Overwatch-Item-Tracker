@@ -140,63 +140,60 @@ body {
 }
 
 #header .event-selector {
-  margin-right: 30px;
-}
-
-#header .event-selector .btn, #header .event-selector .btn:hover, #header .event-selector .btn:focus {
+  cursor: pointer;
   background-color: #ffa500;
   border-color: transparent;
-  color: #2d2d2d;
-  font-size: 1em;
-  text-transform: uppercase;
-  font-family: Futura, century gothic, arial, sans-serif;
   padding: 0 0.6em;
   height: 35px;
-  line-height: 35px;
   box-shadow: 0 0 3px orange;
+  margin-right: 25px;
+  border-radius: 4px;
 }
 
-#header .event-selector .btn:hover, #header .event-selector .btn:focus {
+#header .event-selector h2 {
+  font-family: Futura, century gothic, arial, sans-serif;
+  line-height: 35px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: middle;
+  color: #2d2d2d;
+  font-style: normal;
+}
+
+#header .event-selector:hover {
   background-color: #ffb833;
 }
 
-#header .event-selector .btn:hover, #header .event-selector .btn:focus {
-  outline: none;
+#header .event-selector .block {
+  position: relative;
+  display: inline-block;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 4px;
+  transition: background 100ms ease-in-out, transform 100ms ease-in-out;
+  background: url("../resources/body-bg.jpg") no-repeat top;
+  background-size: cover;
+  width: 29px;
+  overflow: hidden;
+  transform: skewX(0);
+  height: 31px;
+  vertical-align: middle;
 }
 
-#header .event-selector .btn .caret {
+#header .event-selector .block .img {
+  background-repeat: no-repeat;
+  transform: translateX(-5px);
+  width: calc(100% + 10px);
+  height: calc(100%);
+  background-size: auto 100%;
+  background-position: 50% 50%;
+}
+
+#header .event-selector .caret {
   border-width: 7px;
   margin-left: 10px;
   margin-top: -3px;
-}
-
-#header .event-selector .dropdown-menu {
-  background-color: #43484c;
-}
-
-#header .event-selector .dropdown-menu li {
-  white-space: nowrap;
-  transition: background-color .1s ease-in-out;
-}
-
-#header .event-selector .dropdown-menu li:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-#header .event-selector .dropdown-menu li a {
-  padding: 0.4em 1em;
-  text-decoration: none;
-  color: #ffa500;
-  display: block;
-  font-size: 1.1em;
-  text-transform: uppercase;
-  font-family: Futura, century gothic, arial, sans-serif;
-  transition: color .1s ease-in-out;
-}
-
-#header .event-selector .dropdown-menu li:hover a {
-  background-color: transparent;
-  color: #ffcf76;
 }
 
 #header .event-ended {
@@ -975,13 +972,20 @@ strong {
   transform: skew(-25rad) translateX(-5px);
 }
 
+#hero-nav .gallery .block:hover {
+  z-index: 8;
+}
+
+#hero-nav .gallery .block.selected {
+  z-index: 5;
+}
+
 #hero-nav .gallery.event .block {
   width: 165px;
 }
 
-#hero-nav .gallery.event .block:hover {
+#hero-nav .gallery.event .block:hover, #hero-nav .gallery.event .block.selected  {
   transform: scale(1.1);
-  z-index: 5;
 }
 
 #hero-nav .gallery.event .block .img {
@@ -997,9 +1001,8 @@ strong {
   height: 123px;
 }
 
-#hero-nav .gallery.hero .block:hover {
+#hero-nav .gallery.hero .block:hover, #hero-nav .gallery.hero .block.selected {
   transform: scale(1.1) skewX(25rad);
-  z-index: 5;
 }
 
 #hero-nav .gallery.hero .block .img {
@@ -1009,7 +1012,7 @@ strong {
   background-position: 50% 50%;
 }
 
-#hero-nav .gallery.hero .block:hover .img {
+#hero-nav .gallery.hero .block:hover .img , #hero-nav .gallery.hero .block.selected .img{
   background-color: rgb(255, 165, 0);
 }
 
@@ -1020,47 +1023,4 @@ strong {
   left: 0;
   right: 0;
   z-index: 1000;
-}
-
-.menutoggle {
-  border-radius: 4px;
-  background: orange;
-  padding: 3px;
-  transform: skewX(25rad);
-  padding-right: 8px;
-}
-
-.menutoggle:hover {
-  background: rgb(247, 179, 53);
-}
-
-.menutoggle .block {
-  position: relative;
-  display: inline-block;
-  border: 1px solid rgb(240, 240, 240);
-  border-radius: 4px;
-  transition: background 100ms ease-in-out, transform 100ms ease-in-out;
-  background: url("../resources/body-bg.jpg") no-repeat top;
-  background-size: cover;
-  width: 29px;
-  overflow: hidden;
-  transform: skewX(0);
-  height: 31px;
-  vertical-align: middle;
-}
-
-.menutoggle .block .img {
-  background-repeat: no-repeat;
-  transform: skew(-25rad) translateX(-5px);
-  width: calc(100% + 10px);
-  height: calc(100%);
-  background-size: auto 100%;
-  background-position: 50% 50%;
-}
-
-.menutoggle h2 {
-  display: inline-block;
-  margin-left: 4px;
-  transform: skewX(-25rad);
-  vertical-align: middle;
 }

@@ -1,11 +1,3 @@
-<div class="event-selector btn-group" uib-dropdown>
-  <button id="event-selector-button" type="button" class="btn" uib-dropdown-toggle>
-    {{$ctrl.item.name}} <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" uib-dropdown-menu role="menu">
-    <li ng-repeat="event in $ctrl.events track by $index"><a href="#" ui-sref="events({ id: event.id })">{{event.name}}</a></li>
-  </ul>
-</div>
 <div ng-show="$ctrl.item.dates.end > $ctrl.currentDate" class="event-active">
   <h2>Event ends on {{$ctrl.item.dates.end | date:'MMM d'}} local time</h2>
   <h3>Be sure to get everything you want by {{$ctrl.item.dates.end - 86400000 | date:'MMM d'}} to be safe!</h3>

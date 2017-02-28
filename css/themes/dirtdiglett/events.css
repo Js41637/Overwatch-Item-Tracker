@@ -47,7 +47,7 @@ body {
   margin-bottom: 8px;
 }
 
-.section {
+#event-container .section {
   border-radius: 8px 8px 4px 4px;
   background: #f0edf2;
   margin: 0 4px;
@@ -58,7 +58,7 @@ body {
   margin-top: 60px;
 }
 
-.section-header {
+#event-container .section-header {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   background-color: #c6cbde;
@@ -353,12 +353,12 @@ body {
   background-image: url(resources/SUMMER_GAMES_2016 #event-container/preview-bg.png);
 }
 
-#SUMMER_GAMES_2016 #event-container #header:before {
+#SUMMER_GAMES_2016 #header:before {
   width: 60px;
   background-image: url(../../../resources/updates/SUMMER_GAMES_2016 #event-container/logo.png);
 }
 
-#SUMMER_GAMES_2016 #event-container .event-ended {
+#SUMMER_GAMES_2016 .event-ended {
   position: absolute;
   left: 90px;
   top: 68px;
@@ -389,11 +389,11 @@ body {
   color: rgba(53, 53, 53, 0.6);
 }
 
-#SUMMER_GAMES_2016 #event-container .event-ended h2 {
+#SUMMER_GAMES_2016 .event-ended h2 {
   font-size: 3rem;
 }
 
-#SUMMER_GAMES_2016 #event-container .event-ended h3 {
+#SUMMER_GAMES_2016 .event-ended h3 {
   font-size: 1rem;
 }
 
@@ -458,22 +458,22 @@ body {
 }
 
 /* HALLOWEEN 2016 */
-#HALLOWEEN_2016 #event-container #header:before {
+#HALLOWEEN_2016 #header:before {
   width: 142px;
   background-image: url(../../../resources/updates/HALLOWEEN_2016/logo.png);
 }
 
-#HALLOWEEN_2016 #event-container .event-ended {
+#HALLOWEEN_2016 .event-ended {
   position: absolute;
   left: 172px;
   top: 68px;
 }
 
-#HALLOWEEN_2016 #event-container .event-ended h2 {
+#HALLOWEEN_2016 .event-ended h2 {
   font-size: 3rem;
 }
 
-#HALLOWEEN_2016 #event-container .event-ended h3 {
+#HALLOWEEN_2016 .event-ended h3 {
   font-size: 1rem;
 }
 
@@ -578,13 +578,13 @@ body {
 }
 
 /* WINTER WONDERLAND 2016 */
-#WINTER_WONDERLAND_2016 #event-container #header:before {
+#WINTER_WONDERLAND_2016 #header:before {
   width: 193px;
   top: 78px;
   background-image: url(../../../resources/updates/WINTER_WONDERLAND_2016/logo.png);
 }
 
-#WINTER_WONDERLAND_2016 #event-container .event-ended {
+#WINTER_WONDERLAND_2016 .event-ended {
   position: absolute;
   left: 223px;
   top: 85px;
@@ -645,11 +645,11 @@ body {
     background: url(resources/WINTER_WONDERLAND_2016/header-right.png) no-repeat center center;
 }
 
-#WINTER_WONDERLAND_2016 #event-container .event-ended h2 {
+#WINTER_WONDERLAND_2016 .event-ended h2 {
   font-size: 3rem;
 }
 
-#WINTER_WONDERLAND_2016 #event-container .event-ended h3 {
+#WINTER_WONDERLAND_2016 .event-ended h3 {
   font-size: 1rem;
 }
 
@@ -724,20 +724,20 @@ body {
   background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/bg.jpg);
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #event-container #header:before {
+#YEAR_OF_THE_ROOSTER_2017 #header:before {
   width: 65px;
   top: 78px;
   background-image: url(../../../resources/updates/YEAR_OF_THE_ROOSTER_2017/logo.png);
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #event-container .event-active,
-#YEAR_OF_THE_ROOSTER_2017 #event-container .event-ended {
+#YEAR_OF_THE_ROOSTER_2017 .event-active,
+#YEAR_OF_THE_ROOSTER_2017 .event-ended {
   position: absolute;
   left: 95px;
   top: 85px;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #event-container .event-active {
+#YEAR_OF_THE_ROOSTER_2017 .event-active {
   top: 75px;
 }
 
@@ -746,33 +746,33 @@ body {
   background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/preview-bg.png);
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #event-container #header {
+#YEAR_OF_THE_ROOSTER_2017 #header {
   height: 80px;
   background-color: transparent;
   background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/header.png);
   background-position: center 84px;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #event-container .event-active h2 {
+#YEAR_OF_THE_ROOSTER_2017 .event-active h2 {
   font-size: 4rem;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #event-container .event-active h3 {
+#YEAR_OF_THE_ROOSTER_2017 .event-active h3 {
   color: rgb(255, 221, 70);
   font-size: 1.2rem;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #event-container .event-ended h2 {
+#YEAR_OF_THE_ROOSTER_2017 .event-ended h2 {
   font-size: 3rem;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #event-container .event-ended h3 {
+#YEAR_OF_THE_ROOSTER_2017 .event-ended h3 {
   color: rgb(255, 221, 70);
   font-size: 1rem;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #event-container #header .left,
-#YEAR_OF_THE_ROOSTER_2017 #event-container #header .right {
+#YEAR_OF_THE_ROOSTER_2017 #header .left,
+#YEAR_OF_THE_ROOSTER_2017 #header .right {
   height: 45px;
 }
 

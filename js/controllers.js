@@ -27,12 +27,13 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
     if (toState.name == 'events') {
       vm.item = vm.events[toParams.id];
+      vm.item.type = 'event';
     } else if (toState.name == 'heroes') {
       vm.item = vm.heroes[toParams.id];
+      vm.item.type = 'hero';
     } else {
       vm.item = {};
     }
-    console.log(vm.item)
     vm.showNav = false;
   });
 
@@ -115,9 +116,9 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
     }
   }
 
-  this.data = angular.toJson(StorageService.getData());
+  /*this.data = angular.toJson(StorageService.getData());
   var dataTemplate = "emotes|icons|intros|poses|skinsEpic|skinsLegendary|sprays|voicelines";
-  var validEvents = Object.keys(Data.updates)
+  var validEvents = Object.keys(Data.events)
   this.importData = function(data) {
     try {
       data = angular.fromJson(vm.data)
@@ -145,7 +146,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
       console.error(e);
       vm.importErrors = 'An error occured while parsing the JSON';
     }
-  }
+  }*/
 
   this.selectTheme = function(what) {
     this.currentTheme = what
@@ -153,7 +154,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
     location.reload()
   }
 
-  this.selectAll = function() {
+  /*this.selectAll = function() {
     Object.keys(Data.events).forEach(function(key) {
       var update = Data.events[key]
       Object.keys(Data.events[key].items).forEach(function(type) {
@@ -164,7 +165,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
     });
     StorageService.setData(Data.checked);
     $rootScope.$emit('selectAll')
-  }
+  }*/
 }])
 
 OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageService", "hero", function($scope, $rootScope, Data, StorageService, hero) {
@@ -185,7 +186,6 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
     Data.checked[$scope.data.id] = $scope.checked;
     StorageService.setData(Data.checked);
     $scope.calculateCosts();
-    $scope.calculatePerHeroProgress();
   };
 
   $scope.cost = {

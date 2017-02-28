@@ -1,28 +1,28 @@
-OWI.filter('heroCareerPortraitUrl', function () {
+OWI.filter('heroCareerPortraitUrl', function() {
   return function(hero) {
     return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + '/career-portrait.png';
   }
 });
 
-OWI.filter('heroPortraitUrl', function () {
+OWI.filter('heroPortraitUrl', function() {
   return function(hero) {
     return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + '/portrait.png';
   }
 });
 
-OWI.filter('heroIconUrl', function () {
+OWI.filter('heroIconUrl', function() {
   return function(hero) {
     return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + '/icon.png';
   }
 });
 
-OWI.filter('eventImageUrl', function () {
+OWI.filter('eventImageUrl', function() {
   return function(event) {
     return './resources/updates/' + event + '/logo.png';
   }
 });
 
-OWI.filter('itemPrice', function () {
+OWI.filter('itemPrice', function() {
   return function(item, type) {
     var event = item.event
     var quality = item.quality
@@ -37,7 +37,7 @@ OWI.filter('itemPrice', function () {
   }
 })
 
-OWI.directive("scroll", function ($window) {
+OWI.directive("scroll", function($window) {
   return function($scope) {
     angular.element($window).bind("scroll", function() {
       if (this.innerWidth > 1570) return;
