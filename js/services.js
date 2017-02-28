@@ -11,10 +11,10 @@ OWI.factory("StorageService", function() {
       return service.data;
     },
     isItemChecked: function(event, type, id) {
-      return (event in service.data ? (type in service.data[event] ? service.data[event][type][id] : false) : false);
+      return (service.data[event] ? (service.data[event][type] ? service.data[event][type][id] : false) : false);
     },
     getSetting: function(key) {
-      return (key in service.settings ? service.settings[key] : (key in service.defaultSettings ? service.defaultSettings[key] : false));
+      return (service.settings[key] ? service.settings[key] : (service.defaultSettings[key] ? service.defaultSettings[key] : false));
     },
     setSetting: function(key, value) {
       service.settings[key] = value;
@@ -34,7 +34,7 @@ OWI.factory("StorageService", function() {
       }
       var storedSettings = localStorage.getItem('settings');
       if (!storedSettings) {
-        service.settings = service.defaults;
+        service.settings = service.defaultSettings;
       } else {
         service.settings = angular.fromJson(storedSettings);
       }

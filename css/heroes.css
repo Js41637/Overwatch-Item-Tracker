@@ -34,12 +34,17 @@
 
 #hero-container .hero-items {
   margin-top: 5px;
-  column-width: 530px;
-  column-gap: 0;
+   -webkit-column-width: 530px;
+      -moz-column-width: 530px;
+           column-width: 530px;
+   -webkit-column-gap: 0;
+      -moz-column-gap: 0;
+           column-gap: 0;
 }
 
 #hero-container .hero-items .section {
   break-inside: avoid;
+  page-break-inside: avoid;
   padding: 10px;
 }
 
@@ -97,19 +102,11 @@
   margin-right: 1px;
 }
 
-#hero-container .section .item[event="HALLOWEEN_2016"],
-#hero-container .section .item[event="SUMMER_GAMES_2016"],
-#hero-container .section .item[event="WINTER_WONDERLAND_2016"],
-#hero-container .section .item[event="YEAR_OF_THE_ROOSTER_2017"],
-#hero-container .section .item[achievement="true"] {
+#hero-container .section .item[event="HALLOWEEN_2016"], #hero-container .section .item[event="SUMMER_GAMES_2016"], #hero-container .section .item[event="WINTER_WONDERLAND_2016"], #hero-container .section .item[event="YEAR_OF_THE_ROOSTER_2017"], #hero-container .section .item[achievement="true"] {
   padding-right: 35px;
 }
 
-#hero-container .item[event="HALLOWEEN_2016"]:after,
-#hero-container .item[event="SUMMER_GAMES_2016"]:after,
-#hero-container .item[event="WINTER_WONDERLAND_2016"]:after,
-#hero-container .item[event="YEAR_OF_THE_ROOSTER_2017"]:after,
-#hero-container .item[achievement="true"]:after {
+#hero-container .item[event="HALLOWEEN_2016"]:after, #hero-container .item[event="SUMMER_GAMES_2016"]:after, #hero-container .item[event="WINTER_WONDERLAND_2016"]:after, #hero-container .item[event="YEAR_OF_THE_ROOSTER_2017"]:after, #hero-container .item[achievement="true"]:after {
   content: "";
   position: absolute;
   width: 25px;
@@ -117,6 +114,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   right: 14px;
+  top: 6px;
 }
 
 #hero-container .item[event="HALLOWEEN_2016"]:after {
@@ -155,13 +153,15 @@
   border-bottom-color: rgba(40, 40, 40, 0.5);
 }
 
+
 /* All Skin and poses, icons and MOST sprays are 1:1 */
+
 #hero-container .section .tooltip .preview.img {
   width: 450px;
   height: 450px;
 }
 
-#hero-container .section .tooltip .preview.img > div {
+#hero-container .section .tooltip .preview.img>div {
   width: 100%;
   height: 100%;
   background-size: contain;
@@ -174,15 +174,17 @@
   position: relative;
 }
 
+
 /* Highlight Intro videos are 16:9 */
 
 #hero-container .section .tooltip .preview.video.intros {
   width: 640px;
   height: 360px;
-
 }
 
+
 /* Emote videos should be 1:1 */
+
 #hero-container .section .tooltip .preview.video.emotes {
   width: 450px;
   height: 450px;
