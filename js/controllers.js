@@ -1,8 +1,4 @@
-OWI.controller('HomeCtrl', ["$scope", function($scope) {
-  $scope.getEventImage = function(id) {
-    return './resources/updates/' + id + '/logo.png';
-  }
-}])
+OWI.controller('HomeCtrl', ["$scope", function($scope) {}])
 
 OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", function($rootScope, $q, $document, $uibModal, DataService) {
   var vm = this;
