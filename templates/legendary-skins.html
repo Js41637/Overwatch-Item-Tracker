@@ -27,7 +27,7 @@
         <div class="nosupport" ng-show="!$ctrl.supportsWebM">
           Sorry, your browser doesn't support HTML5 video or WebM.
         </div>
-        <video ng-if="$ctrl.supportsWebM" autoplay="true" autostart="true" loop="true" src="{{preview.video}}"></video>
+        <video ng-if="$ctrl.supportsWebM" autoplay="true" autostart="true" loop="true" ng-src="{{preview.video}}"></video>
         <div class="bg">
           <div class="card-content">
             <h4 class="card-heading">{{preview.hero || 'All Heroes'}}</h4>
