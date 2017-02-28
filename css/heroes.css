@@ -154,6 +154,17 @@
 
 
 /* All Skin and poses, icons and MOST sprays are 1:1 */
+#hero-container #icons .tooltip .preview.img {
+    width: 256px;
+    height: 256px;
+}
+
+#hero-container #sprays .tooltip .preview.img {
+    width: 380px;
+    height: 380px;
+    background-image: url("../resources/portrait-bg.jpg");
+    background-size: cover;
+}
 
 #hero-container .section .tooltip .preview.img {
   width: 450px;
