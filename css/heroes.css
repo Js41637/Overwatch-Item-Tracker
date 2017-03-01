@@ -17,16 +17,16 @@
 }
 
 #all #hero-container .hero-overview .hero-image {
-    width: 490px;
+  width: 490px;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #hero-container .hero-overview .hero-image img {
@@ -52,21 +52,20 @@
 }
 
 @keyframes slideIn {
-    0% {
-        transform: translateX(-30px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 #hero-container .hero-overview .hero-name {
   font-size: 120px;
   color: #fff;
   margin-bottom: -20px;
-
   animation-name: slideIn;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
@@ -82,7 +81,7 @@
 }
 
 #hero-container #hero-header .hero-progress {
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
   height: 26px;
   text-align: center;
   position: relative;
@@ -97,7 +96,9 @@
 }
 
 @keyframes progressBar {
-   0% { width: 0; }
+  0% {
+    width: 0;
+  }
 }
 
 #hero-container #hero-header .hero-progress .hero-progress-bar {
@@ -107,21 +108,21 @@
   bottom: 2px;
   width: 0;
   border-radius: 3px;
-  background-color: rgb(0,0,0);
+  background-color: rgb(0, 0, 0);
   border-top: 2px solid;
   animation-name: progressBar;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 #hero-container .hero-items {
-   -webkit-column-width: 530px;
-      -moz-column-width: 530px;
-           column-width: 530px;
-   -webkit-column-gap: 0;
-      -moz-column-gap: 0;
-           column-gap: 0;
+  -webkit-column-width: 530px;
+  -moz-column-width: 530px;
+  column-width: 530px;
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
 }
 
 #hero-container .hero-items .section {
@@ -186,14 +187,14 @@ animation-duration: 2s;
 
 #all #hero-container .hero-items {
   -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
   -webkit-column-width: 650px;
-     -moz-column-width: 650px;
-          column-width: 650px;
+  -moz-column-width: 650px;
+  column-width: 650px;
   -webkit-column-gap: 0;
-     -moz-column-gap: 0;
-          column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
 }
 
 #all #hero-container .hero-items #icons .item {
@@ -249,16 +250,17 @@ animation-duration: 2s;
 
 
 /* All Skin and poses, icons and MOST sprays are 1:1 */
+
 #hero-container #icons .tooltip .preview.img {
-    width: 256px;
-    height: 256px;
+  width: 256px;
+  height: 256px;
 }
 
 #hero-container #sprays .tooltip .preview.img {
-    width: 380px;
-    height: 380px;
-    background-image: url("../resources/portrait-bg.jpg");
-    background-size: cover;
+  width: 380px;
+  height: 380px;
+  background-image: url("../resources/portrait-bg.jpg");
+  background-size: cover;
 }
 
 #hero-container .section .tooltip .preview.img {
@@ -304,7 +306,9 @@ animation-duration: 2s;
   font-size: 28px;
 }
 
+
 /* Tooltips */
+
 #hero-container .section .tooltip .tooltip-arrow {
   border-top-color: rgb(240, 240, 240);
   border-bottom-color: rgb(240, 240, 240);
@@ -329,5 +333,5 @@ animation-duration: 2s;
 
 #hero-container .section .tooltip .tooltip-inner {
   background-color: rgb(240, 240, 240);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
