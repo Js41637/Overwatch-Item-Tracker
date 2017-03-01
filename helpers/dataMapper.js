@@ -6,7 +6,8 @@
 const fs = require('fs')
 const { forEach, sortBy } = require('lodash')
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, allClassEventItems } = require('./dataMapper/EVENTDATA.js')
-const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject, stupidNames, qualityOrder } = require('./dataMapper/utils.js')
+const HERODATA = require('./dataMapper/HERODATA.js')
+const { getCleanID, getItemType, getImageURL, sortObject, stupidNames, qualityOrder } = require('./dataMapper/utils.js')
 
 var rawData
 try {
@@ -49,10 +50,10 @@ const originalIDs = {
 var heroes = {}
 data.forEach(({ hero, items: itemGroups }) => {
   var heroID = getCleanID(hero)
-  var heroData = {
+  var heroData = Object.assign({
     name: hero,
-    class: getClassForHero(hero.toLowerCase()),
     id: heroID,
+  }, HERODATA[heroID], {
     items: {
       skins: [],
       emotes: [],
@@ -62,7 +63,7 @@ data.forEach(({ hero, items: itemGroups }) => {
       voicelines: [],
       poses: []
     }
-  }
+  })
 
   forEach(itemGroups, (items, group) => {
     items.forEach(item => {

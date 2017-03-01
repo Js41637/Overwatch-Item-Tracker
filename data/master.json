@@ -4182,8 +4182,12 @@
     },
     "ana": {
       "name": "Ana",
-      "class": "Support",
       "id": "ana",
+      "class": "Support",
+      "colors": {
+        "primary": "#ccc2ae",
+        "highlight": "#dcd5c7"
+      },
       "items": {
         "skins": [
           {
@@ -4632,8 +4636,12 @@
     },
     "bastion": {
       "name": "Bastion",
-      "class": "Defence",
       "id": "bastion",
+      "class": "Defence",
+      "colors": {
+        "primary": "#6e994d",
+        "highlight": "#82af5f"
+      },
       "items": {
         "skins": [
           {
@@ -5088,8 +5096,12 @@
     },
     "dva": {
       "name": "D.Va",
-      "class": "Tank",
       "id": "dva",
+      "class": "Tank",
+      "colors": {
+        "primary": "#ff7fd1",
+        "highlight": "#ffa8e0"
+      },
       "items": {
         "skins": [
           {
@@ -5544,8 +5556,12 @@
     },
     "genji": {
       "name": "Genji",
-      "class": "Assault",
       "id": "genji",
+      "class": "Assault",
+      "colors": {
+        "primary": "#84fe01",
+        "highlight": "#98fe2a"
+      },
       "items": {
         "skins": [
           {
@@ -5988,8 +6004,12 @@
     },
     "hanzo": {
       "name": "Hanzo",
-      "class": "Defence",
       "id": "hanzo",
+      "class": "Defence",
+      "colors": {
+        "primary": "#938848",
+        "highlight": "#ada057"
+      },
       "items": {
         "skins": [
           {
@@ -6414,8 +6434,12 @@
     },
     "junkrat": {
       "name": "Junkrat",
-      "class": "Defence",
       "id": "junkrat",
+      "class": "Defence",
+      "colors": {
+        "primary": "#d39308 ",
+        "highlight": "#f5ac0f"
+      },
       "items": {
         "skins": [
           {
@@ -6870,8 +6894,12 @@
     },
     "lucio": {
       "name": "Lúcio",
-      "class": "Support",
       "id": "lucio",
+      "class": "Support",
+      "colors": {
+        "primary": "#8bec22",
+        "highlight": "#9ef048"
+      },
       "items": {
         "skins": [
           {
@@ -7320,8 +7348,12 @@
     },
     "mccree": {
       "name": "McCree",
-      "class": "Assault",
       "id": "mccree",
+      "class": "Assault",
+      "colors": {
+        "primary": "#8d3939",
+        "highlight": "#aa4545"
+      },
       "items": {
         "skins": [
           {
@@ -7758,8 +7790,12 @@
     },
     "mei": {
       "name": "Mei",
-      "class": "Defence",
       "id": "mei",
+      "class": "Defence",
+      "colors": {
+        "primary": "#9adbf4",
+        "highlight": "#bfe8f8"
+      },
       "items": {
         "skins": [
           {
@@ -8232,8 +8268,12 @@
     },
     "mercy": {
       "name": "Mercy",
-      "class": "Support",
       "id": "mercy",
+      "class": "Support",
+      "colors": {
+        "primary": "#ffe16c",
+        "highlight": "#ffea95"
+      },
       "items": {
         "skins": [
           {
@@ -8688,8 +8728,12 @@
     },
     "pharah": {
       "name": "Pharah",
-      "class": "Assault",
       "id": "pharah",
+      "class": "Assault",
+      "colors": {
+        "primary": "#1b65c6",
+        "highlight": "#2778e2"
+      },
       "items": {
         "skins": [
           {
@@ -9138,8 +9182,12 @@
     },
     "reaper": {
       "name": "Reaper",
-      "class": "Assault",
       "id": "reaper",
+      "class": "Assault",
+      "colors": {
+        "primary": "#272725",
+        "highlight": "#3c3c39"
+      },
       "items": {
         "skins": [
           {
@@ -9594,8 +9642,12 @@
     },
     "reinhardt": {
       "name": "Reinhardt",
-      "class": "Tank",
       "id": "reinhardt",
+      "class": "Tank",
+      "colors": {
+        "primary": "#aa958e",
+        "highlight": "#bbaba5"
+      },
       "items": {
         "skins": [
           {
@@ -10054,8 +10106,12 @@
     },
     "roadhog": {
       "name": "Roadhog",
-      "class": "Tank",
       "id": "roadhog",
+      "class": "Tank",
+      "colors": {
+        "primary": "#c09477 ",
+        "highlight": "#cdaa93"
+      },
       "items": {
         "skins": [
           {
@@ -10522,8 +10578,12 @@
     },
     "soldier-76": {
       "name": "Soldier: 76",
-      "class": "Assault",
       "id": "soldier-76",
+      "class": "Assault",
+      "colors": {
+        "primary": "#5870b6",
+        "highlight": "#7588c3"
+      },
       "items": {
         "skins": [
           {
@@ -10966,8 +11026,12 @@
     },
     "sombra": {
       "name": "Sombra",
-      "class": "Assault",
       "id": "sombra",
+      "class": "Assault",
+      "colors": {
+        "primary": "#4f26a9",
+        "highlight": "#6837d2"
+      },
       "items": {
         "skins": [
           {
@@ -11372,8 +11436,12 @@
     },
     "symmetra": {
       "name": "Symmetra",
-      "class": "Support",
       "id": "symmetra",
+      "class": "Support",
+      "colors": {
+        "primary": "#5cecff",
+        "highlight": "#85f1ff"
+      },
       "items": {
         "skins": [
           {
@@ -11816,8 +11884,12 @@
     },
     "torbjorn": {
       "name": "Torbjörn",
-      "class": "Defence",
       "id": "torbjorn",
+      "class": "Defence",
+      "colors": {
+        "primary": "#ff6200",
+        "highlight": "#ff7b28"
+      },
       "items": {
         "skins": [
           {
@@ -12266,8 +12338,12 @@
     },
     "tracer": {
       "name": "Tracer",
-      "class": "Assault",
       "id": "tracer",
+      "class": "Assault",
+      "colors": {
+        "primary": "#f8911b",
+        "highlight": "#faa443"
+      },
       "items": {
         "skins": [
           {
@@ -12729,8 +12805,12 @@
     },
     "widowmaker": {
       "name": "Widowmaker",
-      "class": "Defence",
       "id": "widowmaker",
+      "class": "Defence",
+      "colors": {
+        "primary": "#6f6fae",
+        "highlight": "#8a8abd"
+      },
       "items": {
         "skins": [
           {
@@ -13173,8 +13253,12 @@
     },
     "winston": {
       "name": "Winston",
-      "class": "Tank",
       "id": "winston",
+      "class": "Tank",
+      "colors": {
+        "primary": "#4c505c",
+        "highlight": "#5f6472"
+      },
       "items": {
         "skins": [
           {
@@ -13629,8 +13713,12 @@
     },
     "zarya": {
       "name": "Zarya",
-      "class": "Tank",
       "id": "zarya",
+      "class": "Tank",
+      "colors": {
+        "primary": "#f571a8",
+        "highlight": "#f897bf"
+      },
       "items": {
         "skins": [
           {
@@ -14073,8 +14161,12 @@
     },
     "zenyatta": {
       "name": "Zenyatta",
-      "class": "Support",
       "id": "zenyatta",
+      "class": "Support",
+      "colors": {
+        "primary": "#c79c00",
+        "highlight": "#f0bc00"
+      },
       "items": {
         "skins": [
           {

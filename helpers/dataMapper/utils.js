@@ -39,41 +39,6 @@ const getItemType = type => {
   return m
 }
 
-// Returns class for hero
-const getClassForHero = hero => {
-  switch (hero) {
-    case "genji":
-    case "mccree":
-    case "pharah":
-    case "reaper":
-    case "soldier: 76":
-    case "sombra":
-    case "tracer":
-      return "Assault"
-    case "bastion":
-    case "hanzo":
-    case "junkrat":
-    case "mei":
-    case "torbjörn":
-    case "widowmaker":
-      return "Defence"
-    case "d.va":
-    case "reinhardt":
-    case "roadhog":
-    case "winston":
-    case "zarya":
-      return "Tank"
-    case "ana":
-    case "lúcio":
-    case "mercy":
-    case "symmetra":
-    case "zenyatta":
-      return "Support"
-    default:
-      return "Unknown"
-  }
-}
-
 // Returns a cleanID, replacing all bad characters and replacing unicode ones
 const getCleanID = (what, hero) => {
   return (hero ? `${hero}-` : '') + what.toLowerCase().replace('å', 'a').replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-')
@@ -124,4 +89,4 @@ const sortObject = (o, update) => {
   return sorted
 }
 
-module.exports = { getCleanID, getClassForHero, getItemType, getImageURL, sortObject, stupidNames, qualityOrder }
+module.exports = { getCleanID, getItemType, getImageURL, sortObject, stupidNames, qualityOrder }
