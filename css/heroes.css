@@ -83,7 +83,11 @@
   line-height: 26px;
   font-size: 20px;
   display: block;
-    position: relative;
+  position: relative;
+}
+
+@keyframes progressBar {
+   0% { width: 0; }
 }
 
 #hero-container #hero-header .hero-progress .hero-progress-bar {
@@ -95,6 +99,10 @@
   border-radius: 3px;
   background-color: rgb(0,0,0);
   border-top: 2px solid;
+  animation-name: progressBar;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+animation-duration: 3s;
 }
 
 #hero-container .hero-items {
