@@ -45,7 +45,7 @@ OWI.factory("StorageService", function() {
 })
 
 OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q, StorageService) {
-  var items = `{"skinsLegendary":{},"skinsEpic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}`
+  var items = '{"skinsLegendary":{},"skinsEpic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}'
   function initialize(data) {
     var storedData = StorageService.getData() || {};
     var out = {

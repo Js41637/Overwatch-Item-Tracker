@@ -1032,32 +1032,3 @@ strong {
   right: 0;
   z-index: 1000;
 }
-
-
-/* Tooltips */
-#hero-container .section .tooltip .tooltip-arrow {
-  border-top-color: rgb(255,255,255);
-  border-bottom-color: rgb(255,255,255);
-}
-
-.tooltip.bottom .tooltip-arrow, .tooltip.bottom-left .tooltip-arrow, .tooltip.bottom-right .tooltip-arrow {
-  border-width: 0 8px 8px;
-}
-
-.tooltip.top .tooltip-arrow {
-  border-width: 8px 8px 0;
-}
-
-.tooltip.bottom {
-  margin-top: -2px;
-  padding: 8px 0;
-}
-
-.tooltip.top {
-  padding: 8px 0;
-}
-
-#hero-container .section .tooltip .tooltip-inner {
-  background-color: rgb(255,255,255);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}

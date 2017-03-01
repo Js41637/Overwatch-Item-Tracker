@@ -115,7 +115,7 @@ OWI.run(function() {
         var newEggs = {}
         Object.keys(data.winterwonderland2016.sprays).forEach(function(id) {
           var spray = data.winterwonderland2016.sprays[id]
-          badEggs.includes(id) ? (newEggs[`${id.split('-')[0]}-ornament`] = spray) : (newEggs[id] = spray);
+          badEggs.includes(id) ? (newEggs[id.split('-')[0] + '-ornament'] = spray) : (newEggs[id] = spray);
         })
         data.winterwonderland2016.sprays = newEggs
       }

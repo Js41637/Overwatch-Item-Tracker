@@ -247,3 +247,35 @@
   height: 100%;
   width: 100%;
 }
+
+#hero-container .section .tooltip .preview.video .nosupport {
+  font-size: 28px;
+}
+
+/* Tooltips */
+#hero-container .section .tooltip .tooltip-arrow {
+  border-top-color: rgb(240, 240, 240);
+  border-bottom-color: rgb(240, 240, 240);
+}
+
+#hero-container .tooltip.bottom .tooltip-arrow, #hero-container .tooltip.bottom-left .tooltip-arrow, #hero-container .tooltip.bottom-right .tooltip-arrow {
+  border-width: 0 8px 8px;
+}
+
+#hero-container .tooltip.top .tooltip-arrow {
+  border-width: 8px 8px 0;
+}
+
+#hero-container .tooltip.bottom {
+  margin-top: -2px;
+  padding: 8px 0;
+}
+
+#hero-container .tooltip.top {
+  padding: 8px 0;
+}
+
+#hero-container .section .tooltip .tooltip-inner {
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
