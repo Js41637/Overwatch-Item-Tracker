@@ -1014,7 +1014,7 @@ strong {
 }
 
 #hero-nav .gallery.hero .block .img {
-  width: calc(100% + 10px);
+  width: auto;
   height: calc(100% - 32px);
   background-size: auto 100%;
   background-position: 50% 50%;

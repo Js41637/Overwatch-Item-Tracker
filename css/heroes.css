@@ -16,6 +16,10 @@
   margin-left: -15%;
 }
 
+#all #hero-container .hero-overview .hero-image {
+    width: 490px;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -32,6 +36,12 @@
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-duration: 0.8s;
+}
+
+#all #hero-container .hero-overview .hero-image img {
+  width: 150px;
+  float: right;
+  margin-right: 20px;
 }
 
 #hero-container .hero-overview .hero-info {
@@ -102,7 +112,7 @@
   animation-name: progressBar;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-animation-duration: 3s;
+animation-duration: 2s;
 }
 
 #hero-container .hero-items {
