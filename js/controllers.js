@@ -21,6 +21,12 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   }
 
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
+    vm.showNav = false;
+    if (!vm.events || !vm.heroes) {
+      console.error("Missing data??");
+      vm.item = { name: '??' };
+      return;
+    }
     if (toState.name == 'events') {
       vm.item = vm.events[toParams.id];
       vm.item.type = 'event';
@@ -30,7 +36,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
     } else {
       vm.item = { name: 'Home' };
     }
-    vm.showNav = false;
+
   });
 
   // Fired when the sidebar is open on every click, checks if a click was made
