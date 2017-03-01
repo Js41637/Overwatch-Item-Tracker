@@ -48,6 +48,8 @@
 #hero-container #hero-header .hero-progress span {
   line-height: 26px;
   font-size: 20px;
+  display: block;
+    position: relative;
 }
 
 #hero-container #hero-header .hero-progress .hero-progress-bar {
@@ -55,10 +57,10 @@
   top: 2px;
   left: 2px;
   bottom: 2px;
-  width: calc(0px + 42% - 2px);
+  width: 0;
   border-radius: 3px;
-  background-color: #9adbf4;
-  border-top: 2px solid #bfe8f8;
+  background-color: rgb(0,0,0);
+  border-top: 2px solid;
 }
 
 #hero-container .hero-items {
@@ -190,13 +192,7 @@
 
 #hero-container .section .tooltip .tooltip-inner {
   max-width: none;
-  background-color: rgba(40, 40, 40, 0.5);
   padding: 4px;
-}
-
-#hero-container .section .tooltip .tooltip-arrow {
-  border-top-color: rgba(40, 40, 40, 0.5);
-  border-bottom-color: rgba(40, 40, 40, 0.5);
 }
 
 
