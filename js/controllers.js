@@ -170,9 +170,11 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   this.totalItems = 0;
   this.selectedItems = 0;
   this.itemPercentage = 0;
-
-  function isValidItem(item) {
-    return !item.achievement && item.quality && !item.standardItem && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
+  this.totals = {
+    total: 0,
+    selected: 0,
+    percentage: 0,
+    groups: {}
   }
 
   $scope.cost = {
@@ -181,7 +183,27 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     prev: 0
   };
 
-  function calculateCosts(initial) {
+  this.onSelect = function() {
+    calculateTotalsAndCosts()
+  }
+
+  this.selectAll = function() {
+    if (vm.totals.selected == vm.totals.total) {
+      return;
+    }
+    Object.keys(hero.items).forEach(function(type) {
+      hero.items[type].forEach(function(item) {
+        vm.checked[type][item.id] = true;
+      })
+    })
+    calculateTotalsAndCosts();
+  }
+
+  function isValidItem(item) {
+    return !item.achievement && item.quality && !item.standardItem && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
+  }
+
+  function calculateTotalsAndCosts(initial) {
     var selectedItems = 0;
     var cost = {
       total: 0,
@@ -190,14 +212,23 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     };
 
     Object.keys(hero.items).forEach(function(type) {
+      var groupTotals = {
+        total: 0,
+        selected: 0
+      }
       hero.items[type].forEach(function(item) {
-        if (initial && !item.standardItem) {
-          vm.totalItems++;
+        if (!item.standardItem) {
+          if (initial) {
+            vm.totals.total++;
+          }
+          groupTotals.total++;
         }
+
 
         var isSelected = Data.isItemChecked(hero.id, type, item.id);
         if (isSelected && !item.standardItem) {
           selectedItems++;
+          groupTotals.selected++;
         }
         if (type !== 'icons' && isValidItem(item)) {
           var price = Data.prices[item.quality] * (item.event ? 3 : 1);
@@ -207,17 +238,14 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
           }
         }
       });
-      $scope.cost = cost;
-      vm.selectedItems = selectedItems;
-      vm.itemPercentage = ((vm.selectedItems / vm.totalItems) * 100) + '%'
-    })
+      vm.totals.groups[type] = groupTotals;
+    });
+    $scope.cost = cost;
+    vm.totals.selected = selectedItems;
+    vm.totals.percentage = ((vm.totals.selected / vm.totals.total) * 100) + '%'
   }
 
-  calculateCosts(true);
-
-  this.onSelect = function() {
-    calculateCosts()
-  }
+  calculateTotalsAndCosts(true);
 }])
 
 OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "event", function($scope, $rootScope, Data, StorageService, event) {

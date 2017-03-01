@@ -4,6 +4,7 @@
 
 #hero-container #hero-header {
   margin-top: -65px;
+  position: relative;
 }
 
 #hero-container .hero-overview {
@@ -80,8 +81,21 @@
   animation-duration: 1s;
 }
 
+#hero-container #hero-header .btn.select-all {
+  position: absolute;
+  bottom: 28px;
+  right: 5px;
+  font-size: 18px;
+  transition: opacity .1s ease-in-out;
+  opacity: 0.3;
+}
+
+#hero-container #hero-header .btn.select-all:hover {
+  opacity: 1;
+}
+
 #hero-container #hero-header .hero-progress {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.5);
   height: 26px;
   text-align: center;
   position: relative;
@@ -104,7 +118,7 @@
   border-radius: 3px;
   background-color: rgb(0, 0, 0);
   border-top: 2px solid;
-  transition: width 1s linear;
+  transition: width .8s ease-in-out;
 }
 
 #hero-container .hero-items {
@@ -129,6 +143,11 @@
 #hero-container .hero-items .section-header h2 {
   font-size: 42px;
   font-weight: bold;
+}
+
+#hero-container .hero-items .section-header h2 small {
+  font-size: 0.7em;
+  margin-left: 2px;
 }
 
 #hero-container .hero-items .section .item {
@@ -315,7 +334,7 @@
 }
 
 #hero-container .tooltip.bottom {
-  margin-top: -2px;
+  margin-top: 0px;
   padding: 8px 0;
 }
 
