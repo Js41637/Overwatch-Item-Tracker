@@ -10,9 +10,6 @@ OWI.factory("StorageService", function() {
     getData: function() {
       return service.data;
     },
-    isItemChecked: function(event, type, id) {
-      return (service.data[event] ? (service.data[event][type] ? service.data[event][type][id] : false) : false);
-    },
     getSetting: function(key) {
       return (service.settings[key] ? service.settings[key] : (service.defaultSettings[key] ? service.defaultSettings[key] : false));
     },
@@ -46,6 +43,7 @@ OWI.factory("StorageService", function() {
 
 OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q, StorageService) {
   var items = '{"skinsLegendary":{},"skinsEpic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}'
+  var items2 = '{"skins":{},"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}'
   function initialize(data) {
     var storedData = StorageService.getData() || {};
     var out = {
@@ -55,12 +53,22 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
     Object.keys(data.events).forEach(function(event) {
       out.checked[event] = JSON.parse(items)
     })
+    Object.keys(data.heroes).forEach(function(hero) {
+      out.checked[hero] = JSON.parse(items2)
+    })
     Object.assign(out.checked, storedData)
     Object.assign(service, out, data)
   }
 
   var service = {
+    checked: {},
+    prices: {},
+    events: {},
+    heroes: {},
     initialized: false,
+    isItemChecked: function(who, type, id) {
+      return (service.checked[who] ? (service.checked[who][type] ? service.checked[who][type][id] : false) : false);
+    },
     waitForInitialization: function() {
       return $q(function(resolve) {
         function waitForInitialize() {

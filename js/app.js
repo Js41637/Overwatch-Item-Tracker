@@ -13,8 +13,7 @@ OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     url: '/',
     views: {
       main: {
-        templateUrl: './templates/home.html',
-        controller: 'HomeCtrl'
+        templateUrl: './templates/home.html'
       }
     }
   })

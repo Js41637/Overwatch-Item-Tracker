@@ -1,7 +1,3 @@
-OWI.controller('HomeCtrl', function() {
-
-})
-
 OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", function($rootScope, $q, $document, $uibModal, DataService) {
   var vm = this;
   this.preview = false;
@@ -169,7 +165,60 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
 }])
 
 OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageService", "hero", function($scope, $rootScope, Data, StorageService, hero) {
-  Object.assign(this, hero)
+  var vm = this;
+  Object.assign(this, hero);
+  this.checked = Data.checked[hero.id]
+  this.totalItems = 0;
+  this.selectedItems = 0;
+  this.itemPercentage = 0;
+
+  function isValidItem(item) {
+    return !item.achievement && item.quality && !item.standardItem && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
+  }
+
+  $scope.cost = {
+    total: 0,
+    remaining: 0,
+    prev: 0
+  };
+
+  function calculateCosts(initial) {
+    var selectedItems = 0;
+    var cost = {
+      total: 0,
+      remaining: 0,
+      prev: $scope.cost.remaining
+    };
+
+    Object.keys(hero.items).forEach(function(type) {
+      hero.items[type].forEach(function(item) {
+        if (initial && !item.standardItem) {
+          vm.totalItems++;
+        }
+
+        var isSelected = Data.isItemChecked(hero.id, type, item.id);
+        if (isSelected && !item.standardItem) {
+          selectedItems++;
+        }
+        if (type !== 'icons' && isValidItem(item)) {
+          var price = Data.prices[item.quality] * (item.event ? 3 : 1);
+          cost.total += price;
+          if (!isSelected) {
+            cost.remaining += price;
+          }
+        }
+      });
+      $scope.cost = cost;
+      vm.selectedItems = selectedItems;
+      vm.itemPercentage = ((vm.selectedItems / vm.totalItems) * 100) + '%'
+    })
+  }
+
+  calculateCosts(true);
+
+  this.onSelect = function() {
+    calculateCosts()
+  }
 }])
 
 OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "event", function($scope, $rootScope, Data, StorageService, event) {
@@ -207,9 +256,9 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
       var items = $scope.data.items[type];
       items.forEach(function(item) {
         if (!item.quality) return // if it has no quality it has no cost
-        var price = Data.prices[item.quality];
+        var price = Data.prices[item.quality] * 3;
         cost.total += price;
-        if (!StorageService.isItemChecked($scope.data.id, type, item.id)) {
+        if (!Data.isItemChecked($scope.data.id, type, item.id)) {
           cost.remaining += price;
         }
       })

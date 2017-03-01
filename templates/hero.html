@@ -12,8 +12,8 @@
       </div>
     </div>
     <div class="hero-progress">
-      <div class="hero-progress-bar" style="width: calc(0px + 42% - 2px); background-color: {{hero.colors.primary}}; border-top-color: {{hero.colors.highlight}}"></div>
-      <span>30 / 74 Unlocks</span>
+      <div class="hero-progress-bar" style="width: calc(0px + {{hero.itemPercentage}} - 4px); background-color: {{hero.colors.primary}}; border-top-color: {{hero.colors.highlight}}"></div>
+      <span>{{hero.selectedItems}} / {{hero.totalItems}}  Unlocks</span>
     </div>
   </div>
   <div class="hero-items">
@@ -26,11 +26,11 @@
         event="{{item.event}}"
         achievement="{{item.achievement}}"
         uib-tooltip-template="'imagePreviewTemplate.html'"
-        tooltip-popup-delay="175"
+        tooltip-popup-delay="275"
         tooltip-enable="type !== 'voicelines'"
         tooltip-placement="auto"
         ng-repeat="item in items track by $index">
-        <input type="checkbox" id="{{type + item.id}}">
+        <input type="checkbox" id="{{type + item.id}}" ng-checked="item.standardItem" ng-disabled="item.standardItem" ng-change="hero.onSelect()" ng-model="hero.checked[type][item.id]">
         <label for="{{type + item.id}}">
           <h3 class="color-{{item.quality || 'common'}}">{{item.name}}</h3>
           <small class="color-cost">{{ item | itemPrice:type }}</small>

@@ -207,10 +207,10 @@ forEach(heroes, hero => forEach(hero.items, (items, type) => {
 var allData = {
   currentEvent: 'YEAR_OF_THE_ROOSTER_2017',
   prices: {
-    'common': 75,
-    'rare': 225,
-    'epic': 750,
-    'legendary': 3000
+    'common': 25,
+    'rare': 75,
+    'epic': 250,
+    'legendary': 1000
   },
   events: updates,
   heroes
