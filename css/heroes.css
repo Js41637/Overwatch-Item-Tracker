@@ -3,7 +3,7 @@
 }
 
 #hero-container #hero-header {
-  border-bottom: 8px solid;
+  margin-top: -65px;
 }
 
 #hero-container .hero-overview {
@@ -13,6 +13,7 @@
 
 #hero-container .hero-overview .hero-image {
   height: 200px;
+  margin-left: -15%;
 }
 
 #hero-container .hero-overview .hero-image img {
@@ -34,6 +35,30 @@
 
 #hero-container .hero-overview .hero-class {
   font-size: 48px;
+}
+
+#hero-container #hero-header .hero-progress {
+  background-color: rgb(255,255,255);
+  height: 26px;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+}
+
+#hero-container #hero-header .hero-progress span {
+  line-height: 26px;
+  font-size: 20px;
+}
+
+#hero-container #hero-header .hero-progress .hero-progress-bar {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: calc(0px + 42% - 2px);
+  border-radius: 3px;
+  background-color: #9adbf4;
+  border-top: 2px solid #bfe8f8;
 }
 
 #hero-container .hero-items {
