@@ -45,6 +45,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
   var items = '{"skinsLegendary":{},"skinsEpic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}'
   var items2 = '{"skins":{},"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}'
   function initialize(data) {
+    console.info("Initializing");
     var storedData = StorageService.getData() || {};
     var out = {
       initialized: true,
@@ -82,6 +83,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
       });
     },
     init: function() {
+      console.info("Fetching Data");
       $http.get('./data/master.json').then(function(resp) {
         if (resp.status == 200) {
           initialize(resp.data);

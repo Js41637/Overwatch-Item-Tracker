@@ -9,7 +9,6 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   DataService.waitForInitialization().then(function(data) {
     vm.events = data.events;
     vm.heroes = data.heroes
-    vm.selectedUpdate = '';
   })
 
   // Check to see if the web browser supports WebM videos
@@ -22,11 +21,6 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
 
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
     vm.showNav = false;
-    if (!vm.events || !vm.heroes) {
-      console.error("Missing data??");
-      vm.item = { name: '??' };
-      return;
-    }
     if (toState.name == 'events') {
       vm.item = vm.events[toParams.id];
       vm.item.type = 'event';
@@ -36,7 +30,6 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
     } else {
       vm.item = { name: 'Home' };
     }
-
   });
 
   // Fired when the sidebar is open on every click, checks if a click was made

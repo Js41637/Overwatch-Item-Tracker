@@ -9,15 +9,6 @@ OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$animateProvider'
 
 OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $stateProvider
-  .state('home', {
-    url: '/',
-    views: {
-      main: {
-        templateUrl: './templates/home.html'
-      }
-    }
-  })
-
   .state('heroes', {
     url: '/heroes/:id',
     resolve: {
@@ -72,10 +63,28 @@ OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     }
   })
 
+  .state('home', {
+    url: '/',
+    resolve: {
+      data: function($q, DataService) {
+        var deferred = $q.defer();
+        DataService.waitForInitialization().then(function(data) {
+          deferred.resolve(data);
+        })
+        return deferred.promise
+      }
+    },
+    views: {
+      main: {
+        templateUrl: './templates/home.html'
+      }
+    }
+  })
+
   $urlRouterProvider.otherwise('/');
 }])
 
-.run(["$rootScope", "$state", "DataService", function($rootScope, $state, Data) {
+OWI.run(["$rootScope", "$state", "DataService", function($rootScope, $state, Data) {
   $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
     console.warn(error);
     if (error == 'INVALID_HERO') {
