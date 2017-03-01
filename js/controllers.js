@@ -32,7 +32,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
       vm.item = vm.heroes[toParams.id];
       vm.item.type = 'hero';
     } else {
-      vm.item = {};
+      vm.item = { name: 'Home' };
     }
     vm.showNav = false;
   });
