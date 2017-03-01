@@ -16,8 +16,22 @@
   margin-left: -15%;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 #hero-container .hero-overview .hero-image img {
   height: 100%;
+  width: 490px;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.8s;
 }
 
 #hero-container .hero-overview .hero-info {
@@ -27,14 +41,34 @@
   justify-content: center;
 }
 
+@keyframes slideIn {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 #hero-container .hero-overview .hero-name {
   font-size: 120px;
   color: #fff;
   margin-bottom: -20px;
+
+  animation-name: slideIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
 }
 
 #hero-container .hero-overview .hero-class {
   font-size: 48px;
+  animation-name: slideIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
 }
 
 #hero-container #hero-header .hero-progress {
