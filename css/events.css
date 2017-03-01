@@ -1,32 +1,32 @@
-#event-container.item-container .section h2 {
+#event-container .section h2 {
   font-size: 42px;
   display: inline-block;
   font-style: italic;
 }
 
-#event-container.item-container .section h3 {
+#event-container .section h3 {
   color: rgb(245, 245, 245);
   font-size: 26px;
   order: 2;
   margin-left: 4px;
 }
 
-#event-container.item-container .section h4 {
+#event-container .section h4 {
   font-size: 1em;
   order: 1;
 }
 
-#event-container.item-container #event-container #sprays h3 {
+#event-container #sprays h3 {
   order: 1;
   margin-left: 0;
 }
 
-#event-container.item-container #event-container #sprays h4 {
+#event-container #sprays h4 {
   font-size: 1em;
   order: 2;
 }
 
-#event-container.item-container h2 small {
+#event-container h2 small {
   font-size: 0.7em;
   margin-left: 2px;
   font-style: italic;
@@ -35,13 +35,13 @@
   position: relative;
 }
 
-#event-container.item-container h2>small:before {
+#event-container h2>small:before {
   content: "(";
   position: relative;
   top: -3px;
 }
 
-#event-container.item-container h2>small:after {
+#event-container h2>small:after {
   content: ")";
   position: relative;
   top: -3px;
@@ -50,15 +50,15 @@
 
 /* Override for the Preview */
 
-#event-container.item-container #image-preview>span:before, #event-container.item-container #image-preview h2>small:before {
+#event-container #image-preview>span:before, #event-container #image-preview h2>small:before {
   content: "";
 }
 
-#event-container.item-container #image-preview>span:after, #event-container.item-container #image-preview h2>small:after {
+#event-container #image-preview>span:after, #event-container #image-preview h2>small:after {
   content: "";
 }
 
-#event-container.item-container .section .item {
+#event-container .section .item {
   font-size: 26px;
   display: flex;
   align-items: center;
@@ -67,13 +67,13 @@
   cursor: pointer;
 }
 
-#event-container.item-container .section .item label {
+#event-container .section .item label {
   width: 100%;
   cursor: pointer;
   display: flex;
 }
 
-#event-container.item-container .section .item input {
+#event-container .section .item input {
   height: 24px;
   margin: 1px 4px;
   float: left;
@@ -283,7 +283,7 @@
   width: 22%;
 }
 
-#SUMMER_GAMES_2016 #event-container #cost-remaining, #SUMMER_GAMES_2016 #event-container #legendary-skins small.color-legendary {
+#SUMMER_GAMES_2016 #cost-remaining, #SUMMER_GAMES_2016 #legendary-skins small.color-legendary {
   display: none;
 }
 
