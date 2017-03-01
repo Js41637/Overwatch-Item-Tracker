@@ -178,11 +178,12 @@ forEach(updates, update => forEach(update.items, (items, type) => {
 // Add allClassData (Sprays, Icons) to items.json file
 // NOTE: This allClassData is seperate from the allClassEventItems
 try {
-  heroes["all"] = {
+  heroes["all"] = Object.assign({
     name: 'All Class',
-    id: 'all',
+    id: 'all'
+  }, HERODATA['all'], {
     items: JSON.parse(allClassData)
-  }
+  })
 } catch (e) {
   console.error("Error parsing allClassItems")
   return

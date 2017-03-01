@@ -6,6 +6,12 @@ const CLASSES = {
 }
 
 const data = {
+  all: {
+    colors: {
+      primary: "#fa9c1e",
+      highlight: "#ffb757"
+    }
+  },
   ana: {
     class: CLASSES.SUPPORT,
     colors: {
