@@ -52,7 +52,7 @@
   justify-content: center;
 }
 
-@keyframes slideIn {
+@keyframes slideInX {
   0% {
     transform: translateX(-30px);
     opacity: 0;
@@ -67,7 +67,7 @@
   font-size: 120px;
   color: #fff;
   margin-bottom: -20px;
-  animation-name: slideIn;
+  animation-name: slideInX;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-duration: 1s;
@@ -75,7 +75,7 @@
 
 #hero-container .hero-overview .hero-class {
   font-size: 48px;
-  animation-name: slideIn;
+  animation-name: slideInX;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-duration: 1s;
@@ -95,7 +95,7 @@
 }
 
 #hero-container #hero-header .hero-progress {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(24,34,62,.7);
   height: 26px;
   text-align: center;
   position: relative;
@@ -107,6 +107,8 @@
   font-size: 20px;
   display: block;
   position: relative;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
 }
 
 #hero-container #hero-header .hero-progress .hero-progress-bar {
@@ -134,6 +136,10 @@
   break-inside: avoid;
   page-break-inside: avoid;
   padding: 10px;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.8s;
 }
 
 #hero-container .hero-items .section-header {
@@ -225,13 +231,13 @@
   height: 25px;
   background-size: contain;
   background-repeat: no-repeat;
-  right: 14px;
+  right: 6px;
   top: 6px;
+  background-position: center;
 }
 
 #hero-container .item[event="HALLOWEEN_2016"]:after {
   background-image: url("../resources/icons/halloween.png");
-  margin-top: 2px;
 }
 
 #hero-container .item[event="SUMMER_GAMES_2016"]:after {
