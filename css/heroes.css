@@ -246,6 +246,10 @@
   background-image: url("../resources/icons/year-of-the-rooster.png");
 }
 
+#hero-container .item[achievement="true"]:after {
+  background-image: url("../resources/icons/achievement.svg");
+}
+
 #hero-container .section:not(#sprays) .item[achievement="true"]:after {
   background-image: url("../resources/icons/blizzard.png");
 }
