@@ -81,17 +81,28 @@
   animation-duration: 1s;
 }
 
-#hero-container #hero-header .btn.select-all {
+#hero-container #hero-header .options {
   position: absolute;
   bottom: 28px;
   right: 5px;
   font-size: 18px;
+}
+
+#hero-container #hero-header .btn {
   transition: opacity .1s ease-in-out;
   opacity: 0.3;
 }
 
-#hero-container #hero-header .btn.select-all:hover {
+#hero-container #hero-header .btn:hover {
   opacity: 1;
+}
+
+#hero-container #hero-header .toggle-grid {
+  display: none;
+}
+
+#all #hero-container #hero-header .toggle-grid {
+  display: inline-block;
 }
 
 #hero-container #hero-header .hero-progress {
@@ -146,7 +157,7 @@
   margin-bottom: 4px;
 }
 
-#hero-container .hero-items .section-header h2 {
+#hero-container .hero-items .section-header h2, #hero-container .hero-grid .section-header h2 {
   font-size: 42px;
   font-weight: bold;
 }
@@ -218,6 +229,27 @@
   width: 49.7%;
   display: inline-flex;
   margin-right: 1px;
+}
+
+#hero-container .hero-grid .section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#hero-container .hero-grid .section .section-header {
+  width: 100%;
+}
+
+#hero-container .hero-grid .item {
+  display: inline-block;
+  margin: 3px;
+  width: 100px;
+  height: 100px;
+}
+#hero-container .hero-grid .item img {
+  width: 100px;
+  height: 100px;
 }
 
 #hero-container .section .item[event="HALLOWEEN_2016"], #hero-container .section .item[event="SUMMER_GAMES_2016"], #hero-container .section .item[event="WINTER_WONDERLAND_2016"], #hero-container .section .item[event="YEAR_OF_THE_ROOSTER_2017"], #hero-container .section .item[achievement="true"] {
@@ -330,7 +362,7 @@
 
 /* Tooltips */
 
-#hero-container .section .tooltip .tooltip-arrow {
+#hero-container .section .tooltip.img-preview .tooltip-arrow {
   border-top-color: rgb(240, 240, 240);
   border-bottom-color: rgb(240, 240, 240);
 }
@@ -341,6 +373,7 @@
 
 #hero-container .tooltip.top .tooltip-arrow {
   border-width: 8px 8px 0;
+  margin-left: -8px;
 }
 
 #hero-container .tooltip.bottom {
@@ -352,7 +385,7 @@
   padding: 8px 0;
 }
 
-#hero-container .section .tooltip .tooltip-inner {
+#hero-container .section .tooltip.img-preview .tooltip-inner {
   background-color: rgb(240, 240, 240);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

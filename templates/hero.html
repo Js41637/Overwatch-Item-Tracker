@@ -11,13 +11,31 @@
         <h3 class="hero-class">{{hero.class}}</h2>
       </div>
     </div>
-    <div class="select-all btn btn-default" uib-tooltip="Select all items" ng-click="hero.selectAll()">Select All</div>
+    <div class="options">
+      <div class="toggle-grid btn btn-default" uib-tooltip="Toggle Grid View" ng-click="hero.toggleGrid()">Toggle Grid</div>
+      <div class="select-all btn btn-default" uib-tooltip="Select all items" ng-click="hero.selectAll()">Select All</div>
+    </div>
     <div class="hero-progress">
       <div class="hero-progress-bar" style="width: calc(0px + {{hero.totals.percentage}} - 4px); background-color: {{hero.colors.primary}}; border-top-color: {{hero.colors.highlight}}"></div>
       <span>{{hero.totals.selected}} / {{hero.totals.total}}  Unlocks</span>
     </div>
   </div>
-  <div class="hero-items">
+  <div class="hero-grid" ng-if="hero.gridView">
+    <div ng-repeat="(type, items) in hero.items track by $index" id="{{type}}" class="section">
+      <div class="section-header">
+        <h2>{{type}} <small>{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
+      </div>
+      <div
+        class="item"
+        uib-tooltip="{{item.name}}"
+        tooltip-popup-delay="100"
+        tooltip-placement="top"
+        ng-repeat="item in items track by $index">
+          <img ng-src="{{'./resources/heroes/' + hero.id + '/' + type + '/' + item.id + '.png'}}" />
+      </div>
+    </div>
+  </div>
+  <div class="hero-items" ng-if="!hero.gridView">
     <div ng-repeat="(type, items) in hero.items track by $index" id="{{type}}" class="section">
       <div class="section-header">
         <h2>{{type}} <small>{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
@@ -28,6 +46,7 @@
         achievement="{{item.achievement}}"
         uib-tooltip-template="'imagePreviewTemplate.html'"
         tooltip-popup-delay="275"
+        tooltip-class="img-preview"
         tooltip-enable="type !== 'voicelines'"
         tooltip-placement="auto"
         ng-repeat="item in items track by $index">

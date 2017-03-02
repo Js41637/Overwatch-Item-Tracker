@@ -166,6 +166,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
 OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageService", "hero", function($scope, $rootScope, Data, StorageService, hero) {
   var vm = this;
   Object.assign(this, hero);
+  this.gridView = false;
   this.checked = Data.checked[hero.id]
   this.totalItems = 0;
   this.selectedItems = 0;
@@ -185,6 +186,11 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
 
   this.onSelect = function() {
     calculateTotalsAndCosts()
+  }
+
+  this.toggleGrid = function() {
+    if (hero.id != 'all') return;
+    this.gridView = !this.gridView;
   }
 
   this.selectAll = function() {
