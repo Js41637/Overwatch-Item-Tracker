@@ -52,7 +52,7 @@
         tooltip-enable="type !== 'voicelines'"
         tooltip-placement="auto"
         ng-repeat="item in items track by $index">
-        <input type="checkbox" id="{{type + item.id}}" ng-checked="item.standardItem" ng-disabled="item.standardItem" ng-change="hero.onSelect()" ng-model="hero.checked[type][item.id]">
+        <input type="checkbox" id="{{type + item.id}}" ng-checked="item.standardItem || hero.checked[type][item.id]" ng-disabled="item.standardItem" ng-change="hero.onSelect()" ng-model="hero.checked[type][item.id]">
         <label for="{{type + item.id}}">
           <h3 class="color-{{item.quality || 'common'}}">{{item.name}}</h3>
           <small class="color-cost">{{ item | itemPrice:type }}</small>
