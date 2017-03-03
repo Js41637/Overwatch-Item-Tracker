@@ -1,10 +1,3 @@
-// Can't generate IDs off these names can we :)
-const stupidNames = {
-  "^_^": "joy",
-  ">_\\<": "frustration",
-  ";)": "winky-face"
-}
-
 const qualityOrder = {
   'common': 0,
   'rare': 1,
@@ -39,8 +32,16 @@ const getItemType = type => {
   return m
 }
 
+// Can't generate IDs off these names can we :)
+const stupidNames = {
+  "^_^": "joy",
+  ">_\\<": "frustration",
+  ";)": "winky-face"
+}
+
 // Returns a cleanID, replacing all bad characters and replacing unicode ones
 const getCleanID = (what, hero) => {
+  what = stupidNames[what] || what;
   return (hero ? `${hero}-` : '') + what.toLowerCase().replace('å', 'a').replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-')
 }
 
