@@ -65,7 +65,7 @@
       <h2>Updates</h2>
       <div>
         <ul>
-          <li ng-repeat="event in $ctrl.events track by $index" ui-sref="events({ id: event.id })" ui-sref-active="selected"><a href="#">{{event.name}}</a></li>
+          <li ng-repeat="event in ::$ctrl.events track by $index" ui-sref="events({ id: event.id })" ui-sref-active="selected"><a href="#">{{::event.name}}</a></li>
         </ul>
       </div>
     </div>
@@ -73,7 +73,7 @@
       <h2>Heroes</h2>
       <div>
         <ul>
-          <li ng-repeat="hero in $ctrl.heroes track by $index" ui-sref="heroes({ id: hero.id || 'all' })" ui-sref-active="selected"><a href="#">{{hero.name || 'All Class'}}</a></li>
+          <li ng-repeat="hero in ::$ctrl.heroes track by $index" ui-sref="heroes({ id: hero.id || 'all' })" ui-sref-active="selected"><a href="#">{{::hero.name || 'All Class'}}</a></li>
         </ul>
       </div>
     </div>
