@@ -549,7 +549,7 @@ strong {
 }
 
 #image-preview .card.spray {
-  background-size: 100%;
+  background-size: contain;
   background-color: transparent;
   background-position: center 0;
 }
