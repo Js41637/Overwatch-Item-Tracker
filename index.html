@@ -24,7 +24,7 @@
       <h1>Overwatch Item Tracker</h1>
       <div class="event-selector" ng-click="$ctrl.showNav = !$ctrl.showNav">
         <div class="block" ng-if="$ctrl.item.type == 'hero'">
-          <div class="img" style="background-image: url({{$ctrl.item.id | heroIconUrl}})"></div>
+          <div class="img" style="background-image: url({{$ctrl.item.id | heroImg:'icon'}})"></div>
         </div>
         <h2>{{$ctrl.item.name}} <span class="caret"></span></h2>
       </div>

@@ -1,18 +1,12 @@
-OWI.filter('heroCareerPortraitUrl', function() {
-  return function(hero) {
-    return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + '/career-portrait.png';
-  }
-});
+var types = {
+  'portrait': '/portrait.png',
+  'career': '/career-portrait.png',
+  'icon': '/icon.png'
+}
 
-OWI.filter('heroPortraitUrl', function() {
-  return function(hero) {
-    return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + '/portrait.png';
-  }
-});
-
-OWI.filter('heroIconUrl', function() {
-  return function(hero) {
-    return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + '/icon.png';
+OWI.filter('heroImg', function() {
+  return function(hero, type) {
+    return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + types[type];
   }
 });
 
