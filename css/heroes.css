@@ -249,6 +249,7 @@
   text-align: center;
   position: relative;
 }
+
 #hero-container .hero-grid .item img {
   width: auto;
   height: auto;
@@ -260,6 +261,17 @@
   left: 0;
   right: 0;
   margin: auto;
+}
+
+#hero-container .hero-grid #icons .item {
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.08s ease-in-out;
+  border: 3px solid rgba(255,255,255,0.6);
+}
+
+#hero-container .hero-grid #icons .item:hover {
+  transform: scale(1.1);
 }
 
 #hero-container .section .item[event="HALLOWEEN_2016"], #hero-container .section .item[event="SUMMER_GAMES_2016"], #hero-container .section .item[event="WINTER_WONDERLAND_2016"], #hero-container .section .item[event="YEAR_OF_THE_ROOSTER_2017"], #hero-container .section .item[achievement="true"] {
