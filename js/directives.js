@@ -206,6 +206,7 @@ OWI.directive('lazyBackground', ["$document", "$compile", function($document, $c
           $element.css('background-image', '');
           $element.removeClass('img-loading');
           $element.addClass('img-load-error');
+          loader.remove();
         };
         img.src = encodeURI(newSrc);
       });
