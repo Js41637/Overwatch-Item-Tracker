@@ -5,25 +5,17 @@
  */
 const fs = require('fs')
 const { forEach, sortBy } = require('lodash')
-const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, allClassEventItems } = require('./dataMapper/EVENTDATA.js')
+
 const HERODATA = require('./dataMapper/HERODATA.js')
+const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, allClassEventItems } = require('./dataMapper/EVENTDATA.js')
 const { getCleanID, getItemType, getImageURL, sortObject, qualityOrder } = require('./dataMapper/utils.js')
-
-var rawData
+var allClassData, rawData;
 try {
+  allClassData = require('../data/allClassItems.json')
   rawData = fs.readFileSync(`${__dirname}/rawData.txt`, "utf8")
-} catch (e) {
-  console.error("Error reading ./rawData.txt")
-  return
-}
-
-// Load allClassItems data
-var allClassData
-try {
-  allClassData = fs.readFileSync(`${__dirname}/../data/allClassItems.json`, 'utf8')
-} catch (e) {
-  console.error("Error reading ../data/allClassItems.json")
-  return
+} catch(e) {
+  console.error("Failed to find allClassData or rawData!!")
+  process.exit()
 }
 
 var data = []
@@ -48,6 +40,7 @@ const originalIDs = {
 }
 
 var heroes = {}
+// Goes through every hero and their item lists
 data.forEach(({ hero, items: itemGroups }) => {
   var heroID = getCleanID(hero)
   var heroData = Object.assign({
@@ -74,7 +67,7 @@ data.forEach(({ hero, items: itemGroups }) => {
       var { quality, type: itemType } = getItemType(type)
       id = originalIDs[`${itemType}/${id}`] || id
       if (!quality || !itemType) return
-      var out = { name, id, quality: quality }
+      var out = { name, id, quality }
       switch (group) {
         case 'COMMON':
           break;
@@ -89,6 +82,12 @@ data.forEach(({ hero, items: itemGroups }) => {
           break;
       }
       heroData.items[itemType].push(out)
+      // Icons are allclass so we can add them allClassData which doesn't include hero specific icons
+      if (itemType == 'icons') {
+        out.hero = heroID
+        delete out.quality
+        allClassData['icons'].push(out)
+      }
     })
   })
   heroes[heroID] = heroData
@@ -145,7 +144,7 @@ updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.
   } else return spray
 }).filter(Boolean)
 
-// Add allclass items (which aren't detected by item extrator) manually
+// Add allClassEventItems items (which aren't detected by item extrator) manually to events
 forEach(allClassEventItems, (types, type) => {
   forEach(types, (events, event) => {
     events.forEach(item => {
@@ -164,7 +163,7 @@ forEach(allClassEventItems, (types, type) => {
   })
 })
 
-// Sort that shit by hero or item name
+// Sort event items by hero, name or name depending on type
 forEach(updates, update => forEach(update.items, (items, type) => {
   switch (type) {
     case 'icons':
@@ -177,17 +176,13 @@ forEach(updates, update => forEach(update.items, (items, type) => {
 
 // Add allClassData (Sprays, Icons) to items.json file
 // NOTE: This allClassData is seperate from the allClassEventItems
-try {
-  heroes["all"] = Object.assign({
-    name: 'All Class',
-    id: 'all'
-  }, HERODATA['all'], {
-    items: JSON.parse(allClassData)
-  })
-} catch (e) {
-  console.error("Error parsing allClassItems")
-  return
-}
+heroes["all"] = Object.assign({
+  name: 'All Class',
+  id: 'all'
+}, HERODATA['all'], {
+  items: allClassData
+})
+
 
 // Sorts Updates object by the order of events and heroes alphabetically.
 updates = sortObject(updates, true)
@@ -195,6 +190,10 @@ heroes = sortObject(heroes)
 
 // go through all hero items and sort items as they are sorted ingame
 forEach(heroes, hero => forEach(hero.items, (items, type) => {
+  if (hero.id == 'all') {
+    hero.items[type] = sortBy(items, ['name'])
+    return
+  }
   hero.items[type] = sortBy(items, [
       'standardItem', // Standard items first
       (a => qualityOrder[a.quality]), // sort by quality. rare, epic, legendary
@@ -204,8 +203,8 @@ forEach(heroes, hero => forEach(hero.items, (items, type) => {
     ])
 }))
 
-var allData = {
-  currentEvent: 'YEAR_OF_THE_ROOSTER_2017',
+var masterData = {
+  currentEvent: CURRENTEVENT,
   prices: {
     'common': 25,
     'rare': 75,
@@ -219,4 +218,4 @@ var allData = {
 // Write new items.json and updates.json files to disk
 fs.writeFileSync(`${__dirname}/../data/items.json`, JSON.stringify(heroes, null, 2), 'utf8')
 fs.writeFileSync(`${__dirname}/../data/events.json`, JSON.stringify(updates, null, 2), 'utf8')
-fs.writeFileSync(`${__dirname}/../data/master.json`, JSON.stringify(allData, null, 2), 'utf8')
+fs.writeFileSync(`${__dirname}/../data/master.json`, JSON.stringify(masterData, null, 2), 'utf8')

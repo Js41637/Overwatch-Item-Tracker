@@ -1,3 +1,5 @@
+const CURRENTEVENT = 'YEAR_OF_THE_ROOSTER_2017'
+
 const EVENTS = {
   SUMMER16: 'SUMMER_GAMES_2016',
   HALLOWEEN16: 'HALLOWEEN_2016',
@@ -57,4 +59,4 @@ const allClassEventItems = {
 }
 
 
-module.exports = { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, allClassEventItems }
+module.exports = { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, allClassEventItems }

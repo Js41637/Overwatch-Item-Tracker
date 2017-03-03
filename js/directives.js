@@ -62,9 +62,9 @@ OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService)
       var item = angular.copy($scope.item);
       item.type = $scope.type;
       if (item.type == 'intros' || item.type == 'emotes') {
-        item.video = '/resources/heroes/' + $scope.hero + '/' + item.type + '/' + item.id + '.webm'
+        item.video = '/resources/heroes/' + (item.hero || $scope.hero) + '/' + item.type + '/' + item.id + '.webm'
       } else {
-        item.img = '/resources/heroes/' + $scope.hero + '/' + item.type + '/' + item.id + (item.type == 'sprays' || item.type == 'icons' ? '.png' : '.jpg')
+        item.img = '/resources/heroes/' + (item.hero || $scope.hero) + '/' + item.type + '/' + item.id + (item.type == 'sprays' || item.type == 'icons' ? '.png' : '.jpg')
       }
 
       if (StorageService.getSetting('hdVideos') && item.video) {
