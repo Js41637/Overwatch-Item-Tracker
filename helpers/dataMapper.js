@@ -4,7 +4,7 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs')
-const { forEach, sortBy } = require('lodash')
+const { forEach, sortBy, findKey, flatten } = require('lodash')
 
 const HERODATA = require('./dataMapper/HERODATA.js')
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, allClassEventItems } = require('./dataMapper/EVENTDATA.js')
@@ -17,6 +17,21 @@ try {
   console.error("Failed to find allClassData or rawData!!")
   process.exit()
 }
+
+// Create object containing allclass item names by key so we can easily map event ids to items.
+// also check if any items are in allClassEventItems and mark them as event items
+var allClassDataKeys = {}
+forEach(allClassData, (items, type) => {
+  allClassDataKeys[type] = {}
+  forEach(items, (item, i) => {
+    allClassDataKeys[type][item.id] = item.name
+    var event = findKey(allClassEventItems[type], items => flatten(items).includes(item.id))
+    if (event) {
+      item.event = event
+      allClassData[type][i] = item
+    }
+  })
+})
 
 var data = []
 const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g
@@ -147,11 +162,11 @@ updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.
 // Add allClassEventItems items (which aren't detected by item extrator) manually to events
 forEach(allClassEventItems, (types, type) => {
   forEach(types, (events, event) => {
-    events.forEach(item => {
-      var isSpecial = typeof item == 'object'
-      var itemID = getCleanID(isSpecial ? item[0] : item)
+    events.forEach(itemID => {
+      var isSpecial = typeof itemID == 'object'
+      itemID = isSpecial ? itemID[0] : itemID
       var out = {
-        name: isSpecial ? item[0] : item,
+        name: allClassDataKeys[type][itemID].replace(/ \d{4}$/, ''),
         id: itemID,
         img: getImageURL(type, event, itemID)
       }

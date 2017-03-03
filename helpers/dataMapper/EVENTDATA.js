@@ -42,7 +42,23 @@ const EVENTTIMES = {
 }
 
 // allClassItems need to be manually added as allClass data isnt included in the rawData
-// Items surrounded by [] means they are not purchasable
+// Items surrounded by [] means they are not purchasable / achievement
+const allClassEventItems = {
+  sprays: {
+    [EVENTS.SUMMER16]: ['summer-games-2016'],
+    [EVENTS.HALLOWEEN16]: ['never-die', 'bats', 'boo', 'boop', 'candyball', 'fangs', 'gummy-hog', 'halloween-terror', 'pumpkins', 'witchs-brew', ['halloween-special'], ['junkensteins-revenge'], ['rise-of-the-zomnics'], ['the-reapening']],
+    [EVENTS.CHRISTMAS16]: [['snowcree'], ['snowhog'], ['snowmei'], ['snowreaper'], 'winter-wonderland'],
+    [EVENTS.ROOSTER17]: [['auspicious-lion'], ['awakened-lion'], 'dragons-head', 'lucky-pouch', 'red-envelope', 'year-of-the-rooster']
+  },
+  icons: {
+    [EVENTS.SUMMER16]: ["summer-games-2016", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america"],
+    [EVENTS.HALLOWEEN16]: ["halloween-terror-2016", "never-die", "bewitching", "calavera", "candle", "eyeball", "ghostymari", "spider", "superstition", "tombstone", "vampachimari", "witchs-brew", "witchs-hat", "wolf"],
+    [EVENTS.CHRISTMAS16]: ["winter-wonderland-2016", "snowman", "present", "pachimerry", "gingermari", "2017", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking"],
+    [EVENTS.ROOSTER17]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "lunamari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017"]
+  }
+}
+
+/* ORIGINAL
 const allClassEventItems = {
   sprays: {
     [EVENTS.SUMMER16]: ['Summer Games'],
@@ -57,6 +73,6 @@ const allClassEventItems = {
     [EVENTS.ROOSTER17]: ["Bokimari", "Coin", "Dragon Dance", "Fortune", "Fuchimari", "Gold", "Have Fish", "Lantern", "Lion Dance", "Lucky Pouch", "Lunamari", "New Year Cake", "Pachilantern", "Red Envelope", "Seollal", "Tangerines", "Year of the Rooster"]
   }
 }
-
+*/
 
 module.exports = { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, allClassEventItems }

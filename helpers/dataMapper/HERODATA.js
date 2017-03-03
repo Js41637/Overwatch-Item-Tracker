@@ -82,6 +82,13 @@ const data = {
       highlight: "#ffea95"
     }
   },
+  orisa: {
+    class: CLASSES.TANK,
+    colors: {
+      "primary": "#fcfcfc",
+      "highlight": "#ffffff"
+    }
+  },
   pharah: {
     class: CLASSES.ASSAULT,
     colors: {
