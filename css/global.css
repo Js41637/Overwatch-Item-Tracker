@@ -984,10 +984,8 @@ strong {
   width: 165px;
 }
 
-#hero-nav .gallery.event .block:hover, #hero-nav .gallery.event .block.selected  {
-}
 
-#hero-nav .gallery.event .block:hover .img:before {
+#hero-nav .gallery.event .block:hover .img:before, #hero-nav .gallery.event .block.selected .img:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1008,9 +1006,6 @@ strong {
   width: 91px;
   overflow: hidden;
   height: 123px;
-}
-
-#hero-nav .gallery.hero .block:hover, #hero-nav .gallery.hero .block.selected {
 }
 
 #hero-nav .gallery.hero .block .img {
