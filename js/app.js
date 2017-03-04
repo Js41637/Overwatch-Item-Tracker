@@ -188,6 +188,21 @@ OWI.run(function() {
         delete data.winterwonderland2016;
         delete data.yearoftherooster2017;
       }
+    }, {
+      name: "Update event item IDs and rename new Rooster IDs",
+      id: 5,
+      run: function() {
+        var changedItems = {"SUMMER_GAMES_2016":{"sprays":{"summer-games":"summer-games-2016"},"icons":{"summer-games":"summer-games-2016","united-states":"united-states-of-america"}},"HALLOWEEN_2016":{"sprays":{"halloween-terror-2016":"halloween-terror","halloweenspecial":"halloween-special","junkensteinsrevenge":"junkensteins-revenge","riseofthezomnics":"rise-of-the-zomnics","thereapening":"the-reapening"},"icons":{"halloween-terror":"halloween-terror-2016"}},"WINTER_WONDERLAND_2016":{"icons":{"winter-wonderland":"winter-wonderland-2016"}},"YEAR_OF_THE_ROOSTER_2017":{"skinsEpic":{"mercy-golden": "mercy-fortune"},"icons":{"roadhog-piggy":"roadhog-pigsy","year-of-the-rooster":"year-of-the-rooster-2017"}}}
+        for (var event in changedItems) {
+          if (!data[event]) break;
+          for (var type in changedItems[event]) {
+            for (var itemID in changedItems[event][type]) {
+              data[event][type][changedItems[event][type][itemID]] = data[event][type][itemID]
+              delete data[event][type][itemID]
+            }
+          }
+        }
+      }
     }
   ]
 

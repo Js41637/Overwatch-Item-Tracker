@@ -58,14 +58,6 @@ heroGroups.forEach(heroData => {
   data.push({ hero, items })
 })
 
-// Blizzard changed the names of these items thus changing their IDs,
-// I will eventually run a migration that fixes these but for now I will manually fix
-// NOTE: the reason these two IDs changed is because they are dupes of existing items
-const originalIDs = {
-  "skins/mercy-fortune": "mercy-golden",
-  "icons/roadhog-pigsy": "roadhog-piggy"
-}
-
 var heroes = {}
 // Goes through every hero and their item lists
 data.forEach(({ hero, items: itemGroups }) => {
@@ -92,7 +84,6 @@ data.forEach(({ hero, items: itemGroups }) => {
       if (name == 'RANDOM') return
       var id = getCleanID(name, heroID)
       var { quality, type: itemType } = getItemType(type)
-      id = originalIDs[`${itemType}/${id}`] || id
       if (!quality || !itemType) return
       var out = { name, id, quality }
       switch (group) {
