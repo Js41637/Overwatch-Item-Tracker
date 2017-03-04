@@ -131,7 +131,7 @@ forEach(heroes, hero => {
       var legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
       var u = getImageURL(type, event, item.id)
       var url = type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: u } : { img: u })
-      var newItem = Object.assign({}, { hero: hero.name }, legend, item, url )
+      var newItem = Object.assign({}, { hero: hero.name, heroID: hero.id }, legend, item, url )
       if (type == 'icons') {
         delete newItem.hero
         delete newItem.quality
@@ -144,8 +144,8 @@ forEach(heroes, hero => {
 
 // Add ornament ids to normal sprays
 updates[EVENTS.CHRISTMAS16].items.sprays = updates[EVENTS.CHRISTMAS16].items.sprays.map(spray => {
-  if (spray.hero) {
-    var ornamentID = `${getCleanID(spray.hero)}-ornament`
+  if (spray.heroID) {
+    var ornamentID = `${spray.heroID}-ornament`
     spray.ornamentID = ornamentID;
     spray.ornamentURL = getImageURL('sprays', EVENTS.CHRISTMAS16, ornamentID);
     return spray
@@ -154,8 +154,8 @@ updates[EVENTS.CHRISTMAS16].items.sprays = updates[EVENTS.CHRISTMAS16].items.spr
 
 // Add dragon dance ids to normal sprays
 updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.map(spray => {
-  if (spray.hero) {
-    var dragonID = `${getCleanID(spray.hero)}-dragon-dance`
+  if (spray.heroID) {
+    var dragonID = `${spray.heroID}-dragon-dance`
     spray.dragonID = dragonID;
     spray.dragonURL = getImageURL('sprays', EVENTS.ROOSTER17, dragonID);
     return spray
@@ -167,6 +167,7 @@ forEach(allClassEventItems, (types, type) => {
   forEach(types, (events, event) => {
     events.forEach(itemID => {
       var out = {
+        heroID: 'all',
         name: allClassDataKeys[type][itemID].replace(/ \d{4}$/, ''),
         id: itemID,
         img: getImageURL(type, event, itemID)
@@ -238,4 +239,4 @@ var masterData = {
 // Write new items.json and updates.json files to disk
 fs.writeFileSync(`${__dirname}/../data/items.json`, JSON.stringify(heroes, null, 2), 'utf8')
 fs.writeFileSync(`${__dirname}/../data/events.json`, JSON.stringify(updates, null, 2), 'utf8')
-fs.writeFileSync(`${__dirname}/../data/master.json`, JSON.stringify(masterData, null, 2), 'utf8')
+fs.writeFileSync(`${__dirname}/../data/master.json`, JSON.stringify(masterData), 'utf8')
