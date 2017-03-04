@@ -28,7 +28,6 @@
       <div
         class="item"
         uib-tooltip="{{::item.name}}"
-        tooltip-popup-delay="100"
         tooltip-placement="top"
         ng-repeat="item in ::items track by $index">
           <img ng-src="{{'./resources/heroes/' + (item.hero || hero.id) + '/' + type + '/' + item.id + '.png'}}" />

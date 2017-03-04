@@ -274,11 +274,11 @@
 
 /* Item Icons */
 
-#hero-container .section .item:not([event="none"]), #hero-container .section .item:not([achievement="false"]) {
+#hero-container .section .item[event]:not([event="none"]), #hero-container .section .item[achievement]:not([achievement="false"]) {
   padding-right: 35px;
 }
 
-#hero-container .item:not([event="none"]):after, #hero-container .item:not([achievement="false"]):after, #hero-container .item:not([event="none"]):before, #hero-container .item:not([achievement="false"]):before {
+#hero-container .item[event]:not([event="none"]):after, #hero-container .item[achievement]:not([achievement="false"]):after, #hero-container .item[event]:not([event="none"]):before, #hero-container .item[achievement]:not([achievement="false"]):before {
   content: "";
   position: absolute;
   width: 25px;
@@ -292,11 +292,11 @@
 
 /* If an item has an Event & Achivement Icons */
 
-#hero-container .hero-items .item:not([event="none"]):before, #hero-container .hero-items .item:not([achievement="false"]):before {
+#hero-container .hero-items .item[event]:not([event="none"]):before, #hero-container .hero-items .item[achievement]:not([achievement="false"]):before {
   right: 37px;
 }
 
-#hero-container .item:not([event="none"]):not([achievement="false"]) {
+#hero-container .item[event][achievement]:not([event="none"]):not([achievement="false"]) {
   padding-right: 63px;
 }
 
@@ -334,6 +334,11 @@
 /**
  * TOOLTIPS
  **/
+
+#hero-container .section .tooltip {
+  font-size: 15px;
+  font-family: Futura, century gothic, arial, sans-serif;
+}
 
 #hero-container .section .tooltip.in {
   opacity: 1;
