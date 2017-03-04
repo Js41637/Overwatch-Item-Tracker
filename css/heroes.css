@@ -326,7 +326,7 @@
   background-image: url("../resources/icons/achievement.svg");
 }
 
-#hero-container .section:not(#sprays) .item[achievement="true"]:after {
+#hero-container .section .item[achievement="blizzard"]:after {
   background-image: url("../resources/icons/blizzard.png");
 }
 

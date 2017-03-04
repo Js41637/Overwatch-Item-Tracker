@@ -90,7 +90,7 @@ data.forEach(({ hero, items: itemGroups }) => {
         case 'COMMON':
           break;
         case 'ACHIEVEMENT':
-          out.achievement = true
+          out.achievement = (itemType == 'sprays' && achievementSprays.includes(name.toLowerCase())) ? true : 'blizzard'
           break;
         case 'STANDARD_COMMON':
           out.standardItem = true

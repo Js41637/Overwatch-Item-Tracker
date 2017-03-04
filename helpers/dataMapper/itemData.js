@@ -11,6 +11,9 @@ const data = {
     sprays: ['snowcer', 'snowscientist']
   },
   achievementSprays: [
+    // HERO
+    'cute',
+    'pixel',
     // DEFAULT
     'beyond-the-moon',
     'forge-onward',
