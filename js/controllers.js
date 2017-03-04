@@ -236,6 +236,9 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
           selectedItems++;
           groupTotals.selected++;
         }
+        if (hero.id == 'all') {
+          item.quality = 'common'
+        }
         if (type !== 'icons' && isValidItem(item)) {
           var price = Data.prices[item.quality] * (item.event ? 3 : 1);
           cost.total += price;
