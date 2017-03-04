@@ -36,7 +36,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
       return r
     }, {})
 
-    const isStandard = defaultItems[type].includes(item.id) ? { isStandard: true } : undefined
+    const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined
     const isAchievement = (type == 'sprays' && achievementSprays.includes(item.id)) ? { achievement: true } : undefined
     newItems.push(Object.assign(item, { event }, isAchievement, isStandard))
     return newItems
