@@ -290,8 +290,14 @@
   background-position: center;
 }
 
+/* If an item has an Event & Achivement Icons */
+
 #hero-container .hero-items .item:not([event="none"]):before, #hero-container .hero-items .item:not([achievement="false"]):before {
   right: 37px;
+}
+
+#hero-container .item:not([event="none"]):not([achievement="false"]) {
+  padding-right: 63px;
 }
 
 
@@ -316,7 +322,7 @@
 
 /* Achivement Icons */
 
-#hero-container .item[achievement="true"]:after {
+#hero-container .item[achievement="true"]:after, #hero-container .item:not([event="none"]):not([achievement="false"]):before {
   background-image: url("../resources/icons/achievement.svg");
 }
 
@@ -324,15 +330,6 @@
   background-image: url("../resources/icons/blizzard.png");
 }
 
-/* Achivement & Event Icons */
-
-#hero-container .item:not([event="none"]):not([achievement="false"]) {
-  padding-right: 63px;
-}
-
-#hero-container .item:not([event="none"]):not([achievement="false"]):before {
-  background-image: url("../resources/icons/achievement.svg");
-}
 
 /**
  * TOOLTIPS
