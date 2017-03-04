@@ -7,7 +7,8 @@ const fs = require('fs')
 const { forEach, sortBy, find, reduce } = require('lodash')
 
 const HERODATA = require('./dataMapper/HERODATA.js')
-const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, allClassEventItems } = require('./dataMapper/EVENTDATA.js')
+const { defaultItems, achievementSprays, allClassEventItems } = require('./dataMapper/itemData.js')
+const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT } = require('./dataMapper/EVENTDATA.js')
 const { getCleanID, getItemType, getImageURL, sortObject, qualityOrder } = require('./dataMapper/utils.js')
 var allClassData, rawData;
 try {
@@ -26,15 +27,15 @@ forEach(allClassData, (items, type) => {
   forEach(items, (item, i) => {
     allClassDataKeys[type][item.id] = item.name
 
-    var { event, achievement } = reduce(allClassEventItems[type], (result, items, eventID) => {
-      var match = find(items, id => (typeof id == 'object' ? id[0] : id) == item.id)
-      Object.assign(result, match ? { event: eventID, achievement: (typeof match == 'object' ? true : false) } : {})
+    var { event = undefined } = reduce(allClassEventItems[type], (result, items, eventID) => {
+      var match = find(items, id => id == item.id)
+      Object.assign(result, match ? { event: eventID } : {})
       return result
     }, {})
 
-    if (event || achievement) {
-      allClassData[type][i] = Object.assign(item, event ? { event } : {}, achievement ? { achievement } : {})
-    }
+    const isStandard = defaultItems[type].includes(item.id) ? { isStandard: true } : undefined
+    const isAchievement = (type == 'sprays' && achievementSprays.includes(item.id)) ? { achievement: true } : undefined
+    allClassData[type][i] = Object.assign(item, { event }, isAchievement, isStandard)
   })
 })
 
@@ -168,17 +169,16 @@ updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.
 forEach(allClassEventItems, (types, type) => {
   forEach(types, (events, event) => {
     events.forEach(itemID => {
-      var isSpecial = typeof itemID == 'object'
-      itemID = isSpecial ? itemID[0] : itemID
       var out = {
         name: allClassDataKeys[type][itemID].replace(/ \d{4}$/, ''),
         id: itemID,
         img: getImageURL(type, event, itemID)
       }
-      if (isSpecial) {
+      const isAchivement = achievementSprays.includes(itemID)
+      if (isAchivement) {
         Object.assign(out, { achievement: true })
       }
-      if (type == 'sprays' && !isSpecial) {
+      if (type == 'sprays' && !isAchivement) {
         Object.assign(out, { quality: 'common' })
       }
       updates[event].items[type].push(out)
