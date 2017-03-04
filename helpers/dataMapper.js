@@ -7,7 +7,7 @@ const fs = require('fs')
 const { forEach, sortBy, find, reduce } = require('lodash')
 
 const HERODATA = require('./dataMapper/HERODATA.js')
-const { defaultItems, achievementSprays, allClassEventItems } = require('./dataMapper/itemData.js')
+const { hiddenItems, defaultItems, achievementSprays, allClassEventItems } = require('./dataMapper/itemData.js')
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT } = require('./dataMapper/EVENTDATA.js')
 const { getCleanID, getItemType, getImageURL, sortObject, qualityOrder } = require('./dataMapper/utils.js')
 var allClassData, rawData;
@@ -22,22 +22,28 @@ try {
 // Create object containing allclass item names by key so we can easily map event ids to items.
 // also check if any items are in allClassEventItems and mark them as event items
 var allClassDataKeys = {}
-forEach(allClassData, (items, type) => {
-  allClassDataKeys[type] = {}
-  forEach(items, (item, i) => {
+allClassData = reduce(allClassData, (result, items, type) => {
+  if (!result[type]) {
+    result[type] = []
+    allClassDataKeys[type] = {}
+  }
+  items = reduce(items, (newItems = [], item) => {
+    if (hiddenItems[type] && hiddenItems[type].includes(item.id)) return newItems
     allClassDataKeys[type][item.id] = item.name
-
-    var { event = undefined } = reduce(allClassEventItems[type], (result, items, eventID) => {
-      var match = find(items, id => id == item.id)
-      Object.assign(result, match ? { event: eventID } : {})
-      return result
+    var { event = undefined } = reduce(allClassEventItems[type], (r, items, eventID) => {
+      let match = find(items, id => id == item.id)
+      Object.assign(r, match ? { event: eventID } : {})
+      return r
     }, {})
 
     const isStandard = defaultItems[type].includes(item.id) ? { isStandard: true } : undefined
     const isAchievement = (type == 'sprays' && achievementSprays.includes(item.id)) ? { achievement: true } : undefined
-    allClassData[type][i] = Object.assign(item, { event }, isAchievement, isStandard)
-  })
-})
+    newItems.push(Object.assign(item, { event }, isAchievement, isStandard))
+    return newItems
+  }, [])
+  result[type] = items
+  return result
+}, {})
 
 var data = []
 const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g

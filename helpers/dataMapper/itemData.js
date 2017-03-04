@@ -6,7 +6,9 @@ const data = {
   defaultItems: {
     sprays: ['logo', 'you-are-not-prepared', 'da-de-los-muertos'],
     icons: ['overwatch-light', 'overwatch-dark', 'you-are-not-prepared']
-
+  },
+  hiddenItems: {
+    sprays: ['snowcer', 'snowscientist']
   },
   achievementSprays: [
     // DEFAULT
@@ -42,7 +44,6 @@ const data = {
     'awakened-lion'
 
   ],
-  // Items surrounded by [] means they are not purchasable / achievement
   allClassEventItems: {
     sprays: {
       [EVENTS.SUMMER16]: ['summer-games-2016'],
