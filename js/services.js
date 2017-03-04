@@ -25,6 +25,7 @@ OWI.factory("StorageService", function() {
       localStorage.setItem(settings ? 'settings' : 'data', angular.toJson(service[settings ? 'settings' : 'data']));
     },
     init: function() {
+      console.info("Init StorageService");
       var storedData = localStorage.getItem('data')
       if (storedData) {
         service.data = angular.fromJson(storedData);
