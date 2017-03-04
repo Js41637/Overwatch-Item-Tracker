@@ -4,7 +4,7 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs')
-const { forEach, sortBy, findKey, flatten } = require('lodash')
+const { forEach, sortBy, find, reduce } = require('lodash')
 
 const HERODATA = require('./dataMapper/HERODATA.js')
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, allClassEventItems } = require('./dataMapper/EVENTDATA.js')
@@ -25,10 +25,15 @@ forEach(allClassData, (items, type) => {
   allClassDataKeys[type] = {}
   forEach(items, (item, i) => {
     allClassDataKeys[type][item.id] = item.name
-    var event = findKey(allClassEventItems[type], items => flatten(items).includes(item.id))
-    if (event) {
-      item.event = event
-      allClassData[type][i] = item
+
+    var { event, achievement } = reduce(allClassEventItems[type], (result, items, eventID) => {
+      var match = find(items, id => (typeof id == 'object' ? id[0] : id) == item.id)
+      Object.assign(result, match ? { event: eventID, achievement: (typeof match == 'object' ? true : false) } : {})
+      return result
+    }, {})
+
+    if (event || achievement) {
+      allClassData[type][i] = Object.assign(item, event ? { event } : {}, achievement ? { achievement } : {})
     }
   })
 })
@@ -169,6 +174,9 @@ forEach(allClassEventItems, (types, type) => {
         name: allClassDataKeys[type][itemID].replace(/ \d{4}$/, ''),
         id: itemID,
         img: getImageURL(type, event, itemID)
+      }
+      if (isSpecial) {
+        Object.assign(out, { achievement: true })
       }
       if (type == 'sprays' && !isSpecial) {
         Object.assign(out, { quality: 'common' })

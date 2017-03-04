@@ -106,7 +106,7 @@
 }
 
 #hero-container #hero-header .hero-progress {
-  background-color: rgba(24,34,62,.7);
+  background-color: rgba(24, 34, 62, .7);
   height: 26px;
   text-align: center;
   position: relative;
@@ -119,7 +119,7 @@
   display: block;
   position: relative;
   color: #fff;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 #hero-container #hero-header .hero-progress .hero-progress-bar {
@@ -264,18 +264,21 @@
   border-radius: 6px;
   overflow: hidden;
   transition: transform 0.08s ease-in-out;
-  border: 3px solid rgba(255,255,255,0.6);
+  border: 3px solid rgba(255, 255, 255, 0.6);
 }
 
 #hero-container .hero-grid #icons .item:hover {
   transform: scale(1.1);
 }
 
-#hero-container .section .item[event="HALLOWEEN_2016"], #hero-container .section .item[event="SUMMER_GAMES_2016"], #hero-container .section .item[event="WINTER_WONDERLAND_2016"], #hero-container .section .item[event="YEAR_OF_THE_ROOSTER_2017"], #hero-container .section .item[achievement="true"] {
+
+/* Item Icons */
+
+#hero-container .section .item:not([event="none"]), #hero-container .section .item:not([achievement="false"]) {
   padding-right: 35px;
 }
 
-#hero-container .item[event="HALLOWEEN_2016"]:after, #hero-container .item[event="SUMMER_GAMES_2016"]:after, #hero-container .item[event="WINTER_WONDERLAND_2016"]:after, #hero-container .item[event="YEAR_OF_THE_ROOSTER_2017"]:after, #hero-container .item[achievement="true"]:after {
+#hero-container .item:not([event="none"]):after, #hero-container .item:not([achievement="false"]):after, #hero-container .item:not([event="none"]):before, #hero-container .item:not([achievement="false"]):before {
   content: "";
   position: absolute;
   width: 25px;
@@ -287,21 +290,31 @@
   background-position: center;
 }
 
-#hero-container .item[event="HALLOWEEN_2016"]:after {
+#hero-container .hero-items .item:not([event="none"]):before, #hero-container .hero-items .item:not([achievement="false"]):before {
+  right: 37px;
+}
+
+
+/* Event Icons */
+
+#hero-container .hero-items .item[event="HALLOWEEN_2016"]:after {
   background-image: url("../resources/icons/halloween.png");
 }
 
-#hero-container .item[event="SUMMER_GAMES_2016"]:after {
+#hero-container .hero-items .item[event="SUMMER_GAMES_2016"]:after {
   background-image: url("../resources/icons/summer-games.png");
 }
 
-#hero-container .item[event="WINTER_WONDERLAND_2016"]:after {
+#hero-container .hero-items .item[event="WINTER_WONDERLAND_2016"]:after {
   background-image: url("../resources/icons/winter-wonderland.png");
 }
 
-#hero-container .item[event="YEAR_OF_THE_ROOSTER_2017"]:after {
+#hero-container .hero-items .item[event="YEAR_OF_THE_ROOSTER_2017"]:after {
   background-image: url("../resources/icons/year-of-the-rooster.png");
 }
+
+
+/* Achivement Icons */
 
 #hero-container .item[achievement="true"]:after {
   background-image: url("../resources/icons/achievement.svg");
@@ -310,6 +323,20 @@
 #hero-container .section:not(#sprays) .item[achievement="true"]:after {
   background-image: url("../resources/icons/blizzard.png");
 }
+
+/* Achivement & Event Icons */
+
+#hero-container .item:not([event="none"]):not([achievement="false"]) {
+  padding-right: 63px;
+}
+
+#hero-container .item:not([event="none"]):not([achievement="false"]):before {
+  background-image: url("../resources/icons/achievement.svg");
+}
+
+/**
+ * TOOLTIPS
+ **/
 
 #hero-container .section .tooltip.in {
   opacity: 1;
@@ -377,9 +404,6 @@
 #hero-container .section .tooltip .preview.video .nosupport {
   font-size: 28px;
 }
-
-
-/* Tooltips */
 
 #hero-container .section .tooltip.img-preview .tooltip-arrow {
   border-top-color: rgb(240, 240, 240);

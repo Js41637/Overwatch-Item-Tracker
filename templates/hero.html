@@ -42,8 +42,8 @@
       </div>
       <div
         class="item {{::item.quality || 'unknown'}}"
-        event="{{::item.event}}"
-        achievement="{{::item.achievement}}"
+        event="{{::item.event || 'none'}}"
+        achievement="{{::item.achievement || 'false'}}"
         uib-tooltip-template="'imagePreviewTemplate.html'"
         tooltip-popup-delay="275"
         tooltip-class="img-preview"

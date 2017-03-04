@@ -41,7 +41,7 @@ const EVENTTIMES = {
   }
 }
 
-// allClassItems need to be manually added as allClass data isnt included in the rawData
+// All Class event items need to be manually added, these IDs correlate to items in allClassItems.json
 // Items surrounded by [] means they are not purchasable / achievement
 const allClassEventItems = {
   sprays: {
