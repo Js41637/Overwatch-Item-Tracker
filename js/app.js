@@ -150,7 +150,7 @@ OWI.run(function() {
               data[hero][newType][item] = data[event][type][item];
             }
           }
-          //delete data[event]
+          delete data[event]
         }
       }
     }

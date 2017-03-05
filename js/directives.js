@@ -31,6 +31,18 @@ OWI.filter('itemPrice', function() {
   }
 })
 
+OWI.directive('eventItem', function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: './templates/event-item.html',
+    link: function($scope, $elm, $attr) {
+      $scope.type = $attr.type;
+      $scope.noHero = $attr.nohero;
+    }
+  }
+})
+
 OWI.directive("scroll", function($window) {
   return function($scope) {
     angular.element($window).bind("scroll", function() {

@@ -259,7 +259,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
 
 OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "event", function($scope, $rootScope, Data, StorageService, event) {
   $scope.preview = false;
-  $scope.checked = Data.checked[event.id];
+  $scope.checked = Data.checked;
   $scope.data = event;
 
   $rootScope.$on('selectAll', function() {

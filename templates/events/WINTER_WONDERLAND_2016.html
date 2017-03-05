@@ -8,13 +8,7 @@
         <h2>Voice Lines <small>75</small></h2>
       </div>
       <div class="items">
-        <div class="item" ng-repeat="voice in ::data.items.voicelines track by $index">
-          <input type="checkbox" id="{{'voice' + $index}}" ng-model="checked.voicelines[voice.id]" ng-change="onSelect()">
-          <label for="{{'voice' + $index}}">
-            <h3>{{::voice.hero}}</h3>
-            <h4>{{::voice.name}}</h4>
-          </label>
-        </div>
+        <event-item ng-repeat="item in ::data.items.voicelines track by $index" type="voicelines"></event-item>
       </div>
     </div>
     <div class="right">
@@ -23,12 +17,7 @@
           <h2>Player Icons</h2>
         </div>
         <div class="items">
-          <div class="item" ng-repeat="icon in ::data.items.icons track by $index" ng-mouseenter="showPreview(icon, 'icon')" ng-mouseleave="hidePreview()">
-            <input type="checkbox" id="{{'icon' + $index}}" ng-model="checked.icons[icon.id]" ng-change="onSelect()">
-            <label for="{{'icon' + $index}}">
-              <h3>{{::icon.name}}</h3>
-            </label>
-          </div>
+          <event-item ng-repeat="item in ::data.items.icons track by $index" type="icons" noHero="true"></event-item>
         </div>
       </div>
     </div>
@@ -41,13 +30,7 @@
         <h2>Epic Skins <small>750</small></h2>
       </div>
       <div class="items">
-        <div class="item" ng-repeat="skin in ::data.items.skinsEpic track by $index" ng-mouseenter="showPreview(skin)" ng-mouseleave="hidePreview()">
-          <input type="checkbox" id="{{'epic' + $index}}" ng-model="checked.skinsEpic[skin.id]" ng-change="onSelect()">
-          <label for="{{'epic' + $index}}">
-            <h3>{{::skin.hero}}</h3>
-            <h4>{{::skin.name}}</h4>
-          </label>
-        </div>
+        <event-item ng-repeat="item in ::data.items.skinsEpic track by $index" type="skins"></event-item>
       </div>
     </div>
   </div>
@@ -57,13 +40,7 @@
         <h2>Highlight Intros <small>750</small></h2>
       </div>
       <div class="items">
-        <div class="item" ng-repeat="intro in ::data.items.intros track by $index" ng-mouseenter="showPreview(intro)" ng-mouseleave="hidePreview()">
-          <input type="checkbox" id="{{'intro' + $index}}" ng-model="checked.intros[intro.id]" ng-change="onSelect()">
-          <label for="{{'intro' + $index}}">
-            <h3>{{::intro.hero}}</h3>
-            <h4>{{::intro.name}}</h4>
-          </label>
-        </div>
+        <event-item ng-repeat="item in ::data.items.intros track by $index" type="intros"></event-item>
       </div>
     </div>
     <div id="emotes" class="section">
@@ -71,13 +48,7 @@
         <h2>Emotes <small>750</small></h2>
       </div>
       <div class="items">
-        <div class="item" ng-repeat="emote in ::data.items.emotes track by $index" ng-class="{legend: emote.legendary}" ng-mouseenter="showPreview(emote)" ng-mouseleave="hidePreview()">
-          <input type="checkbox" id="{{'emote' + $index}}" ng-model="checked.emotes[emote.id]" ng-change="onSelect()">
-          <label for="{{'emote' + $index}}">
-            <h3>{{::emote.hero}}</h3>
-            <h4>{{::emote.name}}</h4>
-          </label>
-        </div>
+        <event-item ng-repeat="item in ::data.items.emotes track by $index" type="emotes"></event-item>
       </div>
     </div>
   </div>
@@ -86,13 +57,7 @@
       <h2>Victory Poses <small>225</small></h2>
     </div>
     <div class="items">
-      <div class="item" ng-repeat="pose in ::data.items.poses track by $index" ng-mouseenter="showPreview(pose)" ng-mouseleave="hidePreview()">
-        <input type="checkbox" id="{{'pose' + $index}}" ng-model="checked.poses[pose.id]" ng-change="onSelect()">
-        <label for="{{'pose' + $index}}">
-          <h3>{{::pose.hero}}</h3>
-          <h4>{{::pose.name}}</h4>
-        </label>
-      </div>
+      <event-item ng-repeat="item in ::data.items.poses track by $index" type="poses"></event-item>
     </div>
   </div>
   <div id="sprays" class="section flex-column x4">
@@ -106,8 +71,8 @@
     </div>
     <div class="items">
       <div class="item" ng-repeat="spray in ::data.items.sprays track by $index" ng-if="::!spray.id.includes('ornament')" ng-mouseenter="showPreview(spray, 'spray')" ng-mouseleave="hidePreview()">
-        <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked.sprays[spray.id]" ng-change="onSelect()">
-        <input ng-if="::spray.hero" type="checkbox" class="orn" ng-if="::spray.hero" id="{{'sprayorn' + $index}}" ng-model="checked.sprays[spray.ornamentID]" ng-change="onSelect()">
+        <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked[spray.heroID].sprays[spray.id]" ng-change="onSelect()">
+        <input ng-if="::spray.hero" type="checkbox" class="orn" ng-if="::spray.hero" id="{{'sprayorn' + $index}}" ng-model="checked[spray.heroID].sprays[spray.ornamentID]" ng-change="onSelect()">
         <label ng-if="::spray.hero" for="{{'sprayorn' + $index}}" class="ornl"></label>
         <label for="{{'spray' + $index}}">
           <h3>{{::spray.hero || spray.name}}</h3>
