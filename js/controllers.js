@@ -341,7 +341,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
       $scope.preview = item;
 
       $scope.$digest();
-    }, $scope.preview ? 100 : 650);
+    }, $scope.preview ? 50 : 600);
   };
 
   $scope.hidePreview = function() {
