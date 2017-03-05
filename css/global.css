@@ -848,6 +848,7 @@ strong {
   position: relative;
   padding: 0 40px;
   height: 55px;
+  z-index: 10;
 }
 
 #sub-header .homebtn {
