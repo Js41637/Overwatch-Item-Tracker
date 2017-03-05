@@ -185,7 +185,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   };
 
   this.onSelect = function() {
-    calculateTotalsAndCosts()
+    StorageService.setData(Object.assign(Data.checked, vm.checked[hero.id]));
+    calculateTotalsAndCosts();
   }
 
   this.toggleGrid = function() {
@@ -203,6 +204,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
       })
     })
     calculateTotalsAndCosts();
+    StorageService.setData(Object.assign(Data.checked, vm.checked[hero.id]));
   }
 
   function isValidItem(item) {
