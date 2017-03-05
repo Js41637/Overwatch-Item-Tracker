@@ -43,8 +43,6 @@ OWI.factory("StorageService", function() {
 })
 
 OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q, StorageService) {
-  var items = '{"skinsLegendary":{},"skinsEpic":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}'
-  var items2 = '{"skins":{},"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}'
   function initialize(data) {
     console.info("Initializing");
     var storedData = StorageService.getData() || {};
@@ -52,14 +50,12 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
       initialized: true,
       checked: {}
     }
-    Object.keys(data.events).forEach(function(event) {
-      out.checked[event] = JSON.parse(items)
-    })
-    Object.keys(data.heroes).forEach(function(hero) {
-      out.checked[hero] = JSON.parse(items2)
-    })
-    Object.assign(out.checked, storedData)
-    Object.assign(service, out, data)
+    for (var hero in data.heroes) {
+      out.checked[hero] = {"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}
+    }
+
+    Object.assign(out.checked, storedData);
+    Object.assign(service, out, data);
   }
 
   var service = {

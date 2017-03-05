@@ -87,11 +87,12 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   };
 }]);
 
-OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $uibModalInstance, StorageService, Data) {
+OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $uibModalInstance, StorageService, DataService) {
   var vm = this;
   this.particles = StorageService.getSetting('particles');
   this.hdVideos = StorageService.getSetting('hdVideos');
   this.currentTheme = StorageService.getSetting('currentTheme');
+  this.importErrors = null;
 
   this.close = function() {
     $uibModalInstance.dismiss('close');
@@ -110,38 +111,46 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
       location.reload();
     }
   }
-
-  /*this.data = angular.toJson(StorageService.getData());
-  var dataTemplate = "emotes|icons|intros|poses|skinsEpic|skinsLegendary|sprays|voicelines";
-  var validEvents = Object.keys(Data.events)
-  this.importData = function(data) {
+  this.data = angular.toJson(DataService.checked, 2);
+  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines'];
+  var validHeroes = Object.keys(DataService.heroes);
+  this.importData = function(data, test) {
+    vm.importErrors = null
     try {
-      data = angular.fromJson(vm.data)
-      var errs = []
+      data = angular.fromJson(vm.data);
+      var errs = [];
 
-      if (!Object.keys(data).length) return
+      if (!Object.keys(data).length) {
+        return;
+      }
 
-      Object.keys(data).forEach(function(event) {
-        if (!validEvents.includes(event)) {
-          errs.push("Unknown event " + event)
+      for (var hero in data) {
+        if (!validHeroes.includes(hero)) {
+          errs.push("Unknown hero " + hero);
         }
-        var eventKeys = Object.keys(data[event]).sort().join('|')
-        if (eventKeys != dataTemplate) {
-          errs.push("Invalid event template for " + event)
+        for (var type in data[hero]) {
+          if (!validTypes.includes(type)) {
+            errs.push("Invalid hero template for " + hero + ", unknown key '" + type + "'")
+          }
         }
-      })
+      }
 
       if (errs.length) {
         vm.importErrors = errs.join('\n')
         return;
       }
-      StorageService.setData(data);
-      location.reload();
+
+      vm.importErrors = false;
+      if (!test) {
+        StorageService.setData(data);
+        location.reload();
+      }
+
     } catch(e) {
       console.error(e);
       vm.importErrors = 'An error occured while parsing the JSON';
     }
-  }*/
+  }
 
   this.selectTheme = function(what) {
     this.currentTheme = what
@@ -149,18 +158,22 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
     location.reload()
   }
 
-  /*this.selectAll = function() {
-    Object.keys(Data.events).forEach(function(key) {
-      var update = Data.events[key]
-      Object.keys(Data.events[key].items).forEach(function(type) {
-        update.items[type].forEach(function(item) {
-          Data.checked[update.id][type][item.id] = true;
-        });
-      });
-    });
-    StorageService.setData(Data.checked);
+  this.selectAll = function() {
+    for (var heroID in DataService.heroes) {
+      var hero = DataService.heroes[heroID].items
+      for (var type in hero) {
+        for (var item of hero[type]) {
+          if (!DataService.checked[heroID][type]) {
+            DataService.checked[heroID][type] = {}
+          }
+          DataService.checked[heroID][type][item.id] = true
+        }
+      }
+    }
+
+    StorageService.setData(DataService.checked);
     $rootScope.$emit('selectAll')
-  }*/
+  }
 }])
 
 OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageService", "hero", function($scope, $rootScope, Data, StorageService, hero) {
@@ -184,8 +197,12 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     prev: 0
   };
 
+  $rootScope.$on('selectAll', function() {
+    calculateTotalsAndCosts();
+  })
+
   this.onSelect = function() {
-    StorageService.setData(Object.assign(Data.checked, vm.checked[hero.id]));
+    StorageService.setData(Object.assign({}, Data.checked, vm.checked[hero.id]));
     calculateTotalsAndCosts();
   }
 
@@ -204,7 +221,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
       })
     })
     calculateTotalsAndCosts();
-    StorageService.setData(Object.assign(Data.checked, vm.checked[hero.id]));
+    StorageService.setData(Object.assign({}, Data.checked, vm.checked[hero.id]));
   }
 
   function isValidItem(item) {
@@ -266,7 +283,6 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
 
   $rootScope.$on('selectAll', function() {
     $scope.calculateCosts();
-    $scope.calculatePerHeroProgress();
   })
 
   $scope.onSelect = function() {
