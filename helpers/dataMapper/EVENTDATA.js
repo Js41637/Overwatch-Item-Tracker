@@ -8,7 +8,7 @@ const EVENTS = {
 }
 
 const EVENTORDER = {
-  undefined: 0,
+  undefined: 0, // no event
   [EVENTS.SUMMER16]: 1,
   [EVENTS.HALLOWEEN16]: 2,
   [EVENTS.CHRISTMAS16]: 3,

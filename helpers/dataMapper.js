@@ -49,7 +49,7 @@ var data = []
 const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g
 const heroGroups = rawData.split('\n').filter(a => !a.includes("Error unknown")).join('\n').split('\n\n')
 heroGroups.forEach(heroData => {
-  let hero = heroData.split('\n')[0].split(' ').slice(2).join(' ') // name of hero
+  const hero = heroData.split('\n')[0].split(' ').slice(2).join(' ') // name of hero
   let rawItems = heroData.split('\n').slice(1).join('\n') // remove the first line containing name of hero
   var items = {}, itemMatch;
   while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
@@ -61,8 +61,8 @@ heroGroups.forEach(heroData => {
 var heroes = {}
 // Goes through every hero and their item lists
 data.forEach(({ hero, items: itemGroups }) => {
-  var heroID = getCleanID(hero)
-  var heroData = Object.assign({
+  const heroID = getCleanID(hero)
+  const heroData = Object.assign({
     name: hero,
     id: heroID,
   }, HERODATA[heroID], {
@@ -82,10 +82,10 @@ data.forEach(({ hero, items: itemGroups }) => {
       var [str, name, type] = item.match(/(.+) \((.+)\)/) //eslint-disable-line
       name = name.trim()
       if (name == 'RANDOM') return
-      var id = getCleanID(name, heroID)
-      var { quality, type: itemType } = getItemType(type)
+      const id = getCleanID(name, heroID)
+      const { quality, type: itemType } = getItemType(type)
       if (!quality || !itemType) return
-      var out = { name, id, quality }
+      const out = { name, id, quality }
       switch (group) {
         case 'COMMON':
           break;
@@ -117,8 +117,9 @@ var updates = {}
 forEach(heroes, hero => {
   forEach(hero.items, (items, tKey) => {
     items.forEach(item => {
-      var event = item.event
-      var type = tKey == 'skins' ? (item.quality == 'legendary' ? 'skinsLegendary' : (item.quality == 'epic' ? 'skinsEpic' : 'skins')) : tKey
+      const event = item.event
+      // Split legendary and epic skins up for events as they are displayed seperately.
+      const type = tKey == 'skins' ? (item.quality == 'legendary' ? 'skinsLegendary' : (item.quality == 'epic' ? 'skinsEpic' : 'skins')) : tKey
       if (!event) return
       if (!updates[event]) updates[event] = {
         order: Object.keys(EVENTNAMES).indexOf(event),
@@ -128,10 +129,12 @@ forEach(heroes, hero => {
         items: {}
       }
       if (!updates[event].items[type]) updates[event].items[type] = []
-      var legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
-      var u = getImageURL(type, event, item.id)
-      var url = type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: u } : { img: u })
-      var newItem = Object.assign({}, { hero: hero.name, heroID: hero.id }, legend, item, url )
+      // if the item isnt a skin and is a legendary add a legendary tag, we do this because very few items for events
+      // have had legendary items added outside of skins, this way we can mark them as special
+      const legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
+      const u = getImageURL(type, event, item.id)
+      const url = type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: u } : { img: u })
+      const newItem = Object.assign({}, { hero: hero.name, heroID: hero.id }, legend, item, url )
       if (type == 'icons') {
         delete newItem.hero
         delete newItem.quality
@@ -176,6 +179,7 @@ forEach(allClassEventItems, (types, type) => {
       if (isAchivement) {
         Object.assign(out, { achievement: true })
       }
+      // sprays have no quality by default but if it isn't an achievement it means it's purchaseable so add quality
       if (type == 'sprays' && !isAchivement) {
         Object.assign(out, { quality: 'common' })
       }
@@ -196,7 +200,6 @@ forEach(updates, update => forEach(update.items, (items, type) => {
 }))
 
 // Add allClassData (Sprays, Icons) to items.json file
-// NOTE: This allClassData is seperate from the allClassEventItems
 heroes["all"] = Object.assign({
   name: 'All Class',
   id: 'all'
