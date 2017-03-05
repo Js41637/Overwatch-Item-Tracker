@@ -268,8 +268,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   })
 
   $scope.onSelect = function() {
-    Data.checked[$scope.data.id] = $scope.checked;
-    StorageService.setData(Data.checked);
+    StorageService.setData($scope.checked);
     $scope.calculateCosts();
   };
 
@@ -279,6 +278,10 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
     prev: 0
   };
 
+  var types = {
+    skinsEpic: 'skins',
+    skinsLegendary: 'skins'
+  }
   $scope.calculateCosts = function() {
     if ($scope.data.id == 'SUMMER_GAMES_2016') return
     var cost = {
@@ -294,7 +297,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
         if (!item.quality) return // if it has no quality it has no cost
         var price = Data.prices[item.quality] * 3;
         cost.total += price;
-        if (!Data.isItemChecked($scope.data.id, type, item.id)) {
+        if (!Data.isItemChecked(item.heroID, types[type] || type, item.id)) {
           cost.remaining += price;
         }
       })

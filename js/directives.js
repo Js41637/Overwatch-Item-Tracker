@@ -39,6 +39,7 @@ OWI.directive('eventItem', function() {
     link: function($scope, $elm, $attr) {
       $scope.type = $attr.type;
       $scope.noHero = $attr.nohero;
+      $scope.noName = $attr.noname;
     }
   }
 })
