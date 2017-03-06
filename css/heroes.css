@@ -247,6 +247,15 @@
   width: 100px;
   height: 100px;
   text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.125s ease-in-out;
+  transform: scale(0);
+}
+
+#hero-container .hero-grid .item.img-loaded {
+  transform: scale(1);
 }
 
 #hero-container .hero-grid #sprays .item {
@@ -254,20 +263,14 @@
   height: 130px;
 }
 
-#hero-container .hero-grid .item img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 #hero-container .hero-grid #icons .item {
   border-radius: 6px;
   overflow: hidden;
-  transition: transform 0.08s ease-in-out;
+  
   border: 3px solid rgba(255, 255, 255, 0.6);
 }
 
-#hero-container .hero-grid #icons .item:hover {
+#hero-container .hero-grid #icons .item.img-loaded:hover {
   transform: scale(1.1);
 }
 

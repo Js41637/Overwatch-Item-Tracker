@@ -201,6 +201,17 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     calculateTotalsAndCosts();
   })
 
+  this.getImgUrl = function(thingy, type, hero) {
+    var item = angular.copy(thingy);
+    item.type = type;
+    if (item.type == 'intros' || item.type == 'emotes') {
+      item.video = '/resources/heroes/' + (item.hero || hero) + '/' + item.type + '/' + item.id + '.webm'
+    } else {
+      item.img = '/resources/heroes/' + (item.hero || hero) + '/' + item.type + '/' + item.id + (item.type == 'sprays' || item.type == 'icons' ? '.png' : '.jpg')
+    }
+    return item
+  }
+
   this.onSelect = function() {
     StorageService.setData(Object.assign({}, Data.checked, vm.checked[hero.id]));
     calculateTotalsAndCosts();

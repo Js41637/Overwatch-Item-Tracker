@@ -60,24 +60,14 @@ OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService)
     replace: true,
     scope: {
       item: '=data',
-      type: '=type',
-      hero: '=hero',
       supportsWebM: '=support'
     },
     templateUrl: './templates/tooltip-image-preview.html',
     link: function($scope) {
-      var item = angular.copy($scope.item);
-      item.type = $scope.type;
-      if (item.type == 'intros' || item.type == 'emotes') {
-        item.video = '/resources/heroes/' + (item.hero || $scope.hero) + '/' + item.type + '/' + item.id + '.webm'
-      } else {
-        item.img = '/resources/heroes/' + (item.hero || $scope.hero) + '/' + item.type + '/' + item.id + (item.type == 'sprays' || item.type == 'icons' ? '.png' : '.jpg')
+      if (StorageService.getSetting('hdVideos') && $scope.item.video) {
+        $scope.item.video = $scope.item.video.replace('.webm', '-hd.webm');
       }
-
-      if (StorageService.getSetting('hdVideos') && item.video) {
-        item.video = item.video.replace('.webm', '-hd.webm');
-      }
-      $scope.preview = item;
+      $scope.preview = $scope.item;
     }
   }
 }])
@@ -176,7 +166,7 @@ OWI.directive('loadingSpinner', function() {
   }
 })
 
-OWI.directive('lazyBackground', ["$document", "$compile", function($document, $compile) {
+OWI.directive('lazyBackground', ["ImageLoader", "$compile", function(ImageLoader, $compile) {
   return {
     restrict: 'A',
     scope: {},
@@ -186,36 +176,30 @@ OWI.directive('lazyBackground', ["$document", "$compile", function($document, $c
         // Make sure newSrc is valid else return error
         if (newSrc == null || newSrc == "") {
           $element.css('background-image', '');
-          $element.addClass('img-load-error');
+          //$element.addClass('img-load-error');
           return;
         }
-        /**
-         * Removes any error class on the element and then adds the loading class to the element.
-         * This is required in cases where the element can load more than 1 image.
-         */
-        $element.removeClass('img-load-error');
-        $element.addClass('img-loading');
 
-        var loader = $compile('<loading-spinner  />')($scope)
-        $element.prepend(loader)
-        setTimeout(function () {
-          loader.css('opacity', '1')
-        }, 110);
-        // Use some oldskool preloading techniques to load the image
-        var img = $document[0].createElement('img');
-        img.onload = function() {
-          $element.css('background-image', 'url("'+this.src+'")');
-          $element.removeClass('img-loading');
-          loader.remove()
-        };
-        img.onerror = function() {
-          //Remove any existing background-image & loading class and apply error class
-          $element.css('background-image', '');
-          $element.removeClass('img-loading');
-          $element.addClass('img-load-error');
+        var loader;
+        if (!$attrs.noLoader) {
+          loader = $compile('<loading-spinner />')($scope)
+          $element.prepend(loader)
+          setTimeout(function () {
+            loader.css('opacity', '1')
+          }, 110);
+        } else {
+          console.log("No loader")
+          loader = { remove: angular.noop }
+        }
+        
+        ImageLoader.loadImage(newSrc).then(function(src) {
+          $element.css('background-image', 'url("'+src+'")');
+          $element.addClass('img-loaded');
           loader.remove();
-        };
-        img.src = encodeURI(newSrc);
+        }, function() {
+          $element.css('background-image', '');
+          loader.remove();
+        });
       });
     }
   }

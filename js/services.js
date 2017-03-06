@@ -95,3 +95,54 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
   service.init();
   return service;
 }])
+
+OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
+  var service = {
+    processing: false,
+    requests: 0,
+    images: [],
+    loadImage: function(url) {
+      var deferred = $q.defer()
+      service.images.push(service.fetchImage(url, deferred))
+      if (!service.processing) {
+        service.processQueue()
+      }
+      return deferred.promise
+    },
+    fetchImage: function(url, promise) {
+      return function() {
+        var img = $document[0].createElement('img');
+        img.onload = function() {
+          service.requests--;
+          promise.resolve(this.src);
+        };
+        img.onerror = function() {
+          service.requests--;
+          promise.reject();
+        };
+        img.src = encodeURI(url);
+      }
+    },
+    processQueue: function() {
+      service.processing = true;
+      if (service.requests == 4) {
+        setTimeout(function() {
+          service.processQueue()
+        }, 100)
+        return
+      }
+      
+      var nextImage = service.images.shift()
+      if (nextImage) {
+        service.requests++;
+        nextImage();
+        setTimeout(function() {
+          service.processQueue()
+        }, 1);
+      } else {
+        service.processing = false;
+      }
+    }
+  }
+  return service;
+}])

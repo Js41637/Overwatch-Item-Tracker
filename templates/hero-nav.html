@@ -9,7 +9,7 @@
   <div class="gallery hero">
     <div>
       <div class="block" ng-repeat="hero in ::$ctrl.heroes track by $index" ui-sref="heroes({id: hero.id})" ui-sref-active="selected">
-        <div class="img" lazy-background="{{::hero.id | heroImg:'icon'}}"></div>
+        <div class="img" lazy-background="{{::hero.id | heroImg:'icon'}}" no-loader="true"></div>
         <h2>{{::hero.name}}</h2>
       </div>
     </div>
