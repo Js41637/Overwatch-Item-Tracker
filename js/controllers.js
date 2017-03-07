@@ -201,7 +201,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     calculateTotalsAndCosts();
   })
 
-  this.getImgUrl = function(thingy, type, hero) {
+  this.getImgUrl = function(thingy, type, hero, image) {
     var item = angular.copy(thingy);
     item.type = type;
     if (item.type == 'intros' || item.type == 'emotes') {
@@ -209,7 +209,16 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     } else {
       item.img = '/resources/heroes/' + (item.hero || hero) + '/' + item.type + '/' + item.id + (item.type == 'sprays' || item.type == 'icons' ? '.png' : '.jpg')
     }
-    return item
+    return image ? item.img : item
+  }
+
+  this.isItemChecked = function(item, type) {
+    return this.checked[type][item.id];
+  }
+
+  this.selectItem = function(item, type) {
+    this.checked[type][item.id] = !this.checked[type][item.id];
+    vm.onSelect();
   }
 
   this.onSelect = function() {

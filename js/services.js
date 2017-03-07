@@ -101,12 +101,21 @@ OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
     processing: false,
     requests: 0,
     images: [],
+    loadedImages: {},
     loadImage: function(url) {
-      var deferred = $q.defer()
-      service.images.push(service.fetchImage(url, deferred))
-      if (!service.processing) {
-        service.processQueue()
+      var deferred = $q.defer();
+      if (service.loadedImages[url]) {
+        setTimeout(function() {
+          deferred.resolve(url)
+        }, 0)
+        return deferred.promise
+      } else {
+        service.images.push(service.fetchImage(url, deferred))
+        if (!service.processing) {
+          service.processQueue()
+        }
       }
+      
       return deferred.promise
     },
     fetchImage: function(url, promise) {
@@ -114,13 +123,14 @@ OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
         var img = $document[0].createElement('img');
         img.onload = function() {
           service.requests--;
+          service.loadedImages[url] = true;
           promise.resolve(this.src);
         };
         img.onerror = function() {
           service.requests--;
           promise.reject();
         };
-        img.src = encodeURI(url);
+        img.src = url;
       }
     },
     processQueue: function() {
@@ -128,7 +138,7 @@ OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
       if (service.requests == 4) {
         setTimeout(function() {
           service.processQueue()
-        }, 100)
+        }, 75)
         return
       }
       

@@ -27,10 +27,13 @@
       </div>
       <div
         class="item"
+        ng-class="{selected: hero.isItemChecked(item, type)}"
         uib-tooltip="{{::item.name}}"
         tooltip-placement="top"
         ng-repeat="item in ::items track by $index"
-        lazy-background="{{'./resources/heroes/' + (item.hero || hero.id) + '/' + type + '/' + item.id + '.png'}}"
+        fancy-load="{{$index}}"
+        ng-click="hero.selectItem(item, type)"
+        lazy-background="{{hero.getImgUrl(item, type, hero.id, true)}}"
         no-loader="true">
       </div>
     </div>

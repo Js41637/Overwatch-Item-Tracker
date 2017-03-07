@@ -250,12 +250,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  transition: transform 0.125s ease-in-out;
+  transition: transform 100ms ease-in-out, opacity 100ms ease-in-out;
   transform: scale(0);
-}
-
-#hero-container .hero-grid .item.img-loaded {
-  transform: scale(1);
+  cursor: pointer;
 }
 
 #hero-container .hero-grid #sprays .item {
@@ -263,15 +260,23 @@
   height: 130px;
 }
 
-#hero-container .hero-grid #icons .item {
+#hero-container .hero-grid .item:not(.selected) {
+  opacity: 0.4;
+}
+
+#hero-container .hero-grid .item {
   border-radius: 6px;
   overflow: hidden;
-  
   border: 3px solid rgba(255, 255, 255, 0.6);
 }
 
-#hero-container .hero-grid #icons .item.img-loaded:hover {
-  transform: scale(1.1);
+#hero-container .hero-grid .item:hover {
+  transform: scale(1.1) !important;
+  opacity: 1;
+}
+
+#hero-container .hero-grid .item.pulse:hover {
+  transform: scale(1.2) !important;
 }
 
 

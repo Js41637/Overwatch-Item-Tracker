@@ -31,6 +31,23 @@ OWI.filter('itemPrice', function() {
   }
 })
 
+OWI.directive('fancyLoad', function() {
+  return {
+    restrict: 'A',
+    link: function($scope, $elm, $attr) {
+      setTimeout(function() {
+        $elm.css('transform', 'scale(1)');
+      }, $attr.fancyLoad * 8);
+      $elm.on('click', function() {
+        $elm.addClass('pulse');
+        setTimeout(function() {
+          $elm.removeClass('pulse');
+        }, 50)
+      })
+    }
+  }
+});
+
 OWI.directive('eventItem', function() {
   return {
     restrict: 'E',
@@ -188,15 +205,14 @@ OWI.directive('lazyBackground', ["ImageLoader", "$compile", function(ImageLoader
             loader.css('opacity', '1')
           }, 110);
         } else {
-          console.log("No loader")
           loader = { remove: angular.noop }
         }
         
-        ImageLoader.loadImage(newSrc).then(function(src) {
-          $element.css('background-image', 'url("'+src+'")');
-          $element.addClass('img-loaded');
+        ImageLoader.loadImage(encodeURI(newSrc)).then(function(src) {
+          $element.css('background-image', 'url("' + src + '")');
           loader.remove();
         }, function() {
+          console.warn("Error loading image");
           $element.css('background-image', '');
           loader.remove();
         });
