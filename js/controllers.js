@@ -201,15 +201,19 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     calculateTotalsAndCosts();
   })
 
-  this.getImgUrl = function(thingy, type, hero, image) {
-    var item = angular.copy(thingy);
-    item.type = type;
-    if (item.type == 'intros' || item.type == 'emotes') {
-      item.video = '/resources/heroes/' + (item.hero || hero) + '/' + item.type + '/' + item.id + '.webm'
+ 
+  this.getImgUrl = function(item, type, hero, image) {
+    var base = './resources/heroes/' + (item.hero || hero) + '/' + type + '/' + item.id;
+    var out = {}
+    if (type == 'intros' || type == 'emotes') {
+      out.video = base + '.webm'
+      if (StorageService.getSetting('hdVideos')) {
+       out.video = out.video.replace('.webm', '-hd.webm');
+      }
     } else {
-      item.img = '/resources/heroes/' + (item.hero || hero) + '/' + item.type + '/' + item.id + (item.type == 'sprays' || item.type == 'icons' ? '.png' : '.jpg')
+      out.img = base + (type == 'sprays' || type == 'icons' ? '.png' : '.jpg')
     }
-    return image ? item.img : item
+    return image ? out.img : out
   }
 
   this.isItemChecked = function(item, type) {

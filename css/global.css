@@ -172,7 +172,7 @@ body {
   border: 1px solid rgb(240, 240, 240);
   border-radius: 4px;
   transition: background 100ms ease-in-out, transform 100ms ease-in-out;
-  background: url("../resources/body-bg.jpg") no-repeat top;
+  background: url(../resources/body-bg.jpg) no-repeat top;
   background-size: cover;
   width: 29px;
   overflow: hidden;
@@ -963,7 +963,7 @@ strong {
   border-radius: 4px;
   cursor: pointer;
   transition: background 100ms ease-in-out, transform 100ms ease-in-out;
-  background: url(../../../resources/body-bg.jpg) no-repeat top;
+  background: url(../resources/body-bg.jpg) no-repeat top;
   background-size: cover;
 }
 

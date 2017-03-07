@@ -71,23 +71,16 @@ OWI.directive("scroll", function($window) {
   };
 });
 
-OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService) {
+OWI.directive('tooltipImagePreview', function() {
   return {
     restrict: 'E',
     replace: true,
-    scope: {
-      item: '=data',
-      supportsWebM: '=support'
-    },
     templateUrl: './templates/tooltip-image-preview.html',
     link: function($scope) {
-      if (StorageService.getSetting('hdVideos') && $scope.item.video) {
-        $scope.item.video = $scope.item.video.replace('.webm', '-hd.webm');
-      }
-      $scope.preview = $scope.item;
+      $scope.preview = $scope.hero.getImgUrl($scope.item, $scope.type, $scope.hero.id)
     }
   }
-}])
+})
 
 OWI.directive('legendarySkins', function() {
   return {
