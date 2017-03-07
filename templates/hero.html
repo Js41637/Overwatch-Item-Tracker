@@ -20,6 +20,24 @@
       <span>{{hero.totals.selected}} / {{::hero.totals.total}}  Unlocks</span>
     </div>
   </div>
+  <div class="hero-grid" ng-if="hero.gridView">
+    <div ng-repeat="(type, items) in ::hero.items track by $index" id="{{type}}" class="section">
+      <div class="section-header">
+        <h2>{{type}} <small>{{hero.totals.groups[type].selected}}/{{::hero.totals.groups[type].total}}</small></h2>
+      </div>
+      <div
+        class="item"
+        ng-class="{selected: hero.isItemChecked(item, type)}"
+        uib-tooltip="{{::item.name}}"
+        tooltip-placement="top"
+        ng-repeat="item in ::items track by $index"
+        fancy-load="{{$index}}"
+        ng-click="hero.selectItem(item, type)"
+        lazy-background="{{hero.getImgUrl(item, type, hero.id, true)}}"
+        no-loader="true">
+      </div>
+    </div>
+  </div>
   <div class="hero-items" ng-if="!hero.gridView">
     <div ng-repeat="(type, items) in hero.items track by $index" id="{{type}}" class="section">
       <div class="section-header">
