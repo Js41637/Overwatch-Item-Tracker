@@ -250,9 +250,15 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  transition: transform 100ms ease-in-out, opacity 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, opacity 150ms ease-in-out;
+  opacity: 0;
   transform: scale(0);
   cursor: pointer;
+}
+
+#hero-container .hero-grid .item.show {
+  transform: scale(1);
+  opacity: 1;
 }
 
 #hero-container .hero-grid #sprays .item {
@@ -261,7 +267,7 @@
 }
 
 #hero-container .hero-grid .item:not(.selected) {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 #hero-container .hero-grid .item {

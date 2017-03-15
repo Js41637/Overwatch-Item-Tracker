@@ -36,7 +36,7 @@ OWI.directive('fancyLoad', function() {
     restrict: 'A',
     link: function($scope, $elm, $attr) {
       setTimeout(function() {
-        $elm.css('transform', 'scale(1)');
+        $elm.addClass('show');
       }, $attr.fancyLoad * 8);
       $elm.on('click', function() {
         $elm.addClass('pulse');
