@@ -1,0 +1,11 @@
+{
+  "name": "soundTracker",
+  "version": "1.0.0",
+  "description": "Generates list of every sound file to detect when new ones are added",
+  "author": "Js41637",
+  "license": "Beerware",
+  "preferGlobal": true,
+  "bin": {
+    "soundTracker": "index.js"
+  }
+}
