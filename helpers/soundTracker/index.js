@@ -41,17 +41,18 @@ const makeTheThingy = () => {
       Promise.all(heroes.map(hero => {
         return new Promise((r, rj) => {
          soundsList[hero] = []
+         checksumCache[hero] = {}
           getDirectories(`./${hero}`).then(() => {
             getDirectories(`./${hero}/Sound Dump`).then(sounds => {
               sounds.forEach(sound => {
                 totalFiles++;
                 const checksum = getFileSize(`./${hero}/Sound Dump/${sound}`)
-                var dupeFile = checksum in checksumCache
+                var dupeFile = checksum in checksumCache[hero]
                 soundsList[hero].push(Object.assign({}, {
                   id: sound,
                   checksum: checksum
                 }, dupeFile ? { dupe: true } : {}))
-                checksumCache[checksum] = true
+                checksumCache[hero][checksum] = true
                 if (dupeFile) dupeFiles++;
               })
               console.log("Found", sounds.length, "for", hero)
