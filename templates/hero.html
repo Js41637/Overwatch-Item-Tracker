@@ -12,8 +12,20 @@
       </div>
     </div>
     <div class="options">
-      <div class="toggle-grid btn btn-default" uib-tooltip="Toggle Grid View" ng-click="hero.toggleGrid()">Toggle Grid</div>
-      <div class="select-all btn btn-default" uib-tooltip="Select all items" ng-click="hero.selectAll()">Select All</div>
+      <div class="btn btn-default" ng-show="hero.filtering" uib-tooltip="Clear Filter" ng-click="hero.clearFilter()" tooltip-append-to-body="true">Clear Filter</div>
+      <div class="btn-group" uib-dropdown is-open="showDropdown">
+        <div class="btn btn-default" uib-dropdown-toggle uib-tooltip="Filter Items" tooltip-append-to-body="true">
+          Filter <span class="caret"></span>
+        </div>
+        <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
+          <li><a ng-click="hero.setFilter('selected', true)">Selected</a></li>
+          <li><a ng-click="hero.setFilter('selected', false)">UnSelected</a></li>
+          <li class="divider"></li>
+          <li ng-repeat="event in ::$ctrl.events track by $index" ng-click="hero.setFilter('event', event.id)"><a>{{::event.name}}</a></li>
+        </ul>
+      </div>
+      <div class="toggle-grid btn btn-default" uib-tooltip="Toggle Grid View" ng-click="hero.toggleGrid()" tooltip-append-to-body="true">Toggle Grid</div>
+      <div class="select-all btn btn-default" uib-tooltip="Select all items" ng-click="hero.selectAll()" tooltip-append-to-body="true">Select All</div>
     </div>
     <div class="hero-progress">
       <div class="hero-progress-bar" style="width: calc(0px + {{hero.totals.percentage}} - 4px); background-color: {{hero.colors.primary}}; border-top-color: {{hero.colors.highlight}}"></div>
@@ -21,42 +33,42 @@
     </div>
   </div>
   <div class="hero-grid" ng-if="hero.gridView">
-    <div ng-repeat="(type, items) in ::hero.items track by $index" id="{{::type}}" class="section">
+    <div ng-repeat="(type, items) in hero.filteredItems track by $index" id="{{type}}" class="section">
       <div class="section-header">
-        <h2>{{::type}} <small>{{hero.totals.groups[type].selected}}/{{::hero.totals.groups[type].total}}</small></h2>
+        <h2>{{type}} <small>{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
       </div>
       <div
         class="item"
         ng-class="{selected: hero.isItemChecked(item, type)}"
-        uib-tooltip="{{::item.name}}"
+        uib-tooltip="{{item.name}}"
         tooltip-placement="top"
-        ng-repeat="item in ::items track by $index"
+        ng-repeat="item in items track by $index"
         fancy-load="{{$index}}"
         ng-click="hero.selectItem(item, type)"
-        lazy-background="{{::hero.getImgUrl(item, type, hero.id, true)}}"
+        lazy-background="{{hero.getImgUrl(item, type, hero.id, true)}}"
         no-loader="true">
       </div>
     </div>
   </div>
   <div class="hero-items" ng-if="!hero.gridView">
-    <div ng-repeat="(type, items) in hero.items track by $index" id="{{::type}}" class="section">
+    <div ng-repeat="(type, items) in hero.filteredItems track by $index" id="{{type}}" class="section">
       <div class="section-header">
-        <h2>{{::type}} <small>{{hero.totals.groups[type].selected}}/{{::hero.totals.groups[type].total}}</small></h2>
+        <h2>{{type}} <small>{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
       </div>
       <div
-        class="item {{::item.quality || 'unknown'}}"
-        event="{{::item.event || 'none'}}"
-        achievement="{{::item.achievement || 'false'}}"
+        class="item {{item.quality || 'unknown'}}"
+        event="{{item.event || 'none'}}"
+        achievement="{{item.achievement || 'false'}}"
         uib-tooltip-template="'imagePreviewTemplate.html'"
         tooltip-popup-delay="275"
         tooltip-class="img-preview"
         tooltip-enable="type !== 'voicelines'"
         tooltip-placement="auto"
-        ng-repeat="item in ::items track by $index">
-        <input type="checkbox" id="{{type + item.id}}" ng-checked="::item.standardItem || hero.checked[type][item.id]" ng-disabled="::item.standardItem" ng-change="hero.onSelect()" ng-model="hero.checked[type][item.id]">
+        ng-repeat="item in items track by $index">
+        <input type="checkbox" id="{{type + item.id}}" ng-checked="item.standardItem || hero.checked[type][item.id]" ng-disabled="item.standardItem" ng-change="hero.onSelect()" ng-model="hero.checked[type][item.id]">
         <label for="{{type + item.id}}">
-          <h3 class="color-{{::item.quality || 'common'}}">{{::item.name}}</h3>
-          <small class="color-cost">{{ ::item | itemPrice:type }}</small>
+          <h3 class="color-{{item.quality || 'common'}}">{{item.name}}</h3>
+          <small class="color-cost">{{ item | itemPrice:type }}</small>
         </label>
       </div>
     </div>

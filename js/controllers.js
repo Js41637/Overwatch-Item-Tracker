@@ -197,9 +197,46 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     prev: 0
   };
 
+  function filterItems(items, what, value) {
+    if (!vm.filtering) return items
+    var out = {}
+    for (var type in items) {
+      var outType = []
+      items[type].forEach(function(item) {
+        if (what == 'selected') {
+          var checked = vm.isItemChecked(item, type)
+          if ((value && checked) || (!value && !checked)) {
+            outType.push(item)
+          }
+        } else {
+          if (!item[what]) return
+          if (item[what] == value) {
+            outType.push(item)
+          }
+        }
+      })
+      if (outType.length) {
+        out[type] = outType
+      }
+    }
+    return out
+  }
+
+  this.filteredItems = filterItems(hero.items)
+
   $rootScope.$on('selectAll', function() {
     calculateTotalsAndCosts();
   })
+  
+  this.setFilter = function(what, value) {
+    this.filtering = true;
+    this.filteredItems = filterItems(hero.items, what, value)
+  }
+
+  this.clearFilter = function() {
+    this.filtering = false
+    vm.filteredItems = filterItems(hero.items)
+  }
 
  
   this.getImgUrl = function(item, type, hero, image) {
