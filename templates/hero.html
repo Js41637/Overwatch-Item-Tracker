@@ -12,16 +12,17 @@
       </div>
     </div>
     <div class="options">
-      <div class="btn btn-default" ng-show="hero.filtering" uib-tooltip="Clear Filter" ng-click="hero.clearFilter()" tooltip-append-to-body="true">Clear Filter</div>
+      <span ng-show="hero.filtering">Active Filter: {{hero.selectedFilter}}</span>
+      <div class="btn btn-default" ng-show="hero.filtering" uib-tooltip="Clear Filter" ng-click="hero.setFilter(true)" tooltip-append-to-body="true">Clear Filter</div>
       <div class="btn-group" uib-dropdown is-open="showDropdown">
         <div class="btn btn-default" uib-dropdown-toggle uib-tooltip="Filter Items" tooltip-append-to-body="true">
           Filter <span class="caret"></span>
         </div>
         <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
-          <li><a ng-click="hero.setFilter('selected', true)">Selected</a></li>
-          <li><a ng-click="hero.setFilter('selected', false)">UnSelected</a></li>
+          <li><a ng-click="hero.setFilter(null, 'selected', true)">Selected</a></li>
+          <li><a ng-click="hero.setFilter(null, 'unselected', false)">UnSelected</a></li>
           <li class="divider"></li>
-          <li ng-repeat="event in ::$ctrl.events track by $index" ng-click="hero.setFilter('event', event.id)"><a>{{::event.name}}</a></li>
+          <li ng-repeat="event in ::$ctrl.events track by $index" ng-click="hero.setFilter(null, 'event', event)"><a>{{::event.name}}</a></li>
         </ul>
       </div>
       <div class="toggle-grid btn btn-default" uib-tooltip="Toggle Grid View" ng-click="hero.toggleGrid()" tooltip-append-to-body="true">Toggle Grid</div>
@@ -29,7 +30,7 @@
     </div>
     <div class="hero-progress">
       <div class="hero-progress-bar" style="width: calc(0px + {{hero.totals.percentage}} - 4px); background-color: {{hero.colors.primary}}; border-top-color: {{hero.colors.highlight}}"></div>
-      <span>{{hero.totals.selected}} / {{::hero.totals.total}}  Unlocks</span>
+      <span>{{hero.totals.selected}} / {{hero.totals.total}}  Unlocks</span>
     </div>
   </div>
   <div class="hero-grid" ng-if="hero.gridView">

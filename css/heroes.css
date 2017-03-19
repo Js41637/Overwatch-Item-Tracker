@@ -86,6 +86,13 @@
   bottom: 28px;
   right: 6px;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#hero-container #hero-header .options span {
+  margin-right: 3px;
+  font-size: 20px;
 }
 
 #hero-container #hero-header .btn-group {
@@ -96,7 +103,7 @@
   transition: opacity .1s ease-in-out;
   font-size: 15px;
   opacity: 0.3;
-  margin: 0 1px;
+  margin: 0 3px;
 }
 
 #hero-container #hero-header .btn-group .btn .caret {
@@ -227,7 +234,7 @@
   min-width: 23px;
 }
 
-#hero-container .hero-items #sprays .item {
+#all #hero-container .hero-items #sprays .item {
   width: 49.7%;
   display: inline-flex;
   margin-right: 1px;
