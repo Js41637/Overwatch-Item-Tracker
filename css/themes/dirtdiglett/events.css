@@ -55,7 +55,6 @@ body {
 
 #event-container #legendary-skins.section {
   background: none !important;
-  margin-top: 60px;
 }
 
 #event-container .section-header {
@@ -119,10 +118,6 @@ body {
 
 
 /* Override for the Preview */
-
-#event-container #image-preview {
-  top: 14px;
-}
 
 #event-container #image-preview>span:before, #event-container #image-preview h2>small:before {
   content: "";
@@ -345,17 +340,17 @@ body {
 }
 
 #SUMMER_GAMES_2016 #background {
-  background-image: url(resources/SUMMER_GAMES_2016 #event-container/bg.jpg);
+  background-image: url(resources/SUMMER_GAMES_2016/bg.jpg);
 }
 
 #SUMMER_GAMES_2016 #event-container #image-preview .card .bg2,
 #SUMMER_GAMES_2016 #event-container #legendary-skins .inner .card {
-  background-image: url(resources/SUMMER_GAMES_2016 #event-container/preview-bg.png);
+  background-image: url(resources/SUMMER_GAMES_2016/preview-bg.png);
 }
 
 #SUMMER_GAMES_2016 #header:before {
   width: 60px;
-  background-image: url(../../../resources/updates/SUMMER_GAMES_2016 #event-container/logo.png);
+  background-image: url(../../../resources/updates/SUMMER_GAMES_2016/logo.png);
 }
 
 #SUMMER_GAMES_2016 .event-ended {
@@ -544,7 +539,7 @@ body {
 }
 
 #HALLOWEEN_2016 #event-container #row2 {
-    height: 340px;
+    height: 380px;
 }
 
 #HALLOWEEN_2016 #event-container #victoryposes {
@@ -569,12 +564,8 @@ body {
   height: 404px;
 }
 
-#HALLOWEEN_2016 #event-container #victoryposes .items {
-    height: 300px;
-}
-
-#HALLOWEEN_2016 #event-container #sprays .items {
-  height: 300px;
+#HALLOWEEN_2016 #event-container #victoryposes .items, #HALLOWEEN_2016 #event-container #sprays .items  {
+    height: 330px;
 }
 
 /* WINTER WONDERLAND 2016 */
