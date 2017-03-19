@@ -254,6 +254,7 @@
   opacity: 0;
   transform: scale(0);
   cursor: pointer;
+  position: relative;
 }
 
 #hero-container .hero-grid .item.show {
@@ -268,6 +269,17 @@
 
 #hero-container .hero-grid .item:not(.selected) {
   opacity: 0.6;
+}
+
+#hero-container .hero-grid .item:not(.selected):before {
+    content: "";
+    background-image: url(../resources/icons/lock.svg) !important;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    background-size: contain;
 }
 
 #hero-container .hero-grid .item {
@@ -439,6 +451,10 @@
 #hero-container .tooltip.bottom {
   margin-top: 0px;
   padding: 8px 0;
+}
+
+#hero-container .tooltip {
+  pointer-events: none;
 }
 
 #hero-container .tooltip.top {
