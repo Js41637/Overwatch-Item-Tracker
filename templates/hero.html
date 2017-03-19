@@ -1,6 +1,6 @@
 <sub-header></sub-header>
 
-<div id="hero-container">
+<div id="hero-container" ng-class="{filtering: hero.filtering}">
   <div id="hero-header">
     <div class="hero-overview">
       <div class="hero-image">
@@ -19,10 +19,10 @@
           Filter <span class="caret"></span>
         </div>
         <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
-          <li><a ng-click="hero.setFilter(null, 'selected', true)">Selected</a></li>
-          <li><a ng-click="hero.setFilter(null, 'unselected', false)">UnSelected</a></li>
+          <li ng-class="{selected: hero.filtering == 'selected'}"><a ng-click="hero.setFilter(null, 'selected', true)">Selected</a></li>
+          <li ng-class="{selected: hero.filtering == 'unselected'}"><a ng-click="hero.setFilter(null, 'unselected', false)">UnSelected</a></li>
           <li class="divider"></li>
-          <li ng-repeat="event in ::$ctrl.events track by $index" ng-click="hero.setFilter(null, 'event', event)"><a>{{::event.name}}</a></li>
+          <li ng-repeat="event in ::$ctrl.events track by $index" ng-class="{selected: hero.filtering == event.id}" ng-click="hero.setFilter(null, 'event', event)"><a>{{::event.name}}</a></li>
         </ul>
       </div>
       <div class="toggle-grid btn btn-default" uib-tooltip="Toggle Grid View" ng-click="hero.toggleGrid()" tooltip-append-to-body="true">Toggle Grid</div>

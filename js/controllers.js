@@ -234,11 +234,11 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   })
   
   this.setFilter = function(clear, what, value) {
-    if (clear || this.filtering == what) {
+    if (clear || this.filtering == (value.id || what)) {
       this.filtering = false;
       vm.filteredItems = hero.items;
     } else {
-      this.filtering = what;
+      this.filtering = value.id || what;
       this.selectedFilter = filters[what].replace('%s', value.name);
       this.filteredItems = filterItems(hero.items, what, value.id || value);
     }
