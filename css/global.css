@@ -962,9 +962,22 @@ strong {
   border: 2px solid rgb(240, 240, 240);
   border-radius: 4px;
   cursor: pointer;
-  transition: background 100ms ease-in-out, transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
   background: url(../resources/body-bg.jpg) no-repeat top;
   background-size: cover;
+}
+
+#hero-nav .gallery .block .bg {
+  transition: background 100ms ease-in-out;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#hero-nav .gallery .block:hover .bg {
+  background-color: rgb(255, 165, 0); 
 }
 
 #hero-nav .gallery .block .img {
@@ -974,27 +987,11 @@ strong {
 }
 
 #hero-nav .gallery .block:hover {
-  z-index: 8;
-}
-
-#hero-nav .gallery .block.selected {
-  z-index: 5;
+  transform: scale(1.1);
 }
 
 #hero-nav .gallery.event .block {
   width: 165px;
-}
-
-
-#hero-nav .gallery.event .block:hover .img:before, #hero-nav .gallery.event .block.selected .img:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
-  background-color: rgb(255, 165, 0);
-  z-index: -1;
 }
 
 #hero-nav .gallery.event .block .img {
@@ -1014,10 +1011,6 @@ strong {
   height: calc(100% - 32px);
   background-size: auto 100%;
   background-position: 50% 50%;
-}
-
-#hero-nav .gallery.hero .block:hover .img , #hero-nav .gallery.hero .block.selected .img{
-  background-color: rgb(255, 165, 0);
 }
 
 #menuNav {
