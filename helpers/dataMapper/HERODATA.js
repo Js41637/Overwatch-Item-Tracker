@@ -85,8 +85,8 @@ const data = {
   orisa: {
     class: CLASSES.TANK,
     colors: {
-      "primary": "#fcfcfc",
-      "highlight": "#ffffff"
+      "primary": "#dc9a00",
+      "highlight": "#ffb405"
     }
   },
   pharah: {
@@ -127,8 +127,8 @@ const data = {
   sombra: {
     class: CLASSES.ASSAULT,
     colors: {
-      primary: "#4f26a9",
-      highlight: "#6837d2"
+      primary: "#751b9c",
+      highlight: "#9021bf"
     }
   },
   symmetra: {
