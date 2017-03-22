@@ -178,73 +178,103 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
 
 OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageService", "hero", function($scope, $rootScope, Data, StorageService, hero) {
   var vm = this;
-  Object.assign(this, hero);
+  Object.assign(this, hero); // is this cheating?
   this.gridView = false;
   this.checked = Data.checked[hero.id]
-  this.totalItems = 0;
-  this.selectedItems = 0;
-  this.itemPercentage = 0;
   this.totals = {
     total: 0,
     selected: 0,
     percentage: 0,
     groups: {}
   }
+  this.filters = {
+    selected: false,
+    unselected: false,
+    achievement: false,
+    events: {}
+  }
 
+  // Cost is on scope as it is a directive in the page and it inherits parent scope
   $scope.cost = {
     total: 0,
     remaining: 0,
     prev: 0
   };
 
-  var filters = {
-    'unselected': "Unselected Items",
-    'selected': "Selected Items",
-    'event': "%s Items"
+  this.updateFilters = function() {
+    this.filtering = true;
+    var selected = vm.filters.selected;
+    var unselected = vm.filters.unselected;
+    var achievement = vm.filters.achievement;
+
+    // Generate array of event ids we are filtering
+    var eventFilters = []
+    for (var e in vm.filters.events) {
+      if (vm.filters.events[e]) eventFilters.push(e)
+    }
+
+    // Disable filtering if nothing is selected
+    if (!eventFilters.length && !selected && !unselected && !achievement) {
+      vm.clearFilters();
+      return
+    }
+    
+    this.filteredItems = filterItems(hero.items, eventFilters);
+    calculateTotalsAndCosts();
+
+    // Generate the currently selected filter text
+    var currentFilters = eventFilters
+    if (selected || unselected) {
+      currentFilters.push(selected ? 'SELECTED' : unselected ? 'UNSELECTED': '')
+    }
+    if (achievement) {
+      currentFilters.push('ACHIEVEMENT')
+    }
+    this.currentFilters = currentFilters.join('|')
   }
 
-  function filterItems(items, what, value) {
+  // Filters the items and returms new data object
+  function filterItems(items, eventFilters) {
     var out = {}
     for (var type in items) {
       var outType = []
       items[type].forEach(function(item) {
-        if (what == 'selected' || what == 'unselected') {
-          var checked = vm.isItemChecked(item, type)
-          if ((value && checked) || (!value && !checked)) {
-            outType.push(item)
-          }
-        } else {
-          if (!item[what]) return
-          if (item[what] == value) {
-            outType.push(item)
-          }
+        if (vm.filters.selected || vm.filters.unselected) {
+          var checked = vm.isItemChecked(item, type);
+          if ((vm.filters.selected && !checked) || (vm.filters.unselected && checked))  return;
         }
+
+        if (vm.filters.achievement && !item.achievement) return;
+        if (eventFilters.length && (!item.event || !eventFilters.includes(item.event))) return;
+
+        outType.push(item);
       })
       if (outType.length) {
         out[type] = outType
       }
     }
-    return out
+    return out;
   }
 
-  this.filteredItems = hero.items
+  this.filteredItems = hero.items // init
 
   $rootScope.$on('selectAll', function() {
     calculateTotalsAndCosts();
   })
   
-  this.setFilter = function(clear, what, value) {
-    if (clear || this.filtering == (value.id || what)) {
-      this.filtering = false;
-      vm.filteredItems = hero.items;
-    } else {
-      this.filtering = value.id || what;
-      this.selectedFilter = filters[what].replace('%s', value.name);
-      this.filteredItems = filterItems(hero.items, what, value.id || value);
+  this.clearFilters = function() {
+    this.filters = {
+      selected: false,
+      unselected: false,
+      events: {}
     }
+    this.currentFilters = '';
+    this.filtering = false;
+    this.filteredItems = hero.items;
     calculateTotalsAndCosts();
   }
  
+  // Return the url for an image or video, also check if we're showing HD videos
   this.getImgUrl = function(item, type, hero, image) {
     var base = './resources/heroes/' + (item.hero || hero) + '/' + type + '/' + item.id;
     var out = {}
@@ -263,6 +293,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     return this.checked[type][item.id];
   }
 
+  // Manual function to select an item, used in grid mode
   this.selectItem = function(item, type) {
     this.checked[type][item.id] = !this.checked[type][item.id];
     vm.onSelect();
@@ -278,6 +309,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     this.gridView = !this.gridView;
   }
 
+  // Mark all items for current hero as selected
   this.selectAll = function() {
     if (vm.totals.selected == vm.totals.total) {
       return;
@@ -295,6 +327,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     return !item.achievement && item.quality && !item.standardItem && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
   }
 
+  // Calculate the total costs and tallys of items in current view (filters)
   function calculateTotalsAndCosts() {
     var selectedItems = 0;
     var totalItems = 0
@@ -321,6 +354,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
           selectedItems++;
           groupTotals.selected++;
         }
+        // allclass items dont need qualitys
+        // NOTE: this also updates the items data on the page
         if (hero.id == 'all') {
           item.quality = 'common'
         }

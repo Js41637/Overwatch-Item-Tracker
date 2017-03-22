@@ -90,9 +90,25 @@
   align-items: center;
 }
 
-#hero-container #hero-header .options span {
-  margin-right: 3px;
-  font-size: 20px;
+#hero-container #hero-header .currentfilter {
+  font-size: 14px;
+  position: absolute;
+  right: 3px;
+  padding-top: 1px;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#hero-container #hero-header .options .btn-group li input {
+  margin-left: 10px;
+  height: 17px;
+  width: 17px;
 }
 
 #hero-container #hero-header .btn-group {
@@ -111,21 +127,28 @@
   border-top: 6px solid\9;
   border-right: 6px solid rgba(0, 0, 0, 0);
   border-left: 6px solid rgba(0, 0, 0, 0);
+  margin-top: -1px;
 }
 
 #hero-container #hero-header .btn:hover, #hero-container #hero-header .btn-group:hover .btn {
   opacity: 1;
 }
 
-#hero-container #hero-header .options .dropdown-menu li a {
+#hero-container #hero-header .options .dropdown-menu li a, #hero-container #hero-header .options .dropdown-menu li > div  {
   padding: 3px 15px;
   font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
+  display: block;
+  clear: both;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  line-height: 1.42857143;
+  white-space: nowrap;
 }
 
-#hero-container #hero-header .options .dropdown-menu li.selected a {
-  background-color: rgb(230, 230, 230)
+#hero-container #hero-header .options .dropdown-menu li > div:hover  {
+  background-color: rgb(245, 245, 245);
 }
 
 #hero-container #hero-header .toggle-grid {

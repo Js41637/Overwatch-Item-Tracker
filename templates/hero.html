@@ -12,17 +12,35 @@
       </div>
     </div>
     <div class="options">
-      <span ng-show="hero.filtering">Active Filter: {{hero.selectedFilter}}</span>
-      <div class="btn btn-default" ng-show="hero.filtering" uib-tooltip="Clear Filter" ng-click="hero.setFilter(true)" tooltip-append-to-body="true">Clear Filter</div>
-      <div class="btn-group" uib-dropdown is-open="showDropdown">
+      <div class="btn btn-default" ng-show="hero.filtering" uib-tooltip="Clear Filters" ng-click="hero.clearFilters()" tooltip-append-to-body="true">Clear Filter</div>
+      <div class="btn-group" uib-dropdown is-open="showDropdown" auto-close="outsideClick">
         <div class="btn btn-default" uib-dropdown-toggle uib-tooltip="Filter Items" tooltip-append-to-body="true">
           Filter <span class="caret"></span>
         </div>
         <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
-          <li ng-class="{selected: hero.filtering == 'selected'}"><a ng-click="hero.setFilter(null, 'selected', true)">Selected</a></li>
-          <li ng-class="{selected: hero.filtering == 'unselected'}"><a ng-click="hero.setFilter(null, 'unselected', false)">UnSelected</a></li>
+          <li ng-class="{selected: hero.filtering == 'selected'}">
+            <div>
+              <label for="filterSelected">Selected <input id="filterSelected" type="checkbox" ng-change="hero.filters.unselected = false;hero.updateFilters()" ng-model="hero.filters.selected"></label>
+            </div>
+          </li>
+          <li ng-class="{selected: hero.filtering == 'unselected'}">
+            <div>
+              <label for="filterUnselected">UnSelected <input id="filterUnselected" type="checkbox" ng-change="hero.filters.selected = false;hero.updateFilters()" ng-model="hero.filters.unselected"></label>
+            </div>
+          </li>
+          </li>
           <li class="divider"></li>
-          <li ng-repeat="event in ::$ctrl.events track by $index" ng-class="{selected: hero.filtering == event.id}" ng-click="hero.setFilter(null, 'event', event)"><a>{{::event.name}}</a></li>
+          <li>
+            <div>
+              <label for="achievementf">Achievement <input id="achievementf" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.achievement"></label>
+            </div>
+          </li>
+          <li class="divider"></li>
+          <li ng-repeat="event in ::$ctrl.events track by $index">
+            <div>
+              <label for="{{event.id}}">{{event.name}} <input id="{{event.id}}" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.events[event.id]"></label>
+            </div>
+          </li>
         </ul>
       </div>
       <div class="toggle-grid btn btn-default" uib-tooltip="Toggle Grid View" ng-click="hero.toggleGrid()" tooltip-append-to-body="true">Toggle Grid</div>
@@ -32,6 +50,7 @@
       <div class="hero-progress-bar" style="width: calc(0px + {{hero.totals.percentage}} - 4px); background-color: {{hero.colors.primary}}; border-top-color: {{hero.colors.highlight}}"></div>
       <span>{{hero.totals.selected}} / {{hero.totals.total}}  Unlocks</span>
     </div>
+    <span class="currentfilter" ng-show="hero.filtering">Currently Filtering: {{hero.currentFilters}}</span>
   </div>
   <div class="hero-grid" ng-if="hero.gridView">
     <div ng-repeat="(type, items) in hero.filteredItems track by $index" id="{{type}}" class="section">
