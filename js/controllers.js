@@ -224,6 +224,9 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
 
     // Generate the currently selected filter text
     var currentFilters = eventFilters
+    currentFilters = currentFilters.map(function(e) {
+      return Data.events[e].name
+    })
     if (selected || unselected) {
       currentFilters.push(selected ? 'SELECTED' : unselected ? 'UNSELECTED': '')
     }
