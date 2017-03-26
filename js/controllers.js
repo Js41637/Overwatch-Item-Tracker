@@ -181,6 +181,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   Object.assign(this, hero); // is this cheating?
   this.gridView = false;
   this.checked = Data.checked[hero.id]
+  this.events = {}
   this.totals = {
     total: 0,
     selected: 0,
@@ -193,10 +194,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     achievement: false,
     events: {}
   }
-  this.events = {
-
-  }
-
+  
   // Cost is on scope as it is a directive in the page and it inherits parent scope
   $scope.cost = {
     total: 0,
