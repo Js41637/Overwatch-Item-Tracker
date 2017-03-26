@@ -18,14 +18,14 @@
           Filter <span class="caret"></span>
         </div>
         <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
-          <li ng-class="{selected: hero.filtering == 'selected'}">
+          <li>
             <div>
-              <label for="filterSelected">Selected <input id="filterSelected" type="checkbox" ng-change="hero.filters.unselected = false;hero.updateFilters()" ng-model="hero.filters.selected"></label>
+              <label for="filterSelected">Selected <input id="filterSelected" type="checkbox" ng-change="hero.filters.unselected = false;hero.updateFilters()" ng-model="hero.filters.selected" ng-disabled="hero.totals.selected == 0"></label>
             </div>
           </li>
-          <li ng-class="{selected: hero.filtering == 'unselected'}">
+          <li>
             <div>
-              <label for="filterUnselected">UnSelected <input id="filterUnselected" type="checkbox" ng-change="hero.filters.selected = false;hero.updateFilters()" ng-model="hero.filters.unselected"></label>
+              <label for="filterUnselected">UnSelected <input id="filterUnselected" type="checkbox" ng-change="hero.filters.selected = false;hero.updateFilters()" ng-model="hero.filters.unselected" ng-disabled="hero.totals.selected == 0"></label>
             </div>
           </li>
           </li>
@@ -36,7 +36,7 @@
             </div>
           </li>
           <li class="divider"></li>
-          <li ng-repeat="event in ::$ctrl.events track by $index">
+          <li ng-repeat="event in ::$ctrl.events track by $index" ng-hide="!hero.events[event.id]">
             <div>
               <label for="{{event.id}}">{{event.name}} <input id="{{event.id}}" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.events[event.id]"></label>
             </div>

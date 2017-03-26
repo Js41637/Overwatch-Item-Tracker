@@ -193,6 +193,9 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     achievement: false,
     events: {}
   }
+  this.events = {
+
+  }
 
   // Cost is on scope as it is a directive in the page and it inherits parent scope
   $scope.cost = {
@@ -350,8 +353,10 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
           totalItems++;
           groupTotals.total++;
         }
-
-
+        if (item.event && !vm.events[item.event]) {
+          vm.events[item.event] = true
+        }
+        
         var isSelected = Data.isItemChecked(hero.id, type, item.id);
         if (isSelected && !item.standardItem) {
           selectedItems++;
