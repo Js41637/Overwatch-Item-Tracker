@@ -35,6 +35,7 @@ const getItemType = type => {
 // Can't generate IDs off these names can we :)
 const stupidNames = {
   "^_^": "joy",
+  ">_<": "frustration",
   ">_\\<": "frustration",
   ";)": "winky-face"
 }
