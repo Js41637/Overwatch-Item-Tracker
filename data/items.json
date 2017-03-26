@@ -248,6 +248,11 @@
           "event": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Efi",
+          "id": "orisa-efi",
+          "hero": "orisa"
+        },
+        {
           "name": "Egypt",
           "id": "egypt",
           "event": "SUMMER_GAMES_2016"
@@ -640,6 +645,11 @@
           "id": "oni"
         },
         {
+          "name": "Orisa",
+          "id": "orisa-orisa",
+          "hero": "orisa"
+        },
+        {
           "name": "Ornament",
           "id": "ornament",
           "event": "WINTER_WONDERLAND_2016"
@@ -717,6 +727,11 @@
           "name": "Present",
           "id": "present",
           "event": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Protector",
+          "id": "orisa-protector",
+          "hero": "orisa"
         },
         {
           "name": "Protoss",
@@ -6157,6 +6172,56 @@
           "id": "orisa-classic",
           "quality": "common",
           "standardItem": true
+        },
+        {
+          "name": "Dawn",
+          "id": "orisa-dawn",
+          "quality": "rare"
+        },
+        {
+          "name": "Plains",
+          "id": "orisa-plains",
+          "quality": "rare"
+        },
+        {
+          "name": "Sunrise",
+          "id": "orisa-sunrise",
+          "quality": "rare"
+        },
+        {
+          "name": "Twilight",
+          "id": "orisa-twilight",
+          "quality": "rare"
+        },
+        {
+          "name": "Camouflage",
+          "id": "orisa-camouflage",
+          "quality": "epic"
+        },
+        {
+          "name": "OR15",
+          "id": "orisa-or15",
+          "quality": "epic"
+        },
+        {
+          "name": "Carbon Fiber",
+          "id": "orisa-carbon-fiber",
+          "quality": "legendary"
+        },
+        {
+          "name": "Dynastinae",
+          "id": "orisa-dynastinae",
+          "quality": "legendary"
+        },
+        {
+          "name": "Megasoma",
+          "id": "orisa-megasoma",
+          "quality": "legendary"
+        },
+        {
+          "name": "Protector",
+          "id": "orisa-protector",
+          "quality": "legendary"
         }
       ],
       "emotes": [
@@ -6165,6 +6230,21 @@
           "id": "orisa-heroic",
           "quality": "common",
           "standardItem": true
+        },
+        {
+          "name": "Cheer",
+          "id": "orisa-cheer",
+          "quality": "epic"
+        },
+        {
+          "name": "Halt!",
+          "id": "orisa-halt",
+          "quality": "epic"
+        },
+        {
+          "name": "Kicking Dirt",
+          "id": "orisa-kicking-dirt",
+          "quality": "epic"
         }
       ],
       "intros": [
@@ -6173,10 +6253,156 @@
           "id": "orisa-heroic",
           "quality": "common",
           "standardItem": true
+        },
+        {
+          "name": "Keeping You Safe",
+          "id": "orisa-keeping-you-safe",
+          "quality": "epic"
+        },
+        {
+          "name": "Oh!",
+          "id": "orisa-oh",
+          "quality": "epic"
+        },
+        {
+          "name": "Supercharger",
+          "id": "orisa-supercharger",
+          "quality": "epic"
         }
       ],
-      "icons": [],
+      "icons": [
+        {
+          "name": "Efi",
+          "id": "orisa-efi",
+          "hero": "orisa"
+        },
+        {
+          "name": "Orisa",
+          "id": "orisa-orisa",
+          "hero": "orisa"
+        },
+        {
+          "name": "Protector",
+          "id": "orisa-protector",
+          "hero": "orisa"
+        }
+      ],
       "sprays": [
+        {
+          "name": ">_<",
+          "id": "orisa-",
+          "quality": "common"
+        },
+        {
+          "name": "Amused",
+          "id": "orisa-amused",
+          "quality": "common"
+        },
+        {
+          "name": "Carving",
+          "id": "orisa-carving",
+          "quality": "common"
+        },
+        {
+          "name": "City of Harmony",
+          "id": "orisa-city-of-harmony",
+          "quality": "common"
+        },
+        {
+          "name": "Cleaning",
+          "id": "orisa-cleaning",
+          "quality": "common"
+        },
+        {
+          "name": "Companions",
+          "id": "orisa-companions",
+          "quality": "common"
+        },
+        {
+          "name": "Construction",
+          "id": "orisa-construction",
+          "quality": "common"
+        },
+        {
+          "name": "Crossing Guard",
+          "id": "orisa-crossing-guard",
+          "quality": "common"
+        },
+        {
+          "name": "Drumming",
+          "id": "orisa-drumming",
+          "quality": "common"
+        },
+        {
+          "name": "Guardian",
+          "id": "orisa-guardian",
+          "quality": "common"
+        },
+        {
+          "name": "Heroes",
+          "id": "orisa-heroes",
+          "quality": "common"
+        },
+        {
+          "name": "Icon",
+          "id": "orisa-icon",
+          "quality": "common"
+        },
+        {
+          "name": "Just Dessert",
+          "id": "orisa-just-dessert",
+          "quality": "common"
+        },
+        {
+          "name": "Kick",
+          "id": "orisa-kick",
+          "quality": "common"
+        },
+        {
+          "name": "Protector",
+          "id": "orisa-protector",
+          "quality": "common"
+        },
+        {
+          "name": "Shield",
+          "id": "orisa-shield",
+          "quality": "common"
+        },
+        {
+          "name": "Stop",
+          "id": "orisa-stop",
+          "quality": "common"
+        },
+        {
+          "name": "Supercharged",
+          "id": "orisa-supercharged",
+          "quality": "common"
+        },
+        {
+          "name": "Swing",
+          "id": "orisa-swing",
+          "quality": "common"
+        },
+        {
+          "name": "Tracks",
+          "id": "orisa-tracks",
+          "quality": "common"
+        },
+        {
+          "name": "Unmoving",
+          "id": "orisa-unmoving",
+          "quality": "common"
+        },
+        {
+          "name": "Xing",
+          "id": "orisa-xing",
+          "quality": "common"
+        },
+        {
+          "name": "^_^",
+          "id": "orisa-joy",
+          "quality": "common"
+        },
         {
           "name": "Cute",
           "id": "orisa-cute",
@@ -6196,6 +6422,56 @@
           "id": "orisa-following-my-programming",
           "quality": "common",
           "standardItem": true
+        },
+        {
+          "name": "Current outlook",
+          "id": "orisa-current-outlook",
+          "quality": "common"
+        },
+        {
+          "name": "Do you need a hug?",
+          "id": "orisa-do-you-need-a-hug",
+          "quality": "common"
+        },
+        {
+          "name": "Efi will not be happy",
+          "id": "orisa-efi-will-not-be-happy",
+          "quality": "common"
+        },
+        {
+          "name": "Error: sarcasm module",
+          "id": "orisa-error-sarcasm-module",
+          "quality": "common"
+        },
+        {
+          "name": "I can't do that",
+          "id": "orisa-i-cant-do-that",
+          "quality": "common"
+        },
+        {
+          "name": "Medical assistance",
+          "id": "orisa-medical-assistance",
+          "quality": "common"
+        },
+        {
+          "name": "My analysis",
+          "id": "orisa-my-analysis",
+          "quality": "common"
+        },
+        {
+          "name": "No parking",
+          "id": "orisa-no-parking",
+          "quality": "common"
+        },
+        {
+          "name": "Shine your eyes",
+          "id": "orisa-shine-your-eyes",
+          "quality": "common"
+        },
+        {
+          "name": "That does not compute",
+          "id": "orisa-that-does-not-compute",
+          "quality": "common"
         }
       ],
       "poses": [
@@ -6204,6 +6480,21 @@
           "id": "orisa-heroic",
           "quality": "common",
           "standardItem": true
+        },
+        {
+          "name": "Confident",
+          "id": "orisa-confident",
+          "quality": "rare"
+        },
+        {
+          "name": "Flex",
+          "id": "orisa-flex",
+          "quality": "rare"
+        },
+        {
+          "name": "Halt!",
+          "id": "orisa-halt",
+          "quality": "rare"
         }
       ]
     }
