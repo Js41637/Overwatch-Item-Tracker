@@ -12,7 +12,7 @@ const stupidNames = {
 
 var getCleanID = what => {
   what = stupidNames[what] || what
-  return what.toLowerCase().replace('é', 'e').replace(/[åäà]/g, 'a').replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').trim().replace(/ /g, '-').slice(0, -3)
+  return what.toLowerCase().replace('ị', 'i').replace('é', 'e').replace(/[åäà]/g, 'a').replace(/[öôọ]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').trim().replace(/ /g, '-').slice(0, -3)
 }
 
 var itemIDCache = {}

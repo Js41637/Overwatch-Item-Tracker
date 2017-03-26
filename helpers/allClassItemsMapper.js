@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 var getCleanID = what => {
-  return what.toLowerCase().replace('ö', 'o').replace('ú', 'u').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-').replace(/dds$/, '')
+  return what.toLowerCase().replace('ị', 'i').replace('é', 'e').replace(/[åäà]/g, 'a').replace(/[öôọ]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').trim().replace(/ /g, '-').replace(/dds$/, '')
 }
 
 var getDirectories = where => {
