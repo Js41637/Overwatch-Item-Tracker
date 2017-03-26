@@ -7,7 +7,7 @@ const fs = require('fs')
 const { forEach, sortBy, find, reduce } = require('lodash')
 
 const HERODATA = require('./dataMapper/HERODATA.js')
-const { hiddenItems, defaultItems, achievementSprays, allClassEventItems } = require('./dataMapper/itemData.js')
+const { badNames, hiddenItems, defaultItems, achievementSprays, allClassEventItems } = require('./dataMapper/itemData.js')
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT } = require('./dataMapper/EVENTDATA.js')
 const { getCleanID, getItemType, getImageURL, sortObject, qualityOrder } = require('./dataMapper/utils.js')
 var allClassData, rawData;
@@ -80,7 +80,7 @@ data.forEach(({ hero, items: itemGroups }) => {
   forEach(itemGroups, (items, group) => {
     items.forEach(item => {
       var [str, name, type] = item.match(/(.+) \((.+)\)/) //eslint-disable-line
-      name = name.trim()
+      name = badNames[name.trim()] || name.trim()
       if (name == 'RANDOM') return
       const id = getCleanID(name, heroID)
       const { quality, type: itemType } = getItemType(type)

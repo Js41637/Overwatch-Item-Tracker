@@ -4,8 +4,15 @@
 // e.g. Some Weirdo's Name.webm > some-weirdos-name.webm
 const fs = require('fs')
 
+// Can't generate IDs off these names can we :)
+const stupidNames = {
+  "^_^": "joy",
+  "____": "frustration"
+}
+
 var getCleanID = what => {
-  return what.toLowerCase().replace('ö', 'o').replace('ú', 'u').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-').slice(0, -3)
+  what = stupidNames[what] || what
+  return what.toLowerCase().replace('é', 'e').replace(/[åäà]/g, 'a').replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').trim().replace(/ /g, '-').slice(0, -3)
 }
 
 var itemIDCache = {}

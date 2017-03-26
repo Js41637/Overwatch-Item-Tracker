@@ -3,6 +3,9 @@ const { EVENTS } = require('./EVENTDATA')
 // All class items have no attributes provided so we need to manually add them
 // ids correlate to items in allClassItems.json
 const data = {
+  badNames: {
+    '>_\\<': ">_<"
+  },
   defaultItems: {
     sprays: ['logo', 'you-are-not-prepared', 'da-de-los-muertos'],
     icons: ['overwatch-light', 'overwatch-dark', 'you-are-not-prepared']

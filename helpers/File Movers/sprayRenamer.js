@@ -8,8 +8,15 @@ if (!process.cwd().match(/OverwatchAssets$/)) {
   process.exit()
 }
 
+// Can't generate IDs off these names can we :)
+const stupidNames = {
+  "^_^": "joy",
+  "____": "frustration"
+}
+
 var getCleanID = what => {
-  return what.toLowerCase().replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').replace(/ /g, '-').replace(/dds$/, '')
+  what = stupidNames[what] || what
+  return what.toLowerCase().replace('é', 'e').replace(/[åäà]/g, 'a').replace(/[öô]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').trim().replace(/ /g, '-').replace(/dds$/, '')
 }
 
 var getDirectories = where => {
