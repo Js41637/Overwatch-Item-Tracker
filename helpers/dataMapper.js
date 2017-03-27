@@ -132,7 +132,7 @@ forEach(heroes, hero => {
       // if the item isnt a skin and is a legendary add a legendary tag, we do this because very few items for events
       // have had legendary items added outside of skins, this way we can mark them as special
       const legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
-      const u = getImageURL(type, event, item.id)
+      const u = getImageURL(type, event, item.id, hero.id)
       const url = type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: u } : { img: u })
       const newItem = Object.assign({}, { hero: hero.name, heroID: hero.id }, legend, item, url )
       if (type == 'icons') {
@@ -150,7 +150,7 @@ updates[EVENTS.CHRISTMAS16].items.sprays = updates[EVENTS.CHRISTMAS16].items.spr
   if (spray.heroID) {
     var ornamentID = `${spray.heroID}-ornament`
     spray.ornamentID = ornamentID;
-    spray.ornamentURL = getImageURL('sprays', EVENTS.CHRISTMAS16, ornamentID);
+    spray.ornamentURL = getImageURL('sprays', EVENTS.CHRISTMAS16, ornamentID, spray.heroID);
     return spray
   } else return spray
 }).filter(Boolean)
@@ -160,7 +160,7 @@ updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.
   if (spray.heroID) {
     var dragonID = `${spray.heroID}-dragon-dance`
     spray.dragonID = dragonID;
-    spray.dragonURL = getImageURL('sprays', EVENTS.ROOSTER17, dragonID);
+    spray.dragonURL = getImageURL('sprays', EVENTS.ROOSTER17, dragonID, spray.heroID);
     return spray
   } else return spray
 }).filter(Boolean)
@@ -173,7 +173,7 @@ forEach(allClassEventItems, (types, type) => {
         heroID: 'all',
         name: allClassDataKeys[type][itemID].replace(/ \d{4}$/, ''),
         id: itemID,
-        img: getImageURL(type, event, itemID)
+        img: getImageURL(type, event, itemID, 'all')
       }
       const isAchivement = achievementSprays.includes(itemID)
       if (isAchivement) {

@@ -49,15 +49,16 @@ const getCleanID = (what, hero) => {
 }
 
 // Returns the image or video URL for an item
-const getImageURL = (type, event, id) => {
+const getImageURL = (type, event, id, hero) => {
   const baseUrl = `./resources/updates/${event}/${type}/${id}`
+  const heroUrl = `./resources/heroes/${hero}/${type}/${id}`
   switch (type) {
     case 'emotes':
     case 'intros':
       return `${baseUrl}.webm`
     case 'sprays':
     case 'icons':
-      return `${baseUrl}.png`
+      return `${heroUrl}.png`
     case 'skins':
     case 'skinsEpic':
     case 'skinsLegendary':
