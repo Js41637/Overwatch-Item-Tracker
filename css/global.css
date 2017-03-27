@@ -548,13 +548,7 @@ strong {
   text-align: center;
 }
 
-#image-preview .card.spray {
-  background-size: contain;
-  background-color: transparent;
-  background-position: center 0;
-}
-
-#image-preview .card.icon {
+#image-preview .card.icons, #image-preview .card.spray {
   background-size: contain;
   background-color: transparent;
   background-position: center 0;
