@@ -2,6 +2,7 @@ const fs = require('fs')
 const _getCleanID = require('../../dataMapper/utils').getCleanID
 
 const getCleanID = (what, hero) => {
+  if (!what.length) return undefined
   return _getCleanID(what.replace(/\.(png|dds|jpg)|$/, ''), hero)
 }
 
