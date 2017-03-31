@@ -1,0 +1,28 @@
+<html ng-app="OWI">
+<head>
+  <title>Thingy</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../css/vendor.min.css">
+  <link rel="stylesheet" href="./Sound-Viewer/main.css">
+  <script src="../../js/vendor/angular.min.js"></script>
+  <script src="../../js/vendor/ui-bootstrap.min.js"></script>
+  <script src="./Sound-Viewer/app.js"></script>
+</head>
+<body ng-controller="MainCtrl as $ctrl" ng-keydown="$ctrl.handleKeyPress($event)">
+  <div id="heroes">
+    <div class="btn btn-default" ng-repeat="hero in $ctrl.heroes" ng-class="{selected: $ctrl.selectedHero == hero}" ng-click="$ctrl.selectedHero = hero">{{hero}}</div>
+  </div>
+  <div id="mainBody">
+    <div id="player">
+      <audio id="audio" ng-src="{{$ctrl.currentURL}}" autoplay="true" controls="true"></audio>
+      <div class="controls">
+        <div class="btn btn-default" ng-click="$ctrl.toggleLoop()">{{$ctrl.looping ? "Unloop" : "Loop"}}</div>
+      </div>
+    </div>
+    <div id="soundList">
+      <div class="sound btn btn-default" ng-repeat="sound in $ctrl.soundData[$ctrl.selectedHero] track by $index" ng-hide="sound.dupe" ng-click="$ctrl.playSound(sound.id, $index)" ng-class="{selected: $ctrl.selectedSound == sound.id}">{{sound.id}}</div>
+    </div>
+  </div>
+  
+</body>
+</html>

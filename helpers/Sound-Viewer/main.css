@@ -1,0 +1,58 @@
+body {
+  padding: 20px;
+  background: rgb(235, 235, 235);
+  font-family: sans-serif;
+}
+
+#mainBody {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#heroes .btn {
+  margin: 2 3px;
+  font-size: 16px;
+  min-width: 80px;
+  text-transform: uppercase;
+}
+
+#player {
+  min-width: 400px;
+  margin-right: 20px;
+}
+
+#player .controls {
+  margin-top: 5px;
+}
+
+#player audio {
+  width: 100%;
+}
+
+#soundList {
+  min-width: 350px;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: auto;
+  max-height: 88%;
+}
+
+#soundList div {
+  margin: 3px 2px;
+  min-width: 155px;
+}
+
+.btn.selected {
+  color: rgb(51, 51, 51);
+  background-color: rgb(230, 230, 230);
+  border-color: rgb(173, 173, 173);
+}
