@@ -4,12 +4,14 @@
 // we'll be able to see wots wot
 // Run this in the root Heroes dir
 const fs = require('fs')
+const { sortBy } = require('lodash')
 const crypto = require('crypto')
 const { exec } = require('child_process')
 const path = require('path')
 const { eachLimit } = require('async')
 const moment = require('moment')
 const { getDirectories, getCleanID, copyFile } = require('./utils')
+const HERODATA = require('../../dataMapper/HERODATA.js')
 const { mapFilesToHeroes } = require('./filesToHeroMapper')
 
 const checksum = (str, algorithm, encoding) => {
@@ -28,28 +30,29 @@ const checkTempDir = () => {
   })
 }
 
+
 const moveSoundFiles = soundsListOnly => {
   console.log("Mapping and moving sound files")
   var soundsList = {}, checksumCache = {}, totalFiles = 0, dupeFiles = 0;
   return new Promise(resolve => {
     getDirectories('./').then(heroes => {
+      heroes = sortBy(heroes, [h => !Object.keys(HERODATA).includes(getCleanID(h))])
       // Go through every hero, 1 at a time to prevent node from dying
       eachLimit(heroes, 1, (hero, cb) => {
         var heroID = getCleanID(hero)
         soundsList[heroID] = []
-        checksumCache[heroID] = {}
         getDirectories(`./${hero}`).then(() => {
           getDirectories(`./${hero}/Sound Dump`).then(sounds => {
             Promise.all(sounds.filter(a => a.endsWith('.wem')).map(sound => {
               return new Promise(r => {
                 totalFiles++;
                 const checksum = getFileSize(`./${hero}/Sound Dump/${sound}`)
-                var dupeFile = checksum in checksumCache[heroID]
+                var dupeFile = checksum in checksumCache
                 soundsList[heroID].push(Object.assign({}, {
                   id: sound,
                   checksum: checksum
                 }, dupeFile ? { dupe: true } : {}))
-                checksumCache[heroID][checksum] = true
+                checksumCache[checksum] = true
                 if (dupeFile) {
                   dupeFiles++;
                   return r()
@@ -59,7 +62,6 @@ const moveSoundFiles = soundsListOnly => {
               })
             })).then(() => {
               console.log("- Found", sounds.length, "sounds for", hero)
-              console.log("-- Successfully moved", Object.keys(checksumCache[heroID]).length, "sounds for", hero)
               cb()
             })
           }).catch(err => console.error("- Error getting sounds for", hero, err))
