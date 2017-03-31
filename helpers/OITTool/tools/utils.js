@@ -1,6 +1,7 @@
 const fs = require('fs')
 const _getCleanID = require('../../dataMapper/utils').getCleanID
 
+
 const getCleanID = (what, hero) => {
   if (!what.length) return undefined
   return _getCleanID(what.replace(/\.(png|dds|jpg)|$/, ''), hero)
@@ -31,16 +32,34 @@ const getDirectories = where => {
   })
 }
 
-const checkDirectorys = (who, type) => {
+const checkDirectorys = (who, type, where = './') => {
   return new Promise(resolve => {
-    fs.stat(`./${who}`, err => {
+    fs.stat(`${where}${who}`, err => {
       if (err) {
-        fs.mkdir(`./${who}`, () => {
-          fs.mkdir(`./${who}/${type}`, resolve)
+        fs.mkdir(`${where}${who}`, () => {
+          if (type && type !== '') fs.mkdir(`${where}${who}/${type}`, resolve)
+          else resolve()
         })
       } else resolve()
     })
   })
 }
 
-module.exports = { getDirectories, getCleanID, checkDirectorys, cleanFileIDs }
+const copyFile = (source, target, cb) => {
+  var cbCalled = false
+  const rd = fs.createReadStream(source)
+  rd.on("error", done)
+  const wr = fs.createWriteStream(target);
+  wr.on("error", done)
+  wr.on("close", done);
+  rd.pipe(wr)
+
+  function done(err) {
+    if (!cbCalled) {
+      cb(err)
+      cbCalled = true
+    }
+  }
+}
+
+module.exports = { getDirectories, getCleanID, checkDirectorys, cleanFileIDs, copyFile }

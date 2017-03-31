@@ -10,8 +10,10 @@
     "url": "https://github.com/Js41637/Overwatch-Item-Tracker"
   },
   "dependencies": {
+    "async": "^2.2.0",
     "lodash": "^4.17.4",
     "minimist": "^1.2.0",
+    "moment": "^2.18.1",
     "tinify": "^1.4.0"
   },
   "license": "Beerware"

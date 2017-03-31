@@ -2,6 +2,7 @@
 const { moveSpraysOrIcons } = require('./tools/heroSprayAndIconMover')
 const { mapFilesToHeroes } = require('./tools/filesToHeroMapper')
 const { convertFiles } = require('./tools/convertSprayAndIcons')
+const { extractSounds } = require('./tools/soundsExtractor')
 var args = process.argv.slice(2)
 var mode = args ? args[0] : ''
 args = args.slice(1)
@@ -27,6 +28,9 @@ switch(mode) {
   case 'filestoheromapper':
   case 'toheroes':
     mapFilesToHeroes(args)
+    break;
+  case 'sounds':
+    extractSounds(args)
     break
   default:
     console.log("YOU NEED TO ENTER A MODE")
