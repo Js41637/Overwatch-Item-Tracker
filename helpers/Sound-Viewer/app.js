@@ -73,6 +73,7 @@ OWI.controller('MainCtrl', ["$http", function($http) {
     }
     if (!this.selectedSound) return
     this.mappedSounds[this.selectedHero] = this.mappedSounds[this.selectedHero] || {}
+    if (this.mappedSounds[this.selectedHero][this.selectedSound]) return
     this.mappedSounds[this.selectedHero][this.selectedSound] = itemID
     this.selectedItems[itemID] = this.selectedSound
   }
