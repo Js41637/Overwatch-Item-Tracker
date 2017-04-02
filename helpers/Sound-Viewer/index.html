@@ -11,7 +11,10 @@
 </head>
 <body ng-controller="MainCtrl as $ctrl" ng-keydown="$ctrl.handleKeyPress($event)">
   <div id="heroes">
-    <div class="btn" ng-repeat="hero in $ctrl.heroes" ng-class="{'btn-primary': $ctrl.selectedHero == hero, 'btn-default': $ctrl.selectedHero != hero}" ng-click="$ctrl.selectedHero = hero">{{hero}}</div>
+    <div class="btn" ng-repeat="hero in $ctrl.heroes" ng-class="{'btn-primary': $ctrl.hero == hero, 'btn-default': $ctrl.hero != hero}" ng-click="$ctrl.hero = hero">{{hero}}</div>
+  </div>
+  <div class="middlething">
+    <span>Voicelines: {{$ctrl.getVLCount()}} | Total Sounds: {{$ctrl.sounds[$ctrl.hero].length}} | Dupe Sounds: {{$ctrl.countDupeItems()}}</span> | <div class="btn btn-default" ng-click="$ctrl.toggleDupeFiles()">{{$ctrl.showDupeFiles ? 'Hide' : 'Show'}} dupe items</div>
   </div>
   <div id="mainBody">
     <div id="player">
@@ -19,12 +22,12 @@
       <div class="controls">
         <div class="btn btn-default" ng-click="$ctrl.replaySound()">Play</div>
         <div class="btn btn-default" ng-click="$ctrl.toggleLoop()">{{$ctrl.looping ? "Unloop" : "Loop"}}</div>
-        <span>Selected Sound: {{$ctrl.selectedSound || 'None'}}</span>
+        <span class="selectedSound">Selected Sound: {{$ctrl.sSound || 'None'}}</span>
         <div class="vl-list">
-          <h2>Voice Lines for {{$ctrl.itemData[$ctrl.selectedHero].name}}</h2>
+          <h2>Voice Lines for {{$ctrl.items[$ctrl.hero].name}}</h2>
           <div class="inner">
-            <div class="btn-cont" ng-repeat="vl in $ctrl.itemData[$ctrl.selectedHero].items.voicelines track by $index">
-              <div class="vl btn btn-default" ng-class="{selected: $ctrl.selectedItems[vl.id]}" ng-click="$ctrl.selectItem(vl.id)">{{$ctrl.selectedItems[vl.id] ? '★' : ''}} {{vl.name}}</div> <div ng-disabled="!$ctrl.selectedItems[vl.id]" ng-click="$ctrl.clearItem(vl.id)" class="clear btn btn-danger">Clear</div>
+            <div class="btn-cont" ng-repeat="vl in $ctrl.items[$ctrl.hero].items.voicelines track by $index">
+              <div class="vl btn btn-default" ng-class="{unselected: !$ctrl.selectedItems[vl.id]}" ng-click="$ctrl.selectItem(vl.id)">{{$ctrl.selectedItems[vl.id] ? '★' : ''}} {{vl.name}}</div> <div ng-disabled="!$ctrl.selectedItems[vl.id]" ng-click="$ctrl.clearItem(vl.id)" class="clear btn btn-danger">Clear</div>
             </div>
           </div>
         </div>
@@ -39,7 +42,7 @@
       </div>
     </div>
     <div id="soundList">
-      <div class="sound btn btn-default" ng-repeat="sound in $ctrl.soundData[$ctrl.selectedHero] track by $index" ng-hide="sound.dupe" ng-click="$ctrl.playSound(sound.id, $index)" ng-class="{selected: $ctrl.selectedSound == sound.id}">{{sound.id}} {{$ctrl.mappedSounds[$ctrl.selectedHero][sound.id] ? '★' : ''}}</div>
+      <div class="sound btn btn-default" ng-repeat="sound in $ctrl.getSoundFiles() track by $index" ng-click="$ctrl.playSound(sound.id, $index)" ng-class="{selected: $ctrl.sSound == sound.id}">{{sound.id}} {{$ctrl.mappedSounds[$ctrl.hero][sound.id] ? '★' : ''}}</div>
     </div>
   </div>
 </body>

@@ -30,19 +30,27 @@ OWI.controller('MainCtrl', ["$http", function($http) {
   const download = window.download
   const fileInput = window.fileInput
 
+  var loading = true
+  var oneDone = false
   this.looping = false
-  this.soundData = {}
+  this.hero = undefined
+  this.sounds = {}
+  this.items = {}
   this.heroes = []
   this.mappedSounds = {}
   this.selectedItems = {}
-  this.selectedSoundID = -1
+  this.sSound = undefined
+  this.sSoundIndex = -1
+  this.showDupeFiles = false
 
   const init = () => {
     $http.get('../../data/soundFiles.json').then(resp => {
       if (resp.status == 200) {
-        vm.soundData = resp.data
+        vm.sounds = resp.data
         vm.heroes = Object.keys(resp.data)
-        vm.selectedHero = vm.heroes[0]
+        vm.hero = vm.heroes[0]
+        if (oneDone) loading = false
+        oneDone = true
       } else {
         console.error("Failed loading soundFiles.json ???", resp.status, resp.error);
       }
@@ -51,7 +59,9 @@ OWI.controller('MainCtrl', ["$http", function($http) {
     })
     $http.get('../../data/items.json').then(resp => {
       if (resp.status == 200) {
-        vm.itemData = resp.data
+        vm.items = resp.data
+        if (oneDone) loading = false
+        oneDone = true
       } else {
         console.error("Failed loading items.json ???", resp.status, resp.error);
       }
@@ -60,9 +70,18 @@ OWI.controller('MainCtrl', ["$http", function($http) {
     })
   }
 
+  this.getVLCount = () => {
+    if (loading) return `0/0`
+    return Object.keys(this.mappedSounds[this.hero] || {}).length + '/' + this.items[this.hero].items.voicelines.length
+  }
+
+  this.toggleDupeFiles = () => {
+    this.showDupeFiles = !this.showDupeFiles
+  }
+
   this.clearItem = itemID => {
     var soundID = this.selectedItems[itemID]
-    delete this.mappedSounds[this.selectedHero][soundID]
+    delete this.mappedSounds[this.hero][soundID]
     delete this.selectedItems[itemID]
   }
 
@@ -71,11 +90,11 @@ OWI.controller('MainCtrl', ["$http", function($http) {
       this.playSound(this.selectedItems[itemID], null, true)
       return
     }
-    if (!this.selectedSound) return
-    this.mappedSounds[this.selectedHero] = this.mappedSounds[this.selectedHero] || {}
-    if (this.mappedSounds[this.selectedHero][this.selectedSound]) return
-    this.mappedSounds[this.selectedHero][this.selectedSound] = itemID
-    this.selectedItems[itemID] = this.selectedSound
+    if (!this.sSound) return
+    this.mappedSounds[this.hero] = this.mappedSounds[this.hero] || {}
+    if (this.mappedSounds[this.hero][this.sSound]) return
+    this.mappedSounds[this.hero][this.sSound] = itemID
+    this.selectedItems[itemID] = this.sSound
   }
 
   this.saveData = () => {
@@ -126,20 +145,26 @@ OWI.controller('MainCtrl', ["$http", function($http) {
     }
   }
 
+  this.getSoundFiles = () => {
+    if (loading) return []
+    return this.sounds[vm.hero].filter(a => vm.showDupeFiles ? a.dupe : !a.dupe)
+  }
+
   this.selectNextSound = (keyCode, index) => {
     var num = keyCode == 40 || keyCode == 39 ? 1 : keyCode == 38 || keyCode == 37 ? -1 : undefined
     if (!num) return
-    var d = vm.soundData[vm.selectedHero]
-    var i = index || vm.selectedSoundIndex
+    var d = this.getSoundFiles()
+    var i = index || vm.sSoundIndex
     var nextItem = i + num > d.length - 1 ? 0 : i + num < 0 ? d.length -1 : i + num
-    if (d[nextItem].dupe) {
-      this.selectNextSound(keyCode, nextItem)
-      return
-    }
     this.playSound(d[nextItem].id, nextItem)
     setTimeout(() => {
       document.querySelector('#soundList div.selected').scrollIntoViewIfNeeded(true)
     }, 10)
+  }
+
+  this.countDupeItems = () => {
+    if (loading) return 0
+    return this.sounds[this.hero].filter(a => a.dupe).length
   }
 
   this.replaySound = () => {
@@ -150,16 +175,17 @@ OWI.controller('MainCtrl', ["$http", function($http) {
   var tempSound
   this.playSound = (soundID, index, noSave) => {
     if (!soundID) return
-    if (soundID == this.selectedSound || (noSave && tempSound == soundID)) {
+    if ((soundID == this.sSound && !tempSound) || (noSave && tempSound == soundID)) {
       this.replaySound()
       return
     }
-    tempSound = soundID
-    if (!noSave) {
-      this.selectedSound = soundID
-      this.selectedSoundIndex = index
+    if (noSave) tempSound = soundID
+    else {
+      tempSound = null
+      this.sSound = soundID
+      this.sSoundIndex = index
     }
-    this.currentURL = `http://localhost:4000/${this.selectedHero}/${this.selectedHero}-${soundID}.ogg`
+    this.currentURL = `http://localhost:4000/${this.hero}/${this.hero}-${soundID}.ogg`
   }
 
   init()

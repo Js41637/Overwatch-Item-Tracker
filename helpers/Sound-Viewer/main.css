@@ -1,5 +1,5 @@
 body {
-  padding: 15px 20px;
+  padding: 10px 20px;
   background: rgb(235, 235, 235);
   font-family: sans-serif;
   max-width: 1500px;
@@ -12,9 +12,17 @@ h2 {
 }
 
 #mainBody {
-  padding-top: 20px;
+  padding-top: 10px;
   display: flex;
   justify-content: space-between
+}
+
+.middlething {
+  margin: 3px 0;
+  padding: 3px 0;
+  border-top: 1px solid rgb(80, 80, 80);
+  border-bottom: 1px solid rgb(80, 80, 80);
+  text-align: center;
 }
 
 #heroes {
@@ -24,7 +32,7 @@ h2 {
 }
 
 #heroes .btn {
-  margin: 2 3px;
+  margin: 1px 3px;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -32,6 +40,10 @@ h2 {
 #player {
   margin-right: 20px;
   width: 30%;
+}
+
+#player .controls .selectedSound {
+  font-size: 14px;
 }
 
 #player .controls {
@@ -66,7 +78,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-around;
   overflow: auto;
-  height: calc(100% - 100px);
+  height: calc(100% - 169px);
   width: 68%;
 }
 
@@ -96,7 +108,7 @@ h2 {
   overflow: hidden;
 }
 
-.btn.selected {
+.btn.selected, .btn.unselected {
   color: rgb(51, 51, 51);
   background-color: rgb(220, 220, 220);
   border-color: rgb(173, 173, 173);
