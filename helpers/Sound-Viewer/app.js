@@ -42,6 +42,7 @@ OWI.controller('MainCtrl', ["$http", function($http) {
   this.sSound = undefined
   this.sSoundIndex = -1
   this.showDupeFiles = false
+  this.showSelectedFiles = false
 
   const init = () => {
     $http.get('../../data/soundFiles.json').then(resp => {
@@ -70,12 +71,25 @@ OWI.controller('MainCtrl', ["$http", function($http) {
     })
   }
 
+  this.isHeroDone = hero => {
+    if (loading) return false
+    if (!this.mappedSounds[hero]) return false
+    if (Object.keys(this.mappedSounds[hero] || {}).length == this.items[hero].items.voicelines.length) return true
+    return false    
+  }
+
   this.getVLCount = () => {
     if (loading) return `0/0`
     return Object.keys(this.mappedSounds[this.hero] || {}).length + '/' + this.items[this.hero].items.voicelines.length
   }
 
+  this.toggleSelectedFiles = () => {
+    this.showDupeFiles = false
+    this.showSelectedFiles = !this.showSelectedFiles
+  }
+
   this.toggleDupeFiles = () => {
+    this.showSelectedFiles = false
     this.showDupeFiles = !this.showDupeFiles
   }
 
@@ -145,8 +159,22 @@ OWI.controller('MainCtrl', ["$http", function($http) {
     }
   }
 
+  this.getItemName = sound => {
+    if (loading || !this.showSelectedFiles) return ''
+    if (!this.mappedSounds[vm.hero]) return ''
+    var item = this.mappedSounds[vm.hero][sound]
+    if (!item) return ''
+    var itemMatch = this.items[this.hero].items.voicelines.filter(a => a.id == item)
+    if (!itemMatch || !itemMatch.length) return ''
+    return `\n ${itemMatch[0].name}`
+  }
+
   this.getSoundFiles = () => {
     if (loading) return []
+    if (this.showSelectedFiles) {
+      if (!this.mappedSounds[this.hero]) return []
+      return this.sounds[vm.hero].filter(a => vm.mappedSounds[vm.hero][a.id])
+    }
     return this.sounds[vm.hero].filter(a => vm.showDupeFiles ? a.dupe : !a.dupe)
   }
 

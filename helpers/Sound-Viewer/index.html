@@ -11,10 +11,12 @@
 </head>
 <body ng-controller="MainCtrl as $ctrl" ng-keydown="$ctrl.handleKeyPress($event)">
   <div id="heroes">
-    <div class="btn" ng-repeat="hero in $ctrl.heroes" ng-class="{'btn-primary': $ctrl.hero == hero, 'btn-default': $ctrl.hero != hero}" ng-click="$ctrl.hero = hero">{{hero}}</div>
+    <div class="btn" ng-repeat="hero in $ctrl.heroes" ng-class="{'btn-primary': $ctrl.hero == hero, 'btn-default': $ctrl.hero != hero}" ng-click="$ctrl.hero = hero">{{hero}} {{$ctrl.isHeroDone(hero) ? '✔' : ''}}</div>
   </div>
   <div class="middlething">
-    <span>Voicelines: {{$ctrl.getVLCount()}} | Total Sounds: {{$ctrl.sounds[$ctrl.hero].length}} | Dupe Sounds: {{$ctrl.countDupeItems()}}</span> | <div class="btn btn-default" ng-click="$ctrl.toggleDupeFiles()">{{$ctrl.showDupeFiles ? 'Hide' : 'Show'}} dupe items</div>
+    <span>Voicelines: {{$ctrl.getVLCount()}} | Total Sounds: {{$ctrl.sounds[$ctrl.hero].length}} | Dupe Sounds: {{$ctrl.countDupeItems()}}</span> | 
+    <div class="btn btn-default" ng-click="$ctrl.toggleDupeFiles()">{{$ctrl.showDupeFiles ? 'Hide' : 'Show'}} dupe items</div>
+    <div class="btn btn-default" ng-click="$ctrl.toggleSelectedFiles()">{{$ctrl.showSelectedFiles ? 'Show all items' : 'Show selected items'}}</div>
   </div>
   <div id="mainBody">
     <div id="player">
@@ -42,7 +44,7 @@
       </div>
     </div>
     <div id="soundList">
-      <div class="sound btn btn-default" ng-repeat="sound in $ctrl.getSoundFiles() track by $index" ng-click="$ctrl.playSound(sound.id, $index)" ng-class="{selected: $ctrl.sSound == sound.id}">{{sound.id}} {{$ctrl.mappedSounds[$ctrl.hero][sound.id] ? '★' : ''}}</div>
+      <div class="sound btn btn-default" ng-repeat="sound in $ctrl.getSoundFiles() track by $index" ng-click="$ctrl.playSound(sound.id, $index)" ng-class="{selected: $ctrl.sSound == sound.id}">{{sound.id}} {{$ctrl.mappedSounds[$ctrl.hero][sound.id] ? '★' : ''}}<span>{{$ctrl.getItemName(sound.id)}}</span></div>
     </div>
   </div>
 </body>

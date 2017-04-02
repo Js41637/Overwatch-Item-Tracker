@@ -74,17 +74,22 @@ h2 {
 }
 
 #soundList {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   overflow: auto;
   height: calc(100% - 169px);
   width: 68%;
+  text-align: center;
 }
 
 #soundList div {
   margin: 3px 2px;
-  min-width: 134px;
+  width: 170px;
+  white-space: pre-line;
+}
+
+#soundList div span {
+  font-size: 13px;
 }
 
 .bottomoptions {
