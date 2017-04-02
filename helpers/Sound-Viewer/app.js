@@ -79,7 +79,8 @@ OWI.controller('MainCtrl', ["$http", function($http) {
   }
 
   this.getVLCount = () => {
-    if (loading) return `0/0`
+    if (loading) return '0/0'
+    if (!this.items[this.hero]) return ''
     return Object.keys(this.mappedSounds[this.hero] || {}).length + '/' + this.items[this.hero].items.voicelines.length
   }
 
