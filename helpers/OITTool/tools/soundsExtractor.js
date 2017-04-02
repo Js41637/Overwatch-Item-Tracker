@@ -49,7 +49,7 @@ const moveSoundFiles = soundsListOnly => {
                 const checksum = getFileSize(`./${hero}/Sound Dump/${sound}`)
                 var dupeFile = checksum in checksumCache
                 soundsList[heroID].push(Object.assign({}, {
-                  id: sound,
+                  id: sound.replace('.wem', ''),
                   checksum: checksum
                 }, dupeFile ? { dupe: true } : {}))
                 checksumCache[checksum] = true

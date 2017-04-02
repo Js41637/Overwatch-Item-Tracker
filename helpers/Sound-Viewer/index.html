@@ -6,23 +6,41 @@
   <link rel="stylesheet" href="./Sound-Viewer/main.css">
   <script src="../../js/vendor/angular.min.js"></script>
   <script src="../../js/vendor/ui-bootstrap.min.js"></script>
+  <script src="./Sound-Viewer/download.min.js"></script>
   <script src="./Sound-Viewer/app.js"></script>
 </head>
 <body ng-controller="MainCtrl as $ctrl" ng-keydown="$ctrl.handleKeyPress($event)">
   <div id="heroes">
-    <div class="btn btn-default" ng-repeat="hero in $ctrl.heroes" ng-class="{selected: $ctrl.selectedHero == hero}" ng-click="$ctrl.selectedHero = hero">{{hero}}</div>
+    <div class="btn" ng-repeat="hero in $ctrl.heroes" ng-class="{'btn-primary': $ctrl.selectedHero == hero, 'btn-default': $ctrl.selectedHero != hero}" ng-click="$ctrl.selectedHero = hero">{{hero}}</div>
   </div>
   <div id="mainBody">
     <div id="player">
       <audio id="audio" ng-src="{{$ctrl.currentURL}}" autoplay="true" controls="true"></audio>
       <div class="controls">
+        <div class="btn btn-default" ng-click="$ctrl.replaySound()">Play</div>
         <div class="btn btn-default" ng-click="$ctrl.toggleLoop()">{{$ctrl.looping ? "Unloop" : "Loop"}}</div>
+        <span>Selected Sound: {{$ctrl.selectedSound || 'None'}}</span>
+        <div class="vl-list">
+          <h2>Voice Lines for {{$ctrl.itemData[$ctrl.selectedHero].name}}</h2>
+          <div class="inner">
+            <div class="btn-cont" ng-repeat="vl in $ctrl.itemData[$ctrl.selectedHero].items.voicelines track by $index">
+              <div class="vl btn btn-default" ng-click="$ctrl.selectItem(vl.id)">{{$ctrl.selectedItems[vl.id] ? '★' : ''}} {{vl.name}}</div> <div ng-disabled="!$ctrl.selectedItems[vl.id]" ng-click="$ctrl.clearItem(vl.id)" class="clear btn btn-danger">Clear</div>
+            </div>
+          </div>
+        </div>
+        <div class="bottomoptions">
+          <div class="btn btn-primary" ng-click="$ctrl.saveData()">Download Data</div>
+          <div class="importbtn">
+            <div class="btn btn-primary" ng-click="$ctrl.saveData()" ng-class="{hover: inputhover}">Import Data</div>
+            <input id="fileInput" type="file" fileread="$ctrl.importData" ng-mouseover="inputhover=true" ng-mouseleave="inputhover=false">
+          </div>
+          <div class="btn btn-danger" ng-click="$ctrl.clearData()">Erase Data</div>
+        </div>
       </div>
     </div>
     <div id="soundList">
-      <div class="sound btn btn-default" ng-repeat="sound in $ctrl.soundData[$ctrl.selectedHero] track by $index" ng-hide="sound.dupe" ng-click="$ctrl.playSound(sound.id, $index)" ng-class="{selected: $ctrl.selectedSound == sound.id}">{{sound.id}}</div>
+      <div class="sound btn btn-default" ng-repeat="sound in $ctrl.soundData[$ctrl.selectedHero] track by $index" ng-hide="sound.dupe" ng-click="$ctrl.playSound(sound.id, $index)" ng-class="{selected: $ctrl.selectedSound == sound.id}">{{sound.id}} {{$ctrl.mappedSounds[$ctrl.selectedHero][sound.id] ? '★' : ''}}</div>
     </div>
   </div>
-  
 </body>
 </html>
