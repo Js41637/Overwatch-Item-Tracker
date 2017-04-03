@@ -65,7 +65,7 @@
         ng-repeat="item in items track by $index"
         fancy-load="{{$index}}"
         ng-click="hero.selectItem(item, type)"
-        lazy-background="{{hero.getImgUrl(item, type, hero.id, true)}}"
+        lazy-background="{{hero.getPreviewURL(item, type, hero.id, true)}}"
         no-loader="true">
       </div>
     </div>
@@ -82,7 +82,7 @@
         uib-tooltip-template="'imagePreviewTemplate.html'"
         tooltip-popup-delay="275"
         tooltip-class="img-preview"
-        tooltip-enable="type !== 'voicelines'"
+        tooltip-enable="{{::$ctrl.supportsPreview(type)}}"
         tooltip-placement="auto"
         ng-repeat="item in items track by $index">
         <input type="checkbox" id="{{type + item.id}}" ng-checked="item.standardItem || hero.checked[type][item.id]" ng-disabled="item.standardItem" ng-change="hero.onSelect()" ng-model="hero.checked[type][item.id]">

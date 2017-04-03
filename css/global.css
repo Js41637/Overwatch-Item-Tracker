@@ -212,6 +212,14 @@ body {
   filter: brightness(0.925);
 }
 
+.nosupport.alert {
+  max-width: 500px;
+  position: absolute;
+  margin: 8px;
+  line-height: 1.4;
+  z-index: 500;
+}
+
 * {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -242,7 +250,7 @@ body {
   padding-top: 2px;
 }
 
-#settings .alert {
+.alert {
   font-family: sans-serif;
   font-size: 14px;
 }

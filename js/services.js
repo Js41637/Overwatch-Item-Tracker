@@ -4,6 +4,7 @@ OWI.factory("StorageService", function() {
     settings: {},
     defaultSettings: {
       particles: true,
+      showPreviews: true,
       hdVideos: false,
       currentTheme: 'standard'
     },
@@ -11,7 +12,7 @@ OWI.factory("StorageService", function() {
       return service.data;
     },
     getSetting: function(key) {
-      return (service.settings[key] ? service.settings[key] : (service.defaultSettings[key] ? service.defaultSettings[key] : false));
+      return (typeof service.settings[key] !== 'undefined' ? service.settings[key] : (service.defaultSettings[key] ? service.defaultSettings[key] : false));
     },
     setSetting: function(key, value) {
       service.settings[key] = value;

@@ -78,7 +78,10 @@
       </div>
     </div>
   </div>
-
+  <div ng-if="::$ctrl.noSupport[0].length" ng-hide="::$ctrl.hideAlert" class="nosupport alert alert-warning alert-dismissable">
+    <button ng-click="$ctrl.dismissAlert()" type="button" class="close"><span>&times;</span></button>
+    <strong>Notice!</strong> <span>You're browser doesn't seem to support {{::$ctrl.noSupport[0].join(' and ')}}.</br>This means you won't be able to {{::$ctrl.noSupport[1].join(' or ')}}.</span>
+  </div>
   <div ui-view="main"></div>
 
   <script> // Track page views

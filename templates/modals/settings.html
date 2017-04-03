@@ -19,6 +19,11 @@
       <button class="btn btn-primary" type="button" ng-click="settings.selectAll()">Select Everything!</button>
     </div>
     <div class="setting">
+      <h3>Show Previews</h3>
+      <p>Disable or enable showing previews of items (sprays, emotes, etc...)</p>
+      <button class="btn btn-primary" type="button" ng-click="settings.toggleSetting('showPreviews', true)">{{settings.showPreviews ? 'Disable' : 'Enable'}}</button>
+    </div>
+    <div class="setting">
       <h3>HD Videos</h3>
       <p>Disable or enable showing HD videos of Highlight Intros and Emotes</p>
       <button class="btn btn-primary" type="button" ng-click="settings.toggleSetting('hdVideos')">{{settings.hdVideos ? 'Disable' : 'Enable'}}</button>

@@ -77,7 +77,7 @@ OWI.directive('tooltipImagePreview', function() {
     replace: true,
     templateUrl: './templates/tooltip-image-preview.html',
     link: function($scope) {
-      $scope.preview = $scope.hero.getImgUrl($scope.item, $scope.type, $scope.hero.id)
+      $scope.preview = $scope.hero.getPreviewURL($scope.item, $scope.type, $scope.hero.id)
     }
   }
 })

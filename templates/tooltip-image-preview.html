@@ -1,12 +1,12 @@
 <div>
-  <div class="preview img" ng-show="preview.img">
+  <div class="preview img" ng-if="preview.img">
     <div lazy-background="{{preview.img}}"></div>
   </div>
   <div class="preview video" ng-if="preview.video">
     <div class="bg2"></div>
-    <div class="nosupport" ng-show="!$ctrl.supportsWebM">
-      Sorry, your browser doesn't support HTML5 video or WebM.
-    </div>
-    <video ng-if="$ctrl.supportsWebM" autoplay="true" autostart="true" loop="true" ng-src="{{preview.video}}"></video>
+    <video  autoplay="true" autostart="true" loop="true" ng-src="{{preview.video}}"></video>
+  </div>
+  <div class="preview audio" ng-if="preview.audio">
+    <audio ng-src="{{preview.audio}}" autoplay="true" volume="0.0" controls="true"></audio>
   </div>
 </div>

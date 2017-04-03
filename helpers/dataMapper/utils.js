@@ -49,10 +49,12 @@ const getCleanID = (what, hero) => {
 }
 
 // Returns the image or video URL for an item
-const getImageURL = (type, event, id, hero) => {
+const getPreviewURL = (type, event, id, hero) => {
   const baseUrl = `./resources/updates/${event}/${type}/${id}`
   const heroUrl = `./resources/heroes/${hero}/${type}/${id}`
   switch (type) {
+    case 'voicelines':
+      return `${heroUrl}.ogg`
     case 'emotes':
     case 'intros':
       return `${baseUrl}.webm`
@@ -94,4 +96,4 @@ const sortObject = (o, update) => {
   return sorted
 }
 
-module.exports = { getCleanID, getItemType, getImageURL, sortObject, stupidNames, qualityOrder }
+module.exports = { getCleanID, getItemType, getPreviewURL, sortObject, stupidNames, qualityOrder }

@@ -1,22 +1,46 @@
-OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", function($rootScope, $q, $document, $uibModal, DataService) {
+OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "StorageService", function($rootScope, $q, $document, $uibModal, DataService, StorageService) {
   var vm = this;
   this.preview = false;
   this.currentDate = Date.now();
   this.showSidebar = false;
-  this.supportsWebM = true
   this.showNav = false;
+  this.noSupport = [[], []]
 
   DataService.waitForInitialization().then(function(data) {
     vm.events = data.events;
-    vm.heroes = data.heroes
+    vm.heroes = data.heroes;
   })
 
+  this.dismissAlert = function() {
+    this.hideAlert = true
+  }
+
   // Check to see if the web browser supports WebM videos
+  var supportedTypes = {
+    intros: true,
+    emotes: true,
+    voicelines: true
+  }
   var v = document.createElement('video')
-  if (v.canPlayType) {
-    this.supportsWebM = ("" !== v.canPlayType('video/webm; codecs="vp8, opus"') && "" !== v.canPlayType('video/webm; codecs="vp9, opus"'))
-  } else {
-    this.supportsWebM = false;
+  var a = document.createElement('audio')
+  if (!v.canPlayType || ("" == v.canPlayType('video/webm; codecs="vp8, opus"') && "" == v.canPlayType('video/webm; codecs="vp9, opus"'))) {
+    this.supportsWebM = false
+    supportedTypes['intros'] = 'false'
+    supportedTypes['emotes'] = 'false'
+    this.noSupport[0].push('WebM')
+    this.noSupport[1].push('watch any emote and intro previews')
+  }
+  if (!a.canPlayType || "" == a.canPlayType('audio/ogg; codecs="vorbis"')) {
+    this.supportsOgg = false
+    supportedTypes['voicelines'] = 'false'
+    this.noSupport[0].push('Ogg')
+    this.noSupport[1].push('listen to voicelines')
+  }
+
+  var showPreviews = StorageService.getSetting('showPreviews')
+  this.supportsPreview = function(type) {
+    if (!showPreviews) return false
+    return supportedTypes[type] || true
   }
 
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
@@ -92,6 +116,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   this.particles = StorageService.getSetting('particles');
   this.hdVideos = StorageService.getSetting('hdVideos');
   this.currentTheme = StorageService.getSetting('currentTheme');
+  this.showPreviews = StorageService.getSetting('showPreviews');
   this.importErrors = null;
 
   this.close = function() {
@@ -279,7 +304,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   }
  
   // Return the url for an image or video, also check if we're showing HD videos
-  this.getImgUrl = function(item, type, hero, image) {
+  this.getPreviewURL = function(item, type, hero, image) {
     var base = './resources/heroes/' + (item.hero || hero) + '/' + type + '/' + item.id;
     var out = {}
     if (type == 'intros' || type == 'emotes') {
@@ -287,6 +312,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
       if (StorageService.getSetting('hdVideos')) {
        out.video = out.video.replace('.webm', '-hd.webm');
       }
+    } else if (type == 'voicelines') {
+      out.audio = base + '.ogg'
     } else {
       out.img = base + (type == 'sprays' || type == 'icons' ? '.png' : '.jpg')
     }
@@ -435,9 +462,10 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
 
   var showTimeout = undefined;
   var hideTimeout = undefined;
-
+  var showPreviews = StorageService.getSetting('showPreviews');
   $scope.showPreview = function(what, type) {
-    if (!what.img && !what.video) return;
+    if (!what.img && !what.video && !what.audio) return;
+    if (!showPreviews) return
     if (showTimeout) return;
     var item = angular.copy(what)
     clearTimeout(hideTimeout)
@@ -446,10 +474,13 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
       if (StorageService.getSetting('hdVideos') && item.video) {
         item.video = item.video.replace('.webm', '-hd.webm');
       }
-      $scope.preview = item;
-
+      if (item.audio) {
+        $scope.audio = item
+      } else {
+        $scope.preview = item;
+      }
       $scope.$digest();
-    }, $scope.preview ? 50 : 600);
+    }, ($scope.preview || $scope.audio) ? 50 : 600);
   };
 
   $scope.hidePreview = function() {
@@ -457,6 +488,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
     showTimeout = undefined;
     hideTimeout = setTimeout(function () {
       $scope.preview = false;
+      $scope.audio = false;
       $scope.$digest();
     }, 150);
   };
