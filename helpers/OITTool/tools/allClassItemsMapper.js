@@ -8,9 +8,9 @@ var TYPES = {
 
 const mapAllClassData = () => {
   const cwd = process.cwd()
-  const isGeneral = cwd.match(/OverwatchAssets\/General$/)
+  const isGeneral = cwd.match(/OverwatchAssets\\General$/)
   if (!cwd.match(/OverwatchAssets$/) && !isGeneral) {
-    console.error("Needs to be run in OverwatchAssets or OverwatchAssets/General")
+    console.error("Needs to be run in OverwatchAssets or OverwatchAssets\General")
     process.exit()
   }
 

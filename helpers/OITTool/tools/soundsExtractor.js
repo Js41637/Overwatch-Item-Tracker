@@ -4,15 +4,24 @@
 // we'll be able to see wots wot
 // Run this in the root Heroes dir
 const fs = require('fs')
-const { sortBy } = require('lodash')
 const crypto = require('crypto')
-const { exec } = require('child_process')
 const path = require('path')
+const { exec } = require('child_process')
+
+const { sortBy, last } = require('lodash')
 const { eachLimit } = require('async')
 const moment = require('moment')
+
 const { getDirectories, getCleanID, copyFile, handleErr } = require('./utils')
 const HERODATA = require('../../dataMapper/HERODATA.js')
 const { mapFilesToHeroes } = require('./filesToHeroMapper')
+
+var mappedSounds
+try {
+  mappedSounds = JSON.parse(fs.readFileSync(path.join(__dirname, '../../../data/mappedSounds.json')))
+} catch (e) {
+  mappedSounds = null
+}
 
 const checksum = (str, algorithm, encoding) => {
   return crypto.createHash('sha1').update(str, 'utf8').digest(encoding || 'hex')
@@ -95,6 +104,10 @@ const convertSoundFiles = () => {
   })
 }
 
+const moveFilesToHeroes = () => {
+  return mapFilesToHeroes(['none', './!soundTemp/'], true)
+}
+
 const extractSounds = args => {
   if (!process.cwd().match(/OverwatchAssets\\Heroes$/)) {
     console.error("Needs to be run in OverwatchAssets\Heroes")
@@ -112,14 +125,50 @@ const extractSounds = args => {
     fs.writeFileSync('./soundFiles.json', JSON.stringify(soundsList, null, 2))
     if (soundsListOnly) return
 
-    convertSoundFiles().then(mapFilesToHeroes).then(() => {
-      console.log("Finished doing sound stuff in", moment.duration(Date.now() - startTS).asMinutes(), "minutes")
+    convertSoundFiles().then(() => {
+      mapFilesToHeroes(['none', './!soundTemp/'], true).then(() => {
+        console.log("Finished doing sound stuff in", moment.duration(Date.now() - startTS).asMinutes(), "minutes")
+      }).catch(handleErr)
     }).catch(handleErr)
   }).catch(handleErr)
 }
 
 const fetchVoicelines = () => {
+  const cwd = process.cwd()
+  const isAudio = cwd.match(/OverwatchAssets\\audio$/)
+  if (!cwd.match(/OverwatchAssets$/) && !isAudio) {
+    console.error("Needs to be run in OverwatchAssets or OverwatchAssets\audio")
+    process.exit()
+  }
 
+  if (!mappedSounds) return console.error("Error, unable to find mappedSounds.json in OIT Data")
+
+  const base = `./${isAudio ? '' : 'audio/'}`
+  const mappedHeroes = Object.keys(mappedSounds)
+
+  fs.stat(`${base}!voicelines`, err => {
+    if (err) fs.mkdirSync(`${base}!voicelines`)
+  })
+
+  getDirectories(base).then(heroes => {
+    Promise.all(heroes.filter(h => mappedHeroes.includes(h)).map(hero => {
+      return new Promise(resolve => {
+        const heroSounds = mappedSounds[hero]
+        const soundIDs = Object.keys(heroSounds)
+        getDirectories(`${base}${hero}`).then(sounds => {
+          Promise.all(sounds.map(sound => {
+            return new Promise(r => {
+              const soundID = last(sound.split('-')).slice(0, -4)
+              if (!soundIDs.includes(soundID)) return r()
+              copyFile(`${base}${hero}/${sound}`, `${base}!voicelines/${heroSounds[soundID]}.ogg`, r)
+            })
+          })).then(resolve)
+        }).catch(handleErr)
+      })
+    })).then(() => mapFilesToHeroes(['voicelines', `${base}!voicelines/`]).then(() => {
+      console.log("Done")
+    }))
+  }).catch(handleErr)
 }
 
 module.exports = { extractSounds, fetchVoicelines }
