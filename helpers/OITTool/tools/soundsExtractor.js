@@ -10,7 +10,7 @@ const { exec } = require('child_process')
 const path = require('path')
 const { eachLimit } = require('async')
 const moment = require('moment')
-const { getDirectories, getCleanID, copyFile } = require('./utils')
+const { getDirectories, getCleanID, copyFile, handleErr } = require('./utils')
 const HERODATA = require('../../dataMapper/HERODATA.js')
 const { mapFilesToHeroes } = require('./filesToHeroMapper')
 
@@ -29,7 +29,6 @@ const checkTempDir = () => {
     }
   })
 }
-
 
 const moveSoundFiles = soundsListOnly => {
   console.log("Mapping and moving sound files")
@@ -96,12 +95,6 @@ const convertSoundFiles = () => {
   })
 }
 
-const moveFilesToHeroes = () => {
-  return new Promise(resolve => {
-    mapFilesToHeroes(['none', './!soundTemp/'], true, resolve)
-  })
-}
-
 const extractSounds = args => {
   if (!process.cwd().match(/OverwatchAssets\\Heroes$/)) {
     console.error("Needs to be run in OverwatchAssets\Heroes")
@@ -119,12 +112,14 @@ const extractSounds = args => {
     fs.writeFileSync('./soundFiles.json', JSON.stringify(soundsList, null, 2))
     if (soundsListOnly) return
 
-    convertSoundFiles().then(() => {
-      moveFilesToHeroes().then(() => {
-        console.log("Finished doing sound stuff in", moment.duration(Date.now() - startTS).asMinutes(), "minutes")
-      }).catch(console.error)
-    }).catch(console.error)
-  }).catch(console.error)
+    convertSoundFiles().then(mapFilesToHeroes).then(() => {
+      console.log("Finished doing sound stuff in", moment.duration(Date.now() - startTS).asMinutes(), "minutes")
+    }).catch(handleErr)
+  }).catch(handleErr)
 }
 
-module.exports = { extractSounds }
+const fetchVoicelines = () => {
+
+}
+
+module.exports = { extractSounds, fetchVoicelines }

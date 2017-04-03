@@ -1,6 +1,7 @@
 const fs = require('fs')
 const _getCleanID = require('../../dataMapper/utils').getCleanID
 
+const handleErr = err => console.log(`Error while doing stuff!!\n==ERROR==\n${err}\n==ENDERROR==`)
 
 const getCleanID = (what, hero) => {
   if (!what.length) return undefined
@@ -62,4 +63,4 @@ const copyFile = (source, target, cb) => {
   }
 }
 
-module.exports = { getDirectories, getCleanID, checkDirectorys, cleanFileIDs, copyFile }
+module.exports = { getDirectories, getCleanID, checkDirectorys, cleanFileIDs, copyFile, handleErr }
