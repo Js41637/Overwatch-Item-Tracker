@@ -157,3 +157,47 @@ OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
   }
   return service;
 }])
+
+OWI.factory('CompatibilityService', ["StorageService", function(StorageService) {
+  var showPreviews = StorageService.getSetting('showPreviews')
+  var service = {
+    noSupportMsg: false,
+    supportedTypes:{
+      intros: true,
+      emotes: true,
+      voicelines: true
+    },
+    supportsAudio: true,
+    supportsVideo: true,
+    canPlayType: function(type) {
+      if (!showPreviews) return false
+      return service.supportedTypes[type] || true
+    }
+  }
+
+  var noSupport = []
+  var messages = {
+    WebM: 'view previews of emotes and intros',
+    Ogg: 'listen to voicelines'
+  }
+  var v = document.createElement('video')
+  var a = document.createElement('audio')
+  if (!v.canPlayType || ("" == v.canPlayType('video/webm; codecs="vp8, opus"') && "" == v.canPlayType('video/webm; codecs="vp9, opus"'))) {
+    service.supportsVideo = false
+    service.supportedTypes['intros'] = 'false'
+    service.supportedTypes['emotes'] = 'false'
+    noSupport.push('WebM')
+  }
+  if (!a.canPlayType || "" == a.canPlayType('audio/ogg; codecs="vorbis"')) {
+    service.supportsAudio = false
+    service.supportedTypes['voicelines'] = 'false'
+    noSupport.push('Ogg')
+  }
+  if (noSupport.length) {
+    service.noSupportMsg = "You're browser doesn't seem to support " + noSupport.join(' and ') + ".\nThis means you won't be able to " + noSupport.map(function(n) {
+      return messages[n]
+    }).join(' or ') + "."
+  }
+
+  return service
+}])

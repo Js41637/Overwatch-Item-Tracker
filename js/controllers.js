@@ -1,12 +1,10 @@
-OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "StorageService", function($rootScope, $q, $document, $uibModal, DataService, StorageService) {
+OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "CompatibilityService", function($rootScope, $q, $document, $uibModal, DataService, CompatibilityService) {
   var vm = this;
   this.preview = false;
   this.currentDate = Date.now();
   this.showSidebar = false;
   this.showNav = false;
-  this.supportsWebM = true;
-  this.supportsOgg = true;
-  this.noSupport = [[], []]
+  this.noSupportMsg = CompatibilityService.noSupportMsg
 
   DataService.waitForInitialization().then(function(data) {
     vm.events = data.events;
@@ -15,34 +13,6 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
 
   this.dismissAlert = function() {
     this.hideAlert = true
-  }
-
-  // Check to see if the web browser supports WebM videos
-  var supportedTypes = {
-    intros: true,
-    emotes: true,
-    voicelines: true
-  }
-  var v = document.createElement('video')
-  var a = document.createElement('audio')
-  if (!v.canPlayType || ("" == v.canPlayType('video/webm; codecs="vp8, opus"') && "" == v.canPlayType('video/webm; codecs="vp9, opus"'))) {
-    this.supportsWebM = false
-    supportedTypes['intros'] = 'false'
-    supportedTypes['emotes'] = 'false'
-    this.noSupport[0].push('WebM')
-    this.noSupport[1].push('watch any emote and intro previews')
-  }
-  if (!a.canPlayType || "" == a.canPlayType('audio/ogg; codecs="vorbis"')) {
-    this.supportsOgg = false
-    supportedTypes['voicelines'] = 'false'
-    this.noSupport[0].push('Ogg')
-    this.noSupport[1].push('listen to voicelines')
-  }
-
-  var showPreviews = StorageService.getSetting('showPreviews')
-  this.supportsPreview = function(type) {
-    if (!showPreviews) return false
-    return supportedTypes[type] || true
   }
 
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
@@ -203,9 +173,10 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   }
 }])
 
-OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageService", "hero", function($scope, $rootScope, Data, StorageService, hero) {
+OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "hero", function($scope, $rootScope, Data, StorageService, CompatibilityService, hero) {
   var vm = this;
   Object.assign(this, hero); // is this cheating?
+  this.canPlayType = CompatibilityService.canPlayType
   this.gridView = false;
   this.checked = Data.checked[hero.id]
   this.events = {}
@@ -413,7 +384,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   calculateTotalsAndCosts();
 }])
 
-OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "event", function($scope, $rootScope, Data, StorageService, event) {
+OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "event", function($scope, $rootScope, Data, StorageService, CompatibilityService, event) {
   $scope.preview = false;
   $scope.checked = Data.checked;
   $scope.data = event;
@@ -464,10 +435,9 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
 
   var showTimeout = undefined;
   var hideTimeout = undefined;
-  var showPreviews = StorageService.getSetting('showPreviews');
   $scope.showPreview = function(what, type) {
     if (!what.img && !what.video && !what.audio) return;
-    if (!showPreviews) return
+    if (CompatibilityService.canPlayType(type) === 'false') return
     if (showTimeout) return;
     var item = angular.copy(what)
     clearTimeout(hideTimeout)

@@ -1,6 +1,6 @@
 <div id="legendary-skins" class="section">
   <div id="image-preview" scroll ng-class="{ show: preview, fixed: isFixed }">
-    <div class="preview" ng-show="preview.img" ng-class="{two: preview[ssURL]}">
+    <div class="preview" ng-if="preview.img" ng-class="{two: preview[ssURL]}">
       <div class="card {{preview.type || ''}}" lazy-background="{{preview.img}}">
         <div class="bg2"></div>
         <div class="bg">
@@ -24,10 +24,7 @@
     <div class="preview video" ng-if="preview.video">
       <div class="card {{preview.type || ''}}">
         <div class="bg2"></div>
-        <div class="nosupport" ng-show="!$ctrl.supportsWebM">
-          Sorry, your browser doesn't support HTML5 video or WebM.
-        </div>
-        <video ng-if="$ctrl.supportsWebM" autoplay="true" autostart="true" loop="true" ng-src="{{preview.video}}"></video>
+        <video autoplay="true" autostart="true" loop="true" ng-src="{{preview.video}}"></video>
         <div class="bg">
           <div class="card-content">
             <h4 class="card-heading">{{preview.hero || 'All Heroes'}}</h4>
