@@ -85,10 +85,12 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
 
 OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $uibModalInstance, StorageService, DataService) {
   var vm = this;
-  this.particles = StorageService.getSetting('particles');
-  this.hdVideos = StorageService.getSetting('hdVideos');
-  this.currentTheme = StorageService.getSetting('currentTheme');
-  this.showPreviews = StorageService.getSetting('showPreviews');
+  var settings = StorageService.settings
+  this.particles = settings['particles'];
+  this.hdVideos = settings['hdVideos'];
+  this.currentTheme = settings['currentTheme'];
+  this.showPreviews = settings['showPreviews'];
+  this.audioVolume = settings['audioVolume'];
   this.importErrors = null;
 
   this.close = function() {
@@ -99,6 +101,10 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
     localStorage.removeItem('data');
     localStorage.removeItem('migrations');
     location.reload();
+  }
+
+  this.setVolume = function() {
+    StorageService.setSetting('audioVolume', this.audioVolume)
   }
 
   this.toggleSetting = function(what, reload) {

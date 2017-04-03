@@ -29,6 +29,14 @@
       <button class="btn btn-primary" type="button" ng-click="settings.toggleSetting('hdVideos')">{{settings.hdVideos ? 'Disable' : 'Enable'}}</button>
     </div>
     <div class="setting">
+      <h3>Audio Volume</h3>
+      <p>Set the volume at which voicelines are played (default 70%)</p>
+      <div class="range-input">
+        <input type="range" min="0.0" max="1.0" step="0.1" ng-change="settings.setVolume()" ng-model="settings.audioVolume" value="{{settings.audioVolume}}" />
+        <span>{{settings.audioVolume * 100}}%</span>
+      </div>
+    </div>
+    <div class="setting">
       <h3>Import/Export Data</h3>
       <p>Copy and paste this string into your other browser or store it in a file for backup. You can also input your export and import it with the overwrite button.</p>
       <div ng-hide="settings.importErrors == null || settings.importErrors == false" class="alert alert-danger">

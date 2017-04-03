@@ -238,7 +238,7 @@ body {
 }
 
 #settings .setting {
-  padding: 15px 10px;
+  padding: 10px;
 }
 
 #settings .setting p, #settings .setting a, #settings .setting li {
@@ -263,6 +263,16 @@ body {
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+}
+
+#settings .range-input {
+  display: flex;
+  align-items: center;
+}
+
+#settings .range-input span {
+  margin-left: 5px;
+  font-size: 20px;
 }
 
 #settings .setting:not(:first-of-type) {

@@ -482,6 +482,10 @@
   width: 100%;
 }
 
+#hero-container #voicelines .tooltip {
+  display: none;
+}
+
 #hero-container .section .tooltip.img-preview .tooltip-arrow {
   border-top-color: rgb(240, 240, 240);
   border-bottom-color: rgb(240, 240, 240);

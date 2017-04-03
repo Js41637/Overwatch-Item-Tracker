@@ -6,7 +6,8 @@ OWI.factory("StorageService", function() {
       particles: true,
       showPreviews: true,
       hdVideos: false,
-      currentTheme: 'standard'
+      currentTheme: 'standard',
+      audioVolume: 0.7
     },
     getData: function() {
       return service.data;

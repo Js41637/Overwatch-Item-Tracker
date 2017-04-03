@@ -71,6 +71,15 @@ OWI.directive("scroll", function($window) {
   };
 });
 
+OWI.directive('audiopls', ["StorageService", function(StorageService) {
+  return {
+    restrict: 'A',
+    link: function($scope, $elm) {
+      $elm[0].volume = StorageService.getSetting('audioVolume')
+    }
+  }
+}])
+
 OWI.directive('tooltipImagePreview', function() {
   return {
     restrict: 'E',
