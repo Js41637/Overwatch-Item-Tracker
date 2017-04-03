@@ -71,6 +71,11 @@ OWI.controller('MainCtrl', ["$http", function($http) {
     })
   }
 
+  this.selectHero = hero => {
+    this.hero = hero
+    this.sSoundIndex = -1
+  }
+
   this.isHeroDone = hero => {
     if (loading) return false
     if (!this.mappedSounds[hero]) return false
@@ -215,6 +220,10 @@ OWI.controller('MainCtrl', ["$http", function($http) {
       this.sSoundIndex = index
     }
     this.currentURL = `http://localhost:4000/${this.hero}/${this.hero}-${soundID}.ogg`
+  }
+
+  window.onbeforeunload = () => {
+    return 'Are you sure??'
   }
 
   init()

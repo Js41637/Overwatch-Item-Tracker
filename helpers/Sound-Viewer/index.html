@@ -11,7 +11,7 @@
 </head>
 <body ng-controller="MainCtrl as $ctrl" ng-keydown="$ctrl.handleKeyPress($event)">
   <div id="heroes">
-    <div class="btn" ng-repeat="hero in $ctrl.heroes" ng-class="{'btn-primary': $ctrl.hero == hero, 'btn-default': $ctrl.hero != hero}" ng-click="$ctrl.hero = hero">{{hero}} {{$ctrl.isHeroDone(hero) ? '✔' : ''}}</div>
+    <div class="btn" ng-repeat="hero in $ctrl.heroes" ng-class="{'btn-primary': $ctrl.hero == hero, 'btn-default': $ctrl.hero != hero}" ng-click="$ctrl.selectHero(hero)">{{hero}} {{$ctrl.isHeroDone(hero) ? '✔' : ''}}</div>
   </div>
   <div class="middlething">
     <span>Voicelines: {{$ctrl.getVLCount()}} | Total Sounds: {{$ctrl.sounds[$ctrl.hero].length}} | Dupe Sounds: {{$ctrl.countDupeItems()}}</span> | 
