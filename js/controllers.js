@@ -4,6 +4,8 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   this.currentDate = Date.now();
   this.showSidebar = false;
   this.showNav = false;
+  this.supportsWebM = true;
+  this.supportsOgg = true;
   this.noSupport = [[], []]
 
   DataService.waitForInitialization().then(function(data) {
