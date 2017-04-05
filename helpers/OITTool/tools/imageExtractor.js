@@ -85,20 +85,24 @@ const convertFiles = () => {
       eachLimit(types, 1, (type, cb) => {
         console.log(`Starting to convert ${TYPES[type]}`)
         console.log(`-- Converting images to png`)
-        exec(`mogrify -path ./images -format png ./!toBeConverted/${type}/*.dds`, err => {
-          if (err) return reject(`Error while mogrify'ing images! \n ${err}`)
-          console.log("-- Optimising images with pngquant")
-          exec(`pngquant ./images/*.png --ext=.png --speed 1 --force --strip`, err2 => {
-            if (err2) return reject(`Error while pngquant'ing images! \n ${err2}`)
-            setTimeout(() => {
-              console.log("-- Moving files to their hero dirs")
-              mapFilesToHeroes([TYPES[type], './images/']).then(() => {
-                console.log("-- Finished moving files")
-                cb()
-              })
-            }, 1000)
+         // timeout prevents the first icon from being converted incorrectly for some reason
+        setTimeout(() => {
+          exec(`mogrify -path ./images -format png ./!toBeConverted/${type}/*.dds`, err => {
+            if (err) return reject(`Error while mogrify'ing images! \n ${err}`)
+            console.log("-- Optimising images with pngquant")
+            exec(`pngquant ./images/*.png --ext=.png --speed 1 --force --strip`, err2 => {
+              if (err2) return reject(`Error while pngquant'ing images! \n ${err2}`)
+              // Need to set a timeout as this command seems to exit well before it is actually finished
+              setTimeout(() => {
+                console.log("-- Moving files to their hero dirs")
+                mapFilesToHeroes([TYPES[type], './images/']).then(() => {
+                  console.log("-- Finished moving files")
+                  cb()
+                })
+              }, 3000)
+            })
           })
-        })
+        }, 500)
       }, () => {
         console.log("Finished converting all images")
       })
