@@ -41,7 +41,13 @@ const checkDirectorys = (who, type, where = './') => {
           if (type && type !== '') fs.mkdir(`${where}${who}/${type}`, resolve)
           else resolve()
         })
-      } else resolve()
+      } else {
+        fs.stat(`${where}${who}/${type}`, err => {
+          if (err) {
+            fs.mkdir(`${where}${who}/${type}`, resolve)
+          } else resolve()
+        })
+      }
     })
   })
 }
