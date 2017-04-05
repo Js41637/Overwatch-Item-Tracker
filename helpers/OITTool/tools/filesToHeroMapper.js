@@ -22,6 +22,8 @@ const mapFilesToHeroes = (args, internal) => {
 
     if (!validTypes.includes(type)) return reject("Invalid folder specified, valid folders are " + validTypes.join('|'))
 
+    type = (type == 'none' ? '' : `/${type}`)
+
     getDirectories(dir).then(files => {
       files = files.filter(f => f.match(/^[\w-.]+\.(webm|jpg|png|dds|ogg)+$/))
       if (!files || !files.length) {
@@ -33,7 +35,6 @@ const mapFilesToHeroes = (args, internal) => {
           var hero = file.split('-')[0]
           hero = (hero == 'soldier' ? 'soldier-76' : hero)
           hero = Object.keys(HERODATA).includes(hero) ? hero : internal ? weirdHeroes[hero] : 'all'
-          type = type == 'none' ? '' : `/${type}`
           checkDirectorys(hero, type, dir).then(() => {
             fs.rename(`${dir}${file}`, `${dir}${hero}${type}/${file}`, r)
           }).catch(reject)
