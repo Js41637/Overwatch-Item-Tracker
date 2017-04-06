@@ -3,7 +3,7 @@
     <div>
       <div class="block" ng-repeat="event in ::$ctrl.events track by $index" ui-sref="events({id: event.id})" ui-sref-active="selected">
         <div class="bg"></div>
-        <div class="img" lazy-background="{{::event.id | eventImageUrl}}"></div>
+        <div class="img" lazy-background="{{::event.id | eventImageUrl}}" no-loader="true"></div>
       </div>
     </div>
   </div>

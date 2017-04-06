@@ -188,7 +188,9 @@ OWI.directive('loadingSpinner', function() {
 OWI.directive('lazyBackground', ["ImageLoader", "$compile", function(ImageLoader, $compile) {
   return {
     restrict: 'A',
-    scope: {},
+    scope: {
+      noLoader: '=noLoader'
+    },
     link: function($scope, $element, $attrs) {
       // Observe the lazy-background attribute so that when it changes it can fetch the new image and fade to it
       $attrs.$observe('lazyBackground', function(newSrc) {
@@ -200,7 +202,7 @@ OWI.directive('lazyBackground', ["ImageLoader", "$compile", function(ImageLoader
         }
 
         var loader;
-        if (!$attrs.noLoader) {
+        if (!$scope.noLoader) {
           loader = $compile('<loading-spinner />')($scope)
           $element.prepend(loader)
           setTimeout(function () {
@@ -210,7 +212,7 @@ OWI.directive('lazyBackground', ["ImageLoader", "$compile", function(ImageLoader
           loader = { remove: angular.noop }
         }
         
-        ImageLoader.loadImage(encodeURI(newSrc)).then(function(src) {
+        ImageLoader.loadImage(encodeURI(newSrc), $scope.noLoader).then(function(src) {
           $element.css('background-image', 'url("' + src + '")');
           loader.remove();
         }, function() {

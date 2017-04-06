@@ -104,7 +104,7 @@ OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
     requests: 0,
     images: [],
     loadedImages: {},
-    loadImage: function(url) {
+    loadImage: function(url, noQueue) {
       var deferred = $q.defer();
       if (service.loadedImages[url]) {
         setTimeout(function() {
@@ -112,24 +112,31 @@ OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
         }, 0)
         return deferred.promise
       } else {
-        service.images.push(service.fetchImage(url, deferred))
-        if (!service.processing) {
-          service.processQueue()
+        if (noQueue) {
+          service.fetchImage(url, deferred, true)()
+        } else {
+          service.images.push(service.fetchImage(url, deferred))
+          if (!service.processing) {
+            service.processQueue()
+          }
         }
       }
-      
       return deferred.promise
     },
-    fetchImage: function(url, promise) {
+    fetchImage: function(url, promise, ignore) {
       return function() {
         var img = $document[0].createElement('img');
         img.onload = function() {
-          service.requests--;
+          if (!ignore) {
+            service.requests--;
+          }
           service.loadedImages[url] = true;
           promise.resolve(this.src);
         };
         img.onerror = function() {
-          service.requests--;
+          if (!ignore) {
+            service.requests--;
+          }
           promise.reject();
         };
         img.src = url;
