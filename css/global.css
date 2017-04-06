@@ -337,109 +337,58 @@ strong {
   font-weight: bold;
 }
 
-/* Overwatch CSS Loader by CCG @ https://codepen.io/CCG/pen/KrANmJ */
+/* Custom Overwatch CSS Loader made with snippets from
+   CCG @ https://codepen.io/CCG/pen/KrANmJ &
+   Don Pinkus @ https://codepen.io/donpinkus/pen/gMwmJw */
 
 .loader {
-  transform: scale(0.7);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 160px;
-  height: 160px;
-  margin: -80px 0px 0px -80px;
-  background-color: transparent;
-  border-radius: 50%;
+  height: 98%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
-  transition: opacity 100ms ease-in;
-}
-
-.hexagon-container {
-  position: relative;
-  top: 33px;
-  left: 41px;
-  border-radius: 50%;
-}
-
-.hexagon {
+  transition: opacity 125ms;
   position: absolute;
-  width: 40px;
-  height: 23px;
-  background-color: #556C82;
-}
-
-.hexagon:before {
-  content: "";
-  position: absolute;
-  top: -10.5px;
+  top: 0;
   left: 0;
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 11px solid #556C82;
 }
 
-.hexagon:after {
-  content: "";
-  position: absolute;
-  top: 22.5px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 11px solid #556C82;
+.loader svg {
+  width: 90px;
+  height: 90px;
 }
-
-.hexagon.hex_1 {
-  top: 0px;
-  left: 0px;
-  animation: Animasearch 3s ease-in-out infinite;
+.loader.small svg {
+  height: 60px;
+  width: 60px;
+}
+.loader svg path {
+  transform-origin: center;
+  -moz-transform-origin: center;
+  -webkit-transform-origin: center;
+  animation: Animasearch 3.2s ease-in-out infinite;
+}
+.loader svg path:nth-of-type(2) {
   animation-delay: 0.21429s;
 }
-
-.hexagon.hex_2 {
-  top: 0px;
-  left: 42px;
-  animation: Animasearch 3s ease-in-out infinite;
+.loader svg path:nth-of-type(3) {
   animation-delay: 0.42857s;
 }
-
-.hexagon.hex_3 {
-  top: 36px;
-  left: 63px;
-  animation: Animasearch 3s ease-in-out infinite;
+.loader svg path:nth-of-type(6) {
   animation-delay: 0.64286s;
 }
-
-.hexagon.hex_4 {
-  top: 72px;
-  left: 42px;
-  animation: Animasearch 3s ease-in-out infinite;
+.loader svg path:nth-of-type(7) {
   animation-delay: 0.85714s;
 }
-
-.hexagon.hex_5 {
-  top: 72px;
-  left: 0px;
-  animation: Animasearch 3s ease-in-out infinite;
-  animation-delay: 1.07143s;
+.loader svg path:nth-of-type(4) {
+  animation-delay: 1.071410s;
 }
-
-.hexagon.hex_6 {
-  top: 36px;
-  left: -21px;
-  animation: Animasearch 3s ease-in-out infinite;
+.loader svg path:nth-of-type(5) {
   animation-delay: 1.28571s;
 }
-
-.hexagon.hex_7 {
-  top: 36px;
-  left: 21px;
-  animation: Animasearch 3s ease-in-out infinite;
+.loader svg path:nth-of-type(1) {
   animation-delay: 1.5s;
 }
-
 @keyframes Animasearch {
   0% {
     transform: scale(1);
