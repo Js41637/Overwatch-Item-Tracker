@@ -148,6 +148,7 @@ body {
   box-shadow: 0 0 3px orange;
   margin-right: 25px;
   border-radius: 4px;
+  min-width: 100px;
 }
 
 #header .event-selector h2 {
@@ -366,7 +367,7 @@ strong {
   transform-origin: center;
   -moz-transform-origin: center;
   -webkit-transform-origin: center;
-  animation: Animasearch 3.2s ease-in-out infinite;
+  animation: Animasearch 3s ease-in-out infinite;
 }
 .loader svg path:nth-of-type(2) {
   animation-delay: 0.21429s;
@@ -412,16 +413,18 @@ strong {
 #cost-remaining {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: rgba(30, 30, 30, 0.125);
+  border-bottom-left-radius: 5px;
+  padding: 0 12px;
+  min-width: 110px;
 }
 
 #cost-remaining span {
   margin-left: 5px;
   font-size: 54px;
-  width: 120px;
   letter-spacing: 0.3;
   font-style: italic;
   color: rgb(240, 240, 240);
@@ -806,10 +809,11 @@ strong {
  **/
 
 #sub-header {
-  position: relative;
+  position: sticky;
   padding: 0 40px;
   height: 55px;
   z-index: 10;
+  top: 0;
 }
 
 #sub-header .homebtn {
@@ -981,4 +985,12 @@ strong {
   left: 0;
   right: 0;
   z-index: 1000;
+}
+
+@media screen and (max-width: 1300px) {
+  #header .header-content {
+    position: absolute;
+    top: 47px;
+    left: 15px;
+  }
 }

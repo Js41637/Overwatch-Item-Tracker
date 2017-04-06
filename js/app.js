@@ -228,9 +228,6 @@ OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
       main: {
         templateUrl: './templates/hero.html',
         controller: 'HeroesCtrl as hero'
-      },
-      header: {
-        templateUrl: './templates/header-hero.html'
       }
     }
   })
