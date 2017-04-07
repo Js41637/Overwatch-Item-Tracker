@@ -16,6 +16,18 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   }
 
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
+    // If for some reason we don't have data, wait a second an try again
+    if (!vm.events || !vm.heroes) {
+      console.warn("Missing event or hero data!! Trying again")
+      setTimeout(function() {
+        onStateChange(event, toState, toParams);
+      }, 100);
+      return;
+    }
+    onStateChange(event, toState, toParams);
+  });
+
+  function onStateChange(event, toState, toParams) {
     vm.showNav = false;
     if (toState.name == 'events') {
       vm.item = vm.events[toParams.id];
@@ -26,7 +38,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
     } else {
       vm.item = { name: 'Home' };
     }
-  });
+  }
 
   // Fired when the sidebar is open on every click, checks if a click was made
   // outside the sidebar and if it was, close the sidebar
@@ -181,23 +193,25 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
 
 OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "hero", function($scope, $rootScope, Data, StorageService, CompatibilityService, hero) {
   var vm = this;
-  Object.assign(this, hero); // is this cheating?
-  this.canPlayType = CompatibilityService.canPlayType
+  Object.assign(this, hero);
+  this.filteredItems = hero.items;
+  this.canPlayType = CompatibilityService.canPlayType;
   this.gridView = false;
-  this.checked = Data.checked[hero.id]
-  this.events = {}
+  this.checked = Data.checked[hero.id];
+  this.events = {};
   this.totals = {
     total: 0,
     selected: 0,
     percentage: 0,
     groups: {}
-  }
+  };
+
   this.filters = {
     selected: false,
     unselected: false,
     achievement: false,
     events: {}
-  }
+  };
   
   // Cost is on scope as it is a directive in the page and it inherits parent scope
   $scope.cost = {
@@ -205,6 +219,66 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     remaining: 0,
     prev: 0
   };
+
+  this.isItemChecked = function(item, type) {
+    return this.checked[type][item.id];
+  };
+
+  function isValidItem(item) {
+    return !item.achievement && item.quality && !item.standardItem && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
+  }
+
+  // Calculate the total costs and tallys of items in current view (filters)
+  function calculateTotalsAndCosts() {
+    var selectedItems = 0;
+    var totalItems = 0
+    var cost = {
+      total: 0,
+      remaining: 0,
+      prev: $scope.cost.remaining
+    };
+
+    Object.keys(vm.filteredItems).forEach(function(type) {
+      var groupTotals = {
+        total: 0,
+        selected: 0
+      }
+      vm.filteredItems[type].forEach(function(item) {
+        if (!item.standardItem) {
+          totalItems++;
+          groupTotals.total++;
+        }
+        if (item.event && !vm.events[item.event]) {
+          vm.events[item.event] = true
+        }
+        
+        var isSelected = Data.isItemChecked(hero.id, type, item.id);
+        if (isSelected && !item.standardItem) {
+          selectedItems++;
+          groupTotals.selected++;
+        }
+        // allclass items dont need qualitys
+        // NOTE: this also updates the items data on the page
+        if (hero.id == 'all') {
+          item.quality = 'common'
+        }
+        if (type !== 'icons' && isValidItem(item)) {
+          var price = Data.prices[item.quality] * (item.event ? 3 : 1);
+          cost.total += price;
+          if (!isSelected) {
+            cost.remaining += price;
+          }
+        }
+      });
+      vm.totals.groups[type] = groupTotals;
+    });
+    $scope.cost = cost;
+    vm.totals.total = totalItems;
+    vm.totals.selected = selectedItems;
+    vm.totals.percentage = ((vm.totals.selected / vm.totals.total) * 100) + '%'
+  }
+
+  calculateTotalsAndCosts();
 
   this.updateFilters = function() {
     this.filtering = true;
@@ -264,8 +338,6 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     return out;
   }
 
-  this.filteredItems = hero.items // init
-
   $rootScope.$on('selectAll', function() {
     calculateTotalsAndCosts();
   })
@@ -299,10 +371,6 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     return image ? out.img : out
   }
 
-  this.isItemChecked = function(item, type) {
-    return this.checked[type][item.id];
-  }
-
   // Manual function to select an item, used in grid mode
   this.selectItem = function(item, type) {
     this.checked[type][item.id] = !this.checked[type][item.id];
@@ -332,62 +400,6 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     calculateTotalsAndCosts();
     StorageService.setData(Object.assign({}, Data.checked, vm.checked[hero.id]));
   }
-
-  function isValidItem(item) {
-    return !item.achievement && item.quality && !item.standardItem && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
-  }
-
-  // Calculate the total costs and tallys of items in current view (filters)
-  function calculateTotalsAndCosts() {
-    var selectedItems = 0;
-    var totalItems = 0
-    var cost = {
-      total: 0,
-      remaining: 0,
-      prev: $scope.cost.remaining
-    };
-
-    Object.keys(vm.filteredItems).forEach(function(type) {
-      var groupTotals = {
-        total: 0,
-        selected: 0
-      }
-      vm.filteredItems[type].forEach(function(item) {
-        if (!item.standardItem) {
-          totalItems++;
-          groupTotals.total++;
-        }
-        if (item.event && !vm.events[item.event]) {
-          vm.events[item.event] = true
-        }
-        
-        var isSelected = Data.isItemChecked(hero.id, type, item.id);
-        if (isSelected && !item.standardItem) {
-          selectedItems++;
-          groupTotals.selected++;
-        }
-        // allclass items dont need qualitys
-        // NOTE: this also updates the items data on the page
-        if (hero.id == 'all') {
-          item.quality = 'common'
-        }
-        if (type !== 'icons' && isValidItem(item)) {
-          var price = Data.prices[item.quality] * (item.event ? 3 : 1);
-          cost.total += price;
-          if (!isSelected) {
-            cost.remaining += price;
-          }
-        }
-      });
-      vm.totals.groups[type] = groupTotals;
-    });
-    $scope.cost = cost;
-    vm.totals.total = totalItems;
-    vm.totals.selected = selectedItems;
-    vm.totals.percentage = ((vm.totals.selected / vm.totals.total) * 100) + '%'
-  }
-
-  calculateTotalsAndCosts();
 }])
 
 OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "event", function($scope, $rootScope, Data, StorageService, CompatibilityService, event) {
