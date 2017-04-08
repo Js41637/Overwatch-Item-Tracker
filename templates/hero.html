@@ -52,7 +52,7 @@
     </div>
     <span class="currentfilter" ng-show="hero.filtering">Currently Filtering: {{hero.currentFilters}}</span>
   </div>
-  <div class="hero-grid" ng-if="hero.gridView">
+  <div class="hero-grid angular-animate" ng-if="hero.gridView">
     <div ng-repeat="(type, items) in hero.filteredItems track by type" id="{{::type}}" class="section">
       <div class="section-header">
         <h2>{{::type}} <small>{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
@@ -70,7 +70,7 @@
       </div>
     </div>
   </div>
-  <div class="hero-items" ng-if="!hero.gridView">
+  <div class="hero-items angular-animate" ng-if="!hero.gridView">
     <div ng-repeat="(type, items) in hero.filteredItems track by type" id="{{::type}}" class="section">
       <div class="section-header">
         <h2>{{type}} <small>{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
