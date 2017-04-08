@@ -238,7 +238,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
       prev: $scope.cost.remaining
     };
 
-    Object.keys(vm.filteredItems).forEach(function(type) {
+    for (var type in vm.filteredItems) {
       var groupTotals = {
         total: 0,
         selected: 0
@@ -252,15 +252,10 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
           vm.events[item.event] = true
         }
         
-        var isSelected = Data.isItemChecked(hero.id, type, item.id);
+        var isSelected = vm.isItemChecked(item, type);
         if (isSelected && !item.standardItem) {
           selectedItems++;
           groupTotals.selected++;
-        }
-        // allclass items dont need qualitys
-        // NOTE: this also updates the items data on the page
-        if (hero.id == 'all') {
-          item.quality = 'common'
         }
         if (type !== 'icons' && isValidItem(item)) {
           var price = Data.prices[item.quality] * (item.event ? 3 : 1);
@@ -271,7 +266,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
         }
       });
       vm.totals.groups[type] = groupTotals;
-    });
+    }
     $scope.cost = cost;
     vm.totals.total = totalItems;
     vm.totals.selected = selectedItems;

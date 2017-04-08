@@ -35,10 +35,12 @@ allClassData = reduce(allClassData, (result, items, type) => {
       Object.assign(r, match ? { event: eventID } : {})
       return r
     }, {})
-
+    
+    const isCompSpray = type == 'sprays' && item.id.match(/^season-.-competitor$/)
     const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined
-    const isAchievement = (type == 'sprays' && achievementSprays.includes(item.id)) ? { achievement: true } : undefined
-    newItems.push(Object.assign(item, { event }, isAchievement, isStandard))
+    const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompSpray) ? { achievement: true } : undefined
+    const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompSpray) ? { quality: 'common' } : undefined
+    newItems.push(Object.assign(item, { event }, isAchievement, isStandard, quality))
     return newItems
   }, [])
   result[type] = items
@@ -230,6 +232,7 @@ forEach(heroes, hero => forEach(hero.items, (items, type) => {
 var masterData = {
   currentEvent: CURRENTEVENT,
   prices: {
+    undefined: 25,
     'common': 25,
     'rare': 75,
     'epic': 250,

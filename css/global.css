@@ -33,19 +33,19 @@ body {
   color: #00db55;
 }
 
-.color-common {
+.item h3.common, .item h3, .color-common {
   color: #fff;
 }
 
-.color-rare {
+.item h3.rare, .color-rare {
   color: #00c1fa;
 }
 
-.color-epic {
+.item h3.epic, .color-epic {
   color: #ff05f4;
 }
 
-.color-legendary {
+.item h3.legendary, .color-legendary {
   color: #ffa12b;
 }
 
@@ -420,7 +420,8 @@ strong {
   border-bottom-left-radius: 5px;
   padding: 0 12px;
   min-width: 110px;
-  height: 54px;
+  height: 55px;
+  pointer-events: all;
 }
 
 #cost-remaining span {
@@ -815,6 +816,7 @@ strong {
   height: 55px;
   z-index: 10;
   top: 0;
+  pointer-events: none;
 }
 
 #sub-header .homebtn {
