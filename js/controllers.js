@@ -18,10 +18,10 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
     // If for some reason we don't have data, wait a second an try again
     if (!vm.events || !vm.heroes) {
-      console.warn("Missing event or hero data!! Trying again")
+      console.warn("Missing event or hero data!! Trying again", vm)
       setTimeout(function() {
         onStateChange(event, toState, toParams);
-      }, 100);
+      }, 150);
       return;
     }
     onStateChange(event, toState, toParams);

@@ -3,7 +3,7 @@
     <div>
       <div class="block" ng-repeat="event in ::$ctrl.events track by $index" ui-sref="events({id: event.id})" ui-sref-active="selected">
         <div class="bg"></div>
-        <div class="img" lazy-background="{{::event.id | eventImageUrl}}" no-loader="true"></div>
+        <div class="img" style="background-image: url({{::event.id | eventImageUrl}})"></div>
       </div>
     </div>
   </div>
@@ -11,7 +11,9 @@
     <div>
       <div class="block" ng-repeat="hero in ::$ctrl.heroes track by $index" ui-sref="heroes({id: hero.id})" ui-sref-active="selected">
         <div class="bg"></div>
-        <div class="img" lazy-background="{{::hero.id | heroImg:'icon'}}" no-loader="true"></div>
+        <div class="imgcont">
+          <div class="img" style="background-image: url({{::hero.id | heroImg:'icon'}})"></div>
+        </div>
         <h2>{{::hero.name}}</h2>
       </div>
     </div>
