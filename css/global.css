@@ -49,6 +49,10 @@ body {
   color: #ffa12b;
 }
 
+input[type="checkbox"] {
+  -moz-appearance: none;
+}
+
 
 /**
  * HEADER
@@ -811,6 +815,7 @@ strong {
  **/
 
 #sub-header {
+  position: relative;
   position: sticky;
   padding: 0 40px;
   height: 55px;

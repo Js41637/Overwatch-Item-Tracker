@@ -275,6 +275,10 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
 
   calculateTotalsAndCosts();
 
+  this.hasEvents = function() {
+    return Object.keys(vm.events).length
+  }
+
   this.updateFilters = function() {
     this.filtering = true;
     var selected = vm.filters.selected;
