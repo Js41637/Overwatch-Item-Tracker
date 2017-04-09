@@ -606,14 +606,14 @@
 /* SMALL MODE CSS */
 
 @media screen and (max-width: 1650px) {
-  /* SUMMER_GAMES */
-  #SUMMER_GAMES_2016 #event-container {
+  #event-container {
     flex-direction: column;
     align-items: center;
-    width: 1000px;
+    width: 1100px;
     position: relative;
-    margin: 0 auto;
+    margin: -20px auto 0;
   }
+  /* SUMMER_GAMES */
   #SUMMER_GAMES_2016 #event-container #col1, #SUMMER_GAMES_2016 #event-container #col2 {
     width: 1000px;
   }
@@ -701,13 +701,6 @@
   }
 
   /* HALLOWEEN */
-  #HALLOWEEN_2016 #event-container {
-    flex-direction: column;
-    align-items: center;
-    width: 1000px;
-    position: relative;
-    margin: 0 auto;
-  }
   #HALLOWEEN_2016 #event-container #row1 {
     flex-direction: column;
   }
@@ -757,13 +750,6 @@
     width: 32.5%
   }
   /* WINTER */
-  #WINTER_WONDERLAND_2016 #event-container {
-    flex-direction: column;
-    align-items: center;
-    width: 1000px;
-    position: relative;
-    margin: 0 auto;
-  }
   #WINTER_WONDERLAND_2016 #event-container #row1 {
     flex-direction: column;
     width: 100%;
@@ -798,13 +784,6 @@
     width: 32.5%;
   }
   /* ROOSTER */
-  #YEAR_OF_THE_ROOSTER_2017 #event-container {
-    flex-direction: column;
-    align-items: center;
-    width: 1000px;
-    position: relative;
-    margin: 0 auto;
-  }
   #YEAR_OF_THE_ROOSTER_2017 #event-container #row1 {
     flex-direction: column;
   }
