@@ -7,23 +7,19 @@
 #event-container .section h3 {
   color: rgb(245, 245, 245);
   font-size: 26px;
-  order: 2;
-  margin-left: 4px;
+  margin-right: 4px;
 }
 
 #event-container .section h4 {
   font-size: 1em;
-  order: 1;
 }
 
 #event-container #sprays h3 {
-  order: 1;
   margin-left: 0;
 }
 
 #event-container #sprays h4 {
   font-size: 1em;
-  order: 2;
 }
 
 #event-container h2 small {
@@ -578,6 +574,10 @@
   width: 52%;
 }
 
+#YEAR_OF_THE_ROOSTER_2017 #event-container #sprays .item {
+  width: 32.7%;
+}
+
 #YEAR_OF_THE_ROOSTER_2017 #event-container #epic-skins .item {
   padding: 10px 2px;
 }
@@ -587,7 +587,7 @@
 }
 
 #YEAR_OF_THE_ROOSTER_2017 #event-container #sprays .items {
-  height: 300px;
+  height: 370px;
 }
 
 #YEAR_OF_THE_ROOSTER_2017 #event-container #icons .item:nth-child(23) h3 {

@@ -3,17 +3,6 @@ body {
   background-size: cover;
 }
 
-.hexagon {
-  background-color: rgba(255,255,255,0.34);
-}
-.hexagon:before {
-  top: -11px;
-  border-bottom: 11px solid rgba(255,255,255,0.34);
-}
-.hexagon:after {
-  border-top: 11px solid rgba(255,255,255,0.34);
-}
-
 #header:before {
   content: "";
   width: 0px;
@@ -25,6 +14,10 @@ body {
   background-position: left center;
 }
 
+#header .header-content {
+  position: initial !important;
+}
+
 #header img {
   height: 34px;
   margin-right: 4px;
@@ -34,13 +27,17 @@ body {
   color: #fff;
 }
 
+#cost-remaining {
+  background-color: transparent;
+}
+
 #cost-remaining span {
   width: auto;
 }
 
-
 #event-container {
   padding-top: 2px;
+  margin-top: 0;
 }
 
 #event-container .row {
@@ -335,7 +332,7 @@ body {
 }
 
 /* SUMMER GAMES 2016 */
-#SUMMER_GAMES_2016 #event-container #cost-remaining {
+#SUMMER_GAMES_2016 #cost-remaining {
     display: none;
 }
 
@@ -882,6 +879,25 @@ body {
 
   #header {
     min-width: 800px;
+  }
+
+  #header:before {
+    top: 58px !important;
+  }
+
+  #header .event-ended {
+    top: 68px !important;
+  }
+
+  #cost-remaining {
+    background-color: rgba(30, 30, 30, 0.2);
+    top: 10px;
+    border-top-left-radius: 5px;
+  }
+
+  #event-container {
+    max-width: 1100px;
+    margin: 45px auto 0;
   }
 
   #event-container #legendary-skins {
