@@ -123,6 +123,7 @@ OWI.run(function() {
       id: 6,
       run: function() {
         var events = ["SUMMER_GAMES_2016", "WINTER_WONDERLAND_2016", "YEAR_OF_THE_ROOSTER_2017", "HALLOWEEN_2016"];
+        var types = '{ "icons": {}, "intros": {}, "poses": {}, "skins": {}, "sprays": {}, "voicelines": {}, "emotes": {} }';
         var heroes = ["ana", "bastion", "dva", "genji", "hanzo", "junkrat", "lucio", "mccree", "mei", "mercy", "pharah", "reaper", "reinhardt", "roadhog", "soldier-76", "sombra", "symmetra", "torbjorn", "tracer", "widowmaker", "winston", "zarya", "zenyatta"];
         var hasEvents = events.filter(function(e) {
           return data[e];
@@ -130,6 +131,11 @@ OWI.run(function() {
         if (!hasEvents.length) {
           return;
         }
+
+        heroes.forEach(function(hero) {
+          data[hero] = JSON.parse(types)
+        })
+        data['all'] = { icons: {}, sprays: {} }
 
         for (var event in data) {
           if (!events.includes(event)) {
@@ -141,12 +147,6 @@ OWI.run(function() {
               hero = hero == 'soldier' ? 'soldier-76' : hero;
               hero = heroes.includes(hero) ? hero : 'all';
               var newType = (type == 'skinsEpic' || type == 'skinsLegendary') ? 'skins' : type;
-              if (!data[hero]) {
-                data[hero] = {};
-              }
-              if (!data[hero][newType]) {
-                data[hero][newType] = {};
-              }
               data[hero][newType][item] = data[event][type][item];
             }
           }
@@ -189,9 +189,10 @@ OWI.run(function() {
 
 // This allows custom themes to be loaded
 OWI.run(function() {
+  console.info("Loading themes");
   var settings = angular.fromJson(localStorage.getItem('settings')) || {};
   var theme = settings.currentTheme || 'standard';
-  var styles = ['events.css']
+  var styles = ['events.css', 'heroes.css']
   styles.forEach(function(style) {
     var url = './css/' + (theme == 'standard' ? style : 'themes/' + theme + '/' + style)
     var newElm = document.createElement('link');
