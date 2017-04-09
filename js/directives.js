@@ -119,61 +119,103 @@ OWI.directive('heroNav', function() {
   }
 })
 
+OWI.directive('lazyAudio', ["$timeout", function($timeout) {
+  return {
+    restrict: 'A',
+    scope: {},
+    replace: true,
+    templateUrl: './templates/audio-player.html',
+    link: function($scope, $elm, $attrs) {
+      var url = $attrs.lazyAudio;
+      var audio = $elm.find('audio')[0]
+      var refreshInterval = 20;
+      var step = 0;
+      var steps, timeout;
+      $scope.progress = 0;
+
+      // Prevent edge cases where the audio plays after tooltip has disappeared
+      $scope.$on('$destroy', function() {
+        audio.pause();
+        $timeout.cancel(timeout);
+      })
+
+      function tick() {
+        timeout = $timeout(function() {
+          step++;
+          $scope.progress = (step / steps) * 100
+          if (step >= steps) {
+            $timeout.cancel(timeout)
+          } else {
+            tick()
+          }
+        }, refreshInterval)
+      }
+
+      audio.addEventListener('canplaythrough', function(event) {
+        steps = Math.ceil(event.target.duration / (refreshInterval / 1000))
+        tick();
+        audio.play();
+      })
+      audio.src = url
+    }
+  }
+}])
+
 // Based off http://sparkalow.github.io/angular-count-to/
 OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
   return {
     replace: false,
-    scope: true,
-        link: function ($scope, $elm, $attrs) {
-          var e = $elm[0];
-          var refreshInterval = 32;
-          var duration = 500
-          var steps = Math.ceil(duration / refreshInterval);
-          var num, step, countTo, increment, value, timeoutId;
-          var calculate = function() {
+    scope: { },
+    link: function ($scope, $elm, $attrs) {
+      var e = $elm[0];
+      var refreshInterval = 32;
+      var duration = 500
+      var steps = Math.ceil(duration / refreshInterval);
+      var num, step, countTo, increment, value, timeoutId;
+      var calculate = function() {
+        $timeout.cancel(timeoutId);
+        timeoutId = null;
+        step = 0;
+        countTo = parseInt($attrs.countTo) || 0;
+        value = parseInt($attrs.countFrom, 10) || 0;
+        increment = ((countTo - value) / steps);
+        num = value;
+      }
+
+      var tick = function() {
+        timeoutId = $timeout(function() {
+          num += increment;
+          step++;
+          if (step >= steps) {
             $timeout.cancel(timeoutId);
-            timeoutId = null;
-            step = 0;
-            countTo = parseInt($attrs.countTo) || 0;
-            value = parseInt($attrs.countFrom, 10) || 0;
-            increment = ((countTo - value) / steps);
-            num = value;
-          }
-
-          var tick = function() {
-            timeoutId = $timeout(function() {
-              num += increment;
-              step++;
-              if (step >= steps) {
-                $timeout.cancel(timeoutId);
-                num = countTo;
-                e.textContent = $filter('number')(Math.round(countTo));
-              } else {
-                e.textContent = $filter('number')(Math.round(num));
-                tick();
-              }
-            }, refreshInterval);
-          }
-
-          var start = function () {
-            if (timeoutId) {
-              $timeout.cancel(timeoutId);
-            }
-            calculate();
+            num = countTo;
+            e.textContent = $filter('number')(Math.round(countTo));
+          } else {
+            e.textContent = $filter('number')(Math.round(num));
             tick();
           }
+        }, refreshInterval);
+      }
 
-          $attrs.$observe('countTo', function(val) {
-            if (val) {
-                start();
-            }
-          });
-
-          $attrs.$observe('countFrom', function() {
-            start();
-          });
+      var start = function () {
+        if (timeoutId) {
+          $timeout.cancel(timeoutId);
         }
+        calculate();
+        tick();
+      }
+
+      $attrs.$observe('countTo', function(val) {
+        if (val) {
+            start();
+        }
+      });
+
+      $attrs.$observe('countFrom', function() {
+        start();
+      });
     }
+  }
 }]);
 
 OWI.directive('loadingSpinner', function() {

@@ -411,6 +411,64 @@
   background-image: url("../resources/icons/blizzard.png");
 }
 
+#hero-container .audio-player {
+  width: 256px;
+  height: 26px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 4px;
+  box-sizing: border-box;
+}
+
+#hero-container .audio-player .icon {
+  position: relative;
+  height: 26px;
+  width: 30px;
+}
+
+#hero-container .audio-player .icon span {
+  position: absolute;
+  left: -3px;
+  top: 0;
+  width: 26px;
+  height: 26px;
+}
+
+#hero-container .audio-player .icon .playing {
+  z-index: 10;
+  transition: opacity 125ms ease-in;
+  opacity: 0;
+  background-image: url('../resources/icons/volume-up.svg')
+}
+
+#hero-container .audio-player .icon .playing.show {
+  opacity: 1;
+}
+
+#hero-container .audio-player .icon .not-playing {
+  left: -10px;
+  background-image: url('../resources/icons/volume-off.svg')
+}
+
+#hero-container .audio-player .player {
+  width: 100%;
+  height: 14px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  border-radius: 4px;
+}
+
+#hero-container .audio-player .player .progress {
+  width: 88%;
+  background-color: rgb(92, 184, 92);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+  height: 100%;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
 
 /**
  * TOOLTIPS
@@ -484,9 +542,6 @@
   width: 100%;
 }
 
-#hero-container #voicelines .tooltip {
-  display: none;
-}
 
 #hero-container .section .tooltip.img-preview .tooltip-arrow {
   border-top-color: rgb(240, 240, 240);
