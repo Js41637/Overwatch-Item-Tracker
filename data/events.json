@@ -1168,13 +1168,6 @@
         },
         {
           "heroID": "all",
-          "name": "Halloween Special",
-          "id": "halloween-special",
-          "img": "./resources/heroes/all/sprays/halloween-special.png",
-          "achievement": true
-        },
-        {
-          "heroID": "all",
           "name": "Halloween Terror",
           "id": "halloween-terror",
           "img": "./resources/heroes/all/sprays/halloween-terror.png",
@@ -1182,17 +1175,31 @@
         },
         {
           "heroID": "all",
-          "name": "Junkenstein's Revenge",
-          "id": "junkensteins-revenge",
-          "img": "./resources/heroes/all/sprays/junkensteins-revenge.png",
-          "achievement": true
-        },
-        {
-          "heroID": "all",
           "name": "Pumpkins",
           "id": "pumpkins",
           "img": "./resources/heroes/all/sprays/pumpkins.png",
           "quality": "common"
+        },
+        {
+          "heroID": "all",
+          "name": "Witch's Brew",
+          "id": "witchs-brew",
+          "img": "./resources/heroes/all/sprays/witchs-brew.png",
+          "quality": "common"
+        },
+        {
+          "heroID": "all",
+          "name": "Halloween Special",
+          "id": "halloween-special",
+          "img": "./resources/heroes/all/sprays/halloween-special.png",
+          "achievement": true
+        },
+        {
+          "heroID": "all",
+          "name": "Junkenstein's Revenge",
+          "id": "junkensteins-revenge",
+          "img": "./resources/heroes/all/sprays/junkensteins-revenge.png",
+          "achievement": true
         },
         {
           "heroID": "all",
@@ -1207,13 +1214,6 @@
           "id": "the-reapening",
           "img": "./resources/heroes/all/sprays/the-reapening.png",
           "achievement": true
-        },
-        {
-          "heroID": "all",
-          "name": "Witch's Brew",
-          "id": "witchs-brew",
-          "img": "./resources/heroes/all/sprays/witchs-brew.png",
-          "quality": "common"
         }
       ],
       "voicelines": [
@@ -2215,6 +2215,13 @@
         },
         {
           "heroID": "all",
+          "name": "Winter Wonderland",
+          "id": "winter-wonderland",
+          "img": "./resources/heroes/all/sprays/winter-wonderland.png",
+          "quality": "common"
+        },
+        {
+          "heroID": "all",
           "name": "Snowcree",
           "id": "snowcree",
           "img": "./resources/heroes/all/sprays/snowcree.png",
@@ -2240,13 +2247,6 @@
           "id": "snowreaper",
           "img": "./resources/heroes/all/sprays/snowreaper.png",
           "achievement": true
-        },
-        {
-          "heroID": "all",
-          "name": "Winter Wonderland",
-          "id": "winter-wonderland",
-          "img": "./resources/heroes/all/sprays/winter-wonderland.png",
-          "quality": "common"
         }
       ],
       "voicelines": [
@@ -3319,20 +3319,6 @@
         },
         {
           "heroID": "all",
-          "name": "Auspicious Lion",
-          "id": "auspicious-lion",
-          "img": "./resources/heroes/all/sprays/auspicious-lion.png",
-          "achievement": true
-        },
-        {
-          "heroID": "all",
-          "name": "Awakened Lion",
-          "id": "awakened-lion",
-          "img": "./resources/heroes/all/sprays/awakened-lion.png",
-          "achievement": true
-        },
-        {
-          "heroID": "all",
           "name": "Dragon's Head",
           "id": "dragons-head",
           "img": "./resources/heroes/all/sprays/dragons-head.png",
@@ -3358,6 +3344,20 @@
           "id": "year-of-the-rooster",
           "img": "./resources/heroes/all/sprays/year-of-the-rooster.png",
           "quality": "common"
+        },
+        {
+          "heroID": "all",
+          "name": "Auspicious Lion",
+          "id": "auspicious-lion",
+          "img": "./resources/heroes/all/sprays/auspicious-lion.png",
+          "achievement": true
+        },
+        {
+          "heroID": "all",
+          "name": "Awakened Lion",
+          "id": "awakened-lion",
+          "img": "./resources/heroes/all/sprays/awakened-lion.png",
+          "achievement": true
         }
       ],
       "voicelines": [

@@ -68,13 +68,13 @@
       <span class="wot" tooltip-popup-delay="400" uib-tooltip="This event added two sprays for every character, the checkboxes are for the normal sprays and the circle boxes are for the other spray">What's this?</span>
     </div>
     <div class="items">
-      <div class="item" ng-repeat="spray in ::data.items.sprays track by $index" ng-if="::!spray.id.includes('dragon-dance')" ng-mouseenter="showPreview(spray, 'spray')" ng-mouseleave="hidePreview()">
+      <div class="item" ng-repeat="spray in ::data.items.sprays track by $index" ng-if="::!spray.id.includes('dragon-dance')" achievement="{{::spray.achievement}}"  ng-mouseenter="showPreview(spray, 'spray')" ng-mouseleave="hidePreview()">
         <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked[spray.heroID].sprays[spray.id]" ng-change="onSelect()">
         <input ng-if="::spray.hero" type="checkbox" class="orn" ng-if="::spray.hero" id="{{'sprayorn' + $index}}" ng-model="checked[spray.heroID].sprays[spray.dragonID]" ng-change="onSelect()">
         <label ng-if="::spray.hero" for="{{'sprayorn' + $index}}" class="ornl"></label>
         <label for="{{'spray' + $index}}">
           <h3>{{::spray.hero || spray.name}}</h3>
-          <h4 ng-if="spray.hero">{{::spray.name}}</h4>
+          <h4 ng-show="spray.hero">{{::spray.name}}</h4>
         </label>
       </div>
     </div>

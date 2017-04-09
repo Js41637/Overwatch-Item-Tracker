@@ -65,6 +65,7 @@
   padding: 5px 2px;
   box-sizing: border-box;
   cursor: pointer;
+  position: relative;
 }
 
 #event-container .section .item label {
@@ -183,6 +184,24 @@
   width: 100%;
   cursor: pointer;
 }
+
+#event-container #sprays .item[achievement="true"] label:after {
+  background-image: url("../resources/icons/achievement.svg");
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.item[achievement="true"] label {
+  padding-right: 27px;
+}
+
 
 #event-container #sprays .item .orn {
   display: none;
@@ -410,7 +429,7 @@
 }
 
 #HALLOWEEN_2016 #event-container #sprays .items {
-  height: 339px;
+  height: 364px;
 }
 
 #HALLOWEEN_2016 #event-container #sprays .item h4:not(:only-child) {
@@ -704,7 +723,6 @@
     justify-content: space-around;
   }
   #HALLOWEEN_2016 #event-container #legendary-skins {
-    width: 71%;
     margin-bottom: 10px;
   }
   #HALLOWEEN_2016 #event-container #epic-skins {
@@ -731,6 +749,12 @@
   }
   #HALLOWEEN_2016 #event-container #sprays {
     width: 62%
+  }
+  #HALLOWEEN_2016 #event-container #sprays .items {
+    height: 475px;
+  }
+  #HALLOWEEN_2016 #event-container #sprays .item {
+    width: 32.5%
   }
   /* WINTER */
   #WINTER_WONDERLAND_2016 #event-container {
