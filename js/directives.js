@@ -151,8 +151,10 @@ OWI.directive('lazyAudio', ["$timeout", function($timeout) {
         }, refreshInterval)
       }
 
+      // Firefox returns infinity for duration on first load sometimes
       audio.addEventListener('canplaythrough', function(event) {
-        steps = Math.ceil(event.target.duration / (refreshInterval / 1000))
+        var duration = event.target.duration == Infinity ? 1.5 : event.target.duration
+        steps = Math.ceil(duration / (refreshInterval / 1000))
         tick();
         audio.play();
       })
