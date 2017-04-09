@@ -3,6 +3,6 @@
     <img src="./resources/icons/credit.png" /> <span count-to="{{cost.remaining}}" count-from="{{cost.prev}}"></span>
   </div>
   <script type="text/ng-template" id="costRemaining.html">
-      <span>Cost to purchase remaining items <br/> {{cost.total | number }} in total</span>
+      <span>Cost to purchase remaining items <br/> {{cost.total | number }} in total<br/>{{cost.selected | number}} to buy selected items</span>
     </script>
 </div>
