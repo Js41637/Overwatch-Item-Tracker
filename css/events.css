@@ -7,7 +7,7 @@
 #event-container .section h3 {
   color: rgb(245, 245, 245);
   font-size: 26px;
-  margin-right: 4px;
+  margin-right: 5px;
 }
 
 #event-container .section h4 {
@@ -261,7 +261,6 @@
 
 #event-container #sprays .item h4:not(:only-child) {
   font-size: 18px;
-  margin-left: 5px;
 }
 
 #event-container #sprays .item h4:not(:only-child):before {

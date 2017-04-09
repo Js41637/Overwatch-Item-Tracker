@@ -116,9 +116,7 @@
 }
 
 #hero-container #hero-header .btn {
-  transition: opacity .1s ease-in-out;
   font-size: 15px;
-  opacity: 0.4;
   margin: 0 3px;
 }
 
@@ -128,10 +126,6 @@
   border-right: 6px solid rgba(0, 0, 0, 0);
   border-left: 6px solid rgba(0, 0, 0, 0);
   margin-top: -1px;
-}
-
-#hero-container #hero-header .btn:hover, #hero-container #hero-header .btn-group:hover .btn {
-  opacity: 1;
 }
 
 #hero-container #hero-header .options .dropdown-menu li a, #hero-container #hero-header .options .dropdown-menu li > div  {

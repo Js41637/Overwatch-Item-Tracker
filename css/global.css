@@ -29,6 +29,14 @@ body {
   transition: opacity 100ms ease-in;
 }
 
+.btn.btn-default {
+  background-color: rgb(245, 245, 245);
+}
+
+.btn.btn-default:hover {
+  background-color: rgb(220, 220, 220);
+}
+
 .color-cost {
   color: #00db55;
 }

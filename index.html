@@ -78,7 +78,7 @@
       </div>
     </div>
   </div>
-  <div ng-if="$ctrl.noSupportMsg" ng-hide="::$ctrl.hideAlert" class="nosupport alert alert-warning alert-dismissable">
+  <div ng-if="::$ctrl.noSupportMsg" ng-hide="::$ctrl.hideAlert" class="nosupport alert alert-warning alert-dismissable">
     <button ng-click="$ctrl.dismissAlert()" type="button" class="close"><span>&times;</span></button>
     <strong>Notice!</strong> <span>{{$ctrl.noSupportMsg}}</span>
   </div>
