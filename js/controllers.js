@@ -95,102 +95,6 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   };
 }]);
 
-OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $uibModalInstance, StorageService, DataService) {
-  var vm = this;
-  var settings = StorageService.settings
-  this.particles = settings['particles'];
-  this.hdVideos = settings['hdVideos'];
-  this.currentTheme = settings['currentTheme'];
-  this.showPreviews = settings['showPreviews'];
-  this.audioVolume = settings['audioVolume'];
-  this.importErrors = null;
-
-  this.close = function() {
-    $uibModalInstance.dismiss('close');
-  }
-
-  this.resetData = function() {
-    localStorage.removeItem('data');
-    localStorage.removeItem('migrations');
-    location.reload();
-  }
-
-  this.setVolume = function() {
-    StorageService.setSetting('audioVolume', this.audioVolume)
-  }
-
-  this.toggleSetting = function(what, reload) {
-    this[what] = !this[what];
-    StorageService.setSetting(what, this[what]);
-    if (reload) {
-      location.reload();
-    }
-  }
-  this.data = angular.toJson(DataService.checked, 2);
-  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines'];
-  var validHeroes = Object.keys(DataService.heroes);
-  this.importData = function(data, test) {
-    vm.importErrors = null
-    try {
-      data = angular.fromJson(vm.data);
-      var errs = [];
-
-      if (!Object.keys(data).length) {
-        return;
-      }
-
-      for (var hero in data) {
-        if (!validHeroes.includes(hero)) {
-          errs.push("Unknown hero " + hero);
-        }
-        for (var type in data[hero]) {
-          if (!validTypes.includes(type)) {
-            errs.push("Invalid hero template for " + hero + ", unknown key '" + type + "'")
-          }
-        }
-      }
-
-      if (errs.length) {
-        vm.importErrors = errs.join('\n')
-        return;
-      }
-
-      vm.importErrors = false;
-      if (!test) {
-        StorageService.setData(data);
-        location.reload();
-      }
-
-    } catch(e) {
-      console.error(e);
-      vm.importErrors = 'An error occured while parsing the JSON';
-    }
-  }
-
-  this.selectTheme = function(what) {
-    this.currentTheme = what
-    StorageService.setSetting('currentTheme', what)
-    location.reload()
-  }
-
-  this.selectAll = function() {
-    for (var heroID in DataService.heroes) {
-      var hero = DataService.heroes[heroID].items
-      for (var type in hero) {
-        for (var item of hero[type]) {
-          if (!DataService.checked[heroID][type]) {
-            DataService.checked[heroID][type] = {}
-          }
-          DataService.checked[heroID][type][item.id] = true
-        }
-      }
-    }
-
-    StorageService.setData(DataService.checked);
-    $rootScope.$emit('selectAll')
-  }
-}])
-
 OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "hero", function($scope, $rootScope, Data, StorageService, CompatibilityService, hero) {
   var vm = this;
   Object.assign(this, hero);
@@ -482,3 +386,99 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
     }, 150);
   };
 }]);
+
+OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $uibModalInstance, StorageService, DataService) {
+  var vm = this;
+  var settings = StorageService.settings
+  this.particles = settings['particles'];
+  this.hdVideos = settings['hdVideos'];
+  this.currentTheme = settings['currentTheme'];
+  this.showPreviews = settings['showPreviews'];
+  this.audioVolume = settings['audioVolume'];
+  this.importErrors = null;
+
+  this.close = function() {
+    $uibModalInstance.dismiss('close');
+  }
+
+  this.resetData = function() {
+    localStorage.removeItem('data');
+    localStorage.removeItem('migrations');
+    location.reload();
+  }
+
+  this.setVolume = function() {
+    StorageService.setSetting('audioVolume', this.audioVolume)
+  }
+
+  this.toggleSetting = function(what, reload) {
+    this[what] = !this[what];
+    StorageService.setSetting(what, this[what]);
+    if (reload) {
+      location.reload();
+    }
+  }
+  this.data = angular.toJson(DataService.checked, 2);
+  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines'];
+  var validHeroes = Object.keys(DataService.heroes);
+  this.importData = function(data, test) {
+    vm.importErrors = null
+    try {
+      data = angular.fromJson(vm.data);
+      var errs = [];
+
+      if (!Object.keys(data).length) {
+        return;
+      }
+
+      for (var hero in data) {
+        if (!validHeroes.includes(hero)) {
+          errs.push("Unknown hero " + hero);
+        }
+        for (var type in data[hero]) {
+          if (!validTypes.includes(type)) {
+            errs.push("Invalid hero template for " + hero + ", unknown key '" + type + "'")
+          }
+        }
+      }
+
+      if (errs.length) {
+        vm.importErrors = errs.join('\n')
+        return;
+      }
+
+      vm.importErrors = false;
+      if (!test) {
+        StorageService.setData(data);
+        location.reload();
+      }
+
+    } catch(e) {
+      console.error(e);
+      vm.importErrors = 'An error occured while parsing the JSON';
+    }
+  }
+
+  this.selectTheme = function(what) {
+    this.currentTheme = what
+    StorageService.setSetting('currentTheme', what)
+    location.reload()
+  }
+
+  this.selectAll = function() {
+    for (var heroID in DataService.heroes) {
+      var hero = DataService.heroes[heroID].items
+      for (var type in hero) {
+        for (var item of hero[type]) {
+          if (!DataService.checked[heroID][type]) {
+            DataService.checked[heroID][type] = {}
+          }
+          DataService.checked[heroID][type][item.id] = true
+        }
+      }
+    }
+
+    StorageService.setData(DataService.checked);
+    $rootScope.$emit('selectAll')
+  }
+}])
