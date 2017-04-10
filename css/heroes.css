@@ -256,7 +256,7 @@
 #hero-container .hero-items .section .item small {
   font-size: 18px;
   margin-left: 5px;
-  padding-top: 3px;
+  padding-top: 1px;
 }
 
 #hero-container .hero-items .section .item label {
@@ -278,6 +278,7 @@
   width: 49.7%;
   display: inline-flex;
   margin-right: 1px;
+  margin-bottom: 0;
 }
 
 #all #hero-container .hero-items #icons .item {
@@ -573,4 +574,27 @@
 #hero-container .section .tooltip.img-preview .tooltip-inner {
   background-color: rgb(240, 240, 240);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1400px) {
+  #hero-container .hero-items .section .item {
+    font-size: 18px;
+  }
+
+  #hero-container .hero-items .section .item small {
+    padding-top: 0;
+    font-size: 16px;
+  }
+
+  #hero-container .hero-items .section .item label {
+    padding: 7px 0;
+  }
+
+  #hero-container .hero-items .section .item input {
+    height: 20px;
+  }
+
+  #hero-container .item[event]:not([event="none"]):after, #hero-container .item[achievement]:not([achievement="false"]):after, #hero-container .item[event]:not([event="none"]):before, #hero-container .item[achievement]:not([achievement="false"]):before {
+    top: 3px;
+  }
 }

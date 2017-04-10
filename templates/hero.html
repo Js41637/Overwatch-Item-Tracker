@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="options">
-      <div class="btn btn-default" ng-show="hero.filtering" uib-tooltip="Clear Filters" ng-click="hero.clearFilters()" tooltip-append-to-body="true">Clear Filter</div>
+      <div class="btn btn-default" ng-show="hero.filtering" uib-tooltip="Clear Filters" ng-click="hero.clearFilters()" tooltip-append-to-body="true">Clear Filters</div>
       <div class="btn-group" uib-dropdown is-open="showDropdown" auto-close="outsideClick">
         <div class="btn btn-default" uib-dropdown-toggle uib-tooltip="Filter Items" tooltip-append-to-body="true">
           Filter <span class="caret"></span>
@@ -20,12 +20,12 @@
         <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
           <li>
             <div>
-              <label for="filterSelected">Selected <input id="filterSelected" type="checkbox" ng-change="hero.filters.unselected = false;hero.updateFilters()" ng-model="hero.filters.selected" ng-disabled="hero.totals.selected == 0"></label>
+              <label for="filterSelected">Selected <input id="filterSelected" type="checkbox" ng-change="hero.filters.unselected = false;hero.updateFilters()" ng-model="hero.filters.selected" ng-disabled="hero.totals.selected == 0 && !hero.filtering"></label>
             </div>
           </li>
           <li>
             <div>
-              <label for="filterUnselected">UnSelected <input id="filterUnselected" type="checkbox" ng-change="hero.filters.selected = false;hero.updateFilters()" ng-model="hero.filters.unselected" ng-disabled="hero.totals.selected == 0"></label>
+              <label for="filterUnselected">UnSelected <input id="filterUnselected" type="checkbox" ng-change="hero.filters.selected = false;hero.updateFilters()" ng-model="hero.filters.unselected" ng-disabled="hero.totals.selected == 0 && !hero.filtering"></label>
             </div>
           </li>
           </li>
