@@ -19,12 +19,17 @@ body {
 }
 
 #header img {
-  height: 34px;
+  height: 30px;
   margin-right: 4px;
 }
 
 #header h1 {
   color: #fff;
+  font-size: 31px;
+}
+
+#header .event-selector h2 {
+  font-size: 1em;
 }
 
 #cost-remaining {
@@ -327,7 +332,7 @@ body {
   color: #00c1fa;
 }
 
-#event-container #sprays .section-header small, #voicelines .section-header small {
+#event-container #sprays .section-header small, #event-container #voicelines .section-header small {
   color: #00db55;
 }
 
