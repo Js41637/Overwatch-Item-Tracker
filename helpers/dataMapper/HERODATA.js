@@ -1,5 +1,5 @@
 const CLASSES = {
-  ASSAULT: 'Assault',
+  OFFENCE: 'Offence',
   DEFENCE: 'Defence',
   TANK: 'Tank',
   SUPPORT: 'Support'
@@ -34,7 +34,7 @@ const data = {
     }
   },
   genji: {
-    class: CLASSES.ASSAULT,
+    class: CLASSES.OFFENCE,
     colors: {
       primary: "#84fe01",
       highlight: "#98fe2a"
@@ -62,7 +62,7 @@ const data = {
     }
   },
   mccree: {
-    class: CLASSES.ASSAULT,
+    class: CLASSES.OFFENCE,
     colors: {
       primary: "#8d3939",
       highlight: "#aa4545"
@@ -90,14 +90,14 @@ const data = {
     }
   },
   pharah: {
-    class: CLASSES.ASSAULT,
+    class: CLASSES.OFFENCE,
     colors: {
       primary: "#1b65c6",
       highlight: "#2778e2"
     }
   },
   reaper: {
-    class: CLASSES.ASSAULT,
+    class: CLASSES.OFFENCE,
     colors: {
       primary: "#272725",
       highlight: "#3c3c39"
@@ -118,14 +118,14 @@ const data = {
     }
   },
   "soldier-76": {
-    class: CLASSES.ASSAULT,
+    class: CLASSES.OFFENCE,
     colors: {
       primary: "#5870b6",
       highlight: "#7588c3"
     }
   },
   sombra: {
-    class: CLASSES.ASSAULT,
+    class: CLASSES.OFFENCE,
     colors: {
       primary: "#751b9c",
       highlight: "#9021bf"
@@ -146,7 +146,7 @@ const data = {
     }
   },
   tracer: {
-    class: CLASSES.ASSAULT,
+    class: CLASSES.OFFENCE,
     colors: {
       primary: "#f8911b",
       highlight: "#faa443"
