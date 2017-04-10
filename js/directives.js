@@ -135,6 +135,7 @@ OWI.directive('lazyAudio', ["$timeout", function($timeout) {
 
       // Prevent edge cases where the audio plays after tooltip has disappeared
       $scope.$on('$destroy', function() {
+        audio.removeEventListener('canplaythrough', onLoad);
         audio.pause();
         $timeout.cancel(timeout);
       })
@@ -151,13 +152,15 @@ OWI.directive('lazyAudio', ["$timeout", function($timeout) {
         }, refreshInterval)
       }
 
-      // Firefox returns infinity for duration on first load sometimes
-      audio.addEventListener('canplaythrough', function(event) {
+      function onLoad(event) {
         var duration = event.target.duration == Infinity ? 1.5 : event.target.duration
         steps = Math.ceil(duration / (refreshInterval / 1000))
         tick();
         audio.play();
-      })
+      }
+
+      // Firefox returns infinity for duration on first load sometimes
+      audio.addEventListener('canplaythrough', onLoad)
       audio.src = url
     }
   }
