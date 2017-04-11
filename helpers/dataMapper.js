@@ -171,6 +171,10 @@ updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.
 forEach(allClassEventItems, (types, type) => {
   forEach(types, (events, event) => {
     events.forEach(itemID => {
+      if (!allClassDataKeys[type][itemID]) {
+        console.warn("Missing key for", itemID)
+        return
+      }
       var out = {
         heroID: 'all',
         name: allClassDataKeys[type][itemID].replace(/ \d{4}$/, ''),

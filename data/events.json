@@ -3855,5 +3855,345 @@
         }
       ]
     }
+  },
+  "UPRISING_2017": {
+    "name": "Uprising 2017",
+    "id": "UPRISING_2017",
+    "dates": {
+      "start": "1491937200000",
+      "end": "1493722800000"
+    },
+    "items": {
+      "sprays": [
+        {
+          "hero": "Ana",
+          "heroID": "ana",
+          "name": "Newborn",
+          "id": "ana-newborn",
+          "quality": "common",
+          "img": "./resources/heroes/ana/sprays/ana-newborn.png"
+        },
+        {
+          "hero": "Bastion",
+          "heroID": "bastion",
+          "name": "Sunken",
+          "id": "bastion-sunken",
+          "quality": "common",
+          "img": "./resources/heroes/bastion/sprays/bastion-sunken.png"
+        },
+        {
+          "hero": "D.Va",
+          "heroID": "dva",
+          "name": "Handheld",
+          "id": "dva-handheld",
+          "quality": "common",
+          "img": "./resources/heroes/dva/sprays/dva-handheld.png"
+        },
+        {
+          "hero": "Genji",
+          "heroID": "genji",
+          "name": "Ramen",
+          "id": "genji-ramen",
+          "quality": "common",
+          "img": "./resources/heroes/genji/sprays/genji-ramen.png"
+        },
+        {
+          "hero": "Hanzo",
+          "heroID": "hanzo",
+          "name": "Ramen",
+          "id": "hanzo-ramen",
+          "quality": "common",
+          "img": "./resources/heroes/hanzo/sprays/hanzo-ramen.png"
+        },
+        {
+          "hero": "Junkrat",
+          "heroID": "junkrat",
+          "name": "Sidecar",
+          "id": "junkrat-sidecar",
+          "quality": "common",
+          "img": "./resources/heroes/junkrat/sprays/junkrat-sidecar.png"
+        },
+        {
+          "hero": "Lúcio",
+          "heroID": "lucio",
+          "name": "Skates",
+          "id": "lucio-skates",
+          "quality": "common",
+          "img": "./resources/heroes/lucio/sprays/lucio-skates.png"
+        },
+        {
+          "hero": "McCree",
+          "heroID": "mccree",
+          "name": "Target Practice",
+          "id": "mccree-target-practice",
+          "quality": "common",
+          "img": "./resources/heroes/mccree/sprays/mccree-target-practice.png"
+        },
+        {
+          "hero": "Mei",
+          "heroID": "mei",
+          "name": "Pajamas",
+          "id": "mei-pajamas",
+          "quality": "common",
+          "img": "./resources/heroes/mei/sprays/mei-pajamas.png"
+        },
+        {
+          "hero": "Mercy",
+          "heroID": "mercy",
+          "name": "Combat Medic",
+          "id": "mercy-combat-medic",
+          "quality": "common",
+          "img": "./resources/heroes/mercy/sprays/mercy-combat-medic.png"
+        },
+        {
+          "hero": "Orisa",
+          "heroID": "orisa",
+          "name": "Flower",
+          "id": "orisa-flower",
+          "quality": "common",
+          "img": "./resources/heroes/orisa/sprays/orisa-flower.png"
+        },
+        {
+          "hero": "Pharah",
+          "heroID": "pharah",
+          "name": "Target Practice",
+          "id": "pharah-target-practice",
+          "quality": "common",
+          "img": "./resources/heroes/pharah/sprays/pharah-target-practice.png"
+        },
+        {
+          "hero": "Reaper",
+          "heroID": "reaper",
+          "name": "Commando",
+          "id": "reaper-commando",
+          "quality": "common",
+          "img": "./resources/heroes/reaper/sprays/reaper-commando.png"
+        },
+        {
+          "hero": "Reinhardt",
+          "heroID": "reinhardt",
+          "name": "Poster",
+          "id": "reinhardt-poster",
+          "quality": "common",
+          "img": "./resources/heroes/reinhardt/sprays/reinhardt-poster.png"
+        },
+        {
+          "hero": "Roadhog",
+          "heroID": "roadhog",
+          "name": "Chopper",
+          "id": "roadhog-chopper",
+          "quality": "common",
+          "img": "./resources/heroes/roadhog/sprays/roadhog-chopper.png"
+        },
+        {
+          "hero": "Soldier: 76",
+          "heroID": "soldier-76",
+          "name": "Commando",
+          "id": "soldier-76-commando",
+          "quality": "common",
+          "img": "./resources/heroes/soldier-76/sprays/soldier-76-commando.png"
+        },
+        {
+          "hero": "Sombra",
+          "heroID": "sombra",
+          "name": "Espresso",
+          "id": "sombra-espresso",
+          "quality": "common",
+          "img": "./resources/heroes/sombra/sprays/sombra-espresso.png"
+        },
+        {
+          "hero": "Symmetra",
+          "heroID": "symmetra",
+          "name": "Student",
+          "id": "symmetra-student",
+          "quality": "common",
+          "img": "./resources/heroes/symmetra/sprays/symmetra-student.png"
+        },
+        {
+          "hero": "Torbjörn",
+          "heroID": "torbjorn",
+          "name": "Brigitte",
+          "id": "torbjorn-brigitte",
+          "quality": "common",
+          "img": "./resources/heroes/torbjorn/sprays/torbjorn-brigitte.png"
+        },
+        {
+          "hero": "Tracer",
+          "heroID": "tracer",
+          "name": "Slipstream",
+          "id": "tracer-slipstream",
+          "quality": "common",
+          "img": "./resources/heroes/tracer/sprays/tracer-slipstream.png"
+        },
+        {
+          "hero": "Widowmaker",
+          "heroID": "widowmaker",
+          "name": "Wedding",
+          "id": "widowmaker-wedding",
+          "quality": "common",
+          "img": "./resources/heroes/widowmaker/sprays/widowmaker-wedding.png"
+        },
+        {
+          "hero": "Winston",
+          "heroID": "winston",
+          "name": "Building",
+          "id": "winston-building",
+          "quality": "common",
+          "img": "./resources/heroes/winston/sprays/winston-building.png"
+        },
+        {
+          "hero": "Zarya",
+          "heroID": "zarya",
+          "name": "We can!",
+          "id": "zarya-we-can",
+          "quality": "common",
+          "img": "./resources/heroes/zarya/sprays/zarya-we-can.png"
+        },
+        {
+          "hero": "Zenyatta",
+          "heroID": "zenyatta",
+          "name": "Shell",
+          "id": "zenyatta-shell",
+          "quality": "common",
+          "img": "./resources/heroes/zenyatta/sprays/zenyatta-shell.png"
+        }
+      ],
+      "skinsEpic": [
+        {
+          "hero": "Bastion",
+          "heroID": "bastion",
+          "name": "Null Sector",
+          "id": "bastion-null-sector",
+          "quality": "epic",
+          "img": "./resources/updates/UPRISING_2017/skinsEpic/bastion-null-sector.jpg"
+        },
+        {
+          "hero": "Reinhardt",
+          "heroID": "reinhardt",
+          "name": "Lieutenant Wilhelm",
+          "id": "reinhardt-lieutenant-wilhelm",
+          "quality": "epic",
+          "img": "./resources/updates/UPRISING_2017/skinsEpic/reinhardt-lieutenant-wilhelm.jpg"
+        }
+      ],
+      "intros": [
+        {
+          "hero": "D.Va",
+          "heroID": "dva",
+          "name": "Selfie",
+          "id": "dva-selfie",
+          "quality": "epic",
+          "video": "./resources/updates/UPRISING_2017/intros/dva-selfie.webm"
+        },
+        {
+          "hero": "Torbjörn",
+          "heroID": "torbjorn",
+          "name": "My Baby",
+          "id": "torbjorn-my-baby",
+          "quality": "epic",
+          "video": "./resources/updates/UPRISING_2017/intros/torbjorn-my-baby.webm"
+        },
+        {
+          "hero": "Zenyatta",
+          "heroID": "zenyatta",
+          "name": "Perspective",
+          "id": "zenyatta-perspective",
+          "quality": "epic",
+          "video": "./resources/updates/UPRISING_2017/intros/zenyatta-perspective.webm"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "hero": "Genji",
+          "heroID": "genji",
+          "name": "Blackwatch",
+          "id": "genji-blackwatch",
+          "quality": "legendary",
+          "img": "./resources/updates/UPRISING_2017/skinsLegendary/genji-blackwatch.jpg"
+        },
+        {
+          "hero": "McCree",
+          "heroID": "mccree",
+          "name": "Blackwatch",
+          "id": "mccree-blackwatch",
+          "quality": "legendary",
+          "img": "./resources/updates/UPRISING_2017/skinsLegendary/mccree-blackwatch.jpg"
+        },
+        {
+          "hero": "Mercy",
+          "heroID": "mercy",
+          "name": "Combat Medic Ziegler",
+          "id": "mercy-combat-medic-ziegler",
+          "quality": "legendary",
+          "img": "./resources/updates/UPRISING_2017/skinsLegendary/mercy-combat-medic-ziegler.jpg"
+        },
+        {
+          "hero": "Orisa",
+          "heroID": "orisa",
+          "name": "Null Sector",
+          "id": "orisa-null-sector",
+          "quality": "legendary",
+          "img": "./resources/updates/UPRISING_2017/skinsLegendary/orisa-null-sector.jpg"
+        },
+        {
+          "hero": "Torbjörn",
+          "heroID": "torbjorn",
+          "name": "Chief Engineer Lindholm",
+          "id": "torbjorn-chief-engineer-lindholm",
+          "quality": "legendary",
+          "img": "./resources/updates/UPRISING_2017/skinsLegendary/torbjorn-chief-engineer-lindholm.jpg"
+        },
+        {
+          "hero": "Torbjörn",
+          "heroID": "torbjorn",
+          "name": "Ironclad",
+          "id": "torbjorn-ironclad",
+          "quality": "legendary",
+          "img": "./resources/updates/UPRISING_2017/skinsLegendary/torbjorn-ironclad.jpg"
+        },
+        {
+          "hero": "Tracer",
+          "heroID": "tracer",
+          "name": "Cadet Oxton",
+          "id": "tracer-cadet-oxton",
+          "quality": "legendary",
+          "img": "./resources/updates/UPRISING_2017/skinsLegendary/tracer-cadet-oxton.jpg"
+        },
+        {
+          "hero": "Widowmaker",
+          "heroID": "widowmaker",
+          "name": "Talon",
+          "id": "widowmaker-talon",
+          "quality": "legendary",
+          "img": "./resources/updates/UPRISING_2017/skinsLegendary/widowmaker-talon.jpg"
+        }
+      ],
+      "emotes": [
+        {
+          "hero": "Hanzo",
+          "heroID": "hanzo",
+          "name": "Training",
+          "id": "hanzo-training",
+          "quality": "epic",
+          "video": "./resources/updates/UPRISING_2017/emotes/hanzo-training.webm"
+        },
+        {
+          "hero": "Pharah",
+          "heroID": "pharah",
+          "name": "Flair",
+          "id": "pharah-flair",
+          "quality": "epic",
+          "video": "./resources/updates/UPRISING_2017/emotes/pharah-flair.webm"
+        },
+        {
+          "hero": "Soldier: 76",
+          "heroID": "soldier-76",
+          "name": "Push-ups",
+          "id": "soldier-76-pushups",
+          "quality": "epic",
+          "video": "./resources/updates/UPRISING_2017/emotes/soldier-76-pushups.webm"
+        }
+      ]
+    }
   }
 }
