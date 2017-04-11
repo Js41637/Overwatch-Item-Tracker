@@ -3,7 +3,7 @@
 }
 
 #hero-container #hero-header {
-  margin-top: -65px;
+  margin-top: -110px;
   position: relative;
 }
 
@@ -652,8 +652,6 @@
 
 
 
-
-
 #background {
   background: url(resources/bg.png) no-repeat top;
   background-size: cover;
@@ -667,12 +665,13 @@
 
 #hero-container .hero-overview {
   justify-content: flex-start;
-  min-height: 226px;
+  min-height: 271px;
   background-size: cover;
 }
 
 body #hero-container .hero-overview {
   background-color: #2d2d2b;
+  transition: background-image 2s ease-in-out;
 }
 
 body#all #hero-container .hero-overview {
@@ -682,52 +681,52 @@ body#all #hero-container .hero-overview {
 
 body#ana #hero-container .hero-overview {
   background-image: url(resources/heroes/ana/background-story.jpg);
-  background-position: 50% 18%;
+  background-position: 50% 14%;
 }
 
 body#bastion #hero-container .hero-overview {
   background-image: url(resources/heroes/bastion/background-story.jpg);
-  background-position: 50% 11%;
+  background-position: 50% 6%;
 }
 
 body#dva #hero-container .hero-overview {
   background-image: url(resources/heroes/dva/background-story.jpg);
-  background-position: 50% 47%;
+  background-position: 50% 44%;
 }
 
 body#genji #hero-container .hero-overview {
   background-image: url(resources/heroes/genji/background-story.jpg);
-  background-position: 50% 22%;
+  background-position: 50% 15%;
 }
 
 body#hanzo #hero-container .hero-overview {
   background-image: url(resources/heroes/hanzo/background-story.jpg);
-  background-position: 50% 5%;
+  background-position: 50% 2%;
 }
 
 body#junkrat #hero-container .hero-overview {
   background-image: url(resources/heroes/junkrat/background-story.jpg);
-  background-position: 50% 9%;
+  background-position: 50% 5%;
 }
 
 body#lucio #hero-container .hero-overview {
   background-image: url(resources/heroes/lucio/background-story.jpg);
-  background-position: 50% 9%;
+  background-position: 50% 5%;
 }
 
 body#mccree #hero-container .hero-overview {
   background-image: url(resources/heroes/mccree/background-story.jpg);
-  background-position: 50% 17%;
+  background-position: 50% 13%;
 }
 
 body#mei #hero-container .hero-overview {
   background-image: url(resources/heroes/mei/background-story.jpg);
-  background-position: 50% 18%;
+  background-position: 50% 15%;
 }
 
 body#mercy #hero-container .hero-overview {
   background-image: url(resources/heroes/mercy/background-story.jpg);
-  background-position: 50% 18%;
+  background-position: 50% 10%;
 }
 
 body#orisa #hero-container .hero-overview {
@@ -737,7 +736,7 @@ body#orisa #hero-container .hero-overview {
 
 body#pharah #hero-container .hero-overview {
   background-image: url(resources/heroes/pharah/background-story.jpg);
-  background-position: 50% 20%;
+  background-position: 50% 16%;
 }
 
 body#reaper #hero-container .hero-overview {
@@ -747,7 +746,7 @@ body#reaper #hero-container .hero-overview {
 
 body#reinhardt #hero-container .hero-overview {
   background-image: url(resources/heroes/reinhardt/background-story.jpg);
-  background-position: 50% 38%;
+  background-position: 50% 32%;
 }
 
 body#roadhog #hero-container .hero-overview {
@@ -757,7 +756,7 @@ body#roadhog #hero-container .hero-overview {
 
 body#soldier-76 #hero-container .hero-overview {
   background-image: url(resources/heroes/soldier-76/background-story.jpg);
-  background-position: 50% 15%;
+  background-position: 50% 8%;
 }
 
 body#sombra #hero-container .hero-overview {
@@ -777,17 +776,17 @@ body#torbjorn #hero-container .hero-overview {
 
 body#tracer #hero-container .hero-overview {
   background-image: url(resources/heroes/tracer/background-story.jpg);
-  background-position: 50% 17%;
+  background-position: 50% 13%;
 }
 
 body#widowmaker #hero-container .hero-overview {
   background-image: url(resources/heroes/widowmaker/background-story.jpg);
-  background-position: 50% 17%;
+  background-position: 50% 13%;
 }
 
 body#winston #hero-container .hero-overview {
   background-image: url(resources/heroes/winston/background-story.jpg);
-  background-position: 50% 46%;
+  background-position: 50% 42%;
 }
 
 body#zarya #hero-container .hero-overview {
@@ -797,7 +796,7 @@ body#zarya #hero-container .hero-overview {
 
 body#zenyatta #hero-container .hero-overview {
   background-image: url(resources/heroes/zenyatta/background-story.jpg);
-  background-position: 50% 21%;
+  background-position: 50% 18%;
 }
 
 #hero-container .hero-name:after {
@@ -862,7 +861,7 @@ body#zenyatta .hero-name:after {
 }
 
 #hero-container .hero-overview .hero-info {
-  padding-bottom: 61px; /* 38px + more to account for the spastic line height from the font */
+  padding-bottom: 16px;
   margin-left: 2%;
 }
 
@@ -899,4 +898,105 @@ body#zenyatta .hero-name:after {
 
 #hero-container #hero-header .options {
   bottom: 46px;
+}
+
+
+
+
+/* Overwrites Global.css */
+#header,
+#menuNav {
+  background-color: rgba(40,53,79,.85);
+  z-index: 1000;
+}
+
+#header .event-selector .block {
+  background: url(resources/bg.png) no-repeat top;
+  border: 1px solid #ffa500;
+  margin-left: -0.5em;
+}
+
+#hero-nav {
+  max-width: 70vw;
+}
+
+#hero-nav .gallery.event .block[href$="/events/SUMMER_GAMES_2016"] {
+  background: url(resources/SUMMER_GAMES_2016/bg.jpg);
+  background-size: cover;
+}
+
+#hero-nav .gallery.event .block[href$="/events/HALLOWEEN_2016"] {
+  background: url(resources/HALLOWEEN_2016/bg.jpg);
+  background-size: cover;
+}
+
+#hero-nav .gallery.event .block[href$="/events/WINTER_WONDERLAND_2016"] {
+  background: url(resources/WINTER_WONDERLAND_2016/bg.jpg);
+  background-size: cover;
+}
+
+#hero-nav .gallery.event .block[href$="/events/YEAR_OF_THE_ROOSTER_2017"] {
+  background: url(resources/YEAR_OF_THE_ROOSTER_2017/bg.jpg);
+  background-size: cover;
+}
+
+#hero-nav .gallery.event .block:hover {
+  transform: none;
+  background: rgb(255, 165, 0);
+}
+
+#hero-nav .gallery.hero .block {
+  overflow: hidden;
+  width: 84px;
+  height: 117px;
+  transform: skew(25rad);
+}
+
+#hero-nav .gallery.hero .block .imgcont {
+  height: calc(100% - 30px);
+  background: url(resources/bg.png) no-repeat top;
+}
+
+#hero-nav .gallery.hero .block:hover .imgcont {
+  background: rgb(255, 165, 0);
+}
+
+#hero-nav .gallery.hero .block .img {
+  width: calc(100% + 10px);
+  height: 100%;
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  transform: skew(-25rad) translateX(-5px);
+}
+
+#hero-nav .gallery h2 {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1400px) {
+  #hero-nav {
+      max-width: 90vw;
+  }
+}
+
+
+/* shrug */
+#skinsreaper-blackwatch-reyes:after,
+label[for="skinsreaper-blackwatch-reyes"]:after {
+  content: "";
+  background: url(resources/shrug.png);
+  position: fixed;
+  bottom: -500px;
+  left: 50%;
+  width: 500px;
+  height: 406px;
+  background-size: 500px;
+  z-index: 1000;
+  margin-left: -250px;
+}
+
+#skinsreaper-blackwatch-reyes:hover:after,
+label[for="skinsreaper-blackwatch-reyes"]:hover:after {
+  bottom: 0;
+  transition: bottom 0.4s ease-in-out;
 }
