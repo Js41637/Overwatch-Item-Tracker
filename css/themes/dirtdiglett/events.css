@@ -133,6 +133,7 @@ body {
 #event-container .section .item label {
   width: calc(100% - 30px);
   cursor: pointer;
+  position: relative;
 }
 
 #event-container .section .item input {
@@ -868,6 +869,19 @@ body {
     padding-top: 4px;
 }
 
+
+
+
+#UPRISING_2017 #background {
+  background-image: url(resources/UPRISING_2017/bg.jpg);
+}
+
+#UPRISING_2017 #header:before {
+  width: 177px;
+  top: 78px;
+  background-image: url(../../../resources/updates/UPRISING_2017/logo.png);
+}
+
 /* SMALL MODE CSS */
 @media screen and (max-width: 1500px) {
   body {
@@ -1000,4 +1014,19 @@ body {
   #event-container .row, #event-container .col {
     flex-direction: column;
   }
+}
+
+
+
+#event-container #sprays .item[achievement="true"] label:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0;
+  top: -5px;
+  background-position: center;
+  background-image: url(resources/icons/achievement.svg);
 }

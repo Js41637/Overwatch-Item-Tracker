@@ -416,19 +416,23 @@
 /* Event Icons */
 
 #hero-container .hero-items .item[event="HALLOWEEN_2016"]:after {
-  background-image: url("resources/icons/halloween.png");
+  background-image: url(resources/icons/halloween.png);
 }
 
 #hero-container .hero-items .item[event="SUMMER_GAMES_2016"]:after {
-  background-image: url("resources/icons/summer-games.png");
+  background-image: url(resources/icons/summer-games.png);
 }
 
 #hero-container .hero-items .item[event="WINTER_WONDERLAND_2016"]:after {
-  background-image: url("resources/icons/winter-wonderland.png");
+  background-image: url(resources/icons/winter-wonderland.png);
 }
 
 #hero-container .hero-items .item[event="YEAR_OF_THE_ROOSTER_2017"]:after {
-  background-image: url("resources/icons/year-of-the-rooster.png");
+  background-image: url(resources/icons/year-of-the-rooster.png);
+}
+
+#hero-container .hero-items .item[event="UPRISING_2017"]:after {
+    background-image: url(resources/icons/uprising.png);
 }
 
 
@@ -872,6 +876,10 @@ body#zenyatta .hero-name:after {
 
 
 /* Overwrites Global.css */
+#home h1 {
+  display: none;
+}
+
 #header,
 #menuNav {
   background-color: rgba(40,53,79,.85);
@@ -905,6 +913,11 @@ body#zenyatta .hero-name:after {
 
 #hero-nav .gallery.event .block[href$="/events/YEAR_OF_THE_ROOSTER_2017"] {
   background: url(resources/YEAR_OF_THE_ROOSTER_2017/bg.jpg);
+  background-size: cover;
+}
+
+#hero-nav .gallery.event .block[href$="/events/UPRISING_2017"] {
+  background: url(resources/UPRISING_2017/bg.jpg);
   background-size: cover;
 }
 

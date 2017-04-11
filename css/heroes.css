@@ -401,6 +401,9 @@
   background-image: url("../resources/icons/year-of-the-rooster.png");
 }
 
+#hero-container .hero-items .item[event="UPRISING_2017"]:after {
+  background-image: url("../resources/icons/uprising.png");
+}
 
 /* Achivement Icons */
 
