@@ -644,6 +644,14 @@
   padding: 9px 16px;
 }
 
+#UPRISING_2017 #legendary-skins [type="checkbox"]:not(:checked)+label:before, #legendary-skins [type="checkbox"]:checked+label:before {
+  top: -306px;
+}
+
+#UPRISING_2017 #legendary-skins [type="checkbox"]:not(:checked)+label:after, #legendary-skins [type="checkbox"]:checked+label:after {
+  top: -304px;
+}
+
 #UPRISING_2017 #voicelines {
   width: 65%;
 }
