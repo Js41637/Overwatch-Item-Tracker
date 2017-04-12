@@ -57,16 +57,16 @@ OWI.run(function() {
         // I had to make this bad boi manually.
         var newData = {"halloween2016":{"skinsLegendary":{"Junkenstein Junkrat":"junkrat-dr-junkenstein","Monster Roadhog":"roadhog-junkensteins-monster","Witch Mercy":"mercy-witch","Pumpkin Reaper":"reaper-pumpkin"},"skinsEpic":{"Ghoul Ana":"ana-ghoul","Tombstone Bastion":"bastion-tombstone","Demon Hanzo":"hanzo-demon","Possessed Pharah":"pharah-possessed","Coldhardt Reinhardt":"reinhardt-coldhardt","Immortal Soldier: 76":"soldier-76-immortal","Vampire Symmetra":"symmetra-vampire","Skullyata Zenyatta":"zenyatta-skullyatta"},"emotes":{"Candy Ana":"ana-candy","Pumpkin Smashing Reinhardt":"reinhardt-pumpkin-smash","Shadow Puppets Winston":"winston-shadow-puppets"},"intros":{"Pumpkin Carving Genji":"genji-pumpkin-carving","Ice Scream Mei":"mei-ice-scream","Eternal Rest Reaper":"reaper-eternal-rest"},"sprays":{"Ana":"ana-trick-or-treat","Bastion":"bastion-trick-or-treat","D.Va":"dva-trick-or-treat","Genji":"genji-trick-or-treat","Hanzo":"hanzo-trick-or-treat","Junkrat":"junkrat-trick-or-treat","LÚcio":"lucio-trick-or-treat","McCree":"mccree-trick-or-treat","Mei":"mei-trick-or-treat","Mercy":"mercy-trick-or-treat","Pharah":"pharah-trick-or-treat","Reaper":"reaper-trick-or-treat","Reinhardt":"reinhardt-trick-or-treat","Roadhog":"roadhog-trick-or-treat","Soldier: 76":"soldier-76-trick-or-treat","Symmetra":"symmetra-trick-or-treat","TorbjÖrn":"torbjorn-trick-or-treat","Tracer":"tracer-trick-or-treat","Widowmaker":"widowmaker-trick-or-treat","Winston":"winston-trick-or-treat","Zarya":"zarya-trick-or-treat","Zenyatta":"zenyatta-trick-or-treat","...Never Die":"never-die","Bats":"bats","Boo!":"boo","Boop!":"boop","Candyball":"candyball","Fangs":"fangs","Gummy Hog":"gummy-hog","Halloween Terror":"halloween-terror-2016","Pumpkins":"pumpkins","Witch's Brew":"witchs-brew"},"voicelines":{"Ana":"ana-are-you-scared","Bastion":"bastion-wwwooooo","D.Va":"dva-happy-halloween","Genji":"genji-my-halloween-costume","Hanzo":"hanzo-you-are-already-dead","Junkrat":"junkrat-happy-halloween","LÚcio":"lucio-killed-it","McCree":"mccree-its-your-funeral","Mei":"mei-scary","Mercy":"mercy-superstition","Pharah":"pharah-dead-or-alive","Reaper":"reaper-i-work-the-graveyard-shift","Reinhardt":"reinhardt-smashing","Roadhog":"roadhog-want-some-candy","Soldier: 76":"soldier-76-knock-knock","Symmetra":"symmetra-a-frightening-thought","TorbjÖrn":"torbjorn-if-you-build-it","Tracer":"tracer-ooh-scary","Widowmaker":"widowmaker-the-party-is-over","Winston":"winston-this-is-not-a-costume","Zarya":"zarya-never-forget-the-fallen","Zenyatta":"zenyatta-trick-or-treat"},"poses":{"Ana":"ana-rip","Bastion":"bastion-rip","D.Va":"dva-rip","Genji":"genji-rip","Hanzo":"hanzo-rip","Junkrat":"junkrat-rip","LÚcio":"lucio-rip","McCree":"mccree-rip","Mei":"mei-rip","Mercy":"mercy-rip","Pharah":"pharah-rip","Reaper":"reaper-rip","Reinhardt":"reinhardt-rip","Roadhog":"roadhog-rip","Soldier: 76":"soldier-76-rip","Symmetra":"symmetra-rip","TorbjÖrn":"torbjorn-rip","Tracer":"tracer-rip","Widowmaker":"widowmaker-rip","Winston":"winston-rip","Zarya":"zarya-rip","Zenyatta":"zenyatta-rip"},"icons":{"...Never Die":"never-die","Bewitching":"bewitching","Calavera":"calavera","Candle":"candle","Eyeball":"eyeball","Ghostymari":"ghostymari","Halloween Terror 2016":"halloween-terror","Spider":"spider","Superstition":"superstition","The Doctor":"junkrat-the-doctor","The Monster":"roadhog-the-monster","The Reaper":"reaper-the-reaper","The Witch":"mercy-the-witch","Tombstone":"tombstone","Vampachimari":"vampachimari","Witch's Brew":"witchs-brew","Witch's Hat":"witchs-hat","Wolf":"wolf"}},"summergames2016":{"skinsLegendary":{"Selecao":"lucio-selecao","Striker":"lucio-striker","Sprinter":"tracer-sprinter","Track & Field":"tracer-track-and-field","Weightlifter":"zarya-weightlifter","Champion":"zarya-champion"},"skinsEpic":{"Taegeukgi D.Va":"dva-taegeukgi","Nihon Genji":"genji-nihon","American Mccree":"mccree-american","Edigenossin Mercy":"mercy-eidgenossin","Tre Kronor TorbjÖrn":"torbjorn-tre-kronor","Tricolore Widowmaker":"widowmaker-tricolore"},"emotes":{"Boxing Bastion":"bastion-boxing","Juggle LÚcio":"lucio-juggle","Ribbon Symmetra":"symmetra-ribbon"},"intros":{"Shotput Junkrat":"junkrat-shot-put","Bicycle Kick LÚcio":"lucio-bicycle-kick","Hurdle Tracer":"tracer-hurdle"},"sprays":{"Ana":"ana-shooting","Bastion":"bastion-boxing","D.Va":"dva-cycling","Genji":"genji-fencing","Hanzo":"hanzo-archery","Junkrat":"junkrat-tennis","LÚcio":"lucio-football","McCree":"mccree-equestrian","Mei":"mei-table-tennis","Mercy":"mercy-badminton","Pharah":"pharah-basketball","Reaper":"reaper-bmx","Reinhardt":"reinhardt-wrestling","Roadhog":"roadhog-diving","Soldier: 76":"soldier-76-golf","Symmetra":"symmetra-rhythmic","TorbjÖrn":"torbjorn-water-polo","Tracer":"tracer-track","Widowmaker":"widowmaker-gymnastics","Winston":"winston-volleyball","Zarya":"zarya-weightlifting","Zenyatta":"zenyatta-taekwondo","Summer Games 2016":"summer-games"},"voicelines":{"Ana":"ana-learn-from-the-pain","Bastion":"bastion-whoovweeeeee","D.Va":"dva-im-1","Genji":"genji-i-was-hoping-for-a-challenge","Hanzo":"hanzo-ignore-all-distractions","Junkrat":"junkrat-i-give-it-a-10","LÚcio":"lucio-be-champions","McCree":"mccree-i-dont-much-like-losing","Mei":"mei-overcome-all-obstacles","Mercy":"mercy-piece-of-cake","Pharah":"pharah-we-are-in-this-together","Reaper":"reaper-its-in-the-refrigerator","Reinhardt":"reinhardt-100-german-power","Roadhog":"roadhog-whats-mine-is-mine","Soldier: 76":"soldier-76-you-want-a-medal","Symmetra":"symmetra-hard-work-and-dedication","TorbjÖrn":"torbjorn-more-where-that-came-from","Tracer":"tracer-eat-my-dust","Widowmaker":"widowmaker-i-dont-miss","Winston":"winston-playtimes-over","Zarya":"zarya-no-pain-no-gain","Zenyatta":"zenyatta-strive-for-improvement"},"poses":{"Mei":"mei-medal","Pharah":"pharah-medal","Reaper":"reaper-medal","Roadhog":"roadhog-medal","Soldier: 76":"soldier-76-golf-swing","TorbjÖrn":"torbjorn-medal","Widowmaker":"widowmaker-medal","Winston":"winston-medal","Zenyatta":"zenyatta-medals"},"icons":{"Archery":"hanzo-archery","Badminton":"mercy-badminton","Basketball":"pharah-basketball","BMX":"reaper-bmx","Boxing":"bastion-boxing","Cycling":"dva-cycling","Equestrian":"mccree-equestrian","Diving":"roadhog-diving","Fencing":"genji-fencing","Football":"lucio-football","Golf":"soldier-76-golf","Gymnastics":"widowmaker-gymnastics","Rhythmic Gymnastics":"symmetra-rhythmic-gymnastics","Shooting":"ana-shooting","Table Tennis":"mei-table-tennis","Taekwondo":"zenyatta-taekwondo","Tennis":"junkrat-tennis","Track":"tracer-track","Volleyball":"winston-volleyball","Water Polo":"torbjorn-water-polo","Weightlifting":"zarya-weightlifting","Wrestling":"reinhardt-wrestling","Summer Games":"summer-games","Australia":"australia","Brazil":"brazil","China":"china","Egypt":"egypt","France":"france","Germany":"germany","Greece":"greece","Japan":"japan","Mexico":"mexico","Nepal":"nepal","Numbani":"numbani","Russia":"russia","South Korea":"south-korea","Sweden":"sweden","Switzerland":"switzerland","United Kingdom":"united-kingdom","United States":"united-states"}}}
         for (var eventname in data) {
-          if (eventname != 'halloween2016' || eventname !== 'summergames2016') {
-            return; // only summergames and halloween
+          if (eventname != 'halloween2016' && eventname !== 'HALLOWEEN_2016' && eventname !== 'summergames2016' && eventname !== 'SUMMER_GAMES_2016') {
+            continue; // only summergames and halloween
           }
           var event = data[eventname];
           for (var type in event) {
             for (var item in event[type]) {
-              if (!(item in newData[eventname][type])) {
-                return;
+              if (!(item in newData[eventname.replace(/_/g, '').toLowerCase()][type])) {
+                continue;
               }
-              event[type][newData[eventname][type][item]] = event[type][item]; // Add new entry with item ID and its selected status
+              event[type][newData[eventname.replace(/_/g, '').toLowerCase()][type][item]] = event[type][item]; // Add new entry with item ID and its selected status
               delete event[type][item]; // Delete old entry
             }
           }
@@ -106,8 +106,9 @@ OWI.run(function() {
       run: function() {
         var changedItems = {"SUMMER_GAMES_2016":{"sprays":{"summer-games":"summer-games-2016"},"icons":{"summer-games":"summer-games-2016","united-states":"united-states-of-america"}},"HALLOWEEN_2016":{"sprays":{"halloween-terror-2016":"halloween-terror","halloweenspecial":"halloween-special","junkensteinsrevenge":"junkensteins-revenge","riseofthezomnics":"rise-of-the-zomnics","thereapening":"the-reapening"},"icons":{"halloween-terror":"halloween-terror-2016"}},"WINTER_WONDERLAND_2016":{"icons":{"winter-wonderland":"winter-wonderland-2016"}},"YEAR_OF_THE_ROOSTER_2017":{"skinsEpic":{"mercy-golden": "mercy-fortune"},"icons":{"roadhog-piggy":"roadhog-pigsy","year-of-the-rooster":"year-of-the-rooster-2017"}}}
         for (var event in changedItems) {
-          if (!data[event]) {
-            break;
+          if (!data[event] || !Object.keys(data[event]).length) {
+            console.info("No data for", event, "skipping");
+            continue;
           }
           for (var type in changedItems[event]) {
             for (var itemID in changedItems[event][type]) {
@@ -139,7 +140,7 @@ OWI.run(function() {
 
         for (var event in data) {
           if (!events.includes(event)) {
-            break;
+            continue;
           }
           for (var type in data[event]) {
             for (var item in data[event][type]) {
@@ -148,8 +149,8 @@ OWI.run(function() {
               hero = heroes.includes(hero) ? hero : 'all';
               var newType = (type == 'skinsEpic' || type == 'skinsLegendary') ? 'skins' : type;
               if (!data[hero][newType]) {
-                console.error("Error!", newType, "doesn't exist in hero", hero, "for item", item)
-                break
+                console.warn("Error!", newType, "doesn't exist in hero", hero, "for item", item)
+                continue
               }
               data[hero][newType][item] = data[event][type][item];
             }
