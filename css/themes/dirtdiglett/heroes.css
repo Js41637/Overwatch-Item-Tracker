@@ -18,6 +18,12 @@
   }
 }
 
+#background {
+  background: url(resources/bg.png) no-repeat top;
+  background-size: cover;
+  background-color: #293347;
+  filter: brightness(1);
+}
 
 #hero-container #hero-header {
   margin-top: -110px;
@@ -74,21 +80,11 @@
   margin: 18px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 #hero-container #hero-header .options .btn-group .dropdown-menu li label {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  line-height: 23px;
 }
 
 #hero-container #hero-header .options .btn-group li input {
@@ -118,23 +114,21 @@
   }
 
 #hero-container #hero-header .btn-group .btn .caret {
-  border-top: 6px dashed;
-  border-top: 6px solid\9;
-  border-right: 6px solid rgba(0, 0, 0, 0);
-  border-left: 6px solid rgba(0, 0, 0, 0);
+  border-top: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid rgba(0, 0, 0, 0);
+  border-left: 4px solid rgba(0, 0, 0, 0);
   margin-top: -1px;
 }
 
 #hero-container #hero-header .options .dropdown-menu li a, #hero-container #hero-header .options .dropdown-menu li > div  {
-  padding: 3px 15px;
+  padding: 4px 12px;
   font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
   display: block;
   clear: both;
   color: rgb(51, 51, 51);
-  font-weight: 400;
-  line-height: 1.42857143;
   white-space: nowrap;
 }
 
@@ -151,16 +145,18 @@
 }
 
 #hero-container #hero-header .hero-progress {
-  background-color: rgba(24, 34, 62, .7);
-  height: 26px;
+  height: 38px;
+  margin-top: -38px;
+  background: rgba(0,0,0,0.4);
   text-align: center;
   position: relative;
-  border-radius: 4px;
 }
 
 #hero-container #hero-header .hero-progress span {
-  line-height: 26px;
-  font-size: 20px;
+  line-height: 38px;
+  font-family: Futura, century gothic, arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
   display: block;
   position: relative;
   color: #fff;
@@ -169,13 +165,11 @@
 
 #hero-container #hero-header .hero-progress .hero-progress-bar {
   position: absolute;
-  top: 2px;
-  left: 2px;
-  bottom: 2px;
-  width: 0;
-  border-radius: 3px;
-  background-color: rgb(0, 0, 0);
-  border-top: 2px solid;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 0;
+  border-top: 1px solid;
   transition: width .8s ease-in-out;
 }
 
@@ -283,7 +277,7 @@
 
 #hero-container .hero-items .section .item input {
   height: 24px;
-  margin: 1px 4px;
+  margin: 1px 4px 0 0;
   float: left;
   cursor: pointer;
   min-width: 23px;
@@ -386,12 +380,15 @@
 
 
 /* Item Icons */
-
-#hero-container .section .item[event]:not([event="none"]), #hero-container .section .item[achievement]:not([achievement="false"]) {
+#hero-container .section .item[event]:not([event="none"]),
+#hero-container .section .item[achievement]:not([achievement="false"]) {
   padding-right: 35px;
 }
 
-#hero-container .item[event]:not([event="none"]):after, #hero-container .item[achievement]:not([achievement="false"]):after, #hero-container .item[event]:not([event="none"]):before, #hero-container .item[achievement]:not([achievement="false"]):before {
+#hero-container .item[event]:not([event="none"]):after,
+#hero-container .item[achievement]:not([achievement="false"]):after,
+#hero-container .item[event]:not([event="none"]):before,
+#hero-container .item[achievement]:not([achievement="false"]):before {
   content: "";
   position: absolute;
   width: 25px;
@@ -403,8 +400,8 @@
 }
 
 /* If an item has an Event & Achivement Icons */
-
-#hero-container .hero-items .item[event]:not([event="none"]):before, #hero-container .hero-items .item[achievement]:not([achievement="false"]):before {
+#hero-container .hero-items .item[event]:not([event="none"]):before,
+#hero-container .hero-items .item[achievement]:not([achievement="false"]):before {
   right: 37px;
 }
 
@@ -438,7 +435,8 @@
 
 /* Achivement Icons */
 
-#hero-container .item[achievement="true"]:after, #hero-container .item:not([event="none"]):not([achievement="false"]):before {
+#hero-container .item[achievement="true"]:after,
+#hero-container .item:not([event="none"]):not([achievement="false"]):before {
   background-image: url("resources/icons/achievement.svg");
 }
 
@@ -613,40 +611,6 @@
   background-color: rgb(240, 240, 240);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 4px;
-}
-
-@media screen and (max-width: 1400px) {
-  #hero-container .hero-items .section .item {
-    font-size: 18px;
-  }
-
-  #hero-container .hero-items .section .item small {
-    padding-top: 0;
-    font-size: 16px;
-  }
-
-  #hero-container .hero-items .section .item label {
-    padding: 7px 0;
-  }
-
-  #hero-container .hero-items .section .item input {
-    height: 20px;
-  }
-
-  #hero-container .item[event]:not([event="none"]):after, #hero-container .item[achievement]:not([achievement="false"]):after, #hero-container .item[event]:not([event="none"]):before, #hero-container .item[achievement]:not([achievement="false"]):before {
-    top: 3px;
-  }
-}
-
-
-
-
-
-#background {
-  background: url(resources/bg.png) no-repeat top;
-  background-size: cover;
-  background-color: #293347;
-  filter: brightness(1);
 }
 
 #hero-container {
@@ -848,28 +812,6 @@ body#zenyatta .hero-name:after {
 
 #hero-container .hero-overview .hero-class {
   display: none;
-}
-
-#hero-container #hero-header .hero-progress {
-  height: 38px;
-  margin-top: -38px;
-  border-radius: 0;
-  background: rgba(0,0,0,0.4);
-}
-
-#hero-container #hero-header .hero-progress .hero-progress-bar {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  border-radius: 0;
-  border-top: 1px solid;
-}
-
-#hero-container #hero-header .hero-progress span {
-  line-height: 38px;
-  font-family: Futura, century gothic, arial, sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
 }
 
 

@@ -882,6 +882,17 @@ body {
   background-image: url(../../../resources/updates/UPRISING_2017/logo.png);
 }
 
+#UPRISING_2017 .event-active,
+#UPRISING_2017 .event-ended {
+  position: absolute;
+  left: 95px;
+  top: 85px;
+}
+
+#UPRISING_2017 .event-active {
+  top: 75px;
+}
+
 /* SMALL MODE CSS */
 @media screen and (max-width: 1500px) {
   body {
