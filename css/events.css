@@ -253,6 +253,8 @@
 
 #event-container #sprays .item h4 {
   font-size: 23px;
+  display: flex;
+  align-items: center;
 }
 
 #event-container #sprays .item h4:before, #event-container #sprays .item h4:after {
@@ -600,6 +602,87 @@
 #YEAR_OF_THE_ROOSTER_2017 #event-container #voicelines .item, #YEAR_OF_THE_ROOSTER_2017 #event-container #icons .item {
   padding: 4px 2px;
 }
+
+#UPRISING_2017 #event-container {
+  margin-top: -40px;
+}
+
+#UPRISING_2017 #row1 #col1 {
+  width: 71%;
+}
+
+#UPRISING_2017 #row1 #col2 {
+  width: 29%;
+}
+
+#UPRISING_2017 #row1 #col2 .right {
+  width: 64%;
+}
+
+#UPRISING_2017 #row2 {
+  margin-top: -40px;
+}
+
+#UPRISING_2017 #icons {
+  width: 35%;
+}
+
+#UPRISING_2017 #icons .items {
+  height: 450px;
+}
+
+#UPRISING_2017 #icons .items .item {
+  padding: 4px 2px;
+}
+
+#UPRISING_2017 #emotes, #UPRISING_2017 #highlight-intros {
+  margin-top: 14px;
+}
+
+#UPRISING_2017 #legendary-skins .card .bg {
+  height: 86px;
+  padding: 9px 16px;
+}
+
+#UPRISING_2017 #voicelines {
+  width: 65%;
+}
+
+#UPRISING_2017 #voicelines .items, #UPRISING_2017 #sprays .items {
+  height: 376px;
+}
+
+#UPRISING_2017 #voicelines .items .item, #UPRISING_2017 #sprays .items .item {
+  padding: 4px 2px;
+}
+
+#UPRISING_2017 #voicelines .items .item input {
+  height: 21px;
+}
+
+#UPRISING_2017 #voicelines .items .item h3 {
+  font-size: 22px;
+}
+
+#UPRISING_2017 #voicelines .items .item h4 {
+  display: initial;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+
+#UPRISING_2017 #voicelines .items .item h4:before {
+  content: "["
+}
+
+#UPRISING_2017 #voicelines .items .item h4:after {
+  content: "]"
+}
+
+#UPRISING_2017 #sprays {
+  width: 39%;
+}
+
 
 
 /* SMALL MODE CSS */
