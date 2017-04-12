@@ -40,12 +40,20 @@
   </div>
 </div>
 <div id="row2" class="row space-between">
-  <div id="voicelines" class="section flex-column x4">
+  <div id="voicelines" class="section flex-column x3">
     <div class="section-header">
       <h2>Voice Lines <small>75</small></h2>
     </div>
     <div class="items">
       <event-item ng-repeat="item in ::data.items.voicelines track by $index" type="voicelines"></event-item>
+    </div>
+  </div>
+  <div id="victoryposes" class="section flex-column">
+    <div class="section-header">
+      <h2>Victory Poses <small>225</small></h2>
+    </div>
+    <div class="items">
+      <event-item ng-repeat="item in ::data.items.poses track by $index" type="poses"></event-item>
     </div>
   </div>
   <div id="sprays" class="section flex-column x3">

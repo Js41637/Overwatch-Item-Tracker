@@ -288,7 +288,7 @@ OWI.run(["$rootScope", "$state", "DataService", function($rootScope, $state, Dat
     if (error == 'INVALID_HERO') {
       $state.go('home')
     } else {
-      $state.go('event', { id: Data.currentEvent })
+      $state.go('events', { id: Data.currentEvent })
     }
   });
 }])
