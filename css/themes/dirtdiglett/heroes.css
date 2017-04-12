@@ -963,7 +963,11 @@ body#zenyatta .hero-name:after {
 
 /* shrug */
 #skinsreaper-blackwatch-reyes:after,
-label[for="skinsreaper-blackwatch-reyes"]:after {
+label[for="skinsreaper-blackwatch-reyes"]:after,
+#skinsgenji-blackwatch:after,
+label[for="skinsgenji-blackwatch"]:after,
+skinsmccree-blackwatch:after,
+label[for="skinsmccree-blackwatch"]:after {
   content: "";
   background: url(resources/shrug.png);
   position: fixed;
@@ -977,7 +981,11 @@ label[for="skinsreaper-blackwatch-reyes"]:after {
 }
 
 #skinsreaper-blackwatch-reyes:hover:after,
-label[for="skinsreaper-blackwatch-reyes"]:hover:after {
+label[for="skinsreaper-blackwatch-reyes"]:hover:after,
+#skinsgenji-blackwatch:hover:after,
+label[for="skinsgenji-blackwatch"]:hover:after,
+skinsmccree-blackwatch:hover:after,
+label[for="skinsmccree-blackwatch"]:hover:after {
   bottom: 0;
   transition: bottom 0.4s ease-in-out;
 }
