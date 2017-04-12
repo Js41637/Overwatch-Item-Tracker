@@ -112,8 +112,10 @@ OWI.run(function() {
           }
           for (var type in changedItems[event]) {
             for (var itemID in changedItems[event][type]) {
-              data[event][type][changedItems[event][type][itemID]] = data[event][type][itemID]
-              delete data[event][type][itemID]
+              if (data[event][type]) {
+                data[event][type][changedItems[event][type][itemID]] = data[event][type][itemID]
+                delete data[event][type][itemID]
+              }
             }
           }
         }
