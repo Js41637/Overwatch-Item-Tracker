@@ -4056,6 +4056,441 @@
           "id": "zenyatta-shell",
           "quality": "common",
           "img": "./resources/heroes/zenyatta/sprays/zenyatta-shell.png"
+        },
+        {
+          "heroID": "all",
+          "name": "Null Sector",
+          "id": "null-sector",
+          "img": "./resources/heroes/all/sprays/null-sector.png",
+          "quality": "common"
+        },
+        {
+          "heroID": "all",
+          "name": "B73-NS",
+          "id": "b73ns",
+          "img": "./resources/heroes/all/sprays/b73ns.png",
+          "achievement": true
+        },
+        {
+          "heroID": "all",
+          "name": "Eradicator",
+          "id": "eradicator",
+          "img": "./resources/heroes/all/sprays/eradicator.png",
+          "achievement": true
+        },
+        {
+          "heroID": "all",
+          "name": "Nullmari",
+          "id": "nullmari",
+          "img": "./resources/heroes/all/sprays/nullmari.png",
+          "achievement": true
+        },
+        {
+          "heroID": "all",
+          "name": "Nulltrooper",
+          "id": "nulltrooper",
+          "img": "./resources/heroes/all/sprays/nulltrooper.png",
+          "achievement": true
+        },
+        {
+          "heroID": "all",
+          "name": "OR14-NS",
+          "id": "or14ns",
+          "img": "./resources/heroes/all/sprays/or14ns.png",
+          "achievement": true
+        },
+        {
+          "heroID": "all",
+          "name": "Slicer",
+          "id": "slicer",
+          "img": "./resources/heroes/all/sprays/slicer.png",
+          "achievement": true
+        }
+      ],
+      "voicelines": [
+        {
+          "hero": "Ana",
+          "heroID": "ana",
+          "name": "Damn",
+          "id": "ana-damn",
+          "quality": "common",
+          "audio": "./resources/heroes/ana/voicelines/ana-damn.ogg"
+        },
+        {
+          "hero": "Ana",
+          "heroID": "ana",
+          "name": "The ghost watches",
+          "id": "ana-the-ghost-watches",
+          "quality": "common",
+          "audio": "./resources/heroes/ana/voicelines/ana-the-ghost-watches.ogg"
+        },
+        {
+          "hero": "Bastion",
+          "heroID": "bastion",
+          "name": "Dwee Wee Woh",
+          "id": "bastion-dwee-wee-woh",
+          "quality": "common",
+          "audio": "./resources/heroes/bastion/voicelines/bastion-dwee-wee-woh.ogg"
+        },
+        {
+          "hero": "Bastion",
+          "heroID": "bastion",
+          "name": "Zwee-Ah Wheee Doo Woo",
+          "id": "bastion-zweeah-wheee-doo-woo",
+          "quality": "common",
+          "audio": "./resources/heroes/bastion/voicelines/bastion-zweeah-wheee-doo-woo.ogg"
+        },
+        {
+          "hero": "D.Va",
+          "heroID": "dva",
+          "name": "Not taking me seriously",
+          "id": "dva-not-taking-me-seriously",
+          "quality": "common",
+          "audio": "./resources/heroes/dva/voicelines/dva-not-taking-me-seriously.ogg"
+        },
+        {
+          "hero": "D.Va",
+          "heroID": "dva",
+          "name": "Try and keep up",
+          "id": "dva-try-and-keep-up",
+          "quality": "common",
+          "audio": "./resources/heroes/dva/voicelines/dva-try-and-keep-up.ogg"
+        },
+        {
+          "hero": "Genji",
+          "heroID": "genji",
+          "name": "Another!",
+          "id": "genji-another",
+          "quality": "common",
+          "audio": "./resources/heroes/genji/voicelines/genji-another.ogg"
+        },
+        {
+          "hero": "Genji",
+          "heroID": "genji",
+          "name": "Life and death balance",
+          "id": "genji-life-and-death-balance",
+          "quality": "common",
+          "audio": "./resources/heroes/genji/voicelines/genji-life-and-death-balance.ogg"
+        },
+        {
+          "hero": "Hanzo",
+          "heroID": "hanzo",
+          "name": "Beauty in simplicity",
+          "id": "hanzo-beauty-in-simplicity",
+          "quality": "common",
+          "audio": "./resources/heroes/hanzo/voicelines/hanzo-beauty-in-simplicity.ogg"
+        },
+        {
+          "hero": "Hanzo",
+          "heroID": "hanzo",
+          "name": "Unacceptable",
+          "id": "hanzo-unacceptable",
+          "quality": "common",
+          "audio": "./resources/heroes/hanzo/voicelines/hanzo-unacceptable.ogg"
+        },
+        {
+          "hero": "Junkrat",
+          "heroID": "junkrat",
+          "name": "Come the raw prawn",
+          "id": "junkrat-come-the-raw-prawn",
+          "quality": "common",
+          "audio": "./resources/heroes/junkrat/voicelines/junkrat-come-the-raw-prawn.ogg"
+        },
+        {
+          "hero": "Junkrat",
+          "heroID": "junkrat",
+          "name": "Too right",
+          "id": "junkrat-too-right",
+          "quality": "common",
+          "audio": "./resources/heroes/junkrat/voicelines/junkrat-too-right.ogg"
+        },
+        {
+          "hero": "Lúcio",
+          "heroID": "lucio",
+          "name": "Boop",
+          "id": "lucio-boop",
+          "quality": "common",
+          "audio": "./resources/heroes/lucio/voicelines/lucio-boop.ogg"
+        },
+        {
+          "hero": "Lúcio",
+          "heroID": "lucio",
+          "name": "Learn to take it easy",
+          "id": "lucio-learn-to-take-it-easy",
+          "quality": "common",
+          "audio": "./resources/heroes/lucio/voicelines/lucio-learn-to-take-it-easy.ogg"
+        },
+        {
+          "hero": "McCree",
+          "heroID": "mccree",
+          "name": "A man's gotta have rules",
+          "id": "mccree-a-mans-gotta-have-rules",
+          "quality": "common",
+          "audio": "./resources/heroes/mccree/voicelines/mccree-a-mans-gotta-have-rules.ogg"
+        },
+        {
+          "hero": "McCree",
+          "heroID": "mccree",
+          "name": "The old fashioned way",
+          "id": "mccree-the-old-fashioned-way",
+          "quality": "common",
+          "audio": "./resources/heroes/mccree/voicelines/mccree-the-old-fashioned-way.ogg"
+        },
+        {
+          "hero": "Mei",
+          "heroID": "mei",
+          "name": "Science this",
+          "id": "mei-science-this",
+          "quality": "common",
+          "audio": "./resources/heroes/mei/voicelines/mei-science-this.ogg"
+        },
+        {
+          "hero": "Mei",
+          "heroID": "mei",
+          "name": "Scientific explanation",
+          "id": "mei-scientific-explanation",
+          "quality": "common",
+          "audio": "./resources/heroes/mei/voicelines/mei-scientific-explanation.ogg"
+        },
+        {
+          "hero": "Mercy",
+          "heroID": "mercy",
+          "name": "Not sure why I bother",
+          "id": "mercy-not-sure-why-i-bother",
+          "quality": "common",
+          "audio": "./resources/heroes/mercy/voicelines/mercy-not-sure-why-i-bother.ogg"
+        },
+        {
+          "hero": "Mercy",
+          "heroID": "mercy",
+          "name": "Take care of yourself",
+          "id": "mercy-take-care-of-yourself",
+          "quality": "common",
+          "audio": "./resources/heroes/mercy/voicelines/mercy-take-care-of-yourself.ogg"
+        },
+        {
+          "hero": "Orisa",
+          "heroID": "orisa",
+          "name": "Error: Division by 0",
+          "id": "orisa-error-division-by-0",
+          "quality": "common",
+          "audio": "./resources/heroes/orisa/voicelines/orisa-error-division-by-0.ogg"
+        },
+        {
+          "hero": "Orisa",
+          "heroID": "orisa",
+          "name": "Functionality still in beta",
+          "id": "orisa-functionality-still-in-beta",
+          "quality": "common",
+          "audio": "./resources/heroes/orisa/voicelines/orisa-functionality-still-in-beta.ogg"
+        },
+        {
+          "hero": "Pharah",
+          "heroID": "pharah",
+          "name": "Don't take it personally",
+          "id": "pharah-dont-take-it-personally",
+          "quality": "common",
+          "audio": "./resources/heroes/pharah/voicelines/pharah-dont-take-it-personally.ogg"
+        },
+        {
+          "hero": "Pharah",
+          "heroID": "pharah",
+          "name": "I am the rocket queen",
+          "id": "pharah-i-am-the-rocket-queen",
+          "quality": "common",
+          "audio": "./resources/heroes/pharah/voicelines/pharah-i-am-the-rocket-queen.ogg"
+        },
+        {
+          "hero": "Reaper",
+          "heroID": "reaper",
+          "name": "Amatuer hour",
+          "id": "reaper-amatuer-hour",
+          "quality": "common",
+          "audio": "./resources/heroes/reaper/voicelines/reaper-amatuer-hour.ogg"
+        },
+        {
+          "hero": "Reaper",
+          "heroID": "reaper",
+          "name": "Moving on",
+          "id": "reaper-moving-on",
+          "quality": "common",
+          "audio": "./resources/heroes/reaper/voicelines/reaper-moving-on.ogg"
+        },
+        {
+          "hero": "Reinhardt",
+          "heroID": "reinhardt",
+          "name": "Easy does it",
+          "id": "reinhardt-easy-does-it",
+          "quality": "common",
+          "audio": "./resources/heroes/reinhardt/voicelines/reinhardt-easy-does-it.ogg"
+        },
+        {
+          "hero": "Reinhardt",
+          "heroID": "reinhardt",
+          "name": "Unstoppable",
+          "id": "reinhardt-unstoppable",
+          "quality": "common",
+          "audio": "./resources/heroes/reinhardt/voicelines/reinhardt-unstoppable.ogg"
+        },
+        {
+          "hero": "Roadhog",
+          "heroID": "roadhog",
+          "name": "Killed for less than that",
+          "id": "roadhog-killed-for-less-than-that",
+          "quality": "common",
+          "audio": "./resources/heroes/roadhog/voicelines/roadhog-killed-for-less-than-that.ogg"
+        },
+        {
+          "hero": "Roadhog",
+          "heroID": "roadhog",
+          "name": "She'll be right",
+          "id": "roadhog-shell-be-right",
+          "quality": "common",
+          "audio": "./resources/heroes/roadhog/voicelines/roadhog-shell-be-right.ogg"
+        },
+        {
+          "hero": "Soldier: 76",
+          "heroID": "soldier-76",
+          "name": "Not getting any younger",
+          "id": "soldier-76-not-getting-any-younger",
+          "quality": "common",
+          "audio": "./resources/heroes/soldier-76/voicelines/soldier-76-not-getting-any-younger.ogg"
+        },
+        {
+          "hero": "Soldier: 76",
+          "heroID": "soldier-76",
+          "name": "Whatever you say",
+          "id": "soldier-76-whatever-you-say",
+          "quality": "common",
+          "audio": "./resources/heroes/soldier-76/voicelines/soldier-76-whatever-you-say.ogg"
+        },
+        {
+          "hero": "Sombra",
+          "heroID": "sombra",
+          "name": "Don't be a coward",
+          "id": "sombra-dont-be-a-coward",
+          "quality": "common",
+          "audio": "./resources/heroes/sombra/voicelines/sombra-dont-be-a-coward.ogg"
+        },
+        {
+          "hero": "Sombra",
+          "heroID": "sombra",
+          "name": "I'd love to stay and chat",
+          "id": "sombra-id-love-to-stay-and-chat",
+          "quality": "common",
+          "audio": "./resources/heroes/sombra/voicelines/sombra-id-love-to-stay-and-chat.ogg"
+        },
+        {
+          "hero": "Symmetra",
+          "heroID": "symmetra",
+          "name": "Kindly adjust",
+          "id": "symmetra-kindly-adjust",
+          "quality": "common",
+          "audio": "./resources/heroes/symmetra/voicelines/symmetra-kindly-adjust.ogg"
+        },
+        {
+          "hero": "Symmetra",
+          "heroID": "symmetra",
+          "name": "Taken under advisement",
+          "id": "symmetra-taken-under-advisement",
+          "quality": "common",
+          "audio": "./resources/heroes/symmetra/voicelines/symmetra-taken-under-advisement.ogg"
+        },
+        {
+          "hero": "Torbjörn",
+          "heroID": "torbjorn",
+          "name": "Just start hammering",
+          "id": "torbjorn-just-start-hammering",
+          "quality": "common",
+          "audio": "./resources/heroes/torbjorn/voicelines/torbjorn-just-start-hammering.ogg"
+        },
+        {
+          "hero": "Torbjörn",
+          "heroID": "torbjorn",
+          "name": "Poor craftsman",
+          "id": "torbjorn-poor-craftsman",
+          "quality": "common",
+          "audio": "./resources/heroes/torbjorn/voicelines/torbjorn-poor-craftsman.ogg"
+        },
+        {
+          "hero": "Tracer",
+          "heroID": "tracer",
+          "name": "Don't be daft",
+          "id": "tracer-dont-be-daft",
+          "quality": "common",
+          "audio": "./resources/heroes/tracer/voicelines/tracer-dont-be-daft.ogg"
+        },
+        {
+          "hero": "Tracer",
+          "heroID": "tracer",
+          "name": "Sorry i'm late",
+          "id": "tracer-sorry-im-late",
+          "quality": "common",
+          "audio": "./resources/heroes/tracer/voicelines/tracer-sorry-im-late.ogg"
+        },
+        {
+          "hero": "Widowmaker",
+          "heroID": "widowmaker",
+          "name": "The performance begins",
+          "id": "widowmaker-the-performance-begins",
+          "quality": "common",
+          "audio": "./resources/heroes/widowmaker/voicelines/widowmaker-the-performance-begins.ogg"
+        },
+        {
+          "hero": "Widowmaker",
+          "heroID": "widowmaker",
+          "name": "Your emotions",
+          "id": "widowmaker-your-emotions",
+          "quality": "common",
+          "audio": "./resources/heroes/widowmaker/voicelines/widowmaker-your-emotions.ogg"
+        },
+        {
+          "hero": "Winston",
+          "heroID": "winston",
+          "name": "Have you seen my glasses?",
+          "id": "winston-have-you-seen-my-glasses",
+          "quality": "common",
+          "audio": "./resources/heroes/winston/voicelines/winston-have-you-seen-my-glasses.ogg"
+        },
+        {
+          "hero": "Winston",
+          "heroID": "winston",
+          "name": "I have the right stuff",
+          "id": "winston-i-have-the-right-stuff",
+          "quality": "common",
+          "audio": "./resources/heroes/winston/voicelines/winston-i-have-the-right-stuff.ogg"
+        },
+        {
+          "hero": "Zarya",
+          "heroID": "zarya",
+          "name": "I was born in battle",
+          "id": "zarya-i-was-born-in-battle",
+          "quality": "common",
+          "audio": "./resources/heroes/zarya/voicelines/zarya-i-was-born-in-battle.ogg"
+        },
+        {
+          "hero": "Zarya",
+          "heroID": "zarya",
+          "name": "Ready to give up?",
+          "id": "zarya-ready-to-give-up",
+          "quality": "common",
+          "audio": "./resources/heroes/zarya/voicelines/zarya-ready-to-give-up.ogg"
+        },
+        {
+          "hero": "Zenyatta",
+          "heroID": "zenyatta",
+          "name": "Path to enlightenment",
+          "id": "zenyatta-path-to-enlightenment",
+          "quality": "common",
+          "audio": "./resources/heroes/zenyatta/voicelines/zenyatta-path-to-enlightenment.ogg"
+        },
+        {
+          "hero": "Zenyatta",
+          "heroID": "zenyatta",
+          "name": "Where you're headed",
+          "id": "zenyatta-where-youre-headed",
+          "quality": "common",
+          "audio": "./resources/heroes/zenyatta/voicelines/zenyatta-where-youre-headed.ogg"
         }
       ],
       "skinsEpic": [
@@ -4192,6 +4627,89 @@
           "id": "soldier-76-pushups",
           "quality": "epic",
           "video": "./resources/updates/UPRISING_2017/emotes/soldier-76-pushups.webm"
+        }
+      ],
+      "icons": [
+        {
+          "heroID": "all",
+          "name": "B73-NS",
+          "id": "b73ns",
+          "img": "./resources/heroes/all/icons/b73ns.png",
+          "achievement": true
+        },
+        {
+          "heroID": "all",
+          "name": "Blackwatch",
+          "id": "blackwatch",
+          "img": "./resources/heroes/all/icons/blackwatch.png"
+        },
+        {
+          "heroID": "all",
+          "name": "Cadet",
+          "id": "cadet",
+          "img": "./resources/heroes/all/icons/cadet.png"
+        },
+        {
+          "heroID": "all",
+          "name": "Chief Engineer",
+          "id": "chief-engineer",
+          "img": "./resources/heroes/all/icons/chief-engineer.png"
+        },
+        {
+          "heroID": "all",
+          "name": "Combat Medic",
+          "id": "combat-medic",
+          "img": "./resources/heroes/all/icons/combat-medic.png"
+        },
+        {
+          "heroID": "all",
+          "name": "Cyborg",
+          "id": "cyborg",
+          "img": "./resources/heroes/all/icons/cyborg.png"
+        },
+        {
+          "heroID": "all",
+          "name": "Drop Pod",
+          "id": "drop-pod",
+          "img": "./resources/heroes/all/icons/drop-pod.png"
+        },
+        {
+          "heroID": "all",
+          "name": "Lacroix",
+          "id": "lacroix",
+          "img": "./resources/heroes/all/icons/lacroix.png"
+        },
+        {
+          "heroID": "all",
+          "name": "Lieutenant",
+          "id": "lieutenant",
+          "img": "./resources/heroes/all/icons/lieutenant.png"
+        },
+        {
+          "heroID": "all",
+          "name": "Null Sector",
+          "id": "null-sector",
+          "img": "./resources/heroes/all/icons/null-sector.png"
+        },
+        {
+          "heroID": "all",
+          "name": "Nullmari",
+          "id": "nullmari",
+          "img": "./resources/heroes/all/icons/nullmari.png",
+          "achievement": true
+        },
+        {
+          "heroID": "all",
+          "name": "OR14-NS",
+          "id": "or14ns",
+          "img": "./resources/heroes/all/icons/or14ns.png",
+          "achievement": true
+        },
+        {
+          "heroID": "all",
+          "name": "Uprising",
+          "id": "uprising-2017",
+          "img": "./resources/heroes/all/icons/uprising-2017.png"
         }
       ]
     }

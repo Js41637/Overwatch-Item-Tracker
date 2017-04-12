@@ -4,13 +4,15 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs')
-const { forEach, sortBy, find, reduce } = require('lodash')
+const { forEach, sortBy, find, reduce, merge } = require('lodash')
+
+const mode = process.argv.slice(2)[0]
 
 const HERODATA = require('./dataMapper/HERODATA.js')
 const { badNames, hiddenItems, defaultItems, achievementSprays, allClassEventItems } = require('./dataMapper/itemData.js')
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT } = require('./dataMapper/EVENTDATA.js')
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder } = require('./dataMapper/utils.js')
-var allClassData, rawData;
+var allClassData, rawData, missingAllClassData = {}, allClassDataKeys = {}
 try {
   allClassData = require('../data/allClassItems.json')
   rawData = fs.readFileSync(`${__dirname}/rawData.txt`, "utf8")
@@ -19,9 +21,29 @@ try {
   process.exit()
 }
 
+try {
+  missingAllClassData = require('../data/missingAllClassData.json')
+} catch(e) {
+  console.log("missing data")
+} // eslint-disable-line
+
+// AllClassData that isn't automatically generated can be manually added in missingAllClassData.json
+// parsing missing items and if they have a name, add them to an object similar to allClassData
+var noLongerMissingAllClassData = reduce(missingAllClassData, (result, items, type) => {
+  if (!result[type]) result[type] = []
+  items = reduce(items, (newItems = [], item) => {
+    if (item.name.length) newItems.push(item)
+    return newItems
+  }, [])
+  result[type] = items
+  return result
+}, {})
+
+// Add no longer missing allclass data onto allClassData
+forEach(noLongerMissingAllClassData, (items, type) => allClassData[type] = [...allClassData[type], ...items])
+
 // Create object containing allclass item names by key so we can easily map event ids to items.
 // also check if any items are in allClassEventItems and mark them as event items
-var allClassDataKeys = {}
 allClassData = reduce(allClassData, (result, items, type) => {
   if (!result[type]) {
     result[type] = []
@@ -168,11 +190,13 @@ updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.
 }).filter(Boolean)
 
 // Add allClassEventItems items (which aren't detected by item extrator) manually to events
+const missingKeys = []
 forEach(allClassEventItems, (types, type) => {
   forEach(types, (events, event) => {
     events.forEach(itemID => {
       if (!allClassDataKeys[type][itemID]) {
         console.warn("Missing key for", itemID)
+        missingKeys.push({ type, itemID })
         return
       }
       var out = {
@@ -189,10 +213,33 @@ forEach(allClassEventItems, (types, type) => {
       if (type == 'sprays' && !isAchivement) {
         Object.assign(out, { quality: 'common' })
       }
+      if (!updates[event].items[type]) updates[event].items[type] = []
       updates[event].items[type].push(out)
     })
   })
 })
+
+if (missingKeys.length) {
+  if (!mode || mode !== 'missing') {
+    console.warn("Missing itemIDs detected, run 'gen-missing-data' to generate a template of missing items")
+  } else {
+    const out = {}
+    missingKeys.forEach(item => {
+      if (!out[item.type]) out[item.type] = {}
+      out[item.type][item.itemID] = { id: item.itemID }
+    })
+    missingAllClassData = merge(missingAllClassData, out)
+    for (var type in missingAllClassData) {
+      for (var itemID in missingAllClassData[type]) {
+        let item = missingAllClassData[type][itemID]
+        if (item.name) break
+        missingAllClassData[type][itemID].name = ""
+      }
+    }
+    fs.writeFileSync(`${__dirname}/../data/missingAllClassData.json`, JSON.stringify(missingAllClassData, null, 2))
+    console.info("Wrote missing data to data dir")
+  }
+}
 
 // Sort event items by hero, name or name depending on type
 forEach(updates, update => forEach(update.items, (items, type) => {

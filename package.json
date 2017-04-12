@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "author": "Js41637",
   "scripts": {
-    "gen-data": "node ./helpers/dataMapper.js"
+    "gen-data": "node ./helpers/dataMapper.js",
+    "gen-missing-data": "node ./helpers/dataMapper.js missing"
   },
   "repository": {
     "type": "git",

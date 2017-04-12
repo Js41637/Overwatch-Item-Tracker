@@ -58,6 +58,11 @@
           "event": "SUMMER_GAMES_2016"
         },
         {
+          "id": "b73ns",
+          "name": "B73-NS",
+          "event": "UPRISING_2017"
+        },
+        {
           "name": "BMX",
           "id": "reaper-bmx",
           "event": "SUMMER_GAMES_2016",
@@ -109,6 +114,11 @@
           "event": "HALLOWEEN_2016"
         },
         {
+          "id": "blackwatch",
+          "name": "Blackwatch",
+          "event": "UPRISING_2017"
+        },
+        {
           "name": "Bokimari",
           "id": "bokimari",
           "event": "YEAR_OF_THE_ROOSTER_2017"
@@ -133,6 +143,11 @@
           "name": "Bunny",
           "id": "dva-bunny",
           "hero": "dva"
+        },
+        {
+          "id": "cadet",
+          "name": "Cadet",
+          "event": "UPRISING_2017"
         },
         {
           "name": "Calavera",
@@ -174,6 +189,11 @@
           "event": "WINTER_WONDERLAND_2016"
         },
         {
+          "id": "chief-engineer",
+          "name": "Chief Engineer",
+          "event": "UPRISING_2017"
+        },
+        {
           "name": "China",
           "id": "china",
           "event": "SUMMER_GAMES_2016"
@@ -188,12 +208,22 @@
           "id": "colossus"
         },
         {
+          "id": "combat-medic",
+          "name": "Combat Medic",
+          "event": "UPRISING_2017"
+        },
+        {
           "name": "Credit",
           "id": "credit"
         },
         {
           "name": "Crusader",
           "id": "crusader"
+        },
+        {
+          "id": "cyborg",
+          "name": "Cyborg",
+          "event": "UPRISING_2017"
         },
         {
           "name": "Cycling",
@@ -246,6 +276,11 @@
           "name": "Dreidel",
           "id": "dreidel",
           "event": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "id": "drop-pod",
+          "name": "Drop Pod",
+          "event": "UPRISING_2017"
         },
         {
           "name": "Efi",
@@ -504,6 +539,11 @@
           "id": "kofi-aromo"
         },
         {
+          "id": "lacroix",
+          "name": "Lacroix",
+          "event": "UPRISING_2017"
+        },
+        {
           "name": "Lantern",
           "id": "lantern",
           "event": "YEAR_OF_THE_ROOSTER_2017"
@@ -511,6 +551,11 @@
         {
           "name": "Lich King",
           "id": "lich-king"
+        },
+        {
+          "id": "lieutenant",
+          "name": "Lieutenant",
+          "event": "UPRISING_2017"
         },
         {
           "name": "Lion Dance",
@@ -630,6 +675,16 @@
           "hero": "genji"
         },
         {
+          "id": "null-sector",
+          "name": "Null Sector",
+          "event": "UPRISING_2017"
+        },
+        {
+          "id": "nullmari",
+          "name": "Nullmari",
+          "event": "UPRISING_2017"
+        },
+        {
           "name": "Numbani",
           "id": "numbani",
           "event": "SUMMER_GAMES_2016"
@@ -639,6 +694,11 @@
           "id": "zenyatta-nutcracker",
           "event": "WINTER_WONDERLAND_2016",
           "hero": "zenyatta"
+        },
+        {
+          "id": "or14ns",
+          "name": "OR14-NS",
+          "event": "UPRISING_2017"
         },
         {
           "name": "Oni",
@@ -1084,6 +1144,11 @@
           "event": "SUMMER_GAMES_2016"
         },
         {
+          "id": "uprising-2017",
+          "name": "Uprising 2017",
+          "event": "UPRISING_2017"
+        },
+        {
           "name": "Valkyrie",
           "id": "mercy-valkyrie",
           "hero": "mercy"
@@ -1244,6 +1309,12 @@
           "achievement": true
         },
         {
+          "id": "b73ns",
+          "name": "B73-NS",
+          "event": "UPRISING_2017",
+          "achievement": true
+        },
+        {
           "name": "Barbarian",
           "id": "barbarian",
           "quality": "common"
@@ -1327,6 +1398,12 @@
           "name": "Día de los Muertos",
           "id": "da-de-los-muertos",
           "standardItem": true
+        },
+        {
+          "id": "eradicator",
+          "name": "Eradicator",
+          "event": "UPRISING_2017",
+          "achievement": true
         },
         {
           "name": "Fangs",
@@ -1420,9 +1497,33 @@
           "quality": "common"
         },
         {
+          "id": "null-sector",
+          "name": "Null Sector",
+          "event": "UPRISING_2017",
+          "quality": "common"
+        },
+        {
+          "id": "nullmari",
+          "name": "Nullmari",
+          "event": "UPRISING_2017",
+          "achievement": true
+        },
+        {
+          "id": "nulltrooper",
+          "name": "Nulltrooper",
+          "event": "UPRISING_2017",
+          "achievement": true
+        },
+        {
           "name": "Numbani Statue",
           "id": "numbani-statue",
           "quality": "common"
+        },
+        {
+          "id": "or14ns",
+          "name": "OR14-NS",
+          "event": "UPRISING_2017",
+          "achievement": true
         },
         {
           "name": "Omnic Rights",
@@ -1551,6 +1652,12 @@
           "name": "Six-Gun Killer",
           "id": "sixgun-killer",
           "quality": "common"
+        },
+        {
+          "id": "slicer",
+          "name": "Slicer",
+          "event": "UPRISING_2017",
+          "achievement": true
         },
         {
           "name": "Snowcree",
@@ -2079,6 +2186,18 @@
           "id": "ana-the-moon-in-winter",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Damn",
+          "id": "ana-damn",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "The ghost watches",
+          "id": "ana-the-ghost-watches",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -2557,6 +2676,18 @@
           "id": "bastion-woop-doo-woo-dun-woop",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Dwee Wee Woh",
+          "id": "bastion-dwee-wee-woh",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Zwee-Ah Wheee Doo Woo",
+          "id": "bastion-zweeah-wheee-doo-woo",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -3023,6 +3154,18 @@
           "id": "dva-the-best-things-in-life",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Not taking me seriously",
+          "id": "dva-not-taking-me-seriously",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Try and keep up",
+          "id": "dva-try-and-keep-up",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -3495,6 +3638,18 @@
           "id": "genji-to-know-yourself",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Another!",
+          "id": "genji-another",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Life and death balance",
+          "id": "genji-life-and-death-balance",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -3937,6 +4092,18 @@
           "id": "hanzo-when-the-moon-is-full",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Beauty in simplicity",
+          "id": "hanzo-beauty-in-simplicity",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Unacceptable",
+          "id": "hanzo-unacceptable",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -4397,6 +4564,18 @@
           "id": "junkrat-gong-xi-fa-cai",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Come the raw prawn",
+          "id": "junkrat-come-the-raw-prawn",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Too right",
+          "id": "junkrat-too-right",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -4863,6 +5042,18 @@
           "id": "lucio-i-make-this-look-good",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Boop",
+          "id": "lucio-boop",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Learn to take it easy",
+          "id": "lucio-learn-to-take-it-easy",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -5317,6 +5508,18 @@
           "id": "mccree-calls-for-a-celebration",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "A man's gotta have rules",
+          "id": "mccree-a-mans-gotta-have-rules",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "The old fashioned way",
+          "id": "mccree-the-old-fashioned-way",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -5789,6 +5992,18 @@
           "id": "mei-wishing-you-prosperity",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Science this",
+          "id": "mei-science-this",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Scientific explanation",
+          "id": "mei-scientific-explanation",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -6267,6 +6482,18 @@
           "id": "mercy-a-most-impressive-display",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Not sure why I bother",
+          "id": "mercy-not-sure-why-i-bother",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Take care of yourself",
+          "id": "mercy-take-care-of-yourself",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -6633,6 +6860,18 @@
           "name": "That does not compute",
           "id": "orisa-that-does-not-compute",
           "quality": "common"
+        },
+        {
+          "name": "Error: Division by 0",
+          "id": "orisa-error-division-by-0",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Functionality still in beta",
+          "id": "orisa-functionality-still-in-beta",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -7081,6 +7320,18 @@
           "id": "pharah-i-keep-the-peace",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Don't take it personally",
+          "id": "pharah-dont-take-it-personally",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "I am the rocket queen",
+          "id": "pharah-i-am-the-rocket-queen",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -7553,6 +7804,18 @@
           "id": "reaper-now-those-are-fireworks",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Amatuer hour",
+          "id": "reaper-amatuer-hour",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Moving on",
+          "id": "reaper-moving-on",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -8029,6 +8292,18 @@
           "id": "reinhardt-are-you-chicken",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Easy does it",
+          "id": "reinhardt-easy-does-it",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Unstoppable",
+          "id": "reinhardt-unstoppable",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -8501,6 +8776,18 @@
           "id": "roadhog-you-chicken",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Killed for less than that",
+          "id": "roadhog-killed-for-less-than-that",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "She'll be right",
+          "id": "roadhog-shell-be-right",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -8961,6 +9248,18 @@
           "id": "soldier-76-the-rooster-crows",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Not getting any younger",
+          "id": "soldier-76-not-getting-any-younger",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Whatever you say",
+          "id": "soldier-76-whatever-you-say",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -9389,6 +9688,18 @@
           "id": "sombra-youre-easily-impressed",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Don't be a coward",
+          "id": "sombra-dont-be-a-coward",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "I'd love to stay and chat",
+          "id": "sombra-id-love-to-stay-and-chat",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -9843,6 +10154,18 @@
           "id": "symmetra-good-fortune",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Kindly adjust",
+          "id": "symmetra-kindly-adjust",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Taken under advisement",
+          "id": "symmetra-taken-under-advisement",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -10309,6 +10632,18 @@
           "id": "torbjorn-too-hot-for-you",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Just start hammering",
+          "id": "torbjorn-just-start-hammering",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Poor craftsman",
+          "id": "torbjorn-poor-craftsman",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -10800,6 +11135,18 @@
           "id": "tracer-ready-for-some-fireworks",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Don't be daft",
+          "id": "tracer-dont-be-daft",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Sorry i'm late",
+          "id": "tracer-sorry-im-late",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -11254,6 +11601,18 @@
           "id": "widowmaker-you-have-my-attention",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "The performance begins",
+          "id": "widowmaker-the-performance-begins",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Your emotions",
+          "id": "widowmaker-your-emotions",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -11720,6 +12079,18 @@
           "id": "winston-that-was-awesome",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Have you seen my glasses?",
+          "id": "winston-have-you-seen-my-glasses",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "I have the right stuff",
+          "id": "winston-i-have-the-right-stuff",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -12180,6 +12551,18 @@
           "id": "zarya-get-pumped",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "I was born in battle",
+          "id": "zarya-i-was-born-in-battle",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Ready to give up?",
+          "id": "zarya-ready-to-give-up",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [
@@ -12646,6 +13029,18 @@
           "id": "zenyatta-every-rooster-crows",
           "quality": "common",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Path to enlightenment",
+          "id": "zenyatta-path-to-enlightenment",
+          "quality": "common",
+          "event": "UPRISING_2017"
+        },
+        {
+          "name": "Where you're headed",
+          "id": "zenyatta-where-youre-headed",
+          "quality": "common",
+          "event": "UPRISING_2017"
         }
       ],
       "poses": [

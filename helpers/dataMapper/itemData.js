@@ -47,7 +47,14 @@ const data = {
     'snowreaper',
     // ROOSTER17
     'auspicious-lion',
-    'awakened-lion'
+    'awakened-lion',
+    // UPRISING17
+    'slicer',
+    'or14ns',
+    'nulltrooper',
+    'nullmari',
+    'eradicator',
+    'b73ns'
   ],
   allClassEventItems: {
     sprays: {
