@@ -145,9 +145,10 @@
           "hero": "dva"
         },
         {
-          "id": "cadet",
           "name": "Cadet",
-          "event": "UPRISING_2017"
+          "id": "tracer-cadet",
+          "event": "UPRISING_2017",
+          "hero": "tracer"
         },
         {
           "name": "Calavera",
@@ -189,9 +190,10 @@
           "event": "WINTER_WONDERLAND_2016"
         },
         {
-          "id": "chief-engineer",
           "name": "Chief Engineer",
-          "event": "UPRISING_2017"
+          "id": "torbjorn-chief-engineer",
+          "event": "UPRISING_2017",
+          "hero": "torbjorn"
         },
         {
           "name": "China",
@@ -208,9 +210,10 @@
           "id": "colossus"
         },
         {
-          "id": "combat-medic",
           "name": "Combat Medic",
-          "event": "UPRISING_2017"
+          "id": "mercy-combat-medic",
+          "event": "UPRISING_2017",
+          "hero": "mercy"
         },
         {
           "name": "Credit",
@@ -221,9 +224,10 @@
           "id": "crusader"
         },
         {
-          "id": "cyborg",
           "name": "Cyborg",
-          "event": "UPRISING_2017"
+          "id": "genji-cyborg",
+          "event": "UPRISING_2017",
+          "hero": "genji"
         },
         {
           "name": "Cycling",
@@ -540,9 +544,10 @@
           "id": "kofi-aromo"
         },
         {
-          "id": "lacroix",
           "name": "Lacroix",
-          "event": "UPRISING_2017"
+          "id": "widowmaker-lacroix",
+          "event": "UPRISING_2017",
+          "hero": "widowmaker"
         },
         {
           "name": "Lantern",
@@ -554,9 +559,10 @@
           "id": "lich-king"
         },
         {
-          "id": "lieutenant",
           "name": "Lieutenant",
-          "event": "UPRISING_2017"
+          "id": "reinhardt-lieutenant",
+          "event": "UPRISING_2017",
+          "hero": "reinhardt"
         },
         {
           "name": "Lion Dance",
@@ -704,6 +710,12 @@
         {
           "name": "Oni",
           "id": "oni"
+        },
+        {
+          "name": "Oni",
+          "id": "genji-oni",
+          "achievement": "blizzard",
+          "hero": "genji"
         },
         {
           "name": "Orisa",
@@ -3387,6 +3399,18 @@
           "name": "Fencing",
           "id": "genji-fencing",
           "event": "SUMMER_GAMES_2016",
+          "hero": "genji"
+        },
+        {
+          "name": "Cyborg",
+          "id": "genji-cyborg",
+          "event": "UPRISING_2017",
+          "hero": "genji"
+        },
+        {
+          "name": "Oni",
+          "id": "genji-oni",
+          "achievement": "blizzard",
           "hero": "genji"
         }
       ],
@@ -6256,6 +6280,12 @@
           "id": "mercy-the-witch",
           "event": "HALLOWEEN_2016",
           "hero": "mercy"
+        },
+        {
+          "name": "Combat Medic",
+          "id": "mercy-combat-medic",
+          "event": "UPRISING_2017",
+          "hero": "mercy"
         }
       ],
       "sprays": [
@@ -8065,6 +8095,12 @@
           "name": "Sandy",
           "id": "reinhardt-sandy",
           "event": "YEAR_OF_THE_ROOSTER_2017",
+          "hero": "reinhardt"
+        },
+        {
+          "name": "Lieutenant",
+          "id": "reinhardt-lieutenant",
+          "event": "UPRISING_2017",
           "hero": "reinhardt"
         }
       ],
@@ -10412,6 +10448,12 @@
           "id": "torbjorn-santaclad",
           "event": "WINTER_WONDERLAND_2016",
           "hero": "torbjorn"
+        },
+        {
+          "name": "Chief Engineer",
+          "id": "torbjorn-chief-engineer",
+          "event": "UPRISING_2017",
+          "hero": "torbjorn"
         }
       ],
       "sprays": [
@@ -10915,6 +10957,12 @@
           "id": "tracer-jingle",
           "event": "WINTER_WONDERLAND_2016",
           "hero": "tracer"
+        },
+        {
+          "name": "Cadet",
+          "id": "tracer-cadet",
+          "event": "UPRISING_2017",
+          "hero": "tracer"
         }
       ],
       "sprays": [
@@ -11380,6 +11428,12 @@
           "name": "Gymnastics",
           "id": "widowmaker-gymnastics",
           "event": "SUMMER_GAMES_2016",
+          "hero": "widowmaker"
+        },
+        {
+          "name": "Lacroix",
+          "id": "widowmaker-lacroix",
+          "event": "UPRISING_2017",
           "hero": "widowmaker"
         }
       ],

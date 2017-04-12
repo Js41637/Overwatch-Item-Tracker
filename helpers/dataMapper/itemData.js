@@ -80,7 +80,7 @@ const data = {
       [EVENTS.HALLOWEEN16]: ["halloween-terror-2016", "never-die", "bewitching", "calavera", "candle", "eyeball", "ghostymari", "spider", "superstition", "tombstone", "vampachimari", "witchs-brew", "witchs-hat", "wolf"],
       [EVENTS.CHRISTMAS16]: ["winter-wonderland-2016", "snowman", "present", "pachimerry", "gingermari", "2017", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking"],
       [EVENTS.ROOSTER17]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "lunamari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017"],
-      [EVENTS.UPRISING17]: ['uprising-2017', 'chief-engineer', 'cyborg', 'lieutenant', 'lacroix', 'blackwatch', 'null-sector', 'drop-pod', 'b73ns', 'combat-medic', 'cadet', 'nullmari', 'or14ns']
+      [EVENTS.UPRISING17]: ['uprising-2017', 'blackwatch', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'or14ns']
     }
   }
 }

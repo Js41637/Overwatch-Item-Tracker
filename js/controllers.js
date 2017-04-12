@@ -106,7 +106,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   this.filteredItems = hero.items;
   this.canPlayType = CompatibilityService.canPlayType;
   this.gridView = false;
-  this.checked = Data.checked[hero.id];
+  this.checked = Data.checked;
   this.events = {};
   this.totals = {
     total: 0,
@@ -130,7 +130,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   };
 
   this.isItemChecked = function(item, type) {
-    return this.checked[type][item.id];
+    return this.checked[item.hero || hero.id][type][item.id];
   };
 
   function isValidItem(item) {
@@ -286,12 +286,12 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
 
   // Manual function to select an item, used in grid mode
   this.selectItem = function(item, type) {
-    this.checked[type][item.id] = !this.checked[type][item.id];
+    this.checked[item.hero || hero.id][type][item.id] = !this.checked[item.hero || hero.id][type][item.id];
     vm.onSelect();
   }
 
   this.onSelect = function() {
-    StorageService.setData(Object.assign({}, Data.checked, vm.checked[hero.id]));
+    StorageService.setData(Object.assign({}, Data.checked, vm.checked));
     calculateTotalsAndCosts();
   }
 
@@ -307,7 +307,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     }
     Object.keys(hero.items).forEach(function(type) {
       hero.items[type].forEach(function(item) {
-        vm.checked[type][item.id] = true;
+        vm.checked[item.hero || hero.id][type][item.id] = true;
       })
     })
     calculateTotalsAndCosts();
@@ -487,10 +487,10 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
       var hero = DataService.heroes[heroID].items
       for (var type in hero) {
         for (var item of hero[type]) {
-          if (!DataService.checked[heroID][type]) {
-            DataService.checked[heroID][type] = {}
+          if (!DataService.checked[item.hero || heroID][type]) {
+            DataService.checked[item.hero || heroID][type] = {}
           }
-          DataService.checked[heroID][type][item.id] = true
+          DataService.checked[item.hero || heroID][type][item.id] = true
         }
       }
     }
