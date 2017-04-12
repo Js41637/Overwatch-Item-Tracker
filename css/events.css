@@ -607,7 +607,7 @@
 /* UPRISING */
 
 #UPRISING_2017 #event-container {
-  margin-top: -38px;
+  margin-top: -22px;
 }
 
 #UPRISING_2017 #row1 #col1 {
@@ -623,7 +623,7 @@
 }
 
 #UPRISING_2017 #row2 {
-  margin-top: -43px;
+  margin-top: -30px;
 }
 
 #UPRISING_2017 #icons {
@@ -642,7 +642,7 @@
   margin-top: 14px;
 }
 
-#UPRISING_2017 #legendary-skins .card .bg {
+#UPRISING_2017 #legendary-skins .inner .card .bg {
   height: 86px;
   padding: 9px 16px;
 }
@@ -659,25 +659,12 @@
   width: 48%;
 }
 
-#UPRISING_2017 #voicelines .items, #UPRISING_2017 #sprays .items {
-  height: 387px;
+#UPRISING_2017 #sprays .items {
+  height: 400px;
 }
 
-#UPRISING_2017 #voicelines .items .item {
-  padding: 0px 2px;
-}
-
-#UPRISING_2017 #voicelines .items .item input {
-  height: 21px;
-}
-
-#UPRISING_2017 #voicelines .items .item h3 {
-  font-size: 22px;
-  position: absolute;
-  right: 0;
-  top: 12px;
-  z-index: 1;
-  pointer-events: none;
+#UPRISING_2017 #voicelines .items {
+  height: 600px;
 }
 
 #UPRISING_2017 #voicelines .items .item h4 {
@@ -687,6 +674,15 @@
   align-items: center;
 }
 
+#UPRISING_2017 #voicelines .items .item h4:before {
+  content: "["
+}
+
+#UPRISING_2017 #voicelines .items .item h4:after {
+  content: "]"
+}
+
+
 #UPRISING_2017 #victoryposes {
   width: 14%;
 }
@@ -694,44 +690,6 @@
 #UPRISING_2017 #sprays {
   width: 37.5%;
 }
-
-#UPRISING_2017 #sprays .items .item {
-  padding: 4px 2px;
-}
-
-#UPRISING_2017 #event-container #voicelines .item {
-  background-color: transparent;
-}
-
-#UPRISING_2017 #event-container #voicelines .item:hover {
-  background-color: rgba(147, 200, 234, 0.8) !important;
-}
-
-#UPRISING_2017 #event-container #voicelines .item:nth-of-type(odd) {
-  padding-top: 1px;
-}
-
-#UPRISING_2017 #event-container #voicelines .item:nth-of-type(even) {
-  padding-bottom: 1px;
-}
-
-#UPRISING_2017 #event-container #voicelines .item:nth-of-type(even) h3 {
-  display: none;
-}
-
-#UPRISING_2017 #event-container #voicelines .item:nth-of-type(4n-3), #UPRISING_2017 #event-container #voicelines .item:nth-of-type(4n-2)  {
-    background-color: rgba(147, 200, 234, 0.5);
-}
-
-#UPRISING_2017 #event-container #voicelines .item:nth-of-type(4n-1), #UPRISING_2017 #event-container #voicelines .item:nth-of-type(4n) {
-    background-color: rgba(198, 229, 247, 0.5);
-}
-
-#UPRISING_2017 #event-container #voicelines .item:nth-of-type(even) h3 {
-    display: none;
-}
-
-
 
 /* SMALL MODE CSS */
 

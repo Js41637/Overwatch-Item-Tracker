@@ -156,9 +156,8 @@ forEach(heroes, hero => {
       // if the item isnt a skin and is a legendary add a legendary tag, we do this because very few items for events
       // have had legendary items added outside of skins, this way we can mark them as special
       const legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
-      const u = getPreviewURL(type, event, item.id, hero.id)
-      const url = type == 'voicelines' ? { audio: u } : ((type == 'emotes' || type == 'intros') ? { video: u } : { img: u })
-      const newItem = Object.assign({}, { heroName: hero.name, hero: hero.id }, legend, item, url )
+      const url = getPreviewURL(type, event, item.id, hero.id)
+      const newItem = Object.assign({}, { heroName: hero.name, hero: hero.id }, legend, item, { url } )
       if (type == 'icons') {
         delete newItem.hero
         delete newItem.quality
@@ -171,20 +170,20 @@ forEach(heroes, hero => {
 
 // Add ornament ids to normal sprays
 updates[EVENTS.CHRISTMAS16].items.sprays = updates[EVENTS.CHRISTMAS16].items.sprays.map(spray => {
-  if (spray.heroID) {
-    var ornamentID = `${spray.heroID}-ornament`
+  if (spray.heroName) {
+    var ornamentID = `${spray.hero}-ornament`
     spray.ornamentID = ornamentID;
-    spray.ornamentURL = getPreviewURL('sprays', EVENTS.CHRISTMAS16, ornamentID, spray.heroID);
+    spray.ornamentURL = getPreviewURL('sprays', EVENTS.CHRISTMAS16, ornamentID, spray.hero);
     return spray
   } else return spray
 }).filter(Boolean)
 
 // Add dragon dance ids to normal sprays
 updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.map(spray => {
-  if (spray.heroID) {
-    var dragonID = `${spray.heroID}-dragon-dance`
+  if (spray.heroName) {
+    var dragonID = `${spray.hero}-dragon-dance`
     spray.dragonID = dragonID;
-    spray.dragonURL = getPreviewURL('sprays', EVENTS.ROOSTER17, dragonID, spray.heroID);
+    spray.dragonURL = getPreviewURL('sprays', EVENTS.ROOSTER17, dragonID, spray.hero);
     return spray
   } else return spray
 }).filter(Boolean)
@@ -203,7 +202,7 @@ forEach(allClassEventItems, (types, type) => {
         hero: 'all',
         name: allClassDataKeys[type][itemID].replace(/ \d{4}$/, ''),
         id: itemID,
-        img: getPreviewURL(type, event, itemID, 'all')
+        url: getPreviewURL(type, event, itemID, 'all')
       }
       const isAchivement = achievementSprays.includes(itemID)
       if (isAchivement) {

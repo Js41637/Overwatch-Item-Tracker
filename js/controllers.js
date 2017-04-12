@@ -367,17 +367,18 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   var showTimeout = undefined;
   var hideTimeout = undefined;
   $scope.showPreview = function(what, type) {
-    if (!what.img && !what.video && !what.audio) return;
+    if (!what.url) return;
     if (CompatibilityService.canPlayType(type) === 'false') return
     if (showTimeout) return;
     var item = angular.copy(what);
     clearTimeout(hideTimeout);
     showTimeout = setTimeout(function () {
       item.type = type;
-      if (StorageService.getSetting('hdVideos') && item.video) {
-        item.video = item.video.replace('.webm', '-hd.webm');
+      item.media = (type == 'emotes' || type == 'intros') ? 'video' : type == 'voicelines' ? 'audio' : 'image'
+      if (StorageService.getSetting('hdVideos') && (type == 'emotes' || type == 'intros')) {
+        item.url = item.url.replace('.webm', '-hd.webm');
       }
-      if (item.audio) {
+      if (type == 'voicelines') {
         $scope.audio = item;
       } else {
         $scope.preview = item;
