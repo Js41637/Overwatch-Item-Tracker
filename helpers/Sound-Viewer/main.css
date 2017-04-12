@@ -1,0 +1,126 @@
+body {
+  padding: 10px 20px;
+  background: rgb(235, 235, 235);
+  font-family: sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+#mainBody {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between
+}
+
+.middlething {
+  margin: 3px 0;
+  padding: 3px 0;
+  border-top: 1px solid rgb(80, 80, 80);
+  border-bottom: 1px solid rgb(80, 80, 80);
+  text-align: center;
+}
+
+#heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#heroes .btn {
+  margin: 1px 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#player {
+  margin-right: 20px;
+  width: 30%;
+}
+
+#player .controls .selectedSound {
+  font-size: 14px;
+}
+
+#player .controls {
+  margin-top: 5px;
+}
+
+#player audio {
+  width: 100%;
+}
+
+#player .vl-list {
+  margin-top: 15px;
+}
+
+#player .vl-list .inner .btn-cont {
+  display: flex;
+  margin: 2px 0;
+}
+
+#player .vl-list .inner .vl.btn {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+
+#player .vl-list .inner .clear.btn {
+  margin-left: 3px;
+}
+
+#soundList {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: auto;
+  height: calc(100% - 169px);
+  width: 68%;
+  text-align: center;
+}
+
+#soundList div {
+  margin: 3px 2px;
+  width: 170px;
+  white-space: pre-line;
+}
+
+#soundList div span {
+  font-size: 13px;
+}
+
+.bottomoptions {
+  margin-top: 5px;
+}
+
+.importbtn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.importbtn input {
+  position: absolute;
+  opacity: 0;
+  width: 101px;
+  height: 34px;
+  top: 0;
+  cursor: pointer;
+  padding-left: 101px;
+  overflow: hidden;
+}
+
+.btn.selected, .btn.unselected {
+  color: rgb(51, 51, 51);
+  background-color: rgb(220, 220, 220);
+  border-color: rgb(173, 173, 173);
+}
+
+.btn-primary.hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(40, 96, 144);
+  border-color: rgb(32, 77, 116);
+}

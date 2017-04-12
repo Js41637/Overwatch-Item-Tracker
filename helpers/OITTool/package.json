@@ -1,0 +1,12 @@
+{
+  "name": "oit-tool",
+  "version": "1.0.0",
+  "description": "Does stuff",
+  "author": "Js41637",
+  "license": "Beerware",
+  "preferGlobal": true,
+  "bin": {
+    "oittool": "index.js"
+  },
+  "dependencies": {}
+}
