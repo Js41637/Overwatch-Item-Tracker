@@ -885,13 +885,142 @@ body {
 #UPRISING_2017 .event-active,
 #UPRISING_2017 .event-ended {
   position: absolute;
-  left: 95px;
+  left: 210px;
   top: 85px;
 }
 
 #UPRISING_2017 .event-active {
   top: 75px;
 }
+
+#UPRISING_2017 .event-active h2 {
+  font-size: 4rem;
+  text-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+#UPRISING_2017 .event-active h3 {
+  color: rgb(255, 221, 70);
+  font-size: 1.2rem;
+}
+
+#UPRISING_2017 .event-ended h2 {
+  font-size: 3rem;
+}
+
+#UPRISING_2017 .event-ended h3 {
+  color: rgb(255, 221, 70);
+  font-size: 1rem;
+}
+
+
+
+
+
+
+#UPRISING_2017 #row1 #col1 {
+  width: 71%;
+}
+
+#UPRISING_2017 #row1 #col2 {
+  width: 29%;
+}
+
+#UPRISING_2017 #row1 #col2 .right {
+  width: 55%;
+  height: 469px;
+}
+
+#UPRISING_2017 #icons {
+  width: 43%;
+}
+
+#UPRISING_2017 #icons .items {
+  height: 450px;
+}
+
+#UPRISING_2017 #icons .items .item {
+  padding: 4px 2px;
+}
+
+#UPRISING_2017 #emotes, #UPRISING_2017 #highlight-intros {
+  margin-top: 14px;
+}
+
+#UPRISING_2017 #emotes, #UPRISING_2017 #highlight-intros, #UPRISING_2017 #epic-skins {
+  height: 33%;
+}
+
+#UPRISING_2017 #legendary-skins .inner .card .bg {
+  height: 86px;
+  padding: 9px 16px;
+}
+
+#UPRISING_2017 #legendary-skins [type="checkbox"]:not(:checked)+label:before, #legendary-skins [type="checkbox"]:checked+label:before {
+  top: -306px;
+}
+
+#UPRISING_2017 #legendary-skins [type="checkbox"]:not(:checked)+label:after, #legendary-skins [type="checkbox"]:checked+label:after {
+  top: -304px;
+}
+
+#UPRISING_2017 #voicelines {
+  width: 72%;
+}
+
+#UPRISING_2017 #voicelines .items, #UPRISING_2017 #sprays .items {
+  height: 496px;
+}
+
+#UPRISING_2017 #voicelines .items .item, #UPRISING_2017 #sprays .items .item {
+  padding: 4px 2px;
+}
+
+#UPRISING_2017 #voicelines .items .item input {
+  height: 21px;
+}
+
+#UPRISING_2017 #sprays {
+  width: 29%;
+}
+
+#UPRISING_2017 .card .bg {
+  background: rgba(129, 69, 166, 0.8);
+}
+
+#UPRISING_2017 #event-container .section-header {
+  background-color: #7d3cba;
+}
+
+#UPRISING_2017 #event-container .section h2 {
+  color: #fff;
+}
+
+#UPRISING_2017 #event-container .section {
+  background: rgba(41, 42, 43, 0.93);
+}
+
+#UPRISING_2017 #event-container .section h3 {
+  color: #fff;
+}
+
+#UPRISING_2017 #event-container .section h4 {
+  color: rgb(134, 134, 134);
+}
+
+#UPRISING_2017 #event-container .card .card-content .card-heading {
+  color: #fff;
+}
+
+#UPRISING_2017 #event-container .card-copy {
+  color: rgb(43, 43, 44);
+}
+
+
+
+
+
+
+
 
 /* SMALL MODE CSS */
 @media screen and (max-width: 1500px) {
@@ -1040,4 +1169,35 @@ body {
   top: -5px;
   background-position: center;
   background-image: url(resources/icons/achievement.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* shrug */
+#UPRISING_2017 #legendary-skins .inner .card:nth-child(1):after,
+#UPRISING_2017 #legendary-skins .inner .card:nth-child(2):after {
+  content: "";
+  background: url(resources/shrug.png);
+  position: fixed;
+  bottom: -500px;
+  left: 50%;
+  width: 500px;
+  height: 406px;
+  background-size: 500px;
+  z-index: 1000;
+  margin-left: -250px;
+}
+
+#UPRISING_2017 #legendary-skins .inner .card:nth-child(1):hover:after,
+#UPRISING_2017 #legendary-skins .inner .card:nth-child(2):hover:after {
+  bottom: 0;
+  transition: bottom 0.4s ease-in-out;
 }
