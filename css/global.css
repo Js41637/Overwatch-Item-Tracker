@@ -530,6 +530,7 @@ strong {
   transition: opacity 0.155s ease-in-out;
   pointer-events: none;
   text-align: center;
+  will-change: auto;
 }
 
 #image-preview .card.icons, #image-preview .card.spray {
@@ -1007,6 +1008,7 @@ strong {
   left: 0;
   right: 0;
   z-index: 1000;
+  will-change: auto;
 }
 
 @media screen and (max-width: 1300px) {
