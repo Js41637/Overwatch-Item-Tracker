@@ -71,12 +71,12 @@
     </div>
     <div class="items">
       <div class="item" ng-repeat="spray in ::data.items.sprays track by $index" ng-if="::!spray.id.includes('ornament')" achievement="{{::spray.achievement}}"  ng-mouseenter="showPreview(spray, 'spray')" ng-mouseleave="hidePreview()">
-        <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked[spray.heroID].sprays[spray.id]" ng-change="onSelect()">
-        <input ng-if="::spray.hero" type="checkbox" class="orn" ng-if="::spray.hero" id="{{'sprayorn' + $index}}" ng-model="checked[spray.heroID].sprays[spray.ornamentID]" ng-change="onSelect()">
-        <label ng-if="::spray.hero" for="{{'sprayorn' + $index}}" class="ornl"></label>
+        <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked[spray.hero].sprays[spray.id]" ng-change="onSelect()">
+        <input ng-if="::spray.heroName" type="checkbox" class="orn" ng-if="::spray.heroName" id="{{'sprayorn' + $index}}" ng-model="checked[spray.hero].sprays[spray.ornamentID]" ng-change="onSelect()">
+        <label ng-if="::spray.heroName" for="{{'sprayorn' + $index}}" class="ornl"></label>
         <label for="{{'spray' + $index}}">
-          <h3>{{::spray.hero || spray.name}}</h3>
-          <h4 ng-show="spray.hero">{{::spray.name}}</h4>
+          <h3>{{::spray.heroName || spray.name}}</h3>
+          <h4 ng-show="spray.heroName">{{::spray.name}}</h4>
         </label>
       </div>
     </div>

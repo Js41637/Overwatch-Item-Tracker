@@ -158,7 +158,7 @@ forEach(heroes, hero => {
       const legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
       const u = getPreviewURL(type, event, item.id, hero.id)
       const url = type == 'voicelines' ? { audio: u } : ((type == 'emotes' || type == 'intros') ? { video: u } : { img: u })
-      const newItem = Object.assign({}, { hero: hero.name, heroID: hero.id }, legend, item, url )
+      const newItem = Object.assign({}, { heroName: hero.name, hero: hero.id }, legend, item, url )
       if (type == 'icons') {
         delete newItem.hero
         delete newItem.quality
@@ -200,7 +200,7 @@ forEach(allClassEventItems, (types, type) => {
         return
       }
       var out = {
-        heroID: 'all',
+        hero: 'all',
         name: allClassDataKeys[type][itemID].replace(/ \d{4}$/, ''),
         id: itemID,
         img: getPreviewURL(type, event, itemID, 'all')

@@ -342,7 +342,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
         if (!item.quality) return; // if it has no quality it has no cost
         var price = Data.prices[item.quality] * 3;
         cost.total += price;
-        var isChecked = Data.isItemChecked(item.heroID, types[type] || type, item.id)
+        var isChecked = Data.isItemChecked(item.hero, types[type] || type, item.id)
         if (isChecked) {
           cost.selected += price;
         }

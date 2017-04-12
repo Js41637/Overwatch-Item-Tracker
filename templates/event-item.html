@@ -1,7 +1,7 @@
 <div class="item" ng-mouseenter="showPreview(item, type)" ng-mouseleave="hidePreview()">
-  <input type="checkbox" id="{{::type + item.id + $index}}" ng-model="checked[item.heroID][type][item.id]" ng-change="onSelect()">
+  <input type="checkbox" id="{{::type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect()">
   <label for="{{type + item.id + $index}}">
-    <h3>{{::noHero ? item.name : item.hero}}</h3>
+    <h3>{{::noHero ? item.name : item.heroName}}</h3>
     <h4 ng-hide="noHero || noName">{{::item.name}}</h4>
   </label>
 </div>
