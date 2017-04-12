@@ -265,6 +265,7 @@ OWI.directive('lazyBackground', ["ImageLoader", "$compile", function(ImageLoader
         }, function() {
           console.warn("Error loading image");
           $element.css('background-image', '');
+          $element.addClass('img-load-error', '');
           loader.remove();
         });
       });
