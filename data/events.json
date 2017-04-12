@@ -9,7 +9,7 @@
     "items": {
       "icons": [
         {
-          "heroName": "Hanzo",
+          "hero": "hanzo",
           "name": "Archery",
           "id": "hanzo-archery",
           "url": "./resources/heroes/hanzo/icons/hanzo-archery.png"
@@ -21,25 +21,25 @@
           "url": "./resources/heroes/all/icons/australia.png"
         },
         {
-          "heroName": "Reaper",
+          "hero": "reaper",
           "name": "BMX",
           "id": "reaper-bmx",
           "url": "./resources/heroes/reaper/icons/reaper-bmx.png"
         },
         {
-          "heroName": "Mercy",
+          "hero": "mercy",
           "name": "Badminton",
           "id": "mercy-badminton",
           "url": "./resources/heroes/mercy/icons/mercy-badminton.png"
         },
         {
-          "heroName": "Pharah",
+          "hero": "pharah",
           "name": "Basketball",
           "id": "pharah-basketball",
           "url": "./resources/heroes/pharah/icons/pharah-basketball.png"
         },
         {
-          "heroName": "Bastion",
+          "hero": "bastion",
           "name": "Boxing",
           "id": "bastion-boxing",
           "url": "./resources/heroes/bastion/icons/bastion-boxing.png"
@@ -57,13 +57,13 @@
           "url": "./resources/heroes/all/icons/china.png"
         },
         {
-          "heroName": "D.Va",
+          "hero": "dva",
           "name": "Cycling",
           "id": "dva-cycling",
           "url": "./resources/heroes/dva/icons/dva-cycling.png"
         },
         {
-          "heroName": "Roadhog",
+          "hero": "roadhog",
           "name": "Diving",
           "id": "roadhog-diving",
           "url": "./resources/heroes/roadhog/icons/roadhog-diving.png"
@@ -75,19 +75,19 @@
           "url": "./resources/heroes/all/icons/egypt.png"
         },
         {
-          "heroName": "McCree",
+          "hero": "mccree",
           "name": "Equestrian",
           "id": "mccree-equestrian",
           "url": "./resources/heroes/mccree/icons/mccree-equestrian.png"
         },
         {
-          "heroName": "Genji",
+          "hero": "genji",
           "name": "Fencing",
           "id": "genji-fencing",
           "url": "./resources/heroes/genji/icons/genji-fencing.png"
         },
         {
-          "heroName": "Lúcio",
+          "hero": "lucio",
           "name": "Football",
           "id": "lucio-football",
           "url": "./resources/heroes/lucio/icons/lucio-football.png"
@@ -105,7 +105,7 @@
           "url": "./resources/heroes/all/icons/germany.png"
         },
         {
-          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
           "name": "Golf",
           "id": "soldier-76-golf",
           "url": "./resources/heroes/soldier-76/icons/soldier-76-golf.png"
@@ -117,7 +117,7 @@
           "url": "./resources/heroes/all/icons/greece.png"
         },
         {
-          "heroName": "Widowmaker",
+          "hero": "widowmaker",
           "name": "Gymnastics",
           "id": "widowmaker-gymnastics",
           "url": "./resources/heroes/widowmaker/icons/widowmaker-gymnastics.png"
@@ -147,7 +147,7 @@
           "url": "./resources/heroes/all/icons/numbani.png"
         },
         {
-          "heroName": "Symmetra",
+          "hero": "symmetra",
           "name": "Rhythmic Gymnastics",
           "id": "symmetra-rhythmic-gymnastics",
           "url": "./resources/heroes/symmetra/icons/symmetra-rhythmic-gymnastics.png"
@@ -159,7 +159,7 @@
           "url": "./resources/heroes/all/icons/russia.png"
         },
         {
-          "heroName": "Ana",
+          "hero": "ana",
           "name": "Shooting",
           "id": "ana-shooting",
           "url": "./resources/heroes/ana/icons/ana-shooting.png"
@@ -189,25 +189,25 @@
           "url": "./resources/heroes/all/icons/switzerland.png"
         },
         {
-          "heroName": "Mei",
+          "hero": "mei",
           "name": "Table Tennis",
           "id": "mei-table-tennis",
           "url": "./resources/heroes/mei/icons/mei-table-tennis.png"
         },
         {
-          "heroName": "Zenyatta",
+          "hero": "zenyatta",
           "name": "Taekwondo",
           "id": "zenyatta-taekwondo",
           "url": "./resources/heroes/zenyatta/icons/zenyatta-taekwondo.png"
         },
         {
-          "heroName": "Junkrat",
+          "hero": "junkrat",
           "name": "Tennis",
           "id": "junkrat-tennis",
           "url": "./resources/heroes/junkrat/icons/junkrat-tennis.png"
         },
         {
-          "heroName": "Tracer",
+          "hero": "tracer",
           "name": "Track",
           "id": "tracer-track",
           "url": "./resources/heroes/tracer/icons/tracer-track.png"
@@ -225,25 +225,25 @@
           "url": "./resources/heroes/all/icons/united-states-of-america.png"
         },
         {
-          "heroName": "Winston",
+          "hero": "winston",
           "name": "Volleyball",
           "id": "winston-volleyball",
           "url": "./resources/heroes/winston/icons/winston-volleyball.png"
         },
         {
-          "heroName": "Torbjörn",
+          "hero": "torbjorn",
           "name": "Water Polo",
           "id": "torbjorn-water-polo",
           "url": "./resources/heroes/torbjorn/icons/torbjorn-water-polo.png"
         },
         {
-          "heroName": "Zarya",
+          "hero": "zarya",
           "name": "Weightlifting",
           "id": "zarya-weightlifting",
           "url": "./resources/heroes/zarya/icons/zarya-weightlifting.png"
         },
         {
-          "heroName": "Reinhardt",
+          "hero": "reinhardt",
           "name": "Wrestling",
           "id": "reinhardt-wrestling",
           "url": "./resources/heroes/reinhardt/icons/reinhardt-wrestling.png"
@@ -1688,25 +1688,25 @@
           "url": "./resources/heroes/all/icons/superstition.png"
         },
         {
-          "heroName": "Junkrat",
+          "hero": "junkrat",
           "name": "The Doctor",
           "id": "junkrat-the-doctor",
           "url": "./resources/heroes/junkrat/icons/junkrat-the-doctor.png"
         },
         {
-          "heroName": "Roadhog",
+          "hero": "roadhog",
           "name": "The Monster",
           "id": "roadhog-the-monster",
           "url": "./resources/heroes/roadhog/icons/roadhog-the-monster.png"
         },
         {
-          "heroName": "Reaper",
+          "hero": "reaper",
           "name": "The Reaper",
           "id": "reaper-the-reaper",
           "url": "./resources/heroes/reaper/icons/reaper-the-reaper.png"
         },
         {
-          "heroName": "Mercy",
+          "hero": "mercy",
           "name": "The Witch",
           "id": "mercy-the-witch",
           "url": "./resources/heroes/mercy/icons/mercy-the-witch.png"
@@ -2700,7 +2700,7 @@
           "url": "./resources/heroes/all/icons/hot-cocoa.png"
         },
         {
-          "heroName": "Tracer",
+          "hero": "tracer",
           "name": "Jingle",
           "id": "tracer-jingle",
           "url": "./resources/heroes/tracer/icons/tracer-jingle.png"
@@ -2712,7 +2712,7 @@
           "url": "./resources/heroes/all/icons/mochi.png"
         },
         {
-          "heroName": "Zenyatta",
+          "hero": "zenyatta",
           "name": "Nutcracker",
           "id": "zenyatta-nutcracker",
           "url": "./resources/heroes/zenyatta/icons/zenyatta-nutcracker.png"
@@ -2748,7 +2748,7 @@
           "url": "./resources/heroes/all/icons/present.png"
         },
         {
-          "heroName": "Torbjörn",
+          "hero": "torbjorn",
           "name": "Santaclad",
           "id": "torbjorn-santaclad",
           "url": "./resources/heroes/torbjorn/icons/torbjorn-santaclad.png"
@@ -2790,7 +2790,7 @@
           "url": "./resources/heroes/all/icons/wreath.png"
         },
         {
-          "heroName": "Winston",
+          "hero": "winston",
           "name": "Yeti",
           "id": "winston-yeti",
           "url": "./resources/heroes/winston/icons/winston-yeti.png"
@@ -3696,7 +3696,7 @@
           "url": "./resources/heroes/all/icons/bokimari.png"
         },
         {
-          "heroName": "Mei",
+          "hero": "mei",
           "name": "Chang'e",
           "id": "mei-change",
           "url": "./resources/heroes/mei/icons/mei-change.png"
@@ -3732,7 +3732,7 @@
           "url": "./resources/heroes/all/icons/gold.png"
         },
         {
-          "heroName": "D.Va",
+          "hero": "dva",
           "name": "Hanbok",
           "id": "dva-hanbok",
           "url": "./resources/heroes/dva/icons/dva-hanbok.png"
@@ -3768,7 +3768,7 @@
           "url": "./resources/heroes/all/icons/lunamari.png"
         },
         {
-          "heroName": "Winston",
+          "hero": "winston",
           "name": "Monkey",
           "id": "winston-monkey",
           "url": "./resources/heroes/winston/icons/winston-monkey.png"
@@ -3786,7 +3786,7 @@
           "url": "./resources/heroes/all/icons/pachilantern.png"
         },
         {
-          "heroName": "Roadhog",
+          "hero": "roadhog",
           "name": "Pigsy",
           "id": "roadhog-pigsy",
           "url": "./resources/heroes/roadhog/icons/roadhog-pigsy.png"
@@ -3798,13 +3798,13 @@
           "url": "./resources/heroes/all/icons/red-envelope.png"
         },
         {
-          "heroName": "Reinhardt",
+          "hero": "reinhardt",
           "name": "Sandy",
           "id": "reinhardt-sandy",
           "url": "./resources/heroes/reinhardt/icons/reinhardt-sandy.png"
         },
         {
-          "heroName": "Zenyatta",
+          "hero": "zenyatta",
           "name": "Sanzang",
           "id": "zenyatta-sanzang",
           "url": "./resources/heroes/zenyatta/icons/zenyatta-sanzang.png"
