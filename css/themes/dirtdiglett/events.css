@@ -3,6 +3,10 @@ body {
   background-size: cover;
 }
 
+#event-container #legendary-skins {
+  height: auto;
+}
+
 #header:before {
   content: "";
   width: 0px;
@@ -918,20 +922,20 @@ body {
 
 
 #UPRISING_2017 #row1 #col1 {
-  width: 71%;
+  flex: 2;
 }
 
 #UPRISING_2017 #row1 #col2 {
-  width: 29%;
+  flex: 1;
 }
 
 #UPRISING_2017 #row1 #col2 .right {
-  width: 55%;
+  flex: 1;
   height: 469px;
 }
 
 #UPRISING_2017 #icons {
-  width: 43%;
+  flex: 1;
 }
 
 #UPRISING_2017 #icons .items {
@@ -964,11 +968,19 @@ body {
 }
 
 #UPRISING_2017 #voicelines {
-  width: 72%;
+  flex: 2;
+}
+
+#UPRISING_2017 #voicelines .items .item {
+  width: auto;
+}
+
+#UPRISING_2017 #victoryposes {
+  flex: 0.5;
 }
 
 #UPRISING_2017 #voicelines .items, #UPRISING_2017 #sprays .items {
-  height: 496px;
+  height: 456px;
 }
 
 #UPRISING_2017 #voicelines .items .item, #UPRISING_2017 #sprays .items .item {
@@ -980,7 +992,7 @@ body {
 }
 
 #UPRISING_2017 #sprays {
-  width: 29%;
+  flex: 1;
 }
 
 #UPRISING_2017 .card .bg {
@@ -1055,6 +1067,10 @@ body {
     height: 400px;
   }
 
+  #UPRISING_2017 .event-active {
+    top: 57px;
+  }
+
   .section {
     margin: 0;
   }
@@ -1089,7 +1105,8 @@ body {
   #SUMMER_GAMES_2016 #event-container #row2 .section,
   #SUMMER_GAMES_2016 #event-container #row2 .right .section,
   #SUMMER_GAMES_2016 #event-container #row2 .right .section#highlight-intros,
-  #SUMMER_GAMES_2016 #event-container #row2 .right .section#emotes {
+  #SUMMER_GAMES_2016 #event-container #row2 .right .section#emotes,
+  #UPRISING_2017 #event-container #epic-skins {
     height: auto;
   }
 
@@ -1124,7 +1141,15 @@ body {
   #SUMMER_GAMES_2016 #event-container #voicelines,
   #SUMMER_GAMES_2016 #event-container #icons,
   #SUMMER_GAMES_2016 #event-container #victoryposes,
-  #SUMMER_GAMES_2016 #event-container #sprays {
+  #SUMMER_GAMES_2016 #event-container #sprays,
+  #UPRISING_2017 #event-container #row1 #col1,
+  #UPRISING_2017 #event-container #row1 #col2,
+  #UPRISING_2017 #event-container #row2 .left,
+  #UPRISING_2017 #event-container #row2 .right,
+  #UPRISING_2017 #event-container #voicelines,
+  #UPRISING_2017 #event-container #icons,
+  #UPRISING_2017 #event-container #victoryposes,
+  #UPRISING_2017 #event-container #sprays {
     flex: initial;
   }
 
@@ -1147,7 +1172,14 @@ body {
   #SUMMER_GAMES_2016 #event-container #icons,
   #SUMMER_GAMES_2016 #event-container #victoryposes,
   #SUMMER_GAMES_2016 #event-container #sprays,
-  #SUMMER_GAMES_2016 #event-container #highlight-intros {
+  #SUMMER_GAMES_2016 #event-container #highlight-intros,
+  #UPRISING_2017 #event-container #voicelines,
+  #UPRISING_2017 #event-container #icons,
+  #UPRISING_2017 #event-container #victoryposes,
+  #UPRISING_2017 #event-container #sprays,
+  #UPRISING_2017 #event-container #highlight-intros,
+  #UPRISING_2017 #event-container #epic-skins,
+  #UPRISING_2017 #event-container #voicelines {
     margin-top: 8px;
   }
 
