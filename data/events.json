@@ -251,13 +251,6 @@
       ],
       "sprays": [
         {
-          "hero": "all",
-          "name": "Summer Games",
-          "id": "summer-games-2016",
-          "img": "./resources/heroes/all/sprays/summer-games-2016.png",
-          "quality": "common"
-        },
-        {
           "heroName": "Ana",
           "hero": "ana",
           "name": "Shooting",
@@ -432,6 +425,13 @@
           "id": "zenyatta-taekwondo",
           "quality": "common",
           "img": "./resources/heroes/zenyatta/sprays/zenyatta-taekwondo.png"
+        },
+        {
+          "hero": "all",
+          "name": "Summer Games",
+          "id": "summer-games-2016",
+          "img": "./resources/heroes/all/sprays/summer-games-2016.png",
+          "quality": "common"
         }
       ],
       "voicelines": [
@@ -942,104 +942,6 @@
       ],
       "sprays": [
         {
-          "hero": "all",
-          "name": "...Never Die",
-          "id": "never-die",
-          "img": "./resources/heroes/all/sprays/never-die.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Bats",
-          "id": "bats",
-          "img": "./resources/heroes/all/sprays/bats.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Boo!",
-          "id": "boo",
-          "img": "./resources/heroes/all/sprays/boo.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Boop!",
-          "id": "boop",
-          "img": "./resources/heroes/all/sprays/boop.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Candyball",
-          "id": "candyball",
-          "img": "./resources/heroes/all/sprays/candyball.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Fangs",
-          "id": "fangs",
-          "img": "./resources/heroes/all/sprays/fangs.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Gummy Hog",
-          "id": "gummy-hog",
-          "img": "./resources/heroes/all/sprays/gummy-hog.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Halloween Terror",
-          "id": "halloween-terror",
-          "img": "./resources/heroes/all/sprays/halloween-terror.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Pumpkins",
-          "id": "pumpkins",
-          "img": "./resources/heroes/all/sprays/pumpkins.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Witch's Brew",
-          "id": "witchs-brew",
-          "img": "./resources/heroes/all/sprays/witchs-brew.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Halloween Special",
-          "id": "halloween-special",
-          "img": "./resources/heroes/all/sprays/halloween-special.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "Junkenstein's Revenge",
-          "id": "junkensteins-revenge",
-          "img": "./resources/heroes/all/sprays/junkensteins-revenge.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "Rise of the Zomnics",
-          "id": "rise-of-the-zomnics",
-          "img": "./resources/heroes/all/sprays/rise-of-the-zomnics.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "The Reapening",
-          "id": "the-reapening",
-          "img": "./resources/heroes/all/sprays/the-reapening.png",
-          "achievement": true
-        },
-        {
           "heroName": "Ana",
           "hero": "ana",
           "name": "Trick or Treat",
@@ -1214,6 +1116,104 @@
           "id": "zenyatta-trick-or-treat",
           "quality": "common",
           "img": "./resources/heroes/zenyatta/sprays/zenyatta-trick-or-treat.png"
+        },
+        {
+          "hero": "all",
+          "name": "...Never Die",
+          "id": "never-die",
+          "img": "./resources/heroes/all/sprays/never-die.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Bats",
+          "id": "bats",
+          "img": "./resources/heroes/all/sprays/bats.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Boo!",
+          "id": "boo",
+          "img": "./resources/heroes/all/sprays/boo.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Boop!",
+          "id": "boop",
+          "img": "./resources/heroes/all/sprays/boop.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Candyball",
+          "id": "candyball",
+          "img": "./resources/heroes/all/sprays/candyball.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Fangs",
+          "id": "fangs",
+          "img": "./resources/heroes/all/sprays/fangs.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Gummy Hog",
+          "id": "gummy-hog",
+          "img": "./resources/heroes/all/sprays/gummy-hog.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Halloween Terror",
+          "id": "halloween-terror",
+          "img": "./resources/heroes/all/sprays/halloween-terror.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Pumpkins",
+          "id": "pumpkins",
+          "img": "./resources/heroes/all/sprays/pumpkins.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Witch's Brew",
+          "id": "witchs-brew",
+          "img": "./resources/heroes/all/sprays/witchs-brew.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Halloween Special",
+          "id": "halloween-special",
+          "img": "./resources/heroes/all/sprays/halloween-special.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Junkenstein's Revenge",
+          "id": "junkensteins-revenge",
+          "img": "./resources/heroes/all/sprays/junkensteins-revenge.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Rise of the Zomnics",
+          "id": "rise-of-the-zomnics",
+          "img": "./resources/heroes/all/sprays/rise-of-the-zomnics.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "The Reapening",
+          "id": "the-reapening",
+          "img": "./resources/heroes/all/sprays/the-reapening.png",
+          "achievement": true
         }
       ],
       "voicelines": [
@@ -1754,41 +1754,6 @@
     "items": {
       "sprays": [
         {
-          "hero": "all",
-          "name": "Winter Wonderland",
-          "id": "winter-wonderland",
-          "img": "./resources/heroes/all/sprays/winter-wonderland.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Snowcree",
-          "id": "snowcree",
-          "img": "./resources/heroes/all/sprays/snowcree.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "Snowhog",
-          "id": "snowhog",
-          "img": "./resources/heroes/all/sprays/snowhog.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "Snowmei",
-          "id": "snowmei",
-          "img": "./resources/heroes/all/sprays/snowmei.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "Snowreaper",
-          "id": "snowreaper",
-          "img": "./resources/heroes/all/sprays/snowreaper.png",
-          "achievement": true
-        },
-        {
           "heroName": "Ana",
           "hero": "ana",
           "name": "Ornament",
@@ -2155,6 +2120,41 @@
           "id": "zenyatta-snowball-fight",
           "quality": "common",
           "img": "./resources/heroes/zenyatta/sprays/zenyatta-snowball-fight.png"
+        },
+        {
+          "hero": "all",
+          "name": "Winter Wonderland",
+          "id": "winter-wonderland",
+          "img": "./resources/heroes/all/sprays/winter-wonderland.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Snowcree",
+          "id": "snowcree",
+          "img": "./resources/heroes/all/sprays/snowcree.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Snowhog",
+          "id": "snowhog",
+          "img": "./resources/heroes/all/sprays/snowhog.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Snowmei",
+          "id": "snowmei",
+          "img": "./resources/heroes/all/sprays/snowmei.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Snowreaper",
+          "id": "snowreaper",
+          "img": "./resources/heroes/all/sprays/snowreaper.png",
+          "achievement": true
         }
       ],
       "voicelines": [
@@ -2766,48 +2766,6 @@
       ],
       "sprays": [
         {
-          "hero": "all",
-          "name": "Dragon's Head",
-          "id": "dragons-head",
-          "img": "./resources/heroes/all/sprays/dragons-head.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Lucky Pouch",
-          "id": "lucky-pouch",
-          "img": "./resources/heroes/all/sprays/lucky-pouch.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Red Envelope",
-          "id": "red-envelope",
-          "img": "./resources/heroes/all/sprays/red-envelope.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Year of the Rooster",
-          "id": "year-of-the-rooster",
-          "img": "./resources/heroes/all/sprays/year-of-the-rooster.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Auspicious Lion",
-          "id": "auspicious-lion",
-          "img": "./resources/heroes/all/sprays/auspicious-lion.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "Awakened Lion",
-          "id": "awakened-lion",
-          "img": "./resources/heroes/all/sprays/awakened-lion.png",
-          "achievement": true
-        },
-        {
           "heroName": "Ana",
           "hero": "ana",
           "name": "Dance",
@@ -3174,6 +3132,48 @@
           "id": "zenyatta-yut-nori",
           "quality": "common",
           "img": "./resources/heroes/zenyatta/sprays/zenyatta-yut-nori.png"
+        },
+        {
+          "hero": "all",
+          "name": "Dragon's Head",
+          "id": "dragons-head",
+          "img": "./resources/heroes/all/sprays/dragons-head.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Lucky Pouch",
+          "id": "lucky-pouch",
+          "img": "./resources/heroes/all/sprays/lucky-pouch.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Red Envelope",
+          "id": "red-envelope",
+          "img": "./resources/heroes/all/sprays/red-envelope.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Year of the Rooster",
+          "id": "year-of-the-rooster",
+          "img": "./resources/heroes/all/sprays/year-of-the-rooster.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Auspicious Lion",
+          "id": "auspicious-lion",
+          "img": "./resources/heroes/all/sprays/auspicious-lion.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Awakened Lion",
+          "id": "awakened-lion",
+          "img": "./resources/heroes/all/sprays/awakened-lion.png",
+          "achievement": true
         }
       ],
       "voicelines": [
@@ -3682,55 +3682,6 @@
     "items": {
       "sprays": [
         {
-          "hero": "all",
-          "name": "Null Sector",
-          "id": "null-sector",
-          "img": "./resources/heroes/all/sprays/null-sector.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "B73-NS",
-          "id": "b73ns",
-          "img": "./resources/heroes/all/sprays/b73ns.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "Eradicator",
-          "id": "eradicator",
-          "img": "./resources/heroes/all/sprays/eradicator.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "Nullmari",
-          "id": "nullmari",
-          "img": "./resources/heroes/all/sprays/nullmari.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "Nulltrooper",
-          "id": "nulltrooper",
-          "img": "./resources/heroes/all/sprays/nulltrooper.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "OR14-NS",
-          "id": "or14ns",
-          "img": "./resources/heroes/all/sprays/or14ns.png",
-          "achievement": true
-        },
-        {
-          "hero": "all",
-          "name": "Slicer",
-          "id": "slicer",
-          "img": "./resources/heroes/all/sprays/slicer.png",
-          "achievement": true
-        },
-        {
           "heroName": "Ana",
           "hero": "ana",
           "name": "Newborn",
@@ -3921,6 +3872,55 @@
           "id": "zenyatta-shell",
           "quality": "common",
           "img": "./resources/heroes/zenyatta/sprays/zenyatta-shell.png"
+        },
+        {
+          "hero": "all",
+          "name": "Null Sector",
+          "id": "null-sector",
+          "img": "./resources/heroes/all/sprays/null-sector.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "B73-NS",
+          "id": "b73ns",
+          "img": "./resources/heroes/all/sprays/b73ns.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Eradicator",
+          "id": "eradicator",
+          "img": "./resources/heroes/all/sprays/eradicator.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Nullmari",
+          "id": "nullmari",
+          "img": "./resources/heroes/all/sprays/nullmari.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Nulltrooper",
+          "id": "nulltrooper",
+          "img": "./resources/heroes/all/sprays/nulltrooper.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "OR14-NS",
+          "id": "or14ns",
+          "img": "./resources/heroes/all/sprays/or14ns.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Slicer",
+          "id": "slicer",
+          "img": "./resources/heroes/all/sprays/slicer.png",
+          "achievement": true
         }
       ],
       "voicelines": [

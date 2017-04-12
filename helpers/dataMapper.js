@@ -248,7 +248,7 @@ forEach(updates, update => forEach(update.items, (items, type) => {
       update.items[type] = sortBy(items, ['name'])
       break;
     case 'sprays':
-      update.items[type] = sortBy(items, ['hero', (c => c.achievement ? 1 : 0), 'name'])
+      update.items[type] = sortBy(items, ['heroName', (c => c.achievement ? 1 : 0), 'name'])
       break;
     default:
       update.items[type] = sortBy(items, ['hero', 'name'])
