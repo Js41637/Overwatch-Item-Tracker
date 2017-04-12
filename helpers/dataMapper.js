@@ -251,7 +251,7 @@ forEach(updates, update => forEach(update.items, (items, type) => {
       update.items[type] = sortBy(items, ['heroName', (c => c.achievement ? 1 : 0), 'name'])
       break;
     default:
-      update.items[type] = sortBy(items, ['hero', 'name'])
+      update.items[type] = sortBy(items, ['heroName', 'name'])
   }
 }))
 
