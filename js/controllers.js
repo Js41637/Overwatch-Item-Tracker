@@ -20,8 +20,13 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
     if (!vm.events || !vm.heroes) {
       console.warn("Missing event or hero data!! Trying again", vm)
       setTimeout(function() {
+        if (!vm.events || !vm.heroes) {
+          console.error("Error loading data, reload page pls", event, toState, toParams)
+          alert("Error loading data, reload the site to try again, if issue persists please raise an issue on the Github repo")
+          return
+        }
         onStateChange(event, toState, toParams);
-      }, 150);
+      }, 400);
       return;
     }
     onStateChange(event, toState, toParams);
