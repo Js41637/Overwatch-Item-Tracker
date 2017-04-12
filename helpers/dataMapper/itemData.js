@@ -13,6 +13,17 @@ const data = {
   hiddenItems: {
     sprays: ['snowcer', 'snowscientist']
   },
+  specialSprays: [
+    'barbarian',
+    'crusader',
+    'demon-hunter',
+    'monk',
+    'witch-doctor',
+    'wizard'
+    ],
+  specialIcons: [
+    'dark-wanderer'
+  ],
   achievementSprays: [
     // HERO
     'cute',

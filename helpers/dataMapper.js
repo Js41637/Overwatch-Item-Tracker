@@ -9,7 +9,7 @@ const { forEach, sortBy, find, reduce, merge } = require('lodash')
 const mode = process.argv.slice(2)[0]
 
 const HERODATA = require('./dataMapper/HERODATA.js')
-const { badNames, hiddenItems, defaultItems, achievementSprays, allClassEventItems } = require('./dataMapper/itemData.js')
+const { badNames, hiddenItems, defaultItems, achievementSprays, specialIcons, specialSprays, allClassEventItems } = require('./dataMapper/itemData.js')
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT } = require('./dataMapper/EVENTDATA.js')
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder } = require('./dataMapper/utils.js')
 var allClassData, rawData, missingAllClassData = {}, allClassDataKeys = {}
@@ -58,10 +58,10 @@ allClassData = reduce(allClassData, (result, items, type) => {
       return r
     }, {})
     
-    const isCompSpray = type == 'sprays' && item.id.match(/^season-.-competitor$/)
+    const isCompItem =  item.id.match(/^season-.-(competitor|hero)$/)
     const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined
-    const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompSpray) ? { achievement: true } : undefined
-    const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompSpray) ? { quality: 'common' } : undefined
+    const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem) ? { achievement: true } : ((type == 'icons' && specialIcons.includes(item.id)) || (type == 'sprays' && specialSprays.includes(item.id))) ? { achievement: 'blizzard' } : undefined
+    const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompItem) ? { quality: 'common' } : undefined
     newItems.push(Object.assign(item, { event }, isAchievement, isStandard, quality))
     return newItems
   }, [])
