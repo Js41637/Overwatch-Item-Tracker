@@ -147,6 +147,10 @@ OWI.run(function() {
               hero = hero == 'soldier' ? 'soldier-76' : hero;
               hero = heroes.includes(hero) ? hero : 'all';
               var newType = (type == 'skinsEpic' || type == 'skinsLegendary') ? 'skins' : type;
+              if (!data[hero][newType]) {
+                console.error("Error!", newType, "doesn't exist in hero", hero, "for item", item)
+                break
+              }
               data[hero][newType][item] = data[event][type][item];
             }
           }
