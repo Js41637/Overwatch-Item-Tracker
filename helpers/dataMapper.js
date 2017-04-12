@@ -58,7 +58,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
       return r
     }, {})
     
-    const isCompItem =  item.id.match(/^season-.-(competitor|hero)$/)
+    const isCompItem =  item.id.match(/^season-.-(competitor|hero)$/) || item.id == 'top-500'
     const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined
     const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem) ? { achievement: true } : ((type == 'icons' && specialIcons.includes(item.id)) || (type == 'sprays' && specialSprays.includes(item.id))) ? { achievement: 'blizzard' } : undefined
     const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompItem) ? { quality: 'common' } : undefined
