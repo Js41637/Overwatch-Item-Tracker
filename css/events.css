@@ -905,4 +905,34 @@
   #YEAR_OF_THE_ROOSTER_2017 #event-container #sprays .items {
     height: 374px;
   }
+  #UPRISING_2017 #event-container {
+    margin-top: -10px;
+  }
+  #UPRISING_2017 #row1 {
+    flex-direction: column;
+  }
+  #UPRISING_2017 #row1 #col1, #UPRISING_2017 #row1 #col2 {
+    width: 100%;
+  }
+  #UPRISING_2017 #row2 {
+    margin-top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #UPRISING_2017 #voicelines {
+    order: 3;
+    white-space: 100%;
+  }
+  #UPRISING_2017 #victoryposes {
+    width: 24%;
+  }
+  #UPRISING_2017 #sprays {
+    width: 75.5%;
+  }
+  #UPRISING_2017 #sprays .items {
+    height: 300px;
+  }
+  #UPRISING_2017 #sprays .items .item {
+    width: 24.5%;
+  }
 }
