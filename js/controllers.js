@@ -340,8 +340,8 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
       prev: $scope.cost.remaining
     }
 
-    for (var type in $scope.data.items) {
-      if (type == 'icons') break; // icons have no cost
+    for (var type in event.items) {
+      if (type == 'icons') continue; // icons have no cost
       var items = $scope.data.items[type];
       items.forEach(function(item) {
         if (!item.quality) return; // if it has no quality it has no cost
