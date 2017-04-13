@@ -507,7 +507,8 @@
         },
         {
           "name": "Hierarch",
-          "id": "hierarch"
+          "id": "hierarch",
+          "group": "starcraft"
         },
         {
           "name": "Holly",
@@ -601,7 +602,8 @@
         },
         {
           "name": "Lord of Terror",
-          "id": "lord-of-terror"
+          "id": "lord-of-terror",
+          "group": "diablo"
         },
         {
           "name": "Los Muertos",
@@ -1216,7 +1218,8 @@
         },
         {
           "name": "Varian",
-          "id": "varian"
+          "id": "varian",
+          "group": "world of warcraft"
         },
         {
           "name": "Vishkar",
@@ -1862,7 +1865,8 @@
         {
           "name": "You are not prepared!",
           "id": "you-are-not-prepared",
-          "standardItem": true
+          "standardItem": true,
+          "group": "world of warcraft"
         }
       ]
     }

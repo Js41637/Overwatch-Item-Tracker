@@ -21,13 +21,14 @@ const data = {
   specialItems: {
     diablo: {
       sprays: ['barbarian', 'crusader', 'demon-hunter', 'monk', 'witch-doctor', 'wizard'],
-      icons: ['dark-wanderer', 'lord-od-terror', 'barbarian', 'crusader', 'demon-hunter', 'monk', 'witch-doctor', 'wizard']
+      icons: ['dark-wanderer', 'lord-of-terror', 'barbarian', 'crusader', 'demon-hunter', 'monk', 'witch-doctor', 'wizard']
     },
     starcraft: {
-      icons: ['protoss', 'terran', 'zerg', 'dominion', 'heirarch', 'jim', 'queen-of-blades']
+      icons: ['protoss', 'terran', 'zerg', 'dominion', 'hierarch', 'jim', 'queen-of-blades']
     },
     "world of warcraft": {
-      icons: ['for-the-alliance', 'for-the-horde', 'dark-lady', 'garrosh', 'jaina', 'lich-king', 'you-are-not-prepared']
+      icons: ['for-the-alliance', 'for-the-horde', 'dark-lady', 'garrosh', 'jaina', 'lich-king', 'varian', 'you-are-not-prepared'],
+      sprays: ['you-are-not-prepared']
     },
     hearthstone: {
       icons: ['hearthstone']
