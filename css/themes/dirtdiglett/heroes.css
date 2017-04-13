@@ -77,6 +77,7 @@
 #hero-container #hero-header {
   margin-top: -110px;
   position: relative;
+  overflow: hidden;
 }
 
 #hero-container .hero-overview {
@@ -199,6 +200,7 @@
   background: rgba(0,0,0,0.4);
   text-align: center;
   position: relative;
+  margin-right: -4px;
 }
 
 #hero-container #hero-header .hero-progress span {
