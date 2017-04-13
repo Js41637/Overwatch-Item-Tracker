@@ -29,6 +29,51 @@
   background-color: rgba(30, 30, 30, 0.25);
 }
 
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES_2016"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"] {
+  padding-left: 30px;
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES_2016"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 12px;
+  margin-top: -2px;
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES_2016"]:before {
+  background-image: url(resources/icons/SUMMER_GAMES_2016.svg);
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"]:before {
+  background-image: url(resources/icons/HALLOWEEN_2016.svg);
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"]:before {
+  background-image: url(resources/icons/WINTER_WONDERLAND_2016.svg);
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"]:before {
+  background-image: url(resources/icons/YEAR_OF_THE_ROOSTER_2017.svg);
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before {
+  background-image: url(resources/icons/UPRISING_2017.svg);
+}
+
 #hero-container #hero-header {
   margin-top: -110px;
   position: relative;
