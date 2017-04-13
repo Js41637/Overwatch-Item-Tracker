@@ -100,7 +100,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   };
 }]);
 
-OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "hero", function($scope, $rootScope, Data, StorageService, CompatibilityService, hero) {
+OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "hero", function($scope, $rootScope, $uibModal, Data, StorageService, CompatibilityService, hero) {
   var vm = this;
   Object.assign(this, hero);
   this.filteredItems = hero.items;
@@ -195,7 +195,6 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   }
 
   calculateTotalsAndCosts(true);
-  console.log(vm)
 
   this.getDisplayName = function(name) {
     switch (name) {
@@ -334,17 +333,30 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   }
 
   // Mark all items for current hero as selected
-  this.selectAll = function() {
-    if (vm.totals.selected == vm.totals.total) {
+  this.selectAll = function(unselect) {
+    if (vm.totals.selected == vm.totals.total && !unselect) {
       return;
     }
     Object.keys(hero.items).forEach(function(type) {
       hero.items[type].forEach(function(item) {
-        vm.checked[item.hero || hero.id][type][item.id] = true;
+        vm.checked[item.hero || hero.id][type][item.id] = (unselect ? false : true);
       })
     })
     calculateTotalsAndCosts();
     StorageService.setData(Object.assign({}, Data.checked, vm.checked[hero.id]));
+  }
+
+  this.unSelectAll = function() {
+    if (vm.totals.selected == 0) return
+    var modal = $uibModal.open({
+      size: 'sm',
+      templateUrl: './templates/modals/unselect.html'
+    });
+    modal.result.then(function(unselect) {
+      if (unselect) {
+        vm.selectAll(true)
+      }
+    })
   }
 }])
 
