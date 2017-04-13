@@ -417,23 +417,23 @@
 /* Event Icons */
 
 #hero-container .hero-items .item[event="HALLOWEEN_2016"]:after {
-  background-image: url(resources/icons/halloween.png);
+  background-image: url(resources/icons/HALLOWEEN_2016.svg);
 }
 
 #hero-container .hero-items .item[event="SUMMER_GAMES_2016"]:after {
-  background-image: url(resources/icons/summer-games.png);
+  background-image: url(resources/icons/SUMMER_GAMES_2016.svg);
 }
 
 #hero-container .hero-items .item[event="WINTER_WONDERLAND_2016"]:after {
-  background-image: url(resources/icons/winter-wonderland.png);
+  background-image: url(resources/icons/WINTER_WONDERLAND_2016.svg);
 }
 
 #hero-container .hero-items .item[event="YEAR_OF_THE_ROOSTER_2017"]:after {
-  background-image: url(resources/icons/year-of-the-rooster.png);
+  background-image: url(resources/icons/YEAR_OF_THE_ROOSTER_2017.svg);
 }
 
 #hero-container .hero-items .item[event="UPRISING_2017"]:after {
-    background-image: url(resources/icons/uprising.png);
+    background-image: url(resources/icons/UPRISING_2017.svg);
 }
 
 
@@ -445,7 +445,7 @@
 }
 
 #hero-container .section .item[achievement="blizzard"]:after {
-  background-image: url("resources/icons/blizzard.png");
+  background-image: url("resources/icons/blizzard.svg");
 }
 
 #hero-container .audio-player {
