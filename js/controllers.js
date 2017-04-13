@@ -108,6 +108,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   this.gridView = false;
   this.checked = Data.checked;
   this.events = {};
+  this.groups = {};
   this.totals = {
     total: 0,
     selected: 0,
@@ -119,22 +120,10 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     selected: false,
     unselected: false,
     achievement: false,
-    events: {}
+    events: {},
+    groups: {}
   };
 
-  this.getDisplayName = function(name) {
-    switch (name) {
-      case 'intros':
-        return 'highlight intros'
-      case 'voicelines':
-        return 'voice lines'
-      case 'poses':
-        return 'victory poses'
-      default:
-        return name
-    }
-  }
-  
   // Cost is on scope as it is a directive in the page and it inherits parent scope
   $scope.cost = {
     total: 0,
@@ -151,7 +140,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   }
 
   // Calculate the total costs and tallys of items in current view (filters)
-  function calculateTotalsAndCosts() {
+  function calculateTotalsAndCosts(initial) {
     var selectedItems = 0;
     var totalItems = 0
     var cost = {
@@ -171,8 +160,13 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
         totalItems++;
         groupTotals.total++;
 
-        if (item.event && !vm.events[item.event]) {
-          vm.events[item.event] = true
+        if (initial) {
+          if (item.event && !vm.events[item.event]) {
+            vm.events[item.event] = true
+          }
+          if (item.group && !vm.groups[item.group]) {
+            vm.groups[item.group] = true
+          }
         }
         
         var isSelected = vm.isItemChecked(item, type);
@@ -200,13 +194,32 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     vm.totals.percentage = ((vm.totals.selected / vm.totals.total) * 100)
   }
 
-  calculateTotalsAndCosts();
+  calculateTotalsAndCosts(true);
+  console.log(vm)
+
+  this.getDisplayName = function(name) {
+    switch (name) {
+      case 'intros':
+        return 'highlight intros'
+      case 'voicelines':
+        return 'voice lines'
+      case 'poses':
+        return 'victory poses'
+      default:
+        return name
+    }
+  }
 
   this.hasEvents = function() {
     return Object.keys(vm.events).length
   }
 
+  this.hasGroups = function() {
+    return Object.keys(vm.groups).length
+  }
+
   this.updateFilters = function() {
+    console.log("Apple")
     this.filtering = true;
     var selected = vm.filters.selected;
     var unselected = vm.filters.unselected;
@@ -218,13 +231,18 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
       if (vm.filters.events[e]) eventFilters.push(e)
     }
 
+    var groupFilter = []
+    for (var g in vm.filters.groups) {
+      if (vm.filters.groups[g]) groupFilter.push(g)
+    }
+
     // Disable filtering if nothing is selected
-    if (!eventFilters.length && !selected && !unselected && !achievement) {
+    if (!eventFilters.length && !groupFilter.length && !selected && !unselected && !achievement) {
       vm.clearFilters();
       return
     }
     
-    this.filteredItems = filterItems(hero.items, eventFilters);
+    this.filteredItems = filterItems(hero.items, eventFilters, groupFilter);
     calculateTotalsAndCosts();
 
     // Generate the currently selected filter text
@@ -242,7 +260,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
   }
 
   // Filters the items and returms new data object
-  function filterItems(items, eventFilters) {
+  function filterItems(items, eventFilters, groupFilter) {
     var out = {}
     for (var type in items) {
       var outType = []
@@ -254,6 +272,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
 
         if (vm.filters.achievement && !item.achievement) return;
         if (eventFilters.length && (!item.event || !eventFilters.includes(item.event))) return;
+        if (groupFilter.length && (!item.group || !groupFilter.includes(item.group))) return;
 
         outType.push(item);
       })
