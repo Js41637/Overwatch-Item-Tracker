@@ -9,7 +9,7 @@ const { forEach, sortBy, find, reduce, merge } = require('lodash')
 const mode = process.argv.slice(2)[0]
 
 const HERODATA = require('./dataMapper/HERODATA.js')
-const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems } = require('./dataMapper/itemData.js')
+const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp } = require('./dataMapper/itemData.js')
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT } = require('./dataMapper/EVENTDATA.js')
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder } = require('./dataMapper/utils.js')
 var allClassData, rawData, missingAllClassData = {}, allClassDataKeys = {}
@@ -58,6 +58,8 @@ allClassData = reduce(allClassData, (result, items, type) => {
       Object.assign(r, match ? { event: eventID } : {})
       return r
     }, {})
+
+    item.name = itemNamesIFuckedUp[`${type}/${item.id}`] || item.name
     
     // Check if the spray or icon is a Competitive reward
     const isSeasonCompItem = item.id.match(/^season-(.)-(competitor|hero)$/)
@@ -124,6 +126,7 @@ data.forEach(({ hero, items: itemGroups }) => {
       if (name == 'RANDOM') return
       const id = getCleanID(name, heroID)
       const { quality, type: itemType } = getItemType(type)
+      name = itemNamesIFuckedUp[`${itemType}/${id}`] || name
       if (!quality || !itemType) return
       const out = { name, id, quality }
       switch (group) {
