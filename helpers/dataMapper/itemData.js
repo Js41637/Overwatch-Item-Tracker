@@ -10,11 +10,12 @@ const data = {
     sprays: ['logo', 'you-are-not-prepared', 'da-de-los-muertos'],
     icons: ['overwatch-light', 'overwatch-dark', 'you-are-not-prepared']
   },
-  hiddenItems: {
+  hiddenItems: { // Hidden all classItems
     sprays: ['snowcer', 'snowscientist'],
     icons: ['oni']
   },
   specialSprays: [
+     // Diablo Sprays
     'barbarian',
     'crusader',
     'demon-hunter',
@@ -23,6 +24,7 @@ const data = {
     'wizard'
     ],
   specialIcons: [
+     // Diablo Icon
     'dark-wanderer'
   ],
   achievementSprays: [
