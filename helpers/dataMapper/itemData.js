@@ -26,13 +26,13 @@ const data = {
     starcraft: {
       icons: ['protoss', 'terran', 'zerg', 'dominion', 'heirarch', 'jim', 'queen-of-blades']
     },
-    wow: {
+    "world of warcraft": {
       icons: ['for-the-alliance', 'for-the-horde', 'dark-lady', 'garrosh', 'jaina', 'lich-king', 'you-are-not-prepared']
     },
     hearthstone: {
       icons: ['hearthstone']
     },
-    hots: {
+    "heroes of the storm": {
       icons: ['nexus']
     }
   },

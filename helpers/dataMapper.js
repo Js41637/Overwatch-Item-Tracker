@@ -61,7 +61,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
     
     // Check if the spray or icon is a Competitive reward
     const isSeasonCompItem = item.id.match(/^season-(.)-(competitor|hero)$/)
-    const isCompItem =  isSeasonCompItem || item.id == 'top-500' ? { group: 'comp' } : undefined
+    const isCompItem =  isSeasonCompItem || item.id == 'top-500' ? { group: 'competitive' } : undefined
 
     const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined
     const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem) ? { achievement: true } : blizzardItems[type].includes(item.id) ? { achievement: 'blizzard' } : undefined
@@ -77,7 +77,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
 
     newItems.push(Object.assign(item, { event }, isAchievement, isStandard, quality, customEvent, isPachiItem, isCompItem))
     if (isSeasonCompItem && type == 'sprays') {
-      newItems.push({ name: `Season ${isSeasonCompItem[1]} Hero`, id: `season-${isSeasonCompItem[1]}-hero`, achievement: true, group: 'comp' })
+      newItems.push({ name: `Season ${isSeasonCompItem[1]} Hero`, id: `season-${isSeasonCompItem[1]}-hero`, achievement: true, group: 'competitive' })
     }
     return newItems
   }, [])
