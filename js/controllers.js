@@ -121,6 +121,19 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     achievement: false,
     events: {}
   };
+
+  this.getDisplayName = function(name) {
+    switch (name) {
+      case 'intros':
+        return 'highlight intros'
+      case 'voicelines':
+        return 'voice lines'
+      case 'poses':
+        return 'victory poses'
+      default:
+        return name
+    }
+  }
   
   // Cost is on scope as it is a directive in the page and it inherits parent scope
   $scope.cost = {

@@ -73,7 +73,7 @@
   <div class="hero-items angular-animate" ng-if="!hero.gridView">
     <div ng-repeat="(type, items) in hero.filteredItems track by type" id="{{::type}}" class="section">
       <div class="section-header">
-        <h2>{{type}} <small>{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
+        <h2>{{::hero.getDisplayName(type)}} <small>{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
       </div>
       <div
         class="item {{::item.quality}}"
