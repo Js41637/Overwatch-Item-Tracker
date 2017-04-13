@@ -250,6 +250,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "DataService", "StorageSer
     currentFilters = currentFilters.map(function(e) {
       return Data.events[e].name
     })
+    currentFilters = currentFilters.concat(groupFilter)
     if (selected || unselected) {
       currentFilters.push(selected ? 'SELECTED' : unselected ? 'UNSELECTED': '')
     }
