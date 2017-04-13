@@ -14,19 +14,28 @@ const data = {
     sprays: ['snowcer', 'snowscientist'],
     icons: ['oni']
   },
-  specialSprays: [
-     // Diablo Sprays
-    'barbarian',
-    'crusader',
-    'demon-hunter',
-    'monk',
-    'witch-doctor',
-    'wizard'
-    ],
-  specialIcons: [
-     // Diablo Icon
-    'dark-wanderer'
-  ],
+  blizzardItems: {
+    sprays: ['barbarian', 'crusader', 'demon-hunter', 'monk', 'witch-doctor', 'wizard'],
+    icons: ['dark-wanderer']
+  },
+  specialItems: {
+    diablo: {
+      sprays: ['barbarian', 'crusader', 'demon-hunter', 'monk', 'witch-doctor', 'wizard'],
+      icons: ['dark-wanderer', 'lord-od-terror', 'barbarian', 'crusader', 'demon-hunter', 'monk', 'witch-doctor', 'wizard']
+    },
+    starcraft: {
+      icons: ['protoss', 'terran', 'zerg', 'dominion', 'heirarch', 'jim', 'queen-of-blades']
+    },
+    wow: {
+      icons: ['for-the-alliance', 'for-the-horde', 'dark-lady', 'garrosh', 'jaina', 'lich-king', 'you-are-not-prepared']
+    },
+    hearthstone: {
+      icons: ['hearthstone']
+    },
+    hots: {
+      icons: ['nexus']
+    }
+  },
   achievementSprays: [
     // HERO
     'cute',

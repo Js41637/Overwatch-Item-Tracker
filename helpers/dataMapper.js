@@ -9,7 +9,7 @@ const { forEach, sortBy, find, reduce, merge } = require('lodash')
 const mode = process.argv.slice(2)[0]
 
 const HERODATA = require('./dataMapper/HERODATA.js')
-const { badNames, hiddenItems, defaultItems, achievementSprays, specialIcons, specialSprays, allClassEventItems } = require('./dataMapper/itemData.js')
+const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems } = require('./dataMapper/itemData.js')
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT } = require('./dataMapper/EVENTDATA.js')
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder } = require('./dataMapper/utils.js')
 var allClassData, rawData, missingAllClassData = {}, allClassDataKeys = {}
@@ -49,6 +49,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
     result[type] = []
     allClassDataKeys[type] = {}
   }
+
   items = reduce(items, (newItems = [], item) => {
     if (hiddenItems[type] && hiddenItems[type].includes(item.id)) return newItems
     allClassDataKeys[type][item.id] = item.name
@@ -58,14 +59,25 @@ allClassData = reduce(allClassData, (result, items, type) => {
       return r
     }, {})
     
+    // Check if the spray or icon is a Competitive reward
     const isSeasonCompItem = item.id.match(/^season-(.)-(competitor|hero)$/)
-    const isCompItem =  isSeasonCompItem || item.id == 'top-500'
+    const isCompItem =  isSeasonCompItem || item.id == 'top-500' ? { group: 'comp' } : undefined
+
     const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined
-    const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem) ? { achievement: true } : ((type == 'icons' && specialIcons.includes(item.id)) || (type == 'sprays' && specialSprays.includes(item.id))) ? { achievement: 'blizzard' } : undefined
+    const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem) ? { achievement: true } : blizzardItems[type].includes(item.id) ? { achievement: 'blizzard' } : undefined
+    // Only purchasable items need a quality
     const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompItem) ? { quality: 'common' } : undefined
-    newItems.push(Object.assign(item, { event }, isAchievement, isStandard, quality))
+    
+    // Check for specific item groups
+    const isPachiItem = item.id.startsWith('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined
+    var customEvent = undefined;
+    for (var group in specialItems) {
+      if (specialItems[group][type] && specialItems[group][type].includes(item.id)) customEvent = { group: group }
+    }
+
+    newItems.push(Object.assign(item, { event }, isAchievement, isStandard, quality, customEvent, isPachiItem, isCompItem))
     if (isSeasonCompItem && type == 'sprays') {
-      newItems.push({ name: `Season ${isSeasonCompItem[1]} Hero`, id: `season-${isSeasonCompItem[1]}-hero`, achievement: true })
+      newItems.push({ name: `Season ${isSeasonCompItem[1]} Hero`, id: `season-${isSeasonCompItem[1]}-hero`, achievement: true, group: 'comp' })
     }
     return newItems
   }, [])

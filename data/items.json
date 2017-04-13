@@ -90,7 +90,8 @@
         },
         {
           "name": "Barbarian",
-          "id": "barbarian"
+          "id": "barbarian",
+          "group": "diablo"
         },
         {
           "name": "Basketball",
@@ -121,7 +122,8 @@
         {
           "name": "Bokimari",
           "id": "bokimari",
-          "event": "YEAR_OF_THE_ROOSTER_2017"
+          "event": "YEAR_OF_THE_ROOSTER_2017",
+          "group": "pachi"
         },
         {
           "name": "Boxing",
@@ -221,7 +223,8 @@
         },
         {
           "name": "Crusader",
-          "id": "crusader"
+          "id": "crusader",
+          "group": "diablo"
         },
         {
           "name": "Cyborg",
@@ -242,12 +245,14 @@
         },
         {
           "name": "Dark Lady",
-          "id": "dark-lady"
+          "id": "dark-lady",
+          "group": "wow"
         },
         {
           "name": "Dark Wanderer",
           "id": "dark-wanderer",
-          "achievement": "blizzard"
+          "achievement": "blizzard",
+          "group": "diablo"
         },
         {
           "name": "Deadeye",
@@ -260,7 +265,8 @@
         },
         {
           "name": "Demon Hunter",
-          "id": "demon-hunter"
+          "id": "demon-hunter",
+          "group": "diablo"
         },
         {
           "name": "Diving",
@@ -270,7 +276,8 @@
         },
         {
           "name": "Dominion",
-          "id": "dominion"
+          "id": "dominion",
+          "group": "starcraft"
         },
         {
           "name": "Dragon Dance",
@@ -331,11 +338,13 @@
         },
         {
           "name": "For the Alliance",
-          "id": "for-the-alliance"
+          "id": "for-the-alliance",
+          "group": "wow"
         },
         {
           "name": "For the Horde",
-          "id": "for-the-horde"
+          "id": "for-the-horde",
+          "group": "wow"
         },
         {
           "name": "Forge",
@@ -364,7 +373,8 @@
         {
           "name": "Fuchimari",
           "id": "fuchimari",
-          "event": "YEAR_OF_THE_ROOSTER_2017"
+          "event": "YEAR_OF_THE_ROOSTER_2017",
+          "group": "pachi"
         },
         {
           "name": "Ganymede",
@@ -373,7 +383,8 @@
         },
         {
           "name": "Garrosh",
-          "id": "garrosh"
+          "id": "garrosh",
+          "group": "wow"
         },
         {
           "name": "Gears",
@@ -393,7 +404,8 @@
         {
           "name": "Ghostymari",
           "id": "ghostymari",
-          "event": "HALLOWEEN_2016"
+          "event": "HALLOWEEN_2016",
+          "group": "pachi"
         },
         {
           "name": "Gingerbread",
@@ -403,7 +415,8 @@
         {
           "name": "Gingermari",
           "id": "gingermari",
-          "event": "WINTER_WONDERLAND_2016"
+          "event": "WINTER_WONDERLAND_2016",
+          "group": "pachi"
         },
         {
           "name": "God of War",
@@ -489,7 +502,8 @@
         },
         {
           "name": "Hearthstone",
-          "id": "hearthstone"
+          "id": "hearthstone",
+          "group": "hearthstone"
         },
         {
           "name": "Hierarch",
@@ -512,7 +526,8 @@
         },
         {
           "name": "Jaina",
-          "id": "jaina"
+          "id": "jaina",
+          "group": "wow"
         },
         {
           "name": "Japan",
@@ -521,7 +536,8 @@
         },
         {
           "name": "Jim",
-          "id": "jim"
+          "id": "jim",
+          "group": "starcraft"
         },
         {
           "name": "Jingle",
@@ -556,7 +572,8 @@
         },
         {
           "name": "Lich King",
-          "id": "lich-king"
+          "id": "lich-king",
+          "group": "wow"
         },
         {
           "name": "Lieutenant",
@@ -598,7 +615,8 @@
         {
           "name": "Lunamari",
           "id": "lunamari",
-          "event": "YEAR_OF_THE_ROOSTER_2017"
+          "event": "YEAR_OF_THE_ROOSTER_2017",
+          "group": "pachi"
         },
         {
           "name": "Lunar Ops",
@@ -654,7 +672,8 @@
         },
         {
           "name": "Monk",
-          "id": "monk"
+          "id": "monk",
+          "group": "diablo"
         },
         {
           "name": "Monkey",
@@ -674,7 +693,8 @@
         },
         {
           "name": "Nexus",
-          "id": "nexus"
+          "id": "nexus",
+          "group": "hots"
         },
         {
           "name": "Nin",
@@ -689,7 +709,8 @@
         {
           "id": "nullmari",
           "name": "Nullmari",
-          "event": "UPRISING_2017"
+          "event": "UPRISING_2017",
+          "group": "pachi"
         },
         {
           "name": "Numbani",
@@ -736,21 +757,25 @@
         {
           "name": "Pachilantern",
           "id": "pachilantern",
-          "event": "YEAR_OF_THE_ROOSTER_2017"
+          "event": "YEAR_OF_THE_ROOSTER_2017",
+          "group": "pachi"
         },
         {
           "name": "Pachimari",
-          "id": "pachimari"
+          "id": "pachimari",
+          "group": "pachi"
         },
         {
           "name": "Pachimerry",
           "id": "pachimerry",
-          "event": "WINTER_WONDERLAND_2016"
+          "event": "WINTER_WONDERLAND_2016",
+          "group": "pachi"
         },
         {
           "name": "Pachireindeer",
           "id": "pachireindeer",
-          "event": "WINTER_WONDERLAND_2016"
+          "event": "WINTER_WONDERLAND_2016",
+          "group": "pachi"
         },
         {
           "name": "Particle Barrier",
@@ -804,7 +829,8 @@
         },
         {
           "name": "Protoss",
-          "id": "protoss"
+          "id": "protoss",
+          "group": "starcraft"
         },
         {
           "name": "Pulse Bomb",
@@ -813,7 +839,8 @@
         },
         {
           "name": "Queen of Blades",
-          "id": "queen-of-blades"
+          "id": "queen-of-blades",
+          "group": "starcraft"
         },
         {
           "name": "Ramen",
@@ -901,42 +928,50 @@
         {
           "name": "Season 1 Competitor",
           "id": "season-1-competitor",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 1 Hero",
           "id": "season-1-hero",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 2 Competitor",
           "id": "season-2-competitor",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 2 Hero",
           "id": "season-2-hero",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 3 Competitor",
           "id": "season-3-competitor",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 3 Hero",
           "id": "season-3-hero",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 4 Competitor",
           "id": "season-4-competitor",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 4 Hero",
           "id": "season-4-hero",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Sentry",
@@ -1091,7 +1126,8 @@
         },
         {
           "name": "Terran",
-          "id": "terran"
+          "id": "terran",
+          "group": "starcraft"
         },
         {
           "name": "The Doctor",
@@ -1125,7 +1161,8 @@
         {
           "name": "Top 500",
           "id": "top-500",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Torbjörn",
@@ -1174,7 +1211,8 @@
         {
           "name": "Vampachimari",
           "id": "vampachimari",
-          "event": "HALLOWEEN_2016"
+          "event": "HALLOWEEN_2016",
+          "group": "pachi"
         },
         {
           "name": "Varian",
@@ -1239,7 +1277,8 @@
         },
         {
           "name": "Witch Doctor",
-          "id": "witch-doctor"
+          "id": "witch-doctor",
+          "group": "diablo"
         },
         {
           "name": "Witch's Brew",
@@ -1253,7 +1292,8 @@
         },
         {
           "name": "Wizard",
-          "id": "wizard"
+          "id": "wizard",
+          "group": "diablo"
         },
         {
           "name": "Wolf",
@@ -1285,7 +1325,8 @@
         {
           "name": "You are not prepared",
           "id": "you-are-not-prepared",
-          "standardItem": true
+          "standardItem": true,
+          "group": "wow"
         },
         {
           "name": "Zarya",
@@ -1299,7 +1340,8 @@
         },
         {
           "name": "Zerg",
-          "id": "zerg"
+          "id": "zerg",
+          "group": "starcraft"
         }
       ],
       "sprays": [
@@ -1335,7 +1377,8 @@
         {
           "name": "Barbarian",
           "id": "barbarian",
-          "achievement": "blizzard"
+          "achievement": "blizzard",
+          "group": "diablo"
         },
         {
           "name": "Bats",
@@ -1379,7 +1422,8 @@
         {
           "name": "Crusader",
           "id": "crusader",
-          "achievement": "blizzard"
+          "achievement": "blizzard",
+          "group": "diablo"
         },
         {
           "name": "Dance",
@@ -1404,7 +1448,8 @@
         {
           "name": "Demon Hunter",
           "id": "demon-hunter",
-          "achievement": "blizzard"
+          "achievement": "blizzard",
+          "group": "diablo"
         },
         {
           "name": "Dragon's Head",
@@ -1512,7 +1557,8 @@
         {
           "name": "Monk",
           "id": "monk",
-          "achievement": "blizzard"
+          "achievement": "blizzard",
+          "group": "diablo"
         },
         {
           "id": "null-sector",
@@ -1524,7 +1570,8 @@
           "id": "nullmari",
           "name": "Nullmari",
           "event": "UPRISING_2017",
-          "achievement": true
+          "achievement": true,
+          "group": "pachi"
         },
         {
           "id": "nulltrooper",
@@ -1571,7 +1618,8 @@
         {
           "name": "Pachimari",
           "id": "pachimari",
-          "quality": "common"
+          "quality": "common",
+          "group": "pachi"
         },
         {
           "name": "Piñata",
@@ -1644,42 +1692,50 @@
         {
           "name": "Season 1 Competitor",
           "id": "season-1-competitor",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 1 Hero",
           "id": "season-1-hero",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 2 Competitor",
           "id": "season-2-competitor",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 2 Hero",
           "id": "season-2-hero",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 3 Competitor",
           "id": "season-3-competitor",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 3 Hero",
           "id": "season-3-hero",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 4 Competitor",
           "id": "season-4-competitor",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Season 4 Hero",
           "id": "season-4-hero",
-          "achievement": true
+          "achievement": true,
+          "group": "comp"
         },
         {
           "name": "Siege Mode",
@@ -1782,7 +1838,8 @@
         {
           "name": "Witch Doctor",
           "id": "witch-doctor",
-          "achievement": "blizzard"
+          "achievement": "blizzard",
+          "group": "diablo"
         },
         {
           "name": "Witch's Brew",
@@ -1793,7 +1850,8 @@
         {
           "name": "Wizard",
           "id": "wizard",
-          "achievement": "blizzard"
+          "achievement": "blizzard",
+          "group": "diablo"
         },
         {
           "name": "Year of the Rooster",
