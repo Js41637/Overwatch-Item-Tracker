@@ -11,7 +11,8 @@ const data = {
     icons: ['overwatch-light', 'overwatch-dark', 'you-are-not-prepared']
   },
   hiddenItems: {
-    sprays: ['snowcer', 'snowscientist']
+    sprays: ['snowcer', 'snowscientist'],
+    icons: ['oni']
   },
   specialSprays: [
     'barbarian',
