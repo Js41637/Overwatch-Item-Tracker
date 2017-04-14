@@ -55,23 +55,23 @@
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES_2016"]:before {
-  background-image: url(resources/icons/SUMMER_GAMES_2016.svg);
+  background-image: url(resources/icons/events/SUMMER_GAMES_2016.svg);
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"]:before {
-  background-image: url(resources/icons/HALLOWEEN_2016.svg);
+  background-image: url(resources/icons/events/HALLOWEEN_2016.svg);
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"]:before {
-  background-image: url(resources/icons/WINTER_WONDERLAND_2016.svg);
+  background-image: url(resources/icons/events/WINTER_WONDERLAND_2016.svg);
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"]:before {
-  background-image: url(resources/icons/YEAR_OF_THE_ROOSTER_2017.svg);
+  background-image: url(resources/icons/events/YEAR_OF_THE_ROOSTER_2017.svg);
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before {
-  background-image: url(resources/icons/UPRISING_2017.svg);
+  background-image: url(resources/icons/events/UPRISING_2017.svg);
 }
 
 #hero-container #hero-header {
@@ -250,7 +250,7 @@
   overflow: hidden;
   background-color: #f0edf2;
   border-radius: 3px;
-  padding: 8px;
+  padding: 0 12px 12px 12px;
 }
 
 #hero-container .hero-items .section:first-child {
@@ -274,17 +274,60 @@
   border-top-right-radius: 4px;
   background-color: #c6cbde;
   text-align: left;
-  margin: -8px -8px 8px -8px;
+  margin: 0 -12px;
 }
 
 #hero-container .hero-items .section-header h2, #hero-container .hero-grid .section-header h2 {
-  padding: 0.4em;
+  padding: 0.8em;
   color: #405275;
   font-family: Futura, century gothic, arial, sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   text-transform: uppercase;
+  vertical-align: middle;
 }
+
+#hero-container .hero-items .section-header h2:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  margin-right: 0.6em;
+  vertical-align: text-bottom;
+  background-position: center;
+}
+
+#hero-container #emotes h2:before {
+  background-image: url('resources/icons/item-types/emotes.svg');
+}
+
+#hero-container #skins h2:before {
+  background-image: url('resources/icons/item-types/epic-skins.svg');
+}
+
+#hero-container #intros h2:before {
+  background-image: url('resources/icons/item-types/highlight-intros.svg');
+}
+
+#hero-container #icons h2:before {
+  background-image: url('resources/icons/item-types/player-icons.svg');
+}
+
+#hero-container #sprays h2:before {
+  background-image: url('resources/icons/item-types/sprays.svg');
+}
+
+#hero-container #poses h2:before {
+  background-image: url('resources/icons/item-types/victory-poses.svg');
+}
+
+#hero-container #voicelines h2:before {
+  background-image: url('resources/icons/item-types/voice-lines.svg');
+}
+
+
+
 
 #hero-container .hero-items .section-header h2 small {
   font-size: 0.8em;
@@ -299,6 +342,7 @@
   position: relative;
   font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
+  margin-top: 12px;
 }
 
 #hero-container .hero-items .section .item h3 {
@@ -309,7 +353,7 @@
 
 .item h3.common,
 .item h3 {
-  color: #727272;
+  color: #5d5a5a;
 }
 
 #hero-container .hero-items .section .item small {
@@ -321,28 +365,33 @@
   width: 100%;
   cursor: pointer;
   display: flex;
-  padding: 8px 0;
+  padding-left: 6px;
 }
 
 #hero-container .hero-items .section .item input {
-  height: 24px;
-  margin: 1px 4px 0 0;
+  height: 20px;
+  margin: 0;
   float: left;
   cursor: pointer;
-  min-width: 23px;
+  min-width: 20px;
 }
 
-#hero-container:not(.filtering) .hero-items #sprays .item {
-  width: 49.7%;
+#hero-container .hero-items #sprays .item {
+  width: 49%;
   display: inline-flex;
-  margin-right: 1px;
-  margin-bottom: 0;
+}
+
+#hero-container .hero-items #sprays .item:nth-of-type(odd) {
+  margin-right: 2%;
 }
 
 #all #hero-container .hero-items #icons .item {
-  width: 49.7%;
+  width: 49%;
   display: inline-flex;
-  margin-right: 1px;
+}
+
+#all #hero-container .hero-items #icons .item:nth-of-type(odd) {
+  margin-right: 2%;
 }
 
 #hero-container .hero-grid {
@@ -431,7 +480,7 @@
 /* Item Icons */
 #hero-container .section .item[event]:not([event="none"]),
 #hero-container .section .item[achievement]:not([achievement="false"]) {
-  padding-right: 35px;
+  padding-right: 24px;
 }
 
 #hero-container .item[event]:not([event="none"]):after,
@@ -440,11 +489,11 @@
 #hero-container .item[achievement]:not([achievement="false"]):before {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   background-size: contain;
   background-repeat: no-repeat;
-  right: 4px;
+  right: 0;
   background-position: center;
 }
 
@@ -462,23 +511,23 @@
 /* Event Icons */
 
 #hero-container .hero-items .item[event="HALLOWEEN_2016"]:after {
-  background-image: url(resources/icons/HALLOWEEN_2016.svg);
+  background-image: url(resources/icons/events/HALLOWEEN_2016.svg);
 }
 
 #hero-container .hero-items .item[event="SUMMER_GAMES_2016"]:after {
-  background-image: url(resources/icons/SUMMER_GAMES_2016.svg);
+  background-image: url(resources/icons/events/SUMMER_GAMES_2016.svg);
 }
 
 #hero-container .hero-items .item[event="WINTER_WONDERLAND_2016"]:after {
-  background-image: url(resources/icons/WINTER_WONDERLAND_2016.svg);
+  background-image: url(resources/icons/events/WINTER_WONDERLAND_2016.svg);
 }
 
 #hero-container .hero-items .item[event="YEAR_OF_THE_ROOSTER_2017"]:after {
-  background-image: url(resources/icons/YEAR_OF_THE_ROOSTER_2017.svg);
+  background-image: url(resources/icons/events/YEAR_OF_THE_ROOSTER_2017.svg);
 }
 
 #hero-container .hero-items .item[event="UPRISING_2017"]:after {
-    background-image: url(resources/icons/UPRISING_2017.svg);
+    background-image: url(resources/icons/events/UPRISING_2017.svg);
 }
 
 
@@ -830,7 +879,7 @@ body#reaper .hero-name:after,
 body#soldier-76 .hero-name:after,
 body#sombra .hero-name:after,
 body#tracer .hero-name:after {
-  background-image: url(resources/svg/roles/offense.svg);
+  background-image: url(resources/icons/roles/offense.svg);
 }
 
 body#bastion .hero-name:after,
@@ -839,7 +888,7 @@ body#junkrat .hero-name:after,
 body#mei .hero-name:after,
 body#torbjorn .hero-name:after,
 body#widowmaker .hero-name:after {
-  background-image: url(resources/svg/roles/defence.svg);
+  background-image: url(resources/icons/roles/defence.svg);
 }
 
 body#dva .hero-name:after,
@@ -848,7 +897,7 @@ body#reinhardt .hero-name:after,
 body#roadhog .hero-name:after,
 body#winston .hero-name:after,
 body#zarya .hero-name:after {
-  background-image: url(resources/svg/roles/tank.svg);
+  background-image: url(resources/icons/roles/tank.svg);
 }
 
 body#ana .hero-name:after,
@@ -856,7 +905,7 @@ body#lucio .hero-name:after,
 body#mercy .hero-name:after,
 body#symmetra .hero-name:after,
 body#zenyatta .hero-name:after {
-  background-image: url(resources/svg/roles/support.svg);
+  background-image: url(resources/icons/roles/support.svg);
 }
 
 #hero-container .hero-overview .hero-class {

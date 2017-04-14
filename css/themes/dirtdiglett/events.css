@@ -293,33 +293,36 @@ body {
   margin-bottom: -4px;
 }
 
-#event-container #icons h2:before {
-  background-image: url('resources/svg/icons.svg');
+#event-container #emotes h2:before {
+  background-image: url('resources/icons/item-types/white/emotes.svg');
+}
+
+#event-container #epic-skins h2:before {
+  background-image: url('resources/icons/item-types/white/epic-skins.svg');
 }
 
 #event-container #highlight-intros h2:before {
-  background-image: url('resources/svg/highlightintros.svg');
+  background-image: url('resources/icons/item-types/white/highlight-intros.svg');
 }
 
-#voicelines h2:before {
-  background-image: url('resources/svg/voicelines.svg');
-}
-
-#event-container #victoryposes h2:before {
-  background-image: url('resources/svg/victoryposes.svg');
+#event-container #icons h2:before {
+  background-image: url('resources/icons/item-types/white/player-icons.svg');
 }
 
 #event-container #sprays h2:before {
-  background-image: url('resources/svg/sprays.svg');
+  background-image: url('resources/icons/item-types/white/sprays.svg');
 }
 
-#epic-skins h2:before, #skins h2:before {
-  background-image: url('resources/svg/epicskins.svg');
+#event-container #victoryposes h2:before {
+  background-image: url('resources/icons/item-types/white/victory-poses.svg');
 }
 
-#event-container #emotes h2:before {
-  background-image: url('resources/svg/emotes.svg');
+#event-container #voicelines h2:before {
+  background-image: url('resources/icons/item-types/white/voice-lines.svg');
 }
+
+
+
 
 #epic-skins .section-header small, #event-container #emotes .section-header small, #event-container #highlight-intros .section-header small {
   color: #ff05f4;
