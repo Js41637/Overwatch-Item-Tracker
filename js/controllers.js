@@ -131,10 +131,12 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     prev: 0
   };
 
+  // Returns if an item is checked, use item.hero if one is available as allClass Icons includes icons from all heroes
   this.isItemChecked = function(item, type) {
     return this.checked[item.hero || hero.id][type][item.id];
   };
 
+  // Can this item contribute to total cost?
   function isValidItem(item) {
     return !item.achievement && item.quality && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
   }
@@ -194,6 +196,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     vm.totals.percentage = ((vm.totals.selected / vm.totals.total) * 100)
   }
 
+  // Init
   calculateTotalsAndCosts(true);
 
   this.getDisplayName = function(name) {
@@ -218,7 +221,6 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
   }
 
   this.updateFilters = function() {
-    console.log("Apple")
     this.filtering = true;
     var selected = vm.filters.selected;
     var unselected = vm.filters.unselected;
@@ -291,7 +293,9 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     this.filters = {
       selected: false,
       unselected: false,
-      events: {}
+      achievement: false,
+      events: {},
+      groups: {}
     }
     this.currentFilters = '';
     this.filtering = false;
