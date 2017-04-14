@@ -62,12 +62,12 @@
   <div class="hero-grid angular-animate" ng-if="hero.gridView">
     <div ng-repeat="(type, items) in hero.filteredItems track by type" id="{{::type}}" class="section">
       <div class="section-header">
-        <h2>{{::type}} <small>{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
+        <h2>{{::type}} <small ng-show="hero.totals.groups[type].total">{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
       </div>
       <span
         class="item"
-        ng-class="{selected: hero.isItemChecked(item, type)}"
-        uib-tooltip="{{::item.name}}"
+        ng-class="{selected: hero.isItemChecked(item, type), selected: item.standardItem}"
+        uib-tooltip="{{::item.name}}{{item.standardItem ? ' (Default)' : ''}}"
         tooltip-placement="top"
         ng-repeat="item in items track by item.id"
         fancy-load="{{$index}}"

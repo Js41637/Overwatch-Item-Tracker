@@ -322,6 +322,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
 
   // Manual function to select an item, used in grid mode
   this.selectItem = function(item, type) {
+    if (item.standardItem) return
     this.checked[item.hero || hero.id][type][item.id] = !this.checked[item.hero || hero.id][type][item.id];
     vm.onSelect();
   }
