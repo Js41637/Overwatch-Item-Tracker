@@ -67,7 +67,7 @@
       <span
         class="item"
         ng-class="{selected: hero.isItemChecked(item, type), selected: item.standardItem}"
-        uib-tooltip="{{::item.name}}{{item.standardItem ? ' (Default)' : ''}}"
+        uib-tooltip="{{::item.name}}{{::item.standardItem ? ' (Default)' : ''}}"
         tooltip-placement="top"
         ng-repeat="item in items track by item.id"
         fancy-load="{{$index}}"
