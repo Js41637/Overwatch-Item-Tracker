@@ -22,7 +22,7 @@
   background: url(resources/bg.png) no-repeat top;
   background-size: cover;
   background-color: #293347;
-  filter: brightness(1);
+  filter: none;
 }
 
 #cost-remaining {
@@ -920,16 +920,56 @@ body#zenyatta .hero-name:after {
   display: none;
 }
 
+#header h1 {
+  color: #fff;
+}
+
 #header,
 #menuNav {
   background-color: rgba(40,53,79,.85);
   z-index: 1000;
 }
 
+#header .event-selector {
+  background-color: #1c75bc;
+  padding: 0 1em;
+  height: 100%;
+  box-shadow: none;
+  border-radius: 0;
+  min-width: 100px;
+}
+
+#header .event-selector:hover {
+  background-color: #2a8edf;
+}
+
 #header .event-selector .block {
-  background: url(resources/bg.png) no-repeat top;
-  border: 1px solid #ffa500;
-  margin-left: -0.5em;
+  background: none;
+  border: none;
+  width: 45px;
+  height: 100%;
+  margin-left: -1em;
+  border-radius: 0;
+  margin-right: 0.5em;
+}
+
+#header .event-selector .block .img {
+  transform: none;
+  width: 100%;
+  height: 100%;
+}
+
+#header .event-selector h2 {
+  line-height: 45px;
+  font-size: 1em;
+  color: #fff;
+  margin-left: 0;
+}
+
+#header .event-selector .caret {
+  border-width: 5px;
+  margin-left: 0.5em;
+  margin-top: -3px;
 }
 
 #hero-nav {
