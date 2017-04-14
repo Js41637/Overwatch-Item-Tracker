@@ -54,7 +54,7 @@
       <div class="select-all btn btn-default" uib-tooltip="Unselect all items" ng-click="hero.unSelectAll()" tooltip-append-to-body="true">Unselect All</div>
     </div>
     <div class="hero-progress">
-      <div class="hero-progress-bar" style="width: calc(0px + {{hero.totals.percentage}}% - 4px); background-color: {{hero.colors.primary}}; border-top-color: {{hero.colors.highlight}}"></div>
+      <div class="hero-progress-bar" style="width: {{hero.totals.percentage}}%; background-color: {{hero.colors.primary}}; border-top-color: {{hero.colors.highlight}}"></div>
       <span>{{hero.totals.selected}} / {{hero.totals.total}}  Unlocks</span>
     </div>
     <span class="currentfilter" ng-show="hero.filtering">Currently Filtering: {{hero.currentFilters}}</span>
