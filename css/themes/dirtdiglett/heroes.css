@@ -1029,3 +1029,58 @@ label[for="skinsmccree-blackwatch"]:hover:after {
   bottom: 0;
   transition: bottom 0.4s ease-in-out;
 }
+
+
+
+/* Overwrites Bootstrap */
+.modal-content {
+  border-radius: 4px;
+}
+
+.modal-header {
+  padding: 0;
+  border: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #c6cbde;
+  text-align: left;
+}
+
+.modal-title {
+    margin: 0;
+    padding: 0.8em;
+    color: #405275;
+    font-family: Futura, century gothic, arial, sans-serif;
+    font-size: 1.4rem !important;
+    font-style: normal;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding-left: 1em;
+}
+
+.modal {
+    padding: 12px;
+}
+
+
+
+
+#settings .setting:first-of-type {
+  padding-top: 0;
+}
+
+#settings .setting {
+    padding: 18px 0px;
+}
+
+#settings h3 {
+  font-size: 1.4em;
+  padding-bottom: 0.2em;
+  margin:0;
+}
+
+#settings .setting p, #settings .setting a, #settings .setting li {
+  font-family: sans-serif;
+  padding-bottom: 0.8em;
+  font-size: 0.9em;
+}
