@@ -161,7 +161,8 @@
 
 #hero-container #hero-header .hero-progress {
   background-color: rgba(24, 34, 62, .7);
-  height: 26px;
+  height: 22px;
+  padding: 2px;
   text-align: center;
   position: relative;
   border-radius: 4px;
@@ -171,21 +172,23 @@
   line-height: 26px;
   font-size: 20px;
   display: block;
-  position: relative;
+  position: absolute;
   color: #fff;
   text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 #hero-container #hero-header .hero-progress .hero-progress-bar {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  bottom: 2px;
   width: 0;
   border-radius: 3px;
   background-color: rgb(0, 0, 0);
   border-top: 2px solid;
   transition: width .8s ease-in-out;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 #hero-container .hero-items {
