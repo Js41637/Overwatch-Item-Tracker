@@ -342,11 +342,11 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     if (vm.totals.selected == vm.totals.total && !unselect) {
       return;
     }
-    Object.keys(hero.items).forEach(function(type) {
-      hero.items[type].forEach(function(item) {
+    for (var type in vm.filteredItems) {
+      vm.filteredItems[type].forEach(function(item) {
         vm.checked[item.hero || hero.id][type][item.id] = (unselect ? false : true);
       })
-    })
+    }
     calculateTotalsAndCosts();
     StorageService.setData(Object.assign({}, Data.checked, vm.checked[hero.id]));
   }
