@@ -318,19 +318,3 @@ var masterData = {
 fs.writeFileSync(`${__dirname}/../data/items.json`, JSON.stringify(heroes, null, 2), 'utf8')
 fs.writeFileSync(`${__dirname}/../data/events.json`, JSON.stringify(updates, null, 2), 'utf8')
 fs.writeFileSync(`${__dirname}/../data/master.json`, JSON.stringify(masterData), 'utf8')
-
-var counts = {}
-var itemIDCache = {}
-forEach(heroes, hero => {
-  forEach(hero.items, (items, type) => {
-    if (!counts[type]) counts[type] = 0;
-    forEach(items, item => {
-      if (itemIDCache[`${type}/${item.id}`]) return
-      itemIDCache[`${type}/${item.id}`] = true
-      counts[type]++
-    }) 
-    
-  })
-})
-
-console.log(counts)
