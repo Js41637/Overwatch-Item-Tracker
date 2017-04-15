@@ -1,7 +1,7 @@
 const { EVENTS } = require('./EVENTDATA')
 
 // All class items have no attributes provided so we need to manually add them
-// ids correlate to items in allClassItems.json
+// ids correlate to item ids.
 const data = {
   itemNamesIFuckedUp: {
     "voicelines/reaper-amatuer-hour": "Amateur hour",

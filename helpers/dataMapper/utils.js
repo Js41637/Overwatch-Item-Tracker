@@ -45,7 +45,15 @@ const stupidNames = {
 // Returns a cleanID, replacing all bad characters and replacing unicode ones
 const getCleanID = (what, hero) => {
   what = stupidNames[what] || what;
-  return (hero ? `${hero}-` : '') + what.toLowerCase().replace('ị', 'i').replace('é', 'e').replace(/[åäà]/g, 'a').replace(/[öôọ]/g, 'o').replace('ú', 'u').replace('çã', 'ca').replace(/[^a-zA-Z 0-9]/g, '').trim().replace(/\s+/g, " ").replace(/ /g, '-')
+  return (hero ? `${hero}-` : '') + 
+          what.toLowerCase()
+              .replace('ị', 'i')
+              .replace('é', 'e')
+              .replace(/[åäà]/g, 'a')
+              .replace(/[öôọ]/g, 'o')
+              .replace('ú', 'u')
+              .replace('çã', 'ca')
+              .replace(/[^a-zA-Z 0-9]/g, '').trim().replace(/\s+/g, " ").replace(/ /g, '-')
 }
 
 // Returns the image or video URL for an item
