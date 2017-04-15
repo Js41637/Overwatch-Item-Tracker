@@ -44,7 +44,7 @@
       </div>
     </div>
     <div id="soundList">
-      <div class="sound btn btn-default" ng-repeat="sound in $ctrl.getSoundFiles() track by $index" ng-click="$ctrl.playSound(sound.id, $index)" ng-class="{selected: $ctrl.sSound == sound.id}">{{sound.id}} {{$ctrl.mappedSounds[$ctrl.hero][sound.id] ? '★' : ''}}<span>{{$ctrl.getItemName(sound.id)}}</span></div>
+      <div class="sound btn btn-default" ng-repeat="sound in $ctrl.getSoundFiles() track by $index" ng-click="$ctrl.playSound(sound.id, $index)" ng-class="{selected: $ctrl.sSound == sound.id, new: sound.ts}">{{sound.id}} {{$ctrl.mappedSounds[$ctrl.hero][sound.id] ? '★' : ''}}<span>{{$ctrl.getItemName(sound.id)}}</span></div>
     </div>
   </div>
 </body>
