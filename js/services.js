@@ -178,7 +178,7 @@ OWI.factory('CompatibilityService', ["StorageService", function(StorageService) 
     supportsAudio: true,
     supportsVideo: true,
     canPlayType: function(type) {
-      if (!showPreviews) return false
+      if (!showPreviews) return 'false'
       return service.supportedTypes[type] || true
     }
   }
