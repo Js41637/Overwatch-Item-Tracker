@@ -355,13 +355,12 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
       })
     }
     calculateTotalsAndCosts();
-    StorageService.setData(Object.assign({}, Data.checked, vm.checked[hero.id]));
+    StorageService.setData(Object.assign({}, Data.checked, vm.checked));
   }
 
   this.unSelectAll = function(type) {
     if (vm.totals.selected == 0) return
     var modal = $uibModal.open({
-      size: 'sm',
       templateUrl: './templates/modals/unselect.html',
       controller: function($scope) {
         $scope.type = type
