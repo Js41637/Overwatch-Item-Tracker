@@ -90,6 +90,30 @@
   align-items: center;
 }
 
+#hero-container .hero-items .section .options {
+  opacity: 0;
+  transition: opacity 125ms;
+  z-index: 1;
+  margin-right: 5px;
+}
+
+#hero-container .hero-items .section .options li a {
+  padding: 3px 15px;
+}
+
+#hero-container .hero-items .section .options .btn:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#hero-container .hero-items .section .options .btn {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+#hero-container .hero-items .section:hover .options {
+  opacity: 0.9;
+}
+
+
 #hero-container #hero-header .currentfilter {
   font-size: 14px;
   position: absolute;
@@ -103,7 +127,7 @@
   margin: 6px 0;
 }
 
-#hero-container #hero-header .options .btn-group .dropdown-menu li label {
+#hero-container .options .btn-group .dropdown-menu li label {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,7 +135,7 @@
   padding: 3px 0;
 }
 
-#hero-container #hero-header .options .btn-group li input {
+#hero-container .options .btn-group li input {
   margin-left: 10px;
   height: 17px;
   width: 17px;
@@ -126,7 +150,7 @@
   margin: 0 3px;
 }
 
-#hero-container #hero-header .btn-group .btn .caret {
+#hero-container .btn-group .btn .caret {
   border-top: 6px dashed;
   border-top: 6px solid\9;
   border-right: 6px solid rgba(0, 0, 0, 0);
@@ -134,7 +158,7 @@
   margin-top: -1px;
 }
 
-#hero-container #hero-header .options .dropdown-menu li a, #hero-container #hero-header .options .dropdown-menu li > div  {
+#hero-container .options .dropdown-menu li a, #hero-container .options .dropdown-menu li > div  {
   padding: 0px 15px;
   font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
@@ -147,7 +171,7 @@
   white-space: nowrap;
 }
 
-#hero-container #hero-header .options .dropdown-menu li > div:hover  {
+#hero-container .options .dropdown-menu li > div:hover  {
   background-color: rgb(245, 245, 245);
 }
 
@@ -231,6 +255,9 @@
 
 #hero-container .hero-items .section-header {
   margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #hero-container .hero-items .section-header h2, #hero-container .hero-grid .section-header h2 {

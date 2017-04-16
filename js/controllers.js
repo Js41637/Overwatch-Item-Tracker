@@ -338,11 +338,14 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
   }
 
   // Mark all items for current hero as selected
-  this.selectAll = function(unselect) {
+  this.selectAll = function(unselect, onlyType) {
     if (vm.totals.selected == vm.totals.total && !unselect) {
       return;
     }
     for (var type in vm.filteredItems) {
+      if (onlyType && type !== onlyType) {
+        continue;
+      }
       vm.filteredItems[type].forEach(function(item) {
         vm.checked[item.hero || hero.id][type][item.id] = (unselect ? false : true);
       })
@@ -351,15 +354,18 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     StorageService.setData(Object.assign({}, Data.checked, vm.checked[hero.id]));
   }
 
-  this.unSelectAll = function() {
+  this.unSelectAll = function(type) {
     if (vm.totals.selected == 0) return
     var modal = $uibModal.open({
       size: 'sm',
-      templateUrl: './templates/modals/unselect.html'
+      templateUrl: './templates/modals/unselect.html',
+      controller: function($scope) {
+        $scope.type = type
+      }
     });
     modal.result.then(function(unselect) {
       if (unselect) {
-        vm.selectAll(true)
+        vm.selectAll(true, type)
       }
     })
   }
