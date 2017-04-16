@@ -1351,33 +1351,9 @@
       ],
       "sprays": [
         {
-          "name": "...Never Die",
-          "id": "never-die",
-          "event": "HALLOWEEN_2016",
-          "quality": "common"
-        },
-        {
           "name": "...Punch",
           "id": "punch",
           "quality": "common"
-        },
-        {
-          "name": "Auspicious Lion",
-          "id": "auspicious-lion",
-          "event": "YEAR_OF_THE_ROOSTER_2017",
-          "achievement": true
-        },
-        {
-          "name": "Awakened Lion",
-          "id": "awakened-lion",
-          "event": "YEAR_OF_THE_ROOSTER_2017",
-          "achievement": true
-        },
-        {
-          "id": "b73ns",
-          "name": "B73-NS",
-          "event": "UPRISING_2017",
-          "achievement": true
         },
         {
           "name": "Barbarian",
@@ -1386,33 +1362,9 @@
           "group": "diablo"
         },
         {
-          "name": "Bats",
-          "id": "bats",
-          "event": "HALLOWEEN_2016",
-          "quality": "common"
-        },
-        {
           "name": "Beyond the Moon",
           "id": "beyond-the-moon",
           "achievement": true
-        },
-        {
-          "name": "Boo!",
-          "id": "boo",
-          "event": "HALLOWEEN_2016",
-          "quality": "common"
-        },
-        {
-          "name": "Boop!",
-          "id": "boop",
-          "event": "HALLOWEEN_2016",
-          "quality": "common"
-        },
-        {
-          "name": "Candyball",
-          "id": "candyball",
-          "event": "HALLOWEEN_2016",
-          "quality": "common"
         },
         {
           "name": "Catcher",
@@ -1457,27 +1409,9 @@
           "group": "diablo"
         },
         {
-          "name": "Dragon's Head",
-          "id": "dragons-head",
-          "event": "YEAR_OF_THE_ROOSTER_2017",
-          "quality": "common"
-        },
-        {
           "name": "Día de los Muertos",
           "id": "da-de-los-muertos",
           "standardItem": true
-        },
-        {
-          "id": "eradicator",
-          "name": "Eradicator",
-          "event": "UPRISING_2017",
-          "achievement": true
-        },
-        {
-          "name": "Fangs",
-          "id": "fangs",
-          "event": "HALLOWEEN_2016",
-          "quality": "common"
         },
         {
           "name": "Forge Onward",
@@ -1506,32 +1440,8 @@
           "quality": "common"
         },
         {
-          "name": "Gummy Hog",
-          "id": "gummy-hog",
-          "event": "HALLOWEEN_2016",
-          "quality": "common"
-        },
-        {
-          "name": "Halloween Special",
-          "id": "halloween-special",
-          "event": "HALLOWEEN_2016",
-          "achievement": true
-        },
-        {
-          "name": "Halloween Terror",
-          "id": "halloween-terror",
-          "event": "HALLOWEEN_2016",
-          "quality": "common"
-        },
-        {
           "name": "Jail",
           "id": "jail",
-          "achievement": true
-        },
-        {
-          "name": "Junkenstein's Revenge",
-          "id": "junkensteins-revenge",
-          "event": "HALLOWEEN_2016",
           "achievement": true
         },
         {
@@ -1543,12 +1453,6 @@
           "name": "Logo",
           "id": "logo",
           "standardItem": true
-        },
-        {
-          "name": "Lucky Pouch",
-          "id": "lucky-pouch",
-          "event": "YEAR_OF_THE_ROOSTER_2017",
-          "quality": "common"
         },
         {
           "name": "Lumérico",
@@ -1567,25 +1471,6 @@
           "group": "diablo"
         },
         {
-          "id": "null-sector",
-          "name": "Null Sector",
-          "event": "UPRISING_2017",
-          "quality": "common"
-        },
-        {
-          "id": "nullmari",
-          "name": "Nullmari",
-          "event": "UPRISING_2017",
-          "achievement": true,
-          "group": "pachi"
-        },
-        {
-          "id": "nulltrooper",
-          "name": "Nulltrooper",
-          "event": "UPRISING_2017",
-          "achievement": true
-        },
-        {
           "name": "Numbani Statue",
           "id": "numbani-statue",
           "quality": "common"
@@ -1598,12 +1483,6 @@
         {
           "name": "Oops",
           "id": "oops",
-          "achievement": true
-        },
-        {
-          "id": "or14ns",
-          "name": "OR14-NS",
-          "event": "UPRISING_2017",
           "achievement": true
         },
         {
@@ -1634,18 +1513,6 @@
           "group": "diablo"
         },
         {
-          "name": "Pumpkins",
-          "id": "pumpkins",
-          "event": "HALLOWEEN_2016",
-          "quality": "common"
-        },
-        {
-          "name": "Red Envelope",
-          "id": "red-envelope",
-          "event": "YEAR_OF_THE_ROOSTER_2017",
-          "quality": "common"
-        },
-        {
           "name": "Red O",
           "id": "red-o",
           "achievement": true
@@ -1673,12 +1540,6 @@
         {
           "name": "Rise",
           "id": "rise",
-          "achievement": true
-        },
-        {
-          "name": "Rise of the Zomnics",
-          "id": "rise-of-the-zomnics",
-          "event": "HALLOWEEN_2016",
           "achievement": true
         },
         {
@@ -1755,10 +1616,152 @@
           "quality": "common"
         },
         {
-          "id": "slicer",
-          "name": "Slicer",
-          "event": "UPRISING_2017",
+          "name": "Sol",
+          "id": "sol",
+          "quality": "common"
+        },
+        {
+          "name": "Sorry",
+          "id": "sorry",
           "achievement": true
+        },
+        {
+          "name": "Soulstone",
+          "id": "soulstone",
+          "quality": "common"
+        },
+        {
+          "name": "Tea Time",
+          "id": "tea-time",
+          "achievement": true
+        },
+        {
+          "name": "Thanks",
+          "id": "thanks",
+          "achievement": true
+        },
+        {
+          "name": "Victory",
+          "id": "victory",
+          "achievement": true
+        },
+        {
+          "name": "Vivi's Adventure",
+          "id": "vivis-adventure",
+          "quality": "common"
+        },
+        {
+          "name": "Well Played",
+          "id": "well-played",
+          "achievement": true
+        },
+        {
+          "name": "Witch Doctor",
+          "id": "witch-doctor",
+          "achievement": "blizzard",
+          "group": "diablo"
+        },
+        {
+          "name": "Wizard",
+          "id": "wizard",
+          "achievement": "blizzard",
+          "group": "diablo"
+        },
+        {
+          "name": "You are not prepared!",
+          "id": "you-are-not-prepared",
+          "standardItem": true,
+          "group": "world of warcraft"
+        },
+        {
+          "name": "Summer Games 2016",
+          "id": "summer-games-2016",
+          "event": "SUMMER_GAMES_2016",
+          "quality": "common"
+        },
+        {
+          "name": "...Never Die",
+          "id": "never-die",
+          "event": "HALLOWEEN_2016",
+          "quality": "common"
+        },
+        {
+          "name": "Bats",
+          "id": "bats",
+          "event": "HALLOWEEN_2016",
+          "quality": "common"
+        },
+        {
+          "name": "Boo!",
+          "id": "boo",
+          "event": "HALLOWEEN_2016",
+          "quality": "common"
+        },
+        {
+          "name": "Boop!",
+          "id": "boop",
+          "event": "HALLOWEEN_2016",
+          "quality": "common"
+        },
+        {
+          "name": "Candyball",
+          "id": "candyball",
+          "event": "HALLOWEEN_2016",
+          "quality": "common"
+        },
+        {
+          "name": "Fangs",
+          "id": "fangs",
+          "event": "HALLOWEEN_2016",
+          "quality": "common"
+        },
+        {
+          "name": "Gummy Hog",
+          "id": "gummy-hog",
+          "event": "HALLOWEEN_2016",
+          "quality": "common"
+        },
+        {
+          "name": "Halloween Special",
+          "id": "halloween-special",
+          "event": "HALLOWEEN_2016",
+          "achievement": true
+        },
+        {
+          "name": "Halloween Terror",
+          "id": "halloween-terror",
+          "event": "HALLOWEEN_2016",
+          "quality": "common"
+        },
+        {
+          "name": "Junkenstein's Revenge",
+          "id": "junkensteins-revenge",
+          "event": "HALLOWEEN_2016",
+          "achievement": true
+        },
+        {
+          "name": "Pumpkins",
+          "id": "pumpkins",
+          "event": "HALLOWEEN_2016",
+          "quality": "common"
+        },
+        {
+          "name": "Rise of the Zomnics",
+          "id": "rise-of-the-zomnics",
+          "event": "HALLOWEEN_2016",
+          "achievement": true
+        },
+        {
+          "name": "The Reapening",
+          "id": "the-reapening",
+          "event": "HALLOWEEN_2016",
+          "achievement": true
+        },
+        {
+          "name": "Witch's Brew",
+          "id": "witchs-brew",
+          "event": "HALLOWEEN_2016",
+          "quality": "common"
         },
         {
           "name": "Snowcree",
@@ -1785,80 +1788,40 @@
           "achievement": true
         },
         {
-          "name": "Sol",
-          "id": "sol",
-          "quality": "common"
-        },
-        {
-          "name": "Sorry",
-          "id": "sorry",
-          "achievement": true
-        },
-        {
-          "name": "Soulstone",
-          "id": "soulstone",
-          "quality": "common"
-        },
-        {
-          "name": "Summer Games 2016",
-          "id": "summer-games-2016",
-          "event": "SUMMER_GAMES_2016",
-          "quality": "common"
-        },
-        {
-          "name": "Tea Time",
-          "id": "tea-time",
-          "achievement": true
-        },
-        {
-          "name": "Thanks",
-          "id": "thanks",
-          "achievement": true
-        },
-        {
-          "name": "The Reapening",
-          "id": "the-reapening",
-          "event": "HALLOWEEN_2016",
-          "achievement": true
-        },
-        {
-          "name": "Victory",
-          "id": "victory",
-          "achievement": true
-        },
-        {
-          "name": "Vivi's Adventure",
-          "id": "vivis-adventure",
-          "quality": "common"
-        },
-        {
-          "name": "Well Played",
-          "id": "well-played",
-          "achievement": true
-        },
-        {
           "name": "Winter Wonderland",
           "id": "winter-wonderland",
           "event": "WINTER_WONDERLAND_2016",
           "quality": "common"
         },
         {
-          "name": "Witch Doctor",
-          "id": "witch-doctor",
-          "achievement": "blizzard",
-          "group": "diablo"
+          "name": "Auspicious Lion",
+          "id": "auspicious-lion",
+          "event": "YEAR_OF_THE_ROOSTER_2017",
+          "achievement": true
         },
         {
-          "name": "Witch's Brew",
-          "id": "witchs-brew",
-          "event": "HALLOWEEN_2016",
+          "name": "Awakened Lion",
+          "id": "awakened-lion",
+          "event": "YEAR_OF_THE_ROOSTER_2017",
+          "achievement": true
+        },
+        {
+          "name": "Dragon's Head",
+          "id": "dragons-head",
+          "event": "YEAR_OF_THE_ROOSTER_2017",
           "quality": "common"
         },
         {
-          "name": "Wizard",
-          "id": "wizard",
-          "achievement": "blizzard",
-          "group": "diablo"
+          "name": "Lucky Pouch",
+          "id": "lucky-pouch",
+          "event": "YEAR_OF_THE_ROOSTER_2017",
+          "quality": "common"
+        },
+        {
+          "name": "Red Envelope",
+          "id": "red-envelope",
+          "event": "YEAR_OF_THE_ROOSTER_2017",
+          "quality": "common"
         },
         {
           "name": "Year of the Rooster",
@@ -1867,10 +1830,47 @@
           "quality": "common"
         },
         {
-          "name": "You are not prepared!",
-          "id": "you-are-not-prepared",
-          "standardItem": true,
-          "group": "world of warcraft"
+          "id": "b73ns",
+          "name": "B73-NS",
+          "event": "UPRISING_2017",
+          "achievement": true
+        },
+        {
+          "id": "eradicator",
+          "name": "Eradicator",
+          "event": "UPRISING_2017",
+          "achievement": true
+        },
+        {
+          "id": "null-sector",
+          "name": "Null Sector",
+          "event": "UPRISING_2017",
+          "quality": "common"
+        },
+        {
+          "id": "nullmari",
+          "name": "Nullmari",
+          "event": "UPRISING_2017",
+          "achievement": true,
+          "group": "pachi"
+        },
+        {
+          "id": "nulltrooper",
+          "name": "Nulltrooper",
+          "event": "UPRISING_2017",
+          "achievement": true
+        },
+        {
+          "id": "or14ns",
+          "name": "OR14-NS",
+          "event": "UPRISING_2017",
+          "achievement": true
+        },
+        {
+          "id": "slicer",
+          "name": "Slicer",
+          "event": "UPRISING_2017",
+          "achievement": true
         }
       ]
     }

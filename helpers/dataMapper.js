@@ -289,7 +289,14 @@ heroes = sortObject(heroes)
 // go through all hero items and sort items as they are sorted ingame
 forEach(heroes, hero => forEach(hero.items, (items, type) => {
   if (hero.id == 'all') {
-    hero.items[type] = sortBy(items, [a => a.name.toLowerCase()])
+    if (type == 'sprays') {
+      hero.items[type] = sortBy(items, [
+        (b => EVENTORDER[b.event]), // event items go below normal items
+        (d => d.name.toLowerCase()) // everything in their respective groups is sorted by name
+      ])
+    } else {
+      hero.items[type] = sortBy(items, [a => a.name.toLowerCase()]) // sort alphabetically
+    }
     return
   }
   hero.items[type] = sortBy(items, [
