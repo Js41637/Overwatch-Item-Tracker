@@ -170,7 +170,7 @@
   margin-top: -1px;
 }
 
-#hero-container #hero-header .options .dropdown-menu li a, #hero-container #hero-header .options .dropdown-menu li > div  {
+#hero-container #hero-header .options .dropdown-menu li a, #hero-container #hero-header .options .dropdown-menu li > div, #hero-container .section-header .dropdown-menu>li>a  {
   padding: 4px 12px;
   font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
@@ -275,6 +275,7 @@
   background-color: #c6cbde;
   text-align: left;
   margin: 0 -12px;
+  display: flex;
 }
 
 #hero-container .hero-items .section-header h2, #hero-container .hero-grid .section-header h2 {
@@ -285,6 +286,7 @@
   font-style: normal;
   text-transform: uppercase;
   vertical-align: middle;
+  flex: 1;
 }
 
 #hero-container .hero-items .section-header h2:before {
@@ -326,13 +328,19 @@
   background-image: url('resources/icons/item-types/voice-lines.svg');
 }
 
-
-
-
 #hero-container .hero-items .section-header h2 small {
   font-size: 0.8em;
   margin-left: 2px;
 }
+
+#hero-container .section-header .options {
+  padding: 0.8em;
+}
+
+#hero-container .section-header .options .btn {
+  padding: 6px;
+}
+
 
 #hero-container .hero-items .section .item {
   display: flex;
