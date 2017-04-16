@@ -34,6 +34,9 @@
             <div>
               <label for="achievementf">Achievement/Special <input id="achievementf" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.achievement"></label>
             </div>
+            <div>
+              <label for="herof">Hero Icons <input id="herof" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.hero"></label>
+            </div>
           </li>
           <li class="divider" ng-show="::hero.hasGroups()"></li>
           <li ng-repeat="(group, val) in ::hero.groups track by $index">

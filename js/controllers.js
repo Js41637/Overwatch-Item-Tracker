@@ -120,6 +120,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     selected: false,
     unselected: false,
     achievement: false,
+    hero: false,
     events: {},
     groups: {}
   };
@@ -225,6 +226,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     var selected = vm.filters.selected;
     var unselected = vm.filters.unselected;
     var achievement = vm.filters.achievement;
+    var herof = vm.filters.hero;
 
     // Generate array of event ids we are filtering
     var eventFilters = []
@@ -238,7 +240,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     }
 
     // Disable filtering if nothing is selected
-    if (!eventFilters.length && !groupFilter.length && !selected && !unselected && !achievement) {
+    if (!eventFilters.length && !groupFilter.length && !selected && !unselected && !achievement && !herof) {
       vm.clearFilters();
       return
     }
@@ -273,6 +275,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
         }
 
         if (vm.filters.achievement && !item.achievement) return;
+        if (vm.filters.hero && !item.hero) return;
         if (eventFilters.length && (!item.event || !eventFilters.includes(item.event))) return;
         if (groupFilter.length && (!item.group || !groupFilter.includes(item.group))) return;
 
@@ -294,6 +297,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
       selected: false,
       unselected: false,
       achievement: false,
+      hero: false,
       events: {},
       groups: {}
     }
