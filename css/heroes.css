@@ -216,6 +216,10 @@
   box-sizing: border-box;
 }
 
+#hero-container .hero-grid {
+  margin-top: 3px;
+}
+
 #hero-container .hero-items {
   margin-top: 3px;
   -webkit-column-width: 530px;
@@ -235,14 +239,14 @@
   -moz-column-count: 0;
 }
 
-#hero-container .hero-items .section {
+#hero-container .section {
   break-inside: avoid;
   page-break-inside: avoid;
   padding: 10px;
   overflow: hidden;
 }
 
-#hero-container .hero-items.ng-enter {
+#hero-container .hero-items.ng-enter, #hero-container .hero-grid.ng-enter {
   opacity: 0;
   animation-name: fadeIn;
   animation-iteration-count: 1;
@@ -250,7 +254,7 @@
   animation-duration: 0.6s;
 }
 
-#hero-container .hero-items.ng-enter-active {
+#hero-container .hero-items.ng-enter-active, #hero-container .hero-grid.ng-enter-active {
   opacity: 1;
 }
 
@@ -266,7 +270,7 @@
   font-weight: bold;
 }
 
-#hero-container .hero-items .section-header h2 small {
+#hero-container .section-header h2 small {
   font-size: 0.7em;
   margin-left: 2px;
   color: inherit;
