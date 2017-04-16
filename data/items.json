@@ -64,12 +64,6 @@
           "event": "UPRISING_2017"
         },
         {
-          "name": "BMX",
-          "id": "reaper-bmx",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "reaper"
-        },
-        {
           "name": "Badge",
           "id": "mccree-badge",
           "hero": "mccree"
@@ -119,6 +113,12 @@
           "id": "blackwatch",
           "name": "Blackwatch",
           "event": "UPRISING_2017"
+        },
+        {
+          "name": "BMX",
+          "id": "reaper-bmx",
+          "event": "SUMMER_GAMES_2016",
+          "hero": "reaper"
         },
         {
           "name": "Bokimari",
@@ -492,14 +492,14 @@
           "hero": "zenyatta"
         },
         {
-          "name": "Have Fish",
-          "id": "have-fish",
-          "event": "YEAR_OF_THE_ROOSTER_2017"
-        },
-        {
           "name": "Have a Nice Day!",
           "id": "junkrat-have-a-nice-day",
           "hero": "junkrat"
+        },
+        {
+          "name": "Have Fish",
+          "id": "have-fish",
+          "event": "YEAR_OF_THE_ROOSTER_2017"
         },
         {
           "name": "Hearthstone",
@@ -722,15 +722,15 @@
           "hero": "zenyatta"
         },
         {
-          "id": "or14ns",
-          "name": "OR14-NS",
-          "event": "UPRISING_2017"
-        },
-        {
           "name": "Oni",
           "id": "genji-oni",
           "achievement": "blizzard",
           "hero": "genji"
+        },
+        {
+          "id": "or14ns",
+          "name": "OR14-NS",
+          "event": "UPRISING_2017"
         },
         {
           "name": "Orisa",
@@ -1591,12 +1591,6 @@
           "quality": "common"
         },
         {
-          "id": "or14ns",
-          "name": "OR14-NS",
-          "event": "UPRISING_2017",
-          "achievement": true
-        },
-        {
           "name": "Omnic Rights",
           "id": "omnic-rights",
           "quality": "common"
@@ -1604,6 +1598,12 @@
         {
           "name": "Oops",
           "id": "oops",
+          "achievement": true
+        },
+        {
+          "id": "or14ns",
+          "name": "OR14-NS",
+          "event": "UPRISING_2017",
           "achievement": true
         },
         {
@@ -2248,6 +2248,11 @@
           "quality": "common"
         },
         {
+          "name": "someone to tuck you in?",
+          "id": "ana-someone-to-tuck-you-in",
+          "quality": "common"
+        },
+        {
           "name": "What are you thinking?",
           "id": "ana-what-are-you-thinking",
           "quality": "common"
@@ -2260,11 +2265,6 @@
         {
           "name": "You know nothing",
           "id": "ana-you-know-nothing",
-          "quality": "common"
-        },
-        {
-          "name": "someone to tuck you in?",
-          "id": "ana-someone-to-tuck-you-in",
           "quality": "common"
         },
         {
@@ -2571,6 +2571,11 @@
           "quality": "common"
         },
         {
+          "name": "e54",
+          "id": "bastion-e54",
+          "quality": "common"
+        },
+        {
           "name": "Fire At Will",
           "id": "bastion-fire-at-will",
           "quality": "common"
@@ -2638,11 +2643,6 @@
         {
           "name": "Wood and Stone",
           "id": "bastion-wood-and-stone",
-          "quality": "common"
-        },
-        {
-          "name": "e54",
-          "id": "bastion-e54",
           "quality": "common"
         },
         {
@@ -2918,23 +2918,23 @@
           "standardItem": true
         },
         {
-          "name": "Bunny Hop",
-          "id": "dva-bunny-hop",
-          "quality": "epic"
-        },
-        {
-          "name": "Party Time",
-          "id": "dva-party-time",
-          "quality": "epic"
-        },
-        {
           "name": "^o^",
           "id": "dva-excited",
           "quality": "epic"
         },
         {
+          "name": "Bunny Hop",
+          "id": "dva-bunny-hop",
+          "quality": "epic"
+        },
+        {
           "name": "heartbreaker",
           "id": "dva-heartbreaker",
+          "quality": "epic"
+        },
+        {
+          "name": "Party Time",
+          "id": "dva-party-time",
           "quality": "epic"
         },
         {
@@ -3211,6 +3211,11 @@
           "quality": "common"
         },
         {
+          "name": "gg!",
+          "id": "dva-gg",
+          "quality": "common"
+        },
+        {
           "name": "I play to win",
           "id": "dva-i-play-to-win",
           "quality": "common"
@@ -3228,11 +3233,6 @@
         {
           "name": "No hacks required",
           "id": "dva-no-hacks-required",
-          "quality": "common"
-        },
-        {
-          "name": "gg!",
-          "id": "dva-gg",
           "quality": "common"
         },
         {
@@ -5387,13 +5387,13 @@
       ],
       "sprays": [
         {
-          "name": "BAMF",
-          "id": "mccree-bamf",
+          "name": "Badge",
+          "id": "mccree-badge",
           "quality": "common"
         },
         {
-          "name": "Badge",
-          "id": "mccree-badge",
+          "name": "BAMF",
+          "id": "mccree-bamf",
           "quality": "common"
         },
         {
@@ -5882,6 +5882,11 @@
           "quality": "common"
         },
         {
+          "name": "^_^",
+          "id": "mei-joy",
+          "quality": "common"
+        },
+        {
           "name": "Beat the Heat",
           "id": "mei-beat-the-heat",
           "quality": "common"
@@ -5984,11 +5989,6 @@
         {
           "name": "Walled",
           "id": "mei-walled",
-          "quality": "common"
-        },
-        {
-          "name": "^_^",
-          "id": "mei-joy",
           "quality": "common"
         },
         {
@@ -6816,6 +6816,11 @@
           "quality": "common"
         },
         {
+          "name": "^_^",
+          "id": "orisa-joy",
+          "quality": "common"
+        },
+        {
           "name": "Amused",
           "id": "orisa-amused",
           "quality": "common"
@@ -6918,11 +6923,6 @@
         {
           "name": "Xing",
           "id": "orisa-xing",
-          "quality": "common"
-        },
-        {
-          "name": "^_^",
-          "id": "orisa-joy",
           "quality": "common"
         },
         {
@@ -10738,13 +10738,13 @@
           "quality": "common"
         },
         {
-          "name": "I'm Swedish!",
-          "id": "torbjorn-im-swedish",
+          "name": "I'm giving it all I've got!",
+          "id": "torbjorn-im-giving-it-all-ive-got",
           "quality": "common"
         },
         {
-          "name": "I'm giving it all I've got!",
-          "id": "torbjorn-im-giving-it-all-ive-got",
+          "name": "I'm Swedish!",
+          "id": "torbjorn-im-swedish",
           "quality": "common"
         },
         {
@@ -11247,6 +11247,11 @@
           "quality": "common"
         },
         {
+          "name": "déjà vu",
+          "id": "tracer-deja-vu",
+          "quality": "common"
+        },
+        {
           "name": "Keep calm",
           "id": "tracer-keep-calm",
           "quality": "common"
@@ -11269,11 +11274,6 @@
         {
           "name": "You need a time out",
           "id": "tracer-you-need-a-time-out",
-          "quality": "common"
-        },
-        {
-          "name": "déjà vu",
-          "id": "tracer-deja-vu",
           "quality": "common"
         },
         {

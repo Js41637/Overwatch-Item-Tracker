@@ -289,7 +289,7 @@ heroes = sortObject(heroes)
 // go through all hero items and sort items as they are sorted ingame
 forEach(heroes, hero => forEach(hero.items, (items, type) => {
   if (hero.id == 'all') {
-    hero.items[type] = sortBy(items, ['name'])
+    hero.items[type] = sortBy(items, [a => a.name.toLowerCase()])
     return
   }
   hero.items[type] = sortBy(items, [
@@ -297,7 +297,7 @@ forEach(heroes, hero => forEach(hero.items, (items, type) => {
       (a => qualityOrder[a.quality]), // sort by quality. rare, epic, legendary
       (c => c.achievement ? 1 : 0), // achievement items (origins edition/blizzcon) go at the bottom
       (b => EVENTORDER[b.event]), // event items go below normal items
-      'name' // everything in their respective groups is sorted by name
+      (d => d.name.toLowerCase()) // everything in their respective groups is sorted by name
     ])
 }))
 
