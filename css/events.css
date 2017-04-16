@@ -29,6 +29,8 @@
   vertical-align: middle;
   top: 0px;
   position: relative;
+  color: inherit;
+  font-weight: inherit;
 }
 
 #event-container h2>small:before {

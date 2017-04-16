@@ -190,6 +190,7 @@
   text-align: center;
   position: relative;
   border-radius: 4px;
+  box-sizing: content-box;
 }
 
 #hero-container #hero-header .hero-progress span {
@@ -268,6 +269,8 @@
 #hero-container .hero-items .section-header h2 small {
   font-size: 0.7em;
   margin-left: 2px;
+  color: inherit;
+  font-weight: inherit;
 }
 
 #hero-container .hero-items .section .item {
