@@ -1,0 +1,12 @@
+<div>
+  <div class="preview img" ng-if="preview.img">
+    <div lazy-background="{{preview.img}}"></div>
+  </div>
+  <div class="preview video" ng-if="preview.video">
+    <div class="bg2"></div>
+    <video audiopls autoplay="true" autostart="true" loop="true" ng-src="{{preview.video}}"></video>
+  </div>
+  <div class="preview audio" ng-if="preview.audio">
+    <div lazy-audio="{{preview.audio}}"></div>
+  </div>
+</div>

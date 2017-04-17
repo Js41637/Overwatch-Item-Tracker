@@ -1,30 +1,97 @@
+/* Datamapper.js
+ * Maps item data provided from rawData.txt to each hero sorted by the item type
+ * Items added in events are then mapped from this hero data.
+ * Code on this page is synchronous, it works it's way down.
+ */
 const fs = require('fs')
-const { forEach } = require('lodash')
-const { EVENTS, EVENTNAMES, EVENTTIMES } = require('./dataMapper/EVENTDATA.js')
-const { getCleanID, getClassForHero, getItemType, getImageURL, sortObject } = require('./dataMapper/helpers.js')
+const { forEach, sortBy, find, reduce, merge } = require('lodash')
 
-var rawData
+const mode = process.argv.slice(2)[0]
+
+const HERODATA = require('./dataMapper/HERODATA.js')
+const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp } = require('./dataMapper/itemData.js')
+const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT } = require('./dataMapper/EVENTDATA.js')
+const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder } = require('./dataMapper/utils.js')
+var allClassData, rawData, missingAllClassData = {}, allClassDataKeys = {}
 try {
-  rawData = fs.readFileSync('./rawData.txt', "utf8")
-} catch (e) {
-  console.error("Error reading ./rawData.txt")
-  return
+  allClassData = require('../data/allClassItems.json')
+  rawData = fs.readFileSync(`${__dirname}/rawData.txt`, "utf8")
+} catch(e) {
+  console.error("Failed to find allClassData or rawData!!")
+  process.exit()
 }
 
-// Load allClassItems data
-var allClassData
 try {
-  allClassData = fs.readFileSync('../data/allClassItems.json', 'utf8')
-} catch (e) {
-  console.error("Error reading ../data/allClassItems.json")
-  return
-}
+  missingAllClassData = require('../data/missingAllClassData.json')
+} catch(e) {
+  console.log("missing data")
+} // eslint-disable-line
+
+// AllClassData that isn't automatically generated can be manually added in missingAllClassData.json
+// parsing missing items and if they have a name, add them to an object similar to allClassData
+var noLongerMissingAllClassData = reduce(missingAllClassData, (result, items, type) => {
+  if (!result[type]) result[type] = []
+  items = reduce(items, (newItems = [], item) => {
+    if (item.name.length) newItems.push(item)
+    return newItems
+  }, [])
+  result[type] = items
+  return result
+}, {})
+
+// Add no longer missing allclass data onto allClassData
+forEach(noLongerMissingAllClassData, (items, type) => allClassData[type] = [...allClassData[type], ...items])
+
+// Create object containing allclass item names by key so we can easily map event ids to items.
+// also check if any items are in allClassEventItems and mark them as event items
+allClassData = reduce(allClassData, (result, items, type) => {
+  if (!result[type]) {
+    result[type] = []
+    allClassDataKeys[type] = {}
+  }
+
+  items = reduce(items, (newItems = [], item) => {
+    if (hiddenItems[type] && hiddenItems[type].includes(item.id)) return newItems
+    allClassDataKeys[type][item.id] = item.name
+    var { event = undefined } = reduce(allClassEventItems[type], (r, items, eventID) => {
+      let match = find(items, id => id == item.id)
+      Object.assign(r, match ? { event: eventID } : {})
+      return r
+    }, {})
+
+    item.name = itemNamesIFuckedUp[`${type}/${item.id}`] || item.name
+    
+    // Check if the spray or icon is a Competitive reward
+    const isSeasonCompItem = item.id.match(/^season-(.)-(competitor|hero)$/)
+    const isCompItem =  isSeasonCompItem || item.id == 'top-500' ? { group: 'competitive' } : undefined
+
+    const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined
+    const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem) ? { achievement: true } : blizzardItems[type].includes(item.id) ? { achievement: 'blizzard' } : undefined
+    // Only purchasable items need a quality
+    const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompItem) ? { quality: 'common' } : undefined
+    
+    // Check for specific item groups
+    const isPachiItem = item.id.startsWith('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined
+    var customEvent = undefined;
+    for (var group in specialItems) {
+      if (specialItems[group][type] && specialItems[group][type].includes(item.id)) customEvent = { group: group }
+    }
+
+    newItems.push(Object.assign(item, { event }, isAchievement, isStandard, quality, customEvent, isPachiItem, isCompItem))
+    if (isSeasonCompItem && type == 'sprays') {
+      newItems.push({ name: `Season ${isSeasonCompItem[1]} Hero`, id: `season-${isSeasonCompItem[1]}-hero`, achievement: true, group: 'competitive' })
+    }
+    return newItems
+  }, [])
+  result[type] = items
+  return result
+}, {})
 
 var data = []
 const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g
 const heroGroups = rawData.split('\n').filter(a => !a.includes("Error unknown")).join('\n').split('\n\n')
 heroGroups.forEach(heroData => {
-  let hero = heroData.split('\n')[0].split(' ').slice(2).join(' ') // name of hero
+  const hero = heroData.split('\n')[0].split(' ').slice(2).join(' ') // name of hero
   let rawItems = heroData.split('\n').slice(1).join('\n') // remove the first line containing name of hero
   var items = {}, itemMatch;
   while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
@@ -33,28 +100,14 @@ heroGroups.forEach(heroData => {
   data.push({ hero, items })
 })
 
-// Can't generate IDs off these names can we :)
-const stupidNames = {
-  "^_^": "joy",
-  ">_\\<": "frustration",
-  ";)": "winky-face"
-}
-
-// Blizzard changed the names of these items thus changing their IDs,
-// I will eventually run a migration that fixes these but for now I will manually fix
-// NOTE: the reason these two IDs changed is because they are dupes of existing items
-const originalIDs = {
-  "skins/mercy-fortune": "mercy-golden",
-  "icons/roadhog-pigsy": "roadhog-piggy"
-}
-
 var heroes = {}
+// Goes through every hero and their item lists
 data.forEach(({ hero, items: itemGroups }) => {
-  var heroID = getCleanID(hero)
-  var heroData = {
+  const heroID = getCleanID(hero)
+  const heroData = Object.assign({
     name: hero,
-    class: getClassForHero(hero.toLowerCase()),
     id: heroID,
+  }, HERODATA[heroID], {
     items: {
       skins: [],
       emotes: [],
@@ -64,23 +117,23 @@ data.forEach(({ hero, items: itemGroups }) => {
       voicelines: [],
       poses: []
     }
-  }
+  })
 
   forEach(itemGroups, (items, group) => {
     items.forEach(item => {
       var [str, name, type] = item.match(/(.+) \((.+)\)/) //eslint-disable-line
-      name = name.trim()
+      name = badNames[name.trim()] || name.trim()
       if (name == 'RANDOM') return
-      var id = getCleanID(stupidNames[name] || name, heroID)
-      var { quality, type: itemType } = getItemType(type)
-      id = originalIDs[`${itemType}/${id}`] || id
+      const id = getCleanID(name, heroID)
+      const { quality, type: itemType } = getItemType(type)
+      name = itemNamesIFuckedUp[`${itemType}/${id}`] || name
       if (!quality || !itemType) return
-      var out = { name, id, quality: quality }
+      const out = { name, id, quality }
       switch (group) {
         case 'COMMON':
           break;
         case 'ACHIEVEMENT':
-          out.achievement = true
+          out.achievement = (itemType == 'sprays' && achievementSprays.includes(name.toLowerCase())) ? true : 'blizzard'
           break;
         case 'STANDARD_COMMON':
           out.standardItem = true
@@ -90,34 +143,26 @@ data.forEach(({ hero, items: itemGroups }) => {
           break;
       }
       heroData.items[itemType].push(out)
+      // Icons are allclass so we can add them allClassData which doesn't include hero specific icons
+      if (itemType == 'icons') {
+        out.hero = heroID
+        delete out.quality
+        allClassData['icons'].push(out)
+      }
     })
   })
   heroes[heroID] = heroData
 })
 heroes = sortObject(heroes)
 
-var allClassItems = {
-  'sprays': {
-    [EVENTS.SUMMER16]: ['Summer Games'],
-    [EVENTS.HALLOWEEN16]: ['...Never Die', 'Bats', 'Boo!', 'Boop!', 'Candyball', 'Fangs', 'Gummy Hog', 'Halloween Terror 2016', 'Pumpkins', 'Witch\'s Brew'],
-    [EVENTS.CHRISTMAS16]: ['SnowCree', 'SnowHog', 'SnowMei', 'SnowReaper', ['Winter Wonderland']],
-    [EVENTS.ROOSTER17]: ['Auspicious Lion', 'Awakened Lion', ['Dragon\'s Head'], ['Lucky Pouch'], ['Red Envelope'], ['Year of the Rooster']]
-  },
-  icons: {
-    [EVENTS.SUMMER16]: ["Summer Games", "Australia", "Brazil", "China", "Egypt", "France", "Germany", "Greece", "Japan", "Mexico", "Nepal", "Numbani", "Russia", "South Korea", "Sweden", "Switzerland", "United Kingdom", "United States"],
-    [EVENTS.HALLOWEEN16]: ["Halloween Terror", "...Never Die", "Bewitching", "Calavera", "Candle", "Eyeball", "Ghostymari", "Spider", "Superstition", "Tombstone", "Vampachimari", "Witch's Brew", "Witch's Hat", "Wolf"],
-    [EVENTS.CHRISTMAS16]: ["Winter Wonderland", "Snowman", "Present", "Pachimerry", "Gingermari", "2017", "Holly", "Tannenbaum", "Bubbly", "Gingerbread", "Candy Cane", "Ornament", "Hot Cocoa", "Cheers!", "Wreath", "Mochi", "Dreidel", "Bells", "Peppermint", "Snow Globe", "Pachireindeer", "Stocking"],
-    [EVENTS.ROOSTER17]: ["Bokimari", "Coin", "Dragon Dance", "Fortune", "Fuchimari", "Gold", "Have Fish", "Lantern", "Lion Dance", "Lucky Pouch", "Lunamari", "New Year Cake", "Pachilantern", "Red Envelope", "Seollal", "Tangerines", "Year of the Rooster"]
-  }
-}
-
 // Go through every heros items and create a seperate object containing every item added in events
 var updates = {}
 forEach(heroes, hero => {
   forEach(hero.items, (items, tKey) => {
     items.forEach(item => {
-      var event = item.event
-      var type = tKey == 'skins' ? (item.quality == 'legendary' ? 'skinsLegendary' : (item.quality == 'epic' ? 'skinsEpic' : 'skins')) : tKey
+      const event = item.event
+      // Split legendary and epic skins up for events as they are displayed seperately.
+      const type = tKey == 'skins' ? (item.quality == 'legendary' ? 'skinsLegendary' : (item.quality == 'epic' ? 'skinsEpic' : 'skins')) : tKey
       if (!event) return
       if (!updates[event]) updates[event] = {
         order: Object.keys(EVENTNAMES).indexOf(event),
@@ -127,12 +172,13 @@ forEach(heroes, hero => {
         items: {}
       }
       if (!updates[event].items[type]) updates[event].items[type] = []
-      var legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
-      var u = getImageURL(type, event, item.id)
-      var url = type == 'voice' ? {} : ((type == 'emotes' || type == 'intros') ? { video: u } : { img: u })
-      var newItem = Object.assign({}, { hero: hero.name }, legend, item, url )
+      // if the item isnt a skin and is a legendary add a legendary tag, we do this because very few items for events
+      // have had legendary items added outside of skins, this way we can mark them as special
+      const legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
+      const url = getPreviewURL(type, event, item.id, hero.id)
+      const newItem = Object.assign({}, { heroName: hero.name, hero: hero.id }, legend, item, { url } )
       if (type == 'icons') {
-        delete newItem.hero
+        delete newItem.heroName
         delete newItem.quality
       }
       delete newItem.event
@@ -143,71 +189,139 @@ forEach(heroes, hero => {
 
 // Add ornament ids to normal sprays
 updates[EVENTS.CHRISTMAS16].items.sprays = updates[EVENTS.CHRISTMAS16].items.sprays.map(spray => {
-  if (spray.hero) {
-    var ornamentID = `${getCleanID(spray.hero)}-ornament`
+  if (spray.heroName) {
+    var ornamentID = `${spray.hero}-ornament`
     spray.ornamentID = ornamentID;
-    spray.ornamentURL = getImageURL('sprays', EVENTS.CHRISTMAS16, ornamentID);
+    spray.ornamentURL = getPreviewURL('sprays', EVENTS.CHRISTMAS16, ornamentID, spray.hero);
     return spray
   } else return spray
 }).filter(Boolean)
 
 // Add dragon dance ids to normal sprays
 updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.map(spray => {
-  if (spray.hero) {
-    var dragonID = `${getCleanID(spray.hero)}-dragon-dance`
+  if (spray.heroName) {
+    var dragonID = `${spray.hero}-dragon-dance`
     spray.dragonID = dragonID;
-    spray.dragonURL = getImageURL('sprays', EVENTS.ROOSTER17, dragonID);
+    spray.dragonURL = getPreviewURL('sprays', EVENTS.ROOSTER17, dragonID, spray.hero);
     return spray
   } else return spray
 }).filter(Boolean)
 
-// Add allclass items (which aren't detected by item extrator) manually
-forEach(allClassItems, (types, type) => {
+// Add allClassEventItems items (which aren't detected by item extrator) manually to events
+const missingKeys = []
+forEach(allClassEventItems, (types, type) => {
   forEach(types, (events, event) => {
-    events.forEach(item => {
-      var isSpecial = typeof item == 'object'
-      var itemID = getCleanID(isSpecial ? item[0] : item)
-      var out = {
-        name: isSpecial ? item[0] : item,
-        id: itemID,
-        img: getImageURL(type, event, itemID)
+    events.forEach(itemID => {
+      if (!allClassDataKeys[type][itemID]) {
+        console.warn("Missing key for", itemID)
+        missingKeys.push({ type, itemID })
+        return
       }
-      if (type == 'sprays' && isSpecial) {
+      var out = {
+        hero: 'all',
+        name: allClassDataKeys[type][itemID].replace(/ \d{4}$/, ''),
+        id: itemID,
+        url: getPreviewURL(type, event, itemID, 'all')
+      }
+      const isAchivement = achievementSprays.includes(itemID)
+      if (isAchivement) {
+        Object.assign(out, { achievement: true })
+      }
+      // sprays have no quality by default but if it isn't an achievement it means it's purchaseable so add quality
+      if (type == 'sprays' && !isAchivement) {
         Object.assign(out, { quality: 'common' })
       }
+      if (!updates[event].items[type]) updates[event].items[type] = []
       updates[event].items[type].push(out)
     })
   })
 })
 
-// Sort that shit by hero or item name
-Object.keys(updates).forEach(update => {
-  Object.keys(updates[update].items).forEach(type => {
-    updates[update].items[type].sort((a, b) => {
-      switch (type) {
-        case 'icons':
-          if (a.name < b.name) return -1;
-          if (a.name > b.name || !a.hero) return 1;
-          return 0;
-        default:
-          if (a.hero < b.hero) return -1;
-          if (a.hero > b.hero || !a.hero) return 1;
-          return 0;
-      }
+if (missingKeys.length) {
+  if (!mode || mode !== 'missing') {
+    console.warn("Missing itemIDs detected, run 'gen-missing-data' to generate a template of missing items")
+  } else {
+    const out = {}
+    missingKeys.forEach(item => {
+      if (!out[item.type]) out[item.type] = {}
+      out[item.type][item.itemID] = { id: item.itemID }
     })
-  })
-})
-
-// Add allClassItems (Sprays, Icons) to items.json file
-try {
-  heroes["all"] = JSON.parse(allClassData)
-} catch (e) {
-  console.error("Error parsing allClassItems")
-  return
+    missingAllClassData = merge(missingAllClassData, out)
+    for (var type in missingAllClassData) {
+      for (var itemID in missingAllClassData[type]) {
+        let item = missingAllClassData[type][itemID]
+        if (item.name) break
+        missingAllClassData[type][itemID].name = ""
+      }
+    }
+    fs.writeFileSync(`${__dirname}/../data/missingAllClassData.json`, JSON.stringify(missingAllClassData, null, 2))
+    console.info("Wrote missing data to data dir")
+  }
 }
 
+// Sort event items by hero, name or name depending on type
+forEach(updates, update => forEach(update.items, (items, type) => {
+  switch (type) {
+    case 'icons':
+      update.items[type] = sortBy(items, ['name'])
+      break;
+    case 'sprays':
+      update.items[type] = sortBy(items, ['heroName', (c => c.achievement ? 1 : 0), 'name'])
+      break;
+    default:
+      update.items[type] = sortBy(items, ['heroName', 'name'])
+  }
+}))
+
+// Add allClassData (Sprays, Icons) to items.json file
+heroes["all"] = Object.assign({
+  name: 'All Class',
+  id: 'all'
+}, HERODATA['all'], {
+  items: allClassData
+})
+
+
+// Sorts Updates object by the order of events and heroes alphabetically.
 updates = sortObject(updates, true)
 heroes = sortObject(heroes)
 
-fs.writeFileSync('../data/items.json', JSON.stringify(heroes, null, 2), 'utf8')
-fs.writeFileSync('../data/updates.json', JSON.stringify(updates, null, 2), 'utf8')
+// go through all hero items and sort items as they are sorted ingame
+forEach(heroes, hero => forEach(hero.items, (items, type) => {
+  if (hero.id == 'all') {
+    if (type == 'sprays') {
+      hero.items[type] = sortBy(items, [
+        (b => EVENTORDER[b.event]), // event items go below normal items
+        (d => d.name.toLowerCase()) // everything in their respective groups is sorted by name
+      ])
+    } else {
+      hero.items[type] = sortBy(items, [a => a.name.toLowerCase()]) // sort alphabetically
+    }
+    return
+  }
+  hero.items[type] = sortBy(items, [
+      'standardItem', // Standard items first
+      (a => qualityOrder[a.quality]), // sort by quality. rare, epic, legendary
+      (c => c.achievement ? 1 : 0), // achievement items (origins edition/blizzcon) go at the bottom
+      (b => EVENTORDER[b.event]), // event items go below normal items
+      (d => d.name.toLowerCase()) // everything in their respective groups is sorted by name
+    ])
+}))
+
+var masterData = {
+  currentEvent: CURRENTEVENT,
+  prices: {
+    undefined: 25,
+    'common': 25,
+    'rare': 75,
+    'epic': 250,
+    'legendary': 1000
+  },
+  events: updates,
+  heroes
+}
+
+// Write new items.json and updates.json files to disk
+fs.writeFileSync(`${__dirname}/../data/items.json`, JSON.stringify(heroes, null, 2), 'utf8')
+fs.writeFileSync(`${__dirname}/../data/events.json`, JSON.stringify(updates, null, 2), 'utf8')
+fs.writeFileSync(`${__dirname}/../data/master.json`, JSON.stringify(masterData), 'utf8')

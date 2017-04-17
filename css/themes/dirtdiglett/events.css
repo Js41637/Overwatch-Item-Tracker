@@ -1,14 +1,352 @@
+body {
+  background: url(../../../resources/body-bg.jpg) no-repeat top;
+  background-size: cover;
+}
+
+#event-container #legendary-skins {
+  height: auto;
+}
+
+#header:before {
+  content: "";
+  width: 0px;
+  height: 80px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 60px;
+  background-position: left center;
+}
+
+#header .header-content {
+  position: initial !important;
+}
+
+#header img {
+  height: 30px;
+  margin-right: 4px;
+}
+
+#header h1 {
+  color: #fff;
+  font-size: 31px;
+}
+
+#header .event-selector h2 {
+  font-size: 1em;
+}
+
+#event-container {
+  padding-top: 2px;
+  margin-top: 0;
+}
+
+#event-container .row {
+  margin-bottom: 8px;
+}
+
+#event-container .section {
+  border-radius: 8px 8px 4px 4px;
+  background: #f0edf2;
+  margin: 0 4px;
+}
+
+#event-container #legendary-skins.section {
+  background: none !important;
+}
+
+#event-container .section-header {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #c6cbde;
+  text-align: left;
+}
+
+#event-container .section h2 {
+  padding: 0.4em;
+  color: #405275;
+  font-family: Futura, century gothic, arial, sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+#event-container #legendary-skins .inner h2 {
+  font-family: "Big Noodle Titling";
+  font-size: 42px;
+  display: inline-block;
+  font-style: italic;
+  background: none;
+  padding: 0;
+}
+
+#event-container .section h4 {
+  color: rgba(114, 114, 114, 0.7);
+  font-size: 0.9rem;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
+
+#event-container .section h3 {
+  color: #727272;
+  font-size: 1rem;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
+}
+
+#event-container #legendary-skins .inner h2 small {
+  font-size: 0.6em;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: Futura, century gothic, arial, sans-serif;
+}
+
+#event-container .section>span:before, #event-container h2>small:before {
+  content: "(";
+}
+
+#event-container .section>span:after, #event-container h2>small:after {
+  content: ")";
+}
+
+
+/* Override for the Preview */
+
+#event-container #image-preview>span:before, #event-container #image-preview h2>small:before {
+  content: "";
+}
+
+#event-container #image-preview>span:after, #event-container #image-preview h2>small:after {
+  content: "";
+}
+
+#event-container .section .item {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0.2em;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#event-container .section .item label {
+  width: calc(100% - 30px);
+  cursor: pointer;
+  position: relative;
+}
+
+#event-container .section .item input {
+  height: 24px;
+  margin: 1px 4px;
+  float: left;
+  cursor: pointer;
+  min-width: 23px;
+}
+
+#event-container .item.legend h3:after {
+  content: "(3000)";
+  font-size: 18px;
+  margin-left: 6px;
+  color: #ffa12b;
+}
+
+/**
+ * SPRAYS CSS
+ */
+
+#event-container #sprays .item label {
+  width: 100%;
+  cursor: pointer;
+}
+
+#event-container #sprays .item .orn {
+  display: none;
+}
+
+#ornamentinfo {
+  position: relative;
+  margin-left: 10px;
+}
+
+#ornamentinfo span {
+  font-size: 1rem;
+  margin-left: 26px;
+  text-transform: uppercase;
+  font-family: Futura, century gothic, arial, sans-serif;
+  color: #fff;
+}
+
+#fakecheckbox {
+  position: absolute;
+  top: -4px;
+}
+
+#event-container #sprays .item .ornl, #fakecheckbox {
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: #e3e1e1;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  margin-right: 6px;
+  transition: background 200ms;
+  border: 1px solid #a5a5a5;
+}
+
+#event-container #sprays .item .orn:checked+label, #fakecb:checked+label {
+  background: #ffa500;
+  border-color: #d88c02;
+}
+
+#event-container #sprays .wot {
+  cursor: pointer;
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+
+/**
+ * IMAGE PREVIEW / LEGENDARY SKINS
+ */
+
+#event-container #legendary-skins .inner h2 {
+  display: none;
+}
+
+#event-container #legendary-skins .images {
+  height: 400px;
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#event-container #legendary-skins .images .item {
+  background: url('../../../img/portrait-bg.jpg') no-repeat;
+}
+
+#event-container .card:last-child {
+  margin-right: 0;
+}
+
+#event-container .card:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+  border: 17px solid transparent;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+#event-container .card .bg {
+  z-index: 3;
+}
+
+#event-container .card .card-content .card-heading {
+  font-size: 30px !important;
+  font: italic normal normal 10px "Big Noodle Titling", impact, sans-serif;
+  line-height: normal;
+  letter-spacing: .1px;
+  color: #f0edf2;
+  width: auto;
+  overflow: visible;
+}
+
+#event-container .card-copy {
+  font-family: Futura, century gothic, arial, sans-serif;
+  color: rgba(240, 237, 242, .6);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+#event-container #sprays .item h4:before, #event-container #sprays .item h4:after {
+  content: "";
+}
+
+#event-container .section h2:before {
+  content: "";
+  display: inline-block;
+  margin-right: 6px;
+  color: #2a3751;
+  fill: #2a3751;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  margin-bottom: -4px;
+}
+
+#event-container #emotes h2:before {
+  background-image: url('resources/icons/item-types/white/emotes.svg');
+}
+
+#event-container #epic-skins h2:before {
+  background-image: url('resources/icons/item-types/white/epic-skins.svg');
+}
+
+#event-container #highlight-intros h2:before {
+  background-image: url('resources/icons/item-types/white/highlight-intros.svg');
+}
+
+#event-container #icons h2:before {
+  background-image: url('resources/icons/item-types/white/player-icons.svg');
+}
+
+#event-container #sprays h2:before {
+  background-image: url('resources/icons/item-types/white/sprays.svg');
+}
+
+#event-container #victoryposes h2:before {
+  background-image: url('resources/icons/item-types/white/victory-poses.svg');
+}
+
+#event-container #voicelines h2:before {
+  background-image: url('resources/icons/item-types/white/voice-lines.svg');
+}
+
+
+
+
+#epic-skins .section-header small, #event-container #emotes .section-header small, #event-container #highlight-intros .section-header small {
+  color: #ff05f4;
+}
+
+#event-container #victoryposes .section-header small {
+  color: #00c1fa;
+}
+
+#event-container #sprays .section-header small, #event-container #voicelines .section-header small {
+  color: #00db55;
+}
+
 /* SUMMER GAMES 2016 */
 #SUMMER_GAMES_2016 #cost-remaining {
     display: none;
 }
 
-body#SUMMER_GAMES_2016 {
+#SUMMER_GAMES_2016 #background {
   background-image: url(resources/SUMMER_GAMES_2016/bg.jpg);
 }
 
-#SUMMER_GAMES_2016 #image-preview .card .bg2,
-#SUMMER_GAMES_2016 #legendary-skins .inner .card {
+#SUMMER_GAMES_2016 #event-container #image-preview .card .bg2,
+#SUMMER_GAMES_2016 #event-container #legendary-skins .inner .card {
   background-image: url(resources/SUMMER_GAMES_2016/preview-bg.png);
 }
 
@@ -23,12 +361,12 @@ body#SUMMER_GAMES_2016 {
   top: 68px;
 }
 
-#SUMMER_GAMES_2016 .card .bg {
+#SUMMER_GAMES_2016 #event-container .card .bg {
   background: transparent;
   z-index: 3;
 }
 
-#SUMMER_GAMES_2016 .card:after {
+#SUMMER_GAMES_2016 #event-container .card:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -39,12 +377,12 @@ body#SUMMER_GAMES_2016 {
   z-index: 1;
 }
 
-#SUMMER_GAMES_2016 .item-container #legendary-skins.section .card-heading,
-#SUMMER_GAMES_2016 #image-preview .card-heading {
+#SUMMER_GAMES_2016 #event-container #legendary-skins.section .card-heading,
+#SUMMER_GAMES_2016 #event-container #image-preview .card-heading {
   color: #2d2d2d;
 }
 
-#SUMMER_GAMES_2016 .card .card-copy {
+#SUMMER_GAMES_2016 #event-container .card .card-copy {
   color: rgba(53, 53, 53, 0.6);
 }
 
@@ -56,63 +394,63 @@ body#SUMMER_GAMES_2016 {
   font-size: 1rem;
 }
 
-#SUMMER_GAMES_2016 #col1 {
+#SUMMER_GAMES_2016 #event-container #col1 {
   flex: 1;
 }
 
-#SUMMER_GAMES_2016 #col2 {
+#SUMMER_GAMES_2016 #event-container #col2 {
   flex: 1;
 }
 
-#SUMMER_GAMES_2016 .view-mode-item-type #row2 {
+#SUMMER_GAMES_2016 #event-container #row2 {
   height: 370px;
 }
 
-#SUMMER_GAMES_2016 #row2 .left {
+#SUMMER_GAMES_2016 #event-container #row2 .left {
   flex: 1;
 }
 
-#SUMMER_GAMES_2016 #row2 .right {
+#SUMMER_GAMES_2016 #event-container #row2 .right {
   flex: 1;
 }
 
-#SUMMER_GAMES_2016 .view-mode-item-type #row2 .right .section {
+#SUMMER_GAMES_2016 #event-container #row2 .right .section {
   height: calc(50% - 4px);
 }
 
-#SUMMER_GAMES_2016 #sprays {
+#SUMMER_GAMES_2016 #event-container #sprays {
   flex: 3;
 }
 
-#SUMMER_GAMES_2016 #icons {
+#SUMMER_GAMES_2016 #event-container #icons {
   flex: 3;
 }
 
-#SUMMER_GAMES_2016 .view-mode-item-type #epic-skins {
+#SUMMER_GAMES_2016 #event-container #epic-skins {
   height: 100%;
 }
 
-#SUMMER_GAMES_2016 #emotes {
+#SUMMER_GAMES_2016 #event-container #emotes {
   margin-top: 8px;
 }
 
-#SUMMER_GAMES_2016 #voicelines {
+#SUMMER_GAMES_2016 #event-container #voicelines {
   flex: 1.8;
 }
 
-#SUMMER_GAMES_2016 #victoryposes {
+#SUMMER_GAMES_2016 #event-container #victoryposes {
   flex: 1;
 }
 
-#SUMMER_GAMES_2016 .view-mode-item-type #sprays .items {
+#SUMMER_GAMES_2016 #event-container #sprays .items {
   height: 324px;
 }
 
-#SUMMER_GAMES_2016 .view-mode-item-type #voicelines .items {
+#SUMMER_GAMES_2016 #event-container #voicelines .items {
   height: 404px;
 }
 
-#SUMMER_GAMES_2016 .view-mode-item-type #icons .items {
+#SUMMER_GAMES_2016 #event-container #icons .items {
   height: 404px;
 }
 
@@ -136,11 +474,11 @@ body#SUMMER_GAMES_2016 {
   font-size: 1rem;
 }
 
-body#HALLOWEEN_2016 {
+#HALLOWEEN_2016 #background {
   background-image: url(resources/HALLOWEEN_2016/bg.jpg);
 }
 
-#HALLOWEEN_2016 .card:before {
+#HALLOWEEN_2016 #event-container .card:before {
   background-image: url(resources/HALLOWEEN_2016/header.png);
   background-size: 100%;
   border: 0;
@@ -148,12 +486,12 @@ body#HALLOWEEN_2016 {
   background-repeat: no-repeat;
 }
 
-#HALLOWEEN_2016 .card .bg {
+#HALLOWEEN_2016 #event-container .card .bg {
   background: transparent;
   z-index: 3;
 }
 
-#HALLOWEEN_2016 .card:after {
+#HALLOWEEN_2016 #event-container .card:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -164,76 +502,72 @@ body#HALLOWEEN_2016 {
   z-index: 1;
 }
 
-#HALLOWEEN_2016 #image-preview .card .bg2,
-#HALLOWEEN_2016 #legendary-skins .inner .card {
+#HALLOWEEN_2016 #event-container #image-preview .card .bg2,
+#HALLOWEEN_2016 #event-container #legendary-skins .inner .card {
   background-image: url(resources/HALLOWEEN_2016/preview-bg.png);
 }
 
-#HALLOWEEN_2016 .section-header {
+#HALLOWEEN_2016 #event-container .section-header {
   background-color: rgb(45, 45, 45);
 }
 
-#HALLOWEEN_2016 .item-container .section h2 {
+#HALLOWEEN_2016 #event-container .section h2 {
   color: #ffa500;
 }
 
-#HALLOWEEN_2016 .item-container .section h2:before {
+#HALLOWEEN_2016 #event-container .section h2:before {
   color: #fff;
 }
 
-#HALLOWEEN_2016 #col1 {
+#HALLOWEEN_2016 #event-container #col1 {
   flex: 1;
 }
 
-#HALLOWEEN_2016 #col2 {
+#HALLOWEEN_2016 #event-container #col2 {
   flex: 1;
 }
 
-#HALLOWEEN_2016 .view-mode-item-type #epic-skins {
+#HALLOWEEN_2016 #event-container #epic-skins {
   flex: 1;
   height: 100%;
 }
 
-#HALLOWEEN_2016 #emotes {
+#HALLOWEEN_2016 #event-container #emotes {
   margin-top: 8px;
 }
 
-#HALLOWEEN_2016 .top {
+#HALLOWEEN_2016 #event-container .top {
   display: flex;
 }
 
-#HALLOWEEN_2016 .view-mode-item-type #row2 {
-    height: 340px;
+#HALLOWEEN_2016 #event-container #row2 {
+    height: 380px;
 }
 
-#HALLOWEEN_2016 #victoryposes {
+#HALLOWEEN_2016 #event-container #victoryposes {
   flex: 1;
 }
 
-#HALLOWEEN_2016 #sprays {
+#HALLOWEEN_2016 #event-container #sprays {
   flex: 2;
 }
 
-#HALLOWEEN_2016 #voicelines,
-#HALLOWEEN_2016 #icons {
+#HALLOWEEN_2016 #event-container #voicelines,
+#HALLOWEEN_2016 #event-container #icons {
   flex: 1;
 }
 
-#HALLOWEEN_2016 .view-mode-item-type #row2 .right .section {
+#HALLOWEEN_2016 #event-container #row2 .right .section {
   height: calc(50% - 4px);
 }
 
-#HALLOWEEN_2016 .view-mode-item-type #voicelines .items,
-#HALLOWEEN_2016 .view-mode-item-type #icons .items {
+#HALLOWEEN_2016 #event-container #voicelines .items,
+#HALLOWEEN_2016 #event-container #icons .items {
   height: 404px;
 }
 
-#HALLOWEEN_2016 .view-mode-item-type #victoryposes .items {
-    height: 300px;
-}
-
-#HALLOWEEN_2016 .view-mode-item-type #sprays .items {
-  height: 300px;
+#HALLOWEEN_2016 #event-container #victoryposes .items, #HALLOWEEN_2016 #event-container #sprays .items  {
+    height: 330px;
 }
 
 /* WINTER WONDERLAND 2016 */
@@ -249,20 +583,20 @@ body#HALLOWEEN_2016 {
   top: 85px;
 }
 
-body#WINTER_WONDERLAND_2016 {
+#WINTER_WONDERLAND_2016 #background {
   background-image: url(resources/WINTER_WONDERLAND_2016/bg.jpg);
 }
 
-#WINTER_WONDERLAND_2016 #image-preview .card .bg2,
-#WINTER_WONDERLAND_2016 #legendary-skins .inner .card {
+#WINTER_WONDERLAND_2016 #event-container #image-preview .card .bg2,
+#WINTER_WONDERLAND_2016 #event-container #legendary-skins .inner .card {
   background-image: url(resources/WINTER_WONDERLAND_2016/preview-bg.png);
 }
 
-#WINTER_WONDERLAND_2016 .card:before {
+#WINTER_WONDERLAND_2016 #event-container .card:before {
   border-image: url(resources/WINTER_WONDERLAND_2016/card-border.png) 24 repeat;
 }
 
-#WINTER_WONDERLAND_2016 .card:after {
+#WINTER_WONDERLAND_2016 #event-container .card:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -273,16 +607,16 @@ body#WINTER_WONDERLAND_2016 {
     z-index: 1;
 }
 
-#WINTER_WONDERLAND_2016 .card .bg {
+#WINTER_WONDERLAND_2016 #event-container .card .bg {
   background: transparent;
 }
 
-#WINTER_WONDERLAND_2016 .section-header {
+#WINTER_WONDERLAND_2016 #event-container .section-header {
   position: relative;
   background-color: #68a3cd;
 }
 
-#WINTER_WONDERLAND_2016 .section-header:before {
+#WINTER_WONDERLAND_2016 #event-container .section-header:before {
   content: "";
   position: absolute;
   width: 110px;
@@ -293,7 +627,7 @@ body#WINTER_WONDERLAND_2016 {
   background: url(resources/WINTER_WONDERLAND_2016/header-left.png) no-repeat center center;
 }
 
-#WINTER_WONDERLAND_2016 .section-header:after {
+#WINTER_WONDERLAND_2016 #event-container .section-header:after {
     content: '';
     position: absolute;
     width: 147px;
@@ -312,74 +646,74 @@ body#WINTER_WONDERLAND_2016 {
   font-size: 1rem;
 }
 
-#WINTER_WONDERLAND_2016 #row1 #col1 {
+#WINTER_WONDERLAND_2016 #event-container #row1 #col1 {
   flex: 1;
 }
 
-#WINTER_WONDERLAND_2016 #row1 #col2 {
+#WINTER_WONDERLAND_2016 #event-container #row1 #col2 {
   flex: 1;
   display: flex;
   justify-content: space-around;
 }
 
-#WINTER_WONDERLAND_2016 #voicelines {
+#WINTER_WONDERLAND_2016 #event-container #voicelines {
   flex: 1;
 }
 
-#WINTER_WONDERLAND_2016 #row1 #col2 .right {
+#WINTER_WONDERLAND_2016 #event-container #row1 #col2 .right {
   flex: 1;
 }
 
-#WINTER_WONDERLAND_2016 #row2 {
+#WINTER_WONDERLAND_2016 #event-container #row2 {
     height: 305px;
 }
 
-#WINTER_WONDERLAND_2016 #row2 .section {
+#WINTER_WONDERLAND_2016 #event-container #row2 .section {
     height: 100%;
 }
 
-#WINTER_WONDERLAND_2016 .view-mode-item-type #row2 .right .section#highlight-intros {
+#WINTER_WONDERLAND_2016 #event-container #row2 .right .section#highlight-intros {
     height: calc(40% - 4px);
 }
 
-#WINTER_WONDERLAND_2016 .view-mode-item-type #row2 .right .section#emotes {
+#WINTER_WONDERLAND_2016 #event-container #row2 .right .section#emotes {
     height: calc(60% - 4px);
 }
 
-#WINTER_WONDERLAND_2016 #row2 .left {
+#WINTER_WONDERLAND_2016 #event-container #row2 .left {
     flex: 0.6;
 }
 
-#WINTER_WONDERLAND_2016 #row2 .right {
+#WINTER_WONDERLAND_2016 #event-container #row2 .right {
     flex: 0.6;
 }
 
-#WINTER_WONDERLAND_2016 #sprays {
+#WINTER_WONDERLAND_2016 #event-container #sprays {
     flex: 1.5;
 }
 
-#WINTER_WONDERLAND_2016 #emotes {
+#WINTER_WONDERLAND_2016 #event-container #emotes {
   margin-top: 8px;
 }
 
-#WINTER_WONDERLAND_2016 #victoryposes {
+#WINTER_WONDERLAND_2016 #event-container #victoryposes {
   margin-bottom: 8px;
 }
 
-#WINTER_WONDERLAND_2016 .view-mode-item-type #voicelines .items {
+#WINTER_WONDERLAND_2016 #event-container #voicelines .items {
   height: 437px;
 }
 
-#WINTER_WONDERLAND_2016 .view-mode-item-type #icons .items {
+#WINTER_WONDERLAND_2016 #event-container #icons .items {
   height: 437px;
 }
 
-#WINTER_WONDERLAND_2016 .view-mode-item-type #sprays .items {
+#WINTER_WONDERLAND_2016 #event-container #sprays .items {
   height: 265px;
 }
 
 /* YEAR OF THE ROOSTER 2017 */
-body#YEAR_OF_THE_ROOSTER_2017 {
+#YEAR_OF_THE_ROOSTER_2017 #background {
   background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/bg.jpg);
 }
 
@@ -400,8 +734,8 @@ body#YEAR_OF_THE_ROOSTER_2017 {
   top: 75px;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #image-preview .card .bg2,
-#YEAR_OF_THE_ROOSTER_2017 #legendary-skins .inner .card {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #image-preview .card .bg2,
+#YEAR_OF_THE_ROOSTER_2017 #event-container #legendary-skins .inner .card {
   background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/preview-bg.png);
 }
 
@@ -435,15 +769,15 @@ body#YEAR_OF_THE_ROOSTER_2017 {
   height: 45px;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #row2 {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #row2 {
   height: 340px;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 .card:before {
+#YEAR_OF_THE_ROOSTER_2017 #event-container .card:before {
   border-image: url(resources/YEAR_OF_THE_ROOSTER_2017/card-border.png) 17 repeat;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 .card:after {
+#YEAR_OF_THE_ROOSTER_2017 #event-container .card:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -454,93 +788,254 @@ body#YEAR_OF_THE_ROOSTER_2017 {
     z-index: 1;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 .card .bg {
+#YEAR_OF_THE_ROOSTER_2017 #event-container .card .bg {
   background: transparent;
   z-index: 3;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #legendary-skins [type="checkbox"]:not(:checked)+label:after,
-#YEAR_OF_THE_ROOSTER_2017 #legendary-skins [type="checkbox"]:checked+label:after {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #legendary-skins [type="checkbox"]:not(:checked)+label:after,
+#YEAR_OF_THE_ROOSTER_2017 #event-container #legendary-skins [type="checkbox"]:checked+label:after {
   height: 19px;
   background-image: url('data:image/png;base64,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/GMzLdsAADowaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzExMSA3OS4xNTgzMjUsIDIwMTUvMDkvMTAtMDE6MTA6MjAgICAgICAgICI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgICAgICAgICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICAgICAgICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgICAgICAgICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgICAgICAgICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKTwveG1wOkNyZWF0b3JUb29sPgogICAgICAgICA8eG1wOkNyZWF0ZURhdGU+MjAxNy0wMS0yN1QyMDo1Mjo0MysxMDowMDwveG1wOkNyZWF0ZURhdGU+CiAgICAgICAgIDx4bXA6TWV0YWRhdGFEYXRlPjIwMTctMDEtMjdUMjA6NTI6NDMrMTA6MDA8L3htcDpNZXRhZGF0YURhdGU+CiAgICAgICAgIDx4bXA6TW9kaWZ5RGF0ZT4yMDE3LTAxLTI3VDIwOjUyOjQzKzEwOjAwPC94bXA6TW9kaWZ5RGF0ZT4KICAgICAgICAgPHhtcE1NOkluc3RhbmNlSUQ+eG1wLmlpZDo5NWY3MWU4NC05ZWE5LTVmNDktYmUyMy00ZjRjNGQ0YTAzMDQ8L3htcE1NOkluc3RhbmNlSUQ+CiAgICAgICAgIDx4bXBNTTpEb2N1bWVudElEPmFkb2JlOmRvY2lkOnBob3Rvc2hvcDpiNWYxN2VjNC1lNDdlLTExZTYtYjQ5Mi05NGQzYWQxMzQ2NGU8L3htcE1NOkRvY3VtZW50SUQ+CiAgICAgICAgIDx4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ+eG1wLmRpZDozY2M4MWU0NS1kNDg2LTEzNGUtYjZjMi00Zjk1ZjA5MTNmZDM8L3htcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD4KICAgICAgICAgPHhtcE1NOkhpc3Rvcnk+CiAgICAgICAgICAgIDxyZGY6U2VxPgogICAgICAgICAgICAgICA8cmRmOmxpIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmFjdGlvbj5jcmVhdGVkPC9zdEV2dDphY3Rpb24+CiAgICAgICAgICAgICAgICAgIDxzdEV2dDppbnN0YW5jZUlEPnhtcC5paWQ6M2NjODFlNDUtZDQ4Ni0xMzRlLWI2YzItNGY5NWYwOTEzZmQzPC9zdEV2dDppbnN0YW5jZUlEPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6d2hlbj4yMDE3LTAxLTI3VDIwOjUyOjQzKzEwOjAwPC9zdEV2dDp3aGVuPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6c29mdHdhcmVBZ2VudD5BZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cyk8L3N0RXZ0OnNvZnR3YXJlQWdlbnQ+CiAgICAgICAgICAgICAgIDwvcmRmOmxpPgogICAgICAgICAgICAgICA8cmRmOmxpIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OmFjdGlvbj5zYXZlZDwvc3RFdnQ6YWN0aW9uPgogICAgICAgICAgICAgICAgICA8c3RFdnQ6aW5zdGFuY2VJRD54bXAuaWlkOjk1ZjcxZTg0LTllYTktNWY0OS1iZTIzLTRmNGM0ZDRhMDMwNDwvc3RFdnQ6aW5zdGFuY2VJRD4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OndoZW4+MjAxNy0wMS0yN1QyMDo1Mjo0MysxMDowMDwvc3RFdnQ6d2hlbj4KICAgICAgICAgICAgICAgICAgPHN0RXZ0OnNvZnR3YXJlQWdlbnQ+QWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpPC9zdEV2dDpzb2Z0d2FyZUFnZW50PgogICAgICAgICAgICAgICAgICA8c3RFdnQ6Y2hhbmdlZD4vPC9zdEV2dDpjaGFuZ2VkPgogICAgICAgICAgICAgICA8L3JkZjpsaT4KICAgICAgICAgICAgPC9yZGY6U2VxPgogICAgICAgICA8L3htcE1NOkhpc3Rvcnk+CiAgICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2UvcG5nPC9kYzpmb3JtYXQ+CiAgICAgICAgIDxwaG90b3Nob3A6Q29sb3JNb2RlPjM8L3Bob3Rvc2hvcDpDb2xvck1vZGU+CiAgICAgICAgIDxwaG90b3Nob3A6SUNDUHJvZmlsZT5zUkdCIElFQzYxOTY2LTIuMTwvcGhvdG9zaG9wOklDQ1Byb2ZpbGU+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgICAgIDx0aWZmOlhSZXNvbHV0aW9uPjcyMDAwMC8xMDAwMDwvdGlmZjpYUmVzb2x1dGlvbj4KICAgICAgICAgPHRpZmY6WVJlc29sdXRpb24+NzIwMDAwLzEwMDAwPC90aWZmOllSZXNvbHV0aW9uPgogICAgICAgICA8dGlmZjpSZXNvbHV0aW9uVW5pdD4yPC90aWZmOlJlc29sdXRpb25Vbml0PgogICAgICAgICA8ZXhpZjpDb2xvclNwYWNlPjE8L2V4aWY6Q29sb3JTcGFjZT4KICAgICAgICAgPGV4aWY6UGl4ZWxYRGltZW5zaW9uPjE5PC9leGlmOlBpeGVsWERpbWVuc2lvbj4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjE5PC9leGlmOlBpeGVsWURpbWVuc2lvbj4KICAgICAgPC9yZGY6RGVzY3JpcHRpb24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz5OejIYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAACJSURBVHjarJNBDoAwCASXXoyv9kf+yosHv7BeamIaCoWWMwwLC0ISi4JlFQiAzMLOCjoAQCbG/BcKAJRVoCxs10DZMamBMsrMzsVL8PbUwqQmWtDHA/135nXlCKwoCcyAWgM0YMjq1s3NUCgeTLuznhqJKusVSWbML67Mw1rvxIiqkXe6I8reAQBfYSoH3qSsQgAAAABJRU5ErkJggg==');
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #row2 .section {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .section {
   height: 100%;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #row2 .right .section {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .right .section {
     height: calc(50% - 4px);
 }
 
-#YEAR_OF_THE_ROOSTER_2017 .section-header {
+#YEAR_OF_THE_ROOSTER_2017 #event-container .section-header {
   background-color: transparent;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 .section {
+#YEAR_OF_THE_ROOSTER_2017 #event-container .section {
   background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/header.png);
   background-position: center -26px;
   background-repeat: repeat-x;
   border-radius: 4px;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 .item-container .section h2 {
+#YEAR_OF_THE_ROOSTER_2017 #event-container .section h2 {
   color: #f0edf2;
   padding: 0.25em;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 .item-container .section h2:before {
+#YEAR_OF_THE_ROOSTER_2017 #event-container .section h2:before {
   color: #ffdd46;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #row1 #col1 {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #row1 #col1 {
   flex: 1.4;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #row1 #col2 {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #row1 #col2 {
   flex: 1;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #voicelines {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #voicelines {
   flex: 1;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #icons {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #icons {
   flex: 1;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #row2 .left {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .left {
   flex: 1;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #row2 .right {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .right {
   flex: 1;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #victoryposes {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #victoryposes {
   flex: 1;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #sprays {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #sprays {
   flex: 3;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 #emotes {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #emotes {
   margin-top: 8px;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #sprays .items {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #sprays .items {
   height: 300px;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #voicelines .items,
-#YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #icons .items {
+#YEAR_OF_THE_ROOSTER_2017 #event-container #voicelines .items,
+#YEAR_OF_THE_ROOSTER_2017 #event-container #icons .items {
   height: 445px;
 }
 
-#YEAR_OF_THE_ROOSTER_2017 .items {
+#YEAR_OF_THE_ROOSTER_2017 #event-container .items {
     padding-top: 4px;
 }
+
+
+
+
+#UPRISING_2017 #background {
+  background-image: url(resources/UPRISING_2017/bg.jpg);
+}
+
+#UPRISING_2017 #header:before {
+  width: 177px;
+  top: 78px;
+  background-image: url(../../../resources/updates/UPRISING_2017/logo.png);
+}
+
+#UPRISING_2017 .event-active,
+#UPRISING_2017 .event-ended {
+  position: absolute;
+  left: 210px;
+  top: 85px;
+}
+
+#UPRISING_2017 .event-active {
+  top: 75px;
+}
+
+#UPRISING_2017 .event-active h2 {
+  font-size: 4rem;
+  text-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+#UPRISING_2017 .event-active h3 {
+  color: rgb(255, 221, 70);
+  font-size: 1.2rem;
+}
+
+#UPRISING_2017 .event-ended h2 {
+  font-size: 3rem;
+}
+
+#UPRISING_2017 .event-ended h3 {
+  color: rgb(255, 221, 70);
+  font-size: 1rem;
+}
+
+
+
+
+
+
+#UPRISING_2017 #row1 #col1 {
+  flex: 2;
+}
+
+#UPRISING_2017 #row1 #col2 {
+  flex: 1;
+}
+
+#UPRISING_2017 #row1 #col2 .right {
+  flex: 1;
+  height: 469px;
+}
+
+#UPRISING_2017 #icons {
+  flex: 1;
+}
+
+#UPRISING_2017 #icons .items {
+  height: 450px;
+}
+
+#UPRISING_2017 #icons .items .item {
+  padding: 4px 2px;
+}
+
+#UPRISING_2017 #emotes, #UPRISING_2017 #highlight-intros {
+  margin-top: 14px;
+}
+
+#UPRISING_2017 #emotes, #UPRISING_2017 #highlight-intros, #UPRISING_2017 #epic-skins {
+  height: 33%;
+}
+
+#UPRISING_2017 #legendary-skins .inner .card .bg {
+  height: 86px;
+  padding: 9px 16px;
+}
+
+#UPRISING_2017 #legendary-skins [type="checkbox"]:not(:checked)+label:before, #legendary-skins [type="checkbox"]:checked+label:before {
+  top: -306px;
+}
+
+#UPRISING_2017 #legendary-skins [type="checkbox"]:not(:checked)+label:after, #legendary-skins [type="checkbox"]:checked+label:after {
+  top: -304px;
+}
+
+#UPRISING_2017 #voicelines {
+  flex: 2;
+}
+
+#UPRISING_2017 #voicelines .items .item {
+  width: auto;
+}
+
+#UPRISING_2017 #victoryposes {
+  flex: 0.5;
+}
+
+#UPRISING_2017 #voicelines .items, #UPRISING_2017 #sprays .items {
+  height: 456px;
+}
+
+#UPRISING_2017 #voicelines .items .item, #UPRISING_2017 #sprays .items .item {
+  padding: 4px 2px;
+}
+
+#UPRISING_2017 #voicelines .items .item input {
+  height: 21px;
+}
+
+#UPRISING_2017 #sprays {
+  flex: 1;
+}
+
+#UPRISING_2017 .card .bg {
+  background: rgba(129, 69, 166, 0.8);
+}
+
+#UPRISING_2017 #event-container .section-header {
+  background-color: #7d3cba;
+}
+
+#UPRISING_2017 #event-container .section h2 {
+  color: #fff;
+}
+
+#UPRISING_2017 #event-container .section {
+  background: rgba(41, 42, 43, 0.93);
+}
+
+#UPRISING_2017 #event-container .section h3 {
+  color: #fff;
+}
+
+#UPRISING_2017 #event-container .section h4 {
+  color: rgb(134, 134, 134);
+}
+
+#UPRISING_2017 #event-container .card .card-content .card-heading {
+  color: #fff;
+}
+
+#UPRISING_2017 #event-container .card-copy {
+  color: rgb(43, 43, 44);
+}
+
+
+
+
+
+
+
 
 /* SMALL MODE CSS */
 @media screen and (max-width: 1500px) {
@@ -552,107 +1047,192 @@ body#YEAR_OF_THE_ROOSTER_2017 {
     min-width: 800px;
   }
 
-  #legendary-skins {
+  #header:before {
+    top: 58px !important;
+  }
+
+  #header .event-ended {
+    top: 68px !important;
+  }
+
+  #cost-remaining {
+    background-color: rgba(30, 30, 30, 0.2);
+    top: 10px;
+    border-top-left-radius: 5px;
+  }
+
+  #event-container {
+    max-width: 1100px;
+    margin: 45px auto 0;
+  }
+
+  #event-container #legendary-skins {
     height: 400px;
+  }
+
+  #UPRISING_2017 .event-active {
+    top: 57px;
   }
 
   .section {
     margin: 0;
   }
 
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type .item-container .row,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type .item-container .col,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type .item-container .row,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type .item-container .col,
-  #HALLOWEEN_2016 .view-mode-item-type .item-container .row,
-  #HALLOWEEN_2016 .view-mode-item-type .item-container .col,
-  #SUMMER_GAMES_2016 .view-mode-item-type .item-container .row,
-  #SUMMER_GAMES_2016 .view-mode-item-type .item-container .col {
+  #YEAR_OF_THE_ROOSTER_2017 #event-container .row,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container .col,
+  #WINTER_WONDERLAND_2016 #event-container .row,
+  #WINTER_WONDERLAND_2016 #event-container .col,
+  #HALLOWEEN_2016 #event-container .row,
+  #HALLOWEEN_2016 #event-container .col,
+  #SUMMER_GAMES_2016 #event-container .row,
+  #SUMMER_GAMES_2016 #event-container .col {
     display: flex;
   }
 
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type .item-container .row,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #row2,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #row2 .section,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #row2 .right .section,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type .item-container .row,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #row2,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #row2 .section,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #row2 .right .section,
-  #WINTER_WONDERLAND_2016 #row2 .right .section#highlight-intros,
-  #WINTER_WONDERLAND_2016 #row2 .right .section#emotes,
-  #HALLOWEEN_2016 .view-mode-item-type .item-container .row,
-  #HALLOWEEN_2016 .view-mode-item-type #row2,
-  #HALLOWEEN_2016 .view-mode-item-type #row2 .section,
-  #HALLOWEEN_2016 .view-mode-item-type #row2 .right .section,
-  #SUMMER_GAMES_2016 .view-mode-item-type .item-container .row,
-  #SUMMER_GAMES_2016 .view-mode-item-type #row2,
-  #SUMMER_GAMES_2016 .view-mode-item-type #row2 .section,
-  #SUMMER_GAMES_2016 .view-mode-item-type #row2 .right .section,
-  #SUMMER_GAMES_2016 #row2 .right .section#highlight-intros,
-  #SUMMER_GAMES_2016 #row2 .right .section#emotes {
+  #YEAR_OF_THE_ROOSTER_2017 #event-container .row,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #row2,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .section,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .right .section,
+  #WINTER_WONDERLAND_2016 #event-container .row,
+  #WINTER_WONDERLAND_2016 #event-container #row2,
+  #WINTER_WONDERLAND_2016 #event-container #row2 .section,
+  #WINTER_WONDERLAND_2016 #event-container #row2 .right .section,
+  #WINTER_WONDERLAND_2016 #event-container #row2 .right .section#highlight-intros,
+  #WINTER_WONDERLAND_2016 #event-container #row2 .right .section#emotes,
+  #HALLOWEEN_2016 #event-container .row,
+  #HALLOWEEN_2016 #event-container #row2,
+  #HALLOWEEN_2016 #event-container #row2 .section,
+  #HALLOWEEN_2016 #event-container #row2 .right .section,
+  #SUMMER_GAMES_2016 #event-container .row,
+  #SUMMER_GAMES_2016 #event-container #row2,
+  #SUMMER_GAMES_2016 #event-container #row2 .section,
+  #SUMMER_GAMES_2016 #event-container #row2 .right .section,
+  #SUMMER_GAMES_2016 #event-container #row2 .right .section#highlight-intros,
+  #SUMMER_GAMES_2016 #event-container #row2 .right .section#emotes,
+  #UPRISING_2017 #event-container #epic-skins {
     height: auto;
   }
 
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #row1 #col1,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #row1 #col2,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #row2 .left,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #row2 .right,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #voicelines,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #icons,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #victoryposes,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #sprays,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #row1 #col1,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #row1 #col2,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #row2 .left,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #row2 .right,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #voicelines,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #icons,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #victoryposes,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #sprays,
-  #HALLOWEEN_2016 .view-mode-item-type #row1 #col1,
-  #HALLOWEEN_2016 .view-mode-item-type #row1 #col2,
-  #HALLOWEEN_2016 .view-mode-item-type #row2 .left,
-  #HALLOWEEN_2016 .view-mode-item-type #row2 .right,
-  #HALLOWEEN_2016 .view-mode-item-type #voicelines,
-  #HALLOWEEN_2016 .view-mode-item-type #icons,
-  #HALLOWEEN_2016 .view-mode-item-type #victoryposes,
-  #HALLOWEEN_2016 .view-mode-item-type #sprays,
-  #SUMMER_GAMES_2016 .view-mode-item-type #row1 #col1,
-  #SUMMER_GAMES_2016 .view-mode-item-type #row1 #col2,
-  #SUMMER_GAMES_2016 .view-mode-item-type #row2 .left,
-  #SUMMER_GAMES_2016 .view-mode-item-type #row2 .right,
-  #SUMMER_GAMES_2016 .view-mode-item-type #voicelines,
-  #SUMMER_GAMES_2016 .view-mode-item-type #icons,
-  #SUMMER_GAMES_2016 .view-mode-item-type #victoryposes,
-  #SUMMER_GAMES_2016 .view-mode-item-type #sprays {
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #row1 #col1,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #row1 #col2,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .left,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .right,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #voicelines,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #icons,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #victoryposes,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #sprays,
+  #WINTER_WONDERLAND_2016 #event-container #row1 #col1,
+  #WINTER_WONDERLAND_2016 #event-container #row1 #col2,
+  #WINTER_WONDERLAND_2016 #event-container #row2 .left,
+  #WINTER_WONDERLAND_2016 #event-container #row2 .right,
+  #WINTER_WONDERLAND_2016 #event-container #voicelines,
+  #WINTER_WONDERLAND_2016 #event-container #icons,
+  #WINTER_WONDERLAND_2016 #event-container #victoryposes,
+  #WINTER_WONDERLAND_2016 #event-container #sprays,
+  #HALLOWEEN_2016 #event-container #row1 #col1,
+  #HALLOWEEN_2016 #event-container #row1 #col2,
+  #HALLOWEEN_2016 #event-container #row2 .left,
+  #HALLOWEEN_2016 #event-container #row2 .right,
+  #HALLOWEEN_2016 #event-container #voicelines,
+  #HALLOWEEN_2016 #event-container #icons,
+  #HALLOWEEN_2016 #event-container #victoryposes,
+  #HALLOWEEN_2016 #event-container #sprays,
+  #SUMMER_GAMES_2016 #event-container #row1 #col1,
+  #SUMMER_GAMES_2016 #event-container #row1 #col2,
+  #SUMMER_GAMES_2016 #event-container #row2 .left,
+  #SUMMER_GAMES_2016 #event-container #row2 .right,
+  #SUMMER_GAMES_2016 #event-container #voicelines,
+  #SUMMER_GAMES_2016 #event-container #icons,
+  #SUMMER_GAMES_2016 #event-container #victoryposes,
+  #SUMMER_GAMES_2016 #event-container #sprays,
+  #UPRISING_2017 #event-container #row1 #col1,
+  #UPRISING_2017 #event-container #row1 #col2,
+  #UPRISING_2017 #event-container #row2 .left,
+  #UPRISING_2017 #event-container #row2 .right,
+  #UPRISING_2017 #event-container #voicelines,
+  #UPRISING_2017 #event-container #icons,
+  #UPRISING_2017 #event-container #victoryposes,
+  #UPRISING_2017 #event-container #sprays {
     flex: initial;
   }
 
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #voicelines,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #icons,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #victoryposes,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #sprays,
-  #YEAR_OF_THE_ROOSTER_2017 .view-mode-item-type #highlight-intros,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #voicelines,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #icons,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #victoryposes,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #sprays,
-  #WINTER_WONDERLAND_2016 .view-mode-item-type #highlight-intros,
-  #HALLOWEEN_2016 .view-mode-item-type #voicelines,
-  #HALLOWEEN_2016 .view-mode-item-type #icons,
-  #HALLOWEEN_2016 .view-mode-item-type #victoryposes,
-  #HALLOWEEN_2016 .view-mode-item-type #sprays,
-  #HALLOWEEN_2016 .view-mode-item-type #highlight-intros,
-  #SUMMER_GAMES_2016 .view-mode-item-type #voicelines,
-  #SUMMER_GAMES_2016 .view-mode-item-type #icons,
-  #SUMMER_GAMES_2016 .view-mode-item-type #victoryposes,
-  #SUMMER_GAMES_2016 .view-mode-item-type #sprays,
-  #SUMMER_GAMES_2016 .view-mode-item-type #highlight-intros {
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #voicelines,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #icons,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #victoryposes,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #sprays,
+  #YEAR_OF_THE_ROOSTER_2017 #event-container #highlight-intros,
+  #WINTER_WONDERLAND_2016 #event-container #voicelines,
+  #WINTER_WONDERLAND_2016 #event-container #icons,
+  #WINTER_WONDERLAND_2016 #event-container #victoryposes,
+  #WINTER_WONDERLAND_2016 #event-container #sprays,
+  #WINTER_WONDERLAND_2016 #event-container #highlight-intros,
+  #HALLOWEEN_2016 #event-container #voicelines,
+  #HALLOWEEN_2016 #event-container #icons,
+  #HALLOWEEN_2016 #event-container #victoryposes,
+  #HALLOWEEN_2016 #event-container #sprays,
+  #HALLOWEEN_2016 #event-container #highlight-intros,
+  #SUMMER_GAMES_2016 #event-container #voicelines,
+  #SUMMER_GAMES_2016 #event-container #icons,
+  #SUMMER_GAMES_2016 #event-container #victoryposes,
+  #SUMMER_GAMES_2016 #event-container #sprays,
+  #SUMMER_GAMES_2016 #event-container #highlight-intros,
+  #UPRISING_2017 #event-container #voicelines,
+  #UPRISING_2017 #event-container #icons,
+  #UPRISING_2017 #event-container #victoryposes,
+  #UPRISING_2017 #event-container #sprays,
+  #UPRISING_2017 #event-container #highlight-intros,
+  #UPRISING_2017 #event-container #epic-skins,
+  #UPRISING_2017 #event-container #voicelines {
     margin-top: 8px;
   }
 
-  .item-container .row, .item-container .col {
+  #event-container .row, #event-container .col {
     flex-direction: column;
   }
+}
+
+
+
+#event-container #sprays .item[achievement="true"] label:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0;
+  top: -5px;
+  background-position: center;
+  background-image: url(resources/icons/achievement.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* shrug */
+#UPRISING_2017 #legendary-skins .inner .card:nth-child(1):after,
+#UPRISING_2017 #legendary-skins .inner .card:nth-child(2):after {
+  content: "";
+  background: url(resources/shrug.png);
+  position: fixed;
+  bottom: -500px;
+  left: 50%;
+  width: 500px;
+  height: 406px;
+  background-size: 500px;
+  z-index: 1000;
+  margin-left: -250px;
+}
+
+#UPRISING_2017 #legendary-skins .inner .card:nth-child(1):hover:after,
+#UPRISING_2017 #legendary-skins .inner .card:nth-child(2):hover:after {
+  bottom: 0;
+  transition: bottom 0.4s ease-in-out;
 }

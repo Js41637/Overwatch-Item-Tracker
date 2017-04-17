@@ -1,0 +1,21 @@
+<div id="hero-nav">
+  <div class="gallery event">
+    <div>
+      <div class="block" ng-repeat="event in ::$ctrl.events track by $index" ui-sref="events({id: event.id})" ui-sref-active="selected">
+        <div class="bg"></div>
+        <div class="img" style="background-image: url({{::event.id | eventImageUrl}})"></div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery hero">
+    <div>
+      <div class="block" ng-repeat="hero in ::$ctrl.heroes track by $index" ui-sref="heroes({id: hero.id})" ui-sref-active="selected">
+        <div class="bg"></div>
+        <div class="imgcont">
+          <div class="img" style="background-image: url({{::hero.id | heroImg:'icon'}})"></div>
+        </div>
+        <h2>{{::hero.name}}</h2>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,52 +1,34 @@
 <html ng-app="OWI">
 <head>
-  <title>Overwatch Items Tracker</title>
-  <link rel="manifest" href="./manifest.json">
+  <title>Overwatch Item Tracker</title>
   <meta charset="UTF-8">
-  <meta name="application-name" content="Overwatch Item Tracker">
-  <meta name="apple-mobile-web-app-title" content="Overwatch Item Tracker">
-  <meta name="theme-color" content="#2d2d2d">
-  <meta name="msapplication-navbutton-color" content="#2d2d2d">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="msapplication-starturl" content="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" sizes="300x300" href="./resources/logo.png">
-  <link rel="apple-touch-icon" type="image/png" sizes="300x300" href="./resources/logo.png">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="icon" type="image/png" sizes="48x48" href="./resources/favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/global.css">
-
-  <script src="./js/vendor/angular.min.js"></script>
-  <script src="./js/vendor/angular-translate.min.js"></script>
-  <script src="./js/vendor/angular-translate-loader-static-files.min.js"></script>
-  <script src="./js/vendor/ui-bootstrap.min.js"></script>
-  <script src="./js/vendor/particles.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.15.1/angular-translate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.15.1/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
   <script src="./js/app.js"></script>
-  <script src="./js/data.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/services.js"></script>
+  <script src="./js/controllers.js"></script>
+  <script src="./js/directives.js"></script>
 </head>
-<body ng-controller="MainCtrl as $ctrl" id="{{$ctrl.selectedUpdate}}" style="opacity: 0">
+<body ng-controller="MainCtrl as $ctrl" id="{{$ctrl.item.id}}" style="opacity: 0">
   <div id="background"></div>
   <div id="header">
     <div class="left">
-      <img uib-tooltip="Boop" tooltip-placement="bottom" src="./resources/logo.svg">
+      <img uib-tooltip="Boop" tooltip-placement="bottom" src="./resources/logo.svg" ng-click="$ctrl.toggleSidebar()">
       <h1>Overwatch Item Tracker</h1>
-      <div class="event-selector btn-group" uib-dropdown>
-        <button id="event-selector-button" type="button" class="btn" uib-dropdown-toggle>
-          {{$ctrl.updates[$ctrl.selectedUpdate].name}} <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="event-selector-button">
-          <li role="menuitem" ng-repeat="update in $ctrl.updates track by $index"><a href="#" ng-click="$ctrl.selectedUpdate = update.id;">{{update.name}}</a></li>
-        </ul>
+      <div class="event-selector" ng-click="$ctrl.showNav = !$ctrl.showNav">
+        <div class="block" ng-if="$ctrl.item.type == 'hero'">
+          <div class="img" style="background-image: url({{$ctrl.item.id | heroImg:'icon'}})"></div>
+        </div>
+        <h2>{{$ctrl.item.name}} <span class="caret"></span></h2>
       </div>
-      <div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end > $ctrl.currentDate" class="event-active">
-        <h2>Event ends on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d'}} local time</h2>
-        <h3>Be sure to get everything you want by {{$ctrl.updates[$ctrl.selectedUpdate].dates.end - 86400000 | date:'MMM d'}} to be safe!</h3>
-      </div>
-      <div ng-show="$ctrl.updates[$ctrl.selectedUpdate].dates.end < $ctrl.currentDate" class="event-ended">
-        <h2>Event ended on {{$ctrl.updates[$ctrl.selectedUpdate].dates.end | date:'MMM d yyyy'}}  local time</h2>
-        <h3>These items should be available again around {{$ctrl.updates[$ctrl.selectedUpdate].dates.start | date:'MMM d'}} next year</h3>
-      </div>
+      <div ui-view="header" class="header-content"></div>
     </div>
     <div class="right">
       <div class="icon settings-icon" ng-click="$ctrl.openSettings()" uib-tooltip="Settings" tooltip-placement="left">
@@ -70,9 +52,37 @@
     </div>
   </div>
   <!--<Particles ng-if="::$ctrl.particles"></Particles>-->
-  <div id="protip">Pro Tip: Hover over items to view a preview.</div>
 
-  <Update ng-repeat="(update, data) in $ctrl.updates" template="{{update}}" data="data" ng-if="$ctrl.selectedUpdate == update"></Update>
+  <div id="menuNav" class="angular-animate" uib-collapse="!$ctrl.showNav">
+    <hero-nav></hero-nav>
+  </div>
+
+  <div id="sidebar" ng-class="{open: $ctrl.showSidebar}">
+    <div class="sidebar-group home">
+      <h2 ui-sref="home" ui-sref-active="selected">Home</h2>
+    </div>
+    <div class="sidebar-group">
+      <h2>Updates</h2>
+      <div>
+        <ul>
+          <li ng-repeat="event in ::$ctrl.events track by $index" ui-sref="events({ id: event.id })" ui-sref-active="selected"><a href="#">{{::event.name}}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar-group">
+      <h2>Heroes</h2>
+      <div>
+        <ul>
+          <li ng-repeat="hero in ::$ctrl.heroes track by $index" ui-sref="heroes({ id: hero.id || 'all' })" ui-sref-active="selected"><a href="#">{{::hero.name || 'All Class'}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div ng-if="::$ctrl.noSupportMsg" ng-hide="::$ctrl.hideAlert" class="nosupport alert alert-warning alert-dismissable">
+    <button ng-click="$ctrl.dismissAlert()" type="button" class="close"><span>&times;</span></button>
+    <strong>Notice!</strong> <span>{{$ctrl.noSupportMsg}}</span>
+  </div>
+  <div ui-view="main"></div>
 
   <script> // Track page views
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
