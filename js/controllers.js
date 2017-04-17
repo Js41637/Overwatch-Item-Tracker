@@ -1,4 +1,4 @@
-OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "CompatibilityService", function($rootScope, $q, $document, $uibModal, DataService, CompatibilityService) {
+OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "CompatibilityService", "CostAndTotalService", function($rootScope, $q, $document, $uibModal, DataService, CompatibilityService, CostAndTotalService) {
   var vm = this;
   this.preview = false;
   this.currentDate = Date.now();
@@ -98,24 +98,22 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
       controllerAs: 'settings'
     });
   };
+
+  this.calculateTotals = function() {
+    
+  }
 }]);
 
-OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "hero", function($scope, $rootScope, $uibModal, Data, StorageService, CompatibilityService, hero) {
+OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService", "hero", function($scope, $rootScope, $uibModal, Data, StorageService, CompatibilityService, CostAndTotalService, hero) {
   var vm = this;
   Object.assign(this, hero);
   this.filteredItems = hero.items;
   this.canPlayType = CompatibilityService.canPlayType;
   this.gridView = false;
   this.checked = Data.checked;
-  this.events = {};
-  this.groups = {};
-  this.totals = {
-    total: 0,
-    selected: 0,
-    percentage: 0,
-    groups: {}
-  };
-
+  this.events = CostAndTotalService.heroes[hero.id].events;
+  this.groups = CostAndTotalService.heroes[hero.id].groups;
+  this.totals = CostAndTotalService.heroes[hero.id].totals;
   this.filters = {
     selected: false,
     unselected: false,
@@ -126,79 +124,12 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
   };
 
   // Cost is on scope as it is a directive in the page and it inherits parent scope
-  $scope.cost = {
-    total: 0,
-    remaining: 0,
-    prev: 0
-  };
+  $scope.cost = CostAndTotalService.heroes[hero.id].cost
 
   // Returns if an item is checked, use item.hero if one is available as allClass Icons includes icons from all heroes
   this.isItemChecked = function(item, type) {
     return this.checked[item.hero || hero.id][type][item.id];
   };
-
-  // Can this item contribute to total cost?
-  function isValidItem(item) {
-    return !item.achievement && item.quality && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
-  }
-
-  // Calculate the total costs and tallys of items in current view (filters)
-  function calculateTotalsAndCosts(initial) {
-    var selectedItems = 0;
-    var totalItems = 0
-    var cost = {
-      total: 0,
-      remaining: 0,
-      selected: 0,
-      prev: $scope.cost.remaining
-    };
-
-    for (var type in vm.filteredItems) {
-      var groupTotals = {
-        total: 0,
-        selected: 0
-      }
-      vm.filteredItems[type].forEach(function(item) {
-        if (item.standardItem) return
-        totalItems++;
-        groupTotals.total++;
-
-        if (initial) {
-          if (item.event && !vm.events[item.event]) {
-            vm.events[item.event] = true
-          }
-          if (item.group && !vm.groups[item.group]) {
-            vm.groups[item.group] = true
-          }
-        }
-        
-        var isSelected = vm.isItemChecked(item, type);
-        if (isSelected ) {
-          selectedItems++;
-          groupTotals.selected++;
-        }
-        if (type == 'icons') return
-        if (isValidItem(item)) {
-          var price = Data.prices[item.quality] * (item.event ? 3 : 1);
-          cost.total += price;
-          if (isSelected) {
-            cost.selected += price;
-          }
-          else {
-            cost.remaining += price;
-          }
-        }
-      });
-      vm.totals.groups[type] = groupTotals;
-    }
-    $scope.cost = cost;
-    vm.totals.total = totalItems;
-    vm.totals.selected = selectedItems;
-    vm.totals.percentage = ((vm.totals.selected / vm.totals.total) * 100)
-  }
-
-  // Init
-  calculateTotalsAndCosts(true);
 
   this.getDisplayName = function(name) {
     switch (name) {
@@ -213,12 +144,25 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     }
   }
 
+  this.hasGroups = function() {
+    return Object.keys(vm.groups).length
+  }
+
   this.hasEvents = function() {
     return Object.keys(vm.events).length
   }
 
-  this.hasGroups = function() {
-    return Object.keys(vm.groups).length
+  var resetCosts = function() {
+    var cost = CostAndTotalService.heroes[hero.id].cost
+    cost.prev = $scope.cost.remaining
+    $scope.cost = cost;
+    vm.totals = CostAndTotalService.heroes[hero.id].totals
+  }
+
+  var updateCosts = function() {
+    var newData = CostAndTotalService.calculateFilteredHeroes(vm.filteredItems, $scope.cost.remaining, hero.id);
+    $scope.cost = newData.cost;
+    vm.totals = newData.totals
   }
 
   this.updateFilters = function() {
@@ -246,7 +190,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     }
     
     this.filteredItems = filterItems(hero.items, eventFilters, groupFilter);
-    calculateTotalsAndCosts();
+    updateCosts()
 
     // Generate the currently selected filter text
     var currentFilters = eventFilters
@@ -289,7 +233,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
   }
 
   $rootScope.$on('selectAll', function() {
-    calculateTotalsAndCosts();
+    CostAndTotalService.recalculate();
+    resetCosts();
   })
   
   this.clearFilters = function() {
@@ -304,7 +249,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     this.currentFilters = '';
     this.filtering = false;
     this.filteredItems = hero.items;
-    calculateTotalsAndCosts();
+    resetCosts();
   }
  
   // Return the url for an image or video, also check if we're showing HD videos
@@ -328,12 +273,17 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
   this.selectItem = function(item, type) {
     if (item.standardItem) return
     this.checked[item.hero || hero.id][type][item.id] = !this.checked[item.hero || hero.id][type][item.id];
-    vm.onSelect();
+    vm.onSelect(item, type);
   }
 
-  this.onSelect = function() {
+  this.onSelect = function(item, type) {
     StorageService.setData(Object.assign({}, Data.checked, vm.checked));
-    calculateTotalsAndCosts();
+    if (this.filtering) {
+      CostAndTotalService.updateItem(item, type, hero.id);
+      updateCosts()
+      return
+    }
+    CostAndTotalService.updateItem(item, type, hero.id);
   }
 
   this.toggleGrid = function() {
@@ -343,7 +293,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
 
   // Mark all items for current hero as selected
   this.selectAll = function(unselect, onlyType) {
-    if (vm.totals.selected == vm.totals.total && !unselect) {
+    console.log(vm.totals)
+    if (vm.totals.overall.selected == vm.totals.overall.total && !unselect) {
       return;
     }
     for (var type in vm.filteredItems) {
@@ -351,15 +302,21 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
         continue;
       }
       vm.filteredItems[type].forEach(function(item) {
+        if (item.standardItem) return
         vm.checked[item.hero || hero.id][type][item.id] = (unselect ? false : true);
       })
     }
-    calculateTotalsAndCosts();
     StorageService.setData(Object.assign({}, Data.checked, vm.checked));
+    CostAndTotalService.recalculate();
+    if (vm.filtering) {
+      updateCosts()
+    } else {
+      resetCosts();
+    }
   }
 
   this.unSelectAll = function(type) {
-    if (vm.totals.selected == 0) return
+    if (vm.totals.overall.selected == 0) return
     var modal = $uibModal.open({
       templateUrl: './templates/modals/unselect.html',
       controller: function($scope) {
@@ -374,58 +331,20 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
   }
 }])
 
-OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "event", function($scope, $rootScope, Data, StorageService, CompatibilityService, event) {
+OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService", "event", function($scope, $rootScope, Data, StorageService, CompatibilityService, CostAndTotalService, event) {
   $scope.preview = false;
   $scope.checked = Data.checked;
   $scope.data = event;
-  $scope.cost = {
-    total: 0,
-    remaining: 0,
-    prev: 0,
-    selected: 0
-  };
-
-  var types = {
-    skinsEpic: 'skins',
-    skinsLegendary: 'skins'
-  };
-
-  function calculateCosts() {
-    if ($scope.data.id == 'SUMMER_GAMES_2016') return
-    var cost = {
-      total: 0,
-      remaining: 0,
-      selected: 0,
-      prev: $scope.cost.remaining
-    }
-
-    for (var type in event.items) {
-      if (type == 'icons') continue; // icons have no cost
-      var items = $scope.data.items[type];
-      items.forEach(function(item) {
-        if (!item.quality) return; // if it has no quality it has no cost
-        var price = Data.prices[item.quality] * 3;
-        cost.total += price;
-        var isChecked = Data.isItemChecked(item.hero, types[type] || type, item.id)
-        if (isChecked) {
-          cost.selected += price;
-        }
-        else {
-          cost.remaining += price;
-        }
-      })
-    }
-    $scope.cost = cost;
-  }
-  calculateCosts();
+  $scope.cost = CostAndTotalService.events[event.id].cost;
 
   $rootScope.$on('selectAll', function() {
-    calculateCosts();
+    CostAndTotalService.recalculate()
+    $scope.cost = CostAndTotalService.events[event.id].cost;
   })
 
-  $scope.onSelect = function() {
+  $scope.onSelect = function(item, type) {
     StorageService.setData($scope.checked);
-    calculateCosts();
+    CostAndTotalService.updateItem(item, type, item.hero, event.id)
   };
 
   var showTimeout = undefined;

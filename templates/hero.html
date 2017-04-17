@@ -20,12 +20,12 @@
         <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
           <li>
             <div>
-              <label for="filterSelected">Selected <input id="filterSelected" type="checkbox" ng-change="hero.filters.unselected = false;hero.updateFilters()" ng-model="hero.filters.selected" ng-disabled="hero.totals.selected == 0 && !hero.filtering"></label>
+              <label for="filterSelected">Selected <input id="filterSelected" type="checkbox" ng-change="hero.filters.unselected = false;hero.updateFilters()" ng-model="hero.filters.selected" ng-disabled="hero.totals.overall.selected == 0 && !hero.filtering"></label>
             </div>
           </li>
           <li>
             <div>
-              <label for="filterUnselected">UnSelected <input id="filterUnselected" type="checkbox" ng-change="hero.filters.selected = false;hero.updateFilters()" ng-model="hero.filters.unselected" ng-disabled="hero.totals.selected == 0 && !hero.filtering"></label>
+              <label for="filterUnselected">UnSelected <input id="filterUnselected" type="checkbox" ng-change="hero.filters.selected = false;hero.updateFilters()" ng-model="hero.filters.unselected" ng-disabled="hero.totals.overall.selected == 0 && !hero.filtering"></label>
             </div>
           </li>
           </li>
@@ -34,7 +34,7 @@
             <div>
               <label for="achievementf">Achievement/Special <input id="achievementf" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.achievement"></label>
             </div>
-            <div>
+            <div ng-show="hero.id == 'all'">
               <label for="herof">Hero Icons <input id="herof" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.hero"></label>
             </div>
           </li>
@@ -57,15 +57,15 @@
       <div class="select-all btn btn-default" uib-tooltip="Unselect all items currently in view" ng-click="hero.unSelectAll()" tooltip-append-to-body="true">Unselect All</div>
     </div>
     <div class="hero-progress">
-      <div class="hero-progress-bar" style="width: {{hero.totals.percentage}}%; background-color: {{hero.colors.primary}}; border-top-color: {{hero.colors.highlight}}"></div>
-      <span>{{hero.totals.selected}} / {{hero.totals.total}}  Unlocks</span>
+      <div class="hero-progress-bar" style="width: {{hero.totals.overall.percentage}}%; background-color: {{hero.colors.primary}}; border-top-color: {{hero.colors.highlight}}"></div>
+      <span>{{hero.totals.overall.selected}} / {{hero.totals.overall.total}}  Unlocks</span>
     </div>
     <span class="currentfilter" ng-show="hero.filtering">Currently Filtering: {{hero.currentFilters}}</span>
   </div>
   <div class="hero-grid angular-animate" ng-if="hero.gridView">
     <div ng-repeat="(type, items) in hero.filteredItems track by type" id="{{::type}}" class="section">
       <div class="section-header">
-        <h2>{{::type}} <small ng-show="hero.totals.groups[type].total">{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
+        <h2>{{::type}} <small ng-show="hero.totals[type].total">{{hero.totals[type].selected}}/{{hero.totals[type].total}}</small></h2>
       </div>
       <span
         class="item"
@@ -83,7 +83,7 @@
   <div class="hero-items angular-animate" ng-if="!hero.gridView">
     <div ng-repeat="(type, items) in hero.filteredItems track by type" id="{{::type}}" class="section">
       <div class="section-header">
-        <h2>{{::hero.getDisplayName(type)}} <small>{{hero.totals.groups[type].selected}}/{{hero.totals.groups[type].total}}</small></h2>
+        <h2>{{::hero.getDisplayName(type)}} <small>{{hero.totals[type].selected}}/{{hero.totals[type].total}}</small></h2>
         <div class="options">
           <div class="btn-group" uib-dropdown is-open="showOptionsDropdown">
             <div class="btn" uib-dropdown-toggle uib-tooltip="Options" tooltip-append-to-body="true">
@@ -109,7 +109,7 @@
         tooltip-enable="{{::hero.canPlayType(type)}}"
         tooltip-placement="auto"
         ng-repeat="item in items track by item.id">
-        <input type="checkbox" id="{{type + item.id}}" ng-checked="::item.standardItem || hero.checked[item.hero || hero.id][type][item.id]" ng-disabled="::item.standardItem" ng-change="hero.onSelect()" ng-model="hero.checked[item.hero || hero.id][type][item.id]">
+        <input type="checkbox" id="{{type + item.id}}" ng-checked="::item.standardItem || hero.checked[item.hero || hero.id][type][item.id]" ng-disabled="::item.standardItem" ng-change="hero.onSelect(item, type)" ng-model="hero.checked[item.hero || hero.id][type][item.id]">
         <label for="{{type + item.id}}">
           <h3 class="{{::item.quality}}">{{::item.name}}</h3>
           <small class="color-cost">{{ ::item | itemPrice:type }}</small>

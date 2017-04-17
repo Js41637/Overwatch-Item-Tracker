@@ -1011,6 +1011,7 @@ strong {
   right: 0;
   z-index: 1000;
   will-change: auto;
+  transition: height 0.315s linear;
 }
 
 @media screen and (max-width: 1300px) {

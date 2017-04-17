@@ -75,7 +75,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
             if (service.initialized) {
               resolve(service);
             } else {
-              setTimeout(waitForInitialize, 50);
+              setTimeout(waitForInitialize, 40);
             }
         }
         waitForInitialize();
@@ -208,4 +208,137 @@ OWI.factory('CompatibilityService', ["StorageService", function(StorageService) 
   }
 
   return service
+}])
+
+OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(DataService, StorageService) {
+  var TYPES = {
+    skinsEpic: 'skins',
+    skinsLegendary: 'skins'
+  }
+
+  var isValidItem = function(item) {
+    return !item.achievement && item.quality && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
+  }
+
+  var service = {
+    totals: {},
+    heroes: {},
+    events: {},
+    init: function() {
+      DataService.waitForInitialization().then(function() {
+        console.info("Calculating totals and costs");
+        service.recalculate();
+      });
+    },
+    recalculate: function() {
+      console.log("Calculating costs")
+      service.heroes = {}
+      service.events = {}
+      var d = Object.assign({}, DataService.heroes, DataService.events);
+      for (var heroOrEvent in d) {
+        var isEvent = DataService.events[heroOrEvent];
+        var what = d[heroOrEvent]
+        var TYPE = isEvent ? 'events' : 'heroes';
+
+        service[TYPE][what.id] = { events: {}, groups: {}, cost: { selected: 0, remaining: 0, total: 0, prev: 0 }, totals: { overall: { selected: 0, total: 0, percentage: 0 } } }
+        var items = what.items
+        for (var type in items) {
+          if (!service[TYPE][what.id].totals[type]) service[TYPE][what.id].totals[type] = { selected: 0, total: 0 }
+          for (var item of items[type]) {
+            if (item.standardItem) continue
+            if (!isEvent) {
+              if (item.event && !service[TYPE][what.id].events[item.event]) service[TYPE][what.id].events[item.event] = true
+              if (item.group && !service[TYPE][what.id].groups[item.group]) service[TYPE][what.id].groups[item.group] = true
+            }
+            var isSelected = DataService.checked[item.hero || what.id][TYPES[type] || type][item.id];
+            service[TYPE][what.id].totals.overall.total++;
+            service[TYPE][what.id].totals[type].total++;
+            if (isSelected) {
+              service[TYPE][what.id].totals.overall.selected++;
+              service[TYPE][what.id].totals[type].selected++;
+            }
+            if (type == 'icons') continue
+            if (isValidItem(item)) {
+              var price = DataService.prices[item.quality] * ((item.event || isEvent) ? 3 : 1);
+              service[TYPE][what.id].cost.total += price;
+              if (isSelected) {
+                service[TYPE][what.id].cost.selected += price;
+              } else {
+                service[TYPE][what.id].cost.remaining += price;
+              }
+            }
+          }
+        }
+        service[TYPE][what.id].totals.overall.percentage = ((service[TYPE][what.id].totals.overall.selected / service[TYPE][what.id].totals.overall.total) * 100)
+      }
+    },
+    updateItem: function(item, type, hero, event) {
+      var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][item.id];
+      event = item.event || event
+      var eventType = type == 'skins' ? (item.quality == 'epic' ? 'skinsEpic' : 'skinsLegendary') : type
+      var val = isSelected ? 1 : -1;
+      var price = DataService.prices[item.quality] * (event ? 3 : 1);
+      var isValid = isValidItem(item)
+      service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
+      service.heroes[hero].totals.overall.selected += val;
+      service.heroes[hero].totals[type].selected += val;
+      if (type != 'icons' && isValid) {
+        if (isSelected) {
+          service.heroes[hero].cost.selected += price;
+          service.heroes[hero].cost.remaining -= price;
+        } else {
+          service.heroes[hero].cost.selected -= price;
+          service.heroes[hero].cost.remaining += price;
+        }
+      }
+      if (event) {
+        service.events[event].totals.overall.selected += val;
+        service.events[event].totals[eventType].selected += val;
+        service.events[event].cost.prev = service.events[event].cost.remaining
+        if (isSelected) {
+          service.events[event].cost.remaining -= price
+          service.events[event].cost.selected += price
+        } else {
+          service.events[event].cost.remaining += price
+          service.events[event].cost.selected -= price
+        }
+        service.events[event].totals.overall.percentage = ((service.events[event].totals.overall.selected / service.events[event].totals.overall.total) * 100)
+      }
+      service.heroes[hero].totals.overall.percentage = ((service.heroes[hero].totals.overall.selected / service.heroes[hero].totals.overall.total) * 100)
+      return service.heroes[hero]
+    },
+    calculateFilteredHeroes: function(items, oldCost, hero) {
+      var out = {
+        cost: { total: 0, selected: 0, remaining: 0, prev: oldCost },
+        totals: { overall: { selected: 0, total: 0, percentage: 0 } }
+      }
+      for (var type in items) {
+        if (!out.totals[type]) out.totals[type] = { total: 0, selected: 0 }
+        for (var item of items[type]) {
+          if (item.standardItem) continue;
+          var isSelected = DataService.checked[item.hero || hero][type][item.id];
+          out.totals.overall.total++;
+          out.totals[type].total++;
+          if (isSelected) {
+            out.totals.overall.selected++;
+            out.totals[type].selected++;
+          }
+          if (type == 'icons') continue;
+          if (isValidItem(item)) {
+            var price = DataService.prices[item.quality] * (item.event ? 3 : 1);
+            out.cost.total += price;
+            if (isSelected) {
+              out.cost.selected += price;
+            } else {
+              out.cost.remaining += price;
+            }
+          }
+        }
+      }
+      out.totals.overall.percentage = ((out.totals.overall.selected / out.totals.overall.total) * 100)
+      return out;
+    }
+  }
+  service.init()
+  return service;
 }])

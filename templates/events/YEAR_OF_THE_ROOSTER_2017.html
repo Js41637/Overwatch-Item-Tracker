@@ -69,8 +69,8 @@
     </div>
     <div class="items">
       <div class="item" ng-repeat="spray in ::data.items.sprays track by $index" ng-if="::!spray.id.includes('dragon-dance')" achievement="{{::spray.achievement}}"  ng-mouseenter="showPreview(spray, 'spray')" ng-mouseleave="hidePreview()">
-        <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked[spray.hero].sprays[spray.id]" ng-change="onSelect()">
-        <input ng-if="::spray.heroName" type="checkbox" class="orn" ng-if="::spray.heroName" id="{{'sprayorn' + $index}}" ng-model="checked[spray.hero].sprays[spray.dragonID]" ng-change="onSelect()">
+        <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked[spray.hero].sprays[spray.id]" ng-change="onSelect(spray, 'sprays')">
+        <input ng-if="::spray.heroName" type="checkbox" class="orn" ng-if="::spray.heroName" id="{{'sprayorn' + $index}}" ng-model="checked[spray.hero].sprays[spray.dragonID]" ng-change="onSelect(spray, 'sprays')">
         <label ng-if="::spray.heroName" for="{{'sprayorn' + $index}}" class="ornl"></label>
         <label for="{{'spray' + $index}}">
           <h3>{{::spray.heroName || spray.name}}</h3>
