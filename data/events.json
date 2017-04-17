@@ -1,0 +1,4767 @@
+{
+  "SUMMER_GAMES_2016": {
+    "name": "Summer Games 2016",
+    "id": "SUMMER_GAMES_2016",
+    "dates": {
+      "start": "1470164400000",
+      "end": "1471928400000"
+    },
+    "items": {
+      "icons": [
+        {
+          "hero": "hanzo",
+          "name": "Archery",
+          "id": "hanzo-archery",
+          "url": "./resources/heroes/hanzo/icons/hanzo-archery.png"
+        },
+        {
+          "hero": "all",
+          "name": "Australia",
+          "id": "australia",
+          "url": "./resources/heroes/all/icons/australia.png"
+        },
+        {
+          "hero": "reaper",
+          "name": "BMX",
+          "id": "reaper-bmx",
+          "url": "./resources/heroes/reaper/icons/reaper-bmx.png"
+        },
+        {
+          "hero": "mercy",
+          "name": "Badminton",
+          "id": "mercy-badminton",
+          "url": "./resources/heroes/mercy/icons/mercy-badminton.png"
+        },
+        {
+          "hero": "pharah",
+          "name": "Basketball",
+          "id": "pharah-basketball",
+          "url": "./resources/heroes/pharah/icons/pharah-basketball.png"
+        },
+        {
+          "hero": "bastion",
+          "name": "Boxing",
+          "id": "bastion-boxing",
+          "url": "./resources/heroes/bastion/icons/bastion-boxing.png"
+        },
+        {
+          "hero": "all",
+          "name": "Brazil",
+          "id": "brazil",
+          "url": "./resources/heroes/all/icons/brazil.png"
+        },
+        {
+          "hero": "all",
+          "name": "China",
+          "id": "china",
+          "url": "./resources/heroes/all/icons/china.png"
+        },
+        {
+          "hero": "dva",
+          "name": "Cycling",
+          "id": "dva-cycling",
+          "url": "./resources/heroes/dva/icons/dva-cycling.png"
+        },
+        {
+          "hero": "roadhog",
+          "name": "Diving",
+          "id": "roadhog-diving",
+          "url": "./resources/heroes/roadhog/icons/roadhog-diving.png"
+        },
+        {
+          "hero": "all",
+          "name": "Egypt",
+          "id": "egypt",
+          "url": "./resources/heroes/all/icons/egypt.png"
+        },
+        {
+          "hero": "mccree",
+          "name": "Equestrian",
+          "id": "mccree-equestrian",
+          "url": "./resources/heroes/mccree/icons/mccree-equestrian.png"
+        },
+        {
+          "hero": "genji",
+          "name": "Fencing",
+          "id": "genji-fencing",
+          "url": "./resources/heroes/genji/icons/genji-fencing.png"
+        },
+        {
+          "hero": "lucio",
+          "name": "Football",
+          "id": "lucio-football",
+          "url": "./resources/heroes/lucio/icons/lucio-football.png"
+        },
+        {
+          "hero": "all",
+          "name": "France",
+          "id": "france",
+          "url": "./resources/heroes/all/icons/france.png"
+        },
+        {
+          "hero": "all",
+          "name": "Germany",
+          "id": "germany",
+          "url": "./resources/heroes/all/icons/germany.png"
+        },
+        {
+          "hero": "soldier-76",
+          "name": "Golf",
+          "id": "soldier-76-golf",
+          "url": "./resources/heroes/soldier-76/icons/soldier-76-golf.png"
+        },
+        {
+          "hero": "all",
+          "name": "Greece",
+          "id": "greece",
+          "url": "./resources/heroes/all/icons/greece.png"
+        },
+        {
+          "hero": "widowmaker",
+          "name": "Gymnastics",
+          "id": "widowmaker-gymnastics",
+          "url": "./resources/heroes/widowmaker/icons/widowmaker-gymnastics.png"
+        },
+        {
+          "hero": "all",
+          "name": "Japan",
+          "id": "japan",
+          "url": "./resources/heroes/all/icons/japan.png"
+        },
+        {
+          "hero": "all",
+          "name": "Mexico",
+          "id": "mexico",
+          "url": "./resources/heroes/all/icons/mexico.png"
+        },
+        {
+          "hero": "all",
+          "name": "Nepal",
+          "id": "nepal",
+          "url": "./resources/heroes/all/icons/nepal.png"
+        },
+        {
+          "hero": "all",
+          "name": "Numbani",
+          "id": "numbani",
+          "url": "./resources/heroes/all/icons/numbani.png"
+        },
+        {
+          "hero": "symmetra",
+          "name": "Rhythmic Gymnastics",
+          "id": "symmetra-rhythmic-gymnastics",
+          "url": "./resources/heroes/symmetra/icons/symmetra-rhythmic-gymnastics.png"
+        },
+        {
+          "hero": "all",
+          "name": "Russia",
+          "id": "russia",
+          "url": "./resources/heroes/all/icons/russia.png"
+        },
+        {
+          "hero": "ana",
+          "name": "Shooting",
+          "id": "ana-shooting",
+          "url": "./resources/heroes/ana/icons/ana-shooting.png"
+        },
+        {
+          "hero": "all",
+          "name": "South Korea",
+          "id": "south-korea",
+          "url": "./resources/heroes/all/icons/south-korea.png"
+        },
+        {
+          "hero": "all",
+          "name": "Summer Games",
+          "id": "summer-games-2016",
+          "url": "./resources/heroes/all/icons/summer-games-2016.png"
+        },
+        {
+          "hero": "all",
+          "name": "Sweden",
+          "id": "sweden",
+          "url": "./resources/heroes/all/icons/sweden.png"
+        },
+        {
+          "hero": "all",
+          "name": "Switzerland",
+          "id": "switzerland",
+          "url": "./resources/heroes/all/icons/switzerland.png"
+        },
+        {
+          "hero": "mei",
+          "name": "Table Tennis",
+          "id": "mei-table-tennis",
+          "url": "./resources/heroes/mei/icons/mei-table-tennis.png"
+        },
+        {
+          "hero": "zenyatta",
+          "name": "Taekwondo",
+          "id": "zenyatta-taekwondo",
+          "url": "./resources/heroes/zenyatta/icons/zenyatta-taekwondo.png"
+        },
+        {
+          "hero": "junkrat",
+          "name": "Tennis",
+          "id": "junkrat-tennis",
+          "url": "./resources/heroes/junkrat/icons/junkrat-tennis.png"
+        },
+        {
+          "hero": "tracer",
+          "name": "Track",
+          "id": "tracer-track",
+          "url": "./resources/heroes/tracer/icons/tracer-track.png"
+        },
+        {
+          "hero": "all",
+          "name": "United Kingdom",
+          "id": "united-kingdom",
+          "url": "./resources/heroes/all/icons/united-kingdom.png"
+        },
+        {
+          "hero": "all",
+          "name": "United States of America",
+          "id": "united-states-of-america",
+          "url": "./resources/heroes/all/icons/united-states-of-america.png"
+        },
+        {
+          "hero": "winston",
+          "name": "Volleyball",
+          "id": "winston-volleyball",
+          "url": "./resources/heroes/winston/icons/winston-volleyball.png"
+        },
+        {
+          "hero": "torbjorn",
+          "name": "Water Polo",
+          "id": "torbjorn-water-polo",
+          "url": "./resources/heroes/torbjorn/icons/torbjorn-water-polo.png"
+        },
+        {
+          "hero": "zarya",
+          "name": "Weightlifting",
+          "id": "zarya-weightlifting",
+          "url": "./resources/heroes/zarya/icons/zarya-weightlifting.png"
+        },
+        {
+          "hero": "reinhardt",
+          "name": "Wrestling",
+          "id": "reinhardt-wrestling",
+          "url": "./resources/heroes/reinhardt/icons/reinhardt-wrestling.png"
+        }
+      ],
+      "sprays": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Shooting",
+          "id": "ana-shooting",
+          "quality": "common",
+          "url": "./resources/heroes/ana/sprays/ana-shooting.png"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Boxing",
+          "id": "bastion-boxing",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/sprays/bastion-boxing.png"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Cycling",
+          "id": "dva-cycling",
+          "quality": "common",
+          "url": "./resources/heroes/dva/sprays/dva-cycling.png"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Fencing",
+          "id": "genji-fencing",
+          "quality": "common",
+          "url": "./resources/heroes/genji/sprays/genji-fencing.png"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Archery",
+          "id": "hanzo-archery",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/sprays/hanzo-archery.png"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Tennis",
+          "id": "junkrat-tennis",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/sprays/junkrat-tennis.png"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Football",
+          "id": "lucio-football",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/sprays/lucio-football.png"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Equestrian",
+          "id": "mccree-equestrian",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/sprays/mccree-equestrian.png"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Table Tennis",
+          "id": "mei-table-tennis",
+          "quality": "common",
+          "url": "./resources/heroes/mei/sprays/mei-table-tennis.png"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Badminton",
+          "id": "mercy-badminton",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/sprays/mercy-badminton.png"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Basketball",
+          "id": "pharah-basketball",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/sprays/pharah-basketball.png"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "BMX",
+          "id": "reaper-bmx",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/sprays/reaper-bmx.png"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Wrestling",
+          "id": "reinhardt-wrestling",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/sprays/reinhardt-wrestling.png"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Diving",
+          "id": "roadhog-diving",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/sprays/roadhog-diving.png"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Golf",
+          "id": "soldier-76-golf",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/sprays/soldier-76-golf.png"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Rhythmic",
+          "id": "symmetra-rhythmic",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/sprays/symmetra-rhythmic.png"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Water Polo",
+          "id": "torbjorn-water-polo",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/sprays/torbjorn-water-polo.png"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Track",
+          "id": "tracer-track",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/sprays/tracer-track.png"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Gymnastics",
+          "id": "widowmaker-gymnastics",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/sprays/widowmaker-gymnastics.png"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Volleyball",
+          "id": "winston-volleyball",
+          "quality": "common",
+          "url": "./resources/heroes/winston/sprays/winston-volleyball.png"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Weightlifting",
+          "id": "zarya-weightlifting",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/sprays/zarya-weightlifting.png"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Taekwondo",
+          "id": "zenyatta-taekwondo",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/sprays/zenyatta-taekwondo.png"
+        },
+        {
+          "hero": "all",
+          "name": "Summer Games",
+          "id": "summer-games-2016",
+          "url": "./resources/heroes/all/sprays/summer-games-2016.png",
+          "quality": "common"
+        }
+      ],
+      "voicelines": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Learn from the Pain",
+          "id": "ana-learn-from-the-pain",
+          "quality": "common",
+          "url": "./resources/heroes/ana/voicelines/ana-learn-from-the-pain.ogg"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "WHOO-VWEEEEEE",
+          "id": "bastion-whoovweeeeee",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/voicelines/bastion-whoovweeeeee.ogg"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "I'm #1",
+          "id": "dva-im-1",
+          "quality": "common",
+          "url": "./resources/heroes/dva/voicelines/dva-im-1.ogg"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "I was hoping for a challenge",
+          "id": "genji-i-was-hoping-for-a-challenge",
+          "quality": "common",
+          "url": "./resources/heroes/genji/voicelines/genji-i-was-hoping-for-a-challenge.ogg"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Ignore all distractions",
+          "id": "hanzo-ignore-all-distractions",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/voicelines/hanzo-ignore-all-distractions.ogg"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "I give it a 10!",
+          "id": "junkrat-i-give-it-a-10",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/voicelines/junkrat-i-give-it-a-10.ogg"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Be champions",
+          "id": "lucio-be-champions",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/voicelines/lucio-be-champions.ogg"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "I don't much like losing",
+          "id": "mccree-i-dont-much-like-losing",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/voicelines/mccree-i-dont-much-like-losing.ogg"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Overcome all obstacles",
+          "id": "mei-overcome-all-obstacles",
+          "quality": "common",
+          "url": "./resources/heroes/mei/voicelines/mei-overcome-all-obstacles.ogg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Piece of cake",
+          "id": "mercy-piece-of-cake",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/voicelines/mercy-piece-of-cake.ogg"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "We are in this together",
+          "id": "pharah-we-are-in-this-together",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/voicelines/pharah-we-are-in-this-together.ogg"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "It's in the refrigerator",
+          "id": "reaper-its-in-the-refrigerator",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/voicelines/reaper-its-in-the-refrigerator.ogg"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "100% German power",
+          "id": "reinhardt-100-german-power",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-100-german-power.ogg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "What's mine is mine",
+          "id": "roadhog-whats-mine-is-mine",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/voicelines/roadhog-whats-mine-is-mine.ogg"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "You want a medal?",
+          "id": "soldier-76-you-want-a-medal",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-you-want-a-medal.ogg"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Hard work and dedication",
+          "id": "symmetra-hard-work-and-dedication",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/voicelines/symmetra-hard-work-and-dedication.ogg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "More where that came from",
+          "id": "torbjorn-more-where-that-came-from",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-more-where-that-came-from.ogg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Eat my dust",
+          "id": "tracer-eat-my-dust",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/voicelines/tracer-eat-my-dust.ogg"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "I don't miss",
+          "id": "widowmaker-i-dont-miss",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-i-dont-miss.ogg"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Playtime's over",
+          "id": "winston-playtimes-over",
+          "quality": "common",
+          "url": "./resources/heroes/winston/voicelines/winston-playtimes-over.ogg"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "No pain, no gain",
+          "id": "zarya-no-pain-no-gain",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/voicelines/zarya-no-pain-no-gain.ogg"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Strive for improvement",
+          "id": "zenyatta-strive-for-improvement",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-strive-for-improvement.ogg"
+        }
+      ],
+      "emotes": [
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Boxing",
+          "id": "bastion-boxing",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/emotes/bastion-boxing.webm"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Juggle",
+          "id": "lucio-juggle",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/emotes/lucio-juggle.webm"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Ribbon",
+          "id": "symmetra-ribbon",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/emotes/symmetra-ribbon.webm"
+        }
+      ],
+      "skinsEpic": [
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Taegeukgi",
+          "id": "dva-taegeukgi",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/dva-taegeukgi.jpg"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Nihon",
+          "id": "genji-nihon",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/genji-nihon.jpg"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "American",
+          "id": "mccree-american",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/mccree-american.jpg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Eidgenossin",
+          "id": "mercy-eidgenossin",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/mercy-eidgenossin.jpg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Tre Kronor",
+          "id": "torbjorn-tre-kronor",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/torbjorn-tre-kronor.jpg"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Tricolore",
+          "id": "widowmaker-tricolore",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/widowmaker-tricolore.jpg"
+        }
+      ],
+      "intros": [
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Shot Put",
+          "id": "junkrat-shot-put",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/intros/junkrat-shot-put.webm"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Bicycle Kick",
+          "id": "lucio-bicycle-kick",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/intros/lucio-bicycle-kick.webm"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Hurdle",
+          "id": "tracer-hurdle",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES_2016/intros/tracer-hurdle.webm"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Seleção",
+          "id": "lucio-selecao",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/lucio-selecao.jpg"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Striker",
+          "id": "lucio-striker",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/lucio-striker.jpg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Sprinter",
+          "id": "tracer-sprinter",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/tracer-sprinter.jpg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Track and Field",
+          "id": "tracer-track-and-field",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/tracer-track-and-field.jpg"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Champion",
+          "id": "zarya-champion",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/zarya-champion.jpg"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Weightlifter",
+          "id": "zarya-weightlifter",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/zarya-weightlifter.jpg"
+        }
+      ],
+      "poses": [
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Medal",
+          "id": "mei-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES_2016/poses/mei-medal.jpg"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Medal",
+          "id": "pharah-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES_2016/poses/pharah-medal.jpg"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Medal",
+          "id": "reaper-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES_2016/poses/reaper-medal.jpg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Medal",
+          "id": "roadhog-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES_2016/poses/roadhog-medal.jpg"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Golf Swing",
+          "id": "soldier-76-golf-swing",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES_2016/poses/soldier-76-golf-swing.jpg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Medal",
+          "id": "torbjorn-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES_2016/poses/torbjorn-medal.jpg"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Medal",
+          "id": "widowmaker-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES_2016/poses/widowmaker-medal.jpg"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Medal",
+          "id": "winston-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES_2016/poses/winston-medal.jpg"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Medals",
+          "id": "zenyatta-medals",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES_2016/poses/zenyatta-medals.jpg"
+        }
+      ]
+    }
+  },
+  "HALLOWEEN_2016": {
+    "name": "Halloween Terror 2016",
+    "id": "HALLOWEEN_2016",
+    "dates": {
+      "start": "1476208800000",
+      "end": "1478059200000"
+    },
+    "items": {
+      "skinsEpic": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Ghoul",
+          "id": "ana-ghoul",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/ana-ghoul.jpg"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Tombstone",
+          "id": "bastion-tombstone",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/bastion-tombstone.jpg"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Demon",
+          "id": "hanzo-demon",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/hanzo-demon.jpg"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Possessed",
+          "id": "pharah-possessed",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/pharah-possessed.jpg"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Coldhardt",
+          "id": "reinhardt-coldhardt",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/reinhardt-coldhardt.jpg"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Immortal",
+          "id": "soldier-76-immortal",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/soldier-76-immortal.jpg"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Vampire",
+          "id": "symmetra-vampire",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/symmetra-vampire.jpg"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Skullyatta",
+          "id": "zenyatta-skullyatta",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/zenyatta-skullyatta.jpg"
+        }
+      ],
+      "emotes": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Candy",
+          "id": "ana-candy",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/emotes/ana-candy.webm"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Pumpkin Smash",
+          "id": "reinhardt-pumpkin-smash",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/emotes/reinhardt-pumpkin-smash.webm"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Shadow Puppets",
+          "id": "winston-shadow-puppets",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/emotes/winston-shadow-puppets.webm"
+        }
+      ],
+      "sprays": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Trick or Treat",
+          "id": "ana-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/ana/sprays/ana-trick-or-treat.png"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Trick or Treat",
+          "id": "bastion-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/sprays/bastion-trick-or-treat.png"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Trick or Treat",
+          "id": "dva-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/dva/sprays/dva-trick-or-treat.png"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Trick or Treat",
+          "id": "genji-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/genji/sprays/genji-trick-or-treat.png"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Trick or Treat",
+          "id": "hanzo-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/sprays/hanzo-trick-or-treat.png"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Trick or Treat",
+          "id": "junkrat-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/sprays/junkrat-trick-or-treat.png"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Trick or Treat",
+          "id": "lucio-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/sprays/lucio-trick-or-treat.png"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Trick or Treat",
+          "id": "mccree-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/sprays/mccree-trick-or-treat.png"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Trick or Treat",
+          "id": "mei-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/mei/sprays/mei-trick-or-treat.png"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Trick or Treat",
+          "id": "mercy-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/sprays/mercy-trick-or-treat.png"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Trick or Treat",
+          "id": "pharah-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/sprays/pharah-trick-or-treat.png"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Trick or Treat",
+          "id": "reaper-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/sprays/reaper-trick-or-treat.png"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Trick or Treat",
+          "id": "reinhardt-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/sprays/reinhardt-trick-or-treat.png"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Trick or Treat",
+          "id": "roadhog-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/sprays/roadhog-trick-or-treat.png"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Trick or Treat",
+          "id": "soldier-76-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/sprays/soldier-76-trick-or-treat.png"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Trick or Treat",
+          "id": "symmetra-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/sprays/symmetra-trick-or-treat.png"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Trick or Treat",
+          "id": "torbjorn-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/sprays/torbjorn-trick-or-treat.png"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Trick or Treat",
+          "id": "tracer-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/sprays/tracer-trick-or-treat.png"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Trick or Treat",
+          "id": "widowmaker-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/sprays/widowmaker-trick-or-treat.png"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Trick or Treat",
+          "id": "winston-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/winston/sprays/winston-trick-or-treat.png"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Trick or Treat",
+          "id": "zarya-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/sprays/zarya-trick-or-treat.png"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Trick or Treat",
+          "id": "zenyatta-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/sprays/zenyatta-trick-or-treat.png"
+        },
+        {
+          "hero": "all",
+          "name": "...Never Die",
+          "id": "never-die",
+          "url": "./resources/heroes/all/sprays/never-die.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Bats",
+          "id": "bats",
+          "url": "./resources/heroes/all/sprays/bats.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Boo!",
+          "id": "boo",
+          "url": "./resources/heroes/all/sprays/boo.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Boop!",
+          "id": "boop",
+          "url": "./resources/heroes/all/sprays/boop.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Candyball",
+          "id": "candyball",
+          "url": "./resources/heroes/all/sprays/candyball.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Fangs",
+          "id": "fangs",
+          "url": "./resources/heroes/all/sprays/fangs.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Gummy Hog",
+          "id": "gummy-hog",
+          "url": "./resources/heroes/all/sprays/gummy-hog.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Halloween Terror",
+          "id": "halloween-terror",
+          "url": "./resources/heroes/all/sprays/halloween-terror.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Pumpkins",
+          "id": "pumpkins",
+          "url": "./resources/heroes/all/sprays/pumpkins.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Witch's Brew",
+          "id": "witchs-brew",
+          "url": "./resources/heroes/all/sprays/witchs-brew.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Halloween Special",
+          "id": "halloween-special",
+          "url": "./resources/heroes/all/sprays/halloween-special.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Junkenstein's Revenge",
+          "id": "junkensteins-revenge",
+          "url": "./resources/heroes/all/sprays/junkensteins-revenge.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Rise of the Zomnics",
+          "id": "rise-of-the-zomnics",
+          "url": "./resources/heroes/all/sprays/rise-of-the-zomnics.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "The Reapening",
+          "id": "the-reapening",
+          "url": "./resources/heroes/all/sprays/the-reapening.png",
+          "achievement": true
+        }
+      ],
+      "voicelines": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Are you scared?",
+          "id": "ana-are-you-scared",
+          "quality": "common",
+          "url": "./resources/heroes/ana/voicelines/ana-are-you-scared.ogg"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "W-W-Wooooo...?",
+          "id": "bastion-wwwooooo",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/voicelines/bastion-wwwooooo.ogg"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Happy Halloween!",
+          "id": "dva-happy-halloween",
+          "quality": "common",
+          "url": "./resources/heroes/dva/voicelines/dva-happy-halloween.ogg"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "My Halloween costume?",
+          "id": "genji-my-halloween-costume",
+          "quality": "common",
+          "url": "./resources/heroes/genji/voicelines/genji-my-halloween-costume.ogg"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "You are already dead",
+          "id": "hanzo-you-are-already-dead",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/voicelines/hanzo-you-are-already-dead.ogg"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Happy Halloween",
+          "id": "junkrat-happy-halloween",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/voicelines/junkrat-happy-halloween.ogg"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Killed it!",
+          "id": "lucio-killed-it",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/voicelines/lucio-killed-it.ogg"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "It's your funeral",
+          "id": "mccree-its-your-funeral",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/voicelines/mccree-its-your-funeral.ogg"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Scary!",
+          "id": "mei-scary",
+          "quality": "common",
+          "url": "./resources/heroes/mei/voicelines/mei-scary.ogg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Superstition",
+          "id": "mercy-superstition",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/voicelines/mercy-superstition.ogg"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Dead or alive",
+          "id": "pharah-dead-or-alive",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/voicelines/pharah-dead-or-alive.ogg"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "I work the graveyard shift",
+          "id": "reaper-i-work-the-graveyard-shift",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/voicelines/reaper-i-work-the-graveyard-shift.ogg"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Smashing",
+          "id": "reinhardt-smashing",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-smashing.ogg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Want some candy?",
+          "id": "roadhog-want-some-candy",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/voicelines/roadhog-want-some-candy.ogg"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Knock knock",
+          "id": "soldier-76-knock-knock",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-knock-knock.ogg"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "A frightening thought",
+          "id": "symmetra-a-frightening-thought",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/voicelines/symmetra-a-frightening-thought.ogg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "If you build it",
+          "id": "torbjorn-if-you-build-it",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-if-you-build-it.ogg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Ooh, Scary!",
+          "id": "tracer-ooh-scary",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/voicelines/tracer-ooh-scary.ogg"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "The party is over",
+          "id": "widowmaker-the-party-is-over",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-the-party-is-over.ogg"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "This is not a costume",
+          "id": "winston-this-is-not-a-costume",
+          "quality": "common",
+          "url": "./resources/heroes/winston/voicelines/winston-this-is-not-a-costume.ogg"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Never forget the fallen",
+          "id": "zarya-never-forget-the-fallen",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/voicelines/zarya-never-forget-the-fallen.ogg"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Trick or treat?",
+          "id": "zenyatta-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-trick-or-treat.ogg"
+        }
+      ],
+      "poses": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "R.I.P.",
+          "id": "ana-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/ana-rip.jpg"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "R.I.P.",
+          "id": "bastion-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/bastion-rip.jpg"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "R.I.P.",
+          "id": "dva-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/dva-rip.jpg"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "R.I.P.",
+          "id": "genji-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/genji-rip.jpg"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "R.I.P.",
+          "id": "hanzo-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/hanzo-rip.jpg"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "R.I.P.",
+          "id": "junkrat-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/junkrat-rip.jpg"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "R.I.P.",
+          "id": "lucio-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/lucio-rip.jpg"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "R.I.P.",
+          "id": "mccree-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/mccree-rip.jpg"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "R.I.P.",
+          "id": "mei-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/mei-rip.jpg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "R.I.P.",
+          "id": "mercy-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/mercy-rip.jpg"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "R.I.P.",
+          "id": "pharah-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/pharah-rip.jpg"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "R.I.P.",
+          "id": "reaper-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/reaper-rip.jpg"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "R.I.P.",
+          "id": "reinhardt-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/reinhardt-rip.jpg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "R.I.P.",
+          "id": "roadhog-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/roadhog-rip.jpg"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "R.I.P.",
+          "id": "soldier-76-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/soldier-76-rip.jpg"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "R.I.P.",
+          "id": "symmetra-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/symmetra-rip.jpg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "R.I.P.",
+          "id": "torbjorn-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/torbjorn-rip.jpg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "R.I.P.",
+          "id": "tracer-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/tracer-rip.jpg"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "R.I.P.",
+          "id": "widowmaker-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/widowmaker-rip.jpg"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "R.I.P.",
+          "id": "winston-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/winston-rip.jpg"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "R.I.P.",
+          "id": "zarya-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/zarya-rip.jpg"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "R.I.P.",
+          "id": "zenyatta-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN_2016/poses/zenyatta-rip.jpg"
+        }
+      ],
+      "intros": [
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Pumpkin Carving",
+          "id": "genji-pumpkin-carving",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/intros/genji-pumpkin-carving.webm"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Ice Scream",
+          "id": "mei-ice-scream",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/intros/mei-ice-scream.webm"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Eternal Rest",
+          "id": "reaper-eternal-rest",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN_2016/intros/reaper-eternal-rest.webm"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Dr. Junkenstein",
+          "id": "junkrat-dr-junkenstein",
+          "quality": "legendary",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/junkrat-dr-junkenstein.jpg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Witch",
+          "id": "mercy-witch",
+          "quality": "legendary",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/mercy-witch.jpg"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Pumpkin",
+          "id": "reaper-pumpkin",
+          "quality": "legendary",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/reaper-pumpkin.jpg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Junkenstein's Monster",
+          "id": "roadhog-junkensteins-monster",
+          "quality": "legendary",
+          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/roadhog-junkensteins-monster.jpg"
+        }
+      ],
+      "icons": [
+        {
+          "hero": "all",
+          "name": "...Never Die",
+          "id": "never-die",
+          "url": "./resources/heroes/all/icons/never-die.png"
+        },
+        {
+          "hero": "all",
+          "name": "Bewitching",
+          "id": "bewitching",
+          "url": "./resources/heroes/all/icons/bewitching.png"
+        },
+        {
+          "hero": "all",
+          "name": "Calavera",
+          "id": "calavera",
+          "url": "./resources/heroes/all/icons/calavera.png"
+        },
+        {
+          "hero": "all",
+          "name": "Candle",
+          "id": "candle",
+          "url": "./resources/heroes/all/icons/candle.png"
+        },
+        {
+          "hero": "all",
+          "name": "Eyeball",
+          "id": "eyeball",
+          "url": "./resources/heroes/all/icons/eyeball.png"
+        },
+        {
+          "hero": "all",
+          "name": "Ghostymari",
+          "id": "ghostymari",
+          "url": "./resources/heroes/all/icons/ghostymari.png"
+        },
+        {
+          "hero": "all",
+          "name": "Halloween Terror",
+          "id": "halloween-terror-2016",
+          "url": "./resources/heroes/all/icons/halloween-terror-2016.png"
+        },
+        {
+          "hero": "all",
+          "name": "Spider",
+          "id": "spider",
+          "url": "./resources/heroes/all/icons/spider.png"
+        },
+        {
+          "hero": "all",
+          "name": "Superstition",
+          "id": "superstition",
+          "url": "./resources/heroes/all/icons/superstition.png"
+        },
+        {
+          "hero": "junkrat",
+          "name": "The Doctor",
+          "id": "junkrat-the-doctor",
+          "url": "./resources/heroes/junkrat/icons/junkrat-the-doctor.png"
+        },
+        {
+          "hero": "roadhog",
+          "name": "The Monster",
+          "id": "roadhog-the-monster",
+          "url": "./resources/heroes/roadhog/icons/roadhog-the-monster.png"
+        },
+        {
+          "hero": "reaper",
+          "name": "The Reaper",
+          "id": "reaper-the-reaper",
+          "url": "./resources/heroes/reaper/icons/reaper-the-reaper.png"
+        },
+        {
+          "hero": "mercy",
+          "name": "The Witch",
+          "id": "mercy-the-witch",
+          "url": "./resources/heroes/mercy/icons/mercy-the-witch.png"
+        },
+        {
+          "hero": "all",
+          "name": "Tombstone",
+          "id": "tombstone",
+          "url": "./resources/heroes/all/icons/tombstone.png"
+        },
+        {
+          "hero": "all",
+          "name": "Vampachimari",
+          "id": "vampachimari",
+          "url": "./resources/heroes/all/icons/vampachimari.png"
+        },
+        {
+          "hero": "all",
+          "name": "Witch's Brew",
+          "id": "witchs-brew",
+          "url": "./resources/heroes/all/icons/witchs-brew.png"
+        },
+        {
+          "hero": "all",
+          "name": "Witch's Hat",
+          "id": "witchs-hat",
+          "url": "./resources/heroes/all/icons/witchs-hat.png"
+        },
+        {
+          "hero": "all",
+          "name": "Wolf",
+          "id": "wolf",
+          "url": "./resources/heroes/all/icons/wolf.png"
+        }
+      ]
+    }
+  },
+  "WINTER_WONDERLAND_2016": {
+    "name": "Winter Wonderland 2016",
+    "id": "WINTER_WONDERLAND_2016",
+    "dates": {
+      "start": "1481652000000",
+      "end": "1483416000000"
+    },
+    "items": {
+      "sprays": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Ornament",
+          "id": "ana-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/ana/sprays/ana-ornament.png",
+          "ornamentID": "ana-ornament",
+          "ornamentURL": "./resources/heroes/ana/sprays/ana-ornament.png"
+        },
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Warm",
+          "id": "ana-warm",
+          "quality": "common",
+          "url": "./resources/heroes/ana/sprays/ana-warm.png",
+          "ornamentID": "ana-ornament",
+          "ornamentURL": "./resources/heroes/ana/sprays/ana-ornament.png"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "FESTIVE",
+          "id": "bastion-festive",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/sprays/bastion-festive.png",
+          "ornamentID": "bastion-ornament",
+          "ornamentURL": "./resources/heroes/bastion/sprays/bastion-ornament.png"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "ORNAMENT",
+          "id": "bastion-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/sprays/bastion-ornament.png",
+          "ornamentID": "bastion-ornament",
+          "ornamentURL": "./resources/heroes/bastion/sprays/bastion-ornament.png"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "COOKIE",
+          "id": "dva-cookie",
+          "quality": "common",
+          "url": "./resources/heroes/dva/sprays/dva-cookie.png",
+          "ornamentID": "dva-ornament",
+          "ornamentURL": "./resources/heroes/dva/sprays/dva-ornament.png"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "ORNAMENT",
+          "id": "dva-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/dva/sprays/dva-ornament.png",
+          "ornamentID": "dva-ornament",
+          "ornamentURL": "./resources/heroes/dva/sprays/dva-ornament.png"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Kadomatsu",
+          "id": "genji-kadomatsu",
+          "quality": "common",
+          "url": "./resources/heroes/genji/sprays/genji-kadomatsu.png",
+          "ornamentID": "genji-ornament",
+          "ornamentURL": "./resources/heroes/genji/sprays/genji-ornament.png"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Ornament",
+          "id": "genji-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/genji/sprays/genji-ornament.png",
+          "ornamentID": "genji-ornament",
+          "ornamentURL": "./resources/heroes/genji/sprays/genji-ornament.png"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Kadomatsu",
+          "id": "hanzo-kadomatsu",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/sprays/hanzo-kadomatsu.png",
+          "ornamentID": "hanzo-ornament",
+          "ornamentURL": "./resources/heroes/hanzo/sprays/hanzo-ornament.png"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Ornament",
+          "id": "hanzo-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/sprays/hanzo-ornament.png",
+          "ornamentID": "hanzo-ornament",
+          "ornamentURL": "./resources/heroes/hanzo/sprays/hanzo-ornament.png"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "\"WINTER\"",
+          "id": "junkrat-winter",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/sprays/junkrat-winter.png",
+          "ornamentID": "junkrat-ornament",
+          "ornamentURL": "./resources/heroes/junkrat/sprays/junkrat-ornament.png"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Ornament",
+          "id": "junkrat-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/sprays/junkrat-ornament.png",
+          "ornamentID": "junkrat-ornament",
+          "ornamentURL": "./resources/heroes/junkrat/sprays/junkrat-ornament.png"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Hockey",
+          "id": "lucio-hockey",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/sprays/lucio-hockey.png",
+          "ornamentID": "lucio-ornament",
+          "ornamentURL": "./resources/heroes/lucio/sprays/lucio-ornament.png"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Ornament",
+          "id": "lucio-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/sprays/lucio-ornament.png",
+          "ornamentID": "lucio-ornament",
+          "ornamentURL": "./resources/heroes/lucio/sprays/lucio-ornament.png"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Ornament",
+          "id": "mccree-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/sprays/mccree-ornament.png",
+          "ornamentID": "mccree-ornament",
+          "ornamentURL": "./resources/heroes/mccree/sprays/mccree-ornament.png"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Ugly Sweater",
+          "id": "mccree-ugly-sweater",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/sprays/mccree-ugly-sweater.png",
+          "ornamentID": "mccree-ornament",
+          "ornamentURL": "./resources/heroes/mccree/sprays/mccree-ornament.png"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Ornament",
+          "id": "mei-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/mei/sprays/mei-ornament.png",
+          "ornamentID": "mei-ornament",
+          "ornamentURL": "./resources/heroes/mei/sprays/mei-ornament.png"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Sculpting",
+          "id": "mei-sculpting",
+          "quality": "common",
+          "url": "./resources/heroes/mei/sprays/mei-sculpting.png",
+          "ornamentID": "mei-ornament",
+          "ornamentURL": "./resources/heroes/mei/sprays/mei-ornament.png"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Ornament",
+          "id": "mercy-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/sprays/mercy-ornament.png",
+          "ornamentID": "mercy-ornament",
+          "ornamentURL": "./resources/heroes/mercy/sprays/mercy-ornament.png"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Snow Angel",
+          "id": "mercy-snow-angel",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/sprays/mercy-snow-angel.png",
+          "ornamentID": "mercy-ornament",
+          "ornamentURL": "./resources/heroes/mercy/sprays/mercy-ornament.png"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Ice Fishing",
+          "id": "pharah-ice-fishing",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/sprays/pharah-ice-fishing.png",
+          "ornamentID": "pharah-ornament",
+          "ornamentURL": "./resources/heroes/pharah/sprays/pharah-ornament.png"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Ornament",
+          "id": "pharah-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/sprays/pharah-ornament.png",
+          "ornamentID": "pharah-ornament",
+          "ornamentURL": "./resources/heroes/pharah/sprays/pharah-ornament.png"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Ornament",
+          "id": "reaper-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/sprays/reaper-ornament.png",
+          "ornamentID": "reaper-ornament",
+          "ornamentURL": "./resources/heroes/reaper/sprays/reaper-ornament.png"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Stocking",
+          "id": "reaper-stocking",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/sprays/reaper-stocking.png",
+          "ornamentID": "reaper-ornament",
+          "ornamentURL": "./resources/heroes/reaper/sprays/reaper-ornament.png"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Ice Fishing",
+          "id": "reinhardt-ice-fishing",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/sprays/reinhardt-ice-fishing.png",
+          "ornamentID": "reinhardt-ornament",
+          "ornamentURL": "./resources/heroes/reinhardt/sprays/reinhardt-ornament.png"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Ornament",
+          "id": "reinhardt-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/sprays/reinhardt-ornament.png",
+          "ornamentID": "reinhardt-ornament",
+          "ornamentURL": "./resources/heroes/reinhardt/sprays/reinhardt-ornament.png"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "\"Winter\"",
+          "id": "roadhog-winter",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/sprays/roadhog-winter.png",
+          "ornamentID": "roadhog-ornament",
+          "ornamentURL": "./resources/heroes/roadhog/sprays/roadhog-ornament.png"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Ornament",
+          "id": "roadhog-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/sprays/roadhog-ornament.png",
+          "ornamentID": "roadhog-ornament",
+          "ornamentURL": "./resources/heroes/roadhog/sprays/roadhog-ornament.png"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Army Man: 76",
+          "id": "soldier-76-army-man-76",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/sprays/soldier-76-army-man-76.png",
+          "ornamentID": "soldier-76-ornament",
+          "ornamentURL": "./resources/heroes/soldier-76/sprays/soldier-76-ornament.png"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Ornament",
+          "id": "soldier-76-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/sprays/soldier-76-ornament.png",
+          "ornamentID": "soldier-76-ornament",
+          "ornamentURL": "./resources/heroes/soldier-76/sprays/soldier-76-ornament.png"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Ornament",
+          "id": "sombra-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/sprays/sombra-ornament.png",
+          "ornamentID": "sombra-ornament",
+          "ornamentURL": "./resources/heroes/sombra/sprays/sombra-ornament.png"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Puppet",
+          "id": "sombra-puppet",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/sprays/sombra-puppet.png",
+          "ornamentID": "sombra-ornament",
+          "ornamentURL": "./resources/heroes/sombra/sprays/sombra-ornament.png"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Ornament",
+          "id": "symmetra-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/sprays/symmetra-ornament.png",
+          "ornamentID": "symmetra-ornament",
+          "ornamentURL": "./resources/heroes/symmetra/sprays/symmetra-ornament.png"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Snowflake",
+          "id": "symmetra-snowflake",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/sprays/symmetra-snowflake.png",
+          "ornamentID": "symmetra-ornament",
+          "ornamentURL": "./resources/heroes/symmetra/sprays/symmetra-ornament.png"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Ornament",
+          "id": "torbjorn-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/sprays/torbjorn-ornament.png",
+          "ornamentID": "torbjorn-ornament",
+          "ornamentURL": "./resources/heroes/torbjorn/sprays/torbjorn-ornament.png"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Workshop",
+          "id": "torbjorn-workshop",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/sprays/torbjorn-workshop.png",
+          "ornamentID": "torbjorn-ornament",
+          "ornamentURL": "./resources/heroes/torbjorn/sprays/torbjorn-ornament.png"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Ornament",
+          "id": "tracer-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/sprays/tracer-ornament.png",
+          "ornamentID": "tracer-ornament",
+          "ornamentURL": "./resources/heroes/tracer/sprays/tracer-ornament.png"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Snowboarding",
+          "id": "tracer-snowboarding",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/sprays/tracer-snowboarding.png",
+          "ornamentID": "tracer-ornament",
+          "ornamentURL": "./resources/heroes/tracer/sprays/tracer-ornament.png"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Ornament",
+          "id": "widowmaker-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/sprays/widowmaker-ornament.png",
+          "ornamentID": "widowmaker-ornament",
+          "ornamentURL": "./resources/heroes/widowmaker/sprays/widowmaker-ornament.png"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Skiing",
+          "id": "widowmaker-skiing",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/sprays/widowmaker-skiing.png",
+          "ornamentID": "widowmaker-ornament",
+          "ornamentURL": "./resources/heroes/widowmaker/sprays/widowmaker-ornament.png"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Ornament",
+          "id": "winston-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/winston/sprays/winston-ornament.png",
+          "ornamentID": "winston-ornament",
+          "ornamentURL": "./resources/heroes/winston/sprays/winston-ornament.png"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Presents",
+          "id": "winston-presents",
+          "quality": "common",
+          "url": "./resources/heroes/winston/sprays/winston-presents.png",
+          "ornamentID": "winston-ornament",
+          "ornamentURL": "./resources/heroes/winston/sprays/winston-ornament.png"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Matryoshka",
+          "id": "zarya-matryoshka",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/sprays/zarya-matryoshka.png",
+          "ornamentID": "zarya-ornament",
+          "ornamentURL": "./resources/heroes/zarya/sprays/zarya-ornament.png"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Ornament",
+          "id": "zarya-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/sprays/zarya-ornament.png",
+          "ornamentID": "zarya-ornament",
+          "ornamentURL": "./resources/heroes/zarya/sprays/zarya-ornament.png"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Ornament",
+          "id": "zenyatta-ornament",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/sprays/zenyatta-ornament.png",
+          "ornamentID": "zenyatta-ornament",
+          "ornamentURL": "./resources/heroes/zenyatta/sprays/zenyatta-ornament.png"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Snowball Fight",
+          "id": "zenyatta-snowball-fight",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/sprays/zenyatta-snowball-fight.png",
+          "ornamentID": "zenyatta-ornament",
+          "ornamentURL": "./resources/heroes/zenyatta/sprays/zenyatta-ornament.png"
+        },
+        {
+          "hero": "all",
+          "name": "Winter Wonderland",
+          "id": "winter-wonderland",
+          "url": "./resources/heroes/all/sprays/winter-wonderland.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Snowcree",
+          "id": "snowcree",
+          "url": "./resources/heroes/all/sprays/snowcree.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Snowhog",
+          "id": "snowhog",
+          "url": "./resources/heroes/all/sprays/snowhog.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Snowmei",
+          "id": "snowmei",
+          "url": "./resources/heroes/all/sprays/snowmei.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Snowreaper",
+          "id": "snowreaper",
+          "url": "./resources/heroes/all/sprays/snowreaper.png",
+          "achievement": true
+        }
+      ],
+      "voicelines": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "I'm watching out for you",
+          "id": "ana-im-watching-out-for-you",
+          "quality": "common",
+          "url": "./resources/heroes/ana/voicelines/ana-im-watching-out-for-you.ogg"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "DWEE DOO HOO",
+          "id": "bastion-dwee-doo-hoo",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/voicelines/bastion-dwee-doo-hoo.ogg"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Aw, you shouldn't have",
+          "id": "dva-aw-you-shouldnt-have",
+          "quality": "common",
+          "url": "./resources/heroes/dva/voicelines/dva-aw-you-shouldnt-have.ogg"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Merry Christmas!",
+          "id": "genji-merry-christmas",
+          "quality": "common",
+          "url": "./resources/heroes/genji/voicelines/genji-merry-christmas.ogg"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "A gift for you",
+          "id": "hanzo-a-gift-for-you",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/voicelines/hanzo-a-gift-for-you.ogg"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Merry Christmas",
+          "id": "junkrat-merry-christmas",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/voicelines/junkrat-merry-christmas.ogg"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Happy holidays!",
+          "id": "lucio-happy-holidays",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/voicelines/lucio-happy-holidays.ogg"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Had to break the ice",
+          "id": "mccree-had-to-break-the-ice",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/voicelines/mccree-had-to-break-the-ice.ogg"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "I got you something!",
+          "id": "mei-i-got-you-something",
+          "quality": "common",
+          "url": "./resources/heroes/mei/voicelines/mei-i-got-you-something.ogg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Your guardian angel",
+          "id": "mercy-your-guardian-angel",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/voicelines/mercy-your-guardian-angel.ogg"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "The forecast",
+          "id": "pharah-the-forecast",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/voicelines/pharah-the-forecast.ogg"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Holiday spirit",
+          "id": "reaper-holiday-spirit",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/voicelines/reaper-holiday-spirit.ogg"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "You're on my naughty list",
+          "id": "reinhardt-youre-on-my-naughty-list",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-youre-on-my-naughty-list.ogg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Ho ho ho",
+          "id": "roadhog-ho-ho-ho",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/voicelines/roadhog-ho-ho-ho.ogg"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Stay frosty",
+          "id": "soldier-76-stay-frosty",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-stay-frosty.ogg"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "I know who's been naughty",
+          "id": "sombra-i-know-whos-been-naughty",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/voicelines/sombra-i-know-whos-been-naughty.ogg"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "I made you something",
+          "id": "symmetra-i-made-you-something",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/voicelines/symmetra-i-made-you-something.ogg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Made to order",
+          "id": "torbjorn-made-to-order",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-made-to-order.ogg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "It's in the bag",
+          "id": "tracer-its-in-the-bag",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/voicelines/tracer-its-in-the-bag.ogg"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Exquisite",
+          "id": "widowmaker-exquisite",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-exquisite.ogg"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "I... got you something",
+          "id": "winston-i-got-you-something",
+          "quality": "common",
+          "url": "./resources/heroes/winston/voicelines/winston-i-got-you-something.ogg"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "For the Motherland",
+          "id": "zarya-for-the-motherland",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/voicelines/zarya-for-the-motherland.ogg"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "No snowflake",
+          "id": "zenyatta-no-snowflake",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-no-snowflake.ogg"
+        }
+      ],
+      "poses": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Toast",
+          "id": "ana-toast",
+          "quality": "rare",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/poses/ana-toast.jpg"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Festive",
+          "id": "dva-festive",
+          "quality": "rare",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/poses/dva-festive.jpg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Mistletoe",
+          "id": "mercy-mistletoe",
+          "quality": "rare",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/poses/mercy-mistletoe.jpg"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Toast",
+          "id": "pharah-toast",
+          "quality": "rare",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/poses/pharah-toast.jpg"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Toast",
+          "id": "reinhardt-toast",
+          "quality": "rare",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/poses/reinhardt-toast.jpg"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Toast",
+          "id": "soldier-76-toast",
+          "quality": "rare",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/poses/soldier-76-toast.jpg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Toast",
+          "id": "torbjorn-toast",
+          "quality": "rare",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/poses/torbjorn-toast.jpg"
+        }
+      ],
+      "skinsEpic": [
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Andes",
+          "id": "lucio-andes",
+          "quality": "epic",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/lucio-andes.jpg"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Scrooge",
+          "id": "mccree-scrooge",
+          "quality": "epic",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/mccree-scrooge.jpg"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Frostbite",
+          "id": "pharah-frostbite",
+          "quality": "epic",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/pharah-frostbite.jpg"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Shiver",
+          "id": "reaper-shiver",
+          "quality": "epic",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/reaper-shiver.jpg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Rudolph",
+          "id": "roadhog-rudolph",
+          "quality": "epic",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/roadhog-rudolph.jpg"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Peppermint",
+          "id": "sombra-peppermint",
+          "quality": "epic",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/sombra-peppermint.jpg"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Frosted",
+          "id": "zarya-frosted",
+          "quality": "epic",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/zarya-frosted.jpg"
+        }
+      ],
+      "emotes": [
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Hat Trick",
+          "id": "mccree-hat-trick",
+          "quality": "epic",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/emotes/mccree-hat-trick.webm"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Snowman",
+          "id": "mei-snowman",
+          "quality": "epic",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/emotes/mei-snowman.webm"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "legendary": true,
+          "name": "Mystery Gift",
+          "id": "zarya-mystery-gift",
+          "quality": "legendary",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/emotes/zarya-mystery-gift.webm"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Mei-rry",
+          "id": "mei-meirry",
+          "quality": "legendary",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsLegendary/mei-meirry.jpg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Santaclad",
+          "id": "torbjorn-santaclad",
+          "quality": "legendary",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsLegendary/torbjorn-santaclad.jpg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Jingle",
+          "id": "tracer-jingle",
+          "quality": "legendary",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsLegendary/tracer-jingle.jpg"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Yeti",
+          "id": "winston-yeti",
+          "quality": "legendary",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsLegendary/winston-yeti.jpg"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Nutcracker",
+          "id": "zenyatta-nutcracker",
+          "quality": "legendary",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsLegendary/zenyatta-nutcracker.jpg"
+        }
+      ],
+      "intros": [
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Snowflakes",
+          "id": "symmetra-snowflakes",
+          "quality": "epic",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/intros/symmetra-snowflakes.webm"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Under the Mistletoe",
+          "id": "widowmaker-under-the-mistletoe",
+          "quality": "epic",
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/intros/widowmaker-under-the-mistletoe.webm"
+        }
+      ],
+      "icons": [
+        {
+          "hero": "all",
+          "name": "2017",
+          "id": "2017",
+          "url": "./resources/heroes/all/icons/2017.png"
+        },
+        {
+          "hero": "all",
+          "name": "Bells",
+          "id": "bells",
+          "url": "./resources/heroes/all/icons/bells.png"
+        },
+        {
+          "hero": "all",
+          "name": "Bubbly",
+          "id": "bubbly",
+          "url": "./resources/heroes/all/icons/bubbly.png"
+        },
+        {
+          "hero": "all",
+          "name": "Candy Cane",
+          "id": "candy-cane",
+          "url": "./resources/heroes/all/icons/candy-cane.png"
+        },
+        {
+          "hero": "all",
+          "name": "Cheers!",
+          "id": "cheers",
+          "url": "./resources/heroes/all/icons/cheers.png"
+        },
+        {
+          "hero": "all",
+          "name": "Dreidel",
+          "id": "dreidel",
+          "url": "./resources/heroes/all/icons/dreidel.png"
+        },
+        {
+          "hero": "all",
+          "name": "Gingerbread",
+          "id": "gingerbread",
+          "url": "./resources/heroes/all/icons/gingerbread.png"
+        },
+        {
+          "hero": "all",
+          "name": "Gingermari",
+          "id": "gingermari",
+          "url": "./resources/heroes/all/icons/gingermari.png"
+        },
+        {
+          "hero": "all",
+          "name": "Holly",
+          "id": "holly",
+          "url": "./resources/heroes/all/icons/holly.png"
+        },
+        {
+          "hero": "all",
+          "name": "Hot Cocoa",
+          "id": "hot-cocoa",
+          "url": "./resources/heroes/all/icons/hot-cocoa.png"
+        },
+        {
+          "hero": "tracer",
+          "name": "Jingle",
+          "id": "tracer-jingle",
+          "url": "./resources/heroes/tracer/icons/tracer-jingle.png"
+        },
+        {
+          "hero": "all",
+          "name": "Mochi",
+          "id": "mochi",
+          "url": "./resources/heroes/all/icons/mochi.png"
+        },
+        {
+          "hero": "zenyatta",
+          "name": "Nutcracker",
+          "id": "zenyatta-nutcracker",
+          "url": "./resources/heroes/zenyatta/icons/zenyatta-nutcracker.png"
+        },
+        {
+          "hero": "all",
+          "name": "Ornament",
+          "id": "ornament",
+          "url": "./resources/heroes/all/icons/ornament.png"
+        },
+        {
+          "hero": "all",
+          "name": "Pachimerry",
+          "id": "pachimerry",
+          "url": "./resources/heroes/all/icons/pachimerry.png"
+        },
+        {
+          "hero": "all",
+          "name": "Pachireindeer",
+          "id": "pachireindeer",
+          "url": "./resources/heroes/all/icons/pachireindeer.png"
+        },
+        {
+          "hero": "all",
+          "name": "Peppermint",
+          "id": "peppermint",
+          "url": "./resources/heroes/all/icons/peppermint.png"
+        },
+        {
+          "hero": "all",
+          "name": "Present",
+          "id": "present",
+          "url": "./resources/heroes/all/icons/present.png"
+        },
+        {
+          "hero": "torbjorn",
+          "name": "Santaclad",
+          "id": "torbjorn-santaclad",
+          "url": "./resources/heroes/torbjorn/icons/torbjorn-santaclad.png"
+        },
+        {
+          "hero": "all",
+          "name": "Snow Globe",
+          "id": "snow-globe",
+          "url": "./resources/heroes/all/icons/snow-globe.png"
+        },
+        {
+          "hero": "all",
+          "name": "Snowman",
+          "id": "snowman",
+          "url": "./resources/heroes/all/icons/snowman.png"
+        },
+        {
+          "hero": "all",
+          "name": "Stocking",
+          "id": "stocking",
+          "url": "./resources/heroes/all/icons/stocking.png"
+        },
+        {
+          "hero": "all",
+          "name": "Tannenbaum",
+          "id": "tannenbaum",
+          "url": "./resources/heroes/all/icons/tannenbaum.png"
+        },
+        {
+          "hero": "all",
+          "name": "Winter Wonderland",
+          "id": "winter-wonderland-2016",
+          "url": "./resources/heroes/all/icons/winter-wonderland-2016.png"
+        },
+        {
+          "hero": "all",
+          "name": "Wreath",
+          "id": "wreath",
+          "url": "./resources/heroes/all/icons/wreath.png"
+        },
+        {
+          "hero": "winston",
+          "name": "Yeti",
+          "id": "winston-yeti",
+          "url": "./resources/heroes/winston/icons/winston-yeti.png"
+        }
+      ]
+    }
+  },
+  "YEAR_OF_THE_ROOSTER_2017": {
+    "name": "Year of the Rooster 2017",
+    "id": "YEAR_OF_THE_ROOSTER_2017",
+    "dates": {
+      "start": "1485280800000",
+      "end": "1487066400000"
+    },
+    "items": {
+      "skinsEpic": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Tal",
+          "id": "ana-tal",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/ana-tal.jpg"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Rooster",
+          "id": "bastion-rooster",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/bastion-rooster.jpg"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Firework",
+          "id": "junkrat-firework",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/junkrat-firework.jpg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Fortune",
+          "id": "mercy-fortune",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/mercy-fortune.jpg"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Qipao",
+          "id": "symmetra-qipao",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/symmetra-qipao.jpg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Rose",
+          "id": "tracer-rose",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsEpic/tracer-rose.jpg"
+        }
+      ],
+      "sprays": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Dance",
+          "id": "ana-dance",
+          "quality": "common",
+          "url": "./resources/heroes/ana/sprays/ana-dance.png",
+          "dragonID": "ana-dragon-dance",
+          "dragonURL": "./resources/heroes/ana/sprays/ana-dragon-dance.png"
+        },
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Dragon Dance",
+          "id": "ana-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/ana/sprays/ana-dragon-dance.png",
+          "dragonID": "ana-dragon-dance",
+          "dragonURL": "./resources/heroes/ana/sprays/ana-dragon-dance.png"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Bast-yum",
+          "id": "bastion-bastyum",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/sprays/bastion-bastyum.png",
+          "dragonID": "bastion-dragon-dance",
+          "dragonURL": "./resources/heroes/bastion/sprays/bastion-dragon-dance.png"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Dragon Dance",
+          "id": "bastion-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/sprays/bastion-dragon-dance.png",
+          "dragonID": "bastion-dragon-dance",
+          "dragonURL": "./resources/heroes/bastion/sprays/bastion-dragon-dance.png"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Dragon Dance",
+          "id": "dva-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/dva/sprays/dva-dragon-dance.png",
+          "dragonID": "dva-dragon-dance",
+          "dragonURL": "./resources/heroes/dva/sprays/dva-dragon-dance.png"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Seesaw",
+          "id": "dva-seesaw",
+          "quality": "common",
+          "url": "./resources/heroes/dva/sprays/dva-seesaw.png",
+          "dragonID": "dva-dragon-dance",
+          "dragonURL": "./resources/heroes/dva/sprays/dva-dragon-dance.png"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Dragon Dance",
+          "id": "genji-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/genji/sprays/genji-dragon-dance.png",
+          "dragonID": "genji-dragon-dance",
+          "dragonURL": "./resources/heroes/genji/sprays/genji-dragon-dance.png"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Green Dragon",
+          "id": "genji-green-dragon",
+          "quality": "common",
+          "url": "./resources/heroes/genji/sprays/genji-green-dragon.png",
+          "dragonID": "genji-dragon-dance",
+          "dragonURL": "./resources/heroes/genji/sprays/genji-dragon-dance.png"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Blue Dragon",
+          "id": "hanzo-blue-dragon",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/sprays/hanzo-blue-dragon.png",
+          "dragonID": "hanzo-dragon-dance",
+          "dragonURL": "./resources/heroes/hanzo/sprays/hanzo-dragon-dance.png"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Dragon Dance",
+          "id": "hanzo-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/sprays/hanzo-dragon-dance.png",
+          "dragonID": "hanzo-dragon-dance",
+          "dragonURL": "./resources/heroes/hanzo/sprays/hanzo-dragon-dance.png"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Dragon Dance",
+          "id": "junkrat-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/sprays/junkrat-dragon-dance.png",
+          "dragonID": "junkrat-dragon-dance",
+          "dragonURL": "./resources/heroes/junkrat/sprays/junkrat-dragon-dance.png"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "I'm flying!",
+          "id": "junkrat-im-flying",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/sprays/junkrat-im-flying.png",
+          "dragonID": "junkrat-dragon-dance",
+          "dragonURL": "./resources/heroes/junkrat/sprays/junkrat-dragon-dance.png"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Dragon Dance",
+          "id": "lucio-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/sprays/lucio-dragon-dance.png",
+          "dragonID": "lucio-dragon-dance",
+          "dragonURL": "./resources/heroes/lucio/sprays/lucio-dragon-dance.png"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Keep Ups",
+          "id": "lucio-keep-ups",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/sprays/lucio-keep-ups.png",
+          "dragonID": "lucio-dragon-dance",
+          "dragonURL": "./resources/heroes/lucio/sprays/lucio-dragon-dance.png"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Call It",
+          "id": "mccree-call-it",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/sprays/mccree-call-it.png",
+          "dragonID": "mccree-dragon-dance",
+          "dragonURL": "./resources/heroes/mccree/sprays/mccree-dragon-dance.png"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Dragon Dance",
+          "id": "mccree-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/sprays/mccree-dragon-dance.png",
+          "dragonID": "mccree-dragon-dance",
+          "dragonURL": "./resources/heroes/mccree/sprays/mccree-dragon-dance.png"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Dragon Dance",
+          "id": "mei-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/mei/sprays/mei-dragon-dance.png",
+          "dragonID": "mei-dragon-dance",
+          "dragonURL": "./resources/heroes/mei/sprays/mei-dragon-dance.png"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Fortune",
+          "id": "mei-fortune",
+          "quality": "common",
+          "url": "./resources/heroes/mei/sprays/mei-fortune.png",
+          "dragonID": "mei-dragon-dance",
+          "dragonURL": "./resources/heroes/mei/sprays/mei-dragon-dance.png"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Dragon Dance",
+          "id": "mercy-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/sprays/mercy-dragon-dance.png",
+          "dragonID": "mercy-dragon-dance",
+          "dragonURL": "./resources/heroes/mercy/sprays/mercy-dragon-dance.png"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Parasol",
+          "id": "mercy-parasol",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/sprays/mercy-parasol.png",
+          "dragonID": "mercy-dragon-dance",
+          "dragonURL": "./resources/heroes/mercy/sprays/mercy-dragon-dance.png"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Dragon Dance",
+          "id": "pharah-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/sprays/pharah-dragon-dance.png",
+          "dragonID": "pharah-dragon-dance",
+          "dragonURL": "./resources/heroes/pharah/sprays/pharah-dragon-dance.png"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Happy New Year",
+          "id": "pharah-happy-new-year",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/sprays/pharah-happy-new-year.png",
+          "dragonID": "pharah-dragon-dance",
+          "dragonURL": "./resources/heroes/pharah/sprays/pharah-dragon-dance.png"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Dragon Dance",
+          "id": "reaper-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/sprays/reaper-dragon-dance.png",
+          "dragonID": "reaper-dragon-dance",
+          "dragonURL": "./resources/heroes/reaper/sprays/reaper-dragon-dance.png"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Fire Blossom",
+          "id": "reaper-fire-blossom",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/sprays/reaper-fire-blossom.png",
+          "dragonID": "reaper-dragon-dance",
+          "dragonURL": "./resources/heroes/reaper/sprays/reaper-dragon-dance.png"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Dragon Dance",
+          "id": "reinhardt-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/sprays/reinhardt-dragon-dance.png",
+          "dragonID": "reinhardt-dragon-dance",
+          "dragonURL": "./resources/heroes/reinhardt/sprays/reinhardt-dragon-dance.png"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Lion Dance",
+          "id": "reinhardt-lion-dance",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/sprays/reinhardt-lion-dance.png",
+          "dragonID": "reinhardt-dragon-dance",
+          "dragonURL": "./resources/heroes/reinhardt/sprays/reinhardt-dragon-dance.png"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Dragon Dance",
+          "id": "roadhog-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/sprays/roadhog-dragon-dance.png",
+          "dragonID": "roadhog-dragon-dance",
+          "dragonURL": "./resources/heroes/roadhog/sprays/roadhog-dragon-dance.png"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Steamed Buns",
+          "id": "roadhog-steamed-buns",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/sprays/roadhog-steamed-buns.png",
+          "dragonID": "roadhog-dragon-dance",
+          "dragonURL": "./resources/heroes/roadhog/sprays/roadhog-dragon-dance.png"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Dragon Dance",
+          "id": "soldier-76-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/sprays/soldier-76-dragon-dance.png",
+          "dragonID": "soldier-76-dragon-dance",
+          "dragonURL": "./resources/heroes/soldier-76/sprays/soldier-76-dragon-dance.png"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Folded Hands",
+          "id": "soldier-76-folded-hands",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/sprays/soldier-76-folded-hands.png",
+          "dragonID": "soldier-76-dragon-dance",
+          "dragonURL": "./resources/heroes/soldier-76/sprays/soldier-76-dragon-dance.png"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Dragon Dance",
+          "id": "sombra-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/sprays/sombra-dragon-dance.png",
+          "dragonID": "sombra-dragon-dance",
+          "dragonURL": "./resources/heroes/sombra/sprays/sombra-dragon-dance.png"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Fortunate",
+          "id": "sombra-fortunate",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/sprays/sombra-fortunate.png",
+          "dragonID": "sombra-dragon-dance",
+          "dragonURL": "./resources/heroes/sombra/sprays/sombra-dragon-dance.png"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Dragon Dance",
+          "id": "symmetra-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/sprays/symmetra-dragon-dance.png",
+          "dragonID": "symmetra-dragon-dance",
+          "dragonURL": "./resources/heroes/symmetra/sprays/symmetra-dragon-dance.png"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Lantern",
+          "id": "symmetra-lantern",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/sprays/symmetra-lantern.png",
+          "dragonID": "symmetra-dragon-dance",
+          "dragonURL": "./resources/heroes/symmetra/sprays/symmetra-dragon-dance.png"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Dragon Dance",
+          "id": "torbjorn-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/sprays/torbjorn-dragon-dance.png",
+          "dragonID": "torbjorn-dragon-dance",
+          "dragonURL": "./resources/heroes/torbjorn/sprays/torbjorn-dragon-dance.png"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Gold",
+          "id": "torbjorn-gold",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/sprays/torbjorn-gold.png",
+          "dragonID": "torbjorn-dragon-dance",
+          "dragonURL": "./resources/heroes/torbjorn/sprays/torbjorn-dragon-dance.png"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Dragon Dance",
+          "id": "tracer-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/sprays/tracer-dragon-dance.png",
+          "dragonID": "tracer-dragon-dance",
+          "dragonURL": "./resources/heroes/tracer/sprays/tracer-dragon-dance.png"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Fan Dance",
+          "id": "tracer-fan-dance",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/sprays/tracer-fan-dance.png",
+          "dragonID": "tracer-dragon-dance",
+          "dragonURL": "./resources/heroes/tracer/sprays/tracer-dragon-dance.png"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Dragon Dance",
+          "id": "widowmaker-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/sprays/widowmaker-dragon-dance.png",
+          "dragonID": "widowmaker-dragon-dance",
+          "dragonURL": "./resources/heroes/widowmaker/sprays/widowmaker-dragon-dance.png"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Hairpin",
+          "id": "widowmaker-hairpin",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/sprays/widowmaker-hairpin.png",
+          "dragonID": "widowmaker-dragon-dance",
+          "dragonURL": "./resources/heroes/widowmaker/sprays/widowmaker-dragon-dance.png"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Dragon Dance",
+          "id": "winston-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/winston/sprays/winston-dragon-dance.png",
+          "dragonID": "winston-dragon-dance",
+          "dragonURL": "./resources/heroes/winston/sprays/winston-dragon-dance.png"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Kite",
+          "id": "winston-kite",
+          "quality": "common",
+          "url": "./resources/heroes/winston/sprays/winston-kite.png",
+          "dragonID": "winston-dragon-dance",
+          "dragonURL": "./resources/heroes/winston/sprays/winston-dragon-dance.png"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Calories",
+          "id": "zarya-calories",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/sprays/zarya-calories.png",
+          "dragonID": "zarya-dragon-dance",
+          "dragonURL": "./resources/heroes/zarya/sprays/zarya-dragon-dance.png"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Dragon Dance",
+          "id": "zarya-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/sprays/zarya-dragon-dance.png",
+          "dragonID": "zarya-dragon-dance",
+          "dragonURL": "./resources/heroes/zarya/sprays/zarya-dragon-dance.png"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Dragon Dance",
+          "id": "zenyatta-dragon-dance",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/sprays/zenyatta-dragon-dance.png",
+          "dragonID": "zenyatta-dragon-dance",
+          "dragonURL": "./resources/heroes/zenyatta/sprays/zenyatta-dragon-dance.png"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Yut Nori",
+          "id": "zenyatta-yut-nori",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/sprays/zenyatta-yut-nori.png",
+          "dragonID": "zenyatta-dragon-dance",
+          "dragonURL": "./resources/heroes/zenyatta/sprays/zenyatta-dragon-dance.png"
+        },
+        {
+          "hero": "all",
+          "name": "Dragon's Head",
+          "id": "dragons-head",
+          "url": "./resources/heroes/all/sprays/dragons-head.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Lucky Pouch",
+          "id": "lucky-pouch",
+          "url": "./resources/heroes/all/sprays/lucky-pouch.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Red Envelope",
+          "id": "red-envelope",
+          "url": "./resources/heroes/all/sprays/red-envelope.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Year of the Rooster",
+          "id": "year-of-the-rooster",
+          "url": "./resources/heroes/all/sprays/year-of-the-rooster.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Auspicious Lion",
+          "id": "auspicious-lion",
+          "url": "./resources/heroes/all/sprays/auspicious-lion.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Awakened Lion",
+          "id": "awakened-lion",
+          "url": "./resources/heroes/all/sprays/awakened-lion.png",
+          "achievement": true
+        }
+      ],
+      "voicelines": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "The moon in winter",
+          "id": "ana-the-moon-in-winter",
+          "quality": "common",
+          "url": "./resources/heroes/ana/voicelines/ana-the-moon-in-winter.ogg"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Woop doo woo dun woop",
+          "id": "bastion-woop-doo-woo-dun-woop",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/voicelines/bastion-woop-doo-woo-dun-woop.ogg"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "The best things in life",
+          "id": "dva-the-best-things-in-life",
+          "quality": "common",
+          "url": "./resources/heroes/dva/voicelines/dva-the-best-things-in-life.ogg"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "To know yourself",
+          "id": "genji-to-know-yourself",
+          "quality": "common",
+          "url": "./resources/heroes/genji/voicelines/genji-to-know-yourself.ogg"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "When the moon is full",
+          "id": "hanzo-when-the-moon-is-full",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/voicelines/hanzo-when-the-moon-is-full.ogg"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Gong Xi Fa Cai",
+          "id": "junkrat-gong-xi-fa-cai",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/voicelines/junkrat-gong-xi-fa-cai.ogg"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "I make this look good...",
+          "id": "lucio-i-make-this-look-good",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/voicelines/lucio-i-make-this-look-good.ogg"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Calls for a celebration",
+          "id": "mccree-calls-for-a-celebration",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/voicelines/mccree-calls-for-a-celebration.ogg"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Wishing you prosperity",
+          "id": "mei-wishing-you-prosperity",
+          "quality": "common",
+          "url": "./resources/heroes/mei/voicelines/mei-wishing-you-prosperity.ogg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "A most impressive display",
+          "id": "mercy-a-most-impressive-display",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/voicelines/mercy-a-most-impressive-display.ogg"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "I keep the peace",
+          "id": "pharah-i-keep-the-peace",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/voicelines/pharah-i-keep-the-peace.ogg"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Now those are fireworks",
+          "id": "reaper-now-those-are-fireworks",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/voicelines/reaper-now-those-are-fireworks.ogg"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Are you chicken?",
+          "id": "reinhardt-are-you-chicken",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-are-you-chicken.ogg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "You chicken?",
+          "id": "roadhog-you-chicken",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/voicelines/roadhog-you-chicken.ogg"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "The rooster crows",
+          "id": "soldier-76-the-rooster-crows",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-the-rooster-crows.ogg"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "You're easily impressed",
+          "id": "sombra-youre-easily-impressed",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/voicelines/sombra-youre-easily-impressed.ogg"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Good fortune",
+          "id": "symmetra-good-fortune",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/voicelines/symmetra-good-fortune.ogg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Too hot for you?",
+          "id": "torbjorn-too-hot-for-you",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-too-hot-for-you.ogg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Ready for some fireworks?",
+          "id": "tracer-ready-for-some-fireworks",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/voicelines/tracer-ready-for-some-fireworks.ogg"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "You have my attention",
+          "id": "widowmaker-you-have-my-attention",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-you-have-my-attention.ogg"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "That was awesome!",
+          "id": "winston-that-was-awesome",
+          "quality": "common",
+          "url": "./resources/heroes/winston/voicelines/winston-that-was-awesome.ogg"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Get pumped",
+          "id": "zarya-get-pumped",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/voicelines/zarya-get-pumped.ogg"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Every rooster crows",
+          "id": "zenyatta-every-rooster-crows",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-every-rooster-crows.ogg"
+        }
+      ],
+      "poses": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Folded hands",
+          "id": "ana-folded-hands",
+          "quality": "rare",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/ana-folded-hands.jpg"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Firework",
+          "id": "bastion-firework",
+          "quality": "rare",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/bastion-firework.jpg"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Lucky Pouch",
+          "id": "dva-lucky-pouch",
+          "quality": "rare",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/dva-lucky-pouch.jpg"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Bad for Your Health",
+          "id": "junkrat-bad-for-your-health",
+          "quality": "rare",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/junkrat-bad-for-your-health.jpg"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Lucky!",
+          "id": "mei-lucky",
+          "quality": "rare",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/mei-lucky.jpg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "What's mine is mine",
+          "id": "roadhog-whats-mine-is-mine",
+          "quality": "rare",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/roadhog-whats-mine-is-mine.jpg"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Sparklers",
+          "id": "sombra-sparklers",
+          "quality": "rare",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/poses/sombra-sparklers.jpg"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Palanquin",
+          "id": "dva-palanquin",
+          "quality": "legendary",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsLegendary/dva-palanquin.jpg"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Chang'e",
+          "id": "mei-change",
+          "quality": "legendary",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsLegendary/mei-change.jpg"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Luna",
+          "id": "mei-luna",
+          "quality": "legendary",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsLegendary/mei-luna.jpg"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Wujing",
+          "id": "reinhardt-wujing",
+          "quality": "legendary",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsLegendary/reinhardt-wujing.jpg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Bajie",
+          "id": "roadhog-bajie",
+          "quality": "legendary",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsLegendary/roadhog-bajie.jpg"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Wukong",
+          "id": "winston-wukong",
+          "quality": "legendary",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsLegendary/winston-wukong.jpg"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Sanzang",
+          "id": "zenyatta-sanzang",
+          "quality": "legendary",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/skinsLegendary/zenyatta-sanzang.jpg"
+        }
+      ],
+      "emotes": [
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Bow",
+          "id": "dva-bow",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/emotes/dva-bow.webm"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Dud?",
+          "id": "junkrat-dud",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/emotes/junkrat-dud.webm"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "So Excited",
+          "id": "mei-so-excited",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/emotes/mei-so-excited.webm"
+        }
+      ],
+      "icons": [
+        {
+          "hero": "all",
+          "name": "Bokimari",
+          "id": "bokimari",
+          "url": "./resources/heroes/all/icons/bokimari.png"
+        },
+        {
+          "hero": "mei",
+          "name": "Chang'e",
+          "id": "mei-change",
+          "url": "./resources/heroes/mei/icons/mei-change.png"
+        },
+        {
+          "hero": "all",
+          "name": "Coin",
+          "id": "coin",
+          "url": "./resources/heroes/all/icons/coin.png"
+        },
+        {
+          "hero": "all",
+          "name": "Dragon Dance",
+          "id": "dragon-dance",
+          "url": "./resources/heroes/all/icons/dragon-dance.png"
+        },
+        {
+          "hero": "all",
+          "name": "Fortune",
+          "id": "fortune",
+          "url": "./resources/heroes/all/icons/fortune.png"
+        },
+        {
+          "hero": "all",
+          "name": "Fuchimari",
+          "id": "fuchimari",
+          "url": "./resources/heroes/all/icons/fuchimari.png"
+        },
+        {
+          "hero": "all",
+          "name": "Gold",
+          "id": "gold",
+          "url": "./resources/heroes/all/icons/gold.png"
+        },
+        {
+          "hero": "dva",
+          "name": "Hanbok",
+          "id": "dva-hanbok",
+          "url": "./resources/heroes/dva/icons/dva-hanbok.png"
+        },
+        {
+          "hero": "all",
+          "name": "Have Fish",
+          "id": "have-fish",
+          "url": "./resources/heroes/all/icons/have-fish.png"
+        },
+        {
+          "hero": "all",
+          "name": "Lantern",
+          "id": "lantern",
+          "url": "./resources/heroes/all/icons/lantern.png"
+        },
+        {
+          "hero": "all",
+          "name": "Lion Dance",
+          "id": "lion-dance",
+          "url": "./resources/heroes/all/icons/lion-dance.png"
+        },
+        {
+          "hero": "all",
+          "name": "Lucky Pouch",
+          "id": "lucky-pouch",
+          "url": "./resources/heroes/all/icons/lucky-pouch.png"
+        },
+        {
+          "hero": "all",
+          "name": "Lunamari",
+          "id": "lunamari",
+          "url": "./resources/heroes/all/icons/lunamari.png"
+        },
+        {
+          "hero": "winston",
+          "name": "Monkey",
+          "id": "winston-monkey",
+          "url": "./resources/heroes/winston/icons/winston-monkey.png"
+        },
+        {
+          "hero": "all",
+          "name": "New Year Cake",
+          "id": "new-year-cake",
+          "url": "./resources/heroes/all/icons/new-year-cake.png"
+        },
+        {
+          "hero": "all",
+          "name": "Pachilantern",
+          "id": "pachilantern",
+          "url": "./resources/heroes/all/icons/pachilantern.png"
+        },
+        {
+          "hero": "roadhog",
+          "name": "Pigsy",
+          "id": "roadhog-pigsy",
+          "url": "./resources/heroes/roadhog/icons/roadhog-pigsy.png"
+        },
+        {
+          "hero": "all",
+          "name": "Red Envelope",
+          "id": "red-envelope",
+          "url": "./resources/heroes/all/icons/red-envelope.png"
+        },
+        {
+          "hero": "reinhardt",
+          "name": "Sandy",
+          "id": "reinhardt-sandy",
+          "url": "./resources/heroes/reinhardt/icons/reinhardt-sandy.png"
+        },
+        {
+          "hero": "zenyatta",
+          "name": "Sanzang",
+          "id": "zenyatta-sanzang",
+          "url": "./resources/heroes/zenyatta/icons/zenyatta-sanzang.png"
+        },
+        {
+          "hero": "all",
+          "name": "Seollal",
+          "id": "seollal",
+          "url": "./resources/heroes/all/icons/seollal.png"
+        },
+        {
+          "hero": "all",
+          "name": "Tangerines",
+          "id": "tangerines",
+          "url": "./resources/heroes/all/icons/tangerines.png"
+        },
+        {
+          "hero": "all",
+          "name": "Year of the Rooster",
+          "id": "year-of-the-rooster-2017",
+          "url": "./resources/heroes/all/icons/year-of-the-rooster-2017.png"
+        }
+      ],
+      "intros": [
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Fortune",
+          "id": "mercy-fortune",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/intros/mercy-fortune.webm"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Feast",
+          "id": "roadhog-feast",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/intros/roadhog-feast.webm"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Lion Dance",
+          "id": "tracer-lion-dance",
+          "quality": "epic",
+          "url": "./resources/updates/YEAR_OF_THE_ROOSTER_2017/intros/tracer-lion-dance.webm"
+        }
+      ]
+    }
+  },
+  "UPRISING_2017": {
+    "name": "Uprising 2017",
+    "id": "UPRISING_2017",
+    "dates": {
+      "start": "1491937200000",
+      "end": "1493708400000"
+    },
+    "items": {
+      "sprays": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Newborn",
+          "id": "ana-newborn",
+          "quality": "common",
+          "url": "./resources/heroes/ana/sprays/ana-newborn.png"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Sunken",
+          "id": "bastion-sunken",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/sprays/bastion-sunken.png"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Handheld",
+          "id": "dva-handheld",
+          "quality": "common",
+          "url": "./resources/heroes/dva/sprays/dva-handheld.png"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Ramen",
+          "id": "genji-ramen",
+          "quality": "common",
+          "url": "./resources/heroes/genji/sprays/genji-ramen.png"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Ramen",
+          "id": "hanzo-ramen",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/sprays/hanzo-ramen.png"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Sidecar",
+          "id": "junkrat-sidecar",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/sprays/junkrat-sidecar.png"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Skates",
+          "id": "lucio-skates",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/sprays/lucio-skates.png"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Target Practice",
+          "id": "mccree-target-practice",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/sprays/mccree-target-practice.png"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Pajamas",
+          "id": "mei-pajamas",
+          "quality": "common",
+          "url": "./resources/heroes/mei/sprays/mei-pajamas.png"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Combat Medic",
+          "id": "mercy-combat-medic",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/sprays/mercy-combat-medic.png"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Flower",
+          "id": "orisa-flower",
+          "quality": "common",
+          "url": "./resources/heroes/orisa/sprays/orisa-flower.png"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Target Practice",
+          "id": "pharah-target-practice",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/sprays/pharah-target-practice.png"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Commando",
+          "id": "reaper-commando",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/sprays/reaper-commando.png"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Poster",
+          "id": "reinhardt-poster",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/sprays/reinhardt-poster.png"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Chopper",
+          "id": "roadhog-chopper",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/sprays/roadhog-chopper.png"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Commando",
+          "id": "soldier-76-commando",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/sprays/soldier-76-commando.png"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Espresso",
+          "id": "sombra-espresso",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/sprays/sombra-espresso.png"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Student",
+          "id": "symmetra-student",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/sprays/symmetra-student.png"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Brigitte",
+          "id": "torbjorn-brigitte",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/sprays/torbjorn-brigitte.png"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Slipstream",
+          "id": "tracer-slipstream",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/sprays/tracer-slipstream.png"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Wedding",
+          "id": "widowmaker-wedding",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/sprays/widowmaker-wedding.png"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Building",
+          "id": "winston-building",
+          "quality": "common",
+          "url": "./resources/heroes/winston/sprays/winston-building.png"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "We can!",
+          "id": "zarya-we-can",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/sprays/zarya-we-can.png"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Shell",
+          "id": "zenyatta-shell",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/sprays/zenyatta-shell.png"
+        },
+        {
+          "hero": "all",
+          "name": "Null Sector",
+          "id": "null-sector",
+          "url": "./resources/heroes/all/sprays/null-sector.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "B73-NS",
+          "id": "b73ns",
+          "url": "./resources/heroes/all/sprays/b73ns.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Eradicator",
+          "id": "eradicator",
+          "url": "./resources/heroes/all/sprays/eradicator.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Nullmari",
+          "id": "nullmari",
+          "url": "./resources/heroes/all/sprays/nullmari.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Nulltrooper",
+          "id": "nulltrooper",
+          "url": "./resources/heroes/all/sprays/nulltrooper.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "OR14-NS",
+          "id": "or14ns",
+          "url": "./resources/heroes/all/sprays/or14ns.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Slicer",
+          "id": "slicer",
+          "url": "./resources/heroes/all/sprays/slicer.png",
+          "achievement": true
+        }
+      ],
+      "voicelines": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Damn",
+          "id": "ana-damn",
+          "quality": "common",
+          "url": "./resources/heroes/ana/voicelines/ana-damn.ogg"
+        },
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "The ghost watches",
+          "id": "ana-the-ghost-watches",
+          "quality": "common",
+          "url": "./resources/heroes/ana/voicelines/ana-the-ghost-watches.ogg"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Dwee Wee Woh",
+          "id": "bastion-dwee-wee-woh",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/voicelines/bastion-dwee-wee-woh.ogg"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Zwee-Ah Wheee Doo Woo",
+          "id": "bastion-zweeah-wheee-doo-woo",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/voicelines/bastion-zweeah-wheee-doo-woo.ogg"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Not taking me seriously",
+          "id": "dva-not-taking-me-seriously",
+          "quality": "common",
+          "url": "./resources/heroes/dva/voicelines/dva-not-taking-me-seriously.ogg"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Try and keep up",
+          "id": "dva-try-and-keep-up",
+          "quality": "common",
+          "url": "./resources/heroes/dva/voicelines/dva-try-and-keep-up.ogg"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Another!",
+          "id": "genji-another",
+          "quality": "common",
+          "url": "./resources/heroes/genji/voicelines/genji-another.ogg"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Life and death balance",
+          "id": "genji-life-and-death-balance",
+          "quality": "common",
+          "url": "./resources/heroes/genji/voicelines/genji-life-and-death-balance.ogg"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Beauty in simplicity",
+          "id": "hanzo-beauty-in-simplicity",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/voicelines/hanzo-beauty-in-simplicity.ogg"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Unacceptable",
+          "id": "hanzo-unacceptable",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/voicelines/hanzo-unacceptable.ogg"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Come the raw prawn",
+          "id": "junkrat-come-the-raw-prawn",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/voicelines/junkrat-come-the-raw-prawn.ogg"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Too right",
+          "id": "junkrat-too-right",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/voicelines/junkrat-too-right.ogg"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Boop",
+          "id": "lucio-boop",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/voicelines/lucio-boop.ogg"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Learn to take it easy",
+          "id": "lucio-learn-to-take-it-easy",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/voicelines/lucio-learn-to-take-it-easy.ogg"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "A man's gotta have rules",
+          "id": "mccree-a-mans-gotta-have-rules",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/voicelines/mccree-a-mans-gotta-have-rules.ogg"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "The old fashioned way",
+          "id": "mccree-the-old-fashioned-way",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/voicelines/mccree-the-old-fashioned-way.ogg"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Science this",
+          "id": "mei-science-this",
+          "quality": "common",
+          "url": "./resources/heroes/mei/voicelines/mei-science-this.ogg"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Scientific explanation",
+          "id": "mei-scientific-explanation",
+          "quality": "common",
+          "url": "./resources/heroes/mei/voicelines/mei-scientific-explanation.ogg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Not sure why I bother",
+          "id": "mercy-not-sure-why-i-bother",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/voicelines/mercy-not-sure-why-i-bother.ogg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Take care of yourself",
+          "id": "mercy-take-care-of-yourself",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/voicelines/mercy-take-care-of-yourself.ogg"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Error: Division by 0",
+          "id": "orisa-error-division-by-0",
+          "quality": "common",
+          "url": "./resources/heroes/orisa/voicelines/orisa-error-division-by-0.ogg"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Functionality still in beta",
+          "id": "orisa-functionality-still-in-beta",
+          "quality": "common",
+          "url": "./resources/heroes/orisa/voicelines/orisa-functionality-still-in-beta.ogg"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Don't take it personally",
+          "id": "pharah-dont-take-it-personally",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/voicelines/pharah-dont-take-it-personally.ogg"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "I am the rocket queen",
+          "id": "pharah-i-am-the-rocket-queen",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/voicelines/pharah-i-am-the-rocket-queen.ogg"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Amateur hour",
+          "id": "reaper-amatuer-hour",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/voicelines/reaper-amatuer-hour.ogg"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Moving on",
+          "id": "reaper-moving-on",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/voicelines/reaper-moving-on.ogg"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Easy does it",
+          "id": "reinhardt-easy-does-it",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-easy-does-it.ogg"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Unstoppable",
+          "id": "reinhardt-unstoppable",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-unstoppable.ogg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Killed for less than that",
+          "id": "roadhog-killed-for-less-than-that",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/voicelines/roadhog-killed-for-less-than-that.ogg"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "She'll be right",
+          "id": "roadhog-shell-be-right",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/voicelines/roadhog-shell-be-right.ogg"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Not getting any younger",
+          "id": "soldier-76-not-getting-any-younger",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-not-getting-any-younger.ogg"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Whatever you say",
+          "id": "soldier-76-whatever-you-say",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-whatever-you-say.ogg"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Don't be a coward",
+          "id": "sombra-dont-be-a-coward",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/voicelines/sombra-dont-be-a-coward.ogg"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "I'd love to stay and chat",
+          "id": "sombra-id-love-to-stay-and-chat",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/voicelines/sombra-id-love-to-stay-and-chat.ogg"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Kindly adjust",
+          "id": "symmetra-kindly-adjust",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/voicelines/symmetra-kindly-adjust.ogg"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Taken under advisement",
+          "id": "symmetra-taken-under-advisement",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/voicelines/symmetra-taken-under-advisement.ogg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Just start hammering",
+          "id": "torbjorn-just-start-hammering",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-just-start-hammering.ogg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Poor craftsman",
+          "id": "torbjorn-poor-craftsman",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-poor-craftsman.ogg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Don't be daft",
+          "id": "tracer-dont-be-daft",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/voicelines/tracer-dont-be-daft.ogg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Sorry i'm late",
+          "id": "tracer-sorry-im-late",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/voicelines/tracer-sorry-im-late.ogg"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "The performance begins",
+          "id": "widowmaker-the-performance-begins",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-the-performance-begins.ogg"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Your emotions",
+          "id": "widowmaker-your-emotions",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-your-emotions.ogg"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Have you seen my glasses?",
+          "id": "winston-have-you-seen-my-glasses",
+          "quality": "common",
+          "url": "./resources/heroes/winston/voicelines/winston-have-you-seen-my-glasses.ogg"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "I have the right stuff",
+          "id": "winston-i-have-the-right-stuff",
+          "quality": "common",
+          "url": "./resources/heroes/winston/voicelines/winston-i-have-the-right-stuff.ogg"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "I was born in battle",
+          "id": "zarya-i-was-born-in-battle",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/voicelines/zarya-i-was-born-in-battle.ogg"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Ready to give up?",
+          "id": "zarya-ready-to-give-up",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/voicelines/zarya-ready-to-give-up.ogg"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Path to enlightenment",
+          "id": "zenyatta-path-to-enlightenment",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-path-to-enlightenment.ogg"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Where you're headed",
+          "id": "zenyatta-where-youre-headed",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-where-youre-headed.ogg"
+        }
+      ],
+      "skinsEpic": [
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Null Sector",
+          "id": "bastion-null-sector",
+          "quality": "epic",
+          "url": "./resources/updates/UPRISING_2017/skinsEpic/bastion-null-sector.jpg"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Lieutenant Wilhelm",
+          "id": "reinhardt-lieutenant-wilhelm",
+          "quality": "epic",
+          "url": "./resources/updates/UPRISING_2017/skinsEpic/reinhardt-lieutenant-wilhelm.jpg"
+        }
+      ],
+      "intros": [
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Selfie",
+          "id": "dva-selfie",
+          "quality": "epic",
+          "url": "./resources/updates/UPRISING_2017/intros/dva-selfie.webm"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "My Baby",
+          "id": "torbjorn-my-baby",
+          "quality": "epic",
+          "url": "./resources/updates/UPRISING_2017/intros/torbjorn-my-baby.webm"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Perspective",
+          "id": "zenyatta-perspective",
+          "quality": "epic",
+          "url": "./resources/updates/UPRISING_2017/intros/zenyatta-perspective.webm"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Blackwatch",
+          "id": "genji-blackwatch",
+          "quality": "legendary",
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/genji-blackwatch.jpg"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Blackwatch",
+          "id": "mccree-blackwatch",
+          "quality": "legendary",
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/mccree-blackwatch.jpg"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Combat Medic Ziegler",
+          "id": "mercy-combat-medic-ziegler",
+          "quality": "legendary",
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/mercy-combat-medic-ziegler.jpg"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Null Sector",
+          "id": "orisa-null-sector",
+          "quality": "legendary",
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/orisa-null-sector.jpg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Chief Engineer Lindholm",
+          "id": "torbjorn-chief-engineer-lindholm",
+          "quality": "legendary",
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/torbjorn-chief-engineer-lindholm.jpg"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Ironclad",
+          "id": "torbjorn-ironclad",
+          "quality": "legendary",
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/torbjorn-ironclad.jpg"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Cadet Oxton",
+          "id": "tracer-cadet-oxton",
+          "quality": "legendary",
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/tracer-cadet-oxton.jpg"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Talon",
+          "id": "widowmaker-talon",
+          "quality": "legendary",
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/widowmaker-talon.jpg"
+        }
+      ],
+      "icons": [
+        {
+          "hero": "all",
+          "name": "B73-NS",
+          "id": "b73ns",
+          "url": "./resources/heroes/all/icons/b73ns.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Blackwatch",
+          "id": "blackwatch",
+          "url": "./resources/heroes/all/icons/blackwatch.png"
+        },
+        {
+          "hero": "tracer",
+          "name": "Cadet",
+          "id": "tracer-cadet",
+          "url": "./resources/heroes/tracer/icons/tracer-cadet.png"
+        },
+        {
+          "hero": "torbjorn",
+          "name": "Chief Engineer",
+          "id": "torbjorn-chief-engineer",
+          "url": "./resources/heroes/torbjorn/icons/torbjorn-chief-engineer.png"
+        },
+        {
+          "hero": "mercy",
+          "name": "Combat Medic",
+          "id": "mercy-combat-medic",
+          "url": "./resources/heroes/mercy/icons/mercy-combat-medic.png"
+        },
+        {
+          "hero": "genji",
+          "name": "Cyborg",
+          "id": "genji-cyborg",
+          "url": "./resources/heroes/genji/icons/genji-cyborg.png"
+        },
+        {
+          "hero": "all",
+          "name": "Drop Pod",
+          "id": "drop-pod",
+          "url": "./resources/heroes/all/icons/drop-pod.png"
+        },
+        {
+          "hero": "widowmaker",
+          "name": "Lacroix",
+          "id": "widowmaker-lacroix",
+          "url": "./resources/heroes/widowmaker/icons/widowmaker-lacroix.png"
+        },
+        {
+          "hero": "reinhardt",
+          "name": "Lieutenant",
+          "id": "reinhardt-lieutenant",
+          "url": "./resources/heroes/reinhardt/icons/reinhardt-lieutenant.png"
+        },
+        {
+          "hero": "all",
+          "name": "Null Sector",
+          "id": "null-sector",
+          "url": "./resources/heroes/all/icons/null-sector.png"
+        },
+        {
+          "hero": "all",
+          "name": "Nullmari",
+          "id": "nullmari",
+          "url": "./resources/heroes/all/icons/nullmari.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "OR14-NS",
+          "id": "or14ns",
+          "url": "./resources/heroes/all/icons/or14ns.png",
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Uprising",
+          "id": "uprising-2017",
+          "url": "./resources/heroes/all/icons/uprising-2017.png"
+        }
+      ],
+      "poses": [
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Meditate",
+          "id": "genji-meditate",
+          "quality": "rare",
+          "url": "./resources/updates/UPRISING_2017/poses/genji-meditate.jpg"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Handstand",
+          "id": "lucio-handstand",
+          "quality": "rare",
+          "url": "./resources/updates/UPRISING_2017/poses/lucio-handstand.jpg"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Showdown",
+          "id": "mccree-showdown",
+          "quality": "rare",
+          "url": "./resources/updates/UPRISING_2017/poses/mccree-showdown.jpg"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Light Reading",
+          "id": "symmetra-light-reading",
+          "quality": "rare",
+          "url": "./resources/updates/UPRISING_2017/poses/symmetra-light-reading.jpg"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Peanut Butter",
+          "id": "winston-peanut-butter",
+          "quality": "rare",
+          "url": "./resources/updates/UPRISING_2017/poses/winston-peanut-butter.jpg"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "This is strength",
+          "id": "zarya-this-is-strength",
+          "quality": "rare",
+          "url": "./resources/updates/UPRISING_2017/poses/zarya-this-is-strength.jpg"
+        }
+      ],
+      "emotes": [
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Training",
+          "id": "hanzo-training",
+          "quality": "epic",
+          "url": "./resources/updates/UPRISING_2017/emotes/hanzo-training.webm"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Flair",
+          "id": "pharah-flair",
+          "quality": "epic",
+          "url": "./resources/updates/UPRISING_2017/emotes/pharah-flair.webm"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Push-ups",
+          "id": "soldier-76-pushups",
+          "quality": "epic",
+          "url": "./resources/updates/UPRISING_2017/emotes/soldier-76-pushups.webm"
+        }
+      ]
+    }
+  }
+}

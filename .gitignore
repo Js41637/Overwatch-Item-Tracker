@@ -2,4 +2,6 @@
 *.dds
 helpers/rawData.txt
 helpers/config.json
-/node_modules
+\node_modules
+helpers/OITTool/programs
+webserver.py
