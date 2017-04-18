@@ -9,16 +9,24 @@ const { forEach, sortBy, find, reduce, merge } = require('lodash')
 const mode = process.argv.slice(2)[0]
 
 const HERODATA = require('./dataMapper/HERODATA.js')
-const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp } = require('./dataMapper/itemData.js')
+const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp, idsBlizzardChanged } = require('./dataMapper/itemData.js')
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT } = require('./dataMapper/EVENTDATA.js')
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder } = require('./dataMapper/utils.js')
-var allClassData, rawData, missingAllClassData = {}, allClassDataKeys = {}
+var allClassData, missingAllClassData = {}, allClassDataKeys = {}
+var raw = { rawData: '', newRawData: '' }
 try {
   allClassData = require('../data/allClassItems.json')
-  rawData = fs.readFileSync(`${__dirname}/rawData.txt`, "utf8")
+  raw.rawData = fs.readFileSync(`${__dirname}/rawData.txt`, "utf8")
+  
 } catch(e) {
   console.error("Failed to find allClassData or rawData!!")
   process.exit()
+}
+
+try {
+  raw.newRawData = fs.readFileSync(`${__dirname}/newRawData.txt`, "utf8")
+} catch(e) {
+  console.info("No newRawData??")
 }
 
 try {
@@ -87,22 +95,38 @@ allClassData = reduce(allClassData, (result, items, type) => {
   return result
 }, {})
 
-var data = []
-const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g
-const heroGroups = rawData.split('\n').filter(a => !a.includes("Error unknown")).join('\n').split('\n\n')
-heroGroups.forEach(heroData => {
-  const hero = heroData.split('\n')[0].split(' ').slice(2).join(' ') // name of hero
-  let rawItems = heroData.split('\n').slice(1).join('\n') // remove the first line containing name of hero
-  var items = {}, itemMatch;
-  while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
-    items[itemMatch[1].split(' ')[0]] = itemMatch[0].split('\n').slice(1).map(a => a.trim())
-  }
-  data.push({ hero, items })
+var data = {}
+var things = ['rawData', 'newRawData']
+things.forEach((thingy, i) => {
+  if (!raw[thingy]) return
+  const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g
+  const heroGroups = raw[thingy].split('\n').filter(a => !a.includes("Error unknown")).join('\n').split('\n\n')
+
+  heroGroups.forEach(heroData => {
+    if (!heroData.length) return
+    const hero = heroData.split('\n')[0].split(' ').slice(2).join(' ') // name of hero
+    let rawItems = heroData.split('\n').slice(1).join('\n') // remove the first line containing name of hero
+    var items = {}, itemMatch;
+    while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
+      items[itemMatch[1].split(' ')[0]] = itemMatch[0].split('\n').slice(1).map(a => a.trim())
+    }
+    // if i == 1 we're on newRawData, add the new items on top of existing data
+    if (i == 1) {
+      for (var group  in items) {
+        for (var item of items[group]) {
+          data[hero].items[group].push(item)
+        }
+      }
+    } else {
+      data[hero] = { hero, items }
+    }
+  })
 })
 
 var heroes = {}
 // Goes through every hero and their item lists
-data.forEach(({ hero, items: itemGroups }) => {
+for (var hero in data) {
+  const itemGroups = data[hero].items
   const heroID = getCleanID(hero)
   const heroData = Object.assign({
     name: hero,
@@ -124,8 +148,9 @@ data.forEach(({ hero, items: itemGroups }) => {
       var [str, name, type] = item.match(/(.+) \((.+)\)/) //eslint-disable-line
       name = badNames[name.trim()] || name.trim()
       if (name == 'RANDOM') return
-      const id = getCleanID(name, heroID)
       const { quality, type: itemType } = getItemType(type)
+      var id = getCleanID(name, heroID)
+      id = idsBlizzardChanged[`${itemType}/${id}`] || id
       name = itemNamesIFuckedUp[`${itemType}/${id}`] || name
       if (!quality || !itemType) return
       const out = { name, id, quality }
@@ -152,7 +177,7 @@ data.forEach(({ hero, items: itemGroups }) => {
     })
   })
   heroes[heroID] = heroData
-})
+}
 heroes = sortObject(heroes)
 
 // Go through every heros items and create a seperate object containing every item added in events
@@ -230,6 +255,10 @@ forEach(allClassEventItems, (types, type) => {
       // sprays have no quality by default but if it isn't an achievement it means it's purchaseable so add quality
       if (type == 'sprays' && !isAchivement) {
         Object.assign(out, { quality: 'common' })
+      }
+      if (!updates[event]) {
+        console.warn("Missing event!!", event)
+        return
       }
       if (!updates[event].items[type]) updates[event].items[type] = []
       updates[event].items[type].push(out)

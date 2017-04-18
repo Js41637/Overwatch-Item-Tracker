@@ -3,9 +3,15 @@ const { EVENTS } = require('./EVENTDATA')
 // All class items have no attributes provided so we need to manually add them
 // ids correlate to item ids.
 const data = {
+  // Changes IDs and Names will eventually be fixed with a data migration.
+  idsBlizzardChanged: {
+    "skins/soldier-76-strike-commander-morrison": "soldier-76-strikecommander-morrison",
+    "icons/soldier-76-strike-commander": "soldier-76-strikecommander"
+  },
   itemNamesIFuckedUp: {
     "voicelines/reaper-amatuer-hour": "Amateur hour",
-    "icons/lunamari": "Peachimari"
+    "icons/lunamari": "Peachimari",
+    "voicelines/reinhardt-100-german-power": "100% German power"
   },
   badNames: {
     '>_\\<': ">_<"
