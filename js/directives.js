@@ -115,6 +115,11 @@ OWI.directive('heroNav', function() {
   return {
     restrict: 'E',
     replace: true,
+    scope: {
+      totals: "=totals",
+      events: "=events",
+      heroes: "=heroes"
+    },
     templateUrl: './templates/hero-nav.html'
   }
 })

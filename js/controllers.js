@@ -5,6 +5,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   this.showSidebar = false;
   this.showNav = false;
   this.noSupportMsg = CompatibilityService.noSupportMsg
+  this.totals = CostAndTotalService
 
   DataService.waitForInitialization().then(function(data) {
     vm.events = data.events;
@@ -98,10 +99,6 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
       controllerAs: 'settings'
     });
   };
-
-  this.calculateTotals = function() {
-    
-  }
 }]);
 
 OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService", "hero", function($scope, $rootScope, $uibModal, Data, StorageService, CompatibilityService, CostAndTotalService, hero) {

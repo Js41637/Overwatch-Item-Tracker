@@ -52,7 +52,7 @@
   <!--<Particles ng-if="::$ctrl.particles"></Particles>-->
 
   <div id="menuNav" class="angular-animate" uib-collapse="!$ctrl.showNav">
-    <hero-nav></hero-nav>
+    <hero-nav events="::$ctrl.events" heroes="::$ctrl.heroes"></hero-nav>
   </div>
 
   <div id="sidebar" ng-class="{open: $ctrl.showSidebar}">
