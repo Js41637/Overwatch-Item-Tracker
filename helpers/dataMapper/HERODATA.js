@@ -1,6 +1,6 @@
 const CLASSES = {
-  OFFENCE: 'Offence',
-  DEFENCE: 'Defence',
+  OFFENCE: 'Offense',
+  DEFENCE: 'Defense',
   TANK: 'Tank',
   SUPPORT: 'Support'
 }
