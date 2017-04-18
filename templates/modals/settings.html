@@ -19,6 +19,11 @@
       <div class="btn btn-primary" ng-click="settings.selectAll()">Select Everything!</div>
     </div>
     <div class="setting">
+      <h3>Count Icons as part of total</h3>
+      <p>Toggles icons being counted towards the total items for a hero (as it is ingame)</p>
+      <div class="btn btn-primary" ng-click="settings.toggleSetting('countIcons', true)">{{settings.countIcons ? "Don't count icons" : 'Count icons'}}</div>
+    </div>
+    <div class="setting">
       <h3>Show Previews</h3>
       <p>Disable or enable showing previews of items (sprays, emotes, etc...)</p>
       <div class="btn btn-primary" ng-click="settings.toggleSetting('showPreviews', true)">{{settings.showPreviews ? 'Disable' : 'Enable'}}</div>

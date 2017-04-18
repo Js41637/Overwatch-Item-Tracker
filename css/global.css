@@ -283,6 +283,7 @@ body {
 #settings .range-input {
   display: flex;
   align-items: center;
+  width: 210px;
 }
 
 #settings .range-input span {
@@ -946,13 +947,16 @@ strong {
 
 #home #hero-nav .gallery .text h3 {
   margin-top: 3px;
-  height: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   padding-top: 1px;
+  font-size: 18px;
+  padding: 2px 0;
+  text-shadow: 1px 1px 2px rgb(70, 70, 70);
+  letter-spacing: 0.6;
 }
 
 #home #hero-nav .gallery .text .progresscont {

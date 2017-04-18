@@ -7,7 +7,8 @@ OWI.factory("StorageService", function() {
       showPreviews: true,
       hdVideos: false,
       currentTheme: 'standard',
-      audioVolume: 0.5
+      audioVolume: 0.5,
+      countIcons: true
     },
     getData: function() {
       return service.data;
@@ -36,7 +37,7 @@ OWI.factory("StorageService", function() {
       if (!storedSettings) {
         service.settings = service.defaultSettings;
       } else {
-        service.settings = angular.fromJson(storedSettings);
+        service.settings = Object.assign({}, service.defaultSettings, angular.fromJson(storedSettings));
       }
     }
   }
@@ -219,6 +220,8 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(Da
   var isValidItem = function(item) {
     return !item.achievement && item.quality && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
   }
+  
+  var countIcons = StorageService.getSetting('countIcons')
 
   var service = {
     totals: {},
@@ -257,7 +260,13 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(Da
               service[TYPE][what.id].totals.overall.selected++;
               service[TYPE][what.id].totals[type].selected++;
             }
-            if (type == 'icons') continue
+            if (type == 'icons') {
+              if (!countIcons) {
+                service[TYPE][what.id].totals.overall.total--;
+                if (isSelected) service[TYPE][what.id].totals.overall.selected--;
+              }
+              continue;
+            }
             if (isValidItem(item)) {
               var price = DataService.prices[item.quality] * ((item.event || isEvent) ? 3 : 1);
               service[TYPE][what.id].cost.total += price;
@@ -280,8 +289,10 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(Da
       var price = DataService.prices[item.quality] * (event ? 3 : 1);
       var isValid = isValidItem(item)
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
-      service.heroes[hero].totals.overall.selected += val;
       service.heroes[hero].totals[type].selected += val;
+      if (type != 'icons' || (type == 'icons' && countIcons)) {
+        service.heroes[hero].totals.overall.selected += val;
+      }
       if (type != 'icons' && isValid) {
         if (isSelected) {
           service.heroes[hero].cost.selected += price;

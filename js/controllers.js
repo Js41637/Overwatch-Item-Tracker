@@ -387,6 +387,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   this.currentTheme = settings['currentTheme'];
   this.showPreviews = settings['showPreviews'];
   this.audioVolume = settings['audioVolume'];
+  this.countIcons = settings['countIcons'];
   this.importErrors = null;
 
   this.close = function() {
