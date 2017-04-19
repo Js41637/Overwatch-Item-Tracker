@@ -69,8 +69,6 @@ allClassData = reduce(allClassData, (result, items, type) => {
       return r
     }, {})
 
-    
-    
     // Check if the spray or icon is a Competitive reward
     const isSeasonCompItem = item.id.match(/^season-(.)-(competitor|hero)$/)
     const isCompItem =  isSeasonCompItem || item.id == 'top-500' ? { group: 'competitive' } : undefined
