@@ -6,11 +6,11 @@ const data = {
   // Changes IDs and Names will eventually be fixed with a data migration.
   idsBlizzardChanged: {
     "skins/soldier-76-strike-commander-morrison": "soldier-76-strikecommander-morrison",
-    "icons/soldier-76-strike-commander": "soldier-76-strikecommander"
+    "icons/soldier-76-strike-commander": "soldier-76-strikecommander",
+    "icons/peachimari": "lunamari",
   },
   itemNamesIFuckedUp: {
     "voicelines/reaper-amatuer-hour": "Amateur hour",
-    "icons/lunamari": "Peachimari",
     "voicelines/reinhardt-100-german-power": "100% German power"
   },
   badNames: {

@@ -60,6 +60,8 @@ allClassData = reduce(allClassData, (result, items, type) => {
 
   items = reduce(items, (newItems = [], item) => {
     if (hiddenItems[type] && hiddenItems[type].includes(item.id)) return newItems
+    item.name = itemNamesIFuckedUp[`${type}/${item.id}`] || item.name
+    item.id = idsBlizzardChanged[`${type}/${item.id}`] || item.id
     allClassDataKeys[type][item.id] = item.name
     var { event = undefined } = reduce(allClassEventItems[type], (r, items, eventID) => {
       let match = find(items, id => id == item.id)
@@ -67,7 +69,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
       return r
     }, {})
 
-    item.name = itemNamesIFuckedUp[`${type}/${item.id}`] || item.name
+    
     
     // Check if the spray or icon is a Competitive reward
     const isSeasonCompItem = item.id.match(/^season-(.)-(competitor|hero)$/)

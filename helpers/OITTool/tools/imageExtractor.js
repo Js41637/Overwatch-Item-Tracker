@@ -47,7 +47,9 @@ const moveGeneralImages = type => {
       files.forEach(file => {
         fs.createReadStream(`./General/${type}/${file.name}`).pipe(fs.createWriteStream(`./!toBeConverted/${type}/${file.cleanName}.dds`));
       })
-      resolve()
+      setTimeout(() => {
+        resolve()
+      }, 1000)
     }).catch(reject)
   })
 }
@@ -67,7 +69,9 @@ const moveImages = (heroDir, type, heroID) => {
               totalFiles++
               fs.createReadStream(`./Heroes/${heroDir}/${type}/${event}/${file.name}`).pipe(fs.createWriteStream(`./!toBeConverted/${type}/${file.cleanName}.dds`));
             })
-            res()
+            setTimeout(() => {
+              res()
+            }, 1000)
           })
         })
       })).then(() => {
@@ -99,10 +103,10 @@ const convertFiles = () => {
                   console.log("-- Finished moving files")
                   cb()
                 })
-              }, 3000)
+              }, 4500)
             })
           })
-        }, 500)
+        }, 1500)
       }, () => {
         console.log("Finished converting all images")
       })
