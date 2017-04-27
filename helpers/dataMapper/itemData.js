@@ -10,7 +10,7 @@ const data = {
     "icons/peachimari": "lunamari",
   },
   itemNamesIFuckedUp: {
-    "voicelines/reaper-amatuer-hour": "Amateur hour",
+    "voicelines/reaper-amatuer-hour": "Amateur Hour",
     "voicelines/reinhardt-100-german-power": "100% German power"
   },
   badNames: {
