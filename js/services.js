@@ -217,8 +217,9 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(Da
     skinsLegendary: 'skins'
   }
 
-  var isValidItem = function(item) {
-    return !item.achievement && item.quality && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
+  var isValidItem = function(item, event) {
+    var hasEvent = item.event || event
+    return !item.achievement && item.quality && (!hasEvent || (hasEvent && hasEvent !== 'SUMMER_GAMES_2016'))
   }
   
   var countIcons = StorageService.getSetting('countIcons')
@@ -287,7 +288,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(Da
       var eventType = type == 'skins' ? (item.quality == 'epic' ? 'skinsEpic' : 'skinsLegendary') : type
       var val = isSelected ? 1 : -1;
       var price = DataService.prices[item.quality] * (event ? 3 : 1);
-      var isValid = isValidItem(item)
+      var isValid = isValidItem(item, event)
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
       if (type != 'icons' || (type == 'icons' && countIcons)) {
@@ -302,16 +303,18 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(Da
           service.heroes[hero].cost.remaining += price;
         }
       }
-      if (event) {
+      if (event && (type !== 'icons' || type == 'icons' && countIcons)) {
         service.events[event].totals.overall.selected += val;
         service.events[event].totals[eventType].selected += val;
         service.events[event].cost.prev = service.events[event].cost.remaining
-        if (isSelected) {
-          service.events[event].cost.remaining -= price
-          service.events[event].cost.selected += price
-        } else {
-          service.events[event].cost.remaining += price
-          service.events[event].cost.selected -= price
+        if (type !== 'icons' && isValid) {
+          if (isSelected) {
+            service.events[event].cost.remaining -= price
+            service.events[event].cost.selected += price
+          } else {
+            service.events[event].cost.remaining += price
+            service.events[event].cost.selected -= price
+          }
         }
         service.events[event].totals.overall.percentage = ((service.events[event].totals.overall.selected / service.events[event].totals.overall.total) * 100)
       }
