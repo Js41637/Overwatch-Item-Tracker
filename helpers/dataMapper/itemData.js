@@ -5,12 +5,8 @@ const { EVENTS } = require('./EVENTDATA')
 const data = {
   // Changes IDs and Names will eventually be fixed with a data migration.
   idsBlizzardChanged: {
-    "skins/soldier-76-strike-commander-morrison": "soldier-76-strikecommander-morrison",
-    "icons/soldier-76-strike-commander": "soldier-76-strikecommander",
-    "icons/peachimari": "lunamari",
   },
   itemNamesIFuckedUp: {
-    "voicelines/reaper-amatuer-hour": "Amateur Hour",
     "voicelines/reinhardt-100-german-power": "100% German power"
   },
   badNames: {
@@ -103,7 +99,7 @@ const data = {
       [EVENTS.SUMMER16]: ["summer-games-2016", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america"],
       [EVENTS.HALLOWEEN16]: ["halloween-terror-2016", "never-die", "bewitching", "calavera", "candle", "eyeball", "ghostymari", "spider", "superstition", "tombstone", "vampachimari", "witchs-brew", "witchs-hat", "wolf"],
       [EVENTS.CHRISTMAS16]: ["winter-wonderland-2016", "snowman", "present", "pachimerry", "gingermari", "2017", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking"],
-      [EVENTS.ROOSTER17]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "lunamari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017"],
+      [EVENTS.ROOSTER17]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017"],
       [EVENTS.UPRISING17]: ['uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'or14ns']
     }
   }
