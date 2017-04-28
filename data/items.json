@@ -110,9 +110,10 @@
           "event": "HALLOWEEN_2016"
         },
         {
-          "id": "blackwatch",
           "name": "Blackwatch",
-          "event": "UPRISING_2017"
+          "id": "mccree-blackwatch",
+          "event": "UPRISING_2017",
+          "hero": "mccree"
         },
         {
           "name": "BMX",
@@ -5406,6 +5407,12 @@
           "name": "Equestrian",
           "id": "mccree-equestrian",
           "event": "SUMMER_GAMES_2016",
+          "hero": "mccree"
+        },
+        {
+          "name": "Blackwatch",
+          "id": "mccree-blackwatch",
+          "event": "UPRISING_2017",
           "hero": "mccree"
         }
       ],
