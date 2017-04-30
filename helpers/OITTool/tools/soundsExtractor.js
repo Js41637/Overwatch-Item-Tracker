@@ -85,15 +85,15 @@ const moveSoundFiles = soundsListOnly => {
   })
 }
 
-const convertSoundFiles = () => {
+const convertSoundFiles = dir => {
   return new Promise((resolve, reject) => {
     console.log("Converting sound files to ogg")
     const buffer =  { maxBuffer: 1024 * 10000 }
     const base = path.join(__dirname, "../programs")
 
-    const ww2ogg = `for /f "delims=" %f in ('dir /s/b/a-d "./!soundTemp\\*.wem"') do (${base}\\ww2ogg.exe --pcb ${base}\\packed_codebooks_aoTuV_603.bin "%f")`
-    const revorb = `for /f "delims=" %f in ('dir /s/b/a-d "./!soundTemp\\*.ogg"') do (${base}\\revorb.exe "%f")`
-    const del = `for /f "delims=" %f in ('dir /s/b/a-d "./!soundTemp\\*.wem"') do (del "%f")`
+    const ww2ogg = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem"') do (${base}\\ww2ogg.exe --pcb ${base}\\packed_codebooks_aoTuV_603.bin "%f")`
+    const revorb = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.ogg"') do (${base}\\revorb.exe "%f")`
+    const del = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem"') do (del "%f")`
 
     exec(ww2ogg, buffer, (err, stdout, stderr) => {
       if (err)  return reject(`Error converting files to OGG \n ===START ERROR===\n${err}\n${stderr}\n===END ERROR===`)
@@ -111,6 +111,10 @@ const convertSoundFiles = () => {
 }
 
 const extractSounds = args => {
+  if (args[0] == 'ignore') {
+    convertSoundFiles('')
+    return
+  }
   if (!process.cwd().match(/OverwatchAssets\\Heroes$/)) {
     console.error("Needs to be run in OverwatchAssets\Heroes")
     process.exit()
@@ -138,7 +142,7 @@ const extractSounds = args => {
     fs.writeFileSync('./soundFiles.json', JSON.stringify(soundsList, null, 2))
     if (soundsListOnly) return
 
-    convertSoundFiles().then(() => {
+    convertSoundFiles('!soundTemp').then(() => {
       mapFilesToHeroes(['none', './!soundTemp/'], true).then(() => {
         console.log("Finished doing sound stuff in", moment.duration(Date.now() - startTS).asMinutes(), "minutes")
       }).catch(handleErr)
