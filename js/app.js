@@ -90,14 +90,17 @@ OWI.run(function() {
             }
           }
         }
-        if (data['all'] && data['all']['icons']) {
-          if (data['all']['icons']['blackwatch']) {
-            if (data['mccree'] && data['mccree']['icons']) {
-              data['mccree']['icons']['mccree-blackwatch'] = data['all']['icons']['blackwatch']
+        var things = [['orisa', 'or14ns'], ['mccree', 'blackwatch']]
+        things.forEach(function(thing) {
+          if (data['all'] && data['all']['icons']) {
+            if (data['all']['icons'][thing[1]]) {
+              if (data[thing[0]] && data[thing[0]]['icons']) {
+                data[thing[0]]['icons'][thing[0] + '-' + thing[1]] = data['all']['icons'][thing[1]]
+              }
             }
+            delete data['all']['icons'][thing[1]]
           }
-          delete data['all']['icons']['blackwatch']
-        }
+        })
       }
     }
   ]
