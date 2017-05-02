@@ -44,7 +44,7 @@ const EVENTTIMES = {
   },
   [EVENTS.UPRISING17]: {
     "start": "1491937200000",
-    "end": "1493708400000"
+    "end": "1493769600000"
   }
 }
 
