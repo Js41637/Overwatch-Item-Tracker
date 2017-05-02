@@ -874,6 +874,7 @@ body#zenyatta #hero-container .hero-overview {
   padding: 12px;
   background-position: center;
   background-repeat: no-repeat;
+  box-sizing: content-box;
 }
 
 body#all .hero-name:after {
