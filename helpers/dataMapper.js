@@ -100,7 +100,7 @@ var things = ['rawData', 'newRawData']
 things.forEach((thingy, i) => {
   if (!raw[thingy]) return
   const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g
-  const heroGroups = raw[thingy].split('\n').filter(a => !a.includes("Error unknown")).join('\n').split('\n\n')
+  const heroGroups = raw[thingy].replace(/\r\n/g, '\n').split('\n').filter(a => !a.includes("Error unknown")).join('\n').split('\n\n')
 
   heroGroups.forEach(heroData => {
     if (!heroData.length) return
