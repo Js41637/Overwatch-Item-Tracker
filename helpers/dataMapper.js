@@ -8,10 +8,25 @@ const { forEach, sortBy, find, reduce, merge, isEmpty } = require('lodash')
 
 const mode = process.argv.slice(2)[0]
 
+console.log(`
+╭━━━╮╱╱╭╮╱╱╱╭━╮╭━╮
+╰╮╭╮┃╱╭╯╰╮╱╱┃┃╰╯┃┃
+╱┃┃┃┣━┻╮╭╋━━┫╭╮╭╮┣━━┳━━┳━━┳━━┳━╮
+╱┃┃┃┃╭╮┃┃┃╭╮┃┃┃┃┃┃╭╮┃╭╮┃╭╮┃┃━┫╭╯
+╭╯╰╯┃╭╮┃╰┫╭╮┃┃┃┃┃┃╭╮┃╰╯┃╰╯┃┃━┫┃
+╰━━━┻╯╰┻━┻╯╰┻╯╰╯╰┻╯╰┫╭━┫╭━┻━━┻╯
+╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃┃╱┃┃
+╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰╯╱╰╯
+`)
+
+const consoleColors = require('./consoleColors')
+consoleColors.load()
+
 const HERODATA = require('./dataMapper/HERODATA.js')
 const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp, idsBlizzardChanged } = require('./dataMapper/itemData.js')
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT } = require('./dataMapper/EVENTDATA.js')
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder } = require('./dataMapper/utils.js')
+
 var allClassData, missingAllClassData = {}, allClassDataKeys = {}
 var raw = { rawData: '', newRawData: '' }
 try {
@@ -53,6 +68,7 @@ forEach(noLongerMissingAllClassData, (items, type) => allClassData[type] = [...a
 // Create object containing allclass item names by key so we can easily map event ids to items.
 // also check if any items are in allClassEventItems and mark them as event items
 allClassData = reduce(allClassData, (result, items, type) => {
+  let idCache = {}
   if (!result[type]) {
     result[type] = []
     allClassDataKeys[type] = {}
@@ -68,6 +84,9 @@ allClassData = reduce(allClassData, (result, items, type) => {
       Object.assign(r, match ? { event: eventID } : {})
       return r
     }, {})
+
+    if (idCache[item.id]) console.warn("Duplicate allClassData detected", item.id)
+    idCache[item.id] = true
 
     // Check if the spray or icon is a Competitive reward
     const isSeasonCompItem = item.id.match(/^season-(.)-(competitor|hero)$/)
@@ -356,3 +375,5 @@ var masterData = {
 fs.writeFileSync(`${__dirname}/../data/items.json`, JSON.stringify(heroes, null, 2), 'utf8')
 fs.writeFileSync(`${__dirname}/../data/events.json`, JSON.stringify(updates, null, 2), 'utf8')
 fs.writeFileSync(`${__dirname}/../data/master.json`, JSON.stringify(masterData), 'utf8')
+
+console.info("DUN")
