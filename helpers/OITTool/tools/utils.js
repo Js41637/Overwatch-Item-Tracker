@@ -8,6 +8,11 @@ const getCleanID = (what, hero) => {
   return _getCleanID(what.replace(/\.(png|dds|jpg)|$/, ''), hero)
 }
 
+const hardCodedIds = {
+  "Cheers!.dds": "cheers",
+  "Cheers.dds": "cheers1"
+}
+
 const cleanFileIDs = (files, heroID) => {
   var itemIDCache = {}
   return files.map(file => {
@@ -16,6 +21,7 @@ const cleanFileIDs = (files, heroID) => {
       console.warn("ItemID collision found", id)
       id = `${id}1`
     }
+    id = hardCodedIds[file] || id
     itemIDCache[id] = true
     return { name: file, cleanName: id}
   })
