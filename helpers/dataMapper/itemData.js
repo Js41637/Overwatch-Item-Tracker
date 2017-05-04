@@ -18,7 +18,7 @@ const data = {
   },
   hiddenItems: { // Hidden all classItems
     sprays: ['snowcer', 'snowscientist'],
-    icons: ['oni']
+    icons: ['oni', 'law'] // these are allclass icons but have been manually added to the heros so hide these versions
   },
   blizzardItems: {
     sprays: ['barbarian', 'crusader', 'demon-hunter', 'monk', 'witch-doctor', 'wizard'],
