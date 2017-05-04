@@ -8,7 +8,7 @@ const crypto = require('crypto')
 const path = require('path')
 const { exec } = require('child_process')
 
-const { sortBy, forEach } = require('lodash')
+const { sortBy, forEach, flattenDeep } = require('lodash')
 const { eachLimit } = require('async')
 const moment = require('moment')
 
@@ -40,38 +40,42 @@ const moveSoundFiles = soundsListOnly => {
   console.log("Mapping and moving sound files")
   var soundsList = {}, checksumCache = {}, totalFiles = 0, dupeFiles = 0, totalNewFiles = 0;
   return new Promise(resolve => {
-    getDirectories('./').then(heroes => {
+    return getDirectories('./').then(heroes => {
       heroes = sortBy(heroes, [h => !Object.keys(HERODATA).includes(getCleanID(h))])
       // Go through every hero, 1 at a time to prevent node from dying
       eachLimit(heroes, 1, (hero, cb) => {
         var heroID = getCleanID(hero)
         soundsList[heroID] = []
         var newFiles = 0
-        getDirectories(`./${hero}`).then(() => {
-          getDirectories(`./${hero}/Sound Dump`).then(sounds => {
-            Promise.all(sounds.filter(a => a.endsWith('.wem')).map(sound => {
-              return new Promise(r => {
-                totalFiles++;
-                const checksum = getFileSize(`./${hero}/Sound Dump/${sound}`)
-                const dupeFile = checksum in checksumCache ? { dupe: true } : undefined
-                const id = sound.replace('.wem', '')
-                const oldSoundTS = (existingSoundIDs[id] && existingSoundIDs[id].length) ? { ts: existingSoundIDs[id] } : undefined
-                const isNew = !existingSoundIDs[id] ? { ts: timestamp } : undefined
-                soundsList[heroID].push(Object.assign({}, {
-                  id: id,
-                  checksum: checksum
-                }, dupeFile, isNew, oldSoundTS))
-                checksumCache[checksum] = true
-                if (dupeFile) {
-                  dupeFiles++;
-                  return r()
-                }
-                if (isNew) newFiles++
-                if (soundsListOnly || !isNew) return r()
-                copyFile(`./${hero}/Sound Dump/${sound}`, `./!soundTemp/${heroID}-${sound}`, r)
+        return getDirectories(`./${hero}`).then(() => {
+          return getDirectories(`./${hero}/Sound Dump`).then(dirs => {
+            return Promise.all(dirs.map(dir => {
+              return getDirectories(`./${hero}/Sound Dump/${dir}`).then(sounds => {
+                return Promise.all(sounds.filter(a => a.endsWith('.wem')).map(sound => {
+                  return new Promise(r => {
+                    totalFiles++;
+                    const checksum = getFileSize(`./${hero}/Sound Dump/${dir}/${sound}`)
+                    const dupeFile = checksum in checksumCache ? { dupe: true } : undefined
+                    const id = sound.replace('.wem', '')
+                    const oldSoundTS = (existingSoundIDs[id] && existingSoundIDs[id].length) ? { ts: existingSoundIDs[id] } : undefined
+                    const isNew = !existingSoundIDs[id] ? { ts: timestamp } : undefined
+                    soundsList[heroID].push(Object.assign({}, {
+                      id: id,
+                      checksum: checksum
+                    }, dupeFile, isNew, oldSoundTS))
+                    checksumCache[checksum] = true
+                    if (dupeFile) {
+                      dupeFiles++;
+                      return r()
+                    }
+                    if (isNew) newFiles++
+                    if (soundsListOnly || !isNew) return r()
+                    copyFile(`./${hero}/Sound Dump/${dir}/${sound}`, `./!soundTemp/${heroID}-${sound}`, r)
+                  })
+                }))
               })
-            })).then(() => {
-              console.log("- Found", sounds.length, "sounds for", hero)
+            })).then(sounds => {
+              console.log("- Found", flattenDeep(sounds).length, "sounds for", hero)
               if (newFiles) {
                 console.log("-- Found", newFiles, "new sounds for", hero)
                 totalNewFiles += newFiles

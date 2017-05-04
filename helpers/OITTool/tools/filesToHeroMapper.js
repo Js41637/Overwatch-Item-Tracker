@@ -8,7 +8,9 @@ const weirdHeroes = {
   shocktire: 'shocktire',
   training: 'training-bot',
   zombardier: 'zombardier',
-  zomnic: 'zomnic'
+  zomnic: 'zomnic',
+  detonator: 'detonator',
+  eradicator: 'eradicator'
   
 }
 const mapFilesToHeroes = (args, internal) => {
