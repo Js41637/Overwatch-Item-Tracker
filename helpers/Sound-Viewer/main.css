@@ -113,22 +113,19 @@ h2 {
   overflow: hidden;
 }
 
-.sound.btn.new {
-  background-color: rgb(223, 240, 216);
-}
-
-.sound.btn.new.selected {
-  background-color: rgb(92, 184, 92)
-}
-
-.btn.selected, .btn.unselected {
-  color: rgb(51, 51, 51);
-  background-color: rgb(220, 220, 220);
-  border-color: rgb(173, 173, 173);
-}
-
 .btn-primary.hover {
   color: rgb(255, 255, 255);
   background-color: rgb(40, 96, 144);
   border-color: rgb(32, 77, 116);
+}
+
+.btn:hover, .btn.selected {
+  border-color: black;
+  box-shadow: 1px 1px 3px black;
+}
+
+.btn.unselected {
+  color: rgb(51, 51, 51);
+  background-color: rgb(220, 220, 220);
+  border-color: rgb(173, 173, 173);
 }
