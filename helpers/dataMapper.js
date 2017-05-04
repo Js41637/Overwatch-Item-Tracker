@@ -4,7 +4,7 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs')
-const { forEach, sortBy, find, reduce, merge } = require('lodash')
+const { forEach, sortBy, find, reduce, merge, isEmpty } = require('lodash')
 
 const mode = process.argv.slice(2)[0]
 
@@ -110,6 +110,8 @@ things.forEach((thingy, i) => {
     while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
       items[itemMatch[1].split(' ')[0]] = itemMatch[0].split('\n').slice(1).map(a => a.trim())
     }
+    
+    if (isEmpty(items)) return
     // if i == 1 we're on newRawData, add the new items on top of existing data
     if (i == 1) {
       for (var group  in items) {
