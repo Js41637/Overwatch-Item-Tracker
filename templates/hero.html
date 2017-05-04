@@ -53,8 +53,8 @@
         </ul>
       </div>
       <div class="toggle-grid btn btn-default" uib-tooltip="Toggle Grid View" ng-click="hero.toggleGrid()" tooltip-append-to-body="true">Toggle Grid</div>
-      <div class="select-all btn btn-default" uib-tooltip="Select all items currently in view" ng-click="hero.selectAll()" tooltip-append-to-body="true">Select All</div>
-      <div class="select-all btn btn-default" uib-tooltip="Unselect all items currently in view" ng-click="hero.unSelectAll()" tooltip-append-to-body="true">Unselect All</div>
+      <div class="select-all btn btn-default" uib-tooltip="Select all items currently in view" ng-click="hero.selectModal(false, 'select')" tooltip-append-to-body="true">Select All</div>
+      <div class="select-all btn btn-default" uib-tooltip="Unselect all items currently in view" ng-click="hero.selectModal(false, 'unselect')" tooltip-append-to-body="true">Unselect All</div>
     </div>
     <div class="hero-progress">
       <div class="hero-progress-bar" style="width: {{hero.totals.overall.percentage}}%; background-color: {{hero.colors.primary}}; border-top-color: {{hero.colors.highlight}}"></div>
@@ -93,8 +93,8 @@
               </svg>
             </div>
             <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
-              <li><a ng-click="hero.selectAll(false, type)">Select All</a></li>
-              <li><a ng-click="hero.unSelectAll(type)">Unselect All</a></li>
+              <li><a ng-click="hero.selectModal(type, 'select')">Select All</a></li>
+              <li><a ng-click="hero.selectModal(type, 'unselect')">Unselect All</a></li>
             </ul>
           </div>
         </div>

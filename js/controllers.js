@@ -312,17 +312,22 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     }
   }
 
-  this.unSelectAll = function(type) {
-    if (vm.totals.overall.selected == 0) return
+  this.selectModal = function(type, string) {
+    if (vm.totals.overall.selected == 0 && string == 'unselect') return
     var modal = $uibModal.open({
-      templateUrl: './templates/modals/unselect.html',
+      templateUrl: './templates/modals/select.html',
       controller: function($scope) {
         $scope.type = type
+        $scope.select = string
       }
     });
-    modal.result.then(function(unselect) {
-      if (unselect) {
-        vm.selectAll(true, type)
+    modal.result.then(function(goahead) {
+      if (goahead) {
+        if (string == 'select') {
+          vm.selectAll(false, type)
+        } else {
+          vm.selectAll(true, type)
+        }
       }
     })
   }
@@ -348,7 +353,6 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   var hideTimeout = undefined;
   $scope.showPreview = function(what, type) {
     if (!what.url) return;
-    if (event.id == 'UPRISING_2017' && type == 'voicelines') return
     if (CompatibilityService.canPlayType(type) === 'false') return
     if (showTimeout) return;
     var item = angular.copy(what);
