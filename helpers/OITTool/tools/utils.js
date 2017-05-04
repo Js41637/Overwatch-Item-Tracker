@@ -13,6 +13,11 @@ const hardCodedIds = {
   "Cheers.dds": "cheers1"
 }
 
+const badItems = {
+  'law': 'dva-law',
+  'oni': 'genji-oni'
+}
+
 const cleanFileIDs = (files, heroID) => {
   var itemIDCache = {}
   return files.map(file => {
@@ -21,8 +26,9 @@ const cleanFileIDs = (files, heroID) => {
       console.warn("ItemID collision found", id)
       id = `${id}1`
     }
-    id = hardCodedIds[file] || id
     itemIDCache[id] = true
+    // fml
+    id = !heroID && badItems[id] ? badItems[id] : (!heroID && hardCodedIds[file]) ? hardCodedIds[file] : id
     return { name: file, cleanName: id}
   })
 }
