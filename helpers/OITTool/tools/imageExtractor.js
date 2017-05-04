@@ -38,36 +38,18 @@ const findImages = hero => {
   })
 }
 
-// General images structure is different to heroes so it has it's own function
-const moveGeneralImages = type => {
-  return new Promise((resolve, reject) => {
-    getDirectories(`./General/${type}`).then(files => {
-      console.log("[General] Got", files.length, type, "files")
-      files = cleanFileIDs(files)
-      files.forEach(file => {
-        fs.createReadStream(`./General/${type}/${file.name}`).pipe(fs.createWriteStream(`./!toBeConverted/${type}/${file.cleanName}.dds`));
-      })
-      setTimeout(() => {
-        resolve()
-      }, 1000)
-    }).catch(reject)
-  })
-}
-
 const moveImages = (heroDir, type, heroID) => {
   return new Promise((resolve, reject) => {
-    if (!heroDir) {
-      return moveGeneralImages(type).then(resolve, reject)
-    }
-    return getDirectories(`./Heroes/${heroDir}/${type}`).then(events => {
+    const base = heroDir ? `Heroes/${heroDir}` : 'General'
+    return getDirectories(`./${base}/${type}`).then(events => {
       var totalFiles = 0
-      Promise.all(events.map(event => {
+      return Promise.all(events.map(event => {
         return new Promise(res => {
-          getDirectories(`./Heroes/${heroDir}/${type}/${event}`).then(files => {
+          return getDirectories(`./${base}/${type}/${event}`).then(files => {
             files = cleanFileIDs(files, heroID)
             files.forEach(file => {
               totalFiles++
-              fs.createReadStream(`./Heroes/${heroDir}/${type}/${event}/${file.name}`).pipe(fs.createWriteStream(`./!toBeConverted/${type}/${file.cleanName}.dds`));
+              fs.createReadStream(`./${base}/${type}/${event}/${file.name}`).pipe(fs.createWriteStream(`./!toBeConverted/${type}/${file.cleanName}.dds`));
             })
             setTimeout(() => {
               res()
@@ -75,7 +57,7 @@ const moveImages = (heroDir, type, heroID) => {
           })
         })
       })).then(() => {
-        console.log(`[Hero] ${heroID} - Got ${totalFiles} ${type} files`)
+        console.log(`[Hero] ${heroID || 'General'} - Got ${totalFiles} ${type} files`)
         resolve()
       })
     }).catch(reject)
