@@ -36,7 +36,7 @@ const checkTempDir = () => {
   })
 }
 
-const moveSoundFiles = soundsListOnly => {
+const moveSoundFiles = (soundsListOnly, extractAll) => {
   console.log("Mapping and moving sound files")
   var soundsList = {}, checksumCache = {}, totalFiles = 0, dupeFiles = 0, totalNewFiles = 0;
   return new Promise(resolve => {
@@ -69,7 +69,7 @@ const moveSoundFiles = soundsListOnly => {
                       return r()
                     }
                     if (isNew) newFiles++
-                    if (soundsListOnly || !isNew) return r()
+                    if (soundsListOnly || (!isNew && !extractAll)) return r()
                     copyFile(`./${hero}/Sound Dump/${dir}/${sound}`, `./!soundTemp/${heroID}-${sound}`, r)
                   })
                 }))
@@ -92,7 +92,7 @@ const moveSoundFiles = soundsListOnly => {
 const convertSoundFiles = dir => {
   return new Promise((resolve, reject) => {
     console.log("Converting sound files to ogg")
-    const buffer =  { maxBuffer: 1024 * 10000 }
+    const buffer =  { maxBuffer: 1024 * 20000 } // shit gets large
     const base = path.join(__dirname, "../programs")
 
     const ww2ogg = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem"') do (${base}\\ww2ogg.exe --pcb ${base}\\packed_codebooks_aoTuV_603.bin "%f")`
@@ -112,6 +112,13 @@ const convertSoundFiles = dir => {
       })
     })
   })
+}
+
+const saveSoundList = soundList => {
+  forEach(soundList, (sounds, hero) => {
+    soundList[hero] = sortBy(sounds, ['ts', 'id'])
+  })
+  fs.writeFileSync('./soundFiles.json', JSON.stringify(soundList, null, 2))
 }
 
 const extractSounds = args => {
@@ -134,16 +141,17 @@ const extractSounds = args => {
     forEach(existingSounds, sounds => forEach(sounds, sound => existingSoundIDs[sound.id] = sound.ts || true))
   }
 
-  var soundsListOnly = args[0]
+  var soundsListOnly = args[0] == 'list'
+  var extractAll = args[0] == 'all'
   const startTS = Date.now()
 
   checkTempDir()
-  moveSoundFiles(soundsListOnly).then(({ soundsList, checksumCache, totalFiles, dupeFiles, totalNewFiles }) => { //eslint-disable-line
+  moveSoundFiles(soundsListOnly, extractAll).then(({ soundsList, checksumCache, totalFiles, dupeFiles, totalNewFiles }) => { //eslint-disable-line
     console.log("Done generating and moving sound data")
     console.log("- Mapped", totalFiles, "sound files")
     console.log("- Detected", dupeFiles, "dupe files")
     console.log("- Detected", totalNewFiles, "new files")
-    fs.writeFileSync('./soundFiles.json', JSON.stringify(soundsList, null, 2))
+    saveSoundList(soundsList)
     if (soundsListOnly) return
 
     convertSoundFiles('!soundTemp').then(() => {
