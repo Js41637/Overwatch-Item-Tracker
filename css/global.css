@@ -923,6 +923,27 @@ strong {
   max-width: 1600px;
   margin: 0 auto;
   padding: 8px;
+  position: relative;
+}
+
+#home #hero-nav .gallery.home-btn {
+  display: none;
+}
+
+#hero-nav .gallery.home-btn {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+}
+
+#hero-nav .gallery.home-btn .block {
+  padding: 10px;
+  font-size: 40px;
+}
+
+#hero-nav .gallery.home-btn .block .bg {
+  top: 0;
+  left: 0;
 }
 
 #hero-nav .gallery>div {
@@ -931,7 +952,7 @@ strong {
   justify-content: center;
 }
 
-#hero-nav .gallery:first-of-type {
+#hero-nav .gallery.events {
   margin-bottom: 20px;
 }
 
