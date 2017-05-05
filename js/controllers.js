@@ -251,7 +251,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
  
   // Return the url for an image or video, also check if we're showing HD videos
   this.getPreviewURL = function(item, type, hero, image) {
-    var base = './resources/heroes/' + (item.hero || hero) + '/' + type + '/' + item.id;
+    var base = 'https://s3.amazonaws.com/oit-resources/heroes/' + (item.hero || hero) + '/' + type + '/' + item.id;
     var out = {}
     if (type == 'intros' || type == 'emotes') {
       out.video = base + '.webm'

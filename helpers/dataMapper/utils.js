@@ -58,8 +58,8 @@ const getCleanID = (what, hero) => {
 
 // Returns the image or video URL for an item
 const getPreviewURL = (type, event, id, hero) => {
-  const baseUrl = `./resources/updates/${event}/${type}/${id}`
-  const heroUrl = `./resources/heroes/${hero}/${type}/${id}`
+  const baseUrl = `https://s3.amazonaws.com/oit-resources/updates/${event}/${type}/${id}`
+  const heroUrl = `https://s3.amazonaws.com/oit-resources/heroes/${hero}/${type}/${id}`
   switch (type) {
     case 'voicelines':
       return `${heroUrl}.ogg`

@@ -184,7 +184,7 @@
 }
 
 #event-container #sprays .item[achievement="true"] label:after {
-  background-image: url("../resources/icons/achievement.svg");
+  background-image: url("https://s3.amazonaws.com/oit-resources/icons/achievement.svg");
   content: "";
   width: 25px;
   height: 25px;

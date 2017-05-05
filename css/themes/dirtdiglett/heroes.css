@@ -19,7 +19,7 @@
 }
 
 #background {
-  background: url(resources/bg.png) no-repeat top;
+  background: url(https://s3.amazonaws.com/oit-resources/bg.png) no-repeat top;
   background-size: cover;
   background-color: #293347;
   filter: none;
@@ -55,23 +55,23 @@
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES_2016"]:before {
-  background-image: url(resources/icons/events/SUMMER_GAMES_2016.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/events/SUMMER_GAMES_2016.svg);
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"]:before {
-  background-image: url(resources/icons/events/HALLOWEEN_2016.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/events/HALLOWEEN_2016.svg);
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"]:before {
-  background-image: url(resources/icons/events/WINTER_WONDERLAND_2016.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/events/WINTER_WONDERLAND_2016.svg);
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"]:before {
-  background-image: url(resources/icons/events/YEAR_OF_THE_ROOSTER_2017.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/events/YEAR_OF_THE_ROOSTER_2017.svg);
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before {
-  background-image: url(resources/icons/events/UPRISING_2017.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/events/UPRISING_2017.svg);
 }
 
 #hero-container #hero-header {
@@ -460,7 +460,7 @@
 
 #hero-container .hero-grid .item:not(.selected):before {
     content: "";
-    background-image: url(resources/icons/lock.svg) !important;
+    background-image: url(https://s3.amazonaws.com/oit-resources/icons/lock.svg) !important;
     width: 26px;
     height: 26px;
     position: absolute;
@@ -519,23 +519,23 @@
 /* Event Icons */
 
 #hero-container .hero-items .item[event="HALLOWEEN_2016"]:after {
-  background-image: url(resources/icons/events/HALLOWEEN_2016.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/events/HALLOWEEN_2016.svg);
 }
 
 #hero-container .hero-items .item[event="SUMMER_GAMES_2016"]:after {
-  background-image: url(resources/icons/events/SUMMER_GAMES_2016.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/events/SUMMER_GAMES_2016.svg);
 }
 
 #hero-container .hero-items .item[event="WINTER_WONDERLAND_2016"]:after {
-  background-image: url(resources/icons/events/WINTER_WONDERLAND_2016.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/events/WINTER_WONDERLAND_2016.svg);
 }
 
 #hero-container .hero-items .item[event="YEAR_OF_THE_ROOSTER_2017"]:after {
-  background-image: url(resources/icons/events/YEAR_OF_THE_ROOSTER_2017.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/events/YEAR_OF_THE_ROOSTER_2017.svg);
 }
 
 #hero-container .hero-items .item[event="UPRISING_2017"]:after {
-    background-image: url(resources/icons/events/UPRISING_2017.svg);
+    background-image: url(https://s3.amazonaws.com/oit-resources/icons/events/UPRISING_2017.svg);
 }
 
 
@@ -735,127 +735,127 @@ body #hero-container .hero-overview {
 }
 
 body#all #hero-container .hero-overview {
-  background-image: url(resources/allclass.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/allclass.jpg);
   background-position: 50% 62%;
 }
 
 body#ana #hero-container .hero-overview {
-  background-image: url(resources/heroes/ana/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/ana/background-story.jpg);
   background-position: 50% 14%;
 }
 
 body#bastion #hero-container .hero-overview {
-  background-image: url(resources/heroes/bastion/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/bastion/background-story.jpg);
   background-position: 50% 6%;
 }
 
 body#dva #hero-container .hero-overview {
-  background-image: url(resources/heroes/dva/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/dva/background-story.jpg);
   background-position: 50% 44%;
 }
 
 body#genji #hero-container .hero-overview {
-  background-image: url(resources/heroes/genji/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/genji/background-story.jpg);
   background-position: 50% 15%;
 }
 
 body#hanzo #hero-container .hero-overview {
-  background-image: url(resources/heroes/hanzo/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/hanzo/background-story.jpg);
   background-position: 50% 2%;
 }
 
 body#junkrat #hero-container .hero-overview {
-  background-image: url(resources/heroes/junkrat/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/junkrat/background-story.jpg);
   background-position: 50% 5%;
 }
 
 body#lucio #hero-container .hero-overview {
-  background-image: url(resources/heroes/lucio/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/lucio/background-story.jpg);
   background-position: 50% 5%;
 }
 
 body#mccree #hero-container .hero-overview {
-  background-image: url(resources/heroes/mccree/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/mccree/background-story.jpg);
   background-position: 50% 13%;
 }
 
 body#mei #hero-container .hero-overview {
-  background-image: url(resources/heroes/mei/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/mei/background-story.jpg);
   background-position: 50% 15%;
 }
 
 body#mercy #hero-container .hero-overview {
-  background-image: url(resources/heroes/mercy/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/mercy/background-story.jpg);
   background-position: 50% 10%;
 }
 
 body#orisa #hero-container .hero-overview {
-  background-image: url(resources/heroes/orisa/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/orisa/background-story.jpg);
   background-position: 50% 33%;
 }
 
 body#pharah #hero-container .hero-overview {
-  background-image: url(resources/heroes/pharah/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/pharah/background-story.jpg);
   background-position: 50% 16%;
 }
 
 body#reaper #hero-container .hero-overview {
-  background-image: url(resources/heroes/reaper/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/reaper/background-story.jpg);
   background-position: 50% 20%;
 }
 
 body#reinhardt #hero-container .hero-overview {
-  background-image: url(resources/heroes/reinhardt/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/reinhardt/background-story.jpg);
   background-position: 50% 32%;
 }
 
 body#roadhog #hero-container .hero-overview {
-  background-image: url(resources/heroes/roadhog/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/roadhog/background-story.jpg);
   background-position: 50% 25%;
 }
 
 body#soldier-76 #hero-container .hero-overview {
-  background-image: url(resources/heroes/soldier-76/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/soldier-76/background-story.jpg);
   background-position: 50% 8%;
 }
 
 body#sombra #hero-container .hero-overview {
-  background-image: url(resources/heroes/sombra/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/sombra/background-story.jpg);
   background-position: 50% 37%;
 }
 
 body#symmetra #hero-container .hero-overview {
-  background-image: url(resources/heroes/symmetra/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/symmetra/background-story.jpg);
   background-position: 50% 7%;
 }
 
 body#torbjorn #hero-container .hero-overview {
-  background-image: url(resources/heroes/torbjorn/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/torbjorn/background-story.jpg);
   background-position: 50% 28%;
 }
 
 body#tracer #hero-container .hero-overview {
-  background-image: url(resources/heroes/tracer/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/tracer/background-story.jpg);
   background-position: 50% 13%;
 }
 
 body#widowmaker #hero-container .hero-overview {
-  background-image: url(resources/heroes/widowmaker/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/widowmaker/background-story.jpg);
   background-position: 50% 13%;
 }
 
 body#winston #hero-container .hero-overview {
-  background-image: url(resources/heroes/winston/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/winston/background-story.jpg);
   background-position: 50% 42%;
 }
 
 body#zarya #hero-container .hero-overview {
-  background-image: url(resources/heroes/zarya/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/zarya/background-story.jpg);
   background-position: 50% 12%;
 }
 
 body#zenyatta #hero-container .hero-overview {
-  background-image: url(resources/heroes/zenyatta/background-story.jpg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/heroes/zenyatta/background-story.jpg);
   background-position: 50% 18%;
 }
 
@@ -878,7 +878,7 @@ body#zenyatta #hero-container .hero-overview {
 }
 
 body#all .hero-name:after {
-  background-image: url(../../../resources/logo.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/logo.svg);
 }
 
 body#genji .hero-name:after,
@@ -888,7 +888,7 @@ body#reaper .hero-name:after,
 body#soldier-76 .hero-name:after,
 body#sombra .hero-name:after,
 body#tracer .hero-name:after {
-  background-image: url(resources/icons/roles/offense.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/roles/offense.svg);
 }
 
 body#bastion .hero-name:after,
@@ -897,7 +897,7 @@ body#junkrat .hero-name:after,
 body#mei .hero-name:after,
 body#torbjorn .hero-name:after,
 body#widowmaker .hero-name:after {
-  background-image: url(resources/icons/roles/defence.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/roles/defence.svg);
 }
 
 body#dva .hero-name:after,
@@ -906,7 +906,7 @@ body#reinhardt .hero-name:after,
 body#roadhog .hero-name:after,
 body#winston .hero-name:after,
 body#zarya .hero-name:after {
-  background-image: url(resources/icons/roles/tank.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/roles/tank.svg);
 }
 
 body#ana .hero-name:after,
@@ -914,7 +914,7 @@ body#lucio .hero-name:after,
 body#mercy .hero-name:after,
 body#symmetra .hero-name:after,
 body#zenyatta .hero-name:after {
-  background-image: url(resources/icons/roles/support.svg);
+  background-image: url(https://s3.amazonaws.com/oit-resources/icons/roles/support.svg);
 }
 
 #hero-container .hero-overview .hero-class {
@@ -986,27 +986,27 @@ body#zenyatta .hero-name:after {
 }
 
 #hero-nav .gallery.event .block[href$="/events/SUMMER_GAMES_2016"] {
-  background: url(resources/SUMMER_GAMES_2016/bg.jpg);
+  background: url(https://s3.amazonaws.com/oit-resources/SUMMER_GAMES_2016/bg.jpg);
   background-size: cover;
 }
 
 #hero-nav .gallery.event .block[href$="/events/HALLOWEEN_2016"] {
-  background: url(resources/HALLOWEEN_2016/bg.jpg);
+  background: url(https://s3.amazonaws.com/oit-resources/HALLOWEEN_2016/bg.jpg);
   background-size: cover;
 }
 
 #hero-nav .gallery.event .block[href$="/events/WINTER_WONDERLAND_2016"] {
-  background: url(resources/WINTER_WONDERLAND_2016/bg.jpg);
+  background: url(https://s3.amazonaws.com/oit-resources/WINTER_WONDERLAND_2016/bg.jpg);
   background-size: cover;
 }
 
 #hero-nav .gallery.event .block[href$="/events/YEAR_OF_THE_ROOSTER_2017"] {
-  background: url(resources/YEAR_OF_THE_ROOSTER_2017/bg.jpg);
+  background: url(https://s3.amazonaws.com/oit-resources/YEAR_OF_THE_ROOSTER_2017/bg.jpg);
   background-size: cover;
 }
 
 #hero-nav .gallery.event .block[href$="/events/UPRISING_2017"] {
-  background: url(resources/UPRISING_2017/bg.jpg);
+  background: url(https://s3.amazonaws.com/oit-resources/UPRISING_2017/bg.jpg);
   background-size: cover;
 }
 
@@ -1024,7 +1024,7 @@ body#zenyatta .hero-name:after {
 
 #hero-nav .gallery.hero .block .imgcont {
   height: calc(100% - 30px);
-  background: url(resources/bg.png) no-repeat top;
+  background: url(https://s3.amazonaws.com/oit-resources/bg.png) no-repeat top;
 }
 
 #hero-nav .gallery.hero .block:hover .imgcont {
@@ -1058,7 +1058,7 @@ label[for="skinsgenji-blackwatch"]:after,
 skinsmccree-blackwatch:after,
 label[for="skinsmccree-blackwatch"]:after {
   content: "";
-  background: url(resources/shrug.png);
+  background: url(https://s3.amazonaws.com/oit-resources/shrug.png);
   position: fixed;
   bottom: -500px;
   left: 50%;

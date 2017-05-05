@@ -1,8 +1,9 @@
 <div id="sub-header">
   <div id="cost-remaining" uib-tooltip-template="'costRemaining.html'" tooltip-placement="left">
-    <img src="./resources/icons/currency.png" /> <span count-to="{{cost.remaining}}" count-from="{{cost.prev}}"></span>
+    <img src="https://s3.amazonaws.com/oit-resources/icons/currency.png" /> <span count-to="{{cost.remaining}}" count-from="{{cost.prev}}"></span>
   </div>
   <script type="text/ng-template" id="costRemaining.html">
       <span>Cost to purchase remaining items <br/> {{cost.total | number }} in total<br/>{{cost.selected | number}} to buy selected items</span>
     </script>
 </div>
+1

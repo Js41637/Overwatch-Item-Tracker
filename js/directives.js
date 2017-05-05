@@ -6,13 +6,13 @@ var types = {
 
 OWI.filter('heroImg', function() {
   return function(hero, type) {
-    return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + types[type];
+    return hero == 'all' ? 'https://s3.amazonaws.com/oit-resources/logo.svg' : 'https://s3.amazonaws.com/oit-resources/heroes/' + hero + types[type];
   }
 });
 
 OWI.filter('eventImageUrl', function() {
   return function(event) {
-    return './resources/updates/' + event + '/logo.png';
+    return 'https://s3.amazonaws.com/oit-resources/updates/' + event + '/logo.png';
   }
 });
 
