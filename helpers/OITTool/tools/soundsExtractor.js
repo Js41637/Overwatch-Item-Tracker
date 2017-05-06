@@ -55,7 +55,8 @@ const moveSoundFiles = (soundsListOnly, extractAll) => {
                   return new Promise(r => {
                     totalFiles++;
                     const checksum = getFileSize(`./${hero}/Sound Dump/${dir}/${sound}`)
-                    const dupeFile = checksum in checksumCache ? { dupe: true } : undefined
+                    const dupeFile = checksum in checksumCache ? { dupe: { hero: checksumCache[checksum].hero, id: checksumCache[checksum].id } } : undefined
+                    
                     const id = sound.replace('.wem', '')
                     const oldSoundTS = (existingSoundIDs[id] && existingSoundIDs[id].length) ? { ts: existingSoundIDs[id] } : undefined
                     const isNew = !existingSoundIDs[id] ? { ts: timestamp } : undefined
@@ -63,7 +64,10 @@ const moveSoundFiles = (soundsListOnly, extractAll) => {
                       id: id,
                       checksum: checksum
                     }, dupeFile, isNew, oldSoundTS))
-                    checksumCache[checksum] = true
+                    checksumCache[checksum] = {
+                      hero: heroID,
+                      id
+                    }
                     if (dupeFile) {
                       dupeFiles++;
                       return r()
