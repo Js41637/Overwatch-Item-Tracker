@@ -705,9 +705,9 @@ strong {
 
 #legendary-skins [type="checkbox"]:not(:checked)+label:before, #legendary-skins [type="checkbox"]:checked+label:before {
   content: '';
-  position: absolute;
+  position: fixed;
   left: 6px;
-  top: -314px;
+  top: 6px;
   width: 17px;
   height: 17px;
   border: 2px solid rgba(255, 255, 255, 0.6);
@@ -723,9 +723,9 @@ strong {
 
 #legendary-skins [type="checkbox"]:not(:checked)+label:after, #legendary-skins [type="checkbox"]:checked+label:after {
   content: '';
-  position: absolute;
-  top: -312px;
-  left: 7px;
+  position: fixed;
+  top: 7px;
+  left: 6px;
   width: 19px;
   height: 14px;
   color: #84ff4e;
@@ -778,6 +778,7 @@ strong {
   background-position: center;
   width: 25%;
   margin-right: 0.5%;
+  transform: translateZ(0);
 }
 
 .card:before {
@@ -963,7 +964,7 @@ strong {
 }
 
 #hero-nav .gallery .block:hover .bg {
-  background-color: rgb(255, 165, 0); 
+  background-color: rgb(255, 165, 0);
 }
 
 #hero-nav .gallery .block .img {
