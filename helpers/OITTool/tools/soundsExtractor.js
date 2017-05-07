@@ -35,16 +35,34 @@ const checkTempDir = () => {
     }
   })
 }
+const validHeroes = Object.keys(HERODATA)
+const isValidHero = hero => {
+  return validHeroes.includes(hero)
+}
+
+const groupedHeroes = {
+  'friendly-bot': 'training-bot',
+  'training-bot': 'training-bot',
+  shocktire: 'halloween-bots',
+  zombardier: 'halloween-bots',
+  zomnic: 'halloween-bots',
+  detonator: 'uprising-bots',
+  eradicator: 'uprising-bots',
+  nulltrooper: 'uprising-bots',
+  slicer: 'uprising-bots'
+}
 
 const moveSoundFiles = (soundsListOnly, extractAll) => {
   console.log("Mapping and moving sound files")
   var soundsList = {}, checksumCache = {}, totalFiles = 0, dupeFiles = 0, totalNewFiles = 0;
   return new Promise(resolve => {
     return getDirectories('./').then(heroes => {
-      heroes = sortBy(heroes, [h => !Object.keys(HERODATA).includes(getCleanID(h))])
+      heroes = sortBy(heroes, [h => !isValidHero(getCleanID(h))])
       // Go through every hero, 1 at a time to prevent node from dying
       eachLimit(heroes, 1, (hero, cb) => {
         var heroID = getCleanID(hero)
+        heroID = groupedHeroes[heroID] || heroID
+        const isHero = isValidHero(heroID)
         soundsList[heroID] = []
         var newFiles = 0
         return getDirectories(`./${hero}`).then(() => {
@@ -55,23 +73,19 @@ const moveSoundFiles = (soundsListOnly, extractAll) => {
                   return new Promise(r => {
                     totalFiles++;
                     const checksum = getFileSize(`./${hero}/Sound Dump/${dir}/${sound}`)
-                    const dupeFile = checksum in checksumCache ? { dupe: { hero: checksumCache[checksum].hero, id: checksumCache[checksum].id } } : undefined
-                    
+                    const dupeFile = checksum in checksumCache
                     const id = sound.replace('.wem', '')
                     const oldSoundTS = (existingSoundIDs[id] && existingSoundIDs[id].length) ? { ts: existingSoundIDs[id] } : undefined
                     const isNew = !existingSoundIDs[id] ? { ts: timestamp } : undefined
-                    soundsList[heroID].push(Object.assign({}, {
-                      id: id,
-                      checksum: checksum
-                    }, dupeFile, isNew, oldSoundTS))
-                    checksumCache[checksum] = {
-                      hero: heroID,
-                      id
-                    }
-                    if (dupeFile) {
+                    if (dupeFile && !isHero) {
                       dupeFiles++;
                       return r()
                     }
+                    soundsList[heroID].push(Object.assign({}, {
+                      id: id,
+                      checksum: checksum,
+                    }, isNew, oldSoundTS))
+                    if (isHero) checksumCache[checksum] = true
                     if (isNew) newFiles++
                     if (soundsListOnly || (!isNew && !extractAll)) return r()
                     copyFile(`./${hero}/Sound Dump/${dir}/${sound}`, `./!soundTemp/${heroID}-${sound}`, r)
@@ -93,13 +107,13 @@ const moveSoundFiles = (soundsListOnly, extractAll) => {
   })
 }
 
-const convertSoundFiles = dir => {
+const convertSoundFiles = (dir, noDelete) => {
   return new Promise((resolve, reject) => {
     console.log("Converting sound files to ogg")
     const buffer =  { maxBuffer: 1024 * 20000 } // shit gets large
     const base = path.join(__dirname, "../programs")
 
-    const ww2ogg = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem"') do (${base}\\ww2ogg.exe --pcb ${base}\\packed_codebooks_aoTuV_603.bin "%f")`
+    const ww2ogg = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem" "./${dir}\\*.0B2" "./${dir}\\*.03F"') do (${base}\\ww2ogg.exe --pcb ${base}\\packed_codebooks_aoTuV_603.bin "%f")`
     const revorb = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.ogg"') do (${base}\\revorb.exe "%f")`
     const del = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem"') do (del "%f")`
 
@@ -108,6 +122,7 @@ const convertSoundFiles = dir => {
       console.log("Running revorb on all converted ogg files")
       exec(revorb, buffer, err2 => {
         if (err2) return reject("Error running revorb")
+        if (noDelete) return resolve()
         console.log("Deleting old .wem files")
         exec(del, buffer, err3 => {
           if (err3) return reject("Error deleting old .wem files")
@@ -127,7 +142,7 @@ const saveSoundList = soundList => {
 
 const extractSounds = args => {
   if (args[0] == 'ignore') {
-    convertSoundFiles('')
+    convertSoundFiles('', true)
     return
   }
   if (!process.cwd().match(/OverwatchAssets\\Heroes$/)) {
