@@ -1,5 +1,5 @@
 body {
-  background: url(https://s3.amazonaws.com/oit-resources/body-bg.jpg) no-repeat top;
+  background: url(../../../resources/body-bg.jpg) no-repeat top;
   background-size: cover;
 }
 
@@ -342,17 +342,17 @@ body {
 }
 
 #SUMMER_GAMES_2016 #background {
-  background-image: url(https://s3.amazonaws.com/oit-resources/SUMMER_GAMES_2016/bg.jpg);
+  background-image: url(resources/SUMMER_GAMES_2016/bg.jpg);
 }
 
 #SUMMER_GAMES_2016 #event-container #image-preview .card .bg2,
 #SUMMER_GAMES_2016 #event-container #legendary-skins .inner .card {
-  background-image: url(https://s3.amazonaws.com/oit-resources/SUMMER_GAMES_2016/preview-bg.png);
+  background-image: url(resources/SUMMER_GAMES_2016/preview-bg.png);
 }
 
 #SUMMER_GAMES_2016 #header:before {
   width: 60px;
-  background-image: url(https://s3.amazonaws.com/oit-resources/updates/SUMMER_GAMES_2016/logo.png);
+  background-image: url(../../../resources/updates/SUMMER_GAMES_2016/logo.png);
 }
 
 #SUMMER_GAMES_2016 .event-ended {
@@ -457,7 +457,7 @@ body {
 /* HALLOWEEN 2016 */
 #HALLOWEEN_2016 #header:before {
   width: 142px;
-  background-image: url(https://s3.amazonaws.com/oit-resources/updates/HALLOWEEN_2016/logo.png);
+  background-image: url(../../../resources/updates/HALLOWEEN_2016/logo.png);
 }
 
 #HALLOWEEN_2016 .event-ended {
@@ -475,11 +475,11 @@ body {
 }
 
 #HALLOWEEN_2016 #background {
-  background-image: url(https://s3.amazonaws.com/oit-resources/HALLOWEEN_2016/bg.jpg);
+  background-image: url(resources/HALLOWEEN_2016/bg.jpg);
 }
 
 #HALLOWEEN_2016 #event-container .card:before {
-  background-image: url(https://s3.amazonaws.com/oit-resources/HALLOWEEN_2016/header.png);
+  background-image: url(resources/HALLOWEEN_2016/header.png);
   background-size: 100%;
   border: 0;
   background-position: center bottom;
@@ -504,7 +504,7 @@ body {
 
 #HALLOWEEN_2016 #event-container #image-preview .card .bg2,
 #HALLOWEEN_2016 #event-container #legendary-skins .inner .card {
-  background-image: url(https://s3.amazonaws.com/oit-resources/HALLOWEEN_2016/preview-bg.png);
+  background-image: url(resources/HALLOWEEN_2016/preview-bg.png);
 }
 
 #HALLOWEEN_2016 #event-container .section-header {
@@ -574,7 +574,7 @@ body {
 #WINTER_WONDERLAND_2016 #header:before {
   width: 193px;
   top: 78px;
-  background-image: url(https://s3.amazonaws.com/oit-resources/updates/WINTER_WONDERLAND_2016/logo.png);
+  background-image: url(../../../resources/updates/WINTER_WONDERLAND_2016/logo.png);
 }
 
 #WINTER_WONDERLAND_2016 .event-ended {
@@ -584,16 +584,16 @@ body {
 }
 
 #WINTER_WONDERLAND_2016 #background {
-  background-image: url(https://s3.amazonaws.com/oit-resources/WINTER_WONDERLAND_2016/bg.jpg);
+  background-image: url(resources/WINTER_WONDERLAND_2016/bg.jpg);
 }
 
 #WINTER_WONDERLAND_2016 #event-container #image-preview .card .bg2,
 #WINTER_WONDERLAND_2016 #event-container #legendary-skins .inner .card {
-  background-image: url(https://s3.amazonaws.com/oit-resources/WINTER_WONDERLAND_2016/preview-bg.png);
+  background-image: url(resources/WINTER_WONDERLAND_2016/preview-bg.png);
 }
 
 #WINTER_WONDERLAND_2016 #event-container .card:before {
-  border-image: url(https://s3.amazonaws.com/oit-resources/WINTER_WONDERLAND_2016/card-border.png) 24 repeat;
+  border-image: url(resources/WINTER_WONDERLAND_2016/card-border.png) 24 repeat;
 }
 
 #WINTER_WONDERLAND_2016 #event-container .card:after {
@@ -624,7 +624,7 @@ body {
   left: -2px;
   top: -5px;
   z-index: 2;
-  background: url(https://s3.amazonaws.com/oit-resources/WINTER_WONDERLAND_2016/header-left.png) no-repeat center center;
+  background: url(resources/WINTER_WONDERLAND_2016/header-left.png) no-repeat center center;
 }
 
 #WINTER_WONDERLAND_2016 #event-container .section-header:after {
@@ -635,7 +635,7 @@ body {
     right: -3px;
     top: -6px;
     z-index: 2;
-    background: url(https://s3.amazonaws.com/oit-resources/WINTER_WONDERLAND_2016/header-right.png) no-repeat center center;
+    background: url(resources/WINTER_WONDERLAND_2016/header-right.png) no-repeat center center;
 }
 
 #WINTER_WONDERLAND_2016 .event-ended h2 {
@@ -714,13 +714,13 @@ body {
 
 /* YEAR OF THE ROOSTER 2017 */
 #YEAR_OF_THE_ROOSTER_2017 #background {
-  background-image: url(https://s3.amazonaws.com/oit-resources/YEAR_OF_THE_ROOSTER_2017/bg.jpg);
+  background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/bg.jpg);
 }
 
 #YEAR_OF_THE_ROOSTER_2017 #header:before {
   width: 65px;
   top: 78px;
-  background-image: url(https://s3.amazonaws.com/oit-resources/updates/YEAR_OF_THE_ROOSTER_2017/logo.png);
+  background-image: url(../../../resources/updates/YEAR_OF_THE_ROOSTER_2017/logo.png);
 }
 
 #YEAR_OF_THE_ROOSTER_2017 .event-active,
@@ -736,13 +736,13 @@ body {
 
 #YEAR_OF_THE_ROOSTER_2017 #event-container #image-preview .card .bg2,
 #YEAR_OF_THE_ROOSTER_2017 #event-container #legendary-skins .inner .card {
-  background-image: url(https://s3.amazonaws.com/oit-resources/YEAR_OF_THE_ROOSTER_2017/preview-bg.png);
+  background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/preview-bg.png);
 }
 
 #YEAR_OF_THE_ROOSTER_2017 #header {
   height: 80px;
   background-color: transparent;
-  background-image: url(https://s3.amazonaws.com/oit-resources/YEAR_OF_THE_ROOSTER_2017/header.png);
+  background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/header.png);
   background-position: center 84px;
 }
 
@@ -774,7 +774,7 @@ body {
 }
 
 #YEAR_OF_THE_ROOSTER_2017 #event-container .card:before {
-  border-image: url(https://s3.amazonaws.com/oit-resources/YEAR_OF_THE_ROOSTER_2017/card-border.png) 17 repeat;
+  border-image: url(resources/YEAR_OF_THE_ROOSTER_2017/card-border.png) 17 repeat;
 }
 
 #YEAR_OF_THE_ROOSTER_2017 #event-container .card:after {
@@ -812,7 +812,7 @@ body {
 }
 
 #YEAR_OF_THE_ROOSTER_2017 #event-container .section {
-  background-image: url(https://s3.amazonaws.com/oit-resources/YEAR_OF_THE_ROOSTER_2017/header.png);
+  background-image: url(resources/YEAR_OF_THE_ROOSTER_2017/header.png);
   background-position: center -26px;
   background-repeat: repeat-x;
   border-radius: 4px;
@@ -880,13 +880,13 @@ body {
 
 
 #UPRISING_2017 #background {
-  background-image: url(https://s3.amazonaws.com/oit-resources/UPRISING_2017/bg.jpg);
+  background-image: url(resources/UPRISING_2017/bg.jpg);
 }
 
 #UPRISING_2017 #header:before {
   width: 177px;
   top: 78px;
-  background-image: url(https://s3.amazonaws.com/oit-resources/updates/UPRISING_2017/logo.png);
+  background-image: url(../../../resources/updates/UPRISING_2017/logo.png);
 }
 
 #UPRISING_2017 .event-active,
@@ -1203,7 +1203,7 @@ body {
   right: 0;
   top: -5px;
   background-position: center;
-  background-image: url(https://s3.amazonaws.com/oit-resources/icons/achievement.svg);
+  background-image: url(resources/icons/achievement.svg);
 }
 
 
@@ -1220,7 +1220,7 @@ body {
 #UPRISING_2017 #legendary-skins .inner .card:nth-child(1):after,
 #UPRISING_2017 #legendary-skins .inner .card:nth-child(2):after {
   content: "";
-  background: url(https://s3.amazonaws.com/oit-resources/shrug.png);
+  background: url(resources/shrug.png);
   position: fixed;
   bottom: -500px;
   left: 50%;

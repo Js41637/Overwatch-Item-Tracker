@@ -182,7 +182,7 @@ body {
   border: 1px solid rgb(240, 240, 240);
   border-radius: 4px;
   transition: background 100ms ease-in-out, transform 100ms ease-in-out;
-  background: url(https://s3.amazonaws.com/oit-resources/body-bg.jpg) no-repeat top;
+  background: url(../resources/body-bg.jpg) no-repeat top;
   background-size: cover;
   width: 29px;
   overflow: hidden;
@@ -212,7 +212,7 @@ body {
 }
 
 #background {
-  background: url(https://s3.amazonaws.com/oit-resources/body-bg.jpg) no-repeat top;
+  background: url(../resources/body-bg.jpg) no-repeat top;
   background-size: cover;
   position: fixed;
   width: 100%;
@@ -561,7 +561,7 @@ strong {
   bottom: 0;
   z-index: -1;
   background-size: cover;
-  background-image: url(https://s3.amazonaws.com/oit-resources/portrait-bg.jpg);
+  background-image: url(../resources/portrait-bg.jpg);
 }
 
 #image-preview .preview, #image-preview .imgcont {
@@ -1008,7 +1008,7 @@ strong {
   border-radius: 4px;
   cursor: pointer;
   transition: transform 100ms ease-in-out;
-  background: url(https://s3.amazonaws.com/oit-resources/body-bg.jpg) no-repeat top;
+  background: url(../resources/body-bg.jpg) no-repeat top;
   background-size: cover;
 }
 
