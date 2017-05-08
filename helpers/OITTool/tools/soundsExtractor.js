@@ -115,7 +115,7 @@ const convertSoundFiles = (dir, noDelete) => {
 
     const ww2ogg = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem" "./${dir}\\*.0B2" "./${dir}\\*.03F"') do (${base}\\ww2ogg.exe --pcb ${base}\\packed_codebooks_aoTuV_603.bin "%f")`
     const revorb = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.ogg"') do (${base}\\revorb.exe "%f")`
-    const del = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem"') do (del "%f")`
+    const del = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem" "./${dir}\\*.0B2" "./${dir}\\*.03F"') do (del "%f")`
 
     exec(ww2ogg, buffer, (err, stdout, stderr) => {
       if (err)  return reject(`Error converting files to OGG \n ===START ERROR===\n${err}\n${stderr}\n===END ERROR===`)
@@ -141,8 +141,11 @@ const saveSoundList = soundList => {
 }
 
 const extractSounds = args => {
+  const startTS = Date.now()
   if (args[0] == 'ignore') {
-    convertSoundFiles('', true)
+    convertSoundFiles('', args[1]).then(() => {
+      console.log("Finished doing sound stuff in", moment.duration(Date.now() - startTS).asMinutes(), "minutes")
+    })
     return
   }
   if (!process.cwd().match(/OverwatchAssets\\Heroes$/)) {
@@ -162,7 +165,6 @@ const extractSounds = args => {
 
   var soundsListOnly = args[0] == 'list'
   var extractAll = args[0] == 'all'
-  const startTS = Date.now()
 
   checkTempDir()
   moveSoundFiles(soundsListOnly, extractAll).then(({ soundsList, checksumCache, totalFiles, dupeFiles, totalNewFiles }) => { //eslint-disable-line
