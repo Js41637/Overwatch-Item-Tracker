@@ -50,8 +50,49 @@ try {
   console.log("missing data")
 } // eslint-disable-line
 
+var data = {}
+var things = ['rawData', 'newRawData']
+things.forEach((thingy, i) => {
+  console.info('Parsing', thingy)
+  if (!raw[thingy]) return
+  const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g
+  const heroGroups = raw[thingy].replace(/\r\n/g, '\n').split('\n').filter(a => !a.includes("Error unknown")).join('\n').split('\n\n')
+
+  heroGroups.forEach(heroData => {
+    if (!heroData.length) return
+    const hero = heroData.split('\n')[0].split(' ').slice(2).join(' ') // name of hero
+    let rawItems = heroData.split('\n').slice(1).join('\n') // remove the first line containing name of hero
+    var items = {}, itemMatch;
+    while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
+      items[itemMatch[1].split(' ')[0]] = itemMatch[0].split(/\n\t\t(?!\t)/).slice(1).map(a => a.trim())
+    }
+    
+    // Filter out Uprising bots
+    if (isEmpty(items.COMMON) && i == 0) {
+      console.warn(`Skipping ${hero} as it has no items`)
+      return
+    }
+
+    // if i == 1 we're on newRawData, add the new items on top of existing data
+    if (i == 1) {
+      for (var group  in items) {
+        for (var item of items[group]) {
+          if (!data[hero]) {
+            console.warn(hero, "doesn't exist in data")
+            continue
+          }
+          data[hero].items[group].push(item)
+        }
+      }
+    } else {
+      data[hero] = { hero, items }
+    }
+  })
+})
+
 // AllClassData that isn't automatically generated can be manually added in missingAllClassData.json
 // parsing missing items and if they have a name, add them to an object similar to allClassData
+console.info('Parsing missingAllClassData')
 var noLongerMissingAllClassData = reduce(missingAllClassData, (result, items, type) => {
   if (!result[type]) result[type] = []
   items = reduce(items, (newItems = [], item) => {
@@ -67,6 +108,7 @@ forEach(noLongerMissingAllClassData, (items, type) => allClassData[type] = [...a
 
 // Create object containing allclass item names by key so we can easily map event ids to items.
 // also check if any items are in allClassEventItems and mark them as event items
+console.info('Generating allClass data')
 allClassData = reduce(allClassData, (result, items, type) => {
   let idCache = {}
   if (!result[type]) {
@@ -114,40 +156,9 @@ allClassData = reduce(allClassData, (result, items, type) => {
   return result
 }, {})
 
-var data = {}
-var things = ['rawData', 'newRawData']
-things.forEach((thingy, i) => {
-  if (!raw[thingy]) return
-  const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g
-  const heroGroups = raw[thingy].replace(/\r\n/g, '\n').split('\n').filter(a => !a.includes("Error unknown")).join('\n').split('\n\n')
-
-  heroGroups.forEach(heroData => {
-    if (!heroData.length) return
-    const hero = heroData.split('\n')[0].split(' ').slice(2).join(' ') // name of hero
-    let rawItems = heroData.split('\n').slice(1).join('\n') // remove the first line containing name of hero
-    var items = {}, itemMatch;
-    while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
-      items[itemMatch[1].split(' ')[0]] = itemMatch[0].split(/\n\t\t(?!\t)/).slice(1).map(a => a.trim())
-    }
-    
-    // Filter out Uprising bots
-    if (isEmpty(items.COMMON) && i == 0) return
-
-    // if i == 1 we're on newRawData, add the new items on top of existing data
-    if (i == 1) {
-      for (var group  in items) {
-        for (var item of items[group]) {
-          data[hero].items[group].push(item)
-        }
-      }
-    } else {
-      data[hero] = { hero, items }
-    }
-  })
-})
-
-var heroes = {}
 // Goes through every hero and their item lists
+console.info('Generating hero data')
+var heroes = {}
 for (var hero in data) {
   const itemGroups = data[hero].items
   const heroID = getCleanID(hero)
@@ -215,6 +226,7 @@ for (var hero in data) {
 heroes = sortObject(heroes)
 
 // Go through every heros items and create a seperate object containing every item added in events
+console.info('Generating event data')
 var updates = {}
 forEach(heroes, hero => {
   forEach(hero.items, (items, tKey) => {
@@ -268,6 +280,7 @@ updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.
 }).filter(Boolean)
 
 // Add allClassEventItems items (which aren't detected by item extrator) manually to events
+console.info('Mapping allClassEventItems to events data')
 const missingKeys = []
 forEach(allClassEventItems, (types, type) => {
   forEach(types, (events, event) => {
@@ -324,6 +337,7 @@ if (missingKeys.length) {
 }
 
 // Sort event items by hero, name or name depending on type
+console.info('Sorting event items')
 forEach(updates, update => forEach(update.items, (items, type) => {
   switch (type) {
     case 'icons':
@@ -351,6 +365,7 @@ updates = sortObject(updates, true)
 heroes = sortObject(heroes)
 
 // go through all hero items and sort items as they are sorted ingame
+console.info('Sorting hero items')
 forEach(heroes, hero => forEach(hero.items, (items, type) => {
   if (hero.id == 'all') {
     if (type == 'sprays') {
@@ -390,4 +405,4 @@ fs.writeFileSync(`${__dirname}/../data/items.json`, JSON.stringify(heroes, null,
 fs.writeFileSync(`${__dirname}/../data/events.json`, JSON.stringify(updates, null, 2), 'utf8')
 fs.writeFileSync(`${__dirname}/../data/master.json`, JSON.stringify(masterData), 'utf8')
 
-console.info("DUN")
+console.info("Finished")
