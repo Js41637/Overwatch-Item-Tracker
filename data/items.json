@@ -1922,12 +1922,14 @@
         {
           "name": "Merciful",
           "id": "ana-merciful",
-          "quality": "epic"
+          "quality": "epic",
+          "description": "Ana's biotic rifle uses a modified version of Mercy's healing technology, though the weapon was created against the doctor's wishes."
         },
         {
           "name": "Shrike",
           "id": "ana-shrike",
-          "quality": "epic"
+          "quality": "epic",
+          "description": "Recently, Ana has operated under the alias of \"Shrike\" and is wanted for espionage, assault, and theft in Egypt."
         },
         {
           "name": "Ghoul",
@@ -1944,12 +1946,14 @@
         {
           "name": "Captain Amari",
           "id": "ana-captain-amari",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Captain Ana Amari was Strike Commander Morrison's second in command of Overwatch."
         },
         {
           "name": "Horus",
           "id": "ana-horus",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Ana's call sign was \"Horus\" when she served in the Egyptian military during the Omnic Crisis."
         },
         {
           "name": "Wadjet",
@@ -2399,7 +2403,8 @@
         {
           "name": "Omnic Crisis",
           "id": "bastion-omnic-crisis",
-          "quality": "epic"
+          "quality": "epic",
+          "description": "During the Omnic Crisis, Bastion units fought against humans in battles around the world."
         },
         {
           "name": "Tombstone",
@@ -2417,6 +2422,7 @@
           "name": "Null Sector",
           "id": "bastion-null-sector",
           "quality": "epic",
+          "description": "Bastion units were reengineered and upgraded by Null Sector and deployed during the King's Row Uprising.",
           "event": "UPRISING_2017"
         },
         {
@@ -2449,6 +2455,7 @@
           "name": "Overgrown",
           "id": "bastion-overgrown",
           "quality": "legendary",
+          "description": "Damaged in one of the battles of the Omnic Crisis, this lone Bastion unit was reactivated in the Black Forest near Eichenwalde years later.",
           "achievement": "blizzard"
         }
       ],
@@ -2828,6 +2835,7 @@
           "name": "R.I.P.",
           "id": "bastion-rip",
           "quality": "rare",
+          "description": "Responsible for so many deaths during the Omnic Crisis, even today Bastion units are a symbol of fear.",
           "event": "HALLOWEEN_2016"
         },
         {
@@ -2889,6 +2897,7 @@
           "name": "Taegeukgi",
           "id": "dva-taegeukgi",
           "quality": "epic",
+          "description": "During her time as a professional gamer, D.Va proudly represented her country in tournaments around the world.",
           "event": "SUMMER_GAMES_2016"
         },
         {
@@ -2904,12 +2913,14 @@
         {
           "name": "Junker",
           "id": "dva-junker",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Mech battles are one of the most popular forms of entertainment in Junkertown."
         },
         {
           "name": "Scavenger",
           "id": "dva-scavenger",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Mech battles are one of the most popular forms of entertainment in Junkertown."
         },
         {
           "name": "Palanquin",
@@ -3396,27 +3407,32 @@
         {
           "name": "Bedouin",
           "id": "genji-bedouin",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "After leaving Overwatch, Genji wandered the world, trying to come to peace with his cyborg body."
         },
         {
           "name": "Nomad",
           "id": "genji-nomad",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "After leaving Overwatch, Genji wandered the world, trying to come to peace with his cyborg body."
         },
         {
           "name": "Sparrow",
           "id": "genji-sparrow",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "In his youth, Genji's father, Sojiro, gave him the diminutive nickname, \"Sparrow.\""
         },
         {
           "name": "Young Genji",
           "id": "genji-young-genji",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "The younger scion of the Shimada clan, Genji had little interest in carrying on the family's business, and spent his days on frivolous pursuits."
         },
         {
           "name": "Blackwatch",
           "id": "genji-blackwatch",
           "quality": "legendary",
+          "description": "After agreeing to aid the organization, Genji was upgraded extensively by Overwatch's cyberneticists.",
           "event": "UPRISING_2017"
         },
         {
@@ -3896,12 +3912,14 @@
         {
           "name": "Young Hanzo",
           "id": "hanzo-young-hanzo",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Hanzo was the son of the former master of the Shimada clan. He had been groomed to take over leadership of the family as his father's successor."
         },
         {
           "name": "Young Master",
           "id": "hanzo-young-master",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Hanzo was the son of the former master of the Shimada clan. He had been groomed to take over leadership of the family as his father's successor."
         }
       ],
       "emotes": [
@@ -4304,22 +4322,26 @@
         {
           "name": "Bleached",
           "id": "junkrat-bleached",
-          "quality": "rare"
+          "quality": "rare",
+          "description": "The destruction of the omnium in Australia and the formation of Junkertown made the Outback an even more dangerous place to live."
         },
         {
           "name": "Drowned",
           "id": "junkrat-drowned",
-          "quality": "rare"
+          "quality": "rare",
+          "description": "The destruction of the omnium in Australia and the formation of Junkertown made the Outback an even more dangerous place to live."
         },
         {
           "name": "Irradiated",
           "id": "junkrat-irradiated",
-          "quality": "rare"
+          "quality": "rare",
+          "description": "The destruction of the omnium in Australia and the formation of Junkertown made the Outback an even more dangerous place to live."
         },
         {
           "name": "Rusted",
           "id": "junkrat-rusted",
-          "quality": "rare"
+          "quality": "rare",
+          "description": "The destruction of the omnium in Australia and the formation of Junkertown made the Outback an even more dangerous place to live."
         },
         {
           "name": "Jailbird",
@@ -4361,6 +4383,7 @@
           "name": "Dr. Junkenstein",
           "id": "junkrat-dr-junkenstein",
           "quality": "legendary",
+          "description": "As the tale goes, Dr. Junkenstein made a deal with the Witch of the Wilds in exchange for the secret to creating life. But his triumph was short lived as he was slain by four wanderers in Adlersbrunn.",
           "event": "HALLOWEEN_2016"
         }
       ],
@@ -4802,17 +4825,20 @@
         {
           "name": "Auditiva",
           "id": "lucio-auditiva",
-          "quality": "epic"
+          "quality": "epic",
+          "description": "Lúcio's latest album, Synaesthesia Auditiva, was a global hit."
         },
         {
           "name": "Synaesthesia",
           "id": "lucio-synaesthesia",
-          "quality": "epic"
+          "quality": "epic",
+          "description": "Lúcio's latest album, Synaesthesia Auditiva, was a global hit."
         },
         {
           "name": "Andes",
           "id": "lucio-andes",
           "quality": "epic",
+          "description": "When the weather gets cold, Lúcio heads to the Andes to hit the slopes.",
           "event": "WINTER_WONDERLAND_2016"
         },
         {
@@ -4839,12 +4865,14 @@
           "name": "Seleção",
           "id": "lucio-selecao",
           "quality": "legendary",
+          "description": "When Lúcio was younger, in addition to his first love, hockey, he also found the time to play football with the other kids in Rio de Janeiro.",
           "event": "SUMMER_GAMES_2016"
         },
         {
           "name": "Striker",
           "id": "lucio-striker",
           "quality": "legendary",
+          "description": "When Lúcio was younger, in addition to his first love, hockey, he also found the time to play football with the other kids in Rio de Janeiro.",
           "event": "SUMMER_GAMES_2016"
         }
       ],
@@ -5323,6 +5351,7 @@
           "name": "Blackwatch",
           "id": "mccree-blackwatch",
           "quality": "legendary",
+          "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch, or rot in prison.",
           "event": "UPRISING_2017"
         }
       ],
@@ -5768,7 +5797,8 @@
         {
           "name": "Abominable",
           "id": "mei-abominable",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Mei travels to remote regions around the world, investigating ecopoints abandoned since Overwatch was shut down."
         },
         {
           "name": "Firefighter",
@@ -5783,7 +5813,8 @@
         {
           "name": "Yeti Hunter",
           "id": "mei-yeti-hunter",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Mei travels to remote regions around the world, investigating ecopoints abandoned since Overwatch was shut down."
         },
         {
           "name": "Mei-rry",
@@ -6265,6 +6296,7 @@
           "name": "Eidgenossin",
           "id": "mercy-eidgenossin",
           "quality": "epic",
+          "description": "After finishing her education, including her MD and PhD in Switzerland, Angela Ziegler continued her research and served as head of surgery in a prominent hospital in her home country.",
           "event": "SUMMER_GAMES_2016"
         },
         {
@@ -6297,12 +6329,14 @@
           "name": "Witch",
           "id": "mercy-witch",
           "quality": "legendary",
+          "description": "The Witch of the Wilds is a mysterious figure who appears in the tale of Dr. Junkenstein and others, offering people the object of their desire, for a price.",
           "event": "HALLOWEEN_2016"
         },
         {
           "name": "Combat Medic Ziegler",
           "id": "mercy-combat-medic-ziegler",
           "quality": "legendary",
+          "description": "When called upon, Mercy would don her Valkyrie swift-response suit to participate in Overwatch missions.",
           "event": "UPRISING_2017"
         }
       ],
@@ -6749,7 +6783,8 @@
         {
           "name": "OR15",
           "id": "orisa-or15",
-          "quality": "epic"
+          "quality": "epic",
+          "description": "Originally built to protect Numbani, the OR15 defense bots were destroyed and decommissioned after a battle with Doomfist. A young Efi Oladele would purchase the parts of the bots to build Orisa."
         },
         {
           "name": "Carbon Fiber",
@@ -6775,6 +6810,7 @@
           "name": "Null Sector",
           "id": "orisa-null-sector",
           "quality": "legendary",
+          "description": "During the King's Row Uprising, Null Sector employed redesigned and upgraded OR14 Idina bots to secure the power station.",
           "event": "UPRISING_2017"
         }
       ],
@@ -7116,7 +7152,8 @@
         {
           "name": "Anubis",
           "id": "pharah-anubis",
-          "quality": "epic"
+          "quality": "epic",
+          "description": "Pharah was assigned to protect a secure Helix AI installation in Egypt at the Temple of Anubis. While the AI was briefly able to break containment, Pharah and her team were able to subdue it."
         },
         {
           "name": "Jackal",
@@ -7159,6 +7196,7 @@
           "name": "Security Chief",
           "id": "pharah-security-chief",
           "quality": "legendary",
+          "description": "Following a sterling career in the Egyptian armed forces, Pharah joined Helix Security International as one of their chief officers.",
           "achievement": "blizzard"
         }
       ],
@@ -7620,7 +7658,8 @@
         {
           "name": "Nevermore",
           "id": "reaper-nevermore",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Quoth the raven, \"Nevermore.\""
         },
         {
           "name": "Plague Doctor",
@@ -7631,12 +7670,14 @@
           "name": "Pumpkin",
           "id": "reaper-pumpkin",
           "quality": "legendary",
+          "description": "In the tale of Dr. Junkenstein, the Reaper was a servant to the Witch of the Wilds, bound to serve her for some unknown reason.",
           "event": "HALLOWEEN_2016"
         },
         {
           "name": "Blackwatch Reyes",
           "id": "reaper-blackwatch-reyes",
           "quality": "legendary",
+          "description": "Gabriel Reyes was the leader of the original Overwatch strike team during the Omnic Crisis, and later commanded Blackwatch, the organization's covert ops division.",
           "achievement": "blizzard"
         }
       ],
@@ -8072,7 +8113,8 @@
         {
           "name": "Bundeswehr",
           "id": "reinhardt-bundeswehr",
-          "quality": "epic"
+          "quality": "epic",
+          "description": "At a young age, Reinhardt Wilhelm enlisted in the German armed forces, seeking glory."
         },
         {
           "name": "Paragon",
@@ -8089,12 +8131,14 @@
           "name": "Lieutenant Wilhelm",
           "id": "reinhardt-lieutenant-wilhelm",
           "quality": "epic",
+          "description": "Lieutenant Reinhardt Wilhelm served with distinction in his time during Overwatch, notably leading the strike team that ended the King's Row uprising.",
           "event": "UPRISING_2017"
         },
         {
           "name": "Balderich",
           "id": "reinhardt-balderich",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "During the Omnic Crisis, Balderich von Adler commanded the German Crusader unit until he was killed at the battle of Eichenwalde."
         },
         {
           "name": "Blackhardt",
@@ -8109,7 +8153,8 @@
         {
           "name": "Greifhardt",
           "id": "reinhardt-greifhardt",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "After the Battle of Eichenwalde, Balderich von Adler's armor remained undisturbed for many years."
         },
         {
           "name": "Lionhardt",
@@ -8603,6 +8648,7 @@
           "name": "Junkenstein's Monster",
           "id": "roadhog-junkensteins-monster",
           "quality": "legendary",
+          "description": "Armed with the secret of creating artificial life, Dr. Jamison Junkestein birthed a monster.",
           "event": "HALLOWEEN_2016"
         },
         {
@@ -9072,7 +9118,8 @@
         {
           "name": "Commando: 76",
           "id": "soldier-76-commando-76",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "At his first opportunity, a young Jack Morrison enlisted in the American armed forces to defend his country, serving with distinction during the Omnic Crisis."
         },
         {
           "name": "Daredevil: 76",
@@ -9082,7 +9129,8 @@
         {
           "name": "Night Ops: 76",
           "id": "soldier-76-night-ops-76",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "At his first opportunity, a young Jack Morrison enlisted in the American armed forces to defend his country, serving with distinction during the Omnic Crisis."
         },
         {
           "name": "Stunt Rider: 76",
@@ -9093,6 +9141,7 @@
           "name": "Strike Commander Morrison",
           "id": "soldier-76-strike-commander-morrison",
           "quality": "legendary",
+          "description": "After the Omnic Crisis, Jack Morrison was promoted to Strike Commander of Overwatch, leading the organization for decades until it was disbanded.",
           "achievement": "blizzard"
         }
       ],
@@ -9549,7 +9598,8 @@
         {
           "name": "Azúcar",
           "id": "sombra-azucar",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Orphaned after the Omnic Crisis, a young Sombra found a willing buyer for her hacking ability in Los Muertos."
         },
         {
           "name": "Cyberspace",
@@ -9559,7 +9609,8 @@
         {
           "name": "Los Muertos",
           "id": "sombra-los-muertos",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Orphaned after the Omnic Crisis, a young Sombra found a willing buyer for her hacking ability in Los Muertos."
         }
       ],
       "emotes": [
@@ -9961,7 +10012,8 @@
         {
           "name": "Utopaea",
           "id": "symmetra-utopaea",
-          "quality": "epic"
+          "quality": "epic",
+          "description": "Designed by its most talented Architechs, Utopaea is the jewel of the Vishkar Corporation's developments around the world."
         },
         {
           "name": "Vampire",
@@ -9978,7 +10030,8 @@
         {
           "name": "Architech",
           "id": "symmetra-architech",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "Noticed at a young age for her potential in the area of hard-light engineering, Satya Vaswani was placed in the Vishkar Corporation's academy to become a future architech."
         },
         {
           "name": "Devi",
@@ -9993,7 +10046,8 @@
         {
           "name": "Vishkar",
           "id": "symmetra-vishkar",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "As one of the Vishkar Corporation's most talented architechs, Symmetra was dispatched to Rio de Janeiro to oversee their new development efforts."
         }
       ],
       "emotes": [
@@ -10471,6 +10525,7 @@
           "name": "Chief Engineer Lindholm",
           "id": "torbjorn-chief-engineer-lindholm",
           "quality": "legendary",
+          "description": "For many years, Torbjörn Lindholm served as Overwatch's chief engineer, designing many of the organization's iconic weapons and technologies.",
           "event": "UPRISING_2017"
         },
         {
@@ -10979,12 +11034,14 @@
           "name": "Cadet Oxton",
           "id": "tracer-cadet-oxton",
           "quality": "legendary",
+          "description": "Tracer was put into active duty as an Overwatch agent for the first time during the King's Row uprising.",
           "event": "UPRISING_2017"
         },
         {
           "name": "Slipstream",
           "id": "tracer-slipstream",
           "quality": "legendary",
+          "description": "Before becoming an active agent of Overwatch, Tracer was a test pilot, until a mishap with the prototype Slipstream teleporting fighter.",
           "achievement": "blizzard"
         }
       ],
@@ -11447,12 +11504,14 @@
         {
           "name": "Odette",
           "id": "widowmaker-odette",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "For much of her life, Amélie Lacroix was better known as an accomplished ballet dancer in Paris."
         },
         {
           "name": "Odile",
           "id": "widowmaker-odile",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "For much of her life, Amélie Lacroix was better known as an accomplished ballet dancer in Paris."
         },
         {
           "name": "Talon",
@@ -11904,7 +11963,8 @@
         {
           "name": "Horizon",
           "id": "winston-horizon",
-          "quality": "epic"
+          "quality": "epic",
+          "description": "Most of Winston's formative years were spent as a test subject in the Horizon Lunar Colony."
         },
         {
           "name": "Explorer",
@@ -12399,7 +12459,8 @@
         {
           "name": "Arctic",
           "id": "zarya-arctic",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "After her retirement from competition, Zarya enlisted in the Russian defense forces and was deployed to the Krasnoyarsk front in Siberia."
         },
         {
           "name": "Cybergoth",
@@ -12414,18 +12475,21 @@
         {
           "name": "Siberian Front",
           "id": "zarya-siberian-front",
-          "quality": "legendary"
+          "quality": "legendary",
+          "description": "After her retirement from competition, Zarya enlisted in the Russian defense forces and was deployed to the Krasnoyarsk front in Siberia."
         },
         {
           "name": "Champion",
           "id": "zarya-champion",
           "quality": "legendary",
+          "description": "A champion weightlifter in her home country, Zarya retired on the eve of the world championships to enlist in the Russian defense forces.",
           "event": "SUMMER_GAMES_2016"
         },
         {
           "name": "Weightlifter",
           "id": "zarya-weightlifter",
           "quality": "legendary",
+          "description": "A champion weightlifter in her home country, Zarya retired on the eve of the world championships to enlist in the Russian defense forces.",
           "event": "SUMMER_GAMES_2016"
         }
       ],

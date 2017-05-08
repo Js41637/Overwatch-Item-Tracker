@@ -127,10 +127,12 @@ things.forEach((thingy, i) => {
     let rawItems = heroData.split('\n').slice(1).join('\n') // remove the first line containing name of hero
     var items = {}, itemMatch;
     while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
-      items[itemMatch[1].split(' ')[0]] = itemMatch[0].split('\n').slice(1).map(a => a.trim())
+      items[itemMatch[1].split(' ')[0]] = itemMatch[0].split(/\n\t\t(?!\t)/).slice(1).map(a => a.trim())
     }
     
-    if (isEmpty(items)) return
+    // Filter out Uprising bots
+    if (isEmpty(items.COMMON) && i == 0) return
+
     // if i == 1 we're on newRawData, add the new items on top of existing data
     if (i == 1) {
       for (var group  in items) {
@@ -166,20 +168,31 @@ for (var hero in data) {
 
   forEach(itemGroups, (items, group) => {
     items.forEach(item => {
-      var [str, name, type] = item.match(/(.+) \((.+)\)/) //eslint-disable-line
+      var [, name, itemType] = item.match(/(.+) \((.+)\)/)
       name = badNames[name.trim()] || name.trim()
-      if (name == 'RANDOM') return
-      const { quality, type: itemType } = getItemType(type)
+      if (name == 'RANDOM') return // das not an item
+
+      const { quality, type } = getItemType(itemType)
+      if (!quality || !type) return
+
+      // Generate ID of the item and check if we need to manually override it.
       var id = getCleanID(name, heroID)
-      id = idsBlizzardChanged[`${itemType}/${id}`] || id
-      name = itemNamesIFuckedUp[`${itemType}/${id}`] || name
-      if (!quality || !itemType) return
+      id = idsBlizzardChanged[`${type}/${id}`] || id
+      name = itemNamesIFuckedUp[`${type}/${id}`] || name
+
       const out = { name, id, quality }
+
+      // Check if item has a description
+      const split = item.split('\n')
+      if (split[1]) {
+        out.description = split[1].trim()
+      }
+
       switch (group) {
         case 'COMMON':
           break;
         case 'ACHIEVEMENT':
-          out.achievement = (itemType == 'sprays' && achievementSprays.includes(name.toLowerCase())) ? true : 'blizzard'
+          out.achievement = (type == 'sprays' && achievementSprays.includes(name.toLowerCase())) ? true : 'blizzard'
           break;
         case 'STANDARD_COMMON':
           out.standardItem = true
@@ -188,9 +201,9 @@ for (var hero in data) {
           out.event = group
           break;
       }
-      heroData.items[itemType].push(out)
+      heroData.items[type].push(out)
       // Icons are allclass so we can add them allClassData which doesn't include hero specific icons
-      if (itemType == 'icons') {
+      if (type == 'icons') {
         out.hero = heroID
         delete out.quality
         allClassData['icons'].push(out)
@@ -228,6 +241,7 @@ forEach(heroes, hero => {
         delete newItem.quality
       }
       delete newItem.event
+      delete newItem.description
       updates[event].items[type].push(newItem)
     })
   })
