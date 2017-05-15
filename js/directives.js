@@ -107,7 +107,12 @@ OWI.directive('subHeader', function() {
   return {
     restrict: 'E',
     replace: true,
-    templateUrl: './templates/sub-header.html'
+    templateUrl: './templates/sub-header.html',
+    link: function($scope, $elm, $attr) {
+      if ($attr.costs) {
+        $scope.cost = JSON.parse($attr.costs)
+      }
+    }
   }
 })
 

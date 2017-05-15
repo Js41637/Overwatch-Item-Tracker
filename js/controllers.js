@@ -16,6 +16,20 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
     this.hideAlert = true
   }
 
+  this.getCosts = function() {
+    var out = {
+      total: 0,
+      remaining: 0,
+      selected: 0
+    }
+    for (var hero in CostAndTotalService.heroes) {
+      out.remaining += CostAndTotalService.heroes[hero].cost.remaining
+      out.total += CostAndTotalService.heroes[hero].cost.total
+      out.selected += CostAndTotalService.heroes[hero].cost.selected
+    }
+    return out
+  }
+
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
     // If for some reason we don't have data, wait a second an try again
     if (!vm.events || !vm.heroes) {
