@@ -33,11 +33,13 @@ const cleanFileIDs = (files, heroID) => {
   })
 }
 
-const getDirectories = where => {
+const getDirectories = (where, noerr) => {
   return new Promise((resolve, reject) => {
     fs.stat(where, err => {
+      if (err && noerr) return resolve([])
       if (err) return reject(`${where} doesn't exist`)
       fs.readdir(where, (err, dirs) => {
+        if (err && noerr) return resolve([])
         if (err) return reject("I dunno, no dirs??")
         return resolve(dirs.map(d => (d.startsWith('!') || d.endsWith('.js') || d.endsWith('.json')) ? null : d).filter(Boolean))
       })
@@ -45,18 +47,18 @@ const getDirectories = where => {
   })
 }
 
-const checkDirectorys = (who, type, where = './') => {
+const checkDirectorys = (param1, param2, where = './') => {
   return new Promise(resolve => {
-    fs.stat(`${where}${who}`, err => {
+    fs.stat(`${where}${param1}`, err => {
       if (err) {
-        fs.mkdir(`${where}${who}`, () => {
-          if (type && type !== '') fs.mkdir(`${where}${who}/${type}`, resolve)
+        fs.mkdir(`${where}${param1}`, () => {
+          if (param2 && param2 !== '') fs.mkdir(`${where}${param1}/${param2}`, resolve)
           else resolve()
         })
       } else {
-        fs.stat(`${where}${who}/${type}`, err => {
+        fs.stat(`${where}${param1}/${param2}`, err => {
           if (err) {
-            fs.mkdir(`${where}${who}/${type}`, resolve)
+            fs.mkdir(`${where}${param1}/${param2}`, resolve)
           } else resolve()
         })
       }
