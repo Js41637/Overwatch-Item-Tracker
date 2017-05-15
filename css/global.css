@@ -624,6 +624,7 @@ strong {
 
 #image-preview .card {
   min-width: 320px;
+  transform: initial;
 }
 
 #image-preview .nosupport {
