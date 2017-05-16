@@ -4,7 +4,7 @@
 const fs = require('fs')
 const path = require('path')
 const { exec } = require('child_process')
-const { sortBy, reduce, get, cloneDeep } = require('lodash')
+const { sortBy, reduce, get, cloneDeep, keyBy, merge } = require('lodash')
 const { eachLimit, eachOfLimit } = require('async')
 const moment = require('moment')
 
@@ -14,14 +14,18 @@ const { getDirectories, checkDirectorys, getCleanID, copyFile } = require('./uti
 
 console.info('Sound Dump Parser starting up')
 
+const allOriginalIDs = {}
 var originalSoundIDs = {}
+var original = {}
 try {
   console.info('Found pre existing sound list')
-  let original = JSON.parse(fs.readFileSync('./soundsList.json', 'utf8'))
+  original = JSON.parse(fs.readFileSync('./soundFiles.json', 'utf8'))
   for (let hero in original) {
     originalSoundIDs[hero] = {}
     for (let type in original[hero]) {
-      for (let sound of original[hero][type]) {
+      for (let soundID in original[hero][type]) {
+        let sound = original[hero][type][soundID]
+        allOriginalIDs[sound.id] = true
         if (!sound.ts) continue
         originalSoundIDs[hero][sound.id] = sound.ts
       }
@@ -39,7 +43,7 @@ var masterSoundList = {}
 const soundList = {}
 const soundIDCache = {'all': {}}
 const soundList2 = {}
-const soundIDCache2 = {}
+const soundIDCache2 = {'all': {}}
 
 // Sort related NPCs into one category seeing as most have dupe sounds anyway
 const groupedHeroes = {
@@ -55,19 +59,40 @@ const groupedHeroes = {
 }
 
 function sortSounds() {
+  const newSounds = Object.keys(soundIDCache['all']).concat(Object.keys(soundIDCache2['all']))
+  const missingSounds = reduce(original, (result, data, hero) => {
+    result[hero] = {}
+    for (let type in data) {
+      result[hero][type] = []
+      for (let soundID in data[type]) {
+        if (!newSounds.includes(soundID)) result[hero][type].push(soundID)
+      }
+    }
+
+    return result
+  }, {})
+  console.log("Missing sounds", missingSounds)
   const data = Object.assign({}, cloneDeep(soundList), cloneDeep(soundList2))
-  return reduce(data, (res, sounds, hero) => {
+  const sortedData = reduce(data, (res, sounds, hero) => {
     res[hero] = {}
     for (let type in sounds) {
-      sounds[type] = sounds[type].map(s => {
-        delete s.path
-        delete s.isNew
-        return s
-      })
-      res[hero][type] = sortBy(sounds[type], ['ts', 'id'])
+      for (let soundID in sounds[type]) {
+        delete sounds[type][soundID].path
+        delete sounds[type][soundID].isNew
+      }
+      res[hero][type] = keyBy(sortBy(merge({}, get(original, [hero, type], {}), sounds[type]), ['ts', 'id']), 'id')
     }
     return res
   }, {})
+
+  for (let hero in missingSounds) {
+    for (let type in missingSounds[hero]) {
+      for (let sound of missingSounds[hero][type]) {
+        if (sortedData[hero][type][sound]) sortedData[hero][type][sound].unused = true
+      }
+    }
+  }
+  return sortedData
 }
 
 function getSkinID(skin, heroID) {
@@ -82,7 +107,7 @@ function parseSecondDump(update) {
     eachLimit(heroes, 1, (hero, cb) => {
       const heroID = groupedHeroes[getCleanID(hero)]
       if (!heroID) return cb() // NPCs only
-      soundList2[heroID] = { 'base': [] }
+      soundList2[heroID] = { 'base': {} }
       soundIDCache2[heroID] = {}
       getDirectories(`./${hero}/Sound Dump`).then(folders => {
         console.info(`- Parsing sounds for ${hero}`)
@@ -99,10 +124,11 @@ function parseSecondDump(update) {
             const isNew = !get(originalSoundIDs, [heroID, soundID])
             const ts = !isNew ? { ts: originalSoundIDs[heroID][soundID] } : update ? { ts: newTS } : void 0
             soundIDCache2[heroID][soundID] = true
-            soundList2[heroID]['base'].push(Object.assign({
+            soundIDCache2['all'][soundID] = true
+            soundList2[heroID]['base'][soundID] = Object.assign({
               id: soundID,
               path: `./${hero}/Sound Dump/${folder}/${sound}`
-            }, ts))
+            }, ts)
             r()
           })))
         })))
@@ -123,7 +149,7 @@ function parseFullDump(update) {
       var totalFiles = 0
       getDirectories(`./${hero}/Sound Dump Full`, true).then(skins => {
         if (!skins.length) return
-        soundList[heroID] = { base: [], misc: [] }
+        soundList[heroID] = { base: {}, misc: {} }
         soundIDCache[heroID] = {} 
         return Promise.all(skins.map(skin => getDirectories(`./${hero}/Sound Dump Full/${skin}`).then(folders => {
           const skinID = getSkinID(skin, heroID)
@@ -140,11 +166,11 @@ function parseFullDump(update) {
               if (isNew) newFiles++
               soundIDCache[heroID][soundID] = true
               soundIDCache['all'][soundID] = true
-              soundList[heroID][isMisc ? 'misc' : 'base'].push(Object.assign({
+              soundList[heroID][isMisc ? 'misc' : 'base'][soundID] = Object.assign({
                 isNew,
                 id: soundID,
                 path: `./${hero}/Sound Dump Full/${skin}/${folder}/${sound}`
-              }, ts, skinID ? { skin: skinID } : void 0))
+              }, ts, skinID ? { skin: skinID } : void 0)
               r()
             })))
           })))
@@ -173,7 +199,8 @@ function moveFilesToTempDir(update) {
     const sounds = Object.assign({}, soundList, soundList2)
     eachOfLimit(sounds, 1, (sounds, hero, cb) => {
       Promise.all(Object.keys(sounds).map(type => {
-        return Promise.all(sounds[type].map(sound => new Promise(r => {
+        return Promise.all(Object.keys(sounds[type]).map(soundID => new Promise(r => {
+          let sound = sounds[type][soundID]
           if (update && !sound.isNew) return r()
           checkDirectorys('!soundTemp', hero).then(() => {
             copyFile(sound.path, `./!soundTemp/${hero}/${hero}-${sound.id}.wem`, r)
@@ -211,7 +238,7 @@ function convertFiles() {
 
 
 async function parseSoundDump(args) {
-  if (!process.cwd().match(/OverwatchAssets\\SoundDump$/)) {
+  if (!process.cwd().match(/OverwatchAssets\\SoundDump/)) {
     console.error("Needs to be run in OverwatchAssets\SoundDump")
     process.exit()
   }
@@ -226,7 +253,7 @@ async function parseSoundDump(args) {
 
   console.info('Finished parsing sounds')
   masterSoundList = sortSounds()
-  fs.writeFileSync('./soundsList.json', JSON.stringify(masterSoundList, null, 2))
+  fs.writeFileSync('./soundFiles.json', JSON.stringify(masterSoundList, null, 2))
 
   if (listOnly) {
     console.info('Done, not converting sounds')
