@@ -486,25 +486,12 @@
   position: relative;
   height: 26px;
   width: 30px;
+  color: black;
+  font-size: 24px;
 }
 
 #hero-container .audio-player .icon span {
-  position: absolute;
-  left: -3px;
-  top: 0;
-  width: 26px;
-  height: 26px;
-}
-
-#hero-container .audio-player .icon .playing {
-  z-index: 10;
-  transition: opacity 125ms ease-in;
-  opacity: 0;
-  background-image: url('../resources/icons/volume-up.svg')
-}
-
-#hero-container .audio-player .icon .playing.show {
-  opacity: 1;
+  left: -2px;
 }
 
 #hero-container .audio-player .icon .not-playing {
