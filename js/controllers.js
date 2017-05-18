@@ -418,6 +418,25 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
     location.reload();
   }
 
+  function getDate() {
+    var d = new Date();
+    var yy = d.getFullYear()
+    var mm = d.getMonth() + 1;
+    var dd = d.getDate()
+    var ts = d.getHours() + '-' + d.getMinutes()
+    dd = dd < 10 ? '0' + dd : dd
+    mm = mm < 10 ? '0' + mm : mm
+    return yy + '-' + mm + '-' + dd + '_' + ts
+  }
+
+  this.downloadJSON = function() {
+    var dataStr = JSON.stringify(DataService.checked, null, 2)
+    var el = document.createElement('a')
+    el.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(dataStr))
+    el.setAttribute('download', 'overwatch-item-tracker_backup_' + getDate() + '.json')
+    el.click()
+  }
+
   this.setVolume = function() {
     StorageService.setSetting('audioVolume', this.audioVolume)
   }
@@ -429,9 +448,11 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
       location.reload();
     }
   }
+
   this.data = angular.toJson(DataService.checked, 2);
   var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines'];
   var validHeroes = Object.keys(DataService.heroes);
+
   this.importData = function(data, test) {
     vm.importErrors = null
     try {
