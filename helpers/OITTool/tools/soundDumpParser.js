@@ -79,6 +79,7 @@ function sortSounds() {
       for (let soundID in sounds[type]) {
         delete sounds[type][soundID].path
         delete sounds[type][soundID].isNew
+				delete sounds[type][soundID].unused
       }
       res[hero][type] = keyBy(sortBy(merge({}, get(original, [hero, type], {}), sounds[type]), ['ts', 'id']), 'id')
     }
