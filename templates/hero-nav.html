@@ -1,14 +1,10 @@
 <div id="hero-nav">
-  <div class="gallery home-btn">
+  <div class="gallery event">
     <div>
-      <div class="block" ui-sref="home" ui-sref-active="selected">
+      <div class="block home" ui-sref="home" ui-sref-active="selected">
         <div class="bg"></div>
         Home
       </div>
-    </div>
-  </div>
-  <div class="gallery event">
-    <div>
       <div class="block" ng-repeat="event in events track by $index" ui-sref="events({id: event.id})" ui-sref-active="selected">
         <div class="bg"></div>
         <div class="img" style="background-image: url({{::event.id | eventImageUrl}})"></div>

@@ -282,36 +282,6 @@ body {
   padding: 18px;
 }
 
-#hero-nav .gallery.home-btn {
-  position: absolute;
-  top: 48px;
-  left: 148px;
-}
-
-#hero-nav .gallery.home-btn .block {
-  border-radius: 50%;
-  font-size: 0;
-  width: 58px;
-  height: 58px;
-  background: none;
-  overflow: hidden;
-}
-
-#hero-nav .gallery.home-btn .block .bg {
-  top: 0;
-  left: 0;
-  background-image: url(resources/icons/home.svg);
-  background-size: contain;
-}
-
-#hero-nav .gallery.home-btn .block:hover {
-  transform: scale(1);
-}
-
-#hero-nav .gallery.home-btn .block:hover .bg {
-  background-color: rgba(255,255,255,0.6);
-}
-
 #hero-nav .gallery.event .block[href$="/events/SUMMER_GAMES_2016"] {
   background: url(resources/SUMMER_GAMES_2016/bg.jpg);
   background-size: cover;
