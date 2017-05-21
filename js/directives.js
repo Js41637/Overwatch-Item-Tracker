@@ -224,7 +224,7 @@ OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
 
       $attrs.$observe('countTo', function(val) {
         if (val) {
-            start();
+          start();
         }
       });
 
