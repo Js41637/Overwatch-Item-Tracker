@@ -97,6 +97,12 @@
   margin-right: 5px;
 }
 
+#hero-container .hero-items .section .options .glyphicon {
+  color: white;
+  font-size: 18px;
+  margin-top: -1px;
+}
+
 #hero-container .hero-items .section .options li a {
   padding: 3px 15px;
 }
@@ -112,7 +118,6 @@
 #hero-container .hero-items .section:hover .options {
   opacity: 0.9;
 }
-
 
 #hero-container #hero-header .currentfilter {
   font-size: 14px;

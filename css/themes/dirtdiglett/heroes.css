@@ -561,6 +561,11 @@ body#zenyatta #hero-container .hero-overview {
     padding: 6px;
 }
 
+#hero-container .section-header .options .btn .glyphicon {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
 #hero-container .hero-items #sprays .item:nth-of-type(odd) {
     margin-right: 12px;
 }
