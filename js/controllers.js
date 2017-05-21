@@ -265,7 +265,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
  
   // Return the url for an image or video, also check if we're showing HD videos
   this.getPreviewURL = function(item, type, hero, image) {
-    var out = {}
+    var out = { description: item.description }
     if (type == 'intros' || type == 'emotes') {
       out.video = item.url
       if (StorageService.getSetting('hdVideos')) {
@@ -303,7 +303,6 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
 
   // Mark all items for current hero as selected
   this.selectAll = function(unselect, onlyType) {
-    console.log(vm.totals)
     if (vm.totals.overall.selected == vm.totals.overall.total && !unselect) {
       return;
     }

@@ -466,9 +466,10 @@ body {
 #hero-container .section .tooltip .preview.img {
   width: 450px;
   height: 450px;
+  position: relative;
 }
 
-#hero-container .section .tooltip .preview.img>div {
+#hero-container .section .tooltip .preview.img .i {
   width: 100%;
   height: 100%;
   background-size: contain;
@@ -476,6 +477,17 @@ body {
   background-position: center;
   border-radius: 3px;
 }
+
+#hero-container .section .tooltip .preview.img .description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+  padding: 3px 4px;
+  text-transform: initial;
+}
+
 
 #hero-container .section .tooltip .preview.video {
   position: relative;
