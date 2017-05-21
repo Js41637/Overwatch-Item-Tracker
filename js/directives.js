@@ -4,15 +4,17 @@ var types = {
   'icon': '/icon.png'
 }
 
+var baseURL = 'https://d34nsd3ksgj839.cloudfront.net/'
+
 OWI.filter('heroImg', function() {
   return function(hero, type) {
-    return hero == 'all' ? './resources/logo.svg' : './resources/heroes/' + hero + types[type];
+    return hero == 'all' ? baseURL + 'logo.svg' : baseURL + 'heroes/' + hero + types[type];
   }
 });
 
 OWI.filter('eventImageUrl', function() {
   return function(event) {
-    return './resources/updates/' + event + '/logo.png';
+    return baseURL + 'updates/' + event + '/logo.png';
   }
 });
 
@@ -183,8 +185,8 @@ OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
     scope: { },
     link: function ($scope, $elm, $attrs) {
       var e = $elm[0];
-      var refreshInterval = 32;
-      var duration = 500
+      var refreshInterval = 35;
+      var duration = 480
       var steps = Math.ceil(duration / refreshInterval);
       var num, step, countTo, increment, value, timeoutId;
       var calculate = function() {

@@ -265,17 +265,16 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
  
   // Return the url for an image or video, also check if we're showing HD videos
   this.getPreviewURL = function(item, type, hero, image) {
-    var base = './resources/heroes/' + (item.hero || hero) + '/' + type + '/' + item.id;
     var out = {}
     if (type == 'intros' || type == 'emotes') {
-      out.video = base + '.webm'
+      out.video = item.url
       if (StorageService.getSetting('hdVideos')) {
        out.video = out.video.replace('.webm', '-hd.webm');
       }
     } else if (type == 'voicelines') {
-      out.audio = base + '.ogg'
+      out.audio = item.url
     } else {
-      out.img = base + (type == 'sprays' || type == 'icons' ? '.png' : '.jpg')
+      out.img = item.url
     }
     return image ? out.img : out
   }
