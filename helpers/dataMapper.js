@@ -138,17 +138,25 @@ allClassData = reduce(allClassData, (result, items, type) => {
     const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem) ? { achievement: true } : blizzardItems[type].includes(item.id) ? { achievement: 'blizzard' } : undefined
     // Only purchasable items need a quality
     const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompItem) ? { quality: 'common' } : undefined
+    const url = getPreviewURL(type, item.id, 'all')
     
     // Check for specific item groups
     const isPachiItem = item.id.startsWith('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined
-    var customEvent = undefined;
-    for (var group in specialItems) {
-      if (specialItems[group][type] && specialItems[group][type].includes(item.id)) customEvent = { group: group }
+    var group = undefined;
+    for (let g in specialItems) {
+      if (specialItems[g][type] && specialItems[g][type].includes(item.id)) group = { group: group }
     }
 
-    newItems.push(Object.assign(item, { event }, isAchievement, isStandard, quality, customEvent, isPachiItem, isCompItem))
+    newItems.push(Object.assign(item, { event, url }, isAchievement, isStandard, quality, group, isPachiItem, isCompItem))
     if (isSeasonCompItem && type == 'sprays') {
-      newItems.push({ name: `Season ${isSeasonCompItem[1]} Hero`, id: `season-${isSeasonCompItem[1]}-hero`, achievement: true, group: 'competitive' })
+      let id = `season-${isSeasonCompItem[1]}-hero`
+      newItems.push({ 
+        name: `Season ${isSeasonCompItem[1]} Hero`, 
+        id: id,
+        url: getPreviewURL(type, id, 'all'),
+        achievement: true, 
+        group: 'competitive' 
+      })
     }
     return newItems
   }, [])
@@ -191,7 +199,8 @@ for (var hero in data) {
       id = idsBlizzardChanged[`${type}/${id}`] || id
       name = itemNamesIFuckedUp[`${type}/${id}`] || name
 
-      const out = { name, id, quality }
+      const url = getPreviewURL(type, id, heroID)
+      const out = { name, id, quality, url }
 
       // Check if item has a description
       const split = item.split('\n')
@@ -246,7 +255,7 @@ forEach(heroes, hero => {
       // if the item isnt a skin and is a legendary add a legendary tag, we do this because very few items for events
       // have had legendary items added outside of skins, this way we can mark them as special
       const legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {}
-      const url = getPreviewURL(type, event, item.id, hero.id)
+      const url = getPreviewURL(type, item.id, hero.id, event)
       const newItem = Object.assign({}, { heroName: hero.name, hero: hero.id }, legend, item, { url } )
       if (type == 'icons') {
         delete newItem.heroName
@@ -264,7 +273,7 @@ updates[EVENTS.CHRISTMAS16].items.sprays = updates[EVENTS.CHRISTMAS16].items.spr
   if (spray.heroName) {
     var ornamentID = `${spray.hero}-ornament`
     spray.ornamentID = ornamentID;
-    spray.ornamentURL = getPreviewURL('sprays', EVENTS.CHRISTMAS16, ornamentID, spray.hero);
+    spray.ornamentURL = getPreviewURL('sprays', ornamentID, spray.hero, EVENTS.CHRISTMAS16);
     return spray
   } else return spray
 }).filter(Boolean)
@@ -274,7 +283,7 @@ updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.
   if (spray.heroName) {
     var dragonID = `${spray.hero}-dragon-dance`
     spray.dragonID = dragonID;
-    spray.dragonURL = getPreviewURL('sprays', EVENTS.ROOSTER17, dragonID, spray.hero);
+    spray.dragonURL = getPreviewURL('sprays', dragonID, spray.hero, EVENTS.ROOSTER17);
     return spray
   } else return spray
 }).filter(Boolean)
@@ -294,7 +303,7 @@ forEach(allClassEventItems, (types, type) => {
         hero: 'all',
         name: allClassDataKeys[type][itemID].replace(/ \d{4}$/, ''),
         id: itemID,
-        url: getPreviewURL(type, event, itemID, 'all')
+        url: getPreviewURL(type, itemID, 'all', event)
       }
       const isAchivement = achievementSprays.includes(itemID)
       if (isAchivement) {

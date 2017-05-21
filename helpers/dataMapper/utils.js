@@ -57,23 +57,27 @@ const getCleanID = (what, hero) => {
 }
 
 // Returns the image or video URL for an item
-const getPreviewURL = (type, event, id, hero) => {
-  const baseUrl = `./resources/updates/${event}/${type}/${id}`
-  const heroUrl = `./resources/heroes/${hero}/${type}/${id}`
+const getPreviewURL = (type, id, hero, event) => {
+  let url
+  if (event && type.match(/^(skins(Epic|Legendary)|poses|emotes|intros)$/)) {
+    url = `https://d34nsd3ksgj839.cloudfront.net/updates/${event}/${type}/${id}`
+  } else {
+    url = `https://d34nsd3ksgj839.cloudfront.net/heroes/${hero}/${type}/${id}` 
+  }
   switch (type) {
     case 'voicelines':
-      return `${heroUrl}.ogg`
+      return `${url}.ogg`
     case 'emotes':
     case 'intros':
-      return `${baseUrl}.webm`
+      return `${url}.webm`
     case 'sprays':
     case 'icons':
-      return `${heroUrl}.png`
+      return `${url}.png`
     case 'skins':
     case 'skinsEpic':
     case 'skinsLegendary':
     case 'poses':
-      return `${baseUrl}.jpg`
+      return `${url}.jpg`
   }
 }
 
