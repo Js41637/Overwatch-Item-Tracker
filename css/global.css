@@ -547,6 +547,7 @@ strong {
   background-size: contain;
   background-color: transparent;
   background-position: center 0;
+  width: 320px;
 }
 
 #image-preview .card {
@@ -555,7 +556,7 @@ strong {
   box-sizing: border-box;
   display: inline-block;
   background-repeat: no-repeat;
-  width: 320px;
+  width: 360px;
   /* 400px - 80px for the bottom gives us a nice square preview for sprays and icons */
   background-color: transparent;
 }
