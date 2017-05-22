@@ -2,26 +2,26 @@ var types = {
   'portrait': '/portrait.png',
   'career': '/career-portrait.png',
   'icon': '/icon.png'
-}
+};
 
-var baseURL = 'https://d34nsd3ksgj839.cloudfront.net/'
+var baseURL = 'https://d34nsd3ksgj839.cloudfront.net/';
 
 OWI.filter('heroImg', function() {
   return function(hero, type) {
     return hero == 'all' ? baseURL + 'logo.svg' : baseURL + 'heroes/' + hero + types[type];
-  }
+  };
 });
 
 OWI.filter('eventImageUrl', function() {
   return function(event) {
     return baseURL + 'updates/' + event + '/logo.png';
-  }
+  };
 });
 
 OWI.filter('itemPrice', function() {
   return function(item, type) {
-    var event = item.event
-    var quality = item.quality
+    var event = item.event;
+    var quality = item.quality;
     if (item.standardItem || item.achievement || type == 'icons' || (event && event == 'SUMMER_GAMES_2016')) return '';
 
     var prices = { common: 25, rare: 75, epic: 250, legendary: 1000 };
@@ -30,8 +30,8 @@ OWI.filter('itemPrice', function() {
       return '(' + prices[quality] * (event ? 3 : 1) + ')';
     }
     return '';
-  }
-})
+  };
+});
 
 OWI.directive('fancyLoad', function() {
   return {
@@ -44,10 +44,10 @@ OWI.directive('fancyLoad', function() {
         $elm.addClass('pulse');
         setTimeout(function() {
           $elm.removeClass('pulse');
-        }, 50)
-      })
+        }, 50);
+      });
     }
-  }
+  };
 });
 
 OWI.directive('eventItem', function() {
@@ -60,8 +60,8 @@ OWI.directive('eventItem', function() {
       $scope.noHero = $attr.nohero;
       $scope.noName = $attr.noname;
     }
-  }
-})
+  };
+});
 
 OWI.directive("scroll", function($window) {
   return function($scope) {
@@ -77,33 +77,51 @@ OWI.directive('audiopls', ["StorageService", function(StorageService) {
   return {
     restrict: 'A',
     link: function($scope, $elm) {
-      $elm[0].volume = StorageService.getSetting('audioVolume')
+      $elm[0].volume = StorageService.getSetting('audioVolume');
     }
-  }
-}])
+  };
+}]);
 
-OWI.directive('tooltipImagePreview', function() {
+OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService) {
   return {
     restrict: 'E',
     replace: true,
     templateUrl: './templates/tooltip-image-preview.html',
     link: function($scope) {
-      $scope.preview = $scope.hero.getPreviewURL($scope.item, $scope.type, $scope.hero.id)
+      var item = $scope.item;
+      var type = $scope.type;
+      var url;
+
+      if (location.host.match(/^localhost:5000$/)) {
+        url = item.url.replace('https://d34nsd3ksgj839.cloudfront.net', 'http://localhost:5000/resources');
+      } else {
+        url = item.url;
+      }
+
+      var out = { description: item.description };
+      if (type == 'intros' || type == 'emotes') {
+        if (StorageService.getSetting('hdVideos')) {
+          out.video = url.replace('.webm', '-hd.webm');
+        } else {
+          out.video = url;
+        }
+      } else if (type == 'voicelines') {
+        out.audio = url;
+      } else {
+        out.img = url;
+      }
+      $scope.preview = out;
     }
-  }
-})
+  };
+}]);
 
 OWI.directive('legendarySkins', function() {
   return {
     restrict: 'E',
     replace: true,
-    templateUrl: './templates/legendary-skins.html',
-    link: function($scope, $elm, $attr) {
-      $scope.ss = $attr.ss
-      $scope.ssURL = $attr.ssurl
-    }
-  }
-})
+    templateUrl: './templates/legendary-skins.html'
+  };
+});
 
 OWI.directive('subHeader', function() {
   return {
@@ -112,11 +130,11 @@ OWI.directive('subHeader', function() {
     templateUrl: './templates/sub-header.html',
     link: function($scope, $elm, $attr) {
       if ($attr.costs) {
-        $scope.cost = JSON.parse($attr.costs)
+        $scope.cost = JSON.parse($attr.costs);
       }
     }
-  }
-})
+  };
+});
 
 OWI.directive('heroNav', function() {
   return {
@@ -128,8 +146,8 @@ OWI.directive('heroNav', function() {
       heroes: "=heroes"
     },
     templateUrl: './templates/hero-nav.html'
-  }
-})
+  };
+});
 
 OWI.directive('lazyAudio', ["$timeout", function($timeout) {
   return {
@@ -139,7 +157,7 @@ OWI.directive('lazyAudio', ["$timeout", function($timeout) {
     templateUrl: './templates/audio-player.html',
     link: function($scope, $elm, $attrs) {
       var url = $attrs.lazyAudio;
-      var audio = $elm.find('audio')[0]
+      var audio = $elm.find('audio')[0];
       var refreshInterval = 20;
       var step = 0;
       var steps, timeout;
@@ -150,33 +168,33 @@ OWI.directive('lazyAudio', ["$timeout", function($timeout) {
         audio.removeEventListener('canplaythrough', onLoad);
         audio.pause();
         $timeout.cancel(timeout);
-      })
+      });
 
       function tick() {
         timeout = $timeout(function() {
           step++;
-          $scope.progress = (step / steps) * 100
+          $scope.progress = (step / steps) * 100;
           if (step >= steps) {
-            $timeout.cancel(timeout)
+            $timeout.cancel(timeout);
           } else {
-            tick()
+            tick();
           }
-        }, refreshInterval)
+        }, refreshInterval);
       }
 
       function onLoad(event) {
-        var duration = event.target.duration == Infinity ? 1.5 : event.target.duration
-        steps = Math.ceil(duration / (refreshInterval / 1000))
+        var duration = event.target.duration == Infinity ? 1.5 : event.target.duration;
+        steps = Math.ceil(duration / (refreshInterval / 1000));
         tick();
         audio.play();
       }
 
       // Firefox returns infinity for duration on first load sometimes
-      audio.addEventListener('canplaythrough', onLoad)
-      audio.src = url
+      audio.addEventListener('canplaythrough', onLoad);
+      audio.src = url;
     }
-  }
-}])
+  };
+}]);
 
 // Based off http://sparkalow.github.io/angular-count-to/
 OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
@@ -186,7 +204,7 @@ OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
     link: function ($scope, $elm, $attrs) {
       var e = $elm[0];
       var refreshInterval = 35;
-      var duration = 480
+      var duration = 480;
       var steps = Math.ceil(duration / refreshInterval);
       var num, step, countTo, increment, value, timeoutId;
       var calculate = function() {
@@ -197,7 +215,7 @@ OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
         value = parseInt($attrs.countFrom, 10) || 0;
         increment = ((countTo - value) / steps);
         num = value;
-      }
+      };
 
       var tick = function() {
         timeoutId = $timeout(function() {
@@ -212,7 +230,7 @@ OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
             tick();
           }
         }, refreshInterval);
-      }
+      };
 
       var start = function () {
         if (timeoutId) {
@@ -220,7 +238,7 @@ OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
         }
         calculate();
         tick();
-      }
+      };
 
       $attrs.$observe('countTo', function(val) {
         if (val) {
@@ -232,7 +250,7 @@ OWI.directive('countTo', ['$timeout', '$filter', function ($timeout, $filter) {
         start();
       });
     }
-  }
+  };
 }]);
 
 OWI.directive('loadingSpinner', function() {
@@ -241,8 +259,8 @@ OWI.directive('loadingSpinner', function() {
     scope: {},
     replace: true,
     templateUrl: './templates/loader.html'
-  }
-})
+  };
+});
 
 OWI.directive('lazyBackground', ["ImageLoader", "$compile", function(ImageLoader, $compile) {
   return {
@@ -262,13 +280,13 @@ OWI.directive('lazyBackground', ["ImageLoader", "$compile", function(ImageLoader
 
         var loader;
         if (!$scope.noLoader) {
-          loader = $compile('<loading-spinner />')($scope)
-          $element.prepend(loader)
+          loader = $compile('<loading-spinner />')($scope);
+          $element.prepend(loader);
           setTimeout(function () {
-            loader.css('opacity', '1')
+            loader.css('opacity', '1');
           }, 110);
         } else {
-          loader = { remove: angular.noop }
+          loader = { remove: angular.noop };
         }
         
         ImageLoader.loadImage(encodeURI(newSrc), $scope.noLoader).then(function(src) {
@@ -282,7 +300,7 @@ OWI.directive('lazyBackground', ["ImageLoader", "$compile", function(ImageLoader
         });
       });
     }
-  }
+  };
 }]);
 
 /*OWI.directive("particles", function() {

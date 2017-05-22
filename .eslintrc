@@ -22,6 +22,8 @@
     "extends": "eslint:recommended",
     "rules": {
         "no-console": "off",
-        "no-unreachable": "off"
+        "no-unreachable": "off",
+        "semi": ["error", "always"],
+        "indent": ["error", 2, { "SwitchCase": 1 }]
     }
 }

@@ -1,12 +1,12 @@
-var OWI = angular.module('OWI', ['ui.router', 'ui.bootstrap', 'ngAnimate'])
+var OWI = angular.module('OWI', ['ui.router', 'ui.bootstrap', 'ngAnimate']);
 
 // Setup some angular config stuff
 OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$animateProvider', '$locationProvider', function($compileProvider, $urlMatcherFactoryProvider, $animateProvider, $locationProvider) {
-   $locationProvider.hashPrefix(""); // defaults to #! which is annoying
-   $compileProvider.debugInfoEnabled(false); // more perf
-   $urlMatcherFactoryProvider.strictMode(false); // I dunno
-   $animateProvider.classNameFilter(/angular-animate/); // prevent angular-animate animating all the things
-}])
+  $locationProvider.hashPrefix(""); // defaults to #! which is annoying
+  $compileProvider.debugInfoEnabled(false); // more perf
+  $urlMatcherFactoryProvider.strictMode(false); // I dunno
+  $animateProvider.classNameFilter(/angular-animate/); // prevent angular-animate animating all the things
+}]);
 
 // Run migrations to convert data and stuff
 OWI.run(function() {
@@ -18,7 +18,7 @@ OWI.run(function() {
       name: "Update event item IDs and rename new Rooster IDs",
       id: 5,
       run: function() {
-        var changedItems = {"SUMMER_GAMES_2016":{"sprays":{"summer-games":"summer-games-2016"},"icons":{"summer-games":"summer-games-2016","united-states":"united-states-of-america"}},"HALLOWEEN_2016":{"sprays":{"halloween-terror-2016":"halloween-terror","halloweenspecial":"halloween-special","junkensteinsrevenge":"junkensteins-revenge","riseofthezomnics":"rise-of-the-zomnics","thereapening":"the-reapening"},"icons":{"halloween-terror":"halloween-terror-2016"}},"WINTER_WONDERLAND_2016":{"icons":{"winter-wonderland":"winter-wonderland-2016"}},"YEAR_OF_THE_ROOSTER_2017":{"skinsEpic":{"mercy-golden": "mercy-fortune"},"icons":{"roadhog-piggy":"roadhog-pigsy","year-of-the-rooster":"year-of-the-rooster-2017"}}}
+        var changedItems = {"SUMMER_GAMES_2016":{"sprays":{"summer-games":"summer-games-2016"},"icons":{"summer-games":"summer-games-2016","united-states":"united-states-of-america"}},"HALLOWEEN_2016":{"sprays":{"halloween-terror-2016":"halloween-terror","halloweenspecial":"halloween-special","junkensteinsrevenge":"junkensteins-revenge","riseofthezomnics":"rise-of-the-zomnics","thereapening":"the-reapening"},"icons":{"halloween-terror":"halloween-terror-2016"}},"WINTER_WONDERLAND_2016":{"icons":{"winter-wonderland":"winter-wonderland-2016"}},"YEAR_OF_THE_ROOSTER_2017":{"skinsEpic":{"mercy-golden": "mercy-fortune"},"icons":{"roadhog-piggy":"roadhog-pigsy","year-of-the-rooster":"year-of-the-rooster-2017"}}};
         for (var event in changedItems) {
           if (!data[event] || !Object.keys(data[event]).length) {
             console.info("No data for", event, "skipping");
@@ -27,8 +27,8 @@ OWI.run(function() {
           for (var type in changedItems[event]) {
             for (var itemID in changedItems[event][type]) {
               if (data[event][type]) {
-                data[event][type][changedItems[event][type][itemID]] = data[event][type][itemID]
-                delete data[event][type][itemID]
+                data[event][type][changedItems[event][type][itemID]] = data[event][type][itemID];
+                delete data[event][type][itemID];
               }
             }
           }
@@ -44,15 +44,15 @@ OWI.run(function() {
         var heroes = ["ana", "bastion", "dva", "genji", "hanzo", "junkrat", "lucio", "mccree", "mei", "mercy", "pharah", "reaper", "reinhardt", "roadhog", "soldier-76", "sombra", "symmetra", "torbjorn", "tracer", "widowmaker", "winston", "zarya", "zenyatta"];
         var hasEvents = events.filter(function(e) {
           return data[e];
-        })
+        });
         if (!hasEvents.length) {
           return;
         }
 
         heroes.forEach(function(hero) {
-          data[hero] = JSON.parse(types)
-        })
-        data['all'] = { icons: {}, sprays: {} }
+          data[hero] = JSON.parse(types);
+        });
+        data['all'] = { icons: {}, sprays: {} };
 
         for (var event in data) {
           if (!events.includes(event)) {
@@ -65,13 +65,13 @@ OWI.run(function() {
               hero = heroes.includes(hero) ? hero : 'all';
               var newType = (type == 'skinsEpic' || type == 'skinsLegendary') ? 'skins' : type;
               if (!data[hero][newType]) {
-                console.warn("Error!", newType, "doesn't exist in hero", hero, "for item", item)
-                continue
+                console.warn("Error!", newType, "doesn't exist in hero", hero, "for item", item);
+                continue;
               }
               data[hero][newType][item] = data[event][type][item];
             }
           }
-          delete data[event]
+          delete data[event];
         }
       }
     },
@@ -79,31 +79,31 @@ OWI.run(function() {
       name: "Fix incorrect Uprising data and stuff",
       id: 7,
       run: function() {
-        var newData = {"all":{"icons":{"lunamari":"peachimari"}},"reaper":{"voicelines":{"reaper-amatuer-hour":"reaper-amateur-hour"}},"soldier-76":{"skins":{"soldier-76-strikecommander-morrison":"soldier-76-strike-commander-morrison"},"icons":{"soldier-76-strikecommander":"soldier-76-strike-commander"}}}
+        var newData = {"all":{"icons":{"lunamari":"peachimari"}},"reaper":{"voicelines":{"reaper-amatuer-hour":"reaper-amateur-hour"}},"soldier-76":{"skins":{"soldier-76-strikecommander-morrison":"soldier-76-strike-commander-morrison"},"icons":{"soldier-76-strikecommander":"soldier-76-strike-commander"}}};
         for (var hero in newData) {
           for (var type in newData[hero]) {
             for (var item in newData[hero][type]) {
               if (data[hero][type] && data[hero][type][item]) {
-                data[hero][type][newData[hero][type][item]] = data[hero][type][item]
-                delete data[hero][type][item]
+                data[hero][type][newData[hero][type][item]] = data[hero][type][item];
+                delete data[hero][type][item];
               }
             }
           }
         }
-        var things = [['orisa', 'or14ns'], ['mccree', 'blackwatch']]
+        var things = [['orisa', 'or14ns'], ['mccree', 'blackwatch']];
         things.forEach(function(thing) {
           if (data['all'] && data['all']['icons']) {
             if (data['all']['icons'][thing[1]]) {
               if (data[thing[0]] && data[thing[0]]['icons']) {
-                data[thing[0]]['icons'][thing[0] + '-' + thing[1]] = data['all']['icons'][thing[1]]
+                data[thing[0]]['icons'][thing[0] + '-' + thing[1]] = data['all']['icons'][thing[1]];
               }
             }
-            delete data['all']['icons'][thing[1]]
+            delete data['all']['icons'][thing[1]];
           }
-        })
+        });
       }
     }
-  ]
+  ];
 
   var storedMigrations = localStorage.getItem('migrations');
   var completedMigrations = storedMigrations ? JSON.parse(storedMigrations) : [];
@@ -117,9 +117,9 @@ OWI.run(function() {
     return;
   }
 
-  console.info("Running Migrations")
+  console.info("Running Migrations");
   if (completedMigrations.length == migrations.length) {
-    console.info("No migrations needed")
+    console.info("No migrations needed");
     return;
   }
 
@@ -141,19 +141,19 @@ OWI.run(function() {
   console.info("Loading themes");
   var settings = angular.fromJson(localStorage.getItem('settings')) || {};
   var theme = settings.currentTheme || 'standard';
-  var styles = ['events.css', 'heroes.css']
+  var styles = ['events.css', 'heroes.css'];
   styles.forEach(function(style) {
-    var url = './css/' + (theme == 'standard' ? style : 'themes/' + theme + '/' + style)
+    var url = './css/' + (theme == 'standard' ? style : 'themes/' + theme + '/' + style);
     var newElm = document.createElement('link');
     newElm.rel = "stylesheet";
     newElm.href = url;
     document.head.appendChild(newElm);
 
     setTimeout(function() {
-      document.body.style.opacity = 1
+      document.body.style.opacity = 1;
     }, 400);
-  })
-})
+  });
+});
 
 // Set up the apps routes
 OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -170,8 +170,8 @@ OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
           } else {
             deferred.reject("INVALID_HERO");
           }
-        })
-        return deferred.promise
+        });
+        return deferred.promise;
       }
     },
     views: {
@@ -194,8 +194,8 @@ OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
           } else {
             deferred.reject("INVALID_EVENT");
           }
-        })
-        return deferred.promise
+        });
+        return deferred.promise;
       }
     },
     views: {
@@ -216,8 +216,8 @@ OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         var deferred = $q.defer();
         DataService.waitForInitialization().then(function(data) {
           deferred.resolve(data);
-        })
-        return deferred.promise
+        });
+        return deferred.promise;
       }
     },
     views: {
@@ -225,19 +225,19 @@ OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         templateUrl: './templates/home.html'
       }
     }
-  })
+  });
 
   $urlRouterProvider.otherwise('/');
-}])
+}]);
 
 // Listen for state change errors such as routing to an invalid hero and redirect
 OWI.run(["$rootScope", "$state", "DataService", function($rootScope, $state, Data) {
   $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
     console.warn(error);
     if (error == 'INVALID_HERO') {
-      $state.go('home')
+      $state.go('home');
     } else {
-      $state.go('events', { id: Data.currentEvent })
+      $state.go('events', { id: Data.currentEvent });
     }
   });
-}])
+}]);

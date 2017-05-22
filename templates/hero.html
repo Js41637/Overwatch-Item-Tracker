@@ -75,7 +75,7 @@
         ng-repeat="item in items track by item.id"
         fancy-load="{{$index}}"
         ng-click="hero.selectItem(item, type)"
-        lazy-background="{{::hero.getPreviewURL(item, type, hero.id, true)}}"
+        lazy-background="{{$ctrl.getImageUrl(item.url)}}"
         no-loader="true">
       </span>
     </div>
