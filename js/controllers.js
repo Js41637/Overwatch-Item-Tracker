@@ -352,6 +352,42 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
     StorageService.setData($scope.checked);
     CostAndTotalService.updateItem(item, type, item.hero, event.id);
   };
+
+  var showTimeout = undefined;
+  var hideTimeout = undefined;
+  $scope.showPreview = function(what, type) {
+    if (!what.url) return;
+    if (CompatibilityService.canPlayType(type) === 'false') return;
+    if (showTimeout) return;
+    var item = angular.copy(what);
+    clearTimeout(hideTimeout);
+    showTimeout = setTimeout(function () {
+      item.type = type;
+      item.media = (type == 'emotes' || type == 'intros') ? 'video' : type == 'voicelines' ? 'audio' : 'image';
+      if (StorageService.getSetting('hdVideos') && (type == 'emotes' || type == 'intros')) {
+        item.url = item.url.replace('.webm', '-hd.webm');
+      }
+      if (location.host.match(/^localhost:5000$/)) {
+        item.url = item.url.replace('https://d34nsd3ksgj839.cloudfront.net', 'http://localhost:5000/resources');
+      }
+      if (type == 'voicelines') {
+        $scope.audio = item;
+      } else {
+        $scope.preview = item;
+      }
+      $scope.$digest();
+    }, ($scope.preview || $scope.audio) ? 50 : 600);
+  };
+
+  $scope.hidePreview = function() {
+    clearTimeout(showTimeout);
+    showTimeout = undefined;
+    hideTimeout = setTimeout(function () {
+      $scope.preview = false;
+      $scope.audio = false;
+      $scope.$digest();
+    }, 150);
+  };
 }]);
 
 OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $uibModalInstance, StorageService, DataService) {
