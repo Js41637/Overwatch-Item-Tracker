@@ -22,32 +22,12 @@
   </div>
 </div>
 <div id="row2" class="row space-between">
-  <div class="left">
-    <div id="epic-skins" class="section">
-      <div class="section-header">
-        <h2>Epic Skins</h2>
-      </div>
-      <div class="items">
-        <event-item ng-repeat="item in ::data.items.skinsEpic track by $index" type="skins"></event-item>
-      </div>
+  <div id="emotes" class="section">
+    <div class="section-header">
+      <h2>Emotes</h2>
     </div>
-  </div>
-  <div class="right">
-    <div id="highlight-intros" class="section">
-      <div class="section-header">
-        <h2>Highlight Intros</h2>
-      </div>
-      <div class="items">
-        <event-item ng-repeat="item in ::data.items.intros track by $index" type="intros"></event-item>
-      </div>
-    </div>
-    <div id="emotes" class="section">
-      <div class="section-header">
-        <h2>Emotes</h2>
-      </div>
-      <div class="items">
-        <event-item ng-repeat="item in ::data.items.emotes track by $index" type="emotes"></event-item>
-      </div>
+    <div class="items">
+      <event-item ng-repeat="item in ::data.items.emotes track by $index" type="emotes"></event-item>
     </div>
   </div>
   <div id="victoryposes" class="section">
