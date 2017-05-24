@@ -645,14 +645,6 @@
   padding: 9px 16px;
 }
 
-#UPRISING_2017 #legendary-skins [type="checkbox"]:not(:checked)+label:before, #legendary-skins [type="checkbox"]:checked+label:before {
-  top: -306px;
-}
-
-#UPRISING_2017 #legendary-skins [type="checkbox"]:not(:checked)+label:after, #legendary-skins [type="checkbox"]:checked+label:after {
-  top: -304px;
-}
-
 #UPRISING_2017 #voicelines {
   width: 48%;
 }
@@ -688,6 +680,97 @@
 #UPRISING_2017 #sprays {
   width: 37.5%;
 }
+
+/* ANNIVERSAY 2017 */
+
+#ANNIVERSARY_2017 #col1 {
+  width: 100%;
+  padding: 0 10px;
+}
+
+#ANNIVERSARY_2017 #col1 #legendary-skins .card:last-of-type {
+  margin-right: 0;
+}
+
+#ANNIVERSARY_2017 #row2 .right {
+  width: 51%;
+}
+
+#ANNIVERSARY_2017 #row2 .top {
+  display: flex;
+}
+
+#ANNIVERSARY_2017 #icons {
+  width: 45%;
+}
+
+#ANNIVERSARY_2017 #emotes {
+  width: 55%;
+}
+
+#ANNIVERSARY_2017 #emotes .items, #ANNIVERSARY_2017 #icons .items {
+  height: 470px;
+}
+
+#ANNIVERSARY_2017 #voicelines {
+  width: 48%;
+}
+
+#ANNIVERSARY_2017 #voicelines .items {
+  height: 600px;
+}
+
+#ANNIVERSARY_2017 #voicelines .items .item h4 {
+  display: initial;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#ANNIVERSARY_2017 #voicelines .items .item h4:before {
+  content: "["
+}
+
+#ANNIVERSARY_2017 #voicelines .items .item h4:after {
+  content: "]"
+}
+
+#ANNIVERSARY_2017 #sprays {
+  margin-top: 5px;
+  width: 100%;
+}
+
+#ANNIVERSARY_2017 #sprays .items {
+  height: 333px;
+}
+
+#ANNIVERSARY_2017 #image-preview.fixed {
+  padding-left: 100px;
+}
+
+#ANNIVERSARY_2017 #image-preview .card.spray {
+  background-size: 70%;
+  background-position: center 35%;
+}
+
+#ANNIVERSARY_2017 #legendary-skins {
+  height: 412px;
+}
+
+#ANNIVERSARY_2017 #legendary-skins .images .card {
+  height: 370px;
+  transition: width 0.175s ease-in-out, height 0.175s ease-in-out;
+  will-change: width, height;
+}
+
+
+#ANNIVERSARY_2017 #legendary-skins .images .card:hover {
+  width: 40%;
+  height: 440px;
+  z-index: 1;
+  transition-delay: 0.375s;
+}
+
 
 /* SMALL MODE CSS */
 
@@ -932,5 +1015,29 @@
   }
   #UPRISING_2017 #sprays .items .item {
     width: 24.5%;
+  }
+  #ANNIVERSARY_2017 #event-container {
+    width: initial;
+  }
+  #ANNIVERSARY_2017 #row2 .top {
+    display: initial;
+  }
+  #ANNIVERSARY_2017 #emotes .items {
+    height: 440px;
+  }
+  #ANNIVERSARY_2017 #emotes, #ANNIVERSARY_2017 #icons {
+    width: 100%;
+  }
+  #ANNIVERSARY_2017 #voicelines .items {
+    height: 880px;
+  }
+  #ANNIVERSARY_2017 #voicelines .items .item {
+    width: 49.5%;
+  }
+  #ANNIVERSARY_2017 #legendary-skins .images .card-heading {
+    font-size: 24px !important;
+  }
+  #ANNIVERSARY_2017 #legendary-skins .images .p {
+    font-size: 15px !important;
   }
 }

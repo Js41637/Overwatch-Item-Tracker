@@ -4,12 +4,9 @@ const { checkDirectorys, getDirectories } = require('./utils')
 
 const validTypes = ['emotes', 'intros', 'icons', 'poses', 'sprays', 'skins', 'skinsEpic', 'skinsLegendary', 'voicelines', 'none']
 const weirdHeroes = {
-  friendly: 'friendly-bot',
-  shocktire: 'shocktire',
+  halloween: 'halloween-bots',
   training: 'training-bot',
-  zombardier: 'zombardier',
-  zomnic: 'zomnic'
-  
+  uprising: 'uprising-bots'
 }
 const mapFilesToHeroes = (args, internal) => {
   return new Promise((resolve, reject) => {

@@ -7,7 +7,8 @@ OWI.factory("StorageService", function() {
       showPreviews: true,
       hdVideos: false,
       currentTheme: 'standard',
-      audioVolume: 0.5
+      audioVolume: 0.5,
+      countIcons: true
     },
     getData: function() {
       return service.data;
@@ -28,7 +29,7 @@ OWI.factory("StorageService", function() {
     },
     init: function() {
       console.info("Init StorageService");
-      var storedData = localStorage.getItem('data')
+      var storedData = localStorage.getItem('data');
       if (storedData) {
         service.data = angular.fromJson(storedData);
       }
@@ -36,28 +37,30 @@ OWI.factory("StorageService", function() {
       if (!storedSettings) {
         service.settings = service.defaultSettings;
       } else {
-        service.settings = angular.fromJson(storedSettings);
+        service.settings = Object.assign({}, service.defaultSettings, angular.fromJson(storedSettings));
       }
     }
-  }
+  };
   service.init();
   return service;
-})
+});
 
 OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q, StorageService) {
   function initialize(data) {
     console.info("Initializing");
     var storedData = StorageService.getData() || {};
     var out = {
-      initialized: true,
       checked: {}
-    }
+    };
     for (var hero in data.heroes) {
-      out.checked[hero] = {"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}}
+      out.checked[hero] = {"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}};
     }
 
     Object.assign(out.checked, storedData);
     Object.assign(service, out, data);
+    setTimeout(function() {
+      service.initialized = true;
+    }, 0);
   }
 
   var service = {
@@ -72,11 +75,11 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
     waitForInitialization: function() {
       return $q(function(resolve) {
         function waitForInitialize() {
-            if (service.initialized) {
-              resolve(service);
-            } else {
-              setTimeout(waitForInitialize, 50);
-            }
+          if (service.initialized) {
+            resolve(service);
+          } else {
+            setTimeout(waitForInitialize, 30);
+          }
         }
         waitForInitialize();
       });
@@ -91,12 +94,158 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
         }
       }, function(resp) {
         console.error("Failed loading master.json ???", resp.status, resp.error);
-      })
+      });
     }
-  }
+  };
   service.init();
   return service;
-}])
+}]);
+
+OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(DataService, StorageService) {
+  var TYPES = {
+    skinsEpic: 'skins',
+    skinsLegendary: 'skins'
+  };
+
+  var isValidItem = function(item, event) {
+    var hasEvent = item.event || event;
+    return !item.achievement && item.quality && (!hasEvent || (hasEvent && hasEvent !== 'SUMMER_GAMES_2016'));
+  };
+  
+  var countIcons = StorageService.getSetting('countIcons');
+
+  var service = {
+    totals: {},
+    heroes: {},
+    events: {},
+    init: function() {
+      DataService.waitForInitialization().then(function() {
+        console.info("Calculating totals and costs");
+        service.recalculate();
+      });
+    },
+    recalculate: function() {
+      console.log("Calculating costs");
+      service.heroes = {};
+      service.events = {};
+      var d = Object.assign({}, DataService.heroes, DataService.events);
+      for (var heroOrEvent in d) {
+        var isEvent = DataService.events[heroOrEvent];
+        var what = d[heroOrEvent];
+        var TYPE = isEvent ? 'events' : 'heroes';
+
+        service[TYPE][what.id] = { events: {}, groups: {}, cost: { selected: 0, remaining: 0, total: 0, prev: 0 }, totals: { overall: { selected: 0, total: 0, percentage: 0 } } };
+        var items = what.items;
+        for (var type in items) {
+          if (!service[TYPE][what.id].totals[type]) service[TYPE][what.id].totals[type] = { selected: 0, total: 0 };
+          for (var item of items[type]) {
+            if (item.standardItem) continue;
+            if (!isEvent) {
+              if (item.event && !service[TYPE][what.id].events[item.event]) service[TYPE][what.id].events[item.event] = true;
+              if (item.group && !service[TYPE][what.id].groups[item.group]) service[TYPE][what.id].groups[item.group] = true;
+            }
+            var isSelected = DataService.checked[item.hero || what.id][TYPES[type] || type][item.id];
+            service[TYPE][what.id].totals.overall.total++;
+            service[TYPE][what.id].totals[type].total++;
+            if (isSelected) {
+              service[TYPE][what.id].totals.overall.selected++;
+              service[TYPE][what.id].totals[type].selected++;
+            }
+            if (type == 'icons') {
+              if (!countIcons) {
+                service[TYPE][what.id].totals.overall.total--;
+                if (isSelected) service[TYPE][what.id].totals.overall.selected--;
+              }
+              continue;
+            }
+            if (isValidItem(item)) {
+              var price = DataService.prices[item.quality] * ((item.event || isEvent) ? 3 : 1);
+              service[TYPE][what.id].cost.total += price;
+              if (isSelected) {
+                service[TYPE][what.id].cost.selected += price;
+              } else {
+                service[TYPE][what.id].cost.remaining += price;
+              }
+            }
+          }
+        }
+        service[TYPE][what.id].totals.overall.percentage = ((service[TYPE][what.id].totals.overall.selected / service[TYPE][what.id].totals.overall.total) * 100);
+      }
+    },
+    updateItem: function(item, type, hero, event) {
+      var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][item.id];
+      event = item.event || event;
+      var eventType = type == 'skins' ? (item.quality == 'epic' ? 'skinsEpic' : 'skinsLegendary') : type;
+      var val = isSelected ? 1 : -1;
+      var price = DataService.prices[item.quality] * (event ? 3 : 1);
+      var isValid = isValidItem(item, event);
+      service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
+      service.heroes[hero].totals[type].selected += val;
+      if (type != 'icons' || (type == 'icons' && countIcons)) {
+        service.heroes[hero].totals.overall.selected += val;
+      }
+      if (type != 'icons' && isValid) {
+        if (isSelected) {
+          service.heroes[hero].cost.selected += price;
+          service.heroes[hero].cost.remaining -= price;
+        } else {
+          service.heroes[hero].cost.selected -= price;
+          service.heroes[hero].cost.remaining += price;
+        }
+      }
+      if (event && (type !== 'icons' || type == 'icons' && countIcons)) {
+        service.events[event].totals.overall.selected += val;
+        service.events[event].totals[eventType].selected += val;
+        service.events[event].cost.prev = service.events[event].cost.remaining;
+        if (type !== 'icons' && isValid) {
+          if (isSelected) {
+            service.events[event].cost.remaining -= price;
+            service.events[event].cost.selected += price;
+          } else {
+            service.events[event].cost.remaining += price;
+            service.events[event].cost.selected -= price;
+          }
+        }
+        service.events[event].totals.overall.percentage = ((service.events[event].totals.overall.selected / service.events[event].totals.overall.total) * 100);
+      }
+      service.heroes[hero].totals.overall.percentage = ((service.heroes[hero].totals.overall.selected / service.heroes[hero].totals.overall.total) * 100);
+      return service.heroes[hero];
+    },
+    calculateFilteredHeroes: function(items, oldCost, hero) {
+      var out = {
+        cost: { total: 0, selected: 0, remaining: 0, prev: oldCost },
+        totals: { overall: { selected: 0, total: 0, percentage: 0 } }
+      };
+      for (var type in items) {
+        if (!out.totals[type]) out.totals[type] = { total: 0, selected: 0 };
+        for (var item of items[type]) {
+          if (item.standardItem) continue;
+          var isSelected = DataService.checked[item.hero || hero][type][item.id];
+          out.totals.overall.total++;
+          out.totals[type].total++;
+          if (isSelected) {
+            out.totals.overall.selected++;
+            out.totals[type].selected++;
+          }
+          if (type == 'icons') continue;
+          if (isValidItem(item)) {
+            var price = DataService.prices[item.quality] * (item.event ? 3 : 1);
+            out.cost.total += price;
+            if (isSelected) {
+              out.cost.selected += price;
+            } else {
+              out.cost.remaining += price;
+            }
+          }
+        }
+      }
+      out.totals.overall.percentage = ((out.totals.overall.selected / out.totals.overall.total) * 100);
+      return out;
+    }
+  };
+  service.init();
+  return service;
+}]);
 
 OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
   var service = {
@@ -108,20 +257,20 @@ OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
       var deferred = $q.defer();
       if (service.loadedImages[url]) {
         setTimeout(function() {
-          deferred.resolve(url)
-        }, 0)
-        return deferred.promise
+          deferred.resolve(url);
+        }, 0);
+        return deferred.promise;
       } else {
         if (noQueue) {
-          service.fetchImage(url, deferred, true)()
+          service.fetchImage(url, deferred, true)();
         } else {
-          service.images.push(service.fetchImage(url, deferred))
+          service.images.push(service.fetchImage(url, deferred));
           if (!service.processing) {
-            service.processQueue()
+            service.processQueue();
           }
         }
       }
-      return deferred.promise
+      return deferred.promise;
     },
     fetchImage: function(url, promise, ignore) {
       return function() {
@@ -140,34 +289,34 @@ OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
           promise.reject();
         };
         img.src = url;
-      }
+      };
     },
     processQueue: function() {
       service.processing = true;
       if (service.requests == 4) {
         setTimeout(function() {
-          service.processQueue()
-        }, 75)
-        return
+          service.processQueue();
+        }, 75);
+        return;
       }
       
-      var nextImage = service.images.shift()
+      var nextImage = service.images.shift();
       if (nextImage) {
         service.requests++;
         nextImage();
         setTimeout(function() {
-          service.processQueue()
+          service.processQueue();
         }, 1);
       } else {
         service.processing = false;
       }
     }
-  }
+  };
   return service;
-}])
+}]);
 
 OWI.factory('CompatibilityService', ["StorageService", function(StorageService) {
-  var showPreviews = StorageService.getSetting('showPreviews')
+  var showPreviews = StorageService.getSetting('showPreviews');
   var service = {
     noSupportMsg: false,
     supportedTypes:{
@@ -178,34 +327,34 @@ OWI.factory('CompatibilityService', ["StorageService", function(StorageService) 
     supportsAudio: true,
     supportsVideo: true,
     canPlayType: function(type) {
-      if (!showPreviews) return 'false'
-      return service.supportedTypes[type] || true
+      if (!showPreviews) return 'false';
+      return service.supportedTypes[type] || true;
     }
-  }
+  };
 
-  var noSupport = []
+  var noSupport = [];
   var messages = {
     WebM: 'view previews of emotes and intros',
     Ogg: 'listen to voicelines'
-  }
-  var v = document.createElement('video')
-  var a = document.createElement('audio')
+  };
+  var v = document.createElement('video');
+  var a = document.createElement('audio');
   if (!v.canPlayType || ("" == v.canPlayType('video/webm; codecs="vp8, opus"') && "" == v.canPlayType('video/webm; codecs="vp9, opus"'))) {
-    service.supportsVideo = false
-    service.supportedTypes['intros'] = 'false'
-    service.supportedTypes['emotes'] = 'false'
-    noSupport.push('WebM')
+    service.supportsVideo = false;
+    service.supportedTypes['intros'] = 'false';
+    service.supportedTypes['emotes'] = 'false';
+    noSupport.push('WebM');
   }
   if (!a.canPlayType || "" == a.canPlayType('audio/ogg; codecs="vorbis"')) {
-    service.supportsAudio = false
-    service.supportedTypes['voicelines'] = 'false'
-    noSupport.push('Ogg')
+    service.supportsAudio = false;
+    service.supportedTypes['voicelines'] = 'false';
+    noSupport.push('Ogg');
   }
   if (noSupport.length) {
     service.noSupportMsg = "You're browser doesn't seem to support " + noSupport.join(' and ') + ".\nThis means you won't be able to " + noSupport.map(function(n) {
-      return messages[n]
-    }).join(' or ') + "."
+      return messages[n];
+    }).join(' or ') + ".";
   }
 
-  return service
-}])
+  return service;
+}]);

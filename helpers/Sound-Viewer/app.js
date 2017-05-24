@@ -76,6 +76,28 @@ OWI.controller('MainCtrl', ["$http", function($http) {
     this.sSoundIndex = -1
   }
 
+  function hashCode(str) {
+    var hash = 0
+    for (var i = 0; i < str.length; i++) {
+      hash = str.charCodeAt(i) + ((hash << 5) - hash)
+    }
+    return hash
+  } 
+
+  function intToRGB(i ){
+    var c = (i & 0x00FFFFFF).toString(16).toUpperCase()
+    return "00000".substring(0, 6 - c.length) + c
+  }
+
+  function shadeColor(color, percent) {   
+    var f=parseInt(color,16),t=percent<0?0:255,p=percent<0?percent*-1:percent,R=f>>16,G=f>>8&0x00FF,B=f&0x0000FF;
+    return "#"+(0x1000000+(Math.round((t-R)*p)+R)*0x10000+(Math.round((t-G)*p)+G)*0x100+(Math.round((t-B)*p)+B)).toString(16).slice(1);
+}
+
+  this.getColor = str => {
+    return shadeColor(intToRGB(hashCode(str)), 0.5)
+  }
+
   this.isHeroDone = hero => {
     if (loading) return false
     if (!this.mappedSounds[hero]) return false

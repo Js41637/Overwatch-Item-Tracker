@@ -1,7 +1,6 @@
 <div class="audio-player">
   <div class="icon">
-    <span class="playing" ng-class="{show: progress}"></span>
-    <span class="not-playing"></span>
+    <span class="glyphicon" ng-class="{'glyphicon-volume-up': progress, 'glyphicon-volume-off': !progress}"></span>
   </div>
   <div class="player">
     <div class="progress" style="width: {{progress}}%"></div>

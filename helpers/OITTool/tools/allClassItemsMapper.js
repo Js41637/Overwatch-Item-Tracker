@@ -1,4 +1,5 @@
 const fs = require('fs')
+const { sortBy } = require('lodash')
 const { getDirectories, cleanFileIDs, handleErr } = require('./utils')
 
 var TYPES = {
@@ -23,14 +24,21 @@ const mapAllClassData = () => {
   getDirectories(base).then(types => {
     Promise.all(types.map(type => {
       if (type !== 'Icon' && type !== 'Spray') return Promise.resolve()
-      return getDirectories(`${base}${type}`).then(files => {
-        files = cleanFileIDs(files)
-        Promise.all(files.map(({ name, cleanName }) => {
-          data[TYPES[type]].push({ name: name.slice(0, -4), id: cleanName })
-          Promise.resolve()
-        }))
+      return getDirectories(`${base}${type}`).then(groups => {
+        return Promise.all(groups.map(group => {
+          return getDirectories(`${base}${type}/${group}`).then(files => {
+            files = cleanFileIDs(files)
+            return Promise.all(files.map(({ name, cleanName }) => {
+              data[TYPES[type]].push({ name: name.slice(0, -4), id: cleanName })
+              Promise.resolve()
+            }))
+          }).catch(handleErr)
+        })).catch(handleErr)
       }).catch(handleErr)
     })).then(() => {
+      Object.keys(data).forEach(type => {
+        data[type] = sortBy(data[type], [a => a.name.toLowerCase()])
+      })
       fs.writeFileSync(`${base}allClassItems.json`, JSON.stringify(data, null, 2))
     })
   }).catch(handleErr)
