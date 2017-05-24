@@ -847,6 +847,42 @@ body#UPRISING_2017:before {
   color: #868686;
 }
 
+#ANNIVERSARY_2017 #row2 {
+  margin-top: 0px;
+}
+
+#ANNIVERSARY_2017 #voicelines {
+  width: 50%;
+}
+
+#ANNIVERSARY_2017 #voicelines .items {
+  height: 700px;
+}
+
+#ANNIVERSARY_2017 #row2 .right {
+  width: 49%;
+}
+
+#ANNIVERSARY_2017 #row2 .top {
+  display: flex;
+}
+
+#ANNIVERSARY_2017 #emotes, #ANNIVERSARY_2017 #icons {
+  width: 50%;
+}
+
+#ANNIVERSARY_2017 #emotes .item, #ANNIVERSARY_2017 #icons .item {
+  width: 49.5%;
+}
+
+#ANNIVERSARY_2017 #emotes .items, #ANNIVERSARY_2017 #icons .items {
+  height: 515px;
+}
+
+#ANNIVERSARY_2017 #sprays .items {
+  height: 390px;
+}
+
 
 @media screen and (max-width: 1500px) {
   #YEAR_OF_THE_ROOSTER_2017 #event-container .row,
