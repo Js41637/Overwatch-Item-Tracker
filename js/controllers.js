@@ -130,9 +130,18 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
   this.canPlayType = CompatibilityService.canPlayType;
   this.gridView = false;
   this.checked = Data.checked;
-  this.events = CostAndTotalService.heroes[hero.id].events;
-  this.groups = CostAndTotalService.heroes[hero.id].groups;
-  this.totals = CostAndTotalService.heroes[hero.id].totals;
+  if (CostAndTotalService.heroes[hero.id]) {
+    this.events = CostAndTotalService.heroes[hero.id].events;
+    this.groups = CostAndTotalService.heroes[hero.id].groups;
+    this.totals = CostAndTotalService.heroes[hero.id].totals;
+  } else {
+    setTimeout(function() {
+      this.events = CostAndTotalService.heroes[hero.id].events;
+      this.groups = CostAndTotalService.heroes[hero.id].groups;
+      this.totals = CostAndTotalService.heroes[hero.id].totals;
+    }, 1000);
+  }
+  
   this.filters = {
     selected: false,
     unselected: false,
