@@ -520,6 +520,11 @@ body#zenyatta #hero-container .hero-overview {
   background-image: url(resources/icons/events/UPRISING_2017.svg);
 }
 
+#hero-container .hero-items .item[event="ANNIVERSARY_2017"]:after {
+  background-image: url(resources/icons/events/ANNIVERSARY_2017.svg);
+  filter: brightness(0.7);
+}
+
 
 /* Achivement Icons */
 
