@@ -337,7 +337,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
   };
 }]);
 
-OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService", "event", function($scope, $rootScope, Data, StorageService, CompatibilityService, CostAndTotalService, event) {
+OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService", "$window", "event", function($scope, $rootScope, Data, StorageService, CompatibilityService, CostAndTotalService, $window, event) {
   $scope.preview = false;
   $scope.checked = Data.checked;
   $scope.data = event;
@@ -388,6 +388,11 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
       $scope.$digest();
     }, 150);
   };
+
+  angular.element($window).bind("scroll", function() {
+    $scope.isFixed = this.pageYOffset >= 200 ? true : false;
+    $scope.$apply();
+  });
 }]);
 
 OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $uibModalInstance, StorageService, DataService) {

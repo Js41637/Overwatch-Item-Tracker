@@ -63,16 +63,6 @@ OWI.directive('eventItem', function() {
   };
 });
 
-OWI.directive("scroll", function($window) {
-  return function($scope) {
-    angular.element($window).bind("scroll", function() {
-      if (this.innerWidth > 1570) return;
-      $scope.isFixed = this.pageYOffset >= 200 ? true : false;
-      $scope.$apply();
-    });
-  };
-});
-
 OWI.directive('audiopls', ["StorageService", function(StorageService) {
   return {
     restrict: 'A',
