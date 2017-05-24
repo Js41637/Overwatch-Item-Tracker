@@ -76,12 +76,9 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
       return $q(function(resolve) {
         function waitForInitialize() {
           if (service.initialized) {
-            console.log(service);
-            setTimeout(function() {
-              resolve(service);
-            }, 0);
+            resolve(service);
           } else {
-            setTimeout(waitForInitialize, 40);
+            setTimeout(waitForInitialize, 30);
           }
         }
         waitForInitialize();
