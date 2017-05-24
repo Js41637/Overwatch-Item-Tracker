@@ -749,8 +749,7 @@
 }
 
 #ANNIVERSARY_2017 #image-preview .card.spray {
-  background-size: 70%;
-  background-position: center 35%;
+   background-size: auto 320px;
 }
 
 #ANNIVERSARY_2017 #legendary-skins {
@@ -762,7 +761,6 @@
   transition: width 0.175s ease-in-out, height 0.175s ease-in-out;
   will-change: width, height;
 }
-
 
 #ANNIVERSARY_2017 #legendary-skins .images .card:hover {
   width: 40%;
