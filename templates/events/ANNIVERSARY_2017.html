@@ -5,13 +5,13 @@
   <div id="col2" class="col space-between">
     <div id="voicelines" class="section flex-column x2">
       <div class="section-header">
-        <h2>Voice Lines</h2>
+        <h2>Voice Lines <small>75</small></h2>
       </div>
       <div class="items">
         <event-item ng-repeat="item in ::data.items.voicelines track by $index" type="voicelines"></event-item>
       </div>
     </div>
-    <div id="icons" class="section flex-column x4">
+    <div id="icons" class="section flex-column x2">
       <div class="section-header">
         <h2>Player Icons</h2>
       </div>
@@ -24,26 +24,18 @@
 <div id="row2" class="row space-between">
   <div id="emotes" class="section">
     <div class="section-header">
-      <h2>Emotes</h2>
+      <h2>Emotes <small>750</small></h2>
     </div>
     <div class="items">
       <event-item ng-repeat="item in ::data.items.emotes track by $index" type="emotes"></event-item>
     </div>
   </div>
-  <div id="victoryposes" class="section">
+  <div id="sprays" class="section flex-column x4">
     <div class="section-header">
-      <h2>Victory Poses</h2>
+      <h2>Sprays <small>75</small></h2>
     </div>
     <div class="items">
-      <event-item ng-repeat="item in ::data.items.poses track by $index" type="poses"></event-item>
-    </div>
-  </div>
-  <div id="sprays" class="section flex-column x3">
-    <div class="section-header">
-      <h2>Sprays</h2>
-    </div>
-    <div class="items">
-      <div class="item" ng-repeat="spray in ::data.items.sprays track by $index" ng-mouseenter="showPreview(spray, 'spray')" achievement="{{::spray.achievement}}"  ng-mouseleave="hidePreview()">
+      <div class="item" ng-repeat="spray in ::data.items.sprays track by $index" ng-if="::!spray.id.includes('dragon-dance')" achievement="{{::spray.achievement}}" ng-mouseenter="showPreview(spray, 'spray')" ng-mouseleave="hidePreview()">
         <input type="checkbox" id="{{'spray' + $index}}" ng-model="checked[spray.hero].sprays[spray.id]" ng-change="onSelect(spray, 'sprays')">
         <label for="{{'spray' + $index}}">
           <h3>{{::spray.heroName || spray.name}}</h3>
