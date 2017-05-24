@@ -3,9 +3,9 @@ const qualityOrder = {
   'rare': 1,
   'epic': 2,
   'legendary': 3
-}
+};
 
-const qualities = ['common', 'epic', 'rare', 'legendary']
+const qualities = ['common', 'epic', 'rare', 'legendary'];
 const types = [
   { m: 'skin', name: 'skins' },
   { m: 'icon', name: 'icons' },
@@ -15,22 +15,22 @@ const types = [
   { m: 'victory pose', name: 'poses' },
   { m: 'heroic intro', name: 'intros' }
   //, { m: 'weapon skin', name: 'weapons' } // Golden
-]
+];
 // Generate a match for each quality for every type of item
-const matches = {}
+const matches = {};
 types.forEach(t => {
-  qualities.forEach(q => matches[`${q} ${t.m}`] = { quality: q, type: t.name })
-})
+  qualities.forEach(q => matches[`${q} ${t.m}`] = { quality: q, type: t.name });
+});
 
 // Returns the type of item, see above
 const getItemType = type => {
-  let m = matches[type.toLowerCase()]
+  let m = matches[type.toLowerCase()];
   if (!m) {
-    if (type !== 'Common Weapon Skin') console.warn("Unknown type?", type)
-    return {}
+    if (type !== 'Common Weapon Skin') console.warn("Unknown type?", type);
+    return {};
   }
-  return m
-}
+  return m;
+};
 
 // Can't generate IDs off these names can we :)
 const stupidNames = {
@@ -40,7 +40,7 @@ const stupidNames = {
   ">_\\<": "frustration",
   ";)": "winky-face",
   "^o^": "excited"
-}
+};
 
 // Returns a cleanID, replacing all bad characters and replacing unicode ones
 const getCleanID = (what, hero) => {
@@ -53,59 +53,59 @@ const getCleanID = (what, hero) => {
               .replace(/[öôọ]/g, 'o')
               .replace('ú', 'u')
               .replace('çã', 'ca')
-              .replace(/[^a-zA-Z 0-9]/g, '').trim().replace(/\s+/g, " ").replace(/ /g, '-')
-}
+              .replace(/[^a-zA-Z 0-9]/g, '').trim().replace(/\s+/g, " ").replace(/ /g, '-');
+};
 
 // Returns the image or video URL for an item
 const getPreviewURL = (type, id, hero, event) => {
-  let url
+  let url;
   if (event && type.match(/^(skins(Epic|Legendary)|poses|emotes|intros)$/)) {
-    url = `https://d34nsd3ksgj839.cloudfront.net/updates/${event}/${type}/${id}`
+    url = `https://d34nsd3ksgj839.cloudfront.net/updates/${event}/${type}/${id}`;
   } else {
-    url = `https://d34nsd3ksgj839.cloudfront.net/heroes/${hero}/${type}/${id}` 
+    url = `https://d34nsd3ksgj839.cloudfront.net/heroes/${hero}/${type}/${id}`; 
   }
   switch (type) {
     case 'voicelines':
-      return `${url}.ogg`
+      return `${url}.ogg`;
     case 'emotes':
     case 'intros':
-      return `${url}.webm`
+      return `${url}.webm`;
     case 'sprays':
     case 'icons':
-      return `${url}.png`
+      return `${url}.png`;
     case 'skins':
     case 'skinsEpic':
     case 'skinsLegendary':
     case 'poses':
-      return `${url}.jpg`
+      return `${url}.jpg`;
   }
-}
+};
 
 // http://stackoverflow.com/a/1359808
 // Makes it so it JSON.stringify's in order
 const sortObject = (o, update) => {
-  var sorted = {}, key, a = []
+  var sorted = {}, key, a = [];
   for (key in o) {
-    if (o.hasOwnProperty(key)) a.push(key)
+    if (o.hasOwnProperty(key)) a.push(key);
   }
   if (update) {
     a.sort((a, b) => {
       if (o[a].order < o[b].order) return -1;
       if (o[a].order > o[b].order) return 1;
       return 0;
-    })
+    });
   } else {
-    a.sort()
+    a.sort();
   }
   for (key = 0; key < a.length; key++) {
-    sorted[a[key]] = o[a[key]]
+    sorted[a[key]] = o[a[key]];
   }
   if (update) {
     Object.keys(sorted).forEach(update => {
-      delete sorted[update].order
-    })
+      delete sorted[update].order;
+    });
   }
-  return sorted
-}
+  return sorted;
+};
 
-module.exports = { getCleanID, getItemType, getPreviewURL, sortObject, stupidNames, qualityOrder }
+module.exports = { getCleanID, getItemType, getPreviewURL, sortObject, stupidNames, qualityOrder };

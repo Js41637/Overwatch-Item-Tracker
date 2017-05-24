@@ -3,7 +3,7 @@ const CLASSES = {
   DEFENCE: 'Defense',
   TANK: 'Tank',
   SUPPORT: 'Support'
-}
+};
 
 const data = {
   all: {
@@ -180,6 +180,6 @@ const data = {
       highlight: "#f0bc00"
     }
   }
-}
+};
 
-module.exports = data
+module.exports = data;
