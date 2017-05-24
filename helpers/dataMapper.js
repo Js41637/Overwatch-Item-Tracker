@@ -221,6 +221,10 @@ for (var hero in data) {
           out.event = group;
           break;
       }
+
+      if (out.event === EVENTS.ANNIVERSARY17 && type === 'emotes') {
+        out.url = getPreviewURL(type, id, heroID, out.event);
+      }
       heroData.items[type].push(out);
       // Icons are allclass so we can add them allClassData which doesn't include hero specific icons
       if (type == 'icons') {
