@@ -693,15 +693,19 @@
 }
 
 #ANNIVERSARY_2017 #row2 .right {
-  width: 53%;
+  width: 51%;
 }
 
 #ANNIVERSARY_2017 #row2 .top {
   display: flex;
 }
 
-#ANNIVERSARY_2017 #emotes, #ANNIVERSARY_2017 #icons {
-  width: 50%;
+#ANNIVERSARY_2017 #icons {
+  width: 45%;
+}
+
+#ANNIVERSARY_2017 #emotes {
+  width: 55%;
 }
 
 #ANNIVERSARY_2017 #emotes .items, #ANNIVERSARY_2017 #icons .items {
@@ -709,11 +713,11 @@
 }
 
 #ANNIVERSARY_2017 #voicelines {
-  width: 46%;
+  width: 48%;
 }
 
 #ANNIVERSARY_2017 #voicelines .items {
-  height: 585px;
+  height: 600px;
 }
 
 #ANNIVERSARY_2017 #voicelines .items .item h4 {
@@ -989,5 +993,29 @@
   }
   #UPRISING_2017 #sprays .items .item {
     width: 24.5%;
+  }
+  #ANNIVERSARY_2017 #event-container {
+    width: initial;
+  }
+  #ANNIVERSARY_2017 #row2 .top {
+    display: initial;
+  }
+  #ANNIVERSARY_2017 #emotes .items {
+    height: 440px;
+  }
+  #ANNIVERSARY_2017 #emotes, #ANNIVERSARY_2017 #icons {
+    width: 100%;
+  }
+  #ANNIVERSARY_2017 #voicelines .items {
+    height: 880px;
+  }
+  #ANNIVERSARY_2017 #voicelines .items .item {
+    width: 49.5%;
+  }
+  #ANNIVERSARY_2017 #legendary-skins .images .card-heading {
+    font-size: 24px !important;
+  }
+  #ANNIVERSARY_2017 #legendary-skins .images .p {
+    font-size: 15px !important;
   }
 }

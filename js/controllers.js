@@ -341,7 +341,14 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   $scope.preview = false;
   $scope.checked = Data.checked;
   $scope.data = event;
-  $scope.cost = CostAndTotalService.events[event.id].cost;
+  if (CostAndTotalService.events[event.id]) {
+    $scope.cost = CostAndTotalService.events[event.id].cost;
+  } else {
+    setTimeout(function() {
+      $scope.cost = CostAndTotalService.events[event.id].cost;
+    }, 1000);
+  }
+  
 
   $rootScope.$on('selectAll', function() {
     CostAndTotalService.recalculate();

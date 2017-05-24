@@ -50,8 +50,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
     console.info("Initializing");
     var storedData = StorageService.getData() || {};
     var out = {
-      initialized: true,
-      checked: {}
+      checked: storedData
     };
     for (var hero in data.heroes) {
       out.checked[hero] = {"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}};
@@ -59,6 +58,9 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
 
     Object.assign(out.checked, storedData);
     Object.assign(service, out, data);
+    setTimeout(function() {
+      service.initialized = true;
+    }, 0);
   }
 
   var service = {
