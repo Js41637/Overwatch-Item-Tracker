@@ -22,7 +22,8 @@ body#SUMMER_GAMES_2016:before,
 body#HALLOWEEN_2016:before,
 body#WINTER_WONDERLAND_2016:before,
 body#YEAR_OF_THE_ROOSTER_2017:before,
-body#UPRISING_2017:before {
+body#UPRISING_2017:before,
+body#ANNIVERSARY_2017:before {
   content: "";
   min-height: 224px;
   background-size: cover;
@@ -57,6 +58,11 @@ body#YEAR_OF_THE_ROOSTER_2017:before {
 body#UPRISING_2017:before {
   background-image: url(resources/UPRISING_2017/bg.jpg);
   background-position: center 18%;
+}
+
+body#ANNIVERSARY_2017:before {
+  background-image: url(resources/ANNIVERSARY_2017/bg.jpg);
+  background-position: center 42%;
 }
 
 
@@ -170,6 +176,17 @@ body#UPRISING_2017:before {
 #UPRISING_2017 .event-ended,
 #UPRISING_2017 .event-active {
   padding-left: 210px;
+}
+
+#ANNIVERSARY_2017 #header .event-ended:before,
+#ANNIVERSARY_2017 #header .event-active:before {
+  background-image: url(../../../resources/updates/ANNIVERSARY_2017/logo.png);
+  width: 148px;
+}
+
+#ANNIVERSARY_2017 .event-ended,
+#ANNIVERSARY_2017 .event-active {
+  padding-left: 166px;
 }
 
 

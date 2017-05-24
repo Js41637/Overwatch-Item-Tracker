@@ -307,6 +307,12 @@ body {
   background-size: cover;
 }
 
+#hero-nav .gallery.event .block[href$="/events/ANNIVERSARY_2017"] {
+  background: url(resources/ANNIVERSARY_2017/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 #hero-nav .gallery.event .block:hover {
   transform: none;
   background: rgb(255, 165, 0);
@@ -463,6 +469,13 @@ body {
   background-size: contain, cover;
 }
 
+#hero-container .item[event="ANNIVERSARY_2017"] + .tooltip .preview.img,
+#ANNIVERSARY_2017 #image-preview .card .bg2 {
+  background: url(resources/ANNIVERSARY_2017/icon-bg.png)no-repeat,url(resources/ANNIVERSARY_2017/preview-bg.png);
+  background-position: top, center;
+  background-size: contain, cover;
+}
+
 #hero-container .section .tooltip .preview.img {
   width: 450px;
   height: 450px;
@@ -594,7 +607,8 @@ body {
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"],
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"],
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"],
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"] {
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY_2017"] {
   padding-left: 30px;
 }
 
@@ -602,7 +616,8 @@ body {
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"]:before,
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"]:before,
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"]:before,
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before {
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY_2017"]:before {
   content: "";
   width: 24px;
   height: 24px;
@@ -633,6 +648,10 @@ body {
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before {
   background-image: url(resources/icons/events/UPRISING_2017.svg);
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY_2017"]:before {
+  background-image: url(resources/icons/events/ANNIVERSARY_2017.svg);
 }
 
 
