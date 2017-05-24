@@ -364,7 +364,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   var hideTimeout = undefined;
   $scope.showPreview = function(what, type) {
     if (!what.url) return;
-    if (event.id === 'ANNIVERSARY_2017' && (type == 'emotes' || type == 'voicelines')) return;
+    if (event.id === 'ANNIVERSARY_2017' && type == 'voicelines') return;
     if (CompatibilityService.canPlayType(type) === 'false') return;
     if (showTimeout) return;
     var item = angular.copy(what);
