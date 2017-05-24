@@ -684,7 +684,36 @@
 /* ANNIVERSAY 2017 */
 
 #ANNIVERSARY_2017 #col1 {
-  width: 80%;
+  width: 100%;
+  padding: 0 10px;
+}
+
+#ANNIVERSARY_2017 #col1 #legendary-skins .card:last-of-type {
+  margin-right: 0;
+}
+
+#ANNIVERSARY_2017 #row2 .right {
+  width: 53%;
+}
+
+#ANNIVERSARY_2017 #row2 .top {
+  display: flex;
+}
+
+#ANNIVERSARY_2017 #emotes, #ANNIVERSARY_2017 #icons {
+  width: 50%;
+}
+
+#ANNIVERSARY_2017 #emotes .items, #ANNIVERSARY_2017 #icons .items {
+  height: 470px;
+}
+
+#ANNIVERSARY_2017 #voicelines {
+  width: 46%;
+}
+
+#ANNIVERSARY_2017 #voicelines .items {
+  height: 585px;
 }
 
 #ANNIVERSARY_2017 #voicelines .items .item h4 {
@@ -701,6 +730,17 @@
 #ANNIVERSARY_2017 #voicelines .items .item h4:after {
   content: "]"
 }
+
+#ANNIVERSARY_2017 #sprays {
+  margin-top: 5px;
+  width: 100%;
+}
+
+#ANNIVERSARY_2017 #sprays .items {
+  height: 333px;
+}
+
+
 
 /* SMALL MODE CSS */
 
