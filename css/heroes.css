@@ -466,6 +466,11 @@
   background-image: url("../resources/icons/UPRISING_2017.svg");
 }
 
+#hero-container .hero-items .item[event="ANNIVERSARY_2017"]:after {
+  background-image: url("../resources/icons/ANNIVERSARY_2017.svg");
+}
+
+
 /* Achivement Icons */
 
 #hero-container .item[achievement="true"]:after, #hero-container .item:not([event="none"]):not([achievement="false"]):before {

@@ -687,6 +687,21 @@
   width: 80%;
 }
 
+#ANNIVERSARY_2017 #voicelines .items .item h4 {
+  display: initial;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#ANNIVERSARY_2017 #voicelines .items .item h4:before {
+  content: "["
+}
+
+#ANNIVERSARY_2017 #voicelines .items .item h4:after {
+  content: "]"
+}
+
 /* SMALL MODE CSS */
 
 @media screen and (max-width: 1650px) {
