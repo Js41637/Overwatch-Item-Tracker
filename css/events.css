@@ -1027,15 +1027,27 @@
     width: 100%;
   }
   #ANNIVERSARY_2017 #voicelines .items {
-    height: 880px;
+    height: 930px;
+  }
+  #ANNIVERSARY_2017 #voicelines h3, #ANNIVERSARY_2017 #sprays h3 {
+   font-size: 24px;
+  }
+  #ANNIVERSARY_2017 #voicelines h4, #ANNIVERSARY_2017 #sprays h4 {
+   font-size: 15px;
   }
   #ANNIVERSARY_2017 #voicelines .items .item {
     width: 49.5%;
   }
   #ANNIVERSARY_2017 #legendary-skins .images .card-heading {
-    font-size: 24px !important;
+    font-size: 22px !important;
   }
   #ANNIVERSARY_2017 #legendary-skins .images .p {
-    font-size: 15px !important;
+    font-size: 13px !important;
+  }
+  #ANNIVERSARY_2017 #sprays .items {
+    height: 480px;
+  }
+  #ANNIVERSARY_2017 #sprays .items .item {
+    width: 49.5%;
   }
 }
