@@ -753,6 +753,23 @@
   background-position: center 35%;
 }
 
+#ANNIVERSARY_2017 #legendary-skins {
+  height: 412px;
+}
+
+#ANNIVERSARY_2017 #legendary-skins .images .card {
+  height: 370px;
+  transition: width 0.175s ease-in-out, height 0.175s ease-in-out;
+  will-change: width, height;
+}
+
+
+#ANNIVERSARY_2017 #legendary-skins .images .card:hover {
+  width: 40%;
+  height: 440px;
+  z-index: 1;
+  transition-delay: 0.375s;
+}
 
 
 /* SMALL MODE CSS */
