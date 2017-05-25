@@ -369,6 +369,12 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
     CostAndTotalService.updateItem(item, type, item.hero, event.id);
   };
 
+  $scope.selectLegendarySkin = function($event, skin) {
+    $event.preventDefault();
+    $scope.checked[skin.hero].skins[skin.id] = !$scope.checked[skin.hero].skins[skin.id];
+    $scope.onSelect(skin, 'skins');
+  };
+
   var showTimeout = undefined;
   var hideTimeout = undefined;
   $scope.showPreview = function(what, type) {

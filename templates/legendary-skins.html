@@ -40,8 +40,8 @@
   <div class="inner" ng-class="{ hide: preview }">
     <h2>Legendary Skins <small class="color-legendary">3000</small></h2>
     <div class="images">
-      <div class="card" ng-repeat="skin in ::data.items.skinsLegendary track by $index" lazy-background="{{::$ctrl.getImageUrl(skin.url)}}">
-        <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked[skin.hero].skins[skin.id]" ng-change="onSelect(skin, 'skins')">
+      <div class="card" ng-click="selectLegendarySkin($event, skin)" ng-repeat="skin in ::data.items.skinsLegendary track by $index" lazy-background="{{::$ctrl.getImageUrl(skin.url)}}">
+        <input type="checkbox" id="{{'legendary' + $index}}" ng-model="checked[skin.hero].skins[skin.id]">
         <label for="{{'legendary' + $index}}" class="bg">
           <div class="card-content">
             <h4 class="card-heading">{{::skin.heroName}}</h4>
