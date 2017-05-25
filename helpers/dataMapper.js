@@ -4,7 +4,7 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs');
-const { forEach, sortBy, find, reduce, merge, isEmpty } = require('lodash');
+const { forEach, sortBy, find, reduce, merge, isEmpty, get } = require('lodash');
 
 const mode = process.argv.slice(2)[0];
 
@@ -24,7 +24,7 @@ consoleColors.load();
 
 const HERODATA = require('./dataMapper/HERODATA.js');
 const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp, idsBlizzardChanged } = require('./dataMapper/itemData.js');
-const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT } = require('./dataMapper/EVENTDATA.js');
+const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER } = require('./dataMapper/EVENTDATA.js');
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder } = require('./dataMapper/utils.js');
 
 var allClassData, missingAllClassData = {}, allClassDataKeys = {};
@@ -353,7 +353,7 @@ console.info('Sorting event items');
 forEach(updates, update => forEach(update.items, (items, type) => {
   switch (type) {
     case 'icons':
-      update.items[type] = sortBy(items, ['name']);
+      update.items[type] = sortBy(items, get(EVENT_ITEM_ORDER, [update.id, type]) || ['name']);
       break;
     case 'sprays':
       update.items[type] = sortBy(items, ['heroName', (c => c.achievement ? 1 : 0), 'name']);
