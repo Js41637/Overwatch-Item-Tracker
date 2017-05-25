@@ -70,6 +70,7 @@
   width: 100%;
   cursor: pointer;
   display: flex;
+  align-items: center;
 }
 
 #event-container .section .item input {
@@ -701,11 +702,11 @@
 }
 
 #ANNIVERSARY_2017 #icons {
-  width: 45%;
+  width: 51%;
 }
 
 #ANNIVERSARY_2017 #emotes {
-  width: 55%;
+  width: 49%;
 }
 
 #ANNIVERSARY_2017 #emotes .items, #ANNIVERSARY_2017 #icons .items {
@@ -720,18 +721,18 @@
   height: 600px;
 }
 
-#ANNIVERSARY_2017 #voicelines .items .item h4 {
-  display: initial;
+#ANNIVERSARY_2017 .items .item h4 {
+  display: initial !important;
   font-size: 18px;
   display: flex;
   align-items: center;
 }
 
-#ANNIVERSARY_2017 #voicelines .items .item h4:before {
+#ANNIVERSARY_2017 .items .item h4:before {
   content: "["
 }
 
-#ANNIVERSARY_2017 #voicelines .items .item h4:after {
+#ANNIVERSARY_2017 .items .item h4:after {
   content: "]"
 }
 
