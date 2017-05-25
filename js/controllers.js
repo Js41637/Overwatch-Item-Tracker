@@ -115,11 +115,12 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   };
 
   this.getImageUrl = function(url) {
-    if (location.host.match(/^localhost:5000$/)) {
+    return url;
+    /* if (location.host.match(/^localhost:5000$/)) {
       return url.replace('https://d34nsd3ksgj839.cloudfront.net', 'http://localhost:5000/resources');
     } else {
       return url;
-    }
+    }*/
   };
 }]);
 
@@ -389,9 +390,6 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
       item.media = (type == 'emotes' || type == 'intros') ? 'video' : type == 'voicelines' ? 'audio' : 'image';
       if (StorageService.getSetting('hdVideos') && (type == 'emotes' || type == 'intros')) {
         item.url = item.url.replace('.webm', '-hd.webm');
-      }
-      if (location.host.match(/^localhost:5000$/)) {
-        item.url = item.url.replace('https://d34nsd3ksgj839.cloudfront.net', 'http://localhost:5000/resources');
       }
       if (type == 'voicelines') {
         $scope.audio = item;

@@ -4,7 +4,7 @@ var types = {
   'icon': '/icon.png'
 };
 
-var baseURL = 'https://d34nsd3ksgj839.cloudfront.net/';
+var baseURL = './resources/';
 
 OWI.filter('heroImg', function() {
   return function(hero, type) {
