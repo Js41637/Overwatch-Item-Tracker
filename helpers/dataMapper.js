@@ -262,7 +262,6 @@ forEach(heroes, hero => {
       const url = getPreviewURL(type, item.id, hero.id, event);
       const newItem = Object.assign({}, { heroName: hero.name, hero: hero.id }, legend, item, { url } );
       if (type == 'icons') {
-        delete newItem.heroName;
         delete newItem.quality;
       }
       delete newItem.event;
