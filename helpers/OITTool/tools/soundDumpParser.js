@@ -59,33 +59,46 @@ const groupedHeroes = {
 };
 
 function sortSounds() {
+  // Go through the all the new sounds detected and compare them with data in the previous sound list
+  // Adds items to the `misssingSounds` array if a sound appears to be missing
+  // Removes an `unused` param on the sound if it is no longer missing 
   const newSounds = Object.keys(soundIDCache['all']).concat(Object.keys(soundIDCache2['all']));
   const missingSounds = reduce(original, (result, data, hero) => {
     result[hero] = {};
     for (let type in data) {
       result[hero][type] = [];
       for (let soundID in data[type]) {
+        let sound = data[type][soundID]
+        if (sound.unused && newSounds.includes(soundID)) {
+          delete original[hero][type][soundID].unused;
+        }
         if (!newSounds.includes(soundID)) result[hero][type].push(soundID);
       }
     }
 
     return result;
   }, {});
+
   console.log("Missing sounds", missingSounds);
+
+  // Merge the Hero Sounds and NPC sounds
   const data = Object.assign({}, cloneDeep(soundList), cloneDeep(soundList2));
+  
+  // Go through every sound for each hero in each group and smartly merge it with the original data.
   const sortedData = reduce(data, (res, sounds, hero) => {
     res[hero] = {};
     for (let type in sounds) {
       for (let soundID in sounds[type]) {
         delete sounds[type][soundID].path;
         delete sounds[type][soundID].isNew;
-        delete sounds[type][soundID].unused;
       }
+      // Check out dis bad boi, tbh i dont remember how I made it but it works noice.
       res[hero][type] = keyBy(sortBy(merge({}, get(original, [hero, type], {}), sounds[type]), ['ts', 'id']), 'id');
     }
     return res;
   }, {});
 
+  // Go through all sounds again (after the merge) and check if a sound is in the missingSounds array and mark it as unused
   for (let hero in missingSounds) {
     for (let type in missingSounds[hero]) {
       for (let sound of missingSounds[hero][type]) {
