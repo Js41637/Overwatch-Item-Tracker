@@ -6,22 +6,15 @@ const { getDirectories, copyFile, handleErr } = require('./utils');
 
 var mappedSounds;
 try {
-  mappedSounds = JSON.parse(fs.readFileSync(path.join(__dirname, '../../../data/mappedSounds.json')));
+  mappedSounds = JSON.parse(fs.readFileSync(path.join(__dirname, '../../../data/mappedVoicelines.json')));
 } catch (e) {
   mappedSounds = null;
 }
 
 const fetchVoicelines = () => {
-  const cwd = process.cwd();
-  const isAudio = cwd.match(/OverwatchAssets\\audio$/);
-  if (!cwd.match(/OverwatchAssets$/) && !isAudio) {
-    console.error("Needs to be run in OverwatchAssets or OverwatchAssets\audio");
-    process.exit();
-  }
+  if (!mappedSounds) return console.error("Error, unable to find mappedVoicelines.json in OIT Data");
 
-  if (!mappedSounds) return console.error("Error, unable to find mappedSounds.json in OIT Data");
-
-  const base = `./${isAudio ? '' : 'audio/'}`;
+  const base = './';
   const mappedHeroes = Object.keys(mappedSounds);
 
   fs.stat(`${base}!voicelines`, err => {
