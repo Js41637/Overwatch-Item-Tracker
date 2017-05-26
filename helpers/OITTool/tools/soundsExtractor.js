@@ -3,42 +3,42 @@
 // Generates a JSON file for every sound file extracted, when new sound files are added
 // we'll be able to see wots wot
 // Run this in the root Heroes dir
-const fs = require('fs')
-const crypto = require('crypto')
-const path = require('path')
-const { exec } = require('child_process')
+const fs = require('fs');
+const crypto = require('crypto');
+const path = require('path');
+const { exec } = require('child_process');
 
-const { sortBy, forEach, flattenDeep } = require('lodash')
-const { eachLimit } = require('async')
-const moment = require('moment')
+const { sortBy, forEach, flattenDeep } = require('lodash');
+const { eachLimit } = require('async');
+const moment = require('moment');
 
-const { getDirectories, getCleanID, copyFile, handleErr } = require('./utils')
-const HERODATA = require('../../dataMapper/HERODATA.js')
-const { mapFilesToHeroes } = require('./filesToHeroMapper')
+const { getDirectories, getCleanID, copyFile, handleErr } = require('./utils');
+const HERODATA = require('../../dataMapper/HERODATA.js');
+const { mapFilesToHeroes } = require('./filesToHeroMapper');
 
-var timestamp = Date.now().toString()
+var timestamp = Date.now().toString();
 var existingSounds;
-var existingSoundIDs = {}
+var existingSoundIDs = {};
 
 const checksum = (str, algorithm, encoding) => {
-  return crypto.createHash('sha1').update(str, 'utf8').digest(encoding || 'hex')
-}
+  return crypto.createHash('sha1').update(str, 'utf8').digest(encoding || 'hex');
+};
 
 const getFileSize = WHEREISIT => {
-  return checksum(fs.readFileSync(WHEREISIT))
-}
+  return checksum(fs.readFileSync(WHEREISIT));
+};
 
 const checkTempDir = () => {
   fs.stat(`./!soundTemp`, err => {
     if (err) {
-      fs.mkdirSync(`./!soundTemp`)
+      fs.mkdirSync(`./!soundTemp`);
     }
-  })
-}
-const validHeroes = Object.keys(HERODATA)
+  });
+};
+const validHeroes = Object.keys(HERODATA);
 const isValidHero = hero => {
-  return validHeroes.includes(hero)
-}
+  return validHeroes.includes(hero);
+};
 
 const groupedHeroes = {
   'friendly-bot': 'training-bot',
@@ -50,21 +50,21 @@ const groupedHeroes = {
   eradicator: 'uprising-bots',
   nulltrooper: 'uprising-bots',
   slicer: 'uprising-bots'
-}
+};
 
 const moveSoundFiles = (soundsListOnly, extractAll) => {
-  console.log("Mapping and moving sound files")
+  console.log("Mapping and moving sound files");
   var soundsList = {}, checksumCache = {}, totalFiles = 0, dupeFiles = 0, totalNewFiles = 0;
   return new Promise(resolve => {
     return getDirectories('./').then(heroes => {
-      heroes = sortBy(heroes, [h => !isValidHero(getCleanID(h))])
+      heroes = sortBy(heroes, [h => !isValidHero(getCleanID(h))]);
       // Go through every hero, 1 at a time to prevent node from dying
       eachLimit(heroes, 1, (hero, cb) => {
-        var heroID = getCleanID(hero)
-        heroID = groupedHeroes[heroID] || heroID
-        const isHero = isValidHero(heroID)
-        soundsList[heroID] = []
-        var newFiles = 0
+        var heroID = getCleanID(hero);
+        heroID = groupedHeroes[heroID] || heroID;
+        const isHero = isValidHero(heroID);
+        soundsList[heroID] = [];
+        var newFiles = 0;
         return getDirectories(`./${hero}`).then(() => {
           return getDirectories(`./${hero}/Sound Dump`).then(dirs => {
             return Promise.all(dirs.map(dir => {
@@ -72,115 +72,115 @@ const moveSoundFiles = (soundsListOnly, extractAll) => {
                 return Promise.all(sounds.filter(a => a.endsWith('.wem')).map(sound => {
                   return new Promise(r => {
                     totalFiles++;
-                    const checksum = getFileSize(`./${hero}/Sound Dump/${dir}/${sound}`)
-                    const dupeFile = checksum in checksumCache
-                    const id = sound.replace('.wem', '')
-                    const oldSoundTS = (existingSoundIDs[id] && existingSoundIDs[id].length) ? { ts: existingSoundIDs[id] } : undefined
-                    const isNew = !existingSoundIDs[id] ? { ts: timestamp } : undefined
+                    const checksum = getFileSize(`./${hero}/Sound Dump/${dir}/${sound}`);
+                    const dupeFile = checksum in checksumCache;
+                    const id = sound.replace('.wem', '');
+                    const oldSoundTS = (existingSoundIDs[id] && existingSoundIDs[id].length) ? { ts: existingSoundIDs[id] } : undefined;
+                    const isNew = !existingSoundIDs[id] ? { ts: timestamp } : undefined;
                     if (dupeFile && !isHero) {
                       dupeFiles++;
-                      return r()
+                      return r();
                     }
                     soundsList[heroID].push(Object.assign({}, {
                       id: id,
                       checksum: checksum,
-                    }, isNew, oldSoundTS))
-                    if (isHero) checksumCache[checksum] = true
-                    if (isNew) newFiles++
-                    if (soundsListOnly || (!isNew && !extractAll)) return r()
-                    copyFile(`./${hero}/Sound Dump/${dir}/${sound}`, `./!soundTemp/${heroID}-${sound}`, r)
-                  })
-                }))
-              })
+                    }, isNew, oldSoundTS));
+                    if (isHero) checksumCache[checksum] = true;
+                    if (isNew) newFiles++;
+                    if (soundsListOnly || (!isNew && !extractAll)) return r();
+                    copyFile(`./${hero}/Sound Dump/${dir}/${sound}`, `./!soundTemp/${heroID}-${sound}`, r);
+                  });
+                }));
+              });
             })).then(sounds => {
-              console.log("- Found", flattenDeep(sounds).length, "sounds for", hero)
+              console.log("- Found", flattenDeep(sounds).length, "sounds for", hero);
               if (newFiles) {
-                console.log("-- Found", newFiles, "new sounds for", hero)
-                totalNewFiles += newFiles
+                console.log("-- Found", newFiles, "new sounds for", hero);
+                totalNewFiles += newFiles;
               }
-              cb()
-            })
-          }).catch(err => console.error("- Error getting sounds for", hero, err))
-        }).catch(err => console.error("- Error loading hero dir", hero, err))
-      }, () => resolve({ soundsList, checksumCache, totalFiles, dupeFiles, totalNewFiles }))
-    })
-  })
-}
+              cb();
+            });
+          }).catch(err => console.error("- Error getting sounds for", hero, err));
+        }).catch(err => console.error("- Error loading hero dir", hero, err));
+      }, () => resolve({ soundsList, checksumCache, totalFiles, dupeFiles, totalNewFiles }));
+    });
+  });
+};
 
 const convertSoundFiles = (dir, noDelete) => {
   return new Promise((resolve, reject) => {
-    console.log("Converting sound files to ogg")
-    const buffer =  { maxBuffer: 1024 * 20000 } // shit gets large
-    const base = path.join(__dirname, "../programs")
+    console.log("Converting sound files to ogg");
+    const buffer =  { maxBuffer: 1024 * 20000 }; // shit gets large
+    const base = path.join(__dirname, "../programs");
 
-    const ww2ogg = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem" "./${dir}\\*.0B2" "./${dir}\\*.03F"') do (${base}\\ww2ogg.exe --pcb ${base}\\packed_codebooks_aoTuV_603.bin "%f")`
-    const revorb = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.ogg"') do (${base}\\revorb.exe "%f")`
-    const del = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem" "./${dir}\\*.0B2" "./${dir}\\*.03F"') do (del "%f")`
+    const ww2ogg = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem" "./${dir}\\*.0B2" "./${dir}\\*.03F"') do (${base}\\ww2ogg.exe --pcb ${base}\\packed_codebooks_aoTuV_603.bin "%f")`;
+    const revorb = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.ogg"') do (${base}\\revorb.exe "%f")`;
+    const del = `for /f "delims=" %f in ('dir /s/b/a-d "./${dir}\\*.wem" "./${dir}\\*.0B2" "./${dir}\\*.03F"') do (del "%f")`;
 
     exec(ww2ogg, buffer, (err, stdout, stderr) => {
-      if (err)  return reject(`Error converting files to OGG \n ===START ERROR===\n${err}\n${stderr}\n===END ERROR===`)
-      console.log("Running revorb on all converted ogg files")
+      if (err)  return reject(`Error converting files to OGG \n ===START ERROR===\n${err}\n${stderr}\n===END ERROR===`);
+      console.log("Running revorb on all converted ogg files");
       exec(revorb, buffer, err2 => {
-        if (err2) return reject("Error running revorb")
-        if (noDelete) return resolve()
-        console.log("Deleting old .wem files")
+        if (err2) return reject("Error running revorb");
+        if (noDelete) return resolve();
+        console.log("Deleting old .wem files");
         exec(del, buffer, err3 => {
-          if (err3) return reject("Error deleting old .wem files")
-          resolve()
-        })
-      })
-    })
-  })
-}
+          if (err3) return reject("Error deleting old .wem files");
+          resolve();
+        });
+      });
+    });
+  });
+};
 
 const saveSoundList = soundList => {
   forEach(soundList, (sounds, hero) => {
-    soundList[hero] = sortBy(sounds, ['ts', 'id'])
-  })
-  fs.writeFileSync('./soundFiles.json', JSON.stringify(soundList, null, 2))
-}
+    soundList[hero] = sortBy(sounds, ['ts', 'id']);
+  });
+  fs.writeFileSync('./soundFiles.json', JSON.stringify(soundList, null, 2));
+};
 
 const extractSounds = args => {
-  const startTS = Date.now()
+  const startTS = Date.now();
   if (args[0] == 'ignore') {
     convertSoundFiles('', args[1]).then(() => {
-      console.log("Finished doing sound stuff in", moment.duration(Date.now() - startTS).asMinutes(), "minutes")
-    })
-    return
+      console.log("Finished doing sound stuff in", moment.duration(Date.now() - startTS).asMinutes(), "minutes");
+    });
+    return;
   }
   if (!process.cwd().match(/OverwatchAssets\\Heroes$/)) {
-    console.error("Needs to be run in OverwatchAssets\Heroes")
-    process.exit()
+    console.error("Needs to be run in OverwatchAssets\Heroes");
+    process.exit();
   }
 
   try {
-    existingSounds = JSON.parse(fs.readFileSync('./soundFiles.json', 'utf8'))
+    existingSounds = JSON.parse(fs.readFileSync('./soundFiles.json', 'utf8'));
   } catch(e) {
-    console.warn("Couldn't find existing sounds file?")
+    console.warn("Couldn't find existing sounds file?");
   }
 
   if (existingSounds) {
-    forEach(existingSounds, sounds => forEach(sounds, sound => existingSoundIDs[sound.id] = sound.ts || true))
+    forEach(existingSounds, sounds => forEach(sounds, sound => existingSoundIDs[sound.id] = sound.ts || true));
   }
 
-  var soundsListOnly = args[0] == 'list'
-  var extractAll = args[0] == 'all'
+  var soundsListOnly = args[0] == 'list';
+  var extractAll = args[0] == 'all';
 
-  checkTempDir()
+  checkTempDir();
   moveSoundFiles(soundsListOnly, extractAll).then(({ soundsList, checksumCache, totalFiles, dupeFiles, totalNewFiles }) => { //eslint-disable-line
-    console.log("Done generating and moving sound data")
-    console.log("- Mapped", totalFiles, "sound files")
-    console.log("- Detected", dupeFiles, "dupe files")
-    console.log("- Detected", totalNewFiles, "new files")
-    saveSoundList(soundsList)
-    if (soundsListOnly) return
+    console.log("Done generating and moving sound data");
+    console.log("- Mapped", totalFiles, "sound files");
+    console.log("- Detected", dupeFiles, "dupe files");
+    console.log("- Detected", totalNewFiles, "new files");
+    saveSoundList(soundsList);
+    if (soundsListOnly) return;
 
     convertSoundFiles('!soundTemp').then(() => {
       mapFilesToHeroes(['none', './!soundTemp/'], true).then(() => {
-        console.log("Finished doing sound stuff in", moment.duration(Date.now() - startTS).asMinutes(), "minutes")
-      }).catch(handleErr)
-    }).catch(handleErr)
-  }).catch(handleErr)
-}
+        console.log("Finished doing sound stuff in", moment.duration(Date.now() - startTS).asMinutes(), "minutes");
+      }).catch(handleErr);
+    }).catch(handleErr);
+  }).catch(handleErr);
+};
 
-module.exports = { extractSounds }
+module.exports = { extractSounds };

@@ -59,6 +59,6 @@ const EVENT_ITEM_ORDER = {
   [EVENTS.ANNIVERSARY17]: {
     "icons": ['heroName', 'name']
   }
-}
+};
 
 module.exports = { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER };
