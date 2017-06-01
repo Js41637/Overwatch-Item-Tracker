@@ -1,5 +1,5 @@
 <div ng-show="$ctrl.item.dates.end > $ctrl.currentDate" class="event-active">
-  <h2>Event should end on {{$ctrl.item.dates.end | date:'MMM d, hh:mm a'}} local time</h2>
+  <h2>Event should end on {{$ctrl.item.dates.end | date:'MMM d'}} local time</h2>
   <h3>Be sure to get everything you want by {{$ctrl.item.dates.end - 86400000 | date:'MMM d'}} to be safe!</h3>
 </div>
 <div ng-show="$ctrl.item.dates.end < $ctrl.currentDate" class="event-ended">
