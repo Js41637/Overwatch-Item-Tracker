@@ -4,7 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
-const { sortBy, reduce, get, cloneDeep, keyBy, merge } = require('lodash');
+const { orderBy, reduce, get, cloneDeep, keyBy, merge } = require('lodash');
 const { eachLimit, eachOfLimit } = require('async');
 const moment = require('moment');
 
@@ -68,7 +68,7 @@ function sortSounds() {
     for (let type in data) {
       result[hero][type] = [];
       for (let soundID in data[type]) {
-        let sound = data[type][soundID]
+        let sound = data[type][soundID];
         if (sound.unused && newSounds.includes(soundID)) {
           delete original[hero][type][soundID].unused;
         }
@@ -93,7 +93,7 @@ function sortSounds() {
         delete sounds[type][soundID].isNew;
       }
       // Check out dis bad boi, tbh i dont remember how I made it but it works noice.
-      res[hero][type] = keyBy(sortBy(merge({}, get(original, [hero, type], {}), sounds[type]), ['ts', 'id']), 'id');
+      res[hero][type] = keyBy(orderBy(merge({}, get(original, [hero, type], {}), sounds[type]), ['ts', 'id'], ['desc']), 'id');
     }
     return res;
   }, {});
