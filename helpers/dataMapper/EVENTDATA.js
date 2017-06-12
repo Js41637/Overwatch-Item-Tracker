@@ -51,7 +51,7 @@ const EVENTTIMES = {
   },
   [EVENTS.ANNIVERSARY17]: {
     "start": "1495551600000",
-    "end": "1497348000000"
+    "end": "1497337200000"
   }
 };
 
