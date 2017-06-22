@@ -4793,7 +4793,7 @@
           "url": "./resources/heroes/genji/voicelines/genji-you-are-only-human.ogg"
         },
         {
-          "name": "I was hoping for a challenge",
+          "name": "Hoping for a challenge",
           "id": "genji-i-was-hoping-for-a-challenge",
           "quality": "common",
           "url": "./resources/heroes/genji/voicelines/genji-i-was-hoping-for-a-challenge.ogg",
@@ -8198,6 +8198,12 @@
           "url": "./resources/heroes/mercy/sprays/mercy-halo.png"
         },
         {
+          "name": "Heartbeat",
+          "id": "mercy-stethoscope",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/sprays/mercy-stethoscope.png"
+        },
+        {
           "name": "Heroes Never Die",
           "id": "mercy-heroes-never-die",
           "quality": "common",
@@ -8250,12 +8256,6 @@
           "id": "mercy-smile",
           "quality": "common",
           "url": "./resources/heroes/mercy/sprays/mercy-smile.png"
-        },
-        {
-          "name": "Stethoscope",
-          "id": "mercy-stethoscope",
-          "quality": "common",
-          "url": "./resources/heroes/mercy/sprays/mercy-stethoscope.png"
         },
         {
           "name": "Sting",
@@ -15242,7 +15242,7 @@
           "event": "HALLOWEEN_2016"
         },
         {
-          "name": "Dance",
+          "name": "Twist",
           "id": "winston-dance",
           "quality": "epic",
           "url": "./resources/updates/ANNIVERSARY_2017/emotes/winston-dance.webm",

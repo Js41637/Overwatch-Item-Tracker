@@ -6,7 +6,10 @@ const data = {
   // Changes IDs and Names will eventually be fixed with a data migration.
   idsBlizzardChanged: {
     "voicelines/orisa-satisfied-with-protection": "orisa-satsified-with-protection",
-    "icons/na-zdorovie": "cheers1"
+    "icons/na-zdorovie": "cheers1",
+    "voicelines/genji-hoping-for-a-challenge": "genji-i-was-hoping-for-a-challenge",
+    "sprays/mercy-heartbeat": "mercy-stethoscope",
+    "emotes/winston-twist": "winston-dance"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
