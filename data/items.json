@@ -258,11 +258,6 @@
           "hero": "dva"
         },
         {
-          "name": "Cheers",
-          "id": "cheers1",
-          "url": "./resources/heroes/all/icons/cheers1.png"
-        },
-        {
           "name": "Cheers!",
           "id": "cheers",
           "event": "WINTER_WONDERLAND_2016",
@@ -805,7 +800,6 @@
           "name": "Law",
           "id": "dva-law",
           "url": "./resources/heroes/dva/icons/dva-law.png",
-          "achievement": "blizzard",
           "hero": "dva"
         },
         {
@@ -948,6 +942,11 @@
           "hero": "winston"
         },
         {
+          "name": "Na Zdorovie",
+          "id": "cheers1",
+          "url": "./resources/heroes/all/icons/cheers1.png"
+        },
+        {
           "name": "Nepal",
           "id": "nepal",
           "event": "SUMMER_GAMES_2016",
@@ -1000,7 +999,6 @@
           "name": "Oni",
           "id": "genji-oni",
           "url": "./resources/heroes/genji/icons/genji-oni.png",
-          "achievement": "blizzard",
           "hero": "genji"
         },
         {
@@ -2728,6 +2726,12 @@
           "url": "./resources/heroes/ana/sprays/ana-photograph.png"
         },
         {
+          "name": "Pillow",
+          "id": "ana-pillow",
+          "quality": "common",
+          "url": "./resources/heroes/ana/sprays/ana-pillow.png"
+        },
+        {
           "name": "Rifle",
           "id": "ana-rifle",
           "quality": "common",
@@ -3714,6 +3718,12 @@
           "description": "Mech battles are one of the most popular forms of entertainment in Junkertown."
         },
         {
+          "name": "Officer",
+          "id": "dva-officer",
+          "quality": "legendary",
+          "url": "./resources/heroes/dva/skins/dva-officer.jpg"
+        },
+        {
           "name": "Scavenger",
           "id": "dva-scavenger",
           "quality": "legendary",
@@ -3733,13 +3743,6 @@
           "quality": "legendary",
           "url": "./resources/heroes/dva/skins/dva-cruiser.jpg",
           "event": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Officer",
-          "id": "dva-officer",
-          "quality": "legendary",
-          "url": "./resources/heroes/dva/skins/dva-officer.jpg",
-          "achievement": "blizzard"
         }
       ],
       "emotes": [
@@ -3849,6 +3852,12 @@
           "hero": "dva"
         },
         {
+          "name": "Law",
+          "id": "dva-law",
+          "url": "./resources/heroes/dva/icons/dva-law.png",
+          "hero": "dva"
+        },
+        {
           "name": "Cycling",
           "id": "dva-cycling",
           "url": "./resources/heroes/dva/icons/dva-cycling.png",
@@ -3868,13 +3877,6 @@
           "url": "./resources/heroes/dva/icons/dva-hanaversary.png",
           "event": "ANNIVERSARY_2017",
           "hero": "dva"
-        },
-        {
-          "name": "Law",
-          "id": "dva-law",
-          "url": "./resources/heroes/dva/icons/dva-law.png",
-          "achievement": "blizzard",
-          "hero": "dva"
         }
       ],
       "sprays": [
@@ -3883,6 +3885,12 @@
           "id": "dva-bny",
           "quality": "common",
           "url": "./resources/heroes/dva/sprays/dva-bny.png"
+        },
+        {
+          "name": "Badge",
+          "id": "dva-badge",
+          "quality": "common",
+          "url": "./resources/heroes/dva/sprays/dva-badge.png"
         },
         {
           "name": "Bang",
@@ -4071,13 +4079,6 @@
           "quality": "common",
           "url": "./resources/heroes/dva/sprays/dva-ten-of-hearts.png",
           "event": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Badge",
-          "id": "dva-badge",
-          "quality": "common",
-          "url": "./resources/heroes/dva/sprays/dva-badge.png",
-          "achievement": "blizzard"
         },
         {
           "name": "Cute",
@@ -4345,6 +4346,12 @@
           "description": "After leaving Overwatch, Genji wandered the world, trying to come to peace with his cyborg body."
         },
         {
+          "name": "Oni",
+          "id": "genji-oni",
+          "quality": "legendary",
+          "url": "./resources/heroes/genji/skins/genji-oni.jpg"
+        },
+        {
           "name": "Sparrow",
           "id": "genji-sparrow",
           "quality": "legendary",
@@ -4372,13 +4379,6 @@
           "quality": "legendary",
           "url": "./resources/heroes/genji/skins/genji-sentai.jpg",
           "event": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Oni",
-          "id": "genji-oni",
-          "quality": "legendary",
-          "url": "./resources/heroes/genji/skins/genji-oni.jpg",
-          "achievement": "blizzard"
         }
       ],
       "emotes": [
@@ -4481,6 +4481,12 @@
           "hero": "genji"
         },
         {
+          "name": "Oni",
+          "id": "genji-oni",
+          "url": "./resources/heroes/genji/icons/genji-oni.png",
+          "hero": "genji"
+        },
+        {
           "name": "Fencing",
           "id": "genji-fencing",
           "url": "./resources/heroes/genji/icons/genji-fencing.png",
@@ -4499,13 +4505,6 @@
           "id": "genji-goldborg",
           "url": "./resources/heroes/genji/icons/genji-goldborg.png",
           "event": "ANNIVERSARY_2017",
-          "hero": "genji"
-        },
-        {
-          "name": "Oni",
-          "id": "genji-oni",
-          "url": "./resources/heroes/genji/icons/genji-oni.png",
-          "achievement": "blizzard",
           "hero": "genji"
         }
       ],
@@ -4575,6 +4574,12 @@
           "id": "genji-nin",
           "quality": "common",
           "url": "./resources/heroes/genji/sprays/genji-nin.png"
+        },
+        {
+          "name": "Oni",
+          "id": "genji-oni",
+          "quality": "common",
+          "url": "./resources/heroes/genji/sprays/genji-oni.png"
         },
         {
           "name": "Onmyodo",
@@ -4710,13 +4715,6 @@
           "quality": "common",
           "url": "./resources/heroes/genji/sprays/genji-cute.png",
           "achievement": true
-        },
-        {
-          "name": "Oni",
-          "id": "genji-oni",
-          "quality": "common",
-          "url": "./resources/heroes/genji/sprays/genji-oni.png",
-          "achievement": "blizzard"
         },
         {
           "name": "Pixel",
@@ -8980,7 +8978,7 @@
           "event": "UPRISING_2017"
         },
         {
-          "name": "Satsified with protection",
+          "name": "Satisfied with protection",
           "id": "orisa-satsified-with-protection",
           "quality": "common",
           "url": "./resources/heroes/orisa/voicelines/orisa-satsified-with-protection.ogg",
@@ -10963,7 +10961,7 @@
           "id": "roadhog-junkensteins-monster",
           "quality": "legendary",
           "url": "./resources/heroes/roadhog/skins/roadhog-junkensteins-monster.jpg",
-          "description": "Armed with the secret of creating artificial life, Dr. Jamison Junkestein birthed a monster.",
+          "description": "Armed with the secret of creating artificial life, Dr. Jamison Junkenstein birthed a monster.",
           "event": "HALLOWEEN_2016"
         },
         {

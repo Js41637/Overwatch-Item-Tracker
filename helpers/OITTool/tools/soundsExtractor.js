@@ -143,7 +143,7 @@ const saveSoundList = soundList => {
 const extractSounds = args => {
   const startTS = Date.now();
   if (args[0] == 'ignore') {
-    convertSoundFiles('', args[1]).then(() => {
+    convertSoundFiles('', !args[1]).then(() => {
       console.log("Finished doing sound stuff in", moment.duration(Date.now() - startTS).asMinutes(), "minutes");
     });
     return;

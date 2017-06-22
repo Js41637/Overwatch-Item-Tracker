@@ -4,7 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
-const { sortBy, reduce, get, cloneDeep, keyBy, merge } = require('lodash');
+const { orderBy, reduce, get, cloneDeep, keyBy, merge, flatten, uniq } = require('lodash');
 const { eachLimit, eachOfLimit } = require('async');
 const moment = require('moment');
 
@@ -40,8 +40,8 @@ const newTS = Date.now();
 var masterSoundList = {};
 
 // first list and cache is for heroes, second if for NPCs
-const soundList = {};
-const soundIDCache = {'all': {}};
+const soundList = { 'dupes': { base: {} } };
+const soundIDCache = {'all': {}, 'dupes': {}};
 const soundList2 = {};
 const soundIDCache2 = {'all': {}};
 
@@ -68,7 +68,7 @@ function sortSounds() {
     for (let type in data) {
       result[hero][type] = [];
       for (let soundID in data[type]) {
-        let sound = data[type][soundID]
+        let sound = data[type][soundID];
         if (sound.unused && newSounds.includes(soundID)) {
           delete original[hero][type][soundID].unused;
         }
@@ -93,7 +93,7 @@ function sortSounds() {
         delete sounds[type][soundID].isNew;
       }
       // Check out dis bad boi, tbh i dont remember how I made it but it works noice.
-      res[hero][type] = keyBy(sortBy(merge({}, get(original, [hero, type], {}), sounds[type]), ['ts', 'id']), 'id');
+      res[hero][type] = keyBy(orderBy(merge({}, get(original, [hero, type], {}), sounds[type]), ['ts', 'id'], ['desc']), 'id');
     }
     return res;
   }, {});
@@ -115,7 +115,7 @@ function getSkinID(skin, heroID) {
 }
 
 // Second dump contains hero sounds (no skins) but includes npcs, we only want npcs
-function parseSecondDump(update) {
+function parseSecondDump(update, dupeFolders) {
   console.info('Parsing second dump');
   return new Promise(resolve => getDirectories('./').then(heroes => {
     eachLimit(heroes, 1, (hero, cb) => {
@@ -126,6 +126,10 @@ function parseSecondDump(update) {
       getDirectories(`./${hero}/Sound Dump`).then(folders => {
         console.info(`- Parsing sounds for ${hero}`);
         return Promise.all(folders.map(folder => getDirectories(`./${hero}/Sound Dump/${folder}`).then(sounds => {
+          if (dupeFolders.includes(folder)) {
+            processDupeFolderSounds(sounds, hero, false, folder, update);
+            return;
+          }
           return Promise.all(sounds.filter(a => a.endsWith('.wem')).map(sound => new Promise(r => {
             const soundID = sound.slice(0, -4);
             if (soundID in soundIDCache['all']) { // Ignore sound if it's mapped to a hero
@@ -140,6 +144,7 @@ function parseSecondDump(update) {
             soundIDCache2[heroID][soundID] = true;
             soundIDCache2['all'][soundID] = true;
             soundList2[heroID]['base'][soundID] = Object.assign({
+              isNew,
               id: soundID,
               path: `./${hero}/Sound Dump/${folder}/${sound}`
             }, ts);
@@ -153,8 +158,28 @@ function parseSecondDump(update) {
   }));
 }
 
+function processDupeFolderSounds(sounds, hero, skin, folder, update) {
+  const heroID = 'dupes';
+  sounds.filter(a => a.endsWith('.wem')).forEach(sound => {
+    const soundID = sound.slice(0, -4);
+
+    if (soundID in soundIDCache[heroID]) return;
+
+    const isNew = !get(originalSoundIDs, [heroID, soundID]);
+    const ts = !isNew ? { ts: originalSoundIDs[heroID][soundID] } : update ? { ts: newTS } : void 0;
+
+    soundIDCache[heroID][soundID] = true;
+    soundIDCache['all'][soundID] = true;
+    soundList[heroID]['base'][soundID] = Object.assign({
+      isNew,
+      id: soundID,
+      path: `./${hero}/Sound Dump${skin ? ' Full' : ''}/${skin ? skin + '/' : ''}${folder}/${sound}`
+    }, ts);
+  });
+}
+
 // First dump contains all heroes sounds and skin sounds
-function parseFullDump(update) {
+function parseFullDump(update, dupeFolders) {
   console.info('Parsing full dump');
   return new Promise(resolve => getDirectories('./').then(heroes => {
     eachLimit(heroes, 1, (hero, cb) => {
@@ -168,14 +193,22 @@ function parseFullDump(update) {
         return Promise.all(skins.map(skin => getDirectories(`./${hero}/Sound Dump Full/${skin}`).then(folders => {
           const skinID = getSkinID(skin, heroID);
           return Promise.all(folders.map(folder => getDirectories(`./${hero}/Sound Dump Full/${skin}/${folder}`).then(sounds => {
+            // We got a dupe here bois
+            if (dupeFolders.includes(folder)) {
+              processDupeFolderSounds(sounds, hero, skin, folder, update);
+              return;
+            }
+
             return Promise.all(sounds.filter(a => a.endsWith('.wem')).map(sound => new Promise(r => {
               const soundID = sound.slice(0, -4);
               totalFiles++;
+
                // Heroes shouldn't have dupe sounds anyway
               if (soundID in soundIDCache[heroID]) return r();
+
               const isNew = !get(originalSoundIDs, [heroID, soundID]);
               const ts = !isNew ? { ts: originalSoundIDs[heroID][soundID] } : update ? { ts: newTS } : void 0;
-              const isMisc = soundID.match(/^0{7}[4|6]/);
+              const isMisc = soundID.match(/^0{7}[4|5|6]/);
               
               if (isNew) newFiles++;
               soundIDCache[heroID][soundID] = true;
@@ -197,6 +230,7 @@ function parseFullDump(update) {
   }));
 }
 
+// Create the !soundTemp dir if it doesn't exist
 function checkTempDir() {
   return new Promise(resolve => {
     fs.stat(`./!soundTemp`, err => {
@@ -208,14 +242,21 @@ function checkTempDir() {
   });
 }
 
+
+// Move all sound files (or new) files to the temp dir in their respective hero/npc folders
 function moveFilesToTempDir(update) {
   return new Promise(resolve => {
     const sounds = Object.assign({}, soundList, soundList2);
-    eachOfLimit(sounds, 1, (sounds, hero, cb) => {
+    eachOfLimit(sounds, 1, (sounds, hero, cb) => { // one at a time
       Promise.all(Object.keys(sounds).map(type => {
         return Promise.all(Object.keys(sounds[type]).map(soundID => new Promise(r => {
-          let sound = sounds[type][soundID];
-          if (update && !sound.isNew) return r();
+          const sound = sounds[type][soundID];
+          
+          // if we're updating from existing data, ignore files that aren't new
+          if (update && !sound.isNew) {
+            return r();
+          }
+
           checkDirectorys('!soundTemp', hero).then(() => {
             copyFile(sound.path, `./!soundTemp/${hero}/${hero}-${sound.id}.wem`, r);
           });
@@ -225,10 +266,11 @@ function moveFilesToTempDir(update) {
   });
 }
 
+// Connvert all files in the !soundTemp folder to ogg and run revorb and then delete old .wem files
 function convertFiles() {
   return new Promise((resolve, reject) => {
     console.info("Converting sound files to ogg");
-    const buffer =  { maxBuffer: 1024 * 20000 }; // shit gets large
+    const buffer =  { maxBuffer: 1024 * 40000 }; // shit gets very large
     const base = path.join(__dirname, "../programs");
 
     const ww2ogg = `for /f "delims=" %f in ('dir /s/b/a-d "./!soundTemp\\*.wem" "./!soundTemp\\*.0B2" "./!soundTemp\\*.03F"') do (${base}\\ww2ogg.exe --pcb ${base}\\packed_codebooks_aoTuV_603.bin "%f")`;
@@ -250,6 +292,79 @@ function convertFiles() {
   });
 }
 
+// Detect sound groups that are on multiple heroes
+async function findDupeFolders() {
+  return getDirectories('./').then(heroes => {
+    return Promise.all(heroes.map(hero => {
+      return getDirectories(`./${hero}/Sound Dump Full`, true).then(skins => {
+        if (!skins.length) return; // If no sound dump folder or we're on an NPC
+        return Promise.all(skins.map(skin => getDirectories(`./${hero}/Sound Dump Full/${skin}`))).then(flatten);
+      });
+    })).then(heroes => heroes.filter(Boolean)); // Remove undefined gaps from NPCs
+  }).then(heroes => {
+    var folderIds = [];
+    var dupes = [];
+    for (let folders of heroes) {
+      for (let folder of folders) {
+        if (folderIds.includes(folder)) {
+          if (!dupes.includes(folder)) dupes.push(folder);
+        } else folderIds.push(folder);
+      }
+    }
+
+    console.info(`Detected ${dupes.length} dupe folders`);
+    return uniq(dupes); // should already be uniq
+  });
+}
+
+async function process01BSounds(update) {
+  console.info('Parsing 01B dump');
+  let totalFiles = 0;
+  let actualFiles = 0;
+  let newFiles = 0;
+
+  return new Promise(resolve => {
+    getDirectories('./Audio', true).then(folders => {
+      if (!folders.length) {
+        console.warn('No map audio!');
+        setTimeout(() => {
+          resolve(); // Delay before we return to give user a chance to stop
+        }, 2000);
+        return;
+      }
+
+      soundList['01B'] = { base: { } };
+
+      return Promise.all(folders.map(folder => getDirectories(`./Audio/${folder}`).then(sounds => {
+        return Promise.all(sounds.filter(a => a.endsWith('.wem')).map(sound => new Promise(r => {
+          const soundID = sound.slice(0, -4);
+          totalFiles++;
+
+          if (soundID in soundIDCache.all || soundID in soundIDCache2.all) return r();
+
+          actualFiles++;
+          const isNew = !get(originalSoundIDs, ['01B', soundID]);
+          const ts = !isNew ? { ts: originalSoundIDs['01B'][soundID] } : update ? { ts: newTS } : void 0;
+          if (isNew) newFiles++;
+
+          soundIDCache['all'][soundID] = true;
+
+          soundList['01B']['base'][soundID] = Object.assign({
+            isNew,
+            id: soundID,
+            path: `./Audio/${folder}/${sound}`
+          }, ts);
+          r();
+        })));
+      }))).then(() => {
+        if (totalFiles) {
+          console.info(`-- [01B] Found ${totalFiles} files | ${actualFiles} unique files`, (newFiles ? `| ${newFiles} new files` : ''));
+        }
+        resolve();
+      });
+    });
+  });
+}
 
 async function parseSoundDump(args) {
   if (!process.cwd().match(/OverwatchAssets\\SoundDump/)) {
@@ -262,8 +377,10 @@ async function parseSoundDump(args) {
   const listOnly = args[0] == 'list';
   const fetchNew = args[0] == 'update' || args[1] == 'update';
 
-  await parseFullDump(fetchNew);
-  await parseSecondDump(fetchNew);
+  const dupeFolders = await findDupeFolders();
+  await parseFullDump(fetchNew, dupeFolders);
+  await parseSecondDump(fetchNew, dupeFolders);
+  await process01BSounds(fetchNew);
 
   console.info('Finished parsing sounds');
   masterSoundList = sortSounds();
@@ -277,6 +394,7 @@ async function parseSoundDump(args) {
   console.info('Preparing to move and convert sounds');
   await checkTempDir();
   await moveFilesToTempDir(fetchNew);
+
   console.info('Moved files, converting');
   await convertFiles();
   console.info('Converted all files!');
