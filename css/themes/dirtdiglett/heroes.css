@@ -160,6 +160,11 @@ body#bastion #hero-container .hero-overview {
   background-position: 50% 6%;
 }
 
+body#doomfist #hero-container .hero-overview {
+  background-image: url(resources/heroes/doomfist/background-story.jpg);
+  background-position: 50% 14%;
+}
+
 body#dva #hero-container .hero-overview {
   background-image: url(resources/heroes/dva/background-story.jpg);
   background-position: 50% 44%;
@@ -316,6 +321,7 @@ body#zenyatta #hero-container .hero-overview {
       background-image: url(../../../resources/logo.svg);
     }
 
+    body#doomfist .hero-name:after,
     body#genji .hero-name:after,
     body#mccree .hero-name:after,
     body#pharah .hero-name:after,
