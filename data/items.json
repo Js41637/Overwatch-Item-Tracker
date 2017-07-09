@@ -3636,6 +3636,65 @@
       ]
     }
   },
+  "doomfist": {
+    "name": "Doomfist",
+    "id": "doomfist",
+    "class": "Offense",
+    "description": "One of the leaders of Talon, Doomfist is determined to plunge the world into a new conflict that he believes will make humanity stronger.",
+    "colors": {
+      "primary": "#ddd",
+      "highlight": "#eee"
+    },
+    "items": {
+      "skins": [
+        {
+          "name": "Classic",
+          "id": "doomfist-classic",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/skins/doomfist-classic.jpg",
+          "standardItem": true
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "id": "doomfist-heroic",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/emotes/doomfist-heroic.webm",
+          "standardItem": true
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "id": "doomfist-heroic",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/intros/doomfist-heroic.webm",
+          "standardItem": true
+        }
+      ],
+      "icons": [],
+      "sprays": [],
+      "voicelines": [
+        {
+          "name": "Try Me",
+          "id": "doomfist-try-me",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-try-me.ogg",
+          "standardItem": true
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "id": "doomfist-heroic",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/poses/doomfist-heroic.jpg",
+          "standardItem": true
+        }
+      ]
+    }
+  },
   "dva": {
     "name": "D.Va",
     "id": "dva",
