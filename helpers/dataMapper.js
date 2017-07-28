@@ -4,7 +4,7 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs');
-const { forEach, sortBy, find, reduce, merge, isEmpty, get } = require('lodash');
+const { forEach, sortBy, find, reduce, merge, get } = require('lodash');
 
 const mode = process.argv.slice(2)[0];
 
@@ -68,9 +68,13 @@ things.forEach((thingy, i) => {
     }
     
     // Filter out Uprising bots
-    if (isEmpty(items.COMMON) && i == 0) {
+    if (!items.COMMON && i == 0) {
       console.warn(`Skipping ${hero} as it has no items`);
       return;
+    }
+
+    if (!items.COMMON.length) {
+      console.warn(`${hero} has no items`);
     }
 
     // if i == 1 we're on newRawData, add the new items on top of existing data

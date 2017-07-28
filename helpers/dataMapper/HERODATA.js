@@ -28,6 +28,14 @@ const data = {
       highlight: "#82af5f"
     }
   },
+  doomfist: {
+    class: CLASSES.OFFENCE,
+    description: "One of the leaders of Talon, Doomfist is determined to plunge the world into a new conflict that he believes will make humanity stronger.",
+    colors: {
+      primary: "#ddd",
+      highlight: "#eee"
+    }
+  },
   dva: {
     class: CLASSES.TANK,
     description: "D.Va is a former professional gamer who now uses her skills to pilot a state-of-the-art mech in defense of her country.",
