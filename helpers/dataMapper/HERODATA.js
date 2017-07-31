@@ -32,8 +32,8 @@ const data = {
     class: CLASSES.OFFENCE,
     description: "One of the leaders of Talon, Doomfist is determined to plunge the world into a new conflict that he believes will make humanity stronger.",
     colors: {
-      primary: "#ddd",
-      highlight: "#eee"
+      primary: "#e04e34",
+      highlight: "#e56d57"
     }
   },
   dva: {
