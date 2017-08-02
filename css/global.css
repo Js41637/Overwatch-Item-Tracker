@@ -70,11 +70,12 @@ body {
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   width: 100%;
   box-sizing: border-box;
   top: 0;
   min-width: 1010px;
+  z-index: 1000;
 }
 
 #header .left {
@@ -433,8 +434,8 @@ strong {
  **/
 
 #cost-remaining {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 45px;
   right: 0;
   display: flex;
   align-items: center;
@@ -1074,7 +1075,7 @@ strong {
 
 #menuNav {
   background: rgb(45, 45, 45);
-  position: absolute;
+  position: fixed;
   top: 45px;
   left: 0;
   right: 0;
