@@ -9,13 +9,13 @@ Highlight intros require a lot of trial and error, you have to start as soon as 
 
 ## Standard
 ### Emotes
-`ffmpeg -i '.mp4' -c:v libvpx-vp9 -crf 58 -b:v 0 -vf "crop=1080:x=410" -r 40 -an -preset veryslow output.webm`
+`ffmpeg -i '.mp4' -c:v libvpx-vp9 -crf 58 -b:v 0 -vf "crop=1080:x=420" -r 40 -an -preset veryslow output.webm`
 ### Highlight Intros
 `ffmpeg -i ".mp4" -c:v libvpx-vp9 -crf 58 -b:v 0 -vf "scale=1280:720" -r 40 -ac 1 -preset veryslow output.webm`
 
 ## HD
 ### Emotes
-`ffmpeg -i '.mp4' -c:v libvpx-vp9 -crf 34 -b:v 0 -vf "crop=1080:x=410" -r 50 -ac 1 -preset veryslow ouput-hd.webm`
+`ffmpeg -i '.mp4' -c:v libvpx-vp9 -crf 34 -b:v 0 -vf "crop=1080:x=420" -r 50 -ac 1 -preset veryslow ouput-hd.webm`
 ### Highlight Intros
 `ffmpeg -i ".mp4" -c:v libvpx-vp9 -crf 37 -b:v 0 -r 50 -ac 1 -preset veryslow ouput-hd.webm`
 
@@ -23,8 +23,8 @@ Highlight intros require a lot of trial and error, you have to start as soon as 
 ## Batch Emotes
 ```
 for %%a in ("*.*") do (
-	ffmpeg -i "%%a" -c:v libvpx-vp9 -crf 58 -b:v 0 -vf "crop=1080:x=410" -r 40 -an -preset veryslow "converted\%%~na.webm"
-	ffmpeg -i "%%a" -c:v libvpx-vp9 -crf 34 -b:v 0 -vf "crop=1080:x=410" -r 50 -ac 1 -preset veryslow "converted\%%~na-hd.webm"
+	ffmpeg -i "%%a" -c:v libvpx-vp9 -crf 58 -b:v 0 -vf "crop=1080:x=420" -r 40 -an -preset veryslow "converted\%%~na.webm"
+	ffmpeg -i "%%a" -c:v libvpx-vp9 -crf 34 -b:v 0 -vf "crop=1080:x=420" -r 50 -ac 1 -preset veryslow "converted\%%~na-hd.webm"
 )
 pause
 ```

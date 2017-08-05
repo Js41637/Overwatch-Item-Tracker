@@ -1,0 +1,695 @@
+body {
+  min-width: 1000px;
+  background-color: #293347;
+  transition: opacity 100ms ease-in-out;
+}
+
+.item h3.common, .item h3, .color-common {
+  color: #5d5a5a;
+}
+
+#header {
+  background-color: rgba(40,53,79,.85);
+  z-index: 1000;
+  padding: 0 18px;
+}
+
+  #header .right {
+    margin-right: 0;
+  }
+
+  #header .icon {
+    filter: none;
+    background-size: 24px;
+    width: auto;
+    height: auto;
+    margin-left: 0;
+    padding: 11px;
+  }
+
+    #header .icon:hover {
+      background-color: #1c75bc;
+    }
+
+  #header img {
+    height: 30px;
+  }
+
+  #header h1 {
+    font-size: 31px;
+    color: #fff;
+  }
+
+  #header .event-selector {
+    background-color: #1c75bc;
+    padding: 0 1em;
+    height: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    min-width: 100px;
+  }
+
+    #header .event-selector:hover {
+      background-color: #2a8edf;
+    }
+
+    #header .event-selector h2 {
+      line-height: 45px;
+      font-size: 1em;
+      color: #fff;
+      margin-left: 0;
+    }
+
+    #header .event-selector .block {
+      background: none;
+      border: none;
+      width: 45px;
+      height: 100%;
+      margin-left: -1em;
+      border-radius: 0;
+      margin-right: 0.5em;
+    }
+
+      #header .event-selector .block img {
+        transform: none;
+        width: 100%;
+        height: 100%;
+      }
+
+    #header .event-selector .caret {
+      border-width: 5px;
+      margin-left: 0.5em;
+      margin-top: -3px;
+    }
+
+  #header .event-ended {
+    opacity: 0.87;
+  }
+
+#background {
+  filter: none;
+  background: url(resources/bg.png) no-repeat top;
+}
+
+/* ---------- MODALS ------------ */
+.modal {
+  padding: 12px;
+}
+
+.modal-content {
+  border-radius: 4px;
+}
+
+.modal-header {
+  padding: 0;
+  border: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #c6cbde;
+  text-align: left;
+}
+
+.modal-title {
+  margin: 0;
+  padding: 0.8em;
+  color: #405275;
+  font-family: Futura, century gothic, arial, sans-serif;
+  font-size: 1.4rem !important;
+  font-style: normal;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding-left: 1em;
+}
+
+#settings h3 {
+  font-size: 1.8em;
+  padding-bottom: 0.2em;
+  margin: 0;
+}
+
+#settings .setting:first-of-type {
+  padding-top: 0;
+}
+
+#settings .setting {
+    padding: 18px 0px;
+}
+
+#settings h3 {
+  font-size: 1.4em;
+  padding-bottom: 0.2em;
+  margin:0;
+}
+
+#settings .setting p, #settings .setting a, #settings .setting li {
+  font-family: sans-serif;
+  padding-bottom: 0.8em;
+  font-size: 0.9em;
+}
+
+
+#cost-remaining span {
+  text-shadow: rgba(255, 255, 255, 0.3) 0px 0px 8px;
+}
+
+#cost-remaining img {
+  width: auto;
+  height: 32px;
+}
+
+.card {
+  width: auto;
+  flex: 1;
+  margin-right: 9px;
+}
+
+.card:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+  border: 17px solid transparent;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+#legendary-skins [type="checkbox"]:not(:checked)+label:before,
+#legendary-skins [type="checkbox"]:checked+label:before {
+  z-index: 3;
+  left: 9px;
+  top: 9px;
+}
+
+#legendary-skins [type="checkbox"]:not(:checked)+label:after,
+#legendary-skins [type="checkbox"]:checked+label:after {
+  top: 10px;
+  left: 9px;
+}
+
+#image-preview {
+  width: auto;
+  height: 400px;
+  top: 36px;
+  position: fixed;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.155s ease-in-out;
+  pointer-events: none;
+  will-change: auto;
+  left: 36px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.4);
+}
+
+#image-preview.fixed {
+  padding: 0;
+  top: 36px;
+  height: 400px;
+}
+
+#image-preview .card {
+  transform: initial;
+  margin: 0;
+}
+
+#legendary-skins {
+  background: none;
+  overflow: visible;
+  padding: 0;
+  display: block;
+  height: auto;
+  width: auto;
+  margin-bottom: 0;
+}
+
+#legendary-skins .inner.hide {
+  opacity: 1 !important;
+  display: initial !important;
+}
+
+#legendary-skins .inner h2 {
+  font-size: 2rem;
+  font-family: inherit;
+  font-style: italic;
+  color: #fff;
+  padding: 0;
+  border-bottom: 3px solid rgba(240,237,242,.3);
+  margin-bottom: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+#legendary-skins .inner h2 small {
+  font-size: 0.85em;
+  margin-left: 9px;
+}
+
+#legendary-skins .inner h2 small:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  background-image: url(./resources/icons/currency.svg);
+  background-size: contain;
+  margin-right: 2px;
+  background-repeat: no-repeat;
+}
+
+#legendary-skins .inner .card:last-child {
+  margin-right: 0;
+}
+
+#event-container,
+#hero-container {
+  margin: 0;
+  padding: 0 9px;
+}
+
+
+#home {
+  margin: 36px auto 0;
+}
+
+#home h1 {
+  display: none;
+}
+
+#hero-nav {
+  max-width: 75vw;
+  padding: 18px;
+}
+
+#hero-nav .gallery.event .block[href$="/events/SUMMER_GAMES_2016"] {
+  background: url(resources/SUMMER_GAMES_2016/bg.jpg);
+  background-size: cover;
+}
+
+#hero-nav .gallery.event .block[href$="/events/HALLOWEEN_2016"] {
+  background: url(resources/HALLOWEEN_2016/bg.jpg);
+  background-size: cover;
+}
+
+#hero-nav .gallery.event .block[href$="/events/WINTER_WONDERLAND_2016"] {
+  background: url(resources/WINTER_WONDERLAND_2016/bg.jpg);
+  background-size: cover;
+}
+
+#hero-nav .gallery.event .block[href$="/events/YEAR_OF_THE_ROOSTER_2017"] {
+  background: url(resources/YEAR_OF_THE_ROOSTER_2017/bg.jpg);
+  background-size: cover;
+}
+
+#hero-nav .gallery.event .block[href$="/events/UPRISING_2017"] {
+  background: url(resources/UPRISING_2017/bg.jpg);
+  background-size: cover;
+}
+
+#hero-nav .gallery.event .block[href$="/events/ANNIVERSARY_2017"] {
+  background: url(resources/ANNIVERSARY_2017/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#hero-nav .gallery.event .block:hover {
+  transform: none;
+  background: rgb(255, 165, 0);
+}
+
+#hero-nav .gallery.hero .block {
+  overflow: hidden;
+  width: 84px;
+  height: 117px;
+  transform: skew(25rad);
+}
+
+#hero-nav .gallery.hero .block .imgcont {
+  height: calc(100% - 30px);
+  background: url(resources/bg.png) no-repeat top;
+}
+
+#hero-nav .gallery.hero .block:hover .imgcont {
+  background: rgb(255, 165, 0);
+}
+
+#hero-nav .gallery.hero .block .img {
+  width: calc(100% + 10px);
+  height: 100%;
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  transform: skew(-25rad) translateX(-5px);
+}
+
+#hero-nav .gallery h2 {
+  font-size: 18px;
+}
+
+#home #hero-nav .gallery .text h3 {
+  margin-top: 4px;
+  padding: 3px 0;
+  font-size: 16px;
+}
+
+#home #hero-nav .gallery .text .hero-progress-bar {
+  border: none;
+}
+
+#home #hero-nav .gallery.hero .block {
+  height: 136px;
+}
+
+#home #hero-nav .gallery.hero .block .imgcont {
+  height: calc(100% - 49px);
+}
+
+#menuNav {
+  background-color: rgba(40,53,79,.85);
+}
+
+
+/* Item Icons */
+.section .item[event]:not([event="none"]),
+.section .item[achievement]:not([achievement="false"]) {
+  padding-right: 20px;
+}
+
+.item[event]:not([event="none"]):after,
+.item[achievement]:not([achievement="false"]):after,
+.item[event]:not([event="none"]):before,
+.item[achievement]:not([achievement="false"]):before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0;
+  background-position: center;
+}
+
+.section .item[achievement="blizzard"]:after {
+  background-image: url(resources/icons/blizzard.svg);
+}
+
+
+
+/**
+ * TOOLTIPS
+ **/
+
+#hero-container .section .tooltip {
+  font-size: 15px;
+  font-family: Futura, century gothic, arial, sans-serif;
+}
+
+#hero-container .section .tooltip.in {
+  opacity: 1;
+}
+
+#hero-container .section .tooltip .tooltip-inner {
+  max-width: none;
+  padding: 4px 10px;
+  background-color: #212121;
+  text-transform: uppercase;
+}
+
+#hero-container .tooltip .preview.img {
+  background: url(resources/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #293347;
+  background-repeat: no-repeat;
+}
+
+/* All Skin and poses, icons and MOST sprays are 1:1 */
+#hero-container #icons .tooltip .preview.img {
+  width: 256px;
+  height: 256px;
+}
+
+#hero-container #sprays .tooltip .preview.img {
+  width: 380px;
+  height: 380px;
+}
+
+#hero-container .item[event="SUMMER_GAMES_2016"] + .tooltip .preview.img,
+#SUMMER_GAMES_2016 #image-preview .card .bg2 {
+  background: url(resources/SUMMER_GAMES_2016/icon-bg.png)no-repeat,url(resources/SUMMER_GAMES_2016/preview-bg.png);
+  background-position: top, center;
+  background-size: contain, cover;
+}
+
+#hero-container .item[event="HALLOWEEN_2016"] + .tooltip .preview.img,
+#HALLOWEEN_2016 #image-preview .card .bg2 {
+  background: url(resources/HALLOWEEN_2016/icon-bg.png)no-repeat,url(resources/HALLOWEEN_2016/preview-bg.png);
+  background-position: top, center;
+  background-size: contain, cover;
+}
+
+#hero-container .item[event="WINTER_WONDERLAND_2016"] + .tooltip .preview.img,
+#WINTER_WONDERLAND_2016 #image-preview .card .bg2 {
+  background: url(resources/WINTER_WONDERLAND_2016/icon-bg.png)no-repeat,url(resources/WINTER_WONDERLAND_2016/preview-bg.png);
+  background-position: top, center;
+  background-size: contain, cover;
+}
+
+#hero-container .item[event="YEAR_OF_THE_ROOSTER_2017"] + .tooltip .preview.img,
+#YEAR_OF_THE_ROOSTER_2017 #image-preview .card .bg2 {
+  background: url(resources/YEAR_OF_THE_ROOSTER_2017/icon-bg.png)no-repeat,url(resources/YEAR_OF_THE_ROOSTER_2017/preview-bg.png);
+  background-position: top, center;
+  background-size: contain, cover;
+}
+
+#hero-container .item[event="UPRISING_2017"] + .tooltip .preview.img,
+#UPRISING_2017 #image-preview .card .bg2 {
+  background: url(resources/UPRISING_2017/icon-bg.png)no-repeat,url(resources/UPRISING_2017/preview-bg.png);
+  background-position: top, center;
+  background-size: contain, cover;
+}
+
+#hero-container .item[event="ANNIVERSARY_2017"] + .tooltip .preview.img,
+#ANNIVERSARY_2017 #image-preview .card .bg2 {
+  background: url(resources/ANNIVERSARY_2017/icon-bg.png)no-repeat,url(resources/ANNIVERSARY_2017/preview-bg.png);
+  background-position: top, center;
+  background-size: contain, cover;
+}
+
+#hero-container .section .tooltip .preview.img {
+  width: 450px;
+  height: 450px;
+  position: relative;
+}
+
+#hero-container .section .tooltip .preview.img .i {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3px;
+}
+
+#hero-container .section .tooltip .preview.img .description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+  padding: 3px 4px;
+  text-transform: initial;
+}
+
+
+#hero-container .section .tooltip .preview.video {
+  position: relative;
+}
+
+
+/* Highlight Intro videos are 16:9 */
+
+#hero-container #intros .tooltip .preview.video {
+  width: 640px;
+  height: 360px;
+}
+
+
+/* Emote videos should be 1:1 */
+
+#hero-container #emotes .tooltip .preview.video {
+  width: 450px;
+  height: 450px;
+}
+
+#hero-container .section .tooltip .preview.video video {
+  height: 100%;
+  width: 100%;
+}
+
+
+#hero-container .section .tooltip.img-preview .tooltip-arrow {
+  border-top-color: rgb(240, 240, 240);
+  border-bottom-color: rgb(240, 240, 240);
+}
+
+#hero-container .tooltip.bottom .tooltip-arrow, #hero-container .tooltip.bottom-left .tooltip-arrow, #hero-container .tooltip.bottom-right .tooltip-arrow {
+  border-width: 0 8px 8px;
+}
+
+#hero-container .tooltip.top .tooltip-arrow {
+  border-width: 8px 8px 0;
+  border-top-color: #212121;
+}
+
+#hero-container .tooltip.bottom {
+  margin-top: 0px;
+  padding: 8px 0;
+}
+
+#hero-container .tooltip {
+  pointer-events: none;
+}
+
+#hero-container .tooltip.top {
+  padding: 8px 0;
+}
+
+#hero-container .section .tooltip.img-preview .tooltip-inner {
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 4px;
+}
+
+.dropdown-menu {
+  padding: 0;
+  color: #5d5a5a;
+  font-size: 0.8em;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+#hero-container .dropdown-menu .divider {
+  margin: 6px 0;
+}
+
+#hero-container #hero-header .options .dropdown-menu li a, #hero-container #hero-header .options .dropdown-menu li > div, #hero-container .section-header .dropdown-menu>li>a  {
+  padding: 9px;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  clear: both;
+  color: #5d5a5a;
+  white-space: nowrap;
+}
+
+#hero-container #hero-header .options .dropdown-menu li > div:hover  {
+  background-color: rgb(245, 245, 245);
+}
+
+#hero-container .options .btn-group .dropdown-menu li label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+#hero-container .options .btn-group li input {
+  margin: 0;
+  height: 18px;
+  width: 18px;
+  margin-left: 18px;
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES_2016"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY_2017"] {
+  padding-left: 30px;
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES_2016"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY_2017"]:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 9px;
+  margin-top: -1px;
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES_2016"]:before {
+  background-image: url(resources/icons/events/SUMMER_GAMES_2016.svg);
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"]:before {
+  background-image: url(resources/icons/events/HALLOWEEN_2016.svg);
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"]:before {
+  background-image: url(resources/icons/events/WINTER_WONDERLAND_2016.svg);
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"]:before {
+  background-image: url(resources/icons/events/YEAR_OF_THE_ROOSTER_2017.svg);
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before {
+  background-image: url(resources/icons/events/UPRISING_2017.svg);
+}
+
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY_2017"]:before {
+  background-image: url(resources/icons/events/ANNIVERSARY_2017.svg);
+}
+
+
+
+
+/* Override Jayess' Flex */
+.item-container .flex-column.x4 .item {
+  width: 23.5%;
+  margin-right: 2%;
+}
+
+.item-container .flex-column.x4 .item:nth-of-type(4n+0) {
+  margin-right: 0;
+}
+
+.item-container .flex-column.x3 .item {
+  width: 32%;
+  margin-right: 2%;
+}
+
+.item-container .flex-column.x3 .item:nth-of-type(3n+0) {
+  margin-right: 0;
+}
+
+
+.item-container .flex-column.x2 .item {
+  width: 49%;
+}
+
+.item-container .flex-column.x2 .item:nth-of-type(odd) {
+  margin-right: 2%;
+}
+
+
+@media screen and (max-width: 1300px) {
+  #header .header-content {
+    position: initial;
+    top: initial;
+    left: initial;
+  }
+}

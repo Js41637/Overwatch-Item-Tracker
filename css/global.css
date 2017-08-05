@@ -98,13 +98,20 @@ body {
 }
 
 #header .icon {
-  background-size: contain;
   width: 24px;
   height: 24px;
   cursor: pointer;
-  background-repeat: no-repeat;
   filter: brightness(0.95);
   margin-left: 18px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+#header .icon .glyphicon {
+  padding: 2px;
 }
 
 #header .icon:hover {
@@ -283,6 +290,7 @@ body {
 #settings .range-input {
   display: flex;
   align-items: center;
+  width: 210px;
 }
 
 #settings .range-input span {
@@ -551,6 +559,7 @@ strong {
   background-size: contain;
   background-color: transparent;
   background-position: center 0;
+  width: 320px;
 }
 
 #image-preview .card {
@@ -559,7 +568,7 @@ strong {
   box-sizing: border-box;
   display: inline-block;
   background-repeat: no-repeat;
-  width: 320px;
+  width: 360px;
   /* 400px - 80px for the bottom gives us a nice square preview for sprays and icons */
   background-color: transparent;
 }
@@ -600,7 +609,6 @@ strong {
 
 #image-preview.fixed {
   position: fixed;
-  height: 420px;
   top: 25px;
   padding-left: 25px;
   text-align: left;
@@ -635,6 +643,7 @@ strong {
 
 #image-preview .card {
   min-width: 320px;
+  transform: initial;
 }
 
 #image-preview .nosupport {
@@ -717,9 +726,9 @@ strong {
 
 #legendary-skins [type="checkbox"]:not(:checked)+label:before, #legendary-skins [type="checkbox"]:checked+label:before {
   content: '';
-  position: absolute;
+  position: fixed;
   left: 6px;
-  top: -314px;
+  top: 6px;
   width: 17px;
   height: 17px;
   border: 2px solid rgba(255, 255, 255, 0.6);
@@ -735,9 +744,9 @@ strong {
 
 #legendary-skins [type="checkbox"]:not(:checked)+label:after, #legendary-skins [type="checkbox"]:checked+label:after {
   content: '';
-  position: absolute;
-  top: -312px;
-  left: 7px;
+  position: fixed;
+  top: 7px;
+  left: 6px;
   width: 19px;
   height: 14px;
   color: #84ff4e;
@@ -790,6 +799,8 @@ strong {
   background-position: center;
   width: 25%;
   margin-right: 0.5%;
+  transform: translateZ(0);
+  cursor: pointer;
 }
 
 .card:before {
@@ -846,20 +857,6 @@ strong {
   z-index: 10;
   top: 0;
   pointer-events: none;
-}
-
-#sub-header .homebtn {
-  height: 100%;
-  font-size: 54px;
-  color: rgb(240, 240, 240);
-  background-color: rgb(50, 50, 50);
-  display: inline-block;
-  cursor: pointer;
-  padding: 0 10px;
-}
-
-#sub-header .homebtn:hover {
-  background-color: rgb(40, 40, 40);
 }
 
 
@@ -922,7 +919,7 @@ strong {
 
 #home {
   max-width: 1700px;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
 }
 
 #home h1 {
@@ -931,27 +928,100 @@ strong {
 }
 
 #hero-nav {
+  min-width: 1000px;
   max-width: 1600px;
   margin: 0 auto;
   padding: 8px;
+  position: relative;
 }
 
-#hero-nav .gallery>div {
+#home #hero-nav .gallery.event .home {
+  display: none;
+}
+
+#hero-nav .gallery.event .home.block {
+  border-radius: 50%;
+  font-size: 0;
+  width: 58px;
+  height: 58px;
+  background: none;
+  overflow: hidden;
+  position: absolute;
+  top: 28px;
+  left: -85px;
+}
+
+#hero-nav .gallery.event .home.block .bg {
+  top: 0;
+  left: 0;
+  background-image: url(../resources/icons/home.svg);
+  background-size: contain;
+}
+
+#hero-nav .gallery.event .home.block:hover {
+  transform: scale(1);
+}
+
+#hero-nav .gallery.event .home.block:hover .bg {
+  background-color: rgba(255,255,255,0.6);
+}
+
+#hero-nav .gallery > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 
-#hero-nav .gallery:first-of-type {
-  margin-bottom: 20px;
+#hero-nav .gallery.event {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center; 
+}
+
+#hero-nav .gallery .text {
+  padding: 6px;
+  background-color: rgb(240, 240, 240);
+  color: rgb(45, 52, 70);
+}
+
+#home #hero-nav .gallery .text {
+  padding: 6px 0 0 0;
+}
+
+#home #hero-nav .gallery .text h3 {
+  margin-top: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 1px;
+  font-size: 18px;
+  padding: 2px 0;
+  text-shadow: 1px 1px 2px rgb(70, 70, 70);
+  letter-spacing: 0.6;
+}
+
+#home #hero-nav .gallery .text .progresscont {
+  position: relative;
+  z-index: 1;
+  background-color: rgb(215, 215, 215);
+}
+
+#home #hero-nav .gallery .text .hero-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  border-top: 1px solid;
+  z-index: -1;
 }
 
 #hero-nav .gallery h2 {
   text-align: center;
   font-size: 20px;
-  padding: 6px;
-  background-color: rgb(240, 240, 240);
-  color: rgb(45, 52, 70);
 }
 
 #hero-nav .gallery .block {
@@ -975,7 +1045,7 @@ strong {
 }
 
 #hero-nav .gallery .block:hover .bg {
-  background-color: rgb(255, 165, 0); 
+  background-color: rgb(255, 165, 0);
 }
 
 #hero-nav .gallery .block .img {
@@ -1001,11 +1071,10 @@ strong {
 #hero-nav .gallery.hero .block {
   overflow: hidden;
   width: 95px;
-  height: 117px;
 }
 
 #hero-nav .gallery.hero .block .imgcont {
-  height: calc(100% - 32px);
+  height: 81px;
 }
 
 #hero-nav .gallery.hero .block .img {
@@ -1023,6 +1092,7 @@ strong {
   right: 0;
   z-index: 1000;
   will-change: auto;
+  transition: height 0.315s linear;
 }
 
 @media screen and (max-width: 1300px) {
@@ -1031,4 +1101,46 @@ strong {
     top: 47px;
     left: 15px;
   }
+}
+
+/* Audio player currently only used on heroes but it will be getting changed */
+
+#hero-container .audio-player {
+  width: 256px;
+  height: 26px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 4px;
+  box-sizing: border-box;
+}
+
+#hero-container .audio-player .icon {
+  position: relative;
+  height: 26px;
+  width: 30px;
+  color: black;
+  font-size: 24px;
+}
+
+#hero-container .audio-player .icon span {
+  left: -2px;
+}
+
+#hero-container .audio-player .player {
+  width: 100%;
+  height: 14px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  border-radius: 4px;
+}
+
+#hero-container .audio-player .player .progress {
+  width: 88%;
+  background-color: rgb(92, 184, 92);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+  height: 100%;
+  border-radius: 4px;
+  max-width: 100%;
 }

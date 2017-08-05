@@ -1,6 +1,7 @@
 <div>
   <div class="preview img" ng-if="preview.img">
-    <div lazy-background="{{preview.img}}"></div>
+    <div class="i" lazy-background="{{preview.img}}"></div>
+    <div ng-show="::preview.description" class="description">{{::preview.description}}</div>
   </div>
   <div class="preview video" ng-if="preview.video">
     <div class="bg2"></div>
