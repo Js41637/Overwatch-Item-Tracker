@@ -65,7 +65,7 @@
         <input type="checkbox" id="fakecb" style="display:none">
         <label for="fakecb" id="fakecheckbox"></label><span> = Dragon Dance Spray</span>
       </span>
-      <span class="wot" tooltip-popup-delay="400" uib-tooltip="This event added two sprays for every character, the checkboxes are for the normal sprays and the circle boxes are for the other spray">What's this?</span>
+      <span class="wot" tooltip-popup-delay="400" uib-tooltip="This event added two sprays for every character. The checkboxes are for the normal sprays and the circle boxes are for the 'Dragon Dance' sprays.">What's this?</span>
     </div>
     <div class="items">
       <div class="item" ng-repeat="spray in ::data.items.sprays track by $index" ng-if="::!spray.id.includes('dragon-dance')" achievement="{{::spray.achievement}}"  ng-mouseenter="showPreview(spray, 'spray')" ng-mouseleave="hidePreview()">
