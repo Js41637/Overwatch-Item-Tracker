@@ -3654,425 +3654,6 @@
       ]
     }
   },
-  "doomfist": {
-    "name": "Doomfist",
-    "id": "doomfist",
-    "class": "Offense",
-    "description": "One of the leaders of Talon, Doomfist is determined to plunge the world into a new conflict that he believes will make humanity stronger.",
-    "colors": {
-      "primary": "#e04e34",
-      "highlight": "#e56d57"
-    },
-    "items": {
-      "skins": [
-        {
-          "name": "Classic",
-          "id": "doomfist-classic",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/skins/doomfist-classic.jpg",
-          "standardItem": true
-        },
-        {
-          "name": "Daisy",
-          "id": "doomfist-daisy",
-          "quality": "rare",
-          "url": "./resources/heroes/doomfist/skins/doomfist-daisy.jpg"
-        },
-        {
-          "name": "Lake",
-          "id": "doomfist-lake",
-          "quality": "rare",
-          "url": "./resources/heroes/doomfist/skins/doomfist-lake.jpg"
-        },
-        {
-          "name": "Plains",
-          "id": "doomfist-plains",
-          "quality": "rare",
-          "url": "./resources/heroes/doomfist/skins/doomfist-plains.jpg"
-        },
-        {
-          "name": "Sunset",
-          "id": "doomfist-sunset",
-          "quality": "rare",
-          "url": "./resources/heroes/doomfist/skins/doomfist-sunset.jpg"
-        },
-        {
-          "name": "Leopard",
-          "id": "doomfist-leopard",
-          "quality": "epic",
-          "url": "./resources/heroes/doomfist/skins/doomfist-leopard.jpg"
-        },
-        {
-          "name": "Painted",
-          "id": "doomfist-painted",
-          "quality": "epic",
-          "url": "./resources/heroes/doomfist/skins/doomfist-painted.jpg"
-        },
-        {
-          "name": "Avatar",
-          "id": "doomfist-avatar",
-          "quality": "legendary",
-          "url": "./resources/heroes/doomfist/skins/doomfist-avatar.jpg"
-        },
-        {
-          "name": "Caution",
-          "id": "doomfist-caution",
-          "quality": "legendary",
-          "url": "./resources/heroes/doomfist/skins/doomfist-caution.jpg",
-          "description": "After losing his arm in the aftermath of the Omnic Crisis, Doomfist turned to cybernetics to recover and even become stronger than before."
-        },
-        {
-          "name": "Irin",
-          "id": "doomfist-irin",
-          "quality": "legendary",
-          "url": "./resources/heroes/doomfist/skins/doomfist-irin.jpg",
-          "description": "After losing his arm in the aftermath of the Omnic Crisis, Doomfist turned to cybernetics to recover and even become stronger than before."
-        },
-        {
-          "name": "Spirit",
-          "id": "doomfist-spirit",
-          "quality": "legendary",
-          "url": "./resources/heroes/doomfist/skins/doomfist-spirit.jpg"
-        }
-      ],
-      "emotes": [
-        {
-          "name": "Heroic",
-          "id": "doomfist-heroic",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/emotes/doomfist-heroic.webm",
-          "standardItem": true
-        },
-        {
-          "name": "Fake Out",
-          "id": "doomfist-fake-out",
-          "quality": "epic",
-          "url": "./resources/heroes/doomfist/emotes/doomfist-fake-out.webm"
-        },
-        {
-          "name": "Intimidate",
-          "id": "doomfist-intimidate",
-          "quality": "epic",
-          "url": "./resources/heroes/doomfist/emotes/doomfist-intimidate.webm"
-        },
-        {
-          "name": "Ready for Battle",
-          "id": "doomfist-ready-for-battle",
-          "quality": "epic",
-          "url": "./resources/heroes/doomfist/emotes/doomfist-ready-for-battle.webm"
-        },
-        {
-          "name": "Take a Knee",
-          "id": "doomfist-take-a-knee",
-          "quality": "epic",
-          "url": "./resources/heroes/doomfist/emotes/doomfist-take-a-knee.webm"
-        },
-        {
-          "name": "Thumbs Down",
-          "id": "doomfist-thumbs-down",
-          "quality": "epic",
-          "url": "./resources/heroes/doomfist/emotes/doomfist-thumbs-down.webm"
-        }
-      ],
-      "intros": [
-        {
-          "name": "Heroic",
-          "id": "doomfist-heroic",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/intros/doomfist-heroic.webm",
-          "standardItem": true
-        },
-        {
-          "name": "Meteor",
-          "id": "doomfist-meteor",
-          "quality": "epic",
-          "url": "./resources/heroes/doomfist/intros/doomfist-meteor.webm"
-        },
-        {
-          "name": "One Punch",
-          "id": "doomfist-one-punch",
-          "quality": "epic",
-          "url": "./resources/heroes/doomfist/intros/doomfist-one-punch.webm"
-        },
-        {
-          "name": "Uppercut",
-          "id": "doomfist-uppercut",
-          "quality": "epic",
-          "url": "./resources/heroes/doomfist/intros/doomfist-uppercut.webm"
-        }
-      ],
-      "icons": [
-        {
-          "name": "Doomfist",
-          "id": "doomfist-doomfist",
-          "url": "./resources/heroes/doomfist/icons/doomfist-doomfist.png",
-          "hero": "doomfist"
-        },
-        {
-          "name": "Fist",
-          "id": "doomfist-fist",
-          "url": "./resources/heroes/doomfist/icons/doomfist-fist.png",
-          "hero": "doomfist"
-        },
-        {
-          "name": "Initials",
-          "id": "doomfist-initials",
-          "url": "./resources/heroes/doomfist/icons/doomfist-initials.png",
-          "hero": "doomfist"
-        }
-      ],
-      "sprays": [
-        {
-          "name": "...Punch?",
-          "id": "doomfist-punch",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-punch.png"
-        },
-        {
-          "name": "Akande",
-          "id": "doomfist-akande",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-akande.png"
-        },
-        {
-          "name": "Crater",
-          "id": "doomfist-crater",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-crater.png"
-        },
-        {
-          "name": "Crush",
-          "id": "doomfist-crush",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-crush.png"
-        },
-        {
-          "name": "Epicenter",
-          "id": "doomfist-epicenter",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-epicenter.png"
-        },
-        {
-          "name": "Fist",
-          "id": "doomfist-fist",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-fist.png"
-        },
-        {
-          "name": "Icon",
-          "id": "doomfist-icon",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-icon.png"
-        },
-        {
-          "name": "Initials",
-          "id": "doomfist-initials",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-initials.png"
-        },
-        {
-          "name": "Move List",
-          "id": "doomfist-move-list",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-move-list.png"
-        },
-        {
-          "name": "Out of Time",
-          "id": "doomfist-out-of-time",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-out-of-time.png"
-        },
-        {
-          "name": "Paint",
-          "id": "doomfist-paint",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-paint.png"
-        },
-        {
-          "name": "Punching Bag",
-          "id": "doomfist-punching-bag",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-punching-bag.png"
-        },
-        {
-          "name": "Punchman",
-          "id": "doomfist-punchman",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-punchman.png"
-        },
-        {
-          "name": "Smoke",
-          "id": "doomfist-smoke",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-smoke.png"
-        },
-        {
-          "name": "Sonic Boom",
-          "id": "doomfist-sonic-boom",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-sonic-boom.png"
-        },
-        {
-          "name": "Stance",
-          "id": "doomfist-stance",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-stance.png"
-        },
-        {
-          "name": "Successor",
-          "id": "doomfist-successor",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-successor.png"
-        },
-        {
-          "name": "The Greatest",
-          "id": "doomfist-the-greatest",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-the-greatest.png"
-        },
-        {
-          "name": "They Said...",
-          "id": "doomfist-they-said",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-they-said.png"
-        },
-        {
-          "name": "Thumbs Up",
-          "id": "doomfist-thumbs-up",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-thumbs-up.png"
-        },
-        {
-          "name": "Tuxedo",
-          "id": "doomfist-tuxedo",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-tuxedo.png"
-        },
-        {
-          "name": "Wrapped",
-          "id": "doomfist-wrapped",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-wrapped.png"
-        },
-        {
-          "name": "Wrestle",
-          "id": "doomfist-wrestle",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-wrestle.png"
-        },
-        {
-          "name": "Cute",
-          "id": "doomfist-cute",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-cute.png",
-          "achievement": true
-        },
-        {
-          "name": "Pixel",
-          "id": "doomfist-pixel",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/sprays/doomfist-pixel.png",
-          "achievement": true
-        }
-      ],
-      "voicelines": [
-        {
-          "name": "Try Me",
-          "id": "doomfist-try-me",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/voicelines/doomfist-try-me.ogg",
-          "standardItem": true
-        },
-        {
-          "name": "Combo Breaker",
-          "id": "doomfist-combo-breaker",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/voicelines/doomfist-combo-breaker.ogg"
-        },
-        {
-          "name": "Don't get back up",
-          "id": "doomfist-dont-get-back-up",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/voicelines/doomfist-dont-get-back-up.ogg"
-        },
-        {
-          "name": "Go and sit down",
-          "id": "doomfist-go-and-sit-down",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/voicelines/doomfist-go-and-sit-down.ogg"
-        },
-        {
-          "name": "I haven't even started",
-          "id": "doomfist-i-havent-even-started",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/voicelines/doomfist-i-havent-even-started.ogg"
-        },
-        {
-          "name": "K.O.",
-          "id": "doomfist-ko",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/voicelines/doomfist-ko.ogg"
-        },
-        {
-          "name": "One punch is all I need",
-          "id": "doomfist-one-punch-is-all-i-need",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/voicelines/doomfist-one-punch-is-all-i-need.ogg"
-        },
-        {
-          "name": "Spare me the commentary",
-          "id": "doomfist-spare-me-the-commentary",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/voicelines/doomfist-spare-me-the-commentary.ogg"
-        },
-        {
-          "name": "Talk to the fist",
-          "id": "doomfist-talk-to-the-fist",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/voicelines/doomfist-talk-to-the-fist.ogg"
-        },
-        {
-          "name": "You must be joking",
-          "id": "doomfist-you-must-be-joking",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/voicelines/doomfist-you-must-be-joking.ogg"
-        },
-        {
-          "name": "You're not bad",
-          "id": "doomfist-youre-not-bad",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/voicelines/doomfist-youre-not-bad.ogg"
-        }
-      ],
-      "poses": [
-        {
-          "name": "Heroic",
-          "id": "doomfist-heroic",
-          "quality": "common",
-          "url": "./resources/heroes/doomfist/poses/doomfist-heroic.jpg",
-          "standardItem": true
-        },
-        {
-          "name": "Intense",
-          "id": "doomfist-intense",
-          "quality": "rare",
-          "url": "./resources/heroes/doomfist/poses/doomfist-intense.jpg"
-        },
-        {
-          "name": "Seismic Slam",
-          "id": "doomfist-seismic-slam",
-          "quality": "rare",
-          "url": "./resources/heroes/doomfist/poses/doomfist-seismic-slam.jpg"
-        },
-        {
-          "name": "Superior",
-          "id": "doomfist-superior",
-          "quality": "rare",
-          "url": "./resources/heroes/doomfist/poses/doomfist-superior.jpg"
-        }
-      ]
-    }
-  },
   "dva": {
     "name": "D.Va",
     "id": "dva",
@@ -4703,6 +4284,425 @@
           "quality": "rare",
           "url": "./resources/heroes/dva/poses/dva-lucky-pouch.jpg",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        }
+      ]
+    }
+  },
+  "doomfist": {
+    "name": "Doomfist",
+    "id": "doomfist",
+    "class": "Offense",
+    "description": "One of the leaders of Talon, Doomfist is determined to plunge the world into a new conflict that he believes will make humanity stronger.",
+    "colors": {
+      "primary": "#e04e34",
+      "highlight": "#e56d57"
+    },
+    "items": {
+      "skins": [
+        {
+          "name": "Classic",
+          "id": "doomfist-classic",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/skins/doomfist-classic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Daisy",
+          "id": "doomfist-daisy",
+          "quality": "rare",
+          "url": "./resources/heroes/doomfist/skins/doomfist-daisy.jpg"
+        },
+        {
+          "name": "Lake",
+          "id": "doomfist-lake",
+          "quality": "rare",
+          "url": "./resources/heroes/doomfist/skins/doomfist-lake.jpg"
+        },
+        {
+          "name": "Plains",
+          "id": "doomfist-plains",
+          "quality": "rare",
+          "url": "./resources/heroes/doomfist/skins/doomfist-plains.jpg"
+        },
+        {
+          "name": "Sunset",
+          "id": "doomfist-sunset",
+          "quality": "rare",
+          "url": "./resources/heroes/doomfist/skins/doomfist-sunset.jpg"
+        },
+        {
+          "name": "Leopard",
+          "id": "doomfist-leopard",
+          "quality": "epic",
+          "url": "./resources/heroes/doomfist/skins/doomfist-leopard.jpg"
+        },
+        {
+          "name": "Painted",
+          "id": "doomfist-painted",
+          "quality": "epic",
+          "url": "./resources/heroes/doomfist/skins/doomfist-painted.jpg"
+        },
+        {
+          "name": "Avatar",
+          "id": "doomfist-avatar",
+          "quality": "legendary",
+          "url": "./resources/heroes/doomfist/skins/doomfist-avatar.jpg"
+        },
+        {
+          "name": "Caution",
+          "id": "doomfist-caution",
+          "quality": "legendary",
+          "url": "./resources/heroes/doomfist/skins/doomfist-caution.jpg",
+          "description": "After losing his arm in the aftermath of the Omnic Crisis, Doomfist turned to cybernetics to recover and even become stronger than before."
+        },
+        {
+          "name": "Irin",
+          "id": "doomfist-irin",
+          "quality": "legendary",
+          "url": "./resources/heroes/doomfist/skins/doomfist-irin.jpg",
+          "description": "After losing his arm in the aftermath of the Omnic Crisis, Doomfist turned to cybernetics to recover and even become stronger than before."
+        },
+        {
+          "name": "Spirit",
+          "id": "doomfist-spirit",
+          "quality": "legendary",
+          "url": "./resources/heroes/doomfist/skins/doomfist-spirit.jpg"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "id": "doomfist-heroic",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/emotes/doomfist-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Fake Out",
+          "id": "doomfist-fake-out",
+          "quality": "epic",
+          "url": "./resources/heroes/doomfist/emotes/doomfist-fake-out.webm"
+        },
+        {
+          "name": "Intimidate",
+          "id": "doomfist-intimidate",
+          "quality": "epic",
+          "url": "./resources/heroes/doomfist/emotes/doomfist-intimidate.webm"
+        },
+        {
+          "name": "Ready for Battle",
+          "id": "doomfist-ready-for-battle",
+          "quality": "epic",
+          "url": "./resources/heroes/doomfist/emotes/doomfist-ready-for-battle.webm"
+        },
+        {
+          "name": "Take a Knee",
+          "id": "doomfist-take-a-knee",
+          "quality": "epic",
+          "url": "./resources/heroes/doomfist/emotes/doomfist-take-a-knee.webm"
+        },
+        {
+          "name": "Thumbs Down",
+          "id": "doomfist-thumbs-down",
+          "quality": "epic",
+          "url": "./resources/heroes/doomfist/emotes/doomfist-thumbs-down.webm"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "id": "doomfist-heroic",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/intros/doomfist-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Meteor",
+          "id": "doomfist-meteor",
+          "quality": "epic",
+          "url": "./resources/heroes/doomfist/intros/doomfist-meteor.webm"
+        },
+        {
+          "name": "One Punch",
+          "id": "doomfist-one-punch",
+          "quality": "epic",
+          "url": "./resources/heroes/doomfist/intros/doomfist-one-punch.webm"
+        },
+        {
+          "name": "Uppercut",
+          "id": "doomfist-uppercut",
+          "quality": "epic",
+          "url": "./resources/heroes/doomfist/intros/doomfist-uppercut.webm"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Doomfist",
+          "id": "doomfist-doomfist",
+          "url": "./resources/heroes/doomfist/icons/doomfist-doomfist.png",
+          "hero": "doomfist"
+        },
+        {
+          "name": "Fist",
+          "id": "doomfist-fist",
+          "url": "./resources/heroes/doomfist/icons/doomfist-fist.png",
+          "hero": "doomfist"
+        },
+        {
+          "name": "Initials",
+          "id": "doomfist-initials",
+          "url": "./resources/heroes/doomfist/icons/doomfist-initials.png",
+          "hero": "doomfist"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "...Punch?",
+          "id": "doomfist-punch",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-punch.png"
+        },
+        {
+          "name": "Akande",
+          "id": "doomfist-akande",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-akande.png"
+        },
+        {
+          "name": "Crater",
+          "id": "doomfist-crater",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-crater.png"
+        },
+        {
+          "name": "Crush",
+          "id": "doomfist-crush",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-crush.png"
+        },
+        {
+          "name": "Epicenter",
+          "id": "doomfist-epicenter",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-epicenter.png"
+        },
+        {
+          "name": "Fist",
+          "id": "doomfist-fist",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-fist.png"
+        },
+        {
+          "name": "Icon",
+          "id": "doomfist-icon",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-icon.png"
+        },
+        {
+          "name": "Initials",
+          "id": "doomfist-initials",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-initials.png"
+        },
+        {
+          "name": "Move List",
+          "id": "doomfist-move-list",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-move-list.png"
+        },
+        {
+          "name": "Out of Time",
+          "id": "doomfist-out-of-time",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-out-of-time.png"
+        },
+        {
+          "name": "Paint",
+          "id": "doomfist-paint",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-paint.png"
+        },
+        {
+          "name": "Punching Bag",
+          "id": "doomfist-punching-bag",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-punching-bag.png"
+        },
+        {
+          "name": "Punchman",
+          "id": "doomfist-punchman",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-punchman.png"
+        },
+        {
+          "name": "Smoke",
+          "id": "doomfist-smoke",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-smoke.png"
+        },
+        {
+          "name": "Sonic Boom",
+          "id": "doomfist-sonic-boom",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-sonic-boom.png"
+        },
+        {
+          "name": "Stance",
+          "id": "doomfist-stance",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-stance.png"
+        },
+        {
+          "name": "Successor",
+          "id": "doomfist-successor",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-successor.png"
+        },
+        {
+          "name": "The Greatest",
+          "id": "doomfist-the-greatest",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-the-greatest.png"
+        },
+        {
+          "name": "They Said...",
+          "id": "doomfist-they-said",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-they-said.png"
+        },
+        {
+          "name": "Thumbs Up",
+          "id": "doomfist-thumbs-up",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-thumbs-up.png"
+        },
+        {
+          "name": "Tuxedo",
+          "id": "doomfist-tuxedo",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-tuxedo.png"
+        },
+        {
+          "name": "Wrapped",
+          "id": "doomfist-wrapped",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-wrapped.png"
+        },
+        {
+          "name": "Wrestle",
+          "id": "doomfist-wrestle",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-wrestle.png"
+        },
+        {
+          "name": "Cute",
+          "id": "doomfist-cute",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-cute.png",
+          "achievement": true
+        },
+        {
+          "name": "Pixel",
+          "id": "doomfist-pixel",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-pixel.png",
+          "achievement": true
+        }
+      ],
+      "voicelines": [
+        {
+          "name": "Try Me",
+          "id": "doomfist-try-me",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-try-me.ogg",
+          "standardItem": true
+        },
+        {
+          "name": "Combo Breaker",
+          "id": "doomfist-combo-breaker",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-combo-breaker.ogg"
+        },
+        {
+          "name": "Don't get back up",
+          "id": "doomfist-dont-get-back-up",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-dont-get-back-up.ogg"
+        },
+        {
+          "name": "Go and sit down",
+          "id": "doomfist-go-and-sit-down",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-go-and-sit-down.ogg"
+        },
+        {
+          "name": "I haven't even started",
+          "id": "doomfist-i-havent-even-started",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-i-havent-even-started.ogg"
+        },
+        {
+          "name": "K.O.",
+          "id": "doomfist-ko",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-ko.ogg"
+        },
+        {
+          "name": "One punch is all I need",
+          "id": "doomfist-one-punch-is-all-i-need",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-one-punch-is-all-i-need.ogg"
+        },
+        {
+          "name": "Spare me the commentary",
+          "id": "doomfist-spare-me-the-commentary",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-spare-me-the-commentary.ogg"
+        },
+        {
+          "name": "Talk to the fist",
+          "id": "doomfist-talk-to-the-fist",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-talk-to-the-fist.ogg"
+        },
+        {
+          "name": "You must be joking",
+          "id": "doomfist-you-must-be-joking",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-you-must-be-joking.ogg"
+        },
+        {
+          "name": "You're not bad",
+          "id": "doomfist-youre-not-bad",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-youre-not-bad.ogg"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "id": "doomfist-heroic",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/poses/doomfist-heroic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Intense",
+          "id": "doomfist-intense",
+          "quality": "rare",
+          "url": "./resources/heroes/doomfist/poses/doomfist-intense.jpg"
+        },
+        {
+          "name": "Seismic Slam",
+          "id": "doomfist-seismic-slam",
+          "quality": "rare",
+          "url": "./resources/heroes/doomfist/poses/doomfist-seismic-slam.jpg"
+        },
+        {
+          "name": "Superior",
+          "id": "doomfist-superior",
+          "quality": "rare",
+          "url": "./resources/heroes/doomfist/poses/doomfist-superior.jpg"
         }
       ]
     }

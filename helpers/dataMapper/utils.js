@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 const qualityOrder = {
   'common': 0,
   'rare': 1,
@@ -81,30 +83,24 @@ const getPreviewURL = (type, id, hero, event) => {
   }
 };
 
-// http://stackoverflow.com/a/1359808
 // Makes it so it JSON.stringify's in order
-const sortObject = (o, update) => {
-  var sorted = {}, key, a = [];
-  for (key in o) {
-    if (o.hasOwnProperty(key)) a.push(key);
-  }
+var sortObject = (o, update) => {
+  var sorted = {}, array = [];
+
   if (update) {
-    a.sort((a, b) => {
-      if (o[a].order < o[b].order) return -1;
-      if (o[a].order > o[b].order) return 1;
-      return 0;
-    });
+    array = _.sortBy(o, u => u.order);
   } else {
-    a.sort();
+    array = _.sortBy(o, h => h.name);
   }
-  for (key = 0; key < a.length; key++) {
-    sorted[a[key]] = o[a[key]];
+
+  for (let thing of array) {
+    if (update) {
+      delete thing.order;
+    }
+
+    sorted[thing.id] = thing;
   }
-  if (update) {
-    Object.keys(sorted).forEach(update => {
-      delete sorted[update].order;
-    });
-  }
+
   return sorted;
 };
 
