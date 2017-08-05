@@ -233,6 +233,9 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     if (achievement) {
       currentFilters.push('ACHIEVEMENT');
     }
+    if (herof) {
+      currentFilters.push('HERO');
+    }
     this.currentFilters = currentFilters.join('|');
   };
 
