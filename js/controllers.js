@@ -237,14 +237,14 @@ OWI.controller('HeroesCtrl', ["$scope", "$timeout", "$stateParams", "$rootScope"
       return Data.events[e].name;
     });
     currentFilters = currentFilters.concat(groupFilter);
-    if (selected || unselected) {
-      currentFilters.push(selected ? 'SELECTED' : unselected ? 'UNSELECTED': '');
-    }
     if (achievement) {
       currentFilters.push('ACHIEVEMENT');
     }
     if (herof) {
       currentFilters.push('HERO');
+    }
+    if (selected || unselected) {
+      currentFilters.push(selected ? 'SELECTED' : unselected ? 'UNSELECTED': '');
     }
     this.currentFilters = currentFilters.join('|');
   };
