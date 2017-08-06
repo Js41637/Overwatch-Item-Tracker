@@ -45,7 +45,7 @@ OWI.factory("StorageService", function() {
   return service;
 });
 
-OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q, StorageService) {
+OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", function($http, $q, StorageService, $timeout) {
   function initialize(data) {
     console.info("Initializing");
     var storedData = StorageService.getData() || {};
@@ -58,7 +58,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
 
     Object.assign(out.checked, storedData);
     Object.assign(service, out, data);
-    setTimeout(function() {
+    $timeout(function() {
       service.initialized = true;
     }, 0);
   }
@@ -76,9 +76,11 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
       return $q(function(resolve) {
         function waitForInitialize() {
           if (service.initialized) {
-            resolve(service);
+            $timeout(function() {
+              resolve(service);
+            }, 50);
           } else {
-            setTimeout(waitForInitialize, 30);
+            $timeout(waitForInitialize, 30);
           }
         }
         waitForInitialize();
@@ -101,7 +103,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", function($http, $q,
   return service;
 }]);
 
-OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(DataService, StorageService) {
+OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$timeout", function(DataService, StorageService, $q, $timeout) {
   var TYPES = {
     skinsEpic: 'skins',
     skinsLegendary: 'skins'
@@ -115,6 +117,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(Da
   var countIcons = StorageService.getSetting('countIcons');
 
   var service = {
+    initialized: false,
     totals: {},
     heroes: {},
     events: {},
@@ -122,6 +125,19 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(Da
       DataService.waitForInitialization().then(function() {
         console.info("Calculating totals and costs");
         service.recalculate();
+        service.initialized = true;
+      });
+    },
+    waitForInitialization: function() {
+      return $q(function(resolve) {
+        function waitForInitialize() {
+          if (service.initialized) {
+            resolve(service);
+          } else {
+            $timeout(waitForInitialize, 30);
+          }
+        }
+        waitForInitialize();
       });
     },
     recalculate: function() {
@@ -243,6 +259,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", function(Da
       return out;
     }
   };
+
   service.init();
   return service;
 }]);

@@ -1,10 +1,10 @@
 <sub-header></sub-header>
 
-<div id="hero-container" ng-class="{filtering: hero.filtering}">
+<div id="hero-container" ng-if="hero.id" ng-show="hero.loaded" ng-class="{filtering: hero.filtering}">
   <div id="hero-header">
     <div class="hero-overview">
       <div class="hero-image">
-        <img src="{{ ::hero.id | heroImg:'career' }}" />
+        <img ng-src="{{ hero.id | heroImg:'career' }}" />
       </div>
       <div class="hero-info">
         <h2 class="hero-name">{{::hero.name}}</h2>

@@ -160,20 +160,6 @@ OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
   $stateProvider
   .state('heroes', {
     url: '/heroes/:id',
-    resolve: {
-      hero: function($q, DataService, $stateParams) {
-        var deferred = $q.defer();
-        DataService.waitForInitialization().then(function(data) {
-          var hero = data.heroes[$stateParams.id];
-          if (hero) {
-            deferred.resolve(hero);
-          } else {
-            deferred.reject("INVALID_HERO");
-          }
-        });
-        return deferred.promise;
-      }
-    },
     views: {
       main: {
         templateUrl: './templates/hero.html',

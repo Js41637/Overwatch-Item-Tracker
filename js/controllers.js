@@ -124,23 +124,34 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   };
 }]);
 
-OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService", "hero", function($scope, $rootScope, $uibModal, Data, StorageService, CompatibilityService, CostAndTotalService, hero) {
+OWI.controller('HeroesCtrl', ["$scope", "$timeout", "$stateParams", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService",  function($scope, $timeout, $stateParams, $rootScope, $uibModal, Data, StorageService, CompatibilityService, CostAndTotalService) {
   var vm = this;
-  Object.assign(this, hero);
-  this.filteredItems = hero.items;
-  this.canPlayType = CompatibilityService.canPlayType;
-  this.gridView = false;
-  this.checked = Data.checked;
-  if (CostAndTotalService.heroes[hero.id]) {
-    this.events = CostAndTotalService.heroes[hero.id].events;
-    this.groups = CostAndTotalService.heroes[hero.id].groups;
-    this.totals = CostAndTotalService.heroes[hero.id].totals;
-  } else {
-    setTimeout(function() {
-      this.events = CostAndTotalService.heroes[hero.id].events;
-      this.groups = CostAndTotalService.heroes[hero.id].groups;
-      this.totals = CostAndTotalService.heroes[hero.id].totals;
-    }, 1000);
+  this.loaded = false;
+  var hero;
+
+  Data.waitForInitialization().then(function(data) {
+    hero = data.heroes[$stateParams.id];
+    Object.assign(vm, hero);
+    init();
+    $timeout(function() {
+      vm.loaded = true;
+    }, 0);
+  });
+
+  function init() {
+    vm.filteredItems = hero.items;
+    vm.canPlayType = CompatibilityService.canPlayType;
+    vm.gridView = false;
+    vm.checked = Data.checked;
+    
+    CostAndTotalService.waitForInitialization().then(function(data) {
+      vm.events = data.heroes[hero.id].events;
+      vm.groups = data.heroes[hero.id].groups;
+      vm.totals = data.heroes[hero.id].totals;
+
+      // Cost is on scope as it is a directive in the page and it inherits parent scope
+      $scope.cost = CostAndTotalService.heroes && CostAndTotalService.heroes[hero.id] ? CostAndTotalService.heroes[hero.id].cost : 0;
+    });
   }
   
   this.filters = {
@@ -151,9 +162,6 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
     events: {},
     groups: {}
   };
-
-  // Cost is on scope as it is a directive in the page and it inherits parent scope
-  $scope.cost = CostAndTotalService.heroes[hero.id].cost;
 
   // Returns if an item is checked, use item.hero if one is available as allClass Icons includes icons from all heroes
   this.isItemChecked = function(item, type) {
@@ -174,10 +182,12 @@ OWI.controller('HeroesCtrl', ["$scope", "$rootScope", "$uibModal", "DataService"
   };
 
   this.hasGroups = function() {
+    if (!vm.groups) return false;
     return Object.keys(vm.groups).length;
   };
 
   this.hasEvents = function() {
+    if (!vm.events) return false;
     return Object.keys(vm.events).length;
   };
 
