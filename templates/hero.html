@@ -70,7 +70,7 @@
       <span
         class="item"
         ng-class="{selected: hero.isItemChecked(item, type) || item.standardItem}"
-        uib-tooltip="{{::item.name}}{{::item.standardItem ? ' (Default)' : ''}}"
+        uib-tooltip="{{::item.name | translate}}{{::item.standardItem ? ' (Default)' : ''}}"
         tooltip-placement="top"
         ng-repeat="item in items track by item.id"
         fancy-load="{{$index}}"
@@ -108,7 +108,7 @@
         ng-repeat="item in items track by item.id">
         <input type="checkbox" id="{{type + item.id}}" ng-checked="::item.standardItem || hero.checked[item.hero || hero.id][type][item.id]" ng-disabled="::item.standardItem" ng-change="hero.onSelect(item, type)" ng-model="hero.checked[item.hero || hero.id][type][item.id]">
         <label for="{{type + item.id}}">
-          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
+          <h3 class="{{::item.quality}}">{{::item.name | translate}}</h3>
           <small class="color-cost">{{ ::item | itemPrice:type }}</small>
         </label>
       </span>

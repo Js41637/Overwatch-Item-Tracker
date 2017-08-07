@@ -1,11 +1,12 @@
-OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "CompatibilityService", "CostAndTotalService", function($rootScope, $q, $document, $uibModal, DataService, CompatibilityService, CostAndTotalService) {
+OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "CompatibilityService", "CostAndTotalService", "StorageService", function($rootScope, $q, $document, $uibModal, DataService, CompatibilityService, CostAndTotalService, StorageService) {
   var vm = this;
   this.preview = false;
   this.currentDate = Date.now();
   this.showSidebar = false;
   this.showNav = false;
-  this.noSupportMsg = CompatibilityService.noSupportMsg;
+  this.noSupportMsg = CompatibilityService.noSupportMsg
   this.totals = CostAndTotalService;
+  this.langKey = StorageService.getSetting('langKey');
 
   DataService.waitForInitialization().then(function(data) {
     vm.events = data.events;
@@ -218,7 +219,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
       vm.clearFilters();
       return;
     }
-    
+
     this.filteredItems = filterItems(hero.items, eventFilters, groupFilter);
     updateCosts();
 
@@ -269,7 +270,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     CostAndTotalService.recalculate();
     resetCosts();
   });
-  
+
   this.clearFilters = function() {
     this.filters = {
       selected: false,
@@ -421,8 +422,14 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
 
 OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $uibModalInstance, StorageService, DataService) {
   var vm = this;
+  $rootScope.languages = [
+      { id: 'en_US', label: 'English US', img: '../resources/heroes/all/icons/united-states-of-america.png' },
+      { id: 'de_DE', label: 'German', img: '../resources/heroes/all/icons/germany.png' },
+      { id: 'fr_FR', label: 'French', img: '../resources/heroes/all/icons/france.png' }
+  ];
   var settings = StorageService.settings;
   this.particles = settings['particles'];
+  $rootScope.langKey = $rootScope.languages.find(function(lang) { return lang.id === StorageService.getSetting('langKey'); });
   this.hdVideos = settings['hdVideos'];
   this.currentTheme = settings['currentTheme'];
   this.showPreviews = settings['showPreviews'];
@@ -534,5 +541,11 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
 
     StorageService.setData(DataService.checked);
     $rootScope.$emit('selectAll');
+  };
+
+  this.changeLanguage = function(langKey) {
+    this.langKey = langKey;
+    StorageService.setSetting('langKey', langKey);
+    location.reload();
   };
 }]);

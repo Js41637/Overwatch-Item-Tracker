@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="LangGenApp">
+	<head>
+		<meta charset="utf-8">
+		<title>Language Generator</title>
+		<style>
+		pre {
+			border: 2px dashed black;
+		}
+		</style>
+	</head>
+	<body ng-controller="Ctrl">
+		<pre>{{lang}}</pre>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
+		<script>
+		var app = angular.module('LangGenApp', []);
+		app.controller('Ctrl', function($scope, $http) {
+			var handle = function(dataset) {
+				Object.keys(dataset).forEach(function(data) {
+					var items = dataset[data].items;
+					Object.keys(items)
+					.sort(function(t1, t2) {
+						return t1.localeCompare(t2);
+					})
+					.forEach(function(type) {
+						items[type]
+						.sort(function(i1, i2) {
+							return i1.id.localeCompare(i2.id);
+						})
+						.forEach(function(item) {
+							var langKey = data + '.' + type + '.' + item.id;
+							var translation = item.name.replace(/"/g, '\\"');
+							$scope.lang += '\t"' + langKey + '": "' + translation + '",\n';
+						});
+						$scope.lang += '\n';
+					});
+				});
+			};
+
+			$scope.lang = '';
+
+			$http.get('../data/master.json').then(function(response) {
+				var data = response.data;
+				console.log(data);
+				$scope.lang = '{\n';
+				handle(data.events);
+				handle(data.heroes);
+				$scope.lang = $scope.lang.slice(0, -3);
+				$scope.lang += '\n}';
+			});
+		});
+		</script>
+	</body>
+</html>

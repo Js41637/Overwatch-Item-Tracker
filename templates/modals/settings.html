@@ -43,6 +43,13 @@
       </div>
     </div>
     <div class="setting">
+      <h3>Select Language</h3>
+      <p>Select a language for the itemnames</p>
+      <div class="flag-container">
+        <img class="flag-icon" ng-class="{'flag-icon-selected': lang.id == langKey.id}" ng-repeat="lang in languages" ng-click="settings.changeLanguage(lang.id)" src="{{lang.img}}" title="{{lang.label}}" alt="{{lang.label}}"/>
+      </div>
+    </div>
+    <div class="setting">
       <h3>Import/Export Data</h3>
       <p>Copy and paste this string into your other browser or store it in a file for backup. You can also input your export and import it with the overwrite button.</p>
       <div ng-hide="settings.importErrors == null || settings.importErrors == false" class="alert alert-danger">

@@ -7,7 +7,7 @@
           <div class="card-content">
             <h4 ng-if="preview.type == 'icons'" class="card-heading">Player Icon</h4>
             <h4 ng-if="preview.type != 'icons'" class="card-heading">{{preview.hero || 'All Heroes'}}</h4>
-            <p class="card-copy">{{preview.name}}</p>
+            <p class="card-copy">{{preview.name|translate}}</p>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
         <div class="bg">
           <div class="card-content">
             <h4 class="card-heading">{{preview.hero || 'All Heroes'}}</h4>
-            <p class="card-copy">{{preview.name}}</p>
+            <p class="card-copy">{{preview.name|translate}}</p>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
         <label for="{{'legendary' + $index}}" class="bg">
           <div class="card-content">
             <h4 class="card-heading">{{::skin.heroName}}</h4>
-            <p class="card-copy">{{::skin.name}}</p>
+            <p class="card-copy">{{skin.name|translate}}</p>
           </div>
         </label>
       </div>

@@ -75,8 +75,8 @@
         <input ng-if="::spray.heroName" type="checkbox" class="orn" ng-if="::spray.heroName" id="{{'sprayorn' + $index}}" ng-model="checked[spray.hero].sprays[spray.ornamentID]" ng-change="onSelect(spray, 'sprays')">
         <label ng-if="::spray.heroName" for="{{'sprayorn' + $index}}" class="ornl"></label>
         <label for="{{'spray' + $index}}">
-          <h3>{{::spray.heroName || spray.name}}</h3>
-          <h4 ng-show="spray.heroName">{{::spray.name}}</h4>
+          <h3>{{::spray.heroName || spray.name | translate}}</h3>
+          <h4 ng-show="spray.heroName">{{::spray.name | translate}}</h4>
         </label>
       </div>
     </div>

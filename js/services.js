@@ -4,6 +4,7 @@ OWI.factory("StorageService", function() {
     settings: {},
     defaultSettings: {
       particles: true,
+      langKey: 'en_US',
       showPreviews: true,
       hdVideos: false,
       currentTheme: 'standard',
@@ -55,6 +56,28 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
     for (var hero in data.heroes) {
       out.checked[hero] = {"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}};
     }
+
+    // Use itemnames as translation key
+    Object.keys(data.events).forEach(function(event) {
+      var items = data.events[event].items;
+      Object.keys(items).forEach(function(type) {
+        items[type].forEach(function(item) {
+          var langKey = event + '.' + type + '.' + item.id;
+          item.name = langKey;
+          //item.langKey = langKey; //TODO: later use this?
+        });
+      });
+    });
+    Object.keys(data.heroes).forEach(function(hero) {
+      var items = data.heroes[hero].items;
+      Object.keys(items).forEach(function(type) {
+        items[type].forEach(function(item) {
+          var langKey = hero + '.' + type + '.' + item.id;
+          item.name = langKey;
+          //item.langKey = langKey; //TODO: later use this?
+        });
+      });
+    });
 
     Object.assign(out.checked, storedData);
     Object.assign(service, out, data);
@@ -329,7 +352,7 @@ OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
         }, 75);
         return;
       }
-      
+
       var nextImage = service.images.shift();
       if (nextImage) {
         service.requests++;

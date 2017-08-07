@@ -357,6 +357,18 @@ body {
   margin-bottom: 3px;
 }
 
+#settings .setting .flag-icon {
+  width: 32px;
+  height: 32px;
+  border-width: medium;
+  border-style: solid;
+  border-color: transparent;
+}
+
+#settings .setting .flag-icon-selected {
+  border-color: #ffa500;
+}
+
 strong {
   font-weight: bold;
 }

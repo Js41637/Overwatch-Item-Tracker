@@ -1,11 +1,21 @@
-var OWI = angular.module('OWI', ['ui.router', 'ui.bootstrap', 'ngAnimate']);
+var OWI = angular.module('OWI', ['ui.router', 'ui.bootstrap', 'ngAnimate', 'pascalprecht.translate']);
 
 // Setup some angular config stuff
-OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$animateProvider', '$locationProvider', function($compileProvider, $urlMatcherFactoryProvider, $animateProvider, $locationProvider) {
+OWI.config(['$compileProvider', '$urlMatcherFactoryProvider', '$animateProvider', '$locationProvider', '$translateProvider', function($compileProvider, $urlMatcherFactoryProvider, $animateProvider, $locationProvider, $translateProvider) {
   $locationProvider.hashPrefix(""); // defaults to #! which is annoying
   $compileProvider.debugInfoEnabled(false); // more perf
   $urlMatcherFactoryProvider.strictMode(false); // I dunno
   $animateProvider.classNameFilter(/angular-animate/); // prevent angular-animate animating all the things
+  $translateProvider.useStaticFilesLoader({prefix: '/locales/', suffix: '.json'});
+  var settings = localStorage.getItem('settings');
+  if (settings) {
+    console.log('Seleced language from localStorage');
+    $translateProvider.preferredLanguage(JSON.parse(settings).langKey);
+  } else {
+    console.log('Seleced default language');
+    $translateProvider.preferredLanguage('en_US');
+  }
+  $translateProvider.fallbackLanguage('en_US');
 }]);
 
 // Run migrations to convert data and stuff
