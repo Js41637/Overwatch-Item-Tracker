@@ -31,32 +31,19 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   };
 
   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
-    // If for some reason we don't have data, wait a second an try again
-    if (!vm.events || !vm.heroes) {
-      console.warn("Missing event or hero data!! Trying again", vm);
-      setTimeout(function() {
-        if (!vm.events || !vm.heroes) {
-          console.error("Error loading data, reload page pls", event, toState, toParams);
-          alert("Error loading data, reload the site to try again, if issue persists please raise an issue on the Github repo");
-          return;
-        }
-        onStateChange(event, toState, toParams);
-      }, 400);
-      return;
-    }
     onStateChange(event, toState, toParams);
   });
 
   function onStateChange(event, toState, toParams) {
     vm.showNav = false;
-    if (toState.name == 'events') {
-      vm.item = vm.events[toParams.id];
-      vm.item.type = 'event';
-    } else if (toState.name == 'heroes') {
-      vm.item = vm.heroes[toParams.id];
-      vm.item.type = 'hero';
-    } else {
+    var heroOrEventID = toParams.id;
+    if (!heroOrEventID) {
       vm.item = { name: 'Home' };
+    } else {
+      DataService.getHeroOrEventName(toState.name, heroOrEventID).then(function(data) {
+        console.log(data)
+        vm.item = data;
+      });
     }
   }
 
@@ -124,13 +111,17 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   };
 }]);
 
-OWI.controller('HeroesCtrl', ["$scope", "$timeout", "$stateParams", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService",  function($scope, $timeout, $stateParams, $rootScope, $uibModal, Data, StorageService, CompatibilityService, CostAndTotalService) {
+OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService",  function($scope, $state, $timeout, $stateParams, $rootScope, $uibModal, Data, StorageService, CompatibilityService, CostAndTotalService) {
   var vm = this;
   this.loaded = false;
   var hero;
 
   Data.waitForInitialization().then(function(data) {
     hero = data.heroes[$stateParams.id];
+    if (!hero) {
+      $state.go('home');
+      return;
+    }
     Object.assign(vm, hero);
     init();
     $timeout(function() {

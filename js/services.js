@@ -72,16 +72,29 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
     isItemChecked: function(who, type, id) {
       return (service.checked[who] ? (service.checked[who][type] ? service.checked[who][type][id] : false) : false);
     },
+    getHeroOrEventName: function(type, id) {
+      return service.waitForInitialization().then(function() {
+        return {
+          name: service[type][id].name,
+          type: type,
+          id: id
+        };
+      });
+    },
     waitForInitialization: function() {
       return $q(function(resolve) {
         function waitForInitialize() {
           if (service.initialized) {
             $timeout(function() {
               resolve(service);
-            }, 50);
+            }, 30);
           } else {
             $timeout(waitForInitialize, 30);
           }
+        }
+        if (service.initialized) {
+          resolve(service);
+          return;
         }
         waitForInitialize();
       });

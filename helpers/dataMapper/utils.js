@@ -18,6 +18,7 @@ const types = [
   { m: 'heroic intro', name: 'intros' }
   //, { m: 'weapon skin', name: 'weapons' } // Golden
 ];
+
 // Generate a match for each quality for every type of item
 const matches = {};
 types.forEach(t => {
@@ -55,7 +56,10 @@ const getCleanID = (what, hero) => {
               .replace(/[öôọ]/g, 'o')
               .replace('ú', 'u')
               .replace('çã', 'ca')
-              .replace(/[^a-zA-Z 0-9]/g, '').trim().replace(/\s+/g, " ").replace(/ /g, '-');
+              .replace(/[^a-zA-Z 0-9]/g, '')
+              .trim()
+              .replace(/\s+/g, " ")
+              .replace(/ /g, '-');
 };
 
 // Returns the image or video URL for an item
