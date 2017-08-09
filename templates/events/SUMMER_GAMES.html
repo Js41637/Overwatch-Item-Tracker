@@ -21,8 +21,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
-          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
         </label>
       </div>
     </div>
@@ -44,8 +43,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
-          <h3 class="{{::item.quality || 'common'}}">{{::item.name}}</h3>
-          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+          <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
         </label>
       </div>
     </div>
@@ -58,8 +56,8 @@
       <h2>Skins <small class="itemTotal">{{totals['skins'].selected}}/{{totals['skins'].total}}</small></h2>
     </div>
     <div class="items flex-2">
-      <div 
-        ng-repeat="item in ::data.items.skins track by $index" 
+      <div
+        ng-repeat="item in ::data.items.skins track by $index"
         ng-init="type = 'skins'"
         class="item"
         uib-tooltip-template="'imagePreviewTemplate.html'"
@@ -70,8 +68,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
-          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
         </label>
       </div>
     </div>
@@ -93,8 +90,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
-          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
         </label>
       </div>
     </div>
@@ -116,8 +112,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
-          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
         </label>
       </div>
     </div>
@@ -139,8 +134,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
-          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
         </label>
       </div>
     </div>
@@ -163,8 +157,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
-          <h3 class="{{::item.quality || 'common'}}">{{::item.name}}</h3>
-          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+          <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
         </label>
       </div>
     </div>

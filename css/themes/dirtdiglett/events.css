@@ -20,6 +20,10 @@
   font-size: 100%;
 }
 
+#event-container .col-padding {
+  padding: 0;
+}
+
 
 /* The header */
 body#SUMMER_GAMES:before,
@@ -69,7 +73,41 @@ body#ANNIVERSARY_2017:before {
   background-position: center 42%;
 }
 
+#event-container .event-progress {
+  height: 36px;
+  top: -36px;
+  left:0;
+  right: 0;
+  background: rgba(0,0,0,0.4);
+  text-align: center;
+  position: absolute;
+  z-index: 9999;
+}
 
+  #event-container .event-progress .event-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+    border-top: 0;
+    transition: width .8s ease-in-out;
+  }
+
+  #SUMMER_GAMES .event-progress .event-progress-bar {
+      background-color: #7fc94d;
+  }
+
+  #event-container .event-progress span {
+    line-height: 36px;
+    font-family: Futura, century gothic, arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  }
 
 /* Event Info */
 #header .event-ended {
@@ -1114,5 +1152,4 @@ body#ANNIVERSARY_2017:before {
   #SUMMER_GAMES #event-container #victoryposes {
     margin-top: 0;
   }
-
 }
