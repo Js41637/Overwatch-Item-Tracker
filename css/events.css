@@ -821,6 +821,13 @@
 
 /* SMALL MODE CSS */
 
+@media screen and (max-width: 1250px) {
+  #SUMMER_GAMES #event-container {
+    margin-top: 10px;
+  }
+}
+
+
 @media screen and (max-width: 1650px) {
   #event-container {
     flex-direction: column;
@@ -829,9 +836,15 @@
     position: relative;
     margin: -20px auto 0;
   }
+
   /* SUMMER GAMES */
+  
   #SUMMER_GAMES .col-padding {
     width: 100%;
+  }
+  
+  #SUMMER_GAMES #event-container .event-progress {
+    width: 65%;
   }
 
   /* HALLOWEEN */
