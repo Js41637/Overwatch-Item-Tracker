@@ -78,12 +78,9 @@ OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService)
     replace: true,
     templateUrl: './templates/tooltip-image-preview.html',
     link: function($scope) {
-
       var item = $scope.item;
       var type = $scope.type;
       var url = item.url;
-
-      console.log(item, type, url)
 
       var out = { description: item.description };
       if (type == 'intros' || type == 'emotes') {
