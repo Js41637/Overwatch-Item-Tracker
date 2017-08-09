@@ -364,11 +364,20 @@
   font-weight: bold;
 }
 
-#SUMMER_GAMES .section-header h2 small {
+#SUMMER_GAMES .section-header h2 .itemTotal {
   font-size: 0.7em;
   margin-left: 2px;
   color: inherit;
   font-weight: inherit;
+}
+
+#SUMMER_GAMES #legendary-skins h2 small {
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  letter-spacing: 0.3;
+}
+
+#SUMMER_GAMES .section-header h2 .itemTotal:before, #SUMMER_GAMES .section-header h2 .itemTotal:after, #SUMMER_GAMES #legendary-skins h2 small:before, #SUMMER_GAMES #legendary-skins h2 small:after {
+  display: none;
 }
 
 #SUMMER_GAMES #event-container .event-progress {
