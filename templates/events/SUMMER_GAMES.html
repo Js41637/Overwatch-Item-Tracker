@@ -150,6 +150,7 @@
         ng-repeat="item in ::data.items.sprays track by $index"
         ng-init="type = 'sprays'"
         class="item"
+        achievement="{{::item.achievement}}"
         uib-tooltip-template="'imagePreviewTemplate.html'"
         tooltip-popup-delay="275"
         tooltip-class="img-preview"
@@ -158,7 +159,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
+          <h3 class="{{::item.quality || 'common'}}">{{::item.name}}</h3>
           <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
         </label>
       </div>
