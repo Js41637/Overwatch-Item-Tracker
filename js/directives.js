@@ -19,15 +19,15 @@ OWI.filter('eventImageUrl', function() {
 });
 
 OWI.filter('itemPrice', function() {
-  return function(item, type) {
-    var event = item.event;
+  return function(item, type, event) {
+    var isEvent = item.event || (event && item.group !== 'SUMMER_GAMES_2016');
     var quality = item.quality;
-    if (item.standardItem || item.achievement || type == 'icons' || (event && event == 'SUMMER_GAMES_2016')) return '';
+    if (item.standardItem || item.achievement || type == 'icons') return '';
 
     var prices = { common: 25, rare: 75, epic: 250, legendary: 1000 };
 
     if (quality && prices[quality]) {
-      return '(' + prices[quality] * (event ? 3 : 1) + ')';
+      return '(' + prices[quality] * (isEvent ? 3 : 1) + ')';
     }
     return '';
   };

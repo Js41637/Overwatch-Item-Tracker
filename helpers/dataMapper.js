@@ -4,7 +4,7 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs');
-const { forEach, sortBy, find, reduce, merge, get } = require('lodash');
+const { forEach, sortBy, find, reduce, merge, get, isEmpty, findKey } = require('lodash');
 
 const mode = process.argv.slice(2)[0];
 
@@ -25,6 +25,7 @@ consoleColors.load();
 const HERODATA = require('./dataMapper/HERODATA.js');
 const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp, idsBlizzardChanged } = require('./dataMapper/itemData.js');
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER } = require('./dataMapper/EVENTDATA.js');
+const { EVENTITEMS } = require('./dataMapper/EVENTITEMS.js');
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder } = require('./dataMapper/utils.js');
 
 var allClassData, missingAllClassData = {}, allClassDataKeys = {};
@@ -73,13 +74,13 @@ things.forEach((thingy, i) => {
       return;
     }
 
-    if (!items.COMMON.length) {
+    if (isEmpty(items)) {
       console.warn(`${hero} has no items`);
     }
 
     // if i == 1 we're on newRawData, add the new items on top of existing data
     if (i == 1) {
-      for (var group  in items) {
+      for (var group in items) {
         for (var item of items[group]) {
           if (!data[hero]) {
             console.warn(hero, "doesn't exist in data");
@@ -249,11 +250,27 @@ forEach(heroes, hero => {
   forEach(hero.items, (items, tKey) => {
     items.forEach(item => {
       const event = item.event;
-      // Split legendary and epic skins up for events as they are displayed seperately.
-      const type = tKey == 'skins' ? (item.quality == 'legendary' ? 'skinsLegendary' : (item.quality == 'epic' ? 'skinsEpic' : 'skins')) : tKey;
+      const actualEvent = findKey(EVENTITEMS, event => event.includes(`${tKey}/${item.id}`));
+
+      if (actualEvent) {
+        item.group = actualEvent;
+      }
+
+      if (event === 'SUMMER_GAMES' && !actualEvent) {
+        item.isNew = true;
+      }
+
+      let type;
+      if (event === 'SUMMER_GAMES') {
+        type = (tKey == 'skins' && item.quality == 'legendary' && !actualEvent) ? 'skinsLegendary' : tKey;
+      } else {
+        // Split legendary and epic skins up for events as they are displayed seperately.
+        type = tKey == 'skins' ? (item.quality == 'legendary' ? 'skinsLegendary' : (item.quality == 'epic' ? 'skinsEpic' : 'skins')) : tKey;
+      }
+
       if (!event) return;
       if (!updates[event]) updates[event] = {
-        order: Object.keys(EVENTNAMES).indexOf(event),
+        order: EVENTORDER[event],
         name: EVENTNAMES[event],
         id: event,
         dates: EVENTTIMES[event],
@@ -363,7 +380,7 @@ forEach(updates, update => forEach(update.items, (items, type) => {
       update.items[type] = sortBy(items, ['heroName', (c => c.achievement ? 1 : 0), 'name']);
       break;
     default:
-      update.items[type] = sortBy(items, ['heroName', 'name']);
+      update.items[type] = sortBy(items, get(EVENT_ITEM_ORDER, [update.id, type]) || ['heroName', 'name']);
   }
 }));
 

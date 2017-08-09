@@ -435,7 +435,7 @@ body {
 }
 
 #hero-container .item[event="SUMMER_GAMES_2016"] + .tooltip .preview.img,
-#SUMMER_GAMES_2016 #image-preview .card .bg2 {
+#SUMMER_GAMES #image-preview .card .bg2 {
   background: url(resources/SUMMER_GAMES_2016/icon-bg.png)no-repeat,url(resources/SUMMER_GAMES_2016/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;

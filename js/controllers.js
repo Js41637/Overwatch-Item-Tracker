@@ -41,7 +41,6 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
       vm.item = { name: 'Home' };
     } else {
       DataService.getHeroOrEventName(toState.name, heroOrEventID).then(function(data) {
-        console.log(data)
         vm.item = data;
       });
     }
@@ -355,13 +354,13 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   $scope.preview = false;
   $scope.checked = Data.checked;
   $scope.data = event;
-  if (CostAndTotalService.events[event.id]) {
-    $scope.cost = CostAndTotalService.events[event.id].cost;
-  } else {
-    setTimeout(function() {
-      $scope.cost = CostAndTotalService.events[event.id].cost;
-    }, 1000);
-  }
+
+  CostAndTotalService.waitForInitialization().then(function(data) {
+    $scope.totals = data.events[event.id].totals;
+
+    // Cost is on scope as it is a directive in the page and it inherits parent scope
+    $scope.cost = data.events[event.id].cost;
+  });
   
 
   $rootScope.$on('selectAll', function() {
@@ -372,6 +371,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   $scope.onSelect = function(item, type) {
     StorageService.setData($scope.checked);
     CostAndTotalService.updateItem(item, type, item.hero, event.id);
+    $scope.totals = CostAndTotalService.events[event.id].totals;
   };
 
   $scope.selectLegendarySkin = function($event, skin) {

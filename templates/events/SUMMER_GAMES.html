@@ -1,0 +1,112 @@
+<div class="col-md-8 col-padding">
+  <legendary-skins></legendary-skins>
+  <div id="voicelines" class="section">
+    <div class="section-header">
+      <h2>Voice Lines <small class="itemTotal">{{totals['voicelines'].selected}}/{{totals['voicelines'].total}}</small></h2>
+    </div>
+    <div class="items flex-3">
+      <div ng-repeat="item in ::data.items.voicelines track by $index" class="item">
+        <input type="checkbox" id="{{'voicelines' + item.id + $index}}" ng-model="checked[item.hero]['voicelines'][item.id]" ng-change="onSelect(item, 'voicelines')">
+        <label for="{{'voicelines' + item.id + $index}}">
+          <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
+          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
+          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div id="icons" class="section">
+    <div class="section-header">
+      <h2>Player Icons <small class="itemTotal">{{totals['icons'].selected}}/{{totals['icons'].total}}</small></h2>
+    </div>
+    <div class="items flex-4">
+      <div ng-repeat="item in ::data.items.icons track by $index" class="item">
+        <input type="checkbox" id="{{'icons' + item.id + $index}}" ng-model="checked[item.hero]['icons'][item.id]" ng-change="onSelect(item, 'icons')">
+        <label for="{{'icons' + item.id + $index}}">
+          <h4>{{::item.heroName || 'All'}}</h4>
+          <h3 class="{{::item.quality || 'common'}}">{{::item.name}}</h3>
+          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 col-padding">
+  <div id="skins" class="section">
+    <div class="section-header">
+      <h2>Skins <small class="itemTotal">{{totals['skins'].selected}}/{{totals['skins'].total}}</small></h2>
+    </div>
+    <div class="items flex-2">
+      <div ng-repeat="item in ::data.items.skins track by $index" class="item">
+        <input type="checkbox" id="{{'skins' + item.id + $index}}" ng-model="checked[item.hero]['skins'][item.id]" ng-change="onSelect(item, 'skins')">
+        <label for="{{'skins' + item.id + $index}}">
+          <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
+          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
+          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div id="victoryposes" class="section">
+    <div class="section-header">
+      <h2>Victory Poses <small class="itemTotal">{{totals['poses'].selected}}/{{totals['poses'].total}}</small></h2>
+    </div>
+    <div class="items flex-2">
+      <div ng-repeat="item in ::data.items.poses track by $index" class="item">
+        <input type="checkbox" id="{{'poses' + item.id + $index}}" ng-model="checked[item.hero]['poses'][item.id]" ng-change="onSelect(item, 'poses')">
+        <label for="{{'poses' + item.id + $index}}">
+          <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
+          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
+          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div id="emotes" class="section">
+    <div class="section-header">
+      <h2>Emotes <small class="itemTotal">{{totals['emotes'].selected}}/{{totals['emotes'].total}}</small></h2>
+    </div>
+    <div class="items flex-2">
+      <div ng-repeat="item in ::data.items.emotes track by $index" class="item">
+        <input type="checkbox" id="{{'emotes' + item.id + $index}}" ng-model="checked[item.hero]['emotes'][item.id]" ng-change="onSelect(item, 'emotes')">
+        <label for="{{'emotes' + item.id + $index}}">
+          <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
+          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
+          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+        </label>
+      </div>
+    </div>
+  </div>
+    <div id="intros" class="section">
+    <div class="section-header">
+      <h2>Highlight Intros <small class="itemTotal">{{totals['intros'].selected}}/{{totals['intros'].total}}</small></h2>
+    </div>
+    <div class="items flex-2">
+      <div ng-repeat="item in ::data.items.intros track by $index" class="item">
+        <input type="checkbox" id="{{'intros' + item.id + $index}}" ng-model="checked[item.hero]['intros'][item.id]" ng-change="onSelect(item, 'intros')">
+        <label for="{{'intros' + item.id + $index}}">
+          <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
+          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
+          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div id="sprays" class="section">
+    <div class="section-header">
+      <h2>Sprays <small class="itemTotal">{{totals['sprays'].selected}}/{{totals['sprays'].total}}</small></h2>
+    </div>
+    <div class="items flex-2">
+      <div ng-repeat="item in ::data.items.sprays track by $index" class="item">
+        <input type="checkbox" id="{{'sprays' + item.id + $index}}" ng-model="checked[item.hero]['sprays'][item.id]" ng-change="onSelect(item, 'sprays')">
+        <label for="{{'sprays' + item.id + $index}}">
+          <h4>{{::item.heroName || 'All'}}</h4>
+          <h3 class="{{::item.quality}}">{{::item.name}}</h3>
+          <small class="color-cost">{{ ::item | itemPrice:type:true }}</small>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+

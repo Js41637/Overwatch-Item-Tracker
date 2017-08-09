@@ -44,20 +44,28 @@ body {
   color: #00db55;
 }
 
-.item h3.common, .item h3, .color-common {
+.col-padding {
+  padding: 0 8px;
+}
+
+.item h3 {
   color: #fff;
 }
 
+.item h3.common, .color-common {
+  color: #fff !important;
+}
+
 .item h3.rare, .color-rare {
-  color: #00c1fa;
+  color: #00c1fa !important;
 }
 
 .item h3.epic, .color-epic {
-  color: #ff05f4;
+  color: #ff05f4 !important;
 }
 
 .item h3.legendary, .color-legendary {
-  color: #ffa12b;
+  color: #ffa12b !important;
 }
 
 /**
@@ -787,9 +795,13 @@ strong {
   background-size: cover;
   background-position: center;
   width: 25%;
-  margin-right: 0.5%;
+  margin-right: 0.4%;
   transform: translateZ(0);
   cursor: pointer;
+}
+
+.card:last-of-type {
+  margin-right: 0;
 }
 
 .card:before {
@@ -807,7 +819,7 @@ strong {
   bottom: 0;
   right: 0;
   background: rgba(41, 50, 73, 0.8);
-  padding: 16px;
+  padding: 16px 13px;
   box-sizing: border-box;
 }
 
@@ -861,6 +873,10 @@ strong {
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
+}
+
+.item-container .col {
+  padding: 0 8px;
 }
 
 .item-container .row, .item-container .col {
@@ -1132,4 +1148,20 @@ strong {
   height: 100%;
   border-radius: 4px;
   max-width: 100%;
+}
+
+.new {
+  z-index: 1;
+  top: 5px;
+  right: 5px;
+  line-height: 1;
+  padding: 3px 5px;
+  box-shadow: 0 0 1px 1px rgba(0,0,0,.65);
+  border: 2px solid rgb(231, 155, 42);
+  border-radius: 3px;
+  background-color: rgba(0,0,0,.65);
+  color: rgb(255, 227, 11);
+  font-size: 9px;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
 }

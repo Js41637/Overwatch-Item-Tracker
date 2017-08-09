@@ -1,7 +1,8 @@
-const CURRENTEVENT = 'ANNIVERSARY_2017';
+const { qualityOrder } = require('./utils.js');
+const CURRENTEVENT = 'SUMMER_GAMES';
 
 const EVENTS = {
-  SUMMER16: 'SUMMER_GAMES_2016',
+  SUMMER: 'SUMMER_GAMES',
   HALLOWEEN16: 'HALLOWEEN_2016',
   CHRISTMAS16: 'WINTER_WONDERLAND_2016',
   ROOSTER17: 'YEAR_OF_THE_ROOSTER_2017',
@@ -11,16 +12,16 @@ const EVENTS = {
 
 const EVENTORDER = {
   undefined: 0, // no event
-  [EVENTS.SUMMER16]: 1,
-  [EVENTS.HALLOWEEN16]: 2,
-  [EVENTS.CHRISTMAS16]: 3,
-  [EVENTS.ROOSTER17]: 4,
-  [EVENTS.UPRISING17]: 5,
-  [EVENTS.ANNIVERSARY17]: 6
+  [EVENTS.SUMMER]: 7,
+  [EVENTS.HALLOWEEN16]: 1,
+  [EVENTS.CHRISTMAS16]: 2,
+  [EVENTS.ROOSTER17]: 3,
+  [EVENTS.UPRISING17]: 4,
+  [EVENTS.ANNIVERSARY17]: 5
 };
 
 const EVENTNAMES = {
-  [EVENTS.SUMMER16]: 'Summer Games 2016',
+  [EVENTS.SUMMER]: 'Summer Games',
   [EVENTS.HALLOWEEN16]: 'Halloween Terror 2016',
   [EVENTS.CHRISTMAS16]: 'Winter Wonderland 2016',
   [EVENTS.ROOSTER17]: 'Year of the Rooster 2017',
@@ -29,7 +30,7 @@ const EVENTNAMES = {
 };
 
 const EVENTTIMES = {
-  [EVENTS.SUMMER16]: {
+  [EVENTS.SUMMER]: {
     "start": "1470164400000",
     "end": "1471928400000"
   },
@@ -56,6 +57,10 @@ const EVENTTIMES = {
 };
 
 const EVENT_ITEM_ORDER = {
+  [EVENTS.SUMMER]: {
+    "icons": ['heroName', 'name'],
+    "skins": [a => qualityOrder[a.quality], 'heroName', 'name']
+  },
   [EVENTS.ANNIVERSARY17]: {
     "icons": ['heroName', 'name']
   }

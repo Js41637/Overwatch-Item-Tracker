@@ -1,867 +1,4 @@
 {
-  "SUMMER_GAMES_2016": {
-    "name": "Summer Games 2016",
-    "id": "SUMMER_GAMES_2016",
-    "dates": {
-      "start": "1470164400000",
-      "end": "1471928400000"
-    },
-    "items": {
-      "icons": [
-        {
-          "heroName": "Hanzo",
-          "hero": "hanzo",
-          "name": "Archery",
-          "id": "hanzo-archery",
-          "url": "./resources/heroes/hanzo/icons/hanzo-archery.png"
-        },
-        {
-          "hero": "all",
-          "name": "Australia",
-          "id": "australia",
-          "url": "./resources/heroes/all/icons/australia.png"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "BMX",
-          "id": "reaper-bmx",
-          "url": "./resources/heroes/reaper/icons/reaper-bmx.png"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Badminton",
-          "id": "mercy-badminton",
-          "url": "./resources/heroes/mercy/icons/mercy-badminton.png"
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Basketball",
-          "id": "pharah-basketball",
-          "url": "./resources/heroes/pharah/icons/pharah-basketball.png"
-        },
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "Boxing",
-          "id": "bastion-boxing",
-          "url": "./resources/heroes/bastion/icons/bastion-boxing.png"
-        },
-        {
-          "hero": "all",
-          "name": "Brazil",
-          "id": "brazil",
-          "url": "./resources/heroes/all/icons/brazil.png"
-        },
-        {
-          "hero": "all",
-          "name": "China",
-          "id": "china",
-          "url": "./resources/heroes/all/icons/china.png"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Cycling",
-          "id": "dva-cycling",
-          "url": "./resources/heroes/dva/icons/dva-cycling.png"
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "Diving",
-          "id": "roadhog-diving",
-          "url": "./resources/heroes/roadhog/icons/roadhog-diving.png"
-        },
-        {
-          "hero": "all",
-          "name": "Egypt",
-          "id": "egypt",
-          "url": "./resources/heroes/all/icons/egypt.png"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Equestrian",
-          "id": "mccree-equestrian",
-          "url": "./resources/heroes/mccree/icons/mccree-equestrian.png"
-        },
-        {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Fencing",
-          "id": "genji-fencing",
-          "url": "./resources/heroes/genji/icons/genji-fencing.png"
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Football",
-          "id": "lucio-football",
-          "url": "./resources/heroes/lucio/icons/lucio-football.png"
-        },
-        {
-          "hero": "all",
-          "name": "France",
-          "id": "france",
-          "url": "./resources/heroes/all/icons/france.png"
-        },
-        {
-          "hero": "all",
-          "name": "Germany",
-          "id": "germany",
-          "url": "./resources/heroes/all/icons/germany.png"
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "Golf",
-          "id": "soldier-76-golf",
-          "url": "./resources/heroes/soldier-76/icons/soldier-76-golf.png"
-        },
-        {
-          "hero": "all",
-          "name": "Greece",
-          "id": "greece",
-          "url": "./resources/heroes/all/icons/greece.png"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Gymnastics",
-          "id": "widowmaker-gymnastics",
-          "url": "./resources/heroes/widowmaker/icons/widowmaker-gymnastics.png"
-        },
-        {
-          "hero": "all",
-          "name": "Japan",
-          "id": "japan",
-          "url": "./resources/heroes/all/icons/japan.png"
-        },
-        {
-          "hero": "all",
-          "name": "Mexico",
-          "id": "mexico",
-          "url": "./resources/heroes/all/icons/mexico.png"
-        },
-        {
-          "hero": "all",
-          "name": "Nepal",
-          "id": "nepal",
-          "url": "./resources/heroes/all/icons/nepal.png"
-        },
-        {
-          "hero": "all",
-          "name": "Numbani",
-          "id": "numbani",
-          "url": "./resources/heroes/all/icons/numbani.png"
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "Rhythmic Gymnastics",
-          "id": "symmetra-rhythmic-gymnastics",
-          "url": "./resources/heroes/symmetra/icons/symmetra-rhythmic-gymnastics.png"
-        },
-        {
-          "hero": "all",
-          "name": "Russia",
-          "id": "russia",
-          "url": "./resources/heroes/all/icons/russia.png"
-        },
-        {
-          "heroName": "Ana",
-          "hero": "ana",
-          "name": "Shooting",
-          "id": "ana-shooting",
-          "url": "./resources/heroes/ana/icons/ana-shooting.png"
-        },
-        {
-          "hero": "all",
-          "name": "South Korea",
-          "id": "south-korea",
-          "url": "./resources/heroes/all/icons/south-korea.png"
-        },
-        {
-          "hero": "all",
-          "name": "Summer Games",
-          "id": "summer-games-2016",
-          "url": "./resources/heroes/all/icons/summer-games-2016.png"
-        },
-        {
-          "hero": "all",
-          "name": "Sweden",
-          "id": "sweden",
-          "url": "./resources/heroes/all/icons/sweden.png"
-        },
-        {
-          "hero": "all",
-          "name": "Switzerland",
-          "id": "switzerland",
-          "url": "./resources/heroes/all/icons/switzerland.png"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Table Tennis",
-          "id": "mei-table-tennis",
-          "url": "./resources/heroes/mei/icons/mei-table-tennis.png"
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Taekwondo",
-          "id": "zenyatta-taekwondo",
-          "url": "./resources/heroes/zenyatta/icons/zenyatta-taekwondo.png"
-        },
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "Tennis",
-          "id": "junkrat-tennis",
-          "url": "./resources/heroes/junkrat/icons/junkrat-tennis.png"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Track",
-          "id": "tracer-track",
-          "url": "./resources/heroes/tracer/icons/tracer-track.png"
-        },
-        {
-          "hero": "all",
-          "name": "United Kingdom",
-          "id": "united-kingdom",
-          "url": "./resources/heroes/all/icons/united-kingdom.png"
-        },
-        {
-          "hero": "all",
-          "name": "United States of America",
-          "id": "united-states-of-america",
-          "url": "./resources/heroes/all/icons/united-states-of-america.png"
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "Volleyball",
-          "id": "winston-volleyball",
-          "url": "./resources/heroes/winston/icons/winston-volleyball.png"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Water Polo",
-          "id": "torbjorn-water-polo",
-          "url": "./resources/heroes/torbjorn/icons/torbjorn-water-polo.png"
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Weightlifting",
-          "id": "zarya-weightlifting",
-          "url": "./resources/heroes/zarya/icons/zarya-weightlifting.png"
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Wrestling",
-          "id": "reinhardt-wrestling",
-          "url": "./resources/heroes/reinhardt/icons/reinhardt-wrestling.png"
-        }
-      ],
-      "sprays": [
-        {
-          "heroName": "Ana",
-          "hero": "ana",
-          "name": "Shooting",
-          "id": "ana-shooting",
-          "quality": "common",
-          "url": "./resources/heroes/ana/sprays/ana-shooting.png"
-        },
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "Boxing",
-          "id": "bastion-boxing",
-          "quality": "common",
-          "url": "./resources/heroes/bastion/sprays/bastion-boxing.png"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Cycling",
-          "id": "dva-cycling",
-          "quality": "common",
-          "url": "./resources/heroes/dva/sprays/dva-cycling.png"
-        },
-        {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Fencing",
-          "id": "genji-fencing",
-          "quality": "common",
-          "url": "./resources/heroes/genji/sprays/genji-fencing.png"
-        },
-        {
-          "heroName": "Hanzo",
-          "hero": "hanzo",
-          "name": "Archery",
-          "id": "hanzo-archery",
-          "quality": "common",
-          "url": "./resources/heroes/hanzo/sprays/hanzo-archery.png"
-        },
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "Tennis",
-          "id": "junkrat-tennis",
-          "quality": "common",
-          "url": "./resources/heroes/junkrat/sprays/junkrat-tennis.png"
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Football",
-          "id": "lucio-football",
-          "quality": "common",
-          "url": "./resources/heroes/lucio/sprays/lucio-football.png"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Equestrian",
-          "id": "mccree-equestrian",
-          "quality": "common",
-          "url": "./resources/heroes/mccree/sprays/mccree-equestrian.png"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Table Tennis",
-          "id": "mei-table-tennis",
-          "quality": "common",
-          "url": "./resources/heroes/mei/sprays/mei-table-tennis.png"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Badminton",
-          "id": "mercy-badminton",
-          "quality": "common",
-          "url": "./resources/heroes/mercy/sprays/mercy-badminton.png"
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Basketball",
-          "id": "pharah-basketball",
-          "quality": "common",
-          "url": "./resources/heroes/pharah/sprays/pharah-basketball.png"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "BMX",
-          "id": "reaper-bmx",
-          "quality": "common",
-          "url": "./resources/heroes/reaper/sprays/reaper-bmx.png"
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Wrestling",
-          "id": "reinhardt-wrestling",
-          "quality": "common",
-          "url": "./resources/heroes/reinhardt/sprays/reinhardt-wrestling.png"
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "Diving",
-          "id": "roadhog-diving",
-          "quality": "common",
-          "url": "./resources/heroes/roadhog/sprays/roadhog-diving.png"
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "Golf",
-          "id": "soldier-76-golf",
-          "quality": "common",
-          "url": "./resources/heroes/soldier-76/sprays/soldier-76-golf.png"
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "Rhythmic",
-          "id": "symmetra-rhythmic",
-          "quality": "common",
-          "url": "./resources/heroes/symmetra/sprays/symmetra-rhythmic.png"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Water Polo",
-          "id": "torbjorn-water-polo",
-          "quality": "common",
-          "url": "./resources/heroes/torbjorn/sprays/torbjorn-water-polo.png"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Track",
-          "id": "tracer-track",
-          "quality": "common",
-          "url": "./resources/heroes/tracer/sprays/tracer-track.png"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Gymnastics",
-          "id": "widowmaker-gymnastics",
-          "quality": "common",
-          "url": "./resources/heroes/widowmaker/sprays/widowmaker-gymnastics.png"
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "Volleyball",
-          "id": "winston-volleyball",
-          "quality": "common",
-          "url": "./resources/heroes/winston/sprays/winston-volleyball.png"
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Weightlifting",
-          "id": "zarya-weightlifting",
-          "quality": "common",
-          "url": "./resources/heroes/zarya/sprays/zarya-weightlifting.png"
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Taekwondo",
-          "id": "zenyatta-taekwondo",
-          "quality": "common",
-          "url": "./resources/heroes/zenyatta/sprays/zenyatta-taekwondo.png"
-        },
-        {
-          "hero": "all",
-          "name": "Summer Games",
-          "id": "summer-games-2016",
-          "url": "./resources/heroes/all/sprays/summer-games-2016.png",
-          "quality": "common"
-        }
-      ],
-      "voicelines": [
-        {
-          "heroName": "Ana",
-          "hero": "ana",
-          "name": "Learn from the Pain",
-          "id": "ana-learn-from-the-pain",
-          "quality": "common",
-          "url": "./resources/heroes/ana/voicelines/ana-learn-from-the-pain.ogg"
-        },
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "WHOO-VWEEEEEE",
-          "id": "bastion-whoovweeeeee",
-          "quality": "common",
-          "url": "./resources/heroes/bastion/voicelines/bastion-whoovweeeeee.ogg"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "I'm #1",
-          "id": "dva-im-1",
-          "quality": "common",
-          "url": "./resources/heroes/dva/voicelines/dva-im-1.ogg"
-        },
-        {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Hoping for a challenge",
-          "id": "genji-i-was-hoping-for-a-challenge",
-          "quality": "common",
-          "url": "./resources/heroes/genji/voicelines/genji-i-was-hoping-for-a-challenge.ogg"
-        },
-        {
-          "heroName": "Hanzo",
-          "hero": "hanzo",
-          "name": "Ignore all distractions",
-          "id": "hanzo-ignore-all-distractions",
-          "quality": "common",
-          "url": "./resources/heroes/hanzo/voicelines/hanzo-ignore-all-distractions.ogg"
-        },
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "I give it a 10!",
-          "id": "junkrat-i-give-it-a-10",
-          "quality": "common",
-          "url": "./resources/heroes/junkrat/voicelines/junkrat-i-give-it-a-10.ogg"
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Be champions",
-          "id": "lucio-be-champions",
-          "quality": "common",
-          "url": "./resources/heroes/lucio/voicelines/lucio-be-champions.ogg"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "I don't much like losing",
-          "id": "mccree-i-dont-much-like-losing",
-          "quality": "common",
-          "url": "./resources/heroes/mccree/voicelines/mccree-i-dont-much-like-losing.ogg"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Overcome all obstacles",
-          "id": "mei-overcome-all-obstacles",
-          "quality": "common",
-          "url": "./resources/heroes/mei/voicelines/mei-overcome-all-obstacles.ogg"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Piece of cake",
-          "id": "mercy-piece-of-cake",
-          "quality": "common",
-          "url": "./resources/heroes/mercy/voicelines/mercy-piece-of-cake.ogg"
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "We are in this together",
-          "id": "pharah-we-are-in-this-together",
-          "quality": "common",
-          "url": "./resources/heroes/pharah/voicelines/pharah-we-are-in-this-together.ogg"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "It's in the refrigerator",
-          "id": "reaper-its-in-the-refrigerator",
-          "quality": "common",
-          "url": "./resources/heroes/reaper/voicelines/reaper-its-in-the-refrigerator.ogg"
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "100% German power",
-          "id": "reinhardt-100-german-power",
-          "quality": "common",
-          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-100-german-power.ogg"
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "What's mine is mine",
-          "id": "roadhog-whats-mine-is-mine",
-          "quality": "common",
-          "url": "./resources/heroes/roadhog/voicelines/roadhog-whats-mine-is-mine.ogg"
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "You want a medal?",
-          "id": "soldier-76-you-want-a-medal",
-          "quality": "common",
-          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-you-want-a-medal.ogg"
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "Hard work and dedication",
-          "id": "symmetra-hard-work-and-dedication",
-          "quality": "common",
-          "url": "./resources/heroes/symmetra/voicelines/symmetra-hard-work-and-dedication.ogg"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "More where that came from",
-          "id": "torbjorn-more-where-that-came-from",
-          "quality": "common",
-          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-more-where-that-came-from.ogg"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Eat my dust",
-          "id": "tracer-eat-my-dust",
-          "quality": "common",
-          "url": "./resources/heroes/tracer/voicelines/tracer-eat-my-dust.ogg"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "I don't miss",
-          "id": "widowmaker-i-dont-miss",
-          "quality": "common",
-          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-i-dont-miss.ogg"
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "Playtime's over",
-          "id": "winston-playtimes-over",
-          "quality": "common",
-          "url": "./resources/heroes/winston/voicelines/winston-playtimes-over.ogg"
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "No pain, no gain",
-          "id": "zarya-no-pain-no-gain",
-          "quality": "common",
-          "url": "./resources/heroes/zarya/voicelines/zarya-no-pain-no-gain.ogg"
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Strive for improvement",
-          "id": "zenyatta-strive-for-improvement",
-          "quality": "common",
-          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-strive-for-improvement.ogg"
-        }
-      ],
-      "emotes": [
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "Boxing",
-          "id": "bastion-boxing",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/emotes/bastion-boxing.webm"
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Juggle",
-          "id": "lucio-juggle",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/emotes/lucio-juggle.webm"
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "Ribbon",
-          "id": "symmetra-ribbon",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/emotes/symmetra-ribbon.webm"
-        }
-      ],
-      "skinsEpic": [
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Taegeukgi",
-          "id": "dva-taegeukgi",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/dva-taegeukgi.jpg"
-        },
-        {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Nihon",
-          "id": "genji-nihon",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/genji-nihon.jpg"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "American",
-          "id": "mccree-american",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/mccree-american.jpg"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Eidgenossin",
-          "id": "mercy-eidgenossin",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/mercy-eidgenossin.jpg"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Tre Kronor",
-          "id": "torbjorn-tre-kronor",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/torbjorn-tre-kronor.jpg"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Tricolore",
-          "id": "widowmaker-tricolore",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsEpic/widowmaker-tricolore.jpg"
-        }
-      ],
-      "intros": [
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "Shot Put",
-          "id": "junkrat-shot-put",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/intros/junkrat-shot-put.webm"
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Bicycle Kick",
-          "id": "lucio-bicycle-kick",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/intros/lucio-bicycle-kick.webm"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Hurdle",
-          "id": "tracer-hurdle",
-          "quality": "epic",
-          "url": "./resources/updates/SUMMER_GAMES_2016/intros/tracer-hurdle.webm"
-        }
-      ],
-      "skinsLegendary": [
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Seleção",
-          "id": "lucio-selecao",
-          "quality": "legendary",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/lucio-selecao.jpg"
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Striker",
-          "id": "lucio-striker",
-          "quality": "legendary",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/lucio-striker.jpg"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Sprinter",
-          "id": "tracer-sprinter",
-          "quality": "legendary",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/tracer-sprinter.jpg"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Track and Field",
-          "id": "tracer-track-and-field",
-          "quality": "legendary",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/tracer-track-and-field.jpg"
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Champion",
-          "id": "zarya-champion",
-          "quality": "legendary",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/zarya-champion.jpg"
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Weightlifter",
-          "id": "zarya-weightlifter",
-          "quality": "legendary",
-          "url": "./resources/updates/SUMMER_GAMES_2016/skinsLegendary/zarya-weightlifter.jpg"
-        }
-      ],
-      "poses": [
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Medal",
-          "id": "mei-medal",
-          "quality": "rare",
-          "url": "./resources/updates/SUMMER_GAMES_2016/poses/mei-medal.jpg"
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Medal",
-          "id": "pharah-medal",
-          "quality": "rare",
-          "url": "./resources/updates/SUMMER_GAMES_2016/poses/pharah-medal.jpg"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "Medal",
-          "id": "reaper-medal",
-          "quality": "rare",
-          "url": "./resources/updates/SUMMER_GAMES_2016/poses/reaper-medal.jpg"
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "Medal",
-          "id": "roadhog-medal",
-          "quality": "rare",
-          "url": "./resources/updates/SUMMER_GAMES_2016/poses/roadhog-medal.jpg"
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "Golf Swing",
-          "id": "soldier-76-golf-swing",
-          "quality": "rare",
-          "url": "./resources/updates/SUMMER_GAMES_2016/poses/soldier-76-golf-swing.jpg"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Medal",
-          "id": "torbjorn-medal",
-          "quality": "rare",
-          "url": "./resources/updates/SUMMER_GAMES_2016/poses/torbjorn-medal.jpg"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Medal",
-          "id": "widowmaker-medal",
-          "quality": "rare",
-          "url": "./resources/updates/SUMMER_GAMES_2016/poses/widowmaker-medal.jpg"
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "Medal",
-          "id": "winston-medal",
-          "quality": "rare",
-          "url": "./resources/updates/SUMMER_GAMES_2016/poses/winston-medal.jpg"
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Medals",
-          "id": "zenyatta-medals",
-          "quality": "rare",
-          "url": "./resources/updates/SUMMER_GAMES_2016/poses/zenyatta-medals.jpg"
-        }
-      ]
-    }
-  },
   "HALLOWEEN_2016": {
     "name": "Halloween Terror 2016",
     "id": "HALLOWEEN_2016",
@@ -5866,6 +5003,1418 @@
           "id": "zarya-cyberian",
           "quality": "legendary",
           "url": "./resources/updates/ANNIVERSARY_2017/skinsLegendary/zarya-cyberian.jpg"
+        }
+      ]
+    }
+  },
+  "SUMMER_GAMES": {
+    "name": "Summer Games",
+    "id": "SUMMER_GAMES",
+    "dates": {
+      "start": "1470164400000",
+      "end": "1471928400000"
+    },
+    "items": {
+      "emotes": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Beach Ball",
+          "id": "ana-beach-ball",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/emotes/ana-beach-ball.webm",
+          "isNew": true
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Boxing",
+          "id": "bastion-boxing",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/emotes/bastion-boxing.webm",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Juggle",
+          "id": "lucio-juggle",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/emotes/lucio-juggle.webm",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Ribbon",
+          "id": "symmetra-ribbon",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/emotes/symmetra-ribbon.webm",
+          "group": "SUMMER_GAMES_2016"
+        }
+      ],
+      "icons": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Shooting",
+          "id": "ana-shooting",
+          "url": "./resources/heroes/ana/icons/ana-shooting.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Boxing",
+          "id": "bastion-boxing",
+          "url": "./resources/heroes/bastion/icons/bastion-boxing.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Cycling",
+          "id": "dva-cycling",
+          "url": "./resources/heroes/dva/icons/dva-cycling.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Shotput",
+          "id": "doomfist-shotput",
+          "url": "./resources/heroes/doomfist/icons/doomfist-shotput.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Fencing",
+          "id": "genji-fencing",
+          "url": "./resources/heroes/genji/icons/genji-fencing.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Archery",
+          "id": "hanzo-archery",
+          "url": "./resources/heroes/hanzo/icons/hanzo-archery.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Tennis",
+          "id": "junkrat-tennis",
+          "url": "./resources/heroes/junkrat/icons/junkrat-tennis.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Football",
+          "id": "lucio-football",
+          "url": "./resources/heroes/lucio/icons/lucio-football.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Equestrian",
+          "id": "mccree-equestrian",
+          "url": "./resources/heroes/mccree/icons/mccree-equestrian.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Table Tennis",
+          "id": "mei-table-tennis",
+          "url": "./resources/heroes/mei/icons/mei-table-tennis.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Badminton",
+          "id": "mercy-badminton",
+          "url": "./resources/heroes/mercy/icons/mercy-badminton.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Javelin",
+          "id": "orisa-javelin",
+          "url": "./resources/heroes/orisa/icons/orisa-javelin.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Basketball",
+          "id": "pharah-basketball",
+          "url": "./resources/heroes/pharah/icons/pharah-basketball.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "BMX",
+          "id": "reaper-bmx",
+          "url": "./resources/heroes/reaper/icons/reaper-bmx.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Wrestling",
+          "id": "reinhardt-wrestling",
+          "url": "./resources/heroes/reinhardt/icons/reinhardt-wrestling.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Diving",
+          "id": "roadhog-diving",
+          "url": "./resources/heroes/roadhog/icons/roadhog-diving.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Golf",
+          "id": "soldier-76-golf",
+          "url": "./resources/heroes/soldier-76/icons/soldier-76-golf.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "High Jump",
+          "id": "sombra-high-jump",
+          "url": "./resources/heroes/sombra/icons/sombra-high-jump.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Rhythmic Gymnastics",
+          "id": "symmetra-rhythmic-gymnastics",
+          "url": "./resources/heroes/symmetra/icons/symmetra-rhythmic-gymnastics.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Water Polo",
+          "id": "torbjorn-water-polo",
+          "url": "./resources/heroes/torbjorn/icons/torbjorn-water-polo.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Track",
+          "id": "tracer-track",
+          "url": "./resources/heroes/tracer/icons/tracer-track.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Gymnastics",
+          "id": "widowmaker-gymnastics",
+          "url": "./resources/heroes/widowmaker/icons/widowmaker-gymnastics.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Volleyball",
+          "id": "winston-volleyball",
+          "url": "./resources/heroes/winston/icons/winston-volleyball.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Weightlifting",
+          "id": "zarya-weightlifting",
+          "url": "./resources/heroes/zarya/icons/zarya-weightlifting.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Taekwondo",
+          "id": "zenyatta-taekwondo",
+          "url": "./resources/heroes/zenyatta/icons/zenyatta-taekwondo.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Australia",
+          "id": "australia",
+          "url": "./resources/heroes/all/icons/australia.png"
+        },
+        {
+          "hero": "all",
+          "name": "Brazil",
+          "id": "brazil",
+          "url": "./resources/heroes/all/icons/brazil.png"
+        },
+        {
+          "hero": "all",
+          "name": "China",
+          "id": "china",
+          "url": "./resources/heroes/all/icons/china.png"
+        },
+        {
+          "hero": "all",
+          "name": "Egypt",
+          "id": "egypt",
+          "url": "./resources/heroes/all/icons/egypt.png"
+        },
+        {
+          "hero": "all",
+          "name": "France",
+          "id": "france",
+          "url": "./resources/heroes/all/icons/france.png"
+        },
+        {
+          "hero": "all",
+          "name": "Germany",
+          "id": "germany",
+          "url": "./resources/heroes/all/icons/germany.png"
+        },
+        {
+          "hero": "all",
+          "name": "Greece",
+          "id": "greece",
+          "url": "./resources/heroes/all/icons/greece.png"
+        },
+        {
+          "hero": "all",
+          "name": "Japan",
+          "id": "japan",
+          "url": "./resources/heroes/all/icons/japan.png"
+        },
+        {
+          "hero": "all",
+          "name": "Mexico",
+          "id": "mexico",
+          "url": "./resources/heroes/all/icons/mexico.png"
+        },
+        {
+          "hero": "all",
+          "name": "Nepal",
+          "id": "nepal",
+          "url": "./resources/heroes/all/icons/nepal.png"
+        },
+        {
+          "hero": "all",
+          "name": "Numbani",
+          "id": "numbani",
+          "url": "./resources/heroes/all/icons/numbani.png"
+        },
+        {
+          "hero": "all",
+          "name": "Russia",
+          "id": "russia",
+          "url": "./resources/heroes/all/icons/russia.png"
+        },
+        {
+          "hero": "all",
+          "name": "South Korea",
+          "id": "south-korea",
+          "url": "./resources/heroes/all/icons/south-korea.png"
+        },
+        {
+          "hero": "all",
+          "name": "Summer Games",
+          "id": "summer-games-2016",
+          "url": "./resources/heroes/all/icons/summer-games-2016.png"
+        },
+        {
+          "hero": "all",
+          "name": "Sweden",
+          "id": "sweden",
+          "url": "./resources/heroes/all/icons/sweden.png"
+        },
+        {
+          "hero": "all",
+          "name": "Switzerland",
+          "id": "switzerland",
+          "url": "./resources/heroes/all/icons/switzerland.png"
+        },
+        {
+          "hero": "all",
+          "name": "United Kingdom",
+          "id": "united-kingdom",
+          "url": "./resources/heroes/all/icons/united-kingdom.png"
+        },
+        {
+          "hero": "all",
+          "name": "United States of America",
+          "id": "united-states-of-america",
+          "url": "./resources/heroes/all/icons/united-states-of-america.png"
+        }
+      ],
+      "sprays": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Shooting",
+          "id": "ana-shooting",
+          "quality": "common",
+          "url": "./resources/heroes/ana/sprays/ana-shooting.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Boxing",
+          "id": "bastion-boxing",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/sprays/bastion-boxing.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Cycling",
+          "id": "dva-cycling",
+          "quality": "common",
+          "url": "./resources/heroes/dva/sprays/dva-cycling.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Shot put",
+          "id": "doomfist-shot-put",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-shot-put.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Fencing",
+          "id": "genji-fencing",
+          "quality": "common",
+          "url": "./resources/heroes/genji/sprays/genji-fencing.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Archery",
+          "id": "hanzo-archery",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/sprays/hanzo-archery.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Tennis",
+          "id": "junkrat-tennis",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/sprays/junkrat-tennis.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Football",
+          "id": "lucio-football",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/sprays/lucio-football.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Equestrian",
+          "id": "mccree-equestrian",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/sprays/mccree-equestrian.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Table Tennis",
+          "id": "mei-table-tennis",
+          "quality": "common",
+          "url": "./resources/heroes/mei/sprays/mei-table-tennis.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Badminton",
+          "id": "mercy-badminton",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/sprays/mercy-badminton.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Javelin",
+          "id": "orisa-javelin",
+          "quality": "common",
+          "url": "./resources/heroes/orisa/sprays/orisa-javelin.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Basketball",
+          "id": "pharah-basketball",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/sprays/pharah-basketball.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "BMX",
+          "id": "reaper-bmx",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/sprays/reaper-bmx.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Wrestling",
+          "id": "reinhardt-wrestling",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/sprays/reinhardt-wrestling.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Diving",
+          "id": "roadhog-diving",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/sprays/roadhog-diving.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Golf",
+          "id": "soldier-76-golf",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/sprays/soldier-76-golf.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "High Jump",
+          "id": "sombra-high-jump",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/sprays/sombra-high-jump.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Rhythmic",
+          "id": "symmetra-rhythmic",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/sprays/symmetra-rhythmic.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Water Polo",
+          "id": "torbjorn-water-polo",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/sprays/torbjorn-water-polo.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Track",
+          "id": "tracer-track",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/sprays/tracer-track.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Gymnastics",
+          "id": "widowmaker-gymnastics",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/sprays/widowmaker-gymnastics.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Volleyball",
+          "id": "winston-volleyball",
+          "quality": "common",
+          "url": "./resources/heroes/winston/sprays/winston-volleyball.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Weightlifting",
+          "id": "zarya-weightlifting",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/sprays/zarya-weightlifting.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Taekwondo",
+          "id": "zenyatta-taekwondo",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/sprays/zenyatta-taekwondo.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Summer Games",
+          "id": "summer-games-2016",
+          "url": "./resources/heroes/all/sprays/summer-games-2016.png",
+          "quality": "common"
+        }
+      ],
+      "voicelines": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Better Than Retirement",
+          "id": "ana-better-than-retirement",
+          "quality": "common",
+          "url": "./resources/heroes/ana/voicelines/ana-better-than-retirement.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Learn from the Pain",
+          "id": "ana-learn-from-the-pain",
+          "quality": "common",
+          "url": "./resources/heroes/ana/voicelines/ana-learn-from-the-pain.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Doo-Do-Doo Dee!",
+          "id": "bastion-doododoo-dee",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/voicelines/bastion-doododoo-dee.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "WHOO-VWEEEEEE",
+          "id": "bastion-whoovweeeeee",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/voicelines/bastion-whoovweeeeee.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "I'm #1",
+          "id": "dva-im-1",
+          "quality": "common",
+          "url": "./resources/heroes/dva/voicelines/dva-im-1.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Scoreboard",
+          "id": "dva-scoreboard",
+          "quality": "common",
+          "url": "./resources/heroes/dva/voicelines/dva-scoreboard.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "I make medicine sick",
+          "id": "doomfist-i-make-medicine-sick",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-i-make-medicine-sick.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Make you punch drunk",
+          "id": "doomfist-make-you-punch-drunk",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-make-you-punch-drunk.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Hoping for a challenge",
+          "id": "genji-i-was-hoping-for-a-challenge",
+          "quality": "common",
+          "url": "./resources/heroes/genji/voicelines/genji-i-was-hoping-for-a-challenge.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Touché",
+          "id": "genji-touche",
+          "quality": "common",
+          "url": "./resources/heroes/genji/voicelines/genji-touche.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Defeat is the first step",
+          "id": "hanzo-defeat-is-the-first-step",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/voicelines/hanzo-defeat-is-the-first-step.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Ignore all distractions",
+          "id": "hanzo-ignore-all-distractions",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/voicelines/hanzo-ignore-all-distractions.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "I give it a 10!",
+          "id": "junkrat-i-give-it-a-10",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/voicelines/junkrat-i-give-it-a-10.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "I give it a 3!",
+          "id": "junkrat-i-give-it-a-3",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/voicelines/junkrat-i-give-it-a-3.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Be champions",
+          "id": "lucio-be-champions",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/voicelines/lucio-be-champions.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Suboptimal",
+          "id": "lucio-suboptimal",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/voicelines/lucio-suboptimal.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Boom goes the dynamite",
+          "id": "mccree-boom-goes-the-dynamite",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/voicelines/mccree-boom-goes-the-dynamite.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "I don't much like losing",
+          "id": "mccree-i-dont-much-like-losing",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/voicelines/mccree-i-dont-much-like-losing.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "I tried my best",
+          "id": "mei-i-tried-my-best",
+          "quality": "common",
+          "url": "./resources/heroes/mei/voicelines/mei-i-tried-my-best.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Overcome all obstacles",
+          "id": "mei-overcome-all-obstacles",
+          "quality": "common",
+          "url": "./resources/heroes/mei/voicelines/mei-overcome-all-obstacles.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Piece of cake",
+          "id": "mercy-piece-of-cake",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/voicelines/mercy-piece-of-cake.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Sponge or spray?",
+          "id": "mercy-sponge-or-spray",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/voicelines/mercy-sponge-or-spray.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Golden",
+          "id": "orisa-golden",
+          "quality": "common",
+          "url": "./resources/heroes/orisa/voicelines/orisa-golden.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Grease to your elbow",
+          "id": "orisa-grease-to-your-elbow",
+          "quality": "common",
+          "url": "./resources/heroes/orisa/voicelines/orisa-grease-to-your-elbow.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Clear skies, full hearts",
+          "id": "pharah-clear-skies-full-hearts",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/voicelines/pharah-clear-skies-full-hearts.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "We are in this together",
+          "id": "pharah-we-are-in-this-together",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/voicelines/pharah-we-are-in-this-together.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "It's in the refrigerator",
+          "id": "reaper-its-in-the-refrigerator",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/voicelines/reaper-its-in-the-refrigerator.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Just win",
+          "id": "reaper-just-win",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/voicelines/reaper-just-win.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "100% German power",
+          "id": "reinhardt-100-german-power",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-100-german-power.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Glittering prizes!",
+          "id": "reinhardt-glittering-prizes",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-glittering-prizes.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "There's no \"I\" in team",
+          "id": "roadhog-theres-no-i-in-team",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/voicelines/roadhog-theres-no-i-in-team.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "What's mine is mine",
+          "id": "roadhog-whats-mine-is-mine",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/voicelines/roadhog-whats-mine-is-mine.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Bring the noise",
+          "id": "soldier-76-bring-the-noise",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-bring-the-noise.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "You want a medal?",
+          "id": "soldier-76-you-want-a-medal",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-you-want-a-medal.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Try and keep up",
+          "id": "sombra-try-and-keep-up",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/voicelines/sombra-try-and-keep-up.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "What's up?",
+          "id": "sombra-whats-up",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/voicelines/sombra-whats-up.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Hard work and dedication",
+          "id": "symmetra-hard-work-and-dedication",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/voicelines/symmetra-hard-work-and-dedication.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Victory is everything",
+          "id": "symmetra-victory-is-everything",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/voicelines/symmetra-victory-is-everything.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "More where that came from",
+          "id": "torbjorn-more-where-that-came-from",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-more-where-that-came-from.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "There's no prize for second",
+          "id": "torbjorn-theres-no-prize-for-second",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-theres-no-prize-for-second.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Eat my dust",
+          "id": "tracer-eat-my-dust",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/voicelines/tracer-eat-my-dust.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Time out!",
+          "id": "tracer-time-out",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/voicelines/tracer-time-out.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "A perfect 10",
+          "id": "widowmaker-a-perfect-10",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-a-perfect-10.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "I don't miss",
+          "id": "widowmaker-i-dont-miss",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-i-dont-miss.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Oh, it's on!",
+          "id": "winston-oh-its-on",
+          "quality": "common",
+          "url": "./resources/heroes/winston/voicelines/winston-oh-its-on.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Playtime's over",
+          "id": "winston-playtimes-over",
+          "quality": "common",
+          "url": "./resources/heroes/winston/voicelines/winston-playtimes-over.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "It's only a game",
+          "id": "zarya-its-only-a-game",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/voicelines/zarya-its-only-a-game.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "No pain, no gain",
+          "id": "zarya-no-pain-no-gain",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/voicelines/zarya-no-pain-no-gain.ogg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Form is temporary",
+          "id": "zenyatta-form-is-temporary",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-form-is-temporary.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Strive for improvement",
+          "id": "zenyatta-strive-for-improvement",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-strive-for-improvement.ogg",
+          "group": "SUMMER_GAMES_2016"
+        }
+      ],
+      "poses": [
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Medal",
+          "id": "bastion-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/bastion-medal.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Medal",
+          "id": "hanzo-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/hanzo-medal.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Medal",
+          "id": "junkrat-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/junkrat-medal.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Medal",
+          "id": "mei-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/mei-medal.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Medal",
+          "id": "mercy-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/mercy-medal.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Medal",
+          "id": "pharah-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/pharah-medal.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Medal",
+          "id": "reaper-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/reaper-medal.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Medal",
+          "id": "roadhog-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/roadhog-medal.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Golf Swing",
+          "id": "soldier-76-golf-swing",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/soldier-76-golf-swing.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Medal",
+          "id": "sombra-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/sombra-medal.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Medal",
+          "id": "symmetra-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/symmetra-medal.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Medal",
+          "id": "torbjorn-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/torbjorn-medal.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Medal",
+          "id": "tracer-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/tracer-medal.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Medal",
+          "id": "widowmaker-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/widowmaker-medal.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Medal",
+          "id": "winston-medal",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/winston-medal.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Medals",
+          "id": "zenyatta-medals",
+          "quality": "rare",
+          "url": "./resources/updates/SUMMER_GAMES/poses/zenyatta-medals.jpg",
+          "group": "SUMMER_GAMES_2016"
+        }
+      ],
+      "skins": [
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Taegeukgi",
+          "id": "dva-taegeukgi",
+          "quality": "epic",
+          "url": "./resources/heroes/dva/skins/dva-taegeukgi.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Nihon",
+          "id": "genji-nihon",
+          "quality": "epic",
+          "url": "./resources/heroes/genji/skins/genji-nihon.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "American",
+          "id": "mccree-american",
+          "quality": "epic",
+          "url": "./resources/heroes/mccree/skins/mccree-american.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Eidgenossin",
+          "id": "mercy-eidgenossin",
+          "quality": "epic",
+          "url": "./resources/heroes/mercy/skins/mercy-eidgenossin.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Tre Kronor",
+          "id": "torbjorn-tre-kronor",
+          "quality": "epic",
+          "url": "./resources/heroes/torbjorn/skins/torbjorn-tre-kronor.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Tricolore",
+          "id": "widowmaker-tricolore",
+          "quality": "epic",
+          "url": "./resources/heroes/widowmaker/skins/widowmaker-tricolore.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Seleção",
+          "id": "lucio-selecao",
+          "quality": "legendary",
+          "url": "./resources/heroes/lucio/skins/lucio-selecao.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Striker",
+          "id": "lucio-striker",
+          "quality": "legendary",
+          "url": "./resources/heroes/lucio/skins/lucio-striker.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Sprinter",
+          "id": "tracer-sprinter",
+          "quality": "legendary",
+          "url": "./resources/heroes/tracer/skins/tracer-sprinter.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Track and Field",
+          "id": "tracer-track-and-field",
+          "quality": "legendary",
+          "url": "./resources/heroes/tracer/skins/tracer-track-and-field.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Champion",
+          "id": "zarya-champion",
+          "quality": "legendary",
+          "url": "./resources/heroes/zarya/skins/zarya-champion.jpg",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Weightlifter",
+          "id": "zarya-weightlifter",
+          "quality": "legendary",
+          "url": "./resources/heroes/zarya/skins/zarya-weightlifter.jpg",
+          "group": "SUMMER_GAMES_2016"
+        }
+      ],
+      "intros": [
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Target Practice",
+          "id": "hanzo-target-practice",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/intros/hanzo-target-practice.webm",
+          "isNew": true
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Shot Put",
+          "id": "junkrat-shot-put",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/intros/junkrat-shot-put.webm",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Bicycle Kick",
+          "id": "lucio-bicycle-kick",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/intros/lucio-bicycle-kick.webm",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Slam Dunk",
+          "id": "pharah-slam-dunk",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/intros/pharah-slam-dunk.webm",
+          "isNew": true
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Hurdle",
+          "id": "tracer-hurdle",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/intros/tracer-hurdle.webm",
+          "group": "SUMMER_GAMES_2016"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Cricket",
+          "id": "junkrat-cricket",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES/skinsLegendary/junkrat-cricket.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Lifeguard",
+          "id": "mccree-lifeguard",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES/skinsLegendary/mccree-lifeguard.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Winged Victory",
+          "id": "mercy-winged-victory",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES/skinsLegendary/mercy-winged-victory.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Biker",
+          "id": "reaper-biker",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES/skinsLegendary/reaper-biker.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Grillmaster: 76",
+          "id": "soldier-76-grillmaster-76",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES/skinsLegendary/soldier-76-grillmaster-76.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Tulum",
+          "id": "sombra-tulum",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES/skinsLegendary/sombra-tulum.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Côte d'Azur",
+          "id": "widowmaker-cote-dazur",
+          "quality": "legendary",
+          "url": "./resources/updates/SUMMER_GAMES/skinsLegendary/widowmaker-cote-dazur.jpg",
+          "isNew": true
         }
       ]
     }
