@@ -30,10 +30,10 @@ const EVENTNAMES = {
 };
 
 const EVENTTIMES = {
-  [EVENTS.SUMMER]: {
-    "start": "1470164400000",
-    "end": "1471928400000"
-  },
+  //[EVENTS.SUMMER16]: {1502204400000
+  //  "start": "1470164400000",
+  //  "end": "1471928400000"
+  //},
   [EVENTS.HALLOWEEN16]: {
     "start": "1476208800000",
     "end": "1478059200000"
@@ -53,7 +53,11 @@ const EVENTTIMES = {
   [EVENTS.ANNIVERSARY17]: {
     "start": "1495551600000",
     "end": "1497348000000"
-  }
+  },
+  [EVENTS.SUMMER]: {
+    "start": "1502204400000",
+    "end": "1504000800000"
+  },
 };
 
 const EVENT_ITEM_ORDER = {

@@ -76,6 +76,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
       return service.waitForInitialization().then(function() {
         return {
           name: service[type][id].name,
+          dates: service[type][id].dates,
           type: type,
           id: id
         };
