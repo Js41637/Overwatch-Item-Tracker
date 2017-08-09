@@ -335,6 +335,14 @@ body#ANNIVERSARY_2017:before {
 
 
 /* SUMMER GAMES 2016 */
+body#SUMMER_GAMES:before {
+  min-height: 260px;
+}
+
+#SUMMER_GAMES #event-container {
+  margin-top: 160px;
+}
+
 #SUMMER_GAMES #skins .items,
 #SUMMER_GAMES #icons .items,
 #SUMMER_GAMES #emotes .items,
