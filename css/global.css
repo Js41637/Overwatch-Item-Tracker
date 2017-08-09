@@ -1278,3 +1278,24 @@ strong {
   background-color: rgb(240, 240, 240);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (max-width: 1650px) {
+  /* Highlight Intro videos are 16:9 */
+  #intros .tooltip .preview.video {
+    width: 590px;
+    height: 332px;
+  }
+
+
+  /* Emote videos should be 1:1 */
+  #emotes .tooltip .preview.video {
+    width: 400px;
+    height: 400px;
+  }
+
+  .section .tooltip .preview.img {
+    width: 400px;
+    height: 400px;
+    position: relative;
+  }
+}

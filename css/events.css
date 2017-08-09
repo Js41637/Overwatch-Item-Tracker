@@ -847,6 +847,22 @@
     width: 65%;
   }
 
+  #SUMMER_GAMES #event-container .section .item h3 {
+    font-size: 16px;
+  }
+
+  #SUMMER_GAMES #event-container .section .flex-2 .item {
+    width: calc(25% - 1px);
+  }
+
+  #SUMMER_GAMES #event-container .section .flex-3 .item {
+    width: calc(33.33% - 1px);
+  }
+
+  #SUMMER_GAMES #event-container .section .flex-4 .item {
+    width: calc(25% - 1px);
+  }
+
   /* HALLOWEEN */
   #HALLOWEEN_2016 #event-container #row1 {
     flex-direction: column;
