@@ -230,6 +230,11 @@ for (var hero in data) {
       if (out.event === EVENTS.ANNIVERSARY17 && type === 'emotes') {
         out.url = getPreviewURL(type, id, heroID, out.event);
       }
+
+      if (out.event === EVENTS.SUMMER && (type === 'emotes' || type === 'intros')) {
+        out.url = getPreviewURL(type, id, heroID, out.event);
+      }
+
       heroData.items[type].push(out);
       // Icons are allclass so we can add them allClassData which doesn't include hero specific icons
       if (type == 'icons') {
