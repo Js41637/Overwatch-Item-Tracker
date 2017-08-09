@@ -300,6 +300,16 @@
           "hero": "mercy"
         },
         {
+          "name": "Copa Lúcioball Competitor",
+          "id": "copa-lucioball-competitor",
+          "url": "./resources/heroes/all/icons/copa-lucioball-competitor.png"
+        },
+        {
+          "name": "Copa Lúcioball Hero",
+          "id": "copa-lucioball-hero",
+          "url": "./resources/heroes/all/icons/copa-lucioball-hero.png"
+        },
+        {
           "name": "Credit",
           "id": "credit",
           "url": "./resources/heroes/all/icons/credit.png"
@@ -1496,6 +1506,12 @@
           "url": "./resources/heroes/all/icons/summer-games-2016.png"
         },
         {
+          "name": "Summer Games 2017",
+          "id": "summer-games-2017",
+          "event": "SUMMER_GAMES",
+          "url": "./resources/heroes/all/icons/summer-games-2017.png"
+        },
+        {
           "name": "Superstition",
           "id": "superstition",
           "event": "HALLOWEEN_2016",
@@ -1878,6 +1894,12 @@
           "name": "Caution",
           "id": "caution",
           "url": "./resources/heroes/all/sprays/caution.png",
+          "quality": "common"
+        },
+        {
+          "name": "Copa Lúcioball Competitor",
+          "id": "copa-lucioball-competitor",
+          "url": "./resources/heroes/all/sprays/copa-lucioball-competitor.png",
           "quality": "common"
         },
         {
@@ -2469,6 +2491,34 @@
           "id": "anniversary-2017",
           "event": "ANNIVERSARY_2017",
           "url": "./resources/heroes/all/sprays/anniversary-2017.png",
+          "quality": "common"
+        },
+        {
+          "name": "Bicycle Kick",
+          "id": "bicycle-kick",
+          "event": "SUMMER_GAMES",
+          "url": "./resources/heroes/all/sprays/bicycle-kick.png",
+          "achievement": true
+        },
+        {
+          "name": "Goal Blossom",
+          "id": "goal-blossom",
+          "event": "SUMMER_GAMES",
+          "url": "./resources/heroes/all/sprays/goal-blossom.png",
+          "achievement": true
+        },
+        {
+          "name": "Safe Hands",
+          "id": "safe-hands",
+          "event": "SUMMER_GAMES",
+          "url": "./resources/heroes/all/sprays/safe-hands.png",
+          "achievement": true
+        },
+        {
+          "name": "Summer Games ",
+          "id": "summer-games",
+          "event": "SUMMER_GAMES",
+          "url": "./resources/heroes/all/sprays/summer-games.png",
           "quality": "common"
         },
         {

@@ -354,6 +354,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   $scope.preview = false;
   $scope.checked = Data.checked;
   $scope.data = event;
+  $scope.canPlayType = CompatibilityService.canPlayType;
 
   CostAndTotalService.waitForInitialization().then(function(data) {
     $scope.totals = data.events[event.id].totals;

@@ -78,15 +78,12 @@ OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService)
     replace: true,
     templateUrl: './templates/tooltip-image-preview.html',
     link: function($scope) {
+
       var item = $scope.item;
       var type = $scope.type;
-      var url;
+      var url = item.url;
 
-      if (location.host.match(/^localhost:5000$/)) {
-        url = item.url.replace('https://d34nsd3ksgj839.cloudfront.net', 'http://localhost:5000/resources');
-      } else {
-        url = item.url;
-      }
+      console.log(item, type, url)
 
       var out = { description: item.description };
       if (type == 'intros' || type == 'emotes') {
