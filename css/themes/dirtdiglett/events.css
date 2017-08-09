@@ -81,7 +81,7 @@ body#ANNIVERSARY_2017:before {
   background: rgba(0,0,0,0.4);
   text-align: center;
   position: absolute;
-  z-index: 9999;
+  z-index: 10;
 }
 
   #event-container .event-progress .event-progress-bar {
@@ -352,9 +352,8 @@ body#ANNIVERSARY_2017:before {
 #SUMMER_GAMES #sprays .item,
 #SUMMER_GAMES #intros .item,
 #SUMMER_GAMES #victoryposes .item {
-  width: 49%;
+  width: calc(50% - 6px);
   display: inline-flex;
-  margin-right: 0;
 }
 
 #SUMMER_GAMES #skins .item:nth-of-type(odd),
@@ -363,12 +362,12 @@ body#ANNIVERSARY_2017:before {
 #SUMMER_GAMES #intros .item:nth-of-type(odd),
 #SUMMER_GAMES #sprays .item:nth-of-type(odd),
 #SUMMER_GAMES #victoryposes .item:nth-of-type(odd) {
-  margin-right: 2%;
+  margin-right: 0;
 }
 
 #SUMMER_GAMES #voicelines .item {
-  width: 32%;
-  margin-right: 2%;
+  width: calc(33% - 6px);
+  display: inline-flex;
 }
 
 #SUMMER_GAMES #voicelines .item:nth-of-type(3n+0) {
@@ -376,16 +375,13 @@ body#ANNIVERSARY_2017:before {
 }
 
 #SUMMER_GAMES #icons .item {
-  width: 23.5%;
-  margin-right: 2%;
+  width: calc(25% - 6px);
+  display: inline-flex;
 }
 
 #SUMMER_GAMES #icons .item:nth-of-type(4n+0) {
   margin-right: 0;
 }
-
-
-
 
 
 /* HALLOWEEN 2016 */
