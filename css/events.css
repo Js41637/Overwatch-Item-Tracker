@@ -337,10 +337,14 @@
 }
 
 #SUMMER_GAMES #event-container .section .item h4 {
-  font-size: 13px;
-  color: rgba(214, 214, 214, 0.6);
+  font-size: 14px;
+  color: rgba(220, 220, 220, 0.75);
   width: 100%;
   display: initial;
+}
+
+#SUMMER_GAMES #event-container .section .item h4:before, #SUMMER_GAMES #event-container .section .item h4:after {
+  content: "";
 }
 
 #SUMMER_GAMES #event-container .section .item h3 {
