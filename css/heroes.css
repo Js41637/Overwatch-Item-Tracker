@@ -450,7 +450,7 @@
   background-image: url("../resources/icons/HALLOWEEN_2016.svg");
 }
 
-#hero-container .hero-items .item[event="SUMMER_GAMES_2016"]:after {
+#hero-container .hero-items .item[event="SUMMER_GAMES"]:after {
   background-image: url("../resources/icons/SUMMER_GAMES_2016.svg");
 }
 
@@ -481,121 +481,6 @@
   background-image: url("../resources/icons/blizzard.svg");
 }
 
-
-/**
- * TOOLTIPS
- **/
-
-#hero-container .section .tooltip {
-  font-size: 15px;
-  font-family: Futura, century gothic, arial, sans-serif;
-}
-
-#hero-container .section .tooltip.in {
-  opacity: 1;
-}
-
-#hero-container .section .tooltip .tooltip-inner {
-  max-width: none;
-  padding: 4px;
-}
-
-
-/* All Skin and poses, icons and MOST sprays are 1:1 */
-
-#hero-container #icons .tooltip .preview.img {
-  width: 256px;
-  height: 256px;
-}
-
-#hero-container #sprays .tooltip .preview.img {
-  width: 380px;
-  height: 380px;
-  background-image: url("../resources/portrait-bg.jpg");
-  background-size: cover;
-}
-
-#hero-container .section .tooltip .preview.img {
-  width: 450px;
-  height: 450px;
-  position: relative;
-}
-
-#hero-container .section .tooltip .preview.img .i {
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 3px;
-}
-
-#hero-container .section .tooltip .preview.img .description {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  line-height: 1.2;
-  padding: 3px 4px;
-}
-
-#hero-container .section .tooltip .preview.video {
-  position: relative;
-}
-
-
-/* Highlight Intro videos are 16:9 */
-
-#hero-container #intros .tooltip .preview.video {
-  width: 640px;
-  height: 360px;
-}
-
-
-/* Emote videos should be 1:1 */
-
-#hero-container #emotes .tooltip .preview.video {
-  width: 450px;
-  height: 450px;
-}
-
-#hero-container .section .tooltip .preview.video video {
-  height: 100%;
-  width: 100%;
-}
-
-
-#hero-container .section .tooltip.img-preview .tooltip-arrow {
-  border-top-color: rgb(240, 240, 240);
-  border-bottom-color: rgb(240, 240, 240);
-}
-
-#hero-container .tooltip.bottom .tooltip-arrow, #hero-container .tooltip.bottom-left .tooltip-arrow, #hero-container .tooltip.bottom-right .tooltip-arrow {
-  border-width: 0 8px 8px;
-}
-
-#hero-container .tooltip.top .tooltip-arrow {
-  border-width: 8px 8px 0;
-  margin-left: -8px;
-}
-
-#hero-container .tooltip.bottom {
-  margin-top: 0px;
-  padding: 8px 0;
-}
-
-#hero-container .tooltip {
-  pointer-events: none;
-}
-
-#hero-container .tooltip.top {
-  padding: 8px 0;
-}
-
-#hero-container .section .tooltip.img-preview .tooltip-inner {
-  background-color: rgb(240, 240, 240);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 @media screen and (max-width: 1400px) {
   #hero-container .hero-items .section .item {

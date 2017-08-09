@@ -85,8 +85,9 @@
           "name": "Archery",
           "id": "hanzo-archery",
           "url": "./resources/heroes/hanzo/icons/hanzo-archery.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "hanzo"
+          "event": "SUMMER_GAMES",
+          "hero": "hanzo",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Aurisa",
@@ -98,7 +99,7 @@
         {
           "name": "Australia",
           "id": "australia",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/australia.png"
         },
         {
@@ -124,8 +125,9 @@
           "name": "Badminton",
           "id": "mercy-badminton",
           "url": "./resources/heroes/mercy/icons/mercy-badminton.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "mercy"
+          "event": "SUMMER_GAMES",
+          "hero": "mercy",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Baiser",
@@ -147,8 +149,9 @@
           "name": "Basketball",
           "id": "pharah-basketball",
           "url": "./resources/heroes/pharah/icons/pharah-basketball.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "pharah"
+          "event": "SUMMER_GAMES",
+          "hero": "pharah",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Bastion",
@@ -179,8 +182,9 @@
           "name": "BMX",
           "id": "reaper-bmx",
           "url": "./resources/heroes/reaper/icons/reaper-bmx.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "reaper"
+          "event": "SUMMER_GAMES",
+          "hero": "reaper",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Bokimari",
@@ -193,13 +197,14 @@
           "name": "Boxing",
           "id": "bastion-boxing",
           "url": "./resources/heroes/bastion/icons/bastion-boxing.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "bastion"
+          "event": "SUMMER_GAMES",
+          "hero": "bastion",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Brazil",
           "id": "brazil",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/brazil.png"
         },
         {
@@ -273,7 +278,7 @@
         {
           "name": "China",
           "id": "china",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/china.png"
         },
         {
@@ -293,6 +298,16 @@
           "url": "./resources/heroes/mercy/icons/mercy-combat-medic.png",
           "event": "UPRISING_2017",
           "hero": "mercy"
+        },
+        {
+          "name": "Copa Lúcioball Competitor",
+          "id": "copa-lucioball-competitor",
+          "url": "./resources/heroes/all/icons/copa-lucioball-competitor.png"
+        },
+        {
+          "name": "Copa Lúcioball Hero",
+          "id": "copa-lucioball-hero",
+          "url": "./resources/heroes/all/icons/copa-lucioball-hero.png"
         },
         {
           "name": "Credit",
@@ -315,8 +330,9 @@
           "name": "Cycling",
           "id": "dva-cycling",
           "url": "./resources/heroes/dva/icons/dva-cycling.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "dva"
+          "event": "SUMMER_GAMES",
+          "hero": "dva",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "D'or",
@@ -362,8 +378,9 @@
           "name": "Diving",
           "id": "roadhog-diving",
           "url": "./resources/heroes/roadhog/icons/roadhog-diving.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "roadhog"
+          "event": "SUMMER_GAMES",
+          "hero": "roadhog",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Dominion",
@@ -403,7 +420,7 @@
         {
           "name": "Egypt",
           "id": "egypt",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/egypt.png"
         },
         {
@@ -421,8 +438,9 @@
           "name": "Equestrian",
           "id": "mccree-equestrian",
           "url": "./resources/heroes/mccree/icons/mccree-equestrian.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "mccree"
+          "event": "SUMMER_GAMES",
+          "hero": "mccree",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Eyeball",
@@ -434,8 +452,9 @@
           "name": "Fencing",
           "id": "genji-fencing",
           "url": "./resources/heroes/genji/icons/genji-fencing.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "genji"
+          "event": "SUMMER_GAMES",
+          "hero": "genji",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Fist",
@@ -447,8 +466,9 @@
           "name": "Football",
           "id": "lucio-football",
           "url": "./resources/heroes/lucio/icons/lucio-football.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "lucio"
+          "event": "SUMMER_GAMES",
+          "hero": "lucio",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "For the Alliance",
@@ -475,7 +495,7 @@
         {
           "name": "France",
           "id": "france",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/france.png"
         },
         {
@@ -529,7 +549,7 @@
         {
           "name": "Germany",
           "id": "germany",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/germany.png"
         },
         {
@@ -624,8 +644,9 @@
           "name": "Golf",
           "id": "soldier-76-golf",
           "url": "./resources/heroes/soldier-76/icons/soldier-76-golf.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "soldier-76"
+          "event": "SUMMER_GAMES",
+          "hero": "soldier-76",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Grappling Hook",
@@ -636,7 +657,7 @@
         {
           "name": "Greece",
           "id": "greece",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/greece.png"
         },
         {
@@ -649,8 +670,9 @@
           "name": "Gymnastics",
           "id": "widowmaker-gymnastics",
           "url": "./resources/heroes/widowmaker/icons/widowmaker-gymnastics.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "widowmaker"
+          "event": "SUMMER_GAMES",
+          "hero": "widowmaker",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Hacker",
@@ -724,6 +746,14 @@
           "url": "./resources/heroes/all/icons/hierarch.png"
         },
         {
+          "name": "High Jump",
+          "id": "sombra-high-jump",
+          "url": "./resources/heroes/sombra/icons/sombra-high-jump.png",
+          "event": "SUMMER_GAMES",
+          "hero": "sombra",
+          "isNew": true
+        },
+        {
           "name": "Holly",
           "id": "holly",
           "event": "WINTER_WONDERLAND_2016",
@@ -762,8 +792,16 @@
         {
           "name": "Japan",
           "id": "japan",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/japan.png"
+        },
+        {
+          "name": "Javelin",
+          "id": "orisa-javelin",
+          "url": "./resources/heroes/orisa/icons/orisa-javelin.png",
+          "event": "SUMMER_GAMES",
+          "hero": "orisa",
+          "isNew": true
         },
         {
           "name": "Jim",
@@ -938,7 +976,7 @@
         {
           "name": "Mexico",
           "id": "mexico",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/mexico.png"
         },
         {
@@ -967,7 +1005,7 @@
         {
           "name": "Nepal",
           "id": "nepal",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/nepal.png"
         },
         {
@@ -1003,7 +1041,7 @@
         {
           "name": "Numbani",
           "id": "numbani",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/numbani.png"
         },
         {
@@ -1212,8 +1250,9 @@
           "name": "Rhythmic Gymnastics",
           "id": "symmetra-rhythmic-gymnastics",
           "url": "./resources/heroes/symmetra/icons/symmetra-rhythmic-gymnastics.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "symmetra"
+          "event": "SUMMER_GAMES",
+          "hero": "symmetra",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Rikimaru",
@@ -1234,7 +1273,7 @@
         {
           "name": "Russia",
           "id": "russia",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/russia.png"
         },
         {
@@ -1366,8 +1405,17 @@
           "name": "Shooting",
           "id": "ana-shooting",
           "url": "./resources/heroes/ana/icons/ana-shooting.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "ana"
+          "event": "SUMMER_GAMES",
+          "hero": "ana",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Shotput",
+          "id": "doomfist-shotput",
+          "url": "./resources/heroes/doomfist/icons/doomfist-shotput.png",
+          "event": "SUMMER_GAMES",
+          "hero": "doomfist",
+          "isNew": true
         },
         {
           "name": "Siege Mode",
@@ -1424,7 +1472,7 @@
         {
           "name": "South Korea",
           "id": "south-korea",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/south-korea.png"
         },
         {
@@ -1454,8 +1502,14 @@
         {
           "name": "Summer Games 2016",
           "id": "summer-games-2016",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/summer-games-2016.png"
+        },
+        {
+          "name": "Summer Games 2017",
+          "id": "summer-games-2017",
+          "event": "SUMMER_GAMES",
+          "url": "./resources/heroes/all/icons/summer-games-2017.png"
         },
         {
           "name": "Superstition",
@@ -1471,13 +1525,13 @@
         {
           "name": "Sweden",
           "id": "sweden",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/sweden.png"
         },
         {
           "name": "Switzerland",
           "id": "switzerland",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/switzerland.png"
         },
         {
@@ -1490,15 +1544,17 @@
           "name": "Table Tennis",
           "id": "mei-table-tennis",
           "url": "./resources/heroes/mei/icons/mei-table-tennis.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "mei"
+          "event": "SUMMER_GAMES",
+          "hero": "mei",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Taekwondo",
           "id": "zenyatta-taekwondo",
           "url": "./resources/heroes/zenyatta/icons/zenyatta-taekwondo.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "zenyatta"
+          "event": "SUMMER_GAMES",
+          "hero": "zenyatta",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Tangerines",
@@ -1522,8 +1578,9 @@
           "name": "Tennis",
           "id": "junkrat-tennis",
           "url": "./resources/heroes/junkrat/icons/junkrat-tennis.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "junkrat"
+          "event": "SUMMER_GAMES",
+          "hero": "junkrat",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Terran",
@@ -1592,8 +1649,9 @@
           "name": "Track",
           "id": "tracer-track",
           "url": "./resources/heroes/tracer/icons/tracer-track.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "tracer"
+          "event": "SUMMER_GAMES",
+          "hero": "tracer",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Training Bot",
@@ -1603,13 +1661,13 @@
         {
           "name": "United Kingdom",
           "id": "united-kingdom",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/united-kingdom.png"
         },
         {
           "name": "United States of America",
           "id": "united-states-of-america",
-          "event": "SUMMER_GAMES_2016",
+          "event": "SUMMER_GAMES",
           "url": "./resources/heroes/all/icons/united-states-of-america.png"
         },
         {
@@ -1658,8 +1716,9 @@
           "name": "Volleyball",
           "id": "winston-volleyball",
           "url": "./resources/heroes/winston/icons/winston-volleyball.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "winston"
+          "event": "SUMMER_GAMES",
+          "hero": "winston",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Wadjet",
@@ -1677,8 +1736,9 @@
           "name": "Water Polo",
           "id": "torbjorn-water-polo",
           "url": "./resources/heroes/torbjorn/icons/torbjorn-water-polo.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "torbjorn"
+          "event": "SUMMER_GAMES",
+          "hero": "torbjorn",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Wedjat",
@@ -1690,8 +1750,9 @@
           "name": "Weightlifting",
           "id": "zarya-weightlifting",
           "url": "./resources/heroes/zarya/icons/zarya-weightlifting.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "zarya"
+          "event": "SUMMER_GAMES",
+          "hero": "zarya",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Widowmaker",
@@ -1749,8 +1810,9 @@
           "name": "Wrestling",
           "id": "reinhardt-wrestling",
           "url": "./resources/heroes/reinhardt/icons/reinhardt-wrestling.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "reinhardt"
+          "event": "SUMMER_GAMES",
+          "hero": "reinhardt",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Year of the Rooster 2017",
@@ -1832,6 +1894,12 @@
           "name": "Caution",
           "id": "caution",
           "url": "./resources/heroes/all/sprays/caution.png",
+          "quality": "common"
+        },
+        {
+          "name": "Copa Lúcioball Competitor",
+          "id": "copa-lucioball-competitor",
+          "url": "./resources/heroes/all/sprays/copa-lucioball-competitor.png",
           "quality": "common"
         },
         {
@@ -2194,13 +2262,6 @@
           "standardItem": true
         },
         {
-          "name": "Summer Games 2016",
-          "id": "summer-games-2016",
-          "event": "SUMMER_GAMES_2016",
-          "url": "./resources/heroes/all/sprays/summer-games-2016.png",
-          "quality": "common"
-        },
-        {
           "name": "...Never Die",
           "id": "never-die",
           "event": "HALLOWEEN_2016",
@@ -2431,6 +2492,41 @@
           "event": "ANNIVERSARY_2017",
           "url": "./resources/heroes/all/sprays/anniversary-2017.png",
           "quality": "common"
+        },
+        {
+          "name": "Bicycle Kick",
+          "id": "bicycle-kick",
+          "event": "SUMMER_GAMES",
+          "url": "./resources/heroes/all/sprays/bicycle-kick.png",
+          "achievement": true
+        },
+        {
+          "name": "Goal Blossom",
+          "id": "goal-blossom",
+          "event": "SUMMER_GAMES",
+          "url": "./resources/heroes/all/sprays/goal-blossom.png",
+          "achievement": true
+        },
+        {
+          "name": "Safe Hands",
+          "id": "safe-hands",
+          "event": "SUMMER_GAMES",
+          "url": "./resources/heroes/all/sprays/safe-hands.png",
+          "achievement": true
+        },
+        {
+          "name": "Summer Games ",
+          "id": "summer-games",
+          "event": "SUMMER_GAMES",
+          "url": "./resources/heroes/all/sprays/summer-games.png",
+          "quality": "common"
+        },
+        {
+          "name": "Summer Games 2016",
+          "id": "summer-games-2016",
+          "event": "SUMMER_GAMES",
+          "url": "./resources/heroes/all/sprays/summer-games-2016.png",
+          "quality": "common"
         }
       ]
     }
@@ -2583,6 +2679,14 @@
           "quality": "epic",
           "url": "./resources/updates/ANNIVERSARY_2017/emotes/ana-dance.webm",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Beach Ball",
+          "id": "ana-beach-ball",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/emotes/ana-beach-ball.webm",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "intros": [
@@ -2632,18 +2736,19 @@
           "hero": "ana"
         },
         {
-          "name": "Shooting",
-          "id": "ana-shooting",
-          "url": "./resources/heroes/ana/icons/ana-shooting.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "ana"
-        },
-        {
           "name": "Anaversary",
           "id": "ana-anaversary",
           "url": "./resources/heroes/ana/icons/ana-anaversary.png",
           "event": "ANNIVERSARY_2017",
           "hero": "ana"
+        },
+        {
+          "name": "Shooting",
+          "id": "ana-shooting",
+          "url": "./resources/heroes/ana/icons/ana-shooting.png",
+          "event": "SUMMER_GAMES",
+          "hero": "ana",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -2792,13 +2897,6 @@
           "url": "./resources/heroes/ana/sprays/ana-zzz.png"
         },
         {
-          "name": "Shooting",
-          "id": "ana-shooting",
-          "quality": "common",
-          "url": "./resources/heroes/ana/sprays/ana-shooting.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "ana-trick-or-treat",
           "quality": "common",
@@ -2846,6 +2944,14 @@
           "quality": "common",
           "url": "./resources/heroes/ana/sprays/ana-ace-of-hearts.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Shooting",
+          "id": "ana-shooting",
+          "quality": "common",
+          "url": "./resources/heroes/ana/sprays/ana-shooting.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -2931,13 +3037,6 @@
           "url": "./resources/heroes/ana/voicelines/ana-you-know-nothing.ogg"
         },
         {
-          "name": "Learn from the Pain",
-          "id": "ana-learn-from-the-pain",
-          "quality": "common",
-          "url": "./resources/heroes/ana/voicelines/ana-learn-from-the-pain.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Are you scared?",
           "id": "ana-are-you-scared",
           "quality": "common",
@@ -2985,6 +3084,22 @@
           "quality": "common",
           "url": "./resources/heroes/ana/voicelines/ana-the-adults-are-talking.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Better than retirement",
+          "id": "ana-better-than-retirement",
+          "quality": "common",
+          "url": "./resources/heroes/ana/voicelines/ana-better-than-retirement.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "Learn from the Pain",
+          "id": "ana-learn-from-the-pain",
+          "quality": "common",
+          "url": "./resources/heroes/ana/voicelines/ana-learn-from-the-pain.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -3200,18 +3315,19 @@
           "url": "./resources/heroes/bastion/emotes/bastion-robot.webm"
         },
         {
-          "name": "Boxing",
-          "id": "bastion-boxing",
-          "quality": "epic",
-          "url": "./resources/heroes/bastion/emotes/bastion-boxing.webm",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Robo Boogie",
           "id": "bastion-robo-boogie",
           "quality": "epic",
           "url": "./resources/updates/ANNIVERSARY_2017/emotes/bastion-robo-boogie.webm",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Boxing",
+          "id": "bastion-boxing",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/emotes/bastion-boxing.webm",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "intros": [
@@ -3261,18 +3377,19 @@
           "hero": "bastion"
         },
         {
-          "name": "Boxing",
-          "id": "bastion-boxing",
-          "url": "./resources/heroes/bastion/icons/bastion-boxing.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "bastion"
-        },
-        {
           "name": "Goldbot",
           "id": "bastion-goldbot",
           "url": "./resources/heroes/bastion/icons/bastion-goldbot.png",
           "event": "ANNIVERSARY_2017",
           "hero": "bastion"
+        },
+        {
+          "name": "Boxing",
+          "id": "bastion-boxing",
+          "url": "./resources/heroes/bastion/icons/bastion-boxing.png",
+          "event": "SUMMER_GAMES",
+          "hero": "bastion",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -3415,13 +3532,6 @@
           "url": "./resources/heroes/bastion/sprays/bastion-wood-and-stone.png"
         },
         {
-          "name": "Boxing",
-          "id": "bastion-boxing",
-          "quality": "common",
-          "url": "./resources/heroes/bastion/sprays/bastion-boxing.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "bastion-trick-or-treat",
           "quality": "common",
@@ -3469,6 +3579,14 @@
           "quality": "common",
           "url": "./resources/heroes/bastion/sprays/bastion-ten-of-clubs.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Boxing",
+          "id": "bastion-boxing",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/sprays/bastion-boxing.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -3554,13 +3672,6 @@
           "url": "./resources/heroes/bastion/voicelines/bastion-zwee.ogg"
         },
         {
-          "name": "WHOO-VWEEEEEE",
-          "id": "bastion-whoovweeeeee",
-          "quality": "common",
-          "url": "./resources/heroes/bastion/voicelines/bastion-whoovweeeeee.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "W-W-Wooooo...?",
           "id": "bastion-wwwooooo",
           "quality": "common",
@@ -3608,6 +3719,22 @@
           "quality": "common",
           "url": "./resources/heroes/bastion/voicelines/bastion-doo-dun-dun-woo.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Doo-do-doo Dee!",
+          "id": "bastion-doododoo-dee",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/voicelines/bastion-doododoo-dee.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "WHOO-VWEEEEEE",
+          "id": "bastion-whoovweeeeee",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/voicelines/bastion-whoovweeeeee.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -3650,6 +3777,14 @@
           "quality": "rare",
           "url": "./resources/heroes/bastion/poses/bastion-firework.jpg",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Medal",
+          "id": "bastion-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/bastion/poses/bastion-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ]
     }
@@ -3714,7 +3849,8 @@
           "quality": "epic",
           "url": "./resources/heroes/dva/skins/dva-taegeukgi.jpg",
           "description": "During her time as a professional gamer, D.Va proudly represented her country in tournaments around the world.",
-          "event": "SUMMER_GAMES_2016"
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "B.Va",
@@ -3876,13 +4012,6 @@
           "hero": "dva"
         },
         {
-          "name": "Cycling",
-          "id": "dva-cycling",
-          "url": "./resources/heroes/dva/icons/dva-cycling.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "dva"
-        },
-        {
           "name": "Hanbok",
           "id": "dva-hanbok",
           "url": "./resources/heroes/dva/icons/dva-hanbok.png",
@@ -3895,6 +4024,14 @@
           "url": "./resources/heroes/dva/icons/dva-hanaversary.png",
           "event": "ANNIVERSARY_2017",
           "hero": "dva"
+        },
+        {
+          "name": "Cycling",
+          "id": "dva-cycling",
+          "url": "./resources/heroes/dva/icons/dva-cycling.png",
+          "event": "SUMMER_GAMES",
+          "hero": "dva",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -4043,13 +4180,6 @@
           "url": "./resources/heroes/dva/sprays/dva-watching.png"
         },
         {
-          "name": "Cycling",
-          "id": "dva-cycling",
-          "quality": "common",
-          "url": "./resources/heroes/dva/sprays/dva-cycling.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "dva-trick-or-treat",
           "quality": "common",
@@ -4097,6 +4227,14 @@
           "quality": "common",
           "url": "./resources/heroes/dva/sprays/dva-ten-of-hearts.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Cycling",
+          "id": "dva-cycling",
+          "quality": "common",
+          "url": "./resources/heroes/dva/sprays/dva-cycling.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -4182,13 +4320,6 @@
           "url": "./resources/heroes/dva/voicelines/dva-no-hacks-required.ogg"
         },
         {
-          "name": "I'm #1",
-          "id": "dva-im-1",
-          "quality": "common",
-          "url": "./resources/heroes/dva/voicelines/dva-im-1.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Happy Halloween!",
           "id": "dva-happy-halloween",
           "quality": "common",
@@ -4236,6 +4367,22 @@
           "quality": "common",
           "url": "./resources/heroes/dva/voicelines/dva-no-way.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "I'm #1",
+          "id": "dva-im-1",
+          "quality": "common",
+          "url": "./resources/heroes/dva/voicelines/dva-im-1.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Scoreboard",
+          "id": "dva-scoreboard",
+          "quality": "common",
+          "url": "./resources/heroes/dva/voicelines/dva-scoreboard.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -4453,6 +4600,14 @@
           "id": "doomfist-initials",
           "url": "./resources/heroes/doomfist/icons/doomfist-initials.png",
           "hero": "doomfist"
+        },
+        {
+          "name": "Shotput",
+          "id": "doomfist-shotput",
+          "url": "./resources/heroes/doomfist/icons/doomfist-shotput.png",
+          "event": "SUMMER_GAMES",
+          "hero": "doomfist",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -4595,6 +4750,14 @@
           "url": "./resources/heroes/doomfist/sprays/doomfist-wrestle.png"
         },
         {
+          "name": "Shot Put",
+          "id": "doomfist-shot-put",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/sprays/doomfist-shot-put.png",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
           "name": "Cute",
           "id": "doomfist-cute",
           "quality": "common",
@@ -4676,6 +4839,22 @@
           "id": "doomfist-youre-not-bad",
           "quality": "common",
           "url": "./resources/heroes/doomfist/voicelines/doomfist-youre-not-bad.ogg"
+        },
+        {
+          "name": "I make medicine sick",
+          "id": "doomfist-i-make-medicine-sick",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-i-make-medicine-sick.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "Make you punch drunk",
+          "id": "doomfist-make-you-punch-drunk",
+          "quality": "common",
+          "url": "./resources/heroes/doomfist/voicelines/doomfist-make-you-punch-drunk.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -4766,7 +4945,8 @@
           "id": "genji-nihon",
           "quality": "epic",
           "url": "./resources/heroes/genji/skins/genji-nihon.jpg",
-          "event": "SUMMER_GAMES_2016"
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Bedouin",
@@ -4924,13 +5104,6 @@
           "hero": "genji"
         },
         {
-          "name": "Fencing",
-          "id": "genji-fencing",
-          "url": "./resources/heroes/genji/icons/genji-fencing.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "genji"
-        },
-        {
           "name": "Cyborg",
           "id": "genji-cyborg",
           "url": "./resources/heroes/genji/icons/genji-cyborg.png",
@@ -4943,6 +5116,14 @@
           "url": "./resources/heroes/genji/icons/genji-goldborg.png",
           "event": "ANNIVERSARY_2017",
           "hero": "genji"
+        },
+        {
+          "name": "Fencing",
+          "id": "genji-fencing",
+          "url": "./resources/heroes/genji/icons/genji-fencing.png",
+          "event": "SUMMER_GAMES",
+          "hero": "genji",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -5091,13 +5272,6 @@
           "url": "./resources/heroes/genji/sprays/genji-warrior.png"
         },
         {
-          "name": "Fencing",
-          "id": "genji-fencing",
-          "quality": "common",
-          "url": "./resources/heroes/genji/sprays/genji-fencing.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "genji-trick-or-treat",
           "quality": "common",
@@ -5145,6 +5319,14 @@
           "quality": "common",
           "url": "./resources/heroes/genji/sprays/genji-jack-of-clubs.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Fencing",
+          "id": "genji-fencing",
+          "quality": "common",
+          "url": "./resources/heroes/genji/sprays/genji-fencing.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -5230,13 +5412,6 @@
           "url": "./resources/heroes/genji/voicelines/genji-you-are-only-human.ogg"
         },
         {
-          "name": "Hoping for a challenge",
-          "id": "genji-i-was-hoping-for-a-challenge",
-          "quality": "common",
-          "url": "./resources/heroes/genji/voicelines/genji-i-was-hoping-for-a-challenge.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "My Halloween costume?",
           "id": "genji-my-halloween-costume",
           "quality": "common",
@@ -5284,6 +5459,22 @@
           "quality": "common",
           "url": "./resources/heroes/genji/voicelines/genji-you-seem-nice.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Hoping for a challenge",
+          "id": "genji-i-was-hoping-for-a-challenge",
+          "quality": "common",
+          "url": "./resources/heroes/genji/voicelines/genji-i-was-hoping-for-a-challenge.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Touché",
+          "id": "genji-touche",
+          "quality": "common",
+          "url": "./resources/heroes/genji/voicelines/genji-touche.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -5502,6 +5693,14 @@
           "id": "hanzo-superior",
           "quality": "epic",
           "url": "./resources/heroes/hanzo/intros/hanzo-superior.webm"
+        },
+        {
+          "name": "Target Practice",
+          "id": "hanzo-target-practice",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/intros/hanzo-target-practice.webm",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "icons": [
@@ -5524,18 +5723,19 @@
           "hero": "hanzo"
         },
         {
-          "name": "Archery",
-          "id": "hanzo-archery",
-          "url": "./resources/heroes/hanzo/icons/hanzo-archery.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "hanzo"
-        },
-        {
           "name": "Kinenbi",
           "id": "hanzo-kinenbi",
           "url": "./resources/heroes/hanzo/icons/hanzo-kinenbi.png",
           "event": "ANNIVERSARY_2017",
           "hero": "hanzo"
+        },
+        {
+          "name": "Archery",
+          "id": "hanzo-archery",
+          "url": "./resources/heroes/hanzo/icons/hanzo-archery.png",
+          "event": "SUMMER_GAMES",
+          "hero": "hanzo",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -5678,13 +5878,6 @@
           "url": "./resources/heroes/hanzo/sprays/hanzo-yellow.png"
         },
         {
-          "name": "Archery",
-          "id": "hanzo-archery",
-          "quality": "common",
-          "url": "./resources/heroes/hanzo/sprays/hanzo-archery.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "hanzo-trick-or-treat",
           "quality": "common",
@@ -5732,6 +5925,14 @@
           "quality": "common",
           "url": "./resources/heroes/hanzo/sprays/hanzo-king-of-diamonds.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Archery",
+          "id": "hanzo-archery",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/sprays/hanzo-archery.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -5817,13 +6018,6 @@
           "url": "./resources/heroes/hanzo/voicelines/hanzo-step-into-the-dojo.ogg"
         },
         {
-          "name": "Ignore all distractions",
-          "id": "hanzo-ignore-all-distractions",
-          "quality": "common",
-          "url": "./resources/heroes/hanzo/voicelines/hanzo-ignore-all-distractions.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "You are already dead",
           "id": "hanzo-you-are-already-dead",
           "quality": "common",
@@ -5871,6 +6065,22 @@
           "quality": "common",
           "url": "./resources/heroes/hanzo/voicelines/hanzo-just-so.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Defeat is the first step",
+          "id": "hanzo-defeat-is-the-first-step",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/voicelines/hanzo-defeat-is-the-first-step.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "Ignore all distractions",
+          "id": "hanzo-ignore-all-distractions",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/voicelines/hanzo-ignore-all-distractions.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -5905,6 +6115,14 @@
           "quality": "rare",
           "url": "./resources/heroes/hanzo/poses/hanzo-rip.jpg",
           "event": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Medal",
+          "id": "hanzo-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/hanzo/poses/hanzo-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ]
     }
@@ -6005,6 +6223,15 @@
           "url": "./resources/heroes/junkrat/skins/junkrat-dr-junkenstein.jpg",
           "description": "As the tale goes, Dr. Junkenstein made a deal with the Witch of the Wilds in exchange for the secret to creating life. But his triumph was short lived as he was slain by four wanderers in Adlersbrunn.",
           "event": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Cricket",
+          "id": "junkrat-cricket",
+          "quality": "legendary",
+          "url": "./resources/heroes/junkrat/skins/junkrat-cricket.jpg",
+          "description": "Junkrat gives new meaning to \"the Ashes.\"",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "emotes": [
@@ -6090,8 +6317,9 @@
           "name": "Shot Put",
           "id": "junkrat-shot-put",
           "quality": "epic",
-          "url": "./resources/heroes/junkrat/intros/junkrat-shot-put.webm",
-          "event": "SUMMER_GAMES_2016"
+          "url": "./resources/updates/SUMMER_GAMES/intros/junkrat-shot-put.webm",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "icons": [
@@ -6114,13 +6342,6 @@
           "hero": "junkrat"
         },
         {
-          "name": "Tennis",
-          "id": "junkrat-tennis",
-          "url": "./resources/heroes/junkrat/icons/junkrat-tennis.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "junkrat"
-        },
-        {
           "name": "The Doctor",
           "id": "junkrat-the-doctor",
           "url": "./resources/heroes/junkrat/icons/junkrat-the-doctor.png",
@@ -6133,6 +6354,14 @@
           "url": "./resources/heroes/junkrat/icons/junkrat-goldrat.png",
           "event": "ANNIVERSARY_2017",
           "hero": "junkrat"
+        },
+        {
+          "name": "Tennis",
+          "id": "junkrat-tennis",
+          "url": "./resources/heroes/junkrat/icons/junkrat-tennis.png",
+          "event": "SUMMER_GAMES",
+          "hero": "junkrat",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -6275,13 +6504,6 @@
           "url": "./resources/heroes/junkrat/sprays/junkrat-wanted.png"
         },
         {
-          "name": "Tennis",
-          "id": "junkrat-tennis",
-          "quality": "common",
-          "url": "./resources/heroes/junkrat/sprays/junkrat-tennis.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "junkrat-trick-or-treat",
           "quality": "common",
@@ -6329,6 +6551,14 @@
           "quality": "common",
           "url": "./resources/heroes/junkrat/sprays/junkrat-joker.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Tennis",
+          "id": "junkrat-tennis",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/sprays/junkrat-tennis.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -6414,13 +6644,6 @@
           "url": "./resources/heroes/junkrat/voicelines/junkrat-smile.ogg"
         },
         {
-          "name": "I give it a 10!",
-          "id": "junkrat-i-give-it-a-10",
-          "quality": "common",
-          "url": "./resources/heroes/junkrat/voicelines/junkrat-i-give-it-a-10.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Happy Halloween",
           "id": "junkrat-happy-halloween",
           "quality": "common",
@@ -6468,6 +6691,22 @@
           "quality": "common",
           "url": "./resources/heroes/junkrat/voicelines/junkrat-oops-dropped-something.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "I give it a 10!",
+          "id": "junkrat-i-give-it-a-10",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/voicelines/junkrat-i-give-it-a-10.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "I give it a 3!",
+          "id": "junkrat-i-give-it-a-3",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/voicelines/junkrat-i-give-it-a-3.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -6509,6 +6748,14 @@
           "quality": "rare",
           "url": "./resources/heroes/junkrat/poses/junkrat-bad-for-your-health.jpg",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Medal",
+          "id": "junkrat-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/junkrat/poses/junkrat-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ]
     }
@@ -6602,12 +6849,20 @@
           "url": "./resources/heroes/lucio/skins/lucio-slapshot.jpg"
         },
         {
+          "name": "Jazzy",
+          "id": "lucio-jazzy",
+          "quality": "legendary",
+          "url": "./resources/heroes/lucio/skins/lucio-jazzy.jpg",
+          "event": "ANNIVERSARY_2017"
+        },
+        {
           "name": "Seleção",
           "id": "lucio-selecao",
           "quality": "legendary",
           "url": "./resources/heroes/lucio/skins/lucio-selecao.jpg",
           "description": "When Lúcio was younger, in addition to his first love, hockey, he also found the time to play football with the other kids in Rio de Janeiro.",
-          "event": "SUMMER_GAMES_2016"
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Striker",
@@ -6615,14 +6870,8 @@
           "quality": "legendary",
           "url": "./resources/heroes/lucio/skins/lucio-striker.jpg",
           "description": "When Lúcio was younger, in addition to his first love, hockey, he also found the time to play football with the other kids in Rio de Janeiro.",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
-          "name": "Jazzy",
-          "id": "lucio-jazzy",
-          "quality": "legendary",
-          "url": "./resources/heroes/lucio/skins/lucio-jazzy.jpg",
-          "event": "ANNIVERSARY_2017"
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "emotes": [
@@ -6664,18 +6913,19 @@
           "url": "./resources/heroes/lucio/emotes/lucio-nah.webm"
         },
         {
-          "name": "Juggle",
-          "id": "lucio-juggle",
-          "quality": "epic",
-          "url": "./resources/heroes/lucio/emotes/lucio-juggle.webm",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Smooth",
           "id": "lucio-smooth",
           "quality": "epic",
           "url": "./resources/updates/ANNIVERSARY_2017/emotes/lucio-smooth.webm",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Juggle",
+          "id": "lucio-juggle",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/emotes/lucio-juggle.webm",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "intros": [
@@ -6708,8 +6958,9 @@
           "name": "Bicycle Kick",
           "id": "lucio-bicycle-kick",
           "quality": "epic",
-          "url": "./resources/heroes/lucio/intros/lucio-bicycle-kick.webm",
-          "event": "SUMMER_GAMES_2016"
+          "url": "./resources/updates/SUMMER_GAMES/intros/lucio-bicycle-kick.webm",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "icons": [
@@ -6732,18 +6983,19 @@
           "hero": "lucio"
         },
         {
-          "name": "Football",
-          "id": "lucio-football",
-          "url": "./resources/heroes/lucio/icons/lucio-football.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "lucio"
-        },
-        {
           "name": "Lúciouro",
           "id": "lucio-luciouro",
           "url": "./resources/heroes/lucio/icons/lucio-luciouro.png",
           "event": "ANNIVERSARY_2017",
           "hero": "lucio"
+        },
+        {
+          "name": "Football",
+          "id": "lucio-football",
+          "url": "./resources/heroes/lucio/icons/lucio-football.png",
+          "event": "SUMMER_GAMES",
+          "hero": "lucio",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -6886,13 +7138,6 @@
           "url": "./resources/heroes/lucio/sprays/lucio-wave.png"
         },
         {
-          "name": "Football",
-          "id": "lucio-football",
-          "quality": "common",
-          "url": "./resources/heroes/lucio/sprays/lucio-football.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "lucio-trick-or-treat",
           "quality": "common",
@@ -6940,6 +7185,14 @@
           "quality": "common",
           "url": "./resources/heroes/lucio/sprays/lucio-jack-of-diamonds.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Football",
+          "id": "lucio-football",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/sprays/lucio-football.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -7025,13 +7278,6 @@
           "url": "./resources/heroes/lucio/voicelines/lucio-you-gotta-believe.ogg"
         },
         {
-          "name": "Be champions",
-          "id": "lucio-be-champions",
-          "quality": "common",
-          "url": "./resources/heroes/lucio/voicelines/lucio-be-champions.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Killed it!",
           "id": "lucio-killed-it",
           "quality": "common",
@@ -7079,6 +7325,22 @@
           "quality": "common",
           "url": "./resources/heroes/lucio/voicelines/lucio-have-some-lucioohs.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Be champions",
+          "id": "lucio-be-champions",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/voicelines/lucio-be-champions.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Suboptimal",
+          "id": "lucio-suboptimal",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/voicelines/lucio-suboptimal.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -7179,18 +7441,19 @@
           "url": "./resources/heroes/mccree/skins/mccree-white-hat.jpg"
         },
         {
-          "name": "American",
-          "id": "mccree-american",
-          "quality": "epic",
-          "url": "./resources/heroes/mccree/skins/mccree-american.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Scrooge",
           "id": "mccree-scrooge",
           "quality": "epic",
           "url": "./resources/heroes/mccree/skins/mccree-scrooge.jpg",
           "event": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "American",
+          "id": "mccree-american",
+          "quality": "epic",
+          "url": "./resources/heroes/mccree/skins/mccree-american.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Gambler",
@@ -7223,6 +7486,14 @@
           "url": "./resources/heroes/mccree/skins/mccree-blackwatch.jpg",
           "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch, or rot in prison.",
           "event": "UPRISING_2017"
+        },
+        {
+          "name": "Lifeguard",
+          "id": "mccree-lifeguard",
+          "quality": "legendary",
+          "url": "./resources/heroes/mccree/skins/mccree-lifeguard.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "emotes": [
@@ -7325,13 +7596,6 @@
           "hero": "mccree"
         },
         {
-          "name": "Equestrian",
-          "id": "mccree-equestrian",
-          "url": "./resources/heroes/mccree/icons/mccree-equestrian.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "mccree"
-        },
-        {
           "name": "Blackwatch",
           "id": "mccree-blackwatch",
           "url": "./resources/heroes/mccree/icons/mccree-blackwatch.png",
@@ -7344,6 +7608,14 @@
           "url": "./resources/heroes/mccree/icons/mccree-gamf.png",
           "event": "ANNIVERSARY_2017",
           "hero": "mccree"
+        },
+        {
+          "name": "Equestrian",
+          "id": "mccree-equestrian",
+          "url": "./resources/heroes/mccree/icons/mccree-equestrian.png",
+          "event": "SUMMER_GAMES",
+          "hero": "mccree",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -7486,13 +7758,6 @@
           "url": "./resources/heroes/mccree/sprays/mccree-your-face-here.png"
         },
         {
-          "name": "Equestrian",
-          "id": "mccree-equestrian",
-          "quality": "common",
-          "url": "./resources/heroes/mccree/sprays/mccree-equestrian.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "mccree-trick-or-treat",
           "quality": "common",
@@ -7540,6 +7805,14 @@
           "quality": "common",
           "url": "./resources/heroes/mccree/sprays/mccree-jack-of-spades.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Equestrian",
+          "id": "mccree-equestrian",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/sprays/mccree-equestrian.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -7625,13 +7898,6 @@
           "url": "./resources/heroes/mccree/voicelines/mccree-you-done.ogg"
         },
         {
-          "name": "I don't much like losing",
-          "id": "mccree-i-dont-much-like-losing",
-          "quality": "common",
-          "url": "./resources/heroes/mccree/voicelines/mccree-i-dont-much-like-losing.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "It's your funeral",
           "id": "mccree-its-your-funeral",
           "quality": "common",
@@ -7679,6 +7945,22 @@
           "quality": "common",
           "url": "./resources/heroes/mccree/voicelines/mccree-next-rounds-on-me.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Boom goes the dynamite",
+          "id": "mccree-boom-goes-the-dynamite",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/voicelines/mccree-boom-goes-the-dynamite.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "I don't much like losing",
+          "id": "mccree-i-dont-much-like-losing",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/voicelines/mccree-i-dont-much-like-losing.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -7947,13 +8229,6 @@
           "hero": "mei"
         },
         {
-          "name": "Table Tennis",
-          "id": "mei-table-tennis",
-          "url": "./resources/heroes/mei/icons/mei-table-tennis.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "mei"
-        },
-        {
           "name": "Chang'e",
           "id": "mei-change",
           "url": "./resources/heroes/mei/icons/mei-change.png",
@@ -7966,6 +8241,14 @@
           "url": "./resources/heroes/mei/icons/mei-may.png",
           "event": "ANNIVERSARY_2017",
           "hero": "mei"
+        },
+        {
+          "name": "Table Tennis",
+          "id": "mei-table-tennis",
+          "url": "./resources/heroes/mei/icons/mei-table-tennis.png",
+          "event": "SUMMER_GAMES",
+          "hero": "mei",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -8108,13 +8391,6 @@
           "url": "./resources/heroes/mei/sprays/mei-walled.png"
         },
         {
-          "name": "Table Tennis",
-          "id": "mei-table-tennis",
-          "quality": "common",
-          "url": "./resources/heroes/mei/sprays/mei-table-tennis.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "mei-trick-or-treat",
           "quality": "common",
@@ -8162,6 +8438,14 @@
           "quality": "common",
           "url": "./resources/heroes/mei/sprays/mei-ten-of-diamonds.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Table Tennis",
+          "id": "mei-table-tennis",
+          "quality": "common",
+          "url": "./resources/heroes/mei/sprays/mei-table-tennis.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -8247,13 +8531,6 @@
           "url": "./resources/heroes/mei/voicelines/mei-you-have-to-let-it-go.ogg"
         },
         {
-          "name": "Overcome all obstacles",
-          "id": "mei-overcome-all-obstacles",
-          "quality": "common",
-          "url": "./resources/heroes/mei/voicelines/mei-overcome-all-obstacles.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Scary!",
           "id": "mei-scary",
           "quality": "common",
@@ -8301,6 +8578,22 @@
           "quality": "common",
           "url": "./resources/heroes/mei/voicelines/mei-so-mean-honestly.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "I tried my best",
+          "id": "mei-i-tried-my-best",
+          "quality": "common",
+          "url": "./resources/heroes/mei/voicelines/mei-i-tried-my-best.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "Overcome all obstacles",
+          "id": "mei-overcome-all-obstacles",
+          "quality": "common",
+          "url": "./resources/heroes/mei/voicelines/mei-overcome-all-obstacles.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -8330,13 +8623,6 @@
           "url": "./resources/heroes/mei/poses/mei-kneeling.jpg"
         },
         {
-          "name": "Medal",
-          "id": "mei-medal",
-          "quality": "rare",
-          "url": "./resources/heroes/mei/poses/mei-medal.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "R.I.P.",
           "id": "mei-rip",
           "quality": "rare",
@@ -8349,6 +8635,14 @@
           "quality": "rare",
           "url": "./resources/heroes/mei/poses/mei-lucky.jpg",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Medal",
+          "id": "mei-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/mei/poses/mei-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ]
     }
@@ -8408,19 +8702,20 @@
           "url": "./resources/heroes/mercy/skins/mercy-cobalt.jpg"
         },
         {
-          "name": "Eidgenossin",
-          "id": "mercy-eidgenossin",
-          "quality": "epic",
-          "url": "./resources/heroes/mercy/skins/mercy-eidgenossin.jpg",
-          "description": "After finishing her education, including her MD and PhD in Switzerland, Angela Ziegler continued her research and served as head of surgery in a prominent hospital in her home country.",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Fortune",
           "id": "mercy-fortune",
           "quality": "epic",
           "url": "./resources/heroes/mercy/skins/mercy-fortune.jpg",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Eidgenossin",
+          "id": "mercy-eidgenossin",
+          "quality": "epic",
+          "url": "./resources/heroes/mercy/skins/mercy-eidgenossin.jpg",
+          "description": "After finishing her education, including her MD and PhD in Switzerland, Angela Ziegler continued her research and served as head of surgery in a prominent hospital in her home country.",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Devil",
@@ -8461,6 +8756,14 @@
           "url": "./resources/heroes/mercy/skins/mercy-combat-medic-ziegler.jpg",
           "description": "When called upon, Mercy would don her Valkyrie swift-response suit to participate in Overwatch missions.",
           "event": "UPRISING_2017"
+        },
+        {
+          "name": "Winged Victory",
+          "id": "mercy-winged-victory",
+          "quality": "legendary",
+          "url": "./resources/heroes/mercy/skins/mercy-winged-victory.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "emotes": [
@@ -8563,13 +8866,6 @@
           "hero": "mercy"
         },
         {
-          "name": "Badminton",
-          "id": "mercy-badminton",
-          "url": "./resources/heroes/mercy/icons/mercy-badminton.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "mercy"
-        },
-        {
           "name": "The Witch",
           "id": "mercy-the-witch",
           "url": "./resources/heroes/mercy/icons/mercy-the-witch.png",
@@ -8589,6 +8885,14 @@
           "url": "./resources/heroes/mercy/icons/mercy-jahrestag.png",
           "event": "ANNIVERSARY_2017",
           "hero": "mercy"
+        },
+        {
+          "name": "Badminton",
+          "id": "mercy-badminton",
+          "url": "./resources/heroes/mercy/icons/mercy-badminton.png",
+          "event": "SUMMER_GAMES",
+          "hero": "mercy",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -8731,13 +9035,6 @@
           "url": "./resources/heroes/mercy/sprays/mercy-ziegler.png"
         },
         {
-          "name": "Badminton",
-          "id": "mercy-badminton",
-          "quality": "common",
-          "url": "./resources/heroes/mercy/sprays/mercy-badminton.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "mercy-trick-or-treat",
           "quality": "common",
@@ -8785,6 +9082,14 @@
           "quality": "common",
           "url": "./resources/heroes/mercy/sprays/mercy-queen-of-clubs.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Badminton",
+          "id": "mercy-badminton",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/sprays/mercy-badminton.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -8870,13 +9175,6 @@
           "url": "./resources/heroes/mercy/voicelines/mercy-the-doctor-will-see-you.ogg"
         },
         {
-          "name": "Piece of cake",
-          "id": "mercy-piece-of-cake",
-          "quality": "common",
-          "url": "./resources/heroes/mercy/voicelines/mercy-piece-of-cake.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Superstition",
           "id": "mercy-superstition",
           "quality": "common",
@@ -8924,6 +9222,22 @@
           "quality": "common",
           "url": "./resources/heroes/mercy/voicelines/mercy-youre-welcome.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Piece of cake",
+          "id": "mercy-piece-of-cake",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/voicelines/mercy-piece-of-cake.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Sponge or spray?",
+          "id": "mercy-sponge-or-spray",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/voicelines/mercy-sponge-or-spray.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -8965,6 +9279,14 @@
           "quality": "rare",
           "url": "./resources/heroes/mercy/poses/mercy-mistletoe.jpg",
           "event": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Medal",
+          "id": "mercy-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/mercy/poses/mercy-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ]
     }
@@ -9162,6 +9484,14 @@
           "url": "./resources/heroes/orisa/icons/orisa-aurisa.png",
           "event": "ANNIVERSARY_2017",
           "hero": "orisa"
+        },
+        {
+          "name": "Javelin",
+          "id": "orisa-javelin",
+          "url": "./resources/heroes/orisa/icons/orisa-javelin.png",
+          "event": "SUMMER_GAMES",
+          "hero": "orisa",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -9318,6 +9648,14 @@
           "event": "ANNIVERSARY_2017"
         },
         {
+          "name": "Javelin",
+          "id": "orisa-javelin",
+          "quality": "common",
+          "url": "./resources/heroes/orisa/sprays/orisa-javelin.png",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
           "name": "Cute",
           "id": "orisa-cute",
           "quality": "common",
@@ -9427,6 +9765,22 @@
           "quality": "common",
           "url": "./resources/heroes/orisa/voicelines/orisa-your-compliance.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Golden",
+          "id": "orisa-golden",
+          "quality": "common",
+          "url": "./resources/heroes/orisa/voicelines/orisa-golden.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "Grease to your elbow",
+          "id": "orisa-grease-to-your-elbow",
+          "quality": "common",
+          "url": "./resources/heroes/orisa/voicelines/orisa-grease-to-your-elbow.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -9645,6 +9999,14 @@
           "id": "pharah-touchdown",
           "quality": "epic",
           "url": "./resources/heroes/pharah/intros/pharah-touchdown.webm"
+        },
+        {
+          "name": "Slam Dunk",
+          "id": "pharah-slam-dunk",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/intros/pharah-slam-dunk.webm",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "icons": [
@@ -9667,18 +10029,19 @@
           "hero": "pharah"
         },
         {
-          "name": "Basketball",
-          "id": "pharah-basketball",
-          "url": "./resources/heroes/pharah/icons/pharah-basketball.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "pharah"
-        },
-        {
           "name": "Anniversareeha",
           "id": "pharah-anniversareeha",
           "url": "./resources/heroes/pharah/icons/pharah-anniversareeha.png",
           "event": "ANNIVERSARY_2017",
           "hero": "pharah"
+        },
+        {
+          "name": "Basketball",
+          "id": "pharah-basketball",
+          "url": "./resources/heroes/pharah/icons/pharah-basketball.png",
+          "event": "SUMMER_GAMES",
+          "hero": "pharah",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -9821,13 +10184,6 @@
           "url": "./resources/heroes/pharah/sprays/pharah-wrist-launcher.png"
         },
         {
-          "name": "Basketball",
-          "id": "pharah-basketball",
-          "quality": "common",
-          "url": "./resources/heroes/pharah/sprays/pharah-basketball.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "pharah-trick-or-treat",
           "quality": "common",
@@ -9875,6 +10231,14 @@
           "quality": "common",
           "url": "./resources/heroes/pharah/sprays/pharah-queen-of-diamonds.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Basketball",
+          "id": "pharah-basketball",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/sprays/pharah-basketball.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -9960,13 +10324,6 @@
           "url": "./resources/heroes/pharah/voicelines/pharah-sorry-but-i-need-to-jet.ogg"
         },
         {
-          "name": "We are in this together",
-          "id": "pharah-we-are-in-this-together",
-          "quality": "common",
-          "url": "./resources/heroes/pharah/voicelines/pharah-we-are-in-this-together.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Dead or alive",
           "id": "pharah-dead-or-alive",
           "quality": "common",
@@ -10014,6 +10371,22 @@
           "quality": "common",
           "url": "./resources/heroes/pharah/voicelines/pharah-try-me.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Clear skies, full hearts",
+          "id": "pharah-clear-skies-full-hearts",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/voicelines/pharah-clear-skies-full-hearts.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "We are in this together",
+          "id": "pharah-we-are-in-this-together",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/voicelines/pharah-we-are-in-this-together.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -10043,13 +10416,6 @@
           "url": "./resources/heroes/pharah/poses/pharah-kneeling.jpg"
         },
         {
-          "name": "Medal",
-          "id": "pharah-medal",
-          "quality": "rare",
-          "url": "./resources/heroes/pharah/poses/pharah-medal.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "R.I.P.",
           "id": "pharah-rip",
           "quality": "rare",
@@ -10062,6 +10428,14 @@
           "quality": "rare",
           "url": "./resources/heroes/pharah/poses/pharah-toast.jpg",
           "event": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Medal",
+          "id": "pharah-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/pharah/poses/pharah-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ]
     }
@@ -10159,6 +10533,14 @@
           "url": "./resources/heroes/reaper/skins/reaper-pumpkin.jpg",
           "description": "In the tale of Dr. Junkenstein, the Reaper was a servant to the Witch of the Wilds, bound to serve her for some unknown reason.",
           "event": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Biker",
+          "id": "reaper-biker",
+          "quality": "legendary",
+          "url": "./resources/heroes/reaper/skins/reaper-biker.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         },
         {
           "name": "Blackwatch Reyes",
@@ -10275,13 +10657,6 @@
           "hero": "reaper"
         },
         {
-          "name": "BMX",
-          "id": "reaper-bmx",
-          "url": "./resources/heroes/reaper/icons/reaper-bmx.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "reaper"
-        },
-        {
           "name": "The Reaper",
           "id": "reaper-the-reaper",
           "url": "./resources/heroes/reaper/icons/reaper-the-reaper.png",
@@ -10294,6 +10669,14 @@
           "url": "./resources/heroes/reaper/icons/reaper-reapiversary.png",
           "event": "ANNIVERSARY_2017",
           "hero": "reaper"
+        },
+        {
+          "name": "BMX",
+          "id": "reaper-bmx",
+          "url": "./resources/heroes/reaper/icons/reaper-bmx.png",
+          "event": "SUMMER_GAMES",
+          "hero": "reaper",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -10442,13 +10825,6 @@
           "url": "./resources/heroes/reaper/sprays/reaper-time-to-kill.png"
         },
         {
-          "name": "BMX",
-          "id": "reaper-bmx",
-          "quality": "common",
-          "url": "./resources/heroes/reaper/sprays/reaper-bmx.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "reaper-trick-or-treat",
           "quality": "common",
@@ -10496,6 +10872,14 @@
           "quality": "common",
           "url": "./resources/heroes/reaper/sprays/reaper-ace-of-clubs.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "BMX",
+          "id": "reaper-bmx",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/sprays/reaper-bmx.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -10581,13 +10965,6 @@
           "url": "./resources/heroes/reaper/voicelines/reaper-was-that-all.ogg"
         },
         {
-          "name": "It's in the refrigerator",
-          "id": "reaper-its-in-the-refrigerator",
-          "quality": "common",
-          "url": "./resources/heroes/reaper/voicelines/reaper-its-in-the-refrigerator.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "I work the graveyard shift",
           "id": "reaper-i-work-the-graveyard-shift",
           "quality": "common",
@@ -10635,6 +11012,22 @@
           "quality": "common",
           "url": "./resources/heroes/reaper/voicelines/reaper-no-one-left-behind.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "It's in the refrigerator",
+          "id": "reaper-its-in-the-refrigerator",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/voicelines/reaper-its-in-the-refrigerator.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Just win",
+          "id": "reaper-just-win",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/voicelines/reaper-just-win.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -10670,18 +11063,19 @@
           "url": "./resources/heroes/reaper/poses/reaper-shrug.jpg"
         },
         {
-          "name": "Medal",
-          "id": "reaper-medal",
-          "quality": "rare",
-          "url": "./resources/heroes/reaper/poses/reaper-medal.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "R.I.P.",
           "id": "reaper-rip",
           "quality": "rare",
           "url": "./resources/heroes/reaper/poses/reaper-rip.jpg",
           "event": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Medal",
+          "id": "reaper-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/reaper/poses/reaper-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ]
     }
@@ -10902,13 +11296,6 @@
           "hero": "reinhardt"
         },
         {
-          "name": "Wrestling",
-          "id": "reinhardt-wrestling",
-          "url": "./resources/heroes/reinhardt/icons/reinhardt-wrestling.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "reinhardt"
-        },
-        {
           "name": "Sandy",
           "id": "reinhardt-sandy",
           "url": "./resources/heroes/reinhardt/icons/reinhardt-sandy.png",
@@ -10928,6 +11315,14 @@
           "url": "./resources/heroes/reinhardt/icons/reinhardt-goldhardt.png",
           "event": "ANNIVERSARY_2017",
           "hero": "reinhardt"
+        },
+        {
+          "name": "Wrestling",
+          "id": "reinhardt-wrestling",
+          "url": "./resources/heroes/reinhardt/icons/reinhardt-wrestling.png",
+          "event": "SUMMER_GAMES",
+          "hero": "reinhardt",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -11070,13 +11465,6 @@
           "url": "./resources/heroes/reinhardt/sprays/reinhardt-wrestle.png"
         },
         {
-          "name": "Wrestling",
-          "id": "reinhardt-wrestling",
-          "quality": "common",
-          "url": "./resources/heroes/reinhardt/sprays/reinhardt-wrestling.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "reinhardt-trick-or-treat",
           "quality": "common",
@@ -11124,6 +11512,14 @@
           "quality": "common",
           "url": "./resources/heroes/reinhardt/sprays/reinhardt-king-of-hearts.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Wrestling",
+          "id": "reinhardt-wrestling",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/sprays/reinhardt-wrestling.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -11209,13 +11605,6 @@
           "url": "./resources/heroes/reinhardt/voicelines/reinhardt-this-old-dog.ogg"
         },
         {
-          "name": "100% German power",
-          "id": "reinhardt-100-german-power",
-          "quality": "common",
-          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-100-german-power.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Smashing",
           "id": "reinhardt-smashing",
           "quality": "common",
@@ -11263,6 +11652,22 @@
           "quality": "common",
           "url": "./resources/heroes/reinhardt/voicelines/reinhardt-honor-justice-reinhardt.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "100% German power",
+          "id": "reinhardt-100-german-power",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-100-german-power.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Glittering prizes!",
+          "id": "reinhardt-glittering-prizes",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-glittering-prizes.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -11509,13 +11914,6 @@
           "hero": "roadhog"
         },
         {
-          "name": "Diving",
-          "id": "roadhog-diving",
-          "url": "./resources/heroes/roadhog/icons/roadhog-diving.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "roadhog"
-        },
-        {
           "name": "The Monster",
           "id": "roadhog-the-monster",
           "url": "./resources/heroes/roadhog/icons/roadhog-the-monster.png",
@@ -11535,6 +11933,14 @@
           "url": "./resources/heroes/roadhog/icons/roadhog-goldhog.png",
           "event": "ANNIVERSARY_2017",
           "hero": "roadhog"
+        },
+        {
+          "name": "Diving",
+          "id": "roadhog-diving",
+          "url": "./resources/heroes/roadhog/icons/roadhog-diving.png",
+          "event": "SUMMER_GAMES",
+          "hero": "roadhog",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -11677,13 +12083,6 @@
           "url": "./resources/heroes/roadhog/sprays/roadhog-wild-hog.png"
         },
         {
-          "name": "Diving",
-          "id": "roadhog-diving",
-          "quality": "common",
-          "url": "./resources/heroes/roadhog/sprays/roadhog-diving.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "roadhog-trick-or-treat",
           "quality": "common",
@@ -11731,6 +12130,14 @@
           "quality": "common",
           "url": "./resources/heroes/roadhog/sprays/roadhog-joker.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Diving",
+          "id": "roadhog-diving",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/sprays/roadhog-diving.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -11816,13 +12223,6 @@
           "url": "./resources/heroes/roadhog/voicelines/roadhog-were-all-animals.ogg"
         },
         {
-          "name": "What's mine is mine",
-          "id": "roadhog-whats-mine-is-mine",
-          "quality": "common",
-          "url": "./resources/heroes/roadhog/voicelines/roadhog-whats-mine-is-mine.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Want some candy?",
           "id": "roadhog-want-some-candy",
           "quality": "common",
@@ -11870,6 +12270,22 @@
           "quality": "common",
           "url": "./resources/heroes/roadhog/voicelines/roadhog-im-going-hog-wild.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "There's no \"I\" in team",
+          "id": "roadhog-theres-no-i-in-team",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/voicelines/roadhog-theres-no-i-in-team.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "What's mine is mine",
+          "id": "roadhog-whats-mine-is-mine",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/voicelines/roadhog-whats-mine-is-mine.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -11899,13 +12315,6 @@
           "url": "./resources/heroes/roadhog/poses/roadhog-tuckered-out.jpg"
         },
         {
-          "name": "Medal",
-          "id": "roadhog-medal",
-          "quality": "rare",
-          "url": "./resources/heroes/roadhog/poses/roadhog-medal.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "R.I.P.",
           "id": "roadhog-rip",
           "quality": "rare",
@@ -11918,6 +12327,14 @@
           "quality": "rare",
           "url": "./resources/heroes/roadhog/poses/roadhog-whats-mine-is-mine.jpg",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Medal",
+          "id": "roadhog-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/roadhog/poses/roadhog-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ]
     }
@@ -12015,6 +12432,14 @@
           "quality": "legendary",
           "url": "./resources/heroes/soldier-76/skins/soldier-76-cyborg-76.jpg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Grillmaster: 76",
+          "id": "soldier-76-grillmaster-76",
+          "quality": "legendary",
+          "url": "./resources/heroes/soldier-76/skins/soldier-76-grillmaster-76.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         },
         {
           "name": "Strike Commander Morrison",
@@ -12125,18 +12550,19 @@
           "hero": "soldier-76"
         },
         {
-          "name": "Golf",
-          "id": "soldier-76-golf",
-          "url": "./resources/heroes/soldier-76/icons/soldier-76-golf.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "soldier-76"
-        },
-        {
           "name": "Gold Soldier",
           "id": "soldier-76-gold-soldier",
           "url": "./resources/heroes/soldier-76/icons/soldier-76-gold-soldier.png",
           "event": "ANNIVERSARY_2017",
           "hero": "soldier-76"
+        },
+        {
+          "name": "Golf",
+          "id": "soldier-76-golf",
+          "url": "./resources/heroes/soldier-76/icons/soldier-76-golf.png",
+          "event": "SUMMER_GAMES",
+          "hero": "soldier-76",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -12279,13 +12705,6 @@
           "url": "./resources/heroes/soldier-76/sprays/soldier-76-wanted.png"
         },
         {
-          "name": "Golf",
-          "id": "soldier-76-golf",
-          "quality": "common",
-          "url": "./resources/heroes/soldier-76/sprays/soldier-76-golf.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "soldier-76-trick-or-treat",
           "quality": "common",
@@ -12333,6 +12752,14 @@
           "quality": "common",
           "url": "./resources/heroes/soldier-76/sprays/soldier-76-ace-of-spades.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Golf",
+          "id": "soldier-76-golf",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/sprays/soldier-76-golf.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -12418,13 +12845,6 @@
           "url": "./resources/heroes/soldier-76/voicelines/soldier-76-youre-the-other-one.ogg"
         },
         {
-          "name": "You want a medal?",
-          "id": "soldier-76-you-want-a-medal",
-          "quality": "common",
-          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-you-want-a-medal.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Knock knock",
           "id": "soldier-76-knock-knock",
           "quality": "common",
@@ -12472,6 +12892,22 @@
           "quality": "common",
           "url": "./resources/heroes/soldier-76/voicelines/soldier-76-youre-the-boss.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Bring the noise",
+          "id": "soldier-76-bring-the-noise",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-bring-the-noise.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "You want a medal?",
+          "id": "soldier-76-you-want-a-medal",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-you-want-a-medal.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -12501,13 +12937,6 @@
           "url": "./resources/heroes/soldier-76/poses/soldier-76-soldier.jpg"
         },
         {
-          "name": "Golf Swing",
-          "id": "soldier-76-golf-swing",
-          "quality": "rare",
-          "url": "./resources/heroes/soldier-76/poses/soldier-76-golf-swing.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "R.I.P.",
           "id": "soldier-76-rip",
           "quality": "rare",
@@ -12520,6 +12949,14 @@
           "quality": "rare",
           "url": "./resources/heroes/soldier-76/poses/soldier-76-toast.jpg",
           "event": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Golf Swing",
+          "id": "soldier-76-golf-swing",
+          "quality": "rare",
+          "url": "./resources/heroes/soldier-76/poses/soldier-76-golf-swing.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ]
     }
@@ -12610,6 +13047,14 @@
           "quality": "legendary",
           "url": "./resources/heroes/sombra/skins/sombra-los-muertos.jpg",
           "description": "Orphaned after the Omnic Crisis, a young Sombra found a willing buyer for her hacking ability in Los Muertos."
+        },
+        {
+          "name": "Tulum",
+          "id": "sombra-tulum",
+          "quality": "legendary",
+          "url": "./resources/heroes/sombra/skins/sombra-tulum.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "emotes": [
@@ -12710,6 +13155,14 @@
           "url": "./resources/heroes/sombra/icons/sombra-aniversario.png",
           "event": "ANNIVERSARY_2017",
           "hero": "sombra"
+        },
+        {
+          "name": "High Jump",
+          "id": "sombra-high-jump",
+          "url": "./resources/heroes/sombra/icons/sombra-high-jump.png",
+          "event": "SUMMER_GAMES",
+          "hero": "sombra",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -12912,6 +13365,14 @@
           "event": "ANNIVERSARY_2017"
         },
         {
+          "name": "High Jump",
+          "id": "sombra-high-jump",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/sprays/sombra-high-jump.png",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
           "name": "Cute",
           "id": "sombra-cute",
           "quality": "common",
@@ -13041,6 +13502,22 @@
           "quality": "common",
           "url": "./resources/heroes/sombra/voicelines/sombra-were-you-done-talking.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Try and keep up",
+          "id": "sombra-try-and-keep-up",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/voicelines/sombra-try-and-keep-up.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "What's up?",
+          "id": "sombra-whats-up",
+          "quality": "common",
+          "url": "./resources/heroes/sombra/voicelines/sombra-whats-up.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -13075,6 +13552,14 @@
           "quality": "rare",
           "url": "./resources/heroes/sombra/poses/sombra-sparklers.jpg",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Medal",
+          "id": "sombra-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/sombra/poses/sombra-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ]
     }
@@ -13221,18 +13706,19 @@
           "url": "./resources/heroes/symmetra/emotes/symmetra-snicker.webm"
         },
         {
-          "name": "Ribbon",
-          "id": "symmetra-ribbon",
-          "quality": "epic",
-          "url": "./resources/heroes/symmetra/emotes/symmetra-ribbon.webm",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Dance",
           "id": "symmetra-dance",
           "quality": "epic",
           "url": "./resources/updates/ANNIVERSARY_2017/emotes/symmetra-dance.webm",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Ribbon",
+          "id": "symmetra-ribbon",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/emotes/symmetra-ribbon.webm",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "intros": [
@@ -13289,18 +13775,19 @@
           "hero": "symmetra"
         },
         {
-          "name": "Rhythmic Gymnastics",
-          "id": "symmetra-rhythmic-gymnastics",
-          "url": "./resources/heroes/symmetra/icons/symmetra-rhythmic-gymnastics.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "symmetra"
-        },
-        {
           "name": "Vaswanniversary",
           "id": "symmetra-vaswanniversary",
           "url": "./resources/heroes/symmetra/icons/symmetra-vaswanniversary.png",
           "event": "ANNIVERSARY_2017",
           "hero": "symmetra"
+        },
+        {
+          "name": "Rhythmic Gymnastics",
+          "id": "symmetra-rhythmic-gymnastics",
+          "url": "./resources/heroes/symmetra/icons/symmetra-rhythmic-gymnastics.png",
+          "event": "SUMMER_GAMES",
+          "hero": "symmetra",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -13443,13 +13930,6 @@
           "url": "./resources/heroes/symmetra/sprays/symmetra-will.png"
         },
         {
-          "name": "Rhythmic",
-          "id": "symmetra-rhythmic",
-          "quality": "common",
-          "url": "./resources/heroes/symmetra/sprays/symmetra-rhythmic.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "symmetra-trick-or-treat",
           "quality": "common",
@@ -13497,6 +13977,14 @@
           "quality": "common",
           "url": "./resources/heroes/symmetra/sprays/symmetra-nine-of-diamonds.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Rhythmic",
+          "id": "symmetra-rhythmic",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/sprays/symmetra-rhythmic.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -13582,13 +14070,6 @@
           "url": "./resources/heroes/symmetra/voicelines/symmetra-why-do-you-struggle.ogg"
         },
         {
-          "name": "Hard work and dedication",
-          "id": "symmetra-hard-work-and-dedication",
-          "quality": "common",
-          "url": "./resources/heroes/symmetra/voicelines/symmetra-hard-work-and-dedication.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "A frightening thought",
           "id": "symmetra-a-frightening-thought",
           "quality": "common",
@@ -13636,6 +14117,22 @@
           "quality": "common",
           "url": "./resources/heroes/symmetra/voicelines/symmetra-your-mind-works.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Hard work and dedication",
+          "id": "symmetra-hard-work-and-dedication",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/voicelines/symmetra-hard-work-and-dedication.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Victory is everything",
+          "id": "symmetra-victory-is-everything",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/voicelines/symmetra-victory-is-everything.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -13677,6 +14174,14 @@
           "quality": "rare",
           "url": "./resources/heroes/symmetra/poses/symmetra-light-reading.jpg",
           "event": "UPRISING_2017"
+        },
+        {
+          "name": "Medal",
+          "id": "symmetra-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/symmetra/poses/symmetra-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ]
     }
@@ -13740,7 +14245,8 @@
           "id": "torbjorn-tre-kronor",
           "quality": "epic",
           "url": "./resources/heroes/torbjorn/skins/torbjorn-tre-kronor.jpg",
-          "event": "SUMMER_GAMES_2016"
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Barbarossa",
@@ -13889,13 +14395,6 @@
           "hero": "torbjorn"
         },
         {
-          "name": "Water Polo",
-          "id": "torbjorn-water-polo",
-          "url": "./resources/heroes/torbjorn/icons/torbjorn-water-polo.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "torbjorn"
-        },
-        {
           "name": "Santaclad",
           "id": "torbjorn-santaclad",
           "url": "./resources/heroes/torbjorn/icons/torbjorn-santaclad.png",
@@ -13915,6 +14414,14 @@
           "url": "./resources/heroes/torbjorn/icons/torbjorn-goldclad.png",
           "event": "ANNIVERSARY_2017",
           "hero": "torbjorn"
+        },
+        {
+          "name": "Water Polo",
+          "id": "torbjorn-water-polo",
+          "url": "./resources/heroes/torbjorn/icons/torbjorn-water-polo.png",
+          "event": "SUMMER_GAMES",
+          "hero": "torbjorn",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -14057,13 +14564,6 @@
           "url": "./resources/heroes/torbjorn/sprays/torbjorn-uppgradera.png"
         },
         {
-          "name": "Water Polo",
-          "id": "torbjorn-water-polo",
-          "quality": "common",
-          "url": "./resources/heroes/torbjorn/sprays/torbjorn-water-polo.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "torbjorn-trick-or-treat",
           "quality": "common",
@@ -14111,6 +14611,14 @@
           "quality": "common",
           "url": "./resources/heroes/torbjorn/sprays/torbjorn-king-of-clubs.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Water Polo",
+          "id": "torbjorn-water-polo",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/sprays/torbjorn-water-polo.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -14196,13 +14704,6 @@
           "url": "./resources/heroes/torbjorn/voicelines/torbjorn-working-as-intended.ogg"
         },
         {
-          "name": "More where that came from",
-          "id": "torbjorn-more-where-that-came-from",
-          "quality": "common",
-          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-more-where-that-came-from.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "If you build it",
           "id": "torbjorn-if-you-build-it",
           "quality": "common",
@@ -14250,6 +14751,22 @@
           "quality": "common",
           "url": "./resources/heroes/torbjorn/voicelines/torbjorn-trust-me.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "More where that came from",
+          "id": "torbjorn-more-where-that-came-from",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-more-where-that-came-from.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "There's no prize for second",
+          "id": "torbjorn-theres-no-prize-for-second",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-theres-no-prize-for-second.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -14279,13 +14796,6 @@
           "url": "./resources/heroes/torbjorn/poses/torbjorn-take-five.jpg"
         },
         {
-          "name": "Medal",
-          "id": "torbjorn-medal",
-          "quality": "rare",
-          "url": "./resources/heroes/torbjorn/poses/torbjorn-medal.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "R.I.P.",
           "id": "torbjorn-rip",
           "quality": "rare",
@@ -14298,6 +14808,14 @@
           "quality": "rare",
           "url": "./resources/heroes/torbjorn/poses/torbjorn-toast.jpg",
           "event": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Medal",
+          "id": "torbjorn-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/torbjorn/poses/torbjorn-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ]
     }
@@ -14388,20 +14906,6 @@
           "url": "./resources/heroes/tracer/skins/tracer-ultraviolet.jpg"
         },
         {
-          "name": "Sprinter",
-          "id": "tracer-sprinter",
-          "quality": "legendary",
-          "url": "./resources/heroes/tracer/skins/tracer-sprinter.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
-          "name": "Track and Field",
-          "id": "tracer-track-and-field",
-          "quality": "legendary",
-          "url": "./resources/heroes/tracer/skins/tracer-track-and-field.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Jingle",
           "id": "tracer-jingle",
           "quality": "legendary",
@@ -14422,6 +14926,22 @@
           "quality": "legendary",
           "url": "./resources/heroes/tracer/skins/tracer-graffiti.jpg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Sprinter",
+          "id": "tracer-sprinter",
+          "quality": "legendary",
+          "url": "./resources/heroes/tracer/skins/tracer-sprinter.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Track and Field",
+          "id": "tracer-track-and-field",
+          "quality": "legendary",
+          "url": "./resources/heroes/tracer/skins/tracer-track-and-field.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Slipstream",
@@ -14505,18 +15025,19 @@
           "url": "./resources/heroes/tracer/intros/tracer-serious-business.webm"
         },
         {
-          "name": "Hurdle",
-          "id": "tracer-hurdle",
-          "quality": "epic",
-          "url": "./resources/heroes/tracer/intros/tracer-hurdle.webm",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Lion Dance",
           "id": "tracer-lion-dance",
           "quality": "epic",
           "url": "./resources/heroes/tracer/intros/tracer-lion-dance.webm",
           "event": "YEAR_OF_THE_ROOSTER_2017"
+        },
+        {
+          "name": "Hurdle",
+          "id": "tracer-hurdle",
+          "quality": "epic",
+          "url": "./resources/updates/SUMMER_GAMES/intros/tracer-hurdle.webm",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "icons": [
@@ -14539,13 +15060,6 @@
           "hero": "tracer"
         },
         {
-          "name": "Track",
-          "id": "tracer-track",
-          "url": "./resources/heroes/tracer/icons/tracer-track.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "tracer"
-        },
-        {
           "name": "Jingle",
           "id": "tracer-jingle",
           "url": "./resources/heroes/tracer/icons/tracer-jingle.png",
@@ -14565,6 +15079,14 @@
           "url": "./resources/heroes/tracer/icons/tracer-auxton.png",
           "event": "ANNIVERSARY_2017",
           "hero": "tracer"
+        },
+        {
+          "name": "Track",
+          "id": "tracer-track",
+          "url": "./resources/heroes/tracer/icons/tracer-track.png",
+          "event": "SUMMER_GAMES",
+          "hero": "tracer",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -14707,13 +15229,6 @@
           "url": "./resources/heroes/tracer/sprays/tracer-wings.png"
         },
         {
-          "name": "Track",
-          "id": "tracer-track",
-          "quality": "common",
-          "url": "./resources/heroes/tracer/sprays/tracer-track.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "tracer-trick-or-treat",
           "quality": "common",
@@ -14761,6 +15276,14 @@
           "quality": "common",
           "url": "./resources/heroes/tracer/sprays/tracer-ace-of-diamonds.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Track",
+          "id": "tracer-track",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/sprays/tracer-track.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -14846,13 +15369,6 @@
           "url": "./resources/heroes/tracer/voicelines/tracer-you-need-a-time-out.ogg"
         },
         {
-          "name": "Eat my dust",
-          "id": "tracer-eat-my-dust",
-          "quality": "common",
-          "url": "./resources/heroes/tracer/voicelines/tracer-eat-my-dust.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Ooh, Scary!",
           "id": "tracer-ooh-scary",
           "quality": "common",
@@ -14900,6 +15416,22 @@
           "quality": "common",
           "url": "./resources/heroes/tracer/voicelines/tracer-too-slow.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Eat my dust",
+          "id": "tracer-eat-my-dust",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/voicelines/tracer-eat-my-dust.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Time out!",
+          "id": "tracer-time-out",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/voicelines/tracer-time-out.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ],
       "poses": [
@@ -14934,6 +15466,14 @@
           "quality": "rare",
           "url": "./resources/heroes/tracer/poses/tracer-rip.jpg",
           "event": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Medal",
+          "id": "tracer-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/tracer/poses/tracer-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         }
       ]
     }
@@ -14997,7 +15537,8 @@
           "id": "widowmaker-tricolore",
           "quality": "epic",
           "url": "./resources/heroes/widowmaker/skins/widowmaker-tricolore.jpg",
-          "event": "SUMMER_GAMES_2016"
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Comtesse",
@@ -15031,6 +15572,14 @@
           "quality": "legendary",
           "url": "./resources/heroes/widowmaker/skins/widowmaker-talon.jpg",
           "event": "UPRISING_2017"
+        },
+        {
+          "name": "Côte d'Azur",
+          "id": "widowmaker-cote-dazur",
+          "quality": "legendary",
+          "url": "./resources/heroes/widowmaker/skins/widowmaker-cote-dazur.jpg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
         },
         {
           "name": "Noire",
@@ -15140,13 +15689,6 @@
           "hero": "widowmaker"
         },
         {
-          "name": "Gymnastics",
-          "id": "widowmaker-gymnastics",
-          "url": "./resources/heroes/widowmaker/icons/widowmaker-gymnastics.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "widowmaker"
-        },
-        {
           "name": "Lacroix",
           "id": "widowmaker-lacroix",
           "url": "./resources/heroes/widowmaker/icons/widowmaker-lacroix.png",
@@ -15159,6 +15701,14 @@
           "url": "./resources/heroes/widowmaker/icons/widowmaker-dor.png",
           "event": "ANNIVERSARY_2017",
           "hero": "widowmaker"
+        },
+        {
+          "name": "Gymnastics",
+          "id": "widowmaker-gymnastics",
+          "url": "./resources/heroes/widowmaker/icons/widowmaker-gymnastics.png",
+          "event": "SUMMER_GAMES",
+          "hero": "widowmaker",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -15301,13 +15851,6 @@
           "url": "./resources/heroes/widowmaker/sprays/widowmaker-widows-kiss.png"
         },
         {
-          "name": "Gymnastics",
-          "id": "widowmaker-gymnastics",
-          "quality": "common",
-          "url": "./resources/heroes/widowmaker/sprays/widowmaker-gymnastics.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "widowmaker-trick-or-treat",
           "quality": "common",
@@ -15355,6 +15898,14 @@
           "quality": "common",
           "url": "./resources/heroes/widowmaker/sprays/widowmaker-queen-of-hearts.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Gymnastics",
+          "id": "widowmaker-gymnastics",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/sprays/widowmaker-gymnastics.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -15440,13 +15991,6 @@
           "url": "./resources/heroes/widowmaker/voicelines/widowmaker-whats-an-aimbot.ogg"
         },
         {
-          "name": "I don't miss",
-          "id": "widowmaker-i-dont-miss",
-          "quality": "common",
-          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-i-dont-miss.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "The party is over",
           "id": "widowmaker-the-party-is-over",
           "quality": "common",
@@ -15494,6 +16038,22 @@
           "quality": "common",
           "url": "./resources/heroes/widowmaker/voicelines/widowmaker-what-a-bore.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "A perfect 10",
+          "id": "widowmaker-a-perfect-10",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-a-perfect-10.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "I don't miss",
+          "id": "widowmaker-i-dont-miss",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-i-dont-miss.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -15523,18 +16083,19 @@
           "url": "./resources/heroes/widowmaker/poses/widowmaker-over-the-shoulder.jpg"
         },
         {
-          "name": "Medal",
-          "id": "widowmaker-medal",
-          "quality": "rare",
-          "url": "./resources/heroes/widowmaker/poses/widowmaker-medal.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "R.I.P.",
           "id": "widowmaker-rip",
           "quality": "rare",
           "url": "./resources/heroes/widowmaker/poses/widowmaker-rip.jpg",
           "event": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Medal",
+          "id": "widowmaker-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/widowmaker/poses/widowmaker-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ]
     }
@@ -15733,13 +16294,6 @@
           "hero": "winston"
         },
         {
-          "name": "Volleyball",
-          "id": "winston-volleyball",
-          "url": "./resources/heroes/winston/icons/winston-volleyball.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "winston"
-        },
-        {
           "name": "Yeti",
           "id": "winston-yeti",
           "url": "./resources/heroes/winston/icons/winston-yeti.png",
@@ -15759,6 +16313,14 @@
           "url": "./resources/heroes/winston/icons/winston-goldrilla.png",
           "event": "ANNIVERSARY_2017",
           "hero": "winston"
+        },
+        {
+          "name": "Volleyball",
+          "id": "winston-volleyball",
+          "url": "./resources/heroes/winston/icons/winston-volleyball.png",
+          "event": "SUMMER_GAMES",
+          "hero": "winston",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -15901,13 +16463,6 @@
           "url": "./resources/heroes/winston/sprays/winston-wow.png"
         },
         {
-          "name": "Volleyball",
-          "id": "winston-volleyball",
-          "quality": "common",
-          "url": "./resources/heroes/winston/sprays/winston-volleyball.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "winston-trick-or-treat",
           "quality": "common",
@@ -15955,6 +16510,14 @@
           "quality": "common",
           "url": "./resources/heroes/winston/sprays/winston-jack-of-hearts.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Volleyball",
+          "id": "winston-volleyball",
+          "quality": "common",
+          "url": "./resources/heroes/winston/sprays/winston-volleyball.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -16040,13 +16603,6 @@
           "url": "./resources/heroes/winston/voicelines/winston-we-have-a-problem.ogg"
         },
         {
-          "name": "Playtime's over",
-          "id": "winston-playtimes-over",
-          "quality": "common",
-          "url": "./resources/heroes/winston/voicelines/winston-playtimes-over.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "This is not a costume",
           "id": "winston-this-is-not-a-costume",
           "quality": "common",
@@ -16094,6 +16650,22 @@
           "quality": "common",
           "url": "./resources/heroes/winston/voicelines/winston-oh-yeah.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Oh, it's on!",
+          "id": "winston-oh-its-on",
+          "quality": "common",
+          "url": "./resources/heroes/winston/voicelines/winston-oh-its-on.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "Playtime's over",
+          "id": "winston-playtimes-over",
+          "quality": "common",
+          "url": "./resources/heroes/winston/voicelines/winston-playtimes-over.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -16123,13 +16695,6 @@
           "url": "./resources/heroes/winston/poses/winston-the-thinker.jpg"
         },
         {
-          "name": "Medal",
-          "id": "winston-medal",
-          "quality": "rare",
-          "url": "./resources/heroes/winston/poses/winston-medal.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "R.I.P.",
           "id": "winston-rip",
           "quality": "rare",
@@ -16142,6 +16707,14 @@
           "quality": "rare",
           "url": "./resources/heroes/winston/poses/winston-peanut-butter.jpg",
           "event": "UPRISING_2017"
+        },
+        {
+          "name": "Medal",
+          "id": "winston-medal",
+          "quality": "rare",
+          "url": "./resources/heroes/winston/poses/winston-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ]
     }
@@ -16234,12 +16807,20 @@
           "description": "After her retirement from competition, Zarya enlisted in the Russian defense forces and was deployed to the Krasnoyarsk front in Siberia."
         },
         {
+          "name": "Cyberian",
+          "id": "zarya-cyberian",
+          "quality": "legendary",
+          "url": "./resources/heroes/zarya/skins/zarya-cyberian.jpg",
+          "event": "ANNIVERSARY_2017"
+        },
+        {
           "name": "Champion",
           "id": "zarya-champion",
           "quality": "legendary",
           "url": "./resources/heroes/zarya/skins/zarya-champion.jpg",
           "description": "A champion weightlifter in her home country, Zarya retired on the eve of the world championships to enlist in the Russian defense forces.",
-          "event": "SUMMER_GAMES_2016"
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Weightlifter",
@@ -16247,14 +16828,8 @@
           "quality": "legendary",
           "url": "./resources/heroes/zarya/skins/zarya-weightlifter.jpg",
           "description": "A champion weightlifter in her home country, Zarya retired on the eve of the world championships to enlist in the Russian defense forces.",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
-          "name": "Cyberian",
-          "id": "zarya-cyberian",
-          "quality": "legendary",
-          "url": "./resources/heroes/zarya/skins/zarya-cyberian.jpg",
-          "event": "ANNIVERSARY_2017"
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "emotes": [
@@ -16357,18 +16932,19 @@
           "hero": "zarya"
         },
         {
-          "name": "Weightlifting",
-          "id": "zarya-weightlifting",
-          "url": "./resources/heroes/zarya/icons/zarya-weightlifting.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "zarya"
-        },
-        {
           "name": "Zaryanoversary",
           "id": "zarya-zaryanoversary",
           "url": "./resources/heroes/zarya/icons/zarya-zaryanoversary.png",
           "event": "ANNIVERSARY_2017",
           "hero": "zarya"
+        },
+        {
+          "name": "Weightlifting",
+          "id": "zarya-weightlifting",
+          "url": "./resources/heroes/zarya/icons/zarya-weightlifting.png",
+          "event": "SUMMER_GAMES",
+          "hero": "zarya",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -16511,13 +17087,6 @@
           "url": "./resources/heroes/zarya/sprays/zarya-wrestle.png"
         },
         {
-          "name": "Weightlifting",
-          "id": "zarya-weightlifting",
-          "quality": "common",
-          "url": "./resources/heroes/zarya/sprays/zarya-weightlifting.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "zarya-trick-or-treat",
           "quality": "common",
@@ -16565,6 +17134,14 @@
           "quality": "common",
           "url": "./resources/heroes/zarya/sprays/zarya-ten-of-spades.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Weightlifting",
+          "id": "zarya-weightlifting",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/sprays/zarya-weightlifting.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -16650,13 +17227,6 @@
           "url": "./resources/heroes/zarya/voicelines/zarya-welcome-to-the-gun-show.ogg"
         },
         {
-          "name": "No pain, no gain",
-          "id": "zarya-no-pain-no-gain",
-          "quality": "common",
-          "url": "./resources/heroes/zarya/voicelines/zarya-no-pain-no-gain.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Never forget the fallen",
           "id": "zarya-never-forget-the-fallen",
           "quality": "common",
@@ -16704,6 +17274,22 @@
           "quality": "common",
           "url": "./resources/heroes/zarya/voicelines/zarya-peace-through-firepower.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "It's only a game",
+          "id": "zarya-its-only-a-game",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/voicelines/zarya-its-only-a-game.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "No pain, no gain",
+          "id": "zarya-no-pain-no-gain",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/voicelines/zarya-no-pain-no-gain.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -16949,13 +17535,6 @@
           "hero": "zenyatta"
         },
         {
-          "name": "Taekwondo",
-          "id": "zenyatta-taekwondo",
-          "url": "./resources/heroes/zenyatta/icons/zenyatta-taekwondo.png",
-          "event": "SUMMER_GAMES_2016",
-          "hero": "zenyatta"
-        },
-        {
           "name": "Nutcracker",
           "id": "zenyatta-nutcracker",
           "url": "./resources/heroes/zenyatta/icons/zenyatta-nutcracker.png",
@@ -16975,6 +17554,14 @@
           "url": "./resources/heroes/zenyatta/icons/zenyatta-zeniversary.png",
           "event": "ANNIVERSARY_2017",
           "hero": "zenyatta"
+        },
+        {
+          "name": "Taekwondo",
+          "id": "zenyatta-taekwondo",
+          "url": "./resources/heroes/zenyatta/icons/zenyatta-taekwondo.png",
+          "event": "SUMMER_GAMES",
+          "hero": "zenyatta",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -17117,13 +17704,6 @@
           "url": "./resources/heroes/zenyatta/sprays/zenyatta-together.png"
         },
         {
-          "name": "Taekwondo",
-          "id": "zenyatta-taekwondo",
-          "quality": "common",
-          "url": "./resources/heroes/zenyatta/sprays/zenyatta-taekwondo.png",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or Treat",
           "id": "zenyatta-trick-or-treat",
           "quality": "common",
@@ -17171,6 +17751,14 @@
           "quality": "common",
           "url": "./resources/heroes/zenyatta/sprays/zenyatta-king-of-spades.png",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Taekwondo",
+          "id": "zenyatta-taekwondo",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/sprays/zenyatta-taekwondo.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Cute",
@@ -17256,13 +17844,6 @@
           "url": "./resources/heroes/zenyatta/voicelines/zenyatta-the-iris-embraces-you.ogg"
         },
         {
-          "name": "Strive for improvement",
-          "id": "zenyatta-strive-for-improvement",
-          "quality": "common",
-          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-strive-for-improvement.ogg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Trick or treat?",
           "id": "zenyatta-trick-or-treat",
           "quality": "common",
@@ -17310,6 +17891,22 @@
           "quality": "common",
           "url": "./resources/heroes/zenyatta/voicelines/zenyatta-how-disappointing.ogg",
           "event": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Form is temporary",
+          "id": "zenyatta-form-is-temporary",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-form-is-temporary.ogg",
+          "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "Strive for improvement",
+          "id": "zenyatta-strive-for-improvement",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-strive-for-improvement.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "poses": [
@@ -17339,18 +17936,19 @@
           "url": "./resources/heroes/zenyatta/poses/zenyatta-peace.jpg"
         },
         {
-          "name": "Medals",
-          "id": "zenyatta-medals",
-          "quality": "rare",
-          "url": "./resources/heroes/zenyatta/poses/zenyatta-medals.jpg",
-          "event": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "R.I.P.",
           "id": "zenyatta-rip",
           "quality": "rare",
           "url": "./resources/heroes/zenyatta/poses/zenyatta-rip.jpg",
           "event": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Medals",
+          "id": "zenyatta-medals",
+          "quality": "rare",
+          "url": "./resources/heroes/zenyatta/poses/zenyatta-medals.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         }
       ]
     }

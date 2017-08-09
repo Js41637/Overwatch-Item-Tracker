@@ -19,15 +19,15 @@ OWI.filter('eventImageUrl', function() {
 });
 
 OWI.filter('itemPrice', function() {
-  return function(item, type) {
-    var event = item.event;
+  return function(item, type, event) {
+    var isEvent = item.event || (event && item.group !== 'SUMMER_GAMES_2016');
     var quality = item.quality;
-    if (item.standardItem || item.achievement || type == 'icons' || (event && event == 'SUMMER_GAMES_2016')) return '';
+    if (item.standardItem || item.achievement || type == 'icons') return '';
 
     var prices = { common: 25, rare: 75, epic: 250, legendary: 1000 };
 
     if (quality && prices[quality]) {
-      return '(' + prices[quality] * (event ? 3 : 1) + ')';
+      return '(' + prices[quality] * (isEvent ? 3 : 1) + ')';
     }
     return '';
   };
@@ -80,13 +80,7 @@ OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService)
     link: function($scope) {
       var item = $scope.item;
       var type = $scope.type;
-      var url;
-
-      if (location.host.match(/^localhost:5000$/)) {
-        url = item.url.replace('https://d34nsd3ksgj839.cloudfront.net', 'http://localhost:5000/resources');
-      } else {
-        url = item.url;
-      }
+      var url = item.url;
 
       var out = { description: item.description };
       if (type == 'intros' || type == 'emotes') {
