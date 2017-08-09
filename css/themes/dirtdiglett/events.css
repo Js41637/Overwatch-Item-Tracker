@@ -16,6 +16,10 @@
   overflow: hidden;
 }
 
+#event-container .section .items small {
+  font-size: 100%;
+}
+
 
 /* The header */
 body#SUMMER_GAMES:before,
@@ -125,7 +129,7 @@ body#ANNIVERSARY_2017:before {
 
 #SUMMER_GAMES #header .event-ended:before,
 #SUMMER_GAMES #header .event-active:before {
-  background-image: url(../../../resources/updates/SUMMER_GAMES_2016/logo.png);
+  background-image: url(../../../resources/updates/SUMMER_GAMES/logo.png);
   width: 65px;
 }
 
@@ -293,45 +297,58 @@ body#ANNIVERSARY_2017:before {
 
 
 /* SUMMER GAMES 2016 */
-#SUMMER_GAMES #voicelines,
-#SUMMER_GAMES #emotes,
-#SUMMER_GAMES #highlight-intros,
-#SUMMER_GAMES #victoryposes,
-#SUMMER_GAMES #epic-skins {
-  flex: 1;
-}
-
-#SUMMER_GAMES #icons {
-  flex: 2;
-}
-
+#SUMMER_GAMES #skins .items,
 #SUMMER_GAMES #icons .items,
-#SUMMER_GAMES #voicelines .items {
+#SUMMER_GAMES #emotes .items,
+#SUMMER_GAMES #voicelines .items,
+#SUMMER_GAMES #intros .items,
+#SUMMER_GAMES #sprays .items,
+#SUMMER_GAMES #victoryposes .items  {
   flex-direction: initial;
 }
 
-#SUMMER_GAMES #row2 .left {
-  flex: 1;
-  display: flex;
+#SUMMER_GAMES #voicelines .item,
+#SUMMER_GAMES #skins .item,
+#SUMMER_GAMES #icons .item,
+#SUMMER_GAMES #emotes .item,
+#SUMMER_GAMES #sprays .item,
+#SUMMER_GAMES #intros .item,
+#SUMMER_GAMES #victoryposes .item {
+  width: 49%;
+  display: inline-flex;
+  margin-right: 0;
 }
 
-#SUMMER_GAMES #row2 .right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+#SUMMER_GAMES #skins .item:nth-of-type(odd),
+#SUMMER_GAMES #icons .item:nth-of-type(odd),
+#SUMMER_GAMES #emotes .item:nth-of-type(odd),
+#SUMMER_GAMES #intros .item:nth-of-type(odd),
+#SUMMER_GAMES #sprays .item:nth-of-type(odd),
+#SUMMER_GAMES #victoryposes .item:nth-of-type(odd) {
+  margin-right: 2%;
 }
 
-#SUMMER_GAMES #sprays {
-  flex: 2;
+#SUMMER_GAMES #voicelines .item {
+  width: 32%;
+  margin-right: 2%;
 }
 
-#SUMMER_GAMES #emotes {
-  margin-top: 0;
+#SUMMER_GAMES #voicelines .item:nth-of-type(3n+0) {
+  margin-right: 0;
 }
 
-#SUMMER_GAMES #sprays .items {
-  flex-direction: initial;
+#SUMMER_GAMES #icons .item {
+  width: 23.5%;
+  margin-right: 2%;
 }
+
+#SUMMER_GAMES #icons .item:nth-of-type(4n+0) {
+  margin-right: 0;
+}
+
+
+
+
 
 /* HALLOWEEN 2016 */
 #HALLOWEEN_2016 #voicelines,
@@ -558,6 +575,7 @@ body#ANNIVERSARY_2017:before {
   display: flex;
 }
 
+/* ANNIVERSARY 2017 */
 #ANNIVERSARY_2017 #event-container #row2 {
   margin-top: 0;
 }
