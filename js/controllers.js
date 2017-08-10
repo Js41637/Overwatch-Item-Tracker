@@ -247,7 +247,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
       items[type].forEach(function(item) {
         if (vm.filters.selected || vm.filters.unselected) {
           var checked = vm.isItemChecked(item, type);
-          if ((vm.filters.selected && !checked) || (vm.filters.unselected && checked))  return;
+          if ((vm.filters.selected && !checked && !item.standardItem) || (vm.filters.unselected && (checked || item.standardItem)))  return;
         }
 
         if (vm.filters.achievement && !item.achievement) return;
