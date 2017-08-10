@@ -328,12 +328,20 @@ forEach(allClassEventItems, (types, type) => {
         missingKeys.push({ type, itemID });
         return;
       }
-      var out = {
+
+      let name = allClassDataKeys[type][itemID];
+
+      if (event !== 'SUMMER_GAMES') {
+        name = name.replace(/ \d{4}$/, '');
+      }
+
+      const out = {
         hero: 'all',
-        name: allClassDataKeys[type][itemID].replace(/ \d{4}$/, ''),
+        name: name,
         id: itemID,
         url: getPreviewURL(type, itemID, 'all', event)
       };
+
       const isAchivement = achievementSprays.includes(itemID);
       if (isAchivement) {
         Object.assign(out, { achievement: true });
