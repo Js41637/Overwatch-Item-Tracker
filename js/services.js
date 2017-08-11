@@ -207,7 +207,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       event = item.event || event;
       var eventType;
       if (event === 'SUMMER_GAMES') {
-        eventType = (type == 'skins' && item.quality == 'legendary' && !item.group !== 'SUMMER_GAMES_2016') ? 'skinsLegendary' : type;
+        eventType = (type == 'skins' && item.quality == 'legendary' && item.group !== 'SUMMER_GAMES_2016') ? 'skinsLegendary' : type;
       } else {
         eventType = type == 'skins' ? (item.quality == 'epic' ? 'skinsEpic' : 'skinsLegendary') : type;
       }
