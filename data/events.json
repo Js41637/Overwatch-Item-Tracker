@@ -351,28 +351,32 @@
           "name": "Halloween Special",
           "id": "halloween-special",
           "url": "./resources/heroes/all/sprays/halloween-special.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Junkenstein's Revenge on hard difficulty."
         },
         {
           "hero": "all",
           "name": "Junkenstein's Revenge",
           "id": "junkensteins-revenge",
           "url": "./resources/heroes/all/sprays/junkensteins-revenge.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Junkenstein's Revenge on medium difficulty."
         },
         {
           "hero": "all",
           "name": "Rise of the Zomnics",
           "id": "rise-of-the-zomnics",
           "url": "./resources/heroes/all/sprays/rise-of-the-zomnics.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Junkenstein's Revenge using each of the 4 heroes."
         },
         {
           "hero": "all",
           "name": "The Reapening",
           "id": "the-reapening",
           "url": "./resources/heroes/all/sprays/the-reapening.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Junkenstein's Revenge on medium difficulty with no damage to the door."
         }
       ],
       "voicelines": [
@@ -568,7 +572,8 @@
           "name": "R.I.P.",
           "id": "bastion-rip",
           "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/bastion-rip.jpg"
+          "url": "./resources/updates/HALLOWEEN_2016/poses/bastion-rip.jpg",
+          "description": "Responsible for so many deaths during the Omnic Crisis, even today Bastion units are a symbol of fear."
         },
         {
           "heroName": "D.Va",
@@ -764,7 +769,8 @@
           "name": "Dr. Junkenstein",
           "id": "junkrat-dr-junkenstein",
           "quality": "legendary",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/junkrat-dr-junkenstein.jpg"
+          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/junkrat-dr-junkenstein.jpg",
+          "description": "As the tale goes, Dr. Junkenstein made a deal with the Witch of the Wilds in exchange for the secret to creating life. But his triumph was short lived as he was slain by four wanderers in Adlersbrunn."
         },
         {
           "heroName": "Mercy",
@@ -772,7 +778,8 @@
           "name": "Witch",
           "id": "mercy-witch",
           "quality": "legendary",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/mercy-witch.jpg"
+          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/mercy-witch.jpg",
+          "description": "The Witch of the Wilds is a mysterious figure who appears in the tale of Dr. Junkenstein and others, offering people the object of their desire, for a price."
         },
         {
           "heroName": "Reaper",
@@ -780,7 +787,8 @@
           "name": "Pumpkin",
           "id": "reaper-pumpkin",
           "quality": "legendary",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/reaper-pumpkin.jpg"
+          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/reaper-pumpkin.jpg",
+          "description": "In the tale of Dr. Junkenstein, the Reaper was a servant to the Witch of the Wilds, bound to serve her for some unknown reason."
         },
         {
           "heroName": "Roadhog",
@@ -788,7 +796,8 @@
           "name": "Junkenstein's Monster",
           "id": "roadhog-junkensteins-monster",
           "quality": "legendary",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/roadhog-junkensteins-monster.jpg"
+          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/roadhog-junkensteins-monster.jpg",
+          "description": "Armed with the secret of creating artificial life, Dr. Jamison Junkenstein birthed a monster."
         }
       ],
       "icons": [
@@ -1388,28 +1397,32 @@
           "name": "Snowcree",
           "id": "snowcree",
           "url": "./resources/heroes/all/sprays/snowcree.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Kill an enemy with a snowball from 25 meters away in Mei's Snowball Offensive."
         },
         {
           "hero": "all",
           "name": "Snowhog",
           "id": "snowhog",
           "url": "./resources/heroes/all/sprays/snowhog.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Kill 3 enemies while they are picking up snow in a game of Mei's Snowball Offensive."
         },
         {
           "hero": "all",
           "name": "Snowmei",
           "id": "snowmei",
           "url": "./resources/heroes/all/sprays/snowmei.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Mei's Snowball Offensive without losing a round."
         },
         {
           "hero": "all",
           "name": "Snowreaper",
           "id": "snowreaper",
           "url": "./resources/heroes/all/sprays/snowreaper.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Kill 4 enemies without missing in Mei's Snowball Offensive."
         }
       ],
       "voicelines": [
@@ -1663,7 +1676,8 @@
           "name": "Andes",
           "id": "lucio-andes",
           "quality": "epic",
-          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/lucio-andes.jpg"
+          "url": "./resources/updates/WINTER_WONDERLAND_2016/skinsEpic/lucio-andes.jpg",
+          "description": "When the weather gets cold, Lúcio heads to the Andes to hit the slopes."
         },
         {
           "heroName": "McCree",
@@ -2517,14 +2531,16 @@
           "name": "Auspicious Lion",
           "id": "auspicious-lion",
           "url": "./resources/heroes/all/sprays/auspicious-lion.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Recover a flag in a game of Capture the Rooster."
         },
         {
           "hero": "all",
           "name": "Awakened Lion",
           "id": "awakened-lion",
           "url": "./resources/heroes/all/sprays/awakened-lion.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Capture the Rooster with a score of 3 to 0."
         }
       ],
       "voicelines": [
@@ -3242,42 +3258,48 @@
           "name": "B73-NS",
           "id": "b73ns",
           "url": "./resources/heroes/all/sprays/b73ns.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Complete Uprising on Expert difficulty."
         },
         {
           "hero": "all",
           "name": "Eradicator",
           "id": "eradicator",
           "url": "./resources/heroes/all/sprays/eradicator.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Complete Uprising on Hard difficulty."
         },
         {
           "hero": "all",
           "name": "Nullmari",
           "id": "nullmari",
           "url": "./resources/heroes/all/sprays/nullmari.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Complete Uprising (All Heroes) with 8 different heroes."
         },
         {
           "hero": "all",
           "name": "Nulltrooper",
           "id": "nulltrooper",
           "url": "./resources/heroes/all/sprays/nulltrooper.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Complete Uprising with each of the 4 heroes."
         },
         {
           "hero": "all",
           "name": "OR14-NS",
           "id": "or14ns",
           "url": "./resources/heroes/all/sprays/or14ns.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Complete Uprising on Legendary difficulty."
         },
         {
           "hero": "all",
           "name": "Slicer",
           "id": "slicer",
           "url": "./resources/heroes/all/sprays/slicer.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Deliver the payload with over 80% health in Uprising on Hard difficulty."
         }
       ],
       "voicelines": [
@@ -3673,7 +3695,8 @@
           "name": "Null Sector",
           "id": "bastion-null-sector",
           "quality": "epic",
-          "url": "./resources/updates/UPRISING_2017/skinsEpic/bastion-null-sector.jpg"
+          "url": "./resources/updates/UPRISING_2017/skinsEpic/bastion-null-sector.jpg",
+          "description": "Bastion units were reengineered and upgraded by Null Sector and deployed during the King's Row Uprising."
         },
         {
           "heroName": "Reinhardt",
@@ -3681,7 +3704,8 @@
           "name": "Lieutenant Wilhelm",
           "id": "reinhardt-lieutenant-wilhelm",
           "quality": "epic",
-          "url": "./resources/updates/UPRISING_2017/skinsEpic/reinhardt-lieutenant-wilhelm.jpg"
+          "url": "./resources/updates/UPRISING_2017/skinsEpic/reinhardt-lieutenant-wilhelm.jpg",
+          "description": "Lieutenant Reinhardt Wilhelm served with distinction in his time during Overwatch, notably leading the strike team that ended the King's Row uprising."
         }
       ],
       "intros": [
@@ -3717,7 +3741,8 @@
           "name": "Blackwatch",
           "id": "genji-blackwatch",
           "quality": "legendary",
-          "url": "./resources/updates/UPRISING_2017/skinsLegendary/genji-blackwatch.jpg"
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/genji-blackwatch.jpg",
+          "description": "After agreeing to aid the organization, Genji was upgraded extensively by Overwatch's cyberneticists."
         },
         {
           "heroName": "McCree",
@@ -3725,7 +3750,8 @@
           "name": "Blackwatch",
           "id": "mccree-blackwatch",
           "quality": "legendary",
-          "url": "./resources/updates/UPRISING_2017/skinsLegendary/mccree-blackwatch.jpg"
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/mccree-blackwatch.jpg",
+          "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch, or rot in prison."
         },
         {
           "heroName": "Mercy",
@@ -3733,7 +3759,8 @@
           "name": "Combat Medic Ziegler",
           "id": "mercy-combat-medic-ziegler",
           "quality": "legendary",
-          "url": "./resources/updates/UPRISING_2017/skinsLegendary/mercy-combat-medic-ziegler.jpg"
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/mercy-combat-medic-ziegler.jpg",
+          "description": "When called upon, Mercy would don her Valkyrie swift-response suit to participate in Overwatch missions."
         },
         {
           "heroName": "Orisa",
@@ -3741,7 +3768,8 @@
           "name": "Null Sector",
           "id": "orisa-null-sector",
           "quality": "legendary",
-          "url": "./resources/updates/UPRISING_2017/skinsLegendary/orisa-null-sector.jpg"
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/orisa-null-sector.jpg",
+          "description": "During the King's Row Uprising, Null Sector employed redesigned and upgraded OR14 Idina bots to secure the power station."
         },
         {
           "heroName": "Torbjörn",
@@ -3749,7 +3777,8 @@
           "name": "Chief Engineer Lindholm",
           "id": "torbjorn-chief-engineer-lindholm",
           "quality": "legendary",
-          "url": "./resources/updates/UPRISING_2017/skinsLegendary/torbjorn-chief-engineer-lindholm.jpg"
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/torbjorn-chief-engineer-lindholm.jpg",
+          "description": "For many years, Torbjörn Lindholm served as Overwatch's chief engineer, designing many of the organization's iconic weapons and technologies."
         },
         {
           "heroName": "Torbjörn",
@@ -3765,7 +3794,8 @@
           "name": "Cadet Oxton",
           "id": "tracer-cadet-oxton",
           "quality": "legendary",
-          "url": "./resources/updates/UPRISING_2017/skinsLegendary/tracer-cadet-oxton.jpg"
+          "url": "./resources/updates/UPRISING_2017/skinsLegendary/tracer-cadet-oxton.jpg",
+          "description": "Tracer was put into active duty as an Overwatch agent for the first time during the King's Row uprising."
         },
         {
           "heroName": "Widowmaker",
@@ -3782,7 +3812,8 @@
           "name": "B73-NS",
           "id": "b73ns",
           "url": "./resources/heroes/all/icons/b73ns.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Complete Uprising on Expert difficulty."
         },
         {
           "heroName": "McCree",
@@ -3850,7 +3881,8 @@
           "name": "Nullmari",
           "id": "nullmari",
           "url": "./resources/heroes/all/icons/nullmari.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Complete Uprising (All Heroes) with 8 different heroes."
         },
         {
           "heroName": "Orisa",
@@ -5614,21 +5646,24 @@
           "name": "Bicycle Kick",
           "id": "bicycle-kick",
           "url": "./resources/heroes/all/sprays/bicycle-kick.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Score a goal in Lúcioball with a shot taken from at least 4 meters in the air."
         },
         {
           "hero": "all",
           "name": "Goal Blossom",
           "id": "goal-blossom",
           "url": "./resources/heroes/all/sprays/goal-blossom.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Score a goal, a save, and an assist in a game of Lúcioball."
         },
         {
           "hero": "all",
           "name": "Safe Hands",
           "id": "safe-hands",
           "url": "./resources/heroes/all/sprays/safe-hands.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Score 3 saves in a row in Lúcioball."
         }
       ],
       "voicelines": [
@@ -6237,6 +6272,7 @@
           "id": "dva-taegeukgi",
           "quality": "epic",
           "url": "./resources/heroes/dva/skins/dva-taegeukgi.jpg",
+          "description": "During her time as a professional gamer, D.Va proudly represented her country in tournaments around the world.",
           "group": "SUMMER_GAMES_2016"
         },
         {
@@ -6264,6 +6300,7 @@
           "id": "mercy-eidgenossin",
           "quality": "epic",
           "url": "./resources/heroes/mercy/skins/mercy-eidgenossin.jpg",
+          "description": "After finishing her education, including her MD and PhD in Switzerland, Angela Ziegler continued her research and served as head of surgery in a prominent hospital in her home country.",
           "group": "SUMMER_GAMES_2016"
         },
         {
@@ -6291,6 +6328,7 @@
           "id": "lucio-selecao",
           "quality": "legendary",
           "url": "./resources/heroes/lucio/skins/lucio-selecao.jpg",
+          "description": "When Lúcio was younger, in addition to his first love, hockey, he also found the time to play football with the other kids in Rio de Janeiro.",
           "group": "SUMMER_GAMES_2016"
         },
         {
@@ -6300,6 +6338,7 @@
           "id": "lucio-striker",
           "quality": "legendary",
           "url": "./resources/heroes/lucio/skins/lucio-striker.jpg",
+          "description": "When Lúcio was younger, in addition to his first love, hockey, he also found the time to play football with the other kids in Rio de Janeiro.",
           "group": "SUMMER_GAMES_2016"
         },
         {
@@ -6327,6 +6366,7 @@
           "id": "zarya-champion",
           "quality": "legendary",
           "url": "./resources/heroes/zarya/skins/zarya-champion.jpg",
+          "description": "A champion weightlifter in her home country, Zarya retired on the eve of the world championships to enlist in the Russian defense forces.",
           "group": "SUMMER_GAMES_2016"
         },
         {
@@ -6336,6 +6376,7 @@
           "id": "zarya-weightlifter",
           "quality": "legendary",
           "url": "./resources/heroes/zarya/skins/zarya-weightlifter.jpg",
+          "description": "A champion weightlifter in her home country, Zarya retired on the eve of the world championships to enlist in the Russian defense forces.",
           "group": "SUMMER_GAMES_2016"
         }
       ],
@@ -6394,6 +6435,7 @@
           "id": "junkrat-cricket",
           "quality": "legendary",
           "url": "./resources/updates/SUMMER_GAMES/skinsLegendary/junkrat-cricket.jpg",
+          "description": "Junkrat gives new meaning to \"the Ashes.\"",
           "isNew": true
         },
         {

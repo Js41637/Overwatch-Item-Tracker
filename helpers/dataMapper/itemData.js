@@ -50,6 +50,8 @@ const data = {
     }
   },
   achievementSprays: [
+    'copa-lucioball-competitor',
+    'copa-lucioball-hero',
     // HERO
     'cute',
     'pixel',
