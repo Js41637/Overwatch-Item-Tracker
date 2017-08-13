@@ -1,5 +1,5 @@
 <div class="event-progress">
-  <div class="event-progress-bar" style="width: {{totals.overall.percentage}}%;"></div>
+  <div class="event-progress-bar progress-bar active" style="width: {{totals.overall.percentage}}%;" ng-class="{'progress-bar-striped': totals.overall.selected === totals.overall.total}"></div>
   <span>{{totals.overall.selected}} / {{totals.overall.total}}  Unlocks</span>
 </div>
 <div class="col-md-8 col-padding">

@@ -417,6 +417,10 @@
   box-sizing: border-box;
 }
 
+#SUMMER_GAMES #event-container .event-progress .event-progress-bar.progress-bar-striped {
+  border: none;
+}
+
 /* HALLOWEEN 2016 */
 
 #HALLOWEEN_2016 #event-container .col {
