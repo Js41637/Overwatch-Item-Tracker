@@ -66,7 +66,7 @@ const getCleanID = (what, hero) => {
 // Returns the image or video URL for an item
 const getPreviewURL = (type, id, hero, event) => {
   let url;
-  if (event && type.match(/^(skins(Epic|Legendary)|poses|emotes|intros)$/)) {
+  if (event && type.match(/^(skins(Epic|Legendary)?|poses|emotes|intros)$/)) {
     url = `./resources/updates/${event}/${type}/${id}`;
   } else {
     url = `./resources/heroes/${hero}/${type}/${id}`; 
