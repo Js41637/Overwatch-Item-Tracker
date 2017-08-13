@@ -148,7 +148,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
 
     // Check if we have an achievement description for an achievement
     let description;
-    if (isAchievement && isAchievement.achievement !== 'blizzard') {
+    if (isAchievement) {
       const desc = getAchievementForItem(item.id);
       if (desc) {
         description = { description: desc };
@@ -163,14 +163,15 @@ allClassData = reduce(allClassData, (result, items, type) => {
 
     newItems.push(Object.assign(item, { event, url }, isAchievement, isStandard, quality, group, isPachiItem, isCompItem, description));
     if (isSeasonCompItem && type == 'sprays') {
-      let id = `season-${isSeasonCompItem[1]}-hero`;
-      newItems.push({ 
+      const id = `season-${isSeasonCompItem[1]}-hero`;
+      const desc2 = getAchievementForItem(item.id);
+      newItems.push(Object.assign({}, { 
         name: `Season ${isSeasonCompItem[1]} Hero`, 
         id: id,
         url: getPreviewURL(type, id, 'all'),
         achievement: true, 
         group: 'competitive' 
-      });
+      }, desc2 ? { description: desc2 } : undefined));
     }
     return newItems;
   }, []);

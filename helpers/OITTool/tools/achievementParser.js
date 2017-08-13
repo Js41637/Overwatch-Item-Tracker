@@ -18,7 +18,13 @@ try {
   process.exit();
 }
 
-console.log('Processing achievements');
+let generalJSON;
+try {
+  generalJSON = JSON.parse(fs.readFileSync('./general.json', 'utf8'));
+} catch(e) {
+  console.error('Error: Couldn\'t find an general.json file!');
+  process.exit();
+}
 
 // Remove the first few lines from OT
 var splitText = achievementsText.split('\n');
@@ -65,6 +71,27 @@ var achievements = achievementsText.split(/\n(?!\t)/).filter(Boolean).map(a => {
   delete achievementMapping[id].id;
 
   return data;
+});
+
+generalJSON.ACHIEVEMENT.COMMON.SPRAY.forEach(item => {
+  const id = getCleanID(item.Name);
+
+  if (achievementMapping[id] || !item.Subline) return;
+  
+  const data = {
+    id,
+    name: null,
+    description: item.Subline,
+    reward: item.Name,
+    quality: item.Rarity.toLowerCase(),
+    type: item.Type.toLowerCase(),
+    hero: 'all'
+  };
+
+  achievementMapping[id] = JSON.parse(JSON.stringify(data));
+  delete achievementMapping[id].id;
+
+  achievements.push(data);
 });
 
 var mappings = {};
