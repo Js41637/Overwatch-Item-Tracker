@@ -1,9 +1,32 @@
-const achievementsText = '';
-const heroes = [];
-const json = {};
-const getCleanID = function() {};
+const fs = require('fs');
+const path = require('path');
+const { getCleanID } = require('./utils');
+const heroData = require('../../../data/items');
+const heroes = Object.keys(heroData).map(h => {
+  const hero = heroData[h];
+  if (hero.id === 'all') return;
+  return { id: hero.id, name: hero.name };
+}).filter(Boolean);
 
 var achievementMapping = {};
+
+let achievementsText;
+try {
+  achievementsText = fs.readFileSync('./achievements.txt', 'utf8');
+} catch(e) {
+  console.error('Error: Couldn\'t find an achievements.txt file!');
+  process.exit();
+}
+
+console.log('Processing achievements');
+
+// Remove the first few lines from OT
+var splitText = achievementsText.split('\n');
+while (!splitText[0].includes("Listing Achievements")) { // remove the first few lines
+  splitText = splitText.slice(1);
+}
+achievementsText = splitText.slice(1).join('\n');
+
 var achievements = achievementsText.split(/\n(?!\t)/).filter(Boolean).map(a => {
   const split = a.split('\n');
   
@@ -16,7 +39,7 @@ var achievements = achievementsText.split(/\n(?!\t)/).filter(Boolean).map(a => {
 
   const data =  {
     id,
-    name: split[0],
+    name: split[0].trim(),
     reward: reward ? reward.trim() : null,
     quality: quality ? quality.toLowerCase() : null,
     type: type ? type.trim().toLowerCase() : null,
@@ -46,7 +69,7 @@ var achievements = achievementsText.split(/\n(?!\t)/).filter(Boolean).map(a => {
 
 var mappings = {};
 achievements.forEach(achievement => {
-  const itemID = json.heroes[achievement.hero].items.sprays.reduce((res, item) => {
+  const itemID = heroData[achievement.hero].items.sprays.reduce((res, item) => {
     if (item.name.toLowerCase() === achievement.reward.toLowerCase()) {
       res = item.id;
     }
@@ -57,3 +80,12 @@ achievements.forEach(achievement => {
     mappings[itemID] = achievement.id;
   }
 });
+
+const out = {
+  achievements: achievementMapping,
+  mappings: mappings
+};
+
+fs.writeFileSync(path.join(__dirname, '../../../data/achievements.json'), JSON.stringify(out, null, 2));
+
+console.log('Done');

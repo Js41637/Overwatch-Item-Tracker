@@ -1,4 +1,5 @@
 const _ = require('lodash');
+const achievementData = require('../../data/achievements');
 
 const qualityOrder = {
   'common': 0,
@@ -108,4 +109,14 @@ var sortObject = (o, update) => {
   return sorted;
 };
 
-module.exports = { getCleanID, getItemType, getPreviewURL, sortObject, stupidNames, qualityOrder };
+const getAchievementForItem = itemID => {
+  const match = achievementData.achievements[achievementData.mappings[itemID]];
+  if (!match) {
+    console.warn('Missing achievement mapping for', itemID);
+    return undefined;
+  }
+
+  return match.description;
+};
+
+module.exports = { getCleanID, getItemType, getPreviewURL, sortObject, stupidNames, qualityOrder, getAchievementForItem };

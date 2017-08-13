@@ -26,8 +26,7 @@ const HERODATA = require('./dataMapper/HERODATA.js');
 const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp, idsBlizzardChanged } = require('./dataMapper/itemData.js');
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER } = require('./dataMapper/EVENTDATA.js');
 const { EVENTITEMS } = require('./dataMapper/EVENTITEMS.js');
-const { getAchievementForItem } = require('./dataMapper/ACHIEVEMENTS.js');
-const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder } = require('./dataMapper/utils.js');
+const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder, getAchievementForItem } = require('./dataMapper/utils.js');
 
 var allClassData, missingAllClassData = {}, allClassDataKeys = {};
 var raw = { rawData: '', newRawData: '' };
