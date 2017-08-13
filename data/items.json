@@ -302,12 +302,16 @@
         {
           "name": "Copa Lúcioball Competitor",
           "id": "copa-lucioball-competitor",
-          "url": "./resources/heroes/all/icons/copa-lucioball-competitor.png"
+          "url": "./resources/heroes/all/icons/copa-lucioball-competitor.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Copa Lúcioball Hero",
           "id": "copa-lucioball-hero",
-          "url": "./resources/heroes/all/icons/copa-lucioball-hero.png"
+          "url": "./resources/heroes/all/icons/copa-lucioball-hero.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Credit",
@@ -1901,7 +1905,15 @@
           "name": "Copa Lúcioball Competitor",
           "id": "copa-lucioball-competitor",
           "url": "./resources/heroes/all/sprays/copa-lucioball-competitor.png",
-          "achievement": true
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "id": "copa-lucioball-hero",
+          "name": "Copa Lúcioball Hero",
+          "url": "./resources/heroes/all/sprays/copa-lucioball-hero.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Crusader",

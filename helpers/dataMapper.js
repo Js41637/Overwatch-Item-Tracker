@@ -138,7 +138,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
 
     // Check if the spray or icon is a Competitive reward
     const isSeasonCompItem = item.id.match(/^season-(.)-(competitor|hero)$/);
-    const isCompItem =  isSeasonCompItem || item.id == 'top-500' ? { group: 'competitive' } : undefined;
+    const isCompItem =  isSeasonCompItem || item.id.match(/^(top-500|copa-lucioball-\w+)$/) ? { group: 'competitive' } : undefined;
     const isPachiItem = item.id.startsWith('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined;
     const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined;
     const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem) ? { achievement: true } : blizzardItems[type].includes(item.id) ? { achievement: 'blizzard' } : undefined;
