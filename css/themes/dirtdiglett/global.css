@@ -4,7 +4,7 @@ body {
   transition: opacity 100ms ease-in-out;
 }
 
-.item h3.common, .item h3, .color-common {
+.items .item h3.common, .items .item h3, .color-common {
   color: #5d5a5a !important;
 }
 

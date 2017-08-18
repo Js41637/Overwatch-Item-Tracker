@@ -248,6 +248,10 @@ body#ANNIVERSARY_2017:before {
   width: 100%;
 }
 
+#event-container .section-header .itemTotal {
+  color: rgb(64, 82, 117) !important;
+}
+
 #event-container .section-header small {
   font-size: 0.85em;
 }
