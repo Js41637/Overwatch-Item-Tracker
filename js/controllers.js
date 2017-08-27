@@ -369,9 +369,9 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
     $scope.cost = CostAndTotalService.events[event.id].cost;
   });
 
-  $scope.onSelect = function(item, type) {
+  $scope.onSelect = function(item, type, override) {
     StorageService.setData($scope.checked);
-    CostAndTotalService.updateItem(item, type, item.hero, event.id);
+    CostAndTotalService.updateItem(item, type, item.hero, event.id, override);
     $scope.totals = CostAndTotalService.events[event.id].totals;
   };
 

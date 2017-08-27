@@ -202,8 +202,9 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         service[TYPE][what.id].totals.overall.percentage = ((service[TYPE][what.id].totals.overall.selected / service[TYPE][what.id].totals.overall.total) * 100);
       }
     },
-    updateItem: function(item, type, hero, event) {
-      var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][item.id];
+    updateItem: function(item, type, hero, event, idOverride) {
+      const itemID = idOverride || item.id;
+      var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
       event = item.event || event;
       var eventType;
       if (event === 'SUMMER_GAMES') {
