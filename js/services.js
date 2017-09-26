@@ -397,3 +397,175 @@ OWI.factory('CompatibilityService', ["StorageService", function(StorageService) 
 
   return service;
 }]);
+
+OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", function($rootScope, $timeout, $q) {
+  var CLIENT_ID = '583147653478-cfkb2hkhdd1iocde6omf6ro2oi52qj98.apps.googleusercontent.com';
+  var API_KEY = 'AIzaSyDGV8ytVdbMrBhonprSufoZwboxszL25Ww';
+  var SCOPES = 'https://www.googleapis.com/auth/drive.appfolder';
+
+  var service = {
+    fileCreated: localStorage.getItem('google_drive_data_file_created'),
+    dataFileID: '1gCSzJ8adUswK6jRq_Yo9u9faLrr-tABNwq5pFROE6MS9',
+    isSignedIn: false,
+    user: {},
+    waitForLoad: function() {
+      function waitForInitialize() {
+        if (window.gapi) {
+          gapi.load('client:auth2', service.init);
+        } else {
+          $timeout(waitForInitialize, 30);
+        }
+      }
+
+      waitForInitialize();
+    },
+    init: function() {
+      gapi.client.init({
+        apiKey: API_KEY,
+        clientId: CLIENT_ID,
+        scope: SCOPES
+      }).then(function () {
+        // Listen for sign-in state changes.
+        gapi.auth2.getAuthInstance().isSignedIn.listen(service.updateSigninState);
+
+        // Handle the initial sign-in state.
+        service.updateSigninState(gapi.auth2.getAuthInstance().isSignedIn.get());
+      });
+    },
+    updateSigninState: function(isSignedIn) {
+      if (isSignedIn) {
+        $rootScope.$broadcast('google:login', { event: 'SIGN_IN', user: service.user });
+        service.user = gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile();
+      } else {
+        $rootScope.$broadcast('google:login', { event: 'SIGN_OUT' });
+      }
+
+      this.isSignedIn = isSignedIn;
+
+    },
+    login: function() {
+      const instance = gapi.auth2.getAuthInstance();
+      if (instance) {
+        instance.signIn().catch(function(err) {
+          console.log('Error signing in', err);
+          $rootScope.$broadcast('google:login', { event: 'ERROR' });
+        });
+      }
+    },
+    signOut: function() {
+      const instance = gapi.auth2.getAuthInstance();
+      if (instance) {
+        instance.signOut();
+      }
+    },
+    getData: function() {
+      return new $q(function(resolve, reject) {
+        var request = gapi.client.request({
+          path: '/drive/v3/files/' + service.dataFileID,
+          method: 'GET',
+          params: {
+            alt: 'media'
+          }
+        });
+  
+        request.execute(function(data) {
+          if (data.error) {
+            return reject(data.error);
+          }
+          
+          resolve(data);
+        });
+      });
+    },
+    update: function(data) {
+      return new $q(function(resolve, reject) {
+        if (service.fileCreated) {
+          service.updateFile(data).then(resolve, reject);
+        } else {
+          service.checkFile().then(function(exists) {
+            if (exists) {
+              service.updateFile(data).then(resolve, reject);
+            } else {
+              service.createFile(data).then(resolve, reject);
+            }
+          });
+        }
+      });
+    },
+    checkFile: function() {
+      return new $q(function(resolve) {
+        var request = gapi.client.request({
+          path: '/drive/v3/files/' + service.dataFileID,
+          method: 'GET'
+        });
+  
+        request.execute(function(data) {
+          if (data.error) {
+            return resolve(false);
+          }
+          
+          resolve(true);
+        });
+      });
+    },
+    createFile: function(data) {
+      return service.sendRequest(data, {
+        mimeType: 'application/json',
+        name: 'data.json',
+        parents: ['appDataFolder'],
+        id: service.dataFileID
+      }, 'POST', 'https://www.googleapis.com/upload/drive/v3/files');
+    },
+    updateFile: function(data) {
+      return service.sendRequest(data, {
+        mimeType: 'application/json'
+      }, 'PATCH', 'https://www.googleapis.com/upload/drive/v3/files/' + service.dataFileID);
+    },
+    sendRequest: function(data, metadata, method, url) {
+      return new $q(function(resolve, reject) {
+        const boundary = '-------314159265358979323846264';
+        const delimiter = "\r\n--" + boundary + "\r\n";
+        const close_delim = "\r\n--" + boundary + "--";
+
+  
+        var base64Data = btoa(JSON.stringify(data));
+        var multipartRequestBody =
+            delimiter +
+            'Content-Type: application/json\r\n\r\n' +
+            JSON.stringify(metadata) +
+            delimiter +
+            'Content-Type: ' + 'application/json' + '\r\n' +
+            'Content-Transfer-Encoding: base64\r\n' +
+            '\r\n' +
+            base64Data +
+            close_delim;
+        var request = gapi.client.request({
+          path: url,
+          method: method,
+          params: {
+            uploadType: 'multipart'
+          },
+          headers: {
+            'Content-Type': 'multipart/mixed; boundary="' + boundary + '"'
+          },
+          body: multipartRequestBody
+        });
+  
+        request.execute(function(data) {
+          if (data.error) {
+            return reject(data.error);
+          }
+
+          localStorage.setItem('google_drive_data_file_created', true);
+          return resolve(data);
+        });
+      });
+    }
+  };
+
+  return service;
+}]);
+
+OWI.run(["GoogleAPI", function(GoogleAPI) {
+  GoogleAPI.waitForLoad();
+}]);

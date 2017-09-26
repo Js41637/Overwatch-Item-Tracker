@@ -420,7 +420,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   });
 }]);
 
-OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $uibModalInstance, StorageService, DataService) {
+OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "StorageService", "DataService", "GoogleAPI", function($rootScope, $scope, $uibModalInstance, StorageService, DataService, GoogleAPI) {
   var vm = this;
   var settings = StorageService.settings;
   this.particles = settings['particles'];
@@ -430,6 +430,10 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   this.audioVolume = settings['audioVolume'];
   this.countIcons = settings['countIcons'];
   this.importErrors = null;
+
+  this.googleUser = GoogleAPI.user;
+  this.googleLoginErr = false;
+  this.googleSignedIn = GoogleAPI.isSignedIn;
 
   this.close = function() {
     $uibModalInstance.dismiss('close');
@@ -535,5 +539,45 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
 
     StorageService.setData(DataService.checked);
     $rootScope.$emit('selectAll');
+  };
+
+  $rootScope.$on('google:login', function(event, data) {
+    switch (data.event) {
+      case 'ERROR':
+        vm.googleSignedIn = false;
+        vm.googleLoginErr = true;
+        vm.googleUser = {};
+        break;
+      case 'SIGN_IN':
+        vm.googleSignedIn = true;
+        vm.googleUser = data.user;
+        vm.googleLoginErr = false;
+        break;
+      case 'SIGN_OUT':
+        vm.googleSignedIn = false;
+        vm.googleUser = {};
+        vm.googleLoginErr = false;
+        break;
+    }
+
+    $scope.$digest();
+  });
+
+  this.googleLogin = function() {
+    GoogleAPI.login();
+  };
+
+  this.googleSignOut = function() {
+    GoogleAPI.signOut();
+  };
+
+  this.uploadToDrive = function() {
+    GoogleAPI.update(DataService.checked);
+  };
+
+  this.downloadFromDrive = function() {
+    GoogleAPI.getData().then(function(data) {
+      console.log(data);
+    });
   };
 }]);

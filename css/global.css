@@ -253,6 +253,14 @@ body {
   user-select: none;
 }
 
+#settings .tab-content {
+  margin-top: 12px;
+}
+
+#settings .nav-tabs a {
+  font-size: 18px;
+}
+
 #settings h2 {
   font-size: 32px;
 }
@@ -264,7 +272,7 @@ body {
 }
 
 #settings .setting {
-  padding: 10px;
+  padding: 14px 12px;
 }
 
 #settings pre {
@@ -275,10 +283,6 @@ body {
 #settings .setting p, #settings .setting a, #settings .setting li, #settings .btn {
   font-family: sans-serif;
   padding-bottom: 5px;
-}
-
-#settings .setting:first-of-type {
-  padding-top: 2px;
 }
 
 .alert {
@@ -309,7 +313,6 @@ body {
 
 #settings .setting:not(:first-of-type) {
   border-top: 1px solid #e5e5e5;
-  padding-top: 10px;
 }
 
 #settings.about .setting p, #settings.about .setting li a {
