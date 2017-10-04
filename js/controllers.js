@@ -435,6 +435,9 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
   this.googleLoginErr = false;
   this.googleSignedIn = GoogleAPI.isSignedIn;
 
+  this.googleDownloadSuccess = false;
+  this.googleDownloadErr = false;
+
   this.close = function() {
     $uibModalInstance.dismiss('close');
   };
@@ -476,14 +479,9 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
     }
   };
 
-  this.data = angular.toJson(DataService.checked, 2);
-  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines'];
-  var validHeroes = Object.keys(DataService.heroes);
-
-  this.importData = function(data, test) {
-    vm.importErrors = null;
+  function validateData(data) {
     try {
-      data = angular.fromJson(vm.data);
+      data = typeof data === 'string' ? angular.fromJson(data) : data
       var errs = [];
 
       if (!Object.keys(data).length) {
@@ -502,19 +500,30 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
       }
 
       if (errs.length) {
-        vm.importErrors = errs.join('\n');
-        return;
+        return errs.join('\n');
       }
+    } catch (e) {
+      console.error(e);
+      return 'Error parsing json';
+    }
+  }
 
+  this.data = angular.toJson(DataService.checked, 2);
+  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines'];
+  var validHeroes = Object.keys(DataService.heroes);
+
+  this.importData = function(data, test) {
+    vm.importErrors = null;
+    var errors = validateData(vm.data);
+
+    if (errors) {
+      vm.importErrors = errors;
+    } else {
       vm.importErrors = false;
       if (!test) {
         StorageService.setData(data);
         location.reload();
       }
-
-    } catch(e) {
-      console.error(e);
-      vm.importErrors = 'An error occured while parsing the JSON';
     }
   };
 
@@ -572,12 +581,28 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
   };
 
   this.uploadToDrive = function() {
-    GoogleAPI.update(DataService.checked);
+    GoogleAPI.update(DataService.checked).then(function() {
+
+    });
   };
 
   this.downloadFromDrive = function() {
+    vm.googleDownloadSuccess = false;
     GoogleAPI.getData().then(function(data) {
-      console.log(data);
+      if (!data) {
+        vm.googleDownloadErr = true;
+        return;
+      }
+
+      const errors = validateData(data)
+
+      if (errors) {
+        vm.googleDownloadErr = 'Error: Got unexpected data from Google';
+        return;
+      }
+
+      vm.googleDownloadErr = false;
+      vm.googleDownloadSuccess = true;
     });
   };
 }]);

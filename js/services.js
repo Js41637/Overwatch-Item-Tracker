@@ -398,7 +398,7 @@ OWI.factory('CompatibilityService', ["StorageService", function(StorageService) 
   return service;
 }]);
 
-OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", function($rootScope, $timeout, $q) {
+OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($rootScope, $timeout, $q, $http) {
   var CLIENT_ID = '583147653478-cfkb2hkhdd1iocde6omf6ro2oi52qj98.apps.googleusercontent.com';
   var API_KEY = 'AIzaSyDGV8ytVdbMrBhonprSufoZwboxszL25Ww';
   var SCOPES = 'https://www.googleapis.com/auth/drive.appfolder';
@@ -459,22 +459,29 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", function($rootScope, $
       }
     },
     getData: function() {
-      return new $q(function(resolve, reject) {
-        var request = gapi.client.request({
-          path: '/drive/v3/files/' + service.dataFileID,
-          method: 'GET',
-          params: {
-            alt: 'media'
-          }
-        });
-  
-        request.execute(function(data) {
-          if (data.error) {
-            return reject(data.error);
-          }
-          
-          resolve(data);
-        });
+      const token = gapi.client.getToken();
+      const url = 'https://www.googleapis.com/drive/v3/files/' + service.dataFileID;
+
+      if (!token || !token.access_token) {
+        return Promise.resolve(false);
+      }
+
+      return $http.get(url, {
+        params: {
+          alt: 'media'
+        },
+        headers: {
+          'Authorization': (token.token_type + ' ' + token.access_token)
+        }
+      }).then(function(response) {
+        if (response.status === 200 && response.data) {
+          return response.data;
+        }
+
+        return null;
+      }, function(err) {
+        console.error('Error fetchingd data from google', err);
+        return null;
       });
     },
     update: function(data) {
