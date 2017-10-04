@@ -44,11 +44,15 @@
         <div class="setting">
           <h3>Google Drive <small ng-show="settings.googleSignedIn">Signed in as {{settings.googleUser.getName()}} ({{settings.googleUser.getEmail()}})</small></h3>
           <p><strong>Experimental:</strong> Enable storing a copy of your Overwatch data on Google Drive</p>
-          <div class="btn btn-primary" ng-show="settings.googleSignedIn"ng-click="settings.googleSignOut()">Sign Out</div>
-          <div class="btn btn-primary" ng-hide="settings.googleSignedIn" ng-click="settings.googleLogin()">Authorize</div>
-          <div class="btn btn-primary" ng-show="settings.googleSignedIn" ng-click="settings.uploadToDrive()">Upload to Drive</div>
-          <div class="btn btn-primary" ng-show="settings.googleSignedIn" ng-click="settings.downloadFromDrive()">Download from Drive</div>
+          <div class="buttons" style="margin-bottom: 10px;">
+            <div class="btn btn-primary" ng-show="settings.googleSignedIn"ng-click="settings.googleSignOut()">Sign Out</div>
+            <div class="btn btn-primary" ng-hide="settings.googleSignedIn" ng-click="settings.googleLogin()">Authorize</div>
+            <div class="btn btn-primary" ng-show="settings.googleSignedIn" ng-click="settings.uploadToDrive()">Upload to Drive</div>
+            <div class="btn btn-primary" ng-show="settings.googleSignedIn" ng-click="settings.downloadFromDrive()">Download from Drive</div>
+          </div>
           <div class="alert alert-danger" ng-show="settings.googleLoginErr">An error occured while authorizing with Google.</div>
+          <div class="alert alert-danger" ng-show="settings.googleDownloadErr">Error! Got an unexpected response from Google! :(</div>
+          <div class="alert alert-success" ng-show="settings.googleDownloadSuccess">Success! Updating data...</div>
         </div>
         <div class="setting">
           <h3>Import/Export Data</h3>

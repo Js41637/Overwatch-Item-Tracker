@@ -594,15 +594,20 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
         return;
       }
 
-      const errors = validateData(data)
+      const errors = validateData(data);
 
       if (errors) {
-        vm.googleDownloadErr = 'Error: Got unexpected data from Google';
+        vm.googleDownloadErr = true;
         return;
       }
 
       vm.googleDownloadErr = false;
       vm.googleDownloadSuccess = true;
+
+      setTimeout(function() {
+        StorageService.setData(data);
+        location.reload();
+      }, 2000);
     });
   };
 }]);

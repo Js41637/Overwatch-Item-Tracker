@@ -458,11 +458,13 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
         instance.signOut();
       }
     },
+    // Load stored JSON file from Google, uses normal HTTP request as using the gapi request seems to return
+    //  a gzipped or encoded version of some kind and i cbf dealing with that shit
     getData: function() {
       const token = gapi.client.getToken();
       const url = 'https://www.googleapis.com/drive/v3/files/' + service.dataFileID;
 
-      if (!token || !token.access_token) {
+      if (!token || !token.access_token || !service.fileCreated) {
         return Promise.resolve(false);
       }
 
@@ -499,6 +501,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
         }
       });
     },
+    // Checks to see if we already have a file saved, if we do we can update it if we don't, it needs to be made
     checkFile: function() {
       return new $q(function(resolve) {
         var request = gapi.client.request({
@@ -528,6 +531,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
         mimeType: 'application/json'
       }, 'PATCH', 'https://www.googleapis.com/upload/drive/v3/files/' + service.dataFileID);
     },
+    // Weird ass shit required to save/update a file using Multipart form.
     sendRequest: function(data, metadata, method, url) {
       return new $q(function(resolve, reject) {
         const boundary = '-------314159265358979323846264';
