@@ -42,15 +42,19 @@
       </uib-tab>
       <uib-tab index="1" heading="Import / Export / Backup">
         <div class="setting">
-          <h3>Google Drive <small ng-show="settings.googleSignedIn">Signed in as {{settings.googleUser.getName()}} ({{settings.googleUser.getEmail()}})</small></h3>
+          <h3>Google Drive <small ng-show="settings.googleSignedIn">Signed in as {{settings.googleUser.getName() || 'NO_NAME'}} ({{settings.googleUser.getEmail() || 'NO_EMAIL'}})</small></h3>
           <p><strong>Experimental:</strong> Enable storing a copy of your Overwatch data on Google Drive</p>
-          <div class="buttons" style="margin-bottom: 10px;">
-            <div class="btn btn-primary" ng-show="settings.googleSignedIn"ng-click="settings.googleSignOut()">Sign Out</div>
+          <div class="buttons" >
+            <div class="btn btn-primary" ng-show="settings.googleSignedIn" ng-click="settings.googleSignOut()">Sign Out</div>
             <div class="btn btn-primary" ng-hide="settings.googleSignedIn" ng-click="settings.googleLogin()">Authorize</div>
             <div class="btn btn-primary" ng-show="settings.googleSignedIn" ng-click="settings.uploadToDrive()">Upload to Drive</div>
             <div class="btn btn-primary" ng-show="settings.googleSignedIn" ng-click="settings.downloadFromDrive()">Download from Drive</div>
+            <div class="btn btn-primary" ng-show="settings.googleSignedIn" ng-click="settings.toggleSync()">{{settings.syncDisabled ? 'Enable Sync' : 'Disable Sync'}}</div>
           </div>
+          <div class="alert alert-info" ng-show="settings.willEnableSync">Notice: Before sync is enabled you need to choose to either download from Google Drive or upload your current data to Google Drive. This is so sync doesn't accidently overwrite your data.</div>
           <div class="alert alert-{{settings.googleMessage[0]}}" ng-if="settings.googleMessage">{{settings.googleMessage[1]}}</div>
+
+          <small>Enabling Google Drive Sync will make it so your data is automatically updated on Google Drive occasionally while you are on the site.</small>
         </div>
         <div class="setting">
           <h3>Import/Export Data</h3>

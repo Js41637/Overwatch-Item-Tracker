@@ -280,6 +280,19 @@ body {
   overflow: initial;
 }
 
+#settings .setting p {
+  font-size: 15px;
+}
+
+#settings .buttons {
+  margin-bottom: 10px;
+}
+
+#settings .setting small {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
 #settings .setting p, #settings .setting a, #settings .setting li, #settings .btn {
   font-family: sans-serif;
   padding-bottom: 5px;

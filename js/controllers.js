@@ -429,12 +429,28 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
   this.showPreviews = settings['showPreviews'];
   this.audioVolume = settings['audioVolume'];
   this.countIcons = settings['countIcons'];
+  this.syncDisabled = settings['syncDisabled'];
   this.importErrors = null;
+
+  this.willEnableSync = false;
+
+  this.toggleSync = function() {
+    if (this.syncDisabled && !vm.willEnableSync) {
+      vm.willEnableSync = true;
+    }
+
+    if (!this.syncDisabled) {
+      vm.syncDisabled = true;
+      StorageService.setSetting('syncDisabled', true);
+    } else {
+      vm.syncDisabled = !vm.syncDisabled;
+    }   
+  };
 
   this.googleUser = GoogleAPI.user;
   this.googleSignedIn = GoogleAPI.isSignedIn;
-
   this.googleMessage = null;
+  this.googleLastSynced = null;
 
   this.close = function() {
     $uibModalInstance.dismiss('close');
@@ -479,7 +495,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
 
   function validateData(data) {
     try {
-      data = typeof data === 'string' ? angular.fromJson(data) : data
+      data = typeof data === 'string' ? angular.fromJson(data) : data;
       var errs = [];
 
       if (!Object.keys(data).length) {
@@ -583,6 +599,11 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
     vm.googleMessage = null;
     GoogleAPI.update(DataService.checked).then(function(success) {
       if (success) {
+        if (vm.willEnableSync) {
+          vm.willEnableSync = false;
+          vm.syncDisabled = false;
+          StorageService.setSetting('syncDisabled', false);
+        }
         vm.googleMessage = ['success', 'Successfully uploaded to Google Drive... maybe... probably...'];
       } else {
         vm.googleMessage = ['danger', 'An error occured while uploading to Google Drive!'];
@@ -599,10 +620,15 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
       }
 
       const errors = validateData(response.data);
-
       if (errors) {
         vm.googleMessage = ['danger', 'Error: Data returned by Google Drive does not matched expected data'];
         return;
+      }
+
+      if (vm.willEnableSync) {
+        vm.willEnableSync = false;
+        vm.syncDisabled = false;
+        StorageService.setSetting('syncDisabled', false);
       }
 
       vm.googleMessage = ['success', 'Success! Updating local data... This page will reload in a couple seconds.'];

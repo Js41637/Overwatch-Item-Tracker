@@ -8,7 +8,8 @@ OWI.factory("StorageService", function() {
       hdVideos: false,
       currentTheme: 'standard',
       audioVolume: 0.5,
-      countIcons: true
+      countIcons: true,
+      syncDisabled: true
     },
     getData: function() {
       return service.data;
@@ -398,15 +399,17 @@ OWI.factory('CompatibilityService', ["StorageService", function(StorageService) 
   return service;
 }]);
 
-OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($rootScope, $timeout, $q, $http) {
+OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageService", function($rootScope, $timeout, $q, $http, StorageService) {
   var CLIENT_ID = '583147653478-cfkb2hkhdd1iocde6omf6ro2oi52qj98.apps.googleusercontent.com';
   var API_KEY = 'AIzaSyDGV8ytVdbMrBhonprSufoZwboxszL25Ww';
   var SCOPES = 'https://www.googleapis.com/auth/drive.appfolder';
 
   var service = {
+    syncTimeout: 1000 * 60 * 60 * 1, // 1 hour
     fileCreated: localStorage.getItem('google_drive_data_file_created'),
     dataFileID: '1gCSzJ8adUswK6jRq_Yo9u9faLrr-tABNwq5pFROE6MS9',
     isSignedIn: false,
+    lastSync: localStorage.getItem('google_drive_last_sync'),
     version: '1',
     user: {},
     waitForLoad: function() {
@@ -437,6 +440,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
       if (isSignedIn) {
         $rootScope.$broadcast('google:login', { event: 'SIGN_IN', user: service.user });
         service.user = gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile();
+        service.setupSync();
       } else {
         $rootScope.$broadcast('google:login', { event: 'SIGN_OUT' });
       }
@@ -459,6 +463,33 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
         instance.signOut();
       }
     },
+    setupSync: function() {
+      if (StorageService.getSetting('syncDisabled')) {
+        console.log('Google Sync disabled');
+        return;
+      }
+
+      function sync() {
+        console.log('Checking sync');
+        if (!service.lastSync || (+service.lastSync + service.syncTimeout < Date.now())) {
+          console.log('Syncing with Google');
+          service.update().then(function(success) {
+            if (success) {
+              console.log('Successfully synced with Google');
+              service.lastSync = Date.now();
+              localStorage.setItem('google_drive_last_sync', service.lastSync);
+            } else {
+              console.error('Error while syncing with Google Drive');
+            }
+          });
+        } else {
+          console.log('Not syncing');
+        }
+      }
+      
+      sync();
+      setInterval(sync, service.syncTimeout);
+    },
     // Load stored JSON file from Google, uses normal HTTP request as using the gapi request seems to return
     //  a gzipped or encoded version of some kind and i cbf dealing with that shit
     getData: function() {
@@ -478,6 +509,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
         }
       }).then(function(response) {
         if (response.status === 200 && response.data) {
+          console.log('Fetched data?', new Date(response.data._synced_at))
           return response.data;
         }
 
@@ -503,7 +535,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
       }).then(function() {
         return true;
       }, function(err) {
-        console.error('error uploading file to google', err);
+        console.error('Error uploading file to google', err);
         return false;
       });
     },
@@ -546,6 +578,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
 
         var body = {
           _version: service.version,
+          _synced_at: Date.now(),
           data: data
         };
   
