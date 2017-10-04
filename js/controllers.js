@@ -329,18 +329,17 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     }
   };
 
-  this.selectModal = function(type, string) {
-    if (vm.totals.overall.selected == 0 && string == 'unselect') return;
+  this.selectModal = function(type, str) {
+    if (vm.totals.overall.selected == 0 && str == 'unselect') return;
     var modal = $uibModal.open({
       templateUrl: './templates/modals/select.html',
       controller: function($scope) {
-        $scope.type = type;
-        $scope.select = string;
+        $scope.message = ('Are you sure you want to ' + str + ' all ' + type || 'items');
       }
     });
     modal.result.then(function(goahead) {
       if (goahead) {
-        if (string == 'select') {
+        if (str == 'select') {
           vm.selectAll(false, type);
         } else {
           vm.selectAll(true, type);
@@ -420,7 +419,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   });
 }]);
 
-OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "StorageService", "DataService", "GoogleAPI", function($rootScope, $scope, $uibModalInstance, StorageService, DataService, GoogleAPI) {
+OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalInstance", "StorageService", "DataService", "GoogleAPI", function($rootScope, $scope, $uibModal, $uibModalInstance, StorageService, DataService, GoogleAPI) {
   var vm = this;
   var settings = StorageService.settings;
   this.particles = settings['particles'];
@@ -595,6 +594,37 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
 
   this.uploadToDrive = function() {
     vm.googleMessage = null;
+    var modal = $uibModal.open({
+      templateUrl: './templates/modals/select.html',
+      controller: function($scope) {
+        $scope.message = 'Are you sure you want to upload your data to Google Drive?';
+        $scope.submessage = 'This will overwrite any existing data in Google Drive! If you are unsure remember to create backups';
+      }
+    });
+    modal.result.then(function(goahead) {
+      if (goahead) {
+        onUploadToDrive();
+      }
+    }, function() {});
+  };
+
+  this.downloadFromDrive = function() {
+    vm.googleMessage = null;
+    var modal = $uibModal.open({
+      templateUrl: './templates/modals/select.html',
+      controller: function($scope) {
+        $scope.message = 'Are you sure you want to download your data from Google Drive?';
+        $scope.submessage = 'This will overwrite any existing local data! If you are unsure remember to create backups';
+      }
+    });
+    modal.result.then(function(goahead) {
+      if (goahead) {
+        onDownloadFromDrive();
+      }
+    }, function() {});
+  };
+
+  function onUploadToDrive() {
     GoogleAPI.update(DataService.checked).then(function(success) {
       if (success) {
         if (vm.willEnableSync) {
@@ -607,10 +637,9 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
         vm.googleMessage = ['danger', 'An error occured while uploading to Google Drive!'];
       }
     });
-  };
+  }
 
-  this.downloadFromDrive = function() {
-    vm.googleMessage = null;
+  function onDownloadFromDrive() {
     GoogleAPI.getData().then(function(response) {
       if (!response || !response.data) {
         vm.googleMessage = ['danger', 'Error: Got an unexpected response while downloading data from Google Drive!'];
@@ -636,5 +665,5 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
         location.reload();
       }, 2250);
     });
-  };
+  }
 }]);

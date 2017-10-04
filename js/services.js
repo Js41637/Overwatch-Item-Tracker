@@ -405,7 +405,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
   var SCOPES = 'https://www.googleapis.com/auth/drive.appfolder';
 
   var service = {
-    syncTimeout: 1000 * 60 * 60 * 1, // 1 hour
+    syncTimeout: 1000 * 60 * 30, // 30 mins
     fileCreated: localStorage.getItem('google_drive_data_file_created'),
     dataFileID: '1gCSzJ8adUswK6jRq_Yo9u9faLrr-tABNwq5pFROE6MS9',
     isSignedIn: false,
