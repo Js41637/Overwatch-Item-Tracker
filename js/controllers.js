@@ -432,11 +432,9 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
   this.importErrors = null;
 
   this.googleUser = GoogleAPI.user;
-  this.googleLoginErr = false;
   this.googleSignedIn = GoogleAPI.isSignedIn;
 
-  this.googleDownloadSuccess = false;
-  this.googleDownloadErr = false;
+  this.googleMessage = null;
 
   this.close = function() {
     $uibModalInstance.dismiss('close');
@@ -554,18 +552,17 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
     switch (data.event) {
       case 'ERROR':
         vm.googleSignedIn = false;
-        vm.googleLoginErr = true;
         vm.googleUser = {};
+        vm.googleMessage = ['danger', 'Error! Something went wrong while logging into Google! - ' + data.message];
         break;
       case 'SIGN_IN':
         vm.googleSignedIn = true;
         vm.googleUser = data.user;
-        vm.googleLoginErr = false;
+        vm.googleMessage = ['success', 'Successfully logged in with Google! You can choose to download your data now if you have any saved.'];
         break;
       case 'SIGN_OUT':
         vm.googleSignedIn = false;
         vm.googleUser = {};
-        vm.googleLoginErr = false;
         break;
     }
 
@@ -573,41 +570,47 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
   });
 
   this.googleLogin = function() {
+    vm.googleMessage = null;
     GoogleAPI.login();
   };
 
   this.googleSignOut = function() {
+    vm.googleMessage = null;
     GoogleAPI.signOut();
   };
 
   this.uploadToDrive = function() {
-    GoogleAPI.update(DataService.checked).then(function() {
-
+    vm.googleMessage = null;
+    GoogleAPI.update(DataService.checked).then(function(success) {
+      if (success) {
+        vm.googleMessage = ['success', 'Successfully uploaded to Google Drive... maybe... probably...'];
+      } else {
+        vm.googleMessage = ['danger', 'An error occured while uploading to Google Drive!'];
+      }
     });
   };
 
   this.downloadFromDrive = function() {
-    vm.googleDownloadSuccess = false;
-    GoogleAPI.getData().then(function(data) {
-      if (!data) {
-        vm.googleDownloadErr = true;
+    vm.googleMessage = null;
+    GoogleAPI.getData().then(function(response) {
+      if (!response || !response.data) {
+        vm.googleMessage = ['danger', 'Error: Got an unexpected response while downloading data from Google Drive!'];
         return;
       }
 
-      const errors = validateData(data);
+      const errors = validateData(response.data);
 
       if (errors) {
-        vm.googleDownloadErr = true;
+        vm.googleMessage = ['danger', 'Error: Data returned by Google Drive does not matched expected data'];
         return;
       }
 
-      vm.googleDownloadErr = false;
-      vm.googleDownloadSuccess = true;
+      vm.googleMessage = ['success', 'Success! Updating local data... This page will reload in a couple seconds.'];
 
       setTimeout(function() {
-        StorageService.setData(data);
+        StorageService.setData(response.data);
         location.reload();
-      }, 2000);
+      }, 2250);
     });
   };
 }]);

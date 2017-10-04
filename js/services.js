@@ -407,6 +407,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
     fileCreated: localStorage.getItem('google_drive_data_file_created'),
     dataFileID: '1gCSzJ8adUswK6jRq_Yo9u9faLrr-tABNwq5pFROE6MS9',
     isSignedIn: false,
+    version: '1',
     user: {},
     waitForLoad: function() {
       function waitForInitialize() {
@@ -448,7 +449,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
       if (instance) {
         instance.signIn().catch(function(err) {
           console.log('Error signing in', err);
-          $rootScope.$broadcast('google:login', { event: 'ERROR' });
+          $rootScope.$broadcast('google:login', { event: 'ERROR', message: err.error });
         });
       }
     },
@@ -489,16 +490,21 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
     update: function(data) {
       return new $q(function(resolve, reject) {
         if (service.fileCreated) {
-          service.updateFile(data).then(resolve, reject);
+          return service.updateFile(data).then(resolve, reject);
         } else {
-          service.checkFile().then(function(exists) {
+          return service.checkFile().then(function(exists) {
             if (exists) {
-              service.updateFile(data).then(resolve, reject);
+              return service.updateFile(data).then(resolve, reject);
             } else {
               service.createFile(data).then(resolve, reject);
             }
           });
         }
+      }).then(function() {
+        return true;
+      }, function(err) {
+        console.error('error uploading file to google', err);
+        return false;
       });
     },
     // Checks to see if we already have a file saved, if we do we can update it if we don't, it needs to be made
@@ -534,12 +540,16 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", function($roo
     // Weird ass shit required to save/update a file using Multipart form.
     sendRequest: function(data, metadata, method, url) {
       return new $q(function(resolve, reject) {
-        const boundary = '-------314159265358979323846264';
-        const delimiter = "\r\n--" + boundary + "\r\n";
-        const close_delim = "\r\n--" + boundary + "--";
+        var boundary = '-------314159265358979323846264';
+        var delimiter = "\r\n--" + boundary + "\r\n";
+        var close_delim = "\r\n--" + boundary + "--";
 
+        var body = {
+          _version: service.version,
+          data: data
+        };
   
-        var base64Data = btoa(JSON.stringify(data));
+        var base64Data = btoa(JSON.stringify(body));
         var multipartRequestBody =
             delimiter +
             'Content-Type: application/json\r\n\r\n' +

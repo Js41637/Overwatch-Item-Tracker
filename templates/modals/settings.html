@@ -50,9 +50,7 @@
             <div class="btn btn-primary" ng-show="settings.googleSignedIn" ng-click="settings.uploadToDrive()">Upload to Drive</div>
             <div class="btn btn-primary" ng-show="settings.googleSignedIn" ng-click="settings.downloadFromDrive()">Download from Drive</div>
           </div>
-          <div class="alert alert-danger" ng-show="settings.googleLoginErr">An error occured while authorizing with Google.</div>
-          <div class="alert alert-danger" ng-show="settings.googleDownloadErr">Error! Got an unexpected response from Google! :(</div>
-          <div class="alert alert-success" ng-show="settings.googleDownloadSuccess">Success! Updating data...</div>
+          <div class="alert alert-{{settings.googleMessage[0]}}" ng-if="settings.googleMessage">{{settings.googleMessage[1]}}</div>
         </div>
         <div class="setting">
           <h3>Import/Export Data</h3>
