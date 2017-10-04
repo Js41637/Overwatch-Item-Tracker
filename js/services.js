@@ -509,7 +509,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
         }
       }).then(function(response) {
         if (response.status === 200 && response.data) {
-          console.log('Fetched data?', new Date(response.data._synced_at))
+          console.log('Fetched data? from', new Date(response.data._synced_at));
           return response.data;
         }
 

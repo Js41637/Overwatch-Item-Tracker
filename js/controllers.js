@@ -434,23 +434,9 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
 
   this.willEnableSync = false;
 
-  this.toggleSync = function() {
-    if (this.syncDisabled && !vm.willEnableSync) {
-      vm.willEnableSync = true;
-    }
-
-    if (!this.syncDisabled) {
-      vm.syncDisabled = true;
-      StorageService.setSetting('syncDisabled', true);
-    } else {
-      vm.syncDisabled = !vm.syncDisabled;
-    }   
-  };
-
   this.googleUser = GoogleAPI.user;
   this.googleSignedIn = GoogleAPI.isSignedIn;
   this.googleMessage = null;
-  this.googleLastSynced = null;
 
   this.close = function() {
     $uibModalInstance.dismiss('close');
@@ -562,6 +548,19 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
 
     StorageService.setData(DataService.checked);
     $rootScope.$emit('selectAll');
+  };
+
+  this.toggleSync = function() {
+    if (this.syncDisabled && !vm.willEnableSync) {
+      vm.willEnableSync = true;
+    }
+
+    if (!this.syncDisabled) {
+      vm.syncDisabled = true;
+      StorageService.setSetting('syncDisabled', true);
+    } else {
+      vm.syncDisabled = !vm.syncDisabled;
+    }   
   };
 
   $rootScope.$on('google:login', function(event, data) {
