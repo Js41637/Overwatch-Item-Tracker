@@ -479,6 +479,9 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
     }
   };
 
+  this.data = angular.toJson(DataService.checked, 2);
+  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines'];
+  var validHeroes = Object.keys(DataService.heroes);
   function validateData(data) {
     try {
       data = typeof data === 'string' ? angular.fromJson(data) : data;
@@ -507,10 +510,6 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModalInstance", "St
       return 'Error parsing json';
     }
   }
-
-  this.data = angular.toJson(DataService.checked, 2);
-  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines'];
-  var validHeroes = Object.keys(DataService.heroes);
 
   this.importData = function(data, test) {
     vm.importErrors = null;
