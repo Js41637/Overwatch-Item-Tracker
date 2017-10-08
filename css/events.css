@@ -421,93 +421,148 @@
   border: none;
 }
 
-/* HALLOWEEN 2016 */
+/* HALLOWEEN */
 
-#HALLOWEEN_2016 #event-container .col {
+#HALLOWEEN #event-container {
+  padding-bottom: 20px;
+}
+
+#HALLOWEEN #event-container .section {
+  margin-top: 10px;
+}
+
+#HALLOWEEN #event-container .section .item {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: rgba(40, 53, 79, 0.6);
+  position: relative;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
+}
+
+#HALLOWEEN #event-container .section .item {
+  display: inline-flex;
+  margin-right: 1px;
+  margin-bottom: 0;
+}
+
+#HALLOWEEN #event-container .section .flex-2 .item {
+  width: calc(50% - 1px);
+}
+
+#HALLOWEEN #event-container .section .flex-3 .item {
+  width: calc(33.33% - 1px);
+}
+
+#HALLOWEEN #event-container .section .flex-4 .item {
+  width: calc(25% - 1px);
+}
+
+#HALLOWEEN #event-container .section .item label {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: 6px 0;
+  align-items: left;
+  flex-wrap: wrap;
+}
+
+#HALLOWEEN #event-container .section .item input {
+  height: 24px;
+  margin: 1px 5px 1px 4px;
+  float: left;
+  cursor: pointer;
+  min-width: 24px;
+}
+
+#HALLOWEEN #event-container .section .item h4 {
+  font-size: 14px;
+  color: rgba(220, 220, 220, 0.75);
+  width: 100%;
   display: initial;
 }
 
-#HALLOWEEN_2016 #event-container #col1 {
-  width: 46%;
+#HALLOWEEN #event-container .section .item h4:before, #HALLOWEEN #event-container .section .item h4:after {
+  content: "";
 }
 
-#HALLOWEEN_2016 #event-container #col2 {
-  width: 53%;
+#HALLOWEEN #event-container .section .item h3 {
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  letter-spacing: 0.3;
+  font-size: 17px;
 }
 
-#HALLOWEEN_2016 #event-container #col3 {
-  width: 15%;
+#HALLOWEEN #event-container .section .item small {
+  font-size: 16px;
+  padding-top: 1px;
 }
 
-#HALLOWEEN_2016 #event-container #epic-skins {
-  width: 100%;
+#HALLOWEEN #event-container .section-header h2, #legendary-skins .inner h2 {
+  color: rgb(64, 82, 117);
+  font-size: 38px;
+  font-weight: bold;
 }
 
-#HALLOWEEN_2016 #event-container #emotes h2 {
-  margin-top: 24px;
+#HALLOWEEN .section-header h2 .itemTotal {
+  font-size: 0.7em;
+  margin-left: 2px;
+  color: inherit;
+  font-weight: inherit;
 }
 
-#HALLOWEEN_2016 #event-container .top {
-  display: flex;
+#HALLOWEEN #legendary-skins h2 small {
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  letter-spacing: 0.3;
 }
 
-#HALLOWEEN_2016 #event-container .top, #HALLOWEEN_2016 #event-container .bottom {
-  padding: 0 8px;
-}
-
-#HALLOWEEN_2016 #event-container #voicelines {
-  width: 49.5%;
-  display: inline-block;
-}
-
-#HALLOWEEN_2016 #event-container #sprays {
-  width: 43%;
-}
-
-#HALLOWEEN_2016 #event-container #icons {
-  width: 49%;
-  display: inline-block;
-}
-
-#HALLOWEEN_2016 #event-container #icons .items {
-  height: 418px;
-}
-
-#HALLOWEEN_2016 #event-container #victoryposes .items {
-  height: 325px;
-}
-
-#HALLOWEEN_2016 #event-container #voicelines .items {
-  height: 397px;
-}
-
-#HALLOWEEN_2016 #event-container #sprays .items {
-  height: 364px;
-}
-
-#HALLOWEEN_2016 #event-container #sprays .item h4:not(:only-child) {
+#HALLOWEEN .section-header h2 .itemTotal:before, #HALLOWEEN .section-header h2 .itemTotal:after, #HALLOWEEN #legendary-skins h2 small:before, #HALLOWEEN #legendary-skins h2 small:after {
   display: none;
 }
 
-#HALLOWEEN_2016 #event-container #row2 .left {
-  width: 13%;
+#HALLOWEEN #event-container .event-progress {
+  background-color: rgba(24, 34, 62, .7);
+  height: 22px;
+  padding: 2px;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+  box-sizing: content-box;
+  position: absolute;
+  width: 75%;
+  top: -17px;
+  opacity: 0.9;
 }
 
-#HALLOWEEN_2016 #event-container #row2 .right {
-  width: 16%;
-  margin: 0 8px;
+#HALLOWEEN #event-container .event-progress span {
+  line-height: 26px;
+  font-size: 20px;
+  display: block;
+  position: absolute;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-#HALLOWEEN_2016 #event-container #victoryposes {
-  width: 27%;
+#HALLOWEEN #event-container .event-progress .event-progress-bar {
+  width: 0;
+  border-radius: 3px;
+  background-color: rgb(92, 184, 92);
+  border-top: 2px solid rgba(92, 184, 92, 0.95);
+  transition: width .8s ease-in-out;
+  height: 100%;
+  box-sizing: border-box;
 }
 
-#HALLOWEEN_2016 #event-container #sprays .item h3 {
-  font-size: 22px;
-}
-
-#HALLOWEEN_2016 #event-container #sprays .item:nth-child(32) h3 {
-  font-size: 21px;
+#HALLOWEEN #event-container .event-progress .event-progress-bar.progress-bar-striped {
+  border: none;
 }
 
 /* WINTER WONDERLAND 2016 */

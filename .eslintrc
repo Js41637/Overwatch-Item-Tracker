@@ -24,7 +24,7 @@
     "rules": {
         "no-console": "off",
         "no-unreachable": "off",
-        "semi": ["error", "always"],
+        "semi": "off",
         "indent": ["error", 2, { "SwitchCase": 1 }]
     }
 }

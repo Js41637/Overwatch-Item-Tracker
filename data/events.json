@@ -1,921 +1,4 @@
 {
-  "HALLOWEEN_2016": {
-    "name": "Halloween Terror 2016",
-    "id": "HALLOWEEN_2016",
-    "dates": {
-      "start": "1476208800000",
-      "end": "1478059200000"
-    },
-    "items": {
-      "skinsEpic": [
-        {
-          "heroName": "Ana",
-          "hero": "ana",
-          "name": "Ghoul",
-          "id": "ana-ghoul",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/ana-ghoul.jpg"
-        },
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "Tombstone",
-          "id": "bastion-tombstone",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/bastion-tombstone.jpg"
-        },
-        {
-          "heroName": "Hanzo",
-          "hero": "hanzo",
-          "name": "Demon",
-          "id": "hanzo-demon",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/hanzo-demon.jpg"
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Possessed",
-          "id": "pharah-possessed",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/pharah-possessed.jpg"
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Coldhardt",
-          "id": "reinhardt-coldhardt",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/reinhardt-coldhardt.jpg"
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "Immortal",
-          "id": "soldier-76-immortal",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/soldier-76-immortal.jpg"
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "Vampire",
-          "id": "symmetra-vampire",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/symmetra-vampire.jpg"
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Skullyatta",
-          "id": "zenyatta-skullyatta",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsEpic/zenyatta-skullyatta.jpg"
-        }
-      ],
-      "emotes": [
-        {
-          "heroName": "Ana",
-          "hero": "ana",
-          "name": "Candy",
-          "id": "ana-candy",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/emotes/ana-candy.webm"
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Pumpkin Smash",
-          "id": "reinhardt-pumpkin-smash",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/emotes/reinhardt-pumpkin-smash.webm"
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "Shadow Puppets",
-          "id": "winston-shadow-puppets",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/emotes/winston-shadow-puppets.webm"
-        }
-      ],
-      "sprays": [
-        {
-          "heroName": "Ana",
-          "hero": "ana",
-          "name": "Trick or Treat",
-          "id": "ana-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/ana/sprays/ana-trick-or-treat.png"
-        },
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "Trick or Treat",
-          "id": "bastion-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/bastion/sprays/bastion-trick-or-treat.png"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Trick or Treat",
-          "id": "dva-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/dva/sprays/dva-trick-or-treat.png"
-        },
-        {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Trick or Treat",
-          "id": "genji-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/genji/sprays/genji-trick-or-treat.png"
-        },
-        {
-          "heroName": "Hanzo",
-          "hero": "hanzo",
-          "name": "Trick or Treat",
-          "id": "hanzo-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/hanzo/sprays/hanzo-trick-or-treat.png"
-        },
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "Trick or Treat",
-          "id": "junkrat-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/junkrat/sprays/junkrat-trick-or-treat.png"
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Trick or Treat",
-          "id": "lucio-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/lucio/sprays/lucio-trick-or-treat.png"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Trick or Treat",
-          "id": "mccree-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/mccree/sprays/mccree-trick-or-treat.png"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Trick or Treat",
-          "id": "mei-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/mei/sprays/mei-trick-or-treat.png"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Trick or Treat",
-          "id": "mercy-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/mercy/sprays/mercy-trick-or-treat.png"
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Trick or Treat",
-          "id": "pharah-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/pharah/sprays/pharah-trick-or-treat.png"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "Trick or Treat",
-          "id": "reaper-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/reaper/sprays/reaper-trick-or-treat.png"
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Trick or Treat",
-          "id": "reinhardt-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/reinhardt/sprays/reinhardt-trick-or-treat.png"
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "Trick or Treat",
-          "id": "roadhog-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/roadhog/sprays/roadhog-trick-or-treat.png"
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "Trick or Treat",
-          "id": "soldier-76-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/soldier-76/sprays/soldier-76-trick-or-treat.png"
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "Trick or Treat",
-          "id": "symmetra-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/symmetra/sprays/symmetra-trick-or-treat.png"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Trick or Treat",
-          "id": "torbjorn-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/torbjorn/sprays/torbjorn-trick-or-treat.png"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Trick or Treat",
-          "id": "tracer-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/tracer/sprays/tracer-trick-or-treat.png"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Trick or Treat",
-          "id": "widowmaker-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/widowmaker/sprays/widowmaker-trick-or-treat.png"
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "Trick or Treat",
-          "id": "winston-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/winston/sprays/winston-trick-or-treat.png"
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Trick or Treat",
-          "id": "zarya-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/zarya/sprays/zarya-trick-or-treat.png"
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Trick or Treat",
-          "id": "zenyatta-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/zenyatta/sprays/zenyatta-trick-or-treat.png"
-        },
-        {
-          "hero": "all",
-          "name": "...Never Die",
-          "id": "never-die",
-          "url": "./resources/heroes/all/sprays/never-die.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Bats",
-          "id": "bats",
-          "url": "./resources/heroes/all/sprays/bats.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Boo!",
-          "id": "boo",
-          "url": "./resources/heroes/all/sprays/boo.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Boop!",
-          "id": "boop",
-          "url": "./resources/heroes/all/sprays/boop.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Candyball",
-          "id": "candyball",
-          "url": "./resources/heroes/all/sprays/candyball.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Fangs",
-          "id": "fangs",
-          "url": "./resources/heroes/all/sprays/fangs.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Gummy Hog",
-          "id": "gummy-hog",
-          "url": "./resources/heroes/all/sprays/gummy-hog.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Halloween Terror",
-          "id": "halloween-terror",
-          "url": "./resources/heroes/all/sprays/halloween-terror.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Pumpkins",
-          "id": "pumpkins",
-          "url": "./resources/heroes/all/sprays/pumpkins.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Witch's Brew",
-          "id": "witchs-brew",
-          "url": "./resources/heroes/all/sprays/witchs-brew.png",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Halloween Special",
-          "id": "halloween-special",
-          "url": "./resources/heroes/all/sprays/halloween-special.png",
-          "achievement": true,
-          "description": "Win Junkenstein's Revenge on hard difficulty."
-        },
-        {
-          "hero": "all",
-          "name": "Junkenstein's Revenge",
-          "id": "junkensteins-revenge",
-          "url": "./resources/heroes/all/sprays/junkensteins-revenge.png",
-          "achievement": true,
-          "description": "Win Junkenstein's Revenge on medium difficulty."
-        },
-        {
-          "hero": "all",
-          "name": "Rise of the Zomnics",
-          "id": "rise-of-the-zomnics",
-          "url": "./resources/heroes/all/sprays/rise-of-the-zomnics.png",
-          "achievement": true,
-          "description": "Win Junkenstein's Revenge using each of the 4 heroes."
-        },
-        {
-          "hero": "all",
-          "name": "The Reapening",
-          "id": "the-reapening",
-          "url": "./resources/heroes/all/sprays/the-reapening.png",
-          "achievement": true,
-          "description": "Win Junkenstein's Revenge on medium difficulty with no damage to the door."
-        }
-      ],
-      "voicelines": [
-        {
-          "heroName": "Ana",
-          "hero": "ana",
-          "name": "Are you scared?",
-          "id": "ana-are-you-scared",
-          "quality": "common",
-          "url": "./resources/heroes/ana/voicelines/ana-are-you-scared.ogg"
-        },
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "W-W-Wooooo...?",
-          "id": "bastion-wwwooooo",
-          "quality": "common",
-          "url": "./resources/heroes/bastion/voicelines/bastion-wwwooooo.ogg"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Happy Halloween!",
-          "id": "dva-happy-halloween",
-          "quality": "common",
-          "url": "./resources/heroes/dva/voicelines/dva-happy-halloween.ogg"
-        },
-        {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "My Halloween costume?",
-          "id": "genji-my-halloween-costume",
-          "quality": "common",
-          "url": "./resources/heroes/genji/voicelines/genji-my-halloween-costume.ogg"
-        },
-        {
-          "heroName": "Hanzo",
-          "hero": "hanzo",
-          "name": "You are already dead",
-          "id": "hanzo-you-are-already-dead",
-          "quality": "common",
-          "url": "./resources/heroes/hanzo/voicelines/hanzo-you-are-already-dead.ogg"
-        },
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "Happy Halloween",
-          "id": "junkrat-happy-halloween",
-          "quality": "common",
-          "url": "./resources/heroes/junkrat/voicelines/junkrat-happy-halloween.ogg"
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Killed it!",
-          "id": "lucio-killed-it",
-          "quality": "common",
-          "url": "./resources/heroes/lucio/voicelines/lucio-killed-it.ogg"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "It's your funeral",
-          "id": "mccree-its-your-funeral",
-          "quality": "common",
-          "url": "./resources/heroes/mccree/voicelines/mccree-its-your-funeral.ogg"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Scary!",
-          "id": "mei-scary",
-          "quality": "common",
-          "url": "./resources/heroes/mei/voicelines/mei-scary.ogg"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Superstition",
-          "id": "mercy-superstition",
-          "quality": "common",
-          "url": "./resources/heroes/mercy/voicelines/mercy-superstition.ogg"
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Dead or alive",
-          "id": "pharah-dead-or-alive",
-          "quality": "common",
-          "url": "./resources/heroes/pharah/voicelines/pharah-dead-or-alive.ogg"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "I work the graveyard shift",
-          "id": "reaper-i-work-the-graveyard-shift",
-          "quality": "common",
-          "url": "./resources/heroes/reaper/voicelines/reaper-i-work-the-graveyard-shift.ogg"
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Smashing",
-          "id": "reinhardt-smashing",
-          "quality": "common",
-          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-smashing.ogg"
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "Want some candy?",
-          "id": "roadhog-want-some-candy",
-          "quality": "common",
-          "url": "./resources/heroes/roadhog/voicelines/roadhog-want-some-candy.ogg"
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "Knock knock",
-          "id": "soldier-76-knock-knock",
-          "quality": "common",
-          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-knock-knock.ogg"
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "A frightening thought",
-          "id": "symmetra-a-frightening-thought",
-          "quality": "common",
-          "url": "./resources/heroes/symmetra/voicelines/symmetra-a-frightening-thought.ogg"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "If you build it",
-          "id": "torbjorn-if-you-build-it",
-          "quality": "common",
-          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-if-you-build-it.ogg"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Ooh, Scary!",
-          "id": "tracer-ooh-scary",
-          "quality": "common",
-          "url": "./resources/heroes/tracer/voicelines/tracer-ooh-scary.ogg"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "The party is over",
-          "id": "widowmaker-the-party-is-over",
-          "quality": "common",
-          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-the-party-is-over.ogg"
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "This is not a costume",
-          "id": "winston-this-is-not-a-costume",
-          "quality": "common",
-          "url": "./resources/heroes/winston/voicelines/winston-this-is-not-a-costume.ogg"
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Never forget the fallen",
-          "id": "zarya-never-forget-the-fallen",
-          "quality": "common",
-          "url": "./resources/heroes/zarya/voicelines/zarya-never-forget-the-fallen.ogg"
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Trick or treat?",
-          "id": "zenyatta-trick-or-treat",
-          "quality": "common",
-          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-trick-or-treat.ogg"
-        }
-      ],
-      "poses": [
-        {
-          "heroName": "Ana",
-          "hero": "ana",
-          "name": "R.I.P.",
-          "id": "ana-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/ana-rip.jpg"
-        },
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "R.I.P.",
-          "id": "bastion-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/bastion-rip.jpg",
-          "description": "Responsible for so many deaths during the Omnic Crisis, even today Bastion units are a symbol of fear."
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "R.I.P.",
-          "id": "dva-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/dva-rip.jpg"
-        },
-        {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "R.I.P.",
-          "id": "genji-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/genji-rip.jpg"
-        },
-        {
-          "heroName": "Hanzo",
-          "hero": "hanzo",
-          "name": "R.I.P.",
-          "id": "hanzo-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/hanzo-rip.jpg"
-        },
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "R.I.P.",
-          "id": "junkrat-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/junkrat-rip.jpg"
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "R.I.P.",
-          "id": "lucio-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/lucio-rip.jpg"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "R.I.P.",
-          "id": "mccree-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/mccree-rip.jpg"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "R.I.P.",
-          "id": "mei-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/mei-rip.jpg"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "R.I.P.",
-          "id": "mercy-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/mercy-rip.jpg"
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "R.I.P.",
-          "id": "pharah-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/pharah-rip.jpg"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "R.I.P.",
-          "id": "reaper-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/reaper-rip.jpg"
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "R.I.P.",
-          "id": "reinhardt-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/reinhardt-rip.jpg"
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "R.I.P.",
-          "id": "roadhog-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/roadhog-rip.jpg"
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "R.I.P.",
-          "id": "soldier-76-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/soldier-76-rip.jpg"
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "R.I.P.",
-          "id": "symmetra-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/symmetra-rip.jpg"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "R.I.P.",
-          "id": "torbjorn-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/torbjorn-rip.jpg"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "R.I.P.",
-          "id": "tracer-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/tracer-rip.jpg"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "R.I.P.",
-          "id": "widowmaker-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/widowmaker-rip.jpg"
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "R.I.P.",
-          "id": "winston-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/winston-rip.jpg"
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "R.I.P.",
-          "id": "zarya-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/zarya-rip.jpg"
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "R.I.P.",
-          "id": "zenyatta-rip",
-          "quality": "rare",
-          "url": "./resources/updates/HALLOWEEN_2016/poses/zenyatta-rip.jpg"
-        }
-      ],
-      "intros": [
-        {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Pumpkin Carving",
-          "id": "genji-pumpkin-carving",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/intros/genji-pumpkin-carving.webm"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Ice Scream",
-          "id": "mei-ice-scream",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/intros/mei-ice-scream.webm"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "Eternal Rest",
-          "id": "reaper-eternal-rest",
-          "quality": "epic",
-          "url": "./resources/updates/HALLOWEEN_2016/intros/reaper-eternal-rest.webm"
-        }
-      ],
-      "skinsLegendary": [
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "Dr. Junkenstein",
-          "id": "junkrat-dr-junkenstein",
-          "quality": "legendary",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/junkrat-dr-junkenstein.jpg",
-          "description": "As the tale goes, Dr. Junkenstein made a deal with the Witch of the Wilds in exchange for the secret to creating life. But his triumph was short lived as he was slain by four wanderers in Adlersbrunn."
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Witch",
-          "id": "mercy-witch",
-          "quality": "legendary",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/mercy-witch.jpg",
-          "description": "The Witch of the Wilds is a mysterious figure who appears in the tale of Dr. Junkenstein and others, offering people the object of their desire, for a price."
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "Pumpkin",
-          "id": "reaper-pumpkin",
-          "quality": "legendary",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/reaper-pumpkin.jpg",
-          "description": "In the tale of Dr. Junkenstein, the Reaper was a servant to the Witch of the Wilds, bound to serve her for some unknown reason."
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "Junkenstein's Monster",
-          "id": "roadhog-junkensteins-monster",
-          "quality": "legendary",
-          "url": "./resources/updates/HALLOWEEN_2016/skinsLegendary/roadhog-junkensteins-monster.jpg",
-          "description": "Armed with the secret of creating artificial life, Dr. Jamison Junkenstein birthed a monster."
-        }
-      ],
-      "icons": [
-        {
-          "hero": "all",
-          "name": "...Never Die",
-          "id": "never-die",
-          "url": "./resources/heroes/all/icons/never-die.png"
-        },
-        {
-          "hero": "all",
-          "name": "Bewitching",
-          "id": "bewitching",
-          "url": "./resources/heroes/all/icons/bewitching.png"
-        },
-        {
-          "hero": "all",
-          "name": "Calavera",
-          "id": "calavera",
-          "url": "./resources/heroes/all/icons/calavera.png"
-        },
-        {
-          "hero": "all",
-          "name": "Candle",
-          "id": "candle",
-          "url": "./resources/heroes/all/icons/candle.png"
-        },
-        {
-          "hero": "all",
-          "name": "Eyeball",
-          "id": "eyeball",
-          "url": "./resources/heroes/all/icons/eyeball.png"
-        },
-        {
-          "hero": "all",
-          "name": "Ghostymari",
-          "id": "ghostymari",
-          "url": "./resources/heroes/all/icons/ghostymari.png"
-        },
-        {
-          "hero": "all",
-          "name": "Halloween Terror",
-          "id": "halloween-terror-2016",
-          "url": "./resources/heroes/all/icons/halloween-terror-2016.png"
-        },
-        {
-          "hero": "all",
-          "name": "Spider",
-          "id": "spider",
-          "url": "./resources/heroes/all/icons/spider.png"
-        },
-        {
-          "hero": "all",
-          "name": "Superstition",
-          "id": "superstition",
-          "url": "./resources/heroes/all/icons/superstition.png"
-        },
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "The Doctor",
-          "id": "junkrat-the-doctor",
-          "url": "./resources/heroes/junkrat/icons/junkrat-the-doctor.png"
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "The Monster",
-          "id": "roadhog-the-monster",
-          "url": "./resources/heroes/roadhog/icons/roadhog-the-monster.png"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "The Reaper",
-          "id": "reaper-the-reaper",
-          "url": "./resources/heroes/reaper/icons/reaper-the-reaper.png"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "The Witch",
-          "id": "mercy-the-witch",
-          "url": "./resources/heroes/mercy/icons/mercy-the-witch.png"
-        },
-        {
-          "hero": "all",
-          "name": "Tombstone",
-          "id": "tombstone",
-          "url": "./resources/heroes/all/icons/tombstone.png"
-        },
-        {
-          "hero": "all",
-          "name": "Vampachimari",
-          "id": "vampachimari",
-          "url": "./resources/heroes/all/icons/vampachimari.png"
-        },
-        {
-          "hero": "all",
-          "name": "Witch's Brew",
-          "id": "witchs-brew",
-          "url": "./resources/heroes/all/icons/witchs-brew.png"
-        },
-        {
-          "hero": "all",
-          "name": "Witch's Hat",
-          "id": "witchs-hat",
-          "url": "./resources/heroes/all/icons/witchs-hat.png"
-        },
-        {
-          "hero": "all",
-          "name": "Wolf",
-          "id": "wolf",
-          "url": "./resources/heroes/all/icons/wolf.png"
-        }
-      ]
-    }
-  },
   "WINTER_WONDERLAND_2016": {
     "name": "Winter Wonderland 2016",
     "id": "WINTER_WONDERLAND_2016",
@@ -1959,7 +1042,7 @@
         },
         {
           "hero": "all",
-          "name": "Winter Wonderland",
+          "name": "Winter Wonderland 2016",
           "id": "winter-wonderland-2016",
           "url": "./resources/heroes/all/icons/winter-wonderland-2016.png"
         },
@@ -3012,7 +2095,7 @@
         },
         {
           "hero": "all",
-          "name": "Year of the Rooster",
+          "name": "Year of the Rooster 2017",
           "id": "year-of-the-rooster-2017",
           "url": "./resources/heroes/all/icons/year-of-the-rooster-2017.png"
         }
@@ -3893,7 +2976,7 @@
         },
         {
           "hero": "all",
-          "name": "Uprising",
+          "name": "Uprising 2017",
           "id": "uprising-2017",
           "url": "./resources/heroes/all/icons/uprising-2017.png"
         }
@@ -4349,7 +3432,7 @@
         },
         {
           "hero": "all",
-          "name": "Anniversary",
+          "name": "Anniversary 2017",
           "id": "anniversary-2017",
           "url": "./resources/heroes/all/icons/anniversary-2017.png"
         },
@@ -4555,7 +3638,7 @@
         },
         {
           "hero": "all",
-          "name": "Anniversary",
+          "name": "Anniversary 2017",
           "id": "anniversary-2017",
           "url": "./resources/heroes/all/sprays/anniversary-2017.png",
           "quality": "common"
@@ -5366,13 +4449,13 @@
         },
         {
           "hero": "all",
-          "name": "Summer Games 2016",
+          "name": "Summer Games",
           "id": "summer-games-2016",
           "url": "./resources/heroes/all/icons/summer-games-2016.png"
         },
         {
           "hero": "all",
-          "name": "Summer Games 2017",
+          "name": "Summer Games",
           "id": "summer-games-2017",
           "url": "./resources/heroes/all/icons/summer-games-2017.png"
         },
@@ -5629,16 +4712,16 @@
         },
         {
           "hero": "all",
-          "name": "Summer Games ",
-          "id": "summer-games",
-          "url": "./resources/heroes/all/sprays/summer-games.png",
+          "name": "Summer Games",
+          "id": "summer-games-2016",
+          "url": "./resources/heroes/all/sprays/summer-games-2016.png",
           "quality": "common"
         },
         {
           "hero": "all",
-          "name": "Summer Games 2016",
-          "id": "summer-games-2016",
-          "url": "./resources/heroes/all/sprays/summer-games-2016.png",
+          "name": "Summer Games ",
+          "id": "summer-games",
+          "url": "./resources/heroes/all/sprays/summer-games.png",
           "quality": "common"
         },
         {
@@ -6491,6 +5574,1009 @@
           "quality": "legendary",
           "url": "./resources/updates/SUMMER_GAMES/skinsLegendary/widowmaker-cote-dazur.jpg",
           "isNew": true
+        }
+      ]
+    }
+  },
+  "HALLOWEEN": {
+    "name": "Halloween Terror",
+    "id": "HALLOWEEN",
+    "dates": {
+      "start": "1476208800000",
+      "end": "1478059200000"
+    },
+    "items": {
+      "skins": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Ghoul",
+          "id": "ana-ghoul",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/skins/ana-ghoul.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Tombstone",
+          "id": "bastion-tombstone",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/skins/bastion-tombstone.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Demon",
+          "id": "hanzo-demon",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/skins/hanzo-demon.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Possessed",
+          "id": "pharah-possessed",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/skins/pharah-possessed.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Coldhardt",
+          "id": "reinhardt-coldhardt",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/skins/reinhardt-coldhardt.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Immortal",
+          "id": "soldier-76-immortal",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/skins/soldier-76-immortal.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Vampire",
+          "id": "symmetra-vampire",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/skins/symmetra-vampire.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Skullyatta",
+          "id": "zenyatta-skullyatta",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/skins/zenyatta-skullyatta.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Dr. Junkenstein",
+          "id": "junkrat-dr-junkenstein",
+          "quality": "legendary",
+          "url": "./resources/updates/HALLOWEEN/skins/junkrat-dr-junkenstein.jpg",
+          "description": "As the tale goes, Dr. Junkenstein made a deal with the Witch of the Wilds in exchange for the secret to creating life. But his triumph was short lived as he was slain by four wanderers in Adlersbrunn.",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Witch",
+          "id": "mercy-witch",
+          "quality": "legendary",
+          "url": "./resources/updates/HALLOWEEN/skins/mercy-witch.jpg",
+          "description": "The Witch of the Wilds is a mysterious figure who appears in the tale of Dr. Junkenstein and others, offering people the object of their desire, for a price.",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Pumpkin",
+          "id": "reaper-pumpkin",
+          "quality": "legendary",
+          "url": "./resources/updates/HALLOWEEN/skins/reaper-pumpkin.jpg",
+          "description": "In the tale of Dr. Junkenstein, the Reaper was a servant to the Witch of the Wilds, bound to serve her for some unknown reason.",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Junkenstein's Monster",
+          "id": "roadhog-junkensteins-monster",
+          "quality": "legendary",
+          "url": "./resources/updates/HALLOWEEN/skins/roadhog-junkensteins-monster.jpg",
+          "description": "Armed with the secret of creating artificial life, Dr. Jamison Junkenstein birthed a monster.",
+          "group": "HALLOWEEN_2016"
+        }
+      ],
+      "emotes": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Candy",
+          "id": "ana-candy",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/emotes/ana-candy.webm",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Pumpkin Smash",
+          "id": "reinhardt-pumpkin-smash",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/emotes/reinhardt-pumpkin-smash.webm",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Shadow Puppets",
+          "id": "winston-shadow-puppets",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/emotes/winston-shadow-puppets.webm",
+          "group": "HALLOWEEN_2016"
+        }
+      ],
+      "sprays": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Trick or Treat",
+          "id": "ana-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/ana/sprays/ana-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Trick or Treat",
+          "id": "bastion-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/sprays/bastion-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Trick or Treat",
+          "id": "dva-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/dva/sprays/dva-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Trick or Treat",
+          "id": "genji-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/genji/sprays/genji-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Trick or Treat",
+          "id": "hanzo-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/sprays/hanzo-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Trick or Treat",
+          "id": "junkrat-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/sprays/junkrat-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Trick or Treat",
+          "id": "lucio-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/sprays/lucio-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Trick or Treat",
+          "id": "mccree-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/sprays/mccree-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Trick or Treat",
+          "id": "mei-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/mei/sprays/mei-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Trick or Treat",
+          "id": "mercy-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/sprays/mercy-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Trick or Treat",
+          "id": "pharah-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/sprays/pharah-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Trick or Treat",
+          "id": "reaper-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/sprays/reaper-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Trick or Treat",
+          "id": "reinhardt-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/sprays/reinhardt-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Trick or Treat",
+          "id": "roadhog-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/sprays/roadhog-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Trick or Treat",
+          "id": "soldier-76-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/sprays/soldier-76-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Trick or Treat",
+          "id": "symmetra-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/sprays/symmetra-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Trick or Treat",
+          "id": "torbjorn-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/sprays/torbjorn-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Trick or Treat",
+          "id": "tracer-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/sprays/tracer-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Trick or Treat",
+          "id": "widowmaker-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/sprays/widowmaker-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Trick or Treat",
+          "id": "winston-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/winston/sprays/winston-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Trick or Treat",
+          "id": "zarya-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/sprays/zarya-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Trick or Treat",
+          "id": "zenyatta-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/sprays/zenyatta-trick-or-treat.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "hero": "all",
+          "name": "...Never Die",
+          "id": "never-die",
+          "url": "./resources/heroes/all/sprays/never-die.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Bats",
+          "id": "bats",
+          "url": "./resources/heroes/all/sprays/bats.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Boo!",
+          "id": "boo",
+          "url": "./resources/heroes/all/sprays/boo.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Boop!",
+          "id": "boop",
+          "url": "./resources/heroes/all/sprays/boop.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Candyball",
+          "id": "candyball",
+          "url": "./resources/heroes/all/sprays/candyball.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Fangs",
+          "id": "fangs",
+          "url": "./resources/heroes/all/sprays/fangs.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Gummy Hog",
+          "id": "gummy-hog",
+          "url": "./resources/heroes/all/sprays/gummy-hog.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Halloween Terror",
+          "id": "halloween-terror",
+          "url": "./resources/heroes/all/sprays/halloween-terror.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Pumpkins",
+          "id": "pumpkins",
+          "url": "./resources/heroes/all/sprays/pumpkins.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Witch's Brew",
+          "id": "witchs-brew",
+          "url": "./resources/heroes/all/sprays/witchs-brew.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Halloween Special",
+          "id": "halloween-special",
+          "url": "./resources/heroes/all/sprays/halloween-special.png",
+          "achievement": true,
+          "description": "Win Junkenstein's Revenge on hard difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Junkenstein's Revenge",
+          "id": "junkensteins-revenge",
+          "url": "./resources/heroes/all/sprays/junkensteins-revenge.png",
+          "achievement": true,
+          "description": "Win Junkenstein's Revenge on medium difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Rise of the Zomnics",
+          "id": "rise-of-the-zomnics",
+          "url": "./resources/heroes/all/sprays/rise-of-the-zomnics.png",
+          "achievement": true,
+          "description": "Win Junkenstein's Revenge using each of the 4 heroes."
+        },
+        {
+          "hero": "all",
+          "name": "The Reapening",
+          "id": "the-reapening",
+          "url": "./resources/heroes/all/sprays/the-reapening.png",
+          "achievement": true,
+          "description": "Win Junkenstein's Revenge on medium difficulty with no damage to the door."
+        }
+      ],
+      "voicelines": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Are you scared?",
+          "id": "ana-are-you-scared",
+          "quality": "common",
+          "url": "./resources/heroes/ana/voicelines/ana-are-you-scared.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "W-W-Wooooo...?",
+          "id": "bastion-wwwooooo",
+          "quality": "common",
+          "url": "./resources/heroes/bastion/voicelines/bastion-wwwooooo.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Happy Halloween!",
+          "id": "dva-happy-halloween",
+          "quality": "common",
+          "url": "./resources/heroes/dva/voicelines/dva-happy-halloween.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "My Halloween costume?",
+          "id": "genji-my-halloween-costume",
+          "quality": "common",
+          "url": "./resources/heroes/genji/voicelines/genji-my-halloween-costume.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "You are already dead",
+          "id": "hanzo-you-are-already-dead",
+          "quality": "common",
+          "url": "./resources/heroes/hanzo/voicelines/hanzo-you-are-already-dead.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Happy Halloween",
+          "id": "junkrat-happy-halloween",
+          "quality": "common",
+          "url": "./resources/heroes/junkrat/voicelines/junkrat-happy-halloween.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Killed it!",
+          "id": "lucio-killed-it",
+          "quality": "common",
+          "url": "./resources/heroes/lucio/voicelines/lucio-killed-it.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "It's your funeral",
+          "id": "mccree-its-your-funeral",
+          "quality": "common",
+          "url": "./resources/heroes/mccree/voicelines/mccree-its-your-funeral.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Scary!",
+          "id": "mei-scary",
+          "quality": "common",
+          "url": "./resources/heroes/mei/voicelines/mei-scary.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Superstition",
+          "id": "mercy-superstition",
+          "quality": "common",
+          "url": "./resources/heroes/mercy/voicelines/mercy-superstition.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Dead or alive",
+          "id": "pharah-dead-or-alive",
+          "quality": "common",
+          "url": "./resources/heroes/pharah/voicelines/pharah-dead-or-alive.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "I work the graveyard shift",
+          "id": "reaper-i-work-the-graveyard-shift",
+          "quality": "common",
+          "url": "./resources/heroes/reaper/voicelines/reaper-i-work-the-graveyard-shift.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Smashing",
+          "id": "reinhardt-smashing",
+          "quality": "common",
+          "url": "./resources/heroes/reinhardt/voicelines/reinhardt-smashing.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Want some candy?",
+          "id": "roadhog-want-some-candy",
+          "quality": "common",
+          "url": "./resources/heroes/roadhog/voicelines/roadhog-want-some-candy.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Knock knock",
+          "id": "soldier-76-knock-knock",
+          "quality": "common",
+          "url": "./resources/heroes/soldier-76/voicelines/soldier-76-knock-knock.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "A frightening thought",
+          "id": "symmetra-a-frightening-thought",
+          "quality": "common",
+          "url": "./resources/heroes/symmetra/voicelines/symmetra-a-frightening-thought.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "If you build it",
+          "id": "torbjorn-if-you-build-it",
+          "quality": "common",
+          "url": "./resources/heroes/torbjorn/voicelines/torbjorn-if-you-build-it.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Ooh, Scary!",
+          "id": "tracer-ooh-scary",
+          "quality": "common",
+          "url": "./resources/heroes/tracer/voicelines/tracer-ooh-scary.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "The party is over",
+          "id": "widowmaker-the-party-is-over",
+          "quality": "common",
+          "url": "./resources/heroes/widowmaker/voicelines/widowmaker-the-party-is-over.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "This is not a costume",
+          "id": "winston-this-is-not-a-costume",
+          "quality": "common",
+          "url": "./resources/heroes/winston/voicelines/winston-this-is-not-a-costume.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Never forget the fallen",
+          "id": "zarya-never-forget-the-fallen",
+          "quality": "common",
+          "url": "./resources/heroes/zarya/voicelines/zarya-never-forget-the-fallen.ogg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Trick or treat?",
+          "id": "zenyatta-trick-or-treat",
+          "quality": "common",
+          "url": "./resources/heroes/zenyatta/voicelines/zenyatta-trick-or-treat.ogg",
+          "group": "HALLOWEEN_2016"
+        }
+      ],
+      "poses": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "R.I.P.",
+          "id": "ana-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/ana-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "R.I.P.",
+          "id": "bastion-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/bastion-rip.jpg",
+          "description": "Responsible for so many deaths during the Omnic Crisis, even today Bastion units are a symbol of fear.",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "R.I.P.",
+          "id": "dva-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/dva-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "R.I.P.",
+          "id": "genji-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/genji-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "R.I.P.",
+          "id": "hanzo-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/hanzo-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "R.I.P.",
+          "id": "junkrat-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/junkrat-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "R.I.P.",
+          "id": "lucio-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/lucio-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "R.I.P.",
+          "id": "mccree-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/mccree-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "R.I.P.",
+          "id": "mei-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/mei-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "R.I.P.",
+          "id": "mercy-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/mercy-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "R.I.P.",
+          "id": "pharah-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/pharah-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "R.I.P.",
+          "id": "reaper-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/reaper-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "R.I.P.",
+          "id": "reinhardt-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/reinhardt-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "R.I.P.",
+          "id": "roadhog-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/roadhog-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "R.I.P.",
+          "id": "soldier-76-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/soldier-76-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "R.I.P.",
+          "id": "symmetra-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/symmetra-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "R.I.P.",
+          "id": "torbjorn-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/torbjorn-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "R.I.P.",
+          "id": "tracer-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/tracer-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "R.I.P.",
+          "id": "widowmaker-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/widowmaker-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "R.I.P.",
+          "id": "winston-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/winston-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "R.I.P.",
+          "id": "zarya-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/zarya-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "R.I.P.",
+          "id": "zenyatta-rip",
+          "quality": "rare",
+          "url": "./resources/updates/HALLOWEEN/poses/zenyatta-rip.jpg",
+          "group": "HALLOWEEN_2016"
+        }
+      ],
+      "intros": [
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Pumpkin Carving",
+          "id": "genji-pumpkin-carving",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/intros/genji-pumpkin-carving.webm",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Ice Scream",
+          "id": "mei-ice-scream",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/intros/mei-ice-scream.webm",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Eternal Rest",
+          "id": "reaper-eternal-rest",
+          "quality": "epic",
+          "url": "./resources/updates/HALLOWEEN/intros/reaper-eternal-rest.webm",
+          "group": "HALLOWEEN_2016"
+        }
+      ],
+      "icons": [
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "The Doctor",
+          "id": "junkrat-the-doctor",
+          "url": "./resources/heroes/junkrat/icons/junkrat-the-doctor.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "The Witch",
+          "id": "mercy-the-witch",
+          "url": "./resources/heroes/mercy/icons/mercy-the-witch.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "The Reaper",
+          "id": "reaper-the-reaper",
+          "url": "./resources/heroes/reaper/icons/reaper-the-reaper.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "The Monster",
+          "id": "roadhog-the-monster",
+          "url": "./resources/heroes/roadhog/icons/roadhog-the-monster.png",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "hero": "all",
+          "name": "...Never Die",
+          "id": "never-die",
+          "url": "./resources/heroes/all/icons/never-die.png"
+        },
+        {
+          "hero": "all",
+          "name": "Bewitching",
+          "id": "bewitching",
+          "url": "./resources/heroes/all/icons/bewitching.png"
+        },
+        {
+          "hero": "all",
+          "name": "Calavera",
+          "id": "calavera",
+          "url": "./resources/heroes/all/icons/calavera.png"
+        },
+        {
+          "hero": "all",
+          "name": "Candle",
+          "id": "candle",
+          "url": "./resources/heroes/all/icons/candle.png"
+        },
+        {
+          "hero": "all",
+          "name": "Eyeball",
+          "id": "eyeball",
+          "url": "./resources/heroes/all/icons/eyeball.png"
+        },
+        {
+          "hero": "all",
+          "name": "Ghostymari",
+          "id": "ghostymari",
+          "url": "./resources/heroes/all/icons/ghostymari.png"
+        },
+        {
+          "hero": "all",
+          "name": "Halloween Terror",
+          "id": "halloween-terror-2016",
+          "url": "./resources/heroes/all/icons/halloween-terror-2016.png"
+        },
+        {
+          "hero": "all",
+          "name": "Spider",
+          "id": "spider",
+          "url": "./resources/heroes/all/icons/spider.png"
+        },
+        {
+          "hero": "all",
+          "name": "Superstition",
+          "id": "superstition",
+          "url": "./resources/heroes/all/icons/superstition.png"
+        },
+        {
+          "hero": "all",
+          "name": "Tombstone",
+          "id": "tombstone",
+          "url": "./resources/heroes/all/icons/tombstone.png"
+        },
+        {
+          "hero": "all",
+          "name": "Vampachimari",
+          "id": "vampachimari",
+          "url": "./resources/heroes/all/icons/vampachimari.png"
+        },
+        {
+          "hero": "all",
+          "name": "Witch's Brew",
+          "id": "witchs-brew",
+          "url": "./resources/heroes/all/icons/witchs-brew.png"
+        },
+        {
+          "hero": "all",
+          "name": "Witch's Hat",
+          "id": "witchs-hat",
+          "url": "./resources/heroes/all/icons/witchs-hat.png"
+        },
+        {
+          "hero": "all",
+          "name": "Wolf",
+          "id": "wolf",
+          "url": "./resources/heroes/all/icons/wolf.png"
         }
       ]
     }
