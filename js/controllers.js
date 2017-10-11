@@ -463,8 +463,10 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     var el = document.createElement('a');
     el.setAttribute('href', url);
     el.setAttribute('download', 'overwatch-item-tracker_backup_' + getDate() + '.json');
+    document.body.appendChild(el);
     el.click();
     setTimeout(function() {
+      document.body.removeChild(el);
       URL.revokeObjectURL(url);
     }, 1000);
   };
