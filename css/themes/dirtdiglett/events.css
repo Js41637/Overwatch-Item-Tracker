@@ -27,7 +27,7 @@
 
 /* The header */
 body#SUMMER_GAMES:before,
-body#HALLOWEEN_2016:before,
+body#HALLOWEEN:before,
 body#WINTER_WONDERLAND_2016:before,
 body#YEAR_OF_THE_ROOSTER_2017:before,
 body#UPRISING_2017:before,
@@ -44,12 +44,12 @@ body#ANNIVERSARY_2017:before {
 }
 
 body#SUMMER_GAMES:before {
-  background-image: url(resources/SUMMER_GAMES_2016/bg.jpg);
+  background-image: url(resources/SUMMER_GAMES/bg.jpg);
   background-position: center 40%;
 }
 
-body#HALLOWEEN_2016:before {
-  background-image: url(resources/HALLOWEEN_2016/bg.jpg);
+body#HALLOWEEN:before {
+  background-image: url(resources/HALLOWEEN/bg.jpg);
   background-position: center 32%;
 }
 
@@ -176,14 +176,14 @@ body#ANNIVERSARY_2017:before {
   padding-left: 83px;
 }
 
-#HALLOWEEN_2016 #header .event-ended:before,
-#HALLOWEEN_2016 #header .event-active:before {
-  background-image: url(../../../resources/updates/HALLOWEEN_2016/logo.png);
+#HALLOWEEN #header .event-ended:before,
+#HALLOWEEN #header .event-active:before {
+  background-image: url(../../../resources/updates/HALLOWEEN/logo.png);
   width: 155px;
 }
 
-#HALLOWEEN_2016 .event-ended,
-#HALLOWEEN_2016 .event-active {
+#HALLOWEEN .event-ended,
+#HALLOWEEN .event-active {
   padding-left: 173px;
 }
 
@@ -338,7 +338,7 @@ body#ANNIVERSARY_2017:before {
 /* Event-specific layouts */
 
 
-/* SUMMER GAMES 2016 */
+/* SUMMER GAMES  */
 body#SUMMER_GAMES:before {
   min-height: 260px;
 }
@@ -396,72 +396,68 @@ body#SUMMER_GAMES:before {
 }
 
 
-/* HALLOWEEN 2016 */
-#HALLOWEEN_2016 #voicelines,
-#HALLOWEEN_2016 #icons,
-#HALLOWEEN_2016 #emotes,
-#HALLOWEEN_2016 #highlight-intros,
-#HALLOWEEN_2016 #victoryposes {
-  flex: 1;
+/* HALLOWEEN */
+/* SUMMER GAMES  */
+body#HALLOWEEN:before {
+  min-height: 260px;
 }
 
-#HALLOWEEN_2016 #voicelines .items,
-#HALLOWEEN_2016 #icons .items,
-#HALLOWEEN_2016 #sprays .items,
-#HALLOWEEN_2016 #victoryposes .items {
+#HALLOWEEN #event-container {
+  margin-top: 160px;
+}
+
+#HALLOWEEN #skins .items,
+#HALLOWEEN #icons .items,
+#HALLOWEEN #emotes .items,
+#HALLOWEEN #voicelines .items,
+#HALLOWEEN #intros .items,
+#HALLOWEEN #sprays .items,
+#HALLOWEEN #victoryposes .items  {
   flex-direction: initial;
 }
 
-#HALLOWEEN_2016 #voicelines .item {
-  width: 32%;
-  margin-right: 2%;
+#HALLOWEEN #voicelines .item,
+#HALLOWEEN #skins .item,
+#HALLOWEEN #icons .item,
+#HALLOWEEN #emotes .item,
+#HALLOWEEN #sprays .item,
+#HALLOWEEN #intros .item,
+#HALLOWEEN #victoryposes .item {
+  width: calc(50% - 6px);
+  display: inline-flex;
 }
 
-#HALLOWEEN_2016 #voicelines .item:nth-of-type(3n+0) {
+#HALLOWEEN #skins .item:nth-of-type(odd),
+#HALLOWEEN #icons .item:nth-of-type(odd),
+#HALLOWEEN #emotes .item:nth-of-type(odd),
+#HALLOWEEN #intros .item:nth-of-type(odd),
+#HALLOWEEN #sprays .item:nth-of-type(odd),
+#HALLOWEEN #victoryposes .item:nth-of-type(odd) {
   margin-right: 0;
 }
 
-#HALLOWEEN_2016 #victoryposes .item {
-  width: 49%;
+#HALLOWEEN #voicelines .item {
+  width: calc(33% - 6px);
+  display: inline-flex;
+}
+
+#HALLOWEEN #voicelines .item:nth-of-type(3n+0) {
   margin-right: 0;
 }
 
-#HALLOWEEN_2016 #victoryposes .item:nth-of-type(odd) {
-  margin-right: 2%;
+#HALLOWEEN #icons .item {
+  width: calc(25% - 6px);
+  display: inline-flex;
 }
 
-#HALLOWEEN_2016 #row2 .right,
-#HALLOWEEN_2016 #victoryposes,
-#HALLOWEEN_2016 #epic-skins {
-  flex: 1;
+#HALLOWEEN #icons .item:nth-of-type(4n+0) {
+  margin-right: 0;
 }
 
-#HALLOWEEN_2016 #row2 .left,
-#HALLOWEEN_2016 #row2 .right {
-  display: flex;
+#HALLOWEEN #event-container .section-header .itemTotal {
+  color: #9b9da2 !important;
 }
 
-#HALLOWEEN_2016 #row2 .right {
-  flex-direction: column;
-}
-
-#HALLOWEEN_2016 #emotes {
-  margin-top: 0;
-}
-
-#HALLOWEEN_2016 #row2 .left {
-  flex: 0.8;
-}
-
-#HALLOWEEN_2016 #sprays {
-  flex: 2.4;
-}
-
-/*
-#HALLOWEEN_2016 #victoryposes .items h4 {
-  display: initial !important;
-}
-*/
 
 /* WINTER WONDERLAND */
 #WINTER_WONDERLAND_2016 #voicelines,
@@ -662,63 +658,64 @@ body#SUMMER_GAMES:before {
   color: rgba(53, 53, 53, 0.6);
 }
 
-#HALLOWEEN_2016 #header {
+#HALLOWEEN #header {
   background-color: rgba(42, 44, 47, 0.9);
 }
 
-#HALLOWEEN_2016 .card .bg {
+#HALLOWEEN .card .bg {
   background: rgba(42, 44, 47, 0.9);
 }
 
-#HALLOWEEN_2016 .card .card-content .card-heading {
+#HALLOWEEN .card .card-content .card-heading {
   color: #ecd53c;
   text-shadow: 1px 1px 0 #df600f;
 }
 
-#HALLOWEEN_2016 .card .card-copy {
+#HALLOWEEN .card .card-copy {
   text-shadow: 0px 0px 3px #4cb8ae;
   color: #e3f4f2;
 }
 
-#HALLOWEEN_2016 .section-header {
+#HALLOWEEN .section-header {
   overflow: hidden;
+  background: transparent;
 }
 
-#HALLOWEEN_2016 .section-header h2 {
+#HALLOWEEN .section-header h2 {
   background-color: rgba(42, 44, 47, 0.9);
   text-shadow: 0px 0px 3px #4cb8ae;
   color: #fff;
 }
 
-#HALLOWEEN_2016 .section-header h2 small {
+#HALLOWEEN .section-header h2 small {
   text-shadow: none;
 }
 
-#HALLOWEEN_2016 #voicelines h2:before {
+#HALLOWEEN #voicelines h2:before {
   background-image: url(resources/icons/item-types/white/voice-lines.svg);
 }
 
-#HALLOWEEN_2016 #icons h2:before {
+#HALLOWEEN #icons h2:before {
   background-image: url(resources/icons/item-types/white/player-icons.svg);
 }
 
-#HALLOWEEN_2016 #epic-skins h2:before {
+#HALLOWEEN #skins h2:before {
   background-image: url(resources/icons/item-types/white/epic-skins.svg);
 }
 
-#HALLOWEEN_2016 #highlight-intros h2:before {
+#HALLOWEEN #intros h2:before {
   background-image: url(resources/icons/item-types/white/highlight-intros.svg);
 }
 
-#HALLOWEEN_2016 #emotes h2:before {
+#HALLOWEEN #emotes h2:before {
   background-image: url(resources/icons/item-types/white/emotes.svg);
 }
 
-#HALLOWEEN_2016 #victoryposes h2:before {
+#HALLOWEEN #victoryposes h2:before {
   background-image: url(resources/icons/item-types/white/victory-poses.svg);
 }
 
-#HALLOWEEN_2016 #sprays h2:before {
+#HALLOWEEN #sprays h2:before {
   background-image: url(resources/icons/item-types/white/sprays.svg);
 }
 
@@ -988,8 +985,8 @@ body#SUMMER_GAMES:before {
   #YEAR_OF_THE_ROOSTER_2017 #event-container .col,
   #WINTER_WONDERLAND_2016 #event-container .row,
   #WINTER_WONDERLAND_2016 #event-container .col,
-  #HALLOWEEN_2016 #event-container .row,
-  #HALLOWEEN_2016 #event-container .col,
+  #HALLOWEEN #event-container .row,
+  #HALLOWEEN #event-container .col,
   #SUMMER_GAMES #event-container .row,
   #SUMMER_GAMES #event-container .col {
     display: flex;
@@ -1005,10 +1002,10 @@ body#SUMMER_GAMES:before {
   #WINTER_WONDERLAND_2016 #event-container #row2 .right .section,
   #WINTER_WONDERLAND_2016 #event-container #row2 .right .section#highlight-intros,
   #WINTER_WONDERLAND_2016 #event-container #row2 .right .section#emotes,
-  #HALLOWEEN_2016 #event-container .row,
-  #HALLOWEEN_2016 #event-container #row2,
-  #HALLOWEEN_2016 #event-container #row2 .section,
-  #HALLOWEEN_2016 #event-container #row2 .right .section,
+  #HALLOWEEN #event-container .row,
+  #HALLOWEEN #event-container #row2,
+  #HALLOWEEN #event-container #row2 .section,
+  #HALLOWEEN #event-container #row2 .right .section,
   #SUMMER_GAMES #event-container .row,
   #SUMMER_GAMES #event-container #row2,
   #SUMMER_GAMES #event-container #row2 .section,
@@ -1035,14 +1032,14 @@ body#SUMMER_GAMES:before {
   #WINTER_WONDERLAND_2016 #event-container #icons,
   #WINTER_WONDERLAND_2016 #event-container #victoryposes,
   #WINTER_WONDERLAND_2016 #event-container #sprays,
-  #HALLOWEEN_2016 #event-container #row1 #col1,
-  #HALLOWEEN_2016 #event-container #row1 #col2,
-  #HALLOWEEN_2016 #event-container #row2 .left,
-  #HALLOWEEN_2016 #event-container #row2 .right,
-  #HALLOWEEN_2016 #event-container #voicelines,
-  #HALLOWEEN_2016 #event-container #icons,
-  #HALLOWEEN_2016 #event-container #victoryposes,
-  #HALLOWEEN_2016 #event-container #sprays,
+  #HALLOWEEN #event-container #row1 #col1,
+  #HALLOWEEN #event-container #row1 #col2,
+  #HALLOWEEN #event-container #row2 .left,
+  #HALLOWEEN #event-container #row2 .right,
+  #HALLOWEEN #event-container #voicelines,
+  #HALLOWEEN #event-container #icons,
+  #HALLOWEEN #event-container #victoryposes,
+  #HALLOWEEN #event-container #sprays,
   #SUMMER_GAMES #event-container #row1 #col1,
   #SUMMER_GAMES #event-container #row1 #col2,
   #SUMMER_GAMES #event-container #row2 .left,
@@ -1072,11 +1069,11 @@ body#SUMMER_GAMES:before {
   #WINTER_WONDERLAND_2016 #event-container #victoryposes,
   #WINTER_WONDERLAND_2016 #event-container #sprays,
   #WINTER_WONDERLAND_2016 #event-container #highlight-intros,
-  #HALLOWEEN_2016 #event-container #voicelines,
-  #HALLOWEEN_2016 #event-container #icons,
-  #HALLOWEEN_2016 #event-container #victoryposes,
-  #HALLOWEEN_2016 #event-container #sprays,
-  #HALLOWEEN_2016 #event-container #highlight-intros,
+  #HALLOWEEN #event-container #voicelines,
+  #HALLOWEEN #event-container #icons,
+  #HALLOWEEN #event-container #victoryposes,
+  #HALLOWEEN #event-container #sprays,
+  #HALLOWEEN #event-container #highlight-intros,
   #SUMMER_GAMES #event-container #voicelines,
   #SUMMER_GAMES #event-container #icons,
   #SUMMER_GAMES #event-container #victoryposes,
@@ -1137,15 +1134,15 @@ body#SUMMER_GAMES:before {
     flex: initial;
   }
 
-  #HALLOWEEN_2016 #event-container #highlight-intros {
+  #HALLOWEEN #event-container #highlight-intros {
     margin-top: 0;
   }
 
-  #HALLOWEEN_2016 #event-container #emotes {
+  #HALLOWEEN #event-container #emotes {
     margin-top: 18px;
   }
 
-  #HALLOWEEN_2016 #event-container #victoryposes {
+  #HALLOWEEN #event-container #victoryposes {
     margin-top: 0;
   }
 

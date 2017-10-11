@@ -282,13 +282,13 @@ body {
   padding: 18px;
 }
 
-#hero-nav .gallery.event .block[href$="/events/SUMMER_GAMES_2016"] {
-  background: url(resources/SUMMER_GAMES_2016/bg.jpg);
+#hero-nav .gallery.event .block[href$="/events/SUMMER_GAMES"] {
+  background: url(resources/SUMMER_GAMES/bg.jpg);
   background-size: cover;
 }
 
-#hero-nav .gallery.event .block[href$="/events/HALLOWEEN_2016"] {
-  background: url(resources/HALLOWEEN_2016/bg.jpg);
+#hero-nav .gallery.event .block[href$="/events/HALLOWEEN"] {
+  background: url(resources/HALLOWEEN/bg.jpg);
   background-size: cover;
 }
 
