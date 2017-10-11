@@ -881,8 +881,8 @@
 /* SMALL MODE CSS */
 
 @media screen and (max-width: 1250px) {
-  #SUMMER_GAMES #event-container {
-    margin-top: 10px;
+  #event-container {
+    margin-top: 10px !important;
   }
 }
 
@@ -891,34 +891,40 @@
   #event-container {
     flex-direction: column;
     align-items: center;
-    width: 1100px;
+    width: 1150px;
     position: relative;
     margin: -20px auto 0;
   }
 
   /* SUMMER GAMES */
   
-  #SUMMER_GAMES .col-padding {
+  #SUMMER_GAMES .col-padding,
+  #HALLOWEEN .col-padding {
     width: 100%;
   }
   
-  #SUMMER_GAMES #event-container .event-progress {
+  #SUMMER_GAMES #event-container .event-progress,
+  #HALLOWEEN #event-container .event-progress {
     width: 65%;
   }
 
-  #SUMMER_GAMES #event-container .section .item h3 {
+  #SUMMER_GAMES #event-container .section .item h3,
+  #HALLOWEEN #event-container .section .item h3 {
     font-size: 16px;
   }
 
-  #SUMMER_GAMES #event-container .section .flex-2 .item {
+  #SUMMER_GAMES #event-container .section .flex-2 .item,
+  #HALLOWEEN #event-container .section .flex-2 .item {
     width: calc(25% - 1px);
   }
 
-  #SUMMER_GAMES #event-container .section .flex-3 .item {
+  #SUMMER_GAMES #event-container .section .flex-3 .item,
+  #HALLOWEEN #event-container .section .flex-3 .item {
     width: calc(33.33% - 1px);
   }
 
-  #SUMMER_GAMES #event-container .section .flex-4 .item {
+  #SUMMER_GAMES #event-container .section .flex-4 .item,
+  #HALLOWEEN #event-container .section .flex-4 .item {
     width: calc(25% - 1px);
   }
 

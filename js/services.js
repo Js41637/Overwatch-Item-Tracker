@@ -125,8 +125,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
   };
 
   var isValidItem = function(item, event) {
-    var hasEvent = item.event || event;
-    return !item.achievement && item.quality && (!hasEvent || (hasEvent && hasEvent !== 'SUMMER_GAMES_2016'));
+    return !item.achievement && item.quality;
   };
   
   var countIcons = StorageService.getSetting('countIcons');
@@ -136,6 +135,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
     totals: {},
     heroes: {},
     events: {},
+    oldEvents: ["HALLOWEEN_2016", "SUMMER_GAMES_2016"],
     init: function() {
       DataService.waitForInitialization().then(function() {
         console.info("Calculating totals and costs");
@@ -190,7 +190,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
               continue;
             }
             if (isValidItem(item)) {
-              var price = DataService.prices[item.quality] * (((item.event || isEvent) && item.group !== 'SUMMER_GAMES_2016') ? 3 : 1);
+              var price = DataService.prices[item.quality] * (((item.event || isEvent) && !service.oldEvents.includes(item.group)) ? 3 : 1);
               service[TYPE][what.id].cost.total += price;
               if (isSelected) {
                 service[TYPE][what.id].cost.selected += price;
@@ -208,13 +208,13 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
       event = item.event || event;
       var eventType;
-      if (event === 'SUMMER_GAMES') {
-        eventType = (type == 'skins' && item.quality == 'legendary' && item.group !== 'SUMMER_GAMES_2016') ? 'skinsLegendary' : type;
+      if (event === 'SUMMER_GAMES' || event === 'HALLOWEEN') {
+        eventType = (type == 'skins' && item.quality == 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
       } else {
         eventType = type == 'skins' ? (item.quality == 'epic' ? 'skinsEpic' : 'skinsLegendary') : type;
       }
       var val = isSelected ? 1 : -1;
-      var price = DataService.prices[item.quality] * ((event && item.group !== 'SUMMER_GAMES_2016') ? 3 : 1);
+      var price = DataService.prices[item.quality] * ((event && !service.oldEvents.includes(item.group)) ? 3 : 1);
       var isValid = isValidItem(item, event);
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
@@ -268,7 +268,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           }
           if (type == 'icons') continue;
           if (isValidItem(item)) {
-            var price = DataService.prices[item.quality] * ((item.event && item.event !== 'SUMMER_GAMES_2016') ? 3 : 1);
+            var price = DataService.prices[item.quality] * ((item.group && !service.oldEvents.includes(item.group)) ? 3 : 1);
             out.cost.total += price;
             if (isSelected) {
               out.cost.selected += price;
