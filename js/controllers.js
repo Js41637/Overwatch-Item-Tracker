@@ -459,11 +459,14 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
   }
 
   this.downloadJSON = function() {
-    var dataStr = JSON.stringify(DataService.checked, null, 2);
+    var url = URL.createObjectURL(new Blob([ JSON.stringify(DataService.checked, null, 2) ],  { type: 'application/json' }));
     var el = document.createElement('a');
-    el.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(dataStr));
+    el.setAttribute('href', url);
     el.setAttribute('download', 'overwatch-item-tracker_backup_' + getDate() + '.json');
     el.click();
+    setTimeout(function() {
+      URL.revokeObjectURL(url);
+    }, 1000);
   };
 
   this.setVolume = function() {
@@ -519,7 +522,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     } else {
       vm.importErrors = false;
       if (!test) {
-        StorageService.setData(data);
+        StorageService.setData(angular.fromJson(vm.data));
         location.reload();
       }
     }
