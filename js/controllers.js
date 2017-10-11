@@ -334,7 +334,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     var modal = $uibModal.open({
       templateUrl: './templates/modals/select.html',
       controller: function($scope) {
-        $scope.message = ('Are you sure you want to ' + str + ' all ' + type || 'items');
+        $scope.message = ('Are you sure you want to ' + str + ' all ' + (type || 'items'));
       }
     });
     modal.result.then(function(goahead) {
