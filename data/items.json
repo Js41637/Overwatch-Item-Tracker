@@ -723,6 +723,12 @@
           "url": "./resources/heroes/all/icons/halloween-terror-2016.png"
         },
         {
+          "id": "halloween-terror-2017",
+          "name": "Halloween Terror 2017",
+          "event": "HALLOWEEN",
+          "url": "./resources/heroes/all/icons/halloween-terror-2017.png"
+        },
+        {
           "name": "Hanaversary",
           "id": "dva-hanaversary",
           "url": "./resources/heroes/dva/icons/dva-hanaversary.png",
@@ -2658,6 +2664,13 @@
           "description": "Win Junkenstein's Revenge on medium difficulty."
         },
         {
+          "id": "my-creations",
+          "name": "My Creations",
+          "event": "HALLOWEEN",
+          "url": "./resources/heroes/all/sprays/my-creations.png",
+          "achievement": true
+        },
+        {
           "name": "Pumpkins",
           "id": "pumpkins",
           "event": "HALLOWEEN",
@@ -2673,12 +2686,33 @@
           "description": "Win Junkenstein's Revenge using each of the 4 heroes."
         },
         {
+          "id": "the-monster",
+          "name": "The Monster",
+          "event": "HALLOWEEN",
+          "url": "./resources/heroes/all/sprays/the-monster.png",
+          "achievement": true
+        },
+        {
           "name": "The Reapening",
           "id": "the-reapening",
           "event": "HALLOWEEN",
           "url": "./resources/heroes/all/sprays/the-reapening.png",
           "achievement": true,
           "description": "Win Junkenstein's Revenge on medium difficulty with no damage to the door."
+        },
+        {
+          "id": "the-reaper",
+          "name": "The Reaper",
+          "event": "HALLOWEEN",
+          "url": "./resources/heroes/all/sprays/the-reaper.png",
+          "achievement": true
+        },
+        {
+          "id": "the-witch",
+          "name": "The Witch",
+          "event": "HALLOWEEN",
+          "url": "./resources/heroes/all/sprays/the-witch.png",
+          "achievement": true
         },
         {
           "name": "Witch's Brew",
