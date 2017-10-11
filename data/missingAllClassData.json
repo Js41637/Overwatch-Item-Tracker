@@ -2,8 +2,21 @@
   "sprays": {
     "copa-lucioball-hero": {
       "id": "copa-lucioball-hero",
-      "name": "Copa Lúcioball Hero"
+      "name": "Copa Lúcioball Hero",
+      "url": "./resources/heroes/all/sprays/copa-lucioball-hero.png",
+      "achievement": true,
+      "group": "competitive",
+      "description": "Unlocked by achieving top 500 ranking at the end of Copa Lúcioball"
     }
   },
-  "icons": {}
+  "icons": {
+    "junkensteins-pachimonster": {
+      "id": "junkensteins-pachimonster",
+      "name": "Junkenstein's Pachimonster"
+    },
+    "pachimummy": {
+      "id": "pachimummy",
+      "name": "Pachimummy"
+    }
+  }
 }
