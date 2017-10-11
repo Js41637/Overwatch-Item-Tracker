@@ -20,7 +20,7 @@ OWI.filter('eventImageUrl', function() {
 
 OWI.filter('itemPrice', function() {
   return function(item, type, event) {
-    var isEvent = (item.event || event) && item.group !== 'SUMMER_GAMES_2016';
+    var isEvent = (item.event || event) && item.group !== 'SUMMER_GAMES_2016' && item.group !== 'HALLOWEEN_2016';
     var quality = item.quality;
     if (item.standardItem || item.achievement || type == 'icons') return '';
 

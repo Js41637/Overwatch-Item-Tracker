@@ -839,6 +839,38 @@
       "quality": "common",
       "type": "spray",
       "hero": "all"
+    },
+    "survivor": {
+      "name": "Survivor",
+      "description": "Survive 4 bonus waves in Junkenstein Endless on expert difficulty.",
+      "reward": "The Witch",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "dawn-breaks": {
+      "name": "Dawn Breaks",
+      "description": "Win Junkenstein's Revenge on Expert difficulty.",
+      "reward": "The Reaper",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "six-they-were": {
+      "name": "Six They Were",
+      "description": "Win Junkenstein Endless with 6 different heroes.",
+      "reward": "My Creations",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "unscathed": {
+      "name": "Unscathed",
+      "description": "Win Junkenstein Endless on Hard difficulty with no damage to the door.",
+      "reward": "The Monster",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
     }
   },
   "mappings": {
@@ -946,6 +978,10 @@
     "barbarian": "barbarian",
     "summer-games-2016": "summer-games-2016",
     "copa-lucioball-competitor": "copa-lucioball-competitor",
-    "copa-lucioball-hero": "copa-lucioball-hero"
+    "copa-lucioball-hero": "copa-lucioball-hero",
+    "the-witch": "survivor",
+    "the-reaper": "dawn-breaks",
+    "my-creations": "six-they-were",
+    "the-monster": "unscathed"
   }
 }

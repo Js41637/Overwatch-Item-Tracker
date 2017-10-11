@@ -329,18 +329,17 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     }
   };
 
-  this.selectModal = function(type, string) {
-    if (vm.totals.overall.selected == 0 && string == 'unselect') return;
+  this.selectModal = function(type, str) {
+    if (vm.totals.overall.selected == 0 && str == 'unselect') return;
     var modal = $uibModal.open({
       templateUrl: './templates/modals/select.html',
       controller: function($scope) {
-        $scope.type = type;
-        $scope.select = string;
+        $scope.message = ('Are you sure you want to ' + str + ' all ' + type || 'items');
       }
     });
     modal.result.then(function(goahead) {
       if (goahead) {
-        if (string == 'select') {
+        if (str == 'select') {
           vm.selectAll(false, type);
         } else {
           vm.selectAll(true, type);
@@ -420,7 +419,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   });
 }]);
 
-OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $uibModalInstance, StorageService, DataService) {
+OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalInstance", "StorageService", "DataService", "GoogleAPI", function($rootScope, $scope, $uibModal, $uibModalInstance, StorageService, DataService, GoogleAPI) {
   var vm = this;
   var settings = StorageService.settings;
   this.particles = settings['particles'];
@@ -429,7 +428,14 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   this.showPreviews = settings['showPreviews'];
   this.audioVolume = settings['audioVolume'];
   this.countIcons = settings['countIcons'];
+  this.syncDisabled = settings['syncDisabled'];
   this.importErrors = null;
+
+  this.willEnableSync = false;
+
+  this.googleUser = GoogleAPI.user;
+  this.googleSignedIn = GoogleAPI.isSignedIn;
+  this.googleMessage = null;
 
   this.close = function() {
     $uibModalInstance.dismiss('close');
@@ -453,11 +459,14 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   }
 
   this.downloadJSON = function() {
-    var dataStr = JSON.stringify(DataService.checked, null, 2);
+    var url = URL.createObjectURL(new Blob([ JSON.stringify(DataService.checked, null, 2) ],  { type: 'application/json' }));
     var el = document.createElement('a');
-    el.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(dataStr));
+    el.setAttribute('href', url);
     el.setAttribute('download', 'overwatch-item-tracker_backup_' + getDate() + '.json');
     el.click();
+    setTimeout(function() {
+      URL.revokeObjectURL(url);
+    }, 1000);
   };
 
   this.setVolume = function() {
@@ -475,11 +484,9 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
   this.data = angular.toJson(DataService.checked, 2);
   var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines'];
   var validHeroes = Object.keys(DataService.heroes);
-
-  this.importData = function(data, test) {
-    vm.importErrors = null;
+  function validateData(data) {
     try {
-      data = angular.fromJson(vm.data);
+      data = typeof data === 'string' ? angular.fromJson(data) : data;
       var errs = [];
 
       if (!Object.keys(data).length) {
@@ -498,19 +505,26 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
       }
 
       if (errs.length) {
-        vm.importErrors = errs.join('\n');
-        return;
+        return errs.join('\n');
       }
+    } catch (e) {
+      console.error(e);
+      return 'Error parsing json';
+    }
+  }
 
+  this.importData = function(data, test) {
+    vm.importErrors = null;
+    var errors = validateData(vm.data);
+
+    if (errors) {
+      vm.importErrors = errors;
+    } else {
       vm.importErrors = false;
       if (!test) {
-        StorageService.setData(data);
+        StorageService.setData(angular.fromJson(vm.data));
         location.reload();
       }
-
-    } catch(e) {
-      console.error(e);
-      vm.importErrors = 'An error occured while parsing the JSON';
     }
   };
 
@@ -536,4 +550,123 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$uibModalInstance", "StorageServi
     StorageService.setData(DataService.checked);
     $rootScope.$emit('selectAll');
   };
+
+  this.toggleSync = function() {
+    if (this.syncDisabled && !vm.willEnableSync) {
+      vm.willEnableSync = true;
+    }
+
+    if (!this.syncDisabled) {
+      vm.syncDisabled = true;
+      StorageService.setSetting('syncDisabled', true);
+    } else {
+      vm.syncDisabled = !vm.syncDisabled;
+    }   
+  };
+
+  $rootScope.$on('google:login', function(event, data) {
+    switch (data.event) {
+      case 'ERROR':
+        vm.googleSignedIn = false;
+        vm.googleUser = {};
+        vm.googleMessage = ['danger', 'Error! Something went wrong while logging into Google! - ' + data.message];
+        break;
+      case 'SIGN_IN':
+        vm.googleSignedIn = true;
+        vm.googleUser = data.user;
+        vm.googleMessage = ['success', 'Successfully logged in with Google! You can choose to download your data now if you have any saved.'];
+        break;
+      case 'SIGN_OUT':
+        vm.googleSignedIn = false;
+        vm.googleUser = {};
+        break;
+    }
+
+    $scope.$digest();
+  });
+
+  this.googleLogin = function() {
+    vm.googleMessage = null;
+    GoogleAPI.login();
+  };
+
+  this.googleSignOut = function() {
+    vm.googleMessage = null;
+    GoogleAPI.signOut();
+  };
+
+  this.uploadToDrive = function() {
+    vm.googleMessage = null;
+    var modal = $uibModal.open({
+      templateUrl: './templates/modals/select.html',
+      controller: function($scope) {
+        $scope.message = 'Are you sure you want to upload your data to Google Drive?';
+        $scope.submessage = 'This will overwrite any existing data in Google Drive! If you are unsure remember to create backups';
+      }
+    });
+    modal.result.then(function(goahead) {
+      if (goahead) {
+        onUploadToDrive();
+      }
+    }, function() {});
+  };
+
+  this.downloadFromDrive = function() {
+    vm.googleMessage = null;
+    var modal = $uibModal.open({
+      templateUrl: './templates/modals/select.html',
+      controller: function($scope) {
+        $scope.message = 'Are you sure you want to download your data from Google Drive?';
+        $scope.submessage = 'This will overwrite any existing local data! If you are unsure remember to create backups';
+      }
+    });
+    modal.result.then(function(goahead) {
+      if (goahead) {
+        onDownloadFromDrive();
+      }
+    }, function() {});
+  };
+
+  function onUploadToDrive() {
+    GoogleAPI.update(DataService.checked).then(function(success) {
+      if (success) {
+        if (vm.willEnableSync) {
+          vm.willEnableSync = false;
+          vm.syncDisabled = false;
+          StorageService.setSetting('syncDisabled', false);
+        }
+        vm.googleMessage = ['success', 'Successfully uploaded to Google Drive... maybe... probably...'];
+      } else {
+        vm.googleMessage = ['danger', 'An error occured while uploading to Google Drive!'];
+      }
+    });
+  }
+
+  function onDownloadFromDrive() {
+    GoogleAPI.getData().then(function(response) {
+      if (!response || !response.data) {
+        vm.googleMessage = ['danger', 'Error: Got an unexpected response while downloading data from Google Drive!'];
+        return;
+      }
+
+      const errors = validateData(response.data);
+      if (errors) {
+        vm.googleMessage = ['danger', 'Error: Data returned by Google Drive does not matched expected data'];
+        return;
+      }
+
+      if (vm.willEnableSync) {
+        vm.willEnableSync = false;
+        vm.syncDisabled = false;
+        StorageService.setSetting('syncDisabled', false);
+      }
+
+      vm.googleMessage = ['success', 'Success! Updating local data... This page will reload in a couple seconds.'];
+
+      setTimeout(function() {
+        StorageService.setData(response.data);
+        location.reload();
+      }, 2250);
+    });
+  }
 }]);
