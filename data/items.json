@@ -2668,7 +2668,8 @@
           "name": "My Creations",
           "event": "HALLOWEEN",
           "url": "./resources/heroes/all/sprays/my-creations.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Junkenstein Endless with 6 different heroes."
         },
         {
           "name": "Pumpkins",
@@ -2690,7 +2691,8 @@
           "name": "The Monster",
           "event": "HALLOWEEN",
           "url": "./resources/heroes/all/sprays/the-monster.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Junkenstein Endless on Hard difficulty with no damage to the door."
         },
         {
           "name": "The Reapening",
@@ -2705,14 +2707,16 @@
           "name": "The Reaper",
           "event": "HALLOWEEN",
           "url": "./resources/heroes/all/sprays/the-reaper.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Junkenstein's Revenge on Expert difficulty."
         },
         {
           "id": "the-witch",
           "name": "The Witch",
           "event": "HALLOWEEN",
           "url": "./resources/heroes/all/sprays/the-witch.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Survive 4 bonus waves in Junkenstein Endless on expert difficulty."
         },
         {
           "name": "Witch's Brew",
@@ -2872,7 +2876,7 @@
           "name": "Candy",
           "id": "ana-candy",
           "quality": "epic",
-          "url": "./resources/heroes/ana/emotes/ana-candy.webm",
+          "url": "./resources/updates/HALLOWEEN/emotes/ana-candy.webm",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
         },
@@ -5351,7 +5355,7 @@
           "name": "Pumpkin Carving",
           "id": "genji-pumpkin-carving",
           "quality": "epic",
-          "url": "./resources/heroes/genji/intros/genji-pumpkin-carving.webm",
+          "url": "./resources/updates/HALLOWEEN/intros/genji-pumpkin-carving.webm",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
         }
@@ -8572,7 +8576,7 @@
           "name": "Hopping",
           "id": "mei-hopping",
           "quality": "epic",
-          "url": "./resources/heroes/mei/emotes/mei-hopping.webm",
+          "url": "./resources/updates/HALLOWEEN/emotes/mei-hopping.webm",
           "event": "HALLOWEEN",
           "isNew": true
         }
@@ -8607,7 +8611,7 @@
           "name": "Ice Scream",
           "id": "mei-ice-scream",
           "quality": "epic",
-          "url": "./resources/heroes/mei/intros/mei-ice-scream.webm",
+          "url": "./resources/updates/HALLOWEEN/intros/mei-ice-scream.webm",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
         }
@@ -11129,7 +11133,7 @@
           "name": "Eternal Rest",
           "id": "reaper-eternal-rest",
           "quality": "epic",
-          "url": "./resources/heroes/reaper/intros/reaper-eternal-rest.webm",
+          "url": "./resources/updates/HALLOWEEN/intros/reaper-eternal-rest.webm",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
         }
@@ -11758,7 +11762,7 @@
           "name": "Pumpkin Smash",
           "id": "reinhardt-pumpkin-smash",
           "quality": "epic",
-          "url": "./resources/heroes/reinhardt/emotes/reinhardt-pumpkin-smash.webm",
+          "url": "./resources/updates/HALLOWEEN/emotes/reinhardt-pumpkin-smash.webm",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
         },
@@ -12432,7 +12436,7 @@
           "name": "Footsteps...",
           "id": "roadhog-footsteps",
           "quality": "epic",
-          "url": "./resources/heroes/roadhog/intros/roadhog-footsteps.webm",
+          "url": "./resources/updates/HALLOWEEN/intros/roadhog-footsteps.webm",
           "event": "HALLOWEEN",
           "isNew": true
         }
@@ -14987,7 +14991,7 @@
           "name": "Batter Up",
           "id": "torbjorn-batter-up",
           "quality": "epic",
-          "url": "./resources/heroes/torbjorn/emotes/torbjorn-batter-up.webm",
+          "url": "./resources/updates/HALLOWEEN/emotes/torbjorn-batter-up.webm",
           "event": "HALLOWEEN",
           "isNew": true
         }
@@ -16949,7 +16953,7 @@
           "name": "Shadow Puppets",
           "id": "winston-shadow-puppets",
           "quality": "epic",
-          "url": "./resources/heroes/winston/emotes/winston-shadow-puppets.webm",
+          "url": "./resources/updates/HALLOWEEN/emotes/winston-shadow-puppets.webm",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
         },

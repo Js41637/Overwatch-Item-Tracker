@@ -87,7 +87,8 @@ const EVENT_ITEM_ORDER = {
 // heroes have their own item previews seperate from events but this is not always the case as I am lazy.
 const EVENT_PREVIEWS = {
   [EVENTS.ANNIVERSARY17]: ['emotes'],
-  [EVENTS.SUMMER]: ['emotes', 'intros']
+  [EVENTS.SUMMER]: ['emotes', 'intros'],
+  [EVENTS.HALLOWEEN]: ['emotes', 'intros']
 }
 
 const NEW_EVENTS = [

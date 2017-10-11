@@ -6338,7 +6338,8 @@
           "name": "My Creations",
           "id": "my-creations",
           "url": "./resources/heroes/all/sprays/my-creations.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Junkenstein Endless with 6 different heroes."
         },
         {
           "hero": "all",
@@ -6353,7 +6354,8 @@
           "name": "The Monster",
           "id": "the-monster",
           "url": "./resources/heroes/all/sprays/the-monster.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Junkenstein Endless on Hard difficulty with no damage to the door."
         },
         {
           "hero": "all",
@@ -6368,14 +6370,16 @@
           "name": "The Reaper",
           "id": "the-reaper",
           "url": "./resources/heroes/all/sprays/the-reaper.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Win Junkenstein's Revenge on Expert difficulty."
         },
         {
           "hero": "all",
           "name": "The Witch",
           "id": "the-witch",
           "url": "./resources/heroes/all/sprays/the-witch.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Survive 4 bonus waves in Junkenstein Endless on expert difficulty."
         }
       ],
       "voicelines": [
