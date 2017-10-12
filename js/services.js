@@ -183,7 +183,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
               service[TYPE][what.id].totals[type].selected++;
             }
             if (type == 'icons') {
-              if (!countIcons && !isEvent) {
+              if (!countIcons) {
                 service[TYPE][what.id].totals.overall.total--;
                 if (isSelected) service[TYPE][what.id].totals.overall.selected--;
               }
