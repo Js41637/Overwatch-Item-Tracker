@@ -124,7 +124,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
     skinsLegendary: 'skins'
   };
 
-  var isValidItem = function(item, event) {
+  var isValidItem = function(item) {
     return !item.achievement && item.quality;
   };
   
@@ -405,12 +405,12 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
   var SCOPES = 'https://www.googleapis.com/auth/drive.appfolder';
 
   var service = {
-    syncTimeout: 1000 * 60 * 30, // 30 mins
-    fileCreated: localStorage.getItem('google_drive_data_file_created'),
-    dataFileID: '1gCSzJ8adUswK6jRq_Yo9u9faLrr-tABNwq5pFROE6MS9',
-    isSignedIn: false,
-    lastSync: localStorage.getItem('google_drive_last_sync'),
+    syncTimeout: 1000 * 60 * 20, // 20 mins
     version: '1',
+    fileName: 'overwatch_item_tracker_data_NO_TOUCHY_PLEASE.json',
+    dataFileID: localStorage.getItem('gdrive.file_id'),
+    lastSync: localStorage.getItem('gdrive.last_sync'),
+    isSignedIn: false,
     user: {},
     waitForLoad: function() {
       function waitForInitialize() {
@@ -429,10 +429,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
         clientId: CLIENT_ID,
         scope: SCOPES
       }).then(function () {
-        // Listen for sign-in state changes.
         gapi.auth2.getAuthInstance().isSignedIn.listen(service.updateSigninState);
-
-        // Handle the initial sign-in state.
         service.updateSigninState(gapi.auth2.getAuthInstance().isSignedIn.get());
       });
     },
@@ -477,7 +474,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
             if (success) {
               console.log('Successfully synced with Google');
               service.lastSync = Date.now();
-              localStorage.setItem('google_drive_last_sync', service.lastSync);
+              localStorage.setItem('gdrive.last_sync', service.lastSync);
             } else {
               console.error('Error while syncing with Google Drive');
             }
@@ -496,7 +493,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
       const token = gapi.client.getToken();
       const url = 'https://www.googleapis.com/drive/v3/files/' + service.dataFileID;
 
-      if (!token || !token.access_token || !service.fileCreated) {
+      if (!token || !token.access_token || !service.dataFileID) {
         return Promise.resolve(false);
       }
 
@@ -521,14 +518,23 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
     },
     update: function(data) {
       return new $q(function(resolve, reject) {
-        if (service.fileCreated) {
-          return service.updateFile(data).then(resolve, reject);
+        if (service.dataFileID) {
+          console.log('File id stored, updating file')
+          service.updateFile(data).then(resolve, reject);
         } else {
-          return service.checkFile().then(function(exists) {
+          console.log('No file id detected, checking if file exists')
+          service.findDataFile().then(function(exists) {
             if (exists) {
-              return service.updateFile(data).then(resolve, reject);
+              console.log('File detected, updating')
+              service.updateFile(data).then(resolve, reject);
             } else {
-              service.createFile(data).then(resolve, reject);
+              console.log('no file detected, creating')
+              service.createFile(data).then(function(data) {
+                console.log('file created, yay')
+                service.dataFileID = data.id
+                localStorage.setItem('gdrive.file_id', data.id)
+                resolve()
+              }, reject);
             }
           });
         }
@@ -540,28 +546,39 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
       });
     },
     // Checks to see if we already have a file saved, if we do we can update it if we don't, it needs to be made
-    checkFile: function() {
+    findDataFile: function() {
       return new $q(function(resolve) {
         var request = gapi.client.request({
-          path: '/drive/v3/files/' + service.dataFileID,
-          method: 'GET'
+          path: '/drive/v3/files/',
+          method: 'GET',
+          params: {
+            spaces: ['appDataFolder']
+          }
         });
   
         request.execute(function(data) {
-          if (data.error) {
+          if (data.error || data.files.length === 0) {
             return resolve(false);
           }
+
+          for (var file of data.files) {
+            if (file.name === service.fileName && file.mimeType === 'application/json') {
+              service.dataFileID = file.id
+              localStorage.setItem('gdrive.file_id', file.id)
+              resolve(true);
+              return
+            }
+          }
           
-          resolve(true);
+          resolve(false)
         });
       });
     },
     createFile: function(data) {
       return service.sendRequest(data, {
         mimeType: 'application/json',
-        name: 'data.json',
-        parents: ['appDataFolder'],
-        id: service.dataFileID
+        name: service.fileName,
+        parents: ['appDataFolder']
       }, 'POST', 'https://www.googleapis.com/upload/drive/v3/files');
     },
     updateFile: function(data) {
