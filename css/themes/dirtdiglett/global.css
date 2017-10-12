@@ -434,16 +434,16 @@ body {
   height: 380px;
 }
 
-#hero-container .item[event="SUMMER_GAMES_2016"] + .tooltip .preview.img,
+#hero-container .item[event="SUMMER_GAMES"] + .tooltip .preview.img,
 #SUMMER_GAMES #image-preview .card .bg2 {
-  background: url(resources/SUMMER_GAMES_2016/icon-bg.png)no-repeat,url(resources/SUMMER_GAMES_2016/preview-bg.png);
+  background: url(resources/SUMMER_GAMES/icon-bg.png)no-repeat,url(resources/SUMMER_GAMES/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
 }
 
-#hero-container .item[event="HALLOWEEN_2016"] + .tooltip .preview.img,
-#HALLOWEEN_2016 #image-preview .card .bg2 {
-  background: url(resources/HALLOWEEN_2016/icon-bg.png)no-repeat,url(resources/HALLOWEEN_2016/preview-bg.png);
+#hero-container .item[event="HALLOWEEN"] + .tooltip .preview.img,
+#HALLOWEEN #image-preview .card .bg2 {
+  background: url(resources/HALLOWEEN/icon-bg.png)no-repeat,url(resources/HALLOWEEN/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
 }
@@ -603,8 +603,8 @@ body {
   margin-left: 18px;
 }
 
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES_2016"],
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN"],
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"],
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"],
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"],
@@ -612,8 +612,8 @@ body {
   padding-left: 30px;
 }
 
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES_2016"]:before,
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN"]:before,
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"]:before,
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"]:before,
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before,
@@ -630,11 +630,11 @@ body {
   margin-top: -1px;
 }
 
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES_2016"]:before {
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES"]:before {
   background-image: url(resources/icons/events/SUMMER_GAMES_2016.svg);
 }
 
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN_2016"]:before {
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN"]:before {
   background-image: url(resources/icons/events/HALLOWEEN_2016.svg);
 }
 

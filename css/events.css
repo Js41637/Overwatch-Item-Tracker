@@ -927,56 +927,6 @@
   #HALLOWEEN #event-container .section .flex-4 .item {
     width: calc(25% - 1px);
   }
-
-  /* HALLOWEEN */
-  #HALLOWEEN_2016 #event-container #row1 {
-    flex-direction: column;
-  }
-  #HALLOWEEN_2016 #event-container #row2 {
-    flex-wrap: wrap;
-  }
-  #HALLOWEEN_2016 #event-container #col1, #HALLOWEEN_2016 #event-container #col2 {
-    width: 1000px;
-  }
-  #HALLOWEEN_2016 #event-container #col1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  #HALLOWEEN_2016 #event-container #legendary-skins {
-    margin-bottom: 10px;
-  }
-  #HALLOWEEN_2016 #event-container #epic-skins {
-    margin: 0;
-  }
-  #HALLOWEEN_2016 #event-container #row2 .left {
-    width: 49%;
-  }
-  #HALLOWEEN_2016 #event-container #row2 .right {
-    width: 49%;
-  }
-  #HALLOWEEN_2016 #event-container #emotes h2 {
-    margin-top: 28px;
-  }
-  #HALLOWEEN_2016 #event-container #voicelines .items, #HALLOWEEN_2016 #event-container #victoryposes .items {
-    height: 422px;
-  }
-  #HALLOWEEN_2016 #event-container #victoryposes .item {
-    z-index: 1;
-    width: 49%;
-  }
-  #HALLOWEEN_2016 #event-container #victoryposes {
-    width: 37%;
-  }
-  #HALLOWEEN_2016 #event-container #sprays {
-    width: 62%
-  }
-  #HALLOWEEN_2016 #event-container #sprays .items {
-    height: 475px;
-  }
-  #HALLOWEEN_2016 #event-container #sprays .item {
-    width: 32.5%
-  }
   /* WINTER */
   #WINTER_WONDERLAND_2016 #event-container #row1 {
     flex-direction: column;
