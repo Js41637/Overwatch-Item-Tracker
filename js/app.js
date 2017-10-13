@@ -79,7 +79,6 @@ OWI.run(function() {
       name: "Fix incorrect Uprising data and stuff",
       id: 7,
       run: function() {
-        var data = {}
         var newData = {"all":{"icons":{"lunamari":"peachimari"}},"reaper":{"voicelines":{"reaper-amatuer-hour":"reaper-amateur-hour"}},"soldier-76":{"skins":{"soldier-76-strikecommander-morrison":"soldier-76-strike-commander-morrison"},"icons":{"soldier-76-strikecommander":"soldier-76-strike-commander"}}};
         for (var hero in newData) {
           for (var type in newData[hero]) {
