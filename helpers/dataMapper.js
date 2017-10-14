@@ -342,7 +342,7 @@ forEach(allClassEventItems, (types, type) => {
 
       let name = allClassDataKeys[type][itemID];
 
-      if (NEW_EVENTS.includes(event)) {
+      if (!NEW_EVENTS.includes(event)) {
         name = name.replace(/ \d{4}$/, '');
       }
 
@@ -352,6 +352,12 @@ forEach(allClassEventItems, (types, type) => {
         id: itemID,
         url: getPreviewURL(type, itemID, 'all', event)
       };
+
+      const actualEvent = findKey(EVENTITEMS, event => event.includes(`${type}/${itemID}`));
+      if (actualEvent && type !== 'icons') {
+        out.group = actualEvent;
+      }
+
 
       const isAchivement = achievementSprays.includes(itemID);
       if (isAchivement) {

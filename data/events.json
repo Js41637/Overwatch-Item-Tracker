@@ -1042,7 +1042,7 @@
         },
         {
           "hero": "all",
-          "name": "Winter Wonderland 2016",
+          "name": "Winter Wonderland",
           "id": "winter-wonderland-2016",
           "url": "./resources/heroes/all/icons/winter-wonderland-2016.png"
         },
@@ -2095,7 +2095,7 @@
         },
         {
           "hero": "all",
-          "name": "Year of the Rooster 2017",
+          "name": "Year of the Rooster",
           "id": "year-of-the-rooster-2017",
           "url": "./resources/heroes/all/icons/year-of-the-rooster-2017.png"
         }
@@ -2976,7 +2976,7 @@
         },
         {
           "hero": "all",
-          "name": "Uprising 2017",
+          "name": "Uprising",
           "id": "uprising-2017",
           "url": "./resources/heroes/all/icons/uprising-2017.png"
         }
@@ -3432,7 +3432,7 @@
         },
         {
           "hero": "all",
-          "name": "Anniversary 2017",
+          "name": "Anniversary",
           "id": "anniversary-2017",
           "url": "./resources/heroes/all/icons/anniversary-2017.png"
         },
@@ -3638,7 +3638,7 @@
         },
         {
           "hero": "all",
-          "name": "Anniversary 2017",
+          "name": "Anniversary",
           "id": "anniversary-2017",
           "url": "./resources/heroes/all/sprays/anniversary-2017.png",
           "quality": "common"
@@ -4449,13 +4449,13 @@
         },
         {
           "hero": "all",
-          "name": "Summer Games",
+          "name": "Summer Games 2016",
           "id": "summer-games-2016",
           "url": "./resources/heroes/all/icons/summer-games-2016.png"
         },
         {
           "hero": "all",
-          "name": "Summer Games",
+          "name": "Summer Games 2017",
           "id": "summer-games-2017",
           "url": "./resources/heroes/all/icons/summer-games-2017.png"
         },
@@ -4712,16 +4712,17 @@
         },
         {
           "hero": "all",
-          "name": "Summer Games",
-          "id": "summer-games-2016",
-          "url": "./resources/heroes/all/sprays/summer-games-2016.png",
+          "name": "Summer Games ",
+          "id": "summer-games",
+          "url": "./resources/heroes/all/sprays/summer-games.png",
           "quality": "common"
         },
         {
           "hero": "all",
-          "name": "Summer Games ",
-          "id": "summer-games",
-          "url": "./resources/heroes/all/sprays/summer-games.png",
+          "name": "Summer Games 2016",
+          "id": "summer-games-2016",
+          "url": "./resources/heroes/all/sprays/summer-games-2016.png",
+          "group": "SUMMER_GAMES_2016",
           "quality": "common"
         },
         {
@@ -5956,13 +5957,13 @@
         },
         {
           "hero": "all",
-          "name": "Halloween Terror",
+          "name": "Halloween Terror 2016",
           "id": "halloween-terror-2016",
           "url": "./resources/heroes/all/icons/halloween-terror-2016.png"
         },
         {
           "hero": "all",
-          "name": "Halloween Terror",
+          "name": "Halloween Terror 2017",
           "id": "halloween-terror-2017",
           "url": "./resources/heroes/all/icons/halloween-terror-2017.png"
         },
@@ -6252,6 +6253,7 @@
           "name": "...Never Die",
           "id": "never-die",
           "url": "./resources/heroes/all/sprays/never-die.png",
+          "group": "HALLOWEEN_2016",
           "quality": "common"
         },
         {
@@ -6259,6 +6261,7 @@
           "name": "Bats",
           "id": "bats",
           "url": "./resources/heroes/all/sprays/bats.png",
+          "group": "HALLOWEEN_2016",
           "quality": "common"
         },
         {
@@ -6266,6 +6269,7 @@
           "name": "Boo!",
           "id": "boo",
           "url": "./resources/heroes/all/sprays/boo.png",
+          "group": "HALLOWEEN_2016",
           "quality": "common"
         },
         {
@@ -6273,6 +6277,7 @@
           "name": "Boop!",
           "id": "boop",
           "url": "./resources/heroes/all/sprays/boop.png",
+          "group": "HALLOWEEN_2016",
           "quality": "common"
         },
         {
@@ -6280,6 +6285,7 @@
           "name": "Candyball",
           "id": "candyball",
           "url": "./resources/heroes/all/sprays/candyball.png",
+          "group": "HALLOWEEN_2016",
           "quality": "common"
         },
         {
@@ -6287,6 +6293,7 @@
           "name": "Fangs",
           "id": "fangs",
           "url": "./resources/heroes/all/sprays/fangs.png",
+          "group": "HALLOWEEN_2016",
           "quality": "common"
         },
         {
@@ -6294,6 +6301,7 @@
           "name": "Gummy Hog",
           "id": "gummy-hog",
           "url": "./resources/heroes/all/sprays/gummy-hog.png",
+          "group": "HALLOWEEN_2016",
           "quality": "common"
         },
         {
@@ -6301,6 +6309,7 @@
           "name": "Halloween Terror",
           "id": "halloween-terror",
           "url": "./resources/heroes/all/sprays/halloween-terror.png",
+          "group": "HALLOWEEN_2016",
           "quality": "common"
         },
         {
@@ -6308,6 +6317,7 @@
           "name": "Pumpkins",
           "id": "pumpkins",
           "url": "./resources/heroes/all/sprays/pumpkins.png",
+          "group": "HALLOWEEN_2016",
           "quality": "common"
         },
         {
@@ -6315,6 +6325,7 @@
           "name": "Witch's Brew",
           "id": "witchs-brew",
           "url": "./resources/heroes/all/sprays/witchs-brew.png",
+          "group": "HALLOWEEN_2016",
           "quality": "common"
         },
         {
@@ -6322,6 +6333,7 @@
           "name": "Halloween Special",
           "id": "halloween-special",
           "url": "./resources/heroes/all/sprays/halloween-special.png",
+          "group": "HALLOWEEN_2016",
           "achievement": true,
           "description": "Win Junkenstein's Revenge on Legendary difficulty."
         },
@@ -6330,6 +6342,7 @@
           "name": "Junkenstein's Revenge",
           "id": "junkensteins-revenge",
           "url": "./resources/heroes/all/sprays/junkensteins-revenge.png",
+          "group": "HALLOWEEN_2016",
           "achievement": true,
           "description": "Win Junkenstein's Revenge on Hard difficulty."
         },
@@ -6346,6 +6359,7 @@
           "name": "Rise of the Zomnics",
           "id": "rise-of-the-zomnics",
           "url": "./resources/heroes/all/sprays/rise-of-the-zomnics.png",
+          "group": "HALLOWEEN_2016",
           "achievement": true,
           "description": "Win Junkenstein's Revenge using each of the 4 heroes."
         },
@@ -6362,6 +6376,7 @@
           "name": "The Reapening",
           "id": "the-reapening",
           "url": "./resources/heroes/all/sprays/the-reapening.png",
+          "group": "HALLOWEEN_2016",
           "achievement": true,
           "description": "Win Junkenstein's Revenge on Hard difficulty with no damage to the door."
         },
