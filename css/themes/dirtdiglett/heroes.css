@@ -210,6 +210,11 @@ body#orisa #hero-container .hero-overview {
   background-position: 50% 33%;
 }
 
+body#moira #hero-container .hero-overview {
+  background-image: url(resources/heroes/moira/background-story.jpg);
+  background-position: 50% 33%;
+}
+
 body#pharah #hero-container .hero-overview {
   background-image: url(resources/heroes/pharah/background-story.jpg);
   background-position: 50% 16%;
@@ -353,6 +358,7 @@ body#zenyatta #hero-container .hero-overview {
     body#ana .hero-name:after,
     body#lucio .hero-name:after,
     body#mercy .hero-name:after,
+    body#moira .hero-name:after,
     body#symmetra .hero-name:after,
     body#zenyatta .hero-name:after {
       background-image: url(resources/icons/roles/support.svg);
