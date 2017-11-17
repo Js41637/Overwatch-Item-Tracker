@@ -887,6 +887,22 @@
       "quality": "common",
       "type": "spray",
       "hero": "all"
+    },
+    "simple-trigonometry": {
+      "name": "Simple Trigonometry",
+      "reward": "Pixel",
+      "quality": "common",
+      "type": "spray",
+      "description": "Fully deplete both types of Moira's Biotic Orb without dying in Quick or Competitive Play.",
+      "hero": "moira"
+    },
+    "antipode": {
+      "name": "Antipode",
+      "reward": "Cute",
+      "quality": "common",
+      "type": "spray",
+      "description": "Hit 7 targets simultaneously with Moira's Coalescence in Quick or Competitive Play.",
+      "hero": "moira"
     }
   },
   "mappings": {
@@ -1000,6 +1016,8 @@
     "the-witch": "survivor",
     "the-reaper": "dawn-breaks",
     "my-creations": "six-they-were",
-    "the-monster": "unscathed"
+    "the-monster": "unscathed",
+    "moira-pixel": "simple-trigonometry",
+    "moira-cute": "antipode"
   }
 }

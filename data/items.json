@@ -473,6 +473,12 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "name": "Erlenmeyer",
+          "id": "moira-erlenmeyer",
+          "url": "./resources/heroes/moira/icons/moira-erlenmeyer.png",
+          "hero": "moira"
+        },
+        {
           "name": "Eyeball",
           "id": "eyeball",
           "event": "HALLOWEEN",
@@ -885,6 +891,12 @@
           "hero": "hanzo"
         },
         {
+          "name": "Knot",
+          "id": "moira-knot",
+          "url": "./resources/heroes/moira/icons/moira-knot.png",
+          "hero": "moira"
+        },
+        {
           "name": "Kọfị Aromo",
           "id": "kofi-aromo",
           "url": "./resources/heroes/all/icons/kofi-aromo.png"
@@ -1034,6 +1046,12 @@
           "id": "mochi",
           "event": "WINTER_WONDERLAND_2016",
           "url": "./resources/heroes/all/icons/mochi.png"
+        },
+        {
+          "name": "Moira",
+          "id": "moira-moira",
+          "url": "./resources/heroes/moira/icons/moira-moira.png",
+          "hero": "moira"
         },
         {
           "name": "Monk",
@@ -9762,6 +9780,427 @@
           "url": "./resources/heroes/mercy/poses/mercy-medal.jpg",
           "event": "SUMMER_GAMES",
           "isNew": true
+        }
+      ]
+    }
+  },
+  "moira": {
+    "name": "Moira",
+    "id": "moira",
+    "class": "Support",
+    "description": "Equal parts brilliant and controversial, Talon scientist Moira O'Deorain is on the cutting edge of genetic engineering, searching for a way to rewrite the fundamental building blocks of life.",
+    "colors": {
+      "primary": "#101010",
+      "highlight": "#666666"
+    },
+    "items": {
+      "skins": [
+        {
+          "name": "Classic",
+          "id": "moira-classic",
+          "quality": "common",
+          "url": "./resources/heroes/moira/skins/moira-classic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Fiery",
+          "id": "moira-fiery",
+          "quality": "rare",
+          "url": "./resources/heroes/moira/skins/moira-fiery.jpg"
+        },
+        {
+          "name": "Royal",
+          "id": "moira-royal",
+          "quality": "rare",
+          "url": "./resources/heroes/moira/skins/moira-royal.jpg"
+        },
+        {
+          "name": "Selkie",
+          "id": "moira-selkie",
+          "quality": "rare",
+          "url": "./resources/heroes/moira/skins/moira-selkie.jpg"
+        },
+        {
+          "name": "Whiskey",
+          "id": "moira-whiskey",
+          "quality": "rare",
+          "url": "./resources/heroes/moira/skins/moira-whiskey.jpg"
+        },
+        {
+          "name": "Ornate",
+          "id": "moira-ornate",
+          "quality": "epic",
+          "url": "./resources/heroes/moira/skins/moira-ornate.jpg"
+        },
+        {
+          "name": "Pale",
+          "id": "moira-pale",
+          "quality": "epic",
+          "url": "./resources/heroes/moira/skins/moira-pale.jpg"
+        },
+        {
+          "name": "Glam",
+          "id": "moira-glam",
+          "quality": "legendary",
+          "url": "./resources/heroes/moira/skins/moira-glam.jpg"
+        },
+        {
+          "name": "Minister",
+          "id": "moira-minister",
+          "quality": "legendary",
+          "url": "./resources/heroes/moira/skins/moira-minister.jpg",
+          "description": "Thanks to her brilliance and their shared desire to achieve scientific advancement at any cost, the founders of Oasis invited her to join them as their Minister of Genetics."
+        },
+        {
+          "name": "Moon",
+          "id": "moira-moon",
+          "quality": "legendary",
+          "url": "./resources/heroes/moira/skins/moira-moon.jpg"
+        },
+        {
+          "name": "Oasis",
+          "id": "moira-oasis",
+          "quality": "legendary",
+          "url": "./resources/heroes/moira/skins/moira-oasis.jpg",
+          "description": "Thanks to her brilliance and their shared desire to achieve scientific advancement at any cost, the founders of Oasis invited her to join them as their Minister of Genetics."
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "id": "moira-heroic",
+          "quality": "common",
+          "url": "./resources/heroes/moira/emotes/moira-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "At your service",
+          "id": "moira-at-your-service",
+          "quality": "epic",
+          "url": "./resources/heroes/moira/emotes/moira-at-your-service.webm"
+        },
+        {
+          "name": "Come here",
+          "id": "moira-come-here",
+          "quality": "epic",
+          "url": "./resources/heroes/moira/emotes/moira-come-here.webm"
+        },
+        {
+          "name": "Give and Take",
+          "id": "moira-give-and-take",
+          "quality": "epic",
+          "url": "./resources/heroes/moira/emotes/moira-give-and-take.webm"
+        },
+        {
+          "name": "How amusing",
+          "id": "moira-how-amusing",
+          "quality": "epic",
+          "url": "./resources/heroes/moira/emotes/moira-how-amusing.webm"
+        },
+        {
+          "name": "Waiting",
+          "id": "moira-waiting",
+          "quality": "epic",
+          "url": "./resources/heroes/moira/emotes/moira-waiting.webm"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "id": "moira-heroic",
+          "quality": "common",
+          "url": "./resources/heroes/moira/intros/moira-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Coalescence",
+          "id": "moira-coalescence",
+          "quality": "epic",
+          "url": "./resources/heroes/moira/intros/moira-coalescence.webm"
+        },
+        {
+          "name": "Transformation",
+          "id": "moira-transformation",
+          "quality": "epic",
+          "url": "./resources/heroes/moira/intros/moira-transformation.webm"
+        },
+        {
+          "name": "Vanishing Act",
+          "id": "moira-vanishing-act",
+          "quality": "epic",
+          "url": "./resources/heroes/moira/intros/moira-vanishing-act.webm"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Erlenmeyer",
+          "id": "moira-erlenmeyer",
+          "url": "./resources/heroes/moira/icons/moira-erlenmeyer.png",
+          "hero": "moira"
+        },
+        {
+          "name": "Knot",
+          "id": "moira-knot",
+          "url": "./resources/heroes/moira/icons/moira-knot.png",
+          "hero": "moira"
+        },
+        {
+          "name": "Moira",
+          "id": "moira-moira",
+          "url": "./resources/heroes/moira/icons/moira-moira.png",
+          "hero": "moira"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Biohazard",
+          "id": "moira-biohazard",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-biohazard.png"
+        },
+        {
+          "name": "Burner",
+          "id": "moira-burner",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-burner.png"
+        },
+        {
+          "name": "Cell",
+          "id": "moira-cell",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-cell.png"
+        },
+        {
+          "name": "Erlenmeyer",
+          "id": "moira-erlenmeyer",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-erlenmeyer.png"
+        },
+        {
+          "name": "Facepalm",
+          "id": "moira-facepalm",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-facepalm.png"
+        },
+        {
+          "name": "Fade",
+          "id": "moira-fade",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-fade.png"
+        },
+        {
+          "name": "Give",
+          "id": "moira-give",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-give.png"
+        },
+        {
+          "name": "Hypothesis",
+          "id": "moira-hypothesis",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-hypothesis.png"
+        },
+        {
+          "name": "Icon",
+          "id": "moira-icon",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-icon.png"
+        },
+        {
+          "name": "Knot",
+          "id": "moira-knot",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-knot.png"
+        },
+        {
+          "name": "Moira",
+          "id": "moira-moira",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-moira.png"
+        },
+        {
+          "name": "Nails",
+          "id": "moira-nails",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-nails.png"
+        },
+        {
+          "name": "Nervous",
+          "id": "moira-nervous",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-nervous.png"
+        },
+        {
+          "name": "Orb",
+          "id": "moira-orb",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-orb.png"
+        },
+        {
+          "name": "Plotting",
+          "id": "moira-plotting",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-plotting.png"
+        },
+        {
+          "name": "Power Level",
+          "id": "moira-power-level",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-power-level.png"
+        },
+        {
+          "name": "Reaction",
+          "id": "moira-reaction",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-reaction.png"
+        },
+        {
+          "name": "Self-Experimentation",
+          "id": "moira-selfexperimentation",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-selfexperimentation.png"
+        },
+        {
+          "name": "Shadow",
+          "id": "moira-shadow",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-shadow.png"
+        },
+        {
+          "name": "Sigil",
+          "id": "moira-sigil",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-sigil.png"
+        },
+        {
+          "name": "Syringe",
+          "id": "moira-syringe",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-syringe.png"
+        },
+        {
+          "name": "Take",
+          "id": "moira-take",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-take.png"
+        },
+        {
+          "name": "Test Murloc",
+          "id": "moira-test-murloc",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-test-murloc.png"
+        },
+        {
+          "name": "Cute",
+          "id": "moira-cute",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-cute.png",
+          "achievement": true,
+          "description": "Hit 7 targets simultaneously with Moira's Coalescence in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "moira-pixel",
+          "quality": "common",
+          "url": "./resources/heroes/moira/sprays/moira-pixel.png",
+          "achievement": true,
+          "description": "Fully deplete both types of Moira's Biotic Orb without dying in Quick or Competitive Play."
+        }
+      ],
+      "voicelines": [
+        {
+          "name": "What an interesting hypothesis",
+          "id": "moira-what-an-interesting-hypothesis",
+          "quality": "common",
+          "url": "./resources/heroes/moira/voicelines/moira-what-an-interesting-hypothesis.ogg",
+          "standardItem": true
+        },
+        {
+          "name": "Are you finished?",
+          "id": "moira-are-you-finished",
+          "quality": "common",
+          "url": "./resources/heroes/moira/voicelines/moira-are-you-finished.ogg"
+        },
+        {
+          "name": "Brilliant",
+          "id": "moira-brilliant",
+          "quality": "common",
+          "url": "./resources/heroes/moira/voicelines/moira-brilliant.ogg"
+        },
+        {
+          "name": "Grand",
+          "id": "moira-grand",
+          "quality": "common",
+          "url": "./resources/heroes/moira/voicelines/moira-grand.ogg"
+        },
+        {
+          "name": "I'm working",
+          "id": "moira-im-working",
+          "quality": "common",
+          "url": "./resources/heroes/moira/voicelines/moira-im-working.ogg"
+        },
+        {
+          "name": "Idle hands",
+          "id": "moira-idle-hands",
+          "quality": "common",
+          "url": "./resources/heroes/moira/voicelines/moira-idle-hands.ogg"
+        },
+        {
+          "name": "One hand gives",
+          "id": "moira-one-hand-gives",
+          "quality": "common",
+          "url": "./resources/heroes/moira/voicelines/moira-one-hand-gives.ogg"
+        },
+        {
+          "name": "Stupidity is not a right",
+          "id": "moira-stupidity-is-not-a-right",
+          "quality": "common",
+          "url": "./resources/heroes/moira/voicelines/moira-stupidity-is-not-a-right.ogg"
+        },
+        {
+          "name": "The state of you",
+          "id": "moira-the-state-of-you",
+          "quality": "common",
+          "url": "./resources/heroes/moira/voicelines/moira-the-state-of-you.ogg"
+        },
+        {
+          "name": "What are you on about?",
+          "id": "moira-what-are-you-on-about",
+          "quality": "common",
+          "url": "./resources/heroes/moira/voicelines/moira-what-are-you-on-about.ogg"
+        },
+        {
+          "name": "You're a chancer",
+          "id": "moira-youre-a-chancer",
+          "quality": "common",
+          "url": "./resources/heroes/moira/voicelines/moira-youre-a-chancer.ogg"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "id": "moira-heroic",
+          "quality": "common",
+          "url": "./resources/heroes/moira/poses/moira-heroic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Orbs",
+          "id": "moira-orbs",
+          "quality": "rare",
+          "url": "./resources/heroes/moira/poses/moira-orbs.jpg"
+        },
+        {
+          "name": "Prim",
+          "id": "moira-prim",
+          "quality": "rare",
+          "url": "./resources/heroes/moira/poses/moira-prim.jpg"
+        },
+        {
+          "name": "Steepling",
+          "id": "moira-steepling",
+          "quality": "rare",
+          "url": "./resources/heroes/moira/poses/moira-steepling.jpg"
         }
       ]
     }
