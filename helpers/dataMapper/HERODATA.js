@@ -105,7 +105,7 @@ const data = {
     description: "Equal parts brilliant and controversial, Talon scientist Moira O'Deorain is on the cutting edge of genetic engineering, searching for a way to rewrite the fundamental building blocks of life.",
     colors: {
       primary: "#691ccf",
-      highlight: "#691ccf"
+      highlight: "#7e30e3"
     }
   },
   orisa: {
