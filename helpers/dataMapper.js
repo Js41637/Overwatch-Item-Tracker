@@ -309,14 +309,14 @@ forEach(heroes, hero => {
 });
 
 // Add ornament ids to normal sprays
-updates[EVENTS.CHRISTMAS16].items.sprays = updates[EVENTS.CHRISTMAS16].items.sprays.map(spray => {
+/* updates[EVENTS.CHRISTMAS16].items.sprays = updates[EVENTS.CHRISTMAS16].items.sprays.map(spray => {
   if (spray.heroName) {
     var ornamentID = `${spray.hero}-ornament`;
     spray.ornamentID = ornamentID;
     spray.ornamentURL = getPreviewURL('sprays', ornamentID, spray.hero, EVENTS.CHRISTMAS16);
     return spray;
   } else return spray;
-}).filter(Boolean);
+}).filter(Boolean); */
 
 // Add dragon dance ids to normal sprays
 updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.map(spray => {

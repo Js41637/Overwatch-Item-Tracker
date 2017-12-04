@@ -10,6 +10,7 @@ const EVENTS = {
   ANNIVERSARY17: 'ANNIVERSARY_2017',
   SUMMER: 'SUMMER_GAMES',
   HALLOWEEN: 'HALLOWEEN',
+  WINTER: 'WINTER_WONDERLAND'
 };
 
 const EVENTORDER = {
@@ -22,6 +23,7 @@ const EVENTORDER = {
   [EVENTS.ANNIVERSARY17]: 6,
   [EVENTS.SUMMER]: 7,
   [EVENTS.HALLOWEEN]: 8,
+  [EVENTS.WINTER]: 9
 };
 
 const EVENTNAMES = {
@@ -31,6 +33,7 @@ const EVENTNAMES = {
   [EVENTS.ANNIVERSARY17]: 'Anniversary 2017',
   [EVENTS.SUMMER]: 'Summer Games',
   [EVENTS.HALLOWEEN]: 'Halloween Terror',
+  [EVENTS.WINTER]: 'Winter Wonderland'
 };
 
 const EVENTTIMES = {
@@ -65,6 +68,10 @@ const EVENTTIMES = {
   [EVENTS.HALLOWEEN]: {
     "start": "1507658400000",
     "end": "1509613200000"
+  },
+  [EVENTS.WINTER]: {
+    "start": "1507658400000",
+    "end": "1509613200000"
   }
 };
 
@@ -75,6 +82,10 @@ const EVENT_ITEM_ORDER = {
   },
   [EVENTS.HALLOWEEN]: {
     "icons": ['heroName', 'name'],
+    "skins": [a => qualityOrder[a.quality], 'heroName', 'name']
+  },
+  [EVENTS.WINTER]: {
+    "icons": ['name'],
     "skins": [a => qualityOrder[a.quality], 'heroName', 'name']
   },
   [EVENTS.ANNIVERSARY17]: {
@@ -93,7 +104,8 @@ const EVENT_PREVIEWS = {
 
 const NEW_EVENTS = [
   EVENTS.SUMMER,
-  EVENTS.HALLOWEEN
+  EVENTS.HALLOWEEN,
+  EVENTS.WINTER
 ]
 
 module.exports = { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, NEW_EVENTS };

@@ -565,88 +565,149 @@
   border: none;
 }
 
-/* WINTER WONDERLAND 2016 */
+/* WINTER WONDERLAND */
 
-#WINTER_WONDERLAND_2016 #event-container #row1 #col1 {
-  width: 60%;
+#WINTER_WONDERLAND #event-container {
+  padding-bottom: 20px;
 }
 
-#WINTER_WONDERLAND_2016 #event-container #row1 #col2 {
-  width: 40%;
+#WINTER_WONDERLAND #event-container .section {
+  margin-top: 10px;
+}
+
+#WINTER_WONDERLAND #event-container .section .item {
+  font-size: 20px;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  padding: 0 2px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: rgba(40, 53, 79, 0.6);
+  position: relative;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
 }
 
-#WINTER_WONDERLAND_2016 #event-container #row1 #col2 .right {
-  width: 50%;
+#WINTER_WONDERLAND #event-container .section .item {
+  display: inline-flex;
+  margin-right: 1px;
+  margin-bottom: 0;
 }
 
-#WINTER_WONDERLAND_2016 #event-container #row2 {
-  margin-top: -20px;
+#WINTER_WONDERLAND #event-container .section .flex-2 .item {
+  width: calc(50% - 1px);
 }
 
-#WINTER_WONDERLAND_2016 #event-container #row2 #col1 {
-  width: 35%;
+#WINTER_WONDERLAND #event-container .section .flex-3 .item {
+  width: calc(33.33% - 1px);
 }
 
-#WINTER_WONDERLAND_2016 #event-container #row2 #col2 {
-  width: 64%;
+#WINTER_WONDERLAND #event-container .section .flex-4 .item {
+  width: calc(25% - 1px);
 }
 
-#WINTER_WONDERLAND_2016 #event-container #row2 .left {
-  width: 15%;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #row2 .right {
-  width: 20%;
-  margin-left: 8px;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #sprays {
-  width: 53%;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #epic-skins {
+#WINTER_WONDERLAND #event-container .section .item label {
   width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: 6px 0;
+  align-items: left;
+  flex-wrap: wrap;
 }
 
-#WINTER_WONDERLAND_2016 #event-container #emotes h2 {
-  margin-top: 25px;
+#WINTER_WONDERLAND #event-container .section .item input {
+  height: 24px;
+  margin: 1px 5px 1px 4px;
+  float: left;
+  cursor: pointer;
+  min-width: 24px;
 }
 
-#WINTER_WONDERLAND_2016 #event-container .top {
-  padding: 0 10px;
+#WINTER_WONDERLAND #event-container .section .item h4 {
+  font-size: 14px;
+  color: rgba(220, 220, 220, 0.75);
+  width: 100%;
+  display: initial;
 }
 
-#WINTER_WONDERLAND_2016 #event-container #voicelines {
-  width: 50%;
+#WINTER_WONDERLAND #event-container .section .item h4:before, #WINTER_WONDERLAND #event-container .section .item h4:after {
+  content: "";
 }
 
-#WINTER_WONDERLAND_2016 #event-container #victoryposes {
-  width: 17%;
-  margin: 0 8px;
+#WINTER_WONDERLAND #event-container .section .item h3 {
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  letter-spacing: 0.3;
+  font-size: 17px;
 }
 
-#WINTER_WONDERLAND_2016 #event-container #victoryposes .items {
-  height: 252px;
+#WINTER_WONDERLAND #event-container .section .item small {
+  font-size: 16px;
+  padding-top: 1px;
 }
 
-#WINTER_WONDERLAND_2016 #event-container #voicelines .items {
-  height: 456px;
+#WINTER_WONDERLAND #event-container .section-header h2, #legendary-skins .inner h2 {
+  color: rgb(64, 82, 117);
+  font-size: 38px;
+  font-weight: bold;
 }
 
-#WINTER_WONDERLAND_2016 #event-container #icons .items {
-  height: 480px;
+#WINTER_WONDERLAND .section-header h2 .itemTotal {
+  font-size: 0.7em;
+  margin-left: 2px;
+  color: inherit;
+  font-weight: inherit;
 }
 
-#WINTER_WONDERLAND_2016 #event-container #icons .item:nth-child(24) h3 {
-  font-size: 21px;
+#WINTER_WONDERLAND #legendary-skins h2 small {
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  letter-spacing: 0.3;
 }
 
-#WINTER_WONDERLAND_2016 #event-container #sprays .items {
-  height: 265px;
+#WINTER_WONDERLAND .section-header h2 .itemTotal:before, #WINTER_WONDERLAND .section-header h2 .itemTotal:after, #WINTER_WONDERLAND #legendary-skins h2 small:before, #WINTER_WONDERLAND #legendary-skins h2 small:after {
+  display: none;
 }
 
+#WINTER_WONDERLAND #event-container .event-progress {
+  background-color: rgba(24, 34, 62, .7);
+  height: 22px;
+  padding: 2px;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+  box-sizing: content-box;
+  position: absolute;
+  width: 75%;
+  top: -17px;
+  opacity: 0.9;
+}
+
+#WINTER_WONDERLAND #event-container .event-progress span {
+  line-height: 26px;
+  font-size: 20px;
+  display: block;
+  position: absolute;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#WINTER_WONDERLAND #event-container .event-progress .event-progress-bar {
+  width: 0;
+  border-radius: 3px;
+  background-color: rgb(92, 184, 92);
+  border-top: 2px solid rgba(92, 184, 92, 0.95);
+  transition: width .8s ease-in-out;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#WINTER_WONDERLAND #event-container .event-progress .event-progress-bar.progress-bar-striped {
+  border: none;
+}
 
 /* YEAR OF THE ROOSTER 2017 */
 
@@ -899,67 +960,39 @@
   /* SUMMER GAMES */
   
   #SUMMER_GAMES .col-padding,
-  #HALLOWEEN .col-padding {
+  #HALLOWEEN .col-padding,
+  #WINTER_WONDERLAND .col-padding {
     width: 100%;
   }
   
   #SUMMER_GAMES #event-container .event-progress,
-  #HALLOWEEN #event-container .event-progress {
+  #HALLOWEEN #event-container .event-progress,
+  #WINTER_WONDERLAND #event-container .event-progress {
     width: 65%;
   }
 
   #SUMMER_GAMES #event-container .section .item h3,
-  #HALLOWEEN #event-container .section .item h3 {
+  #HALLOWEEN #event-container .section .item h3,
+  #WINTER_WONDERLAND #event-container .section .item h3 {
     font-size: 16px;
   }
 
   #SUMMER_GAMES #event-container .section .flex-2 .item,
-  #HALLOWEEN #event-container .section .flex-2 .item {
+  #HALLOWEEN #event-container .section .flex-2 .item,
+  #WINTER_WONDERLAND #event-container .section .flex-2 .item {
     width: calc(25% - 1px);
   }
 
   #SUMMER_GAMES #event-container .section .flex-3 .item,
-  #HALLOWEEN #event-container .section .flex-3 .item {
+  #HALLOWEEN #event-container .section .flex-3 .item,
+  #WINTER_WONDERLAND #event-container .section .flex-3 .item {
     width: calc(33.33% - 1px);
   }
 
   #SUMMER_GAMES #event-container .section .flex-4 .item,
-  #HALLOWEEN #event-container .section .flex-4 .item {
+  #HALLOWEEN #event-container .section .flex-4 .item,
+  #WINTER_WONDERLAND #event-container .section .flex-4 .item {
     width: calc(25% - 1px);
-  }
-  /* WINTER */
-  #WINTER_WONDERLAND_2016 #event-container #row1 {
-    flex-direction: column;
-    width: 100%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row1 #col2 .right {
-    z-index: 1;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row1 #col1, #WINTER_WONDERLAND_2016 #event-container #row1 #col2, #WINTER_WONDERLAND_2016 #event-container #row2 #col1, #WINTER_WONDERLAND_2016 #event-container #row2 #col2 {
-    width: 100%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 {
-    width: 100%;
-    margin-top: 0;
-    flex-wrap: wrap;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 .left {
-    width: 40%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 .right {
-    width: 59%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 #victoryposes {
-    width: 30%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 #sprays {
-    width: 68%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 #sprays .items {
-    height: 365px;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 #sprays .item {
-    width: 32.5%;
   }
   /* ROOSTER */
   #YEAR_OF_THE_ROOSTER_2017 #event-container #row1 {

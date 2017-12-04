@@ -18,9 +18,11 @@ OWI.filter('eventImageUrl', function() {
   };
 });
 
+const oldEvents = ['SUMMER_GAMES_2016', 'HALLOWEEN_2016', 'WINTER_WONDERLAND_2016']
+
 OWI.filter('itemPrice', function() {
   return function(item, type, event) {
-    var isEvent = (item.event || event) && item.group !== 'SUMMER_GAMES_2016' && item.group !== 'HALLOWEEN_2016';
+    var isEvent = (item.event || event) && !oldEvents.includes(item.group);
     var quality = item.quality;
     if (item.standardItem || item.achievement || type == 'icons') return '';
 
