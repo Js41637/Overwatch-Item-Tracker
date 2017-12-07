@@ -616,6 +616,13 @@
   flex-wrap: wrap;
 }
 
+#WINTER_WONDERLAND #event-container .section .item label.ornl {
+  width: 24px;
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+}
+
 #WINTER_WONDERLAND #event-container .section .item input {
   height: 24px;
   margin: 1px 5px 1px 4px;

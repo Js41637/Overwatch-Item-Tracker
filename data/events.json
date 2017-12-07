@@ -6093,20 +6093,13 @@
         {
           "heroName": "Ana",
           "hero": "ana",
-          "name": "Ornament",
-          "id": "ana-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/ana/sprays/ana-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Ana",
-          "hero": "ana",
           "name": "Warm",
           "id": "ana-warm",
           "quality": "common",
           "url": "./resources/heroes/ana/sprays/ana-warm.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "ana-ornament",
+          "secondUrl": "./resources/heroes/ana/sprays/ana-ornament.png"
         },
         {
           "heroName": "Bastion",
@@ -6115,16 +6108,9 @@
           "id": "bastion-festive",
           "quality": "common",
           "url": "./resources/heroes/bastion/sprays/bastion-festive.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "ORNAMENT",
-          "id": "bastion-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/bastion/sprays/bastion-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "bastion-ornament",
+          "secondUrl": "./resources/heroes/bastion/sprays/bastion-ornament.png"
         },
         {
           "heroName": "D.Va",
@@ -6133,16 +6119,9 @@
           "id": "dva-cookie",
           "quality": "common",
           "url": "./resources/heroes/dva/sprays/dva-cookie.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "ORNAMENT",
-          "id": "dva-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/dva/sprays/dva-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "dva-ornament",
+          "secondUrl": "./resources/heroes/dva/sprays/dva-ornament.png"
         },
         {
           "heroName": "Genji",
@@ -6151,16 +6130,9 @@
           "id": "genji-kadomatsu",
           "quality": "common",
           "url": "./resources/heroes/genji/sprays/genji-kadomatsu.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Ornament",
-          "id": "genji-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/genji/sprays/genji-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "genji-ornament",
+          "secondUrl": "./resources/heroes/genji/sprays/genji-ornament.png"
         },
         {
           "heroName": "Hanzo",
@@ -6169,16 +6141,9 @@
           "id": "hanzo-kadomatsu",
           "quality": "common",
           "url": "./resources/heroes/hanzo/sprays/hanzo-kadomatsu.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Hanzo",
-          "hero": "hanzo",
-          "name": "Ornament",
-          "id": "hanzo-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/hanzo/sprays/hanzo-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "hanzo-ornament",
+          "secondUrl": "./resources/heroes/hanzo/sprays/hanzo-ornament.png"
         },
         {
           "heroName": "Junkrat",
@@ -6187,16 +6152,9 @@
           "id": "junkrat-winter",
           "quality": "common",
           "url": "./resources/heroes/junkrat/sprays/junkrat-winter.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "Ornament",
-          "id": "junkrat-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/junkrat/sprays/junkrat-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "junkrat-ornament",
+          "secondUrl": "./resources/heroes/junkrat/sprays/junkrat-ornament.png"
         },
         {
           "heroName": "Lúcio",
@@ -6205,25 +6163,9 @@
           "id": "lucio-hockey",
           "quality": "common",
           "url": "./resources/heroes/lucio/sprays/lucio-hockey.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Ornament",
-          "id": "lucio-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/lucio/sprays/lucio-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Ornament",
-          "id": "mccree-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/mccree/sprays/mccree-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "lucio-ornament",
+          "secondUrl": "./resources/heroes/lucio/sprays/lucio-ornament.png"
         },
         {
           "heroName": "McCree",
@@ -6232,16 +6174,9 @@
           "id": "mccree-ugly-sweater",
           "quality": "common",
           "url": "./resources/heroes/mccree/sprays/mccree-ugly-sweater.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Ornament",
-          "id": "mei-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/mei/sprays/mei-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "mccree-ornament",
+          "secondUrl": "./resources/heroes/mccree/sprays/mccree-ornament.png"
         },
         {
           "heroName": "Mei",
@@ -6250,16 +6185,9 @@
           "id": "mei-sculpting",
           "quality": "common",
           "url": "./resources/heroes/mei/sprays/mei-sculpting.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Ornament",
-          "id": "mercy-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/mercy/sprays/mercy-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "mei-ornament",
+          "secondUrl": "./resources/heroes/mei/sprays/mei-ornament.png"
         },
         {
           "heroName": "Mercy",
@@ -6268,7 +6196,9 @@
           "id": "mercy-snow-angel",
           "quality": "common",
           "url": "./resources/heroes/mercy/sprays/mercy-snow-angel.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "mercy-ornament",
+          "secondUrl": "./resources/heroes/mercy/sprays/mercy-ornament.png"
         },
         {
           "heroName": "Pharah",
@@ -6277,25 +6207,9 @@
           "id": "pharah-ice-fishing",
           "quality": "common",
           "url": "./resources/heroes/pharah/sprays/pharah-ice-fishing.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Ornament",
-          "id": "pharah-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/pharah/sprays/pharah-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "Ornament",
-          "id": "reaper-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/reaper/sprays/reaper-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "pharah-ornament",
+          "secondUrl": "./resources/heroes/pharah/sprays/pharah-ornament.png"
         },
         {
           "heroName": "Reaper",
@@ -6304,7 +6218,9 @@
           "id": "reaper-stocking",
           "quality": "common",
           "url": "./resources/heroes/reaper/sprays/reaper-stocking.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "reaper-ornament",
+          "secondUrl": "./resources/heroes/reaper/sprays/reaper-ornament.png"
         },
         {
           "heroName": "Reinhardt",
@@ -6313,16 +6229,9 @@
           "id": "reinhardt-ice-fishing",
           "quality": "common",
           "url": "./resources/heroes/reinhardt/sprays/reinhardt-ice-fishing.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Ornament",
-          "id": "reinhardt-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/reinhardt/sprays/reinhardt-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "reinhardt-ornament",
+          "secondUrl": "./resources/heroes/reinhardt/sprays/reinhardt-ornament.png"
         },
         {
           "heroName": "Roadhog",
@@ -6331,16 +6240,9 @@
           "id": "roadhog-winter",
           "quality": "common",
           "url": "./resources/heroes/roadhog/sprays/roadhog-winter.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "Ornament",
-          "id": "roadhog-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/roadhog/sprays/roadhog-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "roadhog-ornament",
+          "secondUrl": "./resources/heroes/roadhog/sprays/roadhog-ornament.png"
         },
         {
           "heroName": "Soldier: 76",
@@ -6349,25 +6251,9 @@
           "id": "soldier-76-army-man-76",
           "quality": "common",
           "url": "./resources/heroes/soldier-76/sprays/soldier-76-army-man-76.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "Ornament",
-          "id": "soldier-76-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/soldier-76/sprays/soldier-76-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Sombra",
-          "hero": "sombra",
-          "name": "Ornament",
-          "id": "sombra-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/sombra/sprays/sombra-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "soldier-76-ornament",
+          "secondUrl": "./resources/heroes/soldier-76/sprays/soldier-76-ornament.png"
         },
         {
           "heroName": "Sombra",
@@ -6376,16 +6262,9 @@
           "id": "sombra-puppet",
           "quality": "common",
           "url": "./resources/heroes/sombra/sprays/sombra-puppet.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "Ornament",
-          "id": "symmetra-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/symmetra/sprays/symmetra-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "sombra-ornament",
+          "secondUrl": "./resources/heroes/sombra/sprays/sombra-ornament.png"
         },
         {
           "heroName": "Symmetra",
@@ -6394,16 +6273,9 @@
           "id": "symmetra-snowflake",
           "quality": "common",
           "url": "./resources/heroes/symmetra/sprays/symmetra-snowflake.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Ornament",
-          "id": "torbjorn-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/torbjorn/sprays/torbjorn-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "symmetra-ornament",
+          "secondUrl": "./resources/heroes/symmetra/sprays/symmetra-ornament.png"
         },
         {
           "heroName": "Torbjörn",
@@ -6412,16 +6284,9 @@
           "id": "torbjorn-workshop",
           "quality": "common",
           "url": "./resources/heroes/torbjorn/sprays/torbjorn-workshop.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Ornament",
-          "id": "tracer-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/tracer/sprays/tracer-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "torbjorn-ornament",
+          "secondUrl": "./resources/heroes/torbjorn/sprays/torbjorn-ornament.png"
         },
         {
           "heroName": "Tracer",
@@ -6430,16 +6295,9 @@
           "id": "tracer-snowboarding",
           "quality": "common",
           "url": "./resources/heroes/tracer/sprays/tracer-snowboarding.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Ornament",
-          "id": "widowmaker-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/widowmaker/sprays/widowmaker-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "tracer-ornament",
+          "secondUrl": "./resources/heroes/tracer/sprays/tracer-ornament.png"
         },
         {
           "heroName": "Widowmaker",
@@ -6448,16 +6306,9 @@
           "id": "widowmaker-skiing",
           "quality": "common",
           "url": "./resources/heroes/widowmaker/sprays/widowmaker-skiing.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "Ornament",
-          "id": "winston-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/winston/sprays/winston-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "widowmaker-ornament",
+          "secondUrl": "./resources/heroes/widowmaker/sprays/widowmaker-ornament.png"
         },
         {
           "heroName": "Winston",
@@ -6466,7 +6317,9 @@
           "id": "winston-presents",
           "quality": "common",
           "url": "./resources/heroes/winston/sprays/winston-presents.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "winston-ornament",
+          "secondUrl": "./resources/heroes/winston/sprays/winston-ornament.png"
         },
         {
           "heroName": "Zarya",
@@ -6475,25 +6328,9 @@
           "id": "zarya-matryoshka",
           "quality": "common",
           "url": "./resources/heroes/zarya/sprays/zarya-matryoshka.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Ornament",
-          "id": "zarya-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/zarya/sprays/zarya-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Ornament",
-          "id": "zenyatta-ornament",
-          "quality": "common",
-          "url": "./resources/heroes/zenyatta/sprays/zenyatta-ornament.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "zarya-ornament",
+          "secondUrl": "./resources/heroes/zarya/sprays/zarya-ornament.png"
         },
         {
           "heroName": "Zenyatta",
@@ -6502,13 +6339,176 @@
           "id": "zenyatta-snowball-fight",
           "quality": "common",
           "url": "./resources/heroes/zenyatta/sprays/zenyatta-snowball-fight.png",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2016",
+          "secondId": "zenyatta-ornament",
+          "secondUrl": "./resources/heroes/zenyatta/sprays/zenyatta-ornament.png"
         },
         {
           "hero": "all",
           "name": "Winter Wonderland",
           "id": "winter-wonderland",
           "url": "./resources/heroes/all/sprays/winter-wonderland.png",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "ana",
+          "id": "ana-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "bastion",
+          "id": "bastion-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "dva",
+          "id": "dva-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "genji",
+          "id": "genji-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "hanzo",
+          "id": "hanzo-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "junkrat",
+          "id": "junkrat-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "lucio",
+          "id": "lucio-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "mccree",
+          "id": "mccree-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "mei",
+          "id": "mei-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "mercy",
+          "id": "mercy-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "pharah",
+          "id": "pharah-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "reaper",
+          "id": "reaper-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "reinhardt",
+          "id": "reinhardt-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "roadhog",
+          "id": "roadhog-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "soldier-76",
+          "id": "soldier-76-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "sombra",
+          "id": "sombra-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "symmetra",
+          "id": "symmetra-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "torbjorn",
+          "id": "torbjorn-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "tracer",
+          "id": "tracer-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "widowmaker",
+          "id": "widowmaker-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "winston",
+          "id": "winston-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "zarya",
+          "id": "zarya-ornament",
+          "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "zenyatta",
+          "id": "zenyatta-ornament",
           "group": "WINTER_WONDERLAND_2016",
           "quality": "common"
         },

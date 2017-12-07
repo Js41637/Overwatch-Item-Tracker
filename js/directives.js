@@ -95,7 +95,9 @@ OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService)
         out.audio = url;
       } else {
         out.img = url;
+        out.img2 = item.secondUrl;
       }
+
       $scope.preview = out;
     }
   };

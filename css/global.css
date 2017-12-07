@@ -1218,6 +1218,21 @@ strong {
   background-size: cover;
 }
 
+#sprays .tooltip .preview.img.two {
+  display: flex;
+  width: 420px;
+  height: 420px;
+}
+
+#sprays .tooltip .preview.img.two .i:nth-of-type(2) {
+  background-size: 120%;
+}
+
+#sprays .tooltip .preview.img.two .i:nth-of-type(2) {
+  width: 60%;
+  background-size: 170%;
+}
+
 .section .tooltip .preview.img {
   width: 450px;
   height: 450px;

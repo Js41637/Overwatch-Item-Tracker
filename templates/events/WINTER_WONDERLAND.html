@@ -34,6 +34,7 @@
       <div
         ng-repeat="item in ::data.items.sprays track by $index"
         ng-init="type = 'sprays'"
+        ng-if="::!item.hidden"
         class="item"
         achievement="{{::item.achievement}}"
         uib-tooltip-template="'imagePreviewTemplate.html'"
@@ -41,7 +42,10 @@
         tooltip-class="img-preview"
         tooltip-enable="{{::canPlayType(type)}}"
         tooltip-placement="bottom auto">
+
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
+        <input ng-if="::item.heroName" type="checkbox" class="orn" ng-if="::item.heroName" id="{{'sprayorn' + $index}}" ng-model="checked[item.hero][type][item.secondId]" ng-change="onSelect(item, type, item.secondId)">
+        <label ng-if="::item.heroName" for="{{'sprayorn' + $index}}" class="ornl"></label>
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
           <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>

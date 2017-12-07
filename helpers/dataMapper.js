@@ -309,19 +309,39 @@ forEach(heroes, hero => {
 });
 
 // Add ornament ids to normal sprays
-/* updates[EVENTS.CHRISTMAS16].items.sprays = updates[EVENTS.CHRISTMAS16].items.sprays.map(spray => {
+updates[EVENTS.WINTER].items.sprays = updates[EVENTS.WINTER].items.sprays.map(spray => {
   if (spray.heroName) {
-    var ornamentID = `${spray.hero}-ornament`;
-    spray.ornamentID = ornamentID;
-    spray.ornamentURL = getPreviewURL('sprays', ornamentID, spray.hero, EVENTS.CHRISTMAS16);
+    if (spray.id.endsWith('-ornament')) {
+      return  {
+        hidden: true,
+        hero: spray.hero,
+        id: spray.id,
+        group: spray.group,
+        quality: spray.quality
+      }
+    }
+
+    const secondID = `${spray.hero}-ornament`;
+    spray.secondId = secondID;
+    spray.secondUrl = getPreviewURL('sprays', secondID, spray.hero, EVENTS.WINTER);
     return spray;
   } else return spray;
-}).filter(Boolean); */
+}).filter(Boolean);
 
 // Add dragon dance ids to normal sprays
 updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.map(spray => {
   if (spray.heroName) {
-    var dragonID = `${spray.hero}-dragon-dance`;
+    if (spray.id.endsWith('-ornament')) {
+      return  {
+        hidden: true,
+        hero: spray.hero,
+        id: spray.id,
+        group: spray.group,
+        quality: spray.quality
+      }
+    }
+
+    const dragonID = `${spray.hero}-dragon-dance`;
     spray.dragonID = dragonID;
     spray.dragonURL = getPreviewURL('sprays', dragonID, spray.hero, EVENTS.ROOSTER17);
     return spray;
