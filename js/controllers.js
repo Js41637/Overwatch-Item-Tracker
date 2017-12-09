@@ -128,6 +128,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     }, 0);
   });
 
+  $scope.qualityShow = false; //SL$
+
   function init() {
     vm.filteredItems = hero.items;
     vm.canPlayType = CompatibilityService.canPlayType;
