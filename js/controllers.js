@@ -19,7 +19,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   this.getCosts = function() {
     var out = {
       total: 0,
-      remaining: 0
+      remaining: 0,
       selected: 0
     };
     for (var hero in CostAndTotalService.heroes) {
