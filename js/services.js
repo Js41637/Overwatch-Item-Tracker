@@ -157,46 +157,30 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
     },
     recalculate: function() {
       console.log("Calculating costs");
-
       service.heroes = {};
       service.events = {};
       var d = Object.assign({}, DataService.heroes, DataService.events);
-
       for (var heroOrEvent in d) {
         var isEvent = DataService.events[heroOrEvent];
         var what = d[heroOrEvent];
         var TYPE = isEvent ? 'events' : 'heroes';
 
-        service[TYPE][what.id] = 
-        { events: {}, groups: {}, cost: { selected: 0, remaining: 0, total: 0, prev: 0 }, totals: { overall: { selected: 0, total: 0, percentage: 0 }, 
-            quality: {
-              common: {selected: 0, total: 0, percentage: 0}, 
-              rare: {selected: 0, total: 0, percentage: 0}, 
-              epic: {selected: 0, total: 0, percentage: 0}, 
-              legendary: {selected: 0, total: 0, percentage: 0}
-            }
-          } 
-        };
-        
+        service[TYPE][what.id] = { events: {}, groups: {}, cost: { selected: 0, remaining: 0, total: 0, prev: 0 }, totals: { overall: { selected: 0, total: 0, percentage: 0 } } };
         var items = what.items;
         for (var type in items) {
           if (!service[TYPE][what.id].totals[type]) service[TYPE][what.id].totals[type] = { selected: 0, total: 0 };
-
           for (var item of items[type]) {
             if (item.standardItem) continue;
             if (!isEvent) {
               if (item.event && !service[TYPE][what.id].events[item.event]) service[TYPE][what.id].events[item.event] = true;
               if (item.group && !service[TYPE][what.id].groups[item.group]) service[TYPE][what.id].groups[item.group] = true;
             }
-
             var isSelected = DataService.checked[item.hero || what.id][TYPES[type] || type][item.id];
             service[TYPE][what.id].totals.overall.total++;
             service[TYPE][what.id].totals[type].total++;
-            if (item.quality != undefined) { service[TYPE][what.id].totals.quality[item.quality].total += 1; } //SL$
             if (isSelected) {
               service[TYPE][what.id].totals.overall.selected++;
               service[TYPE][what.id].totals[type].selected++;
-              if (item.quality != undefined) { service[TYPE][what.id].totals.quality[item.quality].selected++; } //SL$
             }
             if (type == 'icons') {
               if (!countIcons) {
@@ -217,9 +201,6 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           }
         }
         service[TYPE][what.id].totals.overall.percentage = ((service[TYPE][what.id].totals.overall.selected / service[TYPE][what.id].totals.overall.total) * 100);
-        for (var q in service[TYPE][what.id].totals.quality) { //SL$
-          service[TYPE][what.id].totals.quality[q].percentage = ((service[TYPE][what.id].totals.quality[q].selected / service[TYPE][what.id].totals.quality[q].total) * 100);
-        }
       }
     },
     updateItem: function(item, type, hero, event, idOverride) {
@@ -237,7 +218,6 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var isValid = isValidItem(item, event);
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
-      if (item.quality != undefined) { service.heroes[hero].totals.quality[item.quality].selected += val; } //SL$
       if (type != 'icons' || (type == 'icons' && countIcons)) {
         service.heroes[hero].totals.overall.selected += val;
       }
@@ -268,18 +248,12 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         service.events[event].totals.overall.percentage = ((service.events[event].totals.overall.selected / service.events[event].totals.overall.total) * 100);
       }
       service.heroes[hero].totals.overall.percentage = ((service.heroes[hero].totals.overall.selected / service.heroes[hero].totals.overall.total) * 100);
-      for (var q in service.heroes[hero].totals.quality) { //SL$
-        service.heroes[hero].totals.quality[q].percentage = ((service.heroes[hero].totals.quality[q].selected / service.heroes[hero].totals.quality[q].total) * 100);
-      }
       return service.heroes[hero];
     },
     calculateFilteredHeroes: function(items, oldCost, hero) {
       var out = {
         cost: { total: 0, selected: 0, remaining: 0, prev: oldCost },
-        totals: {
-          quality: { common: {selected: 0, total: 0, percentage: 0}, rare: {selected: 0, total: 0, percentage: 0}, 
-          epic: {selected: 0, total: 0, percentage: 0}, legendary: {selected: 0, total: 0, percentage: 0} },
-          overall: { selected: 0, total: 0, percentage: 0 } }
+        totals: { overall: { selected: 0, total: 0, percentage: 0 } }
       };
       for (var type in items) {
         if (!out.totals[type]) out.totals[type] = { total: 0, selected: 0 };
@@ -288,11 +262,9 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           var isSelected = DataService.checked[item.hero || hero][type][item.id];
           out.totals.overall.total++;
           out.totals[type].total++;
-          if (item.quality != undefined) { out.totals.quality[item.quality].total += 1; } //SL$
           if (isSelected) {
             out.totals.overall.selected++;
             out.totals[type].selected++;
-            if (item.quality != undefined) { out.totals.quality[item.quality].selected++; } //SL$
           }
           if (type == 'icons') continue;
           if (isValidItem(item)) {
@@ -307,9 +279,6 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         }
       }
       out.totals.overall.percentage = ((out.totals.overall.selected / out.totals.overall.total) * 100);
-      for (var q in out.totals.quality) { //SL$
-        out.totals.quality[q].percentage = ((out.totals.quality[q].selected / out.totals.quality[q].total) * 100);
-      }
       return out;
     }
   };
