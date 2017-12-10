@@ -4,6 +4,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   this.currentDate = Date.now();
   this.showSidebar = false;
   this.showNav = false;
+  this.showOwnedItems = true;
   this.noSupportMsg = CompatibilityService.noSupportMsg;
   this.totals = CostAndTotalService;
 
@@ -74,6 +75,22 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
         $document.on('click', documentClicked);
       }, 0);
     }
+  };
+  
+  this.toggleOwnedItemVisibility = function() {
+      this.showOwnedItems = !this.showOwnedItems;
+      var checkBoxes = document.querySelectorAll("input[type='checkbox']");
+      var visibility = ""; //Default display value for the divs
+      
+      if (!this.showOwnedItems) {
+        visibility = "none";
+      }
+      
+      for(var i = 0; i < checkBoxes.length; i++){
+        if(checkBoxes[i].checked) {
+            checkBoxes[i].parentElement.style.display = visibility;
+        }
+      }
   };
 
   this.openSettings = function() {
