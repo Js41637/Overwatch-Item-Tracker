@@ -17,7 +17,7 @@
         tooltip-popup-delay="300"
         tooltip-class="img-preview"
         tooltip-enable="{{::canPlayType(type)}}"
-        tooltip-placement="bottom auto">
+        tooltip-placement="auto">
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
@@ -41,7 +41,7 @@
         tooltip-popup-delay="275"
         tooltip-class="img-preview"
         tooltip-enable="{{::canPlayType(type)}}"
-        tooltip-placement="bottom auto">
+        tooltip-placement="auto">
 
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <input ng-if="::item.heroName" type="checkbox" class="orn" ng-if="::item.heroName" id="{{'sprayorn' + $index}}" ng-model="checked[item.hero][type][item.secondId]" ng-change="onSelect(item, type, item.secondId)">
@@ -69,7 +69,7 @@
         tooltip-popup-delay="275"
         tooltip-class="img-preview"
         tooltip-enable="{{::canPlayType(type)}}"
-        tooltip-placement="bottom auto">
+        tooltip-placement="auto">
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
@@ -91,7 +91,7 @@
         tooltip-popup-delay="275"
         tooltip-class="img-preview"
         tooltip-enable="{{::canPlayType(type)}}"
-        tooltip-placement="bottom auto">
+        tooltip-placement="auto">
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
@@ -113,7 +113,7 @@
         tooltip-popup-delay="275"
         tooltip-class="img-preview"
         tooltip-enable="{{::canPlayType(type)}}"
-        tooltip-placement="bottom auto">
+        tooltip-placement="auto">
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
@@ -135,7 +135,7 @@
         tooltip-popup-delay="275"
         tooltip-class="img-preview"
         tooltip-enable="{{::canPlayType(type)}}"
-        tooltip-placement="bottom auto">
+        tooltip-placement="auto">
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
@@ -157,7 +157,7 @@
         tooltip-popup-delay="275"
         tooltip-class="img-preview"
         tooltip-enable="{{::canPlayType(type)}}"
-        tooltip-placement="bottom auto">
+        tooltip-placement="auto">
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
