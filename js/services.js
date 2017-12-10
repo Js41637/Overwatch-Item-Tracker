@@ -135,7 +135,8 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
     totals: {},
     heroes: {},
     events: {},
-    oldEvents: ["HALLOWEEN_2016", "SUMMER_GAMES_2016", 'WINTER_WONDERLAND_2016'],
+    oldEvents: ['HALLOWEEN_2016', 'SUMMER_GAMES_2016', 'WINTER_WONDERLAND_2016'],
+    newEvents: ['HALLOWEEN', 'SUMMER_GAMES', 'WINTER_WONDERLAND'],
     init: function() {
       DataService.waitForInitialization().then(function() {
         console.info("Calculating totals and costs");
@@ -208,7 +209,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
       event = item.event || event;
       var eventType;
-      if (event === 'SUMMER_GAMES' || event === 'HALLOWEEN') {
+      if (service.newEvents.includes(event)) {
         eventType = (type == 'skins' && item.quality == 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
       } else {
         eventType = type == 'skins' ? (item.quality == 'epic' ? 'skinsEpic' : 'skinsLegendary') : type;
