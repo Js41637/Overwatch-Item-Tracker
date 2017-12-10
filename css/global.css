@@ -1199,6 +1199,12 @@ strong {
   opacity: 1;
 }
 
+.section .tooltip.fade {
+  -webkit-transition: opacity 125ms linear;
+  -o-transition: opacity 125ms linear;
+  transition: opacity 125ms linear;
+}
+
 .section .tooltip .tooltip-inner {
   max-width: none;
   padding: 4px;
