@@ -26,6 +26,12 @@
           "url": "/heroes/all/icons/2017.png"
         },
         {
+          "name": "2018",
+          "id": "2018",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/icons/2018.png"
+        },
+        {
           "name": "512",
           "id": "zarya-512",
           "url": "/heroes/zarya/icons/zarya-512.png",
@@ -42,6 +48,14 @@
           "id": "junkrat-ahhhh",
           "url": "/heroes/junkrat/icons/junkrat-ahhhh.png",
           "hero": "junkrat"
+        },
+        {
+          "name": "Alpine",
+          "id": "soldier-76-alpine",
+          "url": "/heroes/soldier-76/icons/soldier-76-alpine.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "soldier-76",
+          "isNew": true
         },
         {
           "name": "Ana",
@@ -115,6 +129,14 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "name": "Avalanche",
+          "id": "bastion-avalanche",
+          "url": "/heroes/bastion/icons/bastion-avalanche.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "bastion",
+          "isNew": true
+        },
+        {
           "name": "B73-NS",
           "id": "b73ns",
           "event": "UPRISING",
@@ -163,6 +185,14 @@
           "id": "bastion-bastion",
           "url": "/heroes/bastion/icons/bastion-bastion.png",
           "hero": "bastion"
+        },
+        {
+          "name": "Beachrat",
+          "id": "junkrat-beachrat",
+          "url": "/heroes/junkrat/icons/junkrat-beachrat.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "junkrat",
+          "isNew": true
         },
         {
           "name": "Bells",
@@ -255,6 +285,14 @@
           "name": "Capsule",
           "id": "capsule",
           "url": "/heroes/all/icons/capsule.png"
+        },
+        {
+          "name": "Casual",
+          "id": "hanzo-casual",
+          "url": "/heroes/hanzo/icons/hanzo-casual.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "hanzo",
+          "isNew": true
         },
         {
           "name": "Chang'e",
@@ -750,8 +788,8 @@
           "url": "/heroes/all/icons/halloween-terror-2016.png"
         },
         {
-          "id": "halloween-terror-2017",
           "name": "Halloween Terror 2017",
+          "id": "halloween-terror-2017",
           "event": "HALLOWEEN",
           "url": "/heroes/all/icons/halloween-terror-2017.png"
         },
@@ -837,6 +875,14 @@
           "url": "/heroes/all/icons/hot-cocoa.png"
         },
         {
+          "name": "Ice Fisherman",
+          "id": "roadhog-ice-fisherman",
+          "url": "/heroes/roadhog/icons/roadhog-ice-fisherman.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "roadhog",
+          "isNew": true
+        },
+        {
           "name": "Initials",
           "id": "doomfist-initials",
           "url": "/heroes/doomfist/icons/doomfist-initials.png",
@@ -891,8 +937,8 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
-          "id": "junkensteins-pachimonster",
           "name": "Junkenstein's Pachimonster",
+          "id": "junkensteins-pachimonster",
           "event": "HALLOWEEN",
           "url": "/heroes/all/icons/junkensteins-pachimonster.png"
         },
@@ -1210,8 +1256,8 @@
           "group": "pachi"
         },
         {
-          "id": "pachimummy",
           "name": "Pachimummy",
+          "id": "pachimummy",
           "event": "HALLOWEEN",
           "url": "/heroes/all/icons/pachimummy.png",
           "group": "pachi"
@@ -1370,6 +1416,14 @@
           "url": "/heroes/all/icons/rikimaru.png"
         },
         {
+          "name": "Rime",
+          "id": "sombra-rime",
+          "url": "/heroes/sombra/icons/sombra-rime.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "sombra",
+          "isNew": true
+        },
+        {
           "name": "Roadhog",
           "id": "roadhog-roadhog",
           "url": "/heroes/roadhog/icons/roadhog-roadhog.png",
@@ -1507,36 +1561,50 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Season 5"
         },
         {
-          "id": "season-6-competitor",
           "name": "Season 6 Competitor",
+          "id": "season-6-competitor",
           "url": "/heroes/all/icons/season-6-competitor.png",
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by completing Season 6 placement matches"
         },
         {
-          "id": "season-6-hero",
           "name": "Season 6 Hero",
+          "id": "season-6-hero",
           "url": "/heroes/all/icons/season-6-hero.png",
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Season 6"
         },
         {
-          "id": "season-7-competitor",
           "name": "Season 7 Competitor",
+          "id": "season-7-competitor",
           "url": "/heroes/all/icons/season-7-competitor.png",
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by completing Season 7 placement matches"
         },
         {
-          "id": "season-7-hero",
           "name": "Season 7 Hero",
+          "id": "season-7-hero",
           "url": "/heroes/all/icons/season-7-hero.png",
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Season 7"
+        },
+        {
+          "name": "Season 8 Competitor",
+          "id": "season-8-competitor",
+          "url": "/heroes/all/icons/season-8-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 8 Hero",
+          "id": "season-8-hero",
+          "url": "/heroes/all/icons/season-8-hero.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Sentry",
@@ -1593,6 +1661,14 @@
           "id": "snow-globe",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/icons/snow-globe.png"
+        },
+        {
+          "name": "Snow Owl",
+          "id": "ana-snow-owl",
+          "url": "/heroes/ana/icons/ana-snow-owl.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "ana",
+          "isNew": true
         },
         {
           "name": "Snowball",
@@ -1965,6 +2041,12 @@
           "url": "/heroes/all/icons/winter-wonderland-2016.png"
         },
         {
+          "name": "Winter Wonderland 2017",
+          "id": "winter-wonderland-2017",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/icons/winter-wonderland-2017.png"
+        },
+        {
           "name": "Witch Doctor",
           "id": "witch-doctor",
           "url": "/heroes/all/icons/witch-doctor.png"
@@ -2019,6 +2101,13 @@
           "event": "WINTER_WONDERLAND",
           "hero": "winston",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Yetimari",
+          "id": "yetimari",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/icons/yetimari.png",
+          "group": "pachi"
         },
         {
           "name": "You are not prepared",
@@ -2415,8 +2504,8 @@
           "description": "Unlocked by completing Season 5 placement matches"
         },
         {
-          "id": "season-6-competitor",
           "name": "Season 6 Competitor",
+          "id": "season-6-competitor",
           "url": "/heroes/all/sprays/season-6-competitor.png",
           "achievement": true,
           "group": "competitive",
@@ -2431,8 +2520,8 @@
           "description": "Unlocked by completing Season 6 placement matches"
         },
         {
-          "id": "season-7-competitor",
           "name": "Season 7 Competitor",
+          "id": "season-7-competitor",
           "url": "/heroes/all/sprays/season-7-competitor.png",
           "achievement": true,
           "group": "competitive",
@@ -2445,6 +2534,20 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by completing Season 7 placement matches"
+        },
+        {
+          "name": "Season 8 Competitor",
+          "id": "season-8-competitor",
+          "url": "/heroes/all/sprays/season-8-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 8 Hero",
+          "id": "season-8-hero",
+          "url": "/heroes/all/sprays/season-8-hero.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Siege Mode",
@@ -2642,8 +2745,8 @@
           "description": "Win Junkenstein's Revenge on Hard difficulty."
         },
         {
-          "id": "my-creations",
           "name": "My Creations",
+          "id": "my-creations",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/my-creations.png",
           "achievement": true,
@@ -2665,8 +2768,8 @@
           "description": "Win Junkenstein's Revenge using each of the 4 heroes."
         },
         {
-          "id": "the-monster",
           "name": "The Monster",
+          "id": "the-monster",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/the-monster.png",
           "achievement": true,
@@ -2681,16 +2784,16 @@
           "description": "Win Junkenstein's Revenge on Hard difficulty with no damage to the door."
         },
         {
-          "id": "the-reaper",
           "name": "The Reaper",
+          "id": "the-reaper",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/the-reaper.png",
           "achievement": true,
           "description": "Win Junkenstein's Revenge on Expert difficulty."
         },
         {
-          "id": "the-witch",
           "name": "The Witch",
+          "id": "the-witch",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/the-witch.png",
           "achievement": true,
@@ -2741,6 +2844,20 @@
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/winter-wonderland.png",
           "quality": "common"
+        },
+        {
+          "name": "Yeti",
+          "id": "yeti",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/sprays/yeti.png",
+          "achievement": true
+        },
+        {
+          "name": "Yeti Hunter",
+          "id": "yeti-hunter",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/sprays/yeti-hunter.png",
+          "achievement": true
         },
         {
           "name": "Auspicious Lion",
@@ -2957,6 +3074,14 @@
           "url": "/heroes/ana/skins/ana-corsair.jpg",
           "event": "HALLOWEEN",
           "isNew": true
+        },
+        {
+          "name": "Snow Owl",
+          "id": "ana-snow-owl",
+          "quality": "legendary",
+          "url": "/heroes/ana/skins/ana-snow-owl.jpg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
         }
       ],
       "emotes": [
@@ -3081,6 +3206,14 @@
           "id": "ana-corsair",
           "url": "/heroes/ana/icons/ana-corsair.png",
           "event": "HALLOWEEN",
+          "hero": "ana",
+          "isNew": true
+        },
+        {
+          "name": "Snow Owl",
+          "id": "ana-snow-owl",
+          "url": "/heroes/ana/icons/ana-snow-owl.png",
+          "event": "WINTER_WONDERLAND",
           "hero": "ana",
           "isNew": true
         },
@@ -3420,6 +3553,14 @@
           "isNew": true
         },
         {
+          "name": "I'm too old for surprises",
+          "id": "ana-im-too-old-for-surprises",
+          "quality": "common",
+          "url": "/heroes/ana/voicelines/ana-im-too-old-for-surprises.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "I'm watching out for you",
           "id": "ana-im-watching-out-for-you",
           "quality": "common",
@@ -3517,6 +3658,13 @@
           "url": "/heroes/ana/poses/ana-folded-hands.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "ana-golden",
+          "quality": "common"
         }
       ]
     }
@@ -3631,6 +3779,14 @@
           "id": "bastion-woodbot",
           "quality": "legendary",
           "url": "/heroes/bastion/skins/bastion-woodbot.jpg"
+        },
+        {
+          "name": "Avalanche",
+          "id": "bastion-avalanche",
+          "quality": "legendary",
+          "url": "/heroes/bastion/skins/bastion-avalanche.jpg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
         },
         {
           "name": "Dune Buggy",
@@ -3757,6 +3913,14 @@
           "event": "SUMMER_GAMES",
           "hero": "bastion",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Avalanche",
+          "id": "bastion-avalanche",
+          "url": "/heroes/bastion/icons/bastion-avalanche.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "bastion",
+          "isNew": true
         },
         {
           "name": "Goldbot",
@@ -4088,6 +4252,14 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "BWOO BWOO BWOO",
+          "id": "bastion-bwoo-bwoo-bwoo",
+          "quality": "common",
+          "url": "/heroes/bastion/voicelines/bastion-bwoo-bwoo-bwoo.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "DWEE DOO HOO",
           "id": "bastion-dwee-doo-hoo",
           "quality": "common",
@@ -4186,6 +4358,13 @@
           "url": "/heroes/bastion/poses/bastion-firework.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "bastion-golden",
+          "quality": "common"
         }
       ]
     }
@@ -4777,6 +4956,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Happy holidays",
+          "id": "dva-happy-holidays",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-happy-holidays.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "The best things in life",
           "id": "dva-the-best-things-in-life",
           "quality": "common",
@@ -4866,6 +5053,13 @@
           "url": "/heroes/dva/poses/dva-lucky-pouch.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "dva-golden",
+          "quality": "common"
         }
       ]
     }
@@ -5201,6 +5395,22 @@
           "isNew": true
         },
         {
+          "name": "Ornament",
+          "id": "doomfist-ornament",
+          "quality": "common",
+          "url": "/heroes/doomfist/sprays/doomfist-ornament.png",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "Snow Punch",
+          "id": "doomfist-snow-punch",
+          "quality": "common",
+          "url": "/heroes/doomfist/sprays/doomfist-snow-punch.png",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Cute",
           "id": "doomfist-cute",
           "quality": "common",
@@ -5316,6 +5526,22 @@
           "url": "/heroes/doomfist/voicelines/doomfist-you-should-be-scared.ogg",
           "event": "HALLOWEEN",
           "isNew": true
+        },
+        {
+          "name": "And they say chivalry is dead",
+          "id": "doomfist-and-they-say-chivalry-is-dead",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-and-they-say-chivalry-is-dead.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "Did you bring me a present?",
+          "id": "doomfist-did-you-bring-me-a-present",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-did-you-bring-me-a-present.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
         }
       ],
       "poses": [
@@ -5343,6 +5569,13 @@
           "id": "doomfist-superior",
           "quality": "rare",
           "url": "/heroes/doomfist/poses/doomfist-superior.jpg"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "doomfist-golden",
+          "quality": "common"
         }
       ]
     }
@@ -5920,6 +6153,14 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Count your blessings",
+          "id": "genji-count-your-blessings",
+          "quality": "common",
+          "url": "/heroes/genji/voicelines/genji-count-your-blessings.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Merry Christmas!",
           "id": "genji-merry-christmas",
           "quality": "common",
@@ -6003,12 +6244,27 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Toast",
+          "id": "genji-toast",
+          "quality": "rare",
+          "url": "/heroes/genji/poses/genji-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Meditate",
           "id": "genji-meditate",
           "quality": "rare",
           "url": "/heroes/genji/poses/genji-meditate.jpg",
           "event": "UPRISING",
           "group": "UPRISING_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "genji-golden",
+          "quality": "common"
         }
       ]
     }
@@ -6100,6 +6356,14 @@
           "quality": "legendary",
           "url": "/heroes/hanzo/skins/hanzo-young-master.jpg",
           "description": "Hanzo was the son of the former master of the Shimada clan. He had been groomed to take over leadership of the family as his father's successor."
+        },
+        {
+          "name": "Casual",
+          "id": "hanzo-casual",
+          "quality": "legendary",
+          "url": "/heroes/hanzo/skins/hanzo-casual.jpg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
         },
         {
           "name": "Cyberninja",
@@ -6226,6 +6490,14 @@
           "event": "SUMMER_GAMES",
           "hero": "hanzo",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Casual",
+          "id": "hanzo-casual",
+          "url": "/heroes/hanzo/icons/hanzo-casual.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "hanzo",
+          "isNew": true
         },
         {
           "name": "Kinenbi",
@@ -6565,6 +6837,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Cold as ice",
+          "id": "hanzo-cold-as-ice",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-cold-as-ice.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "When the moon is full",
           "id": "hanzo-when-the-moon-is-full",
           "quality": "common",
@@ -6654,6 +6934,13 @@
           "url": "/heroes/hanzo/poses/hanzo-skewered.jpg",
           "event": "HALLOWEEN",
           "isNew": true
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "hanzo-golden",
+          "quality": "common"
         }
       ]
     }
@@ -6765,6 +7052,14 @@
           "description": "As the tale goes, Dr. Junkenstein made a deal with the Witch of the Wilds in exchange for the secret to creating life. But his triumph was short lived as he was slain by four wanderers in Adlersbrunn.",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Beachrat",
+          "id": "junkrat-beachrat",
+          "quality": "legendary",
+          "url": "/heroes/junkrat/skins/junkrat-beachrat.jpg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
         }
       ],
       "emotes": [
@@ -6891,6 +7186,14 @@
           "event": "HALLOWEEN",
           "hero": "junkrat",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Beachrat",
+          "id": "junkrat-beachrat",
+          "url": "/heroes/junkrat/icons/junkrat-beachrat.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "junkrat",
+          "isNew": true
         },
         {
           "name": "Goldrat",
@@ -7222,6 +7525,14 @@
           "isNew": true
         },
         {
+          "name": "Go on... give it a shake!",
+          "id": "junkrat-go-on-give-it-a-shake",
+          "quality": "common",
+          "url": "/heroes/junkrat/voicelines/junkrat-go-on-give-it-a-shake.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Merry Christmas",
           "id": "junkrat-merry-christmas",
           "quality": "common",
@@ -7327,6 +7638,13 @@
           "url": "/heroes/junkrat/poses/junkrat-bad-for-your-health.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "junkrat-golden",
+          "quality": "common"
         }
       ]
     }
@@ -7894,6 +8212,14 @@
           "isNew": true
         },
         {
+          "name": "Climbing the charts!",
+          "id": "lucio-climbing-the-charts",
+          "quality": "common",
+          "url": "/heroes/lucio/voicelines/lucio-climbing-the-charts.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Happy holidays!",
           "id": "lucio-happy-holidays",
           "quality": "common",
@@ -7991,6 +8317,13 @@
           "url": "/heroes/lucio/poses/lucio-handstand.jpg",
           "event": "UPRISING",
           "group": "UPRISING_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "lucio-golden",
+          "quality": "common"
         }
       ]
     }
@@ -8578,6 +8911,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "You've been snowed in",
+          "id": "mccree-youve-been-snowed-in",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-youve-been-snowed-in.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Calls for a celebration",
           "id": "mccree-calls-for-a-celebration",
           "quality": "common",
@@ -8659,6 +9000,13 @@
           "url": "/heroes/mccree/poses/mccree-showdown.jpg",
           "event": "UPRISING",
           "group": "UPRISING_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "mccree-golden",
+          "quality": "common"
         }
       ]
     }
@@ -9263,6 +9611,14 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Don't you just love surprises",
+          "id": "mei-dont-you-just-love-surprises",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-dont-you-just-love-surprises.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "I got you something!",
           "id": "mei-i-got-you-something",
           "quality": "common",
@@ -9360,6 +9716,13 @@
           "url": "/heroes/mei/poses/mei-lucky.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "mei-golden",
+          "quality": "common"
         }
       ]
     }
@@ -9947,6 +10310,14 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "I could use the time off",
+          "id": "mercy-i-could-use-the-time-off",
+          "quality": "common",
+          "url": "/heroes/mercy/voicelines/mercy-i-could-use-the-time-off.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Your guardian angel",
           "id": "mercy-your-guardian-angel",
           "quality": "common",
@@ -10044,6 +10415,21 @@
           "url": "/heroes/mercy/poses/mercy-mistletoe.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Toast",
+          "id": "mercy-toast",
+          "quality": "rare",
+          "url": "/heroes/mercy/poses/mercy-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "mercy-golden",
+          "quality": "common"
         }
       ]
     }
@@ -10355,6 +10741,22 @@
           "url": "/heroes/moira/sprays/moira-test-murloc.png"
         },
         {
+          "name": "Chimney",
+          "id": "moira-chimney",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-chimney.png",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "Ornament",
+          "id": "moira-ornament",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-ornament.png",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Cute",
           "id": "moira-cute",
           "quality": "common",
@@ -10438,6 +10840,22 @@
           "id": "moira-youre-a-chancer",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-youre-a-chancer.ogg"
+        },
+        {
+          "name": "Absolute zero",
+          "id": "moira-absolute-zero",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-absolute-zero.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "Happy Christmas",
+          "id": "moira-happy-christmas",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-happy-christmas.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
         }
       ],
       "poses": [
@@ -10465,6 +10883,13 @@
           "id": "moira-steepling",
           "quality": "rare",
           "url": "/heroes/moira/poses/moira-steepling.jpg"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "moira-golden",
+          "quality": "common"
         }
       ]
     }
@@ -10603,6 +11028,14 @@
           "url": "/heroes/orisa/emotes/orisa-dance.webm",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Puppy",
+          "id": "orisa-puppy",
+          "quality": "legendary",
+          "url": "/heroes/orisa/emotes/orisa-puppy.webm",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
         }
       ],
       "intros": [
@@ -10832,6 +11265,22 @@
           "isNew": true
         },
         {
+          "name": "Ornament",
+          "id": "orisa-ornament",
+          "quality": "common",
+          "url": "/heroes/orisa/sprays/orisa-ornament.png",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "Star",
+          "id": "orisa-star",
+          "quality": "common",
+          "url": "/heroes/orisa/sprays/orisa-star.png",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Flower",
           "id": "orisa-flower",
           "quality": "common",
@@ -10965,6 +11414,22 @@
           "isNew": true
         },
         {
+          "name": "Annual performance analysis",
+          "id": "orisa-annual-performance-analysis",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-annual-performance-analysis.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "Can't I guide your way tonight",
+          "id": "orisa-cant-i-guide-your-way-tonight",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-cant-i-guide-your-way-tonight.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Error: division by 0",
           "id": "orisa-error-division-by-0",
           "quality": "common",
@@ -11030,6 +11495,13 @@
           "url": "/heroes/orisa/poses/orisa-pumpkin-head.jpg",
           "event": "HALLOWEEN",
           "isNew": true
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "orisa-golden",
+          "quality": "common"
         }
       ]
     }
@@ -11593,6 +12065,14 @@
           "isNew": true
         },
         {
+          "name": "At ease",
+          "id": "pharah-at-ease",
+          "quality": "common",
+          "url": "/heroes/pharah/voicelines/pharah-at-ease.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "The forecast",
           "id": "pharah-the-forecast",
           "quality": "common",
@@ -11690,6 +12170,13 @@
           "url": "/heroes/pharah/poses/pharah-toast.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "pharah-golden",
+          "quality": "common"
         }
       ]
     }
@@ -12290,6 +12777,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "You're on ice",
+          "id": "reaper-youre-on-ice",
+          "quality": "common",
+          "url": "/heroes/reaper/voicelines/reaper-youre-on-ice.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Now those are fireworks",
           "id": "reaper-now-those-are-fireworks",
           "quality": "common",
@@ -12377,6 +12872,13 @@
           "url": "/heroes/reaper/poses/reaper-rip.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "reaper-golden",
+          "quality": "common"
         }
       ]
     }
@@ -12580,6 +13082,14 @@
           "id": "reinhardt-more-stretching-required",
           "quality": "epic",
           "url": "/heroes/reinhardt/intros/reinhardt-more-stretching-required.webm"
+        },
+        {
+          "name": "Snowball Fight",
+          "id": "reinhardt-snowball-fight",
+          "quality": "epic",
+          "url": "/heroes/reinhardt/intros/reinhardt-snowball-fight.webm",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
         }
       ],
       "icons": [
@@ -12955,6 +13465,14 @@
           "isNew": true
         },
         {
+          "name": "Forgive and forget",
+          "id": "reinhardt-forgive-and-forget",
+          "quality": "common",
+          "url": "/heroes/reinhardt/voicelines/reinhardt-forgive-and-forget.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "You're on my naughty list",
           "id": "reinhardt-youre-on-my-naughty-list",
           "quality": "common",
@@ -13044,6 +13562,13 @@
           "url": "/heroes/reinhardt/poses/reinhardt-toast.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "reinhardt-golden",
+          "quality": "common"
         }
       ]
     }
@@ -13142,6 +13667,14 @@
           "description": "Armed with the secret of creating artificial life, Dr. Jamison Junkenstein birthed a monster.",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Ice Fisherman",
+          "id": "roadhog-ice-fisherman",
+          "quality": "legendary",
+          "url": "/heroes/roadhog/skins/roadhog-ice-fisherman.jpg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
         },
         {
           "name": "Bajie",
@@ -13276,6 +13809,14 @@
           "event": "HALLOWEEN",
           "hero": "roadhog",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Ice Fisherman",
+          "id": "roadhog-ice-fisherman",
+          "url": "/heroes/roadhog/icons/roadhog-ice-fisherman.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "roadhog",
+          "isNew": true
         },
         {
           "name": "Pigsy",
@@ -13623,6 +14164,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "I have your present right here",
+          "id": "roadhog-i-have-your-present-right-here",
+          "quality": "common",
+          "url": "/heroes/roadhog/voicelines/roadhog-i-have-your-present-right-here.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "You chicken?",
           "id": "roadhog-you-chicken",
           "quality": "common",
@@ -13706,12 +14255,27 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Toast",
+          "id": "roadhog-toast",
+          "quality": "rare",
+          "url": "/heroes/roadhog/poses/roadhog-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "What's mine is mine",
           "id": "roadhog-whats-mine-is-mine",
           "quality": "rare",
           "url": "/heroes/roadhog/poses/roadhog-whats-mine-is-mine.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "roadhog-golden",
+          "quality": "common"
         }
       ]
     }
@@ -13810,6 +14374,14 @@
           "quality": "legendary",
           "url": "/heroes/soldier-76/skins/soldier-76-grillmaster-76.jpg",
           "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "Alpine: 76",
+          "id": "soldier-76-alpine-76",
+          "quality": "legendary",
+          "url": "/heroes/soldier-76/skins/soldier-76-alpine-76.jpg",
+          "event": "WINTER_WONDERLAND",
           "isNew": true
         },
         {
@@ -13937,6 +14509,14 @@
           "event": "SUMMER_GAMES",
           "hero": "soldier-76",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Alpine",
+          "id": "soldier-76-alpine",
+          "url": "/heroes/soldier-76/icons/soldier-76-alpine.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "soldier-76",
+          "isNew": true
         },
         {
           "name": "Gold Soldier",
@@ -14268,6 +14848,14 @@
           "isNew": true
         },
         {
+          "name": "Merry Christmas",
+          "id": "soldier-76-merry-christmas",
+          "quality": "common",
+          "url": "/heroes/soldier-76/voicelines/soldier-76-merry-christmas.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Stay frosty",
           "id": "soldier-76-stay-frosty",
           "quality": "common",
@@ -14366,6 +14954,13 @@
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
         }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "soldier-76-golden",
+          "quality": "common"
+        }
       ]
     }
   },
@@ -14463,6 +15058,14 @@
           "quality": "legendary",
           "url": "/heroes/sombra/skins/sombra-tulum.jpg",
           "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "Rime",
+          "id": "sombra-rime",
+          "quality": "legendary",
+          "url": "/heroes/sombra/skins/sombra-rime.jpg",
+          "event": "WINTER_WONDERLAND",
           "isNew": true
         }
       ],
@@ -14564,6 +15167,14 @@
           "id": "sombra-high-jump",
           "url": "/heroes/sombra/icons/sombra-high-jump.png",
           "event": "SUMMER_GAMES",
+          "hero": "sombra",
+          "isNew": true
+        },
+        {
+          "name": "Rime",
+          "id": "sombra-rime",
+          "url": "/heroes/sombra/icons/sombra-rime.png",
+          "event": "WINTER_WONDERLAND",
           "hero": "sombra",
           "isNew": true
         },
@@ -14921,6 +15532,14 @@
           "isNew": true
         },
         {
+          "name": "I can be nice",
+          "id": "sombra-i-can-be-nice",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-i-can-be-nice.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "I know who's been naughty",
           "id": "sombra-i-know-whos-been-naughty",
           "quality": "common",
@@ -15018,6 +15637,13 @@
           "url": "/heroes/sombra/poses/sombra-sparklers.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "sombra-golden",
+          "quality": "common"
         }
       ]
     }
@@ -15599,6 +16225,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Were you expecting a miracle?",
+          "id": "symmetra-were-you-expecting-a-miracle",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-were-you-expecting-a-miracle.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Good fortune",
           "id": "symmetra-good-fortune",
           "quality": "common",
@@ -15688,6 +16322,13 @@
           "url": "/heroes/symmetra/poses/symmetra-light-reading.jpg",
           "event": "UPRISING",
           "group": "UPRISING_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "symmetra-golden",
+          "quality": "common"
         }
       ]
     }
@@ -16283,6 +16924,14 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Expert craftsmanship",
+          "id": "torbjorn-expert-craftsmanship",
+          "quality": "common",
+          "url": "/heroes/torbjorn/voicelines/torbjorn-expert-craftsmanship.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Made to order",
           "id": "torbjorn-made-to-order",
           "quality": "common",
@@ -16380,6 +17029,13 @@
           "url": "/heroes/torbjorn/poses/torbjorn-toast.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "torbjorn-golden",
+          "quality": "common"
         }
       ]
     }
@@ -16983,6 +17639,14 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Ho ho ho!",
+          "id": "tracer-ho-ho-ho",
+          "quality": "common",
+          "url": "/heroes/tracer/voicelines/tracer-ho-ho-ho.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "It's in the bag",
           "id": "tracer-its-in-the-bag",
           "quality": "common",
@@ -17080,6 +17744,13 @@
           "url": "/heroes/tracer/poses/tracer-rip.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "tracer-golden",
+          "quality": "common"
         }
       ]
     }
@@ -17651,6 +18322,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Merry Christmas",
+          "id": "widowmaker-merry-christmas",
+          "quality": "common",
+          "url": "/heroes/widowmaker/voicelines/widowmaker-merry-christmas.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "You have my attention",
           "id": "widowmaker-you-have-my-attention",
           "quality": "common",
@@ -17732,6 +18411,21 @@
           "url": "/heroes/widowmaker/poses/widowmaker-rip.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Toast",
+          "id": "widowmaker-toast",
+          "quality": "rare",
+          "url": "/heroes/widowmaker/poses/widowmaker-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "widowmaker-golden",
+          "quality": "common"
         }
       ]
     }
@@ -18302,6 +18996,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Party mode engaged",
+          "id": "winston-party-mode-engaged",
+          "quality": "common",
+          "url": "/heroes/winston/voicelines/winston-party-mode-engaged.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "That was awesome!",
           "id": "winston-that-was-awesome",
           "quality": "common",
@@ -18391,6 +19093,13 @@
           "url": "/heroes/winston/poses/winston-peanut-butter.jpg",
           "event": "UPRISING",
           "group": "UPRISING_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "winston-golden",
+          "quality": "common"
         }
       ]
     }
@@ -18965,6 +19674,14 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Cool it",
+          "id": "zarya-cool-it",
+          "quality": "common",
+          "url": "/heroes/zarya/voicelines/zarya-cool-it.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "For the Motherland",
           "id": "zarya-for-the-motherland",
           "quality": "common",
@@ -19048,12 +19765,27 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Toast",
+          "id": "zarya-toast",
+          "quality": "rare",
+          "url": "/heroes/zarya/poses/zarya-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "This is strength",
           "id": "zarya-this-is-strength",
           "quality": "rare",
           "url": "/heroes/zarya/poses/zarya-this-is-strength.jpg",
           "event": "UPRISING",
           "group": "UPRISING_2017"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "zarya-golden",
+          "quality": "common"
         }
       ]
     }
@@ -19206,6 +19938,14 @@
           "id": "zenyatta-tickled",
           "quality": "epic",
           "url": "/heroes/zenyatta/emotes/zenyatta-tickled.webm"
+        },
+        {
+          "name": "Snowflake",
+          "id": "zenyatta-snowflake",
+          "quality": "epic",
+          "url": "/heroes/zenyatta/emotes/zenyatta-snowflake.webm",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
         },
         {
           "name": "Dance",
@@ -19632,6 +20372,14 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Joy to the world",
+          "id": "zenyatta-joy-to-the-world",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-joy-to-the-world.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "No snowflake",
           "id": "zenyatta-no-snowflake",
           "quality": "common",
@@ -19721,6 +20469,21 @@
           "url": "/heroes/zenyatta/poses/zenyatta-rip.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Toast",
+          "id": "zenyatta-toast",
+          "quality": "rare",
+          "url": "/heroes/zenyatta/poses/zenyatta-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "zenyatta-golden",
+          "quality": "common"
         }
       ]
     }
