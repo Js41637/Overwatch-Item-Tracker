@@ -53,8 +53,9 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
     var out = {
       checked: {}
     };
+
     for (var hero in data.heroes) {
-      out.checked[hero] = {"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}};
+      out.checked[hero] = {"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{},"weapons":{}};
     }
 
     Object.assign(out.checked, storedData);

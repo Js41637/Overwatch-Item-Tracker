@@ -230,6 +230,7 @@ for (var hero in data) {
           break;
         case 'ACHIEVEMENT':
           if (type === 'weapons') {
+            out.quality = 'golden'
             break;
           }
 
@@ -261,8 +262,10 @@ for (var hero in data) {
       }
     });
   });
+
   heroes[heroID] = heroData;
 }
+
 heroes = sortObject(heroes);
 
 // Go through every heros items and create a seperate object containing every item added in events
