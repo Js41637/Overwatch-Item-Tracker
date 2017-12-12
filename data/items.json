@@ -1597,14 +1597,16 @@
           "id": "season-8-competitor",
           "url": "/heroes/all/icons/season-8-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 8 placement matches"
         },
         {
           "name": "Season 8 Hero",
           "id": "season-8-hero",
           "url": "/heroes/all/icons/season-8-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 8"
         },
         {
           "name": "Sentry",
@@ -2540,14 +2542,16 @@
           "id": "season-8-competitor",
           "url": "/heroes/all/sprays/season-8-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 8 placement matches"
         },
         {
           "name": "Season 8 Hero",
           "id": "season-8-hero",
           "url": "/heroes/all/sprays/season-8-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 8 placement matches"
         },
         {
           "name": "Siege Mode",
@@ -2850,14 +2854,16 @@
           "id": "yeti",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/yeti.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Eat 4 meat as the Yeti in Yeti Hunter."
         },
         {
           "name": "Yeti Hunter",
           "id": "yeti-hunter",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/yeti-hunter.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Trap the Yeti as a Hunter in Yeti Hunter."
         },
         {
           "name": "Auspicious Lion",
