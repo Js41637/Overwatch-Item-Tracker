@@ -1341,3 +1341,26 @@ strong {
     position: relative;
   }
 }
+
+/* Circle checkboxes */
+
+label.circle-checkbox {
+  width: 24px;
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: #e3e1e1;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-right: 6px;
+  transition: background 200ms;
+}
+
+input.circle-checkbox {
+  display: none;
+}
+
+input.circle-checkbox:checked+label {
+  background: #ffa500;
+}

@@ -329,9 +329,9 @@ updates[EVENTS.WINTER].items.sprays = updates[EVENTS.WINTER].items.sprays.map(sp
 }).filter(Boolean);
 
 // Add dragon dance ids to normal sprays
-updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.map(spray => {
+updates[EVENTS.LUNAR].items.sprays = updates[EVENTS.LUNAR].items.sprays.map(spray => {
   if (spray.heroName) {
-    if (spray.id.endsWith('-ornament')) {
+    if (spray.id.endsWith('-dragon-dance')) {
       return  {
         hidden: true,
         hero: spray.hero,
@@ -341,9 +341,9 @@ updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.
       }
     }
 
-    const dragonID = `${spray.hero}-dragon-dance`;
-    spray.dragonID = dragonID;
-    spray.dragonURL = getPreviewURL('sprays', dragonID, spray.hero, EVENTS.ROOSTER17);
+    const secondID = `${spray.hero}-dragon-dance`;
+    spray.secondId = secondID;
+    spray.secondUrl = getPreviewURL('sprays', secondID, spray.hero, EVENTS.LUNAR);
     return spray;
   } else return spray;
 }).filter(Boolean);

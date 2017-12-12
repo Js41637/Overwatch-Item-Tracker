@@ -58,11 +58,11 @@
 <div class="col-md-4 col-padding">
   <div id="skins" class="section">
     <div class="section-header">
-      <h2>Skins <small class="itemTotal">{{totals['skins'].selected}}/{{totals['skins'].total}}</small></h2>
+      <h2>Epic Skins <small class="itemTotal">{{totals['skinsEpic'].selected}}/{{totals['skinsEpic'].total}}</small></h2>
     </div>
     <div class="items flex-2">
       <div
-        ng-repeat="item in ::data.items.skins track by $index"
+        ng-repeat="item in ::data.items.skinsEpic track by $index"
         ng-init="type = 'skins'"
         class="item"
         uib-tooltip-template="'imagePreviewTemplate.html'"

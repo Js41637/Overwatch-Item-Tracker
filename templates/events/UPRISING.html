@@ -26,26 +26,21 @@
       </div>
     </div>
   </div>
-  <div id="sprays" class="section">
+  <div id="icons" class="section">
     <div class="section-header">
-      <h2>Sprays <small class="itemTotal">{{totals['sprays'].selected}}/{{totals['sprays'].total}}</small></h2>
+      <h2>Player Icons <small class="itemTotal">{{totals['icons'].selected}}/{{totals['icons'].total}}</small></h2>
     </div>
     <div class="items flex-4">
       <div
-        ng-repeat="item in ::data.items.sprays track by $index"
-        ng-init="type = 'sprays'"
-        ng-if="::!item.hidden"
+        ng-repeat="item in ::data.items.icons track by $index"
+        ng-init="type = 'icons'"
         class="item"
-        achievement="{{::item.achievement}}"
         uib-tooltip-template="'imagePreviewTemplate.html'"
         tooltip-popup-delay="225"
         tooltip-class="img-preview"
         tooltip-enable="{{::canPlayType(type)}}"
         tooltip-placement="auto">
-
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
-        <input ng-if="::item.heroName" type="checkbox" class="circle-checkbox" ng-if="::item.heroName" id="{{'sprayorn' + $index}}" ng-model="checked[item.hero][type][item.secondId]" ng-change="onSelect(item, type, item.secondId)">
-        <label ng-if="::item.heroName" for="{{'sprayorn' + $index}}" class="circle-checkbox"></label>
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
           <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
@@ -58,11 +53,11 @@
 <div class="col-md-4 col-padding">
   <div id="skins" class="section">
     <div class="section-header">
-      <h2>Skins <small class="itemTotal">{{totals['skins'].selected}}/{{totals['skins'].total}}</small></h2>
+      <h2>Epic Skins <small class="itemTotal">{{totals['skinsEpic'].selected}}/{{totals['skinsEpic'].total}}</small></h2>
     </div>
     <div class="items flex-2">
       <div
-        ng-repeat="item in ::data.items.skins track by $index"
+        ng-repeat="item in ::data.items.skinsEpic track by $index"
         ng-init="type = 'skins'"
         class="item"
         uib-tooltip-template="'imagePreviewTemplate.html'"
@@ -122,7 +117,7 @@
       </div>
     </div>
   </div>
-  <div id="intros" class="section">
+    <div id="intros" class="section">
     <div class="section-header">
       <h2>Highlight Intros <small class="itemTotal">{{totals['intros'].selected}}/{{totals['intros'].total}}</small></h2>
     </div>
@@ -144,15 +139,16 @@
       </div>
     </div>
   </div>
-  <div id="icons" class="section">
+  <div id="sprays" class="section">
     <div class="section-header">
-      <h2>Player Icons <small class="itemTotal">{{totals['icons'].selected}}/{{totals['icons'].total}}</small></h2>
+      <h2>Sprays <small class="itemTotal">{{totals['sprays'].selected}}/{{totals['sprays'].total}}</small></h2>
     </div>
     <div class="items flex-2">
       <div
-        ng-repeat="item in ::data.items.icons track by $index"
-        ng-init="type = 'icons'"
+        ng-repeat="item in ::data.items.sprays track by $index"
+        ng-init="type = 'sprays'"
         class="item"
+        achievement="{{::item.achievement}}"
         uib-tooltip-template="'imagePreviewTemplate.html'"
         tooltip-popup-delay="225"
         tooltip-class="img-preview"

@@ -4,21 +4,22 @@ var types = {
   'icon': '/icon.png'
 };
 
-var baseURL = './resources/';
+var oldEvents = ['SUMMER_GAMES_2016', 'HALLOWEEN_2016', 'WINTER_WONDERLAND_2016']
 
-OWI.filter('heroImg', function() {
+OWI.filter('heroImg', ['UrlService', function(UrlService) {
   return function(hero, type) {
-    return hero == 'all' ? baseURL + 'logo.svg' : baseURL + 'heroes/' + hero + types[type];
+    return hero == 'all' 
+      ? UrlService.get('/logo.svg')
+      : UrlService.get('/heroes/' + hero + types[type]);
   };
-});
+}]);
 
-OWI.filter('eventImageUrl', function() {
+OWI.filter('eventImageUrl', ['UrlService', function(UrlService) {
   return function(event) {
-    return baseURL + 'updates/' + event + '/logo.png';
+    return  UrlService.get('/updates/' + event + '/logo.png');
   };
-});
+}]);
 
-const oldEvents = ['SUMMER_GAMES_2016', 'HALLOWEEN_2016', 'WINTER_WONDERLAND_2016']
 
 OWI.filter('itemPrice', function() {
   return function(item, type, event) {
@@ -35,22 +36,23 @@ OWI.filter('itemPrice', function() {
   };
 });
 
-OWI.directive('fancyLoad', function() {
+OWI.directive('fancyLoad', ["$timeout", function($timeout) {
   return {
     restrict: 'A',
     link: function($scope, $elm, $attr) {
-      setTimeout(function() {
+      $timeout(function() {
         $elm.addClass('show');
       }, $attr.fancyLoad * 8);
+
       $elm.on('click', function() {
         $elm.addClass('pulse');
-        setTimeout(function() {
+        $timeout(function() {
           $elm.removeClass('pulse');
         }, 50);
       });
     }
   };
-});
+}]);
 
 OWI.directive('eventItem', function() {
   return {
@@ -74,7 +76,7 @@ OWI.directive('audiopls', ["StorageService", function(StorageService) {
   };
 }]);
 
-OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService) {
+OWI.directive('tooltipImagePreview', ["StorageService", "UrlService", function(StorageService, UrlService) {
   return {
     restrict: 'E',
     replace: true,
@@ -82,7 +84,8 @@ OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService)
     link: function($scope) {
       var item = $scope.item;
       var type = $scope.type;
-      var url = item.url;
+      var url = UrlService.get(item.url);
+      var url2 = UrlService.get(item.secondUrl)
 
       var out = { description: item.description };
       if (type == 'intros' || type == 'emotes') {
@@ -95,7 +98,7 @@ OWI.directive('tooltipImagePreview', ["StorageService", function(StorageService)
         out.audio = url;
       } else {
         out.img = url;
-        out.img2 = item.secondUrl;
+        out.img2 = url2;
       }
 
       $scope.preview = out;
@@ -254,7 +257,7 @@ OWI.directive('loadingSpinner', function() {
   };
 });
 
-OWI.directive('lazyBackground', ["ImageLoader", "$compile", function(ImageLoader, $compile) {
+OWI.directive('lazyBackground', ["ImageLoader", "$compile", "$timeout", function(ImageLoader, $compile, $timeout) {
   return {
     restrict: 'A',
     scope: {
@@ -274,7 +277,7 @@ OWI.directive('lazyBackground', ["ImageLoader", "$compile", function(ImageLoader
         if (!$scope.noLoader) {
           loader = $compile('<loading-spinner />')($scope);
           $element.prepend(loader);
-          setTimeout(function () {
+          $timeout(function () {
             loader.css('opacity', '1');
           }, 110);
         } else {

@@ -67,9 +67,9 @@ const getCleanID = (what, hero) => {
 const getPreviewURL = (type, id, hero, event) => {
   let url;
   if (event && type.match(/^(skins(Epic|Legendary)?|poses|emotes|intros)$/)) {
-    url = `./resources/updates/${event}/${type}/${id}`;
+    url = `/updates/${event}/${type}/${id}`;
   } else {
-    url = `./resources/heroes/${hero}/${type}/${id}`; 
+    url = `/heroes/${hero}/${type}/${id}`; 
   }
   switch (type) {
     case 'voicelines':
