@@ -1,4 +1,4 @@
-OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "CompatibilityService", "CostAndTotalService", "UrlService", function($rootScope, $q, $document, $uibModal, DataService, CompatibilityService, CostAndTotalService, UrlService) {
+OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "CompatibilityService", "CostAndTotalService", "UrlService", "StorageService", function($rootScope, $q, $document, $uibModal, DataService, CompatibilityService, CostAndTotalService, UrlService, StorageService) {
   var vm = this;
   vm.preview = false;
   vm.currentDate = Date.now();
@@ -6,6 +6,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   vm.showNav = false;
   vm.noSupportMsg = CompatibilityService.noSupportMsg;
   vm.totals = CostAndTotalService;
+  vm.particles = StorageService.getSetting('particles')
 
   DataService.waitForInitialization().then(function(data) {
     vm.events = data.events;

@@ -1364,3 +1364,12 @@ input.circle-checkbox {
 input.circle-checkbox:checked+label {
   background: #ffa500;
 }
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+}
