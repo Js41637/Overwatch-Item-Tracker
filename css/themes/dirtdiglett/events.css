@@ -460,64 +460,60 @@ body#HALLOWEEN:before {
 
 
 /* WINTER WONDERLAND */
-#WINTER_WONDERLAND #voicelines,
-#WINTER_WONDERLAND #icons,
-#WINTER_WONDERLAND #emotes {
-  flex: 1;
+body#WINTER_WONDERLAND:before {
+  min-height: 260px;
 }
 
-#WINTER_WONDERLAND #highlight-intros {
-  flex: 0.75;
+#WINTER_WONDERLAND #event-container {
+  margin-top: 160px;
 }
 
-#WINTER_WONDERLAND #voicelines .items,
+#WINTER_WONDERLAND #skins .items,
 #WINTER_WONDERLAND #icons .items,
-#WINTER_WONDERLAND #sprays .items {
+#WINTER_WONDERLAND #emotes .items,
+#WINTER_WONDERLAND #voicelines .items,
+#WINTER_WONDERLAND #intros .items,
+#WINTER_WONDERLAND #sprays .items,
+#WINTER_WONDERLAND #victoryposes .items  {
   flex-direction: initial;
 }
 
 #WINTER_WONDERLAND #voicelines .item,
-#WINTER_WONDERLAND #icons .item {
-  width: 32%;
-  margin-right: 2%;
+#WINTER_WONDERLAND #skins .item,
+#WINTER_WONDERLAND #icons .item,
+#WINTER_WONDERLAND #emotes .item,
+#WINTER_WONDERLAND #sprays .item,
+#WINTER_WONDERLAND #intros .item,
+#WINTER_WONDERLAND #victoryposes .item {
+  width: calc(50% - 6px);
+  display: inline-flex;
 }
 
-#WINTER_WONDERLAND #voicelines .item:nth-of-type(3n+0),
-#WINTER_WONDERLAND #icons .item:nth-of-type(3n+0) {
+#WINTER_WONDERLAND #skins .item:nth-of-type(odd),
+#WINTER_WONDERLAND #icons .item:nth-of-type(odd),
+#WINTER_WONDERLAND #emotes .item:nth-of-type(odd),
+#WINTER_WONDERLAND #intros .item:nth-of-type(odd),
+#WINTER_WONDERLAND #sprays .item:nth-of-type(odd),
+#WINTER_WONDERLAND #victoryposes .item:nth-of-type(odd) {
   margin-right: 0;
 }
 
-#WINTER_WONDERLAND #row2 .right,
-#WINTER_WONDERLAND #victoryposes,
-#WINTER_WONDERLAND #epic-skins {
-  flex: 1;
+#WINTER_WONDERLAND #voicelines .item {
+  width: calc(33% - 6px);
+  display: inline-flex;
 }
 
-#WINTER_WONDERLAND #row2 .left,
-#WINTER_WONDERLAND #row2 .right {
-  display: flex;
+#WINTER_WONDERLAND #voicelines .item:nth-of-type(3n+0) {
+  margin-right: 0;
 }
 
-#WINTER_WONDERLAND #row1 .right {
-  display: flex;
-  flex: 1;
+#WINTER_WONDERLAND #icons .item {
+  width: calc(25% - 6px);
+  display: inline-flex;
 }
 
-#WINTER_WONDERLAND #row2 .right {
-  flex-direction: column;
-}
-
-#WINTER_WONDERLAND #emotes {
-  margin-top: 0;
-}
-
-#WINTER_WONDERLAND #row2 .left,
-#WINTER_WONDERLAND #victoryposes {
-  flex: 0.8;
-}
-
-#WINTER_WONDERLAND #sprays {
-  flex: 2.4;
+#WINTER_WONDERLAND #icons .item:nth-of-type(4n+0) {
+  margin-right: 0;
 }
 
 /* YEAR OF THE ROOSTER */

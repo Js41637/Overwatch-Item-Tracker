@@ -70,7 +70,7 @@ const EVENTTIMES = {
   },
   [EVENTS.WINTER]: {
     "start": "1513101600000",
-    "end": "1514916000000"
+    "end": "1514890800000"
   }
 };
 
