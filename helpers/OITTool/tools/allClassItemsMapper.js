@@ -3,8 +3,8 @@ const { sortBy } = require('lodash');
 const { getDirectories, cleanFileIDs, handleErr } = require('./utils');
 
 var TYPES = {
-  Icon: 'icons',
-  Spray: 'sprays'
+  Icons: 'icons',
+  Sprays: 'sprays'
 };
 
 const mapAllClassData = () => {
@@ -23,7 +23,7 @@ const mapAllClassData = () => {
   const base = `./${isGeneral ? '' : 'General/'}`;
   getDirectories(base).then(types => {
     Promise.all(types.map(type => {
-      if (type !== 'Icon' && type !== 'Spray') return Promise.resolve();
+      if (type !== 'Icons' && type !== 'Sprays') return Promise.resolve();
       return getDirectories(`${base}${type}`).then(groups => {
         return Promise.all(groups.map(group => {
           return getDirectories(`${base}${type}/${group}`).then(files => {

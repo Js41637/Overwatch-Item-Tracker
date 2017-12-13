@@ -65,7 +65,8 @@ things.forEach((thingy, i) => {
     let rawItems = heroData.split('\n').slice(1).join('\n'); // remove the first line containing name of hero
     var items = {}, itemMatch;
     while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
-      items[itemMatch[1].split(' ')[0]] = itemMatch[0].split(/\n\t\t(?!\t)/).slice(1).map(a => a.trim());
+      const groupName = itemMatch[1].replace('Event/', '').split(' ')[0].toUpperCase().replace('STANDARD', 'STANDARD_COMMON').replace('DEFAULT', 'ACHIEVEMENT')
+      items[groupName] = itemMatch[0].split(/\n\t\t(?!\t)/).slice(1).map(a => a.trim());
     }
     
     // Filter out Uprising bots
@@ -196,7 +197,8 @@ for (var hero in data) {
       icons: [],
       sprays: [],
       voicelines: [],
-      poses: []
+      poses: [],
+      weapons: []
     }
   });
 
@@ -204,7 +206,7 @@ for (var hero in data) {
     items.forEach(item => {
       var [, name, itemType] = item.match(/(.+) \((.+)\)/);
       name = badNames[name.trim()] || name.trim();
-      if (name == 'RANDOM') return; // das not an item
+      if (name == 'RANDOM' || name === 'DEFAULT') return; // das not an item
 
       const { quality, type } = getItemType(itemType);
       if (!quality || !type) return;
@@ -227,6 +229,11 @@ for (var hero in data) {
         case 'COMMON':
           break;
         case 'ACHIEVEMENT':
+          if (type === 'weapons') {
+            out.quality = 'golden'
+            break;
+          }
+
           out.achievement = (type == 'sprays' && achievementSprays.includes(name.toLowerCase())) ? true : 'blizzard';
           var desc = getAchievementForItem(id);
           if (desc && out.achievement !== 'blizzard') {
@@ -255,8 +262,10 @@ for (var hero in data) {
       }
     });
   });
+
   heroes[heroID] = heroData;
 }
+
 heroes = sortObject(heroes);
 
 // Go through every heros items and create a seperate object containing every item added in events
@@ -309,21 +318,41 @@ forEach(heroes, hero => {
 });
 
 // Add ornament ids to normal sprays
-updates[EVENTS.CHRISTMAS16].items.sprays = updates[EVENTS.CHRISTMAS16].items.sprays.map(spray => {
+updates[EVENTS.WINTER].items.sprays = updates[EVENTS.WINTER].items.sprays.map(spray => {
   if (spray.heroName) {
-    var ornamentID = `${spray.hero}-ornament`;
-    spray.ornamentID = ornamentID;
-    spray.ornamentURL = getPreviewURL('sprays', ornamentID, spray.hero, EVENTS.CHRISTMAS16);
+    if (spray.id.endsWith('-ornament')) {
+      return  {
+        hidden: true,
+        hero: spray.hero,
+        id: spray.id,
+        group: spray.group,
+        quality: spray.quality
+      }
+    }
+
+    const secondID = `${spray.hero}-ornament`;
+    spray.secondId = secondID;
+    spray.secondUrl = getPreviewURL('sprays', secondID, spray.hero, EVENTS.WINTER);
     return spray;
   } else return spray;
 }).filter(Boolean);
 
 // Add dragon dance ids to normal sprays
-updates[EVENTS.ROOSTER17].items.sprays = updates[EVENTS.ROOSTER17].items.sprays.map(spray => {
+updates[EVENTS.LUNAR].items.sprays = updates[EVENTS.LUNAR].items.sprays.map(spray => {
   if (spray.heroName) {
-    var dragonID = `${spray.hero}-dragon-dance`;
-    spray.dragonID = dragonID;
-    spray.dragonURL = getPreviewURL('sprays', dragonID, spray.hero, EVENTS.ROOSTER17);
+    if (spray.id.endsWith('-dragon-dance')) {
+      return  {
+        hidden: true,
+        hero: spray.hero,
+        id: spray.id,
+        group: spray.group,
+        quality: spray.quality
+      }
+    }
+
+    const secondID = `${spray.hero}-dragon-dance`;
+    spray.secondId = secondID;
+    spray.secondUrl = getPreviewURL('sprays', secondID, spray.hero, EVENTS.LUNAR);
     return spray;
   } else return spray;
 }).filter(Boolean);

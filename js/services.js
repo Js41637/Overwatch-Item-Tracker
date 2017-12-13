@@ -53,11 +53,11 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
     var out = {
       checked: {}
     };
+
     for (var hero in data.heroes) {
-      out.checked[hero] = {"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{}};
+      out.checked[hero] = Object.assign({"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{},"weapons":{}}, storedData[hero]);
     }
 
-    Object.assign(out.checked, storedData);
     Object.assign(service, out, data);
     $timeout(function() {
       service.initialized = true;
@@ -135,7 +135,8 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
     totals: {},
     heroes: {},
     events: {},
-    oldEvents: ["HALLOWEEN_2016", "SUMMER_GAMES_2016"],
+    oldEvents: ['HALLOWEEN_2016', 'SUMMER_GAMES_2016', 'WINTER_WONDERLAND_2016'],
+    newEvents: ['HALLOWEEN', 'SUMMER_GAMES', 'WINTER_WONDERLAND'],
     init: function() {
       DataService.waitForInitialization().then(function() {
         console.info("Calculating totals and costs");
@@ -204,11 +205,11 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       }
     },
     updateItem: function(item, type, hero, event, idOverride) {
-      const itemID = idOverride || item.id;
+      var itemID = idOverride || item.id;
       var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
       event = item.event || event;
       var eventType;
-      if (event === 'SUMMER_GAMES' || event === 'HALLOWEEN') {
+      if (service.newEvents.includes(event)) {
         eventType = (type == 'skins' && item.quality == 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
       } else {
         eventType = type == 'skins' ? (item.quality == 'epic' ? 'skinsEpic' : 'skinsLegendary') : type;
@@ -446,7 +447,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
 
     },
     login: function() {
-      const instance = gapi.auth2.getAuthInstance();
+      var instance = gapi.auth2.getAuthInstance();
       if (instance) {
         instance.signIn().catch(function(err) {
           console.log('Error signing in', err);
@@ -455,7 +456,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
       }
     },
     signOut: function() {
-      const instance = gapi.auth2.getAuthInstance();
+      var instance = gapi.auth2.getAuthInstance();
       if (instance) {
         instance.signOut();
       }
@@ -490,8 +491,8 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
     // Load stored JSON file from Google, uses normal HTTP request as using the gapi request seems to return
     //  a gzipped or encoded version of some kind and i cbf dealing with that shit
     getData: function() {
-      const token = gapi.client.getToken();
-      const url = 'https://www.googleapis.com/drive/v3/files/' + service.dataFileID;
+      var token = gapi.client.getToken();
+      var url = 'https://www.googleapis.com/drive/v3/files/' + service.dataFileID;
 
       if (!token || !token.access_token || !service.dataFileID) {
         return Promise.resolve(false);
@@ -636,6 +637,23 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
 
   return service;
 }]);
+
+OWI.factory('UrlService', function() {
+  var isLocal = location.host === 'localhost:5000'
+  var imageHost = isLocal
+    ? 'http://localhost:5000/resources'
+    : 'https://overwatchitemtracker.com/resources'
+
+  return {
+    get: function(url) {
+      if (!url) {
+        return void 0
+      }
+
+      return imageHost + url
+    }
+  }
+})
 
 OWI.run(["GoogleAPI", function(GoogleAPI) {
   GoogleAPI.waitForLoad();

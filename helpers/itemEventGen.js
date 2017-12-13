@@ -1,8 +1,8 @@
 const fs = require('fs');
 const _ = require('lodash');
 
-const events = require('./events.json')
-const event = 'HALLOWEEN_2016'
+const events = require('../data/events.json')
+const event = 'ANNIVERSARY_2017'
 
 const stuff = _.reduce(events[event].items, (res, items, type) => {
   type = type.includes('skins') ? 'skins' : type

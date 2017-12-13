@@ -1,0 +1,50 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 5,
+        "sourceType": "script",
+        "ecmaFeatures": {}
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": false
+    },
+    "globals": {
+        "OWI": true,
+        "angular": true,
+        "document": true,
+        "Promise": true,
+        "copy": true,
+        "gapi": true
+    },
+    "plugins": [
+        "angular",
+        "es5"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:es5/no-es2015",
+        "plugin:angular/johnpapa"
+    ],
+    "rules": {
+        "no-console": "off",
+        "no-unreachable": "off",
+        "semi": "off",
+        "indent": ["error", 2, { "SwitchCase": 1 }],
+
+        "es5/no-for-of": 0,
+
+        "angular/controller-as": 0,
+        "angular/controller-name": 0,
+        "angular/module-setter": 0,
+        "angular/module-getter": 0,
+        "angular/file-name": 0,
+        "angular/no-run-logic": 0,
+        "angular/timeout-service": 0,
+        "angular/document-service": 0,
+        "angular/window-service": 0,
+        "angular/interval-service": 0
+        
+    }
+}

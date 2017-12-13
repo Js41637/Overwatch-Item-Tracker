@@ -1,25 +1,9 @@
-#event-container .section h2 {
-  font-size: 42px;
-  display: inline-block;
-  font-style: italic;
+#event-container {
+  padding-bottom: 20px;
 }
 
-#event-container .section h3 {
-  color: rgb(245, 245, 245);
-  font-size: 26px;
-  margin-right: 5px;
-}
-
-#event-container .section h4 {
-  font-size: 1em;
-}
-
-#event-container #sprays h3 {
-  margin-left: 0;
-}
-
-#event-container #sprays h4 {
-  font-size: 1em;
+#event-container .section {
+  margin-top: 13px;
 }
 
 #event-container h2 small:not(.itemTotal) {
@@ -33,157 +17,6 @@
   font-weight: inherit;
 }
 
-#event-container h2>small:before {
-  content: "(";
-  position: relative;
-  top: -3px;
-}
-
-#event-container h2>small:after {
-  content: ")";
-  position: relative;
-  top: -3px;
-}
-
-
-/* Override for the Preview */
-
-#event-container #image-preview>span:before, #event-container #image-preview h2>small:before {
-  content: "";
-}
-
-#event-container #image-preview>span:after, #event-container #image-preview h2>small:after {
-  content: "";
-}
-
-#event-container .section .item {
-  font-size: 26px;
-  display: flex;
-  align-items: center;
-  padding: 5px 2px;
-  box-sizing: border-box;
-  cursor: pointer;
-  position: relative;
-}
-
-#event-container .section .item label {
-  width: 100%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-#event-container .section .item input {
-  height: 24px;
-  margin: 1px 4px;
-  float: left;
-  cursor: pointer;
-  min-width: 23px;
-}
-
-
-/**
- * COLORS
- */
-
-/* Purple */
-
-#event-container #epic-skins, #event-container #epic-skins input, #event-container #epic-skins h3, #event-container #emotes, #event-container #emotes input, #event-container #emotes h3, #event-container #highlight-intros, #event-container #highlight-intros input, #event-container #highlight-intros h3 {
-  color: rgb(146, 37, 146)
-}
-
-#event-container #epic-skins .item, #event-container #emotes .item, #event-container #highlight-intros .item {
-  background-color: rgb(188, 161, 204);
-}
-
-#event-container #epic-skins .item:nth-of-type(even), #event-container #emotes .item:nth-of-type(even), #event-container #highlight-intros .item:nth-of-type(even) {
-  background-color: rgb(202, 185, 217);
-}
-
-
-/* Blue */
-
-#event-container #voicelines, #event-container #voicelines input, #event-container #voicelines h3, #event-container #victoryposes, #event-container #victoryposes input, #event-container #victoryposes h3 {
-  color: rgb(14, 116, 188);
-}
-
-#event-container #voicelines .item, #event-container #victoryposes .item {
-  background-color: rgba(198, 229, 247, 0.5);
-}
-
-#event-container #voicelines .item:nth-of-type(even), #event-container #victoryposes .item:nth-of-type(even) {
-  background-color: rgba(147, 200, 234, 0.5);
-}
-
-
-/* Green */
-
-#event-container #sprays, #event-container #sprays input, #event-container #sprays h3 {
-  color: rgb(6, 104, 58);
-}
-
-#event-container #sprays .item {
-  background-color: rgba(208, 229, 173, 0.5);
-}
-
-#event-container #sprays .item:nth-of-type(even) {
-  background-color: rgba(172, 213, 137, 0.5);
-}
-
-
-/* Pink */
-
-#event-container #icons, #event-container #icons input, #event-container #icons h3 {
-  color: rgb(237, 12, 108);
-}
-
-#event-container #icons .item {
-  background-color: rgba(245, 202, 221, 0.5);
-}
-
-#event-container #icons .item:nth-of-type(even) {
-  background-color: rgba(239, 172, 205, 0.5);
-}
-
-.item.legend h3 {
-  color: rgba(252, 176, 28, 0.8) !important;
-  text-shadow: 1px 1px 1px black;
-}
-
-.item.legend h3:after {
-  content: "[3000 Coins]";
-  font-size: 18px;
-  margin-left: 6px;
-}
-
-/**
- * SPRAYS CSS
- */
-
-#event-container #sprays h3 {
-  font-size: 23px;
-}
-
-#event-container #sprays h4 {
-  font-size: 18px;
-  cursor: pointer;
-}
-
-#event-container #sprays h4:before {
-  content: "[";
-}
-
-#event-container #sprays h4:after {
-  content: "]";
-}
-
-#event-container #sprays .item label {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  cursor: pointer;
-}
-
 #event-container #sprays .item[achievement="true"] label:after {
   background-image: url("../resources/icons/achievement.svg");
   content: "";
@@ -193,106 +26,20 @@
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 6px;
+  top: 8px;
   right: 6px;
   filter: brightness(0.98);
 }
 
-.item[achievement="true"] label {
+#event-container .item[achievement="true"] label {
   padding-right: 27px;
 }
 
-
-#event-container #sprays .item .orn {
-  display: none;
-}
-
-#ornamentinfo {
-  position: relative;
-  margin-left: 10px;
-  vertical-align: middle;
-}
-
-#ornamentinfo span {
-  font-size: 22px;
-  margin-left: 26px;
-}
-
-#fakecheckbox {
-  position: absolute;
-  top: -5px;
-}
-
-#event-container #sprays .item .ornl, #fakecheckbox {
-  min-width: 22px;
-  width: 22px;
-  height: 22px;
-  border-radius: 100px;
-  cursor: pointer;
-  background: #e3e1e1;
-  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
-  margin-right: 6px;
-  transition: background 200ms;
-}
-
-#event-container #sprays .item .orn:checked+label, #fakecb:checked+label {
-  background: #ffa500;
-}
-
-#event-container #sprays .wot {
-  font-size: 10px;
-  font-family: sans-serif;
-  cursor: pointer;
-}
-
-/* Hide or adjust information that Jayess doesn't want but is useful for other themes */
-
-#event-container #voicelines h4 {
-  display: none;
-}
-
-.item h3, h4 {
-  display: inline;
-}
-
-#event-container #sprays .item h4 {
-  font-size: 23px;
-  display: flex;
-  align-items: center;
-}
-
-#event-container #sprays .item h4:before, #event-container #sprays .item h4:after {
-  content: "";
-}
-
-#event-container #sprays .item h4:not(:only-child) {
-  font-size: 18px;
-}
-
-#event-container #sprays .item h4:not(:only-child):before {
-  content: "[";
-}
-
-#event-container #sprays .item h4:not(:only-child):after {
-  content: "]";
-}
-
-/* SUMMER GAMES 2016 */
-
-#SUMMER_GAMES #event-container {
-  padding-bottom: 20px;
-}
-
-#SUMMER_GAMES #event-container .section {
-  margin-top: 10px;
-}
-
-#SUMMER_GAMES #event-container .section .item {
-  font-size: 20px;
-  display: flex;
+#event-container .section .item {
+  display: inline-flex;
   align-items: center;
   padding: 0 2px;
-  margin: 1px 0;
+  margin: 1px 1px 0 0px;
   box-sizing: border-box;
   cursor: pointer;
   background-color: rgba(40, 53, 79, 0.6);
@@ -301,25 +48,19 @@
   text-transform: uppercase;
 }
 
-#SUMMER_GAMES #event-container .section .item {
-  display: inline-flex;
-  margin-right: 1px;
-  margin-bottom: 0;
-}
-
-#SUMMER_GAMES #event-container .section .flex-2 .item {
+#event-container .section .flex-2 .item {
   width: calc(50% - 1px);
 }
 
-#SUMMER_GAMES #event-container .section .flex-3 .item {
+#event-container .section .flex-3 .item {
   width: calc(33.33% - 1px);
 }
 
-#SUMMER_GAMES #event-container .section .flex-4 .item {
+#event-container .section .flex-4 .item {
   width: calc(25% - 1px);
 }
 
-#SUMMER_GAMES #event-container .section .item label {
+#event-container .section .item label {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -328,7 +69,7 @@
   flex-wrap: wrap;
 }
 
-#SUMMER_GAMES #event-container .section .item input {
+#event-container .section .item input {
   height: 24px;
   margin: 1px 5px 1px 4px;
   float: left;
@@ -336,51 +77,47 @@
   min-width: 24px;
 }
 
-#SUMMER_GAMES #event-container .section .item h4 {
+#event-container .section .item h4 {
   font-size: 14px;
   color: rgba(220, 220, 220, 0.75);
   width: 100%;
   display: initial;
 }
 
-#SUMMER_GAMES #event-container .section .item h4:before, #SUMMER_GAMES #event-container .section .item h4:after {
-  content: "";
-}
-
-#SUMMER_GAMES #event-container .section .item h3 {
+#event-container .section .item h3 {
   text-shadow: 1px 1px 2px rgb(54, 54, 54);
   letter-spacing: 0.3;
-  font-size: 17px;
+  font-size: 16px;
 }
 
-#SUMMER_GAMES #event-container .section .item small {
+#event-container .section .item small {
   font-size: 16px;
   padding-top: 1px;
 }
 
-#SUMMER_GAMES #event-container .section-header h2, #legendary-skins .inner h2 {
+#event-container .section-header h2, #legendary-skins .inner h2 {
   color: rgb(64, 82, 117);
-  font-size: 38px;
+  font-size: 34px;
   font-weight: bold;
 }
 
-#SUMMER_GAMES .section-header h2 .itemTotal {
+.section-header h2 .itemTotal {
   font-size: 0.7em;
   margin-left: 2px;
   color: inherit;
   font-weight: inherit;
 }
 
-#SUMMER_GAMES #legendary-skins h2 small {
+#legendary-skins h2 small {
   text-shadow: 1px 1px 2px rgb(54, 54, 54);
   letter-spacing: 0.3;
 }
 
-#SUMMER_GAMES .section-header h2 .itemTotal:before, #SUMMER_GAMES .section-header h2 .itemTotal:after, #SUMMER_GAMES #legendary-skins h2 small:before, #SUMMER_GAMES #legendary-skins h2 small:after {
+.section-header h2 .itemTotal:before, .section-header h2 .itemTotal:after, #legendary-skins h2 small:before, #legendary-skins h2 small:after {
   display: none;
 }
 
-#SUMMER_GAMES #event-container .event-progress {
+#event-container .event-progress {
   background-color: rgba(24, 34, 62, .7);
   height: 22px;
   padding: 2px;
@@ -394,7 +131,7 @@
   opacity: 0.9;
 }
 
-#SUMMER_GAMES #event-container .event-progress span {
+#event-container .event-progress span {
   line-height: 26px;
   font-size: 20px;
   display: block;
@@ -407,7 +144,7 @@
   bottom: 0;
 }
 
-#SUMMER_GAMES #event-container .event-progress .event-progress-bar {
+#event-container .event-progress .event-progress-bar {
   width: 0;
   border-radius: 3px;
   background-color: rgb(92, 184, 92);
@@ -417,466 +154,9 @@
   box-sizing: border-box;
 }
 
-#SUMMER_GAMES #event-container .event-progress .event-progress-bar.progress-bar-striped {
+#event-container .event-progress .event-progress-bar.progress-bar-striped {
   border: none;
 }
-
-/* HALLOWEEN */
-
-#HALLOWEEN #event-container {
-  padding-bottom: 20px;
-}
-
-#HALLOWEEN #event-container .section {
-  margin-top: 10px;
-}
-
-#HALLOWEEN #event-container .section .item {
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  padding: 0 2px;
-  margin: 1px 0;
-  box-sizing: border-box;
-  cursor: pointer;
-  background-color: rgba(40, 53, 79, 0.6);
-  position: relative;
-  font-family: Futura, century gothic, arial, sans-serif;
-  text-transform: uppercase;
-}
-
-#HALLOWEEN #event-container .section .item {
-  display: inline-flex;
-  margin-right: 1px;
-  margin-bottom: 0;
-}
-
-#HALLOWEEN #event-container .section .flex-2 .item {
-  width: calc(50% - 1px);
-}
-
-#HALLOWEEN #event-container .section .flex-3 .item {
-  width: calc(33.33% - 1px);
-}
-
-#HALLOWEEN #event-container .section .flex-4 .item {
-  width: calc(25% - 1px);
-}
-
-#HALLOWEEN #event-container .section .item label {
-  width: 100%;
-  cursor: pointer;
-  display: flex;
-  padding: 6px 0;
-  align-items: left;
-  flex-wrap: wrap;
-}
-
-#HALLOWEEN #event-container .section .item input {
-  height: 24px;
-  margin: 1px 5px 1px 4px;
-  float: left;
-  cursor: pointer;
-  min-width: 24px;
-}
-
-#HALLOWEEN #event-container .section .item h4 {
-  font-size: 14px;
-  color: rgba(220, 220, 220, 0.75);
-  width: 100%;
-  display: initial;
-}
-
-#HALLOWEEN #event-container .section .item h4:before, #HALLOWEEN #event-container .section .item h4:after {
-  content: "";
-}
-
-#HALLOWEEN #event-container .section .item h3 {
-  text-shadow: 1px 1px 2px rgb(54, 54, 54);
-  letter-spacing: 0.3;
-  font-size: 17px;
-}
-
-#HALLOWEEN #event-container .section .item small {
-  font-size: 16px;
-  padding-top: 1px;
-}
-
-#HALLOWEEN #event-container .section-header h2, #legendary-skins .inner h2 {
-  color: rgb(64, 82, 117);
-  font-size: 38px;
-  font-weight: bold;
-}
-
-#HALLOWEEN .section-header h2 .itemTotal {
-  font-size: 0.7em;
-  margin-left: 2px;
-  color: inherit;
-  font-weight: inherit;
-}
-
-#HALLOWEEN #legendary-skins h2 small {
-  text-shadow: 1px 1px 2px rgb(54, 54, 54);
-  letter-spacing: 0.3;
-}
-
-#HALLOWEEN .section-header h2 .itemTotal:before, #HALLOWEEN .section-header h2 .itemTotal:after, #HALLOWEEN #legendary-skins h2 small:before, #HALLOWEEN #legendary-skins h2 small:after {
-  display: none;
-}
-
-#HALLOWEEN #event-container .event-progress {
-  background-color: rgba(24, 34, 62, .7);
-  height: 22px;
-  padding: 2px;
-  text-align: center;
-  position: relative;
-  border-radius: 4px;
-  box-sizing: content-box;
-  position: absolute;
-  width: 75%;
-  top: -17px;
-  opacity: 0.9;
-}
-
-#HALLOWEEN #event-container .event-progress span {
-  line-height: 26px;
-  font-size: 20px;
-  display: block;
-  position: absolute;
-  color: #fff;
-  text-shadow: 1px 1px 2px rgb(54, 54, 54);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-#HALLOWEEN #event-container .event-progress .event-progress-bar {
-  width: 0;
-  border-radius: 3px;
-  background-color: rgb(92, 184, 92);
-  border-top: 2px solid rgba(92, 184, 92, 0.95);
-  transition: width .8s ease-in-out;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-#HALLOWEEN #event-container .event-progress .event-progress-bar.progress-bar-striped {
-  border: none;
-}
-
-/* WINTER WONDERLAND 2016 */
-
-#WINTER_WONDERLAND_2016 #event-container #row1 #col1 {
-  width: 60%;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #row1 #col2 {
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #row1 #col2 .right {
-  width: 50%;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #row2 {
-  margin-top: -20px;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #row2 #col1 {
-  width: 35%;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #row2 #col2 {
-  width: 64%;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #row2 .left {
-  width: 15%;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #row2 .right {
-  width: 20%;
-  margin-left: 8px;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #sprays {
-  width: 53%;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #epic-skins {
-  width: 100%;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #emotes h2 {
-  margin-top: 25px;
-}
-
-#WINTER_WONDERLAND_2016 #event-container .top {
-  padding: 0 10px;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #voicelines {
-  width: 50%;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #victoryposes {
-  width: 17%;
-  margin: 0 8px;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #victoryposes .items {
-  height: 252px;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #voicelines .items {
-  height: 456px;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #icons .items {
-  height: 480px;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #icons .item:nth-child(24) h3 {
-  font-size: 21px;
-}
-
-#WINTER_WONDERLAND_2016 #event-container #sprays .items {
-  height: 265px;
-}
-
-
-/* YEAR OF THE ROOSTER 2017 */
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #row1 #col1 {
-  width: 61%;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #row1 #col2 {
-  width: 39%;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .left {
-  width: 13%;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .right {
-  width: 18%;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #voicelines {
-  width: 45%;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #victoryposes {
-  width: 16%;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #icons {
-  width: 54%;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #sprays {
-  width: 52%;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #sprays .item {
-  width: 32.7%;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #epic-skins .item {
-  padding: 10px 2px;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #emotes h2 {
-  margin-top: 13px;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #sprays .items {
-  height: 370px;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #icons .item:nth-child(23) h3 {
-  font-size: 22px;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #voicelines .items, #YEAR_OF_THE_ROOSTER_2017 #event-container #icons .items {
-  height: 412px;
-}
-
-#YEAR_OF_THE_ROOSTER_2017 #event-container #voicelines .item, #YEAR_OF_THE_ROOSTER_2017 #event-container #icons .item {
-  padding: 4px 2px;
-}
-
-/* UPRISING */
-
-#UPRISING_2017 #event-container {
-  margin-top: -22px;
-}
-
-#UPRISING_2017 #row1 #col1 {
-  width: 71%;
-}
-
-#UPRISING_2017 #row1 #col2 {
-  width: 29%;
-}
-
-#UPRISING_2017 #row1 #col2 .right {
-  width: 64%;
-}
-
-#UPRISING_2017 #row2 {
-  margin-top: -30px;
-}
-
-#UPRISING_2017 #icons {
-  width: 35%;
-}
-
-#UPRISING_2017 #icons .items {
-  height: 450px;
-}
-
-#UPRISING_2017 #icons .items .item {
-  padding: 4px 2px;
-}
-
-#UPRISING_2017 #emotes, #UPRISING_2017 #highlight-intros {
-  margin-top: 14px;
-}
-
-#UPRISING_2017 #legendary-skins .inner .card .bg {
-  height: 86px;
-  padding: 9px 16px;
-}
-
-#UPRISING_2017 #voicelines {
-  width: 48%;
-}
-
-#UPRISING_2017 #sprays .items {
-  height: 400px;
-}
-
-#UPRISING_2017 #voicelines .items {
-  height: 600px;
-}
-
-#UPRISING_2017 #voicelines .items .item h4 {
-  display: initial;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-}
-
-#UPRISING_2017 #voicelines .items .item h4:before {
-  content: "["
-}
-
-#UPRISING_2017 #voicelines .items .item h4:after {
-  content: "]"
-}
-
-
-#UPRISING_2017 #victoryposes {
-  width: 14%;
-}
-
-#UPRISING_2017 #sprays {
-  width: 37.5%;
-}
-
-/* ANNIVERSAY 2017 */
-
-#ANNIVERSARY_2017 #col1 {
-  width: 100%;
-  padding: 0 10px;
-}
-
-#ANNIVERSARY_2017 #col1 #legendary-skins .card:last-of-type {
-  margin-right: 0;
-}
-
-#ANNIVERSARY_2017 #row2 .right {
-  width: 51%;
-}
-
-#ANNIVERSARY_2017 #row2 .top {
-  display: flex;
-}
-
-#ANNIVERSARY_2017 #icons {
-  width: 51%;
-}
-
-#ANNIVERSARY_2017 #emotes {
-  width: 49%;
-}
-
-#ANNIVERSARY_2017 #emotes .items, #ANNIVERSARY_2017 #icons .items {
-  height: 470px;
-}
-
-#ANNIVERSARY_2017 #voicelines {
-  width: 48%;
-}
-
-#ANNIVERSARY_2017 #voicelines .items {
-  height: 600px;
-}
-
-#ANNIVERSARY_2017 .items .item h4 {
-  display: initial !important;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-}
-
-#ANNIVERSARY_2017 .items .item h4:before {
-  content: "["
-}
-
-#ANNIVERSARY_2017 .items .item h4:after {
-  content: "]"
-}
-
-#ANNIVERSARY_2017 #sprays {
-  margin-top: 7px;
-  width: 100%;
-}
-
-#ANNIVERSARY_2017 #sprays .items {
-  height: 343px;
-}
-
-#ANNIVERSARY_2017 #image-preview.fixed {
-  padding-left: 100px;
-}
-
-#ANNIVERSARY_2017 #image-preview .card.spray {
-   background-size: auto 320px;
-}
-
-#ANNIVERSARY_2017 #legendary-skins {
-  height: 412px;
-}
-
-#ANNIVERSARY_2017 #legendary-skins .images .card {
-  height: 370px;
-  transition: width 0.175s ease-in-out, height 0.175s ease-in-out;
-  will-change: width, height;
-}
-
-#ANNIVERSARY_2017 #legendary-skins .images .card:hover {
-  width: 40%;
-  height: 440px;
-  z-index: 1;
-  transition-delay: 0.375s;
-}
-
 
 /* SMALL MODE CSS */
 
@@ -896,169 +176,27 @@
     margin: -20px auto 0;
   }
 
-  /* SUMMER GAMES */
-  
-  #SUMMER_GAMES .col-padding,
-  #HALLOWEEN .col-padding {
+  .col-padding {
     width: 100%;
   }
   
-  #SUMMER_GAMES #event-container .event-progress,
-  #HALLOWEEN #event-container .event-progress {
+  #event-container .event-progress {
     width: 65%;
   }
 
-  #SUMMER_GAMES #event-container .section .item h3,
-  #HALLOWEEN #event-container .section .item h3 {
+  #event-container .section .item h3 {
     font-size: 16px;
   }
 
-  #SUMMER_GAMES #event-container .section .flex-2 .item,
-  #HALLOWEEN #event-container .section .flex-2 .item {
+  #event-container .section .flex-2 .item {
     width: calc(25% - 1px);
   }
 
-  #SUMMER_GAMES #event-container .section .flex-3 .item,
-  #HALLOWEEN #event-container .section .flex-3 .item {
+  #event-container .section .flex-3 .item {
     width: calc(33.33% - 1px);
   }
 
-  #SUMMER_GAMES #event-container .section .flex-4 .item,
-  #HALLOWEEN #event-container .section .flex-4 .item {
+  #event-container .section .flex-4 .item {
     width: calc(25% - 1px);
-  }
-  /* WINTER */
-  #WINTER_WONDERLAND_2016 #event-container #row1 {
-    flex-direction: column;
-    width: 100%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row1 #col2 .right {
-    z-index: 1;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row1 #col1, #WINTER_WONDERLAND_2016 #event-container #row1 #col2, #WINTER_WONDERLAND_2016 #event-container #row2 #col1, #WINTER_WONDERLAND_2016 #event-container #row2 #col2 {
-    width: 100%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 {
-    width: 100%;
-    margin-top: 0;
-    flex-wrap: wrap;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 .left {
-    width: 40%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 .right {
-    width: 59%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 #victoryposes {
-    width: 30%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 #sprays {
-    width: 68%;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 #sprays .items {
-    height: 365px;
-  }
-  #WINTER_WONDERLAND_2016 #event-container #row2 #sprays .item {
-    width: 32.5%;
-  }
-  /* ROOSTER */
-  #YEAR_OF_THE_ROOSTER_2017 #event-container #row1 {
-    flex-direction: column;
-  }
-  #YEAR_OF_THE_ROOSTER_2017 #event-container #row1 #col2 .right {
-    z-index: 1;
-  }
-  #YEAR_OF_THE_ROOSTER_2017 #event-container #row1 #col1, #YEAR_OF_THE_ROOSTER_2017 #event-container #row1 #col2 {
-    width: 100%;
-  }
-  #YEAR_OF_THE_ROOSTER_2017 #event-container #row2 {
-    flex-wrap: wrap;
-  }
-  #YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .left {
-    width: 45%;
-  }
-  #YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .right {
-    width: 54%;
-  }
-  #YEAR_OF_THE_ROOSTER_2017 #event-container #row2 .right .items {
-    z-index: 1;
-  }
-  #YEAR_OF_THE_ROOSTER_2017 #event-container #victoryposes {
-    width: 33%;
-  }
-  #YEAR_OF_THE_ROOSTER_2017 #event-container #sprays {
-    width: 66%;
-  }
-  #YEAR_OF_THE_ROOSTER_2017 #event-container #sprays .item {
-    width: 32.5%;
-  }
-  #YEAR_OF_THE_ROOSTER_2017 #event-container #sprays .items {
-    height: 374px;
-  }
-  #UPRISING_2017 #event-container {
-    margin-top: -10px;
-  }
-  #UPRISING_2017 #row1 {
-    flex-direction: column;
-  }
-  #UPRISING_2017 #row1 #col1, #UPRISING_2017 #row1 #col2 {
-    width: 100%;
-  }
-  #UPRISING_2017 #row2 {
-    margin-top: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  #UPRISING_2017 #voicelines {
-    order: 3;
-    width: 100%;
-  }
-  #UPRISING_2017 #victoryposes {
-    width: 24%;
-  }
-  #UPRISING_2017 #sprays {
-    width: 75.5%;
-  }
-  #UPRISING_2017 #sprays .items {
-    height: 300px;
-  }
-  #UPRISING_2017 #sprays .items .item {
-    width: 24.5%;
-  }
-  #ANNIVERSARY_2017 #event-container {
-    width: initial;
-  }
-  #ANNIVERSARY_2017 #row2 .top {
-    display: initial;
-  }
-  #ANNIVERSARY_2017 #emotes .items {
-    height: 440px;
-  }
-  #ANNIVERSARY_2017 #emotes, #ANNIVERSARY_2017 #icons {
-    width: 100%;
-  }
-  #ANNIVERSARY_2017 #voicelines .items {
-    height: 930px;
-  }
-  #ANNIVERSARY_2017 #voicelines h3, #ANNIVERSARY_2017 #sprays h3 {
-   font-size: 24px;
-  }
-  #ANNIVERSARY_2017 #voicelines h4, #ANNIVERSARY_2017 #sprays h4 {
-   font-size: 15px;
-  }
-  #ANNIVERSARY_2017 #voicelines .items .item {
-    width: 49.5%;
-  }
-  #ANNIVERSARY_2017 #legendary-skins .images .card-heading {
-    font-size: 22px !important;
-  }
-  #ANNIVERSARY_2017 #legendary-skins .images .p {
-    font-size: 13px !important;
-  }
-  #ANNIVERSARY_2017 #sprays .items {
-    height: 480px;
-  }
-  #ANNIVERSARY_2017 #sprays .items .item {
-    width: 49.5%;
   }
 }

@@ -1,22 +1,23 @@
-OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "CompatibilityService", "CostAndTotalService", function($rootScope, $q, $document, $uibModal, DataService, CompatibilityService, CostAndTotalService) {
+OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "CompatibilityService", "CostAndTotalService", "UrlService", "StorageService", function($rootScope, $q, $document, $uibModal, DataService, CompatibilityService, CostAndTotalService, UrlService, StorageService) {
   var vm = this;
-  this.preview = false;
-  this.currentDate = Date.now();
-  this.showSidebar = false;
-  this.showNav = false;
-  this.noSupportMsg = CompatibilityService.noSupportMsg;
-  this.totals = CostAndTotalService;
+  vm.preview = false;
+  vm.currentDate = Date.now();
+  vm.showSidebar = false;
+  vm.showNav = false;
+  vm.noSupportMsg = CompatibilityService.noSupportMsg;
+  vm.totals = CostAndTotalService;
+  vm.particles = StorageService.getSetting('particles')
 
   DataService.waitForInitialization().then(function(data) {
     vm.events = data.events;
     vm.heroes = data.heroes;
   });
 
-  this.dismissAlert = function() {
-    this.hideAlert = true;
+  vm.dismissAlert = function() {
+    vm.hideAlert = true;
   };
 
-  this.getCosts = function() {
+  vm.getCosts = function() {
     var out = {
       total: 0,
       remaining: 0,
@@ -63,20 +64,20 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
     }
   };
 
-  this.toggleSidebar = function() {
-    this.showSidebar = !this.showSidebar;
-    if (!this.showSidebar) {
+  vm.toggleSidebar = function() {
+    vm.showSidebar = !vm.showSidebar;
+    if (!vm.showSidebar) {
       $document.off('click', documentClicked);
       return;
     }
-    if (this.showSidebar) {
+    if (vm.showSidebar) {
       setTimeout(function () {
         $document.on('click', documentClicked);
       }, 0);
     }
   };
 
-  this.openSettings = function() {
+  vm.openSettings = function() {
     $uibModal.open({
       templateUrl: './templates/modals/settings.html',
       controller: 'SettingsCtrl',
@@ -84,7 +85,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
     });
   };
 
-  this.openAbout = function() {
+  vm.openAbout = function() {
     $uibModal.open({
       templateUrl: './templates/modals/about.html',
       controller: 'SettingsCtrl',
@@ -92,7 +93,7 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
     });
   };
 
-  this.openTheme = function() {
+  vm.openTheme = function() {
     $uibModal.open({
       templateUrl: './templates/modals/themes.html',
       controller: 'SettingsCtrl',
@@ -100,19 +101,14 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
     });
   };
 
-  this.getImageUrl = function(url) {
-    return url;
-    /* if (location.host.match(/^localhost:5000$/)) {
-      return url.replace('https://d34nsd3ksgj839.cloudfront.net', 'http://localhost:5000/resources');
-    } else {
-      return url;
-    }*/
+  vm.getImageUrl = function(url) {
+    return UrlService.get(url)
   };
 }]);
 
 OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService",  function($scope, $state, $timeout, $stateParams, $rootScope, $uibModal, Data, StorageService, CompatibilityService, CostAndTotalService) {
   var vm = this;
-  this.loaded = false;
+  vm.loaded = false;
   var hero;
 
   Data.waitForInitialization().then(function(data) {
@@ -144,7 +140,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     });
   }
   
-  this.filters = {
+  vm.filters = {
     selected: false,
     unselected: false,
     achievement: false,
@@ -154,11 +150,11 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
   };
 
   // Returns if an item is checked, use item.hero if one is available as allClass Icons includes icons from all heroes
-  this.isItemChecked = function(item, type) {
-    return this.checked[item.hero || hero.id][type][item.id];
+  vm.isItemChecked = function(item, type) {
+    return vm.checked[item.hero || hero.id][type][item.id];
   };
 
-  this.getDisplayName = function(name) {
+  vm.getDisplayName = function(name) {
     switch (name) {
       case 'intros':
         return 'highlight intros';
@@ -171,12 +167,12 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     }
   };
 
-  this.hasGroups = function() {
+  vm.hasGroups = function() {
     if (!vm.groups) return false;
     return Object.keys(vm.groups).length;
   };
 
-  this.hasEvents = function() {
+  vm.hasEvents = function() {
     if (!vm.events) return false;
     return Object.keys(vm.events).length;
   };
@@ -194,8 +190,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     vm.totals = newData.totals;
   };
 
-  this.updateFilters = function() {
-    this.filtering = true;
+  vm.updateFilters = function() {
+    vm.filtering = true;
     var selected = vm.filters.selected;
     var unselected = vm.filters.unselected;
     var achievement = vm.filters.achievement;
@@ -218,7 +214,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
       return;
     }
     
-    this.filteredItems = filterItems(hero.items, eventFilters, groupFilter);
+    vm.filteredItems = filterItems(hero.items, eventFilters, groupFilter);
     updateCosts();
 
     // Generate the currently selected filter text
@@ -236,7 +232,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     if (selected || unselected) {
       currentFilters.push(selected ? 'SELECTED' : unselected ? 'UNSELECTED': '');
     }
-    this.currentFilters = currentFilters.join('|');
+    vm.currentFilters = currentFilters.join('|');
   };
 
   // Filters the items and returms new data object
@@ -269,8 +265,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     resetCosts();
   });
   
-  this.clearFilters = function() {
-    this.filters = {
+  vm.clearFilters = function() {
+    vm.filters = {
       selected: false,
       unselected: false,
       achievement: false,
@@ -278,22 +274,22 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
       events: {},
       groups: {}
     };
-    this.currentFilters = '';
-    this.filtering = false;
-    this.filteredItems = hero.items;
+    vm.currentFilters = '';
+    vm.filtering = false;
+    vm.filteredItems = hero.items;
     resetCosts();
   };
 
   // Manual function to select an item, used in grid mode
-  this.selectItem = function(item, type) {
+  vm.selectItem = function(item, type) {
     if (item.standardItem) return;
-    this.checked[item.hero || hero.id][type][item.id] = !this.checked[item.hero || hero.id][type][item.id];
+    vm.checked[item.hero || hero.id][type][item.id] = !vm.checked[item.hero || hero.id][type][item.id];
     vm.onSelect(item, type);
   };
 
-  this.onSelect = function(item, type) {
+  vm.onSelect = function(item, type) {
     StorageService.setData(Object.assign({}, Data.checked, vm.checked));
-    if (this.filtering) {
+    if (vm.filtering) {
       CostAndTotalService.updateItem(item, type, hero.id);
       updateCosts();
       return;
@@ -301,13 +297,13 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     CostAndTotalService.updateItem(item, type, hero.id);
   };
 
-  this.toggleGrid = function() {
+  vm.toggleGrid = function() {
     if (hero.id != 'all') return;
-    this.gridView = !this.gridView;
+    vm.gridView = !vm.gridView;
   };
 
   // Mark all items for current hero as selected
-  this.selectAll = function(unselect, onlyType) {
+  vm.selectAll = function(unselect, onlyType) {
     if (vm.totals.overall.selected == vm.totals.overall.total && !unselect) {
       return;
     }
@@ -329,7 +325,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     }
   };
 
-  this.selectModal = function(type, str) {
+  vm.selectModal = function(type, str) {
     if (vm.totals.overall.selected == 0 && str == 'unselect') return;
     var modal = $uibModal.open({
       templateUrl: './templates/modals/select.html',
@@ -414,7 +410,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
   };
 
   angular.element($window).bind("scroll", function() {
-    $scope.isFixed = this.pageYOffset >= 200 ? true : false;
+    $scope.isFixed = $window.pageYOffset >= 200 ? true : false;
     $scope.$apply();
   });
 }]);
@@ -422,26 +418,26 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
 OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalInstance", "StorageService", "DataService", "GoogleAPI", function($rootScope, $scope, $uibModal, $uibModalInstance, StorageService, DataService, GoogleAPI) {
   var vm = this;
   var settings = StorageService.settings;
-  this.particles = settings['particles'];
-  this.hdVideos = settings['hdVideos'];
-  this.currentTheme = settings['currentTheme'];
-  this.showPreviews = settings['showPreviews'];
-  this.audioVolume = settings['audioVolume'];
-  this.countIcons = settings['countIcons'];
-  this.syncDisabled = settings['syncDisabled'];
-  this.importErrors = null;
+  vm.particles = settings['particles'];
+  vm.hdVideos = settings['hdVideos'];
+  vm.currentTheme = settings['currentTheme'];
+  vm.showPreviews = settings['showPreviews'];
+  vm.audioVolume = settings['audioVolume'];
+  vm.countIcons = settings['countIcons'];
+  vm.syncDisabled = settings['syncDisabled'];
+  vm.importErrors = null;
 
-  this.willEnableSync = false;
+  vm.willEnableSync = false;
 
-  this.googleUser = GoogleAPI.user;
-  this.googleSignedIn = GoogleAPI.isSignedIn;
-  this.googleMessage = null;
+  vm.googleUser = GoogleAPI.user;
+  vm.googleSignedIn = GoogleAPI.isSignedIn;
+  vm.googleMessage = null;
 
-  this.close = function() {
+  vm.close = function() {
     $uibModalInstance.dismiss('close');
   };
 
-  this.resetData = function() {
+  vm.resetData = function() {
     localStorage.removeItem('data');
     localStorage.removeItem('migrations');
     location.reload();
@@ -458,7 +454,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     return yy + '-' + mm + '-' + dd + '_' + ts;
   }
 
-  this.downloadJSON = function() {
+  vm.downloadJSON = function() {
     var url = URL.createObjectURL(new Blob([ JSON.stringify(DataService.checked, null, 2) ],  { type: 'application/json' }));
     var el = document.createElement('a');
     el.setAttribute('href', url);
@@ -471,20 +467,20 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     }, 1000);
   };
 
-  this.setVolume = function() {
-    StorageService.setSetting('audioVolume', this.audioVolume);
+  vm.setVolume = function() {
+    StorageService.setSetting('audioVolume', vm.audioVolume);
   };
 
-  this.toggleSetting = function(what, reload) {
-    this[what] = !this[what];
-    StorageService.setSetting(what, this[what]);
+  vm.toggleSetting = function(what, reload) {
+    vm[what] = !vm[what];
+    StorageService.setSetting(what, vm[what]);
     if (reload) {
       location.reload();
     }
   };
 
-  this.data = angular.toJson(DataService.checked, 2);
-  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines'];
+  vm.data = angular.toJson(DataService.checked, 2);
+  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines', 'weapons'];
   var validHeroes = Object.keys(DataService.heroes);
   function validateData(data) {
     try {
@@ -515,7 +511,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     }
   }
 
-  this.importData = function(data, test) {
+  vm.importData = function(data, test) {
     vm.importErrors = null;
     var errors = validateData(vm.data);
 
@@ -530,13 +526,13 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     }
   };
 
-  this.selectTheme = function(what) {
-    this.currentTheme = what;
+  vm.selectTheme = function(what) {
+    vm.currentTheme = what;
     StorageService.setSetting('currentTheme', what);
     location.reload();
   };
 
-  this.selectAll = function() {
+  vm.selectAll = function() {
     for (var heroID in DataService.heroes) {
       var hero = DataService.heroes[heroID].items;
       for (var type in hero) {
@@ -553,12 +549,12 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     $rootScope.$emit('selectAll');
   };
 
-  this.toggleSync = function() {
-    if (this.syncDisabled && !vm.willEnableSync) {
+  vm.toggleSync = function() {
+    if (vm.syncDisabled && !vm.willEnableSync) {
       vm.willEnableSync = true;
     }
 
-    if (!this.syncDisabled) {
+    if (!vm.syncDisabled) {
       vm.syncDisabled = true;
       StorageService.setSetting('syncDisabled', true);
     } else {
@@ -587,17 +583,17 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     $scope.$digest();
   });
 
-  this.googleLogin = function() {
+  vm.googleLogin = function() {
     vm.googleMessage = null;
     GoogleAPI.login();
   };
 
-  this.googleSignOut = function() {
+  vm.googleSignOut = function() {
     vm.googleMessage = null;
     GoogleAPI.signOut();
   };
 
-  this.uploadToDrive = function() {
+  vm.uploadToDrive = function() {
     vm.googleMessage = null;
     var modal = $uibModal.open({
       templateUrl: './templates/modals/select.html',
@@ -613,7 +609,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     }, function() {});
   };
 
-  this.downloadFromDrive = function() {
+  vm.downloadFromDrive = function() {
     vm.googleMessage = null;
     var modal = $uibModal.open({
       templateUrl: './templates/modals/select.html',
@@ -651,7 +647,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
         return;
       }
 
-      const errors = validateData(response.data);
+      var errors = validateData(response.data);
       if (errors) {
         vm.googleMessage = ['danger', 'Error: Data returned by Google Drive does not matched expected data'];
         return;

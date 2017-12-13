@@ -11,13 +11,13 @@ const qualityOrder = {
 const qualities = ['common', 'epic', 'rare', 'legendary'];
 const types = [
   { m: 'skin', name: 'skins' },
-  { m: 'icon', name: 'icons' },
+  { m: 'playericon', name: 'icons' },
   { m: 'spray', name: 'sprays' },
   { m: 'emote', name: 'emotes' },
-  { m: 'voice line', name: 'voicelines' },
-  { m: 'victory pose', name: 'poses' },
-  { m: 'heroic intro', name: 'intros' }
-  //, { m: 'weapon skin', name: 'weapons' } // Golden
+  { m: 'voiceline', name: 'voicelines' },
+  { m: 'pose', name: 'poses' },
+  { m: 'highlightintro', name: 'intros' },
+  { m: 'weapon', name: 'weapons' } // Golden
 ];
 
 // Generate a match for each quality for every type of item
@@ -29,10 +29,12 @@ types.forEach(t => {
 // Returns the type of item, see above
 const getItemType = type => {
   let m = matches[type.toLowerCase()];
+
   if (!m) {
-    if (type !== 'Common Weapon Skin') console.warn("Unknown type?", type);
+    console.warn("Unknown type?", type);
     return {};
   }
+
   return m;
 };
 
@@ -67,9 +69,9 @@ const getCleanID = (what, hero) => {
 const getPreviewURL = (type, id, hero, event) => {
   let url;
   if (event && type.match(/^(skins(Epic|Legendary)?|poses|emotes|intros)$/)) {
-    url = `./resources/updates/${event}/${type}/${id}`;
+    url = `/updates/${event}/${type}/${id}`;
   } else {
-    url = `./resources/heroes/${hero}/${type}/${id}`; 
+    url = `/heroes/${hero}/${type}/${id}`; 
   }
   switch (type) {
     case 'voicelines':

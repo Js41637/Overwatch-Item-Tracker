@@ -800,6 +800,22 @@
       "type": "spray",
       "hero": "all"
     },
+    "season-8-competitor": {
+      "name": null,
+      "description": "Unlocked by completing Season 8 placement matches",
+      "reward": "Season 8 Competitor",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "season-8-hero": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 8",
+      "reward": "Season 8 Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
     "wizard": {
       "name": null,
       "description": "Unlocked as part of the Diablo 20th Anniversary celebration",
@@ -919,6 +935,22 @@
       "type": "spray",
       "description": "Hit 7 targets simultaneously with Moira's Coalescence in Quick or Competitive Play.",
       "hero": "moira"
+    },
+    "thinking-with-your-stomach": {
+      "name": "Thinking With Your Stomach",
+      "reward": "Yeti",
+      "quality": "common",
+      "type": "spray",
+      "description": "Eat 4 meat as the Yeti in Yeti Hunter.",
+      "hero": "all"
+    },
+    "yeti-catcher": {
+      "name": "Antipode",
+      "reward": "Yeti Hunter",
+      "quality": "common",
+      "type": "spray",
+      "description": "Trap the Yeti as a Hunter in Yeti Hunter.",
+      "hero": "all"
     }
   },
   "mappings": {
@@ -1022,6 +1054,8 @@
     "season-6-hero": "season-6-hero",
     "season-7-competitor": "season-7-competitor",
     "season-7-hero": "season-7-hero",
+    "season-8-competitor": "season-8-competitor",
+    "season-8-hero": "season-8-hero",
     "wizard": "wizard",
     "witch-doctor": "witch-doctor",
     "monk": "monk",
@@ -1036,6 +1070,8 @@
     "my-creations": "six-they-were",
     "the-monster": "unscathed",
     "moira-pixel": "simple-trigonometry",
-    "moira-cute": "antipode"
+    "moira-cute": "antipode",
+    "yeti": "thinking-with-your-stomach",
+    "yeti-hunter": "yeti-catcher"
   }
 }

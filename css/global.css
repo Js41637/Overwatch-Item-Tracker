@@ -79,12 +79,11 @@ body {
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   width: 100%;
   box-sizing: border-box;
   top: 0;
   min-width: 1010px;
-  z-index: 1000;
 }
 
 #header .left {
@@ -464,8 +463,8 @@ strong {
  **/
 
 #cost-remaining {
-  position: fixed;
-  top: 45px;
+  position: absolute;
+  top: 0;
   right: 0;
   display: flex;
   align-items: center;
@@ -1113,7 +1112,7 @@ strong {
 
 #menuNav {
   background: rgb(45, 45, 45);
-  position: fixed;
+  position: absolute;
   top: 45px;
   left: 0;
   right: 0;
@@ -1199,6 +1198,12 @@ strong {
   opacity: 1;
 }
 
+.section .tooltip.fade {
+  -webkit-transition: opacity 125ms linear;
+  -o-transition: opacity 125ms linear;
+  transition: opacity 125ms linear;
+}
+
 .section .tooltip .tooltip-inner {
   max-width: none;
   padding: 4px;
@@ -1217,6 +1222,21 @@ strong {
   height: 380px;
   background-image: url("../resources/portrait-bg.jpg");
   background-size: cover;
+}
+
+#sprays .tooltip .preview.img.two {
+  display: flex;
+  width: 420px;
+  height: 420px;
+}
+
+#sprays .tooltip .preview.img.two .i:nth-of-type(2) {
+  background-size: 120%;
+}
+
+#sprays .tooltip .preview.img.two .i:nth-of-type(2) {
+  width: 60%;
+  background-size: 170%;
 }
 
 .section .tooltip .preview.img {
@@ -1320,4 +1340,36 @@ strong {
     height: 400px;
     position: relative;
   }
+}
+
+/* Circle checkboxes */
+
+label.circle-checkbox {
+  width: 24px;
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: #e3e1e1;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-right: 6px;
+  transition: background 200ms;
+}
+
+input.circle-checkbox {
+  display: none;
+}
+
+input.circle-checkbox:checked+label {
+  background: #ffa500;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
 }

@@ -13,6 +13,7 @@
   <script src="./js/services.js"></script>
   <script src="./js/controllers.js"></script>
   <script src="./js/directives.js"></script>
+  <script src="./js/vendor/particles.min.js"></script>
 </head>
 <body ng-controller="MainCtrl as $ctrl" id="{{$ctrl.item.id}}" style="opacity: 0">
   <div id="background"></div>
@@ -43,7 +44,6 @@
       </div>
     </div>
   </div>
-  <!--<Particles ng-if="::$ctrl.particles"></Particles>-->
 
   <div id="menuNav" class="angular-animate" uib-collapse="!$ctrl.showNav">
     <hero-nav events="::$ctrl.events" heroes="::$ctrl.heroes"></hero-nav>
@@ -75,6 +75,7 @@
     <strong>Notice!</strong> <span>{{$ctrl.noSupportMsg}}</span>
   </div>
   <div ui-view="main"></div>
+  <Particles ng-if="::$ctrl.particles"></Particles>
 
   <script async defer src="https://apis.google.com/js/api.js"></script>
   <script> // Track page views

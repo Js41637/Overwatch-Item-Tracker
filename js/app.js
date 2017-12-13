@@ -158,60 +158,60 @@ OWI.run(function() {
 // Set up the apps routes
 OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $stateProvider
-  .state('heroes', {
-    url: '/heroes/:id',
-    views: {
-      main: {
-        templateUrl: './templates/hero.html',
-        controller: 'HeroesCtrl as hero'
+    .state('heroes', {
+      url: '/heroes/:id',
+      views: {
+        main: {
+          templateUrl: './templates/hero.html',
+          controller: 'HeroesCtrl as hero'
+        }
       }
-    }
-  })
+    })
 
-  .state('events', {
-    url: '/events/:id',
-    resolve: {
-      event: function($q, DataService, $stateParams) {
-        var deferred = $q.defer();
-        DataService.waitForInitialization().then(function(data) {
-          var event = data.events[$stateParams.id];
-          if (event) {
-            deferred.resolve(event);
-          } else {
-            deferred.reject("INVALID_EVENT");
-          }
-        });
-        return deferred.promise;
-      }
-    },
-    views: {
-      header: {
-        templateUrl: './templates/header-event.html'
+    .state('events', {
+      url: '/events/:id',
+      resolve: {
+        event: function($q, DataService, $stateParams) {
+          var deferred = $q.defer();
+          DataService.waitForInitialization().then(function(data) {
+            var event = data.events[$stateParams.id];
+            if (event) {
+              deferred.resolve(event);
+            } else {
+              deferred.reject("INVALID_EVENT");
+            }
+          });
+          return deferred.promise;
+        }
       },
-      main: {
-        templateUrl: './templates/event-container.html',
-        controller: 'UpdateCtrl'
+      views: {
+        header: {
+          templateUrl: './templates/header-event.html'
+        },
+        main: {
+          templateUrl: './templates/event-container.html',
+          controller: 'UpdateCtrl'
+        }
       }
-    }
-  })
+    })
 
-  .state('home', {
-    url: '/',
-    resolve: {
-      data: function($q, DataService) {
-        var deferred = $q.defer();
-        DataService.waitForInitialization().then(function(data) {
-          deferred.resolve(data);
-        });
-        return deferred.promise;
+    .state('home', {
+      url: '/',
+      resolve: {
+        data: function($q, DataService) {
+          var deferred = $q.defer();
+          DataService.waitForInitialization().then(function(data) {
+            deferred.resolve(data);
+          });
+          return deferred.promise;
+        }
+      },
+      views: {
+        main: {
+          templateUrl: './templates/home.html'
+        }
       }
-    },
-    views: {
-      main: {
-        templateUrl: './templates/home.html'
-      }
-    }
-  });
+    });
 
   $urlRouterProvider.otherwise('/');
 }]);

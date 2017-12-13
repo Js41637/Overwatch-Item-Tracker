@@ -292,23 +292,23 @@ body {
   background-size: cover;
 }
 
-#hero-nav .gallery.event .block[href$="/events/WINTER_WONDERLAND_2016"] {
-  background: url(resources/WINTER_WONDERLAND_2016/bg.jpg);
+#hero-nav .gallery.event .block[href$="/events/WINTER_WONDERLAND"] {
+  background: url(resources/WINTER_WONDERLAND/bg.jpg);
   background-size: cover;
 }
 
-#hero-nav .gallery.event .block[href$="/events/YEAR_OF_THE_ROOSTER_2017"] {
-  background: url(resources/YEAR_OF_THE_ROOSTER_2017/bg.jpg);
+#hero-nav .gallery.event .block[href$="/events/LUNAR_NEW_YEAR"] {
+  background: url(resources/LUNAR_NEW_YEAR/bg.jpg);
   background-size: cover;
 }
 
-#hero-nav .gallery.event .block[href$="/events/UPRISING_2017"] {
-  background: url(resources/UPRISING_2017/bg.jpg);
+#hero-nav .gallery.event .block[href$="/events/UPRISING"] {
+  background: url(resources/UPRISING/bg.jpg);
   background-size: cover;
 }
 
-#hero-nav .gallery.event .block[href$="/events/ANNIVERSARY_2017"] {
-  background: url(resources/ANNIVERSARY_2017/bg.jpg);
+#hero-nav .gallery.event .block[href$="/events/ANNIVERSARY"] {
+  background: url(resources/ANNIVERSARY/bg.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -448,30 +448,30 @@ body {
   background-size: contain, cover;
 }
 
-#hero-container .item[event="WINTER_WONDERLAND_2016"] + .tooltip .preview.img,
-#WINTER_WONDERLAND_2016 #image-preview .card .bg2 {
-  background: url(resources/WINTER_WONDERLAND_2016/icon-bg.png)no-repeat,url(resources/WINTER_WONDERLAND_2016/preview-bg.png);
+#hero-container .item[event="WINTER_WONDERLAND"] + .tooltip .preview.img,
+#WINTER_WONDERLAND #image-preview .card .bg2 {
+  background: url(resources/WINTER_WONDERLAND/icon-bg.png)no-repeat,url(resources/WINTER_WONDERLAND/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
 }
 
-#hero-container .item[event="YEAR_OF_THE_ROOSTER_2017"] + .tooltip .preview.img,
-#YEAR_OF_THE_ROOSTER_2017 #image-preview .card .bg2 {
-  background: url(resources/YEAR_OF_THE_ROOSTER_2017/icon-bg.png)no-repeat,url(resources/YEAR_OF_THE_ROOSTER_2017/preview-bg.png);
+#hero-container .item[event="LUNAR_NEW_YEAR"] + .tooltip .preview.img,
+#LUNAR_NEW_YEAR #image-preview .card .bg2 {
+  background: url(resources/LUNAR_NEW_YEAR/icon-bg.png)no-repeat,url(resources/LUNAR_NEW_YEAR/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
 }
 
-#hero-container .item[event="UPRISING_2017"] + .tooltip .preview.img,
-#UPRISING_2017 #image-preview .card .bg2 {
-  background: url(resources/UPRISING_2017/icon-bg.png)no-repeat,url(resources/UPRISING_2017/preview-bg.png);
+#hero-container .item[event="UPRISING"] + .tooltip .preview.img,
+#UPRISING #image-preview .card .bg2 {
+  background: url(resources/UPRISING/icon-bg.png)no-repeat,url(resources/UPRISING/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
 }
 
-#hero-container .item[event="ANNIVERSARY_2017"] + .tooltip .preview.img,
-#ANNIVERSARY_2017 #image-preview .card .bg2 {
-  background: url(resources/ANNIVERSARY_2017/icon-bg.png)no-repeat,url(resources/ANNIVERSARY_2017/preview-bg.png);
+#hero-container .item[event="ANNIVERSARY"] + .tooltip .preview.img,
+#ANNIVERSARY #image-preview .card .bg2 {
+  background: url(resources/ANNIVERSARY/icon-bg.png)no-repeat,url(resources/ANNIVERSARY/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
 }
@@ -605,19 +605,19 @@ body {
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES"],
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN"],
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"],
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"],
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"],
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY_2017"] {
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="LUNAR_NEW_YEAR"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING"],
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY"] {
   padding-left: 30px;
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES"]:before,
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN"]:before,
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"]:before,
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"]:before,
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before,
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY_2017"]:before {
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="LUNAR_NEW_YEAR"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING"]:before,
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY"]:before {
   content: "";
   width: 24px;
   height: 24px;
@@ -631,27 +631,27 @@ body {
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="SUMMER_GAMES"]:before {
-  background-image: url(resources/icons/events/SUMMER_GAMES_2016.svg);
+  background-image: url(resources/icons/events/SUMMER_GAMES.svg);
 }
 
 #hero-container #hero-header .options .btn-group .dropdown-menu li label[for="HALLOWEEN"]:before {
-  background-image: url(resources/icons/events/HALLOWEEN_2016.svg);
+  background-image: url(resources/icons/events/HALLOWEEN.svg);
 }
 
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND_2016"]:before {
-  background-image: url(resources/icons/events/WINTER_WONDERLAND_2016.svg);
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="WINTER_WONDERLAND"]:before {
+  background-image: url(resources/icons/events/WINTER_WONDERLAND.svg);
 }
 
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="YEAR_OF_THE_ROOSTER_2017"]:before {
-  background-image: url(resources/icons/events/YEAR_OF_THE_ROOSTER_2017.svg);
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="LUNAR_NEW_YEAR"]:before {
+  background-image: url(resources/icons/events/LUNAR_NEW_YEAR.svg);
 }
 
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING_2017"]:before {
-  background-image: url(resources/icons/events/UPRISING_2017.svg);
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="UPRISING"]:before {
+  background-image: url(resources/icons/events/UPRISING.svg);
 }
 
-#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY_2017"]:before {
-  background-image: url(resources/icons/events/ANNIVERSARY_2017.svg);
+#hero-container #hero-header .options .btn-group .dropdown-menu li label[for="ANNIVERSARY"]:before {
+  background-image: url(resources/icons/events/ANNIVERSARY.svg);
 }
 
 

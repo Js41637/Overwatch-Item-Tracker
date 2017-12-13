@@ -5,16 +5,16 @@ const { eachLimit } = require('async');
 const { exec } = require('child_process');
 
 var TYPES = {
-  Icon: 'icons',
-  Spray: 'sprays'
+  Icons: 'icons',
+  Sprays: 'sprays'
 };
 
 const checkDirs = () => {
   fs.stat(`./!toBeConverted`, err => {
     if (err) {
       fs.mkdirSync(`./!toBeConverted`);
-      fs.mkdirSync(`./!toBeConverted/Icon`);
-      fs.mkdirSync(`./!toBeConverted/Spray`);
+      fs.mkdirSync(`./!toBeConverted/Icons`);
+      fs.mkdirSync(`./!toBeConverted/Sprays`);
     }
   });
   fs.stat('./images', err => {
@@ -27,10 +27,10 @@ const findImages = hero => {
     const base = hero.length ? 'Heroes/' : 'General';
     const heroID = getCleanID(hero);
     getDirectories(`./${base}${hero}`).then(types => {
-      if (!types.includes('Icon') && !types.includes('Spray')) return resolve();
+      if (!types.includes('Icons') && !types.includes('Sprays')) return resolve();
       Promise.all(types.map(type => {
         return new Promise(res => {
-          if (type !== 'Icon' & type !== 'Spray') return res();
+          if (type !== 'Icons' & type !== 'Sprays') return res();
           moveImages(hero, type, heroID).then(res);
         });
       })).then(resolve);
@@ -71,7 +71,7 @@ const convertFiles = () => {
       eachLimit(types, 1, (type, cb) => {
         console.log(`Starting to convert ${TYPES[type]}`);
         console.log(`-- Converting images to png`);
-         // timeout prevents the first icon from being converted incorrectly for some reason
+        // timeout prevents the first icon from being converted incorrectly for some reason
         setTimeout(() => {
           exec(`mogrify -path ./images -format png ./!toBeConverted/${type}/*.dds`, err => {
             if (err) return reject(`Error while mogrify'ing images! \n ${err}`);
