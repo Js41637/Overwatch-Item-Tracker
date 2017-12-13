@@ -98,7 +98,8 @@ const EVENT_ITEM_ORDER = {
 const EVENT_PREVIEWS = {
   [EVENTS.ANNIVERSARY17]: ['emotes'],
   [EVENTS.SUMMER]: ['emotes', 'intros'],
-  [EVENTS.HALLOWEEN]: ['emotes', 'intros']
+  [EVENTS.HALLOWEEN]: ['emotes', 'intros'],
+  [EVENTS.WINTER]: ['emotes', 'intros']
 }
 
 const NEW_EVENTS = [

@@ -55,10 +55,9 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
     };
 
     for (var hero in data.heroes) {
-      out.checked[hero] = {"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{},"weapons":{}};
+      out.checked[hero] = Object.assign({"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{},"weapons":{}}, storedData[hero]);
     }
 
-    Object.assign(out.checked, storedData);
     Object.assign(service, out, data);
     $timeout(function() {
       service.initialized = true;

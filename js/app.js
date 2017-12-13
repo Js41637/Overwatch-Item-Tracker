@@ -102,21 +102,6 @@ OWI.run(function() {
           }
         });
       }
-    },
-    {
-      name: 'Add stupid weapons category',
-      id: 8,
-      run: function() {
-        for (var hero in data) {
-          if (hero === 'all') {
-            continue
-          }
-
-          if (!data[hero].weapons) {
-            data[hero].weapons = {}
-          }
-        }
-      }
     }
   ];
 

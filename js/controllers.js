@@ -480,7 +480,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
   };
 
   vm.data = angular.toJson(DataService.checked, 2);
-  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines'];
+  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines', 'weapons'];
   var validHeroes = Object.keys(DataService.heroes);
   function validateData(data) {
     try {
