@@ -490,7 +490,8 @@ var masterData = {
     'common': 25,
     'rare': 75,
     'epic': 250,
-    'legendary': 1000
+    'legendary': 1000,
+    'golden': 0 // golden weapons
   },
   events: updates,
   heroes
