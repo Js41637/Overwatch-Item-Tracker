@@ -16,12 +16,24 @@
   overflow: hidden;
 }
 
+#event-container .section-header .options {
+  z-index: 10;
+}
+
+#event-container .options .dropdown-menu li a {
+  padding: 5px 15px;
+}
+
 #event-container .section .items small {
   font-size: 100%;
 }
 
 #event-container .col-padding {
   padding: 0;
+}
+
+#sprays .circle-checkbox {
+  margin: 0 5px 0;
 }
 
 
@@ -505,11 +517,6 @@ body#WINTER_WONDERLAND:before {
 
 #WINTER_WONDERLAND #voicelines .item:nth-of-type(3n+0) {
   margin-right: 0;
-}
-
-#WINTER_WONDERLAND #icons .item {
-  width: calc(25% - 6px);
-  display: inline-flex;
 }
 
 #WINTER_WONDERLAND #icons .item:nth-of-type(4n+0) {

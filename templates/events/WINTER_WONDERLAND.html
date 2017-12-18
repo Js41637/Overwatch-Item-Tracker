@@ -5,9 +5,7 @@
 <div class="col-md-8 col-padding">
   <legendary-skins></legendary-skins>
   <div id="voicelines" class="section">
-    <div class="section-header">
-      <h2>Voice Lines <small class="itemTotal">{{totals['voicelines'].selected}}/{{totals['voicelines'].total}}</small></h2>
-    </div>
+    <section-header select-modal="selectModal" name="Voicelines" type="voicelines" totals="totals.voicelines"></section-header>
     <div class="items flex-3">
       <div
         ng-repeat="item in ::data.items.voicelines track by $index"
@@ -27,9 +25,7 @@
     </div>
   </div>
   <div id="sprays" class="section">
-    <div class="section-header">
-      <h2>Sprays <small class="itemTotal">{{totals['sprays'].selected}}/{{totals['sprays'].total}}</small></h2>
-    </div>
+    <section-header select-modal="selectModal" name="Sprays" type="sprays" totals="totals.sprays"></section-header>
     <div class="items flex-4">
       <div
         ng-repeat="item in ::data.items.sprays track by $index"
@@ -57,9 +53,7 @@
 
 <div class="col-md-4 col-padding">
   <div id="skins" class="section">
-    <div class="section-header">
-      <h2>Skins <small class="itemTotal">{{totals['skins'].selected}}/{{totals['skins'].total}}</small></h2>
-    </div>
+    <section-header select-modal="selectModal" name="Winter Wonderland 2016 Skins" type="skins" totals="totals.skins"></section-header>
     <div class="items flex-2">
       <div
         ng-repeat="item in ::data.items.skins track by $index"
@@ -79,9 +73,7 @@
     </div>
   </div>
   <div id="victoryposes" class="section">
-    <div class="section-header">
-      <h2>Victory Poses <small class="itemTotal">{{totals['poses'].selected}}/{{totals['poses'].total}}</small></h2>
-    </div>
+    <section-header select-modal="selectModal" name="Victory Poses" type="poses" totals="totals.poses"></section-header>
     <div class="items flex-2">
       <div
         ng-repeat="item in ::data.items.poses track by $index"
@@ -101,9 +93,7 @@
     </div>
   </div>
   <div id="emotes" class="section">
-    <div class="section-header">
-      <h2>Emotes <small class="itemTotal">{{totals['emotes'].selected}}/{{totals['emotes'].total}}</small></h2>
-    </div>
+    <section-header select-modal="selectModal" name="Emotes" type="emotes" totals="totals.emotes"></section-header>
     <div class="items flex-2">
       <div
         ng-repeat="item in ::data.items.emotes track by $index"
@@ -123,9 +113,7 @@
     </div>
   </div>
   <div id="intros" class="section">
-    <div class="section-header">
-      <h2>Highlight Intros <small class="itemTotal">{{totals['intros'].selected}}/{{totals['intros'].total}}</small></h2>
-    </div>
+    <section-header select-modal="selectModal" name="Highlight Intros" type="intros" totals="totals.intros"></section-header>
     <div class="items flex-2">
       <div
         ng-repeat="item in ::data.items.intros track by $index"
@@ -145,9 +133,7 @@
     </div>
   </div>
   <div id="icons" class="section">
-    <div class="section-header">
-      <h2>Player Icons <small class="itemTotal">{{totals['icons'].selected}}/{{totals['icons'].total}}</small></h2>
-    </div>
+    <section-header select-modal="selectModal" name="Player Icons" type="icons" totals="totals.icons"></section-header>
     <div class="items flex-2">
       <div
         ng-repeat="item in ::data.items.icons track by $index"

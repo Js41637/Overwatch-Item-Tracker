@@ -54,15 +54,20 @@ OWI.directive('fancyLoad', ["$timeout", function($timeout) {
   };
 }]);
 
-OWI.directive('eventItem', function() {
+OWI.directive('sectionHeader', function() {
   return {
     restrict: 'E',
+    transclude: true,
     replace: true,
-    templateUrl: './templates/event-item.html',
-    link: function($scope, $elm, $attr) {
-      $scope.type = $attr.type;
-      $scope.noHero = $attr.nohero;
-      $scope.noName = $attr.noname;
+    scope: {
+      name: '@',
+      type: '@',
+      totals: '=',
+      selectModal: '='
+    },
+    templateUrl: './templates/section-header.html',
+    link: function($scope) {
+      console.log($scope)
     }
   };
 });

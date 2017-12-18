@@ -1,0 +1,14 @@
+<div class="section-header">
+  <h2>{{name}} <small class="itemTotal">{{totals.selected}}/{{totals.total}}</small></h2>
+  <div class="options">
+    <div class="btn-group" uib-dropdown is-open="showOptionsDropdown">
+      <div class="btn" uib-dropdown-toggle uib-tooltip="Options" tooltip-append-to-body="true">
+        <span class="glyphicon glyphicon-cog"></span>
+      </div>
+      <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
+        <li><a ng-click="selectModal(type, 'select')">Select All</a></li>
+        <li><a ng-click="selectModal(type, 'unselect')">Unselect All</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

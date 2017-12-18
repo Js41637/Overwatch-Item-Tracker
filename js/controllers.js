@@ -340,7 +340,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
   };
 }]);
 
-OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService", "event", function($scope, $rootScope, Data, StorageService, CompatibilityService, CostAndTotalService, event) {
+OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService", "event", function($scope, $rootScope, $uibModal, Data, StorageService, CompatibilityService, CostAndTotalService, event) {
   $scope.checked = Data.checked;
   $scope.data = event;
   $scope.canPlayType = CompatibilityService.canPlayType;
@@ -362,6 +362,51 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
     $event.preventDefault();
     $scope.checked[skin.hero].skins[skin.id] = !$scope.checked[skin.hero].skins[skin.id];
     $scope.onSelect(skin, 'skins');
+  };
+
+  var resetCosts = function() {
+    var cost = CostAndTotalService.events[event.id].cost;
+    cost.prev = $scope.cost.remaining;
+    $scope.cost = cost;
+    $scope.totals = CostAndTotalService.events[event.id].totals;
+  };
+
+  $scope.selectModal = function(type, str) {
+    if ($scope.totals.overall.selected == 0 && str == 'unselect') return;
+    var modal = $uibModal.open({
+      templateUrl: './templates/modals/select.html',
+      controller: function($scope) {
+        $scope.message = ('Are you sure you want to ' + str + ' all ' + (type || 'items'));
+      }
+    });
+    modal.result.then(function(goahead) {
+      if (goahead) {
+        if (str == 'select') {
+          selectAll(false, type);
+        } else {
+          selectAll(true, type);
+        }
+      }
+    });
+  };
+
+  var selectAll = function(unselect, onlyType) {
+    if ($scope.totals.overall.selected == $scope.totals.overall.total && !unselect) {
+      return;
+    }
+    for (var type in event.items) {
+      if (onlyType && type !== onlyType) {
+        continue;
+      }
+
+      for (var item of event.items[type]) {
+        $scope.checked[item.hero || 'all'][type][item.id] = (unselect ? false : true);
+      }
+    }
+
+    StorageService.setData(Object.assign({}, Data.checked, $scope.checked));
+    CostAndTotalService.recalculate();
+    resetCosts();
   };
 }]);
 

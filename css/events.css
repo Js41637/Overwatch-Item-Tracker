@@ -6,6 +6,42 @@
   margin-top: 13px;
 }
 
+#event-container .section-header {
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#event-container .section-header .options {
+  opacity: 0;
+  transition: opacity 125ms;
+  z-index: 1;
+  margin-right: 5px;
+}
+
+#event-container .section:hover .section-header .options {
+  opacity: 0.9;
+}
+
+#event-container .section-header .options .glyphicon {
+  color: white;
+  font-size: 18px;
+  margin-top: -1px;
+}
+
+#event-container .section-header .options li a {
+  padding: 3px 15px;
+}
+
+#event-container .section-header .options .btn:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#event-container .section-header .options .btn {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
 #event-container h2 small:not(.itemTotal) {
   font-size: 0.7em;
   margin-left: 2px;
