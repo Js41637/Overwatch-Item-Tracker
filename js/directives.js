@@ -308,8 +308,8 @@ OWI.directive("particles", function() {
       particlesJS({ //eslint-disable-line
         "particles": {
           "number": {
-            "value": 55,
-            "density": { "enable": true, "value_area": 600 }
+            "value": 56,
+            "density": { "enable": true, "value_area": 631 }
           },
           "color": { "value": "#ffffff" },
           "shape": {
@@ -319,21 +319,21 @@ OWI.directive("particles", function() {
             "image": { "src": "", "width": 100, "height": 100 }
           },
           "opacity": {
-            "value": 0.5,
-            "random": false,
-            "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false }
+            "value": 0.6,
+            "random": true,
+            "anim": { "enable": false, "speed": 1, "opacity_min": 0.2, "sync": false }
           },
           "size": {
-            "value": 3,
+            "value": 4,
             "random": true,
             "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false }
           },
           "line_linked": { "enable": false, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
           "move": {
             "enable": true,
-            "speed": 4,
+            "speed": 2,
             "direction": "bottom",
-            "random": true,
+            "random": false,
             "straight": false,
             "out_mode": "out",
             "bounce": false,
