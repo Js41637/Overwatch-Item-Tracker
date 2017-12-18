@@ -1,43 +1,5 @@
 <div id="legendary-skins" class="section">
-  <div id="image-preview" ng-class="{ show: preview, fixed: isFixed }">
-    <div class="preview" ng-if="preview.media == 'image'" ng-class="{two: preview[ssURL]}">
-      <div class="card {{preview.type || ''}}" lazy-background="{{preview.url}}">
-        <div class="bg2"></div>
-        <div class="bg">
-          <div class="card-content">
-            <h4 ng-if="preview.type == 'icons'" class="card-heading">Player Icon</h4>
-            <h4 ng-if="preview.type != 'icons'" class="card-heading">{{preview.hero || 'All Heroes'}}</h4>
-            <p class="card-copy">{{preview.name}}</p>
-          </div>
-        </div>
-      </div>
-      <div class="card {{preview.type || ''}}" ng-if="preview[ssURL]" lazy-background="{{preview[ssURL]}}">
-        <div class="bg2"></div>
-        <div class="bg">
-          <div class="card-content">
-            <h4 class="card-heading">{{preview.hero}}</h4>
-            <p class="card-copy">{{ss}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="preview video" ng-if="preview.media == 'video'">
-      <div class="card {{preview.type || ''}}">
-        <div class="bg2"></div>
-        <video audiopls autoplay="true" autostart="true" loop="true" ng-src="{{preview.url}}"></video>
-        <div class="bg">
-          <div class="card-content">
-            <h4 class="card-heading">{{preview.hero || 'All Heroes'}}</h4>
-            <p class="card-copy">{{preview.name}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="preview audio" ng-if="audio">
-      <audio audiopls ng-src="{{audio.url}}" autoplay="true"></audio>
-    </div>
-  </div>
-  <div class="inner" ng-class="{ hide: preview }">
+  <div class="inner">
     <h2>Legendary Skins <small class="color-legendary">3000</small></h2>
     <div class="images">
       <div class="card" ng-click="selectLegendarySkin($event, skin)" ng-repeat="skin in ::data.items.skinsLegendary track by $index" lazy-background="{{::$ctrl.getImageUrl(skin.url)}}">
