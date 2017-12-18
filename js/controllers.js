@@ -259,11 +259,6 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     }
     return out;
   }
-
-  $rootScope.$on('selectAll', function() {
-    CostAndTotalService.recalculate();
-    resetCosts();
-  });
   
   vm.clearFilters = function() {
     vm.filters = {
@@ -345,8 +340,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
   };
 }]);
 
-OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService", "$window", "event", function($scope, $rootScope, Data, StorageService, CompatibilityService, CostAndTotalService, $window, event) {
-  $scope.preview = false;
+OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService", "event", function($scope, $rootScope, Data, StorageService, CompatibilityService, CostAndTotalService, event) {
   $scope.checked = Data.checked;
   $scope.data = event;
   $scope.canPlayType = CompatibilityService.canPlayType;
@@ -356,12 +350,6 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
 
     // Cost is on scope as it is a directive in the page and it inherits parent scope
     $scope.cost = data.events[event.id].cost;
-  });
-  
-
-  $rootScope.$on('selectAll', function() {
-    CostAndTotalService.recalculate();
-    $scope.cost = CostAndTotalService.events[event.id].cost;
   });
 
   $scope.onSelect = function(item, type, override) {
@@ -375,47 +363,9 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "DataService", "StorageSer
     $scope.checked[skin.hero].skins[skin.id] = !$scope.checked[skin.hero].skins[skin.id];
     $scope.onSelect(skin, 'skins');
   };
-
-  var showTimeout = undefined;
-  var hideTimeout = undefined;
-  $scope.showPreview = function(what, type) {
-    if (!what.url) return;
-    if (CompatibilityService.canPlayType(type) === 'false') return;
-    if (showTimeout) return;
-    var item = angular.copy(what);
-    clearTimeout(hideTimeout);
-    showTimeout = setTimeout(function () {
-      item.type = type;
-      item.media = (type == 'emotes' || type == 'intros') ? 'video' : type == 'voicelines' ? 'audio' : 'image';
-      if (StorageService.getSetting('hdVideos') && (type == 'emotes' || type == 'intros')) {
-        item.url = item.url.replace('.webm', '-hd.webm');
-      }
-      if (type == 'voicelines') {
-        $scope.audio = item;
-      } else {
-        $scope.preview = item;
-      }
-      $scope.$digest();
-    }, ($scope.preview || $scope.audio) ? 50 : 600);
-  };
-
-  $scope.hidePreview = function() {
-    clearTimeout(showTimeout);
-    showTimeout = undefined;
-    hideTimeout = setTimeout(function () {
-      $scope.preview = false;
-      $scope.audio = false;
-      $scope.$digest();
-    }, 150);
-  };
-
-  angular.element($window).bind("scroll", function() {
-    $scope.isFixed = $window.pageYOffset >= 200 ? true : false;
-    $scope.$apply();
-  });
 }]);
 
-OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalInstance", "StorageService", "DataService", "GoogleAPI", function($rootScope, $scope, $uibModal, $uibModalInstance, StorageService, DataService, GoogleAPI) {
+OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalInstance", "$state", "StorageService", "DataService", "GoogleAPI", function($rootScope, $scope, $uibModal, $uibModalInstance, $state, StorageService, DataService, GoogleAPI) {
   var vm = this;
   var settings = StorageService.settings;
   vm.particles = settings['particles'];
@@ -546,7 +496,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     }
 
     StorageService.setData(DataService.checked);
-    $rootScope.$emit('selectAll');
+    location.reload()
   };
 
   vm.toggleSync = function() {
