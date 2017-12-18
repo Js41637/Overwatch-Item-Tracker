@@ -48,12 +48,8 @@ body {
   padding: 0 8px;
 }
 
-.item h3 {
+.item h3, .item h3.common, .color-common {
   color: #fff;
-}
-
-.item h3.common, .color-common {
-  color: #fff !important;
 }
 
 .item h3.rare, .color-rare {

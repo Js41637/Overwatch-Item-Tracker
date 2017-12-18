@@ -684,7 +684,7 @@ body#WINTER_WONDERLAND:before {
   background: transparent;
 }
 
-#HALLOWEEN .section-header h2 {
+#HALLOWEEN .section-header h2, #HALLOWEEN .section-header .options {
   background-color: rgba(42, 44, 47, 0.9);
   text-shadow: 0px 0px 3px #4cb8ae;
   color: #fff;

@@ -5,7 +5,7 @@ body {
 }
 
 .item h3.common, .item h3, .items .item h3.common, .items .item h3, .color-common {
-  color: #5d5a5a !important;
+  color: #5d5a5a;
 }
 
 #header {
@@ -189,31 +189,6 @@ body {
 #legendary-skins [type="checkbox"]:checked+label:after {
   top: 10px;
   left: 9px;
-}
-
-#image-preview {
-  width: auto;
-  height: 400px;
-  top: 36px;
-  position: fixed;
-  z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.155s ease-in-out;
-  pointer-events: none;
-  will-change: auto;
-  left: 36px;
-  box-shadow: 0 0 50px rgba(0,0,0,0.4);
-}
-
-#image-preview.fixed {
-  padding: 0;
-  top: 36px;
-  height: 400px;
-}
-
-#image-preview .card {
-  transform: initial;
-  margin: 0;
 }
 
 #legendary-skins {
@@ -434,43 +409,37 @@ body {
   height: 380px;
 }
 
-#hero-container .item[event="SUMMER_GAMES"] + .tooltip .preview.img,
-#SUMMER_GAMES #image-preview .card .bg2 {
+#hero-container .item[event="SUMMER_GAMES"] + .tooltip .preview.img {
   background: url(resources/SUMMER_GAMES/icon-bg.png)no-repeat,url(resources/SUMMER_GAMES/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
 }
 
-#hero-container .item[event="HALLOWEEN"] + .tooltip .preview.img,
-#HALLOWEEN #image-preview .card .bg2 {
+#hero-container .item[event="HALLOWEEN"] + .tooltip .preview.img {
   background: url(resources/HALLOWEEN/icon-bg.png)no-repeat,url(resources/HALLOWEEN/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
 }
 
-#hero-container .item[event="WINTER_WONDERLAND"] + .tooltip .preview.img,
-#WINTER_WONDERLAND #image-preview .card .bg2 {
+#hero-container .item[event="WINTER_WONDERLAND"] + .tooltip .preview.img {
   background: url(resources/WINTER_WONDERLAND/icon-bg.png)no-repeat,url(resources/WINTER_WONDERLAND/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
 }
 
-#hero-container .item[event="LUNAR_NEW_YEAR"] + .tooltip .preview.img,
-#LUNAR_NEW_YEAR #image-preview .card .bg2 {
+#hero-container .item[event="LUNAR_NEW_YEAR"] + .tooltip .preview.img {
   background: url(resources/LUNAR_NEW_YEAR/icon-bg.png)no-repeat,url(resources/LUNAR_NEW_YEAR/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
 }
 
-#hero-container .item[event="UPRISING"] + .tooltip .preview.img,
-#UPRISING #image-preview .card .bg2 {
+#hero-container .item[event="UPRISING"] + .tooltip .preview.imgm {
   background: url(resources/UPRISING/icon-bg.png)no-repeat,url(resources/UPRISING/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
 }
 
-#hero-container .item[event="ANNIVERSARY"] + .tooltip .preview.img,
-#ANNIVERSARY #image-preview .card .bg2 {
+#hero-container .item[event="ANNIVERSARY"] + .tooltip .preview.img {
   background: url(resources/ANNIVERSARY/icon-bg.png)no-repeat,url(resources/ANNIVERSARY/preview-bg.png);
   background-position: top, center;
   background-size: contain, cover;
