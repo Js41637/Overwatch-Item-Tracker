@@ -87,7 +87,7 @@ const EVENT_ITEM_ORDER = {
     "icons": ['name'],
     "skins": [a => qualityOrder[a.quality], 'heroName', 'name']
   },
-  [EVENTS.ANNIVERSARY17]: {
+  [EVENTS.ANNIVERSARY]: {
     "icons": ['heroName', 'name']
   }
 };
@@ -96,7 +96,7 @@ const EVENT_ITEM_ORDER = {
 // is generated it links the preview to the preview stored under the event. This is because in most cases
 // heroes have their own item previews seperate from events but this is not always the case as I am lazy.
 const EVENT_PREVIEWS = {
-  [EVENTS.ANNIVERSARY17]: ['emotes'],
+  [EVENTS.ANNIVERSARY]: ['emotes'],
   [EVENTS.SUMMER]: ['emotes', 'intros'],
   [EVENTS.HALLOWEEN]: ['emotes', 'intros'],
   [EVENTS.WINTER]: ['emotes', 'intros']

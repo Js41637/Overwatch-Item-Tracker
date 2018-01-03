@@ -5,6 +5,7 @@
   "scripts": {
     "gen-data": "node ./helpers/dataMapper.js",
     "gen-missing-data": "node ./helpers/dataMapper.js missing",
+    "test-previews": "node ./helpers/scripts/preview-checker.js",
     "lint": "eslint -f node_modules/eslint-formatter-pretty --cache --max-warnings 100 js --ignore-pattern js/vendor/**"
   },
   "repository": {
