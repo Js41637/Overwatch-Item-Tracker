@@ -1,6 +1,5 @@
 const heroData = require('../data/items.json');
 const { forEach } = require('lodash');
-require('console.table');
 
 const prices = {
   undefined: 25,
@@ -13,10 +12,6 @@ const prices = {
 function isValidItem(item) {
   return !item.achievement && !item.standardItem && item.quality && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'));
 }
-
-console.table([{event: 'rooster', top: 'kek'}, {event: 'winter', top: 'kek'}]);
-
-return;
 
 var totalCounts = {};
 var totalCount = 0;

@@ -303,7 +303,7 @@ OWI.directive('lazyBackground', ["ImageLoader", "$compile", "$timeout", function
   };
 }]);
 
-OWI.directive("particles", function() {
+/* OWI.directive("particles", function() {
   return {
     restrict: 'E',
     scope: {},
@@ -364,4 +364,4 @@ OWI.directive("particles", function() {
       })
     }
   }
-})
+}) */
