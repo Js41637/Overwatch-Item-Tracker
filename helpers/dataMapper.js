@@ -160,7 +160,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
     // Check for specific item groups
     var group = undefined;
     for (let g in specialItems) {
-      if (specialItems[g][type] && specialItems[g][type].includes(item.id)) group = { group: group };
+      if (specialItems[g][type] && specialItems[g][type].includes(item.id)) group = { group: g };
     }
 
     newItems.push(Object.assign(item, { event, url }, isAchievement, isStandard, quality, group, isPachiItem, isCompItem, description));

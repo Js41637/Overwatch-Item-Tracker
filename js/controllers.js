@@ -109,6 +109,8 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
 OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService",  function($scope, $state, $timeout, $stateParams, $rootScope, $uibModal, Data, StorageService, CompatibilityService, CostAndTotalService) {
   var vm = this;
   vm.loaded = false;
+  vm.hasGroups = true
+  vm.hasEvents = true
   var hero;
 
   Data.waitForInitialization().then(function(data) {
@@ -124,6 +126,16 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     }, 0);
   });
 
+  var hasGroups = function() {
+    if (!vm.groups) return false;
+    return Object.keys(vm.groups).length;
+  };
+
+  var hasEvents = function() {
+    if (!vm.events) return false;
+    return Object.keys(vm.events).length;
+  };
+
   function init() {
     vm.filteredItems = hero.items;
     vm.canPlayType = CompatibilityService.canPlayType;
@@ -134,6 +146,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
       vm.events = data.heroes[hero.id].events;
       vm.groups = data.heroes[hero.id].groups;
       vm.totals = data.heroes[hero.id].totals;
+      vm.hasEvents = hasEvents()
+      vm.hasGroups = hasGroups()
 
       // Cost is on scope as it is a directive in the page and it inherits parent scope
       $scope.cost = CostAndTotalService.heroes && CostAndTotalService.heroes[hero.id] ? CostAndTotalService.heroes[hero.id].cost : 0;
@@ -165,16 +179,6 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
       default:
         return name;
     }
-  };
-
-  vm.hasGroups = function() {
-    if (!vm.groups) return false;
-    return Object.keys(vm.groups).length;
-  };
-
-  vm.hasEvents = function() {
-    if (!vm.events) return false;
-    return Object.keys(vm.events).length;
   };
 
   var resetCosts = function() {

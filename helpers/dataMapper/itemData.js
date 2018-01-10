@@ -21,8 +21,8 @@ const data = {
     '>_\\<': ">_<"
   },
   defaultItems: {
-    sprays: ['logo', 'you-are-not-prepared', 'da-de-los-muertos'],
-    icons: ['overwatch-light', 'overwatch-dark', 'you-are-not-prepared']
+    sprays: ['logo', 'you-are-not-prepared', 'da-de-los-muertos', 'boston-uprising-logo', 'dallas-fuel-logo', 'florida-mayhem-logo', 'houston-outlaws-logo', 'london-spitfire-logo', 'los-angeles-gladiators-logo', 'new-york-excelsior-logo', 'overwatch-league', 'philadelphia-fusion-logo', 'san-francisco-shock-logo', 'seoul-dynasty-logo', 'shanghai-dragons-logo'],
+    icons: ['overwatch-light', 'overwatch-dark', 'you-are-not-prepared', 'boston-uprising', 'dallas-fuel', 'florida-mayhem', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'new-york-excelsior', 'overwatch-league', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons'],
   },
   hiddenItems: { // Hidden all classItems
     sprays: [],
@@ -50,6 +50,10 @@ const data = {
     },
     "heroes of the storm": {
       icons: ['nexus']
+    },
+    "overwatch league": {
+      icons: ['boston-uprising', 'dallas-fuel', 'florida-mayhem', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'new-york-excelsior', 'overwatch-league', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons'],
+      sprays: ['boston-uprising-logo', 'dallas-fuel-logo', 'florida-mayhem-logo', 'houston-outlaws-logo', 'london-spitfire-logo', 'los-angeles-gladiators-logo', 'new-york-excelsior-logo', 'overwatch-league', 'philadelphia-fusion-logo', 'san-francisco-shock-logo', 'seoul-dynasty-logo', 'shanghai-dragons-logo']
     }
   },
   achievementSprays: [

@@ -171,11 +171,11 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         for (var type in items) {
           if (!service[TYPE][what.id].totals[type]) service[TYPE][what.id].totals[type] = { selected: 0, total: 0 };
           for (var item of items[type]) {
-            if (item.standardItem) continue;
             if (!isEvent) {
               if (item.event && !service[TYPE][what.id].events[item.event]) service[TYPE][what.id].events[item.event] = true;
-              if (item.group && !service[TYPE][what.id].groups[item.group]) service[TYPE][what.id].groups[item.group] = true;
+              if (item.group && !service[TYPE][what.id].groups[item.group] && !item.group.includes('_')) service[TYPE][what.id].groups[item.group] = true;
             }
+            if (item.standardItem) continue;
             var isSelected = DataService.checked[item.hero || what.id][TYPES[type] || type][item.id];
             service[TYPE][what.id].totals.overall.total++;
             service[TYPE][what.id].totals[type].total++;

@@ -17,7 +17,8 @@
         {
           "name": "16-Bit Hero",
           "id": "16bit-hero",
-          "url": "/heroes/all/icons/16bit-hero.png"
+          "url": "/heroes/all/icons/16bit-hero.png",
+          "group": "starcraft"
         },
         {
           "name": "2017",
@@ -170,7 +171,8 @@
         {
           "name": "Barbarian",
           "id": "barbarian",
-          "url": "/heroes/all/icons/barbarian.png"
+          "url": "/heroes/all/icons/barbarian.png",
+          "group": "diablo"
         },
         {
           "name": "Basketball",
@@ -228,6 +230,13 @@
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/icons/bokimari.png",
           "group": "pachi"
+        },
+        {
+          "name": "Boston Uprising",
+          "id": "boston-uprising",
+          "url": "/heroes/all/icons/boston-uprising.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Boxing",
@@ -379,7 +388,8 @@
         {
           "name": "Crusader",
           "id": "crusader",
-          "url": "/heroes/all/icons/crusader.png"
+          "url": "/heroes/all/icons/crusader.png",
+          "group": "diablo"
         },
         {
           "name": "Cultist",
@@ -420,15 +430,24 @@
           "hero": "dva"
         },
         {
+          "name": "Dallas Fuel",
+          "id": "dallas-fuel",
+          "url": "/heroes/all/icons/dallas-fuel.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Dark Lady",
           "id": "dark-lady",
-          "url": "/heroes/all/icons/dark-lady.png"
+          "url": "/heroes/all/icons/dark-lady.png",
+          "group": "world of warcraft"
         },
         {
           "name": "Dark Wanderer",
           "id": "dark-wanderer",
           "url": "/heroes/all/icons/dark-wanderer.png",
-          "achievement": "blizzard"
+          "achievement": "blizzard",
+          "group": "diablo"
         },
         {
           "name": "Deadeye",
@@ -444,7 +463,8 @@
         {
           "name": "Demon Hunter",
           "id": "demon-hunter",
-          "url": "/heroes/all/icons/demon-hunter.png"
+          "url": "/heroes/all/icons/demon-hunter.png",
+          "group": "diablo"
         },
         {
           "name": "Diving",
@@ -457,7 +477,8 @@
         {
           "name": "Dominion",
           "id": "dominion",
-          "url": "/heroes/all/icons/dominion.png"
+          "url": "/heroes/all/icons/dominion.png",
+          "group": "starcraft"
         },
         {
           "name": "Doomfist",
@@ -549,6 +570,13 @@
           "hero": "doomfist"
         },
         {
+          "name": "Florida Mayhem",
+          "id": "florida-mayhem",
+          "url": "/heroes/all/icons/florida-mayhem.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Football",
           "id": "lucio-football",
           "url": "/heroes/lucio/icons/lucio-football.png",
@@ -559,12 +587,14 @@
         {
           "name": "For the Alliance",
           "id": "for-the-alliance",
-          "url": "/heroes/all/icons/for-the-alliance.png"
+          "url": "/heroes/all/icons/for-the-alliance.png",
+          "group": "world of warcraft"
         },
         {
           "name": "For the Horde",
           "id": "for-the-horde",
-          "url": "/heroes/all/icons/for-the-horde.png"
+          "url": "/heroes/all/icons/for-the-horde.png",
+          "group": "world of warcraft"
         },
         {
           "name": "Forge",
@@ -619,7 +649,8 @@
         {
           "name": "Garrosh",
           "id": "garrosh",
-          "url": "/heroes/all/icons/garrosh.png"
+          "url": "/heroes/all/icons/garrosh.png",
+          "group": "world of warcraft"
         },
         {
           "name": "Gears",
@@ -841,12 +872,14 @@
         {
           "name": "Hearthstone",
           "id": "hearthstone",
-          "url": "/heroes/all/icons/hearthstone.png"
+          "url": "/heroes/all/icons/hearthstone.png",
+          "group": "hearthstone"
         },
         {
           "name": "Hierarch",
           "id": "hierarch",
-          "url": "/heroes/all/icons/hierarch.png"
+          "url": "/heroes/all/icons/hierarch.png",
+          "group": "starcraft"
         },
         {
           "name": "High Jump",
@@ -875,6 +908,13 @@
           "url": "/heroes/all/icons/hot-cocoa.png"
         },
         {
+          "name": "Houston Outlaws",
+          "id": "houston-outlaws",
+          "url": "/heroes/all/icons/houston-outlaws.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Ice Fisherman",
           "id": "roadhog-ice-fisherman",
           "url": "/heroes/roadhog/icons/roadhog-ice-fisherman.png",
@@ -899,7 +939,8 @@
         {
           "name": "Jaina",
           "id": "jaina",
-          "url": "/heroes/all/icons/jaina.png"
+          "url": "/heroes/all/icons/jaina.png",
+          "group": "world of warcraft"
         },
         {
           "name": "Japan",
@@ -926,7 +967,8 @@
         {
           "name": "Jim",
           "id": "jim",
-          "url": "/heroes/all/icons/jim.png"
+          "url": "/heroes/all/icons/jim.png",
+          "group": "starcraft"
         },
         {
           "name": "Jingle",
@@ -996,7 +1038,8 @@
         {
           "name": "Lich King",
           "id": "lich-king",
-          "url": "/heroes/all/icons/lich-king.png"
+          "url": "/heroes/all/icons/lich-king.png",
+          "group": "world of warcraft"
         },
         {
           "name": "Lieutenant",
@@ -1019,6 +1062,13 @@
           "hero": "reinhardt"
         },
         {
+          "name": "London Spitfire",
+          "id": "london-spitfire",
+          "url": "/heroes/all/icons/london-spitfire.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Loot Box",
           "id": "loot-box",
           "url": "/heroes/all/icons/loot-box.png"
@@ -1026,12 +1076,26 @@
         {
           "name": "Lord of Candy",
           "id": "lord-of-candy",
-          "url": "/heroes/all/icons/lord-of-candy.png"
+          "url": "/heroes/all/icons/lord-of-candy.png",
+          "group": "diablo"
         },
         {
           "name": "Lord of Terror",
           "id": "lord-of-terror",
-          "url": "/heroes/all/icons/lord-of-terror.png"
+          "url": "/heroes/all/icons/lord-of-terror.png",
+          "group": "diablo"
+        },
+        {
+          "name": "Los Angeles Gladiators",
+          "id": "los-angeles-gladiators",
+          "url": "/heroes/all/icons/los-angeles-gladiators.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Los Angeles Valiant",
+          "id": "los-angeles-valiant",
+          "url": "/heroes/all/icons/los-angeles-valiant.png"
         },
         {
           "name": "Los Muertos",
@@ -1132,7 +1196,8 @@
         {
           "name": "Monk",
           "id": "monk",
-          "url": "/heroes/all/icons/monk.png"
+          "url": "/heroes/all/icons/monk.png",
+          "group": "diablo"
         },
         {
           "name": "Monkey",
@@ -1160,9 +1225,17 @@
           "url": "/heroes/all/icons/new-year-cake.png"
         },
         {
+          "name": "New York Excelsior",
+          "id": "new-york-excelsior",
+          "url": "/heroes/all/icons/new-york-excelsior.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Nexus",
           "id": "nexus",
-          "url": "/heroes/all/icons/nexus.png"
+          "url": "/heroes/all/icons/nexus.png",
+          "group": "heroes of the storm"
         },
         {
           "name": "Nin",
@@ -1228,6 +1301,13 @@
           "id": "overwatch-dark",
           "url": "/heroes/all/icons/overwatch-dark.png",
           "standardItem": true
+        },
+        {
+          "name": "Overwatch League",
+          "id": "overwatch-league",
+          "url": "/heroes/all/icons/overwatch-league.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Overwatch Light",
@@ -1319,6 +1399,13 @@
           "url": "/heroes/all/icons/pharaoh.png"
         },
         {
+          "name": "Philadelphia Fusion",
+          "id": "philadelphia-fusion",
+          "url": "/heroes/all/icons/philadelphia-fusion.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Piggy",
           "id": "roadhog-piggy",
           "url": "/heroes/roadhog/icons/roadhog-piggy.png",
@@ -1347,7 +1434,8 @@
         {
           "name": "Protoss",
           "id": "protoss",
-          "url": "/heroes/all/icons/protoss.png"
+          "url": "/heroes/all/icons/protoss.png",
+          "group": "starcraft"
         },
         {
           "name": "Pulse Bomb",
@@ -1358,7 +1446,8 @@
         {
           "name": "Queen of Blades",
           "id": "queen-of-blades",
-          "url": "/heroes/all/icons/queen-of-blades.png"
+          "url": "/heroes/all/icons/queen-of-blades.png",
+          "group": "starcraft"
         },
         {
           "name": "Ramen",
@@ -1444,6 +1533,13 @@
           "name": "Sakura",
           "id": "sakura",
           "url": "/heroes/all/icons/sakura.png"
+        },
+        {
+          "name": "San Francisco Shock",
+          "id": "san-francisco-shock",
+          "url": "/heroes/all/icons/san-francisco-shock.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Sandy",
@@ -1619,6 +1715,20 @@
           "id": "seollal",
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/icons/seollal.png"
+        },
+        {
+          "name": "Seoul Dynasty",
+          "id": "seoul-dynasty",
+          "url": "/heroes/all/icons/seoul-dynasty.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Shanghai Dragons",
+          "id": "shanghai-dragons",
+          "url": "/heroes/all/icons/shanghai-dragons.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Shimada",
@@ -1818,7 +1928,8 @@
         {
           "name": "Terran",
           "id": "terran",
-          "url": "/heroes/all/icons/terran.png"
+          "url": "/heroes/all/icons/terran.png",
+          "group": "starcraft"
         },
         {
           "name": "The Doctor",
@@ -1953,7 +2064,8 @@
         {
           "name": "Varian",
           "id": "varian",
-          "url": "/heroes/all/icons/varian.png"
+          "url": "/heroes/all/icons/varian.png",
+          "group": "world of warcraft"
         },
         {
           "name": "Vaswanniversary",
@@ -2051,7 +2163,8 @@
         {
           "name": "Witch Doctor",
           "id": "witch-doctor",
-          "url": "/heroes/all/icons/witch-doctor.png"
+          "url": "/heroes/all/icons/witch-doctor.png",
+          "group": "diablo"
         },
         {
           "name": "Witch's Brew",
@@ -2068,7 +2181,8 @@
         {
           "name": "Wizard",
           "id": "wizard",
-          "url": "/heroes/all/icons/wizard.png"
+          "url": "/heroes/all/icons/wizard.png",
+          "group": "diablo"
         },
         {
           "name": "Wolf",
@@ -2115,7 +2229,8 @@
           "name": "You are not prepared",
           "id": "you-are-not-prepared",
           "url": "/heroes/all/icons/you-are-not-prepared.png",
-          "standardItem": true
+          "standardItem": true,
+          "group": "world of warcraft"
         },
         {
           "name": "Zarya",
@@ -2148,7 +2263,8 @@
         {
           "name": "Zerg",
           "id": "zerg",
-          "url": "/heroes/all/icons/zerg.png"
+          "url": "/heroes/all/icons/zerg.png",
+          "group": "starcraft"
         }
       ],
       "sprays": [
@@ -2163,6 +2279,7 @@
           "id": "barbarian",
           "url": "/heroes/all/sprays/barbarian.png",
           "achievement": "blizzard",
+          "group": "diablo",
           "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
@@ -2171,6 +2288,13 @@
           "url": "/heroes/all/sprays/beyond-the-moon.png",
           "achievement": true,
           "description": "Capture both objectives on a Capture map without dying in Quick or Competitive Play."
+        },
+        {
+          "name": "Boston Uprising Logo",
+          "id": "boston-uprising-logo",
+          "url": "/heroes/all/sprays/boston-uprising-logo.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Catcher",
@@ -2205,7 +2329,15 @@
           "id": "crusader",
           "url": "/heroes/all/sprays/crusader.png",
           "achievement": "blizzard",
+          "group": "diablo",
           "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
+        },
+        {
+          "name": "Dallas Fuel Logo",
+          "id": "dallas-fuel-logo",
+          "url": "/heroes/all/sprays/dallas-fuel-logo.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Dance",
@@ -2236,6 +2368,7 @@
           "id": "demon-hunter",
           "url": "/heroes/all/sprays/demon-hunter.png",
           "achievement": "blizzard",
+          "group": "diablo",
           "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
@@ -2243,6 +2376,13 @@
           "id": "da-de-los-muertos",
           "url": "/heroes/all/sprays/da-de-los-muertos.png",
           "standardItem": true
+        },
+        {
+          "name": "Florida Mayhem Logo",
+          "id": "florida-mayhem-logo",
+          "url": "/heroes/all/sprays/florida-mayhem-logo.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Forge Onward",
@@ -2268,6 +2408,7 @@
           "id": "gl-hf",
           "url": "/heroes/all/sprays/gl-hf.png",
           "achievement": true,
+          "group": "starcraft",
           "description": "Win a Quick or Competitive Play game on 12 different maps."
         },
         {
@@ -2275,6 +2416,13 @@
           "id": "goldshire-pictures",
           "url": "/heroes/all/sprays/goldshire-pictures.png",
           "quality": "common"
+        },
+        {
+          "name": "Houston Outlaws Logo",
+          "id": "houston-outlaws-logo",
+          "url": "/heroes/all/sprays/houston-outlaws-logo.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Jail",
@@ -2296,6 +2444,26 @@
           "standardItem": true
         },
         {
+          "name": "London Spitfire Logo",
+          "id": "london-spitfire-logo",
+          "url": "/heroes/all/sprays/london-spitfire-logo.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Los Angeles Gladiators Logo",
+          "id": "los-angeles-gladiators-logo",
+          "url": "/heroes/all/sprays/los-angeles-gladiators-logo.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Los Angeles Valiant Logo",
+          "id": "los-angeles-valiant-logo",
+          "url": "/heroes/all/sprays/los-angeles-valiant-logo.png",
+          "quality": "common"
+        },
+        {
           "name": "Lumérico",
           "id": "lumerico",
           "url": "/heroes/all/sprays/lumerico.png",
@@ -2313,7 +2481,15 @@
           "id": "monk",
           "url": "/heroes/all/sprays/monk.png",
           "achievement": "blizzard",
+          "group": "diablo",
           "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
+        },
+        {
+          "name": "New York Excelsior Logo",
+          "id": "new-york-excelsior-logo",
+          "url": "/heroes/all/sprays/new-york-excelsior-logo.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Numbani Statue",
@@ -2348,6 +2524,13 @@
           "quality": "common"
         },
         {
+          "name": "Overwatch League",
+          "id": "overwatch-league",
+          "url": "/heroes/all/sprays/overwatch-league.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Overwatch Title",
           "id": "overwatch-title",
           "url": "/heroes/all/sprays/overwatch-title.png",
@@ -2361,10 +2544,18 @@
           "group": "pachi"
         },
         {
+          "name": "Philadelphia Fusion Logo",
+          "id": "philadelphia-fusion-logo",
+          "url": "/heroes/all/sprays/philadelphia-fusion-logo.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Piñata",
           "id": "piata",
           "url": "/heroes/all/sprays/piata.png",
           "achievement": true,
+          "group": "diablo",
           "description": "Use health packs to heal 900 health in a single life in Quick or Competitive Play."
         },
         {
@@ -2406,6 +2597,13 @@
           "url": "/heroes/all/sprays/rise.png",
           "achievement": true,
           "description": "Reach level 25."
+        },
+        {
+          "name": "San Francisco Shock Logo",
+          "id": "san-francisco-shock-logo",
+          "url": "/heroes/all/sprays/san-francisco-shock-logo.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Sarcophagus",
@@ -2554,6 +2752,20 @@
           "description": "Unlocked by completing Season 8 placement matches"
         },
         {
+          "name": "Seoul Dynasty Logo",
+          "id": "seoul-dynasty-logo",
+          "url": "/heroes/all/sprays/seoul-dynasty-logo.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Shanghai Dragons Logo",
+          "id": "shanghai-dragons-logo",
+          "url": "/heroes/all/sprays/shanghai-dragons-logo.png",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Siege Mode",
           "id": "siege-mode",
           "url": "/heroes/all/sprays/siege-mode.png",
@@ -2623,6 +2835,7 @@
           "id": "witch-doctor",
           "url": "/heroes/all/sprays/witch-doctor.png",
           "achievement": "blizzard",
+          "group": "diablo",
           "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
@@ -2630,13 +2843,15 @@
           "id": "wizard",
           "url": "/heroes/all/sprays/wizard.png",
           "achievement": "blizzard",
+          "group": "diablo",
           "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "You are not prepared!",
           "id": "you-are-not-prepared",
           "url": "/heroes/all/sprays/you-are-not-prepared.png",
-          "standardItem": true
+          "standardItem": true,
+          "group": "world of warcraft"
         },
         {
           "name": "Bicycle Kick",
@@ -2663,7 +2878,7 @@
           "description": "Score 3 saves in a row in Lúcioball."
         },
         {
-          "name": "Summer Games ",
+          "name": "Summer Games",
           "id": "summer-games",
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/sprays/summer-games.png",
