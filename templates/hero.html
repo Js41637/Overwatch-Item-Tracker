@@ -45,7 +45,7 @@
             </div>
           </li>
           <li class="divider" ng-show="hero.hasEvents"></li>
-          <li ng-repeat="event in ::$ctrl.events track by $index" ng-hide="::!hero.events[event.id]">
+          <li ng-repeat="event in ::$ctrl.events track by $index" ng-hide="!hero.events[event.id]">
             <div>
               <label for="{{::event.id}}">{{::event.name}} <input id="{{::event.id}}" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.events[event.id]"></label>
             </div>
