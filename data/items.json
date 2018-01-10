@@ -1095,7 +1095,9 @@
         {
           "name": "Los Angeles Valiant",
           "id": "los-angeles-valiant",
-          "url": "/heroes/all/icons/los-angeles-valiant.png"
+          "url": "/heroes/all/icons/los-angeles-valiant.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Los Muertos",
@@ -2461,7 +2463,8 @@
           "name": "Los Angeles Valiant Logo",
           "id": "los-angeles-valiant-logo",
           "url": "/heroes/all/sprays/los-angeles-valiant-logo.png",
-          "quality": "common"
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Lumérico",
