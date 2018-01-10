@@ -9,7 +9,10 @@ const data = {
     "icons/na-zdorovie": "cheers1",
     "voicelines/genji-hoping-for-a-challenge": "genji-i-was-hoping-for-a-challenge",
     "sprays/mercy-heartbeat": "mercy-stethoscope",
-    "emotes/winston-twist": "winston-dance"
+    "emotes/winston-twist": "winston-dance",
+    "voicelines/doomfist-they-say-chivalry-is-dead": "doomfist-and-they-say-chivalry-is-dead",
+    "voicelines/mei-dont-you-love-surprises": "mei-dont-you-just-love-surprises",
+    "voicelines/symmetra-expecting-a-miracle": "symmetra-were-you-expecting-a-miracle"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"

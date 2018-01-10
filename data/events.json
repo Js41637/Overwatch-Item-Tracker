@@ -3919,19 +3919,19 @@
         {
           "heroName": "Doomfist",
           "hero": "doomfist",
-          "name": "And they say chivalry is dead",
-          "id": "doomfist-and-they-say-chivalry-is-dead",
+          "name": "Did you bring me a present?",
+          "id": "doomfist-did-you-bring-me-a-present",
           "quality": "common",
-          "url": "/heroes/doomfist/voicelines/doomfist-and-they-say-chivalry-is-dead.ogg",
+          "url": "/heroes/doomfist/voicelines/doomfist-did-you-bring-me-a-present.ogg",
           "isNew": true
         },
         {
           "heroName": "Doomfist",
           "hero": "doomfist",
-          "name": "Did you bring me a present?",
-          "id": "doomfist-did-you-bring-me-a-present",
+          "name": "They say chivalry is dead",
+          "id": "doomfist-and-they-say-chivalry-is-dead",
           "quality": "common",
-          "url": "/heroes/doomfist/voicelines/doomfist-did-you-bring-me-a-present.ogg",
+          "url": "/heroes/doomfist/voicelines/doomfist-and-they-say-chivalry-is-dead.ogg",
           "isNew": true
         },
         {
@@ -4027,7 +4027,7 @@
         {
           "heroName": "Mei",
           "hero": "mei",
-          "name": "Don't you just love surprises",
+          "name": "Don't you love surprises",
           "id": "mei-dont-you-just-love-surprises",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-dont-you-just-love-surprises.ogg",
@@ -4207,20 +4207,20 @@
         {
           "heroName": "Symmetra",
           "hero": "symmetra",
+          "name": "Expecting a miracle?",
+          "id": "symmetra-were-you-expecting-a-miracle",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-were-you-expecting-a-miracle.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
           "name": "I made you something",
           "id": "symmetra-i-made-you-something",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-i-made-you-something.ogg",
           "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "Were you expecting a miracle?",
-          "id": "symmetra-were-you-expecting-a-miracle",
-          "quality": "common",
-          "url": "/heroes/symmetra/voicelines/symmetra-were-you-expecting-a-miracle.ogg",
-          "isNew": true
         },
         {
           "heroName": "Torbjörn",
@@ -4342,6 +4342,16 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Toast",
+          "id": "bastion-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/bastion-toast.jpg",
+          "standardItem": true,
+          "isNew": true
+        },
+        {
           "heroName": "D.Va",
           "hero": "dva",
           "name": "Festive",
@@ -4412,6 +4422,16 @@
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/soldier-76-toast.jpg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Toast",
+          "id": "sombra-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/sombra-toast.jpg",
+          "standardItem": true,
+          "isNew": true
         },
         {
           "heroName": "Torbjörn",

@@ -4358,6 +4358,15 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Toast",
+          "id": "bastion-toast",
+          "quality": "rare",
+          "url": "/heroes/bastion/poses/bastion-toast.jpg",
+          "standardItem": true,
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Firework",
           "id": "bastion-firework",
           "quality": "rare",
@@ -5534,18 +5543,18 @@
           "isNew": true
         },
         {
-          "name": "And they say chivalry is dead",
-          "id": "doomfist-and-they-say-chivalry-is-dead",
-          "quality": "common",
-          "url": "/heroes/doomfist/voicelines/doomfist-and-they-say-chivalry-is-dead.ogg",
-          "event": "WINTER_WONDERLAND",
-          "isNew": true
-        },
-        {
           "name": "Did you bring me a present?",
           "id": "doomfist-did-you-bring-me-a-present",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-did-you-bring-me-a-present.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "They say chivalry is dead",
+          "id": "doomfist-and-they-say-chivalry-is-dead",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-and-they-say-chivalry-is-dead.ogg",
           "event": "WINTER_WONDERLAND",
           "isNew": true
         }
@@ -9617,7 +9626,7 @@
           "group": "HALLOWEEN_2016"
         },
         {
-          "name": "Don't you just love surprises",
+          "name": "Don't you love surprises",
           "id": "mei-dont-you-just-love-surprises",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-dont-you-just-love-surprises.ogg",
@@ -15637,6 +15646,15 @@
           "isNew": true
         },
         {
+          "name": "Toast",
+          "id": "sombra-toast",
+          "quality": "rare",
+          "url": "/heroes/sombra/poses/sombra-toast.jpg",
+          "standardItem": true,
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "Sparklers",
           "id": "sombra-sparklers",
           "quality": "rare",
@@ -16223,20 +16241,20 @@
           "isNew": true
         },
         {
+          "name": "Expecting a miracle?",
+          "id": "symmetra-were-you-expecting-a-miracle",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-were-you-expecting-a-miracle.ogg",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
           "name": "I made you something",
           "id": "symmetra-i-made-you-something",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-i-made-you-something.ogg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "name": "Were you expecting a miracle?",
-          "id": "symmetra-were-you-expecting-a-miracle",
-          "quality": "common",
-          "url": "/heroes/symmetra/voicelines/symmetra-were-you-expecting-a-miracle.ogg",
-          "event": "WINTER_WONDERLAND",
-          "isNew": true
         },
         {
           "name": "Good fortune",

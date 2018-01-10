@@ -26,7 +26,8 @@ const HERODATA = require('./dataMapper/HERODATA.js');
 const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp, idsBlizzardChanged } = require('./dataMapper/itemData.js');
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, NEW_EVENTS } = require('./dataMapper/EVENTDATA.js');
 const { EVENTITEMS } = require('./dataMapper/EVENTITEMS.js');
-const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder, getAchievementForItem } = require('./dataMapper/utils.js');
+const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder, getAchievementForItem, getOriginalItemsList } = require('./dataMapper/utils.js');
+const originalData = require('../data/master.json')
 
 var allClassData, missingAllClassData = {}, allClassDataKeys = {};
 var raw = { rawData: '', newRawData: '' };
@@ -220,9 +221,13 @@ for (var hero in data) {
       const out = { name, id, quality, url };
 
       // Check if item has a description
-      const split = item.split('\n');
-      if (split[1]) {
-        out.description = split[1].trim();
+      const descStr = (item.split('\n')[1] || '').trim();
+      if (descStr.length !== 0) {
+        if (descStr === 'IS_STANDARD') {
+          out.standardItem = true
+        } else {
+          out.description = descStr;
+        }
       }
 
       switch (group) {
@@ -460,6 +465,18 @@ heroes["all"] = Object.assign({
 updates = sortObject(updates, true);
 heroes = sortObject(heroes);
 
+// Go through everything and check old ids vs new ids to detect changes
+const originalItemsMapping = getOriginalItemsList(originalData)
+for (let hero in heroes) {
+  for (let type in heroes[hero].items) {
+    for (let item of heroes[hero].items[type]) {
+      if (!originalItemsMapping[hero][type].includes(item.id)) {
+        console.warn(`Changed/New item detected - [${hero}/${type}] ${item.id}`)
+      }
+    }
+  }
+}
+
 // go through all hero items and sort items as they are sorted ingame
 console.info('Sorting hero items');
 forEach(heroes, hero => forEach(hero.items, (items, type) => {
@@ -475,7 +492,7 @@ forEach(heroes, hero => forEach(hero.items, (items, type) => {
     return;
   }
   hero.items[type] = sortBy(items, [
-    'standardItem', // Standard items first
+    (a => a.standardItem && a.event ? 1 : a.standardItem ? 0 : 1), // Standard items first
     (a => qualityOrder[a.quality]), // sort by quality. rare, epic, legendary
     (c => c.achievement ? 1 : 0), // achievement items (origins edition/blizzcon) go at the bottom
     (b => EVENTORDER[EVENTORDER[b.group] ? b.group : b.event]), // event items go below normal items

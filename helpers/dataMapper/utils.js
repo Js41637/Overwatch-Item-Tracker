@@ -121,4 +121,20 @@ const getAchievementForItem = itemID => {
   return match.description;
 };
 
-module.exports = { getCleanID, getItemType, getPreviewURL, sortObject, stupidNames, qualityOrder, getAchievementForItem };
+const getOriginalItemsList = data => {
+  const out = {}
+
+  for (let hero in data.heroes) {
+    out[hero] = {} 
+    for (let type in data.heroes[hero].items) {
+      out[hero][type] = []
+      for (let item of data.heroes[hero].items[type]) {
+        out[hero][type].push(item.id)
+      }
+    }
+  }
+
+  return out
+}
+
+module.exports = { getCleanID, getItemType, getPreviewURL, sortObject, stupidNames, qualityOrder, getAchievementForItem, getOriginalItemsList };
