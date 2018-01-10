@@ -492,11 +492,12 @@ forEach(heroes, hero => forEach(hero.items, (items, type) => {
     return;
   }
   hero.items[type] = sortBy(items, [
-    (a => a.standardItem && a.event ? 1 : a.standardItem ? 0 : 1), // Standard items first
-    (a => qualityOrder[a.quality]), // sort by quality. rare, epic, legendary
-    (c => c.achievement ? 1 : 0), // achievement items (origins edition/blizzcon) go at the bottom
-    (b => EVENTORDER[EVENTORDER[b.group] ? b.group : b.event]), // event items go below normal items
-    (d => d.name.toLowerCase()) // everything in their respective groups is sorted by name
+    (a => a.standardItem && a.event ? 1 : a.standardItem ? 0 : 1), // Standard items at top (if they're not in an event)
+    (b => qualityOrder[b.quality]), // sort by quality. rare, epic, legendary
+    (c => !c.achievement && !c.event ? 0 : 1), // non achievement/event items on top
+    (d => d.achievement ? 0 : 1), // achievement items above event items
+    (e => EVENTORDER[EVENTORDER[e.group] ? e.group : e.event]), // sort events by event order
+    (f => f.name.toLowerCase()) // everything in their respective groups is sorted by name
   ]);
 }));
 

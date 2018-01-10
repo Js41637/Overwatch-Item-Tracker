@@ -3596,6 +3596,22 @@
           "url": "/heroes/ana/sprays/ana-zzz.png"
         },
         {
+          "name": "Cute",
+          "id": "ana-cute",
+          "quality": "common",
+          "url": "/heroes/ana/sprays/ana-cute.png",
+          "achievement": true,
+          "description": "Get 4 kills or assists with a single use of Ana's Nano Boost in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "ana-pixel",
+          "quality": "common",
+          "url": "/heroes/ana/sprays/ana-pixel.png",
+          "achievement": true,
+          "description": "Interrupt an enemy ultimate ability with Ana's Sleep Dart in Quick or Competitive Play."
+        },
+        {
           "name": "Shooting",
           "id": "ana-shooting",
           "quality": "common",
@@ -3658,22 +3674,6 @@
           "url": "/heroes/ana/sprays/ana-ace-of-hearts.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "ana-cute",
-          "quality": "common",
-          "url": "/heroes/ana/sprays/ana-cute.png",
-          "achievement": true,
-          "description": "Get 4 kills or assists with a single use of Ana's Nano Boost in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "ana-pixel",
-          "quality": "common",
-          "url": "/heroes/ana/sprays/ana-pixel.png",
-          "achievement": true,
-          "description": "Interrupt an enemy ultimate ability with Ana's Sleep Dart in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -3949,6 +3949,13 @@
           "description": "During the Omnic Crisis, Bastion units fought against humans in battles around the world."
         },
         {
+          "name": "BlizzCon 2016",
+          "id": "bastion-blizzcon-2016",
+          "quality": "epic",
+          "url": "/heroes/bastion/skins/bastion-blizzcon-2016.jpg",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Tombstone",
           "id": "bastion-tombstone",
           "quality": "epic",
@@ -3972,13 +3979,6 @@
           "description": "Bastion units were reengineered and upgraded by Null Sector and deployed during the King's Row Uprising.",
           "event": "UPRISING",
           "group": "UPRISING_2017"
-        },
-        {
-          "name": "BlizzCon 2016",
-          "id": "bastion-blizzcon-2016",
-          "quality": "epic",
-          "url": "/heroes/bastion/skins/bastion-blizzcon-2016.jpg",
-          "achievement": "blizzard"
         },
         {
           "name": "Antique",
@@ -4005,6 +4005,14 @@
           "url": "/heroes/bastion/skins/bastion-woodbot.jpg"
         },
         {
+          "name": "Overgrown",
+          "id": "bastion-overgrown",
+          "quality": "legendary",
+          "url": "/heroes/bastion/skins/bastion-overgrown.jpg",
+          "description": "Damaged in one of the battles of the Omnic Crisis, this lone Bastion unit was reactivated in the Black Forest near Eichenwalde years later.",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Avalanche",
           "id": "bastion-avalanche",
           "quality": "legendary",
@@ -4019,14 +4027,6 @@
           "url": "/heroes/bastion/skins/bastion-dune-buggy.jpg",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Overgrown",
-          "id": "bastion-overgrown",
-          "quality": "legendary",
-          "url": "/heroes/bastion/skins/bastion-overgrown.jpg",
-          "description": "Damaged in one of the battles of the Omnic Crisis, this lone Bastion unit was reactivated in the Black Forest near Eichenwalde years later.",
-          "achievement": "blizzard"
         }
       ],
       "emotes": [
@@ -4295,6 +4295,22 @@
           "url": "/heroes/bastion/sprays/bastion-wood-and-stone.png"
         },
         {
+          "name": "Cute",
+          "id": "bastion-cute",
+          "quality": "common",
+          "url": "/heroes/bastion/sprays/bastion-cute.png",
+          "achievement": true,
+          "description": "Kill 4 enemies with a single use of Bastion's Configuration: Tank in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "bastion-pixel",
+          "quality": "common",
+          "url": "/heroes/bastion/sprays/bastion-pixel.png",
+          "achievement": true,
+          "description": "Kill 2 enemies in each of Bastion's configurations without dying in Quick or Competitive Play."
+        },
+        {
           "name": "Boxing",
           "id": "bastion-boxing",
           "quality": "common",
@@ -4357,22 +4373,6 @@
           "url": "/heroes/bastion/sprays/bastion-ten-of-clubs.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "bastion-cute",
-          "quality": "common",
-          "url": "/heroes/bastion/sprays/bastion-cute.png",
-          "achievement": true,
-          "description": "Kill 4 enemies with a single use of Bastion's Configuration: Tank in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "bastion-pixel",
-          "quality": "common",
-          "url": "/heroes/bastion/sprays/bastion-pixel.png",
-          "achievement": true,
-          "description": "Kill 2 enemies in each of Bastion's configurations without dying in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -5000,6 +5000,22 @@
           "url": "/heroes/dva/sprays/dva-watching.png"
         },
         {
+          "name": "Cute",
+          "id": "dva-cute",
+          "quality": "common",
+          "url": "/heroes/dva/sprays/dva-cute.png",
+          "achievement": true,
+          "description": "Kill 4 enemies with a single use of D.va's Self Destruct in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "dva-pixel",
+          "quality": "common",
+          "url": "/heroes/dva/sprays/dva-pixel.png",
+          "achievement": true,
+          "description": "Prevent 1500 damage with a single use of D.va's Defense Matrix in Quick or Competitive Play."
+        },
+        {
           "name": "Cycling",
           "id": "dva-cycling",
           "quality": "common",
@@ -5062,22 +5078,6 @@
           "url": "/heroes/dva/sprays/dva-ten-of-hearts.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "dva-cute",
-          "quality": "common",
-          "url": "/heroes/dva/sprays/dva-cute.png",
-          "achievement": true,
-          "description": "Kill 4 enemies with a single use of D.va's Self Destruct in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "dva-pixel",
-          "quality": "common",
-          "url": "/heroes/dva/sprays/dva-pixel.png",
-          "achievement": true,
-          "description": "Prevent 1500 damage with a single use of D.va's Defense Matrix in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -5612,6 +5612,22 @@
           "url": "/heroes/doomfist/sprays/doomfist-wrestle.png"
         },
         {
+          "name": "Cute",
+          "id": "doomfist-cute",
+          "quality": "common",
+          "url": "/heroes/doomfist/sprays/doomfist-cute.png",
+          "achievement": true,
+          "description": "Hit 6 enemies with a single use of Doomfist's Meteor Strike in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "doomfist-pixel",
+          "quality": "common",
+          "url": "/heroes/doomfist/sprays/doomfist-pixel.png",
+          "achievement": true,
+          "description": "Get a killing blow with Doomfist's full-power Seismic Slam in Quick or Competitive Play."
+        },
+        {
           "name": "Shot Put",
           "id": "doomfist-shot-put",
           "quality": "common",
@@ -5642,22 +5658,6 @@
           "url": "/heroes/doomfist/sprays/doomfist-snow-punch.png",
           "event": "WINTER_WONDERLAND",
           "isNew": true
-        },
-        {
-          "name": "Cute",
-          "id": "doomfist-cute",
-          "quality": "common",
-          "url": "/heroes/doomfist/sprays/doomfist-cute.png",
-          "achievement": true,
-          "description": "Hit 6 enemies with a single use of Doomfist's Meteor Strike in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "doomfist-pixel",
-          "quality": "common",
-          "url": "/heroes/doomfist/sprays/doomfist-pixel.png",
-          "achievement": true,
-          "description": "Get a killing blow with Doomfist's full-power Seismic Slam in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -6205,6 +6205,22 @@
           "url": "/heroes/genji/sprays/genji-warrior.png"
         },
         {
+          "name": "Cute",
+          "id": "genji-cute",
+          "quality": "common",
+          "url": "/heroes/genji/sprays/genji-cute.png",
+          "achievement": true,
+          "description": "Kill 4 enemies with a single use of Genji's Dragonblade in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "genji-pixel",
+          "quality": "common",
+          "url": "/heroes/genji/sprays/genji-pixel.png",
+          "achievement": true,
+          "description": "Kill 2 enemies with a single use of Genji's Deflection in Quick or Competitive Play."
+        },
+        {
           "name": "Fencing",
           "id": "genji-fencing",
           "quality": "common",
@@ -6267,22 +6283,6 @@
           "url": "/heroes/genji/sprays/genji-jack-of-clubs.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "genji-cute",
-          "quality": "common",
-          "url": "/heroes/genji/sprays/genji-cute.png",
-          "achievement": true,
-          "description": "Kill 4 enemies with a single use of Genji's Dragonblade in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "genji-pixel",
-          "quality": "common",
-          "url": "/heroes/genji/sprays/genji-pixel.png",
-          "achievement": true,
-          "description": "Kill 2 enemies with a single use of Genji's Deflection in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -6881,6 +6881,22 @@
           "url": "/heroes/hanzo/sprays/hanzo-yellow.png"
         },
         {
+          "name": "Cute",
+          "id": "hanzo-cute",
+          "quality": "common",
+          "url": "/heroes/hanzo/sprays/hanzo-cute.png",
+          "achievement": true,
+          "description": "Kill 4 enemies with one of Hanzo's Spirit Dragons in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "hanzo-pixel",
+          "quality": "common",
+          "url": "/heroes/hanzo/sprays/hanzo-pixel.png",
+          "achievement": true,
+          "description": "Get 2 killing blows with a single use of Hanzo's Scatter Arrow in Quick or Competitive Play."
+        },
+        {
           "name": "Archery",
           "id": "hanzo-archery",
           "quality": "common",
@@ -6943,22 +6959,6 @@
           "url": "/heroes/hanzo/sprays/hanzo-king-of-diamonds.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "hanzo-cute",
-          "quality": "common",
-          "url": "/heroes/hanzo/sprays/hanzo-cute.png",
-          "achievement": true,
-          "description": "Kill 4 enemies with one of Hanzo's Spirit Dragons in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "hanzo-pixel",
-          "quality": "common",
-          "url": "/heroes/hanzo/sprays/hanzo-pixel.png",
-          "achievement": true,
-          "description": "Get 2 killing blows with a single use of Hanzo's Scatter Arrow in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -7577,6 +7577,22 @@
           "url": "/heroes/junkrat/sprays/junkrat-wanted.png"
         },
         {
+          "name": "Cute",
+          "id": "junkrat-cute",
+          "quality": "common",
+          "url": "/heroes/junkrat/sprays/junkrat-cute.png",
+          "achievement": true,
+          "description": "Kill 4 enemies with a single use of Junkrat's RIP-Tire in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "junkrat-pixel",
+          "quality": "common",
+          "url": "/heroes/junkrat/sprays/junkrat-pixel.png",
+          "achievement": true,
+          "description": "Knock an enemy into your Steel Trap using Junkrat's Concussion Mine in Quick or Competitive Play."
+        },
+        {
           "name": "Tennis",
           "id": "junkrat-tennis",
           "quality": "common",
@@ -7639,22 +7655,6 @@
           "url": "/heroes/junkrat/sprays/junkrat-joker.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "junkrat-cute",
-          "quality": "common",
-          "url": "/heroes/junkrat/sprays/junkrat-cute.png",
-          "achievement": true,
-          "description": "Kill 4 enemies with a single use of Junkrat's RIP-Tire in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "junkrat-pixel",
-          "quality": "common",
-          "url": "/heroes/junkrat/sprays/junkrat-pixel.png",
-          "achievement": true,
-          "description": "Knock an enemy into your Steel Trap using Junkrat's Concussion Mine in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -8264,6 +8264,22 @@
           "url": "/heroes/lucio/sprays/lucio-wave.png"
         },
         {
+          "name": "Cute",
+          "id": "lucio-cute",
+          "quality": "common",
+          "url": "/heroes/lucio/sprays/lucio-cute.png",
+          "achievement": true,
+          "description": "Block 1000 damage with a single use of Lúcio's Sound Barrier in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "lucio-pixel",
+          "quality": "common",
+          "url": "/heroes/lucio/sprays/lucio-pixel.png",
+          "achievement": true,
+          "description": "Get 3 killing blows while wall riding as Lúcio without dying in Quick or Competitive Play."
+        },
+        {
           "name": "Football",
           "id": "lucio-football",
           "quality": "common",
@@ -8326,22 +8342,6 @@
           "url": "/heroes/lucio/sprays/lucio-jack-of-diamonds.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "lucio-cute",
-          "quality": "common",
-          "url": "/heroes/lucio/sprays/lucio-cute.png",
-          "achievement": true,
-          "description": "Block 1000 damage with a single use of Lúcio's Sound Barrier in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "lucio-pixel",
-          "quality": "common",
-          "url": "/heroes/lucio/sprays/lucio-pixel.png",
-          "achievement": true,
-          "description": "Get 3 killing blows while wall riding as Lúcio without dying in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -8955,6 +8955,22 @@
           "url": "/heroes/mccree/sprays/mccree-your-face-here.png"
         },
         {
+          "name": "Cute",
+          "id": "mccree-cute",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-cute.png",
+          "achievement": true,
+          "description": "Get 4 killing blows with a single use of McCree's Deadeye in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "mccree-pixel",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-pixel.png",
+          "achievement": true,
+          "description": "Interrupt an enemy ultimate ability with McCree's Flashbang in Quick or Competitive Play."
+        },
+        {
           "name": "Equestrian",
           "id": "mccree-equestrian",
           "quality": "common",
@@ -9017,22 +9033,6 @@
           "url": "/heroes/mccree/sprays/mccree-jack-of-spades.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "mccree-cute",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-cute.png",
-          "achievement": true,
-          "description": "Get 4 killing blows with a single use of McCree's Deadeye in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "mccree-pixel",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-pixel.png",
-          "achievement": true,
-          "description": "Interrupt an enemy ultimate ability with McCree's Flashbang in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -9663,6 +9663,22 @@
           "url": "/heroes/mei/sprays/mei-walled.png"
         },
         {
+          "name": "Cute",
+          "id": "mei-cute",
+          "quality": "common",
+          "url": "/heroes/mei/sprays/mei-cute.png",
+          "achievement": true,
+          "description": "Freeze 4 enemies at once with Mei in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "mei-pixel",
+          "quality": "common",
+          "url": "/heroes/mei/sprays/mei-pixel.png",
+          "achievement": true,
+          "description": "Block 1200 damage with a single use of Mei's Ice Wall in Quick or Competitive Play."
+        },
+        {
           "name": "Table Tennis",
           "id": "mei-table-tennis",
           "quality": "common",
@@ -9725,22 +9741,6 @@
           "url": "/heroes/mei/sprays/mei-ten-of-diamonds.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "mei-cute",
-          "quality": "common",
-          "url": "/heroes/mei/sprays/mei-cute.png",
-          "achievement": true,
-          "description": "Freeze 4 enemies at once with Mei in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "mei-pixel",
-          "quality": "common",
-          "url": "/heroes/mei/sprays/mei-pixel.png",
-          "achievement": true,
-          "description": "Block 1200 damage with a single use of Mei's Ice Wall in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -10362,6 +10362,22 @@
           "url": "/heroes/mercy/sprays/mercy-ziegler.png"
         },
         {
+          "name": "Cute",
+          "id": "mercy-cute",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-cute.png",
+          "achievement": true,
+          "description": "Resurrect 4 players at once with Mercy in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "mercy-pixel",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-pixel.png",
+          "achievement": true,
+          "description": "Restore 200 health for 5 players without dying as Mercy in Quick or Competitive Play."
+        },
+        {
           "name": "Badminton",
           "id": "mercy-badminton",
           "quality": "common",
@@ -10424,22 +10440,6 @@
           "url": "/heroes/mercy/sprays/mercy-queen-of-clubs.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "mercy-cute",
-          "quality": "common",
-          "url": "/heroes/mercy/sprays/mercy-cute.png",
-          "achievement": true,
-          "description": "Resurrect 4 players at once with Mercy in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "mercy-pixel",
-          "quality": "common",
-          "url": "/heroes/mercy/sprays/mercy-pixel.png",
-          "achievement": true,
-          "description": "Restore 200 health for 5 players without dying as Mercy in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -10974,22 +10974,6 @@
           "url": "/heroes/moira/sprays/moira-test-murloc.png"
         },
         {
-          "name": "Chimney",
-          "id": "moira-chimney",
-          "quality": "common",
-          "url": "/heroes/moira/sprays/moira-chimney.png",
-          "event": "WINTER_WONDERLAND",
-          "isNew": true
-        },
-        {
-          "name": "Ornament",
-          "id": "moira-ornament",
-          "quality": "common",
-          "url": "/heroes/moira/sprays/moira-ornament.png",
-          "event": "WINTER_WONDERLAND",
-          "isNew": true
-        },
-        {
           "name": "Cute",
           "id": "moira-cute",
           "quality": "common",
@@ -11004,6 +10988,22 @@
           "url": "/heroes/moira/sprays/moira-pixel.png",
           "achievement": true,
           "description": "Fully deplete both types of Moira's Biotic Orb without dying in Quick or Competitive Play."
+        },
+        {
+          "name": "Chimney",
+          "id": "moira-chimney",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-chimney.png",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "Ornament",
+          "id": "moira-ornament",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-ornament.png",
+          "event": "WINTER_WONDERLAND",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -11482,6 +11482,22 @@
           "url": "/heroes/orisa/sprays/orisa-xing.png"
         },
         {
+          "name": "Cute",
+          "id": "orisa-cute",
+          "quality": "common",
+          "url": "/heroes/orisa/sprays/orisa-cute.png",
+          "achievement": true,
+          "description": "Amplify 900 damage with a single use of Orisa's Supercharger in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "orisa-pixel",
+          "quality": "common",
+          "url": "/heroes/orisa/sprays/orisa-pixel.png",
+          "achievement": true,
+          "description": "Pull enemies into 1000 damage with a single use of Orisa's Halt! in Quick or Competitive Play."
+        },
+        {
           "name": "Javelin",
           "id": "orisa-javelin",
           "quality": "common",
@@ -11528,22 +11544,6 @@
           "url": "/heroes/orisa/sprays/orisa-nine-of-spades.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "orisa-cute",
-          "quality": "common",
-          "url": "/heroes/orisa/sprays/orisa-cute.png",
-          "achievement": true,
-          "description": "Amplify 900 damage with a single use of Orisa's Supercharger in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "orisa-pixel",
-          "quality": "common",
-          "url": "/heroes/orisa/sprays/orisa-pixel.png",
-          "achievement": true,
-          "description": "Pull enemies into 1000 damage with a single use of Orisa's Halt! in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -11835,20 +11835,20 @@
           "url": "/heroes/pharah/skins/pharah-thunderbird.jpg"
         },
         {
-          "name": "Bedouin",
-          "id": "pharah-bedouin",
-          "quality": "legendary",
-          "url": "/heroes/pharah/skins/pharah-bedouin.jpg",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2017"
-        },
-        {
           "name": "Security Chief",
           "id": "pharah-security-chief",
           "quality": "legendary",
           "url": "/heroes/pharah/skins/pharah-security-chief.jpg",
           "description": "Following a sterling career in the Egyptian armed forces, Pharah joined Helix Security International as one of their chief officers.",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Bedouin",
+          "id": "pharah-bedouin",
+          "quality": "legendary",
+          "url": "/heroes/pharah/skins/pharah-bedouin.jpg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2017"
         }
       ],
       "emotes": [
@@ -12117,6 +12117,22 @@
           "url": "/heroes/pharah/sprays/pharah-wrist-launcher.png"
         },
         {
+          "name": "Cute",
+          "id": "pharah-cute",
+          "quality": "common",
+          "url": "/heroes/pharah/sprays/pharah-cute.png",
+          "achievement": true,
+          "description": "Kill 4 enemies in a row without touching the ground as Pharah in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "pharah-pixel",
+          "quality": "common",
+          "url": "/heroes/pharah/sprays/pharah-pixel.png",
+          "achievement": true,
+          "description": "Knock an enemy to their death using Pharah's Concussive Blast in Quick or Competitive Play."
+        },
+        {
           "name": "Basketball",
           "id": "pharah-basketball",
           "quality": "common",
@@ -12179,22 +12195,6 @@
           "url": "/heroes/pharah/sprays/pharah-queen-of-diamonds.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "pharah-cute",
-          "quality": "common",
-          "url": "/heroes/pharah/sprays/pharah-cute.png",
-          "achievement": true,
-          "description": "Kill 4 enemies in a row without touching the ground as Pharah in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "pharah-pixel",
-          "quality": "common",
-          "url": "/heroes/pharah/sprays/pharah-pixel.png",
-          "achievement": true,
-          "description": "Knock an enemy to their death using Pharah's Concussive Blast in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -12502,6 +12502,14 @@
           "url": "/heroes/reaper/skins/reaper-plague-doctor.jpg"
         },
         {
+          "name": "Blackwatch Reyes",
+          "id": "reaper-blackwatch-reyes",
+          "quality": "legendary",
+          "url": "/heroes/reaper/skins/reaper-blackwatch-reyes.jpg",
+          "description": "Gabriel Reyes was the leader of the original Overwatch strike team during the Omnic Crisis, and later commanded Blackwatch, the organization's covert ops division.",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Biker",
           "id": "reaper-biker",
           "quality": "legendary",
@@ -12525,14 +12533,6 @@
           "description": "In the tale of Dr. Junkenstein, the Reaper was a servant to the Witch of the Wilds, bound to serve her for some unknown reason.",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
-        },
-        {
-          "name": "Blackwatch Reyes",
-          "id": "reaper-blackwatch-reyes",
-          "quality": "legendary",
-          "url": "/heroes/reaper/skins/reaper-blackwatch-reyes.jpg",
-          "description": "Gabriel Reyes was the leader of the original Overwatch strike team during the Omnic Crisis, and later commanded Blackwatch, the organization's covert ops division.",
-          "achievement": "blizzard"
         }
       ],
       "emotes": [
@@ -12821,6 +12821,22 @@
           "url": "/heroes/reaper/sprays/reaper-time-to-kill.png"
         },
         {
+          "name": "Cute",
+          "id": "reaper-cute",
+          "quality": "common",
+          "url": "/heroes/reaper/sprays/reaper-cute.png",
+          "achievement": true,
+          "description": "Kill 4 enemies with a single use of Reaper's Death Blossom in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "reaper-pixel",
+          "quality": "common",
+          "url": "/heroes/reaper/sprays/reaper-pixel.png",
+          "achievement": true,
+          "description": "Get 3 solo kills with a single clip of Reaper's shotguns in Quick or Competitive Play."
+        },
+        {
           "name": "BMX",
           "id": "reaper-bmx",
           "quality": "common",
@@ -12883,22 +12899,6 @@
           "url": "/heroes/reaper/sprays/reaper-ace-of-clubs.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "reaper-cute",
-          "quality": "common",
-          "url": "/heroes/reaper/sprays/reaper-cute.png",
-          "achievement": true,
-          "description": "Kill 4 enemies with a single use of Reaper's Death Blossom in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "reaper-pixel",
-          "quality": "common",
-          "url": "/heroes/reaper/sprays/reaper-pixel.png",
-          "achievement": true,
-          "description": "Get 3 solo kills with a single clip of Reaper's shotguns in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -13517,6 +13517,22 @@
           "url": "/heroes/reinhardt/sprays/reinhardt-wrestle.png"
         },
         {
+          "name": "Cute",
+          "id": "reinhardt-cute",
+          "quality": "common",
+          "url": "/heroes/reinhardt/sprays/reinhardt-cute.png",
+          "achievement": true,
+          "description": "Land Reinhardt's Fire Strike and Charge after an Earthshatter stun in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "reinhardt-pixel",
+          "quality": "common",
+          "url": "/heroes/reinhardt/sprays/reinhardt-pixel.png",
+          "achievement": true,
+          "description": "Block 8000 damage with Reinhardt's Barrier Field without dying in Quick or Competitive Play."
+        },
+        {
           "name": "Wrestling",
           "id": "reinhardt-wrestling",
           "quality": "common",
@@ -13579,22 +13595,6 @@
           "url": "/heroes/reinhardt/sprays/reinhardt-king-of-hearts.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "reinhardt-cute",
-          "quality": "common",
-          "url": "/heroes/reinhardt/sprays/reinhardt-cute.png",
-          "achievement": true,
-          "description": "Land Reinhardt's Fire Strike and Charge after an Earthshatter stun in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "reinhardt-pixel",
-          "quality": "common",
-          "url": "/heroes/reinhardt/sprays/reinhardt-pixel.png",
-          "achievement": true,
-          "description": "Block 8000 damage with Reinhardt's Barrier Field without dying in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -14208,6 +14208,22 @@
           "url": "/heroes/roadhog/sprays/roadhog-wild-hog.png"
         },
         {
+          "name": "Cute",
+          "id": "roadhog-cute",
+          "quality": "common",
+          "url": "/heroes/roadhog/sprays/roadhog-cute.png",
+          "achievement": true,
+          "description": "Knock 2 enemies to their deaths with one use of Roadhog's Whole Hog in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "roadhog-pixel",
+          "quality": "common",
+          "url": "/heroes/roadhog/sprays/roadhog-pixel.png",
+          "achievement": true,
+          "description": "Interrupt an enemy ultimate ability with Roadhog's Hook in Quick or Competitive Play."
+        },
+        {
           "name": "Diving",
           "id": "roadhog-diving",
           "quality": "common",
@@ -14270,22 +14286,6 @@
           "url": "/heroes/roadhog/sprays/roadhog-joker.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "roadhog-cute",
-          "quality": "common",
-          "url": "/heroes/roadhog/sprays/roadhog-cute.png",
-          "achievement": true,
-          "description": "Knock 2 enemies to their deaths with one use of Roadhog's Whole Hog in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "roadhog-pixel",
-          "quality": "common",
-          "url": "/heroes/roadhog/sprays/roadhog-pixel.png",
-          "achievement": true,
-          "description": "Interrupt an enemy ultimate ability with Roadhog's Hook in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -14602,6 +14602,14 @@
           "url": "/heroes/soldier-76/skins/soldier-76-stunt-rider-76.jpg"
         },
         {
+          "name": "Strike Commander Morrison",
+          "id": "soldier-76-strike-commander-morrison",
+          "quality": "legendary",
+          "url": "/heroes/soldier-76/skins/soldier-76-strike-commander-morrison.jpg",
+          "description": "After the Omnic Crisis, Jack Morrison was promoted to Strike Commander of Overwatch, leading the organization for decades until it was disbanded.",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Grillmaster: 76",
           "id": "soldier-76-grillmaster-76",
           "quality": "legendary",
@@ -14624,14 +14632,6 @@
           "url": "/heroes/soldier-76/skins/soldier-76-cyborg-76.jpg",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Strike Commander Morrison",
-          "id": "soldier-76-strike-commander-morrison",
-          "quality": "legendary",
-          "url": "/heroes/soldier-76/skins/soldier-76-strike-commander-morrison.jpg",
-          "description": "After the Omnic Crisis, Jack Morrison was promoted to Strike Commander of Overwatch, leading the organization for decades until it was disbanded.",
-          "achievement": "blizzard"
         }
       ],
       "emotes": [
@@ -14900,6 +14900,22 @@
           "url": "/heroes/soldier-76/sprays/soldier-76-wanted.png"
         },
         {
+          "name": "Cute",
+          "id": "soldier-76-cute",
+          "quality": "common",
+          "url": "/heroes/soldier-76/sprays/soldier-76-cute.png",
+          "achievement": true,
+          "description": "Kill 4 enemies with a single use of Soldier: 76's Tactical Visor in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "soldier-76-pixel",
+          "quality": "common",
+          "url": "/heroes/soldier-76/sprays/soldier-76-pixel.png",
+          "achievement": true,
+          "description": "Get 2 killing blows with a single use of Soldier: 76's Helix Rockets in Quick or Competitive Play."
+        },
+        {
           "name": "Golf",
           "id": "soldier-76-golf",
           "quality": "common",
@@ -14962,22 +14978,6 @@
           "url": "/heroes/soldier-76/sprays/soldier-76-ace-of-spades.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "soldier-76-cute",
-          "quality": "common",
-          "url": "/heroes/soldier-76/sprays/soldier-76-cute.png",
-          "achievement": true,
-          "description": "Kill 4 enemies with a single use of Soldier: 76's Tactical Visor in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "soldier-76-pixel",
-          "quality": "common",
-          "url": "/heroes/soldier-76/sprays/soldier-76-pixel.png",
-          "achievement": true,
-          "description": "Get 2 killing blows with a single use of Soldier: 76's Helix Rockets in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -15578,6 +15578,22 @@
           "url": "/heroes/sombra/sprays/sombra-quien.png"
         },
         {
+          "name": "Cute",
+          "id": "sombra-cute",
+          "quality": "common",
+          "url": "/heroes/sombra/sprays/sombra-cute.png",
+          "achievement": true,
+          "description": "Hack 6 enemies at once as Sombra in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "sombra-pixel",
+          "quality": "common",
+          "url": "/heroes/sombra/sprays/sombra-pixel.png",
+          "achievement": true,
+          "description": "Hack 15 enemies without dying as Sombra in Quick or Competitive Play."
+        },
+        {
           "name": "High Jump",
           "id": "sombra-high-jump",
           "quality": "common",
@@ -15640,22 +15656,6 @@
           "url": "/heroes/sombra/sprays/sombra-queen-of-spades.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "sombra-cute",
-          "quality": "common",
-          "url": "/heroes/sombra/sprays/sombra-cute.png",
-          "achievement": true,
-          "description": "Hack 6 enemies at once as Sombra in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "sombra-pixel",
-          "quality": "common",
-          "url": "/heroes/sombra/sprays/sombra-pixel.png",
-          "achievement": true,
-          "description": "Hack 15 enemies without dying as Sombra in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -16278,6 +16278,22 @@
           "url": "/heroes/symmetra/sprays/symmetra-will.png"
         },
         {
+          "name": "Cute",
+          "id": "symmetra-cute",
+          "quality": "common",
+          "url": "/heroes/symmetra/sprays/symmetra-cute.png",
+          "achievement": true,
+          "description": "Teleport 20 players in a single Quick or Competitive Play game as Symmetra."
+        },
+        {
+          "name": "Pixel",
+          "id": "symmetra-pixel",
+          "quality": "common",
+          "url": "/heroes/symmetra/sprays/symmetra-pixel.png",
+          "achievement": true,
+          "description": "Hit an enemy with 6 beams simultaneously as Symmetra in Quick or Competitive Play."
+        },
+        {
           "name": "Rhythmic",
           "id": "symmetra-rhythmic",
           "quality": "common",
@@ -16340,22 +16356,6 @@
           "url": "/heroes/symmetra/sprays/symmetra-nine-of-diamonds.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "symmetra-cute",
-          "quality": "common",
-          "url": "/heroes/symmetra/sprays/symmetra-cute.png",
-          "achievement": true,
-          "description": "Teleport 20 players in a single Quick or Competitive Play game as Symmetra."
-        },
-        {
-          "name": "Pixel",
-          "id": "symmetra-pixel",
-          "quality": "common",
-          "url": "/heroes/symmetra/sprays/symmetra-pixel.png",
-          "achievement": true,
-          "description": "Hit an enemy with 6 beams simultaneously as Symmetra in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -16985,6 +16985,22 @@
           "url": "/heroes/torbjorn/sprays/torbjorn-uppgradera.png"
         },
         {
+          "name": "Cute",
+          "id": "torbjorn-cute",
+          "quality": "common",
+          "url": "/heroes/torbjorn/sprays/torbjorn-cute.png",
+          "achievement": true,
+          "description": "Kill 4 enemies during a single use of Torbjörn's Molten Core in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "torbjorn-pixel",
+          "quality": "common",
+          "url": "/heroes/torbjorn/sprays/torbjorn-pixel.png",
+          "achievement": true,
+          "description": "Have one of Torbjörn's Armor Packs on 5 allies at the same time in Quick or Competitive Play."
+        },
+        {
           "name": "Water Polo",
           "id": "torbjorn-water-polo",
           "quality": "common",
@@ -17047,22 +17063,6 @@
           "url": "/heroes/torbjorn/sprays/torbjorn-king-of-clubs.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "torbjorn-cute",
-          "quality": "common",
-          "url": "/heroes/torbjorn/sprays/torbjorn-cute.png",
-          "achievement": true,
-          "description": "Kill 4 enemies during a single use of Torbjörn's Molten Core in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "torbjorn-pixel",
-          "quality": "common",
-          "url": "/heroes/torbjorn/sprays/torbjorn-pixel.png",
-          "achievement": true,
-          "description": "Have one of Torbjörn's Armor Packs on 5 allies at the same time in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -17369,6 +17369,14 @@
           "url": "/heroes/tracer/skins/tracer-ultraviolet.jpg"
         },
         {
+          "name": "Slipstream",
+          "id": "tracer-slipstream",
+          "quality": "legendary",
+          "url": "/heroes/tracer/skins/tracer-slipstream.jpg",
+          "description": "Before becoming an active agent of Overwatch, Tracer was a test pilot, until a mishap with the prototype Slipstream teleporting fighter.",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Sprinter",
           "id": "tracer-sprinter",
           "quality": "legendary",
@@ -17408,14 +17416,6 @@
           "url": "/heroes/tracer/skins/tracer-graffiti.jpg",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Slipstream",
-          "id": "tracer-slipstream",
-          "quality": "legendary",
-          "url": "/heroes/tracer/skins/tracer-slipstream.jpg",
-          "description": "Before becoming an active agent of Overwatch, Tracer was a test pilot, until a mishap with the prototype Slipstream teleporting fighter.",
-          "achievement": "blizzard"
         }
       ],
       "emotes": [
@@ -17700,6 +17700,22 @@
           "url": "/heroes/tracer/sprays/tracer-wings.png"
         },
         {
+          "name": "Cute",
+          "id": "tracer-cute",
+          "quality": "common",
+          "url": "/heroes/tracer/sprays/tracer-cute.png",
+          "achievement": true,
+          "description": "Stick 4 of Tracer's Pulse Bombs onto enemies in a single Quick or Competitive Play game."
+        },
+        {
+          "name": "Pixel",
+          "id": "tracer-pixel",
+          "quality": "common",
+          "url": "/heroes/tracer/sprays/tracer-pixel.png",
+          "achievement": true,
+          "description": "Recover 400 health using Tracer's Recall without dying in Quick or Competitive Play."
+        },
+        {
           "name": "Track",
           "id": "tracer-track",
           "quality": "common",
@@ -17762,22 +17778,6 @@
           "url": "/heroes/tracer/sprays/tracer-ace-of-diamonds.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "tracer-cute",
-          "quality": "common",
-          "url": "/heroes/tracer/sprays/tracer-cute.png",
-          "achievement": true,
-          "description": "Stick 4 of Tracer's Pulse Bombs onto enemies in a single Quick or Competitive Play game."
-        },
-        {
-          "name": "Pixel",
-          "id": "tracer-pixel",
-          "quality": "common",
-          "url": "/heroes/tracer/sprays/tracer-pixel.png",
-          "achievement": true,
-          "description": "Recover 400 health using Tracer's Recall without dying in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -18086,6 +18086,13 @@
           "description": "For much of her life, Amélie Lacroix was better known as an accomplished ballet dancer in Paris."
         },
         {
+          "name": "Noire",
+          "id": "widowmaker-noire",
+          "quality": "legendary",
+          "url": "/heroes/widowmaker/skins/widowmaker-noire.jpg",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Côte d'Azur",
           "id": "widowmaker-cote-dazur",
           "quality": "legendary",
@@ -18100,13 +18107,6 @@
           "url": "/heroes/widowmaker/skins/widowmaker-talon.jpg",
           "event": "UPRISING",
           "group": "UPRISING_2017"
-        },
-        {
-          "name": "Noire",
-          "id": "widowmaker-noire",
-          "quality": "legendary",
-          "url": "/heroes/widowmaker/skins/widowmaker-noire.jpg",
-          "achievement": "blizzard"
         }
       ],
       "emotes": [
@@ -18375,6 +18375,22 @@
           "url": "/heroes/widowmaker/sprays/widowmaker-widows-kiss.png"
         },
         {
+          "name": "Cute",
+          "id": "widowmaker-cute",
+          "quality": "common",
+          "url": "/heroes/widowmaker/sprays/widowmaker-cute.png",
+          "achievement": true,
+          "description": "Kill an enemy with a scoped headshot while airborne as Widowmaker in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "widowmaker-pixel",
+          "quality": "common",
+          "url": "/heroes/widowmaker/sprays/widowmaker-pixel.png",
+          "achievement": true,
+          "description": "Kill 4 enemies using Widowmaker's Venom Mine during a single Quick or Competitive Play game."
+        },
+        {
           "name": "Gymnastics",
           "id": "widowmaker-gymnastics",
           "quality": "common",
@@ -18437,22 +18453,6 @@
           "url": "/heroes/widowmaker/sprays/widowmaker-queen-of-hearts.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "widowmaker-cute",
-          "quality": "common",
-          "url": "/heroes/widowmaker/sprays/widowmaker-cute.png",
-          "achievement": true,
-          "description": "Kill an enemy with a scoped headshot while airborne as Widowmaker in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "widowmaker-pixel",
-          "quality": "common",
-          "url": "/heroes/widowmaker/sprays/widowmaker-pixel.png",
-          "achievement": true,
-          "description": "Kill 4 enemies using Widowmaker's Venom Mine during a single Quick or Competitive Play game."
         }
       ],
       "voicelines": [
@@ -19049,6 +19049,22 @@
           "url": "/heroes/winston/sprays/winston-wow.png"
         },
         {
+          "name": "Cute",
+          "id": "winston-cute",
+          "quality": "common",
+          "url": "/heroes/winston/sprays/winston-cute.png",
+          "achievement": true,
+          "description": "Damage 6 enemies during a single use of Winston's Primal Rage in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "winston-pixel",
+          "quality": "common",
+          "url": "/heroes/winston/sprays/winston-pixel.png",
+          "achievement": true,
+          "description": "Destroy 10 turrets or traps using Winston's Tesla Cannon without dying in Quick or Competitive Play."
+        },
+        {
           "name": "Volleyball",
           "id": "winston-volleyball",
           "quality": "common",
@@ -19111,22 +19127,6 @@
           "url": "/heroes/winston/sprays/winston-jack-of-hearts.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "winston-cute",
-          "quality": "common",
-          "url": "/heroes/winston/sprays/winston-cute.png",
-          "achievement": true,
-          "description": "Damage 6 enemies during a single use of Winston's Primal Rage in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "winston-pixel",
-          "quality": "common",
-          "url": "/heroes/winston/sprays/winston-pixel.png",
-          "achievement": true,
-          "description": "Destroy 10 turrets or traps using Winston's Tesla Cannon without dying in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -19735,6 +19735,22 @@
           "url": "/heroes/zarya/sprays/zarya-wrestle.png"
         },
         {
+          "name": "Cute",
+          "id": "zarya-cute",
+          "quality": "common",
+          "url": "/heroes/zarya/sprays/zarya-cute.png",
+          "achievement": true,
+          "description": "Capture 5 enemies in a single use of Zarya's Graviton Surge in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "zarya-pixel",
+          "quality": "common",
+          "url": "/heroes/zarya/sprays/zarya-pixel.png",
+          "achievement": true,
+          "description": "Keep Zarya's particle cannon above 70 power for 60 seconds in Quick or Competitive Play."
+        },
+        {
           "name": "Weightlifting",
           "id": "zarya-weightlifting",
           "quality": "common",
@@ -19797,22 +19813,6 @@
           "url": "/heroes/zarya/sprays/zarya-ten-of-spades.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "zarya-cute",
-          "quality": "common",
-          "url": "/heroes/zarya/sprays/zarya-cute.png",
-          "achievement": true,
-          "description": "Capture 5 enemies in a single use of Zarya's Graviton Surge in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "zarya-pixel",
-          "quality": "common",
-          "url": "/heroes/zarya/sprays/zarya-pixel.png",
-          "achievement": true,
-          "description": "Keep Zarya's particle cannon above 70 power for 60 seconds in Quick or Competitive Play."
         }
       ],
       "voicelines": [
@@ -20433,6 +20433,22 @@
           "url": "/heroes/zenyatta/sprays/zenyatta-together.png"
         },
         {
+          "name": "Cute",
+          "id": "zenyatta-cute",
+          "quality": "common",
+          "url": "/heroes/zenyatta/sprays/zenyatta-cute.png",
+          "achievement": true,
+          "description": "Restore 1500 health with a single use of Zenyatta's Transcendence in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "zenyatta-pixel",
+          "quality": "common",
+          "url": "/heroes/zenyatta/sprays/zenyatta-pixel.png",
+          "achievement": true,
+          "description": "Get 4 kills or assists with Zenyatta's Orb of Discord within 6 seconds in Quick or Competitive Play."
+        },
+        {
           "name": "Taekwondo",
           "id": "zenyatta-taekwondo",
           "quality": "common",
@@ -20495,22 +20511,6 @@
           "url": "/heroes/zenyatta/sprays/zenyatta-king-of-spades.png",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "zenyatta-cute",
-          "quality": "common",
-          "url": "/heroes/zenyatta/sprays/zenyatta-cute.png",
-          "achievement": true,
-          "description": "Restore 1500 health with a single use of Zenyatta's Transcendence in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "zenyatta-pixel",
-          "quality": "common",
-          "url": "/heroes/zenyatta/sprays/zenyatta-pixel.png",
-          "achievement": true,
-          "description": "Get 4 kills or assists with Zenyatta's Orb of Discord within 6 seconds in Quick or Competitive Play."
         }
       ],
       "voicelines": [
