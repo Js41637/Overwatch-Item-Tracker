@@ -113,6 +113,8 @@ var noLongerMissingAllClassData = reduce(missingAllClassData, (result, items, ty
 // Add no longer missing allclass data onto allClassData
 forEach(noLongerMissingAllClassData, (items, type) => allClassData[type] = [...allClassData[type], ...items]);
 
+var shit = false
+
 // Create object containing allclass item names by key so we can easily map event ids to items.
 // also check if any items are in allClassEventItems and mark them as event items
 console.info('Generating allClass data');
@@ -214,6 +216,15 @@ for (var hero in data) {
 
       // Generate ID of the item and check if we need to manually override it.
       var id = getCleanID(name, heroID);
+
+      if (id === 'reinhardt-crusader' && type === 'sprays') {
+        if (shit) {
+          id = 'reinhardt-crusader-1'
+        } else {
+          shit = true
+        }
+      }
+
       id = idsBlizzardChanged[`${type}/${id}`] || id;
       name = itemNamesIFuckedUp[`${type}/${id}`] || name;
 
