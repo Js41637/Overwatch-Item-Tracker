@@ -244,6 +244,8 @@ for (var hero in data) {
       switch (group) {
         case 'COMMON':
           break;
+        case 'OWL':
+          return
         case 'ACHIEVEMENT':
           if (type === 'weapons') {
             out.quality = 'golden'
