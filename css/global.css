@@ -931,13 +931,13 @@ strong {
   border: 2px solid rgb(240, 240, 240);
   border-radius: 4px;
   cursor: pointer;
-  transition: transform 100ms ease-in-out;
+  transition: transform 50ms;
   background: url(../resources/body-bg.jpg) no-repeat top;
   background-size: cover;
 }
 
 #hero-nav .gallery .block .bg {
-  transition: background 100ms ease-in-out;
+  transition: background 50ms;
   background-color: transparent;
   position: absolute;
   width: 100%;

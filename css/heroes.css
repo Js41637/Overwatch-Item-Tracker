@@ -36,7 +36,7 @@
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
-  animation-duration: 0.8s;
+  animation-duration: 0.6s;
 }
 
 #all #hero-container .hero-overview .hero-image img {
@@ -70,7 +70,7 @@
   animation-name: slideInX;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
 }
 
 #hero-container .hero-overview .hero-class {
@@ -78,7 +78,7 @@
   animation-name: slideInX;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
 }
 
 #hero-container #hero-header .options {
@@ -238,8 +238,8 @@
   opacity: 0;
   animation-name: fadeIn;
   animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  animation-duration: 0.6s;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
 }
 
 #hero-container .hero-items.ng-enter-active, #hero-container .hero-grid.ng-enter-active {
