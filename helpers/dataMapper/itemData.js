@@ -29,8 +29,27 @@ const data = {
     icons: []
   },
   blizzardItems: {
-    sprays: ['barbarian', 'crusader', 'demon-hunter', 'monk', 'witch-doctor', 'wizard'],
-    icons: ['dark-wanderer']
+    sprays: [
+      // Diablo
+      'barbarian',
+      'crusader',
+      'demon-hunter',
+      'monk',
+      'witch-doctor',
+      'wizard',
+      // WoW
+      'anduin',
+      'jaina',
+      'sylvanas',
+      'varok'
+    ],
+    icons: [
+      // Diablo
+      'dark-wanderer',
+      // WoW
+      'kul-tiras',
+      'zandalar'
+    ]
   },
   specialItems: {
     diablo: {
