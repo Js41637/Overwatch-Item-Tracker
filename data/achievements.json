@@ -688,6 +688,14 @@
       "description": "Score a goal, a save, and an assist in a game of Lúcioball.",
       "hero": "all"
     },
+    "top-500": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking",
+      "reward": "Top 500",
+      "quality": "rare",
+      "type": "icon",
+      "hero": "all"
+    },
     "season-1-competitor": {
       "name": null,
       "description": "Unlocked by completing Season 1 placement matches",
@@ -864,6 +872,14 @@
       "type": "spray",
       "hero": "all"
     },
+    "dark-wanderer": {
+      "name": null,
+      "description": "Unlocked as part of the Diablo 20th Anniversary celebration",
+      "reward": "Dark Wanderer",
+      "quality": "rare",
+      "type": "icon",
+      "hero": "all"
+    },
     "summer-games-2016": {
       "name": null,
       "description": "Unlocked with Summer Games 2016",
@@ -951,6 +967,86 @@
       "type": "spray",
       "description": "Trap the Yeti as a Hunter in Yeti Hunter.",
       "hero": "all"
+    },
+    "anduin": {
+      "name": null,
+      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
+      "reward": "Anduin",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "jaina": {
+      "name": null,
+      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
+      "reward": "Jaina",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "sylvanas": {
+      "name": null,
+      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
+      "reward": "Sylvanas",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "varok": {
+      "name": null,
+      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
+      "reward": "Varok",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "kul-tiras": {
+      "name": null,
+      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
+      "reward": "Kul Tiras",
+      "quality": "rare",
+      "type": "icon",
+      "hero": "all"
+    },
+    "zandalar": {
+      "name": null,
+      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
+      "reward": "Zandalar",
+      "quality": "rare",
+      "type": "icon",
+      "hero": "all"
+    },
+    "torbjorn-for-the-alliance": {
+      "name": null,
+      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
+      "reward": "For the Alliance",
+      "quality": "common",
+      "type": "voiceline",
+      "hero": "torbjorn"
+    },
+    "torbjorn-for-the-horde": {
+      "name": null,
+      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
+      "reward": "For the Horde",
+      "quality": "common",
+      "type": "voiceline",
+      "hero": "torbjorn"
+    },
+    "tracer-alliance-banner": {
+      "name": null,
+      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
+      "reward": "Alliance Banner",
+      "quality": "epic",
+      "type": "emote",
+      "hero": "tracer"
+    },
+    "tracer-horde-banner": {
+      "name": null,
+      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
+      "reward": "Horde Banner",
+      "quality": "epic",
+      "type": "emote",
+      "hero": "tracer"
     }
   },
   "mappings": {
@@ -1040,6 +1136,7 @@
     "bicycle-kick": "volley",
     "safe-hands": "safe-hands",
     "goal-blossom": "lucio-hat-trick",
+    "top-500": "top-500",
     "season-1-competitor": "season-1-competitor",
     "season-1-hero": "season-1-hero",
     "season-2-competitor": "season-2-competitor",
@@ -1062,6 +1159,7 @@
     "demon-hunter": "demon-hunter",
     "crusader": "crusader",
     "barbarian": "barbarian",
+    "dark-wanderer": "dark-wanderer",
     "summer-games-2016": "summer-games-2016",
     "copa-lucioball-competitor": "copa-lucioball-competitor",
     "copa-lucioball-hero": "copa-lucioball-hero",
@@ -1072,6 +1170,16 @@
     "moira-pixel": "simple-trigonometry",
     "moira-cute": "antipode",
     "yeti": "thinking-with-your-stomach",
-    "yeti-hunter": "yeti-catcher"
+    "yeti-hunter": "yeti-catcher",
+    "anduin": "anduin",
+    "jaina": "jaina",
+    "sylvanas": "sylvanas",
+    "varok": "varok",
+    "kul-tiras": "kul-tiras",
+    "zandalar": "zandalar",
+    "torbjorn-for-the-alliance": "torbjorn-for-the-alliance",
+    "torbjorn-for-the-horde": "torbjorn-for-the-horde",
+    "tracer-alliance-banner": "tracer-alliance-banner",
+    "tracer-horde-banner": "tracer-horde-banner"
   }
 }
