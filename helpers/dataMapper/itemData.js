@@ -12,7 +12,8 @@ const data = {
     "emotes/winston-twist": "winston-dance",
     "voicelines/doomfist-they-say-chivalry-is-dead": "doomfist-and-they-say-chivalry-is-dead",
     "voicelines/mei-dont-you-love-surprises": "mei-dont-you-just-love-surprises",
-    "voicelines/symmetra-expecting-a-miracle": "symmetra-were-you-expecting-a-miracle"
+    "voicelines/symmetra-expecting-a-miracle": "symmetra-were-you-expecting-a-miracle",
+    "sprays/year-of-the-rooster-2017": "year-of-the-rooster"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
