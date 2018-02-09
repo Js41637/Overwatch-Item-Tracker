@@ -24,12 +24,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 body {
   font-family: "Big Noodle Titling";
-  min-width: 1000px;
+  min-width: 900px;
   background-color: #d0c7dc;
   color: #405275;
   padding-top: 45px;
   transition: opacity 100ms ease-in;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .btn.btn-default {
