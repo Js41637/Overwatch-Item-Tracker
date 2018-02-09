@@ -4,7 +4,7 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs');
-const { forEach, sortBy, find, reduce, merge, get, isEmpty, findKey } = require('lodash');
+const { forEach, sortBy, find, reduce, merge, get, isEmpty, findKey, cloneDeep } = require('lodash');
 
 const mode = process.argv.slice(2)[0];
 
@@ -299,6 +299,7 @@ var updates = {};
 forEach(heroes, hero => {
   forEach(hero.items, (items, tKey) => {
     items.forEach(item => {
+      item = cloneDeep(item)
       const event = item.event;
       const actualEvent = findKey(EVENTITEMS, event => event.includes(`${tKey}/${item.id}`));
 
