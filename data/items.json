@@ -158,6 +158,14 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "name": "Baihu",
+          "id": "genji-baihu",
+          "url": "/heroes/genji/icons/genji-baihu.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "genji",
+          "isNew": true
+        },
+        {
           "name": "Baiser",
           "id": "widowmaker-baiser",
           "url": "/heroes/widowmaker/icons/widowmaker-baiser.png",
@@ -207,6 +215,14 @@
           "id": "bewitching",
           "event": "HALLOWEEN",
           "url": "/heroes/all/icons/bewitching.png"
+        },
+        {
+          "name": "Black Lily",
+          "id": "widowmaker-black-lily",
+          "url": "/heroes/widowmaker/icons/widowmaker-black-lily.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "widowmaker",
+          "isNew": true
         },
         {
           "name": "Blackwatch",
@@ -355,6 +371,22 @@
           "event": "UPRISING",
           "hero": "mercy",
           "group": "UPRISING_2017"
+        },
+        {
+          "id": "competitive-ctf-competitor",
+          "name": "Competitive CTF Competitor",
+          "url": "/heroes/all/icons/competitive-ctf-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing competitive Capture The Flag placement matches"
+        },
+        {
+          "id": "competitive-ctf-hero",
+          "name": "Competitive CTF Hero",
+          "url": "/heroes/all/icons/competitive-ctf-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of competitive Capture The Flag"
         },
         {
           "name": "Copa Lúcioball Competitor",
@@ -932,6 +964,12 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "id": "good-fortune",
+          "name": "Good Fortune",
+          "event": "LUNAR_NEW_YEAR",
+          "url": "/heroes/all/icons/good-fortune.png"
+        },
+        {
           "name": "Grappling Hook",
           "id": "widowmaker-grappling-hook",
           "url": "/heroes/widowmaker/icons/widowmaker-grappling-hook.png",
@@ -1072,12 +1110,25 @@
           "group": "overwatch league"
         },
         {
+          "id": "huchimari",
+          "name": "Huchimari",
+          "url": "/heroes/all/icons/huchimari.png",
+          "group": "pachi"
+        },
+        {
           "name": "Ice Fisherman",
           "id": "roadhog-ice-fisherman",
           "url": "/heroes/roadhog/icons/roadhog-ice-fisherman.png",
           "event": "WINTER_WONDERLAND",
           "hero": "roadhog",
           "isNew": true
+        },
+        {
+          "id": "inaugural-season",
+          "name": "Inaugural Season",
+          "url": "/heroes/all/icons/inaugural-season.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Initials",
@@ -1293,6 +1344,14 @@
           "event": "ANNIVERSARY",
           "hero": "lucio",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Magistrate",
+          "id": "mccree-magistrate",
+          "url": "/heroes/mccree/icons/mccree-magistrate.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "mccree",
+          "isNew": true
         },
         {
           "name": "Mama Pig's",
@@ -1523,6 +1582,18 @@
           "group": "pachi"
         },
         {
+          "id": "paqingmari",
+          "name": "Paqingmari",
+          "url": "/heroes/all/icons/paqingmari.png",
+          "group": "pachi"
+        },
+        {
+          "id": "paquemari",
+          "name": "Paquemari",
+          "url": "/heroes/all/icons/paquemari.png",
+          "group": "pachi"
+        },
+        {
           "name": "Particle Barrier",
           "id": "zarya-particle-barrier",
           "url": "/heroes/zarya/icons/zarya-particle-barrier.png",
@@ -1608,6 +1679,14 @@
           "id": "tracer-pulse-bomb",
           "url": "/heroes/tracer/icons/tracer-pulse-bomb.png",
           "hero": "tracer"
+        },
+        {
+          "name": "Qinglong",
+          "id": "pharah-qinglong",
+          "url": "/heroes/pharah/icons/pharah-qinglong.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "pharah",
+          "isNew": true
         },
         {
           "name": "Queen of Blades",
@@ -1869,6 +1948,22 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Season 8"
+        },
+        {
+          "id": "season-9-competitor",
+          "name": "Season 9 Competitor",
+          "url": "/heroes/all/icons/season-9-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 9 placement matches"
+        },
+        {
+          "id": "season-9-hero",
+          "name": "Season 9 Hero",
+          "url": "/heroes/all/icons/season-9-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 9"
         },
         {
           "name": "Sentry",
@@ -2372,6 +2467,20 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "id": "wuchimari",
+          "name": "Wuchimari",
+          "url": "/heroes/all/icons/wuchimari.png",
+          "group": "pachi"
+        },
+        {
+          "name": "Xuanwu",
+          "id": "zarya-xuanwu",
+          "url": "/heroes/zarya/icons/zarya-xuanwu.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "zarya",
+          "isNew": true
+        },
+        {
           "name": "Year of the Rooster 2017",
           "id": "year-of-the-rooster-2017",
           "event": "LUNAR_NEW_YEAR",
@@ -2439,6 +2548,14 @@
           "id": "zerg",
           "url": "/heroes/all/icons/zerg.png",
           "group": "starcraft"
+        },
+        {
+          "name": "Zhuque",
+          "id": "mercy-zhuque",
+          "url": "/heroes/mercy/icons/mercy-zhuque.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "mercy",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -2488,6 +2605,22 @@
           "id": "caution",
           "url": "/heroes/all/sprays/caution.png",
           "quality": "common"
+        },
+        {
+          "id": "competitive-ctf-competitor",
+          "name": "Competitive CTF Competitor",
+          "url": "/heroes/all/sprays/competitive-ctf-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing competitive Capture The Flag placement matches"
+        },
+        {
+          "id": "competitive-ctf-hero",
+          "name": "Competitive CTF Hero",
+          "url": "/heroes/all/sprays/competitive-ctf-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of competitive Capture The Flag"
         },
         {
           "name": "Copa Lúcioball Competitor",
@@ -2604,6 +2737,13 @@
           "url": "/heroes/all/sprays/houston-outlaws-logo.png",
           "standardItem": true,
           "group": "overwatch league"
+        },
+        {
+          "id": "inaugural-season",
+          "name": "Inaugural Season",
+          "url": "/heroes/all/sprays/inaugural-season.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Jail",
@@ -2941,6 +3081,22 @@
           "description": "Unlocked by completing Season 8 placement matches"
         },
         {
+          "id": "season-9-competitor",
+          "name": "Season 9 Competitor",
+          "url": "/heroes/all/sprays/season-9-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 9 placement matches"
+        },
+        {
+          "name": "Season 9 Hero",
+          "id": "season-9-hero",
+          "url": "/heroes/all/sprays/season-9-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 9 placement matches"
+        },
+        {
           "name": "Seoul Dynasty Logo",
           "id": "seoul-dynasty-logo",
           "url": "/heroes/all/sprays/seoul-dynasty-logo.png",
@@ -3048,6 +3204,12 @@
           "achievement": "blizzard",
           "group": "diablo",
           "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
+        },
+        {
+          "id": "year-of-the-dog-2018",
+          "name": "Year of the Dog 2018",
+          "url": "/heroes/all/sprays/year-of-the-dog-2018.png",
+          "quality": "common"
         },
         {
           "name": "You are not prepared!",
@@ -3304,6 +3466,13 @@
           "id": "dragons-head",
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/sprays/dragons-head.png",
+          "quality": "common"
+        },
+        {
+          "id": "good-fortune",
+          "name": "Good Fortune",
+          "event": "LUNAR_NEW_YEAR",
+          "url": "/heroes/all/sprays/good-fortune.png",
           "quality": "common"
         },
         {
@@ -4015,6 +4184,14 @@
           "url": "/heroes/ana/voicelines/ana-im-watching-out-for-you.ogg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "I make my own luck",
+          "id": "ana-i-make-my-own-luck",
+          "quality": "common",
+          "url": "/heroes/ana/voicelines/ana-i-make-my-own-luck.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         },
         {
           "name": "The moon in winter",
@@ -4740,6 +4917,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Doo wee doo wee woo!",
+          "id": "bastion-doo-wee-doo-wee-woo",
+          "quality": "common",
+          "url": "/heroes/bastion/voicelines/bastion-doo-wee-doo-wee-woo.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Woop doo woo dun woop",
           "id": "bastion-woop-doo-woo-dun-woop",
           "quality": "common",
@@ -5004,7 +5189,7 @@
           "name": "Bow",
           "id": "dva-bow",
           "quality": "epic",
-          "url": "/heroes/dva/emotes/dva-bow.webm",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/dva-bow.webm",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
         },
@@ -5469,6 +5654,14 @@
           "isNew": true
         },
         {
+          "name": "Happy new year",
+          "id": "dva-happy-new-year",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-happy-new-year.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "The best things in life",
           "id": "dva-the-best-things-in-life",
           "quality": "common",
@@ -5693,6 +5886,14 @@
           "id": "doomfist-thumbs-down",
           "quality": "epic",
           "url": "/heroes/doomfist/emotes/doomfist-thumbs-down.webm"
+        },
+        {
+          "name": "Crushing",
+          "id": "doomfist-crushing",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/doomfist-crushing.webm",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         }
       ],
       "intros": [
@@ -5948,6 +6149,22 @@
           "url": "/heroes/doomfist/sprays/doomfist-snow-punch.png",
           "event": "WINTER_WONDERLAND",
           "isNew": true
+        },
+        {
+          "name": "Dragon Dance",
+          "id": "doomfist-dragon-dance",
+          "quality": "common",
+          "url": "/heroes/doomfist/sprays/doomfist-dragon-dance.png",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
+          "name": "Lionfist",
+          "id": "doomfist-lionfist",
+          "quality": "common",
+          "url": "/heroes/doomfist/sprays/doomfist-lionfist.png",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -6070,6 +6287,22 @@
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-and-they-say-chivalry-is-dead.ogg",
           "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "Fortune favors the bold",
+          "id": "doomfist-fortune-favors-the-bold",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-fortune-favors-the-bold.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
+          "name": "I'll throw you a bone",
+          "id": "doomfist-ill-throw-you-a-bone",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-ill-throw-you-a-bone.ogg",
+          "event": "LUNAR_NEW_YEAR",
           "isNew": true
         }
       ],
@@ -6204,6 +6437,14 @@
           "quality": "legendary",
           "url": "/heroes/genji/skins/genji-young-genji.jpg",
           "description": "The younger scion of the Shimada clan, Genji had little interest in carrying on the family's business, and spent his days on frivolous pursuits."
+        },
+        {
+          "name": "Baihu",
+          "id": "genji-baihu",
+          "quality": "legendary",
+          "url": "/heroes/genji/skins/genji-baihu.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         },
         {
           "name": "Blackwatch",
@@ -6349,6 +6590,14 @@
           "event": "SUMMER_GAMES",
           "hero": "genji",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Baihu",
+          "id": "genji-baihu",
+          "url": "/heroes/genji/icons/genji-baihu.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "genji",
+          "isNew": true
         },
         {
           "name": "Cyborg",
@@ -6720,6 +6969,14 @@
           "url": "/heroes/genji/voicelines/genji-merry-christmas.ogg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "All bark, no bite",
+          "id": "genji-all-bark-no-bite",
+          "quality": "common",
+          "url": "/heroes/genji/voicelines/genji-all-bark-no-bite.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         },
         {
           "name": "To know yourself",
@@ -7422,6 +7679,14 @@
           "isNew": true
         },
         {
+          "name": "Insolent cur",
+          "id": "hanzo-insolent-cur",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-insolent-cur.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "When the moon is full",
           "id": "hanzo-when-the-moon-is-full",
           "quality": "common",
@@ -7687,7 +7952,7 @@
           "name": "Dud?",
           "id": "junkrat-dud",
           "quality": "epic",
-          "url": "/heroes/junkrat/emotes/junkrat-dud.webm",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/junkrat-dud.webm",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
         },
@@ -8148,6 +8413,14 @@
           "url": "/heroes/junkrat/voicelines/junkrat-gong-xi-fa-cai.ogg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "My dog is barking",
+          "id": "junkrat-my-dog-is-barking",
+          "quality": "common",
+          "url": "/heroes/junkrat/voicelines/junkrat-my-dog-is-barking.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         },
         {
           "name": "Come the raw prawn",
@@ -8861,6 +9134,14 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "Just how I like it",
+          "id": "lucio-just-how-i-like-it",
+          "quality": "common",
+          "url": "/heroes/lucio/voicelines/lucio-just-how-i-like-it.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Boop",
           "id": "lucio-boop",
           "quality": "common",
@@ -9070,6 +9351,14 @@
           "isNew": true
         },
         {
+          "name": "Magistrate",
+          "id": "mccree-magistrate",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-magistrate.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Blackwatch",
           "id": "mccree-blackwatch",
           "quality": "legendary",
@@ -9159,6 +9448,14 @@
           "id": "mccree-the-names-mccree",
           "quality": "epic",
           "url": "/heroes/mccree/intros/mccree-the-names-mccree.webm"
+        },
+        {
+          "name": "Spark",
+          "id": "mccree-spark",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/intros/mccree-spark.webm",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         }
       ],
       "icons": [
@@ -9199,6 +9496,14 @@
           "id": "mccree-van-helsing",
           "url": "/heroes/mccree/icons/mccree-van-helsing.png",
           "event": "HALLOWEEN",
+          "hero": "mccree",
+          "isNew": true
+        },
+        {
+          "name": "Magistrate",
+          "id": "mccree-magistrate",
+          "url": "/heroes/mccree/icons/mccree-magistrate.png",
+          "event": "LUNAR_NEW_YEAR",
           "hero": "mccree",
           "isNew": true
         },
@@ -9576,6 +9881,14 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "Hair of the dog",
+          "id": "mccree-hair-of-the-dog",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-hair-of-the-dog.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "A man's gotta have rules",
           "id": "mccree-a-mans-gotta-have-rules",
           "quality": "common",
@@ -9641,6 +9954,14 @@
           "url": "/heroes/mccree/poses/mccree-rip.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Fire in the hole",
+          "id": "mccree-fire-in-the-hole",
+          "quality": "rare",
+          "url": "/heroes/mccree/poses/mccree-fire-in-the-hole.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         },
         {
           "name": "Showdown",
@@ -9845,7 +10166,7 @@
           "name": "So Excited",
           "id": "mei-so-excited",
           "quality": "epic",
-          "url": "/heroes/mei/emotes/mei-so-excited.webm",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/mei-so-excited.webm",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
         },
@@ -10300,6 +10621,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Give me a red envelope",
+          "id": "mei-give-me-a-red-envelope",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-give-me-a-red-envelope.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Wishing you prosperity",
           "id": "mei-wishing-you-prosperity",
           "quality": "common",
@@ -10513,6 +10842,14 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Zhuque",
+          "id": "mercy-zhuque",
+          "quality": "legendary",
+          "url": "/heroes/mercy/skins/mercy-zhuque.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Combat Medic Ziegler",
           "id": "mercy-combat-medic-ziegler",
           "quality": "legendary",
@@ -10605,7 +10942,7 @@
           "name": "Fortune",
           "id": "mercy-fortune",
           "quality": "epic",
-          "url": "/heroes/mercy/intros/mercy-fortune.webm",
+          "url": "/updates/LUNAR_NEW_YEAR/intros/mercy-fortune.webm",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
         }
@@ -10650,6 +10987,14 @@
           "event": "HALLOWEEN",
           "hero": "mercy",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Zhuque",
+          "id": "mercy-zhuque",
+          "url": "/heroes/mercy/icons/mercy-zhuque.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "mercy",
+          "isNew": true
         },
         {
           "name": "Combat Medic",
@@ -11029,6 +11374,14 @@
           "url": "/heroes/mercy/voicelines/mercy-a-most-impressive-display.ogg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "How lucky for you",
+          "id": "mercy-how-lucky-for-you",
+          "quality": "common",
+          "url": "/heroes/mercy/voicelines/mercy-how-lucky-for-you.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         },
         {
           "name": "Not sure why I bother",
@@ -11486,6 +11839,22 @@
           "url": "/heroes/moira/sprays/moira-ornament.png",
           "event": "WINTER_WONDERLAND",
           "isNew": true
+        },
+        {
+          "name": "Dog person",
+          "id": "moira-dog-person",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-dog-person.png",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
+          "name": "Dragon Dance",
+          "id": "moira-dragon-dance",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-dragon-dance.png",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -11576,6 +11945,22 @@
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-happy-christmas.ogg",
           "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "Sláinte",
+          "id": "moira-slinte",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-slinte.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
+          "name": "You've made a dogs breakfast",
+          "id": "moira-youve-made-a-dogs-breakfast",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-youve-made-a-dogs-breakfast.ogg",
+          "event": "LUNAR_NEW_YEAR",
           "isNew": true
         }
       ],
@@ -12036,6 +12421,22 @@
           "isNew": true
         },
         {
+          "name": "Dragon Dance",
+          "id": "orisa-dragon-dance",
+          "quality": "common",
+          "url": "/heroes/orisa/sprays/orisa-dragon-dance.png",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
+          "name": "Drum Dance",
+          "id": "orisa-drum-dance",
+          "quality": "common",
+          "url": "/heroes/orisa/sprays/orisa-drum-dance.png",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Flower",
           "id": "orisa-flower",
           "quality": "common",
@@ -12172,6 +12573,22 @@
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-cant-i-guide-your-way-tonight.ogg",
           "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "The moon that wanes",
+          "id": "orisa-the-moon-that-wanes",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-the-moon-that-wanes.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
+          "name": "Who is ready to party",
+          "id": "orisa-who-is-ready-to-party",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-who-is-ready-to-party.ogg",
+          "event": "LUNAR_NEW_YEAR",
           "isNew": true
         },
         {
@@ -12361,6 +12778,14 @@
           "achievement": "blizzard"
         },
         {
+          "name": "Qinglong",
+          "id": "pharah-qinglong",
+          "quality": "legendary",
+          "url": "/heroes/pharah/skins/pharah-qinglong.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Bedouin",
           "id": "pharah-bedouin",
           "quality": "legendary",
@@ -12491,6 +12916,14 @@
           "event": "SUMMER_GAMES",
           "hero": "pharah",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Qinglong",
+          "id": "pharah-qinglong",
+          "url": "/heroes/pharah/icons/pharah-qinglong.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "pharah",
+          "isNew": true
         },
         {
           "name": "Anniversareeha",
@@ -12856,6 +13289,14 @@
           "url": "/heroes/pharah/voicelines/pharah-i-keep-the-peace.ogg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Ready for some fireworks",
+          "id": "pharah-ready-for-some-fireworks",
+          "quality": "common",
+          "url": "/heroes/pharah/voicelines/pharah-ready-for-some-fireworks.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         },
         {
           "name": "Don't take it personally",
@@ -13575,6 +14016,14 @@
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-youre-on-ice.ogg",
           "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "I have the devil's own luck",
+          "id": "reaper-i-have-the-devils-own-luck",
+          "quality": "common",
+          "url": "/heroes/reaper/voicelines/reaper-i-have-the-devils-own-luck.ogg",
+          "event": "LUNAR_NEW_YEAR",
           "isNew": true
         },
         {
@@ -14306,6 +14755,14 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "Fortune favors the bold",
+          "id": "reinhardt-fortune-favors-the-bold",
+          "quality": "common",
+          "url": "/heroes/reinhardt/voicelines/reinhardt-fortune-favors-the-bold.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Easy does it",
           "id": "reinhardt-easy-does-it",
           "quality": "common",
@@ -14547,6 +15004,14 @@
           "url": "/heroes/roadhog/emotes/roadhog-tuckered-out.webm"
         },
         {
+          "name": "Secret Friend",
+          "id": "roadhog-secret-friend",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/roadhog-secret-friend.webm",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Dance",
           "id": "roadhog-dance",
           "quality": "epic",
@@ -14593,7 +15058,7 @@
           "name": "Feast",
           "id": "roadhog-feast",
           "quality": "epic",
-          "url": "/heroes/roadhog/intros/roadhog-feast.webm",
+          "url": "/updates/LUNAR_NEW_YEAR/intros/roadhog-feast.webm",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
         }
@@ -15010,6 +15475,14 @@
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-i-have-your-present-right-here.ogg",
           "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "It's all gone to the dogs",
+          "id": "roadhog-its-all-gone-to-the-dogs",
+          "quality": "common",
+          "url": "/heroes/roadhog/voicelines/roadhog-its-all-gone-to-the-dogs.ogg",
+          "event": "LUNAR_NEW_YEAR",
           "isNew": true
         },
         {
@@ -15729,6 +16202,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Respect your elders",
+          "id": "soldier-76-respect-your-elders",
+          "quality": "common",
+          "url": "/heroes/soldier-76/voicelines/soldier-76-respect-your-elders.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "The rooster crows",
           "id": "soldier-76-the-rooster-crows",
           "quality": "common",
@@ -16445,6 +16926,14 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "You're in the doghouse",
+          "id": "sombra-youre-in-the-doghouse",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-youre-in-the-doghouse.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Don't be a coward",
           "id": "sombra-dont-be-a-coward",
           "quality": "common",
@@ -17155,6 +17644,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Cause for celebration",
+          "id": "symmetra-cause-for-celebration",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-cause-for-celebration.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Good fortune",
           "id": "symmetra-good-fortune",
           "quality": "common",
@@ -17236,6 +17733,14 @@
           "url": "/heroes/symmetra/poses/symmetra-rip.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Fan",
+          "id": "symmetra-fan",
+          "quality": "rare",
+          "url": "/heroes/symmetra/poses/symmetra-fan.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         },
         {
           "name": "Light Reading",
@@ -17900,6 +18405,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Everyone get in here",
+          "id": "torbjorn-everyone-get-in-here",
+          "quality": "common",
+          "url": "/heroes/torbjorn/voicelines/torbjorn-everyone-get-in-here.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Too hot for you?",
           "id": "torbjorn-too-hot-for-you",
           "quality": "common",
@@ -18241,7 +18754,7 @@
           "name": "Lion Dance",
           "id": "tracer-lion-dance",
           "quality": "epic",
-          "url": "/heroes/tracer/intros/tracer-lion-dance.webm",
+          "url": "/updates/LUNAR_NEW_YEAR/intros/tracer-lion-dance.webm",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
         }
@@ -18653,6 +19166,14 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "I'm over the moon",
+          "id": "tracer-im-over-the-moon",
+          "quality": "common",
+          "url": "/heroes/tracer/voicelines/tracer-im-over-the-moon.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Ready for some fireworks?",
           "id": "tracer-ready-for-some-fireworks",
           "quality": "common",
@@ -18742,6 +19263,14 @@
           "url": "/heroes/tracer/poses/tracer-rip.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Fireworks",
+          "id": "tracer-fireworks",
+          "quality": "rare",
+          "url": "/heroes/tracer/poses/tracer-fireworks.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         }
       ],
       "weapons": [
@@ -18860,6 +19389,14 @@
           "quality": "legendary",
           "url": "/heroes/widowmaker/skins/widowmaker-cote-dazur.jpg",
           "event": "SUMMER_GAMES",
+          "isNew": true
+        },
+        {
+          "name": "Black Lily",
+          "id": "widowmaker-black-lily",
+          "quality": "legendary",
+          "url": "/heroes/widowmaker/skins/widowmaker-black-lily.jpg",
+          "event": "LUNAR_NEW_YEAR",
           "isNew": true
         },
         {
@@ -18985,6 +19522,14 @@
           "event": "SUMMER_GAMES",
           "hero": "widowmaker",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Black Lily",
+          "id": "widowmaker-black-lily",
+          "url": "/heroes/widowmaker/icons/widowmaker-black-lily.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "widowmaker",
+          "isNew": true
         },
         {
           "name": "Lacroix",
@@ -19352,6 +19897,14 @@
           "isNew": true
         },
         {
+          "name": "Barking up the wrong tree",
+          "id": "widowmaker-barking-up-the-wrong-tree",
+          "quality": "common",
+          "url": "/heroes/widowmaker/voicelines/widowmaker-barking-up-the-wrong-tree.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "You have my attention",
           "id": "widowmaker-you-have-my-attention",
           "quality": "common",
@@ -19440,6 +19993,14 @@
           "quality": "rare",
           "url": "/heroes/widowmaker/poses/widowmaker-toast.jpg",
           "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "Fans",
+          "id": "widowmaker-fans",
+          "quality": "rare",
+          "url": "/heroes/widowmaker/poses/widowmaker-fans.jpg",
+          "event": "LUNAR_NEW_YEAR",
           "isNew": true
         }
       ],
@@ -20050,6 +20611,14 @@
           "isNew": true
         },
         {
+          "name": "Moon sweet home",
+          "id": "winston-moon-sweet-home",
+          "quality": "common",
+          "url": "/heroes/winston/voicelines/winston-moon-sweet-home.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "That was awesome!",
           "id": "winston-that-was-awesome",
           "quality": "common",
@@ -20131,6 +20700,14 @@
           "url": "/heroes/winston/poses/winston-rip.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Sparklers",
+          "id": "winston-sparklers",
+          "quality": "rare",
+          "url": "/heroes/winston/poses/winston-sparklers.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         },
         {
           "name": "Peanut Butter",
@@ -20271,6 +20848,14 @@
           "isNew": true
         },
         {
+          "name": "Xuanwu",
+          "id": "zarya-xuanwu",
+          "quality": "legendary",
+          "url": "/heroes/zarya/skins/zarya-xuanwu.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "Cyberian",
           "id": "zarya-cyberian",
           "quality": "legendary",
@@ -20399,6 +20984,14 @@
           "id": "zarya-totally-80s",
           "url": "/heroes/zarya/icons/zarya-totally-80s.png",
           "event": "HALLOWEEN",
+          "hero": "zarya",
+          "isNew": true
+        },
+        {
+          "name": "Xuanwu",
+          "id": "zarya-xuanwu",
+          "url": "/heroes/zarya/icons/zarya-xuanwu.png",
+          "event": "LUNAR_NEW_YEAR",
           "hero": "zarya",
           "isNew": true
         },
@@ -20768,6 +21361,14 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "Where is the dog buried",
+          "id": "zarya-where-is-the-dog-buried",
+          "quality": "common",
+          "url": "/heroes/zarya/voicelines/zarya-where-is-the-dog-buried.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
+        },
+        {
           "name": "I was born in battle",
           "id": "zarya-i-was-born-in-battle",
           "quality": "common",
@@ -20840,6 +21441,14 @@
           "quality": "rare",
           "url": "/heroes/zarya/poses/zarya-toast.jpg",
           "event": "WINTER_WONDERLAND",
+          "isNew": true
+        },
+        {
+          "name": "Big one",
+          "id": "zarya-big-one",
+          "quality": "rare",
+          "url": "/heroes/zarya/poses/zarya-big-one.jpg",
+          "event": "LUNAR_NEW_YEAR",
           "isNew": true
         },
         {
@@ -21488,6 +22097,14 @@
           "url": "/heroes/zenyatta/voicelines/zenyatta-every-rooster-crows.ogg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Fortune favors me",
+          "id": "zenyatta-fortune-favors-me",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-fortune-favors-me.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         },
         {
           "name": "Path to enlightenment",

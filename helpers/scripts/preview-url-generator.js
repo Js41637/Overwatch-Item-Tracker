@@ -4,8 +4,8 @@ const eventItems = require('../../data/events.json')
 
 const baseUrl = 'https://overwatchitemtracker.com/resources'
 const items = [
-  ...eventItems[EVENTS.WINTER].items.emotes,
-  ...eventItems[EVENTS.WINTER].items.intros
+  ...eventItems[EVENTS.LUNAR].items.emotes,
+  ...eventItems[EVENTS.LUNAR].items.intros
 ]
 
 _.chunk(items, 30).forEach(chunk => {

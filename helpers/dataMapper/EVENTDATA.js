@@ -89,6 +89,9 @@ const EVENT_ITEM_ORDER = {
   },
   [EVENTS.ANNIVERSARY]: {
     "icons": ['heroName', 'name']
+  },
+  [EVENTS.LUNAR]: {
+    "skins": [a => qualityOrder[a.quality], 'heroName', 'name']
   }
 };
 
@@ -99,13 +102,15 @@ const EVENT_PREVIEWS = {
   [EVENTS.ANNIVERSARY]: ['emotes'],
   [EVENTS.SUMMER]: ['emotes', 'intros'],
   [EVENTS.HALLOWEEN]: ['emotes', 'intros'],
-  [EVENTS.WINTER]: ['emotes', 'intros']
+  [EVENTS.WINTER]: ['emotes', 'intros'],
+  [EVENTS.LUNAR]: ['emotes', 'intros']
 }
 
 const NEW_EVENTS = [
   EVENTS.SUMMER,
   EVENTS.HALLOWEEN,
-  EVENTS.WINTER
+  EVENTS.WINTER,
+  EVENTS.LUNAR
 ]
 
 module.exports = { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, NEW_EVENTS };
