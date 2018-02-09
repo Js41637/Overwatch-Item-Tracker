@@ -135,7 +135,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
     totals: {},
     heroes: {},
     events: {},
-    oldEvents: ['HALLOWEEN_2016', 'SUMMER_GAMES_2016', 'WINTER_WONDERLAND_2016'],
+    oldEvents: ['HALLOWEEN_2016', 'SUMMER_GAMES_2016', 'WINTER_WONDERLAND_2016', 'LUNAR_NEW_YEAR_2017'],
     newEvents: ['HALLOWEEN', 'SUMMER_GAMES', 'WINTER_WONDERLAND', 'LUNAR_NEW_YEAR'],
     init: function() {
       DataService.waitForInitialization().then(function() {
