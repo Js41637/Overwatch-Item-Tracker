@@ -88,6 +88,12 @@ things.forEach((thingy, i) => {
             console.warn(hero, "doesn't exist in data");
             continue;
           }
+
+          if (!data[hero].items[group]) {
+            data[hero].items[group] = [item]
+            continue
+          }
+
           data[hero].items[group].push(item);
         }
       }
