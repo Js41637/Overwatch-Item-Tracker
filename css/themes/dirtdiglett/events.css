@@ -524,58 +524,25 @@ body#WINTER_WONDERLAND:before {
 }
 
 /* YEAR OF THE ROOSTER */
-#LUNAR_NEW_YEAR #voicelines,
-#LUNAR_NEW_YEAR #icons,
-#LUNAR_NEW_YEAR #emotes,
-#LUNAR_NEW_YEAR #highlight-intros {
-  flex: 1;
-}
-
-#LUNAR_NEW_YEAR #voicelines .items,
-#LUNAR_NEW_YEAR #icons .items,
-#LUNAR_NEW_YEAR #sprays .items {
-  flex-direction: initial;
-}
-
 #LUNAR_NEW_YEAR #voicelines .item,
 #LUNAR_NEW_YEAR #icons .item {
-  width: 32%;
-  margin-right: 2%;
+  width: calc(33% - 6px);
+  display: inline-flex;
 }
 
-#LUNAR_NEW_YEAR #voicelines .item:nth-of-type(3n+0),
-#LUNAR_NEW_YEAR #icons .item:nth-of-type(3n+0) {
-  margin-right: 0;
+#LUNAR_NEW_YEAR #sprays .item {
+  width: calc(25% - 6px);
+  display: inline-flex;
 }
 
-#LUNAR_NEW_YEAR #row2 .right,
-#LUNAR_NEW_YEAR #victoryposes,
-#LUNAR_NEW_YEAR #epic-skins {
-  flex: 1;
+#LUNAR_NEW_YEAR #emotes .item,
+#LUNAR_NEW_YEAR #skins .item,
+#LUNAR_NEW_YEAR #intros .item,
+#LUNAR_NEW_YEAR #victoryposes .item  {
+  width: calc(50% - 6px);
+  display: inline-flex;
 }
 
-#LUNAR_NEW_YEAR #row2 .left,
-#LUNAR_NEW_YEAR #row2 .right {
-  display: flex;
-}
-
-#LUNAR_NEW_YEAR #row2 .right {
-  flex-direction: column;
-  min-height: 445px;
-}
-
-#LUNAR_NEW_YEAR #emotes {
-  margin-top: 0;
-}
-
-#LUNAR_NEW_YEAR #row2 .left,
-#LUNAR_NEW_YEAR #victoryposes {
-  flex: 0.8;
-}
-
-#LUNAR_NEW_YEAR #sprays {
-  flex: 2.4;
-}
 
 /* UPRISING 2017 */
 #UPRISING #icons,
@@ -861,7 +828,7 @@ body#WINTER_WONDERLAND:before {
   background-image: url(resources/icons/item-types/white/player-icons.svg);
 }
 
-#LUNAR_NEW_YEAR #epic-skins h2:before {
+#LUNAR_NEW_YEAR #skins h2:before {
   background-image: url(resources/icons/item-types/white/epic-skins.svg);
 }
 
