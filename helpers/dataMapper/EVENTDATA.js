@@ -1,5 +1,5 @@
 const { qualityOrder } = require('./utils.js');
-const CURRENTEVENT = 'WINTER_WONDERLAND';
+const CURRENTEVENT = 'LUNAR_NEW_YEAR';
 
 const EVENTS = {
   SUMMER16: 'SUMMER_GAMES_2016',
@@ -48,7 +48,7 @@ const EVENTTIMES = {
     "start": "1481652000000",
     "end": "1483416000000"
   },
-  [EVENTS.LUNAR]: {
+  [EVENTS.LUNAR16]: {
     "start": "1485280800000",
     "end": "1487066400000"
   },
@@ -71,7 +71,11 @@ const EVENTTIMES = {
   [EVENTS.WINTER]: {
     "start": "1513101600000",
     "end": "1514890800000"
-  }
+  },
+  [EVENTS.LUNAR]: {
+    "start": "1518112800000",
+    "end": "1520330400000"
+  },
 };
 
 const EVENT_ITEM_ORDER = {
@@ -89,6 +93,9 @@ const EVENT_ITEM_ORDER = {
   },
   [EVENTS.ANNIVERSARY]: {
     "icons": ['heroName', 'name']
+  },
+  [EVENTS.LUNAR]: {
+    "skins": [a => qualityOrder[a.quality], 'heroName', 'name']
   }
 };
 
@@ -99,13 +106,15 @@ const EVENT_PREVIEWS = {
   [EVENTS.ANNIVERSARY]: ['emotes'],
   [EVENTS.SUMMER]: ['emotes', 'intros'],
   [EVENTS.HALLOWEEN]: ['emotes', 'intros'],
-  [EVENTS.WINTER]: ['emotes', 'intros']
+  [EVENTS.WINTER]: ['emotes', 'intros'],
+  [EVENTS.LUNAR]: ['emotes', 'intros']
 }
 
 const NEW_EVENTS = [
   EVENTS.SUMMER,
   EVENTS.HALLOWEEN,
-  EVENTS.WINTER
+  EVENTS.WINTER,
+  EVENTS.LUNAR
 ]
 
 module.exports = { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, NEW_EVENTS };
