@@ -1,5 +1,5 @@
 const { qualityOrder } = require('./utils.js');
-const CURRENTEVENT = 'WINTER_WONDERLAND';
+const CURRENTEVENT = 'LUNAR_NEW_YEAR';
 
 const EVENTS = {
   SUMMER16: 'SUMMER_GAMES_2016',
@@ -48,7 +48,7 @@ const EVENTTIMES = {
     "start": "1481652000000",
     "end": "1483416000000"
   },
-  [EVENTS.LUNAR]: {
+  [EVENTS.LUNAR16]: {
     "start": "1485280800000",
     "end": "1487066400000"
   },
@@ -71,7 +71,11 @@ const EVENTTIMES = {
   [EVENTS.WINTER]: {
     "start": "1513101600000",
     "end": "1514890800000"
-  }
+  },
+  [EVENTS.LUNAR]: {
+    "start": "1486576800000",
+    "end": "1488794400000"
+  },
 };
 
 const EVENT_ITEM_ORDER = {
