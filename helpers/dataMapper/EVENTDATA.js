@@ -95,7 +95,8 @@ const EVENT_ITEM_ORDER = {
     "icons": ['heroName', 'name']
   },
   [EVENTS.LUNAR]: {
-    "skins": [a => qualityOrder[a.quality], 'heroName', 'name']
+    "skins": [a => qualityOrder[a.quality], 'heroName', 'name'],
+    "icons": ['heroName', 'name']
   }
 };
 
