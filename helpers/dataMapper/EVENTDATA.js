@@ -30,7 +30,7 @@ const EVENTNAMES = {
   [EVENTS.SUMMER]: 'Summer Games',
   [EVENTS.HALLOWEEN]: 'Halloween Terror',
   [EVENTS.WINTER]: 'Winter Wonderland',
-  [EVENTS.LUNAR]: 'Year of the Rooster',
+  [EVENTS.LUNAR]: 'Year of the Dog',
   [EVENTS.UPRISING]: 'Uprising',
   [EVENTS.ANNIVERSARY]: 'Anniversary'
 };
