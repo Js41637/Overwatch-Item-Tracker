@@ -5,7 +5,7 @@ const handleErr = err => console.log(`Error while doing stuff!!\n==ERROR==\n${er
 
 const getCleanID = (what, hero) => {
   if (!what.length) return undefined;
-  return _getCleanID(what.replace(/\.(png|dds|jpg)|$/, ''), hero);
+  return _getCleanID(what.replace(/\.(png|dds|jpg|wem|ogg)|$/, ''), hero);
 };
 
 const hardCodedIds = {

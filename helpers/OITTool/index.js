@@ -4,6 +4,7 @@ const { mapFilesToHeroes } = require('./tools/filesToHeroMapper');
 const { extractSounds } = require('./tools/soundsExtractor');
 const { fetchVoicelines } = require('./tools/voicelineFetcher');
 const { mapAllClassData } = require('./tools/allClassItemsMapper');
+const { fetchVoicelines2 } = require('./tools/fetchVoicelines2');
 const { handleErr } = require('./tools/utils');
 
 var args = process.argv.slice(2);
@@ -27,6 +28,9 @@ switch(mode) {
   case 'v':
   case 'fetchvoicelines':
     fetchVoicelines();
+    break;
+  case 'v2':
+    fetchVoicelines2()
     break;
   case 'i':
     extractImages(args);
