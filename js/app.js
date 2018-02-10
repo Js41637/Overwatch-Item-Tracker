@@ -102,6 +102,33 @@ OWI.run(function() {
           }
         });
       }
+    },
+    {
+      name: 'Fix lunar ids and outstanding id changes',
+      id: 8,
+      run: function() {
+        var newData = {"all":{"icons":{"cheers1":"na-zdorovie"},"sprays":{"year-of-the-rooster":"year-of-the-rooster-2017"}},"orisa":{"voicelines":{"orisa-satsified-with-protection":"orisa-satisfied-with-protection"}},"genji":{"voicelines":{"genji-i-was-hoping-for-a-challenge":"genji-hoping-for-a-challenge"}},"mercy":{"sprays":{"mercy-stethoscope":"mercy-heartbeat"}},"winston":{"emotes":{"winston-dance":"winston-twist"}},"doomfist":{"voicelines":{"doomfist-and-they-say-chivalry-is-dead":"doomfist-they-say-chivalry-is-dead"}},"mei":{"voicelines":{"dont-you-just-love-surprises":"mei-dont-you-love-surprises"}},"symmetra":{"voicelines":{"symmetra-were-you-expecting-a-miracle":"symmetra-expecting-a-miracle"}},"zarya":{"voicelines":{"zarya-where-is-the-dog-buried":"zarya-where-the-dog-is-buried"}}}
+        var heroChanges = [['genji', 'baihu'], ['mercy', 'zhuque'], ['pharah', 'qinglong'], ['zarya', 'xuanwu']]
+        for (var hero in newData) {
+          for (var type in newData[hero]) {
+            for (var item in newData[hero][type]) {
+              if (data[hero] && data[hero][type] && data[hero][type][item]) {
+                data[hero][type][newData[hero][type][item]] = data[hero][type][item];
+                delete data[hero][type][item];
+              }
+            }
+          }
+        }
+        heroChanges.forEach(function(thing) {
+          if (data[thing[0]] && data[thing[0]]['icons']) {
+            if (data[thing[0]]['icons'][thing[0] + '-' + thing[1]]) {
+              data['all']['icons'][thing[1]] = true
+            }
+
+            delete data[thing[0]]['icons'][[thing[0] + '-' + thing[1]]]
+          }
+        });
+      }
     }
   ];
 

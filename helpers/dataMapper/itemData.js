@@ -5,15 +5,8 @@ const { EVENTS } = require('./EVENTDATA');
 const data = {
   // Changes IDs and Names will eventually be fixed with a data migration.
   idsBlizzardChanged: {
-    "voicelines/orisa-satisfied-with-protection": "orisa-satsified-with-protection",
-    "icons/na-zdorovie": "cheers1",
-    "voicelines/genji-hoping-for-a-challenge": "genji-i-was-hoping-for-a-challenge",
-    "sprays/mercy-heartbeat": "mercy-stethoscope",
-    "emotes/winston-twist": "winston-dance",
-    "voicelines/doomfist-they-say-chivalry-is-dead": "doomfist-and-they-say-chivalry-is-dead",
-    "voicelines/mei-dont-you-love-surprises": "mei-dont-you-just-love-surprises",
-    "voicelines/symmetra-expecting-a-miracle": "symmetra-were-you-expecting-a-miracle",
-    "sprays/year-of-the-rooster-2017": "year-of-the-rooster"
+    "sprays/year-of-the-dog": "year-of-the-dog-2018",
+    "sprays/year-of-the-rooster": "year-of-the-rooster-2017",
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
@@ -141,7 +134,7 @@ const data = {
       [EVENTS.SUMMER]: ['summer-games-2016', 'summer-games', 'goal-blossom', 'safe-hands', 'bicycle-kick'],
       [EVENTS.HALLOWEEN]: ['never-die', 'bats', 'boo', 'boop', 'candyball', 'fangs', 'gummy-hog', 'halloween-terror', 'pumpkins', 'witchs-brew', 'halloween-special', 'junkensteins-revenge', 'rise-of-the-zomnics', 'the-reapening', 'my-creations', 'the-monster', 'the-reaper', 'the-witch'],
       [EVENTS.WINTER]: ['snowcree', 'snowhog', 'snowmei', 'snowreaper', 'winter-wonderland', 'yeti', 'yeti-hunter'],
-      [EVENTS.LUNAR]: ['auspicious-lion', 'awakened-lion', 'dragons-head', 'lucky-pouch', 'red-envelope', 'year-of-the-rooster', 'year-of-the-dog-2018', 'good-fortune'],
+      [EVENTS.LUNAR]: ['auspicious-lion', 'awakened-lion', 'dragons-head', 'lucky-pouch', 'red-envelope', 'year-of-the-rooster-2017', 'year-of-the-dog-2018', 'good-fortune'],
       [EVENTS.UPRISING]: ['b73ns', 'eradicator', 'null-sector', 'nullmari', 'nulltrooper', 'or14ns', 'slicer'],
       [EVENTS.ANNIVERSARY]: ['anniversary-2017']
     },
@@ -149,7 +142,7 @@ const data = {
       [EVENTS.SUMMER]: ["summer-games-2016", "summer-games-2017", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america"],
       [EVENTS.HALLOWEEN]: ["calavera", "vampachimari", "eyeball", "superstition", "witchs-hat", "ghostymari", "tombstone", "bewitching", "candle", "never-die", "wolf", "witchs-brew", "spider", "junkensteins-pachimonster", "pachimummy", "halloween-terror-2016", "halloween-terror-2017"],
       [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "snowman", "present", "pachimerry", "gingermari", "2017", "2018", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
-      [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune"],
+      [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu"],
       [EVENTS.UPRISING]: ['uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari'],
       [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'pachiversary'],
     }

@@ -704,10 +704,10 @@
           "heroName": "Genji",
           "hero": "genji",
           "name": "Hoping for a challenge",
-          "id": "genji-i-was-hoping-for-a-challenge",
+          "id": "genji-hoping-for-a-challenge",
           "quality": "common",
-          "url": "/heroes/genji/voicelines/genji-i-was-hoping-for-a-challenge.ogg",
-          "group": "SUMMER_GAMES_2016"
+          "url": "/heroes/genji/voicelines/genji-hoping-for-a-challenge.ogg",
+          "isNew": true
         },
         {
           "heroName": "Genji",
@@ -3929,9 +3929,9 @@
           "heroName": "Doomfist",
           "hero": "doomfist",
           "name": "They say chivalry is dead",
-          "id": "doomfist-and-they-say-chivalry-is-dead",
+          "id": "doomfist-they-say-chivalry-is-dead",
           "quality": "common",
-          "url": "/heroes/doomfist/voicelines/doomfist-and-they-say-chivalry-is-dead.ogg",
+          "url": "/heroes/doomfist/voicelines/doomfist-they-say-chivalry-is-dead.ogg",
           "isNew": true
         },
         {
@@ -4028,9 +4028,9 @@
           "heroName": "Mei",
           "hero": "mei",
           "name": "Don't you love surprises",
-          "id": "mei-dont-you-just-love-surprises",
+          "id": "mei-dont-you-love-surprises",
           "quality": "common",
-          "url": "/heroes/mei/voicelines/mei-dont-you-just-love-surprises.ogg",
+          "url": "/heroes/mei/voicelines/mei-dont-you-love-surprises.ogg",
           "isNew": true
         },
         {
@@ -4208,9 +4208,9 @@
           "heroName": "Symmetra",
           "hero": "symmetra",
           "name": "Expecting a miracle?",
-          "id": "symmetra-were-you-expecting-a-miracle",
+          "id": "symmetra-expecting-a-miracle",
           "quality": "common",
-          "url": "/heroes/symmetra/voicelines/symmetra-were-you-expecting-a-miracle.ogg",
+          "url": "/heroes/symmetra/voicelines/symmetra-expecting-a-miracle.ogg",
           "isNew": true
         },
         {
@@ -4913,7 +4913,7 @@
         {
           "heroName": "Moira",
           "hero": "moira",
-          "name": "Dog person",
+          "name": "Dog Person",
           "id": "moira-dog-person",
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-dog-person.png",
@@ -5108,17 +5108,16 @@
         },
         {
           "hero": "all",
-          "name": "Year of the Dog 2018",
+          "name": "Year of the Dog",
           "id": "year-of-the-dog-2018",
           "url": "/heroes/all/sprays/year-of-the-dog-2018.png",
           "quality": "common"
         },
         {
           "hero": "all",
-          "name": "Year of the Rooster 2017",
-          "id": "year-of-the-rooster",
-          "url": "/heroes/all/sprays/year-of-the-rooster.png",
-          "group": "LUNAR_NEW_YEAR_2017",
+          "name": "Year of the Rooster",
+          "id": "year-of-the-rooster-2017",
+          "url": "/heroes/all/sprays/year-of-the-rooster-2017.png",
           "quality": "common"
         },
         {
@@ -5764,10 +5763,10 @@
         {
           "heroName": "Zarya",
           "hero": "zarya",
-          "name": "Where is the dog buried",
-          "id": "zarya-where-is-the-dog-buried",
+          "name": "Where the dog is buried",
+          "id": "zarya-where-the-dog-is-buried",
           "quality": "common",
-          "url": "/heroes/zarya/voicelines/zarya-where-is-the-dog-buried.ogg",
+          "url": "/heroes/zarya/voicelines/zarya-where-the-dog-is-buried.ogg",
           "isNew": true
         },
         {
@@ -5829,7 +5828,7 @@
         {
           "heroName": "McCree",
           "hero": "mccree",
-          "name": "Fire in the hole",
+          "name": "Fire in the Hole",
           "id": "mccree-fire-in-the-hole",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/mccree-fire-in-the-hole.jpg",
@@ -5901,7 +5900,7 @@
         {
           "heroName": "Zarya",
           "hero": "zarya",
-          "name": "Big one",
+          "name": "Big One",
           "id": "zarya-big-one",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/zarya-big-one.jpg",
@@ -5965,14 +5964,6 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Baihu",
-          "id": "genji-baihu",
-          "url": "/heroes/genji/icons/genji-baihu.png",
-          "isNew": true
-        },
-        {
           "heroName": "McCree",
           "hero": "mccree",
           "name": "Magistrate",
@@ -5987,22 +5978,6 @@
           "id": "mei-change",
           "url": "/heroes/mei/icons/mei-change.png",
           "group": "LUNAR_NEW_YEAR_2017"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Zhuque",
-          "id": "mercy-zhuque",
-          "url": "/heroes/mercy/icons/mercy-zhuque.png",
-          "isNew": true
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Qinglong",
-          "id": "pharah-qinglong",
-          "url": "/heroes/pharah/icons/pharah-qinglong.png",
-          "isNew": true
         },
         {
           "heroName": "Reinhardt",
@@ -6037,20 +6012,18 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Xuanwu",
-          "id": "zarya-xuanwu",
-          "url": "/heroes/zarya/icons/zarya-xuanwu.png",
-          "isNew": true
-        },
-        {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
           "name": "Sanzang",
           "id": "zenyatta-sanzang",
           "url": "/heroes/zenyatta/icons/zenyatta-sanzang.png",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "hero": "all",
+          "name": "Baihu",
+          "id": "baihu",
+          "url": "/heroes/all/icons/baihu.png"
         },
         {
           "hero": "all",
@@ -6156,6 +6129,12 @@
         },
         {
           "hero": "all",
+          "name": "Qinglong",
+          "id": "qinglong",
+          "url": "/heroes/all/icons/qinglong.png"
+        },
+        {
+          "hero": "all",
           "name": "Red Envelope",
           "id": "red-envelope",
           "url": "/heroes/all/icons/red-envelope.png"
@@ -6180,6 +6159,12 @@
         },
         {
           "hero": "all",
+          "name": "Xuanwu",
+          "id": "xuanwu",
+          "url": "/heroes/all/icons/xuanwu.png"
+        },
+        {
+          "hero": "all",
           "name": "Year of the Dog 2018",
           "id": "year-of-the-dog-2018",
           "url": "/heroes/all/icons/year-of-the-dog-2018.png"
@@ -6189,6 +6174,12 @@
           "name": "Year of the Rooster 2017",
           "id": "year-of-the-rooster-2017",
           "url": "/heroes/all/icons/year-of-the-rooster-2017.png"
+        },
+        {
+          "hero": "all",
+          "name": "Zhuque",
+          "id": "zhuque",
+          "url": "/heroes/all/icons/zhuque.png"
         }
       ],
       "skinsLegendary": [
@@ -7529,10 +7520,9 @@
           "heroName": "Winston",
           "hero": "winston",
           "name": "Twist",
-          "id": "winston-dance",
+          "id": "winston-twist",
           "quality": "epic",
-          "url": "/updates/ANNIVERSARY/emotes/winston-dance.webm",
-          "group": "ANNIVERSARY_2017"
+          "url": "/updates/ANNIVERSARY/emotes/winston-twist.webm"
         },
         {
           "heroName": "Zarya",
@@ -8170,10 +8160,9 @@
           "heroName": "Orisa",
           "hero": "orisa",
           "name": "Satisfied with protection",
-          "id": "orisa-satsified-with-protection",
+          "id": "orisa-satisfied-with-protection",
           "quality": "common",
-          "url": "/heroes/orisa/voicelines/orisa-satsified-with-protection.ogg",
-          "group": "ANNIVERSARY_2017"
+          "url": "/heroes/orisa/voicelines/orisa-satisfied-with-protection.ogg"
         },
         {
           "heroName": "Orisa",
