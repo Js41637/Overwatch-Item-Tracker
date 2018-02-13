@@ -65,10 +65,7 @@ OWI.directive('sectionHeader', function() {
       totals: '=',
       selectModal: '='
     },
-    templateUrl: './templates/section-header.html',
-    link: function($scope) {
-      console.log($scope)
-    }
+    templateUrl: './templates/section-header.html'
   };
 });
 
