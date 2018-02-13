@@ -487,6 +487,22 @@ strong {
   height: 40px;
 }
 
+.cost-remaining-tooltip .tooltip-inner {
+  max-width: 280px;
+}
+
+.cost-remaining-tooltip .tooltip-inner table tr td {
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.cost-remaining-tooltip .tooltip-inner table tr td:first-of-type {
+  padding-right: 3px;
+  text-align: right;
+  font-weight: normal;
+}
+
 
 /**
  * SIDEBAR
