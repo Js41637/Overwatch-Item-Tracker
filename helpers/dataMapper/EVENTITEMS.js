@@ -413,7 +413,9 @@ const EVENTITEMS = {
     "sprays/dragons-head",
     "sprays/lucky-pouch",
     "sprays/red-envelope",
-    "sprays/year-of-the-rooster",
+    "sprays/year-of-the-rooster-2017",
+    "sprays/year-of-the-dog-2018", // Hack to override price to 25.
+    "sprays/good-fortune", // Hack to override price to 25.
     "sprays/auspicious-lion",
     "sprays/awakened-lion",
     "voicelines/ana-the-moon-in-winter",
