@@ -299,7 +299,6 @@ var updates = {};
 forEach(heroes, hero => {
   forEach(hero.items, (items, tKey) => {
     items.forEach(item => {
-      item = cloneDeep(item)
       const event = item.event;
       const actualEvent = findKey(EVENTITEMS, event => event.includes(`${tKey}/${item.id}`));
 
