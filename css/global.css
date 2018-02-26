@@ -53,7 +53,7 @@ body {
   color: #fff;
 }
 
-.item h3.rare, .color-rare {
+.item h3.rare, .color-rare, #icons .item h3, #icons .item h3.common {
   color: #00c1fa !important;
 }
 
