@@ -1,18 +1,12 @@
 const fs = require('fs')
-const path = require('path')
 const { getDirectories, checkDirectorys, getCleanID } = require('./utils');
 
-if (!fs.existsSync('../voicelines')) {
-  fs.mkdirSync(`../voicelines`);
-}
-
-
-console.log(__dirname)
-
 const fetchVoicelines2 = () => {
-  const cwd = process.cwd();
+  if (!fs.existsSync('../voicelines')) {
+    fs.mkdirSync(`../voicelines`);
+  }
 
-  if (!cwd.match(/OverwatchAssets\\Heroes$/)) {
+  if (!process.cwd().match(/OverwatchAssets\\Heroes$/)) {
     console.error("Needs to be run in OverwatchAssets\\Heroes");
     process.exit();
   }
