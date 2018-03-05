@@ -104,11 +104,7 @@ const EVENT_ITEM_ORDER = {
 // is generated it links the preview to the preview stored under the event. This is because in most cases
 // heroes have their own item previews seperate from events but this is not always the case as I am lazy.
 const EVENT_PREVIEWS = {
-  [EVENTS.ANNIVERSARY]: ['emotes'],
-  [EVENTS.SUMMER]: ['emotes', 'intros'],
-  [EVENTS.HALLOWEEN]: ['emotes', 'intros'],
-  [EVENTS.WINTER]: ['emotes', 'intros'],
-  [EVENTS.LUNAR]: ['emotes', 'intros']
+  [EVENTS.ANNIVERSARY]: ['emotes']
 }
 
 const NEW_EVENTS = [
