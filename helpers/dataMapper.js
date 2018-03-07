@@ -261,7 +261,7 @@ for (var hero in data) {
 
           out.achievement = (type == 'sprays' && achievementSprays.includes(name.toLowerCase())) ? true : 'blizzard';
           var desc = getAchievementForItem(id);
-          if (desc && out.achievement !== 'blizzard') {
+          if (desc) {
             out.description = desc;
           }
           break;
