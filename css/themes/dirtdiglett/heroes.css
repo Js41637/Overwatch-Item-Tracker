@@ -215,6 +215,11 @@ body#moira #hero-container .hero-overview {
   background-position: 50% 12%;
 }
 
+body#brigitte #hero-container .hero-overview {
+  background-image: url(resources/heroes/brigitte/background-story.jpg);
+  background-position: 50% 12%;
+}
+
 body#pharah #hero-container .hero-overview {
   background-image: url(resources/heroes/pharah/background-story.jpg);
   background-position: 50% 16%;

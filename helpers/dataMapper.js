@@ -488,7 +488,9 @@ heroes = sortObject(heroes);
 // Go through everything and check old ids vs new ids to detect changes
 const originalItemsMapping = getOriginalItemsList(originalData)
 for (let hero in heroes) {
+  if (!originalItemsMapping[hero]) continue
   for (let type in heroes[hero].items) {
+    if (!originalItemsMapping[hero][type]) continue
     for (let item of heroes[hero].items[type]) {
       if (!originalItemsMapping[hero][type].includes(item.id)) {
         console.warn(`Changed/New item detected - [${hero}/${type}] ${item.id}`)

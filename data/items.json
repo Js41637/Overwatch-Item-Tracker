@@ -267,6 +267,12 @@
           "url": "/heroes/all/icons/brazil.png"
         },
         {
+          "name": "Brigitte",
+          "id": "brigitte-brigitte",
+          "url": "/heroes/brigitte/icons/brigitte-brigitte.png",
+          "hero": "brigitte"
+        },
+        {
           "name": "Bubbly",
           "id": "bubbly",
           "event": "WINTER_WONDERLAND",
@@ -1204,6 +1210,12 @@
           "hero": "lucio"
         },
         {
+          "name": "Katt",
+          "id": "brigitte-katt",
+          "url": "/heroes/brigitte/icons/brigitte-katt.png",
+          "hero": "brigitte"
+        },
+        {
           "name": "Kinenbi",
           "id": "hanzo-kinenbi",
           "url": "/heroes/hanzo/icons/hanzo-kinenbi.png",
@@ -1692,6 +1704,12 @@
           "id": "queen-of-blades",
           "url": "/heroes/all/icons/queen-of-blades.png",
           "group": "starcraft"
+        },
+        {
+          "name": "Rally",
+          "id": "brigitte-rally",
+          "url": "/heroes/brigitte/icons/brigitte-rally.png",
+          "hero": "brigitte"
         },
         {
           "name": "Ramen",
@@ -5038,6 +5056,432 @@
       ]
     }
   },
+  "brigitte": {
+    "name": "Brigitte",
+    "id": "brigitte",
+    "class": "Support",
+    "description": "Brigitte Lindholm, squire to Reinhardt Wilhelm, is a former mechanical engineer who has decided to take up arms and fight on the front lines to protect those in need.",
+    "colors": {
+      "primary": "#e04e34",
+      "highlight": "#e56d57"
+    },
+    "items": {
+      "skins": [
+        {
+          "name": "Classic",
+          "id": "brigitte-classic",
+          "quality": "common",
+          "url": "/heroes/brigitte/skins/brigitte-classic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Blå",
+          "id": "brigitte-bla",
+          "quality": "rare",
+          "url": "/heroes/brigitte/skins/brigitte-bla.jpg"
+        },
+        {
+          "name": "Grön",
+          "id": "brigitte-gron",
+          "quality": "rare",
+          "url": "/heroes/brigitte/skins/brigitte-gron.jpg"
+        },
+        {
+          "name": "Plommon",
+          "id": "brigitte-plommon",
+          "quality": "rare",
+          "url": "/heroes/brigitte/skins/brigitte-plommon.jpg"
+        },
+        {
+          "name": "Röd",
+          "id": "brigitte-rod",
+          "quality": "rare",
+          "url": "/heroes/brigitte/skins/brigitte-rod.jpg"
+        },
+        {
+          "name": "Carbon Fiber",
+          "id": "brigitte-carbon-fiber",
+          "quality": "epic",
+          "url": "/heroes/brigitte/skins/brigitte-carbon-fiber.jpg"
+        },
+        {
+          "name": "Ironclad",
+          "id": "brigitte-ironclad",
+          "quality": "epic",
+          "url": "/heroes/brigitte/skins/brigitte-ironclad.jpg"
+        },
+        {
+          "name": "Engineer",
+          "id": "brigitte-engineer",
+          "quality": "legendary",
+          "url": "/heroes/brigitte/skins/brigitte-engineer.jpg",
+          "description": "Before taking up arms, Brigitte planned to pursue a career as an engineer who specialized  in the creation of armor and other defensive systems."
+        },
+        {
+          "name": "Mechanic",
+          "id": "brigitte-mechanic",
+          "quality": "legendary",
+          "url": "/heroes/brigitte/skins/brigitte-mechanic.jpg",
+          "description": "Before taking up arms, Brigitte planned to pursue a career as an engineer who specialized  in the creation of armor and other defensive systems."
+        },
+        {
+          "name": "Máni",
+          "id": "brigitte-mani",
+          "quality": "legendary",
+          "url": "/heroes/brigitte/skins/brigitte-mani.jpg"
+        },
+        {
+          "name": "Sól",
+          "id": "brigitte-sol",
+          "quality": "legendary",
+          "url": "/heroes/brigitte/skins/brigitte-sol.jpg"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "id": "brigitte-heroic",
+          "quality": "common",
+          "url": "/heroes/brigitte/emotes/brigitte-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Cheer",
+          "id": "brigitte-cheer",
+          "quality": "epic",
+          "url": "/heroes/brigitte/emotes/brigitte-cheer.webm"
+        },
+        {
+          "name": "Hilarious",
+          "id": "brigitte-hilarious",
+          "quality": "epic",
+          "url": "/heroes/brigitte/emotes/brigitte-hilarious.webm"
+        },
+        {
+          "name": "Kneel",
+          "id": "brigitte-kneel",
+          "quality": "epic",
+          "url": "/heroes/brigitte/emotes/brigitte-kneel.webm"
+        },
+        {
+          "name": "Recalibrate",
+          "id": "brigitte-recalibrate",
+          "quality": "epic",
+          "url": "/heroes/brigitte/emotes/brigitte-recalibrate.webm"
+        },
+        {
+          "name": "Taunt",
+          "id": "brigitte-taunt",
+          "quality": "epic",
+          "url": "/heroes/brigitte/emotes/brigitte-taunt.webm"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "id": "brigitte-heroic",
+          "quality": "common",
+          "url": "/heroes/brigitte/intros/brigitte-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Defender",
+          "id": "brigitte-defender",
+          "quality": "epic",
+          "url": "/heroes/brigitte/intros/brigitte-defender.webm"
+        },
+        {
+          "name": "Flail",
+          "id": "brigitte-flail",
+          "quality": "epic",
+          "url": "/heroes/brigitte/intros/brigitte-flail.webm"
+        },
+        {
+          "name": "Rally",
+          "id": "brigitte-rally",
+          "quality": "epic",
+          "url": "/heroes/brigitte/intros/brigitte-rally.webm"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Brigitte",
+          "id": "brigitte-brigitte",
+          "url": "/heroes/brigitte/icons/brigitte-brigitte.png",
+          "hero": "brigitte"
+        },
+        {
+          "name": "Katt",
+          "id": "brigitte-katt",
+          "url": "/heroes/brigitte/icons/brigitte-katt.png",
+          "hero": "brigitte"
+        },
+        {
+          "name": "Rally",
+          "id": "brigitte-rally",
+          "url": "/heroes/brigitte/icons/brigitte-rally.png",
+          "hero": "brigitte"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Adjustment",
+          "id": "brigitte-adjustment",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-adjustment.png"
+        },
+        {
+          "name": "Apprentice",
+          "id": "brigitte-apprentice",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-apprentice.png"
+        },
+        {
+          "name": "Armor",
+          "id": "brigitte-armor",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-armor.png"
+        },
+        {
+          "name": "Armored Lion",
+          "id": "brigitte-armored-lion",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-armored-lion.png"
+        },
+        {
+          "name": "Cat Person",
+          "id": "brigitte-cat-person",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-cat-person.png"
+        },
+        {
+          "name": "Challenge",
+          "id": "brigitte-challenge",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-challenge.png"
+        },
+        {
+          "name": "Dessert",
+          "id": "brigitte-dessert",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-dessert.png"
+        },
+        {
+          "name": "Flail with Chain",
+          "id": "brigitte-flail-with-chain",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-flail-with-chain.png"
+        },
+        {
+          "name": "Fuel",
+          "id": "brigitte-fuel",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-fuel.png"
+        },
+        {
+          "name": "Heraldry",
+          "id": "brigitte-heraldry",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-heraldry.png"
+        },
+        {
+          "name": "High Five",
+          "id": "brigitte-high-five",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-high-five.png"
+        },
+        {
+          "name": "Icon",
+          "id": "brigitte-icon",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-icon.png"
+        },
+        {
+          "name": "Lindholms",
+          "id": "brigitte-lindholms",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-lindholms.png"
+        },
+        {
+          "name": "Mounted Combat",
+          "id": "brigitte-mounted-combat",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-mounted-combat.png"
+        },
+        {
+          "name": "Paj",
+          "id": "brigitte-paj",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-paj.png"
+        },
+        {
+          "name": "Prints",
+          "id": "brigitte-prints",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-prints.png"
+        },
+        {
+          "name": "Raketbälte",
+          "id": "brigitte-raketbalte",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-raketbalte.png"
+        },
+        {
+          "name": "Rally",
+          "id": "brigitte-rally",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-rally.png"
+        },
+        {
+          "name": "Skål!",
+          "id": "brigitte-skal",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-skal.png"
+        },
+        {
+          "name": "Stories",
+          "id": "brigitte-stories",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-stories.png"
+        },
+        {
+          "name": "Training",
+          "id": "brigitte-training",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-training.png"
+        },
+        {
+          "name": "Wink",
+          "id": "brigitte-wink",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-wink.png"
+        },
+        {
+          "name": "Wrestle",
+          "id": "brigitte-wrestle",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-wrestle.png"
+        },
+        {
+          "name": "Cute",
+          "id": "brigitte-cute",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-cute.png",
+          "achievement": true
+        },
+        {
+          "name": "Pixel",
+          "id": "brigitte-pixel",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-pixel.png",
+          "achievement": true
+        }
+      ],
+      "voicelines": [
+        {
+          "name": "You won't be disappointed",
+          "id": "brigitte-you-wont-be-disappointed",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-you-wont-be-disappointed.ogg",
+          "standardItem": true
+        },
+        {
+          "name": "Be reasonable",
+          "id": "brigitte-be-reasonable",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-be-reasonable.ogg"
+        },
+        {
+          "name": "Get lost",
+          "id": "brigitte-get-lost",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-get-lost.ogg"
+        },
+        {
+          "name": "Leave this to the experts",
+          "id": "brigitte-leave-this-to-the-experts",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-leave-this-to-the-experts.ogg"
+        },
+        {
+          "name": "Mace to the face",
+          "id": "brigitte-mace-to-the-face",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-mace-to-the-face.ogg"
+        },
+        {
+          "name": "No shortcuts",
+          "id": "brigitte-no-shortcuts",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-no-shortcuts.ogg"
+        },
+        {
+          "name": "Swedish engineering",
+          "id": "brigitte-swedish-engineering",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-swedish-engineering.ogg"
+        },
+        {
+          "name": "This is pie",
+          "id": "brigitte-this-is-pie",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-this-is-pie.ogg"
+        },
+        {
+          "name": "Trust me",
+          "id": "brigitte-trust-me",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-trust-me.ogg"
+        },
+        {
+          "name": "What are you doing?",
+          "id": "brigitte-what-are-you-doing",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-what-are-you-doing.ogg"
+        },
+        {
+          "name": "Working as intended",
+          "id": "brigitte-working-as-intended",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-working-as-intended.ogg"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "id": "brigitte-heroic",
+          "quality": "common",
+          "url": "/heroes/brigitte/poses/brigitte-heroic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Confident",
+          "id": "brigitte-confident",
+          "quality": "rare",
+          "url": "/heroes/brigitte/poses/brigitte-confident.jpg"
+        },
+        {
+          "name": "Rally",
+          "id": "brigitte-rally",
+          "quality": "rare",
+          "url": "/heroes/brigitte/poses/brigitte-rally.jpg"
+        },
+        {
+          "name": "Relaxed",
+          "id": "brigitte-relaxed",
+          "quality": "rare",
+          "url": "/heroes/brigitte/poses/brigitte-relaxed.jpg"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "brigitte-golden",
+          "quality": "golden"
+        }
+      ]
+    }
+  },
   "dva": {
     "name": "D.Va",
     "id": "dva",
@@ -8109,6 +8553,12 @@
           "url": "/heroes/junkrat/sprays/junkrat-grin.png"
         },
         {
+          "name": "Hayseed",
+          "id": "junkrat-scarecrow",
+          "quality": "common",
+          "url": "/heroes/junkrat/sprays/junkrat-scarecrow.png"
+        },
+        {
           "name": "Icon",
           "id": "junkrat-icon",
           "quality": "common",
@@ -8155,12 +8605,6 @@
           "id": "junkrat-rolling",
           "quality": "common",
           "url": "/heroes/junkrat/sprays/junkrat-rolling.png"
-        },
-        {
-          "name": "Scarecrow",
-          "id": "junkrat-scarecrow",
-          "quality": "common",
-          "url": "/heroes/junkrat/sprays/junkrat-scarecrow.png"
         },
         {
           "name": "Smile",
@@ -10041,7 +10485,8 @@
           "name": "Ecopoint: Antarctica",
           "id": "mei-ecopoint-antarctica",
           "quality": "legendary",
-          "url": "/heroes/mei/skins/mei-ecopoint-antarctica.jpg"
+          "url": "/heroes/mei/skins/mei-ecopoint-antarctica.jpg",
+          "description": "While she was stationed at Ecopoint: Antarctica, Mei performed research on climate anomalies in the region."
         },
         {
           "name": "Firefighter",
@@ -11936,9 +12381,9 @@
         },
         {
           "name": "Sláinte",
-          "id": "moira-slinte",
+          "id": "moira-slainte",
           "quality": "common",
-          "url": "/heroes/moira/voicelines/moira-slinte.ogg",
+          "url": "/heroes/moira/voicelines/moira-slainte.ogg",
           "event": "LUNAR_NEW_YEAR",
           "isNew": true
         },
@@ -14198,7 +14643,8 @@
           "name": "Crusader",
           "id": "reinhardt-crusader",
           "quality": "legendary",
-          "url": "/heroes/reinhardt/skins/reinhardt-crusader.jpg"
+          "url": "/heroes/reinhardt/skins/reinhardt-crusader.jpg",
+          "description": "\"The Hero of Eichenwalde,\" Reinhardt joined the original Overwatch team in the place of his fallen commander, Balderich."
         },
         {
           "name": "Greifhardt",
@@ -17121,6 +17567,7 @@
           "id": "symmetra-dragon",
           "quality": "legendary",
           "url": "/heroes/symmetra/skins/symmetra-dragon.jpg",
+          "description": "As the tales tell, the Witch of the Wilds had many powerful allies, including the draconic summoner.",
           "event": "HALLOWEEN",
           "isNew": true
         },
@@ -17843,6 +18290,7 @@
           "id": "torbjorn-santaclad",
           "quality": "legendary",
           "url": "/heroes/torbjorn/skins/torbjorn-santaclad.jpg",
+          "description": "At the gentle urging of his wife, Ingrid, Torbjörn dresses up as Santa for the Lindholm holiday celebrations.",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
         },
@@ -19330,7 +19778,8 @@
           "name": "Comtesse",
           "id": "widowmaker-comtesse",
           "quality": "legendary",
-          "url": "/heroes/widowmaker/skins/widowmaker-comtesse.jpg"
+          "url": "/heroes/widowmaker/skins/widowmaker-comtesse.jpg",
+          "description": "The historical motto of the Guillard family motto was, \"Chasseurs toujours.\""
         },
         {
           "name": "Huntress",

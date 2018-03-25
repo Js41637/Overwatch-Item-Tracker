@@ -28,6 +28,14 @@ const data = {
       highlight: "#82af5f"
     }
   },
+  brigitte: {
+    class: CLASSES.SUPPORT,
+    description: "Brigitte Lindholm, squire to Reinhardt Wilhelm, is a former mechanical engineer who has decided to take up arms and fight on the front lines to protect those in need.",
+    colors: {
+      primary: "#e04e34",
+      highlight: "#e56d57"
+    }
+  },
   doomfist: {
     class: CLASSES.OFFENCE,
     description: "One of the leaders of Talon, Doomfist is determined to plunge the world into a new conflict that he believes will make humanity stronger.",

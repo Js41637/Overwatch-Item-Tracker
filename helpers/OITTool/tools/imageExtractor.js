@@ -34,6 +34,9 @@ const findImages = hero => {
           moveImages(hero, type, heroID).then(res);
         });
       })).then(resolve);
+    }).catch(err => {
+      console.error(err)
+      resolve()
     });
   });
 };
