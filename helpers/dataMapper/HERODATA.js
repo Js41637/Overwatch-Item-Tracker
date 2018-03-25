@@ -32,8 +32,8 @@ const data = {
     class: CLASSES.SUPPORT,
     description: "Brigitte Lindholm, squire to Reinhardt Wilhelm, is a former mechanical engineer who has decided to take up arms and fight on the front lines to protect those in need.",
     colors: {
-      primary: "#e04e34",
-      highlight: "#e56d57"
+      primary: "#73342b",
+      highlight: "#914236"
     }
   },
   doomfist: {

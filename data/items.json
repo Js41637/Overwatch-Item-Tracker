@@ -5062,8 +5062,8 @@
     "class": "Support",
     "description": "Brigitte Lindholm, squire to Reinhardt Wilhelm, is a former mechanical engineer who has decided to take up arms and fight on the front lines to protect those in need.",
     "colors": {
-      "primary": "#e04e34",
-      "highlight": "#e56d57"
+      "primary": "#73342b",
+      "highlight": "#914236"
     },
     "items": {
       "skins": [
@@ -5367,14 +5367,16 @@
           "id": "brigitte-cute",
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-cute.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Kill an airborne enemy with Brigitte's Whip Shot in Quick or Competitive Play."
         },
         {
           "name": "Pixel",
           "id": "brigitte-pixel",
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-pixel.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Interrupt an enemy ultimate ability with Brigitte's Shield Bash in Quick or Competitive Play."
         }
       ],
       "voicelines": [

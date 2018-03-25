@@ -1095,6 +1095,22 @@
       "quality": "legendary",
       "type": "skin",
       "hero": "widowmaker"
+    },
+    "grounded": {
+      "name": "Grounded",
+      "description": "Kill an airborne enemy with Brigitte's Whip Shot in Quick or Competitive Play.",
+      "reward": "Cute",
+      "quality": "common",
+      "type": "spray",
+      "hero": "brigitte"
+    },
+    "excuse-me": {
+      "name": "Excuse Me",
+      "description": "Interrupt an enemy ultimate ability with Brigitte's Shield Bash in Quick or Competitive Play.",
+      "reward": "Pixel",
+      "quality": "common",
+      "type": "spray",
+      "hero": "brigitte"
     }
   },
   "mappings": {
@@ -1234,6 +1250,8 @@
     "tracer-alliance-banner": "tracer-alliance-banner",
     "tracer-horde-banner": "tracer-horde-banner",
     "widowmaker-noire": "widowmaker-noire",
-    "widowmaker-kerrigan": "widowmaker-kerrigan"
+    "widowmaker-kerrigan": "widowmaker-kerrigan",
+    "brigitte-pixel": "excuse-me",
+    "brigitte-cute": "grounded"
   }
 }
