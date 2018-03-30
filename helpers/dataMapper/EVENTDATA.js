@@ -1,5 +1,5 @@
 const { qualityOrder } = require('./utils.js');
-const CURRENTEVENT = 'LUNAR_NEW_YEAR';
+const CURRENTEVENT = 'UPRISING';
 
 const EVENTS = {
   SUMMER16: 'SUMMER_GAMES_2016',
@@ -30,7 +30,7 @@ const EVENTNAMES = {
   [EVENTS.SUMMER]: 'Summer Games',
   [EVENTS.HALLOWEEN]: 'Halloween Terror',
   [EVENTS.WINTER]: 'Winter Wonderland',
-  [EVENTS.LUNAR]: 'Year of the Dog',
+  [EVENTS.LUNAR]: 'Lunar New Year',
   [EVENTS.UPRISING]: 'Uprising',
   [EVENTS.ANNIVERSARY]: 'Anniversary'
 };
@@ -97,6 +97,10 @@ const EVENT_ITEM_ORDER = {
   [EVENTS.LUNAR]: {
     "skins": [a => qualityOrder[a.quality], 'heroName', 'name'],
     "icons": ['heroName', 'name']
+  },
+  [EVENTS.UPRISING]: {
+    "skins": [a => qualityOrder[a.quality], 'heroName', 'name'],
+    "icons": ['heroName', 'name']
   }
 };
 
@@ -111,7 +115,8 @@ const NEW_EVENTS = [
   EVENTS.SUMMER,
   EVENTS.HALLOWEEN,
   EVENTS.WINTER,
-  EVENTS.LUNAR
+  EVENTS.LUNAR,
+  EVENTS.UPRISING
 ]
 
 module.exports = { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, NEW_EVENTS };

@@ -4664,7 +4664,7 @@
     }
   },
   "LUNAR_NEW_YEAR": {
-    "name": "Year of the Dog",
+    "name": "Lunar New Year",
     "id": "LUNAR_NEW_YEAR",
     "dates": {
       "start": "1518112800000",
@@ -7005,14 +7005,14 @@
           "group": "UPRISING_2017"
         }
       ],
-      "skinsEpic": [
+      "skins": [
         {
           "heroName": "Bastion",
           "hero": "bastion",
           "name": "Null Sector",
           "id": "bastion-null-sector",
           "quality": "epic",
-          "url": "/updates/UPRISING/skinsEpic/bastion-null-sector.jpg",
+          "url": "/updates/UPRISING/skins/bastion-null-sector.jpg",
           "description": "Bastion units were reengineered and upgraded by Null Sector and deployed during the King's Row Uprising.",
           "group": "UPRISING_2017"
         },
@@ -7022,8 +7022,86 @@
           "name": "Lieutenant Wilhelm",
           "id": "reinhardt-lieutenant-wilhelm",
           "quality": "epic",
-          "url": "/updates/UPRISING/skinsEpic/reinhardt-lieutenant-wilhelm.jpg",
+          "url": "/updates/UPRISING/skins/reinhardt-lieutenant-wilhelm.jpg",
           "description": "Lieutenant Reinhardt Wilhelm served with distinction in his time during Overwatch, notably leading the strike team that ended the King's Row uprising.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Blackwatch",
+          "id": "genji-blackwatch",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/genji-blackwatch.jpg",
+          "description": "After agreeing to aid the organization, Genji was upgraded extensively by Overwatch's cyberneticists.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Blackwatch",
+          "id": "mccree-blackwatch",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/mccree-blackwatch.jpg",
+          "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch, or rot in prison.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Combat Medic Ziegler",
+          "id": "mercy-combat-medic-ziegler",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/mercy-combat-medic-ziegler.jpg",
+          "description": "When called upon, Mercy would don her Valkyrie swift-response suit to participate in Overwatch missions.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Null Sector",
+          "id": "orisa-null-sector",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/orisa-null-sector.jpg",
+          "description": "During the King's Row Uprising, Null Sector employed redesigned and upgraded OR14 Idina bots to secure the power station.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Chief Engineer Lindholm",
+          "id": "torbjorn-chief-engineer-lindholm",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/torbjorn-chief-engineer-lindholm.jpg",
+          "description": "For many years, Torbjörn Lindholm served as Overwatch's chief engineer, designing many of the organization's iconic weapons and technologies.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Ironclad",
+          "id": "torbjorn-ironclad",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/torbjorn-ironclad.jpg",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Cadet Oxton",
+          "id": "tracer-cadet-oxton",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/tracer-cadet-oxton.jpg",
+          "description": "Tracer was put into active duty as an Overwatch agent for the first time during the King's Row uprising.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Talon",
+          "id": "widowmaker-talon",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/widowmaker-talon.jpg",
           "group": "UPRISING_2017"
         }
       ],
@@ -7056,94 +7134,14 @@
           "group": "UPRISING_2017"
         }
       ],
-      "skinsLegendary": [
+      "icons": [
         {
           "heroName": "Genji",
           "hero": "genji",
-          "name": "Blackwatch",
-          "id": "genji-blackwatch",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/genji-blackwatch.jpg",
-          "description": "After agreeing to aid the organization, Genji was upgraded extensively by Overwatch's cyberneticists.",
+          "name": "Cyborg",
+          "id": "genji-cyborg",
+          "url": "/heroes/genji/icons/genji-cyborg.png",
           "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Blackwatch",
-          "id": "mccree-blackwatch",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/mccree-blackwatch.jpg",
-          "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch, or rot in prison.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Combat Medic Ziegler",
-          "id": "mercy-combat-medic-ziegler",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/mercy-combat-medic-ziegler.jpg",
-          "description": "When called upon, Mercy would don her Valkyrie swift-response suit to participate in Overwatch missions.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Orisa",
-          "hero": "orisa",
-          "name": "Null Sector",
-          "id": "orisa-null-sector",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/orisa-null-sector.jpg",
-          "description": "During the King's Row Uprising, Null Sector employed redesigned and upgraded OR14 Idina bots to secure the power station.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Chief Engineer Lindholm",
-          "id": "torbjorn-chief-engineer-lindholm",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/torbjorn-chief-engineer-lindholm.jpg",
-          "description": "For many years, Torbjörn Lindholm served as Overwatch's chief engineer, designing many of the organization's iconic weapons and technologies.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Ironclad",
-          "id": "torbjorn-ironclad",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/torbjorn-ironclad.jpg",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Cadet Oxton",
-          "id": "tracer-cadet-oxton",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/tracer-cadet-oxton.jpg",
-          "description": "Tracer was put into active duty as an Overwatch agent for the first time during the King's Row uprising.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Talon",
-          "id": "widowmaker-talon",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/widowmaker-talon.jpg",
-          "group": "UPRISING_2017"
-        }
-      ],
-      "icons": [
-        {
-          "hero": "all",
-          "name": "B73-NS",
-          "id": "b73ns",
-          "url": "/heroes/all/icons/b73ns.png",
-          "achievement": true,
-          "description": "Complete Uprising on Expert difficulty."
         },
         {
           "heroName": "McCree",
@@ -7151,22 +7149,6 @@
           "name": "Blackwatch",
           "id": "mccree-blackwatch",
           "url": "/heroes/mccree/icons/mccree-blackwatch.png",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Cadet",
-          "id": "tracer-cadet",
-          "url": "/heroes/tracer/icons/tracer-cadet.png",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Chief Engineer",
-          "id": "torbjorn-chief-engineer",
-          "url": "/heroes/torbjorn/icons/torbjorn-chief-engineer.png",
           "group": "UPRISING_2017"
         },
         {
@@ -7178,18 +7160,36 @@
           "group": "UPRISING_2017"
         },
         {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Cyborg",
-          "id": "genji-cyborg",
-          "url": "/heroes/genji/icons/genji-cyborg.png",
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "OR14-NS",
+          "id": "orisa-or14ns",
+          "url": "/heroes/orisa/icons/orisa-or14ns.png",
           "group": "UPRISING_2017"
         },
         {
-          "hero": "all",
-          "name": "Drop Pod",
-          "id": "drop-pod",
-          "url": "/heroes/all/icons/drop-pod.png"
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Lieutenant",
+          "id": "reinhardt-lieutenant",
+          "url": "/heroes/reinhardt/icons/reinhardt-lieutenant.png",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Chief Engineer",
+          "id": "torbjorn-chief-engineer",
+          "url": "/heroes/torbjorn/icons/torbjorn-chief-engineer.png",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Cadet",
+          "id": "tracer-cadet",
+          "url": "/heroes/tracer/icons/tracer-cadet.png",
+          "group": "UPRISING_2017"
         },
         {
           "heroName": "Widowmaker",
@@ -7200,12 +7200,18 @@
           "group": "UPRISING_2017"
         },
         {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Lieutenant",
-          "id": "reinhardt-lieutenant",
-          "url": "/heroes/reinhardt/icons/reinhardt-lieutenant.png",
-          "group": "UPRISING_2017"
+          "hero": "all",
+          "name": "B73-NS",
+          "id": "b73ns",
+          "url": "/heroes/all/icons/b73ns.png",
+          "achievement": true,
+          "description": "Complete Uprising on Expert difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Drop Pod",
+          "id": "drop-pod",
+          "url": "/heroes/all/icons/drop-pod.png"
         },
         {
           "hero": "all",
@@ -7222,16 +7228,8 @@
           "description": "Complete Uprising (All Heroes) with 8 different heroes."
         },
         {
-          "heroName": "Orisa",
-          "hero": "orisa",
-          "name": "OR14-NS",
-          "id": "orisa-or14ns",
-          "url": "/heroes/orisa/icons/orisa-or14ns.png",
-          "group": "UPRISING_2017"
-        },
-        {
           "hero": "all",
-          "name": "Uprising",
+          "name": "Uprising 2017",
           "id": "uprising-2017",
           "url": "/heroes/all/icons/uprising-2017.png"
         }
