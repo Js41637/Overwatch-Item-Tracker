@@ -31,7 +31,7 @@ const EVENTNAMES = {
   [EVENTS.HALLOWEEN]: 'Halloween Terror',
   [EVENTS.WINTER]: 'Winter Wonderland',
   [EVENTS.LUNAR]: 'Lunar New Year',
-  [EVENTS.UPRISING]: 'Uprising',
+  [EVENTS.UPRISING]: 'Overwatch Archives',
   [EVENTS.ANNIVERSARY]: 'Anniversary'
 };
 
