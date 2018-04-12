@@ -383,6 +383,11 @@ body {
   margin-bottom: 3px;
 }
 
+#settings.about .coffee {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 strong {
   font-weight: bold;
 }
@@ -1075,6 +1080,9 @@ strong {
   font-size: 9px;
   font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
+  position: absolute;
+  top: 11px ;
+  right: 6px;
 }
 
 /**

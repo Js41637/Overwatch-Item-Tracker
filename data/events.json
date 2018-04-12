@@ -6311,6 +6311,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Frustrated",
+          "id": "brigitte-frustrated",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-frustrated.png",
+          "isNew": true
+        },
+        {
           "heroName": "D.Va",
           "hero": "dva",
           "name": "Handheld",
@@ -6318,6 +6327,15 @@
           "quality": "common",
           "url": "/heroes/dva/sprays/dva-handheld.png",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Thumbs down",
+          "id": "doomfist-thumbs-down",
+          "quality": "common",
+          "url": "/heroes/doomfist/sprays/doomfist-thumbs-down.png",
+          "isNew": true
         },
         {
           "heroName": "Genji",
@@ -6381,6 +6399,15 @@
           "quality": "common",
           "url": "/heroes/mercy/sprays/mercy-combat-medic.png",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Foundation",
+          "id": "moira-foundation",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-foundation.png",
+          "isNew": true
         },
         {
           "heroName": "Orisa",
@@ -6510,6 +6537,13 @@
         },
         {
           "hero": "all",
+          "name": "Archives",
+          "id": "archives",
+          "url": "/heroes/all/sprays/archives.png",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
           "name": "Null Sector",
           "id": "null-sector",
           "url": "/heroes/all/sprays/null-sector.png",
@@ -6524,6 +6558,14 @@
           "group": "UPRISING_2017",
           "achievement": true,
           "description": "Complete Uprising on Expert difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Droppachi",
+          "id": "droppachi",
+          "url": "/heroes/all/sprays/droppachi.png",
+          "achievement": true,
+          "description": "Complete Retribution on Expert difficulty."
         },
         {
           "hero": "all",
@@ -6569,6 +6611,46 @@
           "group": "UPRISING_2017",
           "achievement": true,
           "description": "Deliver the payload with over 80% health in Uprising on Hard difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Talon Assassin",
+          "id": "talon-assassin",
+          "url": "/heroes/all/sprays/talon-assassin.png",
+          "achievement": true,
+          "description": "Complete Retribution on Expert difficulty with no incapacitations."
+        },
+        {
+          "hero": "all",
+          "name": "Talon Enforcer",
+          "id": "talon-enforcer",
+          "url": "/heroes/all/sprays/talon-enforcer.png",
+          "achievement": true,
+          "description": "Complete Retribution (All Heroes) with 8 different heroes."
+        },
+        {
+          "hero": "all",
+          "name": "Talon Heavy Assault",
+          "id": "talon-heavy-assault",
+          "url": "/heroes/all/sprays/talon-heavy-assault.png",
+          "achievement": true,
+          "description": "Complete Retribution on Legendary difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Talon Sniper",
+          "id": "talon-sniper",
+          "url": "/heroes/all/sprays/talon-sniper.png",
+          "achievement": true,
+          "description": "Complete Retribution on Hard difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Talon Trooper",
+          "id": "talon-trooper",
+          "url": "/heroes/all/sprays/talon-trooper.png",
+          "achievement": true,
+          "description": "Complete Retribution with each of the 4 heroes."
         }
       ],
       "voicelines": [
@@ -6591,6 +6673,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "We're not keeping score",
+          "id": "ana-were-not-keeping-score",
+          "quality": "common",
+          "url": "/heroes/ana/voicelines/ana-were-not-keeping-score.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Bastion",
           "hero": "bastion",
           "name": "DWEE WEE WOH",
@@ -6607,6 +6698,51 @@
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-zweeah-wheee-doo-woo.ogg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "ZWING ZWING ZWING",
+          "id": "bastion-zwing-zwing-zwing",
+          "quality": "common",
+          "url": "/heroes/bastion/voicelines/bastion-zwing-zwing-zwing.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "A chicken out of a feather",
+          "id": "brigitte-a-chicken-out-of-a-feather",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-a-chicken-out-of-a-feather.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Don't get caught",
+          "id": "brigitte-dont-get-caught",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-dont-get-caught.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Time to roll up my sleeves",
+          "id": "brigitte-time-to-roll-up-my-sleeves",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-time-to-roll-up-my-sleeves.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Amazing!",
+          "id": "dva-amazing",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-amazing.ogg",
+          "isNew": true
         },
         {
           "heroName": "D.Va",
@@ -6627,6 +6763,33 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "I am not your savior",
+          "id": "doomfist-i-am-not-your-savior",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-i-am-not-your-savior.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "I didn't ask for your opinion",
+          "id": "doomfist-i-didnt-ask-for-your-opinion",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-i-didnt-ask-for-your-opinion.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "I know you can do better",
+          "id": "doomfist-i-know-you-can-do-better",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-i-know-you-can-do-better.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Genji",
           "hero": "genji",
           "name": "Another!",
@@ -6645,6 +6808,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Your eyes deceive you",
+          "id": "genji-your-eyes-deceive-you",
+          "quality": "common",
+          "url": "/heroes/genji/voicelines/genji-your-eyes-deceive-you.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Beauty in simplicity",
@@ -6652,6 +6824,15 @@
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-beauty-in-simplicity.ogg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "My fate is written in blood",
+          "id": "hanzo-my-fate-is-written-in-blood",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-my-fate-is-written-in-blood.ogg",
+          "isNew": true
         },
         {
           "heroName": "Hanzo",
@@ -6670,6 +6851,15 @@
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-come-the-raw-prawn.ogg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "I really blew that one",
+          "id": "junkrat-i-really-blew-that-one",
+          "quality": "common",
+          "url": "/heroes/junkrat/voicelines/junkrat-i-really-blew-that-one.ogg",
+          "isNew": true
         },
         {
           "heroName": "Junkrat",
@@ -6699,6 +6889,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Turn it up in my headphones",
+          "id": "lucio-turn-it-up-in-my-headphones",
+          "quality": "common",
+          "url": "/heroes/lucio/voicelines/lucio-turn-it-up-in-my-headphones.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "McCree",
           "hero": "mccree",
           "name": "A man's gotta have rules",
@@ -6710,11 +6909,29 @@
         {
           "heroName": "McCree",
           "hero": "mccree",
+          "name": "Don't sass me",
+          "id": "mccree-dont-sass-me",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-dont-sass-me.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
           "name": "The Old Fashioned Way",
           "id": "mccree-the-old-fashioned-way",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-the-old-fashioned-way.ogg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "I'm just a scientist",
+          "id": "mei-im-just-a-scientist",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-im-just-a-scientist.ogg",
+          "isNew": true
         },
         {
           "heroName": "Mei",
@@ -6737,6 +6954,15 @@
         {
           "heroName": "Mercy",
           "hero": "mercy",
+          "name": "A timely intervention",
+          "id": "mercy-a-timely-intervention",
+          "quality": "common",
+          "url": "/heroes/mercy/voicelines/mercy-a-timely-intervention.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
           "name": "Not sure why I bother",
           "id": "mercy-not-sure-why-i-bother",
           "quality": "common",
@@ -6751,6 +6977,33 @@
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-take-care-of-yourself.ogg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Get off the stage",
+          "id": "moira-get-off-the-stage",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-get-off-the-stage.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "This is to my liking",
+          "id": "moira-this-is-to-my-liking",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-this-is-to-my-liking.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "You're mistaken",
+          "id": "moira-youre-mistaken",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-youre-mistaken.ogg",
+          "isNew": true
         },
         {
           "heroName": "Orisa",
@@ -6771,6 +7024,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "I was only trying to help",
+          "id": "orisa-i-was-only-trying-to-help",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-i-was-only-trying-to-help.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Pharah",
           "hero": "pharah",
           "name": "Don't take it personally",
@@ -6787,6 +7049,15 @@
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-i-am-the-rocket-queen.ogg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "I live for a good fight",
+          "id": "pharah-i-live-for-a-good-fight",
+          "quality": "common",
+          "url": "/heroes/pharah/voicelines/pharah-i-live-for-a-good-fight.ogg",
+          "isNew": true
         },
         {
           "heroName": "Reaper",
@@ -6807,6 +7078,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Revenge is sweet",
+          "id": "reaper-revenge-is-sweet",
+          "quality": "common",
+          "url": "/heroes/reaper/voicelines/reaper-revenge-is-sweet.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Reinhardt",
           "hero": "reinhardt",
           "name": "Easy does it",
@@ -6814,6 +7094,15 @@
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-easy-does-it.ogg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Prost",
+          "id": "reinhardt-prost",
+          "quality": "common",
+          "url": "/heroes/reinhardt/voicelines/reinhardt-prost.ogg",
+          "isNew": true
         },
         {
           "heroName": "Reinhardt",
@@ -6843,6 +7132,24 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "You wanna scrap with me?",
+          "id": "roadhog-you-wanna-scrap-with-me",
+          "quality": "common",
+          "url": "/heroes/roadhog/voicelines/roadhog-you-wanna-scrap-with-me.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Don't call me a hero",
+          "id": "soldier-76-dont-call-me-a-hero",
+          "quality": "common",
+          "url": "/heroes/soldier-76/voicelines/soldier-76-dont-call-me-a-hero.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Not getting any younger",
@@ -6859,6 +7166,15 @@
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-whatever-you-say.ogg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Back to la medianoche!",
+          "id": "sombra-back-to-la-medianoche",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-back-to-la-medianoche.ogg",
+          "isNew": true
         },
         {
           "heroName": "Sombra",
@@ -6897,6 +7213,24 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Timepass",
+          "id": "symmetra-timepass",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-timepass.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Bingo!",
+          "id": "torbjorn-bingo",
+          "quality": "common",
+          "url": "/heroes/torbjorn/voicelines/torbjorn-bingo.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Torbjörn",
           "hero": "torbjorn",
           "name": "Just start hammering",
@@ -6931,6 +7265,24 @@
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-sorry-im-late.ogg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Time is on my side",
+          "id": "tracer-time-is-on-my-side",
+          "quality": "common",
+          "url": "/heroes/tracer/voicelines/tracer-time-is-on-my-side.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Always the hunters",
+          "id": "widowmaker-always-the-hunters",
+          "quality": "common",
+          "url": "/heroes/widowmaker/voicelines/widowmaker-always-the-hunters.ogg",
+          "isNew": true
         },
         {
           "heroName": "Widowmaker",
@@ -6969,6 +7321,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Primal punch!",
+          "id": "winston-primal-punch",
+          "quality": "common",
+          "url": "/heroes/winston/voicelines/winston-primal-punch.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "I was born in battle",
@@ -6987,6 +7348,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "You have failed your team",
+          "id": "zarya-you-have-failed-your-team",
+          "quality": "common",
+          "url": "/heroes/zarya/voicelines/zarya-you-have-failed-your-team.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
           "name": "Path to enlightenment",
@@ -7003,6 +7373,15 @@
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-where-youre-headed.ogg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Your lesson for today",
+          "id": "zenyatta-your-lesson-for-today",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-your-lesson-for-today.ogg",
+          "isNew": true
         }
       ],
       "skins": [
@@ -7105,136 +7484,16 @@
           "group": "UPRISING_2017"
         }
       ],
-      "intros": [
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Selfie",
-          "id": "dva-selfie",
-          "quality": "epic",
-          "url": "/updates/UPRISING/intros/dva-selfie.webm",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "My baby",
-          "id": "torbjorn-my-baby",
-          "quality": "epic",
-          "url": "/updates/UPRISING/intros/torbjorn-my-baby.webm",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Perspective",
-          "id": "zenyatta-perspective",
-          "quality": "epic",
-          "url": "/updates/UPRISING/intros/zenyatta-perspective.webm",
-          "group": "UPRISING_2017"
-        }
-      ],
-      "icons": [
-        {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Cyborg",
-          "id": "genji-cyborg",
-          "url": "/heroes/genji/icons/genji-cyborg.png",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Blackwatch",
-          "id": "mccree-blackwatch",
-          "url": "/heroes/mccree/icons/mccree-blackwatch.png",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Combat Medic",
-          "id": "mercy-combat-medic",
-          "url": "/heroes/mercy/icons/mercy-combat-medic.png",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Orisa",
-          "hero": "orisa",
-          "name": "OR14-NS",
-          "id": "orisa-or14ns",
-          "url": "/heroes/orisa/icons/orisa-or14ns.png",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Lieutenant",
-          "id": "reinhardt-lieutenant",
-          "url": "/heroes/reinhardt/icons/reinhardt-lieutenant.png",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Chief Engineer",
-          "id": "torbjorn-chief-engineer",
-          "url": "/heroes/torbjorn/icons/torbjorn-chief-engineer.png",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Cadet",
-          "id": "tracer-cadet",
-          "url": "/heroes/tracer/icons/tracer-cadet.png",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Lacroix",
-          "id": "widowmaker-lacroix",
-          "url": "/heroes/widowmaker/icons/widowmaker-lacroix.png",
-          "group": "UPRISING_2017"
-        },
-        {
-          "hero": "all",
-          "name": "B73-NS",
-          "id": "b73ns",
-          "url": "/heroes/all/icons/b73ns.png",
-          "achievement": true,
-          "description": "Complete Uprising on Expert difficulty."
-        },
-        {
-          "hero": "all",
-          "name": "Drop Pod",
-          "id": "drop-pod",
-          "url": "/heroes/all/icons/drop-pod.png"
-        },
-        {
-          "hero": "all",
-          "name": "Null Sector",
-          "id": "null-sector",
-          "url": "/heroes/all/icons/null-sector.png"
-        },
-        {
-          "hero": "all",
-          "name": "Nullmari",
-          "id": "nullmari",
-          "url": "/heroes/all/icons/nullmari.png",
-          "achievement": true,
-          "description": "Complete Uprising (All Heroes) with 8 different heroes."
-        },
-        {
-          "hero": "all",
-          "name": "Uprising 2017",
-          "id": "uprising-2017",
-          "url": "/heroes/all/icons/uprising-2017.png"
-        }
-      ],
       "poses": [
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Kneel",
+          "id": "brigitte-kneel",
+          "quality": "rare",
+          "url": "/updates/UPRISING/poses/brigitte-kneel.jpg",
+          "isNew": true
+        },
         {
           "heroName": "Genji",
           "hero": "genji",
@@ -7243,6 +7502,15 @@
           "quality": "rare",
           "url": "/updates/UPRISING/poses/genji-meditate.jpg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Mug Shot",
+          "id": "junkrat-mug-shot",
+          "quality": "rare",
+          "url": "/updates/UPRISING/poses/junkrat-mug-shot.jpg",
+          "isNew": true
         },
         {
           "heroName": "Lúcio",
@@ -7261,6 +7529,42 @@
           "quality": "rare",
           "url": "/updates/UPRISING/poses/mccree-showdown.jpg",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Erlenmeyer",
+          "id": "moira-erlenmeyer",
+          "quality": "rare",
+          "url": "/updates/UPRISING/poses/moira-erlenmeyer.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Puppy",
+          "id": "orisa-puppy",
+          "quality": "rare",
+          "url": "/updates/UPRISING/poses/orisa-puppy.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Kneel",
+          "id": "reinhardt-kneel",
+          "quality": "rare",
+          "url": "/updates/UPRISING/poses/reinhardt-kneel.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Mug Shot",
+          "id": "roadhog-mug-shot",
+          "quality": "rare",
+          "url": "/updates/UPRISING/poses/roadhog-mug-shot.jpg",
+          "isNew": true
         },
         {
           "heroName": "Symmetra",
@@ -7288,6 +7592,349 @@
           "quality": "rare",
           "url": "/updates/UPRISING/poses/zarya-this-is-strength.jpg",
           "group": "UPRISING_2017"
+        }
+      ],
+      "intros": [
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Selfie",
+          "id": "dva-selfie",
+          "quality": "epic",
+          "url": "/updates/UPRISING/intros/dva-selfie.webm",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Combo",
+          "id": "doomfist-combo",
+          "quality": "epic",
+          "url": "/updates/UPRISING/intros/doomfist-combo.webm",
+          "isNew": true
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Immovable",
+          "id": "orisa-immovable",
+          "quality": "epic",
+          "url": "/updates/UPRISING/intros/orisa-immovable.webm",
+          "isNew": true
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "My baby",
+          "id": "torbjorn-my-baby",
+          "quality": "epic",
+          "url": "/updates/UPRISING/intros/torbjorn-my-baby.webm",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Graviton Surge",
+          "id": "zarya-graviton-surge",
+          "quality": "epic",
+          "url": "/updates/UPRISING/intros/zarya-graviton-surge.webm",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Perspective",
+          "id": "zenyatta-perspective",
+          "quality": "epic",
+          "url": "/updates/UPRISING/intros/zenyatta-perspective.webm",
+          "group": "UPRISING_2017"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Talon",
+          "id": "doomfist-talon",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/doomfist-talon.jpg",
+          "description": "Doomfist rose in power in Talon after killing his mentor, Akinjide Adeyemi, the Scourge of Numbani.",
+          "isNew": true
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Scion",
+          "id": "hanzo-scion",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/hanzo-scion.jpg",
+          "description": "Over the centuries, the Shimada clan grew to profit from a lucrative trade in arms and other illegal substances.",
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Equalizer",
+          "id": "lucio-equalizer",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/lucio-equalizer.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Pajamei",
+          "id": "mei-pajamei",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/mei-pajamei.jpg",
+          "description": "Due to a malfunction of Ecopoint: Antarctica's cryogenics facility, Mei was kept in hibernation for almost a decade and woke up to find a new, unfamiliar world.",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Blackwatch",
+          "id": "moira-blackwatch",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/moira-blackwatch.jpg",
+          "description": "In addition to her research as a part of Blackwatch, Moira occasionally participated in clandestine operations, including the Venice Incident.",
+          "isNew": true
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Soldier: 24",
+          "id": "reaper-soldier-24",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/reaper-soldier-24.jpg",
+          "description": "Before serving on the original Overwatch strike team, Gabriel Reyes was selected to be a member of the government's classified soldier enhancement program.",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Talon",
+          "id": "sombra-talon",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/sombra-talon.jpg",
+          "description": "Sombra is only too happy to utilize the power and reach of Talon while pursuing her own goals.",
+          "isNew": true
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Specimen 28",
+          "id": "winston-specimen-28",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/winston-specimen-28.jpg",
+          "description": "The gorilla known as Specimen 28 showed rapid brain development from genetic therapy, surpassing that of the other subjects.",
+          "isNew": true
+        }
+      ],
+      "icons": [
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Ogundimu",
+          "id": "doomfist-ogundimu",
+          "url": "/heroes/doomfist/icons/doomfist-ogundimu.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Cyborg",
+          "id": "genji-cyborg",
+          "url": "/heroes/genji/icons/genji-cyborg.png",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Scion",
+          "id": "hanzo-scion",
+          "url": "/heroes/hanzo/icons/hanzo-scion.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Equalizer",
+          "id": "lucio-equalizer",
+          "url": "/heroes/lucio/icons/lucio-equalizer.png",
+          "isNew": true
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Blackwatch",
+          "id": "mccree-blackwatch",
+          "url": "/heroes/mccree/icons/mccree-blackwatch.png",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Mug",
+          "id": "mei-mug",
+          "url": "/heroes/mei/icons/mei-mug.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Combat Medic",
+          "id": "mercy-combat-medic",
+          "url": "/heroes/mercy/icons/mercy-combat-medic.png",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "O'Deorain",
+          "id": "moira-odeorain",
+          "url": "/heroes/moira/icons/moira-odeorain.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "OR14-NS",
+          "id": "orisa-or14ns",
+          "url": "/heroes/orisa/icons/orisa-or14ns.png",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Soldier: 24",
+          "id": "reaper-soldier-24",
+          "url": "/heroes/reaper/icons/reaper-soldier-24.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Lieutenant",
+          "id": "reinhardt-lieutenant",
+          "url": "/heroes/reinhardt/icons/reinhardt-lieutenant.png",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Colomar",
+          "id": "sombra-colomar",
+          "url": "/heroes/sombra/icons/sombra-colomar.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Chief Engineer",
+          "id": "torbjorn-chief-engineer",
+          "url": "/heroes/torbjorn/icons/torbjorn-chief-engineer.png",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Cadet",
+          "id": "tracer-cadet",
+          "url": "/heroes/tracer/icons/tracer-cadet.png",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Lacroix",
+          "id": "widowmaker-lacroix",
+          "url": "/heroes/widowmaker/icons/widowmaker-lacroix.png",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Specimen 28",
+          "id": "winston-specimen-28",
+          "url": "/heroes/winston/icons/winston-specimen-28.png",
+          "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "Archives 2018",
+          "id": "archives-2018",
+          "url": "/heroes/all/icons/archives-2018.png"
+        },
+        {
+          "hero": "all",
+          "name": "Assassin",
+          "id": "assassin",
+          "url": "/heroes/all/icons/assassin.png"
+        },
+        {
+          "hero": "all",
+          "name": "B73-NS",
+          "id": "b73ns",
+          "url": "/heroes/all/icons/b73ns.png",
+          "achievement": true,
+          "description": "Complete Uprising on Expert difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Drop Pod",
+          "id": "drop-pod",
+          "url": "/heroes/all/icons/drop-pod.png"
+        },
+        {
+          "hero": "all",
+          "name": "Enforcer",
+          "id": "enforcer",
+          "url": "/heroes/all/icons/enforcer.png"
+        },
+        {
+          "hero": "all",
+          "name": "Heavy Assault",
+          "id": "heavy-assault",
+          "url": "/heroes/all/icons/heavy-assault.png"
+        },
+        {
+          "hero": "all",
+          "name": "Maximilien",
+          "id": "maximilien",
+          "url": "/heroes/all/icons/maximilien.png"
+        },
+        {
+          "hero": "all",
+          "name": "Null Sector",
+          "id": "null-sector",
+          "url": "/heroes/all/icons/null-sector.png"
+        },
+        {
+          "hero": "all",
+          "name": "Nullmari",
+          "id": "nullmari",
+          "url": "/heroes/all/icons/nullmari.png",
+          "achievement": true,
+          "description": "Complete Uprising (All Heroes) with 8 different heroes."
+        },
+        {
+          "hero": "all",
+          "name": "Sniper",
+          "id": "sniper",
+          "url": "/heroes/all/icons/sniper.png"
+        },
+        {
+          "hero": "all",
+          "name": "Trooper",
+          "id": "trooper",
+          "url": "/heroes/all/icons/trooper.png"
+        },
+        {
+          "hero": "all",
+          "name": "Uprising 2017",
+          "id": "uprising-2017",
+          "url": "/heroes/all/icons/uprising-2017.png"
         }
       ],
       "emotes": [

@@ -840,6 +840,22 @@
       "type": "spray",
       "hero": "all"
     },
+    "season-10-competitor": {
+      "name": null,
+      "description": "Unlocked by completing Season 10 placement matches",
+      "reward": "Season 10 Competitor",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "season-10-hero": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 10",
+      "reward": "Season 10 Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
     "competitive-ctf-competitor": {
       "name": null,
       "description": "Unlocked by completing competitive Capture The Flag placement matches",
@@ -1108,9 +1124,56 @@
       "name": "Excuse Me",
       "description": "Interrupt an enemy ultimate ability with Brigitte's Shield Bash in Quick or Competitive Play.",
       "reward": "Pixel",
-      "quality": "common",
       "type": "spray",
       "hero": "brigitte"
+    },
+    "the-venice-incident": {
+      "name": "The Venice Incident",
+      "description": "Complete Retribution with each of the 4 heroes.",
+      "reward": "Talon Trooper",
+      "quality": "common",
+      "type": "spray",
+      "hero": null
+    },
+    "redacted": {
+      "name": "Redacted",
+      "description": "Complete Retribution (All Heroes) with 8 different heroes.",
+      "reward": "Talon Enforcer",
+      "quality": "common",
+      "type": "spray",
+      "hero": null
+    },
+    "into-the-shadows": {
+      "name": "Into the Shadows",
+      "description": "Complete Retribution on Hard difficulty.",
+      "reward": "Talon Sniper",
+      "quality": "common",
+      "type": "spray",
+      "hero": null
+    },
+    "a-quiet-night": {
+      "name": "A Quiet Night",
+      "description": "Complete Retribution on Expert difficulty.",
+      "reward": "Droppachi",
+      "quality": "common",
+      "type": "spray",
+      "hero": null
+    },
+    "plausible-deniability": {
+      "name": "Plausible Deniability",
+      "description": "Complete Retribution on Legendary difficulty.",
+      "reward": "Talon Heavy Assault",
+      "quality": "common",
+      "type": "spray",
+      "hero": null
+    },
+    "clean-getaway": {
+      "name": "Clean Getaway",
+      "description": "Complete Retribution on Expert difficulty with no incapacitations.",
+      "reward": "Talon Assassin",
+      "quality": "common",
+      "type": "spray",
+      "hero": null
     }
   },
   "mappings": {
@@ -1219,6 +1282,8 @@
     "season-8-hero": "season-8-hero",
     "season-9-competitor": "season-9-competitor",
     "season-9-hero": "season-9-hero",
+    "season-10-competitor": "season-10-competitor",
+    "season-10-hero": "season-10-hero",
     "competitive-ctf-competitor": "competitive-ctf-competitor",
     "competitive-ctf-hero": "competitive-ctf-hero",
     "wizard": "wizard",
@@ -1252,6 +1317,12 @@
     "widowmaker-noire": "widowmaker-noire",
     "widowmaker-kerrigan": "widowmaker-kerrigan",
     "brigitte-pixel": "excuse-me",
-    "brigitte-cute": "grounded"
+    "brigitte-cute": "grounded",
+    "talon-assassin": "clean-getaway",
+    "talon-heavy-assault": "plausible-deniability",
+    "droppachi": "a-quiet-night",
+    "talon-sniper": "into-the-shadows",
+    "talon-enforcer": "redacted",
+    "talon-trooper": "the-venice-incident"
   }
 }

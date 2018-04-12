@@ -4,26 +4,6 @@
 </div>
 <div class="col-md-8 col-padding">
   <legendary-skins></legendary-skins>
-  <div id="voicelines" class="section">
-    <section-header select-modal="selectModal" name="Voicelines" type="voicelines" totals="totals.voicelines"></section-header>
-    <div class="items flex-3">
-      <div
-        ng-repeat="item in ::data.items.voicelines track by $index"
-        ng-init="type = 'voicelines'"
-        class="item"
-        uib-tooltip-template="'imagePreviewTemplate.html'"
-        tooltip-popup-delay="300"
-        tooltip-class="img-preview"
-        tooltip-enable="{{::canPlayType(type)}}"
-        tooltip-placement="auto">
-        <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
-        <label for="{{type + item.id + $index}}">
-          <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
-        </label>
-      </div>
-    </div>
-  </div>
   <div id="icons" class="section">
     <section-header select-modal="selectModal" name="Player Icons" type="icons" totals="totals.icons"></section-header>
     <div class="items flex-4">
@@ -40,6 +20,28 @@
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
           <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div id="voicelines" class="section">
+    <section-header select-modal="selectModal" name="Voicelines" type="voicelines" totals="totals.voicelines"></section-header>
+    <div class="items flex-3">
+      <div
+        ng-repeat="item in ::data.items.voicelines track by $index"
+        ng-init="type = 'voicelines'"
+        class="item"
+        uib-tooltip-template="'imagePreviewTemplate.html'"
+        tooltip-popup-delay="300"
+        tooltip-class="img-preview"
+        tooltip-enable="{{::canPlayType(type)}}"
+        tooltip-placement="auto">
+        <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
+        <label for="{{type + item.id + $index}}">
+          <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>
@@ -63,6 +65,7 @@
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
           <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>
@@ -83,6 +86,7 @@
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
           <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>
@@ -103,6 +107,7 @@
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
           <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>
@@ -123,6 +128,7 @@
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
           <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>
@@ -144,6 +150,7 @@
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
           <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>

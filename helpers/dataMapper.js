@@ -146,8 +146,8 @@ allClassData = reduce(allClassData, (result, items, type) => {
     idCache[item.id] = true;
 
     // Check if the spray or icon is a Competitive reward
-    const isSeasonCompItem = item.id.match(/^season-(.)-(competitor|hero)$/);
-    const isOtherCompItem = item.id.match(/^(top-500|inaugural-season|(copa-lucioball|competitive-ctf)-\w+)$/)
+    const isSeasonCompItem = item.id.match(/^season-(\d+)-(competitor|hero)$/);
+    const isOtherCompItem = item.id.match(/^(top-500|inaugural-season|(copa-lucioball|competitive-ctf|competitive-6v6-elimination)-\w+)$/)
     const isCompItem =  isSeasonCompItem || isOtherCompItem ? { group: 'competitive' } : undefined;
     const isPachiItem = item.id.startsWith('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined;
     const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined;
