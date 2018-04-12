@@ -278,7 +278,7 @@ body#ANNIVERSARY:before {
 
 #epic-skins .section-header small,
 #event-container #emotes .section-header small,
-#event-container #highlight-intros .section-header small {
+#event-container #intros .section-header small {
   color: #ff05f4;
 }
 
@@ -551,7 +551,7 @@ body#WINTER_WONDERLAND:before {
 #UPRISING #sprays,
 #UPRISING #victoryposes,
 #UPRISING #epic-skins,
-#UPRISING #highlight-intros,
+#UPRISING #intros,
 #UPRISING #emotes {
   flex: 1;
 }
@@ -674,7 +674,7 @@ body#WINTER_WONDERLAND:before {
 }
 
 #HALLOWEEN #intros h2:before {
-  background-image: url(resources/icons/item-types/white/highlight-intros.svg);
+  background-image: url(resources/icons/item-types/white/intros.svg);
 }
 
 #HALLOWEEN #emotes h2:before {
@@ -778,8 +778,8 @@ body#WINTER_WONDERLAND:before {
   background-image: url(resources/icons/item-types/white/epic-skins.svg);
 }
 
-#WINTER_WONDERLAND #highlight-intros h2:before {
-  background-image: url(resources/icons/item-types/white/highlight-intros.svg);
+#WINTER_WONDERLAND #intros h2:before {
+  background-image: url(resources/icons/item-types/white/intros.svg);
 }
 
 #WINTER_WONDERLAND #emotes h2:before {
@@ -832,8 +832,8 @@ body#WINTER_WONDERLAND:before {
   background-image: url(resources/icons/item-types/white/epic-skins.svg);
 }
 
-#LUNAR_NEW_YEAR #highlight-intros h2:before {
-  background-image: url(resources/icons/item-types/white/highlight-intros.svg);
+#LUNAR_NEW_YEAR #intros h2:before {
+  background-image: url(resources/icons/item-types/white/intros.svg);
 }
 
 #LUNAR_NEW_YEAR #emotes h2:before {
@@ -898,8 +898,8 @@ body#WINTER_WONDERLAND:before {
   background-image: url(resources/icons/item-types/white/epic-skins.svg);
 }
 
-#UPRISING #highlight-intros h2:before {
-  background-image: url(resources/icons/item-types/white/highlight-intros.svg);
+#UPRISING #intros h2:before {
+  background-image: url(resources/icons/item-types/white/intros.svg);
 }
 
 #UPRISING #emotes h2:before {
@@ -970,7 +970,7 @@ body#WINTER_WONDERLAND:before {
   #WINTER_WONDERLAND #event-container #row2,
   #WINTER_WONDERLAND #event-container #row2 .section,
   #WINTER_WONDERLAND #event-container #row2 .right .section,
-  #WINTER_WONDERLAND #event-container #row2 .right .section#highlight-intros,
+  #WINTER_WONDERLAND #event-container #row2 .right .section#intros,
   #WINTER_WONDERLAND #event-container #row2 .right .section#emotes,
   #HALLOWEEN #event-container .row,
   #HALLOWEEN #event-container #row2,
@@ -980,7 +980,7 @@ body#WINTER_WONDERLAND:before {
   #SUMMER_GAMES #event-container #row2,
   #SUMMER_GAMES #event-container #row2 .section,
   #SUMMER_GAMES #event-container #row2 .right .section,
-  #SUMMER_GAMES #event-container #row2 .right .section#highlight-intros,
+  #SUMMER_GAMES #event-container #row2 .right .section#intros,
   #SUMMER_GAMES #event-container #row2 .right .section#emotes,
   #UPRISING #event-container #epic-skins {
     height: auto;
@@ -1033,27 +1033,27 @@ body#WINTER_WONDERLAND:before {
   #LUNAR_NEW_YEAR #event-container #icons,
   #LUNAR_NEW_YEAR #event-container #victoryposes,
   #LUNAR_NEW_YEAR #event-container #sprays,
-  #LUNAR_NEW_YEAR #event-container #highlight-intros,
+  #LUNAR_NEW_YEAR #event-container #intros,
   #WINTER_WONDERLAND #event-container #voicelines,
   #WINTER_WONDERLAND #event-container #icons,
   #WINTER_WONDERLAND #event-container #victoryposes,
   #WINTER_WONDERLAND #event-container #sprays,
-  #WINTER_WONDERLAND #event-container #highlight-intros,
+  #WINTER_WONDERLAND #event-container #intros,
   #HALLOWEEN #event-container #voicelines,
   #HALLOWEEN #event-container #icons,
   #HALLOWEEN #event-container #victoryposes,
   #HALLOWEEN #event-container #sprays,
-  #HALLOWEEN #event-container #highlight-intros,
+  #HALLOWEEN #event-container #intros,
   #SUMMER_GAMES #event-container #voicelines,
   #SUMMER_GAMES #event-container #icons,
   #SUMMER_GAMES #event-container #victoryposes,
   #SUMMER_GAMES #event-container #sprays,
-  #SUMMER_GAMES #event-container #highlight-intros,
+  #SUMMER_GAMES #event-container #intros,
   #UPRISING #event-container #voicelines,
   #UPRISING #event-container #icons,
   #UPRISING #event-container #victoryposes,
   #UPRISING #event-container #sprays,
-  #UPRISING #event-container #highlight-intros,
+  #UPRISING #event-container #intros,
   #UPRISING #event-container #epic-skins,
   #UPRISING #event-container #voicelines {
     margin-top: 18px;
@@ -1090,7 +1090,7 @@ body#WINTER_WONDERLAND:before {
     margin-top: 18px;
   }
 
-  #HALLOWEEN #event-container #highlight-intros {
+  #HALLOWEEN #event-container #intros {
     margin-top: 0;
   }
 
@@ -1102,7 +1102,7 @@ body#WINTER_WONDERLAND:before {
     margin-top: 0;
   }
 
-  #SUMMER_GAMES #event-container #highlight-intros {
+  #SUMMER_GAMES #event-container #intros {
     margin-top: 0;
   }
 
