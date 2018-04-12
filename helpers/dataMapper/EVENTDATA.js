@@ -44,6 +44,10 @@ const EVENTTIMES = {
   //  "start": "1476208800000",
   //  "end": "1478059200000"
   //},
+  // [EVENTS.UPRISING17]: {
+  //   "start": "1491937200000",
+  //   "end": "1493769600000"
+  // },
   [EVENTS.CHRISTMAS16]: {
     "start": "1481652000000",
     "end": "1483416000000"
@@ -53,8 +57,8 @@ const EVENTTIMES = {
     "end": "1487066400000"
   },
   [EVENTS.UPRISING]: {
-    "start": "1491937200000",
-    "end": "1493769600000"
+    "start": "1523386800000",
+    "end": "1525125600000"
   },
   [EVENTS.ANNIVERSARY]: {
     "start": "1495551600000",
