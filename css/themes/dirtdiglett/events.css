@@ -276,7 +276,7 @@ body#ANNIVERSARY:before {
   content: ")";
 }
 
-#epic-skins .section-header small,
+#skins .section-header small,
 #event-container #emotes .section-header small,
 #event-container #intros .section-header small {
   color: #ff05f4;
@@ -550,41 +550,42 @@ body#WINTER_WONDERLAND:before {
 #UPRISING #victoryposes,
 #UPRISING #sprays,
 #UPRISING #victoryposes,
-#UPRISING #epic-skins,
+#UPRISING #skins,
 #UPRISING #intros,
 #UPRISING #emotes {
   flex: 1;
 }
 
-#UPRISING #sprays {
-  flex: 2;
-}
-
-#UPRISING #voicelines {
-  flex: 3;
-}
-
-#UPRISING #icons .items,
-#UPRISING #voicelines .items,
-#UPRISING #sprays .items {
-  flex-direction: initial;
-}
-
-#UPRISING #icons .item,
-#UPRISING #sprays .item {
-  width: 49%;
-  display: inline-flex;
-  margin-right: 0;
-}
-
-#UPRISING #icons .item:nth-of-type(odd),
-#UPRISING #sprays .item:nth-of-type(odd) {
-  margin-right: 2%;
-}
-
 #UPRISING #col2 .right {
   flex: 3;
   display: flex;
+}
+
+#UPRISING #emotes .item,
+#UPRISING #skins .item,
+#UPRISING #intros .item,
+#UPRISING #victoryposes .item,
+#UPRISING #sprays .item   {
+  width: calc(50% - 6px);
+  display: inline-flex;
+  margin-right: 5px;
+}
+
+#UPRISING #icons .item  {
+  width: calc(25% - 6px);
+  display: inline-flex;
+  margin-right: 5px;
+}
+
+#UPRISING #voicelines .item  {
+  width: calc(33.33% - 6px);
+  display: inline-flex;
+  margin-right: 5px;
+}
+
+#UPRISING .item .new {
+  top: 8px;
+  opacity: 0.8;
 }
 
 /* ANNIVERSARY 2017 */
@@ -774,7 +775,7 @@ body#WINTER_WONDERLAND:before {
   background-image: url(resources/icons/item-types/white/player-icons.svg);
 }
 
-#WINTER_WONDERLAND #epic-skins h2:before {
+#WINTER_WONDERLAND #epic h2:before {
   background-image: url(resources/icons/item-types/white/epic-skins.svg);
 }
 
@@ -894,7 +895,7 @@ body#WINTER_WONDERLAND:before {
   background-image: url(resources/icons/item-types/white/player-icons.svg);
 }
 
-#UPRISING #epic-skins h2:before {
+#UPRISING #skins h2:before {
   background-image: url(resources/icons/item-types/white/epic-skins.svg);
 }
 
@@ -982,7 +983,7 @@ body#WINTER_WONDERLAND:before {
   #SUMMER_GAMES #event-container #row2 .right .section,
   #SUMMER_GAMES #event-container #row2 .right .section#intros,
   #SUMMER_GAMES #event-container #row2 .right .section#emotes,
-  #UPRISING #event-container #epic-skins {
+  #UPRISING #event-container #skins {
     height: auto;
   }
 
@@ -1054,7 +1055,7 @@ body#WINTER_WONDERLAND:before {
   #UPRISING #event-container #victoryposes,
   #UPRISING #event-container #sprays,
   #UPRISING #event-container #intros,
-  #UPRISING #event-container #epic-skins,
+  #UPRISING #event-container #skins,
   #UPRISING #event-container #voicelines {
     margin-top: 18px;
     margin-bottom: 0;
