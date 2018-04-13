@@ -8,7 +8,8 @@ const data = {
     "sprays/year-of-the-dog": "year-of-the-dog-2018",
     "sprays/year-of-the-rooster": "year-of-the-rooster-2017",
     "sprays/junkrat-hayseed": "junkrat-scarecrow",
-    "voicelines/moira-slainte": "moira-slinte"
+    "voicelines/moira-slainte": "moira-slinte",
+    "voicelines/brigitte-its-broken": "brigitte-this-is-pie"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
