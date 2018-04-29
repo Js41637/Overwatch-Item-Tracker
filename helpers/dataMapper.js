@@ -306,7 +306,7 @@ forEach(heroes, hero => {
         item.group = actualEvent;
       }
 
-      // If the item to a new event. e.g. ummergames 2017 instead of 2016
+      // If the item to a new event. e.g. summergames 2017 instead of 2016
       if (NEW_EVENTS.includes(event) && !actualEvent) {
         item.isNew = true;
       }
@@ -411,6 +411,12 @@ forEach(allClassEventItems, (types, type) => {
       if (actualEvent && type !== 'icons') {
         out.group = actualEvent;
       }
+
+      // If the item to a new event. e.g. summergames 2017 instead of 2016
+      if (NEW_EVENTS.includes(event) && !actualEvent) {
+        out.isNew = true;
+      }
+
 
 
       const isAchivement = achievementSprays.includes(itemID);
