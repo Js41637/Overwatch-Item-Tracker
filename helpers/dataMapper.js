@@ -417,24 +417,25 @@ forEach(allClassEventItems, (types, type) => {
         out.isNew = true;
       }
 
-
-
       const isAchivement = achievementSprays.includes(itemID);
-      if (isAchivement) {
+      if (isAchivement && type === 'sprays') {
         Object.assign(out, { achievement: true });
         var desc = getAchievementForItem(itemID);
         if (desc) {
           Object.assign(out, { description: desc });
         }
       }
+
       // sprays have no quality by default but if it isn't an achievement it means it's purchaseable so add quality
-      if (type == 'sprays' && !isAchivement) {
+      if (type === 'sprays' && !isAchivement) {
         Object.assign(out, { quality: 'common' });
       }
+
       if (!updates[event]) {
         console.warn("Missing event!!", event);
         return;
       }
+
       if (!updates[event].items[type]) updates[event].items[type] = [];
       updates[event].items[type].push(out);
     });
@@ -505,7 +506,7 @@ for (let hero in heroes) {
   }
 }
 
-// go through all hero items and sort items as they are sorted ingame
+// Go through all hero items and sort items as they are sorted in-game
 console.info('Sorting hero items');
 forEach(heroes, hero => forEach(hero.items, (items, type) => {
   if (hero.id == 'all') {
@@ -519,6 +520,7 @@ forEach(heroes, hero => forEach(hero.items, (items, type) => {
     }
     return;
   }
+
   hero.items[type] = sortBy(items, [
     (a => a.standardItem && a.event ? 1 : a.standardItem ? 0 : 1), // Standard items at top (if they're not in an event)
     (b => qualityOrder[b.quality]), // sort by quality. rare, epic, legendary
