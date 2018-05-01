@@ -58,7 +58,7 @@ const EVENTTIMES = {
   },
   [EVENTS.UPRISING]: {
     "start": "1523386800000",
-    "end": "1525125600000"
+    "end": "1525220550912"
   },
   [EVENTS.ANNIVERSARY]: {
     "start": "1495551600000",
