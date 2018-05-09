@@ -368,6 +368,10 @@ body {
   background-image: url(resources/icons/blizzard.svg);
 }
 
+.section .item[achievement="bcf"]:after {
+  background-image: url(resources/icons/heart.png);
+}
+
 
 
 /**

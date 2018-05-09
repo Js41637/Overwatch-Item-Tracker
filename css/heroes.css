@@ -464,6 +464,10 @@
   background-image: url("../resources/icons/blizzard.svg");
 }
 
+#hero-container .section .item[achievement="bcf"]:after {
+  background-image: url("../resources/icons/heart.png");
+}
+
 
 @media screen and (max-width: 1400px) {
   #hero-container .hero-items .section .item {
