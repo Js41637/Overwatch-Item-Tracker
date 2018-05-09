@@ -4,7 +4,7 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs');
-const { forEach, sortBy, find, reduce, merge, get, isEmpty, findKey, cloneDeep } = require('lodash');
+const { forEach, sortBy, find, reduce, merge, get, isEmpty, findKey } = require('lodash');
 
 const mode = process.argv.slice(2)[0];
 
@@ -23,7 +23,7 @@ const consoleColors = require('./consoleColors');
 consoleColors.load();
 
 const HERODATA = require('./dataMapper/HERODATA.js');
-const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp, idsBlizzardChanged } = require('./dataMapper/itemData.js');
+const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, specialAchievementItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp, idsBlizzardChanged } = require('./dataMapper/itemData.js');
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, NEW_EVENTS } = require('./dataMapper/EVENTDATA.js');
 const { EVENTITEMS } = require('./dataMapper/EVENTITEMS.js');
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder, getAchievementForItem, getOriginalItemsList } = require('./dataMapper/utils.js');
@@ -263,6 +263,12 @@ for (var hero in data) {
           var desc = getAchievementForItem(id);
           if (desc) {
             out.description = desc;
+          }
+
+          for (let g in specialAchievementItems) {
+            if (specialAchievementItems[g][type] && specialAchievementItems[g][type].includes(id)) {
+              out.achievement = g
+            }
           }
           break;
         case 'STANDARD_COMMON':

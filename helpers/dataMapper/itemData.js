@@ -158,6 +158,13 @@ const data = {
       [EVENTS.UPRISING]: ['archives-2018', 'uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'assassin', 'enforcer', 'heavy-assault', 'maximilien', 'sniper', 'trooper'],
       [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'pachiversary'],
     }
+  },
+  specialAchievementItems: {
+    'bcf': {
+      skins: ['mercy-pink'],
+      sprays: ['mercy-pink', 'mercy-cure', 'mercy-ribbon', 'mercy-together'],
+      icons: ['mercy-pink', 'mercy-ribbon']
+    }
   }
 };
 

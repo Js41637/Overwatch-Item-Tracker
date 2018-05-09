@@ -1754,6 +1754,13 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "Pink",
+          "id": "mercy-pink",
+          "url": "/heroes/mercy/icons/mercy-pink.png",
+          "achievement": "bcf",
+          "hero": "mercy"
+        },
+        {
           "name": "Present",
           "id": "present",
           "event": "WINTER_WONDERLAND",
@@ -1844,6 +1851,13 @@
           "event": "SUMMER_GAMES",
           "hero": "symmetra",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Ribbon",
+          "id": "mercy-ribbon",
+          "url": "/heroes/mercy/icons/mercy-ribbon.png",
+          "achievement": "bcf",
+          "hero": "mercy"
         },
         {
           "name": "Rikimaru",
@@ -11715,6 +11729,13 @@
           "url": "/heroes/mercy/skins/mercy-valkyrie.jpg"
         },
         {
+          "name": "Pink",
+          "id": "mercy-pink",
+          "quality": "legendary",
+          "url": "/heroes/mercy/skins/mercy-pink.jpg",
+          "achievement": "bcf"
+        },
+        {
           "name": "Winged Victory",
           "id": "mercy-winged-victory",
           "quality": "legendary",
@@ -11860,6 +11881,20 @@
           "name": "Valkyrie",
           "id": "mercy-valkyrie",
           "url": "/heroes/mercy/icons/mercy-valkyrie.png",
+          "hero": "mercy"
+        },
+        {
+          "name": "Pink",
+          "id": "mercy-pink",
+          "url": "/heroes/mercy/icons/mercy-pink.png",
+          "achievement": "bcf",
+          "hero": "mercy"
+        },
+        {
+          "name": "Ribbon",
+          "id": "mercy-ribbon",
+          "url": "/heroes/mercy/icons/mercy-ribbon.png",
+          "achievement": "bcf",
           "hero": "mercy"
         },
         {
@@ -12047,6 +12082,13 @@
           "url": "/heroes/mercy/sprays/mercy-ziegler.png"
         },
         {
+          "name": "Cure",
+          "id": "mercy-cure",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-cure.png",
+          "achievement": "bcf"
+        },
+        {
           "name": "Cute",
           "id": "mercy-cute",
           "quality": "common",
@@ -12055,12 +12097,33 @@
           "description": "Resurrect 6 players without dying as Mercy in Quick or Competitive Play."
         },
         {
+          "name": "Pink",
+          "id": "mercy-pink",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-pink.png",
+          "achievement": "bcf"
+        },
+        {
           "name": "Pixel",
           "id": "mercy-pixel",
           "quality": "common",
           "url": "/heroes/mercy/sprays/mercy-pixel.png",
           "achievement": true,
           "description": "Restore 200 health for 5 players without dying as Mercy in Quick or Competitive Play."
+        },
+        {
+          "name": "Ribbon",
+          "id": "mercy-ribbon",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-ribbon.png",
+          "achievement": "bcf"
+        },
+        {
+          "name": "Together",
+          "id": "mercy-together",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-together.png",
+          "achievement": "bcf"
         },
         {
           "name": "Badminton",
