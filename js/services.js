@@ -172,8 +172,13 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           if (!service[TYPE][what.id].totals[type]) service[TYPE][what.id].totals[type] = { selected: 0, total: 0 };
           for (var item of items[type]) {
             if (!isEvent) {
-              if (item.event && !service[TYPE][what.id].events[item.event]) service[TYPE][what.id].events[item.event] = true;
-              if (item.group && !service[TYPE][what.id].groups[item.group] && !item.group.includes('_')) service[TYPE][what.id].groups[item.group] = true;
+              if (item.event && !service[TYPE][what.id].events[item.event]) {
+                service[TYPE][what.id].events[item.event] = true;
+              }
+
+              if (item.group && !service[TYPE][what.id].groups[item.group] && !item.group.includes('_')) {
+                service[TYPE][what.id].groups[item.group] = true;
+              }
             }
 
             if (item.standardItem) continue;
@@ -186,6 +191,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
 
             service[TYPE][what.id].totals.overall.total++;
             service[TYPE][what.id].totals[type].total++;
+
             if (isSelected) {
               service[TYPE][what.id].totals.overall.selected++;
               service[TYPE][what.id].totals[type].selected++;
@@ -202,6 +208,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             if (isValidItem(item)) {
               var price = DataService.prices[item.quality] * (((item.event || isEvent) && !service.oldEvents.includes(item.group)) ? 3 : 1);
               service[TYPE][what.id].cost.total += price;
+
               if (isSelected) {
                 service[TYPE][what.id].cost.selected += price;
               } else {
@@ -218,6 +225,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
       var isSpecialItem = 'achievement' in item && item.achievement !== true && hero !== 'all'
       event = item.event || event;
+
       var eventType;
       if (service.newEvents.includes(event)) {
         eventType = (type == 'skins' && item.quality == 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
@@ -231,6 +239,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
 
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
+
       if (type != 'icons' || (type == 'icons' && countIcons)) {
         service.heroes[hero].totals.overall.selected += val;
 
@@ -259,8 +268,10 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         if (type !== 'icons' || (type == 'icons' && countIcons)) {
           service.events[event].totals.overall.selected += val;
         }
+
         service.events[event].totals[eventType].selected += val;
         service.events[event].cost.prev = service.events[event].cost.remaining;
+
         if (type !== 'icons' && isValid) {
           if (isSelected) {
             service.events[event].cost.remaining -= price;
@@ -270,8 +281,10 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             service.events[event].cost.selected -= price;
           }
         }
+
         service.events[event].totals.overall.percentage = ((service.events[event].totals.overall.selected / service.events[event].totals.overall.total) * 100);
       }
+
       service.heroes[hero].totals.overall.percentage = ((service.heroes[hero].totals.overall.selected / service.heroes[hero].totals.overall.total) * 100);
       return service.heroes[hero];
     },
@@ -280,21 +293,29 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         cost: { total: 0, selected: 0, remaining: 0, prev: oldCost },
         totals: { overall: { selected: 0, total: 0, percentage: 0 } }
       };
+
       for (var type in items) {
         if (!out.totals[type]) out.totals[type] = { total: 0, selected: 0 };
+
         for (var item of items[type]) {
           if (item.standardItem) continue;
+
           var isSelected = DataService.checked[item.hero || hero][type][item.id];
+
           out.totals.overall.total++;
           out.totals[type].total++;
+
           if (isSelected) {
             out.totals.overall.selected++;
             out.totals[type].selected++;
           }
+
           if (type == 'icons') continue;
+
           if (isValidItem(item)) {
             var price = DataService.prices[item.quality] * ((item.group && !service.oldEvents.includes(item.group)) ? 3 : 1);
             out.cost.total += price;
+
             if (isSelected) {
               out.cost.selected += price;
             } else {
@@ -303,6 +324,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           }
         }
       }
+
       out.totals.overall.percentage = ((out.totals.overall.selected / out.totals.overall.total) * 100);
       return out;
     }
