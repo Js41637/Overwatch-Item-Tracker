@@ -175,14 +175,22 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
               if (item.event && !service[TYPE][what.id].events[item.event]) service[TYPE][what.id].events[item.event] = true;
               if (item.group && !service[TYPE][what.id].groups[item.group] && !item.group.includes('_')) service[TYPE][what.id].groups[item.group] = true;
             }
+
             if (item.standardItem) continue;
+        
             var isSelected = DataService.checked[item.hero || what.id][TYPES[type] || type][item.id];
+            var isSpecialItem = 'achievement' in item && item.achievement !== true && heroOrEvent !== 'all'
+
+            // Unselected special items (blizzard unlocks, origin skins, mercy bcf items) dont count unless unlocked
+            if (!isSelected && isSpecialItem) continue;
+
             service[TYPE][what.id].totals.overall.total++;
             service[TYPE][what.id].totals[type].total++;
             if (isSelected) {
               service[TYPE][what.id].totals.overall.selected++;
               service[TYPE][what.id].totals[type].selected++;
             }
+
             if (type == 'icons') {
               if (!countIcons) {
                 service[TYPE][what.id].totals.overall.total--;
@@ -190,6 +198,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
               }
               continue;
             }
+
             if (isValidItem(item)) {
               var price = DataService.prices[item.quality] * (((item.event || isEvent) && !service.oldEvents.includes(item.group)) ? 3 : 1);
               service[TYPE][what.id].cost.total += price;
@@ -207,6 +216,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
     updateItem: function(item, type, hero, event, idOverride) {
       var itemID = idOverride || item.id;
       var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
+      var isSpecialItem = 'achievement' in item && item.achievement !== true && hero !== 'all'
       event = item.event || event;
       var eventType;
       if (service.newEvents.includes(event)) {
@@ -214,14 +224,27 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       } else {
         eventType = type == 'skins' ? (item.quality == 'epic' ? 'skinsEpic' : 'skinsLegendary') : type;
       }
+
       var val = isSelected ? 1 : -1;
       var price = DataService.prices[item.quality] * ((event && !service.oldEvents.includes(item.group)) ? 3 : 1);
       var isValid = isValidItem(item, event);
+
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
       if (type != 'icons' || (type == 'icons' && countIcons)) {
         service.heroes[hero].totals.overall.selected += val;
+
+        if (isSpecialItem) {
+          service.heroes[hero].totals.overall.total += val
+          service.heroes[hero].totals[type].total += val;
+        }
       }
+
+      if (type == 'icons' && isSpecialItem) {
+        service.heroes[hero].totals[type].total += val;
+      }
+
+      // If this is a valid item, update the cost on the hero
       if (type != 'icons' && isValid) {
         if (isSelected) {
           service.heroes[hero].cost.selected += price;
@@ -231,8 +254,9 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           service.heroes[hero].cost.remaining += price;
         }
       }
+
       if (event) {
-        if (type !== 'icons' || type == 'icons' && countIcons) {
+        if (type !== 'icons' || (type == 'icons' && countIcons)) {
           service.events[event].totals.overall.selected += val;
         }
         service.events[event].totals[eventType].selected += val;
