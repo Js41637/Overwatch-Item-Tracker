@@ -4,7 +4,7 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs');
-const { forEach, sortBy, find, reduce, merge, get, isEmpty, findKey } = require('lodash');
+const { forEach, sortBy, find, reduce, merge, get, isEmpty, findKey, isString } = require('lodash');
 
 const mode = process.argv.slice(2)[0];
 
@@ -532,8 +532,9 @@ forEach(heroes, hero => forEach(hero.items, (items, type) => {
     (b => qualityOrder[b.quality]), // sort by quality. rare, epic, legendary
     (c => !c.achievement && !c.event ? 0 : 1), // non achievement/event items on top
     (d => d.achievement ? 0 : 1), // achievement items above event items
-    (e => EVENTORDER[EVENTORDER[e.group] ? e.group : e.event]), // sort events by event order
-    (f => f.name.toLowerCase()) // everything in their respective groups is sorted by name
+    (e => isString(e.achievement)), // Put special achievements below normal achievments (cute/pixel)
+    (f => EVENTORDER[EVENTORDER[f.group] ? f.group : f.event]), // sort events by event order
+    (g => g.name.toLowerCase()) // everything in their respective groups is sorted by name
   ]);
 }));
 

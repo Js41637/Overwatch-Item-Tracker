@@ -12082,13 +12082,6 @@
           "url": "/heroes/mercy/sprays/mercy-ziegler.png"
         },
         {
-          "name": "Cure",
-          "id": "mercy-cure",
-          "quality": "common",
-          "url": "/heroes/mercy/sprays/mercy-cure.png",
-          "achievement": "bcf"
-        },
-        {
           "name": "Cute",
           "id": "mercy-cute",
           "quality": "common",
@@ -12097,19 +12090,26 @@
           "description": "Resurrect 6 players without dying as Mercy in Quick or Competitive Play."
         },
         {
-          "name": "Pink",
-          "id": "mercy-pink",
-          "quality": "common",
-          "url": "/heroes/mercy/sprays/mercy-pink.png",
-          "achievement": "bcf"
-        },
-        {
           "name": "Pixel",
           "id": "mercy-pixel",
           "quality": "common",
           "url": "/heroes/mercy/sprays/mercy-pixel.png",
           "achievement": true,
           "description": "Restore 200 health for 5 players without dying as Mercy in Quick or Competitive Play."
+        },
+        {
+          "name": "Cure",
+          "id": "mercy-cure",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-cure.png",
+          "achievement": "bcf"
+        },
+        {
+          "name": "Pink",
+          "id": "mercy-pink",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-pink.png",
+          "achievement": "bcf"
         },
         {
           "name": "Ribbon",
