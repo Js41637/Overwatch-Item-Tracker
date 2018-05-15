@@ -240,7 +240,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
 
-      if (countIcons || type !== 'icons')
+      if (countIcons || type !== 'icons') {
         service.heroes[hero].totals.overall.selected += val;
 
         if (isSpecialItem) {
@@ -265,7 +265,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       }
 
       if (event) {
-        if (countIcons || type !== 'icons')
+        if (countIcons || type !== 'icons') {
           service.events[event].totals.overall.selected += val;
         }
 
