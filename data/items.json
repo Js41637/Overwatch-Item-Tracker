@@ -9,16 +9,22 @@
     "items": {
       "icons": [
         {
-          "name": "...Never Die",
-          "id": "never-die",
-          "event": "HALLOWEEN",
-          "url": "/heroes/all/icons/never-die.png"
-        },
-        {
           "name": "16-Bit Hero",
           "id": "16bit-hero",
           "url": "/heroes/all/icons/16bit-hero.png",
           "group": "starcraft"
+        },
+        {
+          "name": "76",
+          "id": "soldier-76-76",
+          "url": "/heroes/soldier-76/icons/soldier-76-76.png",
+          "hero": "soldier-76"
+        },
+        {
+          "name": "512",
+          "id": "zarya-512",
+          "url": "/heroes/zarya/icons/zarya-512.png",
+          "hero": "zarya"
         },
         {
           "name": "2017",
@@ -33,16 +39,10 @@
           "url": "/heroes/all/icons/2018.png"
         },
         {
-          "name": "512",
-          "id": "zarya-512",
-          "url": "/heroes/zarya/icons/zarya-512.png",
-          "hero": "zarya"
-        },
-        {
-          "name": "76",
-          "id": "soldier-76-76",
-          "url": "/heroes/soldier-76/icons/soldier-76-76.png",
-          "hero": "soldier-76"
+          "name": "...Never Die",
+          "id": "never-die",
+          "event": "HALLOWEEN",
+          "url": "/heroes/all/icons/never-die.png"
         },
         {
           "name": "AHHHH!",
@@ -828,6 +828,12 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "name": "Forge",
+          "id": "torbjorn-forge",
+          "url": "/heroes/torbjorn/icons/torbjorn-forge.png",
+          "hero": "torbjorn"
+        },
+        {
           "name": "For the Alliance",
           "id": "for-the-alliance",
           "url": "/heroes/all/icons/for-the-alliance.png",
@@ -838,12 +844,6 @@
           "id": "for-the-horde",
           "url": "/heroes/all/icons/for-the-horde.png",
           "group": "world of warcraft"
-        },
-        {
-          "name": "Forge",
-          "id": "torbjorn-forge",
-          "url": "/heroes/torbjorn/icons/torbjorn-forge.png",
-          "hero": "torbjorn"
         },
         {
           "name": "Fortune",
@@ -946,14 +946,6 @@
           "url": "/heroes/all/icons/gold.png"
         },
         {
-          "name": "Gold Soldier",
-          "id": "soldier-76-gold-soldier",
-          "url": "/heroes/soldier-76/icons/soldier-76-gold-soldier.png",
-          "event": "ANNIVERSARY",
-          "hero": "soldier-76",
-          "group": "ANNIVERSARY_2017"
-        },
-        {
           "name": "Goldborg",
           "id": "genji-goldborg",
           "url": "/heroes/genji/icons/genji-goldborg.png",
@@ -1007,6 +999,14 @@
           "url": "/heroes/winston/icons/winston-goldrilla.png",
           "event": "ANNIVERSARY",
           "hero": "winston",
+          "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Gold Soldier",
+          "id": "soldier-76-gold-soldier",
+          "url": "/heroes/soldier-76/icons/soldier-76-gold-soldier.png",
+          "event": "ANNIVERSARY",
+          "hero": "soldier-76",
           "group": "ANNIVERSARY_2017"
         },
         {
@@ -1551,17 +1551,17 @@
           "hero": "genji"
         },
         {
-          "name": "Null Sector",
-          "id": "null-sector",
-          "event": "UPRISING",
-          "url": "/heroes/all/icons/null-sector.png"
-        },
-        {
           "name": "Nullmari",
           "id": "nullmari",
           "event": "UPRISING",
           "url": "/heroes/all/icons/nullmari.png",
           "group": "pachi"
+        },
+        {
+          "name": "Null Sector",
+          "id": "null-sector",
+          "event": "UPRISING",
+          "url": "/heroes/all/icons/null-sector.png"
         },
         {
           "name": "Numbani",
@@ -1898,19 +1898,19 @@
           "url": "/heroes/all/icons/sakura.png"
         },
         {
-          "name": "San Francisco Shock",
-          "id": "san-francisco-shock",
-          "url": "/heroes/all/icons/san-francisco-shock.png",
-          "standardItem": true,
-          "group": "overwatch league"
-        },
-        {
           "name": "Sandy",
           "id": "reinhardt-sandy",
           "url": "/heroes/reinhardt/icons/reinhardt-sandy.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "reinhardt",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "San Francisco Shock",
+          "id": "san-francisco-shock",
+          "url": "/heroes/all/icons/san-francisco-shock.png",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Santaclad",
@@ -1962,22 +1962,6 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking during Season 1"
-        },
-        {
-          "name": "Season 10 Competitor",
-          "id": "season-10-competitor",
-          "url": "/heroes/all/icons/season-10-competitor.png",
-          "achievement": true,
-          "group": "competitive",
-          "description": "Unlocked by completing Season 10 placement matches"
-        },
-        {
-          "name": "Season 10 Hero",
-          "id": "season-10-hero",
-          "url": "/heroes/all/icons/season-10-hero.png",
-          "achievement": true,
-          "group": "competitive",
-          "description": "Unlocked by achieving top 500 ranking at the end of Season 10"
         },
         {
           "name": "Season 2 Competitor",
@@ -2108,6 +2092,22 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Season 9"
         },
         {
+          "name": "Season 10 Competitor",
+          "id": "season-10-competitor",
+          "url": "/heroes/all/icons/season-10-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 10 placement matches"
+        },
+        {
+          "name": "Season 10 Hero",
+          "id": "season-10-hero",
+          "url": "/heroes/all/icons/season-10-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 10"
+        },
+        {
           "name": "Sentry",
           "id": "symmetra-sentry",
           "url": "/heroes/symmetra/icons/symmetra-sentry.png",
@@ -2178,10 +2178,22 @@
           "url": "/heroes/all/icons/sniper.png"
         },
         {
+          "name": "Snowball",
+          "id": "mei-snowball",
+          "url": "/heroes/mei/icons/mei-snowball.png",
+          "hero": "mei"
+        },
+        {
           "name": "Snow Globe",
           "id": "snow-globe",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/icons/snow-globe.png"
+        },
+        {
+          "name": "Snowman",
+          "id": "snowman",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/icons/snowman.png"
         },
         {
           "name": "Snow Owl",
@@ -2190,18 +2202,6 @@
           "event": "WINTER_WONDERLAND",
           "hero": "ana",
           "isNew": true
-        },
-        {
-          "name": "Snowball",
-          "id": "mei-snowball",
-          "url": "/heroes/mei/icons/mei-snowball.png",
-          "hero": "mei"
-        },
-        {
-          "name": "Snowman",
-          "id": "snowman",
-          "event": "WINTER_WONDERLAND",
-          "url": "/heroes/all/icons/snowman.png"
         },
         {
           "name": "Soldier: 24",
@@ -2593,12 +2593,6 @@
           "url": "/heroes/all/icons/winter-wonderland-2017.png"
         },
         {
-          "name": "Witch Doctor",
-          "id": "witch-doctor",
-          "url": "/heroes/all/icons/witch-doctor.png",
-          "group": "diablo"
-        },
-        {
           "name": "Witch's Brew",
           "id": "witchs-brew",
           "event": "HALLOWEEN",
@@ -2609,6 +2603,12 @@
           "id": "witchs-hat",
           "event": "HALLOWEEN",
           "url": "/heroes/all/icons/witchs-hat.png"
+        },
+        {
+          "name": "Witch Doctor",
+          "id": "witch-doctor",
+          "url": "/heroes/all/icons/witch-doctor.png",
+          "group": "diablo"
         },
         {
           "name": "Wizard",
@@ -3159,22 +3159,6 @@
           "description": "Unlocked by completing Season 1 placement matches"
         },
         {
-          "name": "Season 10 Competitor",
-          "id": "season-10-competitor",
-          "url": "/heroes/all/sprays/season-10-competitor.png",
-          "achievement": true,
-          "group": "competitive",
-          "description": "Unlocked by completing Season 10 placement matches"
-        },
-        {
-          "name": "Season 10 Hero",
-          "id": "season-10-hero",
-          "url": "/heroes/all/sprays/season-10-hero.png",
-          "achievement": true,
-          "group": "competitive",
-          "description": "Unlocked by completing Season 10 placement matches"
-        },
-        {
           "name": "Season 2 Competitor",
           "id": "season-2-competitor",
           "url": "/heroes/all/sprays/season-2-competitor.png",
@@ -3301,6 +3285,22 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by completing Season 9 placement matches"
+        },
+        {
+          "name": "Season 10 Competitor",
+          "id": "season-10-competitor",
+          "url": "/heroes/all/sprays/season-10-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 10 placement matches"
+        },
+        {
+          "name": "Season 10 Hero",
+          "id": "season-10-hero",
+          "url": "/heroes/all/sprays/season-10-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 10 placement matches"
         },
         {
           "name": "Seoul Dynasty Logo",
@@ -3735,13 +3735,6 @@
           "description": "Complete Uprising on Hard difficulty."
         },
         {
-          "name": "Null Sector",
-          "id": "null-sector",
-          "event": "UPRISING",
-          "url": "/heroes/all/sprays/null-sector.png",
-          "quality": "common"
-        },
-        {
           "name": "Nullmari",
           "id": "nullmari",
           "event": "UPRISING",
@@ -3749,6 +3742,13 @@
           "achievement": true,
           "group": "pachi",
           "description": "Complete Uprising (All Heroes) with 8 different heroes."
+        },
+        {
+          "name": "Null Sector",
+          "id": "null-sector",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/null-sector.png",
+          "quality": "common"
         },
         {
           "name": "Nulltrooper",
