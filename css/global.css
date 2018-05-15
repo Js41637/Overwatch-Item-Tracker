@@ -1161,9 +1161,11 @@ strong {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.27);
+  background-color: rgba(0, 0, 0, 0.3);
   line-height: 1.2;
   padding: 3px 4px;
+  text-shadow: 1px 1px 1px black;
+  font-size: 14px;
 }
 
 .section .tooltip .preview.video {
