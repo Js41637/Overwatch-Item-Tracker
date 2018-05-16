@@ -134,9 +134,11 @@ allClassData = reduce(allClassData, (result, items, type) => {
 
   items = reduce(items, (newItems = [], item) => {
     if (hiddenItems[type] && hiddenItems[type].includes(item.id)) return newItems;
+
     item.name = itemNamesIFuckedUp[`${type}/${item.id}`] || item.name;
     item.id = idsBlizzardChanged[`${type}/${item.id}`] || item.id;
     allClassDataKeys[type][item.id] = item.name;
+
     var { event = undefined } = reduce(allClassEventItems[type], (r, items, eventID) => {
       let match = find(items, id => id == item.id);
       Object.assign(r, match ? { event: eventID } : {});
@@ -162,6 +164,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
     let description;
     if (isAchievement) {
       const desc = getAchievementForItem(item.id);
+
       if (desc) {
         description = { description: desc };
       }
@@ -170,13 +173,16 @@ allClassData = reduce(allClassData, (result, items, type) => {
     // Check for specific item groups
     var group = undefined;
     for (let g in specialItems) {
-      if (specialItems[g][type] && specialItems[g][type].includes(item.id)) group = { group: g };
+      if (specialItems[g][type] && specialItems[g][type].includes(item.id)) {
+        group = { group: g };
+      }
     }
 
     newItems.push(Object.assign(item, { event, url }, isAchievement, isStandard, quality, group, isPachiItem, isCompItem, description));
+
     if (isSeasonCompItem && type == 'sprays') {
       const id = `season-${isSeasonCompItem[1]}-hero`;
-      const desc2 = getAchievementForItem(item.id);
+      const desc2 = getAchievementForItem(id);
       newItems.push(Object.assign({}, { 
         name: `Season ${isSeasonCompItem[1]} Hero`, 
         id: id,
