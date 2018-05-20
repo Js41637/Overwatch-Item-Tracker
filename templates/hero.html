@@ -50,6 +50,11 @@
               <label for="{{::event.id}}">{{::event.name}} <input id="{{::event.id}}" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.events[event.id]"></label>
             </div>
           </li>
+          <li class="save-filters">
+            <button class="btn btn-primary" uib-tooltip="Saving filters will make it so filters are preserved when you switch pages" ng-click="hero.saveFilters()" tooltip-append-to-body="true">
+              Save
+            </button>
+          </li>
         </ul>
       </div>
       <div class="toggle-grid btn btn-default" uib-tooltip="Toggle Grid View" ng-click="hero.toggleGrid()" tooltip-append-to-body="true">Toggle Grid</div>

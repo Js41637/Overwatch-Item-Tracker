@@ -90,6 +90,16 @@
   align-items: center;
 }
 
+#hero-container #hero-header .options .save-filters {
+  text-align: center;
+  margin-top: 8px;
+}
+
+#hero-container #hero-header .options .save-filters button {
+  width: 70px;
+}
+
+
 #hero-container .hero-items .section .options {
   opacity: 0;
   transition: opacity 125ms;

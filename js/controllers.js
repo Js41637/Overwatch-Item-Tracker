@@ -106,6 +106,8 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
   };
 }]);
 
+var savedFilters = null
+
 OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$rootScope", "$uibModal", "DataService", "StorageService", "CompatibilityService", "CostAndTotalService",  function($scope, $state, $timeout, $stateParams, $rootScope, $uibModal, Data, StorageService, CompatibilityService, CostAndTotalService) {
   var vm = this;
   vm.loaded = false;
@@ -123,6 +125,10 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     init();
     $timeout(function() {
       vm.loaded = true;
+
+      if (savedFilters) {
+        vm.updateFilters()
+      }
     }, 0);
   });
 
@@ -146,15 +152,15 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
       vm.events = data.heroes[hero.id].events;
       vm.groups = data.heroes[hero.id].groups;
       vm.totals = data.heroes[hero.id].totals;
-      vm.hasEvents = hasEvents()
-      vm.hasGroups = hasGroups()
-
+      vm.hasEvents = hasEvents();
+      vm.hasGroups = hasGroups();
+     
       // Cost is on scope as it is a directive in the page and it inherits parent scope
       $scope.cost = CostAndTotalService.heroes && CostAndTotalService.heroes[hero.id] ? CostAndTotalService.heroes[hero.id].cost : 0;
     });
   }
   
-  vm.filters = {
+  vm.filters = savedFilters || {
     selected: false,
     unselected: false,
     achievement: false,
@@ -273,11 +279,17 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
       events: {},
       groups: {}
     };
+  
+    savedFilters = null;
     vm.currentFilters = '';
     vm.filtering = false;
     vm.filteredItems = hero.items;
     resetCosts();
   };
+
+  vm.saveFilters = function() {
+    savedFilters = vm.filters;
+  }
 
   // Manual function to select an item, used in grid mode
   vm.selectItem = function(item, type) {
