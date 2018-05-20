@@ -113,6 +113,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
   vm.loaded = false;
   vm.hasGroups = true
   vm.hasEvents = true
+  vm.noFilteredLayout = false
   var hero;
 
   Data.waitForInitialization().then(function(data) {
@@ -121,6 +122,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
       $state.go('home');
       return;
     }
+  
     Object.assign(vm, hero);
     init();
     $timeout(function() {
@@ -160,14 +162,17 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     });
   }
   
-  vm.filters = savedFilters || {
-    selected: false,
-    unselected: false,
-    achievement: false,
-    hero: false,
-    events: {},
-    groups: {}
-  };
+  vm.filters = $stateParams.id !== 'all' && savedFilters
+    ? savedFilters
+    : {
+      selected: false,
+      unselected: false,
+      achievement: false,
+      hero: false,
+      noevent: false,
+      events: {},
+      groups: {}
+    };
 
   // Returns if an item is checked, use item.hero if one is available as allClass Icons includes icons from all heroes
   vm.isItemChecked = function(item, type) {
@@ -205,7 +210,10 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     var selected = vm.filters.selected;
     var unselected = vm.filters.unselected;
     var achievement = vm.filters.achievement;
+    var noevent = vm.filters.noevent;
     var herof = vm.filters.hero;
+    
+    console.log('update filters')
 
     // Generate array of event ids we are filtering
     var eventFilters = [];
@@ -219,7 +227,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     }
 
     // Disable filtering if nothing is selected
-    if (!eventFilters.length && !groupFilter.length && !selected && !unselected && !achievement && !herof) {
+    if (!eventFilters.length && !groupFilter.length && !selected && !unselected && !achievement && !herof && !noevent) {
       vm.clearFilters();
       return;
     }
@@ -248,6 +256,9 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
   // Filters the items and returms new data object
   function filterItems(items, eventFilters, groupFilter) {
     var out = {};
+    var itemCount = 0;
+    var typeCount = 0;
+
     for (var type in items) {
       var outType = [];
       items[type].forEach(function(item) {
@@ -256,17 +267,23 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
           if ((vm.filters.selected && !checked && !item.standardItem) || (vm.filters.unselected && (checked || item.standardItem)))  return;
         }
 
+        if (vm.filters.noevent && item.event) return;
         if (vm.filters.achievement && !item.achievement) return;
         if (vm.filters.hero && !item.hero) return;
         if (eventFilters.length && (!item.event || !eventFilters.includes(item.event))) return;
         if (groupFilter.length && (!item.group || !groupFilter.includes(item.group))) return;
 
+        itemCount++;
         outType.push(item);
       });
+
       if (outType.length) {
+        typeCount++;
         out[type] = outType;
       }
     }
+
+    vm.noFilteredLayout = itemCount > 35 && typeCount > 2
     return out;
   }
   

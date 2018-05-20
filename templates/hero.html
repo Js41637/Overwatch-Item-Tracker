@@ -1,6 +1,6 @@
 <sub-header></sub-header>
 
-<div id="hero-container" ng-if="hero.id" ng-show="hero.loaded" ng-class="{filtering: hero.filtering}">
+<div id="hero-container" ng-if="hero.id" ng-show="hero.loaded" ng-class="{ filtering: hero.filtering && !hero.noFilteredLayout }">
   <div id="hero-header">
     <div class="hero-overview">
       <div class="hero-image">
@@ -34,6 +34,13 @@
             <div>
               <label for="achievementf">Achievement/Special <input id="achievementf" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.achievement"></label>
             </div>
+          </li>
+          <li>
+            <div>
+              <label for="noevent">No Event <input id="noevent" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.noevent"></label>
+            </div>
+          </li>
+          <li>
             <div ng-show="hero.id == 'all'">
               <label for="herof">Hero Icons <input id="herof" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.hero"></label>
             </div>
@@ -50,7 +57,7 @@
               <label for="{{::event.id}}">{{::event.name}} <input id="{{::event.id}}" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.events[event.id]"></label>
             </div>
           </li>
-          <li class="save-filters">
+          <li class="save-filters" ng-hide="hero.id === 'all'">
             <button class="btn btn-primary" uib-tooltip="Saving filters will make it so filters are preserved when you switch pages" ng-click="hero.saveFilters()" tooltip-append-to-body="true">
               Save
             </button>
