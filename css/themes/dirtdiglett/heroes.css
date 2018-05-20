@@ -365,7 +365,8 @@ body#zenyatta #hero-container .hero-overview {
     body#mercy .hero-name:after,
     body#moira .hero-name:after,
     body#symmetra .hero-name:after,
-    body#zenyatta .hero-name:after {
+    body#zenyatta .hero-name:after,
+    body#brigitte .hero-name:after {
       background-image: url(resources/icons/roles/support.svg);
     }
 

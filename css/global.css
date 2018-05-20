@@ -899,7 +899,7 @@ strong {
 #hero-nav .gallery.event {
   margin-bottom: 10px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 #hero-nav .gallery .text {
@@ -940,6 +940,7 @@ strong {
   height: 100%;
   border-top: 1px solid;
   z-index: -1;
+  transform: translateZ(0);
 }
 
 #hero-nav .gallery h2 {
