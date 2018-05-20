@@ -1,5 +1,5 @@
 #hero-container {
-  padding: 10px 40px 0;
+  padding: 10px 40px;
 }
 
 #hero-container #hero-header {
@@ -266,7 +266,7 @@
 }
 
 #hero-container .hero-items .section .item {
-  font-size: 20px;
+  font-size: 19px;
   display: flex;
   align-items: center;
   padding: 0 2px;
@@ -285,7 +285,7 @@
 }
 
 #hero-container .hero-items .section .item small {
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 5px;
   padding-top: 1px;
 }
