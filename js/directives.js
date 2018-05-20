@@ -20,7 +20,6 @@ OWI.filter('eventImageUrl', ['UrlService', function(UrlService) {
   };
 }]);
 
-
 OWI.filter('itemPrice', function() {
   return function(item, type, event) {
     var isEvent = (item.event || event) && !oldEvents.includes(item.group);
@@ -299,6 +298,44 @@ OWI.directive('lazyBackground', ["ImageLoader", "$compile", "$timeout", function
     }
   };
 }]);
+
+OWI.directive('homeProgressBars', ["CostAndTotalService", function(CostAndTotalService) {
+  return {
+    restrict: 'E',
+    templateUrl: './templates/home-progress-bars.html',
+    scope: {},
+    controller: ['$scope', function($scope) {
+      $scope.isCollapsed = true;
+      $scope.selected = 0;
+      $scope.total = 0;
+
+      $scope.qualities = {
+        common: 0,
+        rare: 0,
+        epic: 0,
+        legendary: 0,
+        golden: 0
+      }
+
+      CostAndTotalService.waitForInitialization().then(function() {
+        for (var quality in CostAndTotalService.qualities) {
+          $scope.selected += CostAndTotalService.qualities[quality].selected
+          $scope.total += CostAndTotalService.qualities[quality].total
+        }
+
+        $scope.qualities = {
+          common: CostAndTotalService.qualities.common,
+          rare: CostAndTotalService.qualities.rare,
+          epic: CostAndTotalService.qualities.epic,
+          legendary: CostAndTotalService.qualities.legendary,
+          golden: CostAndTotalService.qualities.golden
+        }
+      })
+
+      
+    }]
+  }
+}])
 
 /* OWI.directive("particles", function() {
   return {

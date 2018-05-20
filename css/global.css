@@ -54,15 +54,15 @@ body {
 }
 
 .item h3.rare, .color-rare, #icons .item h3, #icons .item h3.common {
-  color: #00c1fa !important;
+  color: #00c3ff !important;
 }
 
 .item h3.epic, .color-epic {
-  color: #ff05f4 !important;
+  color: #ed3cef !important;
 }
 
 .item h3.legendary, .color-legendary {
-  color: #ffa12b !important;
+  color: #ff9c00 !important;
 }
 
 /**
@@ -72,7 +72,7 @@ body {
 #header {
   height: 45px;
   background-color: rgb(45, 45, 45);
-  color: orange;
+  color: #f99e1a;
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
@@ -167,7 +167,7 @@ body {
   border-color: transparent;
   padding: 0 0.6em;
   height: 35px;
-  box-shadow: 0 0 3px orange;
+  box-shadow: 0 0 3px #f99e1a;
   margin-right: 25px;
   border-radius: 4px;
   min-width: 100px;
@@ -842,7 +842,7 @@ strong {
 
 #home {
   max-width: 1700px;
-  margin: 20px auto 0;
+  margin: 0 auto;
 }
 
 #home h1 {
@@ -900,6 +900,7 @@ strong {
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
+  contain: content;
 }
 
 #hero-nav .gallery .text {
@@ -940,7 +941,6 @@ strong {
   height: 100%;
   border-top: 1px solid;
   z-index: -1;
-  transform: translateZ(0);
 }
 
 #hero-nav .gallery h2 {
@@ -1297,4 +1297,128 @@ input.circle-checkbox:checked+label {
 
 .options .dropdown-menu li > div:hover  {
   background-color: rgb(245, 245, 245);
+}
+
+home-progress-bars {
+  display: block;
+  margin: 14px auto 12px;
+  max-width: 1400px;
+}
+
+home-progress-bars .overall-bar {
+  padding: 0 30px;
+}
+
+home-progress-bars .progress-bar-container {
+  background-color: rgba(24, 34, 62, .7);
+  height: 22px;
+  padding: 2px;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+home-progress-bars .progress-bar-container span {
+  font-size: 20px;
+  display: block;
+  position: absolute;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+home-progress-bars .progress-bar-container span small {
+  font-family: Futura, century gothic, arial, sans-serif;
+  font-size: 12px;
+  margin-left: 5px;
+  letter-spacing: -0.1px;
+}
+
+home-progress-bars .progress-bar-container .home-progress-bar {
+  width: 0;
+  border-radius: 3px;
+  background-color: #ff9c00;
+  border-top: 2px solid #ffa519;
+  transition: width .8s ease-in-out;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+home-progress-bars .view-more {
+  display: flex;
+  font-size: 18px;
+  margin-top: 4px;
+  cursor: pointer;
+  justify-content: center;
+  line-height: 20px;
+  align-items: center;
+}
+
+home-progress-bars .view-more span {
+  align-items: center;
+  margin-right: 4px;
+}
+
+home-progress-bars .view-more:hover:not(.active) span {
+  margin-top: 1px;
+}
+
+home-progress-bars .view-more.active span {
+  transform: rotate(180deg)
+}
+
+home-progress-bars .more-bars {
+  padding: 0 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+home-progress-bars .more-bars .quality-bar {
+  display: flex;
+  align-items: center;
+  margin: 9px 0;
+}
+
+home-progress-bars .more-bars .quality-bar:first-of-type {
+  margin-top: 12px;
+}
+
+home-progress-bars .more-bars .quality-bar .title {
+  font-size: 18px;
+  min-width: 60px;
+  text-align: right;
+  margin-right: 12px;
+}
+
+home-progress-bars .progress-bar.common {
+  background-color: #d0d0d0;
+  border-color: #d4d4d4;
+}
+
+home-progress-bars .progress-bar.rare {
+  background-color: #00c3ff;
+  border-color: #19c9ff;
+}
+
+home-progress-bars .progress-bar.epic {
+  background-color: #ed3cef;
+  border-color: #ee4ff0;
+}
+
+home-progress-bars .progress-bar.legendary {
+  background-color: #ff9c00;
+  border-color: #ffa519;
+}
+
+home-progress-bars .progress-bar.golden {
+  background-color: #FFD700;
+  border-color: #ffdb19;
 }

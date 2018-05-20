@@ -22,7 +22,7 @@
           <h2>{{::hero.name}}</h2>
           <div ng-if="::totals" class="progresscont">
             <h3>{{::totals.heroes[hero.id].totals.overall.selected}}/{{::totals.heroes[hero.id].totals.overall.total}}</h3>
-            <div class="hero-progress-bar" style="width: {{::totals.heroes[hero.id].totals.overall.percentage}}%; background-color: {{::hero.colors.primary}}; border-top-color: {{::hero.colors.highlight}}"></div>
+            <div class="hero-progress-bar" style="width: {{(totals.heroes[hero.id].totals.overall.selected / totals.heroes[hero.id].totals.overall.total) * 100}}%; background-color: {{::hero.colors.primary}}; border-top-color: {{::hero.colors.highlight}}"></div>
           </div>
         </div>
       </div>

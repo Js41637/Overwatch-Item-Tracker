@@ -132,7 +132,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
 
   var service = {
     initialized: false,
-    totals: {},
+    qualities: {},
     heroes: {},
     events: {},
     oldEvents: ['HALLOWEEN_2016', 'SUMMER_GAMES_2016', 'WINTER_WONDERLAND_2016', 'LUNAR_NEW_YEAR_2017', 'UPRISING_2017'],
@@ -160,64 +160,110 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       console.log("Calculating costs");
       service.heroes = {};
       service.events = {};
-      var d = Object.assign({}, DataService.heroes, DataService.events);
-      for (var heroOrEvent in d) {
-        var isEvent = DataService.events[heroOrEvent];
-        var what = d[heroOrEvent];
-        var TYPE = isEvent ? 'events' : 'heroes';
 
-        service[TYPE][what.id] = { events: {}, groups: {}, cost: { selected: 0, remaining: 0, total: 0, prev: 0 }, totals: { overall: { selected: 0, total: 0, percentage: 0 } } };
-        var items = what.items;
-        for (var type in items) {
-          if (!service[TYPE][what.id].totals[type]) service[TYPE][what.id].totals[type] = { selected: 0, total: 0 };
-          for (var item of items[type]) {
-            if (!isEvent) {
-              if (item.event && !service[TYPE][what.id].events[item.event]) {
-                service[TYPE][what.id].events[item.event] = true;
-              }
+      for (var heroId in DataService.heroes) {
+        var hero = DataService.heroes[heroId]
+        
+        service.heroes[hero.id] = { events: {}, groups: {}, cost: { selected: 0, remaining: 0, total: 0, prev: 0 }, totals: { overall: { selected: 0, total: 0 } } }
+        var s_hero = service.heroes[hero.id]
 
-              if (item.group && !service[TYPE][what.id].groups[item.group] && !item.group.includes('_')) {
-                service[TYPE][what.id].groups[item.group] = true;
-              }
+        for (var type in hero.items) {
+          if (!s_hero.totals[type]) {
+            s_hero.totals[type] = { selected: 0, total: 0 };
+          }
+          
+          for (var item of hero.items[type]) {
+            if (item.event && !s_hero.events[item.event]) {
+              s_hero.events[item.event] = true;
+            }
+
+            if (item.group && !s_hero.groups[item.group] && !item.group.includes('_')) {
+              s_hero.groups[item.group] = true;
             }
 
             if (item.standardItem) continue;
         
-            var isSelected = DataService.checked[item.hero || what.id][TYPES[type] || type][item.id];
-            var isSpecialItem = 'achievement' in item && item.achievement !== true && heroOrEvent !== 'all'
+            var isSelected = DataService.checked[item.hero || hero.id][type][item.id];
+            var isSpecialItem = 'achievement' in item && item.achievement !== true && heroId !== 'all'
 
             // Unselected special items (blizzard unlocks, origin skins, mercy bcf items) dont count unless unlocked
             if (!isSelected && isSpecialItem) continue;
 
-            service[TYPE][what.id].totals.overall.total++;
-            service[TYPE][what.id].totals[type].total++;
+            s_hero.totals.overall.total++;
+            s_hero.totals[type].total++;
+
+            var quality = item.quality || 'common'
+            var eventType = (type == 'skins' && item.quality == 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
+
+            if (heroId !== 'all') {
+              if (!service.qualities[quality]) {
+                service.qualities[quality] = { selected: 0, total: 0 }
+              }
+  
+              service.qualities[quality].total++;
+
+              if (item.event) {
+                if (!service.events[item.event]) {
+                  service.events[item.event] = { cost: { selected: 0, remaining: 0, total: 0, prev: 0 }, totals: { overall: { selected: 0, total: 0 } } }
+                }
+  
+                if (!service.events[item.event].totals[eventType]) {
+                  service.events[item.event].totals[eventType] = { selected: 0, total: 0 };
+                }
+  
+                service.events[item.event].totals.overall.total++;
+                service.events[item.event].totals[eventType].total++;
+              }
+            }
 
             if (isSelected) {
-              service[TYPE][what.id].totals.overall.selected++;
-              service[TYPE][what.id].totals[type].selected++;
+              s_hero.totals.overall.selected++;
+              s_hero.totals[type].selected++;
+              
+              if (heroId !== 'all') {
+                service.qualities[quality].selected++;
+
+                if (item.event) {
+                  service.events[item.event].totals.overall.selected++;
+                  service.events[item.event].totals[eventType].selected++;
+                }
+              }
             }
 
             if (type == 'icons') {
               if (!countIcons) {
-                service[TYPE][what.id].totals.overall.total--;
-                if (isSelected) service[TYPE][what.id].totals.overall.selected--;
+                s_hero.totals.overall.total--;
+
+                if (item.event && heroId !== 'all') {
+                  service.events[item.event].totals.overall.total--;
+                }
+
+                if (isSelected) {
+                  s_hero.totals.overall.selected--;
+
+                  if (item.event && heroId !== 'all') {
+                    service.events[item.event].totals.overall.selected--;
+                  }
+                }
               }
+
               continue;
             }
 
             if (isValidItem(item)) {
-              var price = DataService.prices[item.quality] * (((item.event || isEvent) && !service.oldEvents.includes(item.group)) ? 3 : 1);
-              service[TYPE][what.id].cost.total += price;
+              var price = DataService.prices[item.quality] * ((item.event && !service.oldEvents.includes(item.group)) ? 3 : 1);
+              var sectionToUpdate = isSelected ? 'selected' : 'remaining'
 
-              if (isSelected) {
-                service[TYPE][what.id].cost.selected += price;
-              } else {
-                service[TYPE][what.id].cost.remaining += price;
+              s_hero.cost.total += price;
+              s_hero.cost[sectionToUpdate] += price
+
+              if (item.event && heroId !== 'all') {
+                service.events[item.event].cost.total += price;
+                service.events[item.event].cost[sectionToUpdate] += price
               }
             }
           }
         }
-        service[TYPE][what.id].totals.overall.percentage = ((service[TYPE][what.id].totals.overall.selected / service[TYPE][what.id].totals.overall.total) * 100);
       }
     },
     updateItem: function(item, type, hero, event, idOverride) {
@@ -226,12 +272,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var isSpecialItem = 'achievement' in item && item.achievement !== true && hero !== 'all'
       event = item.event || event;
 
-      var eventType;
-      if (service.newEvents.includes(event)) {
-        eventType = (type == 'skins' && item.quality == 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
-      } else {
-        eventType = type == 'skins' ? (item.quality == 'epic' ? 'skinsEpic' : 'skinsLegendary') : type;
-      }
+      var eventType = (type == 'skins' && item.quality == 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
 
       var val = isSelected ? 1 : -1;
       var price = DataService.prices[item.quality] * ((event && !service.oldEvents.includes(item.group)) ? 3 : 1);
@@ -239,13 +280,16 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
 
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
+      
 
       if (countIcons || type !== 'icons') {
         service.heroes[hero].totals.overall.selected += val;
+        service.qualities[item.quality || 'common'].selected += val;
 
         if (isSpecialItem) {
           service.heroes[hero].totals.overall.total += val
           service.heroes[hero].totals[type].total += val;
+          service.qualities[item.quality || 'common'].total += val;
         }
       }
 
@@ -281,11 +325,8 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             service.events[event].cost.selected -= price;
           }
         }
-
-        service.events[event].totals.overall.percentage = ((service.events[event].totals.overall.selected / service.events[event].totals.overall.total) * 100);
       }
 
-      service.heroes[hero].totals.overall.percentage = ((service.heroes[hero].totals.overall.selected / service.heroes[hero].totals.overall.total) * 100);
       return service.heroes[hero];
     },
     calculateFilteredHeroes: function(items, oldCost, hero) {

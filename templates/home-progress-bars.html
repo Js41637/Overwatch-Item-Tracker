@@ -1,0 +1,21 @@
+
+<div class="overall-bar">
+  <div class="progress-bar-container">
+    <div class="home-progress-bar progress-bar active" style="width: {{(selected / total) * 100}}%;"></div>
+    <span>{{selected}} / {{total}}  Unlocks <small>[{{((selected / total) * 100).toFixed(2)}}%]</small></span>
+  </div>
+</div>
+
+<div class="more-bars" uib-collapse="isCollapsed">
+  <div class="quality-bar" ng-repeat="(quality, counts) in qualities track by $index">
+    <div class="title">{{quality}}</div>
+    <div class="progress-bar-container">
+      <div class="home-progress-bar progress-bar active {{quality}}" style="width: {{(qualities[quality].selected / qualities[quality].total) * 100}}%;"></div>
+      <span>{{qualities[quality].selected}} / {{qualities[quality].total}} Items</span>
+    </div>        
+  </div>
+</div>
+
+<div class="view-more" ng-click="isCollapsed = !isCollapsed" ng-class="{ active: !isCollapsed }">
+  <span class="glyphicon glyphicon-chevron-down"></span> View Detailed Breakdown
+</div>
