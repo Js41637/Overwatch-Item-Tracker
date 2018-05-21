@@ -1,4 +1,4 @@
-OWI.factory("StorageService", function() {
+OWI.factory('StorageService', function() {
   var service = {
     data: {},
     settings: {},
@@ -29,7 +29,8 @@ OWI.factory("StorageService", function() {
       localStorage.setItem(settings ? 'settings' : 'data', angular.toJson(service[settings ? 'settings' : 'data']));
     },
     init: function() {
-      console.info("Init StorageService");
+      console.info('Init StorageService');
+
       var storedData = localStorage.getItem('data');
       if (storedData) {
         service.data = angular.fromJson(storedData);
@@ -55,7 +56,10 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
     };
 
     for (var hero in data.heroes) {
-      out.checked[hero] = Object.assign({"skins":{},"emotes":{},"intros":{},"sprays":{},"voicelines":{},"poses":{},"icons":{},"weapons":{}}, storedData[hero]);
+      out.checked[hero] = Object.assign(
+        { "skins": {}, "emotes": {}, "intros": {}, "sprays": {}, "voicelines": {}, "poses": {}, "icons": {}, "weapons": {} },
+        storedData[hero]
+      );
     }
 
     Object.assign(service, out, data);
@@ -104,7 +108,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
     init: function() {
       console.info("Fetching Data");
       $http.get('./data/master.json').then(function(resp) {
-        if (resp.status == 200) {
+        if (resp.status === 200) {
           initialize(resp.data);
         } else {
           console.error("Failed loading master.json ???", resp.status, resp.error);
@@ -127,7 +131,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
   var isValidItem = function(item) {
     return !item.achievement && item.quality;
   };
-  
+
   var countIcons = StorageService.getSetting('countIcons');
 
   var service = {
@@ -163,7 +167,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
 
       for (var heroId in DataService.heroes) {
         var hero = DataService.heroes[heroId]
-        
+
         service.heroes[hero.id] = { events: {}, groups: {}, cost: { selected: 0, remaining: 0, total: 0, prev: 0 }, totals: { overall: { selected: 0, total: 0 } } }
         var s_hero = service.heroes[hero.id]
 
@@ -171,7 +175,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           if (!s_hero.totals[type]) {
             s_hero.totals[type] = { selected: 0, total: 0 };
           }
-          
+
           for (var item of hero.items[type]) {
             if (item.event && !s_hero.events[item.event]) {
               s_hero.events[item.event] = true;
@@ -182,7 +186,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             }
 
             if (item.standardItem) continue;
-        
+
             var isSelected = DataService.checked[item.hero || hero.id][type][item.id];
             var isSpecialItem = 'achievement' in item && item.achievement !== true && heroId !== 'all'
 
@@ -193,24 +197,24 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             s_hero.totals[type].total++;
 
             var quality = item.quality || 'common'
-            var eventType = (type == 'skins' && item.quality == 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
+            var eventType = (type === 'skins' && item.quality === 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
 
             if (heroId !== 'all') {
               if (!service.qualities[quality]) {
                 service.qualities[quality] = { selected: 0, total: 0 }
               }
-  
+
               service.qualities[quality].total++;
 
               if (item.event) {
                 if (!service.events[item.event]) {
                   service.events[item.event] = { cost: { selected: 0, remaining: 0, total: 0, prev: 0 }, totals: { overall: { selected: 0, total: 0 } } }
                 }
-  
+
                 if (!service.events[item.event].totals[eventType]) {
                   service.events[item.event].totals[eventType] = { selected: 0, total: 0 };
                 }
-  
+
                 service.events[item.event].totals.overall.total++;
                 service.events[item.event].totals[eventType].total++;
               }
@@ -219,7 +223,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             if (isSelected) {
               s_hero.totals.overall.selected++;
               s_hero.totals[type].selected++;
-              
+
               if (heroId !== 'all') {
                 service.qualities[quality].selected++;
 
@@ -230,7 +234,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
               }
             }
 
-            if (type == 'icons') {
+            if (type === 'icons') {
               if (!countIcons) {
                 s_hero.totals.overall.total--;
 
@@ -272,7 +276,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var isSpecialItem = 'achievement' in item && item.achievement !== true && hero !== 'all'
       event = item.event || event;
 
-      var eventType = (type == 'skins' && item.quality == 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
+      var eventType = (type === 'skins' && item.quality === 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
 
       var val = isSelected ? 1 : -1;
       var price = DataService.prices[item.quality] * ((event && !service.oldEvents.includes(item.group)) ? 3 : 1);
@@ -280,7 +284,6 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
 
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
-      
 
       if (countIcons || type !== 'icons') {
         service.heroes[hero].totals.overall.selected += val;
@@ -293,12 +296,12 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         }
       }
 
-      if (type == 'icons' && isSpecialItem) {
+      if (type === 'icons' && isSpecialItem) {
         service.heroes[hero].totals[type].total += val;
       }
 
       // If this is a valid item, update the cost on the hero
-      if (type != 'icons' && isValid) {
+      if (type !== 'icons' && isValid) {
         if (isSelected) {
           service.heroes[hero].cost.selected += price;
           service.heroes[hero].cost.remaining -= price;
@@ -351,7 +354,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             out.totals[type].selected++;
           }
 
-          if (type == 'icons') continue;
+          if (type === 'icons') continue;
 
           if (isValidItem(item)) {
             var price = DataService.prices[item.quality] * ((item.group && !service.oldEvents.includes(item.group)) ? 3 : 1);
@@ -421,13 +424,13 @@ OWI.factory("ImageLoader", ["$q", "$document", function($q, $document) {
     },
     processQueue: function() {
       service.processing = true;
-      if (service.requests == 4) {
+      if (service.requests === 4) {
         setTimeout(function() {
           service.processQueue();
         }, 75);
         return;
       }
-      
+
       var nextImage = service.images.shift();
       if (nextImage) {
         service.requests++;
@@ -447,7 +450,7 @@ OWI.factory('CompatibilityService', ["StorageService", function(StorageService) 
   var showPreviews = StorageService.getSetting('showPreviews');
   var service = {
     noSupportMsg: false,
-    supportedTypes:{
+    supportedTypes: {
       intros: true,
       emotes: true,
       voicelines: true
@@ -467,13 +470,13 @@ OWI.factory('CompatibilityService', ["StorageService", function(StorageService) 
   };
   var v = document.createElement('video');
   var a = document.createElement('audio');
-  if (!v.canPlayType || ("" == v.canPlayType('video/webm; codecs="vp8, opus"') && "" == v.canPlayType('video/webm; codecs="vp9, opus"'))) {
+  if (!v.canPlayType || (v.canPlayType('video/webm; codecs="vp8, opus"') === '' && v.canPlayType('video/webm; codecs="vp9, opus"') === '')) {
     service.supportsVideo = false;
     service.supportedTypes['intros'] = 'false';
     service.supportedTypes['emotes'] = 'false';
     noSupport.push('WebM');
   }
-  if (!a.canPlayType || "" == a.canPlayType('audio/ogg; codecs="vorbis"')) {
+  if (!a.canPlayType || a.canPlayType('audio/ogg; codecs="vorbis"') === '') {
     service.supportsAudio = false;
     service.supportedTypes['voicelines'] = 'false';
     noSupport.push('Ogg');
@@ -531,7 +534,6 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
       }
 
       this.isSignedIn = isSignedIn;
-
     },
     login: function() {
       var instance = gapi.auth2.getAuthInstance();
@@ -571,7 +573,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
           console.log('Not syncing');
         }
       }
-      
+
       sync();
       setInterval(sync, service.syncTimeout);
     },
@@ -643,7 +645,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
             spaces: ['appDataFolder']
           }
         });
-  
+
         request.execute(function(data) {
           if (data.error || data.files.length === 0) {
             return resolve(false);
@@ -657,7 +659,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
               return
             }
           }
-          
+
           resolve(false)
         });
       });
@@ -686,7 +688,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
           _synced_at: Date.now(),
           data: data
         };
-  
+
         var base64Data = btoa(JSON.stringify(body));
         var multipartRequestBody =
             delimiter +
@@ -709,7 +711,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
           },
           body: multipartRequestBody
         });
-  
+
         request.execute(function(data) {
           if (data.error) {
             return reject(data.error);

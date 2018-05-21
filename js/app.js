@@ -18,7 +18,7 @@ OWI.run(function() {
       name: "Update event item IDs and rename new Rooster IDs",
       id: 5,
       run: function() {
-        var changedItems = {"SUMMER_GAMES_2016":{"sprays":{"summer-games":"summer-games-2016"},"icons":{"summer-games":"summer-games-2016","united-states":"united-states-of-america"}},"HALLOWEEN_2016":{"sprays":{"halloween-terror-2016":"halloween-terror","halloweenspecial":"halloween-special","junkensteinsrevenge":"junkensteins-revenge","riseofthezomnics":"rise-of-the-zomnics","thereapening":"the-reapening"},"icons":{"halloween-terror":"halloween-terror-2016"}},"WINTER_WONDERLAND_2016":{"icons":{"winter-wonderland":"winter-wonderland-2016"}},"YEAR_OF_THE_ROOSTER_2017":{"skinsEpic":{"mercy-golden": "mercy-fortune"},"icons":{"roadhog-piggy":"roadhog-pigsy","year-of-the-rooster":"year-of-the-rooster-2017"}}};
+        var changedItems = {"SUMMER_GAMES_2016":{"sprays":{"summer-games":"summer-games-2016"},"icons":{"summer-games":"summer-games-2016","united-states":"united-states-of-america"}},"HALLOWEEN_2016":{"sprays":{"halloween-terror-2016":"halloween-terror","halloweenspecial":"halloween-special","junkensteinsrevenge":"junkensteins-revenge","riseofthezomnics":"rise-of-the-zomnics","thereapening":"the-reapening"},"icons":{"halloween-terror":"halloween-terror-2016"}},"WINTER_WONDERLAND_2016":{"icons":{"winter-wonderland":"winter-wonderland-2016"}},"YEAR_OF_THE_ROOSTER_2017":{"skinsEpic":{"mercy-golden": "mercy-fortune"},"icons":{"roadhog-piggy":"roadhog-pigsy","year-of-the-rooster":"year-of-the-rooster-2017"}}}; // eslint-disable-line
         for (var event in changedItems) {
           if (!data[event] || !Object.keys(data[event]).length) {
             console.info("No data for", event, "skipping");
@@ -61,9 +61,9 @@ OWI.run(function() {
           for (var type in data[event]) {
             for (var item in data[event][type]) {
               var hero = item.split('-')[0];
-              hero = hero == 'soldier' ? 'soldier-76' : hero;
+              hero = hero === 'soldier' ? 'soldier-76' : hero;
               hero = heroes.includes(hero) ? hero : 'all';
-              var newType = (type == 'skinsEpic' || type == 'skinsLegendary') ? 'skins' : type;
+              var newType = (type === 'skinsEpic' || type === 'skinsLegendary') ? 'skins' : type;
               if (!data[hero][newType]) {
                 console.warn("Error!", newType, "doesn't exist in hero", hero, "for item", item);
                 continue;
@@ -79,7 +79,7 @@ OWI.run(function() {
       name: "Fix incorrect Uprising data and stuff",
       id: 7,
       run: function() {
-        var newData = {"all":{"icons":{"lunamari":"peachimari"}},"reaper":{"voicelines":{"reaper-amatuer-hour":"reaper-amateur-hour"}},"soldier-76":{"skins":{"soldier-76-strikecommander-morrison":"soldier-76-strike-commander-morrison"},"icons":{"soldier-76-strikecommander":"soldier-76-strike-commander"}}};
+        var newData = {"all":{"icons":{"lunamari":"peachimari"}},"reaper":{"voicelines":{"reaper-amatuer-hour":"reaper-amateur-hour"}},"soldier-76":{"skins":{"soldier-76-strikecommander-morrison":"soldier-76-strike-commander-morrison"},"icons":{"soldier-76-strikecommander":"soldier-76-strike-commander"}}};  // eslint-disable-line
         for (var hero in newData) {
           for (var type in newData[hero]) {
             for (var item in newData[hero][type]) {
@@ -107,7 +107,7 @@ OWI.run(function() {
       name: 'Fix lunar ids and outstanding id changes',
       id: 8,
       run: function() {
-        var newData = {"all":{"icons":{"cheers1":"na-zdorovie"},"sprays":{"year-of-the-rooster":"year-of-the-rooster-2017"}},"orisa":{"voicelines":{"orisa-satsified-with-protection":"orisa-satisfied-with-protection"}},"genji":{"voicelines":{"genji-i-was-hoping-for-a-challenge":"genji-hoping-for-a-challenge"}},"mercy":{"sprays":{"mercy-stethoscope":"mercy-heartbeat"}},"winston":{"emotes":{"winston-dance":"winston-twist"}},"doomfist":{"voicelines":{"doomfist-and-they-say-chivalry-is-dead":"doomfist-they-say-chivalry-is-dead"}},"mei":{"voicelines":{"dont-you-just-love-surprises":"mei-dont-you-love-surprises"}},"symmetra":{"voicelines":{"symmetra-were-you-expecting-a-miracle":"symmetra-expecting-a-miracle"}},"zarya":{"voicelines":{"zarya-where-is-the-dog-buried":"zarya-where-the-dog-is-buried"}}}
+        var newData = {"all":{"icons":{"cheers1":"na-zdorovie"},"sprays":{"year-of-the-rooster":"year-of-the-rooster-2017"}},"orisa":{"voicelines":{"orisa-satsified-with-protection":"orisa-satisfied-with-protection"}},"genji":{"voicelines":{"genji-i-was-hoping-for-a-challenge":"genji-hoping-for-a-challenge"}},"mercy":{"sprays":{"mercy-stethoscope":"mercy-heartbeat"}},"winston":{"emotes":{"winston-dance":"winston-twist"}},"doomfist":{"voicelines":{"doomfist-and-they-say-chivalry-is-dead":"doomfist-they-say-chivalry-is-dead"}},"mei":{"voicelines":{"dont-you-just-love-surprises":"mei-dont-you-love-surprises"}},"symmetra":{"voicelines":{"symmetra-were-you-expecting-a-miracle":"symmetra-expecting-a-miracle"}},"zarya":{"voicelines":{"zarya-where-is-the-dog-buried":"zarya-where-the-dog-is-buried"}}}  // eslint-disable-line
         var heroChanges = [['genji', 'baihu'], ['mercy', 'zhuque'], ['pharah', 'qinglong'], ['zarya', 'xuanwu']]
         for (var hero in newData) {
           for (var type in newData[hero]) {
@@ -145,7 +145,7 @@ OWI.run(function() {
   }
 
   console.info("Running Migrations");
-  if (completedMigrations.length == migrations.length) {
+  if (completedMigrations.length === migrations.length) {
     console.info("No migrations needed");
     return;
   }
@@ -170,7 +170,7 @@ OWI.run(function() {
   var theme = settings.currentTheme || 'standard';
   var styles = ['events.css', 'heroes.css'];
   styles.forEach(function(style) {
-    var url = './css/' + (theme == 'standard' ? style : 'themes/' + theme + '/' + style);
+    var url = './css/' + (theme === 'standard' ? style : 'themes/' + theme + '/' + style);
     var newElm = document.createElement('link');
     newElm.rel = "stylesheet";
     newElm.href = url;
@@ -247,7 +247,7 @@ OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 OWI.run(["$rootScope", "$state", "DataService", function($rootScope, $state, Data) {
   $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
     console.warn(error);
-    if (error == 'INVALID_HERO') {
+    if (error === 'INVALID_HERO') {
       $state.go('home');
     } else {
       $state.go('events', { id: Data.currentEvent });

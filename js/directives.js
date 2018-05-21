@@ -8,7 +8,7 @@ var oldEvents = ['SUMMER_GAMES_2016', 'HALLOWEEN_2016', 'WINTER_WONDERLAND_2016'
 
 OWI.filter('heroImg', ['UrlService', function(UrlService) {
   return function(hero, type) {
-    return hero == 'all' 
+    return hero === 'all'
       ? UrlService.get('/logo.svg')
       : UrlService.get('/heroes/' + hero + types[type]);
   };
@@ -16,7 +16,7 @@ OWI.filter('heroImg', ['UrlService', function(UrlService) {
 
 OWI.filter('eventImageUrl', ['UrlService', function(UrlService) {
   return function(event) {
-    return  UrlService.get('/updates/' + event + '/logo.png');
+    return UrlService.get('/updates/' + event + '/logo.png');
   };
 }]);
 
@@ -24,7 +24,7 @@ OWI.filter('itemPrice', function() {
   return function(item, type, event) {
     var isEvent = (item.event || event) && !oldEvents.includes(item.group);
     var quality = item.quality;
-    if (item.standardItem || item.achievement || type == 'icons') return '';
+    if (item.standardItem || item.achievement || type === 'icons') return '';
 
     var prices = { common: 25, rare: 75, epic: 250, legendary: 1000 };
 
@@ -89,13 +89,13 @@ OWI.directive('tooltipImagePreview', ["StorageService", "UrlService", function(S
       var url2 = UrlService.get(item.secondUrl)
 
       var out = { description: item.description };
-      if (type == 'intros' || type == 'emotes') {
+      if (type === 'intros' || type === 'emotes') {
         if (StorageService.getSetting('hdVideos')) {
           out.video = url.replace('.webm', '-hd.webm');
         } else {
           out.video = url;
         }
-      } else if (type == 'voicelines') {
+      } else if (type === 'voicelines') {
         out.audio = url;
       } else {
         out.img = url;
@@ -179,7 +179,7 @@ OWI.directive('lazyAudio', ["$timeout", function($timeout) {
       }
 
       function onLoad(event) {
-        var duration = event.target.duration == Infinity ? 1.5 : event.target.duration;
+        var duration = event.target.duration === Infinity ? 1.5 : event.target.duration;
         steps = Math.ceil(duration / (refreshInterval / 1000));
         tick();
         audio.play();
@@ -268,9 +268,9 @@ OWI.directive('lazyBackground', ["ImageLoader", "$compile", "$timeout", function
       // Observe the lazy-background attribute so that when it changes it can fetch the new image and fade to it
       $attrs.$observe('lazyBackground', function(newSrc) {
         // Make sure newSrc is valid else return error
-        if (newSrc == null || newSrc == "") {
+        if (newSrc === null || newSrc === "") {
           $element.css('background-image', '');
-          //$element.addClass('img-load-error');
+          // $element.addClass('img-load-error');
           return;
         }
 
@@ -284,7 +284,7 @@ OWI.directive('lazyBackground', ["ImageLoader", "$compile", "$timeout", function
         } else {
           loader = { remove: angular.noop };
         }
-        
+
         ImageLoader.loadImage(encodeURI(newSrc), $scope.noLoader).then(function(src) {
           $element.css('background-image', 'url("' + src + '")');
           loader.remove();
@@ -331,8 +331,6 @@ OWI.directive('homeProgressBars', ["CostAndTotalService", function(CostAndTotalS
           golden: CostAndTotalService.qualities.golden
         }
       })
-
-      
     }]
   }
 }])
