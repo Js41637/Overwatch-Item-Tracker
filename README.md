@@ -6,9 +6,11 @@ Development is done locally. You will need to host the site locally for it to wo
 
 ### Running
 
-**Install NodeJS:** https://nodejs.org/en/  
-**Install Deps:** `npm i`  
-**Run Server:** `serve`  
+**Install NodeJS:** https://nodejs.org/en/
+**Install Deps:** `npm i`
+**Run Server:** `serve`
+
+If you want to edit CSS you will also need to run gulp `gulp dev`
 
 Then go to the provided url in your browser and DUN
 

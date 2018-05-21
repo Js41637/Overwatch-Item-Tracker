@@ -168,18 +168,15 @@ OWI.run(function() {
   console.info("Loading themes");
   var settings = angular.fromJson(localStorage.getItem('settings')) || {};
   var theme = settings.currentTheme || 'standard';
-  var styles = ['events.css', 'heroes.css'];
-  styles.forEach(function(style) {
-    var url = './css/' + (theme === 'standard' ? style : 'themes/' + theme + '/' + style);
-    var newElm = document.createElement('link');
-    newElm.rel = "stylesheet";
-    newElm.href = url;
-    document.head.appendChild(newElm);
+  var url = './css/' + (theme === 'standard' ? 'main.min.css' : 'themes/' + theme + '/' + 'main.min.css');
+  var newElm = document.createElement('link');
+  newElm.rel = "stylesheet";
+  newElm.href = url;
+  document.head.appendChild(newElm);
 
-    setTimeout(function() {
-      document.body.style.opacity = 1;
-    }, 400);
-  });
+  setTimeout(function() {
+    document.body.style.opacity = 1;
+  }, 400);
 });
 
 // Set up the apps routes
