@@ -132,18 +132,29 @@ OWI.directive('subHeader', function() {
   };
 });
 
-OWI.directive('heroNav', function() {
+OWI.directive('heroNav', ["CostAndTotalService", "DataService", function(CostAndTotalService, DataService) {
   return {
     restrict: 'E',
     replace: true,
     scope: {
-      totals: "=totals",
-      events: "=events",
-      heroes: "=heroes"
+      hideTotals: '=hideTotals'
     },
-    templateUrl: './templates/hero-nav.html'
+    templateUrl: './templates/hero-nav.html',
+    controller: ["$scope", function($scope) {
+      console.log($scope)
+      DataService.waitForInitialization().then(function() {
+        $scope.heroes = DataService.heroes;
+        $scope.events = DataService.events;
+      })
+
+      if (!$scope.hideTotals) {
+        CostAndTotalService.waitForInitialization().then(function() {
+          $scope.totals = CostAndTotalService
+        })
+      }
+    }]
   };
-});
+}]);
 
 OWI.directive('lazyAudio', ["$timeout", function($timeout) {
   return {

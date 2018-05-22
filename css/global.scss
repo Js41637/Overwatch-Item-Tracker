@@ -901,16 +901,21 @@ strong {
   display: flex;
   justify-content: center;
   contain: content;
+  padding: 4px;
 }
 
 #hero-nav .gallery .text {
-  padding: 6px;
+  padding: 5px;
   background-color: rgb(240, 240, 240);
   color: rgb(45, 52, 70);
 }
 
 #home #hero-nav .gallery .text {
-  padding: 6px 0 0 0;
+  padding: 5px 0 0 0;
+}
+
+#home #hero-nav .gallery.event .text {
+  padding: 0;
 }
 
 #home #hero-nav .gallery .text h3 {
@@ -984,6 +989,7 @@ strong {
 
 #hero-nav .gallery.event .block {
   width: 165px;
+  overflow: hidden;
 }
 
 #hero-nav .gallery.event .block .img {
@@ -1421,4 +1427,8 @@ home-progress-bars .progress-bar.legendary {
 home-progress-bars .progress-bar.golden {
   background-color: #FFD700;
   border-color: #ffdb19;
+}
+
+.progress-bar-success {
+  border-top: 1px solid #6cbf6c !important;
 }
