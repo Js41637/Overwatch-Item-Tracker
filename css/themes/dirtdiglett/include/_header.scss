@@ -13,7 +13,7 @@
 
     .left {
         img {
-            height: 80%;
+            height: 70%;
         }
 
         h1 {
@@ -36,7 +36,12 @@
             margin: 0;
             line-height: 1;
             display: flex;
+            height: $header-height;
             align-items: center;
+
+            .caret {
+                margin-left: 0.8rem;
+            }
         }
 
         .block {
@@ -46,7 +51,7 @@
             .img {
                 display: inline-block;
                 height: 100%;
-                width: getAspectRatioWidth(map-get($hero-icon-size, width), map-get($hero-icon-size, height), $header-height);
+                width: getAspectRatioValue(map-get($hero-icon-size, width), map-get($hero-icon-size, height), $header-height);
                 background-size: cover;
                 margin-right: 1.6rem;
             }
@@ -74,4 +79,15 @@
 #menuNav,
 #sidebar {
     background: $header-background-color;
+}
+
+#menuNav {
+    position: absolute;
+    top: $header-height;
+    left: 0;
+    right: 0;
+    z-index: map-get($z-index, modal);
+    will-change: auto;
+    transition: height 0.315s linear;
+    padding: $gutter-width;
 }

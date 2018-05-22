@@ -2,11 +2,13 @@
     "include/variables-mixins-functions",
     "include/base",
     "include/header",
+    "include/credits",
+    "include/nav",
     "include/heroes",
     "include/sidebar"
 ;
 
-// Override some framework behaviour
+// Override some stuff
 .glyphicon {
     top: 0;
 }
@@ -49,7 +51,7 @@
     body##{$eventname} {
         #header .header-content:before {
             background: url('../../../resources/updates/#{$eventname}/logo.png') no-repeat left/contain;
-            width: getAspectRatioWidth(map-get($logo, 'width'), map-get($logo, 'height'));
+            width: getAspectRatioValue(map-get($logo, 'width'), map-get($logo, 'height'));
         }
     }
 

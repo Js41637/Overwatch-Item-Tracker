@@ -5,16 +5,28 @@ $hero-icon-size: (
 
 $z-index: (
     modal: 1000,
+    credits: 10,
     content: 0
 );
 
 $body-width: 800px;
 $base-font-family: Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$header-font-family: "Big Noodle Titling", Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$big-noodle: "Big Noodle Titling", Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $header-background-color: rgba(40, 53, 79, .85);
 $header-height: 4.5rem;
 $gutter-width: 1.8rem;
+$credit-container-height: 5.5rem;
 
+$heroNavBlock: (
+    height: 136px,
+    width: 84px
+);
+
+$credit-remaining-font-size: 5.4rem;
+
+$offwhite: rgb(240, 240, 240);
+$herogrey: rgb(45, 52, 70);
+$orange: rgb(255, 165, 0);
 $cost: #00db55;
 
 $quality: (
@@ -295,10 +307,10 @@ $hero: (
 );
 
 
-@function getAspectRatioWidth($originalWidth: 90px, $originalHeight: 90px, $finalHeight: 90px) {
-    $ratio: $originalHeight / $finalHeight;
+@function getAspectRatioValue($fullsizeKnownValueToConvert: 90px, $fullsizeKnownValue: 90px, $smallKnownValue: 90px) {
+    $ratio: $fullsizeKnownValue / $smallKnownValue;
 
-    @return round($originalWidth / $ratio);
+    @return round($fullsizeKnownValueToConvert / $ratio);
 };
 
 

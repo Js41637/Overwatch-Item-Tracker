@@ -1,0 +1,111 @@
+#hero-nav {
+    max-width: 80vw;
+    min-width: 100rem;
+    margin: 0 auto;
+
+    .gallery {
+        & > div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+        }
+
+        .block {
+            position: relative;
+            margin: 0.5rem;
+            border: 2px solid $offwhite;
+            border-radius: 0.4rem;
+            cursor: pointer;
+            transition: transform 50ms;
+            background: url('../resources/body-bg.jpg') no-repeat center/cover;
+
+            .imgcont {
+                height: getAspectRatioValue(map-get($hero-icon-size, height), map-get($hero-icon-size, width), map-get($heroNavBlock, width)) + 10px;
+                overflow: hidden;
+
+                .img {
+                    width: map-get($heroNavBlock, width) + 10px;
+                    height: getAspectRatioValue(map-get($hero-icon-size, height), map-get($hero-icon-size, width), map-get($heroNavBlock, width)) + 10px;
+                    background-size: auto 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    transform: skew(-25rad) translateX(-5px);
+                }
+            }
+
+            .text {
+                background: $offwhite;
+                text-align: center;
+
+                h2 {
+                    font-family: $big-noodle;
+                    color: $herogrey;
+                    font-size: 1.8rem;
+                    margin: 0;
+                    text-transform: uppercase;
+                    padding: 0.6rem 0;
+                }
+
+                .progresscont {
+                    position: relative;
+                    background-color: darken($offwhite, 8%);
+                    z-index: 1;
+
+                    h3 {
+                        font-family: $big-noodle;
+                        text-align: center;
+                        font-size: 1.6rem;
+                        text-shadow: 1px 1px 2px rgb(70, 70, 70);
+                        margin: 0;
+                        padding: 0.3rem 0;
+                    }
+
+                    .hero-progress-bar {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        height: 100%;
+                    }
+                }
+            }
+
+            &:hover {
+                background: $orange !important;
+            }
+        }
+    }
+
+    .gallery.hero {
+        .block {
+            //height: map-get($heroNavBlock, height);
+            height: auto;
+            width: map-get($heroNavBlock, width);
+            transform: skew(25rad);
+        }
+    }
+
+    .gallery.event {
+        margin-bottom: 2.6rem;
+
+        .block {
+            .img {
+                width: 16rem;
+                height: 11rem;
+                margin: 0.8rem;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+            }
+        }
+    }
+
+    .block.home {
+        display: none;
+    }
+}
+
+#home #hero-nav .block.home {
+    display: none;
+}
