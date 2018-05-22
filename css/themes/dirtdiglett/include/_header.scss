@@ -1,0 +1,77 @@
+#header {
+    height: $header-height;
+    padding: 0 $gutter-width;
+    background: $header-background-color;
+    display: flex;
+    justify-content: space-between;
+
+    .left,
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .left {
+        img {
+            height: 80%;
+        }
+
+        h1 {
+            margin: 0 3rem 0 1rem;
+            font-size: 3rem;
+            font-style: italic;
+        }
+    }
+
+    .event-selector {
+        cursor: pointer;
+        padding: 0 1.6rem;
+        display: flex;
+        align-items: center;
+        background: #1c75bc;
+
+        h2 {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .block {
+            display: inline-block;
+            margin-left: -1.6rem;
+
+            .img {
+                display: inline-block;
+                height: 100%;
+                width: getAspectRatioWidth(map-get($hero-icon-size, width), map-get($hero-icon-size, height), $header-height);
+                background-size: cover;
+                margin-right: 1.6rem;
+            }
+        }
+    }
+
+    .icon {
+        font-size: 2rem;
+        padding: ($header-height - 2rem) / 2;
+        width: $header-height;
+        cursor: pointer;
+
+        svg {
+            width: auto;
+            height: 2rem;
+        }
+    }
+
+    .event-selector:hover,
+    .icon:hover {
+        background: #2a8edf;
+    }
+}
+
+#menuNav,
+#sidebar {
+    background: $header-background-color;
+}

@@ -1,4 +1,15 @@
-@import "include/variables-and-mixins";
+@import 
+    "include/variables-mixins-functions",
+    "include/base",
+    "include/header",
+    "include/heroes",
+    "include/sidebar"
+;
+
+// Override some framework behaviour
+.glyphicon {
+    top: 0;
+}
 
 // Generates base CSS for classes
 @each $classname in $class {
@@ -33,10 +44,12 @@
 // Generate event-specific
 @each $eventname, $data in $events {
     $colors: map-get($data, 'colors');
+    $logo: map-get($data, 'logo');
 
     body##{$eventname} {
         #header .header-content:before {
-            background-image: url('../../../resources/updates/#{$eventname}/logo.png');
+            background: url('../../../resources/updates/#{$eventname}/logo.png') no-repeat left/contain;
+            width: getAspectRatioWidth(map-get($logo, 'width'), map-get($logo, 'height'));
         }
     }
 

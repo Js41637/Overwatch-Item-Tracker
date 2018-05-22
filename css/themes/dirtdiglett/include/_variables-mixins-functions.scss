@@ -1,3 +1,20 @@
+$hero-icon-size: (
+    width: 112px,
+    height: 100px
+);
+
+$z-index: (
+    modal: 1000,
+    content: 0
+);
+
+$body-width: 800px;
+$base-font-family: Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$header-font-family: "Big Noodle Titling", Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$header-background-color: rgba(40, 53, 79, .85);
+$header-height: 4.5rem;
+$gutter-width: 1.8rem;
+
 $cost: #00db55;
 
 $quality: (
@@ -21,39 +38,59 @@ $events: (
             primary: #fa9c1e,
             highlight: #ffb757, 
         ),
-        icon: (
-            width: 50px,
-            height: 50px
+        logo: (
+            width: 888px,
+            height: 560px
         )
     ),
     HALLOWEEN: (
         colors: (
             primary: #fa9c1e,
             highlight: #ffb757
+        ),
+        logo: (
+            width: 810px,
+            height: 455px
         )
     ),
     LUNAR_NEW_YEAR: (
         colors: (
             primary: #fa9c1e,
             highlight: #ffb757
+        ),
+        logo: (
+            width: 380px,
+            height: 459px
         )
     ),
     SUMMER_GAMES: (
         colors: (
             primary: #fa9c1e,
             highlight: #ffb757
+        ),
+        logo: (
+            width: 816px,
+            height: 1098px
         )
     ),
     UPRISING: (
         colors: (
             primary: #00d1d5,
             highlight: lighten(#00d1d5, 10%)
+        ),
+        logo: (
+            width: 821px,
+            height: 323px
         )
     ),
     WINTER_WONDERLAND: (
         colors: (
             primary: #fa9c1e,
             highlight: #ffb757
+        ),
+        logo: (
+            width: 816px,
+            height: 339px
         )
     )
 );
@@ -256,3 +293,34 @@ $hero: (
         )
     )
 );
+
+
+@function getAspectRatioWidth($originalWidth: 90px, $originalHeight: 90px, $finalHeight: 90px) {
+    $ratio: $originalHeight / $finalHeight;
+
+    @return round($originalWidth / $ratio);
+};
+
+
+// TO DO: Later move these to a seperate include to share between themes.
+@font-face {
+    font-family: "Big Noodle Titling";
+    src: local("BigNoodleTitling"), url(../../../fonts/big-noodle.woff) format("woff"), url(../../../fonts/big-noodle.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+  }
+  
+  @font-face {
+    font-family: "Big Noodle Titling";
+    src: local("BigNoodleTitling"), url(../../../fonts/big-noodle-oblique.woff) format("woff"), url(../../../fonts/big-noodle-oblique.ttf) format("truetype");
+    font-weight: 400;
+    font-style: italic
+  }
+  
+  @font-face {
+    font-family: Futura;
+    src: url(../../../fonts/futura.eot);
+    src: url(../../../fonts/futura.woff) format("woff"), url(../../../fonts/futura.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+  }

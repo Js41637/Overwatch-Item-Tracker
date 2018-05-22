@@ -1,0 +1,12 @@
+body {
+    min-width: $body-width;
+    transition: opacity 100ms ease-in-out;
+    background: no-repeat top/contain #293347 url('resources/bg.png');
+    font-family: $base-font-family;
+    color: #fff;
+    font-size: 1rem; // Inherits from scaffolding.less from bootstrap - Thus the default 1rem = 10px.
+}
+
+h1 {
+    font-family: $header-font-family;
+}
