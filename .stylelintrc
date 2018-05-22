@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-no-vendor-prefix": true,
+    "media-feature-name-no-vendor-prefix": null,
+    "property-no-vendor-prefix": null,
+    "selector-no-vendor-prefix": true,
+    "value-no-vendor-prefix": true,
+    "font-family-no-missing-generic-family-keyword": null,
+    "at-rule-no-unknown": null,
+    "no-descending-specificity": null,
+    "selector-type-no-unknown": [true, {
+      "ignoreTypes": []
+    }],
+    "max-empty-lines": 2,
+    "property-no-unknown": [true, {
+      "ignoreProperties": ["font-smoothing"],
+      "checkPrefixed": true
+    }]
+  }
+}
