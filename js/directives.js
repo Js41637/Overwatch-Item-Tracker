@@ -141,7 +141,6 @@ OWI.directive('heroNav', ["CostAndTotalService", "DataService", function(CostAnd
     },
     templateUrl: './templates/hero-nav.html',
     controller: ["$scope", function($scope) {
-      console.log($scope)
       DataService.waitForInitialization().then(function() {
         $scope.heroes = DataService.heroes;
         $scope.events = DataService.events;
