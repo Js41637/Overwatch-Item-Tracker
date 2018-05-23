@@ -1,35 +1,35 @@
 #sub-header {
-    position: sticky;
-    height: $credit-container-height;
-    z-index: map-get($z-index, credits);
+  position: sticky;
+  height: $credit-container-height;
+  z-index: map-get($z-index, credits);
+  top: 0;
+  pointer-events: none;
+
+  #cost-remaining {
+    position: absolute;
     top: 0;
-    pointer-events: none;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(30, 30, 30, 0.125);
+    border-bottom-left-radius: 0.5rem;
+    padding: 0 1rem;
+    min-width: 11rem;
+    height: 5.5rem;
+    pointer-events: all;
 
-    #cost-remaining {
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        background-color: rgba(30, 30, 30, 0.125);
-        border-bottom-left-radius: 0.5rem;
-        padding: 0 1rem;
-        min-width: 11rem;
-        height: 5.5rem;
-        pointer-events: all;
-
-        img {
-            width: auto;
-            height: $credit-remaining-font-size * 0.6;
-        }
-
-        span {
-            margin-left: 0.5rem;
-            font-size: $credit-remaining-font-size;
-            font-family: $big-noodle;
-            letter-spacing: 0.3;
-            color: $offwhite;
-            text-shadow: rgba(255, 255, 255, 0.3) 0 0 0.8rem;
-        }
+    img {
+      width: auto;
+      height: $credit-remaining-font-size * 0.6;
     }
+
+    span {
+      margin-left: 0.5rem;
+      font-size: $credit-remaining-font-size;
+      font-family: $big-noodle;
+      letter-spacing: 0.3;
+      color: $offwhite;
+      text-shadow: rgba(255, 255, 255, 0.3) 0 0 0.8rem;
+    }
+  }
 }

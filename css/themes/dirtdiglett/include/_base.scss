@@ -1,16 +1,16 @@
 body {
-    min-width: $body-width;
-    transition: opacity 100ms ease-in-out;
-    background: no-repeat top/contain #3e4f6f url('resources/bg.png');
-    font-family: $base-font-family;
-    color: #fff;
-    font-size: 1rem; // Inherits from bootstrap - Thus the default 1rem = 10px.
+  min-width: $body-width;
+  transition: opacity 100ms ease-in-out;
+  background: no-repeat top/contain #3e4f6f url('resources/bg.png');
+  font-family: $base-font-family;
+  color: #fff;
+  font-size: 1rem; // Inherits from bootstrap - Thus the default 1rem = 10px.
 }
 
 #home {
-    margin-top: -$credit-container-height;
+  margin-top: -$credit-container-height;
 }
 
 h1 {
-    font-family: $big-noodle;
+  font-family: $big-noodle;
 }

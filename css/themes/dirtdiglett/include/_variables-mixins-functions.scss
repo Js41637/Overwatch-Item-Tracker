@@ -1,25 +1,25 @@
 $hero-icon-size: (
-    width: 112px,
-    height: 100px
+  width: 112px,
+  height: 100px
 );
 
 $z-index: (
-    modal: 1000,
-    credits: 10,
-    content: 0
+  modal: 1000,
+  credits: 10,
+  content: 0
 );
 
 $body-width: 800px;
 $base-font-family: Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $big-noodle: "Big Noodle Titling", Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$header-background-color: rgba(40, 53, 79, .85);
+$header-background-color: rgba(40, 53, 79, 0.85);
 $header-height: 4.5rem;
 $gutter-width: 1.8rem;
 $credit-container-height: 5.5rem;
 
 $heroNavBlock: (
-    height: 136px,
-    width: 84px
+  height: 136px,
+  width: 84px
 );
 
 $credit-remaining-font-size: 5.4rem;
@@ -30,309 +30,309 @@ $orange: rgb(255, 165, 0);
 $cost: #00db55;
 
 $quality: (
-    common: #fff,
-    rare: #00c3ff,
-    epic: #ed3cef,
-    legendary: #ff9c00   
+  common: #fff,
+  rare: #00c3ff,
+  epic: #ed3cef,
+  legendary: #ff9c00
 );
 
 $class: (
-    allclass,
-    offence,
-    defence,
-    tank,
-    support
+  allclass,
+  offence,
+  defence,
+  tank,
+  support
 );
 
 $events: (
-    ANNIVERSARY: (
-        colors: (
-            primary: #fa9c1e,
-            highlight: #ffb757, 
-        ),
-        logo: (
-            width: 888px,
-            height: 560px
-        )
+  ANNIVERSARY: (
+    colors: (
+      primary: #fa9c1e,
+      highlight: #ffb757,
     ),
-    HALLOWEEN: (
-        colors: (
-            primary: #fa9c1e,
-            highlight: #ffb757
-        ),
-        logo: (
-            width: 810px,
-            height: 455px
-        )
-    ),
-    LUNAR_NEW_YEAR: (
-        colors: (
-            primary: #fa9c1e,
-            highlight: #ffb757
-        ),
-        logo: (
-            width: 380px,
-            height: 459px
-        )
-    ),
-    SUMMER_GAMES: (
-        colors: (
-            primary: #fa9c1e,
-            highlight: #ffb757
-        ),
-        logo: (
-            width: 816px,
-            height: 1098px
-        )
-    ),
-    UPRISING: (
-        colors: (
-            primary: #00d1d5,
-            highlight: lighten(#00d1d5, 10%)
-        ),
-        logo: (
-            width: 821px,
-            height: 323px
-        )
-    ),
-    WINTER_WONDERLAND: (
-        colors: (
-            primary: #fa9c1e,
-            highlight: #ffb757
-        ),
-        logo: (
-            width: 816px,
-            height: 339px
-        )
+    logo: (
+      width: 888px,
+      height: 560px
     )
+  ),
+  HALLOWEEN: (
+    colors: (
+      primary: #fa9c1e,
+      highlight: #ffb757
+    ),
+    logo: (
+      width: 810px,
+      height: 455px
+    )
+  ),
+  LUNAR_NEW_YEAR: (
+    colors: (
+      primary: #fa9c1e,
+      highlight: #ffb757
+    ),
+    logo: (
+      width: 380px,
+      height: 459px
+    )
+  ),
+  SUMMER_GAMES: (
+    colors: (
+      primary: #fa9c1e,
+      highlight: #ffb757
+    ),
+    logo: (
+      width: 816px,
+      height: 1098px
+    )
+  ),
+  UPRISING: (
+    colors: (
+      primary: #00d1d5,
+      highlight: lighten(#00d1d5, 10%)
+    ),
+    logo: (
+      width: 821px,
+      height: 323px
+    )
+  ),
+  WINTER_WONDERLAND: (
+    colors: (
+      primary: #fa9c1e,
+      highlight: #ffb757
+    ),
+    logo: (
+      width: 816px,
+      height: 339px
+    )
+  )
 );
-         
+
 $hero: (
-    all: (
-        class: allclass,
-        colors: (
-            primary: #fa9c1e,
-            highlight: #ffb757
-        )
-    ),
-    ana: (
-        class: support,
-        colors: (
-            primary: #ccc2ae,
-            highlight: #dcd5c7
-        )
-    ),
-    bastion: (
-        class: defence,
-        colors: (
-            primary: #6e994d,
-            highlight: #82af5f
-        )
-    ),
-    brigitte: (
-        class: support,
-        colors: (
-            primary: #73342b,
-            highlight: #914236
-        )
-    ),
-    doomfist: (
-        class: offence,
-        colors: (
-            primary: #e04e34,
-            highlight: #e56d57
-        )
-    ),
-    dva: (
-        class: tank,
-        colors: (
-            primary: #ff7fd1,
-            highlight: #ffa8e0
-        )
-    ),
-    genji: (
-        class: offence,
-        colors: (
-            primary: #84fe01,
-            highlight: #98fe2a
-        )
-    ),
-    hanzo: (
-        class: defence,
-        colors: (
-            primary: #938848,
-            highlight: #ada057
-        )
-    ),
-    junkrat: (
-        class: defence,
-        colors: (
-            primary: #d39308 ,
-            highlight: #f5ac0f
-        )
-    ),
-    lucio: (
-        class: support,
-        colors: (
-            primary: #8bec22,
-            highlight: #9ef048
-        )
-    ),
-    mccree: (
-        class: offence,
-        colors: (
-            primary: #8d3939,
-            highlight: #aa4545
-        )
-    ),
-    mei: (
-        class: defence,
-        colors: (
-            primary: #9adbf4,
-            highlight: #bfe8f8
-        )
-    ),
-    mercy: (
-        class: support,
-        colors: (
-            primary: #ffe16c,
-            highlight: #ffea95
-        )
-    ),
-    moira: (
-        class: support,
-        colors: (
-            primary: #691ccf,
-            highlight: #7e30e3
-        )
-    ),
-    orisa: (
-        class: tank,
-        colors: (
-            primary: #dc9a00,
-            highlight: #ffb405
-        )
-    ),
-    pharah: (
-        class: offence,
-        colors: (
-            primary: #1b65c6,
-            highlight: #2778e2
-        )
-    ),
-    reaper: (
-        class: offence,
-        colors: (
-            primary: #272725,
-            highlight: #3c3c39
-        )
-    ),
-    reinhardt: (
-        class: tank,
-        colors: (
-            primary: #aa958e,
-            highlight: #bbaba5
-        )
-    ),
-    roadhog: (
-        class: tank,
-        colors: (
-            primary: #c09477,
-            highlight: #cdaa93
-        )
-    ),
-    soldier-76: (
-        class: offence,
-        colors: (
-            primary: #5870b6,
-            highlight: #7588c3
-        )
-    ),
-    sombra: (
-        class: offence,
-        colors: (
-            primary: #751b9c,
-            highlight: #9021bf
-        )
-    ),
-    symmetra: (
-        class: support,
-        colors: (
-            primary: #5cecff,
-            highlight: #85f1ff
-        )
-    ),
-    torbjorn: (
-        class: defence,
-        colors: (
-            primary: #ff6200,
-            highlight: #ff7b28
-        )
-    ),
-    tracer: (
-        class: offence,
-        colors: (
-            primary: #f8911b,
-            highlight: #faa443
-        )
-    ),
-    widowmaker: (
-        class: defence,
-        colors: (
-            primary: #6f6fae,
-            highlight: #8a8abd
-        )
-    ),
-    winston: (
-        class: tank,
-        colors: (
-            primary: #4c505c,
-            highlight: #5f6472
-        )
-    ),
-    zarya: (
-        class: tank,
-        colors: (
-            primary: #f571a8,
-            highlight: #f897bf
-        )
-    ),
-    zenyatta: (
-        class: support,
-        colors: (
-            primary: #c79c00,
-            highlight: #f0bc00
-        )
+  all: (
+    class: allclass,
+    colors: (
+      primary: #fa9c1e,
+      highlight: #ffb757
     )
+  ),
+  ana: (
+    class: support,
+    colors: (
+      primary: #ccc2ae,
+      highlight: #dcd5c7
+    )
+  ),
+  bastion: (
+    class: defence,
+    colors: (
+      primary: #6e994d,
+      highlight: #82af5f
+    )
+  ),
+  brigitte: (
+    class: support,
+    colors: (
+      primary: #73342b,
+      highlight: #914236
+    )
+  ),
+  doomfist: (
+    class: offence,
+    colors: (
+      primary: #e04e34,
+      highlight: #e56d57
+    )
+  ),
+  dva: (
+    class: tank,
+    colors: (
+      primary: #ff7fd1,
+      highlight: #ffa8e0
+    )
+  ),
+  genji: (
+    class: offence,
+    colors: (
+      primary: #84fe01,
+      highlight: #98fe2a
+    )
+  ),
+  hanzo: (
+    class: defence,
+    colors: (
+      primary: #938848,
+      highlight: #ada057
+    )
+  ),
+  junkrat: (
+    class: defence,
+    colors: (
+      primary: #d39308 ,
+      highlight: #f5ac0f
+    )
+  ),
+  lucio: (
+    class: support,
+    colors: (
+      primary: #8bec22,
+      highlight: #9ef048
+    )
+  ),
+  mccree: (
+    class: offence,
+    colors: (
+      primary: #8d3939,
+      highlight: #aa4545
+    )
+  ),
+  mei: (
+    class: defence,
+    colors: (
+      primary: #9adbf4,
+      highlight: #bfe8f8
+    )
+  ),
+  mercy: (
+    class: support,
+    colors: (
+      primary: #ffe16c,
+      highlight: #ffea95
+    )
+  ),
+  moira: (
+    class: support,
+    colors: (
+      primary: #691ccf,
+      highlight: #7e30e3
+    )
+  ),
+  orisa: (
+    class: tank,
+    colors: (
+      primary: #dc9a00,
+      highlight: #ffb405
+    )
+  ),
+  pharah: (
+    class: offence,
+    colors: (
+      primary: #1b65c6,
+      highlight: #2778e2
+    )
+  ),
+  reaper: (
+    class: offence,
+    colors: (
+      primary: #272725,
+      highlight: #3c3c39
+    )
+  ),
+  reinhardt: (
+    class: tank,
+    colors: (
+      primary: #aa958e,
+      highlight: #bbaba5
+    )
+  ),
+  roadhog: (
+    class: tank,
+    colors: (
+      primary: #c09477,
+      highlight: #cdaa93
+    )
+  ),
+  soldier-76: (
+    class: offence,
+    colors: (
+      primary: #5870b6,
+      highlight: #7588c3
+    )
+  ),
+  sombra: (
+    class: offence,
+    colors: (
+      primary: #751b9c,
+      highlight: #9021bf
+    )
+  ),
+  symmetra: (
+    class: support,
+    colors: (
+      primary: #5cecff,
+      highlight: #85f1ff
+    )
+  ),
+  torbjorn: (
+    class: defence,
+    colors: (
+      primary: #ff6200,
+      highlight: #ff7b28
+    )
+  ),
+  tracer: (
+    class: offence,
+    colors: (
+      primary: #f8911b,
+      highlight: #faa443
+    )
+  ),
+  widowmaker: (
+    class: defence,
+    colors: (
+      primary: #6f6fae,
+      highlight: #8a8abd
+    )
+  ),
+  winston: (
+    class: tank,
+    colors: (
+      primary: #4c505c,
+      highlight: #5f6472
+    )
+  ),
+  zarya: (
+    class: tank,
+    colors: (
+      primary: #f571a8,
+      highlight: #f897bf
+    )
+  ),
+  zenyatta: (
+    class: support,
+    colors: (
+      primary: #c79c00,
+      highlight: #f0bc00
+    )
+  )
 );
 
 
-@function getAspectRatioValue($fullsizeKnownValueToConvert: 90px, $fullsizeKnownValue: 90px, $smallKnownValue: 90px) {
-    $ratio: $fullsizeKnownValue / $smallKnownValue;
+@function getaspectratiovalue($fullsizeKnownValueToConvert: 90px, $fullsizeKnownValue: 90px, $smallKnownValue: 90px) {
+  $ratio: $fullsizeKnownValue / $smallKnownValue;
 
-    @return round($fullsizeKnownValueToConvert / $ratio);
-};
+  @return round($fullsizeKnownValueToConvert / $ratio);
+}
 
 
 // TO DO: Later move these to a seperate include to share between themes.
 @font-face {
-    font-family: "Big Noodle Titling";
-    src: local("BigNoodleTitling"), url(../../../fonts/big-noodle.woff) format("woff"), url(../../../fonts/big-noodle.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal
-  }
-  
-  @font-face {
-    font-family: "Big Noodle Titling";
-    src: local("BigNoodleTitling"), url(../../../fonts/big-noodle-oblique.woff) format("woff"), url(../../../fonts/big-noodle-oblique.ttf) format("truetype");
-    font-weight: 400;
-    font-style: italic
-  }
-  
-  @font-face {
-    font-family: Futura;
-    src: url(../../../fonts/futura.eot);
-    src: url(../../../fonts/futura.woff) format("woff"), url(../../../fonts/futura.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal
-  }
+  font-family: "Big Noodle Titling";
+  src: local("BigNoodleTitling"), url(./fonts/big-noodle.woff) format("woff"), url(./fonts/big-noodle.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Big Noodle Titling";
+  src: local("BigNoodleTitling"), url(./fonts/big-noodle-oblique.woff) format("woff"), url(./fonts/big-noodle-oblique.ttf) format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Futura;
+  src: url(./fonts/futura.eot);
+  src: url(./fonts/futura.woff) format("woff"), url(./fonts/futura.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
