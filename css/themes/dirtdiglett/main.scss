@@ -1,68 +1,39 @@
+// Overrides and Resets
 @import
+  "include/overrides-resets",
   "include/variables-mixins-functions",
+  "include/animations",
   "include/base",
   "include/header",
   "include/credits",
   "include/nav",
+  "include/progress",
   "include/heroes",
-  "include/sidebar"
+  "include/events",
+  "include/sidebar",
+  "include/modals"
 ;
 
-// Override some stuff
-.glyphicon {
-  top: 0;
+#home,
+#hero-container,
+#event-container {
+  margin-top: -($header-height + $credit-container-height);
+  position: relative;
+  width: 100%;
+  display: inline-block;
 }
 
-// Generates base CSS for classes
-@each $classname in $class {
-  #class-#{$classname} {
-    background-image: url('resources/icons/roles/#{$classname}.svg');
-  }
+#event-container::before {
+  content: "";
+  display: inline-block;
+  z-index: -1;
 }
 
-// Generate hero-specific CSS
-@each $heroname, $data in $hero {
-  $colors: map-get($data, 'colors');
-  $class: map-get($data, 'class');
-
-  // Extend the base class to just add on to it, avoiding extra t h i c c CSS
-  body##{$heroname} .hero-name::after {
-    @extend #class-#{$class};
-  }
-
-  body##{$heroname} {
-    #hero-container .hero-overview {
-      background-image: url('resources/heroes/#{$heroname}/background-story.jpg');
-    }
-  }
-
-  body##{$heroname} .hero-progress-bar,
-  #hero-nav .gallery.hero .block[href$="/#{$heroname}"] .hero-progress-bar {
-    background-color: map-get($colors, 'primary');
-    border-top-color: map-get($colors, 'highlight');
-  }
-}
-
-// Generate event-specific
-@each $eventname, $data in $events {
-  $colors: map-get($data, 'colors');
-  $logo: map-get($data, 'logo');
-
-  body##{$eventname} {
-    #header .header-content::before {
-      background: url('../../../resources/updates/#{$eventname}/logo.png') no-repeat left/contain;
-      width: getaspectratiovalue(map-get($logo, 'width'), map-get($logo, 'height'));
-    }
-  }
-
-  body##{$eventname}::before,
-  #hero-nav .gallery.event .block[href$="/#{$eventname}"] {
-    background-image: url('resources/#{$eventname}/bg.jpg');
-  }
-
-  .item[event="#{$eventname}"] + .tooltip .preview.img {
-    background:
-      url('resources/#{$eventname}/icon-bg.png') no-repeat,
-      url('resources/#{$eventname}/preview-bg.png');
-  }
+#hero-header,
+#event-container::before {
+  min-height: $total-header-height;
+  width: 100%;
+  padding-top: $header-height;
+  background-size: cover;
+  position: relative;
 }

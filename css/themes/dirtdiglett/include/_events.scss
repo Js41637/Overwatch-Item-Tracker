@@ -1,0 +1,51 @@
+.header-content {
+  height: $page-header-height;
+  position: absolute;
+  top: $header-height;
+  left: ($page-header-height - ($page-title-font-size - 1rem)) / 2; // Matches the hero one.
+  display: flex;
+  align-items: center;
+  margin-right: 11rem;
+
+  @include page-title(event);
+
+  &::before {
+    content: "";
+    height: $page-title-font-size;
+    margin-right: ($page-header-height - ($page-title-font-size - 1rem)) / 2;
+  }
+
+  h2 {
+    font-size: $page-title-font-size * 0.4;
+  }
+}
+
+
+// Generate event-specific
+@each $eventname, $data in $events {
+  $colors: map-get($data, 'colors');
+  $logo: map-get($data, 'logo');
+
+  body##{$eventname} {
+    #header .header-content::before {
+      background: url('/resources/updates/#{$eventname}/logo.png') no-repeat left/contain;
+      width: getaspectratiovalue(map-get($logo, 'width'), map-get($logo, 'height'), ((strip-unit($page-title-font-size) * 10) * 1px));
+    }
+  }
+
+  body##{$eventname} .event-progress-bar {
+    background-color: map-get($colors, primary);
+    border-top-color: map-get($colors, highlight);
+  }
+
+  body##{$eventname} #event-container::before,
+  #hero-nav .gallery.event .block[href$="/#{$eventname}"] {
+    background-image: url('resources/#{$eventname}/bg.jpg');
+  }
+
+  .item[event="#{$eventname}"] + .tooltip .preview.img {
+    background:
+      url('resources/#{$eventname}/icon-bg.png') no-repeat,
+      url('resources/#{$eventname}/preview-bg.png');
+  }
+}

@@ -8,7 +8,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      position: relative;
     }
 
     .block {
@@ -21,12 +20,12 @@
       background: url('../resources/body-bg.jpg') no-repeat center/cover;
 
       .imgcont {
-        height: getaspectratiovalue(map-get($hero-icon-size, height), map-get($hero-icon-size, width), map-get($heroNavBlock, width)) + 10px;
+        height: getaspectratiovalue(map-get($hero-icon-size, height), map-get($hero-icon-size, width), map-get(map-get($heroNav-blocks, hero), width)) + 10px;
         overflow: hidden;
 
         .img {
-          width: map-get($heroNavBlock, width) + 10px;
-          height: getaspectratiovalue(map-get($hero-icon-size, height), map-get($hero-icon-size, width), map-get($heroNavBlock, width)) + 10px;
+          width: map-get(map-get($heroNav-blocks, hero), width) + 10px;
+          height: getaspectratiovalue(map-get($hero-icon-size, height), map-get($hero-icon-size, width), map-get(map-get($heroNav-blocks, hero), width)) + 10px;
           background-size: auto 100%;
           background-position: center;
           background-repeat: no-repeat;
@@ -79,9 +78,8 @@
 
   .gallery.hero {
     .block {
-      //height: map-get($heroNavBlock, height);
       height: auto;
-      width: map-get($heroNavBlock, width);
+      width: map-get(map-get($heroNav-blocks, hero), width);
       transform: skew(25rad);
     }
   }
@@ -91,8 +89,8 @@
 
     .block {
       .img {
-        width: 16rem;
-        height: 11rem;
+        width: map-get(map-get($heroNav-blocks, event), width);
+        height: map-get(map-get($heroNav-blocks, event), height);
         margin: 0.8rem;
         background-size: contain;
         background-repeat: no-repeat;
@@ -102,7 +100,21 @@
   }
 
   .block.home {
-    color: red;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: $gutter-width;
+    left: $gutter-width;
+    font-size: 0;
+
+    .bg::after {
+      content: "";
+      background: url(/resources/icons/home.svg) no-repeat center/100%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 

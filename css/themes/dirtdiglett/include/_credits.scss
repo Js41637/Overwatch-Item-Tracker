@@ -33,3 +33,20 @@
     }
   }
 }
+
+.cost-remaining-tooltip .tooltip-inner {
+  max-width: 100%;
+
+  table tr {
+    td {
+      font-family: $monospace-font-family;
+      font-weight: bold;
+      text-align: right;
+
+      &:first-of-type {
+        font-weight: normal;
+        padding-right: 1rem;
+      }
+    }
+  }
+}

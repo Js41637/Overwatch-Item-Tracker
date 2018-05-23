@@ -11,15 +11,27 @@ $z-index: (
 
 $body-width: 800px;
 $base-font-family: Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$sans-serif-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$monospace-font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $big-noodle: "Big Noodle Titling", Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $header-background-color: rgba(40, 53, 79, 0.85);
 $header-height: 4.5rem;
 $gutter-width: 1.8rem;
 $credit-container-height: 5.5rem;
+$progress-bar-height: 3.6rem;
+$page-header-height: 18rem;
+$total-header-height: $header-height + $page-header-height + $progress-bar-height;
+$page-title-font-size: 12rem;
 
-$heroNavBlock: (
-  height: 136px,
-  width: 84px
+$heroNav-blocks: (
+  hero: (
+    width: 84px,
+    height: 136px
+  ),
+  event: (
+    width: 16rem,
+    height: 11rem
+  )
 );
 
 $credit-remaining-font-size: 5.4rem;
@@ -29,11 +41,15 @@ $herogrey: rgb(45, 52, 70);
 $orange: rgb(255, 165, 0);
 $cost: #00db55;
 
+$section-background: #f0edf2;
+$section-header-background: #c6cbde;
+
 $quality: (
   common: #fff,
   rare: #00c3ff,
   epic: #ed3cef,
-  legendary: #ff9c00
+  legendary: #ff9c00,
+  golden: #ffd700
 );
 
 $class: (
@@ -44,11 +60,12 @@ $class: (
   support
 );
 
+// Colors used for events are not official, just taken primarily from the logos.
 $events: (
   ANNIVERSARY: (
     colors: (
-      primary: #fa9c1e,
-      highlight: #ffb757,
+      primary: #ff9c00, // The orange used from the logo seemed appropriate here.
+      highlight: lighten(#ff9c00, 10%),
     ),
     logo: (
       width: 888px,
@@ -57,8 +74,8 @@ $events: (
   ),
   HALLOWEEN: (
     colors: (
-      primary: #fa9c1e,
-      highlight: #ffb757
+      primary: #ecd53c,
+      highlight: lighten(#ecd53c, 10%)
     ),
     logo: (
       width: 810px,
@@ -67,8 +84,8 @@ $events: (
   ),
   LUNAR_NEW_YEAR: (
     colors: (
-      primary: #fa9c1e,
-      highlight: #ffb757
+      primary: #cd2807,
+      highlight: lighten(#cd2807, 10%)
     ),
     logo: (
       width: 380px,
@@ -77,8 +94,8 @@ $events: (
   ),
   SUMMER_GAMES: (
     colors: (
-      primary: #fa9c1e,
-      highlight: #ffb757
+      primary: #78c843,
+      highlight: lighten(#78c843, 10%)
     ),
     logo: (
       width: 816px,
@@ -97,8 +114,8 @@ $events: (
   ),
   WINTER_WONDERLAND: (
     colors: (
-      primary: #fa9c1e,
-      highlight: #ffb757
+      primary: #e9f6ff,
+      highlight: lighten(#e9f6ff, 10%)
     ),
     logo: (
       width: 816px,
@@ -306,33 +323,62 @@ $hero: (
   )
 );
 
-
+/// Given three values, calculate the ratio between a width:height and return a resized number based on the ratio between them.
 @function getaspectratiovalue($fullsizeKnownValueToConvert: 90px, $fullsizeKnownValue: 90px, $smallKnownValue: 90px) {
   $ratio: $fullsizeKnownValue / $smallKnownValue;
 
   @return round($fullsizeKnownValueToConvert / $ratio);
 }
 
+/// Remove the unit of a length
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+
+@mixin slidein($duration: 1s) {
+  animation-name: slideInX;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: $duration;
+}
+
+@mixin page-title($type: hero) {
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  font-family: $big-noodle;
+
+  @include slidein;
+
+
+  @if $type == "hero" {
+    font-size: $page-title-font-size;
+  }
+}
+
 
 // TO DO: Later move these to a seperate include to share between themes.
 @font-face {
   font-family: "Big Noodle Titling";
-  src: local("BigNoodleTitling"), url(./fonts/big-noodle.woff) format("woff"), url(./fonts/big-noodle.ttf) format("truetype");
+  src: local("BigNoodleTitling"), url(/fonts/big-noodle.woff) format("woff"), url(/fonts/big-noodle.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Big Noodle Titling";
-  src: local("BigNoodleTitling"), url(./fonts/big-noodle-oblique.woff) format("woff"), url(./fonts/big-noodle-oblique.ttf) format("truetype");
+  src: local("BigNoodleTitling"), url(/fonts/big-noodle-oblique.woff) format("woff"), url(/fonts/big-noodle-oblique.ttf) format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: Futura;
-  src: url(./fonts/futura.eot);
-  src: url(./fonts/futura.woff) format("woff"), url(./fonts/futura.ttf) format("truetype");
+  src: url(/fonts/futura.eot);
+  src: url(/fonts/futura.woff) format("woff"), url(/fonts/futura.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }

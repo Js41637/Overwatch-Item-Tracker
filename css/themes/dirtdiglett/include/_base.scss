@@ -7,10 +7,56 @@ body {
   font-size: 1rem; // Inherits from bootstrap - Thus the default 1rem = 10px.
 }
 
-#home {
-  margin-top: -$credit-container-height;
-}
-
 h1 {
   font-family: $big-noodle;
+}
+
+// Emulating the behaviour and styling of the Hero/Event headers. Can't share the same styling due to markup differences.
+#home h1 {
+  position: absolute;
+  height: $page-header-height;
+  top: $header-height;
+  z-index: map-get($z-index, credits);
+  font-size: 8rem;
+  padding-left: 12rem + 3.5rem;
+  background: url(https://avatars3.githubusercontent.com/u/6258213?s=460&v=4) no-repeat center left/120px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3.5rem;
+
+  @include slidein;
+
+  &::before {
+    font-size: 0.7em;
+    color: $orange;
+    content: "Js41637's";
+    display: block;
+  }
+}
+
+#home home-progress-bars {
+  padding-top: $page-header-height + $header-height;
+  background-image: url(resources/home/bg.jpg);
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  background-size: cover;
+  margin-bottom: $gutter-width * 2;
+
+  // TO DO: Swap this out for a button like the options on hero header.
+  .view-more {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-top: 0.6rem;
+
+    &.active span {
+      transform: rotate(180deg);
+    }
+  }
 }

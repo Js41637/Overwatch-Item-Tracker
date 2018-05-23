@@ -1,9 +1,10 @@
 #header {
   height: $header-height;
   padding: 0 $gutter-width;
-  background: $header-background-color;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: map-get($z-index, credits) - 1;
 
   .left,
   .right {
@@ -76,9 +77,15 @@
   }
 }
 
+#header,
 #menuNav,
 #sidebar {
   background: $header-background-color;
+}
+
+#menuNav,
+#sidebar {
+  z-index: map-get($z-index, modal);
 }
 
 #menuNav {
@@ -86,7 +93,6 @@
   top: $header-height;
   left: 0;
   right: 0;
-  z-index: map-get($z-index, modal);
   will-change: auto;
   transition: height 0.315s linear;
   padding: $gutter-width;

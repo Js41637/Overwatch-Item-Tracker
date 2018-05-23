@@ -1,0 +1,71 @@
+.progress-bar-container,
+.hero-progress,
+.event-progress {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  height: $progress-bar-height;
+  font-family: $base-font-family;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  position: relative;
+
+  span {
+    line-height: $progress-bar-height;
+    position: relative;
+  }
+
+  .progress-bar,
+  .hero-progress-bar,
+  .event-progress-bar {
+    position: absolute;
+    border-top: 1px solid transparent;
+    height: 100%;
+    box-shadow: none; // Override the default behaviour
+  }
+}
+
+.hero-progress {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.event-progress {
+  margin-top: -$progress-bar-height;
+}
+
+.quality-bar {
+  .title {
+    height: $progress-bar-height;
+    font-family: $base-font-family;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(54, 54, 54);
+    position: absolute;
+    z-index: 1;
+    line-height: $progress-bar-height;
+    padding-left: $progress-bar-height / 4;
+  }
+}
+
+.overall-bar .home-progress-bar {
+  background-color: #ff9c00;
+  border-top-color: lighten(#ff9c00, 10%);
+}
+
+@each $name, $color in $quality {
+  .progress-bar.#{$name} {
+    @if $name == "common" {
+      background-color: darken($color, 8%);
+    }
+
+    @else {
+      background-color: $color;
+    }
+
+    border-top-color: lighten($color, 10%);
+  }
+}
