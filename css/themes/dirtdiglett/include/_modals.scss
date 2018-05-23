@@ -25,6 +25,24 @@
 }
 
 .modal-content {
+  .setting {
+    padding: 1.6rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+    h3 {
+      text-transform: uppercase;
+      font-family: $base-font-family;
+    }
+  }
+
+  .setting:first-of-type {
+    border-top: 0;
+  }
+
+  .tab-pane .setting {
+
+  }
+
   #settings.themes {
     .modal-body {
       display: flex;
@@ -33,7 +51,7 @@
 
     .setting {
       padding: 1.6rem;
-      border: 2px solid rgba(0,0,0,0.1);
+      border: 2px solid rgba(0, 0, 0, 0.1);
       display: flex;
       position: relative;
       min-height: 200px;
@@ -105,4 +123,10 @@
       }
     }
   }
+}
+
+.coffee,
+.copyright {
+  margin-left: 15px + 16px;
+  margin-bottom: 15px + 16px;
 }
