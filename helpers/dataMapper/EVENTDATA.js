@@ -1,5 +1,5 @@
 const { qualityOrder } = require('./utils.js');
-const CURRENTEVENT = 'UPRISING';
+const CURRENTEVENT = 'ANNIVERSARY';
 
 const EVENTS = {
   SUMMER16: 'SUMMER_GAMES_2016',
