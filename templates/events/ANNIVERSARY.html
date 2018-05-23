@@ -70,6 +70,27 @@
       </div>
     </div>
   </div>
+  <div id="victoryposes" class="section">
+    <section-header select-modal="selectModal" name="Victory Poses" type="poses" totals="totals.poses"></section-header>
+    <div class="items flex-2">
+      <div
+        ng-repeat="item in ::data.items.poses track by $index"
+        ng-init="type = 'poses'"
+        class="item"
+        uib-tooltip-template="'imagePreviewTemplate.html'"
+        tooltip-popup-delay="225"
+        tooltip-class="img-preview"
+        tooltip-enable="{{::canPlayType(type)}}"
+        tooltip-placement="auto">
+        <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
+        <label for="{{type + item.id + $index}}">
+          <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
+        </label>
+      </div>
+    </div>
+  </div>
   <div id="emotes" class="section">
     <section-header select-modal="selectModal" name="Emotes" type="emotes" totals="totals.emotes"></section-header>
     <div class="items flex-2">
