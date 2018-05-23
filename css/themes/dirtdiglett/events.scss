@@ -589,32 +589,48 @@ body#WINTER_WONDERLAND:before {
 }
 
 /* ANNIVERSARY 2017 */
-#ANNIVERSARY #event-container #row2 {
-  margin-top: 0;
-}
-
-#ANNIVERSARY #row2 #voicelines,
-#ANNIVERSARY #row2 .right {
+#ANNIVERSARY #icons,
+#ANNIVERSARY #voicelines,
+#ANNIVERSARY #victoryposes,
+#ANNIVERSARY #sprays,
+#ANNIVERSARY #victoryposes,
+#ANNIVERSARY #skins,
+#ANNIVERSARY #intros,
+#ANNIVERSARY #emotes {
   flex: 1;
 }
 
-#ANNIVERSARY #voicelines .items,
-#ANNIVERSARY #emotes .items,
-#ANNIVERSARY #icons .items,
-#ANNIVERSARY #sprays .items {
-  flex-direction: initial;
+#ANNIVERSARY #col2 .right {
+  flex: 3;
+  display: flex;
 }
 
-#ANNIVERSARY #voicelines .item {
-  width: 49%;
+#ANNIVERSARY #emotes .item,
+#ANNIVERSARY #skins .item,
+#ANNIVERSARY #intros .item,
+#ANNIVERSARY #victoryposes .item,
+#ANNIVERSARY #sprays .item   {
+  width: calc(50% - 6px);
   display: inline-flex;
-  margin-right: 0;
+  margin-right: 5px;
 }
 
-#ANNIVERSARY #voicelines .item:nth-of-type(odd) {
-  margin-right: 2%;
+#ANNIVERSARY #icons .item  {
+  width: calc(25% - 6px);
+  display: inline-flex;
+  margin-right: 5px;
 }
 
+#ANNIVERSARY #voicelines .item  {
+  width: calc(33.33% - 6px);
+  display: inline-flex;
+  margin-right: 5px;
+}
+
+#ANNIVERSARY .item .new {
+  top: 8px;
+  opacity: 0.8;
+}
 
 /* Event Themes */
 #SUMMER_GAMES .card .bg {
