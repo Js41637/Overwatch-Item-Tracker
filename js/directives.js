@@ -4,7 +4,7 @@ var types = {
   'icon': '/icon.png'
 };
 
-var oldEvents = ['SUMMER_GAMES_2016', 'HALLOWEEN_2016', 'WINTER_WONDERLAND_2016', 'LUNAR_NEW_YEAR_2017', 'UPRISING_2017']
+var oldEvents = ['SUMMER_GAMES_2016', 'HALLOWEEN_2016', 'WINTER_WONDERLAND_2016', 'LUNAR_NEW_YEAR_2017', 'UPRISING_2017', 'ANNIVERSARY_2017']
 
 OWI.filter('heroImg', ['UrlService', function(UrlService) {
   return function(hero, type) {

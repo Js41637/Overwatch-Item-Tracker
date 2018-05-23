@@ -35,7 +35,7 @@ var raw = { rawData: '', newRawData: '' };
 try {
   allClassData = require('../data/allClassItems.json');
   raw.rawData = fs.readFileSync(`${__dirname}/rawData.txt`, "utf8");
-  
+
 } catch(e) {
   console.error("Failed to find allClassData or rawData!!");
   process.exit();
@@ -70,7 +70,7 @@ things.forEach((thingy, i) => {
       const groupName = itemMatch[1].replace('Event/', '').split(' ')[0].toUpperCase().replace('STANDARD', 'STANDARD_COMMON').replace('DEFAULT', 'ACHIEVEMENT')
       items[groupName] = itemMatch[0].split(/\n\t\t(?!\t)/).slice(1).map(a => a.trim());
     }
-    
+
     // Filter out Uprising bots
     if (!items.COMMON && i == 0) {
       console.warn(`Skipping ${hero} as it has no items`);
@@ -150,12 +150,12 @@ allClassData = reduce(allClassData, (result, items, type) => {
 
     // Check if the spray or icon is a Competitive reward
     const isSeasonCompItem = item.id.match(/^season-(\d+)-(competitor|hero)$/);
-    const isOtherCompItem = item.id.match(/^(top-500|inaugural-season|(copa-lucioball|competitive-ctf|competitive-6v6-elimination)-\w+)$/)
+    const isOtherCompItem = item.id.match(/^(top-500|inaugural-season|(copa-lucioball|competitive-ctf|competitive-6v6-elimination|competitive-deathmatch)-\w+)$/)
     const isCompItem =  isSeasonCompItem || isOtherCompItem ? { group: 'competitive' } : undefined;
     const isPachiItem = item.id.startsWith('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined;
     const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined;
     const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem) ? { achievement: true } : blizzardItems[type].includes(item.id) ? { achievement: 'blizzard' } : undefined;
-    
+
     // Only purchasable items need a quality
     const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompItem) ? { quality: 'common' } : undefined;
     const url = getPreviewURL(type, item.id, 'all');
@@ -169,7 +169,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
         description = { description: desc };
       }
     }
-    
+
     // Check for specific item groups
     var group = undefined;
     for (let g in specialItems) {
@@ -183,12 +183,12 @@ allClassData = reduce(allClassData, (result, items, type) => {
     if (isSeasonCompItem && type == 'sprays') {
       const id = `season-${isSeasonCompItem[1]}-hero`;
       const desc2 = getAchievementForItem(id);
-      newItems.push(Object.assign({}, { 
-        name: `Season ${isSeasonCompItem[1]} Hero`, 
+      newItems.push(Object.assign({}, {
+        name: `Season ${isSeasonCompItem[1]} Hero`,
         id: id,
         url: getPreviewURL(type, id, 'all'),
-        achievement: true, 
-        group: 'competitive' 
+        achievement: true,
+        group: 'competitive'
       }, desc2 ? { description: desc2 } : undefined));
     }
     return newItems;
