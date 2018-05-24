@@ -39,10 +39,6 @@
     border-top: 0;
   }
 
-  .tab-pane .setting {
-
-  }
-
   #settings.themes {
     .modal-body {
       display: flex;
@@ -61,9 +57,9 @@
         .img::after {
           content: "Use this theme";
           display: inline-block;
-          padding: .8em 1em;
+          padding: 0.8em 1em;
           border: 2px solid #fff;
-          border-radius: .4rem;
+          border-radius: 0.4rem;
           margin-top: 3.5rem;
           background: rgba(255, 255, 255, 0.6);
           font-weight: bold;

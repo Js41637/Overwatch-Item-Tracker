@@ -49,7 +49,7 @@
 }
 
 // Generate hero-specific CSS
-@each $heroname, $data in $hero {
+@each $heroname, $data in $heroes {
   $colors: map-get($data, 'colors');
   $class: map-get($data, 'class');
 
