@@ -34,6 +34,13 @@
     @include slidein;
   }
 
+  // Generates base CSS for classes
+  @each $classname in $class {
+    .hero-class.#{$classname} {
+      background-image: url('resources/icons/roles/#{$classname}.svg');
+    }
+  }
+
   .options {
     position: absolute;
     bottom: $progress-bar-height + $gutter-width;
@@ -41,22 +48,9 @@
   }
 }
 
-// Generates base CSS for classes
-@each $classname in $class {
-  #class-#{$classname} {
-    background-image: url('resources/icons/roles/#{$classname}.svg');
-  }
-}
-
 // Generate hero-specific CSS
 @each $heroname, $data in $heroes {
   $colors: map-get($data, 'colors');
-  $class: map-get($data, 'class');
-
-  // Extend the base class to just add on to it, avoiding extra t h i c c CSS
-  body##{$heroname} .hero-class {
-    @extend #class-#{$class};
-  }
 
   body##{$heroname} {
     #hero-container #hero-header {
