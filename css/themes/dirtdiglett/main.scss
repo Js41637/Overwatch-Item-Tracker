@@ -25,6 +25,7 @@
   display: inline-block;
 }
 
+#home-header,
 #hero-header,
 #event-header {
   min-height: $total-header-height;
@@ -32,4 +33,9 @@
   padding-top: $header-height;
   background-size: cover;
   position: relative;
+}
+
+#home-header {
+  background-image: url('resources/home/bg.jpg');
+  margin-bottom: 3.5rem;
 }
