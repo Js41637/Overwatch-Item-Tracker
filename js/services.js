@@ -197,7 +197,6 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             s_hero.totals.overall.total++;
             s_hero.totals[type].total++;
 
-            var quality = item.quality || 'common'
             var quality = (type === 'icons' ? 'rare' : item.quality) || 'common'
             var eventType = (type === 'skins' && item.quality === 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
             var shouldCountItem = heroId !== 'all' || (heroId === 'all' && !item.hero)
