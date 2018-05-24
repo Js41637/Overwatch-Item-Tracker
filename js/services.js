@@ -270,7 +270,6 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       }
     },
     updateItem: function(item, type, hero, event, idOverride) {
-      console.log(event, hero, item.hero)
       var itemID = idOverride || item.id;
       var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
       var isSpecialItem = 'achievement' in item && item.achievement !== true && hero !== 'all'
