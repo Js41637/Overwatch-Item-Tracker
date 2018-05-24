@@ -285,7 +285,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
 
-      if (countIcons || type !== 'icons') {
+      if (shouldCountItemOrIcon) {
         service.heroes[hero].totals.overall.selected += val;
         service.qualities[item.quality || 'common'].selected += val;
 
@@ -294,18 +294,18 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           service.heroes[hero].totals[type].total += val;
           service.qualities[item.quality || 'common'].total += val;
         }
+      }
 
-        if (item.hero !== 'all' && ((item.hero && hero === 'all') || (type === 'icons' && hero !== 'all') || (event && item.hero))) {
-          var _hero = hero !== 'all' ? 'all' : item.hero
-          service.heroes[_hero].totals[type].selected += val;
+      if (item.hero !== 'all' && ((item.hero && hero === 'all') || (type === 'icons' && hero !== 'all') || (event && item.hero))) {
+        var _hero = hero !== 'all' ? 'all' : item.hero
+        service.heroes[_hero].totals[type].selected += val;
 
-          if (shouldCountItemOrIcon) {
-            service.heroes[_hero].totals.overall.selected += val;
+        if (shouldCountItemOrIcon) {
+          service.heroes[_hero].totals.overall.selected += val;
 
-            if (isSpecialItem) {
-              service.heroes[_hero].totals.overall.total += val
-              service.heroes[_hero].totals[type].total += val;
-            }
+          if (isSpecialItem) {
+            service.heroes[_hero].totals.overall.total += val
+            service.heroes[_hero].totals[type].total += val;
           }
         }
       }
@@ -326,10 +326,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       }
 
       if (event) {
-        if (countIcons || type !== 'icons') {
-          service.events[event].totals.overall.selected += val;
-        }
-
+        service.events[event].totals.overall.selected += val;
         service.events[event].totals[eventType].selected += val;
         service.events[event].cost.prev = service.events[event].cost.remaining;
 
