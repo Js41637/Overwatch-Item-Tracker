@@ -68,3 +68,20 @@
     }
   }
 }
+
+
+
+/*
+Storing for later.
+#event-container .section .item input:first-child:checked ~ label:not(.circle-checkbox)::before
+
+#event-container .section .item label::before {
+    content: "";
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    background: red;
+}
+*/
