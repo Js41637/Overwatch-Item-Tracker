@@ -162,6 +162,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
     },
     recalculate: function() {
       console.log("Calculating costs");
+      service.qualities = {};
       service.heroes = {};
       service.events = {};
 
@@ -199,13 +200,16 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             var quality = item.quality || 'common'
             var eventType = (type === 'skins' && item.quality === 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
             var shouldCountItem = heroId !== 'all' || (heroId === 'all' && !item.hero)
+            var shouldCountItemOrIcon = countIcons || type !== 'icons'
 
             if (shouldCountItem) {
               if (!service.qualities[quality]) {
                 service.qualities[quality] = { selected: 0, total: 0 }
               }
 
-              service.qualities[quality].total++;
+              if (shouldCountItemOrIcon) {
+                service.qualities[quality].total++;
+              }
 
               if (item.event) {
                 if (!service.events[item.event]) {
@@ -226,7 +230,9 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
               s_hero.totals[type].selected++;
 
               if (shouldCountItem) {
-                service.qualities[quality].selected++;
+                if (shouldCountItemOrIcon) {
+                  service.qualities[quality].selected++;
+                }
 
                 if (item.event) {
                   service.events[item.event].totals.overall.selected++;
@@ -236,19 +242,11 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             }
 
             if (type === 'icons') {
-              if (!countIcons) {
+              if (!countIcons && heroId !== 'all') {
                 s_hero.totals.overall.total--;
-
-                if (item.event && shouldCountItem) {
-                  service.events[item.event].totals.overall.total--;
-                }
 
                 if (isSelected) {
                   s_hero.totals.overall.selected--;
-
-                  if (item.event && shouldCountItem) {
-                    service.events[item.event].totals.overall.selected--;
-                  }
                 }
               }
 
@@ -282,6 +280,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var val = isSelected ? 1 : -1;
       var price = DataService.prices[item.quality] * ((event && !service.oldEvents.includes(item.group)) ? 3 : 1);
       var isValid = shouldCalculateItemCost(item, event);
+      var shouldCountItemOrIcon = countIcons || type !== 'icons'
 
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
@@ -294,6 +293,20 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           service.heroes[hero].totals.overall.total += val
           service.heroes[hero].totals[type].total += val;
           service.qualities[item.quality || 'common'].total += val;
+        }
+
+        if (item.hero !== 'all' && ((item.hero && hero === 'all') || (type === 'icons' && hero !== 'all') || (event && item.hero))) {
+          var _hero = hero !== 'all' ? 'all' : item.hero
+          service.heroes[_hero].totals[type].selected += val;
+
+          if (shouldCountItemOrIcon) {
+            service.heroes[_hero].totals.overall.selected += val;
+
+            if (isSpecialItem) {
+              service.heroes[_hero].totals.overall.total += val
+              service.heroes[_hero].totals[type].total += val;
+            }
+          }
         }
       }
 
