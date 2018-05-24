@@ -49,14 +49,14 @@
 }
 
 .overall-bar .home-progress-bar {
-  background-color: #ff9c00;
-  border-top-color: lighten(#ff9c00, 10%);
+  background-color: #fa9c1e;
+  border-top-color: lighten(#fa9c1e, 10%);
 }
 
 @each $name, $color in $quality {
   .progress-bar.#{$name} {
     @if $name == "common" {
-      background-color: darken($color, 8%);
+      background-color: darken($color, 12%);
     }
 
     @else {

@@ -35,7 +35,7 @@
   }
 
   // Generates base CSS for classes
-  @each $classname in $class {
+  @each $classname in $classes {
     .hero-class.#{$classname} {
       background-image: url('resources/icons/roles/#{$classname}.svg');
     }
@@ -52,9 +52,20 @@
 @each $heroname, $data in $heroes {
   $colors: map-get($data, 'colors');
 
+
   body##{$heroname} {
     #hero-container #hero-header {
       background-image: url('resources/heroes/#{$heroname}/background-story.jpg');
+
+      @if map-has-key($heroes-additional, $heroname) {
+        $hero-extra: map-get($heroes-additional, $heroname);
+
+        @if map-has-key($hero-extra, 'background-position') {
+          $hero-background-position: map-get($hero-extra, 'background-position');
+
+          background-position: map-get($hero-background-position, "x") map-get($hero-background-position, "y");
+        }
+      }
     }
   }
 
