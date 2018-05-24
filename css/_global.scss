@@ -120,6 +120,11 @@ body {
   padding: 2px;
 }
 
+#header .icon svg {
+  width: 20px;
+  height: auto;
+}
+
 #header .icon:hover {
   filter: brightness(1);
 }
@@ -139,6 +144,10 @@ body {
 
 #header .header-content {
   display: flex;
+}
+
+#header .header-content img {
+  display: none;
 }
 
 #header h1 {
