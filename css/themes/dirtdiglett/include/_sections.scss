@@ -15,6 +15,13 @@
     h2 {
       text-transform: uppercase;
       font-size: 2.24rem;
+      display: flex;
+      align-items: center;
+
+      small {
+        font-size: 16px;
+        margin-left: 0.6rem;
+      }
     }
 
     .options {
@@ -38,6 +45,26 @@
   &:hover {
     .options {
       opacity: 1;
+    }
+  }
+}
+
+
+%section-header-icon {
+  content: "";
+  display: inline-block;
+  height: 2.24rem;
+  min-width: 2.24rem;
+  margin-right: 1.12rem;
+  background: transparent no-repeat center/contain;
+}
+
+@each $name, $alias-list in $item-types {
+  @each $alias in $alias-list {
+    .section##{$alias} .section-header h2::before {
+      @extend %section-header-icon;
+
+      background-image: url('resources/icons/item-types/#{$name}.svg');
     }
   }
 }

@@ -9,6 +9,17 @@ $z-index: (
   content: 0
 );
 
+$item-types: (
+  skins: (skins),
+  victoryposes: (victoryposes, poses),
+  emotes: (emotes),
+  icons: (icons),
+  voicelines: (voicelines),
+  sprays: (sprays),
+  intros: (intros),
+  weapons: (weapons)
+);
+
 $body-width: 800px;
 $base-font-family: Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $sans-serif-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
