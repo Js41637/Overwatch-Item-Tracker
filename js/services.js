@@ -296,7 +296,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         }
       }
 
-      if (item.hero !== 'all' && ((item.hero && hero === 'all') || (type === 'icons' && hero !== 'all') || (event && item.hero))) {
+      if (item.hero !== 'all' && type === 'icons' && ((item.hero && hero === 'all') || (type === 'icons' && hero !== 'all') || (event && item.hero))) {
         var _hero = hero !== 'all' ? 'all' : item.hero
         service.heroes[_hero].totals[type].selected += val;
 
