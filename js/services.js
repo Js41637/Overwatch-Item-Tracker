@@ -236,7 +236,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             }
 
             if (type === 'icons') {
-              if (!countIcons) {
+              if (!countIcons && shouldCountItem) {
                 s_hero.totals.overall.total--;
 
                 if (item.event && shouldCountItem) {
