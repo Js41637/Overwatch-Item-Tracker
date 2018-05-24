@@ -156,7 +156,7 @@ const data = {
       [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "snowman", "present", "pachimerry", "gingermari", "2017", "2018", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
       [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu"],
       [EVENTS.UPRISING]: ['archives-2018', 'uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'assassin', 'enforcer', 'heavy-assault', 'maximilien', 'sniper', 'trooper'],
-      [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'pachiversary'],
+      [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'anniversary-2018', 'pachiversary'],
     }
   },
   specialAchievementItems: {

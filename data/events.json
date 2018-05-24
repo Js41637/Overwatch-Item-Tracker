@@ -8009,8 +8009,8 @@
     "name": "Anniversary",
     "id": "ANNIVERSARY",
     "dates": {
-      "start": "1495551600000",
-      "end": "1497348000000"
+      "start": "1527015600000",
+      "end": "1528797600000"
     },
     "items": {
       "emotes": [
@@ -8033,6 +8033,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Dance",
+          "id": "brigitte-dance",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/emotes/brigitte-dance.webm",
+          "isNew": true
+        },
+        {
           "heroName": "D.Va",
           "hero": "dva",
           "name": "Dance",
@@ -8040,6 +8049,15 @@
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/dva-dance.webm",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Dance",
+          "id": "doomfist-dance",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/emotes/doomfist-dance.webm",
+          "isNew": true
         },
         {
           "heroName": "Genji",
@@ -8103,6 +8121,15 @@
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/mercy-hustle.webm",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Dance",
+          "id": "moira-dance",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/emotes/moira-dance.webm",
+          "isNew": true
         },
         {
           "heroName": "Orisa",
@@ -8209,7 +8236,8 @@
           "name": "Twist",
           "id": "winston-twist",
           "quality": "epic",
-          "url": "/updates/ANNIVERSARY/emotes/winston-twist.webm"
+          "url": "/updates/ANNIVERSARY/emotes/winston-twist.webm",
+          "group": "ANNIVERSARY_2017"
         },
         {
           "heroName": "Zarya",
@@ -8248,12 +8276,52 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Stealth",
+          "id": "bastion-stealth",
+          "url": "/heroes/bastion/icons/bastion-stealth.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Björn",
+          "id": "brigitte-bjorn",
+          "url": "/heroes/brigitte/icons/brigitte-bjorn.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Jubileum",
+          "id": "brigitte-jubileum",
+          "url": "/heroes/brigitte/icons/brigitte-jubileum.png",
+          "isNew": true
+        },
+        {
           "heroName": "D.Va",
           "hero": "dva",
           "name": "Hanaversary",
           "id": "dva-hanaversary",
           "url": "/heroes/dva/icons/dva-hanaversary.png",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Akandeversary",
+          "id": "doomfist-akandeversary",
+          "url": "/heroes/doomfist/icons/doomfist-akandeversary.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Formal",
+          "id": "doomfist-formal",
+          "url": "/heroes/doomfist/icons/doomfist-formal.png",
+          "isNew": true
         },
         {
           "heroName": "Genji",
@@ -8270,6 +8338,14 @@
           "id": "hanzo-kinenbi",
           "url": "/heroes/hanzo/icons/hanzo-kinenbi.png",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Buccaneer",
+          "id": "junkrat-buccaneer",
+          "url": "/heroes/junkrat/icons/junkrat-buccaneer.png",
+          "isNew": true
         },
         {
           "heroName": "Junkrat",
@@ -8296,6 +8372,14 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Sherlock",
+          "id": "mccree-sherlock",
+          "url": "/heroes/mccree/icons/mccree-sherlock.png",
+          "isNew": true
+        },
+        {
           "heroName": "Mei",
           "hero": "mei",
           "name": "May",
@@ -8312,12 +8396,28 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Cothrom an Lae",
+          "id": "moira-cothrom-an-lae",
+          "url": "/heroes/moira/icons/moira-cothrom-an-lae.png",
+          "isNew": true
+        },
+        {
           "heroName": "Orisa",
           "hero": "orisa",
           "name": "Aurisa",
           "id": "orisa-aurisa",
           "url": "/heroes/orisa/icons/orisa-aurisa.png",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Forest Spirit",
+          "id": "orisa-forest-spirit",
+          "url": "/heroes/orisa/icons/orisa-forest-spirit.png",
+          "isNew": true
         },
         {
           "heroName": "Pharah",
@@ -8370,10 +8470,26 @@
         {
           "heroName": "Symmetra",
           "hero": "symmetra",
+          "name": "Magician",
+          "id": "symmetra-magician",
+          "url": "/heroes/symmetra/icons/symmetra-magician.png",
+          "isNew": true
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
           "name": "Vaswanniversary",
           "id": "symmetra-vaswanniversary",
           "url": "/heroes/symmetra/icons/symmetra-vaswanniversary.png",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Cybjörn",
+          "id": "torbjorn-cybjorn",
+          "url": "/heroes/torbjorn/icons/torbjorn-cybjorn.png",
+          "isNew": true
         },
         {
           "heroName": "Torbjörn",
@@ -8425,9 +8541,16 @@
         },
         {
           "hero": "all",
-          "name": "Anniversary",
+          "name": "Anniversary 2017",
           "id": "anniversary-2017",
           "url": "/heroes/all/icons/anniversary-2017.png"
+        },
+        {
+          "hero": "all",
+          "name": "Anniversary 2018",
+          "id": "anniversary-2018",
+          "url": "/heroes/all/icons/anniversary-2018.png",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -8456,6 +8579,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Eight of Spades",
+          "id": "brigitte-eight-of-spades",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-eight-of-spades.png",
+          "isNew": true
+        },
+        {
           "heroName": "D.Va",
           "hero": "dva",
           "name": "Ten of Hearts",
@@ -8463,6 +8595,15 @@
           "quality": "common",
           "url": "/heroes/dva/sprays/dva-ten-of-hearts.png",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Nine of Clubs",
+          "id": "doomfist-nine-of-clubs",
+          "quality": "common",
+          "url": "/heroes/doomfist/sprays/doomfist-nine-of-clubs.png",
+          "isNew": true
         },
         {
           "heroName": "Genji",
@@ -8526,6 +8667,15 @@
           "quality": "common",
           "url": "/heroes/mercy/sprays/mercy-queen-of-clubs.png",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Nine of Hearts",
+          "id": "moira-nine-of-hearts",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-nine-of-hearts.png",
+          "isNew": true
         },
         {
           "heroName": "Orisa",
@@ -8655,7 +8805,7 @@
         },
         {
           "hero": "all",
-          "name": "Anniversary",
+          "name": "Anniversary 2017",
           "id": "anniversary-2017",
           "url": "/heroes/all/sprays/anniversary-2017.png",
           "group": "ANNIVERSARY_2017",
@@ -8682,6 +8832,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "You need to learn to relax",
+          "id": "ana-you-need-to-learn-to-relax",
+          "quality": "common",
+          "url": "/heroes/ana/voicelines/ana-you-need-to-learn-to-relax.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Bastion",
           "hero": "bastion",
           "name": "BEW-WOO BEW-WOO",
@@ -8698,6 +8857,42 @@
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-doo-dun-dun-woo.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "ZUR ZUR EE NUM",
+          "id": "bastion-zur-zur-ee-num",
+          "quality": "common",
+          "url": "/heroes/bastion/voicelines/bastion-zur-zur-ee-num.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "It's just a flesh wound",
+          "id": "brigitte-its-just-a-flesh-wound",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-its-just-a-flesh-wound.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Leave this to an expert",
+          "id": "brigitte-leave-this-to-an-expert",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-leave-this-to-an-expert.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "No problem",
+          "id": "brigitte-no-problem",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-no-problem.ogg",
+          "isNew": true
         },
         {
           "heroName": "D.Va",
@@ -8718,6 +8913,42 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "No problem!",
+          "id": "dva-no-problem",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-no-problem.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Take it on the chin",
+          "id": "doomfist-take-it-on-the-chin",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-take-it-on-the-chin.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "You can't win",
+          "id": "doomfist-you-cant-win",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-you-cant-win.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Your lack of belief",
+          "id": "doomfist-your-lack-of-belief",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-your-lack-of-belief.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Genji",
           "hero": "genji",
           "name": "I'm Not Impressed",
@@ -8734,6 +8965,15 @@
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-you-seem-nice.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "You need healing",
+          "id": "genji-you-need-healing",
+          "quality": "common",
+          "url": "/heroes/genji/voicelines/genji-you-need-healing.ogg",
+          "isNew": true
         },
         {
           "heroName": "Hanzo",
@@ -8754,6 +8994,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Do not rouse the dragon",
+          "id": "hanzo-do-not-rouse-the-dragon",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-do-not-rouse-the-dragon.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Junkrat",
           "hero": "junkrat",
           "name": "Dipstick",
@@ -8770,6 +9019,15 @@
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-oops-dropped-something.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Inconspicuous!",
+          "id": "junkrat-inconspicuous",
+          "quality": "common",
+          "url": "/heroes/junkrat/voicelines/junkrat-inconspicuous.ogg",
+          "isNew": true
         },
         {
           "heroName": "Lúcio",
@@ -8790,6 +9048,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Can you hear me now?",
+          "id": "lucio-can-you-hear-me-now",
+          "quality": "common",
+          "url": "/heroes/lucio/voicelines/lucio-can-you-hear-me-now.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "McCree",
           "hero": "mccree",
           "name": "Buckle up",
@@ -8806,6 +9073,15 @@
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-next-rounds-on-me.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "How do you like me now?",
+          "id": "mccree-how-do-you-like-me-now",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-how-do-you-like-me-now.ogg",
+          "isNew": true
         },
         {
           "heroName": "Mei",
@@ -8826,6 +9102,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Wake up, sleepyhead!",
+          "id": "mei-wake-up-sleepyhead",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-wake-up-sleepyhead.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Mercy",
           "hero": "mercy",
           "name": "Questionable Judgment",
@@ -8844,12 +9129,49 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "I've seen worse",
+          "id": "mercy-ive-seen-worse",
+          "quality": "common",
+          "url": "/heroes/mercy/voicelines/mercy-ive-seen-worse.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Good news, everyone",
+          "id": "moira-good-news-everyone",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-good-news-everyone.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "This was a triumph",
+          "id": "moira-this-was-a-triumph",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-this-was-a-triumph.ogg",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Unbelievable",
+          "id": "moira-unbelievable",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-unbelievable.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Orisa",
           "hero": "orisa",
           "name": "Satisfied with protection",
           "id": "orisa-satisfied-with-protection",
           "quality": "common",
-          "url": "/heroes/orisa/voicelines/orisa-satisfied-with-protection.ogg"
+          "url": "/heroes/orisa/voicelines/orisa-satisfied-with-protection.ogg",
+          "group": "ANNIVERSARY_2017"
         },
         {
           "heroName": "Orisa",
@@ -8859,6 +9181,15 @@
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-your-compliance.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Have a bad feeling about this",
+          "id": "orisa-have-a-bad-feeling-about-this",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-have-a-bad-feeling-about-this.ogg",
+          "isNew": true
         },
         {
           "heroName": "Pharah",
@@ -8879,6 +9210,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Stay on target",
+          "id": "pharah-stay-on-target",
+          "quality": "common",
+          "url": "/heroes/pharah/voicelines/pharah-stay-on-target.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Reaper",
           "hero": "reaper",
           "name": "I'll see you in hell",
@@ -8895,6 +9235,15 @@
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-no-one-left-behind.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Pathetic",
+          "id": "reaper-pathetic",
+          "quality": "common",
+          "url": "/heroes/reaper/voicelines/reaper-pathetic.ogg",
+          "isNew": true
         },
         {
           "heroName": "Reinhardt",
@@ -8915,6 +9264,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Come here...",
+          "id": "reinhardt-come-here",
+          "quality": "common",
+          "url": "/heroes/reinhardt/voicelines/reinhardt-come-here.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Roadhog",
           "hero": "roadhog",
           "name": "I don't like talkers",
@@ -8931,6 +9289,15 @@
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-im-going-hog-wild.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "That's my business",
+          "id": "roadhog-thats-my-business",
+          "quality": "common",
+          "url": "/heroes/roadhog/voicelines/roadhog-thats-my-business.ogg",
+          "isNew": true
         },
         {
           "heroName": "Soldier: 76",
@@ -8951,6 +9318,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Want something done right?",
+          "id": "soldier-76-want-something-done-right",
+          "quality": "common",
+          "url": "/heroes/soldier-76/voicelines/soldier-76-want-something-done-right.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Sombra",
           "hero": "sombra",
           "name": "I need a drink",
@@ -8967,6 +9343,15 @@
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-were-you-done-talking.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Let's not do that again",
+          "id": "sombra-lets-not-do-that-again",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-lets-not-do-that-again.ogg",
+          "isNew": true
         },
         {
           "heroName": "Symmetra",
@@ -8987,6 +9372,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Let us discuss your failures",
+          "id": "symmetra-let-us-discuss-your-failures",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-let-us-discuss-your-failures.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Torbjörn",
           "hero": "torbjorn",
           "name": "Hear me, baby?",
@@ -9003,6 +9397,15 @@
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-trust-me.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Why didn't I think of that?",
+          "id": "torbjorn-why-didnt-i-think-of-that",
+          "quality": "common",
+          "url": "/heroes/torbjorn/voicelines/torbjorn-why-didnt-i-think-of-that.ogg",
+          "isNew": true
         },
         {
           "heroName": "Tracer",
@@ -9023,6 +9426,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "I knew I forgot something",
+          "id": "tracer-i-knew-i-forgot-something",
+          "quality": "common",
+          "url": "/heroes/tracer/voicelines/tracer-i-knew-i-forgot-something.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Widowmaker",
           "hero": "widowmaker",
           "name": "Sorry",
@@ -9039,6 +9451,15 @@
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-what-a-bore.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "The pleasure is mine",
+          "id": "widowmaker-the-pleasure-is-mine",
+          "quality": "common",
+          "url": "/heroes/widowmaker/voicelines/widowmaker-the-pleasure-is-mine.ogg",
+          "isNew": true
         },
         {
           "heroName": "Winston",
@@ -9059,6 +9480,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Can't keep a good ape down",
+          "id": "winston-cant-keep-a-good-ape-down",
+          "quality": "common",
+          "url": "/heroes/winston/voicelines/winston-cant-keep-a-good-ape-down.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Is that all?",
@@ -9077,6 +9507,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Let's get physical",
+          "id": "zarya-lets-get-physical",
+          "quality": "common",
+          "url": "/heroes/zarya/voicelines/zarya-lets-get-physical.ogg",
+          "isNew": true
+        },
+        {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
           "name": "Existence is mysterious",
@@ -9093,16 +9532,52 @@
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-how-disappointing.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Patience",
+          "id": "zenyatta-patience",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-patience.ogg",
+          "isNew": true
         }
       ],
-      "skinsLegendary": [
+      "skins": [
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Bitrate",
+          "id": "lucio-bitrate",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/skins/lucio-bitrate.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Venom",
+          "id": "soldier-76-venom",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/skins/soldier-76-venom.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Lightning",
+          "id": "tracer-lightning",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/skins/tracer-lightning.jpg",
+          "isNew": true
+        },
         {
           "heroName": "Bastion",
           "hero": "bastion",
           "name": "Dune Buggy",
           "id": "bastion-dune-buggy",
           "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/bastion-dune-buggy.jpg",
+          "url": "/updates/ANNIVERSARY/skins/bastion-dune-buggy.jpg",
           "group": "ANNIVERSARY_2017"
         },
         {
@@ -9111,7 +9586,7 @@
           "name": "Cruiser",
           "id": "dva-cruiser",
           "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/dva-cruiser.jpg",
+          "url": "/updates/ANNIVERSARY/skins/dva-cruiser.jpg",
           "group": "ANNIVERSARY_2017"
         },
         {
@@ -9120,7 +9595,7 @@
           "name": "Sentai",
           "id": "genji-sentai",
           "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/genji-sentai.jpg",
+          "url": "/updates/ANNIVERSARY/skins/genji-sentai.jpg",
           "group": "ANNIVERSARY_2017"
         },
         {
@@ -9129,7 +9604,7 @@
           "name": "Cyberninja",
           "id": "hanzo-cyberninja",
           "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/hanzo-cyberninja.jpg",
+          "url": "/updates/ANNIVERSARY/skins/hanzo-cyberninja.jpg",
           "group": "ANNIVERSARY_2017"
         },
         {
@@ -9138,7 +9613,7 @@
           "name": "Jazzy",
           "id": "lucio-jazzy",
           "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/lucio-jazzy.jpg",
+          "url": "/updates/ANNIVERSARY/skins/lucio-jazzy.jpg",
           "group": "ANNIVERSARY_2017"
         },
         {
@@ -9147,7 +9622,7 @@
           "name": "Beekeeper",
           "id": "mei-beekeeper",
           "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/mei-beekeeper.jpg",
+          "url": "/updates/ANNIVERSARY/skins/mei-beekeeper.jpg",
           "group": "ANNIVERSARY_2017"
         },
         {
@@ -9156,7 +9631,7 @@
           "name": "Bedouin",
           "id": "pharah-bedouin",
           "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/pharah-bedouin.jpg",
+          "url": "/updates/ANNIVERSARY/skins/pharah-bedouin.jpg",
           "group": "ANNIVERSARY_2017"
         },
         {
@@ -9165,7 +9640,7 @@
           "name": "Cyborg: 76",
           "id": "soldier-76-cyborg-76",
           "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/soldier-76-cyborg-76.jpg",
+          "url": "/updates/ANNIVERSARY/skins/soldier-76-cyborg-76.jpg",
           "group": "ANNIVERSARY_2017"
         },
         {
@@ -9174,7 +9649,7 @@
           "name": "Oasis",
           "id": "symmetra-oasis",
           "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/symmetra-oasis.jpg",
+          "url": "/updates/ANNIVERSARY/skins/symmetra-oasis.jpg",
           "group": "ANNIVERSARY_2017"
         },
         {
@@ -9183,7 +9658,7 @@
           "name": "Graffiti",
           "id": "tracer-graffiti",
           "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/tracer-graffiti.jpg",
+          "url": "/updates/ANNIVERSARY/skins/tracer-graffiti.jpg",
           "group": "ANNIVERSARY_2017"
         },
         {
@@ -9192,8 +9667,112 @@
           "name": "Cyberian",
           "id": "zarya-cyberian",
           "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/zarya-cyberian.jpg",
+          "url": "/updates/ANNIVERSARY/skins/zarya-cyberian.jpg",
           "group": "ANNIVERSARY_2017"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Stealth",
+          "id": "bastion-stealth",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/bastion-stealth.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Shieldmaiden",
+          "id": "brigitte-shieldmaiden",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/brigitte-shieldmaiden.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Formal",
+          "id": "doomfist-formal",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/doomfist-formal.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Buccaneer",
+          "id": "junkrat-buccaneer",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/junkrat-buccaneer.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Sherlock",
+          "id": "mccree-sherlock",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/mccree-sherlock.jpg",
+          "description": "\"My mind,\" he said, \"rebels at stagnation. Give me problems, give me work, give me the most abstruse cryptogram or the most intricate analysis, and I am in my proper atmosphere.\"",
+          "isNew": true
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Forest Spirit",
+          "id": "orisa-forest-spirit",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/orisa-forest-spirit.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Magician",
+          "id": "symmetra-magician",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/symmetra-magician.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Cybjörn",
+          "id": "torbjorn-cybjorn",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/torbjorn-cybjorn.jpg",
+          "isNew": true
+        }
+      ],
+      "poses": [
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Charging",
+          "id": "doomfist-charging",
+          "quality": "rare",
+          "url": "/updates/ANNIVERSARY/poses/doomfist-charging.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Parasol",
+          "id": "mercy-parasol",
+          "quality": "rare",
+          "url": "/updates/ANNIVERSARY/poses/mercy-parasol.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Wink",
+          "id": "tracer-wink",
+          "quality": "rare",
+          "url": "/updates/ANNIVERSARY/poses/tracer-wink.jpg",
+          "isNew": true
         }
       ]
     }
