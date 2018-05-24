@@ -162,6 +162,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
     },
     recalculate: function() {
       console.log("Calculating costs");
+      service.qualities = {};
       service.heroes = {};
       service.events = {};
 
