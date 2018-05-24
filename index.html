@@ -18,7 +18,7 @@
   <div id="background"></div>
   <div id="header">
     <div class="left">
-      <img uib-tooltip="Boop" tooltip-placement="bottom" src="./resources/logo.svg" ng-click="$ctrl.toggleSidebar()">
+      <img id="header-logo" uib-tooltip="Boop" tooltip-placement="bottom" src="./resources/logo.svg" ng-click="$ctrl.toggleSidebar()">
       <h1>Overwatch Item Tracker</h1>
       <div class="event-selector" ng-click="$ctrl.showNav = !$ctrl.showNav">
         <div class="block" ng-if="$ctrl.item.type == 'heroes'">
