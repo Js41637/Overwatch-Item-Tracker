@@ -66,3 +66,28 @@
     border-top-color: lighten($color, 10%);
   }
 }
+
+@each $heroname, $data in $heroes {
+  $colors: map-get($data, 'colors');
+
+  body##{$heroname} .hero-progress-bar,
+  #hero-nav .gallery.hero .block[href$="/#{$heroname}"] .hero-progress-bar {
+    background-color: map-get($colors, 'primary');
+    border-top-color: map-get($colors, 'highlight');
+  }
+}
+
+@each $eventname, $data in $events {
+  $colors: map-get($data, 'colors');
+
+  body##{$eventname} .event-progress-bar,
+  #hero-nav .gallery.event .block[href$="/#{$eventname}"] .hero-progress-bar {
+    background-color: map-get($colors, primary);
+    border-top-color: map-get($colors, highlight);
+  }
+}
+
+// Override the difficult-to-see Winter Wonderland one for the homepage.
+#home #hero-nav .gallery.event .block[href$="/WINTER_WONDERLAND"] .hero-progress-bar {
+  background-color: #52496d;
+}

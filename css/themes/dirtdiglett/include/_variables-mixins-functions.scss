@@ -44,17 +44,23 @@ $cost: #00db55;
 $section-background: #f0edf2;
 $section-header-background: #c6cbde;
 
+$events-additional: (
+  UPRISING: (
+    properties: (
+      background-position: center 18%
+    )
+  )
+);
+
 $heroes-additional: (
   brigitte: (
-    background-position: (
-      x: 0,
-      y: 14%
+    properties: (
+      background-position: 0 14%
     )
   ),
   genji: (
-    background-position: (
-      x: 0,
-      y: 10%
+    properties: (
+      background-position: 0 10%
     )
   )
 );
@@ -91,5 +97,16 @@ $heroes-additional: (
 
   @if $type == "hero" {
     font-size: $page-title-font-size;
+  }
+}
+
+
+@mixin additionalProperties($map, $name) {
+  @if map-has-key($map, $name) and map-has-key(map-get($map, $name), properties) {
+    $properties: map-get(map-get($map, $name), properties);
+
+    @each $property, $value in $properties {
+      #{$property}: #{$value}
+    }
   }
 }

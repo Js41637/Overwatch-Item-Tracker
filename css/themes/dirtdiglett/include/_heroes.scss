@@ -58,21 +58,9 @@
       background-image: url('resources/heroes/#{$heroname}/background-story.jpg');
 
       @if map-has-key($heroes-additional, $heroname) {
-        $hero-extra: map-get($heroes-additional, $heroname);
-
-        @if map-has-key($hero-extra, 'background-position') {
-          $hero-background-position: map-get($hero-extra, 'background-position');
-
-          background-position: map-get($hero-background-position, "x") map-get($hero-background-position, "y");
-        }
+        @include additionalProperties($heroes-additional, $heroname);
       }
     }
-  }
-
-  body##{$heroname} .hero-progress-bar,
-  #hero-nav .gallery.hero .block[href$="/#{$heroname}"] .hero-progress-bar {
-    background-color: map-get($colors, 'primary');
-    border-top-color: map-get($colors, 'highlight');
   }
 }
 

@@ -24,19 +24,43 @@
 @each $eventname, $data in $events {
   $colors: map-get($data, 'colors');
 
-  body##{$eventname} .event-progress-bar {
-    background-color: map-get($colors, primary);
-    border-top-color: map-get($colors, highlight);
-  }
-
   body##{$eventname} #event-header,
   #hero-nav .gallery.event .block[href$="/#{$eventname}"] {
     background-image: url('resources/#{$eventname}/bg.jpg');
+  }
+
+  body##{$eventname} #event-header {
+    @if map-has-key($events-additional, $eventname) {
+      @include additionalProperties($events-additional, $eventname);
+    }
   }
 
   .item[event="#{$eventname}"] + .tooltip .preview.img {
     background:
       url('resources/#{$eventname}/icon-bg.png') no-repeat,
       url('resources/#{$eventname}/preview-bg.png');
+  }
+}
+
+
+// Specific event override
+#hero-nav .gallery.event .block[href$="/UPRISING"] .img,
+body#UPRISING .header-content::before {
+  background-image: url('/resources/updates/UPRISING/archives_logo.png') !important;
+}
+
+body#UPRISING {
+  .event-logo {
+    opacity: 0;
+  }
+
+  .header-content::before {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 397px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
