@@ -43,6 +43,7 @@ $cost: #00db55;
 
 $section-background: #f0edf2;
 $section-header-background: #c6cbde;
+$section-header-color: #405275;
 
 $events-additional: (
   UPRISING: (
@@ -106,7 +107,7 @@ $heroes-additional: (
     $properties: map-get(map-get($map, $name), properties);
 
     @each $property, $value in $properties {
-      #{$property}: #{$value}
+      #{$property}: #{$value};
     }
   }
 }

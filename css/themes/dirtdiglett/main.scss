@@ -11,6 +11,7 @@
   "include/progress",
   "include/heroes",
   "include/events",
+  "include/sections",
   "include/sidebar",
   "include/modals"
 ;
@@ -37,4 +38,8 @@
 #home-header {
   background-image: url('resources/home/bg.jpg');
   margin-bottom: 3.5rem;
+}
+
+.hero-items {
+  padding: $gutter-width;
 }
