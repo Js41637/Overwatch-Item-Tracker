@@ -218,7 +218,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     var selected = vm.filters.selected;
     var unselected = vm.filters.unselected;
     var achievement = vm.filters.achievement;
-    var noevent = vm.filters.noevent;
+    var regularItems = vm.filters.regularItems;
     var herof = vm.filters.hero;
 
     // Generate array of event ids we are filtering
@@ -233,7 +233,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     }
 
     // Disable filtering if nothing is selected
-    if (!eventFilters.length && !groupFilter.length && !selected && !unselected && !achievement && !herof && !noevent) {
+    if (!eventFilters.length && !groupFilter.length && !selected && !unselected && !achievement && !herof && !regularItems) {
       vm.clearFilters();
       return;
     }
@@ -248,6 +248,10 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
     });
 
     currentFilters = currentFilters.concat(groupFilter);
+
+    if (regularItems) {
+      currentFilters.push('REGULAR ITEMS')
+    }
 
     if (achievement) {
       currentFilters.push('ACHIEVEMENT');
@@ -278,7 +282,7 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
           if ((vm.filters.selected && !checked && !item.standardItem) || (vm.filters.unselected && (checked || item.standardItem))) return;
         }
 
-        if (vm.filters.noevent && item.event) return;
+        if (vm.filters.regularItems && (item.event || item.achievement)) return;
         if (vm.filters.achievement && !item.achievement) return;
         if (vm.filters.hero && !item.hero) return;
         if (eventFilters.length && (!item.event || !eventFilters.includes(item.event))) return;
