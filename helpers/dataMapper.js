@@ -178,6 +178,15 @@ allClassData = reduce(allClassData, (result, items, type) => {
       }
     }
 
+    if (type === 'sprays') {
+      const actualEvent = findKey(EVENTITEMS, event => event.includes(`${type}/${item.id}`));
+      if (actualEvent) {
+        group = { group: actualEvent };
+      }
+    }
+
+
+
     newItems.push(Object.assign(item, { event, url }, isAchievement, isStandard, quality, group, isPachiItem, isCompItem, description));
 
     if (isSeasonCompItem && type == 'sprays') {

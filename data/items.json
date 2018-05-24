@@ -3580,56 +3580,64 @@
           "id": "summer-games-2016",
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/sprays/summer-games-2016.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "...Never Die",
           "id": "never-die",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/never-die.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "HALLOWEEN_2016"
         },
         {
           "name": "Bats",
           "id": "bats",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/bats.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "HALLOWEEN_2016"
         },
         {
           "name": "Boo!",
           "id": "boo",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/boo.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "HALLOWEEN_2016"
         },
         {
           "name": "Boop!",
           "id": "boop",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/boop.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "HALLOWEEN_2016"
         },
         {
           "name": "Candyball",
           "id": "candyball",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/candyball.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "HALLOWEEN_2016"
         },
         {
           "name": "Fangs",
           "id": "fangs",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/fangs.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "HALLOWEEN_2016"
         },
         {
           "name": "Gummy Hog",
           "id": "gummy-hog",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/gummy-hog.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "HALLOWEEN_2016"
         },
         {
           "name": "Halloween Special",
@@ -3637,6 +3645,7 @@
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/halloween-special.png",
           "achievement": true,
+          "group": "HALLOWEEN_2016",
           "description": "Win Junkenstein's Revenge on Legendary difficulty."
         },
         {
@@ -3644,7 +3653,8 @@
           "id": "halloween-terror",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/halloween-terror.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "HALLOWEEN_2016"
         },
         {
           "name": "Junkenstein's Revenge",
@@ -3652,6 +3662,7 @@
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/junkensteins-revenge.png",
           "achievement": true,
+          "group": "HALLOWEEN_2016",
           "description": "Win Junkenstein's Revenge on Hard difficulty."
         },
         {
@@ -3667,7 +3678,8 @@
           "id": "pumpkins",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/pumpkins.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "HALLOWEEN_2016"
         },
         {
           "name": "Rise of the Zomnics",
@@ -3675,6 +3687,7 @@
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/rise-of-the-zomnics.png",
           "achievement": true,
+          "group": "HALLOWEEN_2016",
           "description": "Win Junkenstein's Revenge using each of the 4 heroes."
         },
         {
@@ -3691,6 +3704,7 @@
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/the-reapening.png",
           "achievement": true,
+          "group": "HALLOWEEN_2016",
           "description": "Win Junkenstein's Revenge on Hard difficulty with no damage to the door."
         },
         {
@@ -3714,7 +3728,8 @@
           "id": "witchs-brew",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/witchs-brew.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "HALLOWEEN_2016"
         },
         {
           "name": "Snowcree",
@@ -3722,6 +3737,7 @@
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/snowcree.png",
           "achievement": true,
+          "group": "WINTER_WONDERLAND_2016",
           "description": "Kill an enemy with a snowball from 25 meters away in Mei's Snowball Offensive."
         },
         {
@@ -3730,6 +3746,7 @@
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/snowhog.png",
           "achievement": true,
+          "group": "WINTER_WONDERLAND_2016",
           "description": "Kill 3 enemies while they are picking up snow in a game of Mei's Snowball Offensive."
         },
         {
@@ -3738,6 +3755,7 @@
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/snowmei.png",
           "achievement": true,
+          "group": "WINTER_WONDERLAND_2016",
           "description": "Win Mei's Snowball Offensive without losing a round."
         },
         {
@@ -3746,6 +3764,7 @@
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/snowreaper.png",
           "achievement": true,
+          "group": "WINTER_WONDERLAND_2016",
           "description": "Kill 4 enemies without missing in Mei's Snowball Offensive."
         },
         {
@@ -3753,7 +3772,8 @@
           "id": "winter-wonderland",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/winter-wonderland.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "name": "Yeti",
@@ -3777,6 +3797,7 @@
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/sprays/auspicious-lion.png",
           "achievement": true,
+          "group": "LUNAR_NEW_YEAR_2017",
           "description": "Recover a flag in a game of Capture the Flag."
         },
         {
@@ -3785,6 +3806,7 @@
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/sprays/awakened-lion.png",
           "achievement": true,
+          "group": "LUNAR_NEW_YEAR_2017",
           "description": "Win Capture the Flag with a score of 3 to 0."
         },
         {
@@ -3792,42 +3814,48 @@
           "id": "dragons-head",
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/sprays/dragons-head.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "name": "Good Fortune",
           "id": "good-fortune",
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/sprays/good-fortune.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "name": "Lucky Pouch",
           "id": "lucky-pouch",
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/sprays/lucky-pouch.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "name": "Red Envelope",
           "id": "red-envelope",
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/sprays/red-envelope.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "name": "Year of the Dog",
           "id": "year-of-the-dog-2018",
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/sprays/year-of-the-dog-2018.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "name": "Year of the Rooster",
           "id": "year-of-the-rooster-2017",
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/sprays/year-of-the-rooster-2017.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "name": "Archives",
@@ -3842,6 +3870,7 @@
           "event": "UPRISING",
           "url": "/heroes/all/sprays/b73ns.png",
           "achievement": true,
+          "group": "UPRISING_2017",
           "description": "Complete Uprising on Expert difficulty."
         },
         {
@@ -3858,6 +3887,7 @@
           "event": "UPRISING",
           "url": "/heroes/all/sprays/eradicator.png",
           "achievement": true,
+          "group": "UPRISING_2017",
           "description": "Complete Uprising on Hard difficulty."
         },
         {
@@ -3874,7 +3904,8 @@
           "id": "null-sector",
           "event": "UPRISING",
           "url": "/heroes/all/sprays/null-sector.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "UPRISING_2017"
         },
         {
           "name": "Nulltrooper",
@@ -3882,6 +3913,7 @@
           "event": "UPRISING",
           "url": "/heroes/all/sprays/nulltrooper.png",
           "achievement": true,
+          "group": "UPRISING_2017",
           "description": "Complete Uprising with each of the 4 heroes."
         },
         {
@@ -3890,6 +3922,7 @@
           "event": "UPRISING",
           "url": "/heroes/all/sprays/or14ns.png",
           "achievement": true,
+          "group": "UPRISING_2017",
           "description": "Complete Uprising on Legendary difficulty."
         },
         {
@@ -3898,6 +3931,7 @@
           "event": "UPRISING",
           "url": "/heroes/all/sprays/slicer.png",
           "achievement": true,
+          "group": "UPRISING_2017",
           "description": "Deliver the payload with over 80% health in Uprising on Hard difficulty."
         },
         {
@@ -3945,7 +3979,8 @@
           "id": "anniversary-2017",
           "event": "ANNIVERSARY",
           "url": "/heroes/all/sprays/anniversary-2017.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "ANNIVERSARY_2017"
         }
       ]
     }
