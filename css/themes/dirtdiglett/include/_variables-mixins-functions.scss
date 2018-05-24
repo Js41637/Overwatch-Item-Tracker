@@ -65,60 +65,36 @@ $events: (
     colors: (
       primary: #ff9c00, // The orange used from the logo seemed appropriate here.
       highlight: lighten(#ff9c00, 10%),
-    ),
-    logo: (
-      width: 888px,
-      height: 560px
     )
   ),
   HALLOWEEN: (
     colors: (
       primary: #ecd53c,
       highlight: lighten(#ecd53c, 10%)
-    ),
-    logo: (
-      width: 810px,
-      height: 455px
     )
   ),
   LUNAR_NEW_YEAR: (
     colors: (
       primary: #cd2807,
       highlight: lighten(#cd2807, 10%)
-    ),
-    logo: (
-      width: 380px,
-      height: 459px
     )
   ),
   SUMMER_GAMES: (
     colors: (
       primary: #78c843,
       highlight: lighten(#78c843, 10%)
-    ),
-    logo: (
-      width: 816px,
-      height: 1098px
     )
   ),
   UPRISING: (
     colors: (
       primary: #00d1d5,
       highlight: lighten(#00d1d5, 10%)
-    ),
-    logo: (
-      width: 821px,
-      height: 323px
     )
   ),
   WINTER_WONDERLAND: (
     colors: (
       primary: #e9f6ff,
       highlight: lighten(#e9f6ff, 10%)
-    ),
-    logo: (
-      width: 816px,
-      height: 339px
     )
   )
 );

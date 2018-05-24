@@ -26,14 +26,11 @@
   }
 }
 
-.hero-progress {
+.hero-progress,
+.event-progress {
   position: absolute;
   bottom: 0;
   width: 100%;
-}
-
-.event-progress {
-  margin-top: -$progress-bar-height;
 }
 
 .quality-bar {

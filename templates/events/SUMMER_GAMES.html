@@ -1,6 +1,8 @@
-<div class="event-progress">
-  <div class="event-progress-bar progress-bar active" style="width: {{(totals.overall.selected / totals.overall.total) * 100}}%;" ng-class="{'progress-bar-striped': totals.overall.selected === totals.overall.total}"></div>
-  <span>{{totals.overall.selected}} / {{totals.overall.total}}  Unlocks</span>
+<div id="event-header">
+  <div class="event-progress">
+    <div class="event-progress-bar progress-bar active" style="width: {{(totals.overall.selected / totals.overall.total) * 100}}%;" ng-class="{'progress-bar-striped': totals.overall.selected === totals.overall.total}"></div>
+    <span>{{totals.overall.selected}} / {{totals.overall.total}}  Unlocks</span>
+  </div>
 </div>
 <div class="col-md-8 col-padding">
   <legendary-skins></legendary-skins>

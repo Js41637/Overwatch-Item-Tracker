@@ -22,14 +22,8 @@
   display: inline-block;
 }
 
-#event-container::before {
-  content: "";
-  display: inline-block;
-  z-index: -1;
-}
-
 #hero-header,
-#event-container::before {
+#event-header {
   min-height: $total-header-height;
   width: 100%;
   padding-top: $header-height;
