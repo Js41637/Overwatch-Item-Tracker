@@ -5,6 +5,14 @@ $classes: (
   support
 );
 
+// [id]: [filename]
+$achievements: (
+  true: 'achievement',
+  blizzard: 'blizzard',
+  bcrf: 'heart',
+  owl: 'overwatch_league'
+);
+
 // Colors used for events are not official, just taken primarily from the logos.
 $events: (
   ANNIVERSARY: (

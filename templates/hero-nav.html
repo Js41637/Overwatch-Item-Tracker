@@ -21,15 +21,17 @@
   <div class="gallery hero">
     <div>
       <div class="block" ng-repeat="hero in heroes track by $index" ui-sref="heroes({id: hero.id})" ui-sref-active="selected">
-        <div class="bg"></div>
-        <div class="imgcont">
-          <div class="img" style="background-image: url({{::hero.id | heroImg:'icon'}})"></div>
-        </div>
-        <div class="text">
-          <h2>{{::hero.name}}</h2>
-          <div ng-if="::totals" class="progresscont">
-            <h3>{{::totals.heroes[hero.id].totals.overall.selected}}/{{::totals.heroes[hero.id].totals.overall.total}}</h3>
-            <div class="hero-progress-bar" style="width: {{(totals.heroes[hero.id].totals.overall.selected / totals.heroes[hero.id].totals.overall.total) * 100}}%; background-color: {{::hero.colors.primary}}; border-top-color: {{::hero.colors.highlight}}"></div>
+        <div class="block-content">
+          <div class="bg"></div>
+          <div class="imgcont">
+            <div class="img" style="background-image: url({{::hero.id | heroImg:'icon'}})"></div>
+          </div>
+          <div class="text">
+            <h2>{{::hero.name}}</h2>
+            <div ng-if="::totals" class="progresscont">
+              <h3>{{::totals.heroes[hero.id].totals.overall.selected}}/{{::totals.heroes[hero.id].totals.overall.total}}</h3>
+              <div class="hero-progress-bar" style="width: {{(totals.heroes[hero.id].totals.overall.selected / totals.heroes[hero.id].totals.overall.total) * 100}}%; background-color: {{::hero.colors.primary}}; border-top-color: {{::hero.colors.highlight}}"></div>
+            </div>
           </div>
         </div>
       </div>

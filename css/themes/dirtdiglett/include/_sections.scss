@@ -12,6 +12,7 @@
   border-radius: 0.4rem;
   overflow: hidden;
   color: $section-font-color;
+  margin-bottom: $gutter-width;
 
   .section-header {
     display: flex;
@@ -79,9 +80,10 @@
     display: flex;
     font-size: 1.6rem;
     position: relative;
-    padding: $item-vertical-padding 0 $item-vertical-padding ($item-checkbox-size + ($item-vertical-padding * 2));
+    padding-left: $item-checkbox-size + ($item-vertical-padding * 2);
     min-height: $item-checkbox-size + ($item-vertical-padding * 2);
     align-items: center;
+    justify-content: space-between;
 
     input {
       display: none;
@@ -89,6 +91,14 @@
 
     label {
       line-height: 1;
+      padding-top: $item-vertical-padding;
+      padding-bottom: $item-vertical-padding;
+    }
+
+    label:only-of-type,
+    label + label {
+      flex: 1;
+      order: -1;
     }
 
     h3,
@@ -125,8 +135,10 @@
 
     label.circle-checkbox {
       width: $item-checkbox-size;
+      height: $item-checkbox-size;;
       position: relative;
       margin-right: $item-vertical-padding * 2;
+      order: -2;
     }
 
     input:first-child ~ label:last-child::before,
@@ -149,7 +161,7 @@
 
     label.circle-checkbox::before,
     label.circle-checkbox::after {
-      top: ($item-title-size + $item-subtitle-size - $item-checkbox-size) / 2;
+      top: 0;
     }
 
     input:first-child ~ label:last-child::after,
@@ -174,6 +186,29 @@
     input:first-child:checked:disabled ~ label:last-child::before,
     input.circle-checkbox:checked:disabled ~ label.circle-checkbox::after {
       background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &[event]:not([event="none"])::after,
+    &[achievement]:not([achievement="false"])::before {
+      content: "";
+      width: 1.5em;
+      height: 1.5em;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      filter: brightness(0.75);
+    }
+
+    @each $attributevalue, $filename in $achievements {
+      &[achievement="#{$attributevalue}"]::before {
+        background-image: url("/resources/icons/#{$filename}.svg");
+      }
+    }
+
+    @each $event, $eventdata in $events {
+      &[event="#{$event}"]::after {
+        background-image: url("/resources/icons/#{$event}.svg");
+      }
     }
   }
 
