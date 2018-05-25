@@ -368,10 +368,13 @@ body {
   background-image: url(resources/icons/blizzard.svg);
 }
 
-.section .item[achievement="bcf"]:after {
+.section .item[achievement="bcrf"]:after {
   background-image: url(resources/icons/heart.png);
 }
 
+.section .item[achievement="owl"]:after {
+  background-image: url(resources/icons/overwatch_league.svg);
+}
 
 
 /**

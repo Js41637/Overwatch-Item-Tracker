@@ -8,6 +8,7 @@ const data = {
     "sprays/year-of-the-dog": "year-of-the-dog-2018",
     "sprays/year-of-the-rooster": "year-of-the-rooster-2017",
     "sprays/junkrat-hayseed": "junkrat-scarecrow",
+    "sprays/anniversary": "anniversary-2017",
     "voicelines/moira-slainte": "moira-slinte",
     "voicelines/brigitte-its-broken": "brigitte-this-is-pie"
   },
@@ -68,8 +69,8 @@ const data = {
       icons: ['nexus']
     },
     "overwatch league": {
-      icons: ['boston-uprising', 'dallas-fuel', 'florida-mayhem', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'los-angeles-valiant', 'new-york-excelsior', 'overwatch-league', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons'],
-      sprays: ['boston-uprising-logo', 'dallas-fuel-logo', 'florida-mayhem-logo', 'houston-outlaws-logo', 'london-spitfire-logo', 'los-angeles-gladiators-logo', 'los-angeles-valiant-logo', 'new-york-excelsior-logo', 'overwatch-league', 'philadelphia-fusion-logo', 'san-francisco-shock-logo', 'seoul-dynasty-logo', 'shanghai-dragons-logo']
+      icons: ['boston-uprising', 'dallas-fuel', 'florida-mayhem', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'los-angeles-valiant', 'new-york-excelsior', 'overwatch-league', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons', 'inaugural-season'],
+      sprays: ['boston-uprising-logo', 'dallas-fuel-logo', 'florida-mayhem-logo', 'houston-outlaws-logo', 'london-spitfire-logo', 'los-angeles-gladiators-logo', 'los-angeles-valiant-logo', 'new-york-excelsior-logo', 'overwatch-league', 'philadelphia-fusion-logo', 'san-francisco-shock-logo', 'seoul-dynasty-logo', 'shanghai-dragons-logo', 'inaugural-season']
     }
   },
   achievementSprays: [
@@ -160,7 +161,7 @@ const data = {
     }
   },
   specialAchievementItems: {
-    'bcf': {
+    'bcrf': {
       skins: ['mercy-pink'],
       sprays: ['mercy-pink', 'mercy-cure', 'mercy-ribbon', 'mercy-together'],
       icons: ['mercy-pink', 'mercy-ribbon']

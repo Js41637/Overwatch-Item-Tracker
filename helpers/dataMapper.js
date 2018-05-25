@@ -150,11 +150,18 @@ allClassData = reduce(allClassData, (result, items, type) => {
 
     // Check if the spray or icon is a Competitive reward
     const isSeasonCompItem = item.id.match(/^season-(\d+)-(competitor|hero)$/);
-    const isOtherCompItem = item.id.match(/^(top-500|inaugural-season|(copa-lucioball|competitive-ctf|competitive-6v6-elimination|competitive-deathmatch)-\w+)$/)
+    const isOtherCompItem = item.id.match(/^(top-500|(copa-lucioball|competitive-ctf|competitive-6v6-elimination|competitive-deathmatch)-\w+)$/)
     const isCompItem =  isSeasonCompItem || isOtherCompItem ? { group: 'competitive' } : undefined;
+    const isOWLItem = item.id.match(/^(inaugural-season)$/)
     const isPachiItem = item.id.startsWith('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined;
     const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined;
-    const isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem) ? { achievement: true } : blizzardItems[type].includes(item.id) ? { achievement: 'blizzard' } : undefined;
+    let isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem)
+      ? { achievement: true }
+      : blizzardItems[type].includes(item.id)
+        ? { achievement: 'blizzard' }
+        : isOWLItem
+          ? { achievement: 'owl' }
+          : undefined;
 
     // Only purchasable items need a quality
     const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompItem) ? { quality: 'common' } : undefined;
@@ -178,14 +185,16 @@ allClassData = reduce(allClassData, (result, items, type) => {
       }
     }
 
+    if (group && group.group === 'overwatch league') {
+      isAchievement = { achievement: 'owl' }
+    }
+
     if (type === 'sprays') {
       const actualEvent = findKey(EVENTITEMS, event => event.includes(`${type}/${item.id}`));
       if (actualEvent) {
         group = { group: actualEvent };
       }
     }
-
-
 
     newItems.push(Object.assign(item, { event, url }, isAchievement, isStandard, quality, group, isPachiItem, isCompItem, description));
 
@@ -268,6 +277,7 @@ for (var hero in data) {
         case 'COMMON':
           break;
         case 'OWL':
+          out.achievement = 'owl'
           return
         case 'ACHIEVEMENT':
           if (type === 'weapons') {
