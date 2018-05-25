@@ -34,6 +34,24 @@ $page-header-height: 18rem;
 $total-header-height: $header-height + $page-header-height + $progress-bar-height;
 $page-title-font-size: 12rem;
 
+$section-background: #f0edf2;
+$section-header-background: #c6cbde;
+$section-header-color: #405275;
+$section-font-color: #5d5a5a;
+
+$legendary-height: 50rem;
+$legendary-title-size: 1em;
+$legendary-title-padding: 1.8rem;
+$legendary-title-color: $section-header-color !default;
+$legendary-subtitle-size: $legendary-title-size * 0.5;
+$legendary-subtitle-color: lighten($legendary-title-color, 20%) !default;
+$legendary-background: rgba($section-background, 0.9) !default;
+
+$item-title-size: 1em;
+$item-subtitle-size: $item-title-size * 0.875;
+$item-vertical-padding: 0.3em;
+$item-checkbox-size: ($item-title-size + $item-subtitle-size) * 0.6;
+
 $heroNav-blocks: (
   hero: (
     width: 84px,
@@ -47,14 +65,10 @@ $heroNav-blocks: (
 
 $credit-remaining-font-size: 5.4rem;
 
-$offwhite: rgb(240, 240, 240);
-$herogrey: rgb(45, 52, 70);
-$orange: rgb(255, 165, 0);
+$offwhite: #f0f0f0;
+$herogrey: #2d3446;
+$orange: #ffa500;
 $cost: #00db55;
-
-$section-background: #f0edf2;
-$section-header-background: #c6cbde;
-$section-header-color: #405275;
 
 $events-additional: (
   UPRISING: (
@@ -121,4 +135,17 @@ $heroes-additional: (
       #{$property}: #{$value};
     }
   }
+}
+
+@mixin stroke($width, $color) {
+  $shadow: ();
+
+  @for $i from -$width through $width {
+    $shadow: append($shadow, #{$width} #{$i} $color, comma);
+    $shadow: append($shadow, #{-$width} #{$i} $color, comma);
+    $shadow: append($shadow, #{$i} #{$width} $color, comma);
+    $shadow: append($shadow, #{$i} #{-$width} $color, comma);
+  }
+
+  text-shadow: $shadow;
 }

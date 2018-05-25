@@ -1,3 +1,7 @@
+#event-header {
+  margin-bottom: $legendary-height + ($gutter-width * 2);
+}
+
 .header-content {
   height: $page-header-height;
   position: absolute;
@@ -64,3 +68,6 @@ body#UPRISING {
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
+
+// Import it after to override defined properties above.
+@import "legendary-skins";

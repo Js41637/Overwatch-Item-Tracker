@@ -1,0 +1,122 @@
+#legendary-skins {
+  position: absolute;
+  width: calc(100vw - 1.8rem * 3);
+  height: $legendary-height;
+  left: $gutter-width;
+  top: -$legendary-height - $gutter-width;
+  background: none;
+  border-radius: 0;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    h2 {
+      font-size: 3.2rem;
+      font-family: $big-noodle;
+      font-style: italic;
+      color: #fff;
+      border-bottom: 3px solid rgba(240, 237, 242, 0.3);
+      margin-bottom: 0.64rem;
+      padding: 0 0 0.64rem;
+
+      small {
+        font-size: 0.7em;
+        color: map-get($qualities, legendary);
+        margin-left: 0.4rem;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 0.75em;
+          height: 0.7em;
+          background-image: url('/resources/icons/currency.svg');
+          background-size: 0.7em auto;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  .images {
+    display: flex;
+    flex: 1;
+
+    .card {
+      width: auto;
+      flex: 1;
+      display: flex;
+      align-items: flex-end;
+      margin-right: $gutter-width / 2;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      input {
+        display: none;
+      }
+
+      label.bg {
+        background: $legendary-background;
+        padding: $legendary-title-padding;
+        width: 100%;
+        font-size: 1.6rem;
+
+        .card-content {
+          font-size: 3.3rem;
+        }
+
+        .card-heading {
+          font-family: $big-noodle;
+          font-size: $legendary-title-size;
+          color: $legendary-title-color;
+        }
+
+        .card-copy {
+          font-size: $legendary-subtitle-size;
+          color: $legendary-subtitle-color;
+          text-transform: uppercase;
+          margin: 0;
+          line-height: 0.9;
+        }
+      }
+
+      input ~ label::before,
+      input ~ label::after {
+        content: "";
+        position: absolute;
+        left: $gutter-width / 2;
+        top: $gutter-width / 2;;
+        width: $item-checkbox-size;
+        height: $item-checkbox-size;
+      }
+
+      input ~ label::before {
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 0.2rem;
+      }
+
+      input ~ label::after {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto 60%;
+      }
+
+      input:checked ~ label::before {
+        background-color: $orange;
+        border: 0;
+      }
+
+      input:checked ~ label::after {
+        background-image: url('resources/icons/check.svg');
+        filter: brightness(5);
+      }
+    }
+  }
+}

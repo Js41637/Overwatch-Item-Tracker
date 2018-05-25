@@ -57,7 +57,8 @@
             font-size: 1.6rem;
             margin: 0;
             padding: 0.6rem 0;
-            text-shadow: -1px -1px 0 rgba(0,0,0,0.2), 1px -1px 0 rgba(0,0,0,0.2), -1px 1px 0 rgba(0,0,0,0.2), 1px 1px 0 rgba(0,0,0,0.2);
+
+            @include stroke(1px, rgba(0, 0, 0, 0.1));
           }
 
           .hero-progress-bar {

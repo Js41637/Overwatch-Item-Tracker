@@ -2,6 +2,10 @@
   top: 0;
 }
 
+label {
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -12,4 +16,24 @@ h6 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1;
+}
+
+$col-size: (sm, md, lg);
+$col-counts: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+
+%col-override {
+  padding-left: $gutter-width;
+  padding-right: $gutter-width;
+}
+
+@each $colname in $col-size {
+  @each $colnumber in $col-counts {
+    .col-#{$colname}-#{$colnumber} {
+      @extend %col-override;
+    }
+  }
+}
+
+.col-padding + .col-padding {
+  padding-left: 0;
 }

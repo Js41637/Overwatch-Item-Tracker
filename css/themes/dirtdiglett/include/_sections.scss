@@ -1,7 +1,17 @@
+%section-header-icon {
+  content: "";
+  display: inline-block;
+  height: 2.24rem;
+  min-width: 2.24rem;
+  margin-right: 1.12rem;
+  background: transparent no-repeat center/contain;
+}
+
 .section {
   background: $section-background;
   border-radius: 0.4rem;
   overflow: hidden;
+  color: $section-font-color;
 
   .section-header {
     display: flex;
@@ -21,6 +31,14 @@
       small {
         font-size: 16px;
         margin-left: 0.6rem;
+
+        &::before {
+          content: "(";
+        }
+
+        &::after {
+          content: ")";
+        }
       }
     }
 
@@ -42,6 +60,123 @@
     }
   }
 
+  @each $name, $alias-list in $item-types {
+    @each $alias in $alias-list {
+      &##{$alias} .section-header h2::before {
+        @extend %section-header-icon;
+
+        background-image: url('resources/icons/item-types/#{$name}.svg');
+      }
+    }
+  }
+
+  .section-content {
+    padding: 1.2em + $item-vertical-padding;
+    padding-bottom: 1.2em;
+  }
+
+  .item {
+    display: flex;
+    font-size: 1.6rem;
+    position: relative;
+    padding: $item-vertical-padding 0 $item-vertical-padding ($item-checkbox-size + ($item-vertical-padding * 2));
+    min-height: $item-checkbox-size + ($item-vertical-padding * 2);
+    align-items: center;
+
+    input {
+      display: none;
+    }
+
+    label {
+      line-height: 1;
+    }
+
+    h3,
+    h4 {
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: $item-title-size;
+      display: inline;
+
+      @each $quality, $color in $qualities {
+        @if ($quality != "common") {
+          &.#{$quality} {
+            color: $color;
+          }
+        }
+      }
+    }
+
+    h4 {
+      font-size: $item-subtitle-size;
+      color: lighten($section-font-color, 25%);
+    }
+
+    small {
+      font-size: 1em;
+      display: inline;
+    }
+
+    .color-cost {
+      color: $cost;
+    }
+
+    label.circle-checkbox {
+      width: $item-checkbox-size;
+      position: relative;
+      margin-right: $item-vertical-padding * 2;
+    }
+
+    input:first-child ~ label:last-child::before,
+    input:first-child ~ label:last-child::after,
+    label.circle-checkbox::before,
+    label.circle-checkbox::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: (($item-title-size + $item-subtitle-size - $item-checkbox-size) / 2) + $item-vertical-padding;
+      width: $item-checkbox-size;
+      height: $item-checkbox-size;
+    }
+
+    input:first-child ~ label:last-child::before,
+    label.circle-checkbox::before {
+      background-color: rgba(0, 0, 0, 0.15);
+      border-radius: 0.2rem;
+    }
+
+    label.circle-checkbox::before,
+    label.circle-checkbox::after {
+      top: ($item-title-size + $item-subtitle-size - $item-checkbox-size) / 2;
+    }
+
+    input:first-child ~ label:last-child::after,
+    input.circle-checkbox:checked ~ label.circle-checkbox::after {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto 60%;
+    }
+
+    input:first-child:checked ~ label:last-child::before,
+    input.circle-checkbox:checked ~ label.circle-checkbox::before {
+      background-color: $orange;
+      border: 0;
+    }
+
+    input:first-child:checked ~ label:last-child::after,
+    input.circle-checkbox:checked ~ label.circle-checkbox::after {
+      background-image: url('resources/icons/check.svg');
+      filter: brightness(5);
+    }
+
+    input:first-child:checked:disabled ~ label:last-child::before,
+    input.circle-checkbox:checked:disabled ~ label.circle-checkbox::after {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
   &:hover {
     .options {
       opacity: 1;
@@ -49,39 +184,29 @@
   }
 }
 
-
-%section-header-icon {
-  content: "";
-  display: inline-block;
-  height: 2.24rem;
-  min-width: 2.24rem;
-  margin-right: 1.12rem;
-  background: transparent no-repeat center/contain;
-}
-
-@each $name, $alias-list in $item-types {
-  @each $alias in $alias-list {
-    .section##{$alias} .section-header h2::before {
-      @extend %section-header-icon;
-
-      background-image: url('resources/icons/item-types/#{$name}.svg');
+#hero-container {
+  .section-content .item {
+    input:first-child ~ label:last-child::before,
+    input:first-child ~ label:last-child::after,
+    label.circle-checkbox::before,
+    label.circle-checkbox::after {
+      top: $item-vertical-padding;
     }
   }
 }
 
-
-
-/*
-Storing for later.
-#event-container .section .item input:first-child:checked ~ label:not(.circle-checkbox)::before
-
-#event-container .section .item label::before {
-    content: "";
-    width: 2em;
-    height: 2em;
-    position: absolute;
-    top: 5px;
-    left: 2px;
-    background: red;
+.new {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  padding: 0.3rem 0.5rem 0.2rem 0.5rem;
+  letter-spacing: 0.04rem;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.65);
+  border: 2px solid #e79b2a;
+  border-radius: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #ffe30b;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 1;
 }
-*/

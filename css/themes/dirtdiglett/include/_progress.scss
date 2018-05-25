@@ -8,8 +8,9 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   color: #fff;
-  text-shadow: 1px 1px 2px rgb(54, 54, 54);
   position: relative;
+
+  @include stroke(1px, rgba(0, 0, 0, 0.1));
 
   span {
     line-height: $progress-bar-height;
@@ -40,11 +41,12 @@
     font-size: 1.6rem;
     text-transform: uppercase;
     color: #fff;
-    text-shadow: 1px 1px 2px rgb(54, 54, 54);
     position: absolute;
     z-index: 1;
     line-height: $progress-bar-height;
     padding-left: $progress-bar-height / 4;
+
+    @include stroke(1px, rgba(0, 0, 0, 0.1));
   }
 }
 
@@ -53,7 +55,7 @@
   border-top-color: lighten(#fa9c1e, 10%);
 }
 
-@each $name, $color in $quality {
+@each $name, $color in $qualities {
   .progress-bar.#{$name} {
     @if $name == "common" {
       background-color: darken($color, 12%);

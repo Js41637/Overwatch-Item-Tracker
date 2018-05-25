@@ -8,7 +8,7 @@
   <legendary-skins></legendary-skins>
   <div id="icons" class="section">
     <section-header select-modal="selectModal" name="Player Icons" type="icons" totals="totals.icons"></section-header>
-    <div class="items flex-4">
+    <div class="section-content items flex-4">
       <div
         ng-repeat="item in ::data.items.icons track by $index"
         ng-init="type = 'icons'"
@@ -29,7 +29,7 @@
   </div>
   <div id="voicelines" class="section">
     <section-header select-modal="selectModal" name="Voicelines" type="voicelines" totals="totals.voicelines"></section-header>
-    <div class="items flex-3">
+    <div class="section-content items flex-3">
       <div
         ng-repeat="item in ::data.items.voicelines track by $index"
         ng-init="type = 'voicelines'"
@@ -53,7 +53,7 @@
 <div class="col-md-4 col-padding">
   <div id="skins" class="section">
     <section-header select-modal="selectModal" name="Skins" type="skins" totals="totals.skins"></section-header>
-    <div class="items flex-2">
+    <div class="section-content items flex-2">
       <div
         ng-repeat="item in ::data.items.skins track by $index"
         ng-init="type = 'skins'"
@@ -74,7 +74,7 @@
   </div>
   <div id="victoryposes" class="section">
     <section-header select-modal="selectModal" name="Victory Poses" type="poses" totals="totals.poses"></section-header>
-    <div class="items flex-2">
+    <div class="section-content items flex-2">
       <div
         ng-repeat="item in ::data.items.poses track by $index"
         ng-init="type = 'poses'"
@@ -95,7 +95,7 @@
   </div>
   <div id="emotes" class="section">
     <section-header select-modal="selectModal" name="Emotes" type="emotes" totals="totals.emotes"></section-header>
-    <div class="items flex-2">
+    <div class="section-content items flex-2">
       <div
         ng-repeat="item in ::data.items.emotes track by $index"
         ng-init="type = 'emotes'"
@@ -116,7 +116,7 @@
   </div>
   <div id="sprays" class="section">
     <section-header select-modal="selectModal" name="Sprays" type="sprays" totals="totals.sprays"></section-header>
-    <div class="items flex-2">
+    <div class="section-content items flex-2">
       <div
         ng-repeat="item in ::data.items.sprays track by $index"
         ng-init="type = 'sprays'"
