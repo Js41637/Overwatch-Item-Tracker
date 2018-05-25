@@ -197,7 +197,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             s_hero.totals.overall.total++;
             s_hero.totals[type].total++;
 
-            var quality = item.quality || 'common'
+            var quality = (type === 'icons' ? 'rare' : item.quality) || 'common'
             var eventType = (type === 'skins' && item.quality === 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
             var shouldCountItem = heroId !== 'all' || (heroId === 'all' && !item.hero)
             var shouldCountItemOrIcon = countIcons || type !== 'icons'
@@ -281,26 +281,29 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var price = DataService.prices[item.quality] * ((event && !service.oldEvents.includes(item.group)) ? 3 : 1);
       var isValid = shouldCalculateItemCost(item, event);
       var shouldCountItemOrIcon = countIcons || type !== 'icons'
+      var quality = (type === 'icons' ? 'rare' : item.quality) || 'common'
 
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
 
       if (shouldCountItemOrIcon) {
         service.heroes[hero].totals.overall.selected += val;
-        service.qualities[item.quality || 'common'].selected += val;
+        service.qualities[quality].selected += val;
 
         if (isSpecialItem) {
           service.heroes[hero].totals.overall.total += val
           service.heroes[hero].totals[type].total += val;
-          service.qualities[item.quality || 'common'].total += val;
+          service.qualities[quality].total += val;
         }
+      } else if (hero === 'all') {
+        service.heroes[hero].totals.overall.selected += val;
       }
 
-      if (item.hero !== 'all' && ((item.hero && hero === 'all') || (type === 'icons' && hero !== 'all') || (event && item.hero))) {
-        var _hero = hero !== 'all' ? 'all' : item.hero
+      if (type === 'icons' && (item.hero && item.hero !== 'all')) {
+        var _hero = event && hero !== 'all' ? 'all' : item.hero || 'all'
         service.heroes[_hero].totals[type].selected += val;
 
-        if (shouldCountItemOrIcon) {
+        if (shouldCountItemOrIcon || _hero === 'all') {
           service.heroes[_hero].totals.overall.selected += val;
 
           if (isSpecialItem) {
