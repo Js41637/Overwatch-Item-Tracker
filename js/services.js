@@ -191,7 +191,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             var isSelected = DataService.checked[item.hero || hero.id][type][item.id];
             var isSpecialItem = 'achievement' in item && item.achievement !== true && heroId !== 'all'
 
-            // Unselected special items (blizzard unlocks, origin skins, mercy bcf items) dont count unless unlocked
+            // Unselected special items (blizzard unlocks, origin skins, mercy bcrf items) dont count unless unlocked
             if (!isSelected && isSpecialItem) continue;
 
             s_hero.totals.overall.total++;
