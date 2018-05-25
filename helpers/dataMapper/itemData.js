@@ -59,8 +59,8 @@ const data = {
       sprays: ['gl-hf']
     },
     "world of warcraft": {
-      icons: ['for-the-alliance', 'for-the-horde', 'dark-lady', 'garrosh', 'jaina', 'lich-king', 'varian', 'you-are-not-prepared'],
-      sprays: ['you-are-not-prepared']
+      icons: ['kul-tiras', 'zandalar', 'for-the-alliance', 'for-the-horde', 'dark-lady', 'garrosh', 'jaina', 'lich-king', 'varian', 'you-are-not-prepared'],
+      sprays: ['you-are-not-prepared', 'anduin', 'jaina', 'sylvanas', 'varok']
     },
     hearthstone: {
       icons: ['hearthstone']
