@@ -18,10 +18,48 @@
       cursor: pointer;
       transition: transform 50ms;
       overflow: hidden;
-      background: url('../resources/body-bg.jpg') no-repeat center/cover;
+      width: 15%;
+      background: url('/resources/body-bg.jpg') no-repeat center/cover;
+
+      .block-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
 
       .bg {
         display: none;
+      }
+
+      .imgcont {
+        flex: 1;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 1px;
+          margin-left: -1px;
+          float: left;
+          height: 0;
+          padding-top: 9 / 16 * 100%;
+        }
+
+        .img {
+          background-size: auto 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        &::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
       }
 
       .text {
@@ -70,17 +108,10 @@
 
   .gallery.hero {
     .block {
-      height: auto;
-      //width: map-get(map-get($heroNav-blocks, hero), width);
       transform: skew(25rad);
-      height: auto;
       width: 8%; // This gives us a nice 3 line hero nav.
 
       .block-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
         .imgcont {
           flex: 1;
           position: relative;
@@ -126,12 +157,8 @@
 
     .block {
       .img {
-        width: map-get(map-get($heroNav-blocks, event), width);
-        height: map-get(map-get($heroNav-blocks, event), height);
-        margin: 0.8rem;
         background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
+        margin: 0.8em;
       }
     }
   }
@@ -144,6 +171,7 @@
     top: $gutter-width;
     left: $gutter-width;
     font-size: 0;
+    background: none;
 
     .bg {
       display: inline-block;
