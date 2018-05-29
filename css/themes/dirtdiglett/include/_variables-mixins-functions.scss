@@ -10,14 +10,70 @@ $z-index: (
 );
 
 $item-types: (
-  skins: (skins),
-  victoryposes: (victoryposes, poses),
-  emotes: (emotes),
-  icons: (icons),
-  voicelines: (voicelines),
-  sprays: (sprays),
-  intros: (intros),
-  weapons: (weapons)
+  skins: (
+    aliases: (skins),
+    preview: (
+      class: img,
+      width: 100px,
+      height: 100px
+    )
+  ),
+  victoryposes: (
+    aliases: (victoryposes, poses),
+    preview: (
+      class: img,
+      width: 100px,
+      height: 100px
+    )
+  ),
+  emotes: (
+    aliases: (emotes),
+    preview: (
+      class: video,
+      width: 100px,
+      height: 100px
+    )
+  ),
+  icons: (
+    aliases: (icons),
+    preview: (
+      class: img,
+      width: 256px,
+      height: 256px
+    )
+  ),
+  voicelines: (
+    aliases: (voicelines),
+    preview: (
+      class: audio,
+      width: 100px,
+      height: 100px
+    )
+  ),
+  sprays: (
+    aliases: (sprays),
+    preview: (
+      class: img,
+      width: 380px,
+      height: 380px
+    )
+  ),
+  intros: (
+    aliases: (intros),
+    preview: (
+      class: video,
+      width: 100px,
+      height: 100px
+    )
+  ),
+  weapons: (
+    aliases: (weapons),
+    preview: (
+      class: img,
+      width: 100px,
+      height: 100px
+    )
+  )
 );
 
 $body-width: 800px;

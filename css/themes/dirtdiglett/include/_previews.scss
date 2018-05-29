@@ -9,25 +9,31 @@
     background-color: red;
     text-transfor: uppercase;
   }
+
+  .preview {
+    background: url(resources/bg.png) no-repeat,transparent;
+    background-color: #293347;
+    background-position: top,center;
+    background-size: contain,cover;
+  }
 }
 
-#hero-container .tooltip .preview.img {
-  background: url(resources/bg.png);
-  background-size: cover;
-  background-position: center;
-  background-color: #293347;
-  background-repeat: no-repeat
+@each $name, $data in $item-types {
+  $previews: map-get($data, preview);
+  $aliases: map-get($data, aliases);
+
+  // TO DO: Change to only do this if there is an override size, otherwise set a default.
+  @each $alias in $aliases {
+    ##{$alias} .tooltip .preview.#{map-get($previews, class)} {
+      width: map-get($previews, width);
+      height: map-get($previews, height);
+    }
+  }
 }
 
-#hero-container #icons .tooltip .preview.img {
-  width: 256px;
-  height: 256px
-}
 
-#hero-container #sprays .tooltip .preview.img {
-  width: 380px;
-  height: 380px
-}
+
+
 
 #hero-container .item[event=SUMMER_GAMES]+.tooltip .preview.img {
   background: url(resources/SUMMER_GAMES/icon-bg.png) no-repeat,url(resources/SUMMER_GAMES/preview-bg.png);

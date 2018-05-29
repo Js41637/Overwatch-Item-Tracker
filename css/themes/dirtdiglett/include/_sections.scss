@@ -67,8 +67,8 @@
     }
   }
 
-  @each $name, $alias-list in $item-types {
-    @each $alias in $alias-list {
+  @each $name, $data in $item-types {
+    @each $alias in map-get($data, aliases) {
       &##{$alias} .section-header h2::before {
         @extend %section-header-icon;
 
