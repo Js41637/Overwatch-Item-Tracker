@@ -69,10 +69,10 @@
         h2 {
           font-family: $big-noodle;
           color: $herogrey;
-          font-size: 1.8rem;
           margin: 0;
           text-transform: uppercase;
-          padding: 0.6rem 0;
+          padding: .3em 0;
+          font-size: 1.25vw;
         }
 
         .progresscont {
@@ -83,9 +83,9 @@
           h3 {
             font-family: $base-font-family;
             text-align: center;
-            font-size: 1.6rem;
+            font-size: 0.8vw;
             margin: 0;
-            padding: 0.6rem 0;
+            padding: 0.3em 0;
 
             @include stroke(1px, 0, rgba(0, 0, 0, 0.1));
           }
@@ -108,8 +108,8 @@
 
   .gallery.hero {
     .block {
-      transform: skew(25rad);
-      width: 8%; // This gives us a nice 3 line hero nav.
+      transform: skew(-10deg);
+      width: 9%; // This gives us a nice 3 line hero nav same as in-game
 
       .block-content {
         .imgcont {
@@ -129,9 +129,9 @@
             background-size: auto 100%;
             background-position: center;
             background-repeat: no-repeat;
-            transform: skew(-25rad);
+            transform: skew(10deg);
             position: absolute;
-            top: 0;
+            top: -9%;
             left: -9%;
             right: -9%;
             bottom: -9%;
@@ -147,7 +147,7 @@
       }
 
       .progresscont h3 {
-        transform: skew(-25rad);
+        transform: skew(10deg);
       }
     }
   }
