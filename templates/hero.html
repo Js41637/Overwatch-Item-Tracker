@@ -17,46 +17,54 @@
         <div class="btn btn-default" uib-dropdown-toggle uib-tooltip="Filter Items" tooltip-append-to-body="true">
           Filter <span class="caret"></span>
         </div>
-        <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
+        <ul class="dropdown-menu dropdown-menu-right filters" uib-dropdown-menu>
           <li>
             <div>
-              <label for="filterSelected">Selected <input id="filterSelected" type="checkbox" ng-change="hero.filters.unselected = false;hero.updateFilters()" ng-model="hero.filters.selected" ng-disabled="hero.totals.overall.selected == 0 && !hero.filtering"></label>
+              <input id="filterSelected" type="checkbox" ng-change="hero.filters.unselected = false;hero.updateFilters()" ng-model="hero.filters.selected" ng-disabled="hero.totals.overall.selected == 0 && !hero.filtering">
+              <label for="filterSelected">Selected</label>
             </div>
           </li>
           <li>
             <div>
-              <label for="filterUnselected">UnSelected <input id="filterUnselected" type="checkbox" ng-change="hero.filters.selected = false;hero.updateFilters()" ng-model="hero.filters.unselected" ng-disabled="hero.totals.overall.selected == 0 && !hero.filtering"></label>
+              <input id="filterUnselected" type="checkbox" ng-change="hero.filters.selected = false;hero.updateFilters()" ng-model="hero.filters.unselected" ng-disabled="hero.totals.overall.selected == 0 && !hero.filtering">
+              <label for="filterUnselected">UnSelected</label>
             </div>
           </li>
           </li>
           <li class="divider"></li>
           <li>
             <div>
-              <label for="achievementf">Achievement/Special <input id="achievementf" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.achievement"></label>
+              <input id="achievementf" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.achievement">
+              <label for="achievementf">Achievement/Special</label>
             </div>
           </li>
           <li>
             <div>
-              <label for="regularItems">Regular Items <input id="regularItems" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.regularItems"></label>
+              <input id="regularItems" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.regularItems">
+              <label for="regularItems">Regular hero-items</label>
             </div>
           </li>
           <li>
             <div ng-show="hero.id == 'all'">
-              <label for="herof">Hero Icons <input id="herof" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.hero"></label>
+              <input id="herof" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.hero">
+              <label for="herof">Hero Icons</label>
             </div>
           </li>
           <li class="divider" ng-show="hero.hasGroups"></li>
           <li ng-repeat="(group, val) in ::hero.groups track by $index">
             <div>
-              <label for="{{::group}}">{{::group}} <input id="{{::group}}" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.groups[group]"></label>
+              <input id="{{::group}}" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.groups[group]">
+              <label for="{{::group}}">{{::group}}</label>
             </div>
           </li>
           <li class="divider" ng-show="hero.hasEvents"></li>
-          <li ng-repeat="event in ::$ctrl.events track by $index" ng-hide="!hero.events[event.id]">
-            <div>
-              <label for="{{::event.id}}">{{::event.name}} <input id="{{::event.id}}" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.events[event.id]"></label>
+          <li ng-repeat="event in ::$ctrl.events track by $index" ng-hide="!hero.events[event.id]" class="events">
+            <div event="{{::event.id}}">
+              <input id="{{::event.id}}" type="checkbox" ng-change="hero.updateFilters()" ng-model="hero.filters.events[event.id]">
+              <label for="{{::event.id}}">{{::event.name}}</label>
             </div>
           </li>
+          <li class="divider"></li>
           <li class="save-filters" ng-hide="hero.id === 'all'">
             <button class="btn btn-primary" uib-tooltip="Saving filters will make it so filters are preserved when you switch pages" ng-click="hero.saveFilters()" tooltip-append-to-body="true">
               Save
@@ -64,7 +72,7 @@
           </li>
         </ul>
       </div>
-      <div class="toggle-grid btn btn-default" uib-tooltip="Toggle Grid View" ng-click="hero.toggleGrid()" tooltip-append-to-body="true">Toggle Grid</div>
+      <div class="toggle-grid btn btn-default" uib-tooltip="Toggle Grid View" ng-click="hero.toggleGrid()" tooltip-append-to-body="true"  ng-hide="hero.id !== 'all'">Toggle Grid</div>
       <div class="select-all btn btn-default" uib-tooltip="Select all items currently in view" ng-click="hero.selectModal(false, 'select')" tooltip-append-to-body="true">Select All</div>
       <div class="select-all btn btn-default" uib-tooltip="Unselect all items currently in view" ng-click="hero.selectModal(false, 'unselect')" tooltip-append-to-body="true">Unselect All</div>
     </div>

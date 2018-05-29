@@ -1310,6 +1310,8 @@ input.circle-checkbox:checked+label {
   font-weight: 400;
   line-height: 1.42857143;
   white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
 }
 
 .options .dropdown-menu li > div:hover  {
