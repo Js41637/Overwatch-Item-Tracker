@@ -1,0 +1,143 @@
+.section .tooltip {
+  &.in {
+    opacity: 1;
+  }
+
+  .tooltip-inner {
+    max-width: none;
+    padding: 1rem;
+    background-color: red;
+    text-transfor: uppercase;
+  }
+}
+
+#hero-container .tooltip .preview.img {
+  background: url(resources/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #293347;
+  background-repeat: no-repeat
+}
+
+#hero-container #icons .tooltip .preview.img {
+  width: 256px;
+  height: 256px
+}
+
+#hero-container #sprays .tooltip .preview.img {
+  width: 380px;
+  height: 380px
+}
+
+#hero-container .item[event=SUMMER_GAMES]+.tooltip .preview.img {
+  background: url(resources/SUMMER_GAMES/icon-bg.png) no-repeat,url(resources/SUMMER_GAMES/preview-bg.png);
+  background-position: top,center;
+  background-size: contain,cover
+}
+
+#hero-container .item[event=HALLOWEEN]+.tooltip .preview.img {
+  background: url(resources/HALLOWEEN/icon-bg.png) no-repeat,url(resources/HALLOWEEN/preview-bg.png);
+  background-position: top,center;
+  background-size: contain,cover
+}
+
+#hero-container .item[event=WINTER_WONDERLAND]+.tooltip .preview.img {
+  background: url(resources/WINTER_WONDERLAND/icon-bg.png) no-repeat,url(resources/WINTER_WONDERLAND/preview-bg.png);
+  background-position: top,center;
+  background-size: contain,cover
+}
+
+#hero-container .item[event=LUNAR_NEW_YEAR]+.tooltip .preview.img {
+  background: url(resources/LUNAR_NEW_YEAR/icon-bg.png) no-repeat,url(resources/LUNAR_NEW_YEAR/preview-bg.png);
+  background-position: top,center;
+  background-size: contain,cover
+}
+
+#hero-container .item[event=UPRISING]+.tooltip .preview.imgm {
+  background: url(resources/UPRISING/icon-bg.png) no-repeat,url(resources/UPRISING/preview-bg.png);
+  background-position: top,center;
+  background-size: contain,cover
+}
+
+#hero-container .item[event=ANNIVERSARY]+.tooltip .preview.img {
+  background: url(resources/ANNIVERSARY/icon-bg.png) no-repeat,url(resources/ANNIVERSARY/preview-bg.png);
+  background-position: top,center;
+  background-size: contain,cover
+}
+
+#hero-container .section .tooltip .preview.img {
+  width: 450px;
+  height: 450px;
+  position: relative
+}
+
+#hero-container .section .tooltip .preview.img .i {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3px
+}
+
+#hero-container .section .tooltip .preview.img .description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.2);
+  line-height: 1.2;
+  padding: 3px 4px;
+  text-transform: initial
+}
+
+#hero-container .section .tooltip .preview.video {
+  position: relative
+}
+
+#hero-container #intros .tooltip .preview.video {
+  width: 640px;
+  height: 360px
+}
+
+#hero-container #emotes .tooltip .preview.video {
+  width: 450px;
+  height: 450px
+}
+
+#hero-container .section .tooltip .preview.video video {
+  height: 100%;
+  width: 100%
+}
+
+#hero-container .section .tooltip.img-preview .tooltip-arrow {
+  border-top-color: #f0f0f0;
+  border-bottom-color: #f0f0f0
+}
+
+#hero-container .tooltip.bottom .tooltip-arrow,#hero-container .tooltip.bottom-left .tooltip-arrow,#hero-container .tooltip.bottom-right .tooltip-arrow {
+  border-width: 0 8px 8px
+}
+
+#hero-container .tooltip.top .tooltip-arrow {
+  border-width: 8px 8px 0;
+  border-top-color: #212121
+}
+
+#hero-container .tooltip.bottom {
+  margin-top: 0;
+  padding: 8px 0
+}
+
+#hero-container .tooltip {
+  pointer-events: none
+}
+
+#hero-container .tooltip.top {
+  padding: 8px 0
+}
+
+#hero-container .section .tooltip.img-preview .tooltip-inner {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+  padding: 4px
+}

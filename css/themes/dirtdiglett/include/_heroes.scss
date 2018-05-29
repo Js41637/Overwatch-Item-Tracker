@@ -45,7 +45,43 @@
     position: absolute;
     bottom: $progress-bar-height + $gutter-width;
     right: $gutter-width;
+
+    > .btn,
+    > .btn-group > .btn {
+      background: rgba(0, 0, 0, 0.6);
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      color: #fff;
+      border: 0;
+      border-radius: 0.4rem;
+    }
+
+    > .btn:hover,
+    > .btn:active,
+    > .btn-group > .btn:hover,
+    > .btn-group.open > .btn {
+      color: $grey;
+      background: #fff;
+      box-shadow: none;
+    }
   }
+
+  .currentFilter {
+    background: $orange;
+    position: absolute;
+    padding: 1rem 1.4rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    box-shadow: 0 3px 12px rgba(37, 37, 37, 0.2);
+    color: $grey;
+    bottom: -$progress-bar-height / 1.33;
+    padding-left: $gutter-width;
+  }
+}
+
+.hero-items {
+  column-gap: $gutter-width;
+  columns: 3;
 }
 
 // Generate hero-specific CSS

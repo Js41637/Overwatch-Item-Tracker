@@ -7,12 +7,18 @@
   background: transparent no-repeat center/contain;
 }
 
+%flex-items {
+  display: inline-flex;
+}
+
 .section {
   background: $section-background;
   border-radius: 0.4rem;
   overflow: hidden;
   color: $section-font-color;
   margin-bottom: $gutter-width;
+  page-break-inside: avoid;
+  break-inside: avoid;
 
   .section-header {
     display: flex;
@@ -72,18 +78,25 @@
   }
 
   .section-content {
-    padding: 1.2em + $item-vertical-padding;
-    padding-bottom: 1.2em;
+    padding: 1.2em;
   }
 
   .item {
-    display: flex;
+    display: inline-flex;
     font-size: 1.6rem;
     position: relative;
     padding-left: $item-checkbox-size + ($item-vertical-padding * 2);
-    min-height: $item-checkbox-size + ($item-vertical-padding * 2);
     align-items: center;
     justify-content: space-between;
+    margin: $item-padding;
+    width: 100%;
+    min-height: 1.5em;
+
+    // This overrules later loops that create multiple columns. If a filter is used that results in only one item in a multi-column section this forces it to be fullwidth.
+    &:only-of-type {
+      width: inherit !important;
+      display: flex !important;
+    }
 
     input {
       display: none;
@@ -91,8 +104,6 @@
 
     label {
       line-height: 1;
-      padding-top: $item-vertical-padding;
-      padding-bottom: $item-vertical-padding;
     }
 
     label:only-of-type,
@@ -148,7 +159,8 @@
       content: "";
       position: absolute;
       left: 0;
-      top: (($item-title-size + $item-subtitle-size - $item-checkbox-size) / 2) + $item-vertical-padding;
+      top: 50%;
+      transform: translateY(-50%);
       width: $item-checkbox-size;
       height: $item-checkbox-size;
     }
@@ -157,11 +169,6 @@
     label.circle-checkbox::before {
       background-color: rgba(0, 0, 0, 0.15);
       border-radius: 0.2rem;
-    }
-
-    label.circle-checkbox::before,
-    label.circle-checkbox::after {
-      top: 0;
     }
 
     input:first-child ~ label:last-child::after,
@@ -185,7 +192,7 @@
 
     input:first-child:checked:disabled ~ label:last-child::before,
     input.circle-checkbox:checked:disabled ~ label.circle-checkbox::after {
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: $section-header-background;
     }
 
     &[event]:not([event="none"])::after,
@@ -196,7 +203,8 @@
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      filter: brightness(0.75);
+      filter: brightness(0.55);
+      transform: translateZ(0); // This is needed to resolve a rendering bug, the icons would vanish sometimes without this due to the filter.
     }
 
     @each $attributevalue, $filename in $achievements {
@@ -217,23 +225,30 @@
       opacity: 1;
     }
   }
+
+  @for $i from 2 to 6 {
+    .flex-#{$i} .item {
+      @extend %flex-items;
+      $width: 100% / $i;
+
+      width: calc(#{$width} - 0.6em);
+    }
+  }
 }
 
 #hero-container {
-  .section-content .item {
-    input:first-child ~ label:last-child::before,
-    input:first-child ~ label:last-child::after,
-    label.circle-checkbox::before,
-    label.circle-checkbox::after {
-      top: $item-vertical-padding;
-    }
+  #sprays .item {
+    @extend %flex-items;
+
+    width: calc(50% - 0.6em);
   }
 }
 
 .new {
   position: absolute;
-  top: 0.4rem;
+  top: 50%;
   right: 0.4rem;
+  transform: translateY(-50%);
   padding: 0.3rem 0.5rem 0.2rem 0.5rem;
   letter-spacing: 0.04rem;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.65);

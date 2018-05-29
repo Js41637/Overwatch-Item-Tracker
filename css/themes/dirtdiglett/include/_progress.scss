@@ -10,7 +10,7 @@
   color: #fff;
   position: relative;
 
-  @include stroke(1px, rgba(0, 0, 0, 0.1));
+  @include stroke(1px, 0, rgba(0, 0, 0, 0.1));
 
   span {
     line-height: $progress-bar-height;
@@ -46,7 +46,7 @@
     line-height: $progress-bar-height;
     padding-left: $progress-bar-height / 4;
 
-    @include stroke(1px, rgba(0, 0, 0, 0.1));
+    @include stroke(1px, 0, rgba(0, 0, 0, 0.1));
   }
 }
 

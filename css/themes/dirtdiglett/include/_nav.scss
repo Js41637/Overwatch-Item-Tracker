@@ -87,7 +87,7 @@
             margin: 0;
             padding: 0.6rem 0;
 
-            @include stroke(1px, rgba(0, 0, 0, 0.1));
+            @include stroke(1px, 0, rgba(0, 0, 0, 0.1));
           }
 
           .hero-progress-bar {

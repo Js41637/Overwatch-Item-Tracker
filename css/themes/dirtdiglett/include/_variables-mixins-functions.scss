@@ -34,6 +34,8 @@ $page-header-height: 18rem;
 $total-header-height: $header-height + $page-header-height + $progress-bar-height;
 $page-title-font-size: 12rem;
 
+$preview-size: 45rem;
+
 $section-background: #f0edf2;
 $section-header-background: #c6cbde;
 $section-header-color: #405275;
@@ -49,7 +51,9 @@ $legendary-background: rgba($section-background, 0.9) !default;
 
 $item-title-size: 1em;
 $item-subtitle-size: $item-title-size * 0.875;
-$item-vertical-padding: 0.3em;
+$item-padding: 0.3em;
+$item-vertical-padding: $item-padding;
+$item-right-margin: (1.2em + $item-vertical-padding) / 2;
 $item-checkbox-size: ($item-title-size + $item-subtitle-size) * 0.6;
 
 $heroNav-blocks: (
@@ -69,6 +73,8 @@ $offwhite: #f0f0f0;
 $herogrey: #2d3446;
 $orange: #ffa500;
 $cost: #00db55;
+$grey: #212529;
+$blue: #007bff;
 
 $events-additional: (
   UPRISING: (
@@ -115,11 +121,10 @@ $heroes-additional: (
 }
 
 @mixin page-title($type: hero) {
-  text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
   font-family: $big-noodle;
 
   @include slidein;
-
+  @include stroke(1px, 2px, rgba(0,0,0,0.025), '0 0 25px rgba(0, 0, 0, 0.3)');
 
   @if $type == "hero" {
     font-size: $page-title-font-size;
@@ -137,14 +142,18 @@ $heroes-additional: (
   }
 }
 
-@mixin stroke($width, $color) {
+@mixin stroke($width: 1px, $blur: 0, $color: #000, $startingShadow: null) {
   $shadow: ();
 
+  @if $startingShadow != null {
+    $shadow: append($shadow, unquote($startingShadow), comma);
+  }
+
   @for $i from -$width through $width {
-    $shadow: append($shadow, #{$width} #{$i} $color, comma);
-    $shadow: append($shadow, #{-$width} #{$i} $color, comma);
-    $shadow: append($shadow, #{$i} #{$width} $color, comma);
-    $shadow: append($shadow, #{$i} #{-$width} $color, comma);
+    $shadow: append($shadow, #{$width} #{$i} $blur $color, comma);
+    $shadow: append($shadow, #{-$width} #{$i} $blur $color, comma);
+    $shadow: append($shadow, #{$i} #{$width} $blur $color, comma);
+    $shadow: append($shadow, #{$i} #{-$width} $blur $color, comma);
   }
 
   text-shadow: $shadow;
