@@ -19,6 +19,7 @@
   margin-bottom: $gutter-width;
   page-break-inside: avoid;
   break-inside: avoid;
+  box-shadow: 0 3px 12px rgba(37,37,37,.2);
 
   .section-header {
     display: flex;

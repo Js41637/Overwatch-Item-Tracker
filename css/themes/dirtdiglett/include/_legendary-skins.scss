@@ -6,6 +6,7 @@
   top: -$legendary-height - $gutter-width;
   background: none;
   border-radius: 0;
+  box-shadow: none;
 
   .inner {
     display: flex;
@@ -53,6 +54,7 @@
       background-size: cover;
       background-position: center;
       position: relative;
+      box-shadow: 0 3px 12px rgba(37,37,37,.2);
 
       &:last-child {
         margin-right: 0;
