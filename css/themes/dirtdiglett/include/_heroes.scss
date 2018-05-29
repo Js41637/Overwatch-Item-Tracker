@@ -48,12 +48,15 @@
 
     > .btn,
     > .btn-group > .btn {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.4);
       font-size: 1.4rem;
       text-transform: uppercase;
       color: #fff;
       border: 0;
       border-radius: 0.4rem;
+      padding: 0.9em 1.32em;
+      line-height: 1;
+      margin-left: 0.9rem;
     }
 
     > .btn:hover,
@@ -63,6 +66,15 @@
       color: $grey;
       background: #fff;
       box-shadow: none;
+    }
+
+    > .btn[uib-tooltip="Clear Filters"] {
+      background: rgba(255, 0, 0, 0.7);
+
+      &:hover {
+        color: #fff;
+        background: red;
+      }
     }
   }
 
