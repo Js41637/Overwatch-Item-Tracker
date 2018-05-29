@@ -187,6 +187,15 @@
   }
 }
 
-#home #hero-nav .block.home {
-  display: none;
+#home {
+  #hero-nav {
+    .block {
+      box-shadow: 0 3px 12px rgba(37,37,37,.2);
+    }
+
+    .block.home {
+      display: none;
+    }
+  }
 }
+
