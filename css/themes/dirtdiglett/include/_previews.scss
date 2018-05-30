@@ -148,16 +148,18 @@
     .description {
       position: absolute;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.4);
-      line-height: 1.2;
-      padding: 0.5em 1em;
+      background-color: rgba(red($header-background-color), green($header-background-color), blue($header-background-color), 0.5);
+      line-height: 1.4;
+      padding: 1em;
       font-family: $base-font-family;
       text-transform: uppercase;
       font-size: 1.4rem;
       text-align: left;
-      border-left: 3px solid rgba(255, 255, 255, 0.5);
+      border-left: 3px solid rgba(255, 255, 255, 0.3);
       margin: 2rem;
-      color: rgba(255,255,255,0.8);
+      color: #fff;
+
+
     }
   }
 }
