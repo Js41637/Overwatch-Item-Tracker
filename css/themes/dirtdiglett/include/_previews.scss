@@ -128,7 +128,7 @@
       bottom: 0;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.4);
-      line-height: 1;
+      line-height: 1.4;
       padding: 1em 1.2em;
     }
   }
@@ -148,6 +148,14 @@
     @each $alias in $aliases {
       ##{$alias} .tooltip .preview.#{map-get($preview-info, type)} {
         @extend %#{$name}-tooltip;
+      }
+    }
+  }
+
+  @if $name == "icons" {
+    @each $alias in $aliases {
+      ##{$alias} .tooltip .preview {
+        background: $offwhite;
       }
     }
   }
