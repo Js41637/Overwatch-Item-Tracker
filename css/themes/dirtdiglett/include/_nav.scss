@@ -13,10 +13,10 @@
     .block {
       position: relative;
       margin: 0.5rem;
-      border: 2px solid $offwhite;
+      border: 0.4em solid $offwhite;
       border-radius: 0.4rem;
       cursor: pointer;
-      transition: transform 50ms;
+      transition: transform 75ms;
       overflow: hidden;
       width: 15%;
       background: url('/resources/body-bg.jpg') no-repeat center/cover;
@@ -102,6 +102,9 @@
 
       &:hover {
         background: $orange !important;
+        transform: scale(1.1);
+        z-index: map-get($z-index, modal);
+        box-shadow: 0 3px 12px rgba(37, 37, 37, 0.4);
       }
     }
   }
@@ -149,6 +152,10 @@
       .progresscont h3 {
         transform: skew(10deg);
       }
+
+      &:hover {
+        transform: skew(-10deg) scale(1.1);
+      }
     }
   }
 
@@ -172,6 +179,7 @@
     left: $gutter-width;
     font-size: 0;
     background: none;
+    border-width: 0.3rem;
 
     .bg {
       display: inline-block;
