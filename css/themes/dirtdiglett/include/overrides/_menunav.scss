@@ -10,8 +10,10 @@
   }
 }
 
-@each $heroname, $data in map-remove($heroes, all) {
-  #hero-nav .block[href$="/#{$heroname}"] .img {
+$heroes-two: map-remove($heroes, all);
+
+@each $heroname, $data in $heroes-two {
+  #hero-nav .gallery.hero .block[href$="#{$heroname}"] .img {
     background-image: url('/resources/heroes/#{$heroname}/portrait.png') !important;
   }
 }
