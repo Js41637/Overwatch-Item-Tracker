@@ -23,7 +23,6 @@
   }
 }
 
-
 // Generate event-specific
 @each $eventname, $data in $events {
   $colors: map-get($data, 'colors');
@@ -39,32 +38,21 @@
     }
   }
 
-  .item[event="#{$eventname}"] + .tooltip .preview.img {
+  .item[event="#{$eventname}"] + .tooltip .preview.img,
+  body##{$eventname} .tooltip .preview.img {
     background-image:
       url('resources/#{$eventname}/icon-bg.png'),
       url('resources/#{$eventname}/preview-bg.png');
   }
-}
 
-
-// Specific event override
-#hero-nav .gallery.event .block[href$="/UPRISING"] .img,
-body#UPRISING .header-content::before {
-  background-image: url('/resources/updates/UPRISING/archives_logo.png') !important;
-}
-
-body#UPRISING {
-  .event-logo {
-    opacity: 0;
+  %preview-two-bgs {
+    background-size: contain,50% auto;
+    background-repeat: repeat-x;
+    background-position: left;
   }
 
-  .header-content::before {
-    content: "";
-    position: absolute;
-    height: 120px;
-    width: 397px;
-    background-repeat: no-repeat;
-    background-position: center;
+  body##{$eventname} .tooltip .preview.img.two {
+    @extend %preview-two-bgs;
   }
 }
 

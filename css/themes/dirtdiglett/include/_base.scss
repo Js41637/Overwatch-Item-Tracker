@@ -34,18 +34,31 @@ h1 {
 }
 
 #home home-progress-bars {
-  // TO DO: Swap this out for a button like the options on hero header.
   .view-more {
     cursor: pointer;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-transform: uppercase;
-    font-size: 1.5rem;
-    padding-top: 0.6rem;
+    font-size: 1.4rem;
+    padding: 0.6em 1em;
+    line-height: 1;
+    border-radius: 0.2rem;
+    border: 1px solid #fff;
+    margin-top: 0.4rem;
+
+    span {
+      top: 3px;
+      font-size: 1em;
+    }
 
     &.active span {
       transform: rotate(180deg);
+    }
+
+    &:hover {
+      background: #fff;
+      color: $grey;
     }
   }
 }

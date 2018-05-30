@@ -1,0 +1,13 @@
+body#all {
+  .hero-items {
+    columns: 2;
+  }
+
+  .hero-class {
+    display: none;
+  }
+
+  .section#icons .item {
+    width: calc(50% - 0.6em);
+  }
+}

@@ -1,0 +1,20 @@
+// Specific event override
+#hero-nav .gallery.event .block[href$="/UPRISING"] .img,
+body#UPRISING .header-content::before {
+  background-image: url('/resources/updates/UPRISING/archives_logo.png') !important;
+}
+
+body#UPRISING {
+  .event-logo {
+    opacity: 0;
+  }
+
+  .header-content::before {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 397px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

@@ -64,7 +64,7 @@
               <label for="{{::event.id}}">{{::event.name}}</label>
             </div>
           </li>
-          <li class="divider"></li>
+          <li class="divider" ng-hide="hero.id === 'all'"></li>
           <li class="save-filters" ng-hide="hero.id === 'all'">
             <button class="btn btn-primary" uib-tooltip="Saving filters will make it so filters are preserved when you switch pages" ng-click="hero.saveFilters()" tooltip-append-to-body="true">
               Save
@@ -87,9 +87,12 @@
       <div class="section-header">
         <h2>{{::type}} <small ng-show="hero.totals[type].total">{{hero.totals[type].selected}}/{{hero.totals[type].total}}</small></h2>
       </div>
-      <span
+      <div class="section-content">
+        <span
         class="item"
         ng-class="{selected: hero.isItemChecked(item, type) || item.standardItem}"
+        event="{{::item.event || 'none'}}"
+        achievement="{{::item.achievement || 'false'}}"
         uib-tooltip="{{::item.name}}{{::item.standardItem ? ' (Default)' : ''}}"
         tooltip-placement="top"
         ng-repeat="item in items track by item.id"
@@ -97,7 +100,9 @@
         ng-click="hero.selectItem(item, type)"
         lazy-background="{{$ctrl.getImageUrl(item.url)}}"
         no-loader="true">
-      </span>
+          <span class="glyphicon glyphicon-lock" ng-hide="hero.isItemChecked(item, type)"></span>
+        </span>
+      </div>
     </div>
   </div>
   <div class="hero-items angular-animate" ng-if="!hero.gridView">
@@ -119,6 +124,7 @@
       <div class="section-content">
         <span
         class="item {{::item.quality}}"
+        ng-class="{selected: hero.isItemChecked(item, type) || item.standardItem}"
         event="{{::item.event || 'none'}}"
         achievement="{{::item.achievement || 'false'}}"
         uib-tooltip-template="'imagePreviewTemplate.html'"
