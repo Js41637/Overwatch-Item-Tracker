@@ -1,0 +1,17 @@
+// Use the hero portrait instead.
+#hero-nav .gallery.hero .block .block-content .imgcont {
+  &::before {
+    padding-top: 110%;
+  }
+
+  .img {
+    background-size: cover;
+    top: 0;
+  }
+}
+
+@each $heroname, $data in map-remove($heroes, all) {
+  #hero-nav .block[href$="/#{$heroname}"] .img {
+    background-image: url('/resources/heroes/#{$heroname}/portrait.png') !important;
+  }
+}

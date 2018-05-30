@@ -194,7 +194,7 @@
   @if $name == "icons" {
     @each $alias in $aliases {
       ##{$alias} .tooltip .preview {
-        background: $offwhite;
+        border-radius: 0.3rem;
       }
     }
   }
