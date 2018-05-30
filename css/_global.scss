@@ -425,33 +425,19 @@ strong {
 .loader.small svg {
   height: 60px;
   width: 60px;
+  color: #556C82;
 }
 .loader svg path {
   transform-origin: center;
   -moz-transform-origin: center;
   -webkit-transform-origin: center;
   animation: Animasearch 2.8s ease-in-out infinite;
-}
-.loader svg path:nth-of-type(2) {
-  animation-delay: 0.2s;
-}
-.loader svg path:nth-of-type(3) {
-  animation-delay: 0.4s;
-}
-.loader svg path:nth-of-type(6) {
-  animation-delay: 0.6s;
-}
-.loader svg path:nth-of-type(7) {
-  animation-delay: 0.8s;
-}
-.loader svg path:nth-of-type(4) {
-  animation-delay: 1s;
-}
-.loader svg path:nth-of-type(5) {
-  animation-delay: 1.2s;
-}
-.loader svg path:nth-of-type(1) {
-  animation-delay: 1.4s;
+
+  @for $i from 1 through 7 {
+    path:nth-of-type(#{$i}) {
+      animation-delay: unquote(($i * 0.2) + 's');
+    }
+  }
 }
 @keyframes Animasearch {
   0% {
