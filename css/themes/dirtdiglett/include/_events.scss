@@ -46,7 +46,7 @@
   }
 
   %preview-two-bgs {
-    background-size: contain,50% auto;
+    background-size: contain, 50% auto;
     background-repeat: repeat-x;
     background-position: left;
   }
@@ -57,4 +57,4 @@
 }
 
 // Import it after to override defined properties above.
-@import "legendary-skins";
+@import "event__legendary-skins";
