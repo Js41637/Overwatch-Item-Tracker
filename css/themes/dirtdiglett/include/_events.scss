@@ -40,8 +40,8 @@
   }
 
   .item[event="#{$eventname}"] + .tooltip .preview.img {
-    background:
-      url('resources/#{$eventname}/icon-bg.png') no-repeat,
+    background-image:
+      url('resources/#{$eventname}/icon-bg.png'),
       url('resources/#{$eventname}/preview-bg.png');
   }
 }

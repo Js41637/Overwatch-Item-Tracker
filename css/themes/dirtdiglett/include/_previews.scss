@@ -1,149 +1,154 @@
 .section .tooltip {
+  margin: 0;
+
   &.in {
     opacity: 1;
   }
 
   .tooltip-inner {
     max-width: none;
-    padding: 1rem;
-    background-color: red;
-    text-transfor: uppercase;
+    padding: 0.4rem;
+    background: $offwhite;
+    box-shadow: 0 3px 12px rgba(37, 37, 37, 0.3);
+  }
+
+  &.top {
+    padding: 0;
+    padding-bottom: 2rem;
+
+    .tooltip-arrow {
+      bottom: 0;
+
+      &::after {
+        transform: translateX(-50%) translateY(-50%) rotate(135deg);
+      }
+    }
+  }
+
+  &.bottom {
+    padding: 0;
+    padding-top: 2rem;
+
+    .tooltip-arrow {
+      top: 0;
+
+      &::after {
+        transform: translateX(-50%) translateY(50%) rotate(135deg);
+      }
+    }
+  }
+
+  .tooltip-arrow {
+    width: 5rem;
+    height: 2rem;
+    position: absolute;
+    overflow: hidden;
+    border: 0;
+
+    &::after {
+     content: "";
+     position: absolute;
+     width: 2rem;
+     height: 2rem;
+     background: $offwhite;
+     top: 0;
+     left: 50%;
+     box-shadow: 0 0 12px rgba(37, 37, 37, 0.3);
+    }
   }
 
   .preview {
     background: url(resources/bg.png) no-repeat,transparent;
     background-color: #293347;
-    background-position: top,center;
-    background-size: contain,cover;
-  }
-}
+    background-position: top, center;
+    background-size: contain, cover;
+    position: relative;
 
-@each $name, $data in $item-types {
-  $previews: map-get($data, preview);
-  $aliases: map-get($data, aliases);
+    &.img {
+      width: $preview-img-width;
+      height: $preview-img-height;
+    }
 
-  // TO DO: Change to only do this if there is an override size, otherwise set a default.
-  @each $alias in $aliases {
-    ##{$alias} .tooltip .preview.#{map-get($previews, class)} {
-      width: map-get($previews, width);
-      height: map-get($previews, height);
+    &.video {
+      width: $preview-video-width;
+      height: $preview-video-height;
+
+      video {
+        height: 100%;
+        width: 100%
+      }
+    }
+
+    &.audio {
+      width: $preview-audio-width;
+      height: $preview-audio-height;
+      background: $offwhite;
+
+      .audio-player {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+      }
+
+      .icon {
+        font-size: 2.8rem;
+        padding: 0.6rem 1rem;
+        color: $grey;
+        display: inline-block;
+      }
+
+      .player {
+        border-radius: 0.2rem;
+        background: rgba(0, 0, 0, 0.15);
+        position: relative;
+        flex: 1;
+
+        .progress {
+          height: 100%;
+          margin: 0;
+          box-shadow: none;
+          background: orange;
+          border-radius: 0.2rem;
+          position: absolute;
+        }
+      }
+    }
+
+    .i {
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 3px
+    }
+
+    .description {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      line-height: 1;
+      padding: 1em 1.2em;
     }
   }
 }
 
+@each $name, $data in $item-types {
+  $preview-info: map-get($data, preview);
+  $aliases: map-get($data, aliases);
 
+  // Only override default if there is anything to override.
+  @if map-has-key($preview-info, width) and map-has-key($preview-info, height) {
+    %#{$name}-tooltip {
+      width: map-get($preview-info, width);
+      height: map-get($preview-info, height);
+    }
 
-
-
-#hero-container .item[event=SUMMER_GAMES]+.tooltip .preview.img {
-  background: url(resources/SUMMER_GAMES/icon-bg.png) no-repeat,url(resources/SUMMER_GAMES/preview-bg.png);
-  background-position: top,center;
-  background-size: contain,cover
-}
-
-#hero-container .item[event=HALLOWEEN]+.tooltip .preview.img {
-  background: url(resources/HALLOWEEN/icon-bg.png) no-repeat,url(resources/HALLOWEEN/preview-bg.png);
-  background-position: top,center;
-  background-size: contain,cover
-}
-
-#hero-container .item[event=WINTER_WONDERLAND]+.tooltip .preview.img {
-  background: url(resources/WINTER_WONDERLAND/icon-bg.png) no-repeat,url(resources/WINTER_WONDERLAND/preview-bg.png);
-  background-position: top,center;
-  background-size: contain,cover
-}
-
-#hero-container .item[event=LUNAR_NEW_YEAR]+.tooltip .preview.img {
-  background: url(resources/LUNAR_NEW_YEAR/icon-bg.png) no-repeat,url(resources/LUNAR_NEW_YEAR/preview-bg.png);
-  background-position: top,center;
-  background-size: contain,cover
-}
-
-#hero-container .item[event=UPRISING]+.tooltip .preview.imgm {
-  background: url(resources/UPRISING/icon-bg.png) no-repeat,url(resources/UPRISING/preview-bg.png);
-  background-position: top,center;
-  background-size: contain,cover
-}
-
-#hero-container .item[event=ANNIVERSARY]+.tooltip .preview.img {
-  background: url(resources/ANNIVERSARY/icon-bg.png) no-repeat,url(resources/ANNIVERSARY/preview-bg.png);
-  background-position: top,center;
-  background-size: contain,cover
-}
-
-#hero-container .section .tooltip .preview.img {
-  width: 450px;
-  height: 450px;
-  position: relative
-}
-
-#hero-container .section .tooltip .preview.img .i {
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 3px
-}
-
-#hero-container .section .tooltip .preview.img .description {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0,0,0,.2);
-  line-height: 1.2;
-  padding: 3px 4px;
-  text-transform: initial
-}
-
-#hero-container .section .tooltip .preview.video {
-  position: relative
-}
-
-#hero-container #intros .tooltip .preview.video {
-  width: 640px;
-  height: 360px
-}
-
-#hero-container #emotes .tooltip .preview.video {
-  width: 450px;
-  height: 450px
-}
-
-#hero-container .section .tooltip .preview.video video {
-  height: 100%;
-  width: 100%
-}
-
-#hero-container .section .tooltip.img-preview .tooltip-arrow {
-  border-top-color: #f0f0f0;
-  border-bottom-color: #f0f0f0
-}
-
-#hero-container .tooltip.bottom .tooltip-arrow,#hero-container .tooltip.bottom-left .tooltip-arrow,#hero-container .tooltip.bottom-right .tooltip-arrow {
-  border-width: 0 8px 8px
-}
-
-#hero-container .tooltip.top .tooltip-arrow {
-  border-width: 8px 8px 0;
-  border-top-color: #212121
-}
-
-#hero-container .tooltip.bottom {
-  margin-top: 0;
-  padding: 8px 0
-}
-
-#hero-container .tooltip {
-  pointer-events: none
-}
-
-#hero-container .tooltip.top {
-  padding: 8px 0
-}
-
-#hero-container .section .tooltip.img-preview .tooltip-inner {
-  background-color: #f0f0f0;
-  box-shadow: 0 4px 8px rgba(0,0,0,.2);
-  padding: 4px
+    @each $alias in $aliases {
+      ##{$alias} .tooltip .preview.#{map-get($preview-info, type)} {
+        @extend %#{$name}-tooltip;
+      }
+    }
+  }
 }

@@ -13,65 +13,55 @@ $item-types: (
   skins: (
     aliases: (skins),
     preview: (
-      class: img,
-      width: 100px,
-      height: 100px
+      type: img
     )
   ),
   victoryposes: (
     aliases: (victoryposes, poses),
     preview: (
-      class: img,
-      width: 100px,
-      height: 100px
+      type: img
     )
   ),
   emotes: (
     aliases: (emotes),
     preview: (
-      class: video,
-      width: 100px,
-      height: 100px
+      type: video,
+      width: 45rem,
+      height: 45rem
     )
   ),
   icons: (
     aliases: (icons),
     preview: (
-      class: img,
-      width: 256px,
-      height: 256px
+      type: img,
+      width: 25.6rem,
+      height: 25.6rem
     )
   ),
   voicelines: (
     aliases: (voicelines),
     preview: (
-      class: audio,
-      width: 100px,
-      height: 100px
+      type: audio
     )
   ),
   sprays: (
     aliases: (sprays),
     preview: (
-      class: img,
-      width: 380px,
-      height: 380px
+      type: img,
+      width: 38rem,
+      height: 38rem
     )
   ),
   intros: (
     aliases: (intros),
     preview: (
-      class: video,
-      width: 100px,
-      height: 100px
+      type: video
     )
   ),
   weapons: (
     aliases: (weapons),
     preview: (
-      class: img,
-      width: 100px,
-      height: 100px
+      type: img
     )
   )
 );
@@ -90,7 +80,13 @@ $page-header-height: 18rem;
 $total-header-height: $header-height + $page-header-height + $progress-bar-height;
 $page-title-font-size: 12rem;
 
-$preview-size: 45rem;
+// I'd use a map, but I can't do cheeky stuff with a map whilst defining it.
+$preview-img-width:45rem;
+$preview-img-height:45rem;
+$preview-video-width: 64rem;
+$preview-video-height: $preview-video-width * 0.5625;
+$preview-audio-width: 32rem;
+$preview-audio-height: auto;
 
 $section-background: #f0edf2;
 $section-header-background: #c6cbde;
