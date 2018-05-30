@@ -3,6 +3,7 @@
     background: transparent;
     padding: $gutter-width ($gutter-width - 0.48rem);
     box-shadow: none;
+    overflow: visible; // This is mandatory to avoid a visual glitch-out.
   }
 
   .section-header {
@@ -52,16 +53,19 @@
     .item {
       width: 15rem !important;
       height: 15rem;
-      background: rgba(0, 0, 0, 0.1) no-repeat center/contain;
+      background: rgba(0, 0, 0, 0.2) no-repeat center/contain;
+      border: 3px solid transparent;
 
       &:hover {
-        background: $blue no-repeat center/contain;
+        transform: none;
+        border-color: #15e8ff;
+        box-shadow: 0 0 4px rgba(21, 232, 255, 0.75), inset 0 0 4px rgba(21, 232, 255, 0.75);
       }
     }
   }
 
   .item {
-    opacity: 0.6;
+    opacity: 0.27; // 27% Opacity matches in-game.
     padding: 0;
     text-align: right;
     padding: 0.2rem;
@@ -108,3 +112,6 @@
     }
   }
 }
+
+
+// TO DO: Swap from flex to an auto grid instead!!
