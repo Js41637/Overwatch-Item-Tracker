@@ -11,7 +11,7 @@
     right: 0;
     display: flex;
     align-items: center;
-    background-color: rgba(30, 30, 30, 0.125);
+    background-color: rgba(30, 30, 30, 0.4);
     border-bottom-left-radius: 0.5rem;
     padding: 0 1rem;
     min-width: 11rem;
@@ -30,6 +30,8 @@
       letter-spacing: 0.3;
       color: $offwhite;
       text-shadow: rgba(255, 255, 255, 0.3) 0 0 0.8rem;
+
+      @include stroke(1px, 1px, rgba(0,0,0,0.025), '0 0 25px rgba(255, 255, 255, 0.3)');
     }
   }
 }
