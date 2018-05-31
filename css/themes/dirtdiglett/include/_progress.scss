@@ -4,7 +4,7 @@
   text-align: center;
   background: rgba(0, 0, 0, 0.4);
   height: $progress-bar-height;
-  font-family: $base-font-family;
+  font-family: $font__base;
   font-size: 1.6rem;
   text-transform: uppercase;
   color: #fff;
@@ -37,7 +37,7 @@
 .quality-bar {
   .title {
     height: $progress-bar-height;
-    font-family: $base-font-family;
+    font-family: $font__base;
     font-size: 1.6rem;
     text-transform: uppercase;
     color: #fff;

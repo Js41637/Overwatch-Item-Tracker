@@ -15,7 +15,7 @@
 
     h2 {
       font-size: 3.2rem;
-      font-family: $big-noodle;
+      font-family: $font__big-noodle;
       font-style: italic;
       color: #fff;
       border-bottom: 3px solid rgba(240, 237, 242, 0.3);
@@ -75,7 +75,7 @@
         }
 
         .card-heading {
-          font-family: $big-noodle;
+          font-family: $font__big-noodle;
           font-size: $legendary-title-size;
           color: $legendary-title-color;
         }

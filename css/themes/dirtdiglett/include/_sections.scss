@@ -12,10 +12,10 @@
 }
 
 .section {
-  background: $section-background;
+  background: $color__section-background;
   border-radius: 0.4rem;
   overflow: hidden;
-  color: $section-font-color;
+  color: $color__section-text;
   margin-bottom: $gutter-width;
   page-break-inside: avoid;
   break-inside: avoid;
@@ -25,8 +25,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: $section-header-background;
-    color: $section-header-color;
+    background: $color__section-header-background;
+    color: $color__section-header-text;
     padding: 1.2rem;
     padding-left: (1.2rem / 2) + 1.2rem;
 
@@ -99,6 +99,24 @@
       display: flex !important;
     }
 
+    &.golden {
+      .color-cost {
+        &::before {
+          content: "";
+          width: 1em;
+          height: 1em;
+          background: url("/resources/icons/competitive-points.svg") no-repeat left center/contain;
+          display: inline-block;
+          vertical-align: text-bottom;
+        }
+
+        &::after {
+          content: "3000";
+          color: $overwatch-competitive--accent;
+        }
+      }
+    }
+
     input {
       display: none;
     }
@@ -123,7 +141,7 @@
       display: inline;
 
       @each $quality, $color in $qualities {
-        @if ($quality != "common") {
+        @if ($quality != "common" and $quality != "golden") {
           &.#{$quality} {
             color: $color;
           }
@@ -133,7 +151,7 @@
 
     h4 {
       font-size: $item-subtitle-size;
-      color: lighten($section-font-color, 25%);
+      color: lighten($color__section-text, 25%);
     }
 
     small {
@@ -193,14 +211,14 @@
 
     input:first-child:checked:disabled ~ label:last-child::before,
     input.circle-checkbox:checked:disabled ~ label.circle-checkbox::after {
-      background-color: $section-header-background;
+      background-color: $color__section-header-background;
     }
 
     &[event]:not([event="none"])::after,
     &[achievement]:not([achievement="false"])::before {
       content: "";
-      width: 1.5em;
-      height: 1.5em;
+      width: 1.25em;
+      height: 1.25em;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;

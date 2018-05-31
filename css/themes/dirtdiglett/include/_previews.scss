@@ -89,8 +89,8 @@
     }
 
     &.img.two {
-      width: $preview-img-width * 2;
-      height: $preview-img-height;
+      width: calc(#{$preview-img-two-width} + 0.2rem);
+      height: $preview-img-height * ($preview-img-two-modifier / 2);
       display: flex;
 
       .i:first-child {
@@ -148,18 +148,16 @@
     .description {
       position: absolute;
       bottom: 0;
-      background-color: rgba(red($header-background-color), green($header-background-color), blue($header-background-color), 0.5);
+      background-color: rgba($overwatch-blue--primary, 0.5);
       line-height: 1.4;
       padding: 1em;
-      font-family: $base-font-family;
+      font-family: $font__base;
       text-transform: uppercase;
       font-size: 1.4rem;
       text-align: left;
       border-left: 3px solid rgba(255, 255, 255, 0.3);
       margin: 2rem;
       color: #fff;
-
-
     }
   }
 }
@@ -170,14 +168,16 @@
 
   // Only override default if there is anything to override.
   @if map-has-key($preview-info, width) and map-has-key($preview-info, height) {
+    $two-width: map-get($preview-info, width) * $preview-img-two-modifier;
+
     %#{$name}-tooltip {
       width: map-get($preview-info, width);
       height: map-get($preview-info, height);
     }
 
     %#{$name}-tooltip-two {
-      width: map-get($preview-info, width) * 2;
-      height: map-get($preview-info, height);
+      width: calc(#{$two-width} + 0.2rem);
+      height: map-get($preview-info, height) * ($preview-img-two-modifier / 2);
     }
 
     @each $alias in $aliases {

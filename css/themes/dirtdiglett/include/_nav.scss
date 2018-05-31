@@ -67,11 +67,11 @@
         text-align: center;
 
         h2 {
-          font-family: $big-noodle;
+          font-family: $font__big-noodle;
           color: $herogrey;
           margin: 0;
           text-transform: uppercase;
-          padding: .3em 0;
+          padding: 0.3em 0;
           font-size: 1.25vw;
         }
 
@@ -81,7 +81,7 @@
           z-index: 1;
 
           h3 {
-            font-family: $base-font-family;
+            font-family: $font__base;
             text-align: center;
             font-size: 0.8vw;
             margin: 0;
@@ -198,7 +198,7 @@
 #home {
   #hero-nav {
     .block {
-      box-shadow: 0 3px 12px rgba(37,37,37,.2);
+      box-shadow: 0 3px 12px rgba(37, 37, 37, 0.2);
     }
 
     .block.home {

@@ -26,7 +26,7 @@
     span {
       margin-left: 0.5rem;
       font-size: $credit-remaining-font-size;
-      font-family: $big-noodle;
+      font-family: $font__big-noodle;
       letter-spacing: 0.3;
       color: $offwhite;
       text-shadow: rgba(255, 255, 255, 0.3) 0 0 0.8rem;
@@ -41,7 +41,7 @@
 
   table tr {
     td {
-      font-family: $monospace-font-family;
+      font-family: $font__monospace;
       font-weight: bold;
       text-align: right;
 

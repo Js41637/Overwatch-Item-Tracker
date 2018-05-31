@@ -1,14 +1,14 @@
 .modal {
   color: rgb(60, 60, 60);
   font-size: 1.4rem;
-  font-family: $sans-serif-font-family;
+  font-family: $font__sans-serif;
 }
 
 .modal-header {
-  background-color: $section-header-background;
+  background-color: $color__section-header-background;
   border-bottom: 0;
   text-transform: uppercase;
-  font-family: $base-font-family;
+  font-family: $font__base;
   line-height: 1;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@
 
     h3 {
       text-transform: uppercase;
-      font-family: $base-font-family;
+      font-family: $font__base;
     }
   }
 
@@ -97,7 +97,7 @@
 
       h3 {
         text-transform: uppercase;
-        font-family: $base-font-family;
+        font-family: $font__base;
       }
 
       .madeBy {
