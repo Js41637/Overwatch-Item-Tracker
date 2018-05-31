@@ -1,0 +1,135 @@
+// TO DO
+$hero-icon-size: (
+  width: 112px,
+  height: 100px
+);
+
+$z-index: (
+  modal: 1000,
+  credits: 10,
+  content: 0
+);
+
+$item-types: (
+  skins: (
+    aliases: (skins),
+    preview: (
+      type: img
+    )
+  ),
+  victoryposes: (
+    aliases: (victoryposes, poses),
+    preview: (
+      type: img
+    )
+  ),
+  emotes: (
+    aliases: (emotes),
+    preview: (
+      type: video,
+      width: 45rem,
+      height: 45rem
+    )
+  ),
+  icons: (
+    aliases: (icons),
+    preview: (
+      type: img,
+      width: 25.6rem,
+      height: 25.6rem
+    )
+  ),
+  voicelines: (
+    aliases: (voicelines),
+    preview: (
+      type: audio
+    )
+  ),
+  sprays: (
+    aliases: (sprays),
+    preview: (
+      type: img,
+      width: 38rem,
+      height: 38rem
+    )
+  ),
+  intros: (
+    aliases: (intros),
+    preview: (
+      type: video
+    )
+  ),
+  weapons: (
+    aliases: (weapons),
+    preview: (
+      type: img
+    )
+  )
+);
+
+$body-width: 800px;
+
+$header-height: 4.5rem;
+$gutter-width: 1.8rem;
+$credit-container-height: 5.5rem;
+$progress-bar-height: 3.6rem;
+$page-header-height: 18rem;
+$total-header-height: $header-height + $page-header-height + $progress-bar-height;
+$page-title-font-size: 12rem;
+
+// I'd use a map, but I can't do cheeky stuff with a map whilst defining it.
+$preview-img-width: 45rem;
+$preview-img-height: 45rem;
+$preview-img-two-modifier: 1.5;
+$preview-img-two-width: $preview-img-width * $preview-img-two-modifier;
+$preview-video-width: 64rem;
+$preview-video-height: $preview-video-width * 0.5625;
+$preview-audio-width: 32rem;
+$preview-audio-height: auto;
+
+$legendary-height: 50rem;
+$legendary-title-size: 1em;
+$legendary-title-padding: 1.8rem;
+$legendary-subtitle-size: $legendary-title-size * 0.5;
+
+
+$item-title-size: 1em;
+$item-subtitle-size: $item-title-size * 0.875;
+$item-padding: 0.3em;
+$item-vertical-padding: $item-padding;
+$item-right-margin: (1.2em + $item-vertical-padding) / 2;
+$item-checkbox-size: ($item-title-size + $item-subtitle-size) * 0.6;
+
+$heroNav-blocks: (
+  hero: (
+    width: 84px,
+    height: 136px
+  ),
+  event: (
+    width: 16rem,
+    height: 11rem
+  )
+);
+
+$credit-remaining-font-size: 5.4rem;
+
+$events-additional: (
+  UPRISING: (
+    properties: (
+      background-position: center 18%
+    )
+  )
+);
+
+$heroes-additional: (
+  brigitte: (
+    properties: (
+      background-position: 0 14%
+    )
+  ),
+  genji: (
+    properties: (
+      background-position: 0 10%
+    )
+  )
+);

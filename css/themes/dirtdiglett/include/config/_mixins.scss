@@ -1,0 +1,48 @@
+
+// TO DO: Cleanup
+
+@mixin slidein($duration: 1s) {
+  animation-name: slideInX;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: $duration;
+}
+
+@mixin page-title($type: hero) {
+  font-family: $font__big-noodle;
+
+  @include slidein;
+  @include stroke(1px, 2px, rgba(0,0,0,0.025), '0 0 25px rgba(0, 0, 0, 0.3)');
+
+  @if $type == "hero" {
+    font-size: $page-title-font-size;
+  }
+}
+
+
+@mixin additionalProperties($map, $name) {
+  @if map-has-key($map, $name) and map-has-key(map-get($map, $name), properties) {
+    $properties: map-get(map-get($map, $name), properties);
+
+    @each $property, $value in $properties {
+      #{$property}: #{$value};
+    }
+  }
+}
+
+@mixin stroke($width: 1px, $blur: 0, $color: #000, $startingShadow: null) {
+  $shadow: ();
+
+  @if $startingShadow != null {
+    $shadow: append($shadow, unquote($startingShadow), comma);
+  }
+
+  @for $i from -$width through $width {
+    $shadow: append($shadow, #{$width} #{$i} $blur $color, comma);
+    $shadow: append($shadow, #{-$width} #{$i} $blur $color, comma);
+    $shadow: append($shadow, #{$i} #{$width} $blur $color, comma);
+    $shadow: append($shadow, #{$i} #{-$width} $blur $color, comma);
+  }
+
+  text-shadow: $shadow;
+}

@@ -1,10 +1,17 @@
 // Get data first
 @import "../../global/global";
+// Import all the variables, mixins, etc.
 @import
-  "include/variables-mixins-functions",
+  "include/config/colors",
+  "include/config/config",
+  "include/config/typography",
+  "include/config/functions",
+  "include/config/mixins"
+;
+@import
   "include/override-bootstrap",
   "include/animations",
-  "include/base",
+  "include/home",
   "include/header",
   "include/credits",
   "include/nav",
@@ -20,6 +27,19 @@
   "include/modals",
   "include/loader"
 ;
+
+body {
+  min-width: $body-width;
+  transition: opacity 100ms ease-in-out;
+  background: no-repeat left $total-header-height/cover #3e4f6f url('resources/bg.png');
+  font-family: $font__base;
+  color: $color__default-text;
+  font-size: 10px; // Define 1rem = 10px. Makes everything else easy and now a bootstrap upgrade won't make everything big...
+}
+
+h1 {
+  font-family: $font__big-noodle;
+}
 
 #home,
 #hero-container,

@@ -1,0 +1,63 @@
+// Solve for the 4th value (width:height = numerator:denominator)
+// @param Number width       Numerator from the left side of the equation
+// @param Number height      Denominator from the left side of the equation
+// @param Number numerator   Numerator from the right side of the equation
+// @param Number denominator Denominator from the right side of the equation
+// @param Boolean round      If the end result should be rounded.
+// @return Number
+//@function convert-maintaining-ratio($x1: false, $y1: false, $x2: false, $y2: false, $round: false) {
+@function convert-maintaining-ratio($width: false, $height: false, $numerator: false, $denominator: false, $round: false) {
+  @if $width != false and $height != false {
+    @if $numerator != false {
+      // We're determining the height.
+      $missingNumber: if($round, round($numerator / ($width / $height)), $numerator / ($width / $height));
+    } @elseif $denominator != false {
+      // We're determining the width.
+      $missingNumber: if($round, round($denominator / ($width / $height)), $denominator / ($width / $height));
+    } @else {
+      @warn "convert-maintaining-ratio() requires either $numerator or $denominator defined.";
+    }
+
+    @return $missingNumber;
+  } @else {
+    @warn "convert-maintaining-ratio() requires a $width and $height defined.";
+  }
+}
+
+// TO DO: Cleanup
+
+/// Given three values, calculate the ratio between a width:height and return a resized number based on the ratio between them.
+@function getaspectratiovalue($fullsizeKnownValueToConvert: 90px, $fullsizeKnownValue: 90px, $smallKnownValue: 90px) {
+  // Take any unit, strip it first, then reapply it afterwards.
+
+  // Width : Height = x : y
+
+  $ratio: $fullsizeKnownValue / $smallKnownValue;
+
+  @return round($fullsizeKnownValueToConvert / $ratio);
+}
+
+// Remove the unit of a length
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+/// Slightly lighten a color
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}

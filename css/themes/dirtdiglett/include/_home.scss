@@ -1,16 +1,3 @@
-body {
-  min-width: $body-width;
-  transition: opacity 100ms ease-in-out;
-  background: no-repeat left $total-header-height/cover #3e4f6f url('resources/bg.png');
-  font-family: $base-font-family;
-  color: #fff;
-  font-size: 1rem; // Inherits from bootstrap - Thus the default 1rem = 10px.
-}
-
-h1 {
-  font-family: $big-noodle;
-}
-
 // Emulating the behaviour and styling of the Hero/Event headers. Can't share the same styling due to markup differences.
 #home h1 {
   height: $page-header-height;

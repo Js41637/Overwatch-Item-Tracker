@@ -1,0 +1,57 @@
+// Used this lovely tool to get memorable names for the colors: http://chir.ag/projects/name-that-color/
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+
+$gallery: rgb(240, 240, 240); // $offwhite
+$ebony-clay: rgb(45, 52, 70); // $herogrey
+$shark: rgb(33, 37, 41); // $grey
+$azure-radiance: rgb(0, 123, 255); // $blue
+$athens-gray: rgb(240, 237, 242);
+$blue-haze: rgb(198, 203, 222);
+$east-bay: rgb(64, 82, 117);
+$scorpion: rgb(93, 90, 90);
+$malachite: rgb(0, 219, 85); // $cost
+
+// Overwatch-specific.
+$overwatch-blue--primary: rgb(40, 53, 79);
+
+$overwatch-orange--primary: rgb(255, 165, 0);
+$overwatch-orange--accent: lighten($overwatch-orange--primary, 12%);
+
+$overwatch-brightblue--primary: rgb(0, 165, 226);
+$overwatch-brightblue--accent: rgb(12, 189, 255);
+
+$overwatch-competitive--primary: rgb(116, 0, 178);
+$overwatch-competitive--accent: rgb(178, 0, 255);
+
+// Used on headings on the dark blue background.
+$overwatch-lightgrey--primary: rgb(246, 246, 246);
+
+
+// Define the colors used
+$color__default-text:                 $white !default;
+$color__header-background:            rgba($overwatch-blue--primary, 0.9) !default;
+$color__section-background:           $athens-gray !default;
+$color__section-header-background:    $blue-haze !default;
+$color__section-header-text:          $east-bay !default;
+$color__section-text:                 $scorpion !default;
+
+$color__section-header-text--special: $overwatch-lightgrey--primary !default; // $legendary-title-color
+$color__legendary-bottom-border:      rgba($overwatch-lightgrey--primary, 0.3) !default;
+$color__card-background:              rgba($athens-gray, 0.9) !default; // $legendary-background
+
+
+$color__item-cost:                    $malachite !default;
+
+// Colors to convert
+$offwhite: #f0f0f0;
+$herogrey: #2d3446;
+$orange: #ffa500;
+$cost: #00db55;
+$grey: #212529;
+$blue: #007bff;
+
+
+$legendary-title-color: $color__section-header-text !default;
+$legendary-subtitle-color: lighten($legendary-title-color, 20%) !default;
+$legendary-background: rgba($color__section-background, 0.9) !default;
