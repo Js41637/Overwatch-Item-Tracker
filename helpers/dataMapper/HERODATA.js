@@ -120,8 +120,8 @@ const data = {
     class: CLASSES.TANK,
     description: "Built from parts of one of Numbani's short-lived OR15 defense robots, Orisa is the city's newest protector, though she still has much to learn.",
     colors: {
-      "primary": "#dc9a00",
-      "highlight": "#ffb405"
+      primary: "#dc9a00",
+      highlight: "#ffb405"
     }
   },
   pharah: {
