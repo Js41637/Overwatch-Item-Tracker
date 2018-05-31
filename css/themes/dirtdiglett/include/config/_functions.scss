@@ -5,8 +5,7 @@
 // @param Number denominator Denominator from the right side of the equation
 // @param Boolean round      If the end result should be rounded.
 // @return Number
-//@function convert-maintaining-ratio($x1: false, $y1: false, $x2: false, $y2: false, $round: false) {
-@function convert-maintaining-ratio($width: false, $height: false, $numerator: false, $denominator: false, $round: false) {
+@function solve-ratio($width: false, $height: false, $numerator: false, $denominator: false, $round: false) {
   @if $width != false and $height != false {
     @if $numerator != false {
       // We're determining the height.
