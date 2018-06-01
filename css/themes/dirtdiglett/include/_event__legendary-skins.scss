@@ -56,6 +56,43 @@
       position: relative;
       box-shadow: 0 3px 12px rgba(37, 37, 37, 0.2);
 
+      &.selected {
+        &::before {
+          content: "";
+          border: 4px solid qualitycolor(legendary);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+
+        &::after {
+          content: "";
+          top: 0;
+          left: 0;
+          position: absolute;
+          width: 5rem;
+          height: 5rem;
+          background-image: linear-gradient(135deg, #ff9c00, #ff9c00 50%, rgba(255,156,0,0) 51%, rgba(255,156,0,0));
+        }
+
+        label.bg {
+          background: qualitycolor(legendary);
+
+          &::before,
+          &::after {
+            display: none;
+          }
+
+          .card-heading {
+            color: $white;
+          }
+
+          .card-copy {
+            color: rgba($white, 0.8);
+          }
+        }
+      }
+
       &:last-child {
         margin-right: 0;
       }
