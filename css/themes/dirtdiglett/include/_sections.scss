@@ -195,6 +195,13 @@
       border-radius: 0.2rem;
     }
 
+    &:hover {
+      input:first-child ~ label:last-child::before,
+      label.circle-checkbox::before {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+
     input:first-child ~ label:last-child::after,
     input.circle-checkbox:checked ~ label.circle-checkbox::after {
       background-repeat: no-repeat;
@@ -206,6 +213,13 @@
     input.circle-checkbox:checked ~ label.circle-checkbox::before {
       background-color: $orange;
       border: 0;
+    }
+
+    &:hover {
+      input:first-child:checked ~ label:last-child::before,
+      input.circle-checkbox:checked ~ label.circle-checkbox::before {
+        background-color: tint($orange, 26%);
+      }
     }
 
     input:first-child:checked ~ label:last-child::after,
