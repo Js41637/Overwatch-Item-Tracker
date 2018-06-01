@@ -1,5 +1,6 @@
 .section .tooltip {
-  margin: 0;
+  margin: 0.4rem;
+  pointer-events: none;
 
   &.fade {
     transition: opacity 125ms linear;
@@ -18,7 +19,8 @@
 
   &.top {
     padding: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 1.4rem;
+    margin-top: 0.8rem;
 
     .tooltip-arrow {
       bottom: 0;
@@ -31,7 +33,8 @@
 
   &.bottom {
     padding: 0;
-    padding-top: 2rem;
+    padding-top: 1.4rem;
+    margin-top: -0.8rem;
 
     .tooltip-arrow {
       top: 0;
@@ -43,22 +46,22 @@
   }
 
   .tooltip-arrow {
-    width: 5rem;
-    height: 2rem;
+    width: 3rem;
+    height: 1.4rem;
     position: absolute;
     overflow: hidden;
     border: 0;
-    margin-left: -2.5rem;
+    margin-left: -1.5rem;
 
     &::after {
       content: "";
       position: absolute;
-      width: 2rem;
-      height: 2rem;
+      width: 1.4rem;
+      height: 1.4rem;
       background: $offwhite;
       top: 0;
       left: 50%;
-      box-shadow: 0 0 12px rgba(37, 37, 37, 0.3);
+      box-shadow: 0 0 12px rgba(37, 37, 37, 0.18);
     }
   }
 
