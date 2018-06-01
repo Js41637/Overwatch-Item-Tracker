@@ -29,7 +29,7 @@ OWI.filter('itemPrice', function() {
     var prices = { common: 25, rare: 75, epic: 250, legendary: 1000 };
 
     if (quality && prices[quality]) {
-      return '(' + prices[quality] * (isEvent ? 3 : 1) + ')';
+      return prices[quality] * (isEvent ? 3 : 1);
     }
     return '';
   };
