@@ -90,7 +90,7 @@
     align-items: center;
     justify-content: space-between;
     margin: $item-padding;
-    width: 100%;
+    width: calc(100% - #{$item-padding * 2});
     min-height: 1.5em;
 
     // This overrules later loops that create multiple columns. If a filter is used that results in only one item in a multi-column section this forces it to be fullwidth.
