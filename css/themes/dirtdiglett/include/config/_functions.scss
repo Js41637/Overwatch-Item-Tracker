@@ -54,3 +54,14 @@
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }
+
+/// Return the color used for item qualities
+/// @param {Key} $name - the name, acting as a key in the map, to get the color for
+/// @return {Color}
+@function qualitycolor($name: 'common') {
+  @if map-has-key($qualities, $name) {
+    @return map-get($qualities, $name);
+  } @else {
+    @warn "No color found for the quality name: #{$name}";
+  }
+}
