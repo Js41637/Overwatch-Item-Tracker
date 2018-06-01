@@ -7,6 +7,7 @@
   background: none;
   border-radius: 0;
   box-shadow: none;
+  overflow: visible;
 
   .inner {
     display: flex;
@@ -55,6 +56,11 @@
       background-position: center;
       position: relative;
       box-shadow: 0 3px 12px rgba(37, 37, 37, 0.2);
+
+      &:hover {
+        outline: 0.4rem solid $white;
+        transform: scale(1.04);
+      }
 
       &.selected {
         &::before {
