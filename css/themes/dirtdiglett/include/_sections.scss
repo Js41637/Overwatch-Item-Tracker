@@ -99,6 +99,11 @@
       display: flex !important;
     }
 
+    &:hover {
+      background-color: rgba(198,203,222,.35);
+      outline: 0.45em solid rgba(198,203,222,.35); // Outline doesn't affect the box sizing like border, this allows it to cheekily overlap other elements without breaking anything.
+    }
+
     &.golden {
       .color-cost {
         &::before {
