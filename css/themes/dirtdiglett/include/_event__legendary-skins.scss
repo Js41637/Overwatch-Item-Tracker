@@ -1,9 +1,9 @@
 #legendary-skins {
   position: absolute;
   width: calc(100vw - 1.8rem * 3);
-  height: $legendary-height;
-  left: $gutter-width;
-  top: -$legendary-height - $gutter-width;
+  height: $size__legendary-section-height;
+  left: $size__gutter;
+  top: -$size__legendary-section-height - $size__gutter;
   background: none;
   border-radius: 0;
   box-shadow: none;
@@ -15,17 +15,11 @@
     height: 100%;
 
     h2 {
-      font-size: 3.2rem;
-      font-family: $font__big-noodle;
-      font-style: italic;
-      color: #fff;
-      border-bottom: 3px solid rgba(240, 237, 242, 0.3);
-      margin-bottom: 0.64rem;
-      padding: 0 0 0.64rem;
+      @include special-section-header();
 
       small {
-        font-size: 0.7em;
-        color: map-get($qualities, legendary);
+        font-size: 0.8em;
+        color: qualitycolor(legendary);
         margin-left: 0.4rem;
 
         &::before {
@@ -33,10 +27,7 @@
           display: inline-block;
           width: 0.75em;
           height: 0.7em;
-          background-image: url('/resources/icons/currency.svg');
-          background-size: 0.7em auto;
-          background-position: center;
-          background-repeat: no-repeat;
+          background: url('/resources/icons/currency.svg') no-repeat center/0.7em auto;
         }
       }
     }
@@ -51,15 +42,20 @@
       flex: 1;
       display: flex;
       align-items: flex-end;
-      margin-right: $gutter-width / 2;
+      margin-right: $size__gutter--sm;
       background-size: cover;
       background-position: center;
       position: relative;
-      box-shadow: 0 3px 12px rgba(37, 37, 37, 0.2);
+      transition: all 75ms;
+      cursor: pointer;
+
+      @include shadow(subtle);
 
       &:hover {
         outline: 0.4rem solid $white;
         transform: scale(1.04);
+
+        @include z-index(credits, -2);
       }
 
       &.selected {
@@ -76,9 +72,11 @@
           top: 0;
           left: 0;
           position: absolute;
-          width: 5rem;
-          height: 5rem;
-          background-image: linear-gradient(135deg, #ff9c00, #ff9c00 50%, rgba(255,156,0,0) 51%, rgba(255,156,0,0));
+          width: 6rem;
+          height: 6rem;
+          background:
+            url('resources/icons/check-circle.svg') no-repeat 20% 20%/2rem auto,
+            linear-gradient(135deg, qualitycolor(legendary), qualitycolor(legendary) 50%, rgba(qualitycolor(legendary), 0) 51%, rgba(qualitycolor(legendary), 0)) no-repeat top left/auto;
         }
 
         label.bg {
@@ -108,8 +106,8 @@
       }
 
       label.bg {
-        background: $legendary-background;
-        padding: $legendary-title-padding;
+        background: $color__card-background;
+        padding: $size__legendary-card-label-padding;
         width: 100%;
         font-size: 1.6rem;
 
@@ -118,14 +116,16 @@
         }
 
         .card-heading {
-          font-family: $font__big-noodle;
-          font-size: $legendary-title-size;
-          color: $legendary-title-color;
+          font-size: $font-size__legendary-card-title;
+          color: $color__card-title;
+
+          @include font(Big-Noodle);
+          @include skew-text();
         }
 
         .card-copy {
-          font-size: $legendary-subtitle-size;
-          color: $legendary-subtitle-color;
+          font-size: $font-size__legendary-card-subtitle;
+          color: $color__card-subtitle;
           text-transform: uppercase;
           margin: 0;
           line-height: 0.9;
@@ -136,14 +136,14 @@
       input ~ label::after {
         content: "";
         position: absolute;
-        left: $gutter-width / 2;
-        top: $gutter-width / 2;
-        width: $item-checkbox-size;
-        height: $item-checkbox-size;
+        left: $size__gutter--sm;
+        top: $size__gutter--sm;
+        width: $size__item-checkbox;
+        height: $size__item-checkbox;
       }
 
       input ~ label::before {
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba($white, 0.4);
         border-radius: 0.2rem;
       }
 
@@ -160,7 +160,6 @@
 
       input:checked ~ label::after {
         background-image: url('resources/icons/check.svg');
-        filter: brightness(5);
       }
     }
   }

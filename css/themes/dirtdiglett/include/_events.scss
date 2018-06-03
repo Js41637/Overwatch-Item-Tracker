@@ -1,12 +1,12 @@
 #event-header {
-  margin-bottom: $legendary-height + ($gutter-width * 2);
+  margin-bottom: $size__legendary-section-height + ($size__gutter * 2);
 }
 
 .header-content {
-  height: $page-header-height;
+  height: $size__header-height;
   position: absolute;
-  top: $header-height;
-  left: ($page-header-height - ($page-title-font-size - 1rem)) / 2; // Matches the hero one.
+  top: $size__navigation-height;
+  left: ($size__header-height - ($font__page-title--lg - 1rem)) / 2; // Matches the hero one.
   display: flex;
   align-items: center;
   margin-right: 11rem;
@@ -14,12 +14,17 @@
   @include page-title(event);
 
   .event-logo {
-    height: $page-title-font-size;
-    margin-right: ($page-header-height - ($page-title-font-size - 1rem)) / 2;
+    height: $font__page-title--lg;
+    margin-right: ($size__header-height - ($font__page-title--lg - 1rem)) / 2;
   }
 
   h2 {
-    font-size: $page-title-font-size * 0.4;
+    font-size: $font__page-title--lg * 0.4;
+    @include skew-text();
+  }
+
+  h3 {
+    @include font(Futura);
   }
 }
 

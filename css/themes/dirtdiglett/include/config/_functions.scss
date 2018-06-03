@@ -9,25 +9,18 @@
   @if $width != false and $height != false {
     @if $numerator != false {
       // We're determining the height.
-      $solved-number: if($round, round($numerator / ($width / $height)), $numerator / ($width / $height));
-    } @elseif $denominator != false {
+      @return if($round, round($numerator / ($width / $height)), $numerator / ($width / $height));
+    } @else if $denominator != false {
       // We're determining the width.
-      $solved-number: if($round, round($denominator / ($width / $height)), $denominator / ($width / $height));
+      @return if($round, round($denominator / ($width / $height)), $denominator / ($width / $height));
     } @else {
-      @warn "convert-maintaining-ratio() requires either $numerator or $denominator defined.";
+      @warn "solve-ratio() requires either $numerator or $denominator defined.";
     }
 
-    @return $solved-number;
+    //@return $solved-number;
   } @else {
-    @warn "convert-maintaining-ratio() requires a $width and $height defined.";
+    @warn "solve-ratio() requires a $width and $height defined.";
   }
-}
-
-// TO DO: remove this function everywhere without breaking shit.
-/// Given three values, calculate the ratio between a width:height and return a resized number based on the ratio between them.
-@function getaspectratiovalue($fullsizeKnownValueToConvert: 90px, $fullsizeKnownValue: 90px, $smallKnownValue: 90px) {
-  $ratio: $fullsizeKnownValue / $smallKnownValue;
-  @return round($fullsizeKnownValueToConvert / $ratio);
 }
 
 // Remove the unit of a length

@@ -1,10 +1,10 @@
-$EVENT_CUSTOM_RESOURCES: 'resources/LUNAR_NEW_YEAR/';
-$LUNAR_NEW_YEAR: map-get($events, LUNAR_NEW_YEAR);
+$EVENT_CUSTOM_RESOURCES: 'resources/HALLOWEEN/';
+$HALLOWEEN: map-get($events, HALLOWEEN);
 
-$primary-color: map-get(map-get($LUNAR_NEW_YEAR, colors), primary);
-$highlight-color: map-get(map-get($LUNAR_NEW_YEAR, colors), highlight);
+$primary-color: $shark;
+$highlight-color: lighten($shark, 16%);
 
-body#LUNAR_NEW_YEAR {
+body#HALLOWEEN {
   #header,
   #menuNav,
   #sidebar {
@@ -13,7 +13,7 @@ body#LUNAR_NEW_YEAR {
 
   #legendary-skins {
     .images .card {
-      filter: sepia(75%);
+      filter: grayscale(75%);
 
       &::before {
         content: "";

@@ -7,19 +7,16 @@
   background: transparent no-repeat center/contain;
 }
 
-%flex-items {
-  display: inline-flex;
-}
-
 .section {
   background: $color__section-background;
   border-radius: 0.4rem;
   overflow: hidden;
   color: $color__section-text;
-  margin-bottom: $gutter-width;
+  margin-bottom: $size__gutter;
   page-break-inside: avoid;
   break-inside: avoid;
-  box-shadow: 0 3px 12px rgba(37, 37, 37, 0.2);
+
+  @include shadow(subtle);
 
   .section-header {
     display: flex;
@@ -56,13 +53,13 @@
 
       .btn {
         padding: 0.6rem;
-        background: rgba(0, 0, 0, 0.1);
+        background: $color__section-header-option-background;
         font-size: 1.8rem;
-        color: #fff;
+        color: $color__section-header-option-text;
 
         &:hover {
-          color: #fff;
-          background: rgba(0, 0, 0, 0.2);
+          color: $color__section-header-option-text;
+          background: $color__section-header-option-hover-background;
         }
       }
     }
@@ -79,29 +76,25 @@
   }
 
   .section-content {
-    padding: 1.2em;
+    padding: $size__gutter;
+    display: grid;
+    grid-gap: $size__item-spacing;
+    grid-template-columns: 1fr;
   }
 
   .item {
-    display: inline-flex;
+    display: flex;
     font-size: 1.6rem;
     position: relative;
-    padding-left: $item-checkbox-size + ($item-vertical-padding * 2);
+    padding-left: $size__item-checkbox + 0.5em;
     align-items: center;
     justify-content: space-between;
-    margin: $item-padding;
-    width: calc(100% - #{$item-padding * 2});
     min-height: 1.5em;
 
     // This overrules later loops that create multiple columns. If a filter is used that results in only one item in a multi-column section this forces it to be fullwidth.
     &:only-of-type {
       width: inherit !important;
       display: flex !important;
-    }
-
-    &:hover {
-      background-color: rgba(198,203,222,.35);
-      outline: 0.45em solid rgba(198,203,222,.35); // Outline doesn't affect the box sizing like border, this allows it to cheekily overlap other elements without breaking anything.
     }
 
     &.golden {
@@ -128,6 +121,12 @@
 
     label {
       line-height: 1;
+      cursor: pointer;
+    }
+
+    input:first-child:checked:disabled ~ label:last-child,
+    input.circle-checkbox:checked:disabled ~ label.circle-checkbox {
+      cursor: default;
     }
 
     label:only-of-type,
@@ -142,7 +141,7 @@
     }
 
     h3 {
-      font-size: $item-title-size;
+      font-size: $font-size__item-title;
       display: inline;
 
       @each $quality, $color in $qualities {
@@ -155,8 +154,8 @@
     }
 
     h4 {
-      font-size: $item-subtitle-size;
-      color: lighten($color__section-text, 25%);
+      font-size: $font-size__item-subtitle;
+      color: $color__section-text--lighter;
     }
 
     small {
@@ -165,14 +164,14 @@
     }
 
     .color-cost {
-      color: $cost;
+      color: $color__item-cost;
     }
 
     label.circle-checkbox {
-      width: $item-checkbox-size;
-      height: $item-checkbox-size;
+      width: $size__item-checkbox;
+      height: $size__item-checkbox;
       position: relative;
-      margin-right: $item-vertical-padding * 2;
+      margin-right: 0.5em;
       order: -2;
     }
 
@@ -185,21 +184,14 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      width: $item-checkbox-size;
-      height: $item-checkbox-size;
+      width: $size__item-checkbox;
+      height: $size__item-checkbox;
     }
 
     input:first-child ~ label:last-child::before,
     label.circle-checkbox::before {
-      background-color: rgba(0, 0, 0, 0.15);
+      background-color: $color__checkbox--unchecked;
       border-radius: 0.2rem;
-    }
-
-    &:hover {
-      input:first-child ~ label:last-child::before,
-      label.circle-checkbox::before {
-        background-color: rgba(0, 0, 0, 0.2);
-      }
     }
 
     input:first-child ~ label:last-child::after,
@@ -211,26 +203,18 @@
 
     input:first-child:checked ~ label:last-child::before,
     input.circle-checkbox:checked ~ label.circle-checkbox::before {
-      background-color: $orange;
+      background-color: $color__checkbox--checked;
       border: 0;
-    }
-
-    &:hover {
-      input:first-child:checked ~ label:last-child::before,
-      input.circle-checkbox:checked ~ label.circle-checkbox::before {
-        background-color: tint($orange, 26%);
-      }
     }
 
     input:first-child:checked ~ label:last-child::after,
     input.circle-checkbox:checked ~ label.circle-checkbox::after {
       background-image: url('resources/icons/check.svg');
-      filter: brightness(5);
     }
 
     input:first-child:checked:disabled ~ label:last-child::before,
     input.circle-checkbox:checked:disabled ~ label.circle-checkbox::after {
-      background-color: $color__section-header-background;
+      background-color: $color__checkbox-disabled--checked;
     }
 
     &[event]:not([event="none"])::after,
@@ -256,6 +240,26 @@
         background-image: url("/resources/icons/#{$event}.svg");
       }
     }
+
+    &:hover {
+      background-color: $color__item-hover-background;
+      outline: 0.45em solid $color__item-hover-background; // Outline doesn't affect the box sizing like border, this allows it to cheekily overlap other elements without breaking anything.
+
+      input:first-child ~ label:last-child::before,
+      label.circle-checkbox::before {
+        background-color: $color__checkbox-hover--unchecked;
+      }
+
+      input:first-child:checked ~ label:last-child::before,
+      input.circle-checkbox:checked ~ label.circle-checkbox::before {
+        background-color: $color__checkbox-hover--checked;
+      }
+
+      input:first-child:checked:disabled ~ label:last-child::before,
+      input.circle-checkbox:checked:disabled ~ label.circle-checkbox::after {
+        background-color: $color__checkbox-disabled-hover--checked;
+      }
+    }
   }
 
   &:hover {
@@ -265,20 +269,23 @@
   }
 
   @for $i from 2 to 6 {
-    .flex-#{$i} .item {
-      @extend %flex-items;
-      $width: 100% / $i;
+    .flex-#{$i} {
+      // Prepare the number of columns
+      $columns: (1fr);
+      @for $j from 1 to $i {
+        $columns: append($columns, 1fr, space)
+      }
 
-      width: calc(#{$width} - 0.6em);
+      grid-template-columns: $columns;
     }
   }
 }
 
 #hero-container {
-  #sprays .item {
-    @extend %flex-items;
-
-    width: calc(50% - 0.6em);
+  #sprays {
+    .section-content {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 

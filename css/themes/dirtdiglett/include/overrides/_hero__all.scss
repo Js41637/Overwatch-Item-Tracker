@@ -7,7 +7,7 @@ body#all {
     display: none;
   }
 
-  .section#icons .item {
-    width: calc(50% - 0.6em);
+  .section#icons .section-content {
+    grid-template-columns: 1fr 1fr;
   }
 }

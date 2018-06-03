@@ -1,24 +1,110 @@
+@mixin z-index($arg1: null, $modifier: null) {
+  // If $arg1 is a number, don't look it up in the map and just return the output.
+  @if (type-of($arg1) == number) {
+    @if ($modifier != null) {
+      z-index: $arg1 + $modifier;
+    }
 
-// TO DO: Cleanup
+    @else {
+      z-index: $arg1;
+    }
+  }
 
-@mixin slidein($duration: 1s) {
-  animation-name: slideInX;
+  @elseif (type-of($arg1) == string) {
+    @if map-has-key($z-index, $arg1) {
+      @if $modifier != null {
+        z-index: map-get($z-index, $arg1) + $modifier;
+      }
+
+      @else {
+        z-index: map-get($z-index, $arg1);
+      }
+    }
+
+    @else {
+      @warn "Mixin z-index(): No key found for '#{$arg1}'";
+    }
+  }
+
+  @else {
+    @warn "Mixin z-index(): Invalid type for $arg1. Must be number or map key";
+  }
+}
+
+@mixin shadow($name: subtle) {
+  @if ($name == subtle) {
+    box-shadow: 0 0.3rem 1.2rem rgba($shark, 0.2);
+  }
+
+  @if ($name == galleryBlockHover) {
+    box-shadow: 1px 2px 3px rgba($shark, 0.5), 1px 2px 21px rgba($shark, 0.5);
+  }
+
+  @if ($name == tooltip) {
+    box-shadow: 0 3px 12px rgba($shark, 0.3);
+  }
+
+  @if ($name == tooltip-arrow) {
+    box-shadow: 0 0 12px rgba($shark, 0.18);
+  }
+}
+
+@mixin special-section-header() {
+  font-size: 3.2rem;
+  color: $color__section-header-text--special;
+  border-bottom: 6px solid $color__section-header-border--special;
+  margin-bottom: 1.2rem;
+  padding: 0 0 1.2rem;
+  @include font(Futura);
+}
+
+@mixin skew-text($existingTransform: null) {
+  $transform: ();
+
+  @if ($existingTransform != null) {
+    $transform: append($transform, $existingTransform);
+  }
+
+  $transform: append($transform, unquote('skew(' + $text-skew-angle + ')'), space);
+
+  transform: $transform;
+}
+
+@mixin slidein($duration: 1s, $skewed: null) {
+  $animation-name: slideInX;
+
+  @if ($skewed) {
+    $animation-name: slideInXskewed;
+  }
+
+  animation-name: $animation-name;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   animation-duration: $duration;
 }
 
-@mixin page-title($type: hero) {
-  font-family: $font__big-noodle;
-
-  @include slidein;
-  @include stroke(1px, 2px, rgba(0,0,0,0.025), '0 0 25px rgba(0, 0, 0, 0.3)');
-
-  @if $type == "hero" {
-    font-size: $page-title-font-size;
+@mixin font($type: Futura) {
+  @if ($type == Futura) {
+    font-family: $font__base;
+    text-transform: uppercase;
+  } @else if ($type == Big-Noodle) {
+    font-family: $font__big-noodle;
   }
 }
 
+@mixin page-title($type: null, $isSkewed: false) {
+  @include font(Big-Noodle);
+  @include slidein($skewed: $isSkewed);
+  text-shadow: unquote($overwatch-heading-text-shadow),  1px 2px 21px rgba(51, 51, 51, 0.5);
+
+  @if $isSkewed {
+    @include skew-text();
+  }
+
+  @if $type == "hero" {
+    font-size: $font__page-title--lg;
+  }
+}
 
 @mixin additionalProperties($map, $name) {
   @if map-has-key($map, $name) and map-has-key(map-get($map, $name), properties) {
@@ -30,7 +116,7 @@
   }
 }
 
-@mixin stroke($width: 1px, $blur: 0, $color: #000, $startingShadow: null) {
+@mixin stroke($width: 1px, $blur: 0, $color: $black, $startingShadow: null) {
   $shadow: ();
 
   @if $startingShadow != null {

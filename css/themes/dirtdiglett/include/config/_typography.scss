@@ -1,4 +1,17 @@
-$font__base:        Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font__sans-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font__big-noodle:  "Big Noodle Titling", Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font__monospace:   SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font__base:                                  Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font__sans-serif:                            -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font__big-noodle:                            "Big Noodle Titling", Futura, century gothic,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font__monospace:                             SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$font__define-1rem:                           10px; // Define 1rem = 10px. Makes everything else easy and now a bootstrap upgrade won't make everything big...
+
+$font__page-title--lg:                        round($size__header-height * 0.67);
+
+$font__credits-total:                         $size__credits-total-container - 0.2rem;
+
+$font-size__legendary-card-title:             1em;
+$font-size__legendary-card-subtitle:          $font-size__legendary-card-title * 0.5;
+
+
+$font-size__item-title:                       $size__item-base;
+$font-size__item-subtitle:                    $font-size__item-title * $multiplier__item-subtitle;

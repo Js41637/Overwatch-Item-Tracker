@@ -1,6 +1,6 @@
 // Emulating the behaviour and styling of the Hero/Event headers. Can't share the same styling due to markup differences.
 #home h1 {
-  height: $page-header-height;
+  height: $size__header-height;
   font-size: 8rem;
   padding-left: 12rem + 3.5rem;
   background: url(https://avatars3.githubusercontent.com/u/6258213?s=460&v=4) no-repeat center left/120px;
@@ -31,7 +31,7 @@
     padding: 0.6em 1em;
     line-height: 1;
     border-radius: 0.2rem;
-    border: 1px solid #fff;
+    border: 1px solid $white;
     margin-top: 0.4rem;
 
     span {
@@ -44,8 +44,8 @@
     }
 
     &:hover {
-      background: #fff;
-      color: $grey;
+      background: $white;
+      color: $shark;
     }
   }
 }

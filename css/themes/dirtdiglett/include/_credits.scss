@@ -1,9 +1,9 @@
 #sub-header {
   position: sticky;
-  height: $credit-container-height;
-  z-index: map-get($z-index, credits);
+  height: $size__credits-total-container;
   top: 0;
   pointer-events: none;
+  @include z-index(credits);
 
   #cost-remaining {
     position: absolute;
@@ -11,26 +11,27 @@
     right: 0;
     display: flex;
     align-items: center;
-    background-color: rgba(30, 30, 30, 0.4);
+    background-color: $color__credit-total-background;
     border-bottom-left-radius: 0.5rem;
     padding: 0 1rem;
     min-width: 11rem;
-    height: 5.5rem;
+    height: 100%;
     pointer-events: all;
 
     img {
       width: auto;
-      height: $credit-remaining-font-size * 0.6;
+      height: $font__credits-total * 0.6;
     }
 
     span {
       margin-left: 0.5rem;
-      font-size: $credit-remaining-font-size;
-      font-family: $font__big-noodle;
+      font-size: $font__credits-total;
       letter-spacing: 0.3;
-      color: $offwhite;
-      text-shadow: rgba(255, 255, 255, 0.3) 0 0 0.8rem;
+      line-height: 1;
+      color: $color__credit-total-text;
+      text-shadow: rgba($white, 0.3) 0 0 0.8rem;
 
+      @include font(Big-Noodle);
       @include stroke(1px, 1px, rgba(0,0,0,0.025), '0 0 25px rgba(255, 255, 255, 0.3)');
     }
   }

@@ -2,11 +2,11 @@
   position: fixed;
   height: calc(100% - 4.5rem);
   width: 25vw;
-  z-index: map-get($z-index, modal);
   transform: translateX(-25vw);
   transition: transform 0.2s ease-in-out;
   box-sizing: border-box;
   overflow: auto;
+  @include z-index(modal);
 
   &.open {
     transform: translateX(0);
@@ -17,13 +17,12 @@
   }
 
   h2 {
-    font-family: $font__big-noodle;
-    font-style: italic;
-    text-transform: uppercase;
     font-size: 2.6rem;
     margin: 0;
     text-align: center;
-    padding: 0 $gutter-width;
+    padding: 0 $size__gutter;
+
+    @include font(Big-Noodle);
   }
 
   ul {
@@ -33,32 +32,32 @@
     li a {
       text-transform: uppercase;
       font-size: 1.5rem;
-      color: #fff;
+      color: $white;
       text-decoration: none;
-      padding: 0.1rem $gutter-width;
+      padding: 0.1rem $size__gutter;
       display: block;
 
       &:hover {
-        background: #2a8edf;
+        background: $overwatch-brightblue--primary;
       }
     }
   }
 
   .sidebar-group.home h2 {
     text-align: left;
-    text-transform: uppercase;
     font-size: 1.5rem;
     color: #fff;
     text-decoration: none;
-    padding: 0.1rem $gutter-width;
+    padding: 0.1rem $size__gutter;
     display: block;
-    font-family: $font__base;
     font-style: normal;
-    margin-top: $gutter-width;
+    margin-top: $size__gutter;
     cursor: pointer;
 
+    @include font(Futura);
+
     &:hover {
-      background: #2a8edf;
+      background: $overwatch-brightblue--primary;
     }
   }
 }

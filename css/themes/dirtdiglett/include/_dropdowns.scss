@@ -12,19 +12,19 @@
   box-shadow: 0 3px 12px rgba(37, 37, 37, 0.2);
   border-radius: 0.2rem;
   border: 0;
-  padding: ($gutter-width / 2) 0;
+  padding: $size__gutter--sm 0;
   text-transform: uppercase;
-  color: $grey;
+  color: $shark;
 
   > li {
     > a {
-      padding: 0.4rem $gutter-width;
-      color: $grey;
+      padding: 0.4rem $size__gutter;
+      color: $shark;
 
       &:hover,
       &.active {
-        color: #fff;
-        background-color: $blue;
+        color: $white;
+        background-color: $azure-radiance;
       }
 
       &[ng-click] {
@@ -35,7 +35,7 @@
     div {
       display: flex;
       align-items: center;
-      padding: 0.4rem $gutter-width;
+      padding: 0.4rem $size__gutter;
     }
 
     input[type="checkbox"] {
@@ -61,7 +61,7 @@
   }
 
   .save-filters {
-    padding: 0 ($gutter-width / 2);
+    padding: 0 $size__gutter--sm;
 
     .btn {
       display: block;

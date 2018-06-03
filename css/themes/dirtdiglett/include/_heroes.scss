@@ -2,7 +2,7 @@
   .hero-info {
     display: flex;
     align-items: center;
-    height: $page-header-height;
+    height: $size__header-height;
   }
 
   .hero-image {
@@ -11,9 +11,9 @@
 
   .hero-name {
     display: inline-block;
-    padding-left: ($page-header-height - ($page-title-font-size - 1rem)) / 2; // Using 11rem instead of 12 to account for the extra empty space between the defined font size and the actual size of Big Noodle
+    padding-left: ($size__header-height - ($font__page-title--lg - 1rem)) / 2; // Using 11rem instead of 12 to account for the extra empty space between the defined font size and the actual size of Big Noodle
 
-    @include page-title(hero);
+    @include page-title($type: hero, $isSkewed: true);
   }
 
   .hero-class {
@@ -23,7 +23,7 @@
     display: inline-block;
     height: 2.8rem;
     width: 2.8rem;
-    border: 2px solid rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba($white, 0.4);
     border-radius: 50%;
     padding: 1.2rem;
     background-position: center;
@@ -43,15 +43,15 @@
 
   .options {
     position: absolute;
-    bottom: $progress-bar-height + $gutter-width;
-    right: $gutter-width;
+    bottom: $size__progress-bar-height + $size__gutter;
+    right: $size__gutter;
 
     > .btn,
     > .btn-group > .btn {
-      background: rgba(0, 0, 0, 0.4);
+      background: $color__header-buttons-background;
       font-size: 1.4rem;
       text-transform: uppercase;
-      color: #fff;
+      color: $color__header-buttons-text;
       border: 0;
       border-radius: 0.4rem;
       padding: 0.9em 1.32em;
@@ -63,8 +63,8 @@
     > .btn:active,
     > .btn-group > .btn:hover,
     > .btn-group.open > .btn {
-      color: $grey;
-      background: #fff;
+      color: $color__header-buttons-hover-text;
+      background: $color__header-buttons-hover-background;
       box-shadow: none;
     }
 
@@ -72,27 +72,28 @@
       background: rgba(255, 0, 0, 0.7);
 
       &:hover {
-        color: #fff;
+        color: $white;
         background: red;
       }
     }
   }
 
   .currentFilter {
-    background: $orange;
+    background: $overwatch-orange--primary;
     position: absolute;
     padding: 1rem 1.4rem;
     font-size: 1.4rem;
     text-transform: uppercase;
-    box-shadow: 0 3px 12px rgba(37, 37, 37, 0.2);
-    color: $grey;
-    bottom: -$progress-bar-height / 1.33;
-    padding-left: $gutter-width;
+    color: $shark;
+    bottom: -$size__progress-bar-height / 1.33;
+    padding-left: $size__gutter;
+
+    @include shadow(subtle);
   }
 }
 
 .hero-items {
-  column-gap: $gutter-width;
+  column-gap: $size__gutter;
   columns: 3;
 }
 

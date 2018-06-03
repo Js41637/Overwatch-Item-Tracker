@@ -1,18 +1,19 @@
 .modal {
-  color: rgb(60, 60, 60);
+  color: $color__modal-text;
   font-size: 1.4rem;
   font-family: $font__sans-serif;
 }
 
 .modal-header {
   background-color: $color__section-header-background;
+  color: $color__section-header-text;
   border-bottom: 0;
-  text-transform: uppercase;
-  font-family: $font__base;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include font(Futura);
 
   .close {
     vertical-align: middle;
@@ -21,6 +22,8 @@
 
   .modal-title {
     flex: 1;
+    line-height: 1;
+    font-size: 2.24rem;
   }
 }
 
@@ -30,8 +33,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.15);
 
     h3 {
-      text-transform: uppercase;
-      font-family: $font__base;
+      @include font(Futura);
     }
   }
 
@@ -47,7 +49,7 @@
 
     .setting {
       padding: 1.6rem;
-      border: 2px solid rgba(0, 0, 0, 0.1);
+      border: 2px solid rgba($black, 0.1);
       display: flex;
       position: relative;
       min-height: 200px;
@@ -58,13 +60,13 @@
           content: "Use this theme";
           display: inline-block;
           padding: 0.8em 1em;
-          border: 2px solid #fff;
+          border: 2px solid $white;
           border-radius: 0.4rem;
           margin-top: 3.5rem;
-          background: rgba(255, 255, 255, 0.6);
+          background: rgba($white, 0.6);
           font-weight: bold;
           text-transform: uppercase;
-          color: rgb(60, 60, 61);
+          color: $shark;
         }
       }
 
@@ -91,13 +93,12 @@
         cursor: pointer;
 
         &:hover::after {
-          background: #fff;
+          background: $white;
         }
       }
 
       h3 {
-        text-transform: uppercase;
-        font-family: $font__base;
+        @include font(Futura);
       }
 
       .madeBy {
@@ -114,8 +115,8 @@
         border-radius: 0.4rem;
         padding: 0.5em 0.8em;
         font-size: 1.2rem;
-        border: 2px solid #fff;
-        color: #fff;
+        border: 2px solid $white;
+        color: $white;
       }
     }
   }
@@ -123,6 +124,6 @@
 
 .coffee,
 .copyright {
-  margin-left: 15px + 16px;
-  margin-bottom: 15px + 16px;
+  margin-left: 1.5rem + $size__gutter;
+  margin-bottom: 1.5rem + $size__gutter;
 }

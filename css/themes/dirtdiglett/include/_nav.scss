@@ -13,13 +13,15 @@
     .block {
       position: relative;
       margin: 0.5rem;
-      border: 0.4em solid $offwhite;
+      border: 0.4em solid $color__gallery-block-border;
       border-radius: 0.4rem;
       cursor: pointer;
       transition: transform 75ms;
       overflow: hidden;
       width: 15%;
       background: url('/resources/body-bg.jpg') no-repeat center/cover;
+
+      @include shadow(subtle);
 
       .block-content {
         display: flex;
@@ -63,30 +65,29 @@
       }
 
       .text {
-        background: $offwhite;
+        background: $color__gallery-block-background;
         text-align: center;
 
         h2 {
-          font-family: $font__big-noodle;
-          color: $herogrey;
+          color: $color__gallery-heading-text;
           margin: 0;
-          text-transform: uppercase;
           padding: 0.3em 0;
           font-size: 1.25vw;
+          @include font(Big-Noodle);
         }
 
         .progresscont {
           position: relative;
-          background-color: darken($offwhite, 8%);
+          background-color: $color__gallery-block-progress-background;
           z-index: 1;
 
           h3 {
-            font-family: $font__base;
             text-align: center;
             font-size: 0.8vw;
             margin: 0;
             padding: 0.3em 0;
 
+            @include font(Futura);
             @include stroke(1px, 0, rgba(0, 0, 0, 0.1));
           }
 
@@ -103,15 +104,15 @@
       &:hover {
         background: $orange !important;
         transform: scale(1.1);
-        z-index: map-get($z-index, modal);
-        box-shadow: 0 3px 12px rgba(37, 37, 37, 0.4);
+        @include shadow(galleryBlockHover);
+        @include z-index(above-most);
       }
     }
   }
 
   .gallery.hero {
     .block {
-      transform: skew(-10deg);
+      transform: skew($gallery-block-skew-angle);
       width: 9%; // This gives us a nice 3 line hero nav same as in-game
 
       .block-content {
@@ -132,7 +133,7 @@
             background-size: auto 100%;
             background-position: center;
             background-repeat: no-repeat;
-            transform: skew(10deg);
+            transform: skew($gallery-block-skew-angle * -1);
             position: absolute;
             top: -9%;
             left: -9%;
@@ -150,11 +151,11 @@
       }
 
       .progresscont h3 {
-        transform: skew(10deg);
+        transform: skew($gallery-block-skew-angle * -1);
       }
 
       &:hover {
-        transform: skew(-10deg) scale(1.1);
+        transform: skew($gallery-block-skew-angle) scale(1.1);
       }
     }
   }
@@ -175,8 +176,8 @@
     width: 6rem;
     height: 6rem;
     position: absolute;
-    top: $gutter-width;
-    left: $gutter-width;
+    top: $size__gutter;
+    left: $size__gutter;
     font-size: 0;
     background: none;
     border-width: 0.3rem;
@@ -186,7 +187,7 @@
 
       &::after {
         content: "";
-        background: url(/resources/icons/home.svg) no-repeat center/100%;
+        background: url('/resources/icons/home.svg') no-repeat center/100%;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -197,10 +198,6 @@
 
 #home {
   #hero-nav {
-    .block {
-      box-shadow: 0 3px 12px rgba(37, 37, 37, 0.2);
-    }
-
     .block.home {
       display: none;
     }

@@ -1,10 +1,11 @@
 #header {
-  height: $header-height;
-  padding: 0 $gutter-width;
+  height: $size__navigation-height;
+  padding: 0 $size__gutter;
   display: flex;
   justify-content: space-between;
   position: relative;
-  z-index: map-get($z-index, credits) - 1;
+
+  @include z-index(credits, -1);
 
   .left,
   .right {
@@ -20,7 +21,6 @@
     h1 {
       margin: 0 3rem 0 1rem;
       font-size: 3rem;
-      font-style: italic;
     }
   }
 
@@ -29,7 +29,7 @@
     padding: 0 1.6rem;
     display: flex;
     align-items: center;
-    background: #1c75bc;
+    background: $color__navigation-button;
 
     h2 {
       font-size: 1.6rem;
@@ -37,7 +37,7 @@
       margin: 0;
       line-height: 1;
       display: flex;
-      height: $header-height;
+      height: $size__navigation-height;
       align-items: center;
 
       .caret {
@@ -52,7 +52,7 @@
       .img {
         display: inline-block;
         height: 100%;
-        width: getaspectratiovalue(map-get($hero-icon-size, width), map-get($hero-icon-size, height), $header-height);
+        width: solve-ratio($width: nth($size__hero-icon, 1), $height: nth($size__hero-icon, 2), $denominator: $size__navigation-height);
         background-size: cover;
         margin-right: 1.6rem;
       }
@@ -61,8 +61,8 @@
 
   .icon {
     font-size: 2rem;
-    padding: ($header-height - 2rem) / 2;
-    width: $header-height;
+    padding: ($size__navigation-height - 2rem) / 2;
+    width: $size__navigation-height;
     cursor: pointer;
 
     svg {
@@ -73,27 +73,27 @@
 
   .event-selector:hover,
   .icon:hover {
-    background: #2a8edf;
+    background: $color__navigation-button-hover;
   }
 }
 
 #header,
 #menuNav,
 #sidebar {
-  background: $color__header-background;
+  background: $color__navigation-background;
 }
 
 #menuNav,
 #sidebar {
-  z-index: map-get($z-index, modal);
+  @include z-index(modal, -1);
 }
 
 #menuNav {
   position: absolute;
-  top: $header-height;
+  top: $size__navigation-height;
   left: 0;
   right: 0;
   will-change: auto;
   transition: height 0.315s linear;
-  padding: $gutter-width;
+  padding: $size__gutter;
 }

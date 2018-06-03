@@ -25,22 +25,76 @@ $overwatch-competitive--primary: rgb(116, 0, 178);
 $overwatch-competitive--accent: rgb(178, 0, 255);
 
 $overwatch-lightgrey--primary: rgb(246, 246, 246); // Used on headings on the dark blue background.
+$overwatch-lightgrey--tertiary: rgb(204, 204, 204);
 
 
 // Define the colors used
 $color__default-text:                 $white !default;
-$color__header-background:            rgba($overwatch-blue--primary, 0.9) !default;
+$color__navigation-background:            rgba($overwatch-blue--primary, 0.9) !default;
+$color__navigation-button:              $overwatch-brightblue--primary !default;
+$color__navigation-button-hover:        $overwatch-brightblue--accent !default;
+
+$color__header-buttons-background:         rgba($black, 0.4);
+$color__header-buttons-text:              $white;
+$color__header-buttons-hover-background:         $white;
+$color__header-buttons-hover-text:              $shark;
+
+$color__header-progress-bar-background:       rgba($black, 0.4);
+$color__header-progress-bar-text:       $white;
+
+$color__home-page-progress-bar-background:    $overwatch-orange--primary;
+$color__home-page-progress-bar-border:    tint($overwatch-orange--primary, 10%);
+
+$color__gallery-heading-text:           $ebony-clay;
+$color__gallery-block-background:       $gallery;
+$color__gallery-block-border:           $color__gallery-block-background;
+$color__gallery-block-progress-background:  darken($color__gallery-block-background, 8%);
+
 $color__section-background:           $athens-gray !default;
 $color__section-header-background:    $blue-haze !default;
 $color__section-header-text:          $east-bay !default;
 $color__section-text:                 $scorpion !default;
+$color__section-text--lighter:                tint($scorpion, 26%);
+$color__section-header-text--special:         $overwatch-lightgrey--primary !default;
+$color__section-header-subtext--special:      $overwatch-lightgrey--tertiary !default;
+$color__section-header-border--special:       rgba($overwatch-lightgrey--primary, 0.3) !default;
 
-$color__section-header-text--special: $overwatch-lightgrey--primary !default; // $legendary-title-color
-$color__legendary-bottom-border:      rgba($overwatch-lightgrey--primary, 0.3) !default;
-$color__card-background:              rgba($athens-gray, 0.9) !default; // $legendary-background
+$color__section-header-option-background:     rgba($black, 0.1);
+$color__section-header-option-text:           $white;
+$color__section-header-option-hover-background:     rgba($black, 0.2);
 
+$color__card-background:                      rgba($athens-gray, 0.9) !default;
+$color__card-title:                           $east-bay !default;
+$color__card-subtitle:                        rgba($east-bay, 0.7) !default;
 
+$color__item-hover-background:                rgba($blue-haze, 0.35);
 $color__item-cost:                    $malachite !default;
+
+$color__credit-total-background:              rgba($black, 0.4);
+$color__credit-total-text:                    $gallery;
+
+$color__grid-spray-background:                rgba($black, 0.2);
+$color__grid-spray-border-hover:              rgb(21, 232, 255);
+$color__grid-spray-border-hover-shadow:               rgba($color__grid-spray-border-hover, 0.75);
+
+$color__modal-text:                                   $shark;
+
+$color__preview-tooltip-background:                   $gallery;
+$color__preview-tooltip-inner-background:             $overwatch-blue--primary;
+$color__preview-tooltip-audio-progress-bar-background:           darken($color__preview-tooltip-background, 8%);
+$color__preview-tooltip-audio-progress-bar:                      $overwatch-orange--primary;
+$color__preview-tooltip-description-background:                  rgba($overwatch-blue--primary, 0.5);
+$color__preview-tooltip-description-border:                     rgba($white, 0.3);
+$color__preview-tooltip-description-text:                       $white;
+
+
+$color__checkbox--unchecked:                      rgba($black, 0.15);
+$color__checkbox-hover--unchecked:                opacify($color__checkbox--unchecked, 0.05);
+$color__checkbox--checked:                      $overwatch-orange--primary;
+$color__checkbox-hover--checked:                $overwatch-orange--accent;
+$color__checkbox-disabled--checked:                      $blue-haze;
+$color__checkbox-disabled-hover--checked:                $blue-haze;
+
 
 // Colors to convert
 $offwhite: #f0f0f0;
@@ -49,8 +103,3 @@ $orange: #ffa500;
 $cost: #00db55;
 $grey: #212529;
 $blue: #007bff;
-
-
-$legendary-title-color: $color__section-header-text !default;
-$legendary-subtitle-color: lighten($legendary-title-color, 20%) !default;
-$legendary-background: rgba($color__section-background, 0.9) !default;

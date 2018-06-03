@@ -2,10 +2,10 @@
 @import "../../global/global";
 // Import all the variables, mixins, etc.
 @import
+  "include/config/functions",
   "include/config/colors",
   "include/config/config",
   "include/config/typography",
-  "include/config/functions",
   "include/config/mixins"
 ;
 @import
@@ -29,22 +29,22 @@
 ;
 
 body {
-  min-width: $body-width;
+  min-width: $size__body-min-width;
   transition: opacity 100ms ease-in-out;
-  background: no-repeat left $total-header-height/cover #3e4f6f url('resources/bg.png');
+  background: no-repeat left $size__calculated-total-header-height/cover #3e4f6f url('resources/bg.png');
   font-family: $font__base;
   color: $color__default-text;
-  font-size: 10px; // Define 1rem = 10px. Makes everything else easy and now a bootstrap upgrade won't make everything big...
+  font-size: $font__define-1rem;
 }
 
 h1 {
-  font-family: $font__big-noodle;
+  @include font(Big-Noodle);
 }
 
 #home,
 #hero-container,
 #event-container {
-  margin-top: -($header-height + $credit-container-height);
+  margin-top: -($size__navigation-height + $size__credits-total-container);
   position: relative;
   width: 100%;
   display: inline-block;
@@ -53,9 +53,9 @@ h1 {
 #home-header,
 #hero-header,
 #event-header {
-  min-height: $total-header-height;
+  min-height: $size__calculated-total-header-height;
   width: 100%;
-  padding-top: $header-height;
+  padding-top: $size__navigation-height;
   background-size: cover;
   position: relative;
 }
@@ -66,5 +66,5 @@ h1 {
 }
 
 .hero-items {
-  padding: $gutter-width;
+  padding: $size__gutter;
 }

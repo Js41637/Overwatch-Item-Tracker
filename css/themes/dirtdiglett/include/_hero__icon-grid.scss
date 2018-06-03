@@ -1,7 +1,7 @@
 .hero-grid {
   .section {
     background: transparent;
-    padding: $gutter-width;
+    padding: $size__gutter;
     box-shadow: none;
     overflow: visible; // This is mandatory to avoid a visual glitch-out.
   }
@@ -11,19 +11,14 @@
     padding: 0;
 
     h2 {
-      font-size: 4.8rem;
-      font-family: $font__big-noodle;
-      font-style: italic;
-      color: #fff;
-      border-bottom: 3px solid rgba(240, 237, 242, 0.3);
-      margin-bottom: 0.64rem;
-      padding: 0 0 0.64rem;
       flex: 1;
+
+      @include special-section-header();
 
       small {
         font-size: 0.7em;
         margin-left: 0.4rem;
-        color: rgba(255, 255, 255, 0.4);
+        color: $color__section-header-subtext--special;
       }
 
       &::before {
@@ -36,11 +31,15 @@
     padding: 0;
     display: grid;
     grid-gap: 1rem;
+
+    .item {
+      cursor: pointer;
+    }
   }
 
   .section#icons {
     .section-content {
-      grid-template-columns: repeat(auto-fit, 10rem);
+      grid-template-columns: repeat(auto-fit, 10rem) !important;
       grid-auto-rows: 10rem;
     }
 
@@ -49,40 +48,41 @@
       height: 100%;
       background: transparent no-repeat center/contain;
       border-radius: 0.6rem;
-      border: 2px solid rgba(255, 255, 255, 0.6);
+      border: 2px solid rgba($white, 0.6);
       margin: 0;
     }
   }
 
   .section#sprays {
     .section-content {
-      grid-template-columns: repeat(auto-fit, 15rem);
+      grid-template-columns: repeat(auto-fit, 15rem) !important;
       grid-auto-rows: 15rem;
     }
 
     .item {
       width: 100% !important;
       height: 100%;
-      background: rgba(0, 0, 0, 0.2) no-repeat center/contain;
+      background: $color__grid-spray-background no-repeat center/contain;
       border: 3px solid transparent;
       margin: 0;
 
       &:hover {
         transform: none;
-        border-color: #15e8ff;
-        box-shadow: 0 0 4px rgba(21, 232, 255, 0.75), inset 0 0 4px rgba(21, 232, 255, 0.75);
+        border-color: $color__grid-spray-border-hover;
+        box-shadow: 0 0 4px $color__grid-spray-border-hover-shadow, inset 0 0 4px $color__grid-spray-border-hover-shadow;
       }
     }
   }
 
   .item {
-    opacity: 0.27; // 27% Opacity matches in-game.
+    opacity: $overwatch-locked-item-opacity;
     text-align: right;
     padding: 0.2rem;
 
     &:hover {
       transform: scale(1.1);
       opacity: 1;
+      outline: none;
     }
 
     &.selected {
@@ -96,7 +96,7 @@
     }
 
     .glyphicon-lock {
-      color: #fff;
+      color: $white;
       font-size: 1.8rem;
       position: absolute;
       right: 0.4rem;
@@ -114,7 +114,7 @@
     }
 
     .tooltip-inner {
-      background: #000;
+      background: $black;
       padding: 0.4rem 0.8rem;
       font-family: $font__base;
       text-transform: uppercase;
