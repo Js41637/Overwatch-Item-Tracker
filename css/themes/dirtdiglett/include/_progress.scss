@@ -23,6 +23,7 @@
     border-top: 1px solid transparent;
     height: 100%;
     box-shadow: none; // Override the default behaviour
+    transition: width 175ms ease-in-out;
   }
 }
 
@@ -85,11 +86,4 @@
     background-color: map-get($colors, primary);
     border-top-color: map-get($colors, highlight);
   }
-}
-
-
-// TO DO
-// Override the difficult-to-see Winter Wonderland one for the homepage.
-#home #hero-nav .gallery.event .block[href$="/WINTER_WONDERLAND"] .hero-progress-bar {
-  background-color: #52496d;
 }

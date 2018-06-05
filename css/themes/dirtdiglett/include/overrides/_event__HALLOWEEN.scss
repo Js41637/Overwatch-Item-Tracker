@@ -16,21 +16,6 @@ body#HALLOWEEN {
       filter: grayscale(75%);
       box-shadow: inset 0 0 15rem rgba($black, 0.6);
 
-      &::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: 1.7rem solid transparent;
-        border-image: url($EVENT_CUSTOM_RESOURCES + 'card-border.png') 17 repeat;
-      }
-
-      &::after {
-        top: 4px;
-        left: 4px;
-        background: url($EVENT_CUSTOM_RESOURCES + 'check.svg') no-repeat 16% 16%/2.8rem auto;
-      }
-
       &:hover,
       &.selected {
         filter: none;

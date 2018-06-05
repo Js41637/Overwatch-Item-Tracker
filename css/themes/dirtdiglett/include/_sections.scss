@@ -51,6 +51,8 @@
       opacity: 0;
       transition: opacity 225ms;
 
+      @include z-index(above-content, +1);
+
       .btn {
         padding: 0.6rem;
         background: $color__section-header-option-background;

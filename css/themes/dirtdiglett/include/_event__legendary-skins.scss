@@ -49,6 +49,10 @@
       transition: all 75ms;
       cursor: pointer;
 
+      * {
+        cursor: pointer;
+      }
+
       @include shadow(subtle);
 
       &:hover {
@@ -81,7 +85,6 @@
 
         label.bg {
           background: qualitycolor(legendary);
-          cursor: pointer;
 
           &::before,
           &::after {

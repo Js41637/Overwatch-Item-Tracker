@@ -97,6 +97,21 @@
   columns: 3;
 }
 
+.hero-items,
+.hero-grid {
+  &.ng-enter {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.4s;
+  }
+
+  &.ng-enter-active {
+    opacity: 1;
+  }
+}
+
 // Generate hero-specific CSS
 @each $heroname, $data in $heroes {
   $colors: map-get($data, 'colors');
