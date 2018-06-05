@@ -164,6 +164,7 @@
       border-left: 3px solid $color__preview-tooltip-description-border;
       margin: 2rem;
       color: $color__preview-tooltip-description-text;
+
       @include font(Futura);
     }
   }

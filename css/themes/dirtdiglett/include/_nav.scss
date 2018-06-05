@@ -1,7 +1,8 @@
 #hero-nav {
-  max-width: 80vw;
+  max-width: 224rem;
   min-width: 100rem;
   margin: 0 auto;
+  width: 80vw;
 
   .gallery {
     & > div {
@@ -73,6 +74,7 @@
           margin: 0;
           padding: 0.3em 0;
           font-size: 1.25vw;
+
           @include font(Big-Noodle);
         }
 
@@ -104,6 +106,7 @@
       &:hover {
         background: $orange !important;
         transform: scale(1.1);
+
         @include shadow(galleryBlockHover);
         @include z-index(above-most);
       }

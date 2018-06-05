@@ -163,8 +163,19 @@
       display: inline;
     }
 
-    .color-cost {
-      color: $color__item-cost;
+    .color-cost:not(:empty) {
+      color: qualitycolor(legendary);
+      display: inline-block;
+      margin-left: 0.2rem;
+      opacity: 0;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 0.75em;
+        height: 0.7em;
+        background: url(/resources/icons/currency.svg) no-repeat center/0.7em auto;
+      }
     }
 
     label.circle-checkbox {
@@ -245,6 +256,11 @@
       background-color: $color__item-hover-background;
       outline: 0.45em solid $color__item-hover-background; // Outline doesn't affect the box sizing like border, this allows it to cheekily overlap other elements without breaking anything.
 
+      .color-cost {
+        opacity: 1;
+        transition: opacity 75ms ease-in-out;
+      }
+
       input:first-child ~ label:last-child::before,
       label.circle-checkbox::before {
         background-color: $color__checkbox-hover--unchecked;
@@ -272,8 +288,9 @@
     .flex-#{$i} {
       // Prepare the number of columns
       $columns: (1fr);
+
       @for $j from 1 to $i {
-        $columns: append($columns, 1fr, space)
+        $columns: append($columns, 1fr, space);
       }
 
       grid-template-columns: $columns;

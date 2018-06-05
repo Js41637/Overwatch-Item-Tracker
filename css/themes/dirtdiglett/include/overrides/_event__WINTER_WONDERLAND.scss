@@ -1,0 +1,71 @@
+$EVENT_CUSTOM_RESOURCES: 'resources/WINTER_WONDERLAND/';
+$WINTER_WONDERLAND: map-get($events, WINTER_WONDERLAND);
+
+$primary-color: map-get(map-get($WINTER_WONDERLAND, colors), primary);
+$highlight-color: map-get(map-get($WINTER_WONDERLAND, colors), highlight);
+
+$color__ice-blue: rgb(235, 248, 254);
+$opacity__ice-blue: 0.8;
+
+body#WINTER_WONDERLAND {
+  #header,
+  #menuNav,
+  #sidebar {
+    background-color: rgba($primary-color, 0.85);
+  }
+
+  #legendary-skins {
+    .images .card {
+      box-shadow: inset 0 0 40px 12px rgba($color__ice-blue, $opacity__ice-blue);
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba($color__ice-blue, 0.4);
+      }
+
+      &::after {
+        top: 4px;
+        left: 4px;
+        background: url($EVENT_CUSTOM_RESOURCES + 'check.svg') no-repeat 16% 16%/2.8rem auto;
+      }
+
+      &:hover,
+      &.selected {
+        &:before {
+          background: none;
+        }
+      }
+
+      label.bg {
+        background-color: rgba($color__ice-blue, $opacity__ice-blue);
+        box-shadow: 0 0 40px 12px rgba($color__ice-blue, $opacity__ice-blue);
+
+        .card-heading {
+
+        }
+
+        .card-copy {
+
+        }
+      }
+    }
+  }
+
+  .section-header {
+    background-color: #5194c8;
+    color: #fff;
+
+    h2 {
+      &::before {
+        filter: brightness(10);
+      }
+
+      small {
+        color: shade(#5194c8, 26%);
+      }
+    }
+  }
+}
