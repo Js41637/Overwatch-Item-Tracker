@@ -1,0 +1,30 @@
+@media (min-width:1400px) and (max-width:1600px) {
+  // TO DO: Set columns for 4x and 3x down to 2x at this width.
+  .section .flex-4 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section .flex-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #event-container {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .col-padding {
+    width: 100%;
+  }
+
+  .col-padding + .col-padding {
+    padding-left: $size__gutter;
+  }
+
+  // TO DO: Set legendary items to turn into a grid of squares at smaller size.
+
+  // TO DO: Set fewer columns for items at smaller size.
+}
