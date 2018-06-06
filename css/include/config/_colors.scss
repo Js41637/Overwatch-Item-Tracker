@@ -1,0 +1,107 @@
+// Used this lovely tool to get memorable names for the colors: http://chir.ag/projects/name-that-color/
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+
+$gallery: rgb(240, 240, 240);
+$ebony-clay: rgb(45, 52, 70);
+$shark: rgb(33, 37, 41);
+$azure-radiance: rgb(0, 123, 255);
+$athens-gray: rgb(240, 237, 242);
+$blue-haze: rgb(198, 203, 222);
+$east-bay: rgb(64, 82, 117);
+$scorpion: rgb(93, 90, 90);
+$malachite: rgb(0, 219, 85);
+
+// Jayess-specific.
+$mineshaft: rgb(45, 45, 45);
+$tree-poppy: rgb(249, 158, 26);
+$wild-sand: rgb(245, 245, 245);
+$turbo: rgb(254, 242, 0);
+$web-orange: rgb(255, 165, 0);
+$sunglow: rgb(255, 184, 51);
+$alto: rgb(215, 215, 215);
+$tundora: rgb(70, 70, 70);
+$pickled-bluewood: rgb(40, 53, 79);
+
+// Overwatch-specific.
+$overwatch-blue--primary: rgb(40, 53, 79);
+$overwatch-orange--primary: rgb(255, 165, 0);
+$overwatch-orange--accent: lighten($overwatch-orange--primary, 12%);
+$overwatch-brightblue--primary: rgb(0, 165, 226);
+$overwatch-brightblue--accent: rgb(12, 189, 255);
+$overwatch-competitive--primary: rgb(116, 0, 178);
+$overwatch-competitive--accent: rgb(178, 0, 255);
+$overwatch-lightgrey--primary: rgb(246, 246, 246); // Used on headings on the dark blue background.
+$overwatch-lightgrey--tertiary: rgb(204, 204, 204);
+
+
+// Re-done colors for JS' theme
+$color__default-text:                 $east-bay !default;
+$color__body-background:              $blue-haze !default;
+$color__navigation-background:            $mineshaft !default;
+$color__navigation-button:              $web-orange !default;
+$color__navigation-button-hover:        $sunglow !default;
+$color__item-cost:                    $malachite !default;
+
+
+
+// Define the colors used
+$color__header-buttons-background:         rgba($black, 0.4);
+$color__header-buttons-text:              $white;
+$color__header-buttons-hover-background:         $white;
+$color__header-buttons-hover-text:              $shark;
+
+$color__header-progress-bar-background:       rgba($black, 0.4);
+$color__header-progress-bar-text:       $white;
+
+$color__home-page-progress-bar-background:    $overwatch-orange--primary;
+$color__home-page-progress-bar-border:    tint($overwatch-orange--primary, 10%);
+
+$color__gallery-heading-text:           $ebony-clay;
+$color__gallery-block-background:       $gallery;
+$color__gallery-block-border:           $color__gallery-block-background;
+$color__gallery-block-progress-background:  darken($color__gallery-block-background, 8%);
+
+$color__section-background:           $athens-gray !default;
+$color__section-header-background:    $blue-haze !default;
+$color__section-header-text:          $east-bay !default;
+$color__section-text:                 $scorpion !default;
+$color__section-text--lighter:                tint($scorpion, 26%);
+$color__section-header-text--special:         $overwatch-lightgrey--primary !default;
+$color__section-header-subtext--special:      $overwatch-lightgrey--tertiary !default;
+$color__section-header-border--special:       rgba($overwatch-lightgrey--primary, 0.3) !default;
+
+$color__section-header-option-background:     rgba($black, 0.1);
+$color__section-header-option-text:           $white;
+$color__section-header-option-hover-background:     rgba($black, 0.2);
+
+$color__card-background:                      rgba($athens-gray, 0.9) !default;
+$color__card-title:                           $east-bay !default;
+$color__card-subtitle:                        rgba($east-bay, 0.7) !default;
+
+$color__item-hover-background:                rgba($blue-haze, 0.35);
+
+$color__credit-total-background:              rgba($black, 0.4);
+$color__credit-total-text:                    $gallery;
+
+$color__grid-spray-background:                rgba($black, 0.2);
+$color__grid-spray-border-hover:              rgb(21, 232, 255);
+$color__grid-spray-border-hover-shadow:               rgba($color__grid-spray-border-hover, 0.75);
+
+$color__modal-text:                                   $shark;
+
+$color__preview-tooltip-background:                   $gallery;
+$color__preview-tooltip-inner-background:             $overwatch-blue--primary;
+$color__preview-tooltip-audio-progress-bar-background:           darken($color__preview-tooltip-background, 8%);
+$color__preview-tooltip-audio-progress-bar:                      $overwatch-orange--primary;
+$color__preview-tooltip-description-background:                  rgba($overwatch-blue--primary, 0.5);
+$color__preview-tooltip-description-border:                     rgba($white, 0.3);
+$color__preview-tooltip-description-text:                       $white;
+
+
+$color__checkbox--unchecked:                      rgba($black, 0.15);
+$color__checkbox-hover--unchecked:                opacify($color__checkbox--unchecked, 0.05);
+$color__checkbox--checked:                      $overwatch-orange--primary;
+$color__checkbox-hover--checked:                $overwatch-orange--accent;
+$color__checkbox-disabled--checked:                      $blue-haze;
+$color__checkbox-disabled-hover--checked:                $blue-haze;

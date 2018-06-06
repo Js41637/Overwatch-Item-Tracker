@@ -1,0 +1,60 @@
+// Solve for the 4th value (width:height = numerator:denominator)
+// @param {Number} width       Numerator from the left side of the equation
+// @param {Number} height      Denominator from the left side of the equation
+// @param {Number} numerator   Numerator from the right side of the equation
+// @param {Number} denominator Denominator from the right side of the equation
+// @param {Boolean} round      If the end result should be rounded.
+// @return {Number}
+@function solve-ratio($width: false, $height: false, $numerator: false, $denominator: false, $round: false) {
+  @if $width != false and $height != false {
+    @if $numerator != false {
+      // We're determining the height.
+      @return if($round, round($numerator / ($width / $height)), $numerator / ($width / $height));
+    } @else if $denominator != false {
+      // We're determining the width.
+      @return if($round, round($denominator * ($width / $height)), $denominator * ($width / $height));
+    } @else {
+      @warn "solve-ratio() requires either $numerator or $denominator defined.";
+    }
+
+    //@return $solved-number;
+  } @else {
+    @warn "solve-ratio() requires a $width and $height defined.";
+  }
+}
+
+// Remove the unit of a length
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+/// Slightly lighten a color
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+/// Return the color used for item qualities
+/// @param {Key} $name - the name, acting as a key in the map, to get the color for
+/// @return {Color}
+@function qualitycolor($name: 'common') {
+  @if map-has-key($qualities, $name) {
+    @return map-get($qualities, $name);
+  } @else {
+    @warn "No color found for the quality name: #{$name}";
+  }
+}
