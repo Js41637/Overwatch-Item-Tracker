@@ -1,15 +1,25 @@
-@media (min-width:1400px) and (max-width:1600px) {
-  // TO DO: Set columns for 4x and 3x down to 2x at this width.
-  .section .flex-4 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .section .flex-3 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media screen and (max-width: 1400px) {
+  #hero-nav {
+    .gallery {
+      .block {
+        width: 20%;
+      }
+
+      .block.home {
+        width: 6rem;
+      }
+    }
+
+    .gallery.hero .block {
+      width: 12%;
+
+      .text h2 {
+        display: none;
+      }
+    }
+  }
+
+
   #event-container {
     flex-direction: column;
     align-items: center;
@@ -24,7 +34,36 @@
     padding-left: $size__gutter;
   }
 
-  // TO DO: Set legendary items to turn into a grid of squares at smaller size.
+  // Reduces the number of columns by 1.
+  @for $i from 2 to 6 {
+    .section .flex-#{$i} {
+      // Prepare the number of columns
+      $columns: (1fr);
 
-  // TO DO: Set fewer columns for items at smaller size.
+      @for $j from 1 to ($i - 1) {
+        $columns: append($columns, 1fr, space);
+      }
+
+      grid-template-columns: $columns;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #legendary-skins {
+    .images {
+      display: grid;
+      flex: 1;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 1em;
+
+      .card {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .hero-items {
+    columns: 1;
+  }
 }

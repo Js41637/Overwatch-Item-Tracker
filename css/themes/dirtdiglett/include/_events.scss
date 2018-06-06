@@ -20,6 +20,7 @@
 
   h2 {
     font-size: $font__page-title--lg * 0.4;
+
     @include skew-text();
   }
 
