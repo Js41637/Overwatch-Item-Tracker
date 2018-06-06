@@ -45,6 +45,16 @@ body {
   color: #00db55;
 }
 
+.color-cost:not(:empty) {
+  &::before {
+    content: "(";
+  }
+
+  &::after {
+    content: ")";
+  }
+}
+
 .col-padding {
   padding: 0 8px;
 }
