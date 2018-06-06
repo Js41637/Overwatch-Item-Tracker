@@ -2,15 +2,15 @@
 $black: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
 
-$gallery: rgb(240, 240, 240); // $offwhite
-$ebony-clay: rgb(45, 52, 70); // $herogrey
-$shark: rgb(33, 37, 41); // $grey
-$azure-radiance: rgb(0, 123, 255); // $blue
+$gallery: rgb(240, 240, 240);
+$ebony-clay: rgb(45, 52, 70);
+$shark: rgb(33, 37, 41);
+$azure-radiance: rgb(0, 123, 255);
 $athens-gray: rgb(240, 237, 242);
 $blue-haze: rgb(198, 203, 222);
 $east-bay: rgb(64, 82, 117);
 $scorpion: rgb(93, 90, 90);
-$malachite: rgb(0, 219, 85); // $cost
+$malachite: rgb(0, 219, 85);
 
 // Overwatch-specific.
 $overwatch-blue--primary: rgb(40, 53, 79);
@@ -94,12 +94,3 @@ $color__checkbox--checked:                      $overwatch-orange--primary;
 $color__checkbox-hover--checked:                $overwatch-orange--accent;
 $color__checkbox-disabled--checked:                      $blue-haze;
 $color__checkbox-disabled-hover--checked:                $blue-haze;
-
-
-// Colors to convert
-$offwhite: #f0f0f0;
-$herogrey: #2d3446;
-$orange: #ffa500;
-$cost: #00db55;
-$grey: #212529;
-$blue: #007bff;
