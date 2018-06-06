@@ -9,7 +9,7 @@ $size__gutter--sm:                              $size__gutter / 2;
 $size__navigation-height:                       4.5rem;
 $size__credits-total-container:                 5.4rem;
 $size__progress-bar-height:                     3.6rem;
-$size__header-height:                           18rem;
+$size__header-height:                           14rem;
 $size__calculated-total-header-height:          $size__navigation-height + $size__header-height + $size__progress-bar-height;
 
 $size__item-base:                               1em;
@@ -17,7 +17,7 @@ $size__item-spacing:                            $size__gutter / 2;
 $multiplier__item-subtitle:                     0.875;
 $size__item-checkbox:                           ($size__item-base + ($size__item-base * $multiplier__item-subtitle)) * 0.6;
 $size__legendary-section-height:                50rem;
-$size__legendary-card-label-padding:             1.8rem;
+$size__legendary-card-label-padding:            1.8rem;
 
 $size__preview-img:                             (45rem, 45rem);
 $multiplier__preview-img-two:                   1.8;

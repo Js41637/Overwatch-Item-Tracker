@@ -21,13 +21,14 @@
     box-sizing: content-box;
     background-size: 2.8rem;
     display: inline-block;
-    height: 2.8rem;
-    width: 2.8rem;
+    height: 2.2rem;
+    width: 2.2rem;
     border: 2px solid rgba($white, 0.4);
     border-radius: 50%;
     padding: 1.2rem;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: auto 50%;
     margin-top: -2.8rem * 2.5;
     margin-left: 1rem;
 

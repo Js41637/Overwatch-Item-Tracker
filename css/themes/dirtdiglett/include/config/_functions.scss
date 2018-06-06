@@ -12,7 +12,7 @@
       @return if($round, round($numerator / ($width / $height)), $numerator / ($width / $height));
     } @else if $denominator != false {
       // We're determining the width.
-      @return if($round, round($denominator / ($width / $height)), $denominator / ($width / $height));
+      @return if($round, round($denominator * ($width / $height)), $denominator * ($width / $height));
     } @else {
       @warn "solve-ratio() requires either $numerator or $denominator defined.";
     }
