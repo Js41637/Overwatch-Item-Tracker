@@ -24,8 +24,8 @@
     align-items: center;
     background: $color__section-header-background;
     color: $color__section-header-text;
-    padding: 1.2rem;
-    padding-left: (1.2rem / 2) + 1.2rem;
+    padding: 1rem;
+    padding-left: $size__section-content-gutter;
 
     h2 {
       text-transform: uppercase;
@@ -78,7 +78,7 @@
   }
 
   .section-content {
-    padding: $size__gutter;
+    padding: $size__section-content-gutter;
     display: grid;
     grid-gap: $size__item-spacing;
     grid-template-columns: 1fr;

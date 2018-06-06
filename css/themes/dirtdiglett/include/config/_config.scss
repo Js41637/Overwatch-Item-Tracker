@@ -8,10 +8,11 @@ $size__gutter--sm:                              $size__gutter / 2;
 
 $size__navigation-height:                       4.5rem;
 $size__credits-total-container:                 5.4rem;
-$size__progress-bar-height:                     3.6rem;
+$size__progress-bar-height:                     3.2rem;
 $size__header-height:                           14rem;
 $size__calculated-total-header-height:          $size__navigation-height + $size__header-height + $size__progress-bar-height;
 
+$size__section-content-gutter:                  1.2rem;
 $size__item-base:                               1em;
 $size__item-spacing:                            $size__gutter / 2;
 $multiplier__item-subtitle:                     0.875;

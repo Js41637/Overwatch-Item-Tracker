@@ -1,9 +1,9 @@
 // Emulating the behaviour and styling of the Hero/Event headers. Can't share the same styling due to markup differences.
 #home h1 {
   height: $size__header-height;
-  font-size: 8rem;
-  padding-left: 12rem + 3.5rem;
-  background: url(https://avatars3.githubusercontent.com/u/6258213?s=460&v=4) no-repeat center left/120px;
+  font-size: 7rem;
+  padding-left: 8rem + 3.5rem;
+  background: url(https://avatars3.githubusercontent.com/u/6258213?s=460&v=4) no-repeat center left/$font__page-title--lg;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -13,10 +13,11 @@
   @include slidein;
 
   &::before {
-    font-size: 0.7em;
+    font-size: 0.6em;
     color: $orange;
     content: "Js41637's";
     display: block;
+    margin-bottom: -0.3em;
   }
 }
 
