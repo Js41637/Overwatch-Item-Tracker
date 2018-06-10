@@ -102,14 +102,16 @@
     }
 
     .lock-icon {
-      background-image: url(/resources/icons/lock.svg);
-      position: absolute;
-      right: 1px;
-      bottom: 1px;
-      opacity: 1;
-      width: 24px;
-      height: 24px;
+      content: "";
+      background-image: url('/resources/icons/lock.svg');
+      width: 1.25em;
+      height: 1.25em;
+      background-repeat: no-repeat;
       background-size: contain;
+      background-position: center;
+      position: absolute;
+      bottom: 0.2rem;
+      right: 0.2rem;
     }
   }
 
