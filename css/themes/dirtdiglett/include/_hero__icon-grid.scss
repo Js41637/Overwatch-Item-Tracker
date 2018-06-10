@@ -78,6 +78,8 @@
     opacity: $overwatch-locked-item-opacity;
     text-align: right;
     padding: 0.2rem;
+    justify-content: flex-end;
+    align-items: flex-start;
 
     &:hover {
       transform: scale(1.1);
