@@ -114,25 +114,28 @@
       right: 0.2rem;
     }
   }
+}
 
-  .hero-grid-tooltip {
-    padding: 0 !important;
-    transform: translateY(50%);
+.hero-grid-tooltip {
+  padding: 0 !important;
+  transform: translateY(50%);
 
-    .tooltip-inner {
-      background: $black;
-      padding: 0.4rem 0.8rem;
-      font-family: $font__base;
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      max-width: $size__grid-tooltip;
-    }
+  .tooltip-inner {
+    background: $black;
+    padding: 0.6rem 0.8rem;
+    font-family: $font__base;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    max-width: $size__grid-tooltip;
+  }
 
-    p {
-      font-style: italic;
-      font-size: 0.8em;
-      color: $color__grid-tooltip-description;
-      @include font(sans-serif);
-    }
+  p {
+    font-style: italic;
+    font-size: 0.9em;
+    color: $color__grid-tooltip-description;
+    text-transform: none;
+    margin: 0;
+
+    @include font(sans-serif);
   }
 }
