@@ -184,6 +184,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
 
   // Returns if an item is checked, use item.hero if one is available as allClass Icons includes icons from all heroes
   vm.isItemChecked = function(item, type) {
+    if (item.standardItem) return true
+
     return vm.checked[item.hero || hero.id][type][item.id];
   };
 
