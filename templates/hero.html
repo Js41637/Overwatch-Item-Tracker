@@ -98,8 +98,7 @@
         ng-repeat="item in items track by item.id"
         fancy-load="{{$index}}"
         ng-click="hero.selectItem(item, type)"
-        lazy-background="{{$ctrl.getImageUrl(item.url)}}"
-        no-loader="true">
+        lazy-load="{{$ctrl.getImageUrl(item.url)}}">
           <span class="glyphicon glyphicon-lock" ng-hide="hero.isItemChecked(item, type)"></span>
         </span>
       </div>

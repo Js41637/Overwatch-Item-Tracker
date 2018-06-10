@@ -39,15 +39,11 @@ OWI.directive('fancyLoad', ["$timeout", function($timeout) {
   return {
     restrict: 'A',
     link: function($scope, $elm, $attr) {
-      $timeout(function() {
-        $elm.addClass('show');
-      }, $attr.fancyLoad * 8);
-
       $elm.on('click', function() {
         $elm.addClass('pulse');
-        $timeout(function() {
+        setTimeout(function() {
           $elm.removeClass('pulse');
-        }, 50);
+        }, 80);
       });
     }
   };
@@ -342,6 +338,40 @@ OWI.directive('homeProgressBars', ["CostAndTotalService", function(CostAndTotalS
         }
       })
     }]
+  }
+}])
+
+OWI.directive('lazyLoad', [function() {
+  return {
+    scope: {},
+    restrict: 'A',
+    link: function($scope, $element, $attrs) {
+      $attrs.$observe('lazyLoad', function(imgSrc) {
+        if (imgSrc === null || imgSrc === "") {
+          $element.css('background-image', '');
+          return;
+        }
+
+        // If browser doesn't support it just load the image, I can't be bothered polyfilling.
+        if (!('IntersectionObserver' in window)) {
+          $element.css('background-image', 'url("' + imgSrc + '")');
+          return;
+        }
+
+        var elm = angular.element($element)[0];
+        var observer = new IntersectionObserver(function(changes) {
+          for (var change of changes) {
+            if (change.intersectionRatio > 0) {
+              $element.css('background-image', 'url("' + imgSrc + '")');
+              observer.unobserve(elm);
+              break;
+            }
+          }
+        });
+
+        observer.observe(elm);
+      });
+    }
   }
 }])
 
