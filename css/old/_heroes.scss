@@ -339,23 +339,20 @@
 
 #hero-container .hero-grid .item {
   display: inline-block;
-  margin: 3px;
-  width: 100px;
-  height: 100px;
+  margin: 4px;
+  width: 110px;
+  height: 110px;
   text-align: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  transition: transform 100ms ease-in-out, opacity 150ms ease-in-out;
-  opacity: 0;
-  transform: scale(0);
+  transition: transform 100ms ease-in-out, opacity 100ms ease-in-out;
+  opacity: 1;
   cursor: pointer;
   position: relative;
-}
-
-#hero-container .hero-grid .item.show {
-  transform: scale(1);
-  opacity: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.6);
 }
 
 #hero-container .hero-grid .item.img-load-error:after {
@@ -377,24 +374,20 @@
 }
 
 #hero-container .hero-grid .item:not(.selected) {
-  opacity: 0.6;
+  opacity: 0.53;
 }
 
-#hero-container .hero-grid .item:not(.selected):before {
-    content: "";
-    background-image: url(../resources/icons/lock.svg) !important;
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    bottom: 1px;
-    right: 1px;
-    background-size: contain;
-}
-
-#hero-container .hero-grid .item {
-  border-radius: 6px;
-  overflow: hidden;
-  border: 3px solid rgba(255, 255, 255, 0.6);
+#hero-container .hero-grid .item:not(.selected)::before {
+  content: "";
+  background-image: url(../resources/icons/lock.svg) !important;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
 }
 
 #hero-container .hero-grid .item:hover {
@@ -402,7 +395,7 @@
   opacity: 1;
 }
 
-#hero-container .hero-grid .item.pulse:hover {
+#hero-container .hero-grid .item.pulse {
   transform: scale(1.2) !important;
 }
 
