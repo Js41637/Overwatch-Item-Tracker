@@ -342,7 +342,6 @@
   margin: 4px;
   width: 110px;
   height: 110px;
-  text-align: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -353,6 +352,7 @@
   border-radius: 6px;
   overflow: hidden;
   border: 3px solid rgba(255, 255, 255, 0.6);
+  contain: content;
 }
 
 #hero-container .hero-grid #sprays .item {
@@ -373,7 +373,7 @@
   bottom: 1px;
   right: 1px;
   background-size: contain;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   opacity: 1;
   transition: opacity 70ms;
@@ -392,6 +392,19 @@
   transform: scale(1.2) !important;
 }
 
+#hero-container .hero-grid .item:before {
+  display: none;
+}
+
+#hero-container .hero-grid .item:not([event="none"]):after,
+#hero-container .hero-grid .item:not([achievement="false"]):after {
+  top: unset !important;
+  bottom: 1px;
+  left: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  background-size: 20px !important;
+}
 
 /* Item Icons */
 
@@ -421,37 +434,36 @@
   padding-right: 63px;
 }
 
-
 /* Event Icons */
 
-#hero-container .hero-items .item[event="HALLOWEEN"]:after {
+#hero-container .item[event="HALLOWEEN"]:after {
   background-image: url("../resources/icons/HALLOWEEN.svg");
 }
 
-#hero-container .hero-items .item[event="SUMMER_GAMES"]:after {
+#hero-container .item[event="SUMMER_GAMES"]:after {
   background-image: url("../resources/icons/SUMMER_GAMES.svg");
 }
 
-#hero-container .hero-items .item[event="WINTER_WONDERLAND"]:after {
+#hero-container .item[event="WINTER_WONDERLAND"]:after {
   background-image: url("../resources/icons/WINTER_WONDERLAND.svg");
 }
 
-#hero-container .hero-items .item[event="LUNAR_NEW_YEAR"]:after {
+#hero-container .item[event="LUNAR_NEW_YEAR"]:after {
   background-image: url("../resources/icons/LUNAR_NEW_YEAR.svg");
 }
 
-#hero-container .hero-items .item[event="UPRISING"]:after {
+#hero-container .item[event="UPRISING"]:after {
   background-image: url("../resources/icons/UPRISING.svg");
 }
 
-#hero-container .hero-items .item[event="ANNIVERSARY"]:after {
+#hero-container .item[event="ANNIVERSARY"]:after {
   background-image: url("../resources/icons/ANNIVERSARY.svg");
 }
 
 
 /* Achivement Icons */
 
-#hero-container .item[achievement="true"]:after, #hero-container .item:not([event="none"]):not([achievement="false"]):before {
+#hero-container .hero-items .item:not([event=none]):not([achievement=false]):before, #hero-container .item[achievement=true]:after {
   background-image: url("../resources/icons/achievement.svg");
 }
 
@@ -460,7 +472,7 @@
 }
 
 #hero-container .section .item[achievement="bcrf"]:after {
-  background-image: url("../resources/icons/heart.png");
+  background-image: url("../resources/icons/heart.svg");
 }
 
 #hero-container .section .item[achievement="owl"]:after {
