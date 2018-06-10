@@ -346,6 +346,8 @@ OWI.directive('lazyLoad', [function() {
     scope: {},
     restrict: 'A',
     link: function($scope, $element, $attrs) {
+      var _initialized = false;
+
       $attrs.$observe('lazyLoad', function(imgSrc) {
         if (imgSrc === null || imgSrc === "") {
           $element.css('background-image', '');
@@ -361,12 +363,13 @@ OWI.directive('lazyLoad', [function() {
         var elm = angular.element($element)[0];
         var observer = new IntersectionObserver(function(changes) {
           for (var change of changes) {
-            if (change.intersectionRatio > 0) {
+            if (change.intersectionRatio > 0 || (change.intersectionRatio > 0 && _initialized)) {
               $element.css('background-image', 'url("' + imgSrc + '")');
               observer.unobserve(elm);
-              break;
             }
           }
+
+          _initialized = true
         });
 
         observer.observe(elm);
