@@ -1,104 +1,89 @@
+
+
 #hero-container {
   padding: 10px 40px;
-}
 
-#hero-container #hero-header {
-  margin-top: -65px;
-  position: relative;
-}
+  #hero-header {
+    margin-top: -65px;
+    position: relative;
 
-#hero-container .hero-overview {
-  display: flex;
-  justify-content: center;
-}
+    .hero-overview {
+      display: flex;
+      justify-content: center;
 
-#hero-container .hero-overview .hero-image {
-  height: 200px;
-  margin-left: -245px;
-}
+      .hero-image {
+        height: 180px;
+        margin-left: -220px;
 
-#all #hero-container .hero-overview .hero-image {
-  width: 490px;
-}
+        img {
+          height: 100%;
+          width: 440px;
+          animation-name: fadeIn;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out;
+          animation-duration: 0.6s;
+        }
+      }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+      .hero-info {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .hero-name {
+          font-size: 120px;
+          color: #fff;
+          margin-bottom: -20px;
+          animation-name: slideInX;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-out;
+          animation-duration: 0.8s;
+        }
+
+        .hero-class {
+          font-size: 48px;
+          animation-name: slideInX;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-out;
+          animation-duration: 0.8s;
+        }
+      }
+    }
+
+    .options {
+      position: absolute;
+      bottom: 28px;
+      right: 6px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+
+      .save-filters {
+        text-align: center;
+        margin-top: 8px;
+
+        button {
+          width: 70px;
+        }
+      }
+    }
   }
-  100% {
-    opacity: 1;
+}
+
+#all #hero-container {
+  .hero-overview {
+    .hero-image {
+      width: 440px;
+
+      img {
+        width: 150px;
+        float: right;
+        margin-right: 20px;
+      }
+    }
   }
 }
-
-#hero-container .hero-overview .hero-image img {
-  height: 100%;
-  width: 490px;
-  animation-name: fadeIn;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  animation-duration: 0.6s;
-}
-
-#all #hero-container .hero-overview .hero-image img {
-  width: 150px;
-  float: right;
-  margin-right: 20px;
-}
-
-#hero-container .hero-overview .hero-info {
-  margin-left: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@keyframes slideInX {
-  0% {
-    transform: translateX(-30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-#hero-container .hero-overview .hero-name {
-  font-size: 120px;
-  color: #fff;
-  margin-bottom: -20px;
-  animation-name: slideInX;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-duration: 0.8s;
-}
-
-#hero-container .hero-overview .hero-class {
-  font-size: 48px;
-  animation-name: slideInX;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-duration: 0.8s;
-}
-
-#hero-container #hero-header .options {
-  position: absolute;
-  bottom: 28px;
-  right: 6px;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-}
-
-#hero-container #hero-header .options .save-filters {
-  text-align: center;
-  margin-top: 8px;
-}
-
-#hero-container #hero-header .options .save-filters button {
-  width: 70px;
-}
-
 
 #hero-container .hero-items .section .options {
   opacity: 0;

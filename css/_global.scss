@@ -449,20 +449,6 @@ strong {
     }
   }
 }
-@keyframes Animasearch {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  15%, 50% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  65% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
 
 /**
@@ -1028,7 +1014,7 @@ strong {
   left: 0;
   right: 0;
   z-index: 1000;
-  will-change: auto;
+  will-change: height;
   transition: height 0.315s linear;
 }
 
