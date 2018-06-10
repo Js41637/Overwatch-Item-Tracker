@@ -93,8 +93,10 @@
         ng-class="{selected: hero.isItemChecked(item, type)}"
         event="{{::item.event || 'none'}}"
         achievement="{{::item.achievement || 'false'}}"
-        uib-tooltip="{{::item.name}}{{::item.standardItem ? ' (Default)' : ''}}"
+        uib-tooltip-template="'heroGridTooltipTemplate.html'"
         tooltip-placement="top"
+        tooltip-append-to-body="true"
+        tooltip-class="hero-grid-tooltip"
         ng-repeat="item in items track by item.id"
         fancy-load="{{$index}}"
         ng-click="hero.selectItem(item, type)"
@@ -145,4 +147,9 @@
 
 <script type="text/ng-template" id="imagePreviewTemplate.html">
   <tooltip-image-preview></tooltip-image-preview>
+</script>
+
+<script type="text/ng-template" id="heroGridTooltipTemplate.html">
+  <strong>{{::item.name}}<small ng-show="::item.standardItem"> (Default)</small></strong>
+  <p>{{::item.description}}</p>
 </script>
