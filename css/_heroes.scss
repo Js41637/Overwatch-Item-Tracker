@@ -355,19 +355,6 @@
   border: 3px solid rgba(255, 255, 255, 0.6);
 }
 
-#hero-container .hero-grid .item.img-load-error:after {
-  content: "?";
-  font-size: 80px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  right: 0;
-  bottom: 0;
-  align-items: center;
-}
-
 #hero-container .hero-grid #sprays .item {
   width: 130px;
   height: 130px;
@@ -377,7 +364,7 @@
   opacity: 0.53;
 }
 
-#hero-container .hero-grid .item:not(.selected)::before {
+#hero-container .hero-grid .item .lock-icon {
   content: "";
   background-image: url(../resources/icons/lock.svg) !important;
   width: 25px;
@@ -388,6 +375,12 @@
   background-size: contain;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 3px;
+  opacity: 1;
+  transition: opacity 70ms;
+}
+
+#hero-container .hero-grid .item.selected .lock-icon {
+  opacity: 0;
 }
 
 #hero-container .hero-grid .item:hover {
