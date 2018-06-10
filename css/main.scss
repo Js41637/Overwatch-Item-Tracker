@@ -1,43 +1,5 @@
-// Get data first
-@import "global/global";
-// Import all the variables, mixins, etc.
 @import
-  "include/config/functions",
-  "include/config/colors",
-  "include/config/config",
-  "include/config/typography",
-  "include/config/mixins"
+  "global",
+  "heroes",
+  "events"
 ;
-@import
-  "include/header"
-;
-
-body {
-  min-width: $size__body-min-width;
-  font-family: $font__big-noodle;
-  background: $color__body-background;
-  color: $color__default-text;
-  line-height: 1;
-  padding-top: 45px;
-  transition: opacity 100ms ease-in;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-#background {
-  background: url('../resources/body-bg.jpg') no-repeat top;
-  background-size: cover;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  filter: brightness(.925);
-
-  @include z-index(content, -10);
-}
-
-
-// TO DO
-#sidebar {
-  display: none;
-}
