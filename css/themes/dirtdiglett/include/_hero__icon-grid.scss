@@ -89,6 +89,10 @@
 
     &.selected {
       opacity: 1;
+
+      .glyphicon-lock {
+        opacity: 0;
+      }
     }
 
     &::before,
@@ -104,6 +108,7 @@
       right: 0.4rem;
       bottom: 0.4rem;
       top: unset;
+      opacity: 1;
     }
   }
 
