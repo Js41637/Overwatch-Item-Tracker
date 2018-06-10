@@ -90,7 +90,7 @@
       <div class="section-content">
         <span
         class="item"
-        ng-class="{selected: hero.isItemChecked(item, type) || item.standardItem}"
+        ng-class="{selected: hero.isItemChecked(item, type)}"
         event="{{::item.event || 'none'}}"
         achievement="{{::item.achievement || 'false'}}"
         uib-tooltip="{{::item.name}}{{::item.standardItem ? ' (Default)' : ''}}"
@@ -123,7 +123,7 @@
       <div class="section-content">
         <span
         class="item {{::item.quality}}"
-        ng-class="{selected: hero.isItemChecked(item, type) || item.standardItem}"
+        ng-class="{selected: hero.isItemChecked(item, type)}"
         event="{{::item.event || 'none'}}"
         achievement="{{::item.achievement || 'false'}}"
         uib-tooltip-template="'imagePreviewTemplate.html'"
