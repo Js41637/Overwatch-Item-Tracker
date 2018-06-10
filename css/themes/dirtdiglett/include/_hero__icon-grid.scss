@@ -90,7 +90,7 @@
     &.selected {
       opacity: 1;
 
-      .glyphicon-lock {
+      .lock-icon {
         opacity: 0;
       }
     }
@@ -101,14 +101,15 @@
       filter: none !important;
     }
 
-    .glyphicon-lock {
-      color: $white;
-      font-size: 1.8rem;
+    .lock-icon {
+      background-image: url(/resources/icons/lock.svg);
       position: absolute;
-      right: 0.4rem;
-      bottom: 0.4rem;
-      top: unset;
+      right: 1px;
+      bottom: 1px;
       opacity: 1;
+      width: 24px;
+      height: 24px;
+      background-size: contain;
     }
   }
 
