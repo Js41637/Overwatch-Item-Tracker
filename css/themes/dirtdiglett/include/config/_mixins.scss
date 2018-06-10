@@ -89,6 +89,8 @@
     text-transform: uppercase;
   } @else if ($type == Big-Noodle) {
     font-family: $font__big-noodle;
+  } @else if ($type == sans-serif) {
+    font-family: $font__sans-serif;
   }
 }
 

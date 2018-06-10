@@ -20,6 +20,8 @@ $size__item-checkbox:                           ($size__item-base + ($size__item
 $size__legendary-section-height:                50rem;
 $size__legendary-card-label-padding:            1.8rem;
 
+$size__grid-tooltip:                            24rem;
+
 $size__preview-img:                             (45rem, 45rem);
 $multiplier__preview-img-two:                   1.8;
 $size__preview-img-two:                         (nth($size__preview-img, 1) * $multiplier__preview-img-two, nth($size__preview-img, 2));

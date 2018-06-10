@@ -115,13 +115,9 @@
     }
   }
 
-  .tooltip {
+  .hero-grid-tooltip {
     padding: 0 !important;
     transform: translateY(50%);
-
-    .tooltip-arrow {
-      display: none;
-    }
 
     .tooltip-inner {
       background: $black;
@@ -129,6 +125,14 @@
       font-family: $font__base;
       text-transform: uppercase;
       font-size: 1.4rem;
+      max-width: $size__grid-tooltip;
+    }
+
+    p {
+      font-style: italic;
+      font-size: 0.8em;
+      color: $color__grid-tooltip-description;
+      @include font(sans-serif);
     }
   }
 }
