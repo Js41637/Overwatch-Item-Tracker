@@ -176,7 +176,7 @@
         display: inline-block;
         width: 0.75em;
         height: 0.7em;
-        background: url('/resources/icons/currency.svg') no-repeat center/0.7em auto;
+        background: url($ROOT + '/resources/icons/currency.svg') no-repeat center/0.7em auto;
       }
     }
 
@@ -244,13 +244,13 @@
 
     @each $attributevalue, $filename in $achievements {
       &[achievement="#{$attributevalue}"]::before {
-        background-image: url('/resources/icons/#{$filename}.svg');
+        background-image: url($ROOT + '/resources/icons/#{$filename}.svg');
       }
     }
 
     @each $event, $eventdata in $events {
       &[event="#{$event}"]::after {
-        background-image: url('/resources/icons/#{$event}.svg');
+        background-image: url($ROOT + '/resources/icons/#{$event}.svg');
       }
     }
 

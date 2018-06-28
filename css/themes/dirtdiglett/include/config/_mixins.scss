@@ -87,6 +87,7 @@
   @if ($type == Futura) {
     font-family: $font__base;
     text-transform: uppercase;
+    font-weight: bold;
   } @else if ($type == Big-Noodle) {
     font-family: $font__big-noodle;
   } @else if ($type == sans-serif) {

@@ -14,6 +14,6 @@ $heroes-two: map-remove($heroes, all);
 
 @each $heroname, $data in $heroes-two {
   #hero-nav .gallery.hero .block[href$="#{$heroname}"] .img {
-    background-image: url('/resources/heroes/#{$heroname}/portrait.png') !important;
+    background-image: url($ROOT + '/resources/heroes/#{$heroname}/portrait.png') !important;
   }
 }
