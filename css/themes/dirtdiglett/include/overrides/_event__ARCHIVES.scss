@@ -12,7 +12,7 @@ $opacity__ice-blue: 0.8;
 // Specific event override
 #hero-nav .gallery.event .block[href$="/UPRISING"] .img,
 body#UPRISING .header-content::before {
-  background-image: url('/resources/updates/UPRISING/archives_logo.png') !important;
+  background-image: url($ROOT + '/resources/updates/UPRISING/archives_logo.png') !important;
 }
 
 body#UPRISING {
