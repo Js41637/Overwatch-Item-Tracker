@@ -55,7 +55,7 @@
 
     @each $event, $eventdata in $events {
       label[for="#{$event}"]::after {
-        background-image: url("/resources/icons/#{$event}.svg");
+        background-image: url($ROOT + '/resources/icons/#{$event}.svg');
       }
     }
   }

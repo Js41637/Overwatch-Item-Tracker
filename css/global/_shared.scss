@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Big Noodle Titling";
-  src: local("BigNoodleTitling"), url(/fonts/big-noodle.woff) format("woff"), url(/fonts/big-noodle.ttf) format("truetype");
+  src: local("BigNoodleTitling"), url($ROOT + '/fonts/big-noodle.woff') format("woff"), url($ROOT + '/fonts/big-noodle.ttf') format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Big Noodle Titling";
-  src: local("BigNoodleTitling"), url(/fonts/big-noodle-oblique.woff) format("woff"), url(/fonts/big-noodle-oblique.ttf) format("truetype");
+  src: local("BigNoodleTitling"), url($ROOT + '/fonts/big-noodle-oblique.woff') format("woff"), url($ROOT + '/fonts/big-noodle-oblique.ttf') format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: Futura;
-  src: url(/fonts/futura.eot);
-  src: url(/fonts/futura.woff) format("woff"), url(/fonts/futura.ttf) format("truetype");
+  src: url($ROOT + '/fonts/futura.eot');
+  src: url($ROOT + '/fonts/futura.woff') format("woff"), url($ROOT + '/fonts/futura.ttf') format("truetype");
   font-weight: 400;
   font-style: normal;
 }

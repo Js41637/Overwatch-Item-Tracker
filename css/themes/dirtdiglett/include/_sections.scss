@@ -105,7 +105,7 @@
           content: "";
           width: 1em;
           height: 1em;
-          background: url("/resources/icons/competitive-points.svg") no-repeat left center/contain;
+          background: url($ROOT + '/resources/icons/competitive-points.svg') no-repeat left center/contain;
           display: inline-block;
           vertical-align: text-bottom;
         }
