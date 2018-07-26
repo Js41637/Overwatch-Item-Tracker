@@ -320,6 +320,45 @@ for (var hero in data) {
     });
   });
 
+  // Fuck you blizzard
+  // TODO: Get rid of this shit
+
+  heroData.items['skins'].unshift({
+    name: "Classic",
+    id: `${heroID}-classic`,
+    quality: "common",
+    url: `/heroes/${heroID}/skins/${heroID}-classic.jpg`,
+    standardItem: true
+  })
+
+  heroData.items['poses'].unshift({
+    name: "Heroic",
+    id: `${heroID}-heroic`,
+    quality: "common",
+    url: `/heroes/${heroID}/poses/${heroID}-heroic.jpg`,
+    standardItem: true
+  })
+
+  heroData.items['emotes'].unshift({
+    name: "Heroic",
+    id: `${heroID}-heroic`,
+    quality: "common",
+    url: `/heroes/${heroID}/emotes/${heroID}-heroic.webm`,
+    standardItem: true
+  })
+
+  heroData.items['intros'].unshift({
+    name: "Heroic",
+    id: `${heroID}-heroic`,
+    quality: "common",
+    url: `/heroes/${heroID}/intros/${heroID}-heroic.webm`,
+    standardItem: true
+  })
+
+  if (originalData.heroes[heroID]) {
+    heroData.items['voicelines'].unshift(originalData.heroes[heroID].items.voicelines[0])
+  }
+
   heroes[heroID] = heroData;
 }
 

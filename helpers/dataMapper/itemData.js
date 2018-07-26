@@ -161,10 +161,13 @@ const data = {
     }
   },
   specialAchievementItems: {
-    'bcrf': {
+    bcrf: {
       skins: ['mercy-pink'],
       sprays: ['mercy-pink', 'mercy-cure', 'mercy-ribbon', 'mercy-together'],
       icons: ['mercy-pink', 'mercy-ribbon']
+    },
+    owl: {
+      emotes: ['lucio-dance-party']
     }
   }
 };

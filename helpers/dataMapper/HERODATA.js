@@ -211,6 +211,14 @@ const data = {
       highlight: "#5f6472"
     }
   },
+  "wrecking-ball": {
+    class: CLASSES.TANK,
+    description: "Wrecking Ball is piloted by an intelligent, genetically engineered hamster named Hammond, who explores the world, searching for adventure.",
+    colors: {
+      primary: "#ff751f",
+      highlight: "#ff8e47"
+    }
+  },
   zarya: {
     class: CLASSES.TANK,
     description: "Zarya is one of the world's strongest women, a celebrated athlete who sacrificed personal glory to protect her family, friends, and country in a time of war.",
