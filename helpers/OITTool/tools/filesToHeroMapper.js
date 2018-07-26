@@ -2,7 +2,7 @@ const fs = require('fs');
 const HERODATA = require('../../dataMapper/HERODATA.js');
 const { checkDirectorys, getDirectories } = require('./utils');
 
-const validTypes = ['emotes', 'intros', 'icons', 'poses', 'sprays', 'skins', 'skinsEpic', 'skinsLegendary', 'voicelines', 'none'];
+const validTypes = ['emotes', 'intros', 'icons', 'poses', 'sprays', 'skins', 'skinsEpic', 'skinsLegendary', 'voicelines', 'owlskins', 'none'];
 const weirdHeroes = {
   halloween: 'halloween-bots',
   training: 'training-bot',

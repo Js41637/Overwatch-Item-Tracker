@@ -197,6 +197,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
         return 'voice lines';
       case 'poses':
         return 'victory poses';
+      case 'owlskins':
+        return 'overwatch league skins';
       default:
         return name;
     }
@@ -537,7 +539,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
   };
 
   vm.data = angular.toJson(DataService.checked, 2);
-  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines', 'weapons'];
+  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines', 'weapons', 'owlskins'];
   var validHeroes = Object.keys(DataService.heroes);
   function validateData(data) {
     try {
