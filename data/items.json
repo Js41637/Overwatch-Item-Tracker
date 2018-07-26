@@ -167,7 +167,8 @@
           "name": "B73-NS",
           "id": "b73ns",
           "event": "UPRISING",
-          "url": "/heroes/all/icons/b73ns.png"
+          "url": "/heroes/all/icons/b73ns.png",
+          "description": "Complete Uprising on Expert difficulty."
         },
         {
           "name": "Badge",
@@ -204,7 +205,8 @@
           "name": "Barbarian",
           "id": "barbarian",
           "url": "/heroes/all/icons/barbarian.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Basketball",
@@ -532,7 +534,8 @@
           "name": "Crusader",
           "id": "crusader",
           "url": "/heroes/all/icons/crusader.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Cultist",
@@ -773,7 +776,8 @@
           "name": "Demon Hunter",
           "id": "demon-hunter",
           "url": "/heroes/all/icons/demon-hunter.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Diving",
@@ -1308,7 +1312,8 @@
           "name": "Jaina",
           "id": "jaina",
           "url": "/heroes/all/icons/jaina.png",
-          "group": "world of warcraft"
+          "group": "world of warcraft",
+          "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition"
         },
         {
           "name": "Japan",
@@ -1614,7 +1619,8 @@
           "name": "Monk",
           "id": "monk",
           "url": "/heroes/all/icons/monk.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Monkey",
@@ -1674,7 +1680,8 @@
           "id": "nullmari",
           "event": "UPRISING",
           "url": "/heroes/all/icons/nullmari.png",
-          "group": "pachi"
+          "group": "pachi",
+          "description": "Complete Uprising (All Heroes) with 8 different heroes."
         },
         {
           "name": "Null Sector",
@@ -2246,14 +2253,16 @@
           "id": "season-11-competitor",
           "url": "/heroes/all/icons/season-11-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 11 placement matches"
         },
         {
           "name": "Season 11 Hero",
           "id": "season-11-hero",
           "url": "/heroes/all/icons/season-11-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 11"
         },
         {
           "name": "Sentry",
@@ -2437,7 +2446,8 @@
           "name": "Summer Games 2016",
           "id": "summer-games-2016",
           "event": "SUMMER_GAMES",
-          "url": "/heroes/all/icons/summer-games-2016.png"
+          "url": "/heroes/all/icons/summer-games-2016.png",
+          "description": "Unlocked with Summer Games 2016"
         },
         {
           "name": "Summer Games 2017",
@@ -2774,13 +2784,15 @@
           "name": "Witch Doctor",
           "id": "witch-doctor",
           "url": "/heroes/all/icons/witch-doctor.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Wizard",
           "id": "wizard",
           "url": "/heroes/all/icons/wizard.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Wolf",
@@ -2905,6 +2917,15 @@
         }
       ],
       "sprays": [
+        {
+          "id": "1-fan",
+          "name": "#1 Fan",
+          "url": "/heroes/all/sprays/1-fan.png",
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
+        },
         {
           "name": "...Punch",
           "id": "punch",
@@ -3167,6 +3188,15 @@
           "quality": "common"
         },
         {
+          "id": "living-room",
+          "name": "Living Room",
+          "url": "/heroes/all/sprays/living-room.png",
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
+        },
+        {
           "name": "Logo",
           "id": "logo",
           "url": "/heroes/all/sprays/logo.png",
@@ -3208,6 +3238,15 @@
           "url": "/heroes/all/sprays/man-and-omnic.png",
           "achievement": true,
           "description": "Play a Quick or Competitive Play game in a group with a friend."
+        },
+        {
+          "id": "matchs-on",
+          "name": "Match's On",
+          "url": "/heroes/all/sprays/matchs-on.png",
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
         },
         {
           "name": "Monk",
@@ -3525,14 +3564,16 @@
           "id": "season-11-competitor",
           "url": "/heroes/all/sprays/season-11-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 11 placement matches"
         },
         {
           "name": "Season 11 Hero",
           "id": "season-11-hero",
           "url": "/heroes/all/sprays/season-11-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 11"
         },
         {
           "name": "Seoul Dynasty Logo",
@@ -3625,6 +3666,15 @@
           "quality": "common"
         },
         {
+          "id": "watchpoint-gibraltar",
+          "name": "Watchpoint Gibraltar",
+          "url": "/heroes/all/sprays/watchpoint-gibraltar.png",
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
+        },
+        {
           "name": "Well Played",
           "id": "well-played",
           "url": "/heroes/all/sprays/well-played.png",
@@ -3691,7 +3741,8 @@
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/sprays/summer-games-2016.png",
           "quality": "common",
-          "group": "SUMMER_GAMES_2016"
+          "group": "SUMMER_GAMES_2016",
+          "description": "Unlocked with Summer Games 2016"
         },
         {
           "name": "...Never Die",
@@ -10065,7 +10116,7 @@
           "id": "lucio-dance-party",
           "quality": "legendary",
           "url": "/heroes/lucio/emotes/lucio-dance-party.webm",
-          "achievement": "owl"
+          "achievement": "blizzard"
         }
       ],
       "intros": [
@@ -23025,14 +23076,16 @@
           "id": "wrecking-ball-cute",
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-cute.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Absorb 1500 damage with Wrecking Ball's Adaptive Shield without dying in Quick or Competitive Play."
         },
         {
           "name": "Pixel",
           "id": "wrecking-ball-pixel",
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-pixel.png",
-          "achievement": true
+          "achievement": true,
+          "description": "Absorb 1500 damage with Wrecking Ball's Adaptive Shield without dying in Quick or Competitive Play."
         }
       ],
       "voicelines": [

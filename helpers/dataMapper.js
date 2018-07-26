@@ -169,12 +169,10 @@ allClassData = reduce(allClassData, (result, items, type) => {
 
     // Check if we have an achievement description for an achievement
     let description;
-    if (isAchievement) {
-      const desc = getAchievementForItem(item.id);
+    const desc = getAchievementForItem(item.id);
 
-      if (desc) {
-        description = { description: desc };
-      }
+    if (desc) {
+      description = { description: desc };
     }
 
     // Check for specific item groups

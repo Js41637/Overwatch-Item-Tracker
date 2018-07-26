@@ -856,6 +856,22 @@
       "type": "spray",
       "hero": "all"
     },
+    "season-11-competitor": {
+      "name": null,
+      "description": "Unlocked by completing Season 11 placement matches",
+      "reward": "Season 11 Competitor",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "season-11-hero": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 11",
+      "reward": "Season 11 Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
     "competitive-ctf-competitor": {
       "name": null,
       "description": "Unlocked by completing competitive Capture The Flag placement matches",
@@ -1225,6 +1241,34 @@
     },
     "inaugural-season": {
       "description": "Unlocked by purchasing the Overwatch League Twitch All-Access Pass"
+    },
+    "1-fan": {
+      "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
+    },
+    "living-room": {
+      "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
+    },
+    "matchs-on": {
+      "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
+    },
+    "watchpoint-gibraltar": {
+      "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
+    },
+    "adaptation": {
+      "name": "Adaptation",
+      "reward": "Pixel",
+      "quality": "common",
+      "type": "spray",
+      "description": "Absorb 1500 damage with Wrecking Ball's Adaptive Shield without dying in Quick or Competitive Play.",
+      "hero": "wrecking-ball"
+    },
+    "strike": {
+      "name": "Strike",
+      "reward": "Cute",
+      "quality": "common",
+      "type": "spray",
+      "description": "Absorb 1500 damage with Wrecking Ball's Adaptive Shield without dying in Quick or Competitive Play.",
+      "hero": "wrecking-ball"
     }
   },
   "mappings": {
@@ -1280,6 +1324,8 @@
     "symmetra-cute": "huge-success",
     "zenyatta-pixel": "rapid-discord",
     "zenyatta-cute": "the-iris-embraces-you",
+    "wrecking-ball-pixel": "adaptation",
+    "wrecking-ball-cute": "strike",
     "jail": "lockdown",
     "beyond-the-moon": "double-cap",
     "out-of-my-way": "escort-duty",
@@ -1335,6 +1381,8 @@
     "season-9-hero": "season-9-hero",
     "season-10-competitor": "season-10-competitor",
     "season-10-hero": "season-10-hero",
+    "season-11-competitor": "season-11-competitor",
+    "season-11-hero": "season-11-hero",
     "competitive-ctf-competitor": "competitive-ctf-competitor",
     "competitive-ctf-hero": "competitive-ctf-hero",
     "competitive-deathmatch-competitor": "competitive-deathmatch-competitor",
@@ -1381,6 +1429,10 @@
     "talon-sniper": "into-the-shadows",
     "talon-enforcer": "redacted",
     "talon-trooper": "the-venice-incident",
-    "inaugural-season": "inaugural-season"
+    "inaugural-season": "inaugural-season",
+    "1-fan": "1-fan",
+    "living-room": "living-room",
+    "matchs-on": "matchs-on",
+    "watchpoint-gibraltar": "watchpoint-gibraltar"
   }
 }
