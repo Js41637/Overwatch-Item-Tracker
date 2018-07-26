@@ -212,6 +212,8 @@ const data = {
     }
   },
   "wrecking-ball": {
+    name: 'Hammond',
+    sortName: 'Wrecking Ball',
     class: CLASSES.TANK,
     description: "Wrecking Ball is piloted by an intelligent, genetically engineered hamster named Hammond, who explores the world, searching for adventure.",
     colors: {

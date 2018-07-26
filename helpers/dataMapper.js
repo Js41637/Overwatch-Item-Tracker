@@ -578,6 +578,8 @@ for (let hero in heroes) {
 // Go through all hero items and sort items as they are sorted in-game
 console.info('Sorting hero items');
 forEach(heroes, hero => forEach(hero.items, (items, type) => {
+  delete hero.sortName
+
   if (hero.id == 'all') {
     if (type == 'sprays') {
       hero.items[type] = sortBy(alphaNumSort(items), [

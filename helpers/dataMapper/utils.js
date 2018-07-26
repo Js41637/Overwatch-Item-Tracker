@@ -97,7 +97,7 @@ var sortObject = (o, update) => {
   if (update) {
     array = _.sortBy(o, u => u.order);
   } else {
-    array = _.sortBy(o, h => h.name);
+    array = _.sortBy(o, h => h.sortName || h.name);
   }
 
   for (let thing of array) {
