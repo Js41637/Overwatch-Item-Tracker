@@ -2,10 +2,10 @@ const _ = require('lodash');
 const achievementData = require('../../data/achievements');
 
 const qualityOrder = {
-  'common': 0,
-  'rare': 1,
-  'epic': 2,
-  'legendary': 3
+  common: 0,
+  rare: 1,
+  epic: 2,
+  legendary: 3
 };
 
 const qualities = ['common', 'epic', 'rare', 'legendary'];
@@ -51,7 +51,7 @@ const stupidNames = {
 // Returns a cleanID, replacing all bad characters and replacing unicode ones
 const getCleanID = (what, hero) => {
   what = stupidNames[what] || what;
-  return (hero ? `${hero}-` : '') + 
+  return (hero ? `${hero}-` : '') +
           what.toLowerCase()
             .replace('ị', 'i')
             .replace('é', 'e')
@@ -71,7 +71,7 @@ const getPreviewURL = (type, id, hero, event) => {
   if (event && type.match(/^(skins(Epic|Legendary)?|poses|emotes|intros)$/)) {
     url = `/updates/${event}/${type}/${id}`;
   } else {
-    url = `/heroes/${hero}/${type}/${id}`; 
+    url = `/heroes/${hero}/${type}/${id}`;
   }
   switch (type) {
     case 'voicelines':
@@ -97,7 +97,7 @@ var sortObject = (o, update) => {
   if (update) {
     array = _.sortBy(o, u => u.order);
   } else {
-    array = _.sortBy(o, h => h.name);
+    array = _.sortBy(o, h => h.sortName || h.name);
   }
 
   for (let thing of array) {
@@ -125,7 +125,7 @@ const getOriginalItemsList = data => {
   const out = {}
 
   for (let hero in data.heroes) {
-    out[hero] = {} 
+    out[hero] = {}
     for (let type in data.heroes[hero].items) {
       out[hero][type] = []
       for (let item of data.heroes[hero].items[type]) {

@@ -169,12 +169,10 @@ allClassData = reduce(allClassData, (result, items, type) => {
 
     // Check if we have an achievement description for an achievement
     let description;
-    if (isAchievement) {
-      const desc = getAchievementForItem(item.id);
+    const desc = getAchievementForItem(item.id);
 
-      if (desc) {
-        description = { description: desc };
-      }
+    if (desc) {
+      description = { description: desc };
     }
 
     // Check for specific item groups
@@ -319,6 +317,45 @@ for (var hero in data) {
       }
     });
   });
+
+  // Fuck you blizzard
+  // TODO: Get rid of this shit
+
+  heroData.items['skins'].unshift({
+    name: "Classic",
+    id: `${heroID}-classic`,
+    quality: "common",
+    url: `/heroes/${heroID}/skins/${heroID}-classic.jpg`,
+    standardItem: true
+  })
+
+  heroData.items['poses'].unshift({
+    name: "Heroic",
+    id: `${heroID}-heroic`,
+    quality: "common",
+    url: `/heroes/${heroID}/poses/${heroID}-heroic.jpg`,
+    standardItem: true
+  })
+
+  heroData.items['emotes'].unshift({
+    name: "Heroic",
+    id: `${heroID}-heroic`,
+    quality: "common",
+    url: `/heroes/${heroID}/emotes/${heroID}-heroic.webm`,
+    standardItem: true
+  })
+
+  heroData.items['intros'].unshift({
+    name: "Heroic",
+    id: `${heroID}-heroic`,
+    quality: "common",
+    url: `/heroes/${heroID}/intros/${heroID}-heroic.webm`,
+    standardItem: true
+  })
+
+  if (originalData.heroes[heroID]) {
+    heroData.items['voicelines'].unshift(originalData.heroes[heroID].items.voicelines[0])
+  }
 
   heroes[heroID] = heroData;
 }
@@ -541,6 +578,8 @@ for (let hero in heroes) {
 // Go through all hero items and sort items as they are sorted in-game
 console.info('Sorting hero items');
 forEach(heroes, hero => forEach(hero.items, (items, type) => {
+  delete hero.sortName
+
   if (hero.id == 'all') {
     if (type == 'sprays') {
       hero.items[type] = sortBy(alphaNumSort(items), [

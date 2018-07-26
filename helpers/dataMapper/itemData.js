@@ -70,7 +70,7 @@ const data = {
     },
     "overwatch league": {
       icons: ['boston-uprising', 'dallas-fuel', 'florida-mayhem', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'los-angeles-valiant', 'new-york-excelsior', 'overwatch-league', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons', 'inaugural-season'],
-      sprays: ['boston-uprising-logo', 'dallas-fuel-logo', 'florida-mayhem-logo', 'houston-outlaws-logo', 'london-spitfire-logo', 'los-angeles-gladiators-logo', 'los-angeles-valiant-logo', 'new-york-excelsior-logo', 'overwatch-league', 'philadelphia-fusion-logo', 'san-francisco-shock-logo', 'seoul-dynasty-logo', 'shanghai-dragons-logo', 'inaugural-season']
+      sprays: ['boston-uprising-logo', 'dallas-fuel-logo', 'florida-mayhem-logo', 'houston-outlaws-logo', 'london-spitfire-logo', 'los-angeles-gladiators-logo', 'los-angeles-valiant-logo', 'new-york-excelsior-logo', 'overwatch-league', 'philadelphia-fusion-logo', 'san-francisco-shock-logo', 'seoul-dynasty-logo', 'shanghai-dragons-logo', 'inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar']
     }
   },
   achievementSprays: [
@@ -161,7 +161,7 @@ const data = {
     }
   },
   specialAchievementItems: {
-    'bcrf': {
+    bcrf: {
       skins: ['mercy-pink'],
       sprays: ['mercy-pink', 'mercy-cure', 'mercy-ribbon', 'mercy-together'],
       icons: ['mercy-pink', 'mercy-ribbon']

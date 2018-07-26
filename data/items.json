@@ -167,7 +167,8 @@
           "name": "B73-NS",
           "id": "b73ns",
           "event": "UPRISING",
-          "url": "/heroes/all/icons/b73ns.png"
+          "url": "/heroes/all/icons/b73ns.png",
+          "description": "Complete Uprising on Expert difficulty."
         },
         {
           "name": "Badge",
@@ -204,7 +205,8 @@
           "name": "Barbarian",
           "id": "barbarian",
           "url": "/heroes/all/icons/barbarian.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Basketball",
@@ -532,7 +534,8 @@
           "name": "Crusader",
           "id": "crusader",
           "url": "/heroes/all/icons/crusader.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Cultist",
@@ -773,7 +776,8 @@
           "name": "Demon Hunter",
           "id": "demon-hunter",
           "url": "/heroes/all/icons/demon-hunter.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Diving",
@@ -1308,7 +1312,8 @@
           "name": "Jaina",
           "id": "jaina",
           "url": "/heroes/all/icons/jaina.png",
-          "group": "world of warcraft"
+          "group": "world of warcraft",
+          "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition"
         },
         {
           "name": "Japan",
@@ -1614,7 +1619,8 @@
           "name": "Monk",
           "id": "monk",
           "url": "/heroes/all/icons/monk.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Monkey",
@@ -1674,7 +1680,8 @@
           "id": "nullmari",
           "event": "UPRISING",
           "url": "/heroes/all/icons/nullmari.png",
-          "group": "pachi"
+          "group": "pachi",
+          "description": "Complete Uprising (All Heroes) with 8 different heroes."
         },
         {
           "name": "Null Sector",
@@ -1958,6 +1965,12 @@
           "url": "/heroes/all/icons/red-envelope.png"
         },
         {
+          "name": "Reentry",
+          "id": "wrecking-ball-reentry",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-reentry.png",
+          "hero": "wrecking-ball"
+        },
+        {
           "name": "Reinhardt",
           "id": "reinhardt-reinhardt",
           "url": "/heroes/reinhardt/icons/reinhardt-reinhardt.png",
@@ -2001,6 +2014,12 @@
           "id": "roadhog-roadhog",
           "url": "/heroes/roadhog/icons/roadhog-roadhog.png",
           "hero": "roadhog"
+        },
+        {
+          "name": "Rolling",
+          "id": "wrecking-ball-rolling",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-rolling.png",
+          "hero": "wrecking-ball"
         },
         {
           "name": "Route 66",
@@ -2234,14 +2253,16 @@
           "id": "season-11-competitor",
           "url": "/heroes/all/icons/season-11-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 11 placement matches"
         },
         {
           "name": "Season 11 Hero",
           "id": "season-11-hero",
           "url": "/heroes/all/icons/season-11-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 11"
         },
         {
           "name": "Sentry",
@@ -2425,7 +2446,8 @@
           "name": "Summer Games 2016",
           "id": "summer-games-2016",
           "event": "SUMMER_GAMES",
-          "url": "/heroes/all/icons/summer-games-2016.png"
+          "url": "/heroes/all/icons/summer-games-2016.png",
+          "description": "Unlocked with Summer Games 2016"
         },
         {
           "name": "Summer Games 2017",
@@ -2762,13 +2784,15 @@
           "name": "Witch Doctor",
           "id": "witch-doctor",
           "url": "/heroes/all/icons/witch-doctor.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Wizard",
           "id": "wizard",
           "url": "/heroes/all/icons/wizard.png",
-          "group": "diablo"
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Wolf",
@@ -2781,6 +2805,12 @@
           "id": "wreath",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/icons/wreath.png"
+        },
+        {
+          "name": "Wrecking Ball",
+          "id": "wrecking-ball-wrecking-ball",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-wrecking-ball.png",
+          "hero": "wrecking-ball"
         },
         {
           "name": "Wrestling",
@@ -2887,6 +2917,15 @@
         }
       ],
       "sprays": [
+        {
+          "id": "1-fan",
+          "name": "#1 Fan",
+          "url": "/heroes/all/sprays/1-fan.png",
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
+        },
         {
           "name": "...Punch",
           "id": "punch",
@@ -3149,6 +3188,15 @@
           "quality": "common"
         },
         {
+          "id": "living-room",
+          "name": "Living Room",
+          "url": "/heroes/all/sprays/living-room.png",
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
+        },
+        {
           "name": "Logo",
           "id": "logo",
           "url": "/heroes/all/sprays/logo.png",
@@ -3190,6 +3238,15 @@
           "url": "/heroes/all/sprays/man-and-omnic.png",
           "achievement": true,
           "description": "Play a Quick or Competitive Play game in a group with a friend."
+        },
+        {
+          "id": "matchs-on",
+          "name": "Match's On",
+          "url": "/heroes/all/sprays/matchs-on.png",
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
         },
         {
           "name": "Monk",
@@ -3507,14 +3564,16 @@
           "id": "season-11-competitor",
           "url": "/heroes/all/sprays/season-11-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 11 placement matches"
         },
         {
           "name": "Season 11 Hero",
           "id": "season-11-hero",
           "url": "/heroes/all/sprays/season-11-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 11"
         },
         {
           "name": "Seoul Dynasty Logo",
@@ -3607,6 +3666,15 @@
           "quality": "common"
         },
         {
+          "id": "watchpoint-gibraltar",
+          "name": "Watchpoint Gibraltar",
+          "url": "/heroes/all/sprays/watchpoint-gibraltar.png",
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by watching the Overwatch League Season 1 Grand Finals"
+        },
+        {
           "name": "Well Played",
           "id": "well-played",
           "url": "/heroes/all/sprays/well-played.png",
@@ -3673,7 +3741,8 @@
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/sprays/summer-games-2016.png",
           "quality": "common",
-          "group": "SUMMER_GAMES_2016"
+          "group": "SUMMER_GAMES_2016",
+          "description": "Unlocked with Summer Games 2016"
         },
         {
           "name": "...Never Die",
@@ -8878,6 +8947,12 @@
           "url": "/heroes/hanzo/voicelines/hanzo-sake.ogg"
         },
         {
+          "name": "Simple geometry",
+          "id": "hanzo-simple-geometry",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-simple-geometry.ogg"
+        },
+        {
           "name": "Spirit dragon",
           "id": "hanzo-spirit-dragon",
           "quality": "common",
@@ -10035,6 +10110,13 @@
           "url": "/updates/ANNIVERSARY/emotes/lucio-smooth.webm",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Dance Party",
+          "id": "lucio-dance-party",
+          "quality": "legendary",
+          "url": "/heroes/lucio/emotes/lucio-dance-party.webm",
+          "achievement": "blizzard"
         }
       ],
       "intros": [
@@ -19264,7 +19346,7 @@
           "quality": "common",
           "url": "/heroes/symmetra/sprays/symmetra-pixel.png",
           "achievement": true,
-          "description": "Hit an enemy with 6 beams simultaneously as Symmetra in Quick or Competitive Play."
+          "description": "Hit an enemy with 3 beams simultaneously as Symmetra in Quick or Competitive Play."
         },
         {
           "name": "Rhythmic",
@@ -22682,6 +22764,442 @@
         {
           "name": "GOLDEN",
           "id": "winston-golden",
+          "quality": "golden"
+        }
+      ]
+    }
+  },
+  "wrecking-ball": {
+    "name": "Hammond",
+    "id": "wrecking-ball",
+    "class": "Tank",
+    "description": "Wrecking Ball is piloted by an intelligent, genetically engineered hamster named Hammond, who explores the world, searching for adventure.",
+    "colors": {
+      "primary": "#ff751f",
+      "highlight": "#ff8e47"
+    },
+    "items": {
+      "skins": [
+        {
+          "name": "Classic",
+          "id": "wrecking-ball-classic",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-classic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Chloride",
+          "id": "wrecking-ball-chloride",
+          "quality": "rare",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-chloride.jpg"
+        },
+        {
+          "name": "Lithium",
+          "id": "wrecking-ball-lithium",
+          "quality": "rare",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-lithium.jpg"
+        },
+        {
+          "name": "Potassium",
+          "id": "wrecking-ball-potassium",
+          "quality": "rare",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-potassium.jpg"
+        },
+        {
+          "name": "Smoke",
+          "id": "wrecking-ball-smoke",
+          "quality": "rare",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-smoke.jpg"
+        },
+        {
+          "name": "Biohazard",
+          "id": "wrecking-ball-biohazard",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-biohazard.jpg"
+        },
+        {
+          "name": "Wooden Ball",
+          "id": "wrecking-ball-wooden-ball",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-wooden-ball.jpg"
+        },
+        {
+          "name": "Horizon",
+          "id": "wrecking-ball-horizon",
+          "quality": "legendary",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-horizon.jpg",
+          "description": "Hammond fled the Horizon Lunar Colony by constructing a makeshift escape pod and secretly anchoring it to Winston's craft."
+        },
+        {
+          "name": "Junker",
+          "id": "wrecking-ball-junker",
+          "quality": "legendary",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-junker.jpg",
+          "description": "Wrecking Ball climbed the ranks to become the champion of the Scrapyard, Junkertown's mech combat arena."
+        },
+        {
+          "name": "Lunar",
+          "id": "wrecking-ball-lunar",
+          "quality": "legendary",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-lunar.jpg",
+          "description": "Hammond fled the Horizon Lunar Colony by constructing a makeshift escape pod and secretly anchoring it to Winston's craft."
+        },
+        {
+          "name": "Mayham",
+          "id": "wrecking-ball-mayham",
+          "quality": "legendary",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-mayham.jpg",
+          "description": "Wrecking Ball climbed the ranks to become the champion of the Scrapyard, Junkertown's mech combat arena."
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "id": "wrecking-ball-heroic",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/emotes/wrecking-ball-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Cheer",
+          "id": "wrecking-ball-cheer",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/emotes/wrecking-ball-cheer.webm"
+        },
+        {
+          "name": "Laugh",
+          "id": "wrecking-ball-laugh",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/emotes/wrecking-ball-laugh.webm"
+        },
+        {
+          "name": "Lounge",
+          "id": "wrecking-ball-lounge",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/emotes/wrecking-ball-lounge.webm"
+        },
+        {
+          "name": "Repairs",
+          "id": "wrecking-ball-repairs",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/emotes/wrecking-ball-repairs.webm"
+        },
+        {
+          "name": "Sumo",
+          "id": "wrecking-ball-sumo",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/emotes/wrecking-ball-sumo.webm"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "id": "wrecking-ball-heroic",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/intros/wrecking-ball-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Pop Up",
+          "id": "wrecking-ball-pop-up",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/intros/wrecking-ball-pop-up.webm"
+        },
+        {
+          "name": "Running",
+          "id": "wrecking-ball-running",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/intros/wrecking-ball-running.webm"
+        },
+        {
+          "name": "Touchdown",
+          "id": "wrecking-ball-touchdown",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/intros/wrecking-ball-touchdown.webm"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Reentry",
+          "id": "wrecking-ball-reentry",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-reentry.png",
+          "hero": "wrecking-ball"
+        },
+        {
+          "name": "Rolling",
+          "id": "wrecking-ball-rolling",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-rolling.png",
+          "hero": "wrecking-ball"
+        },
+        {
+          "name": "Wrecking Ball",
+          "id": "wrecking-ball-wrecking-ball",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-wrecking-ball.png",
+          "hero": "wrecking-ball"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "8",
+          "id": "wrecking-ball-8",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-8.png"
+        },
+        {
+          "name": "Banana",
+          "id": "wrecking-ball-banana",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-banana.png"
+        },
+        {
+          "name": "Cannon",
+          "id": "wrecking-ball-cannon",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-cannon.png"
+        },
+        {
+          "name": "Champion",
+          "id": "wrecking-ball-champion",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-champion.png"
+        },
+        {
+          "name": "Crown",
+          "id": "wrecking-ball-crown",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-crown.png"
+        },
+        {
+          "name": "Destruction",
+          "id": "wrecking-ball-destruction",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-destruction.png"
+        },
+        {
+          "name": "Evolution",
+          "id": "wrecking-ball-evolution",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-evolution.png"
+        },
+        {
+          "name": "Explosions",
+          "id": "wrecking-ball-explosions",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-explosions.png"
+        },
+        {
+          "name": "Friends",
+          "id": "wrecking-ball-friends",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-friends.png"
+        },
+        {
+          "name": "Full",
+          "id": "wrecking-ball-full",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-full.png"
+        },
+        {
+          "name": "Hamster Ball",
+          "id": "wrecking-ball-hamster-ball",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-hamster-ball.png"
+        },
+        {
+          "name": "Hoard",
+          "id": "wrecking-ball-hoard",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-hoard.png"
+        },
+        {
+          "name": "Hungry",
+          "id": "wrecking-ball-hungry",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-hungry.png"
+        },
+        {
+          "name": "Icon",
+          "id": "wrecking-ball-icon",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-icon.png"
+        },
+        {
+          "name": "Moon",
+          "id": "wrecking-ball-moon",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-moon.png"
+        },
+        {
+          "name": "Moonshot",
+          "id": "wrecking-ball-moonshot",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-moonshot.png"
+        },
+        {
+          "name": "Pilot",
+          "id": "wrecking-ball-pilot",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-pilot.png"
+        },
+        {
+          "name": "Plans",
+          "id": "wrecking-ball-plans",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-plans.png"
+        },
+        {
+          "name": "Sleepy",
+          "id": "wrecking-ball-sleepy",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-sleepy.png"
+        },
+        {
+          "name": "Smug",
+          "id": "wrecking-ball-smug",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-smug.png"
+        },
+        {
+          "name": "Spinning",
+          "id": "wrecking-ball-spinning",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-spinning.png"
+        },
+        {
+          "name": "Tool Box",
+          "id": "wrecking-ball-tool-box",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-tool-box.png"
+        },
+        {
+          "name": "Cute",
+          "id": "wrecking-ball-cute",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-cute.png",
+          "achievement": true,
+          "description": "Absorb 1500 damage with Wrecking Ball's Adaptive Shield without dying in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "wrecking-ball-pixel",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-pixel.png",
+          "achievement": true,
+          "description": "Absorb 1500 damage with Wrecking Ball's Adaptive Shield without dying in Quick or Competitive Play."
+        }
+      ],
+      "voicelines": [
+        {
+          "name": "Shut down",
+          "id": "wrecking-ball-shut-down",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-shut-down.ogg",
+          "standardItem": true
+        },
+        {
+          "name": "Beware of small mammals",
+          "id": "wrecking-ball-beware-of-small-mammals",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-beware-of-small-mammals.ogg"
+        },
+        {
+          "name": "Do not disturb",
+          "id": "wrecking-ball-do-not-disturb",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-do-not-disturb.ogg"
+        },
+        {
+          "name": "Frustration detected",
+          "id": "wrecking-ball-frustration-detected",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-frustration-detected.ogg"
+        },
+        {
+          "name": "He says he's sorry",
+          "id": "wrecking-ball-he-says-hes-sorry",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-he-says-hes-sorry.ogg"
+        },
+        {
+          "name": "No hard feelings",
+          "id": "wrecking-ball-no-hard-feelings",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-no-hard-feelings.ogg"
+        },
+        {
+          "name": "Odds of success increasing",
+          "id": "wrecking-ball-odds-of-success-increasing",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-odds-of-success-increasing.ogg"
+        },
+        {
+          "name": "Profanity filter enabled",
+          "id": "wrecking-ball-profanity-filter-enabled",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-profanity-filter-enabled.ogg"
+        },
+        {
+          "name": "Relief detected",
+          "id": "wrecking-ball-relief-detected",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-relief-detected.ogg"
+        },
+        {
+          "name": "This is happening",
+          "id": "wrecking-ball-this-is-happening",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-this-is-happening.ogg"
+        },
+        {
+          "name": "Vocabulary not found",
+          "id": "wrecking-ball-vocabulary-not-found",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-vocabulary-not-found.ogg"
+        },
+        {
+          "name": "What he said",
+          "id": "wrecking-ball-what-he-said",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-what-he-said.ogg"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "id": "wrecking-ball-heroic",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/poses/wrecking-ball-heroic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Lounging",
+          "id": "wrecking-ball-lounging",
+          "quality": "rare",
+          "url": "/heroes/wrecking-ball/poses/wrecking-ball-lounging.jpg"
+        },
+        {
+          "name": "On Top",
+          "id": "wrecking-ball-on-top",
+          "quality": "rare",
+          "url": "/heroes/wrecking-ball/poses/wrecking-ball-on-top.jpg"
+        },
+        {
+          "name": "Peace",
+          "id": "wrecking-ball-peace",
+          "quality": "rare",
+          "url": "/heroes/wrecking-ball/poses/wrecking-ball-peace.jpg"
+        },
+        {
+          "name": "Swing",
+          "id": "wrecking-ball-swing",
+          "quality": "rare",
+          "url": "/heroes/wrecking-ball/poses/wrecking-ball-swing.jpg"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "wrecking-ball-golden",
           "quality": "golden"
         }
       ]
