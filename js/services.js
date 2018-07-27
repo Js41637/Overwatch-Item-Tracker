@@ -208,7 +208,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
                 service.qualities[quality] = { selected: 0, total: 0 }
               }
 
-              if (shouldCountItemOrIcon) {
+              if (shouldCountItemOrIcon && ((isOWLItem && isSelected) || !isOWLItem)) {
                 service.qualities[quality].total++;
               }
 
