@@ -57,7 +57,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
 
     for (var hero in data.heroes) {
       out.checked[hero] = Object.assign(
-        { "skins": {}, "emotes": {}, "intros": {}, "sprays": {}, "voicelines": {}, "poses": {}, "icons": {}, "weapons": {} },
+        { "skins": {}, "emotes": {}, "intros": {}, "sprays": {}, "voicelines": {}, "poses": {}, "icons": {}, "weapons": {}, "owlskins": {} },
         storedData[hero]
       );
     }
@@ -190,11 +190,12 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
 
             var isSelected = DataService.checked[item.hero || hero.id][type][item.id];
             var isSpecialItem = 'achievement' in item && item.achievement !== true && heroId !== 'all'
+            var isOWLItem = 'achievement' in item && item.achievement === 'owl'
 
             // Unselected special items (blizzard unlocks, origin skins, mercy bcrf items) dont count unless unlocked
-            if (!isSelected && isSpecialItem) continue;
+            if (!isSelected && isSpecialItem && !isOWLItem) continue;
 
-            s_hero.totals.overall.total++;
+            if ((isOWLItem && isSelected) || !isOWLItem) { s_hero.totals.overall.total++; }
             s_hero.totals[type].total++;
 
             var quality = (type === 'icons' ? 'rare' : item.quality) || 'common'
@@ -273,6 +274,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var itemID = idOverride || item.id;
       var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
       var isSpecialItem = 'achievement' in item && item.achievement !== true && hero !== 'all'
+      var isOWLItem = 'achievement' in item && item.achievement === 'owl'
       event = item.event || event;
 
       var eventType = (type === 'skins' && item.quality === 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
@@ -292,7 +294,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
 
         if (isSpecialItem) {
           service.heroes[hero].totals.overall.total += val
-          service.heroes[hero].totals[type].total += val;
+          if (!isOWLItem) { service.heroes[hero].totals[type].total += val; }
           service.qualities[quality].total += val;
         }
       } else if (hero === 'all') {
@@ -359,8 +361,9 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           if (item.standardItem) continue;
 
           var isSelected = DataService.checked[item.hero || hero][type][item.id];
+          var isOWLItem = 'achievement' in item && item.achievement === 'owl'
 
-          out.totals.overall.total++;
+          if (isOWLItem && isSelected || !isOWLItem) { out.totals.overall.total++; }
           out.totals[type].total++;
 
           if (isSelected) {
