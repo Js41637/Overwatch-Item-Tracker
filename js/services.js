@@ -190,7 +190,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
 
             var isSelected = DataService.checked[item.hero || hero.id][type][item.id];
             var isSpecialItem = 'achievement' in item && item.achievement !== true && heroId !== 'all'
-            var isOWLItem = 'achievement' in item && item.achievement === 'owl'
+            var isOWLItem = 'achievement' in item && item.achievement === 'owl' && item.type === 'skins'
 
             // Unselected special items (blizzard unlocks, origin skins, mercy bcrf items) dont count unless unlocked
             if (!isSelected && isSpecialItem && !isOWLItem) continue;
@@ -274,7 +274,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var itemID = idOverride || item.id;
       var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
       var isSpecialItem = 'achievement' in item && item.achievement !== true && hero !== 'all'
-      var isOWLItem = 'achievement' in item && item.achievement === 'owl'
+      var isOWLItem = 'achievement' in item && item.achievement === 'owl' && item.type === 'skins'
       event = item.event || event;
 
       var eventType = (type === 'skins' && item.quality === 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
