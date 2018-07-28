@@ -30,7 +30,7 @@ const mapFilesToHeroes = (args, internal) => {
       Promise.all(files.map(file => {
         return new Promise(r => {
           var hero = file.split('-')[0];
-          hero = (hero == 'soldier' ? 'soldier-76' : hero);
+          hero = (hero == 'soldier' ? 'soldier-76' :  hero === 'wrecking' ? 'wrecking-ball' : hero);
           hero = Object.keys(HERODATA).includes(hero) ? hero : internal ? weirdHeroes[hero] : 'all';
           checkDirectorys(hero, type, dir).then(() => {
             fs.rename(`${dir}${file}`, `${dir}${hero}${type}/${file}`, r);
