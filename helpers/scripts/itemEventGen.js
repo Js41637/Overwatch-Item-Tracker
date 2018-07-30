@@ -1,7 +1,7 @@
-const fs = require('fs');
-const _ = require('lodash');
+const fs = require('fs')
+const _ = require('lodash')
 
-const events = require('../data/events.json')
+const events = require('../../data/events.json')
 const event = 'ANNIVERSARY_2017'
 
 const stuff = _.reduce(events[event].items, (res, items, type) => {
