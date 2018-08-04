@@ -140,7 +140,7 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
     allClassDataKeys[type][item.id] = item.name;
 
     var { event = undefined } = _.reduce(allClassEventItems[type], (r, items, eventID) => {
-      let match = find(items, id => id == item.id);
+      let match = _.find(items, id => id == item.id);
       Object.assign(r, match ? { event: eventID } : {});
       return r;
     }, {});

@@ -45,6 +45,7 @@ const stupidNames = {
   ">_<": "frustration",
   ">_\\<": "frustration",
   ")": "winky-face",
+  ";)": "winky-face",
   "^o^": "excited"
 }
 
