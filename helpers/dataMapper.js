@@ -4,7 +4,7 @@
  * Code on this page is synchronous, it works it's way down.
  */
 const fs = require('fs');
-const { forEach, sortBy, find, reduce, merge, get, isEmpty, findKey, isString } = require('lodash');
+const _ = require('lodash');
 const alphaNumSort = require('./dataMapper/alphaNumSort')
 
 const mode = process.argv.slice(2)[0];
@@ -77,7 +77,7 @@ things.forEach((thingy, i) => {
       return;
     }
 
-    if (isEmpty(items)) {
+    if (_.isEmpty(items)) {
       console.warn(`${hero} has no items`);
     }
 
@@ -107,9 +107,9 @@ things.forEach((thingy, i) => {
 // AllClassData that isn't automatically generated can be manually added in missingAllClassData.json
 // parsing missing items and if they have a name, add them to an object similar to allClassData
 console.info('Parsing missingAllClassData');
-var noLongerMissingAllClassData = reduce(missingAllClassData, (result, items, type) => {
+var noLongerMissingAllClassData = _.reduce(missingAllClassData, (result, items, type) => {
   if (!result[type]) result[type] = [];
-  items = reduce(items, (newItems = [], item) => {
+  items = _.reduce(items, (newItems = [], item) => {
     if (item.name.length) newItems.push(item);
     return newItems;
   }, []);
@@ -118,29 +118,29 @@ var noLongerMissingAllClassData = reduce(missingAllClassData, (result, items, ty
 }, {});
 
 // Add no longer missing allclass data onto allClassData
-forEach(noLongerMissingAllClassData, (items, type) => allClassData[type] = [...allClassData[type], ...items]);
+_.forEach(noLongerMissingAllClassData, (items, type) => allClassData[type] = [...allClassData[type], ...items]);
 
 var shit = false
 
 // Create object containing allclass item names by key so we can easily map event ids to items.
 // also check if any items are in allClassEventItems and mark them as event items
 console.info('Generating allClass data');
-allClassData = reduce(allClassData, (result, items, type) => {
+allClassData = _.reduce(allClassData, (result, items, type) => {
   let idCache = {};
   if (!result[type]) {
     result[type] = [];
     allClassDataKeys[type] = {};
   }
 
-  items = reduce(items, (newItems = [], item) => {
+  items = _.reduce(items, (newItems = [], item) => {
     if (hiddenItems[type] && hiddenItems[type].includes(item.id)) return newItems;
 
     item.name = itemNamesIFuckedUp[`${type}/${item.id}`] || item.name;
     item.id = idsBlizzardChanged[`${type}/${item.id}`] || item.id;
     allClassDataKeys[type][item.id] = item.name;
 
-    var { event = undefined } = reduce(allClassEventItems[type], (r, items, eventID) => {
-      let match = find(items, id => id == item.id);
+    var { event = undefined } = _.reduce(allClassEventItems[type], (r, items, eventID) => {
+      let match = _.find(items, id => id == item.id);
       Object.assign(r, match ? { event: eventID } : {});
       return r;
     }, {});
@@ -188,7 +188,7 @@ allClassData = reduce(allClassData, (result, items, type) => {
     }
 
     if (type === 'sprays') {
-      const actualEvent = findKey(EVENTITEMS, event => event.includes(`${type}/${item.id}`));
+      const actualEvent = _.findKey(EVENTITEMS, event => event.includes(`${type}/${item.id}`));
       if (actualEvent) {
         group = { group: actualEvent };
       }
@@ -235,7 +235,7 @@ for (var hero in data) {
     }
   });
 
-  forEach(itemGroups, (items, group) => {
+  _.forEach(itemGroups, (items, group) => {
     items.forEach(item => {
       var [, name, itemType] = item.match(/(.+) \((.+)\)/);
       name = badNames[name.trim()] || name.trim();
@@ -365,11 +365,11 @@ heroes = sortObject(heroes);
 // Go through every heros items and create a seperate object containing every item added in events
 console.info('Generating event data');
 var updates = {};
-forEach(heroes, hero => {
-  forEach(hero.items, (items, tKey) => {
+_.forEach(heroes, hero => {
+  _.forEach(hero.items, (items, tKey) => {
     items.forEach(item => {
       const event = item.event;
-      const actualEvent = findKey(EVENTITEMS, event => event.includes(`${tKey}/${item.id}`));
+      const actualEvent = _.findKey(EVENTITEMS, event => event.includes(`${tKey}/${item.id}`));
 
       if (actualEvent) {
         item.group = actualEvent;
@@ -454,8 +454,8 @@ updates[EVENTS.LUNAR].items.sprays = updates[EVENTS.LUNAR].items.sprays.map(spra
 // Add allClassEventItems items (which aren't detected by item extrator) manually to events
 console.info('Mapping allClassEventItems to events data');
 const missingKeys = [];
-forEach(allClassEventItems, (types, type) => {
-  forEach(types, (events, event) => {
+_.forEach(allClassEventItems, (types, type) => {
+  _.forEach(types, (events, event) => {
     events.forEach(itemID => {
       if (!allClassDataKeys[type][itemID]) {
         console.warn("Missing key for", itemID);
@@ -476,7 +476,7 @@ forEach(allClassEventItems, (types, type) => {
         url: getPreviewURL(type, itemID, 'all', event)
       };
 
-      const actualEvent = findKey(EVENTITEMS, event => event.includes(`${type}/${itemID}`));
+      const actualEvent = _.findKey(EVENTITEMS, event => event.includes(`${type}/${itemID}`));
       if (actualEvent && type !== 'icons') {
         out.group = actualEvent;
       }
@@ -520,7 +520,7 @@ if (missingKeys.length) {
       if (!out[item.type]) out[item.type] = {};
       out[item.type][item.itemID] = { id: item.itemID };
     });
-    missingAllClassData = merge(missingAllClassData, out);
+    missingAllClassData = _.merge(missingAllClassData, out);
     for (var type in missingAllClassData) {
       for (var itemID in missingAllClassData[type]) {
         let item = missingAllClassData[type][itemID];
@@ -535,16 +535,16 @@ if (missingKeys.length) {
 
 // Sort event items by hero, name or name depending on type
 console.info('Sorting event items');
-forEach(updates, update => forEach(update.items, (items, type) => {
+_.forEach(updates, update => _.forEach(update.items, (items, type) => {
   switch (type) {
     case 'icons':
-      update.items[type] = sortBy(items, get(EVENT_ITEM_ORDER, [update.id, type]) || ['name']);
+      update.items[type] = _.sortBy(items, _.get(EVENT_ITEM_ORDER, [update.id, type]) || ['name']);
       break;
     case 'sprays':
-      update.items[type] = sortBy(items, ['heroName', (c => c.achievement ? 1 : 0), 'name']);
+      update.items[type] = _.sortBy(items, ['heroName', (c => c.achievement ? 1 : 0), 'name']);
       break;
     default:
-      update.items[type] = sortBy(items, get(EVENT_ITEM_ORDER, [update.id, type]) || ['heroName', 'name']);
+      update.items[type] = _.sortBy(items, _.get(EVENT_ITEM_ORDER, [update.id, type]) || ['heroName', 'name']);
   }
 }));
 
@@ -577,12 +577,12 @@ for (let hero in heroes) {
 
 // Go through all hero items and sort items as they are sorted in-game
 console.info('Sorting hero items');
-forEach(heroes, hero => forEach(hero.items, (items, type) => {
+_.forEach(heroes, hero => _.forEach(hero.items, (items, type) => {
   delete hero.sortName
 
   if (hero.id == 'all') {
     if (type == 'sprays') {
-      hero.items[type] = sortBy(alphaNumSort(items), [
+      hero.items[type] = _.sortBy(alphaNumSort(items), [
         (b => EVENTORDER[b.event]) // event items go below normal items
       ]);
     } else {
@@ -591,12 +591,12 @@ forEach(heroes, hero => forEach(hero.items, (items, type) => {
     return;
   }
 
-  hero.items[type] = sortBy(items, [
+  hero.items[type] = _.sortBy(items, [
     (a => a.standardItem && a.event ? 1 : a.standardItem ? 0 : 1), // Standard items at top (if they're not in an event)
     (b => qualityOrder[b.quality]), // sort by quality. rare, epic, legendary
     (c => !c.achievement && !c.event ? 0 : 1), // non achievement/event items on top
     (d => d.achievement ? 0 : 1), // achievement items above event items
-    (e => isString(e.achievement)), // Put special achievements below normal achievments (cute/pixel)
+    (e => _.isString(e.achievement)), // Put special achievements below normal achievments (cute/pixel)
     (f => EVENTORDER[EVENTORDER[f.group] ? f.group : f.event]), // sort events by event order
     (g => g.name.toLowerCase()) // everything in their respective groups is sorted by name
   ]);
@@ -606,11 +606,11 @@ var masterData = {
   currentEvent: CURRENTEVENT,
   prices: {
     undefined: 25,
-    'common': 25,
-    'rare': 75,
-    'epic': 250,
-    'legendary': 1000,
-    'golden': 0 // golden weapons
+    common: 25,
+    rare: 75,
+    epic: 250,
+    legendary: 1000,
+    golden: 0 // golden weapons
   },
   events: updates,
   heroes
