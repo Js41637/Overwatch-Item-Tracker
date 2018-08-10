@@ -77,9 +77,13 @@ const EVENTTIMES = {
     start: '1527015600000',
     end: '1528797600000'
   },
-  [EVENTS.SUMMER]: {
+  [EVENTS.SUMMER17]: {
     start: '1502204400000',
     end: '1504000800000'
+  },
+  [EVENTS.SUMMER]: {
+    start: '1533837600000',
+    end: '1535709600000'
   },
   [EVENTS.HALLOWEEN]: {
     start: '1507658400000',
