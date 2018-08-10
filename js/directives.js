@@ -4,8 +4,6 @@ var types = {
   'icon': '/icon.png'
 };
 
-var oldEvents = ['SUMMER_GAMES_2016', 'HALLOWEEN_2016', 'WINTER_WONDERLAND_2016', 'LUNAR_NEW_YEAR_2017', 'UPRISING_2017', 'ANNIVERSARY_2017']
-
 OWI.filter('heroImg', ['UrlService', function(UrlService) {
   return function(hero, type) {
     return hero === 'all'
@@ -20,20 +18,20 @@ OWI.filter('eventImageUrl', ['UrlService', function(UrlService) {
   };
 }]);
 
-OWI.filter('itemPrice', function() {
+OWI.filter('itemPrice', ['DataService', function(DataService) {
   return function(item, type, event) {
-    var isEvent = (item.event || event) && !oldEvents.includes(item.group);
+    var isNewEventItem = (item.event || event) && DataService.latest_events[item.event || event] === item.group;
     var quality = item.quality;
     if (item.standardItem || item.achievement || type === 'icons') return '';
 
     var prices = { common: 25, rare: 75, epic: 250, legendary: 1000 };
 
     if (quality && prices[quality]) {
-      return prices[quality] * (isEvent ? 3 : 1);
+      return prices[quality] * (isNewEventItem ? 3 : 1);
     }
     return '';
   };
-});
+}]);
 
 OWI.directive('fancyLoad', ["$timeout", function($timeout) {
   return {

@@ -578,6 +578,7 @@ var masterData = {
     legendary: 1000,
     golden: 0 // golden weapons
   },
+  latest_events: LATEST_EVENTS,
   events: updates,
   heroes
 };
