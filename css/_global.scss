@@ -426,27 +426,30 @@ strong {
   position: absolute;
   top: 0;
   left: 0;
-}
 
-.loader svg {
-  width: 90px;
-  height: 90px;
-}
-.loader.small svg {
-  height: 60px;
-  width: 60px;
-  color: #556C82;
-}
-.loader svg path {
-  transform-origin: center;
-  -moz-transform-origin: center;
-  -webkit-transform-origin: center;
-  animation: Animasearch 2.8s ease-in-out infinite;
+  svg {
+    width: 90px;
+    height: 90px;
+    color: #556C82;
 
-  @for $i from 1 through 7 {
-    path:nth-of-type(#{$i}) {
-      animation-delay: unquote(($i * 0.2) + 's');
+    path {
+      transform-origin: center;
+      -moz-transform-origin: center;
+      -webkit-transform-origin: center;
+      animation: Animasearch 2.8s ease-in-out infinite;
     }
+
+    @for $i from 1 through 7 {
+      path:nth-of-type(#{$i}) {
+        animation-delay: unquote(($i * 0.2) + 's');
+      }
+    }
+  }
+
+  &.small svg {
+    height: 60px;
+    width: 60px;
+    color: #556C82;
   }
 }
 
