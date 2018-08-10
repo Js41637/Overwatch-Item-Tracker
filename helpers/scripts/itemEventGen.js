@@ -2,14 +2,14 @@ const fs = require('fs')
 const _ = require('lodash')
 
 const events = require('../../data/events.json')
-const event = 'WINTER_WONDERLAND'
-const ignoreGroup = 'WINTER_WONDERLAND_2016'
+const event = 'SUMMER_GAMES'
+const ignoreGroups = ['SUMMER_GAMES_2016', 'SUMMER_GAMES_2017']
 
 const stuff = _.reduce(events[event].items, (res, items, type) => {
   type = type.includes('skins') ? 'skins' : type
 
   for (let item of items) {
-    if (item.group === ignoreGroup) continue
+    if (ignoreGroups.includes(item.group)) continue
 
     res.push(`${type}/${item.id}`)
   }
