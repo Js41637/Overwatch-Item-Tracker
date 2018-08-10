@@ -318,45 +318,6 @@ for (var hero in data) {
     });
   });
 
-  // Fuck you blizzard
-  // TODO: Get rid of this shit
-
-  heroData.items['skins'].unshift({
-    name: "Classic",
-    id: `${heroID}-classic`,
-    quality: "common",
-    url: `/heroes/${heroID}/skins/${heroID}-classic.jpg`,
-    standardItem: true
-  })
-
-  heroData.items['poses'].unshift({
-    name: "Heroic",
-    id: `${heroID}-heroic`,
-    quality: "common",
-    url: `/heroes/${heroID}/poses/${heroID}-heroic.jpg`,
-    standardItem: true
-  })
-
-  heroData.items['emotes'].unshift({
-    name: "Heroic",
-    id: `${heroID}-heroic`,
-    quality: "common",
-    url: `/heroes/${heroID}/emotes/${heroID}-heroic.webm`,
-    standardItem: true
-  })
-
-  heroData.items['intros'].unshift({
-    name: "Heroic",
-    id: `${heroID}-heroic`,
-    quality: "common",
-    url: `/heroes/${heroID}/intros/${heroID}-heroic.webm`,
-    standardItem: true
-  })
-
-  if (originalData.heroes[heroID]) {
-    heroData.items['voicelines'].unshift(originalData.heroes[heroID].items.voicelines[0])
-  }
-
   heroes[heroID] = heroData;
 }
 
@@ -378,7 +339,7 @@ _.forEach(heroes, hero => {
       }
 
       // If the item to a new event. e.g. summergames 2017 instead of 2016
-      if (LATEST_EVENTS[event] === actualEvent) {
+      if (LATEST_EVENTS[event] === actualEvent || !actualEvent) {
         item.isNew = true // we do this because it mutates the original item, super fucking jank but it works
       }
 
