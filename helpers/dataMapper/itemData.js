@@ -11,7 +11,7 @@ const data = {
     "sprays/anniversary": "anniversary-2017",
     "voicelines/moira-slainte": "moira-slinte",
     "voicelines/brigitte-its-broken": "brigitte-this-is-pie",
-    "icons/sarufang": "varok",
+    "sprays/saurfang": "varok",
     "sprays/watchparty-gibraltar": "watchpoint-gibraltar"
   },
   itemNamesIFuckedUp: {
