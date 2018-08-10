@@ -10,7 +10,9 @@ const data = {
     "sprays/junkrat-hayseed": "junkrat-scarecrow",
     "sprays/anniversary": "anniversary-2017",
     "voicelines/moira-slainte": "moira-slinte",
-    "voicelines/brigitte-its-broken": "brigitte-this-is-pie"
+    "voicelines/brigitte-its-broken": "brigitte-this-is-pie",
+    "icons/sarufang": "varok",
+    "sprays/watchparty-gibraltar": "watchpoint-gibraltar"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
