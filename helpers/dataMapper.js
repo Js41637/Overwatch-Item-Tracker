@@ -477,7 +477,7 @@ _.forEach(allClassEventItems, (types, type) => {
       };
 
       const actualEvent = _.findKey(EVENTITEMS, event => event.includes(`${type}/${itemID}`));
-      if (actualEvent && type !== 'icons') {
+      if (actualEvent) {
         out.group = actualEvent;
       }
 
