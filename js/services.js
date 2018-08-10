@@ -73,6 +73,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
     prices: {},
     events: {},
     heroes: {},
+    latest_events: {},
     initialized: false,
     isItemChecked: function(who, type, id) {
       return (service.checked[who] ? (service.checked[who][type] ? service.checked[who][type][id] : false) : false);
@@ -139,8 +140,6 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
     qualities: {},
     heroes: {},
     events: {},
-    oldEvents: ['HALLOWEEN_2016', 'SUMMER_GAMES_2016', 'WINTER_WONDERLAND_2016', 'LUNAR_NEW_YEAR_2017', 'UPRISING_2017', 'ANNIVERSARY_2017'],
-    newEvents: ['HALLOWEEN', 'SUMMER_GAMES', 'WINTER_WONDERLAND', 'LUNAR_NEW_YEAR', 'UPRISING', 'ANNIVERSARY'],
     init: function() {
       DataService.waitForInitialization().then(function() {
         console.info("Calculating totals and costs");
@@ -199,7 +198,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             s_hero.totals[type].total++;
 
             var quality = (type === 'icons' ? 'rare' : item.quality) || 'common'
-            var eventType = (type === 'skins' && item.quality === 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
+            var eventType = (type === 'skins' && item.quality === 'legendary' && item.isNew) ? 'skinsLegendary' : type;
             var shouldCountItem = heroId !== 'all' || (heroId === 'all' && !item.hero)
             var shouldCountItemOrIcon = countIcons || type !== 'icons'
 
@@ -255,7 +254,9 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
             }
 
             if (shouldCalculateItemCost(item)) {
-              var price = DataService.prices[item.quality] * ((item.event && !service.oldEvents.includes(item.group)) ? 3 : 1);
+              var price = DataService.prices[item.quality] * (
+                (item.event && DataService.latest_events[item.event] === item.group) ? 3 : 1
+              );
               var sectionToUpdate = isSelected ? 'selected' : 'remaining'
 
               s_hero.cost.total += price;
@@ -277,10 +278,10 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var isOWLItem = 'achievement' in item && item.achievement === 'owl' && type === 'owlskins'
       event = item.event || event;
 
-      var eventType = (type === 'skins' && item.quality === 'legendary' && !service.oldEvents.includes(item.group)) ? 'skinsLegendary' : type;
+      var eventType = (type === 'skins' && item.quality === 'legendary' && item.isNew) ? 'skinsLegendary' : type;
 
       var val = isSelected ? 1 : -1;
-      var price = DataService.prices[item.quality] * ((event && !service.oldEvents.includes(item.group)) ? 3 : 1);
+      var price = DataService.prices[item.quality] * ((event && DataService.latest_events[event] === item.group) ? 3 : 1);
       var isValid = shouldCalculateItemCost(item, event);
       var shouldCountItemOrIcon = countIcons || type !== 'icons'
       var quality = (type === 'icons' ? 'rare' : item.quality) || 'common'
@@ -302,7 +303,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       }
 
       if (type === 'icons' && (item.hero && item.hero !== 'all')) {
-        var _hero = event && hero !== 'all' ? 'all' : item.hero || 'all'
+        var _hero = hero !== 'all' ? 'all' : item.hero
         service.heroes[_hero].totals[type].selected += val;
 
         if (shouldCountItemOrIcon || _hero === 'all') {
@@ -374,7 +375,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           if (type === 'icons') continue;
 
           if (shouldCalculateItemCost(item)) {
-            var price = DataService.prices[item.quality] * ((item.group && !service.oldEvents.includes(item.group)) ? 3 : 1);
+            var price = DataService.prices[item.quality] * ((item.group && DataService.latest_events[item.event] === item.group) ? 3 : 1);
             out.cost.total += price;
 
             if (isSelected) {

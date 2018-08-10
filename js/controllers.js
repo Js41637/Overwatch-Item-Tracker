@@ -337,14 +337,11 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
 
   vm.onSelect = function(item, type) {
     StorageService.setData(Object.assign({}, Data.checked, vm.checked));
+    CostAndTotalService.updateItem(item, type, hero.id);
 
     if (vm.filtering) {
-      CostAndTotalService.updateItem(item, type, hero.id);
       updateCosts();
-      return;
     }
-
-    CostAndTotalService.updateItem(item, type, hero.id);
   };
 
   vm.toggleGrid = function() {
