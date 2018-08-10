@@ -25,7 +25,7 @@ consoleColors.load();
 
 const HERODATA = require('./dataMapper/HERODATA.js');
 const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, specialAchievementItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp, idsBlizzardChanged } = require('./dataMapper/itemData.js');
-const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, NEW_EVENTS } = require('./dataMapper/EVENTDATA.js');
+const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, LATEST_EVENTS } = require('./dataMapper/EVENTDATA.js');
 const { EVENTITEMS } = require('./dataMapper/EVENTITEMS.js');
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder, getAchievementForItem, getOriginalItemsList } = require('./dataMapper/utils.js');
 const originalData = require('../data/master.json')
@@ -188,7 +188,7 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
     }
 
     if (type === 'sprays') {
-      const actualEvent = _.findKey(EVENTITEMS, event => event.includes(`${type}/${item.id}`));
+      const actualEvent = _.findKey(EVENTITEMS[event], e => e.includes(`${type}/${item.id}`));
       if (actualEvent) {
         group = { group: actualEvent };
       }
@@ -318,45 +318,6 @@ for (var hero in data) {
     });
   });
 
-  // Fuck you blizzard
-  // TODO: Get rid of this shit
-
-  heroData.items['skins'].unshift({
-    name: "Classic",
-    id: `${heroID}-classic`,
-    quality: "common",
-    url: `/heroes/${heroID}/skins/${heroID}-classic.jpg`,
-    standardItem: true
-  })
-
-  heroData.items['poses'].unshift({
-    name: "Heroic",
-    id: `${heroID}-heroic`,
-    quality: "common",
-    url: `/heroes/${heroID}/poses/${heroID}-heroic.jpg`,
-    standardItem: true
-  })
-
-  heroData.items['emotes'].unshift({
-    name: "Heroic",
-    id: `${heroID}-heroic`,
-    quality: "common",
-    url: `/heroes/${heroID}/emotes/${heroID}-heroic.webm`,
-    standardItem: true
-  })
-
-  heroData.items['intros'].unshift({
-    name: "Heroic",
-    id: `${heroID}-heroic`,
-    quality: "common",
-    url: `/heroes/${heroID}/intros/${heroID}-heroic.webm`,
-    standardItem: true
-  })
-
-  if (originalData.heroes[heroID]) {
-    heroData.items['voicelines'].unshift(originalData.heroes[heroID].items.voicelines[0])
-  }
-
   heroes[heroID] = heroData;
 }
 
@@ -369,26 +330,21 @@ _.forEach(heroes, hero => {
   _.forEach(hero.items, (items, tKey) => {
     items.forEach(item => {
       const event = item.event;
-      const actualEvent = _.findKey(EVENTITEMS, event => event.includes(`${tKey}/${item.id}`));
+      if (!item.event) return
+
+      const actualEvent = _.findKey(EVENTITEMS[event], event => event.includes(`${tKey}/${item.id}`));
 
       if (actualEvent) {
-        item.group = actualEvent;
+        item.group = actualEvent // we do this because it mutates the original item, super fucking jank but it works
       }
 
       // If the item to a new event. e.g. summergames 2017 instead of 2016
-      if (NEW_EVENTS.includes(event) && !actualEvent) {
-        item.isNew = true;
+      if (LATEST_EVENTS[event] === actualEvent || !actualEvent) {
+        item.isNew = true // we do this because it mutates the original item, super fucking jank but it works
       }
 
-      let type;
-      if (NEW_EVENTS.includes(event)) {
-        type = (tKey == 'skins' && item.quality == 'legendary' && !actualEvent) ? 'skinsLegendary' : tKey;
-      } else {
-        // Split legendary and epic skins up for events as they are displayed seperately.
-        type = tKey == 'skins' ? (item.quality == 'legendary' ? 'skinsLegendary' : (item.quality == 'epic' ? 'skinsEpic' : 'skins')) : tKey;
-      }
+      const type = (tKey === 'skins' && item.isNew && item.quality == 'legendary') ? 'skinsLegendary' : tKey
 
-      if (!event) return;
       if (!updates[event]) updates[event] = {
         order: EVENTORDER[event],
         name: EVENTNAMES[event],
@@ -396,15 +352,29 @@ _.forEach(heroes, hero => {
         dates: EVENTTIMES[event],
         items: {}
       };
-      if (!updates[event].items[type]) updates[event].items[type] = [];
+
+      if (!updates[event].items[type]) {
+        updates[event].items[type] = []
+      }
+
       // if the item isnt a skin and is a legendary add a legendary tag, we do this because very few items for events
       // have had legendary items added outside of skins, this way we can mark them as special
       const legend = (tKey != 'skins' && item.quality == 'legendary') ? { legendary: true } : {};
       const url = getPreviewURL(type, item.id, hero.id, event);
-      const newItem = Object.assign({}, { heroName: hero.name, hero: hero.id }, legend, item, { url } );
+
+      const newItem = Object.assign({},
+        { heroName: hero.name, hero: hero.id },
+        legend,
+        item,
+        { url },
+        item.group && { group: item.group },
+        item.isNew && { isNew: true}
+      );
+
       if (type == 'icons') {
         delete newItem.quality;
       }
+
       delete newItem.event;
       updates[event].items[type].push(newItem);
     });
@@ -465,10 +435,6 @@ _.forEach(allClassEventItems, (types, type) => {
 
       let name = allClassDataKeys[type][itemID];
 
-      if (!NEW_EVENTS.includes(event)) {
-        name = name.replace(/ \d{4}$/, '');
-      }
-
       const out = {
         hero: 'all',
         name: name,
@@ -476,13 +442,13 @@ _.forEach(allClassEventItems, (types, type) => {
         url: getPreviewURL(type, itemID, 'all', event)
       };
 
-      const actualEvent = _.findKey(EVENTITEMS, event => event.includes(`${type}/${itemID}`));
-      if (actualEvent && type !== 'icons') {
+      const actualEvent = _.findKey(EVENTITEMS[event], e => e.includes(`${type}/${itemID}`));
+      if (actualEvent) {
         out.group = actualEvent;
       }
 
       // If the item to a new event. e.g. summergames 2017 instead of 2016
-      if (NEW_EVENTS.includes(event) && !actualEvent) {
+      if (LATEST_EVENTS[event] === actualEvent) {
         out.isNew = true;
       }
 
@@ -612,6 +578,7 @@ var masterData = {
     legendary: 1000,
     golden: 0 // golden weapons
   },
+  latest_events: LATEST_EVENTS,
   events: updates,
   heroes
 };

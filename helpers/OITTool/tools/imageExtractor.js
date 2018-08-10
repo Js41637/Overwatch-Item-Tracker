@@ -52,7 +52,7 @@ const moveImages = (heroDir, type, heroID) => {
             files = cleanFileIDs(files, heroID);
             files.forEach(file => {
               totalFiles++;
-              fs.createReadStream(`./${base}/${type}/${event}/${file.name}`).pipe(fs.createWriteStream(`./!toBeConverted/${type}/${file.cleanName}.dds`));
+              fs.createReadStream(`./${base}/${type}/${event}/${file.name}`).pipe(fs.createWriteStream(`./!toBeConverted/${type}/${file.cleanName}.TIF`));
             });
             setTimeout(() => {
               res();
@@ -76,7 +76,7 @@ const convertFiles = () => {
         console.log(`-- Converting images to png`);
         // timeout prevents the first icon from being converted incorrectly for some reason
         setTimeout(() => {
-          exec(`mogrify -path ./images -format png ./!toBeConverted/${type}/*.dds`, err => {
+          exec(`mogrify -path ./images -format png ./!toBeConverted/${type}/*.TIF`, err => {
             if (err) return reject(`Error while mogrify'ing images! \n ${err}`);
             console.log("-- Optimising images with pngquant");
             exec(`pngquant ./images/*.png --ext=.png --speed 1 --force --strip`, err2 => {

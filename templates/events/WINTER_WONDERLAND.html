@@ -21,7 +21,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'WINTER_WONDERLAND' }}</small></h3>
         </label>
       </div>
     </div>
@@ -46,7 +46,7 @@
         <label ng-if="::item.heroName" for="{{'sprayorn' + $index}}" class="circle-checkbox"></label>
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
-          <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'WINTER_WONDERLAND' }}</small></h3>
         </label>
       </div>
     </div>
@@ -69,7 +69,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'WINTER_WONDERLAND' }}</small></h3>
         </label>
       </div>
     </div>
@@ -89,7 +89,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-checked="::item.standardItem || checked[item.hero][type][item.id]" ng-disabled="::item.standardItem" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'WINTER_WONDERLAND' }}</small></h3>
         </label>
       </div>
     </div>
@@ -109,7 +109,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'WINTER_WONDERLAND' }}</small></h3>
         </label>
       </div>
     </div>
@@ -129,7 +129,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'WINTER_WONDERLAND' }}</small></h3>
         </label>
       </div>
     </div>
@@ -149,7 +149,7 @@
         <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
-          <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:true }}</small></h3>
+          <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'WINTER_WONDERLAND' }}</small></h3>
         </label>
       </div>
     </div>

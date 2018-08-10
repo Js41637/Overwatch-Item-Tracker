@@ -8,9 +8,12 @@ const data = {
     "sprays/year-of-the-dog": "year-of-the-dog-2018",
     "sprays/year-of-the-rooster": "year-of-the-rooster-2017",
     "sprays/junkrat-hayseed": "junkrat-scarecrow",
+    "skins/junkrat-bilgerat": "junkrat-buccaneer",
     "sprays/anniversary": "anniversary-2017",
     "voicelines/moira-slainte": "moira-slinte",
-    "voicelines/brigitte-its-broken": "brigitte-this-is-pie"
+    "voicelines/brigitte-its-broken": "brigitte-this-is-pie",
+    "sprays/saurfang": "varok",
+    "sprays/watchparty-gibraltar": "watchpoint-gibraltar"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
@@ -69,7 +72,7 @@ const data = {
       icons: ['nexus']
     },
     "overwatch league": {
-      icons: ['boston-uprising', 'dallas-fuel', 'florida-mayhem', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'los-angeles-valiant', 'new-york-excelsior', 'overwatch-league', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons', 'inaugural-season'],
+      icons: ['boston-uprising', 'dallas-fuel', 'florida-mayhem', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'los-angeles-valiant', 'new-york-excelsior', 'overwatch-league', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons', 'inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018'],
       sprays: ['boston-uprising-logo', 'dallas-fuel-logo', 'florida-mayhem-logo', 'houston-outlaws-logo', 'london-spitfire-logo', 'los-angeles-gladiators-logo', 'los-angeles-valiant-logo', 'new-york-excelsior-logo', 'overwatch-league', 'philadelphia-fusion-logo', 'san-francisco-shock-logo', 'seoul-dynasty-logo', 'shanghai-dragons-logo', 'inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar']
     }
   },
@@ -152,7 +155,7 @@ const data = {
       [EVENTS.ANNIVERSARY]: ['anniversary-2017']
     },
     icons: {
-      [EVENTS.SUMMER]: ["summer-games-2016", "summer-games-2017", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america"],
+      [EVENTS.SUMMER]: ["summer-games-2016", "summer-games-2017", "summer-games-2018", "meteor", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america", "argentina", "austria", "belgium", "canada", "denmark", "finland", "ireland", "israel", "italy", "jordan", "netherlands", "new-zealand", "portugal", "romania", "snorkelmari", "spain"],
       [EVENTS.HALLOWEEN]: ["calavera", "vampachimari", "eyeball", "superstition", "witchs-hat", "ghostymari", "tombstone", "bewitching", "candle", "never-die", "wolf", "witchs-brew", "spider", "junkensteins-pachimonster", "pachimummy", "halloween-terror-2016", "halloween-terror-2017"],
       [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "snowman", "present", "pachimerry", "gingermari", "2017", "2018", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
       [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu"],

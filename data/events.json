@@ -7,6 +7,68 @@
       "end": "1504000800000"
     },
     "items": {
+      "skinsLegendary": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Cabana",
+          "id": "ana-cabana",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skinsLegendary/ana-cabana.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Waveracer",
+          "id": "dva-waveracer",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skinsLegendary/dva-waveracer.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Gridironhardt",
+          "id": "reinhardt-gridironhardt",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skinsLegendary/reinhardt-gridironhardt.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Lacrosse",
+          "id": "roadhog-lacrosse",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skinsLegendary/roadhog-lacrosse.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Catcher",
+          "id": "winston-catcher",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skinsLegendary/winston-catcher.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Fastball",
+          "id": "zenyatta-fastball",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skinsLegendary/zenyatta-fastball.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        }
+      ],
       "emotes": [
         {
           "heroName": "Ana",
@@ -15,7 +77,7 @@
           "id": "ana-beach-ball",
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/emotes/ana-beach-ball.webm",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Bastion",
@@ -36,6 +98,16 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Table Tennis",
+          "id": "mei-table-tennis",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/emotes/mei-table-tennis.webm",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Symmetra",
           "hero": "symmetra",
           "name": "Ribbon",
@@ -46,6 +118,15 @@
         }
       ],
       "icons": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Cabana",
+          "id": "ana-cabana",
+          "url": "/heroes/ana/icons/ana-cabana.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
         {
           "heroName": "Ana",
           "hero": "ana",
@@ -63,6 +144,15 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Hammer Throw",
+          "id": "brigitte-hammer-throw",
+          "url": "/heroes/brigitte/icons/brigitte-hammer-throw.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "D.Va",
           "hero": "dva",
           "name": "Cycling",
@@ -71,12 +161,30 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "D.Vacation",
+          "id": "dva-dvacation",
+          "url": "/heroes/dva/icons/dva-dvacation.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Waveracer",
+          "id": "dva-waveracer",
+          "url": "/heroes/dva/icons/dva-waveracer.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Doomfist",
           "hero": "doomfist",
           "name": "Shotput",
           "id": "doomfist-shotput",
           "url": "/heroes/doomfist/icons/doomfist-shotput.png",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Genji",
@@ -85,6 +193,15 @@
           "id": "genji-fencing",
           "url": "/heroes/genji/icons/genji-fencing.png",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Bowling",
+          "id": "wrecking-ball-bowling",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-bowling.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "heroName": "Hanzo",
@@ -135,12 +252,21 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Handball",
+          "id": "moira-handball",
+          "url": "/heroes/moira/icons/moira-handball.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Orisa",
           "hero": "orisa",
           "name": "Javelin",
           "id": "orisa-javelin",
           "url": "/heroes/orisa/icons/orisa-javelin.png",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Pharah",
@@ -161,6 +287,15 @@
         {
           "heroName": "Reinhardt",
           "hero": "reinhardt",
+          "name": "Gridironhardt",
+          "id": "reinhardt-gridironhardt",
+          "url": "/heroes/reinhardt/icons/reinhardt-gridironhardt.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
           "name": "Wrestling",
           "id": "reinhardt-wrestling",
           "url": "/heroes/reinhardt/icons/reinhardt-wrestling.png",
@@ -173,6 +308,15 @@
           "id": "roadhog-diving",
           "url": "/heroes/roadhog/icons/roadhog-diving.png",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Lacrosse",
+          "id": "roadhog-lacrosse",
+          "url": "/heroes/roadhog/icons/roadhog-lacrosse.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "heroName": "Soldier: 76",
@@ -188,7 +332,7 @@
           "name": "High Jump",
           "id": "sombra-high-jump",
           "url": "/heroes/sombra/icons/sombra-high-jump.png",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Symmetra",
@@ -225,6 +369,15 @@
         {
           "heroName": "Winston",
           "hero": "winston",
+          "name": "Catcher",
+          "id": "winston-catcher",
+          "url": "/heroes/winston/icons/winston-catcher.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
           "name": "Volleyball",
           "id": "winston-volleyball",
           "url": "/heroes/winston/icons/winston-volleyball.png",
@@ -241,6 +394,24 @@
         {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
+          "name": "Fastball",
+          "id": "zenyatta-fastball",
+          "url": "/heroes/zenyatta/icons/zenyatta-fastball.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Iris",
+          "id": "zenyatta-iris",
+          "url": "/heroes/zenyatta/icons/zenyatta-iris.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
           "name": "Taekwondo",
           "id": "zenyatta-taekwondo",
           "url": "/heroes/zenyatta/icons/zenyatta-taekwondo.png",
@@ -248,118 +419,280 @@
         },
         {
           "hero": "all",
+          "name": "Argentina",
+          "id": "argentina",
+          "url": "/heroes/all/icons/argentina.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "hero": "all",
           "name": "Australia",
           "id": "australia",
-          "url": "/heroes/all/icons/australia.png"
+          "url": "/heroes/all/icons/australia.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Austria",
+          "id": "austria",
+          "url": "/heroes/all/icons/austria.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "Belgium",
+          "id": "belgium",
+          "url": "/heroes/all/icons/belgium.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "hero": "all",
           "name": "Brazil",
           "id": "brazil",
-          "url": "/heroes/all/icons/brazil.png"
+          "url": "/heroes/all/icons/brazil.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Canada",
+          "id": "canada",
+          "url": "/heroes/all/icons/canada.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "hero": "all",
           "name": "China",
           "id": "china",
-          "url": "/heroes/all/icons/china.png"
+          "url": "/heroes/all/icons/china.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Denmark",
+          "id": "denmark",
+          "url": "/heroes/all/icons/denmark.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "hero": "all",
           "name": "Egypt",
           "id": "egypt",
-          "url": "/heroes/all/icons/egypt.png"
+          "url": "/heroes/all/icons/egypt.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Finland",
+          "id": "finland",
+          "url": "/heroes/all/icons/finland.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "hero": "all",
           "name": "France",
           "id": "france",
-          "url": "/heroes/all/icons/france.png"
+          "url": "/heroes/all/icons/france.png",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "hero": "all",
           "name": "Germany",
           "id": "germany",
-          "url": "/heroes/all/icons/germany.png"
+          "url": "/heroes/all/icons/germany.png",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "hero": "all",
           "name": "Greece",
           "id": "greece",
-          "url": "/heroes/all/icons/greece.png"
+          "url": "/heroes/all/icons/greece.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Ireland",
+          "id": "ireland",
+          "url": "/heroes/all/icons/ireland.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "Israel",
+          "id": "israel",
+          "url": "/heroes/all/icons/israel.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "Italy",
+          "id": "italy",
+          "url": "/heroes/all/icons/italy.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "hero": "all",
           "name": "Japan",
           "id": "japan",
-          "url": "/heroes/all/icons/japan.png"
+          "url": "/heroes/all/icons/japan.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Jordan",
+          "id": "jordan",
+          "url": "/heroes/all/icons/jordan.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "Meteor",
+          "id": "meteor",
+          "url": "/heroes/all/icons/meteor.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "hero": "all",
           "name": "Mexico",
           "id": "mexico",
-          "url": "/heroes/all/icons/mexico.png"
+          "url": "/heroes/all/icons/mexico.png",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "hero": "all",
           "name": "Nepal",
           "id": "nepal",
-          "url": "/heroes/all/icons/nepal.png"
+          "url": "/heroes/all/icons/nepal.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Netherlands",
+          "id": "netherlands",
+          "url": "/heroes/all/icons/netherlands.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "New Zealand",
+          "id": "new-zealand",
+          "url": "/heroes/all/icons/new-zealand.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "hero": "all",
           "name": "Numbani",
           "id": "numbani",
-          "url": "/heroes/all/icons/numbani.png"
+          "url": "/heroes/all/icons/numbani.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Portugal",
+          "id": "portugal",
+          "url": "/heroes/all/icons/portugal.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "Romania",
+          "id": "romania",
+          "url": "/heroes/all/icons/romania.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "hero": "all",
           "name": "Russia",
           "id": "russia",
-          "url": "/heroes/all/icons/russia.png"
+          "url": "/heroes/all/icons/russia.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Snorkelmari",
+          "id": "snorkelmari",
+          "url": "/heroes/all/icons/snorkelmari.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "hero": "all",
           "name": "South Korea",
           "id": "south-korea",
-          "url": "/heroes/all/icons/south-korea.png"
+          "url": "/heroes/all/icons/south-korea.png",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Spain",
+          "id": "spain",
+          "url": "/heroes/all/icons/spain.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "hero": "all",
           "name": "Summer Games 2016",
           "id": "summer-games-2016",
-          "url": "/heroes/all/icons/summer-games-2016.png"
+          "url": "/heroes/all/icons/summer-games-2016.png",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "hero": "all",
           "name": "Summer Games 2017",
           "id": "summer-games-2017",
           "url": "/heroes/all/icons/summer-games-2017.png",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "hero": "all",
+          "name": "Summer Games 2018",
+          "id": "summer-games-2018",
+          "url": "/heroes/all/icons/summer-games-2018.png",
+          "group": "SUMMER_GAMES_2018",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Sweden",
           "id": "sweden",
-          "url": "/heroes/all/icons/sweden.png"
+          "url": "/heroes/all/icons/sweden.png",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "hero": "all",
           "name": "Switzerland",
           "id": "switzerland",
-          "url": "/heroes/all/icons/switzerland.png"
+          "url": "/heroes/all/icons/switzerland.png",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "hero": "all",
           "name": "United Kingdom",
           "id": "united-kingdom",
-          "url": "/heroes/all/icons/united-kingdom.png"
+          "url": "/heroes/all/icons/united-kingdom.png",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "hero": "all",
           "name": "United States of America",
           "id": "united-states-of-america",
-          "url": "/heroes/all/icons/united-states-of-america.png"
+          "url": "/heroes/all/icons/united-states-of-america.png",
+          "group": "SUMMER_GAMES_2016"
         }
       ],
       "sprays": [
@@ -382,6 +715,16 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Hammer Throw",
+          "id": "brigitte-hammer-throw",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-hammer-throw.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "D.Va",
           "hero": "dva",
           "name": "Cycling",
@@ -397,7 +740,7 @@
           "id": "doomfist-shot-put",
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-shot-put.png",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Genji",
@@ -407,6 +750,16 @@
           "quality": "common",
           "url": "/heroes/genji/sprays/genji-fencing.png",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Bowling",
+          "id": "wrecking-ball-bowling",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-bowling.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "heroName": "Hanzo",
@@ -463,13 +816,23 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Handball",
+          "id": "moira-handball",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-handball.png",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Orisa",
           "hero": "orisa",
           "name": "Javelin",
           "id": "orisa-javelin",
           "quality": "common",
           "url": "/heroes/orisa/sprays/orisa-javelin.png",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Pharah",
@@ -523,7 +886,7 @@
           "id": "sombra-high-jump",
           "quality": "common",
           "url": "/heroes/sombra/sprays/sombra-high-jump.png",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Symmetra",
@@ -593,7 +956,7 @@
           "name": "Summer Games",
           "id": "summer-games",
           "url": "/heroes/all/sprays/summer-games.png",
-          "isNew": true,
+          "group": "SUMMER_GAMES_2017",
           "quality": "common"
         },
         {
@@ -609,7 +972,7 @@
           "name": "Bicycle Kick",
           "id": "bicycle-kick",
           "url": "/heroes/all/sprays/bicycle-kick.png",
-          "isNew": true,
+          "group": "SUMMER_GAMES_2017",
           "achievement": true,
           "description": "Score a goal in Lúcioball with a shot taken from at least 4 meters in the air."
         },
@@ -618,7 +981,7 @@
           "name": "Goal Blossom",
           "id": "goal-blossom",
           "url": "/heroes/all/sprays/goal-blossom.png",
-          "isNew": true,
+          "group": "SUMMER_GAMES_2017",
           "achievement": true,
           "description": "Score a goal, a save, and an assist in a game of Lúcioball."
         },
@@ -627,7 +990,7 @@
           "name": "Safe Hands",
           "id": "safe-hands",
           "url": "/heroes/all/sprays/safe-hands.png",
-          "isNew": true,
+          "group": "SUMMER_GAMES_2017",
           "achievement": true,
           "description": "Score 3 saves in a row in Lúcioball."
         }
@@ -640,7 +1003,7 @@
           "id": "ana-better-than-retirement",
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-better-than-retirement.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Ana",
@@ -652,13 +1015,23 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "You seem stressed",
+          "id": "ana-you-seem-stressed",
+          "quality": "common",
+          "url": "/heroes/ana/voicelines/ana-you-seem-stressed.ogg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Bastion",
           "hero": "bastion",
           "name": "Doo-do-doo Dee!",
           "id": "bastion-doododoo-dee",
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-doododoo-dee.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Bastion",
@@ -668,6 +1041,26 @@
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-whoovweeeeee.ogg",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Dare to Lindholm",
+          "id": "brigitte-dare-to-lindholm",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-dare-to-lindholm.ogg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Scandinavian style?",
+          "id": "brigitte-scandinavian-style",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-scandinavian-style.ogg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
         },
         {
           "heroName": "D.Va",
@@ -685,7 +1078,7 @@
           "id": "dva-scoreboard",
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-scoreboard.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Doomfist",
@@ -694,7 +1087,7 @@
           "id": "doomfist-i-make-medicine-sick",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-i-make-medicine-sick.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Doomfist",
@@ -703,6 +1096,16 @@
           "id": "doomfist-make-you-punch-drunk",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-make-you-punch-drunk.ogg",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Step into the ring",
+          "id": "doomfist-step-into-the-ring",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-step-into-the-ring.ogg",
+          "group": "SUMMER_GAMES_2018",
           "isNew": true
         },
         {
@@ -712,7 +1115,7 @@
           "id": "genji-hoping-for-a-challenge",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-hoping-for-a-challenge.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "heroName": "Genji",
@@ -721,6 +1124,26 @@
           "id": "genji-touche",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-touche.ogg",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Be the ball",
+          "id": "wrecking-ball-be-the-ball",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-be-the-ball.ogg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Keep your eye on the ball",
+          "id": "wrecking-ball-keep-your-eye-on-the-ball",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-keep-your-eye-on-the-ball.ogg",
+          "group": "SUMMER_GAMES_2018",
           "isNew": true
         },
         {
@@ -730,7 +1153,7 @@
           "id": "hanzo-defeat-is-the-first-step",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-defeat-is-the-first-step.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Hanzo",
@@ -757,7 +1180,7 @@
           "id": "junkrat-i-give-it-a-3",
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-i-give-it-a-3.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Lúcio",
@@ -771,11 +1194,21 @@
         {
           "heroName": "Lúcio",
           "hero": "lucio",
+          "name": "Come on, ref!",
+          "id": "lucio-come-on-ref",
+          "quality": "common",
+          "url": "/heroes/lucio/voicelines/lucio-come-on-ref.ogg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
           "name": "Suboptimal",
           "id": "lucio-suboptimal",
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-suboptimal.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "McCree",
@@ -784,7 +1217,7 @@
           "id": "mccree-boom-goes-the-dynamite",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-boom-goes-the-dynamite.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "McCree",
@@ -802,7 +1235,7 @@
           "id": "mei-i-tried-my-best",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-i-tried-my-best.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Mei",
@@ -829,6 +1262,26 @@
           "id": "mercy-sponge-or-spray",
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-sponge-or-spray.ogg",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Better living through science",
+          "id": "moira-better-living-through-science",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-better-living-through-science.ogg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Performance enhanced",
+          "id": "moira-performance-enhanced",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-performance-enhanced.ogg",
+          "group": "SUMMER_GAMES_2018",
           "isNew": true
         },
         {
@@ -838,7 +1291,7 @@
           "id": "orisa-golden",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-golden.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Orisa",
@@ -847,7 +1300,7 @@
           "id": "orisa-grease-to-your-elbow",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-grease-to-your-elbow.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Pharah",
@@ -856,7 +1309,7 @@
           "id": "pharah-clear-skies-full-hearts",
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-clear-skies-full-hearts.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Pharah",
@@ -883,7 +1336,7 @@
           "id": "reaper-just-win",
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-just-win.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Reinhardt",
@@ -901,7 +1354,7 @@
           "id": "reinhardt-glittering-prizes",
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-glittering-prizes.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Roadhog",
@@ -910,7 +1363,7 @@
           "id": "roadhog-theres-no-i-in-team",
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-theres-no-i-in-team.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Roadhog",
@@ -928,7 +1381,7 @@
           "id": "soldier-76-bring-the-noise",
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-bring-the-noise.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Soldier: 76",
@@ -946,7 +1399,7 @@
           "id": "sombra-try-and-keep-up",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-try-and-keep-up.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Sombra",
@@ -955,7 +1408,7 @@
           "id": "sombra-whats-up",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-whats-up.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Symmetra",
@@ -973,7 +1426,7 @@
           "id": "symmetra-victory-is-everything",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-victory-is-everything.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Torbjörn",
@@ -991,7 +1444,7 @@
           "id": "torbjorn-theres-no-prize-for-second",
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-theres-no-prize-for-second.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Tracer",
@@ -1009,7 +1462,7 @@
           "id": "tracer-time-out",
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-time-out.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Widowmaker",
@@ -1018,7 +1471,7 @@
           "id": "widowmaker-a-perfect-10",
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-a-perfect-10.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Widowmaker",
@@ -1036,7 +1489,7 @@
           "id": "winston-oh-its-on",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-oh-its-on.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Winston",
@@ -1054,7 +1507,7 @@
           "id": "zarya-its-only-a-game",
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-its-only-a-game.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Zarya",
@@ -1066,13 +1519,23 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Russian judge",
+          "id": "zarya-russian-judge",
+          "quality": "common",
+          "url": "/heroes/zarya/voicelines/zarya-russian-judge.ogg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
           "name": "Form is temporary",
           "id": "zenyatta-form-is-temporary",
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-form-is-temporary.ogg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Zenyatta",
@@ -1092,6 +1555,16 @@
           "id": "bastion-medal",
           "quality": "rare",
           "url": "/updates/SUMMER_GAMES/poses/bastion-medal.jpg",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Medal",
+          "id": "doomfist-medal",
+          "quality": "rare",
+          "url": "/updates/SUMMER_GAMES/poses/doomfist-medal.jpg",
+          "group": "SUMMER_GAMES_2018",
           "isNew": true
         },
         {
@@ -1101,7 +1574,7 @@
           "id": "hanzo-medal",
           "quality": "rare",
           "url": "/updates/SUMMER_GAMES/poses/hanzo-medal.jpg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Junkrat",
@@ -1110,6 +1583,26 @@
           "id": "junkrat-medal",
           "quality": "rare",
           "url": "/updates/SUMMER_GAMES/poses/junkrat-medal.jpg",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Medal",
+          "id": "lucio-medal",
+          "quality": "rare",
+          "url": "/updates/SUMMER_GAMES/poses/lucio-medal.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Medal",
+          "id": "mccree-medal",
+          "quality": "rare",
+          "url": "/updates/SUMMER_GAMES/poses/mccree-medal.jpg",
+          "group": "SUMMER_GAMES_2018",
           "isNew": true
         },
         {
@@ -1128,6 +1621,16 @@
           "id": "mercy-medal",
           "quality": "rare",
           "url": "/updates/SUMMER_GAMES/poses/mercy-medal.jpg",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Medal",
+          "id": "moira-medal",
+          "quality": "rare",
+          "url": "/updates/SUMMER_GAMES/poses/moira-medal.jpg",
+          "group": "SUMMER_GAMES_2018",
           "isNew": true
         },
         {
@@ -1167,13 +1670,23 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Medal",
+          "id": "soldier-76-medal",
+          "quality": "rare",
+          "url": "/updates/SUMMER_GAMES/poses/soldier-76-medal.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Sombra",
           "hero": "sombra",
           "name": "Medal",
           "id": "sombra-medal",
           "quality": "rare",
           "url": "/updates/SUMMER_GAMES/poses/sombra-medal.jpg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Symmetra",
@@ -1182,7 +1695,7 @@
           "id": "symmetra-medal",
           "quality": "rare",
           "url": "/updates/SUMMER_GAMES/poses/symmetra-medal.jpg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Torbjörn",
@@ -1200,7 +1713,7 @@
           "id": "tracer-medal",
           "quality": "rare",
           "url": "/updates/SUMMER_GAMES/poses/tracer-medal.jpg",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Widowmaker",
@@ -1221,6 +1734,16 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Medals",
+          "id": "zarya-medals",
+          "quality": "rare",
+          "url": "/updates/SUMMER_GAMES/poses/zarya-medals.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
           "name": "Medals",
@@ -1231,6 +1754,16 @@
         }
       ],
       "skins": [
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Tre Kronor",
+          "id": "brigitte-tre-kronor",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/skins/brigitte-tre-kronor.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
         {
           "heroName": "D.Va",
           "hero": "dva",
@@ -1270,6 +1803,26 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Éireannach",
+          "id": "moira-eireannach",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/skins/moira-eireannach.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Mexicana",
+          "id": "sombra-mexicana",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/skins/sombra-mexicana.jpg",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Torbjörn",
           "hero": "torbjorn",
           "name": "Tre Kronor",
@@ -1286,6 +1839,16 @@
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/skins/widowmaker-tricolore.jpg",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Cricket",
+          "id": "junkrat-cricket",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/junkrat-cricket.jpg",
+          "description": "Junkrat gives new meaning to \"the Ashes.\"",
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Lúcio",
@@ -1308,6 +1871,51 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Lifeguard",
+          "id": "mccree-lifeguard",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/mccree-lifeguard.jpg",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Winged Victory",
+          "id": "mercy-winged-victory",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/mercy-winged-victory.jpg",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Biker",
+          "id": "reaper-biker",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/reaper-biker.jpg",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Grillmaster: 76",
+          "id": "soldier-76-grillmaster-76",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/soldier-76-grillmaster-76.jpg",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Tulum",
+          "id": "sombra-tulum",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/sombra-tulum.jpg",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
           "heroName": "Tracer",
           "hero": "tracer",
           "name": "Sprinter",
@@ -1324,6 +1932,15 @@
           "quality": "legendary",
           "url": "/updates/SUMMER_GAMES/skins/tracer-track-and-field.jpg",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Côte d'Azur",
+          "id": "widowmaker-cote-dazur",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/widowmaker-cote-dazur.jpg",
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Zarya",
@@ -1354,7 +1971,7 @@
           "id": "hanzo-target-practice",
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/intros/hanzo-target-practice.webm",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Junkrat",
@@ -1375,13 +1992,33 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Serve",
+          "id": "moira-serve",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/intros/moira-serve.webm",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Goalkeeper",
+          "id": "orisa-goalkeeper",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/intros/orisa-goalkeeper.webm",
+          "group": "SUMMER_GAMES_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Pharah",
           "hero": "pharah",
           "name": "Slam Dunk",
           "id": "pharah-slam-dunk",
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/intros/pharah-slam-dunk.webm",
-          "isNew": true
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Tracer",
@@ -1391,72 +2028,6 @@
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/intros/tracer-hurdle.webm",
           "group": "SUMMER_GAMES_2016"
-        }
-      ],
-      "skinsLegendary": [
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "Cricket",
-          "id": "junkrat-cricket",
-          "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/junkrat-cricket.jpg",
-          "description": "Junkrat gives new meaning to \"the Ashes.\"",
-          "isNew": true
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Lifeguard",
-          "id": "mccree-lifeguard",
-          "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/mccree-lifeguard.jpg",
-          "isNew": true
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Winged Victory",
-          "id": "mercy-winged-victory",
-          "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/mercy-winged-victory.jpg",
-          "isNew": true
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "Biker",
-          "id": "reaper-biker",
-          "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/reaper-biker.jpg",
-          "isNew": true
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "Grillmaster: 76",
-          "id": "soldier-76-grillmaster-76",
-          "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/soldier-76-grillmaster-76.jpg",
-          "isNew": true
-        },
-        {
-          "heroName": "Sombra",
-          "hero": "sombra",
-          "name": "Tulum",
-          "id": "sombra-tulum",
-          "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/sombra-tulum.jpg",
-          "isNew": true
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Côte d'Azur",
-          "id": "widowmaker-cote-dazur",
-          "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/widowmaker-cote-dazur.jpg",
-          "isNew": true
         }
       ]
     }
@@ -1591,6 +2162,7 @@
           "id": "ana-corsair",
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skinsLegendary/ana-corsair.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1600,6 +2172,7 @@
           "id": "mccree-van-helsing",
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skinsLegendary/mccree-van-helsing.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1609,6 +2182,7 @@
           "id": "mei-jiangshi",
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skinsLegendary/mei-jiangshi.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1618,6 +2192,7 @@
           "id": "reaper-dracula",
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skinsLegendary/reaper-dracula.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1628,6 +2203,7 @@
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skinsLegendary/symmetra-dragon.jpg",
           "description": "As the tales tell, the Witch of the Wilds had many powerful allies, including the draconic summoner.",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1637,6 +2213,7 @@
           "id": "torbjorn-viking",
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skinsLegendary/torbjorn-viking.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1646,6 +2223,7 @@
           "id": "zarya-totally-80s",
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skinsLegendary/zarya-totally-80s.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1655,6 +2233,7 @@
           "id": "zenyatta-cultist",
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skinsLegendary/zenyatta-cultist.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         }
       ],
@@ -1675,6 +2254,7 @@
           "id": "mei-hopping",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/emotes/mei-hopping.webm",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1693,6 +2273,7 @@
           "id": "torbjorn-batter-up",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/emotes/torbjorn-batter-up.webm",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1712,6 +2293,7 @@
           "name": "Corsair",
           "id": "ana-corsair",
           "url": "/heroes/ana/icons/ana-corsair.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1728,6 +2310,7 @@
           "name": "Van Helsing",
           "id": "mccree-van-helsing",
           "url": "/heroes/mccree/icons/mccree-van-helsing.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1736,6 +2319,7 @@
           "name": "Jiangshi",
           "id": "mei-jiangshi",
           "url": "/heroes/mei/icons/mei-jiangshi.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1752,6 +2336,7 @@
           "name": "Dracula",
           "id": "reaper-dracula",
           "url": "/heroes/reaper/icons/reaper-dracula.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1776,6 +2361,7 @@
           "name": "The Summoner",
           "id": "symmetra-the-summoner",
           "url": "/heroes/symmetra/icons/symmetra-the-summoner.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1784,6 +2370,7 @@
           "name": "Viking",
           "id": "torbjorn-viking",
           "url": "/heroes/torbjorn/icons/torbjorn-viking.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1792,6 +2379,7 @@
           "name": "Totally 80's",
           "id": "zarya-totally-80s",
           "url": "/heroes/zarya/icons/zarya-totally-80s.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1800,55 +2388,57 @@
           "name": "Cultist",
           "id": "zenyatta-cultist",
           "url": "/heroes/zenyatta/icons/zenyatta-cultist.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
-        },
-        {
-          "hero": "all",
-          "name": "...Never Die",
-          "id": "never-die",
-          "url": "/heroes/all/icons/never-die.png"
         },
         {
           "hero": "all",
           "name": "Bewitching",
           "id": "bewitching",
-          "url": "/heroes/all/icons/bewitching.png"
+          "url": "/heroes/all/icons/bewitching.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Calavera",
           "id": "calavera",
-          "url": "/heroes/all/icons/calavera.png"
+          "url": "/heroes/all/icons/calavera.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Candle",
           "id": "candle",
-          "url": "/heroes/all/icons/candle.png"
+          "url": "/heroes/all/icons/candle.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Eyeball",
           "id": "eyeball",
-          "url": "/heroes/all/icons/eyeball.png"
+          "url": "/heroes/all/icons/eyeball.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Ghostymari",
           "id": "ghostymari",
-          "url": "/heroes/all/icons/ghostymari.png"
+          "url": "/heroes/all/icons/ghostymari.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Halloween Terror 2016",
           "id": "halloween-terror-2016",
-          "url": "/heroes/all/icons/halloween-terror-2016.png"
+          "url": "/heroes/all/icons/halloween-terror-2016.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Halloween Terror 2017",
           "id": "halloween-terror-2017",
           "url": "/heroes/all/icons/halloween-terror-2017.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -1856,56 +2446,72 @@
           "name": "Junkenstein's Pachimonster",
           "id": "junkensteins-pachimonster",
           "url": "/heroes/all/icons/junkensteins-pachimonster.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "Never Die",
+          "id": "never-die",
+          "url": "/heroes/all/icons/never-die.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Pachimummy",
           "id": "pachimummy",
           "url": "/heroes/all/icons/pachimummy.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Spider",
           "id": "spider",
-          "url": "/heroes/all/icons/spider.png"
+          "url": "/heroes/all/icons/spider.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Superstition",
           "id": "superstition",
-          "url": "/heroes/all/icons/superstition.png"
+          "url": "/heroes/all/icons/superstition.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Tombstone",
           "id": "tombstone",
-          "url": "/heroes/all/icons/tombstone.png"
+          "url": "/heroes/all/icons/tombstone.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Vampachimari",
           "id": "vampachimari",
-          "url": "/heroes/all/icons/vampachimari.png"
+          "url": "/heroes/all/icons/vampachimari.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Witch's Brew",
           "id": "witchs-brew",
-          "url": "/heroes/all/icons/witchs-brew.png"
+          "url": "/heroes/all/icons/witchs-brew.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Witch's Hat",
           "id": "witchs-hat",
-          "url": "/heroes/all/icons/witchs-hat.png"
+          "url": "/heroes/all/icons/witchs-hat.png",
+          "group": "HALLOWEEN_2016"
         },
         {
           "hero": "all",
           "name": "Wolf",
           "id": "wolf",
-          "url": "/heroes/all/icons/wolf.png"
+          "url": "/heroes/all/icons/wolf.png",
+          "group": "HALLOWEEN_2016"
         }
       ],
       "sprays": [
@@ -1943,6 +2549,7 @@
           "id": "doomfist-trick-or-treat",
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-trick-or-treat.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2015,6 +2622,7 @@
           "id": "orisa-trick-or-treat",
           "quality": "common",
           "url": "/heroes/orisa/sprays/orisa-trick-or-treat.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2069,6 +2677,7 @@
           "id": "sombra-trick-or-treat",
           "quality": "common",
           "url": "/heroes/sombra/sprays/sombra-trick-or-treat.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2136,14 +2745,6 @@
         },
         {
           "hero": "all",
-          "name": "...Never Die",
-          "id": "never-die",
-          "url": "/heroes/all/sprays/never-die.png",
-          "group": "HALLOWEEN_2016",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
           "name": "Bats",
           "id": "bats",
           "url": "/heroes/all/sprays/bats.png",
@@ -2200,6 +2801,14 @@
         },
         {
           "hero": "all",
+          "name": "Never Die",
+          "id": "never-die",
+          "url": "/heroes/all/sprays/never-die.png",
+          "group": "HALLOWEEN_2016",
+          "quality": "common"
+        },
+        {
+          "hero": "all",
           "name": "Pumpkins",
           "id": "pumpkins",
           "url": "/heroes/all/sprays/pumpkins.png",
@@ -2237,6 +2846,7 @@
           "name": "My Creations",
           "id": "my-creations",
           "url": "/heroes/all/sprays/my-creations.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true,
           "achievement": true,
           "description": "Win Junkenstein Endless with 6 different heroes."
@@ -2255,6 +2865,7 @@
           "name": "The Monster",
           "id": "the-monster",
           "url": "/heroes/all/sprays/the-monster.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true,
           "achievement": true,
           "description": "Win Junkenstein Endless on Hard difficulty with no damage to the door."
@@ -2273,6 +2884,7 @@
           "name": "The Reaper",
           "id": "the-reaper",
           "url": "/heroes/all/sprays/the-reaper.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true,
           "achievement": true,
           "description": "Win Junkenstein's Revenge on Expert difficulty."
@@ -2282,6 +2894,7 @@
           "name": "The Witch",
           "id": "the-witch",
           "url": "/heroes/all/sprays/the-witch.png",
+          "group": "HALLOWEEN_2017",
           "isNew": true,
           "achievement": true,
           "description": "Survive 4 bonus waves in Junkenstein Endless on Expert difficulty."
@@ -2304,6 +2917,7 @@
           "id": "ana-dont-be-scared",
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-dont-be-scared.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2313,6 +2927,7 @@
           "id": "bastion-oooooooooooo",
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-oooooooooooo.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2340,6 +2955,7 @@
           "id": "dva-im-not-scared",
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-im-not-scared.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2349,6 +2965,7 @@
           "id": "doomfist-i-have-something-for-you",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-i-have-something-for-you.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2358,6 +2975,7 @@
           "id": "doomfist-you-should-be-scared",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-you-should-be-scared.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2367,6 +2985,7 @@
           "id": "genji-happy-halloween",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-happy-halloween.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2385,6 +3004,7 @@
           "id": "hanzo-master-your-fears",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-master-your-fears.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2412,6 +3032,7 @@
           "id": "junkrat-im-alive",
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-im-alive.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2430,6 +3051,7 @@
           "id": "lucio-so-good-its-scary",
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-so-good-its-scary.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2439,6 +3061,7 @@
           "id": "mccree-i-hear-you-pumpkin",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-i-hear-you-pumpkin.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2457,6 +3080,7 @@
           "id": "mei-did-you-hear-something",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-did-you-hear-something.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2475,6 +3099,7 @@
           "id": "mercy-sometimes-you-scare-me",
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-sometimes-you-scare-me.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2493,6 +3118,7 @@
           "id": "orisa-be-careful",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-be-careful.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2502,6 +3128,7 @@
           "id": "orisa-your-pulse-has-increased",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-your-pulse-has-increased.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2520,6 +3147,7 @@
           "id": "pharah-im-so-scared",
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-im-so-scared.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2538,6 +3166,7 @@
           "id": "reaper-things-are-looking-grim",
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-things-are-looking-grim.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2556,6 +3185,7 @@
           "id": "reinhardt-what-do-we-have-here",
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-what-do-we-have-here.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2565,6 +3195,7 @@
           "id": "roadhog-boo",
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-boo.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2592,6 +3223,7 @@
           "id": "soldier-76-trick-or-treat",
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-trick-or-treat.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2601,6 +3233,7 @@
           "id": "sombra-aw-isnt-that-sweet",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-aw-isnt-that-sweet.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2610,6 +3243,7 @@
           "id": "sombra-you-trying-to-be-scary",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-you-trying-to-be-scary.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2628,6 +3262,7 @@
           "id": "symmetra-the-treat-is-a-lie",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-the-treat-is-a-lie.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2637,6 +3272,7 @@
           "id": "torbjorn-i-smell-trouble-brewing",
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-i-smell-trouble-brewing.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2655,6 +3291,7 @@
           "id": "tracer-boo",
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-boo.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2673,6 +3310,7 @@
           "id": "widowmaker-morning-spider",
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-morning-spider.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2691,6 +3329,7 @@
           "id": "winston-ooh-scary",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-ooh-scary.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2709,6 +3348,7 @@
           "id": "zarya-dont-be-scared",
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-dont-be-scared.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2727,6 +3367,7 @@
           "id": "zenyatta-frightening",
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-frightening.ogg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2793,6 +3434,7 @@
           "id": "hanzo-skewered",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/hanzo-skewered.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2802,6 +3444,7 @@
           "id": "junkrat-pumpkin",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/junkrat-pumpkin.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2820,6 +3463,7 @@
           "id": "lucio-pumpkin-control",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/lucio-pumpkin-control.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2865,6 +3509,7 @@
           "id": "orisa-pumpkin-head",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/orisa-pumpkin-head.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2919,6 +3564,7 @@
           "id": "sombra-pumpkinette",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/sombra-pumpkinette.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -2946,6 +3592,7 @@
           "id": "tracer-pumpkin",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/tracer-pumpkin.jpg",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         },
         {
@@ -3029,6 +3676,7 @@
           "id": "roadhog-footsteps",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/intros/roadhog-footsteps.webm",
+          "group": "HALLOWEEN_2017",
           "isNew": true
         }
       ]
@@ -3050,6 +3698,7 @@
           "id": "ana-snow-owl",
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skinsLegendary/ana-snow-owl.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3059,6 +3708,7 @@
           "id": "bastion-avalanche",
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skinsLegendary/bastion-avalanche.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3068,6 +3718,7 @@
           "id": "hanzo-casual",
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skinsLegendary/hanzo-casual.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3077,6 +3728,7 @@
           "id": "junkrat-beachrat",
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skinsLegendary/junkrat-beachrat.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3086,6 +3738,7 @@
           "id": "roadhog-ice-fisherman",
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skinsLegendary/roadhog-ice-fisherman.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3095,6 +3748,7 @@
           "id": "soldier-76-alpine-76",
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skinsLegendary/soldier-76-alpine-76.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3104,6 +3758,7 @@
           "id": "sombra-rime",
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skinsLegendary/sombra-rime.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         }
       ],
@@ -3112,13 +3767,15 @@
           "hero": "all",
           "name": "2017",
           "id": "2017",
-          "url": "/heroes/all/icons/2017.png"
+          "url": "/heroes/all/icons/2017.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "2018",
           "id": "2018",
           "url": "/heroes/all/icons/2018.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3127,6 +3784,7 @@
           "name": "Alpine",
           "id": "soldier-76-alpine",
           "url": "/heroes/soldier-76/icons/soldier-76-alpine.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3135,6 +3793,7 @@
           "name": "Avalanche",
           "id": "bastion-avalanche",
           "url": "/heroes/bastion/icons/bastion-avalanche.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3143,25 +3802,29 @@
           "name": "Beachrat",
           "id": "junkrat-beachrat",
           "url": "/heroes/junkrat/icons/junkrat-beachrat.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Bells",
           "id": "bells",
-          "url": "/heroes/all/icons/bells.png"
+          "url": "/heroes/all/icons/bells.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Bubbly",
           "id": "bubbly",
-          "url": "/heroes/all/icons/bubbly.png"
+          "url": "/heroes/all/icons/bubbly.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Candy Cane",
           "id": "candy-cane",
-          "url": "/heroes/all/icons/candy-cane.png"
+          "url": "/heroes/all/icons/candy-cane.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "heroName": "Hanzo",
@@ -3169,43 +3832,50 @@
           "name": "Casual",
           "id": "hanzo-casual",
           "url": "/heroes/hanzo/icons/hanzo-casual.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Cheers!",
           "id": "cheers",
-          "url": "/heroes/all/icons/cheers.png"
+          "url": "/heroes/all/icons/cheers.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Dreidel",
           "id": "dreidel",
-          "url": "/heroes/all/icons/dreidel.png"
+          "url": "/heroes/all/icons/dreidel.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Gingerbread",
           "id": "gingerbread",
-          "url": "/heroes/all/icons/gingerbread.png"
+          "url": "/heroes/all/icons/gingerbread.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Gingermari",
           "id": "gingermari",
-          "url": "/heroes/all/icons/gingermari.png"
+          "url": "/heroes/all/icons/gingermari.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Holly",
           "id": "holly",
-          "url": "/heroes/all/icons/holly.png"
+          "url": "/heroes/all/icons/holly.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Hot Cocoa",
           "id": "hot-cocoa",
-          "url": "/heroes/all/icons/hot-cocoa.png"
+          "url": "/heroes/all/icons/hot-cocoa.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "heroName": "Roadhog",
@@ -3213,6 +3883,7 @@
           "name": "Ice Fisherman",
           "id": "roadhog-ice-fisherman",
           "url": "/heroes/roadhog/icons/roadhog-ice-fisherman.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3227,7 +3898,8 @@
           "hero": "all",
           "name": "Mochi",
           "id": "mochi",
-          "url": "/heroes/all/icons/mochi.png"
+          "url": "/heroes/all/icons/mochi.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "heroName": "Zenyatta",
@@ -3241,31 +3913,36 @@
           "hero": "all",
           "name": "Ornament",
           "id": "ornament",
-          "url": "/heroes/all/icons/ornament.png"
+          "url": "/heroes/all/icons/ornament.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Pachimerry",
           "id": "pachimerry",
-          "url": "/heroes/all/icons/pachimerry.png"
+          "url": "/heroes/all/icons/pachimerry.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Pachireindeer",
           "id": "pachireindeer",
-          "url": "/heroes/all/icons/pachireindeer.png"
+          "url": "/heroes/all/icons/pachireindeer.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Peppermint",
           "id": "peppermint",
-          "url": "/heroes/all/icons/peppermint.png"
+          "url": "/heroes/all/icons/peppermint.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Present",
           "id": "present",
-          "url": "/heroes/all/icons/present.png"
+          "url": "/heroes/all/icons/present.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "heroName": "Sombra",
@@ -3273,6 +3950,7 @@
           "name": "Rime",
           "id": "sombra-rime",
           "url": "/heroes/sombra/icons/sombra-rime.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3287,7 +3965,8 @@
           "hero": "all",
           "name": "Snow Globe",
           "id": "snow-globe",
-          "url": "/heroes/all/icons/snow-globe.png"
+          "url": "/heroes/all/icons/snow-globe.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "heroName": "Ana",
@@ -3295,44 +3974,51 @@
           "name": "Snow Owl",
           "id": "ana-snow-owl",
           "url": "/heroes/ana/icons/ana-snow-owl.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Snowman",
           "id": "snowman",
-          "url": "/heroes/all/icons/snowman.png"
+          "url": "/heroes/all/icons/snowman.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Stocking",
           "id": "stocking",
-          "url": "/heroes/all/icons/stocking.png"
+          "url": "/heroes/all/icons/stocking.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Tannenbaum",
           "id": "tannenbaum",
-          "url": "/heroes/all/icons/tannenbaum.png"
+          "url": "/heroes/all/icons/tannenbaum.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Winter Wonderland 2016",
           "id": "winter-wonderland-2016",
-          "url": "/heroes/all/icons/winter-wonderland-2016.png"
+          "url": "/heroes/all/icons/winter-wonderland-2016.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "hero": "all",
           "name": "Winter Wonderland 2017",
           "id": "winter-wonderland-2017",
           "url": "/heroes/all/icons/winter-wonderland-2017.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Wreath",
           "id": "wreath",
-          "url": "/heroes/all/icons/wreath.png"
+          "url": "/heroes/all/icons/wreath.png",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "heroName": "Winston",
@@ -3347,6 +4033,7 @@
           "name": "Yetimari",
           "id": "yetimari",
           "url": "/heroes/all/icons/yetimari.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         }
       ],
@@ -3391,6 +4078,7 @@
           "id": "doomfist-snow-punch",
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-snow-punch.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true,
           "secondId": "doomfist-ornament",
           "secondUrl": "/heroes/doomfist/sprays/doomfist-ornament.png"
@@ -3479,6 +4167,7 @@
           "id": "moira-chimney",
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-chimney.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true,
           "secondId": "moira-ornament",
           "secondUrl": "/heroes/moira/sprays/moira-ornament.png"
@@ -3490,6 +4179,7 @@
           "id": "orisa-star",
           "quality": "common",
           "url": "/heroes/orisa/sprays/orisa-star.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true,
           "secondId": "orisa-ornament",
           "secondUrl": "/heroes/orisa/sprays/orisa-ornament.png"
@@ -3670,6 +4360,7 @@
           "hidden": true,
           "hero": "doomfist",
           "id": "doomfist-ornament",
+          "group": "WINTER_WONDERLAND_2017",
           "quality": "common"
         },
         {
@@ -3725,12 +4416,14 @@
           "hidden": true,
           "hero": "moira",
           "id": "moira-ornament",
+          "group": "WINTER_WONDERLAND_2017",
           "quality": "common"
         },
         {
           "hidden": true,
           "hero": "orisa",
           "id": "orisa-ornament",
+          "group": "WINTER_WONDERLAND_2017",
           "quality": "common"
         },
         {
@@ -3865,6 +4558,7 @@
           "name": "Yeti",
           "id": "yeti",
           "url": "/heroes/all/sprays/yeti.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true,
           "achievement": true,
           "description": "Eat 4 meat as the Yeti in Yeti Hunter."
@@ -3874,6 +4568,7 @@
           "name": "Yeti Hunter",
           "id": "yeti-hunter",
           "url": "/heroes/all/sprays/yeti-hunter.png",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true,
           "achievement": true,
           "description": "Trap the Yeti as a Hunter in Yeti Hunter."
@@ -3887,6 +4582,7 @@
           "id": "ana-im-too-old-for-surprises",
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-im-too-old-for-surprises.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3905,6 +4601,7 @@
           "id": "bastion-bwoo-bwoo-bwoo",
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-bwoo-bwoo-bwoo.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3932,6 +4629,7 @@
           "id": "dva-happy-holidays",
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-happy-holidays.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3941,6 +4639,7 @@
           "id": "doomfist-did-you-bring-me-a-present",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-did-you-bring-me-a-present.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3950,6 +4649,7 @@
           "id": "doomfist-they-say-chivalry-is-dead",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-they-say-chivalry-is-dead.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3959,6 +4659,7 @@
           "id": "genji-count-your-blessings",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-count-your-blessings.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3986,6 +4687,7 @@
           "id": "hanzo-cold-as-ice",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-cold-as-ice.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -3995,6 +4697,7 @@
           "id": "junkrat-go-on-give-it-a-shake",
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-go-on-give-it-a-shake.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4013,6 +4716,7 @@
           "id": "lucio-climbing-the-charts",
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-climbing-the-charts.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4040,6 +4744,7 @@
           "id": "mccree-youve-been-snowed-in",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-youve-been-snowed-in.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4049,6 +4754,7 @@
           "id": "mei-dont-you-love-surprises",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-dont-you-love-surprises.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4067,6 +4773,7 @@
           "id": "mercy-i-could-use-the-time-off",
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-i-could-use-the-time-off.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4085,6 +4792,7 @@
           "id": "moira-absolute-zero",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-absolute-zero.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4094,6 +4802,7 @@
           "id": "moira-happy-christmas",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-happy-christmas.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4103,6 +4812,7 @@
           "id": "orisa-annual-performance-analysis",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-annual-performance-analysis.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4112,6 +4822,7 @@
           "id": "orisa-cant-i-guide-your-way-tonight",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-cant-i-guide-your-way-tonight.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4121,6 +4832,7 @@
           "id": "pharah-at-ease",
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-at-ease.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4148,6 +4860,7 @@
           "id": "reaper-youre-on-ice",
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-youre-on-ice.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4157,6 +4870,7 @@
           "id": "reinhardt-forgive-and-forget",
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-forgive-and-forget.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4184,6 +4898,7 @@
           "id": "roadhog-i-have-your-present-right-here",
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-i-have-your-present-right-here.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4193,6 +4908,7 @@
           "id": "soldier-76-merry-christmas",
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-merry-christmas.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4211,6 +4927,7 @@
           "id": "sombra-i-can-be-nice",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-i-can-be-nice.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4229,6 +4946,7 @@
           "id": "symmetra-expecting-a-miracle",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-expecting-a-miracle.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4247,6 +4965,7 @@
           "id": "torbjorn-expert-craftsmanship",
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-expert-craftsmanship.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4265,6 +4984,7 @@
           "id": "tracer-ho-ho-ho",
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-ho-ho-ho.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4292,6 +5012,7 @@
           "id": "widowmaker-merry-christmas",
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-merry-christmas.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4310,6 +5031,7 @@
           "id": "winston-party-mode-engaged",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-party-mode-engaged.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4319,6 +5041,7 @@
           "id": "zarya-cool-it",
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-cool-it.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4337,6 +5060,7 @@
           "id": "zenyatta-joy-to-the-world",
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-joy-to-the-world.ogg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4367,6 +5091,7 @@
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/bastion-toast.jpg",
           "standardItem": true,
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4385,6 +5110,7 @@
           "id": "genji-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/genji-toast.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4403,6 +5129,7 @@
           "id": "mercy-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/mercy-toast.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4430,6 +5157,7 @@
           "id": "roadhog-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/roadhog-toast.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4449,6 +5177,7 @@
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/sombra-toast.jpg",
           "standardItem": true,
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4467,6 +5196,7 @@
           "id": "widowmaker-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/widowmaker-toast.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4476,6 +5206,7 @@
           "id": "zarya-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/zarya-toast.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4485,6 +5216,7 @@
           "id": "zenyatta-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/zenyatta-toast.jpg",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         }
       ],
@@ -4627,6 +5359,7 @@
           "id": "orisa-puppy",
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/emotes/orisa-puppy.webm",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4646,6 +5379,7 @@
           "id": "zenyatta-snowflake",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/emotes/zenyatta-snowflake.webm",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         }
       ],
@@ -4657,6 +5391,7 @@
           "id": "reinhardt-snowball-fight",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/intros/reinhardt-snowball-fight.webm",
+          "group": "WINTER_WONDERLAND_2017",
           "isNew": true
         },
         {
@@ -4848,6 +5583,7 @@
           "id": "doomfist-lionfist",
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-lionfist.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true,
           "secondId": "doomfist-dragon-dance",
           "secondUrl": "/heroes/doomfist/sprays/doomfist-dragon-dance.png"
@@ -4936,6 +5672,7 @@
           "id": "moira-dog-person",
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-dog-person.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true,
           "secondId": "moira-dragon-dance",
           "secondUrl": "/heroes/moira/sprays/moira-dragon-dance.png"
@@ -4947,6 +5684,7 @@
           "id": "orisa-drum-dance",
           "quality": "common",
           "url": "/heroes/orisa/sprays/orisa-drum-dance.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true,
           "secondId": "orisa-dragon-dance",
           "secondUrl": "/heroes/orisa/sprays/orisa-dragon-dance.png"
@@ -5107,7 +5845,8 @@
           "name": "Good Fortune",
           "id": "good-fortune",
           "url": "/heroes/all/sprays/good-fortune.png",
-          "group": "LUNAR_NEW_YEAR_2017",
+          "group": "LUNAR_NEW_YEAR_2018",
+          "isNew": true,
           "quality": "common"
         },
         {
@@ -5131,7 +5870,8 @@
           "name": "Year of the Dog",
           "id": "year-of-the-dog-2018",
           "url": "/heroes/all/sprays/year-of-the-dog-2018.png",
-          "group": "LUNAR_NEW_YEAR_2017",
+          "group": "LUNAR_NEW_YEAR_2018",
+          "isNew": true,
           "quality": "common"
         },
         {
@@ -5167,6 +5907,7 @@
           "hidden": true,
           "hero": "doomfist",
           "id": "doomfist-dragon-dance",
+          "group": "LUNAR_NEW_YEAR_2018",
           "quality": "common"
         },
         {
@@ -5222,12 +5963,14 @@
           "hidden": true,
           "hero": "moira",
           "id": "moira-dragon-dance",
+          "group": "LUNAR_NEW_YEAR_2018",
           "quality": "common"
         },
         {
           "hidden": true,
           "hero": "orisa",
           "id": "orisa-dragon-dance",
+          "group": "LUNAR_NEW_YEAR_2018",
           "quality": "common"
         },
         {
@@ -5348,6 +6091,7 @@
           "id": "ana-i-make-my-own-luck",
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-i-make-my-own-luck.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5366,6 +6110,7 @@
           "id": "bastion-doo-wee-doo-wee-woo",
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-doo-wee-doo-wee-woo.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5384,6 +6129,7 @@
           "id": "dva-happy-new-year",
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-happy-new-year.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5402,6 +6148,7 @@
           "id": "doomfist-fortune-favors-the-bold",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-fortune-favors-the-bold.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5411,6 +6158,7 @@
           "id": "doomfist-ill-throw-you-a-bone",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-ill-throw-you-a-bone.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5420,6 +6168,7 @@
           "id": "genji-all-bark-no-bite",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-all-bark-no-bite.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5438,6 +6187,7 @@
           "id": "hanzo-insolent-cur",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-insolent-cur.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5465,6 +6215,7 @@
           "id": "junkrat-my-dog-is-barking",
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-my-dog-is-barking.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5483,6 +6234,7 @@
           "id": "lucio-just-how-i-like-it",
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-just-how-i-like-it.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5501,6 +6253,7 @@
           "id": "mccree-hair-of-the-dog",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-hair-of-the-dog.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5510,6 +6263,7 @@
           "id": "mei-give-me-a-red-envelope",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-give-me-a-red-envelope.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5537,6 +6291,7 @@
           "id": "mercy-how-lucky-for-you",
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-how-lucky-for-you.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5546,6 +6301,7 @@
           "id": "moira-slinte",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-slinte.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5555,6 +6311,7 @@
           "id": "moira-youve-made-a-dogs-breakfast",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-youve-made-a-dogs-breakfast.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5564,6 +6321,7 @@
           "id": "orisa-the-moon-that-wanes",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-the-moon-that-wanes.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5573,6 +6331,7 @@
           "id": "orisa-who-is-ready-to-party",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-who-is-ready-to-party.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5591,6 +6350,7 @@
           "id": "pharah-ready-for-some-fireworks",
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-ready-for-some-fireworks.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5600,6 +6360,7 @@
           "id": "reaper-i-have-the-devils-own-luck",
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-i-have-the-devils-own-luck.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5627,6 +6388,7 @@
           "id": "reinhardt-fortune-favors-the-bold",
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-fortune-favors-the-bold.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5636,6 +6398,7 @@
           "id": "roadhog-its-all-gone-to-the-dogs",
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-its-all-gone-to-the-dogs.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5654,6 +6417,7 @@
           "id": "soldier-76-respect-your-elders",
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-respect-your-elders.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5681,6 +6445,7 @@
           "id": "sombra-youre-in-the-doghouse",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-youre-in-the-doghouse.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5690,6 +6455,7 @@
           "id": "symmetra-cause-for-celebration",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-cause-for-celebration.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5708,6 +6474,7 @@
           "id": "torbjorn-everyone-get-in-here",
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-everyone-get-in-here.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5726,6 +6493,7 @@
           "id": "tracer-im-over-the-moon",
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-im-over-the-moon.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5744,6 +6512,7 @@
           "id": "widowmaker-barking-up-the-wrong-tree",
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-barking-up-the-wrong-tree.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5762,6 +6531,7 @@
           "id": "winston-moon-sweet-home",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-moon-sweet-home.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5789,6 +6559,7 @@
           "id": "zarya-where-the-dog-is-buried",
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-where-the-dog-is-buried.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5807,6 +6578,7 @@
           "id": "zenyatta-fortune-favors-me",
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-fortune-favors-me.ogg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         }
       ],
@@ -5854,6 +6626,7 @@
           "id": "mccree-fire-in-the-hole",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/mccree-fire-in-the-hole.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5890,6 +6663,7 @@
           "id": "symmetra-fan",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/symmetra-fan.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5899,6 +6673,7 @@
           "id": "tracer-fireworks",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/tracer-fireworks.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5908,6 +6683,7 @@
           "id": "widowmaker-fans",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/widowmaker-fans.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5917,6 +6693,7 @@
           "id": "winston-sparklers",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/winston-sparklers.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5926,6 +6703,7 @@
           "id": "zarya-big-one",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/zarya-big-one.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         }
       ],
@@ -5946,6 +6724,7 @@
           "id": "doomfist-crushing",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/emotes/doomfist-crushing.webm",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -5973,6 +6752,7 @@
           "id": "roadhog-secret-friend",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/emotes/roadhog-secret-friend.webm",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         }
       ],
@@ -5991,6 +6771,7 @@
           "name": "Magistrate",
           "id": "mccree-magistrate",
           "url": "/heroes/mccree/icons/mccree-magistrate.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -6023,6 +6804,7 @@
           "name": "Black Lily",
           "id": "widowmaker-black-lily",
           "url": "/heroes/widowmaker/icons/widowmaker-black-lily.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -6046,99 +6828,115 @@
           "name": "Baihu",
           "id": "baihu",
           "url": "/heroes/all/icons/baihu.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Bokimari",
           "id": "bokimari",
-          "url": "/heroes/all/icons/bokimari.png"
+          "url": "/heroes/all/icons/bokimari.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Coin",
           "id": "coin",
-          "url": "/heroes/all/icons/coin.png"
+          "url": "/heroes/all/icons/coin.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Dragon Dance",
           "id": "dragon-dance",
-          "url": "/heroes/all/icons/dragon-dance.png"
+          "url": "/heroes/all/icons/dragon-dance.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Fortune",
           "id": "fortune",
-          "url": "/heroes/all/icons/fortune.png"
+          "url": "/heroes/all/icons/fortune.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Fuchimari",
           "id": "fuchimari",
-          "url": "/heroes/all/icons/fuchimari.png"
+          "url": "/heroes/all/icons/fuchimari.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Gold",
           "id": "gold",
-          "url": "/heroes/all/icons/gold.png"
+          "url": "/heroes/all/icons/gold.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Good Fortune",
           "id": "good-fortune",
           "url": "/heroes/all/icons/good-fortune.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Have Fish",
           "id": "have-fish",
-          "url": "/heroes/all/icons/have-fish.png"
+          "url": "/heroes/all/icons/have-fish.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Huchimari",
           "id": "huchimari",
           "url": "/heroes/all/icons/huchimari.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Lantern",
           "id": "lantern",
-          "url": "/heroes/all/icons/lantern.png"
+          "url": "/heroes/all/icons/lantern.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Lion Dance",
           "id": "lion-dance",
-          "url": "/heroes/all/icons/lion-dance.png"
+          "url": "/heroes/all/icons/lion-dance.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Lucky Pouch",
           "id": "lucky-pouch",
-          "url": "/heroes/all/icons/lucky-pouch.png"
+          "url": "/heroes/all/icons/lucky-pouch.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "New Year Cake",
           "id": "new-year-cake",
-          "url": "/heroes/all/icons/new-year-cake.png"
+          "url": "/heroes/all/icons/new-year-cake.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Pachilantern",
           "id": "pachilantern",
-          "url": "/heroes/all/icons/pachilantern.png"
+          "url": "/heroes/all/icons/pachilantern.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Paqingmari",
           "id": "paqingmari",
           "url": "/heroes/all/icons/paqingmari.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -6146,44 +6944,51 @@
           "name": "Paquemari",
           "id": "paquemari",
           "url": "/heroes/all/icons/paquemari.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Peachimari",
           "id": "peachimari",
-          "url": "/heroes/all/icons/peachimari.png"
+          "url": "/heroes/all/icons/peachimari.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Qinglong",
           "id": "qinglong",
           "url": "/heroes/all/icons/qinglong.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Red Envelope",
           "id": "red-envelope",
-          "url": "/heroes/all/icons/red-envelope.png"
+          "url": "/heroes/all/icons/red-envelope.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Seollal",
           "id": "seollal",
-          "url": "/heroes/all/icons/seollal.png"
+          "url": "/heroes/all/icons/seollal.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Tangerines",
           "id": "tangerines",
-          "url": "/heroes/all/icons/tangerines.png"
+          "url": "/heroes/all/icons/tangerines.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Wuchimari",
           "id": "wuchimari",
           "url": "/heroes/all/icons/wuchimari.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -6191,6 +6996,7 @@
           "name": "Xuanwu",
           "id": "xuanwu",
           "url": "/heroes/all/icons/xuanwu.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -6198,19 +7004,22 @@
           "name": "Year of the Dog 2018",
           "id": "year-of-the-dog-2018",
           "url": "/heroes/all/icons/year-of-the-dog-2018.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Year of the Rooster 2017",
           "id": "year-of-the-rooster-2017",
-          "url": "/heroes/all/icons/year-of-the-rooster-2017.png"
+          "url": "/heroes/all/icons/year-of-the-rooster-2017.png",
+          "group": "LUNAR_NEW_YEAR_2017"
         },
         {
           "hero": "all",
           "name": "Zhuque",
           "id": "zhuque",
           "url": "/heroes/all/icons/zhuque.png",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         }
       ],
@@ -6222,6 +7031,7 @@
           "id": "genji-baihu",
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/genji-baihu.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -6231,6 +7041,7 @@
           "id": "mccree-magistrate",
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/mccree-magistrate.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -6240,6 +7051,7 @@
           "id": "mercy-zhuque",
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/mercy-zhuque.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -6249,6 +7061,7 @@
           "id": "pharah-qinglong",
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/pharah-qinglong.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -6258,6 +7071,7 @@
           "id": "widowmaker-black-lily",
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/widowmaker-black-lily.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -6267,6 +7081,7 @@
           "id": "zarya-xuanwu",
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/zarya-xuanwu.jpg",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         }
       ],
@@ -6278,6 +7093,7 @@
           "id": "mccree-spark",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/intros/mccree-spark.webm",
+          "group": "LUNAR_NEW_YEAR_2018",
           "isNew": true
         },
         {
@@ -6344,6 +7160,7 @@
           "id": "brigitte-frustrated",
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-frustrated.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6362,6 +7179,7 @@
           "id": "doomfist-thumbs-down",
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-thumbs-down.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6434,6 +7252,7 @@
           "id": "moira-foundation",
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-foundation.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6567,6 +7386,7 @@
           "name": "Archives",
           "id": "archives",
           "url": "/heroes/all/sprays/archives.png",
+          "group": "UPRISING_2018",
           "isNew": true,
           "quality": "common"
         },
@@ -6592,6 +7412,7 @@
           "name": "Droppachi",
           "id": "droppachi",
           "url": "/heroes/all/sprays/droppachi.png",
+          "group": "UPRISING_2018",
           "isNew": true,
           "achievement": true,
           "description": "Complete Retribution on Expert difficulty."
@@ -6646,6 +7467,7 @@
           "name": "Talon Assassin",
           "id": "talon-assassin",
           "url": "/heroes/all/sprays/talon-assassin.png",
+          "group": "UPRISING_2018",
           "isNew": true,
           "achievement": true,
           "description": "Complete Retribution on Expert difficulty with no incapacitations."
@@ -6655,6 +7477,7 @@
           "name": "Talon Enforcer",
           "id": "talon-enforcer",
           "url": "/heroes/all/sprays/talon-enforcer.png",
+          "group": "UPRISING_2018",
           "isNew": true,
           "achievement": true,
           "description": "Complete Retribution (All Heroes) with 8 different heroes."
@@ -6664,6 +7487,7 @@
           "name": "Talon Heavy Assault",
           "id": "talon-heavy-assault",
           "url": "/heroes/all/sprays/talon-heavy-assault.png",
+          "group": "UPRISING_2018",
           "isNew": true,
           "achievement": true,
           "description": "Complete Retribution on Legendary difficulty."
@@ -6673,6 +7497,7 @@
           "name": "Talon Sniper",
           "id": "talon-sniper",
           "url": "/heroes/all/sprays/talon-sniper.png",
+          "group": "UPRISING_2018",
           "isNew": true,
           "achievement": true,
           "description": "Complete Retribution on Hard difficulty."
@@ -6682,6 +7507,7 @@
           "name": "Talon Trooper",
           "id": "talon-trooper",
           "url": "/heroes/all/sprays/talon-trooper.png",
+          "group": "UPRISING_2018",
           "isNew": true,
           "achievement": true,
           "description": "Complete Retribution with each of the 4 heroes."
@@ -6713,6 +7539,7 @@
           "id": "ana-were-not-keeping-score",
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-were-not-keeping-score.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6740,6 +7567,7 @@
           "id": "bastion-zwing-zwing-zwing",
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-zwing-zwing-zwing.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6749,6 +7577,7 @@
           "id": "brigitte-a-chicken-out-of-a-feather",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-a-chicken-out-of-a-feather.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6758,6 +7587,7 @@
           "id": "brigitte-dont-get-caught",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-dont-get-caught.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6767,6 +7597,7 @@
           "id": "brigitte-time-to-roll-up-my-sleeves",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-time-to-roll-up-my-sleeves.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6776,6 +7607,7 @@
           "id": "dva-amazing",
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-amazing.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6803,6 +7635,7 @@
           "id": "doomfist-i-am-not-your-savior",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-i-am-not-your-savior.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6812,6 +7645,7 @@
           "id": "doomfist-i-didnt-ask-for-your-opinion",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-i-didnt-ask-for-your-opinion.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6821,6 +7655,7 @@
           "id": "doomfist-i-know-you-can-do-better",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-i-know-you-can-do-better.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6848,6 +7683,7 @@
           "id": "genji-your-eyes-deceive-you",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-your-eyes-deceive-you.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6866,6 +7702,7 @@
           "id": "hanzo-my-fate-is-written-in-blood",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-my-fate-is-written-in-blood.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6893,6 +7730,7 @@
           "id": "junkrat-i-really-blew-that-one",
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-i-really-blew-that-one.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6929,6 +7767,7 @@
           "id": "lucio-turn-it-up-in-my-headphones",
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-turn-it-up-in-my-headphones.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6947,6 +7786,7 @@
           "id": "mccree-dont-sass-me",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-dont-sass-me.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6965,6 +7805,7 @@
           "id": "mei-im-just-a-scientist",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-im-just-a-scientist.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -6992,6 +7833,7 @@
           "id": "mercy-a-timely-intervention",
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-a-timely-intervention.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7019,6 +7861,7 @@
           "id": "moira-get-off-the-stage",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-get-off-the-stage.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7028,6 +7871,7 @@
           "id": "moira-this-is-to-my-liking",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-this-is-to-my-liking.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7037,6 +7881,7 @@
           "id": "moira-youre-mistaken",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-youre-mistaken.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7064,6 +7909,7 @@
           "id": "orisa-i-was-only-trying-to-help",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-i-was-only-trying-to-help.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7091,6 +7937,7 @@
           "id": "pharah-i-live-for-a-good-fight",
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-i-live-for-a-good-fight.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7118,6 +7965,7 @@
           "id": "reaper-revenge-is-sweet",
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-revenge-is-sweet.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7136,6 +7984,7 @@
           "id": "reinhardt-prost",
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-prost.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7172,6 +8021,7 @@
           "id": "roadhog-you-wanna-scrap-with-me",
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-you-wanna-scrap-with-me.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7181,6 +8031,7 @@
           "id": "soldier-76-dont-call-me-a-hero",
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-dont-call-me-a-hero.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7208,6 +8059,7 @@
           "id": "sombra-back-to-la-medianoche",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-back-to-la-medianoche.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7253,6 +8105,7 @@
           "id": "symmetra-timepass",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-timepass.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7262,6 +8115,7 @@
           "id": "torbjorn-bingo",
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-bingo.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7307,6 +8161,7 @@
           "id": "tracer-time-is-on-my-side",
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-time-is-on-my-side.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7316,6 +8171,7 @@
           "id": "widowmaker-always-the-hunters",
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-always-the-hunters.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7361,6 +8217,7 @@
           "id": "winston-primal-punch",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-primal-punch.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7388,6 +8245,7 @@
           "id": "zarya-you-have-failed-your-team",
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-you-have-failed-your-team.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7415,6 +8273,7 @@
           "id": "zenyatta-your-lesson-for-today",
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-your-lesson-for-today.ogg",
+          "group": "UPRISING_2018",
           "isNew": true
         }
       ],
@@ -7526,6 +8385,7 @@
           "id": "brigitte-kneel",
           "quality": "rare",
           "url": "/updates/UPRISING/poses/brigitte-kneel.jpg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7544,6 +8404,7 @@
           "id": "junkrat-mug-shot",
           "quality": "rare",
           "url": "/updates/UPRISING/poses/junkrat-mug-shot.jpg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7571,6 +8432,7 @@
           "id": "moira-erlenmeyer",
           "quality": "rare",
           "url": "/updates/UPRISING/poses/moira-erlenmeyer.jpg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7580,6 +8442,7 @@
           "id": "orisa-puppy",
           "quality": "rare",
           "url": "/updates/UPRISING/poses/orisa-puppy.jpg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7589,6 +8452,7 @@
           "id": "reinhardt-kneel",
           "quality": "rare",
           "url": "/updates/UPRISING/poses/reinhardt-kneel.jpg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7598,6 +8462,7 @@
           "id": "roadhog-mug-shot",
           "quality": "rare",
           "url": "/updates/UPRISING/poses/roadhog-mug-shot.jpg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7645,6 +8510,7 @@
           "id": "doomfist-combo",
           "quality": "epic",
           "url": "/updates/UPRISING/intros/doomfist-combo.webm",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7654,6 +8520,7 @@
           "id": "orisa-immovable",
           "quality": "epic",
           "url": "/updates/UPRISING/intros/orisa-immovable.webm",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7672,6 +8539,7 @@
           "id": "zarya-graviton-surge",
           "quality": "epic",
           "url": "/updates/UPRISING/intros/zarya-graviton-surge.webm",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7693,6 +8561,7 @@
           "quality": "legendary",
           "url": "/updates/UPRISING/skinsLegendary/doomfist-talon.jpg",
           "description": "Doomfist rose in power in Talon after killing his mentor, Akinjide Adeyemi, the Scourge of Numbani.",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7703,6 +8572,7 @@
           "quality": "legendary",
           "url": "/updates/UPRISING/skinsLegendary/hanzo-scion.jpg",
           "description": "Over the centuries, the Shimada clan grew to profit from a lucrative trade in arms and other illegal substances.",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7712,6 +8582,7 @@
           "id": "lucio-equalizer",
           "quality": "legendary",
           "url": "/updates/UPRISING/skinsLegendary/lucio-equalizer.jpg",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7722,6 +8593,7 @@
           "quality": "legendary",
           "url": "/updates/UPRISING/skinsLegendary/mei-pajamei.jpg",
           "description": "Due to a malfunction of Ecopoint: Antarctica's cryogenics facility, Mei was kept in hibernation for almost a decade and woke up to find a new, unfamiliar world.",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7732,6 +8604,7 @@
           "quality": "legendary",
           "url": "/updates/UPRISING/skinsLegendary/moira-blackwatch.jpg",
           "description": "In addition to her research as a part of Blackwatch, Moira occasionally participated in clandestine operations, including the Venice Incident.",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7742,6 +8615,7 @@
           "quality": "legendary",
           "url": "/updates/UPRISING/skinsLegendary/reaper-soldier-24.jpg",
           "description": "Before serving on the original Overwatch strike team, Gabriel Reyes was selected to be a member of the government's classified soldier enhancement program.",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7752,6 +8626,7 @@
           "quality": "legendary",
           "url": "/updates/UPRISING/skinsLegendary/sombra-talon.jpg",
           "description": "Sombra is only too happy to utilize the power and reach of Talon while pursuing her own goals.",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7762,6 +8637,7 @@
           "quality": "legendary",
           "url": "/updates/UPRISING/skinsLegendary/winston-specimen-28.jpg",
           "description": "The gorilla known as Specimen 28 showed rapid brain development from genetic therapy, surpassing that of the other subjects.",
+          "group": "UPRISING_2018",
           "isNew": true
         }
       ],
@@ -7772,6 +8648,7 @@
           "name": "Ogundimu",
           "id": "doomfist-ogundimu",
           "url": "/heroes/doomfist/icons/doomfist-ogundimu.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7788,6 +8665,7 @@
           "name": "Scion",
           "id": "hanzo-scion",
           "url": "/heroes/hanzo/icons/hanzo-scion.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7796,6 +8674,7 @@
           "name": "Equalizer",
           "id": "lucio-equalizer",
           "url": "/heroes/lucio/icons/lucio-equalizer.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7812,6 +8691,7 @@
           "name": "Mug",
           "id": "mei-mug",
           "url": "/heroes/mei/icons/mei-mug.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7828,6 +8708,7 @@
           "name": "O'Deorain",
           "id": "moira-odeorain",
           "url": "/heroes/moira/icons/moira-odeorain.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7844,6 +8725,7 @@
           "name": "Soldier: 24",
           "id": "reaper-soldier-24",
           "url": "/heroes/reaper/icons/reaper-soldier-24.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7860,6 +8742,7 @@
           "name": "Colomar",
           "id": "sombra-colomar",
           "url": "/heroes/sombra/icons/sombra-colomar.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7892,6 +8775,7 @@
           "name": "Specimen 28",
           "id": "winston-specimen-28",
           "url": "/heroes/winston/icons/winston-specimen-28.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7899,6 +8783,7 @@
           "name": "Archives 2018",
           "id": "archives-2018",
           "url": "/heroes/all/icons/archives-2018.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7906,25 +8791,29 @@
           "name": "Assassin",
           "id": "assassin",
           "url": "/heroes/all/icons/assassin.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "B73-NS",
           "id": "b73ns",
-          "url": "/heroes/all/icons/b73ns.png"
+          "url": "/heroes/all/icons/b73ns.png",
+          "group": "UPRISING_2017"
         },
         {
           "hero": "all",
           "name": "Drop Pod",
           "id": "drop-pod",
-          "url": "/heroes/all/icons/drop-pod.png"
+          "url": "/heroes/all/icons/drop-pod.png",
+          "group": "UPRISING_2017"
         },
         {
           "hero": "all",
           "name": "Enforcer",
           "id": "enforcer",
           "url": "/heroes/all/icons/enforcer.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7932,6 +8821,7 @@
           "name": "Heavy Assault",
           "id": "heavy-assault",
           "url": "/heroes/all/icons/heavy-assault.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7939,25 +8829,29 @@
           "name": "Maximilien",
           "id": "maximilien",
           "url": "/heroes/all/icons/maximilien.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Null Sector",
           "id": "null-sector",
-          "url": "/heroes/all/icons/null-sector.png"
+          "url": "/heroes/all/icons/null-sector.png",
+          "group": "UPRISING_2017"
         },
         {
           "hero": "all",
           "name": "Nullmari",
           "id": "nullmari",
-          "url": "/heroes/all/icons/nullmari.png"
+          "url": "/heroes/all/icons/nullmari.png",
+          "group": "UPRISING_2017"
         },
         {
           "hero": "all",
           "name": "Sniper",
           "id": "sniper",
           "url": "/heroes/all/icons/sniper.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
@@ -7965,13 +8859,15 @@
           "name": "Trooper",
           "id": "trooper",
           "url": "/heroes/all/icons/trooper.png",
+          "group": "UPRISING_2018",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Uprising 2017",
           "id": "uprising-2017",
-          "url": "/heroes/all/icons/uprising-2017.png"
+          "url": "/heroes/all/icons/uprising-2017.png",
+          "group": "UPRISING_2017"
         }
       ],
       "emotes": [
@@ -8039,6 +8935,7 @@
           "id": "brigitte-dance",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/brigitte-dance.webm",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8057,6 +8954,7 @@
           "id": "doomfist-dance",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/doomfist-dance.webm",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8129,6 +9027,7 @@
           "id": "moira-dance",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/moira-dance.webm",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8281,6 +9180,7 @@
           "name": "Stealth",
           "id": "bastion-stealth",
           "url": "/heroes/bastion/icons/bastion-stealth.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8289,6 +9189,7 @@
           "name": "Björn",
           "id": "brigitte-bjorn",
           "url": "/heroes/brigitte/icons/brigitte-bjorn.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8297,6 +9198,7 @@
           "name": "Jubileum",
           "id": "brigitte-jubileum",
           "url": "/heroes/brigitte/icons/brigitte-jubileum.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8313,6 +9215,7 @@
           "name": "Akandeversary",
           "id": "doomfist-akandeversary",
           "url": "/heroes/doomfist/icons/doomfist-akandeversary.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8321,6 +9224,7 @@
           "name": "Formal",
           "id": "doomfist-formal",
           "url": "/heroes/doomfist/icons/doomfist-formal.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8345,6 +9249,7 @@
           "name": "Buccaneer",
           "id": "junkrat-buccaneer",
           "url": "/heroes/junkrat/icons/junkrat-buccaneer.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8377,6 +9282,7 @@
           "name": "Sherlock",
           "id": "mccree-sherlock",
           "url": "/heroes/mccree/icons/mccree-sherlock.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8401,6 +9307,7 @@
           "name": "Cothrom an Lae",
           "id": "moira-cothrom-an-lae",
           "url": "/heroes/moira/icons/moira-cothrom-an-lae.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8417,6 +9324,7 @@
           "name": "Forest Spirit",
           "id": "orisa-forest-spirit",
           "url": "/heroes/orisa/icons/orisa-forest-spirit.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8473,6 +9381,7 @@
           "name": "Magician",
           "id": "symmetra-magician",
           "url": "/heroes/symmetra/icons/symmetra-magician.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8489,6 +9398,7 @@
           "name": "Cybjörn",
           "id": "torbjorn-cybjorn",
           "url": "/heroes/torbjorn/icons/torbjorn-cybjorn.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8543,20 +9453,23 @@
           "hero": "all",
           "name": "Anniversary 2017",
           "id": "anniversary-2017",
-          "url": "/heroes/all/icons/anniversary-2017.png"
+          "url": "/heroes/all/icons/anniversary-2017.png",
+          "group": "ANNIVERSARY_2017"
         },
         {
           "hero": "all",
           "name": "Anniversary 2018",
           "id": "anniversary-2018",
           "url": "/heroes/all/icons/anniversary-2018.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
           "hero": "all",
           "name": "Pachiversary",
           "id": "pachiversary",
-          "url": "/heroes/all/icons/pachiversary.png"
+          "url": "/heroes/all/icons/pachiversary.png",
+          "group": "ANNIVERSARY_2017"
         }
       ],
       "sprays": [
@@ -8585,6 +9498,7 @@
           "id": "brigitte-eight-of-spades",
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-eight-of-spades.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8603,6 +9517,7 @@
           "id": "doomfist-nine-of-clubs",
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-nine-of-clubs.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8675,6 +9590,7 @@
           "id": "moira-nine-of-hearts",
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-nine-of-hearts.png",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8838,6 +9754,7 @@
           "id": "ana-you-need-to-learn-to-relax",
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-you-need-to-learn-to-relax.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8865,6 +9782,7 @@
           "id": "bastion-zur-zur-ee-num",
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-zur-zur-ee-num.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8874,6 +9792,7 @@
           "id": "brigitte-its-just-a-flesh-wound",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-its-just-a-flesh-wound.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8883,6 +9802,7 @@
           "id": "brigitte-leave-this-to-an-expert",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-leave-this-to-an-expert.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8892,6 +9812,7 @@
           "id": "brigitte-no-problem",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-no-problem.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8919,6 +9840,7 @@
           "id": "dva-no-problem",
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-no-problem.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8928,6 +9850,7 @@
           "id": "doomfist-take-it-on-the-chin",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-take-it-on-the-chin.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8937,6 +9860,7 @@
           "id": "doomfist-you-cant-win",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-you-cant-win.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8946,6 +9870,7 @@
           "id": "doomfist-your-lack-of-belief",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-your-lack-of-belief.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -8973,6 +9898,7 @@
           "id": "genji-you-need-healing",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-you-need-healing.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9000,6 +9926,7 @@
           "id": "hanzo-do-not-rouse-the-dragon",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-do-not-rouse-the-dragon.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9027,6 +9954,7 @@
           "id": "junkrat-inconspicuous",
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-inconspicuous.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9054,6 +9982,7 @@
           "id": "lucio-can-you-hear-me-now",
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-can-you-hear-me-now.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9081,6 +10010,7 @@
           "id": "mccree-how-do-you-like-me-now",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-how-do-you-like-me-now.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9108,6 +10038,7 @@
           "id": "mei-wake-up-sleepyhead",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-wake-up-sleepyhead.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9135,6 +10066,7 @@
           "id": "mercy-ive-seen-worse",
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-ive-seen-worse.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9144,6 +10076,7 @@
           "id": "moira-good-news-everyone",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-good-news-everyone.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9153,6 +10086,7 @@
           "id": "moira-this-was-a-triumph",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-this-was-a-triumph.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9162,6 +10096,7 @@
           "id": "moira-unbelievable",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-unbelievable.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9189,6 +10124,7 @@
           "id": "orisa-have-a-bad-feeling-about-this",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-have-a-bad-feeling-about-this.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9216,6 +10152,7 @@
           "id": "pharah-stay-on-target",
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-stay-on-target.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9243,6 +10180,7 @@
           "id": "reaper-pathetic",
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-pathetic.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9270,6 +10208,7 @@
           "id": "reinhardt-come-here",
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-come-here.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9297,6 +10236,7 @@
           "id": "roadhog-thats-my-business",
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-thats-my-business.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9324,6 +10264,7 @@
           "id": "soldier-76-want-something-done-right",
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-want-something-done-right.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9351,6 +10292,7 @@
           "id": "sombra-lets-not-do-that-again",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-lets-not-do-that-again.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9378,6 +10320,7 @@
           "id": "symmetra-let-us-discuss-your-failures",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-let-us-discuss-your-failures.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9405,6 +10348,7 @@
           "id": "torbjorn-why-didnt-i-think-of-that",
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-why-didnt-i-think-of-that.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9432,6 +10376,7 @@
           "id": "tracer-i-knew-i-forgot-something",
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-i-knew-i-forgot-something.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9459,6 +10404,7 @@
           "id": "widowmaker-the-pleasure-is-mine",
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-the-pleasure-is-mine.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9486,6 +10432,7 @@
           "id": "winston-cant-keep-a-good-ape-down",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-cant-keep-a-good-ape-down.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9513,6 +10460,7 @@
           "id": "zarya-lets-get-physical",
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-lets-get-physical.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9540,6 +10488,7 @@
           "id": "zenyatta-patience",
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-patience.ogg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         }
       ],
@@ -9551,6 +10500,7 @@
           "id": "lucio-bitrate",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/skins/lucio-bitrate.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9560,6 +10510,7 @@
           "id": "soldier-76-venom",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/skins/soldier-76-venom.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9569,6 +10520,7 @@
           "id": "tracer-lightning",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/skins/tracer-lightning.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9679,6 +10631,7 @@
           "id": "bastion-stealth",
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skinsLegendary/bastion-stealth.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9688,6 +10641,7 @@
           "id": "brigitte-shieldmaiden",
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skinsLegendary/brigitte-shieldmaiden.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9697,15 +10651,17 @@
           "id": "doomfist-formal",
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skinsLegendary/doomfist-formal.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
           "heroName": "Junkrat",
           "hero": "junkrat",
-          "name": "Buccaneer",
+          "name": "Bilgerat",
           "id": "junkrat-buccaneer",
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skinsLegendary/junkrat-buccaneer.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9716,6 +10672,7 @@
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skinsLegendary/mccree-sherlock.jpg",
           "description": "\"My mind,\" he said, \"rebels at stagnation. Give me problems, give me work, give me the most abstruse cryptogram or the most intricate analysis, and I am in my proper atmosphere.\"",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9725,6 +10682,7 @@
           "id": "orisa-forest-spirit",
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skinsLegendary/orisa-forest-spirit.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9734,6 +10692,7 @@
           "id": "symmetra-magician",
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skinsLegendary/symmetra-magician.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9743,6 +10702,7 @@
           "id": "torbjorn-cybjorn",
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skinsLegendary/torbjorn-cybjorn.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         }
       ],
@@ -9754,6 +10714,7 @@
           "id": "doomfist-charging",
           "quality": "rare",
           "url": "/updates/ANNIVERSARY/poses/doomfist-charging.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9763,6 +10724,7 @@
           "id": "mercy-parasol",
           "quality": "rare",
           "url": "/updates/ANNIVERSARY/poses/mercy-parasol.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         },
         {
@@ -9772,6 +10734,7 @@
           "id": "tracer-wink",
           "quality": "rare",
           "url": "/updates/ANNIVERSARY/poses/tracer-wink.jpg",
+          "group": "ANNIVERSARY_2018",
           "isNew": true
         }
       ]
