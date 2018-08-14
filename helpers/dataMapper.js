@@ -24,7 +24,11 @@ const consoleColors = require('./consoleColors');
 consoleColors.load();
 
 const HERODATA = require('./dataMapper/HERODATA.js');
-const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, specialAchievementItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp, idsBlizzardChanged } = require('./dataMapper/itemData.js');
+const {
+  badNames, hiddenItems, defaultItems, achievementSprays, specialItems,
+  specialAchievementItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp,
+  idsBlizzardChanged, noLongerPurchaseableItems
+} = require('./dataMapper/itemData.js');
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, LATEST_EVENTS } = require('./dataMapper/EVENTDATA.js');
 const { EVENTITEMS } = require('./dataMapper/EVENTITEMS.js');
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder, getAchievementForItem, getOriginalItemsList } = require('./dataMapper/utils.js');
@@ -164,7 +168,8 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
           : undefined;
 
     // Only purchasable items need a quality
-    const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompItem) ? { quality: 'common' } : undefined;
+    const isNoLongerPurchasble = noLongerPurchaseableItems[type] && noLongerPurchaseableItems[type].includes(item.id)
+    const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompItem && !isNoLongerPurchasble) ? { quality: 'common' } : undefined;
     const url = getPreviewURL(type, item.id, 'all');
 
     // Check if we have an achievement description for an achievement
@@ -368,7 +373,7 @@ _.forEach(heroes, hero => {
         item,
         { url },
         item.group && { group: item.group },
-        item.isNew && { isNew: true}
+        item.isNew && { isNew: true }
       );
 
       if (type == 'icons') {
@@ -461,8 +466,10 @@ _.forEach(allClassEventItems, (types, type) => {
         }
       }
 
+      const isNoLongerPurchasble = noLongerPurchaseableItems[type] && noLongerPurchaseableItems[type].includes(itemID)
+
       // sprays have no quality by default but if it isn't an achievement it means it's purchaseable so add quality
-      if (type === 'sprays' && !isAchivement) {
+      if (type === 'sprays' && !isAchivement && !isNoLongerPurchasble) {
         Object.assign(out, { quality: 'common' });
       }
 
