@@ -169,6 +169,9 @@ const data = {
       sprays: ['mercy-pink', 'mercy-cure', 'mercy-ribbon', 'mercy-together'],
       icons: ['mercy-pink', 'mercy-ribbon']
     }
+  },
+  noLongerPurchaseableItems: {
+    sprays: ['summer-games-2016', 'year-of-the-rooster-2017', 'year-of-the-dog-2018']
   }
 };
 
