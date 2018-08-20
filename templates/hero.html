@@ -19,13 +19,13 @@
         </div>
         <ul class="dropdown-menu dropdown-menu-right filters" uib-dropdown-menu>
           <li>
-            <div for="filterSelected">
+            <div>
               <input id="filterSelected" type="checkbox" ng-change="hero.filters.unselected = false;hero.updateFilters()" ng-model="hero.filters.selected" ng-disabled="hero.totals.overall.selected == 0 && !hero.filtering">
               <label for="filterSelected">Selected</label>
             </div>
           </li>
           <li>
-            <div for="filterUnselected">
+            <div>
               <input id="filterUnselected" type="checkbox" ng-change="hero.filters.selected = false;hero.updateFilters()" ng-model="hero.filters.unselected" ng-disabled="hero.totals.overall.selected == 0 && !hero.filtering">
               <label for="filterUnselected">UnSelected</label>
             </div>
