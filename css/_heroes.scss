@@ -132,12 +132,13 @@
   align-items: center;
   cursor: pointer;
   padding: 3px 0;
+  width: 100%;
 }
 
 #hero-container .options .btn-group li input {
-  margin-left: 10px;
-  height: 17px;
-  width: 17px;
+  margin-left: 15px;
+  min-height: 17px;
+  min-width: 17px;
 }
 
 #hero-container #hero-header .btn-group {
