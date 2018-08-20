@@ -176,7 +176,7 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
     let description;
     const desc = getAchievementForItem(item.id);
 
-    if (desc) {
+    if (desc && (type !== 'icons' || (type === 'icons' && !event))) {
       description = { description: desc };
     }
 
