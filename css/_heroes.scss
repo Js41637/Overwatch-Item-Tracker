@@ -448,7 +448,8 @@
 
 /* Achivement Icons */
 
-#hero-container .hero-items .item:not([event=none]):not([achievement=false]):before, #hero-container .item[achievement=true]:after {
+#hero-container .hero-items .item:not([event=none]):not([achievement=false]):before,
+#hero-container .item[achievement=true][event=none]:after {
   background-image: url("../resources/icons/achievement.svg");
 }
 
