@@ -183,8 +183,7 @@
           "name": "B73-NS",
           "id": "b73ns",
           "event": "UPRISING",
-          "url": "/heroes/all/icons/b73ns.png",
-          "description": "Complete Uprising on Expert difficulty."
+          "url": "/heroes/all/icons/b73ns.png"
         },
         {
           "name": "Badge",
@@ -566,6 +565,8 @@
           "name": "Copa Lúcioball Competitor 2018",
           "id": "copa-lucioball-competitor-2018",
           "url": "/heroes/all/icons/copa-lucioball-competitor-2018.png",
+          "achievement": true,
+          "group": "competitive",
           "description": "Unlocked by completing Copa Lúcioball 2018 placement matches"
         },
         {
@@ -580,6 +581,8 @@
           "name": "Copa Lúcioball Hero 2018",
           "id": "copa-lucioball-hero-2018",
           "url": "/heroes/all/icons/copa-lucioball-hero-2018.png",
+          "achievement": true,
+          "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Copa Lúcioball 2018"
         },
         {
@@ -1890,8 +1893,7 @@
           "id": "nullmari",
           "event": "UPRISING",
           "url": "/heroes/all/icons/nullmari.png",
-          "group": "pachi",
-          "description": "Complete Uprising (All Heroes) with 8 different heroes."
+          "group": "pachi"
         },
         {
           "name": "Null Sector",
@@ -2713,8 +2715,7 @@
           "name": "Summer Games 2016",
           "id": "summer-games-2016",
           "event": "SUMMER_GAMES",
-          "url": "/heroes/all/icons/summer-games-2016.png",
-          "description": "Unlocked with Summer Games 2016"
+          "url": "/heroes/all/icons/summer-games-2016.png"
         },
         {
           "name": "Summer Games 2017",
@@ -3331,7 +3332,8 @@
           "name": "Copa Lúcioball Competitor 2018",
           "id": "copa-lucioball-competitor-2018",
           "url": "/heroes/all/sprays/copa-lucioball-competitor-2018.png",
-          "quality": "common",
+          "achievement": true,
+          "group": "competitive",
           "description": "Unlocked by completing Copa Lúcioball 2018 placement matches"
         },
         {
@@ -3346,7 +3348,8 @@
           "name": "Copa Lúcioball Hero 2018",
           "id": "copa-lucioball-hero-2018",
           "url": "/heroes/all/sprays/copa-lucioball-hero-2018.png",
-          "quality": "common",
+          "achievement": true,
+          "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Copa Lúcioball 2018"
         },
         {
