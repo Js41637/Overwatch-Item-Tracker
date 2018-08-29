@@ -63,7 +63,7 @@ things.forEach((thingy, i) => {
   console.info('Parsing', thingy);
   if (!raw[thingy]) return;
   const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g;
-  const heroGroups = raw[thingy].replace(/\r\n/g, '\n').split('\n').filter(a => !a.includes("Error unknown")).join('\n').split('\n\n');
+  const heroGroups = raw[thingy].split('\n\n');
 
   heroGroups.forEach(heroData => {
     if (!heroData.length) return;
@@ -71,12 +71,19 @@ things.forEach((thingy, i) => {
     let rawItems = heroData.split('\n').slice(1).join('\n'); // remove the first line containing name of hero
     var items = {}, itemMatch;
     while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
-      const groupName = itemMatch[1].replace('Event/', '').split(' ')[0].toUpperCase().replace('STANDARD', 'STANDARD_COMMON').replace('DEFAULT', 'ACHIEVEMENT')
+      const groupName = itemMatch[1]
+        .replace('Unlocks', '')
+        .trim()
+        .replace(/ /g, '_')
+        .toUpperCase()
+        .replace('ARCHIVES', 'UPRISING')
+        .replace('WINTER', 'WINTER_WONDERLAND')
+
       items[groupName] = itemMatch[0].split(/\n\t\t(?!\t)/).slice(1).map(a => a.trim());
     }
 
     // Filter out Uprising bots
-    if (!items.COMMON && i == 0) {
+    if (!items.BASE && i == 0) {
       console.warn(`Skipping ${hero} as it has no items`);
       return;
     }
@@ -277,18 +284,19 @@ for (var hero in data) {
       }
 
       switch (group) {
-        case 'COMMON':
+        case 'BASE':
           break;
         case 'OWL':
           out.achievement = 'owl'
           return
-        case 'ACHIEVEMENT':
+        case 'OTHER':
           if (type === 'weapons') {
             out.quality = 'golden'
             break;
           }
 
-          out.achievement = (type == 'sprays' && achievementSprays.includes(name.toLowerCase())) ? true : 'blizzard';
+          var achievementId = id.match(/-(cute|pixel)$/) ? 'cute' : id
+          out.achievement = (type == 'sprays' && achievementSprays.includes(achievementId.toLowerCase())) ? true : 'blizzard';
           var desc = getAchievementForItem(id);
           if (desc) {
             out.description = desc;
@@ -300,7 +308,7 @@ for (var hero in data) {
             }
           }
           break;
-        case 'STANDARD_COMMON':
+        case 'DEFAULT':
           out.standardItem = true;
           break;
         default:

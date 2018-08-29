@@ -11,13 +11,13 @@ const qualityOrder = {
 const qualities = ['common', 'epic', 'rare', 'legendary']
 const types = [
   { m: 'skin', name: 'skins' },
-  { m: 'playericon', name: 'icons' },
+  { m: 'icon', name: 'icons' },
   { m: 'spray', name: 'sprays' },
   { m: 'emote', name: 'emotes' },
   { m: 'voiceline', name: 'voicelines' },
-  { m: 'pose', name: 'poses' },
+  { m: 'victorypose', name: 'poses' },
   { m: 'highlightintro', name: 'intros' },
-  { m: 'weapon', name: 'weapons' } // Golden
+  { m: 'weaponskin', name: 'weapons' } // Golden
 ]
 
 // Generate a match for each quality for every type of item

@@ -143,7 +143,6 @@ const data = {
     'talon-sniper',
     'talon-trooper',
     'droppachi'
-
   ],
   allClassEventItems: {
     sprays: {
