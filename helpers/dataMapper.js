@@ -278,8 +278,8 @@ for (var hero in data) {
       if (descStr.length !== 0) {
         if (descStr === 'IS_STANDARD') {
           out.standardItem = true
-        } else {
-          out.description = descStr;
+        } else if (!descStr.match(/available (in|for)/i)) {
+          out.description = descStr
         }
       }
 

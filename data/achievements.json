@@ -1160,54 +1160,6 @@
       "type": "icon",
       "hero": "all"
     },
-    "torbjorn-for-the-alliance": {
-      "name": null,
-      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
-      "reward": "For the Alliance",
-      "quality": "common",
-      "type": "voiceline",
-      "hero": "torbjorn"
-    },
-    "torbjorn-for-the-horde": {
-      "name": null,
-      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
-      "reward": "For the Horde",
-      "quality": "common",
-      "type": "voiceline",
-      "hero": "torbjorn"
-    },
-    "tracer-alliance-banner": {
-      "name": null,
-      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
-      "reward": "Alliance Banner",
-      "quality": "epic",
-      "type": "emote",
-      "hero": "tracer"
-    },
-    "tracer-horde-banner": {
-      "name": null,
-      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
-      "reward": "Horde Banner",
-      "quality": "epic",
-      "type": "emote",
-      "hero": "tracer"
-    },
-    "widowmaker-noire": {
-      "name": null,
-      "description": "Unlocked by pre-purchasing Overwatch",
-      "reward": "Noire",
-      "quality": "legendary",
-      "type": "skin",
-      "hero": "widowmaker"
-    },
-    "widowmaker-kerrigan": {
-      "name": null,
-      "description": "Unlocked as part of the StarCraft 20th Anniversary Celebration",
-      "reward": "Kerrigan",
-      "quality": "legendary",
-      "type": "skin",
-      "hero": "widowmaker"
-    },
     "grounded": {
       "name": "Grounded",
       "description": "Kill an airborne enemy with Brigitte's Whip Shot in Quick or Competitive Play.",
@@ -1307,9 +1259,6 @@
       "type": "spray",
       "description": "Roll through 4 players within 2 seconds as Wrecking Ball in Quick or Competitive Play.",
       "hero": "wrecking-ball"
-    },
-    "dva-nano-cola-challenge-thing": {
-      "description": "Unlocked by participating in D.Va's Nano Cola challenge"
     }
   },
   "mappings": {
@@ -1460,12 +1409,6 @@
     "varok": "varok",
     "kul-tiras": "kul-tiras",
     "zandalar": "zandalar",
-    "torbjorn-for-the-alliance": "torbjorn-for-the-alliance",
-    "torbjorn-for-the-horde": "torbjorn-for-the-horde",
-    "tracer-alliance-banner": "tracer-alliance-banner",
-    "tracer-horde-banner": "tracer-horde-banner",
-    "widowmaker-noire": "widowmaker-noire",
-    "widowmaker-kerrigan": "widowmaker-kerrigan",
     "brigitte-pixel": "excuse-me",
     "brigitte-cute": "grounded",
     "talon-assassin": "clean-getaway",
@@ -1478,18 +1421,6 @@
     "1-fan": "1-fan",
     "living-room": "living-room",
     "matchs-on": "matchs-on",
-    "watchpoint-gibraltar": "watchparty-gibraltar",
-    "dva-victory": "dva-nano-cola-challenge-thing",
-    "dva-twinkle": "dva-nano-cola-challenge-thing",
-    "dva-sleepy": "dva-nano-cola-challenge-thing",
-    "dva-pat-pat": "dva-nano-cola-challenge-thing",
-    "dva-hi": "dva-nano-cola-challenge-thing",
-    "dva-grabs-a-popcorn": "dva-nano-cola-challenge-thing",
-    "dva-astonished": "dva-nano-cola-challenge-thing",
-    "dva-angry": "dva-nano-cola-challenge-thing",
-    "dva-refreshment": "dva-nano-cola-challenge-thing",
-    "dva-enjoy": "dva-nano-cola-challenge-thing",
-    "dva-nano-cola": "dva-nano-cola-challenge-thing",
-    "dva-nano": "dva-nano-cola-challenge-thing"
+    "watchpoint-gibraltar": "watchparty-gibraltar"
   }
 }

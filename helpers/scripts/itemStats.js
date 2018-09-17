@@ -1,5 +1,5 @@
 const heroData = require('../../data/items.json')
-const { forEach } = require('lodash')
+const _ = require('lodash')
 
 const prices = {
   undefined: 25,
@@ -13,18 +13,28 @@ function isValidItem(item) {
   return !item.achievement && !item.standardItem && item.quality && (!item.event || (item.event && item.event !== 'SUMMER_GAMES_2016'))
 }
 
+const heroCounts = {
+
+}
+
 var totalCounts = {}
 var totalCount = 0
 var costs = {}
 var totalCost = 0
-forEach(heroData, hero => {
-  forEach(hero.items, (items, type) => {
-    if (type == 'icons') return
+_.forEach(heroData, hero => {
+  if (!heroCounts[hero.id]) heroCounts[hero.id] = {}
+  _.forEach(hero.items, (items, type) => {
     if (!totalCounts[type]) totalCounts[type] = 0
+    if (!heroCounts[hero.id][type]) heroCounts[hero.id][type] = 0
     if (!costs[type]) costs[type] = 0
-    forEach(items, item => {
+    _.forEach(items, item => {
       totalCount++
       totalCounts[type]++
+
+      if (!item.standardItem && item.achievement !== 'blizzard') {
+        heroCounts[hero.id][type]++
+      }
+
       if (isValidItem(item)) {
         var price = prices[item.quality] * (item.event ? 3 : 1)
         costs[type] += price
@@ -34,4 +44,24 @@ forEach(heroData, hero => {
   })
 })
 
-console.log(totalCounts, totalCount, costs, totalCost)
+const topHeroes = _.reduce(heroCounts, (res, counts, hero) => {
+  if (hero === 'all') return res
+
+  _.forEach(counts, (val, type) => {
+    if (type === 'weapons') return
+    if (!res[type]) res[type] = { total: 0, heroes: [] }
+
+    if (res[type].total === val) {
+      res[type].heroes.push(hero)
+    }
+
+    if (res[type].total < val) {
+      res[type].heroes = [hero]
+      res[type].total = val
+    }
+  })
+
+  return res
+}, {})
+
+console.log(topHeroes)
