@@ -952,6 +952,22 @@
       "type": "spray",
       "hero": "all"
     },
+    "competitive-team-deathmatch-hero": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch",
+      "reward": "Competitive Team Deathmatch Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "competitive-team-deathmatch-competitor": {
+      "name": null,
+      "description": "Unlocked by completing Competitive Team Deathmatch placement matches",
+      "reward": "Competitive Team Deathmatch Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
     "wizard": {
       "name": null,
       "description": "Unlocked as part of the Diablo 20th Anniversary celebration",
@@ -1160,54 +1176,6 @@
       "type": "icon",
       "hero": "all"
     },
-    "torbjorn-for-the-alliance": {
-      "name": null,
-      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
-      "reward": "For the Alliance",
-      "quality": "common",
-      "type": "voiceline",
-      "hero": "torbjorn"
-    },
-    "torbjorn-for-the-horde": {
-      "name": null,
-      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
-      "reward": "For the Horde",
-      "quality": "common",
-      "type": "voiceline",
-      "hero": "torbjorn"
-    },
-    "tracer-alliance-banner": {
-      "name": null,
-      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
-      "reward": "Alliance Banner",
-      "quality": "epic",
-      "type": "emote",
-      "hero": "tracer"
-    },
-    "tracer-horde-banner": {
-      "name": null,
-      "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition",
-      "reward": "Horde Banner",
-      "quality": "epic",
-      "type": "emote",
-      "hero": "tracer"
-    },
-    "widowmaker-noire": {
-      "name": null,
-      "description": "Unlocked by pre-purchasing Overwatch",
-      "reward": "Noire",
-      "quality": "legendary",
-      "type": "skin",
-      "hero": "widowmaker"
-    },
-    "widowmaker-kerrigan": {
-      "name": null,
-      "description": "Unlocked as part of the StarCraft 20th Anniversary Celebration",
-      "reward": "Kerrigan",
-      "quality": "legendary",
-      "type": "skin",
-      "hero": "widowmaker"
-    },
     "grounded": {
       "name": "Grounded",
       "description": "Kill an airborne enemy with Brigitte's Whip Shot in Quick or Competitive Play.",
@@ -1307,6 +1275,30 @@
       "type": "spray",
       "description": "Roll through 4 players within 2 seconds as Wrecking Ball in Quick or Competitive Play.",
       "hero": "wrecking-ball"
+    },
+    "six-wanderers": {
+      "name": "Six Wanderers",
+      "reward": "Zomnic",
+      "quality": "common",
+      "type": "spray",
+      "description": "Win Junkenstein's Revenge with 6 different heroes.",
+      "hero": null
+    },
+    "hardened-defenders": {
+      "name": "Hardened Defenders",
+      "reward": "Zombardier",
+      "quality": "common",
+      "type": "spray",
+      "description": "Survive 4 bonus waves in Junkenstein Endless on Hard difficulty.",
+      "hero": null
+    },
+    "dawn-patrol": {
+      "name": "Dawn Patrol",
+      "reward": "Flaming Pumpkin",
+      "quality": "common",
+      "type": "spray",
+      "description": "Survive 12 bonus waves in Junkenstein Endless.",
+      "hero": null
     }
   },
   "mappings": {
@@ -1431,6 +1423,8 @@
     "competitive-6v6-elimination-hero": "competitive-6v6-elimination-hero",
     "competitive-3v3-group-elimination-competitor": "competitive-3v3-group-elimination-competitor",
     "competitive-3v3-group-elimination-hero": "competitive-3v3-group-elimination-hero",
+    "competitive-team-deathmatch-competitor": "competitive-team-deathmatch-competitor",
+    "competitive-team-deathmatch-hero": "competitive-team-deathmatch-hero",
     "wizard": "wizard",
     "witch-doctor": "witch-doctor",
     "monk": "monk",
@@ -1457,12 +1451,6 @@
     "varok": "varok",
     "kul-tiras": "kul-tiras",
     "zandalar": "zandalar",
-    "torbjorn-for-the-alliance": "torbjorn-for-the-alliance",
-    "torbjorn-for-the-horde": "torbjorn-for-the-horde",
-    "tracer-alliance-banner": "tracer-alliance-banner",
-    "tracer-horde-banner": "tracer-horde-banner",
-    "widowmaker-noire": "widowmaker-noire",
-    "widowmaker-kerrigan": "widowmaker-kerrigan",
     "brigitte-pixel": "excuse-me",
     "brigitte-cute": "grounded",
     "talon-assassin": "clean-getaway",
@@ -1476,7 +1464,8 @@
     "living-room": "living-room",
     "matchs-on": "matchs-on",
     "watchpoint-gibraltar": "watchparty-gibraltar",
-    "pacific-allstars-2018": "pacific-allstars-2018",
-    "atlantic-allstars-2018": "atlantic-allstars-2018"
+    "zomnic": "six-wanderers",
+    "zombardier": "hardened-defenders",
+    "flaming-pumpkin": "dawn-patrol"
   }
 }

@@ -24,7 +24,11 @@ const consoleColors = require('./consoleColors');
 consoleColors.load();
 
 const HERODATA = require('./dataMapper/HERODATA.js');
-const { badNames, hiddenItems, defaultItems, achievementSprays, specialItems, specialAchievementItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp, idsBlizzardChanged } = require('./dataMapper/itemData.js');
+const {
+  badNames, hiddenItems, defaultItems, achievementSprays, specialItems,
+  specialAchievementItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp,
+  idsBlizzardChanged, noLongerPurchaseableItems
+} = require('./dataMapper/itemData.js');
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, LATEST_EVENTS } = require('./dataMapper/EVENTDATA.js');
 const { EVENTITEMS } = require('./dataMapper/EVENTITEMS.js');
 const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder, getAchievementForItem, getOriginalItemsList } = require('./dataMapper/utils.js');
@@ -59,7 +63,7 @@ things.forEach((thingy, i) => {
   console.info('Parsing', thingy);
   if (!raw[thingy]) return;
   const itemGroupRegex = /\t(.+)(\n\t{2}.+)*/g;
-  const heroGroups = raw[thingy].replace(/\r\n/g, '\n').split('\n').filter(a => !a.includes("Error unknown")).join('\n').split('\n\n');
+  const heroGroups = raw[thingy].split('\n\n');
 
   heroGroups.forEach(heroData => {
     if (!heroData.length) return;
@@ -67,12 +71,19 @@ things.forEach((thingy, i) => {
     let rawItems = heroData.split('\n').slice(1).join('\n'); // remove the first line containing name of hero
     var items = {}, itemMatch;
     while ((itemMatch = itemGroupRegex.exec(rawItems)) !== null) { // Regex each group and it's items
-      const groupName = itemMatch[1].replace('Event/', '').split(' ')[0].toUpperCase().replace('STANDARD', 'STANDARD_COMMON').replace('DEFAULT', 'ACHIEVEMENT')
+      const groupName = itemMatch[1]
+        .replace('Unlocks', '')
+        .trim()
+        .replace(/ /g, '_')
+        .toUpperCase()
+        .replace('ARCHIVES', 'UPRISING')
+        .replace('WINTER', 'WINTER_WONDERLAND')
+
       items[groupName] = itemMatch[0].split(/\n\t\t(?!\t)/).slice(1).map(a => a.trim());
     }
 
     // Filter out Uprising bots
-    if (!items.COMMON && i == 0) {
+    if (!items.BASE && i == 0) {
       console.warn(`Skipping ${hero} as it has no items`);
       return;
     }
@@ -150,7 +161,7 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
 
     // Check if the spray or icon is a Competitive reward
     const isSeasonCompItem = item.id.match(/^season-(\d+)-(competitor|hero)$/);
-    const isOtherCompItem = item.id.match(/^(top-500|(copa-lucioball|competitive-ctf|competitive-(6v6|3v3)-(group-)?elimination|competitive-deathmatch)-\w+)$/)
+    const isOtherCompItem = item.id.match(/^(top-500|(copa-lucioball|competitive-ctf|competitive-(6v6|3v3)-(group-)?elimination|competitive-(team-)?deathmatch)-\w+(-\d+)?)$/)
     const isCompItem =  isSeasonCompItem || isOtherCompItem ? { group: 'competitive' } : undefined;
     const isOWLItem = item.id.match(/^(inaugural-season)$/)
     const isPachiItem = item.id.startsWith('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined;
@@ -164,14 +175,15 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
           : undefined;
 
     // Only purchasable items need a quality
-    const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompItem) ? { quality: 'common' } : undefined;
+    const isNoLongerPurchasble = noLongerPurchaseableItems[type] && noLongerPurchaseableItems[type].includes(item.id)
+    const quality = (type == 'sprays' && !isStandard && !isAchievement && !isCompItem && !isNoLongerPurchasble) ? { quality: 'common' } : undefined;
     const url = getPreviewURL(type, item.id, 'all');
 
     // Check if we have an achievement description for an achievement
     let description;
     const desc = getAchievementForItem(item.id);
 
-    if (desc) {
+    if (desc && (type !== 'icons' || (type === 'icons' && !event))) {
       description = { description: desc };
     }
 
@@ -266,24 +278,25 @@ for (var hero in data) {
       if (descStr.length !== 0) {
         if (descStr === 'IS_STANDARD') {
           out.standardItem = true
-        } else {
-          out.description = descStr;
+        } else if (!descStr.match(/available (in|for)/i)) {
+          out.description = descStr
         }
       }
 
       switch (group) {
-        case 'COMMON':
+        case 'BASE':
           break;
         case 'OWL':
           out.achievement = 'owl'
           return
-        case 'ACHIEVEMENT':
+        case 'OTHER':
           if (type === 'weapons') {
             out.quality = 'golden'
             break;
           }
 
-          out.achievement = (type == 'sprays' && achievementSprays.includes(name.toLowerCase())) ? true : 'blizzard';
+          var achievementId = id.match(/-(cute|pixel)$/) ? 'cute' : id
+          out.achievement = (type == 'sprays' && achievementSprays.includes(achievementId.toLowerCase())) ? true : 'blizzard';
           var desc = getAchievementForItem(id);
           if (desc) {
             out.description = desc;
@@ -295,7 +308,7 @@ for (var hero in data) {
             }
           }
           break;
-        case 'STANDARD_COMMON':
+        case 'DEFAULT':
           out.standardItem = true;
           break;
         default:
@@ -368,7 +381,7 @@ _.forEach(heroes, hero => {
         item,
         { url },
         item.group && { group: item.group },
-        item.isNew && { isNew: true}
+        item.isNew && { isNew: true }
       );
 
       if (type == 'icons') {
@@ -461,8 +474,10 @@ _.forEach(allClassEventItems, (types, type) => {
         }
       }
 
+      const isNoLongerPurchasble = noLongerPurchaseableItems[type] && noLongerPurchaseableItems[type].includes(itemID)
+
       // sprays have no quality by default but if it isn't an achievement it means it's purchaseable so add quality
-      if (type === 'sprays' && !isAchivement) {
+      if (type === 'sprays' && !isAchivement && !isNoLongerPurchasble) {
         Object.assign(out, { quality: 'common' });
       }
 

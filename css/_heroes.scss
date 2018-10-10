@@ -132,12 +132,13 @@
   align-items: center;
   cursor: pointer;
   padding: 3px 0;
+  width: 100%;
 }
 
 #hero-container .options .btn-group li input {
-  margin-left: 10px;
-  height: 17px;
-  width: 17px;
+  margin-left: 15px;
+  min-height: 17px;
+  min-width: 17px;
 }
 
 #hero-container #hero-header .btn-group {
@@ -299,19 +300,32 @@
   min-width: 23px;
 }
 
-#hero-container:not(.filtering) .hero-items #sprays .item, #all #hero-container .hero-items #icons .item  {
+body:not(#all) #hero-container:not(.filtering) .hero-items #sprays .item  {
   width: 49.7%;
   display: inline-flex;
   margin-right: 1px;
   margin-bottom: 0;
 }
 
-#all #hero-container .hero-items #icons .item {
-  width: 49.7%;
-  display: inline-flex;
-  margin-right: 1px;
-}
+#all #hero-container {
+  .hero-items {
+    .section-content {
+      display: flex;
+      flex-wrap: wrap;
 
+      .item {
+        width: calc(50% - 2px);
+        margin-right: 1px;
+      }
+    }
+  }
+
+  &.filtering {
+    .hero-items #sprays .item {
+      width: 100%;
+    }
+  }
+}
 #hero-container .hero-grid .section {
   display: flex;
   flex-wrap: wrap;
@@ -448,7 +462,8 @@
 
 /* Achivement Icons */
 
-#hero-container .hero-items .item:not([event=none]):not([achievement=false]):before, #hero-container .item[achievement=true]:after {
+#hero-container .hero-items .item:not([event=none]):not([achievement=false]):before,
+#hero-container .item[achievement=true][event=none]:after {
   background-image: url("../resources/icons/achievement.svg");
 }
 

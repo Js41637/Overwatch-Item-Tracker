@@ -1,4 +1,4 @@
-OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataService", "CompatibilityService", "CostAndTotalService", "UrlService", "StorageService", function($rootScope, $q, $document, $uibModal, DataService, CompatibilityService, CostAndTotalService, UrlService, StorageService) {
+OWI.controller('MainCtrl', ["$q", "$document", "$uibModal", "$transitions", "DataService", "CompatibilityService", "CostAndTotalService", "UrlService", "StorageService", function($q, $document, $uibModal, $transitions, DataService, CompatibilityService, CostAndTotalService, UrlService, StorageService) {
   var vm = this;
   vm.preview = false;
   vm.currentDate = Date.now();
@@ -33,22 +33,20 @@ OWI.controller('MainCtrl', ["$rootScope", "$q", "$document", "$uibModal", "DataS
     return out;
   };
 
-  $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams) {
-    onStateChange(event, toState, toParams);
-  });
-
-  function onStateChange(event, toState, toParams) {
+  $transitions.onSuccess({}, function(transition) {
     vm.showNav = false;
-    var heroOrEventID = toParams.id;
+
+    var route = transition.to().name
+    var heroOrEventID = transition.params().id
 
     if (!heroOrEventID) {
       vm.item = { name: 'Home' };
     } else {
-      DataService.getHeroOrEventName(toState.name, heroOrEventID).then(function(data) {
+      DataService.getHeroOrEventName(route, heroOrEventID).then(function(data) {
         vm.item = data;
       });
     }
-  }
+  })
 
   // Fired when the sidebar is open on every click, checks if a click was made
   // outside the sidebar and if it was, close the sidebar

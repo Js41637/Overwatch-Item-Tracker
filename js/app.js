@@ -241,13 +241,12 @@ OWI.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 }]);
 
 // Listen for state change errors such as routing to an invalid hero and redirect
-OWI.run(["$rootScope", "$state", "DataService", function($rootScope, $state, Data) {
-  $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
-    console.warn(error);
-    if (error === 'INVALID_HERO') {
+OWI.run(["$transitions", "$state", "DataService", function($transitions, $state, Data) {
+  $transitions.onError({}, function(error) {
+    if (error.error().detail === 'INVALID_HERO') {
       $state.go('home');
     } else {
       $state.go('events', { id: Data.currentEvent });
     }
-  });
+  })
 }]);
