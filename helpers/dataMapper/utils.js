@@ -115,7 +115,7 @@ var sortObject = (o, update) => {
 const getAchievementForItem = itemID => {
   const match = achievementData.achievements[achievementData.mappings[itemID]]
   if (!match) {
-    console.warn('Missing achievement mapping for', itemID)
+    // console.warn('Missing achievement mapping for', itemID)
     return undefined
   }
 

@@ -952,6 +952,22 @@
       "type": "spray",
       "hero": "all"
     },
+    "competitive-team-deathmatch-hero": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch",
+      "reward": "Competitive Team Deathmatch Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "competitive-team-deathmatch-competitor": {
+      "name": null,
+      "description": "Unlocked by completing Competitive Team Deathmatch placement matches",
+      "reward": "Competitive Team Deathmatch Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
     "wizard": {
       "name": null,
       "description": "Unlocked as part of the Diablo 20th Anniversary celebration",
@@ -1259,6 +1275,30 @@
       "type": "spray",
       "description": "Roll through 4 players within 2 seconds as Wrecking Ball in Quick or Competitive Play.",
       "hero": "wrecking-ball"
+    },
+    "six-wanderers": {
+      "name": "Six Wanderers",
+      "reward": "Zomnic",
+      "quality": "common",
+      "type": "spray",
+      "description": "Win Junkenstein's Revenge with 6 different heroes.",
+      "hero": null
+    },
+    "hardened-defenders": {
+      "name": "Hardened Defenders",
+      "reward": "Zombardier",
+      "quality": "common",
+      "type": "spray",
+      "description": "Survive 4 bonus waves in Junkenstein Endless on Hard difficulty.",
+      "hero": null
+    },
+    "dawn-patrol": {
+      "name": "Dawn Patrol",
+      "reward": "Flaming Pumpkin",
+      "quality": "common",
+      "type": "spray",
+      "description": "Survive 12 bonus waves in Junkenstein Endless.",
+      "hero": null
     }
   },
   "mappings": {
@@ -1383,6 +1423,8 @@
     "competitive-6v6-elimination-hero": "competitive-6v6-elimination-hero",
     "competitive-3v3-group-elimination-competitor": "competitive-3v3-group-elimination-competitor",
     "competitive-3v3-group-elimination-hero": "competitive-3v3-group-elimination-hero",
+    "competitive-team-deathmatch-competitor": "competitive-team-deathmatch-competitor",
+    "competitive-team-deathmatch-hero": "competitive-team-deathmatch-hero",
     "wizard": "wizard",
     "witch-doctor": "witch-doctor",
     "monk": "monk",
@@ -1421,6 +1463,9 @@
     "1-fan": "1-fan",
     "living-room": "living-room",
     "matchs-on": "matchs-on",
-    "watchpoint-gibraltar": "watchparty-gibraltar"
+    "watchpoint-gibraltar": "watchparty-gibraltar",
+    "zomnic": "six-wanderers",
+    "zombardier": "hardened-defenders",
+    "flaming-pumpkin": "dawn-patrol"
   }
 }
