@@ -17,7 +17,8 @@ const types = [
   { m: 'voiceline', name: 'voicelines' },
   { m: 'victorypose', name: 'poses' },
   { m: 'highlightintro', name: 'intros' },
-  { m: 'weaponskin', name: 'weapons' } // Golden
+  { m: 'weaponskin', name: 'weapons' }, // Golden
+  { m: 'owlskins', name: 'owlskins' }
 ]
 
 // Generate a match for each quality for every type of item
