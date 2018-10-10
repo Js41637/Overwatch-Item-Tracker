@@ -19,7 +19,7 @@
   <div id="header">
     <div class="left">
       <img id="header-logo" uib-tooltip="Boop" tooltip-placement="bottom" src="./resources/logo.svg" ng-click="$ctrl.toggleSidebar()">
-      <h1>Overwatch Item Tracker</h1>
+      <h1><a href="./#/" style="color: #f99e1a; text-decoration: none;">Overwatch Item Tracker</a></h1>
       <div class="event-selector" ng-click="$ctrl.showNav = !$ctrl.showNav">
         <div class="block" ng-if="$ctrl.item.type == 'heroes'">
           <div class="img" style="background-image: url({{$ctrl.item.id | heroImg:'icon'}})"></div>
