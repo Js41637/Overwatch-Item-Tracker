@@ -956,6 +956,7 @@ strong {
   transition: transform 50ms;
   background: url(../resources/body-bg.jpg) no-repeat top;
   background-size: cover;
+  will-change: transform;
 }
 
 #hero-nav .gallery .block .bg {
