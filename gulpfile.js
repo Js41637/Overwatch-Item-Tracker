@@ -6,18 +6,11 @@ const watch = require('gulp-watch')
 const plumber = require('gulp-plumber');
 
 gulp.task('css', function() {
-  gulp.src(['css/*.scss', '!css/global.scss'])
+  gulp.src(['css/*.scss', '!css/_global.scss'])
     .pipe(plumber())
     .pipe(sass())
     .pipe(minifyCSS())
     .pipe(concat('main.min.css'))
-    .pipe(gulp.dest('css'))
-
-  gulp.src('css/global.scss')
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(minifyCSS())
-    .pipe(concat('global.min.css'))
     .pipe(gulp.dest('css'))
 
   gulp.src('css/themes/dirtdiglett/*.scss')
