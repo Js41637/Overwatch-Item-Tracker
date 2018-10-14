@@ -6,7 +6,7 @@ const watch = require('gulp-watch')
 const plumber = require('gulp-plumber');
 
 gulp.task('css', function() {
-  gulp.src(['css/*.scss', '!css/_global.scss'])
+  gulp.src('css/main.scss',)
     .pipe(plumber())
     .pipe(sass())
     .pipe(minifyCSS())
