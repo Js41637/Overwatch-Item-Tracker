@@ -11,16 +11,37 @@ inputFile.close()
 for hero in masterData['heroes']:
 	if(hero != 'all'): 
 		heroesList.append(hero)
+		
+		if(hero == 'tracer'):
+			extraSkins =  {
+				"name": "2018 Atlantic All-Stars",
+				"id": hero + "-2018-atlantic-all-stars",
+				"url": "/owlskins/" + hero + "-2018-atlantic-all-stars.jpg",
+				"quality": "legendary",
+				"achievement": "owl"
+			}
+		
+		if(hero == 'genji'):
+			extraSkins =  {
+				"name": "2018 Pacific All-Stars",
+				"id": hero + "-2018-pacific-all-stars",
+				"url": "/owlskins/" + hero + "-2018-pacific-all-stars.jpg",
+				"quality": "legendary",
+				"achievement": "owl"
+			}
+		
 		owlSkinsData = [
 			{
 				"name": "Overwatch League Gray",
 				"id": hero + "-overwatch-league-gray",
+				"url": "/owlskins/" + hero + "-overwatch-league-gray.jpg",
 				"quality": "epic",
 				"achievement": "owl"
 			},
 			{
 				"name": "Overwatch League White",
 				"id": hero + "-overwatch-league-white",
+				"url": "/owlskins/" + hero + "-overwatch-league-white.jpg",
 				"quality": "epic",
 				"achievement": "owl"
 			}]
@@ -29,17 +50,26 @@ for hero in masterData['heroes']:
 			homeSkin = {
 				"name": team + " Home",
 				"id": (hero + "-" + team.replace(" ","-")).lower(),
+				"url": "/owlskins/" + (hero + "-" + team.replace(" ","-")).lower() + ".jpg",
 				"quality": "epic",
 				"achievement": "owl"
 			}
 			awaySkin = {
 				"name": team + " Away",
 				"id": (hero + "-" + team.replace(" ","-") + "-away").lower(),
+				"url": "/owlskins/" + (hero + "-" + team.replace(" ","-") + "-away").lower() + ".jpg",
 				"quality": "epic",
 				"achievement": "owl"
-			}
+			}				
 			owlSkinsData.append(homeSkin)
 			owlSkinsData.append(awaySkin)
+		
+		try:
+			owlSkinsData.insert(0, extraSkins)
+			del extraSkins
+			print('Extras exist for ' + hero)
+		except NameError:
+			print('No extras for ' + hero)
 		
 		masterData['heroes'][hero]['items']['owlskins'] = owlSkinsData
 
