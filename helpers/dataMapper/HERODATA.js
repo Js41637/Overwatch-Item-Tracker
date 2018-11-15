@@ -19,6 +19,14 @@ const data = {
       highlight: "#dcd5c7"
     }
   },
+  ashe: {
+    class: CLASSES.DAMAGE,
+    description: "",
+    colors: {
+      primary: "#3e3c3a",
+      highlight: "#7e7c7a"
+    }
+  },
   bastion: {
     class: CLASSES.DAMAGE,
     description: "Once a frontline combatant in the Omnic Crisis, this curious Bastion unit now explores the world, fascinated by nature but wary of a fearful humanity.",
