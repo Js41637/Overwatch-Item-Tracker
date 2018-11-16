@@ -21,7 +21,7 @@ const data = {
   },
   ashe: {
     class: CLASSES.DAMAGE,
-    description: "Ashe is the leader of the Deadlock Gang, a group of bandits and criminals who menace the American southwest.",
+    description: "Ashe is the leader of the Deadlock Gang, a group of bandits and criminals who menace the American Southwest.",
     colors: {
       primary: "#3e3c3a",
       highlight: "#7e7c7a"
