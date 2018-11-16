@@ -68,11 +68,13 @@
       </div>
     </div>
   </div>
+
   <div ng-if="::$ctrl.noSupportMsg" ng-hide="::$ctrl.hideAlert" class="nosupport alert alert-warning alert-dismissable">
     <button ng-click="$ctrl.dismissAlert()" type="button" class="close"><span>&times;</span></button>
     <strong>Notice!</strong> <span>{{$ctrl.noSupportMsg}}</span>
   </div>
-  <div ui-view="main"></div>
+
+  <div ui-view="main" id="content-container"></div>
   <!-- <Particles ng-if="::$ctrl.particles"></Particles> -->
 
   <script async defer src="https://apis.google.com/js/api.js"></script>

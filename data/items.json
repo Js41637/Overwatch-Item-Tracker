@@ -150,6 +150,12 @@
           "url": "/heroes/all/icons/argentina.png"
         },
         {
+          "name": "Ashe",
+          "id": "ashe-ashe",
+          "url": "/heroes/ashe/icons/ashe-ashe.png",
+          "hero": "ashe"
+        },
+        {
           "name": "Assassin",
           "id": "assassin",
           "event": "UPRISING",
@@ -319,6 +325,12 @@
           "event": "SUMMER_GAMES",
           "hero": "reaper",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Bob",
+          "id": "ashe-bob",
+          "url": "/heroes/ashe/icons/ashe-bob.png",
+          "hero": "ashe"
         },
         {
           "name": "Bokimari",
@@ -900,6 +912,12 @@
           "id": "mccree-deadeye",
           "url": "/heroes/mccree/icons/mccree-deadeye.png",
           "hero": "mccree"
+        },
+        {
+          "name": "Deadlock Rebels",
+          "id": "ashe-deadlock-rebels",
+          "url": "/heroes/ashe/icons/ashe-deadlock-rebels.png",
+          "hero": "ashe"
         },
         {
           "name": "Demolition",
@@ -2587,6 +2605,20 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Season 12"
         },
         {
+          "name": "Season 13 Competitor",
+          "id": "season-13-competitor",
+          "url": "/heroes/all/icons/season-13-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 13 Hero",
+          "id": "season-13-hero",
+          "url": "/heroes/all/icons/season-13-hero.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Sentry",
           "id": "symmetra-sentry",
           "url": "/heroes/symmetra/icons/symmetra-sentry.png",
@@ -4018,6 +4050,20 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Season 12"
         },
         {
+          "name": "Season 13 Competitor",
+          "id": "season-13-competitor",
+          "url": "/heroes/all/sprays/season-13-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 13 Hero",
+          "id": "season-13-hero",
+          "url": "/heroes/all/sprays/season-13-hero.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Seoul Dynasty Logo",
           "id": "seoul-dynasty-logo",
           "url": "/heroes/all/sprays/seoul-dynasty-logo.png",
@@ -5394,6 +5440,462 @@
         {
           "name": "GOLDEN",
           "id": "ana-golden",
+          "quality": "golden"
+        }
+      ]
+    }
+  },
+  "ashe": {
+    "name": "Ashe",
+    "id": "ashe",
+    "class": "Damage",
+    "description": "Ashe is the leader of the Deadlock Gang, a group of bandits and criminals who menace the American Southwest.",
+    "colors": {
+      "primary": "#3e3c3a",
+      "highlight": "#7e7c7a"
+    },
+    "items": {
+      "skins": [
+        {
+          "name": "Classic",
+          "id": "ashe-classic",
+          "quality": "common",
+          "url": "/heroes/ashe/skins/ashe-classic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Paintbrush",
+          "id": "ashe-paintbrush",
+          "quality": "rare",
+          "url": "/heroes/ashe/skins/ashe-paintbrush.jpg"
+        },
+        {
+          "name": "Sunflower",
+          "id": "ashe-sunflower",
+          "quality": "rare",
+          "url": "/heroes/ashe/skins/ashe-sunflower.jpg"
+        },
+        {
+          "name": "Tansy",
+          "id": "ashe-tansy",
+          "quality": "rare",
+          "url": "/heroes/ashe/skins/ashe-tansy.jpg"
+        },
+        {
+          "name": "Yucca",
+          "id": "ashe-yucca",
+          "quality": "rare",
+          "url": "/heroes/ashe/skins/ashe-yucca.jpg"
+        },
+        {
+          "name": "Posh",
+          "id": "ashe-posh",
+          "quality": "epic",
+          "url": "/heroes/ashe/skins/ashe-posh.jpg"
+        },
+        {
+          "name": "Thorn",
+          "id": "ashe-thorn",
+          "quality": "epic",
+          "url": "/heroes/ashe/skins/ashe-thorn.jpg"
+        },
+        {
+          "name": "Gangster",
+          "id": "ashe-gangster",
+          "quality": "legendary",
+          "url": "/heroes/ashe/skins/ashe-gangster.jpg"
+        },
+        {
+          "name": "Jungle",
+          "id": "ashe-jungle",
+          "quality": "legendary",
+          "url": "/heroes/ashe/skins/ashe-jungle.jpg"
+        },
+        {
+          "name": "Mobster",
+          "id": "ashe-mobster",
+          "quality": "legendary",
+          "url": "/heroes/ashe/skins/ashe-mobster.jpg"
+        },
+        {
+          "name": "Safari",
+          "id": "ashe-safari",
+          "quality": "legendary",
+          "url": "/heroes/ashe/skins/ashe-safari.jpg"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "id": "ashe-heroic",
+          "quality": "common",
+          "url": "/heroes/ashe/emotes/ashe-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Dynamite",
+          "id": "ashe-dynamite",
+          "quality": "epic",
+          "url": "/heroes/ashe/emotes/ashe-dynamite.webm"
+        },
+        {
+          "name": "Flourish",
+          "id": "ashe-flourish",
+          "quality": "epic",
+          "url": "/heroes/ashe/emotes/ashe-flourish.webm"
+        },
+        {
+          "name": "Laugh",
+          "id": "ashe-laugh",
+          "quality": "epic",
+          "url": "/heroes/ashe/emotes/ashe-laugh.webm"
+        },
+        {
+          "name": "Slow Clap",
+          "id": "ashe-slow-clap",
+          "quality": "epic",
+          "url": "/heroes/ashe/emotes/ashe-slow-clap.webm"
+        },
+        {
+          "name": "Take a Knee",
+          "id": "ashe-take-a-knee",
+          "quality": "epic",
+          "url": "/heroes/ashe/emotes/ashe-take-a-knee.webm"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "id": "ashe-heroic",
+          "quality": "common",
+          "url": "/heroes/ashe/intros/ashe-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Ashe and Bob",
+          "id": "ashe-ashe-and-bob",
+          "quality": "epic",
+          "url": "/heroes/ashe/intros/ashe-ashe-and-bob.webm"
+        },
+        {
+          "name": "Bullet Walk",
+          "id": "ashe-bullet-walk",
+          "quality": "epic",
+          "url": "/heroes/ashe/intros/ashe-bullet-walk.webm"
+        },
+        {
+          "name": "Standoff",
+          "id": "ashe-standoff",
+          "quality": "epic",
+          "url": "/heroes/ashe/intros/ashe-standoff.webm"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Ashe",
+          "id": "ashe-ashe",
+          "url": "/heroes/ashe/icons/ashe-ashe.png",
+          "hero": "ashe"
+        },
+        {
+          "name": "Bob",
+          "id": "ashe-bob",
+          "url": "/heroes/ashe/icons/ashe-bob.png",
+          "hero": "ashe"
+        },
+        {
+          "name": "Deadlock Rebels",
+          "id": "ashe-deadlock-rebels",
+          "url": "/heroes/ashe/icons/ashe-deadlock-rebels.png",
+          "hero": "ashe"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Back-to-Back",
+          "id": "ashe-backtoback",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-backtoback.png"
+        },
+        {
+          "name": "Bandit",
+          "id": "ashe-bandit",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-bandit.png"
+        },
+        {
+          "name": "Bike",
+          "id": "ashe-bike",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-bike.png"
+        },
+        {
+          "name": "Bowler",
+          "id": "ashe-bowler",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-bowler.png"
+        },
+        {
+          "name": "Bullet",
+          "id": "ashe-bullet",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-bullet.png"
+        },
+        {
+          "name": "Butler",
+          "id": "ashe-butler",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-butler.png"
+        },
+        {
+          "name": "Dashing",
+          "id": "ashe-dashing",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-dashing.png"
+        },
+        {
+          "name": "Exchange",
+          "id": "ashe-exchange",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-exchange.png"
+        },
+        {
+          "name": "Fire in the Hole",
+          "id": "ashe-fire-in-the-hole",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-fire-in-the-hole.png"
+        },
+        {
+          "name": "Firing",
+          "id": "ashe-firing",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-firing.png"
+        },
+        {
+          "name": "Getaway",
+          "id": "ashe-getaway",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-getaway.png"
+        },
+        {
+          "name": "Gotcha",
+          "id": "ashe-gotcha",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-gotcha.png"
+        },
+        {
+          "name": "Hurry",
+          "id": "ashe-hurry",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-hurry.png"
+        },
+        {
+          "name": "Icon",
+          "id": "ashe-icon",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-icon.png"
+        },
+        {
+          "name": "Moustache",
+          "id": "ashe-moustache",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-moustache.png"
+        },
+        {
+          "name": "Outline",
+          "id": "ashe-outline",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-outline.png"
+        },
+        {
+          "name": "Rebels",
+          "id": "ashe-rebels",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-rebels.png"
+        },
+        {
+          "name": "Relaxed",
+          "id": "ashe-relaxed",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-relaxed.png"
+        },
+        {
+          "name": "Sweat",
+          "id": "ashe-sweat",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-sweat.png"
+        },
+        {
+          "name": "Taking Aim",
+          "id": "ashe-taking-aim",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-taking-aim.png"
+        },
+        {
+          "name": "Tea Time",
+          "id": "ashe-tea-time",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-tea-time.png"
+        },
+        {
+          "name": "Tie",
+          "id": "ashe-tie",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-tie.png"
+        },
+        {
+          "name": "Wanted",
+          "id": "ashe-wanted",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-wanted.png"
+        },
+        {
+          "name": "Cute",
+          "id": "ashe-cute",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-cute.png",
+          "achievement": true,
+          "description": "Get a killing blow as Ashe on an enemy knocked into the air by B.O.B. in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "ashe-pixel",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-pixel.png",
+          "achievement": true,
+          "description": "Kill an enemy by shooting Ashe’s Dynamite from at least 30 meters away in Quick or Competitive Play."
+        },
+        {
+          "name": "Loot",
+          "id": "ashe-loot",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-loot.png",
+          "description": "Unlocked by watching participating streams during the November 2018 Free Trial",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Road Closed",
+          "id": "ashe-road-closed",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-road-closed.png",
+          "description": "Unlocked by watching participating streams during the November 2018 Free Trial",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Triplets",
+          "id": "ashe-triplets",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-triplets.png",
+          "description": "Unlocked by watching participating streams during the November 2018 Free Trial",
+          "achievement": "blizzard"
+        }
+      ],
+      "voicelines": [
+        {
+          "name": "We have an understanding",
+          "id": "ashe-we-have-an-understanding",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-we-have-an-understanding.ogg",
+          "standardItem": true
+        },
+        {
+          "name": "Burn it all down",
+          "id": "ashe-burn-it-all-down",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-burn-it-all-down.ogg"
+        },
+        {
+          "name": "How do you even live",
+          "id": "ashe-how-do-you-even-live",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-how-do-you-even-live.ogg"
+        },
+        {
+          "name": "I run this show",
+          "id": "ashe-i-run-this-show",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-i-run-this-show.ogg"
+        },
+        {
+          "name": "I'm a rebel",
+          "id": "ashe-im-a-rebel",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-im-a-rebel.ogg"
+        },
+        {
+          "name": "Just taking out the trash",
+          "id": "ashe-just-taking-out-the-trash",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-just-taking-out-the-trash.ogg"
+        },
+        {
+          "name": "Life's little pleasures",
+          "id": "ashe-lifes-little-pleasures",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-lifes-little-pleasures.ogg"
+        },
+        {
+          "name": "Need me to repeat myself?",
+          "id": "ashe-need-me-to-repeat-myself",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-need-me-to-repeat-myself.ogg"
+        },
+        {
+          "name": "That's rich",
+          "id": "ashe-thats-rich",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-thats-rich.ogg"
+        },
+        {
+          "name": "This is a stick up",
+          "id": "ashe-this-is-a-stick-up",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-this-is-a-stick-up.ogg"
+        },
+        {
+          "name": "Try and keep it together",
+          "id": "ashe-try-and-keep-it-together",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-try-and-keep-it-together.ogg"
+        },
+        {
+          "name": "Watch your language",
+          "id": "ashe-watch-your-language",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-watch-your-language.ogg"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "id": "ashe-heroic",
+          "quality": "common",
+          "url": "/heroes/ashe/poses/ashe-heroic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Kneeling",
+          "id": "ashe-kneeling",
+          "quality": "rare",
+          "url": "/heroes/ashe/poses/ashe-kneeling.jpg"
+        },
+        {
+          "name": "Over the Shoulder",
+          "id": "ashe-over-the-shoulder",
+          "quality": "rare",
+          "url": "/heroes/ashe/poses/ashe-over-the-shoulder.jpg"
+        },
+        {
+          "name": "Relaxing",
+          "id": "ashe-relaxing",
+          "quality": "rare",
+          "url": "/heroes/ashe/poses/ashe-relaxing.jpg"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "ashe-golden",
           "quality": "golden"
         }
       ]
@@ -13666,7 +14168,7 @@
           "quality": "common",
           "url": "/heroes/mercy/sprays/mercy-cute.png",
           "achievement": true,
-          "description": "Resurrect 6 players without dying as Mercy in Quick or Competitive Play."
+          "description": "Resurrect 6 allies without dying as Mercy in Quick or Competitive Play."
         },
         {
           "name": "Pixel",
@@ -13674,7 +14176,7 @@
           "quality": "common",
           "url": "/heroes/mercy/sprays/mercy-pixel.png",
           "achievement": true,
-          "description": "Restore 200 health for 5 players without dying as Mercy in Quick or Competitive Play."
+          "description": "Restore 200 health for 5 allies without dying as Mercy in Quick or Competitive Play."
         },
         {
           "name": "Cure",
@@ -20706,7 +21208,7 @@
           "quality": "common",
           "url": "/heroes/symmetra/sprays/symmetra-cute.png",
           "achievement": true,
-          "description": "Teleport 20 players in a single Quick or Competitive Play game as Symmetra."
+          "description": "Teleport 20 allies in a single Quick or Competitive Play game as Symmetra."
         },
         {
           "name": "Pixel",
@@ -21502,7 +22004,7 @@
           "quality": "common",
           "url": "/heroes/torbjorn/sprays/torbjorn-pixel.png",
           "achievement": true,
-          "description": "Have one of Torbjörn's Armor Packs on 5 allies at the same time in Quick or Competitive Play."
+          "description": "Absorb 500 armor damage with Torbjörn's Overload without dying in Quick or Competitive Play."
         },
         {
           "name": "Water Polo",
@@ -24561,7 +25063,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-cute.png",
           "achievement": true,
-          "description": "Roll through 4 players within 2 seconds as Wrecking Ball in Quick or Competitive Play."
+          "description": "Roll through 4 enemies within 2 seconds as Wrecking Ball in Quick or Competitive Play."
         },
         {
           "name": "Pixel",
