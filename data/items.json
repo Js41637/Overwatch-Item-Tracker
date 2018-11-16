@@ -5421,7 +5421,7 @@
     "name": "Ashe",
     "id": "ashe",
     "class": "Damage",
-    "description": "Ashe is the leader of the Deadlock Gang, a group of bandits and criminals who menace the American southwest.",
+    "description": "Ashe is the leader of the Deadlock Gang, a group of bandits and criminals who menace the American Southwest.",
     "colors": {
       "primary": "#3e3c3a",
       "highlight": "#7e7c7a"
@@ -5584,7 +5584,7 @@
       ],
       "sprays": [
         {
-          "name": "Back-to-back",
+          "name": "Back-to-Back",
           "id": "ashe-backtoback",
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-backtoback.png"
@@ -5632,7 +5632,7 @@
           "url": "/heroes/ashe/sprays/ashe-exchange.png"
         },
         {
-          "name": "Fire in the hole",
+          "name": "Fire in the Hole",
           "id": "ashe-fire-in-the-hole",
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-fire-in-the-hole.png"
@@ -5698,13 +5698,13 @@
           "url": "/heroes/ashe/sprays/ashe-sweat.png"
         },
         {
-          "name": "Taking aim",
+          "name": "Taking Aim",
           "id": "ashe-taking-aim",
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-taking-aim.png"
         },
         {
-          "name": "Tea time",
+          "name": "Tea Time",
           "id": "ashe-tea-time",
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-tea-time.png"
@@ -5727,7 +5727,7 @@
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-cute.png",
           "achievement": true,
-          "description": "Kill an enemy by shooting Ashe's dynamite from at least 30 meters away in Quick or Competitive Play."
+          "description": "Kill an enemy by shooting Ashe’s Dynamite from at least 30 meters away in Quick or Competitive Play."
         },
         {
           "name": "Pixel",
@@ -5735,7 +5735,31 @@
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-pixel.png",
           "achievement": true,
-          "description": "Get a killing blow as Ashe on an enemy kocked into the air by B.O.B. in Quick or Competitive Play."
+          "description": "Get a killing blow as Ashe on an enemy knocked into the air by B.O.B. in Quick or Competitive Play."
+        },
+        {
+          "name": "Loot",
+          "id": "ashe-loot",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-loot.png",
+          "description": "Unlocked by watching participating streams during the November 2018 Free Trial",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Road Closed",
+          "id": "ashe-road-closed",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-road-closed.png",
+          "description": "Unlocked by watching participating streams during the November 2018 Free Trial",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Triplets",
+          "id": "ashe-triplets",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-triplets.png",
+          "description": "Unlocked by watching participating streams during the November 2018 Free Trial",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -5828,7 +5852,7 @@
           "url": "/heroes/ashe/poses/ashe-kneeling.jpg"
         },
         {
-          "name": "Over the shoulder",
+          "name": "Over the Shoulder",
           "id": "ashe-over-the-shoulder",
           "quality": "rare",
           "url": "/heroes/ashe/poses/ashe-over-the-shoulder.jpg"
