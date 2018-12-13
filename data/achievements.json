@@ -1315,6 +1315,30 @@
       "type": "spray",
       "description": "Survive 12 bonus waves in Junkenstein Endless.",
       "hero": null
+    },
+    "rampage": {
+      "name": "Rampage",
+      "reward": "Yeti Rage",
+      "quality": "common",
+      "type": "spray",
+      "description": "Kill 3 enemies as the Yeti in Yeti Hunt.",
+      "hero": null
+    },
+    "hot-hand": {
+      "name": "Hot Hand",
+      "reward": "Frozen Throne",
+      "quality": "common",
+      "type": "spray",
+      "description": "Win a round as the sole survivor in Mei's Snowball Offensive.",
+      "hero": null
+    },
+    "a-couple-of-flakes": {
+      "name": "A Couple Of Flakes",
+      "reward": "Bonk",
+      "quality": "common",
+      "type": "spray",
+      "description": "Kill 2 enemies with a single use of Mei's Flurry in Mei's Snowball Offensive.",
+      "hero": null
     }
   },
   "mappings": {
@@ -1484,6 +1508,9 @@
     "watchpoint-gibraltar": "watchparty-gibraltar",
     "zomnic": "six-wanderers",
     "zombardier": "hardened-defenders",
-    "flaming-pumpkin": "dawn-patrol"
+    "flaming-pumpkin": "dawn-patrol",
+    "bonk": "a-couple-of-flakes",
+    "frozen-throne": "hot-hand",
+    "yeti-rage": "rampage"
   }
 }
