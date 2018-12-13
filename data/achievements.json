@@ -888,6 +888,38 @@
       "type": "spray",
       "hero": "all"
     },
+    "season-13-competitor": {
+      "name": null,
+      "description": "Unlocked by completing Season 13 placement matches",
+      "reward": "Season 13 Competitor",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "season-13-hero": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 13",
+      "reward": "Season 13 Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "season-14-competitor": {
+      "name": null,
+      "description": "Unlocked by completing Season 14 placement matches",
+      "reward": "Season 14 Competitor",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "season-14-hero": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 14",
+      "reward": "Season 14 Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
     "competitive-ctf-competitor": {
       "name": null,
       "description": "Unlocked by completing competitive Capture The Flag placement matches",
@@ -1315,6 +1347,30 @@
       "type": "spray",
       "description": "Survive 12 bonus waves in Junkenstein Endless.",
       "hero": null
+    },
+    "rampage": {
+      "name": "Rampage",
+      "reward": "Yeti Rage",
+      "quality": "common",
+      "type": "spray",
+      "description": "Kill 3 enemies as the Yeti in Yeti Hunt.",
+      "hero": null
+    },
+    "hot-hand": {
+      "name": "Hot Hand",
+      "reward": "Frozen Throne",
+      "quality": "common",
+      "type": "spray",
+      "description": "Win a round as the sole survivor in Mei's Snowball Offensive.",
+      "hero": null
+    },
+    "a-couple-of-flakes": {
+      "name": "A Couple Of Flakes",
+      "reward": "Bonk",
+      "quality": "common",
+      "type": "spray",
+      "description": "Kill 2 enemies with a single use of Mei's Flurry in Mei's Snowball Offensive.",
+      "hero": null
     }
   },
   "mappings": {
@@ -1433,6 +1489,10 @@
     "season-11-hero": "season-11-hero",
     "season-12-competitor": "season-12-competitor",
     "season-12-hero": "season-12-hero",
+    "season-13-competitor": "season-13-competitor",
+    "season-13-hero": "season-13-hero",
+    "season-14-competitor": "season-14-competitor",
+    "season-14-hero": "season-14-hero",
     "competitive-ctf-competitor": "competitive-ctf-competitor",
     "competitive-ctf-hero": "competitive-ctf-hero",
     "competitive-deathmatch-competitor": "competitive-deathmatch-competitor",
@@ -1484,6 +1544,9 @@
     "watchpoint-gibraltar": "watchparty-gibraltar",
     "zomnic": "six-wanderers",
     "zombardier": "hardened-defenders",
-    "flaming-pumpkin": "dawn-patrol"
+    "flaming-pumpkin": "dawn-patrol",
+    "bonk": "a-couple-of-flakes",
+    "frozen-throne": "hot-hand",
+    "yeti-rage": "rampage"
   }
 }

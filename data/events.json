@@ -4133,20 +4133,113 @@
     "name": "Winter Wonderland",
     "id": "WINTER_WONDERLAND",
     "dates": {
-      "start": "1513101600000",
-      "end": "1514890800000"
+      "start": "1544547600000",
+      "end": "1546513200000"
     },
     "items": {
-      "skinsLegendary": [
+      "skins": [
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Winter",
+          "id": "ashe-winter",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/ashe-winter.jpg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Gift Wrap",
+          "id": "bastion-gift-wrap",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/bastion-gift-wrap.jpg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Andes",
+          "id": "lucio-andes",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/lucio-andes.jpg",
+          "description": "When the weather gets cold, Lúcio heads to the Andes to hit the slopes.",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Scrooge",
+          "id": "mccree-scrooge",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/mccree-scrooge.jpg",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Frostbite",
+          "id": "pharah-frostbite",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/pharah-frostbite.jpg",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Shiver",
+          "id": "reaper-shiver",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/reaper-shiver.jpg",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Festive",
+          "id": "reinhardt-festive",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/reinhardt-festive.jpg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Rudolph",
+          "id": "roadhog-rudolph",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/roadhog-rudolph.jpg",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Peppermint",
+          "id": "sombra-peppermint",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/sombra-peppermint.jpg",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Frosted",
+          "id": "zarya-frosted",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/zarya-frosted.jpg",
+          "group": "WINTER_WONDERLAND_2016"
+        },
         {
           "heroName": "Ana",
           "hero": "ana",
           "name": "Snow Owl",
           "id": "ana-snow-owl",
           "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/ana-snow-owl.jpg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "url": "/updates/WINTER_WONDERLAND/skins/ana-snow-owl.jpg",
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Bastion",
@@ -4154,9 +4247,8 @@
           "name": "Avalanche",
           "id": "bastion-avalanche",
           "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/bastion-avalanche.jpg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "url": "/updates/WINTER_WONDERLAND/skins/bastion-avalanche.jpg",
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Hanzo",
@@ -4164,9 +4256,8 @@
           "name": "Casual",
           "id": "hanzo-casual",
           "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/hanzo-casual.jpg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "url": "/updates/WINTER_WONDERLAND/skins/hanzo-casual.jpg",
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Junkrat",
@@ -4174,9 +4265,17 @@
           "name": "Beachrat",
           "id": "junkrat-beachrat",
           "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/junkrat-beachrat.jpg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "url": "/updates/WINTER_WONDERLAND/skins/junkrat-beachrat.jpg",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Mei-rry",
+          "id": "mei-meirry",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/mei-meirry.jpg",
+          "group": "WINTER_WONDERLAND_2016"
         },
         {
           "heroName": "Roadhog",
@@ -4184,9 +4283,8 @@
           "name": "Ice Fisherman",
           "id": "roadhog-ice-fisherman",
           "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/roadhog-ice-fisherman.jpg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "url": "/updates/WINTER_WONDERLAND/skins/roadhog-ice-fisherman.jpg",
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Soldier: 76",
@@ -4194,9 +4292,8 @@
           "name": "Alpine: 76",
           "id": "soldier-76-alpine-76",
           "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/soldier-76-alpine-76.jpg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "url": "/updates/WINTER_WONDERLAND/skins/soldier-76-alpine-76.jpg",
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Sombra",
@@ -4204,9 +4301,45 @@
           "name": "Rime",
           "id": "sombra-rime",
           "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/sombra-rime.jpg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "url": "/updates/WINTER_WONDERLAND/skins/sombra-rime.jpg",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Santaclad",
+          "id": "torbjorn-santaclad",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/torbjorn-santaclad.jpg",
+          "description": "At the gentle urging of his wife, Ingrid, Torbjörn dresses up as Santa for the Lindholm holiday celebrations.",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Jingle",
+          "id": "tracer-jingle",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/tracer-jingle.jpg",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Yeti",
+          "id": "winston-yeti",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/winston-yeti.jpg",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Nutcracker",
+          "id": "zenyatta-nutcracker",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/zenyatta-nutcracker.jpg",
+          "group": "WINTER_WONDERLAND_2016"
         }
       ],
       "icons": [
@@ -4222,7 +4355,14 @@
           "name": "2018",
           "id": "2018",
           "url": "/heroes/all/icons/2018.png",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "hero": "all",
+          "name": "2019",
+          "id": "2019",
+          "url": "/heroes/all/icons/2019.png",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -4231,8 +4371,7 @@
           "name": "Alpine",
           "id": "soldier-76-alpine",
           "url": "/heroes/soldier-76/icons/soldier-76-alpine.png",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Bastion",
@@ -4240,8 +4379,7 @@
           "name": "Avalanche",
           "id": "bastion-avalanche",
           "url": "/heroes/bastion/icons/bastion-avalanche.png",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Junkrat",
@@ -4249,8 +4387,7 @@
           "name": "Beachrat",
           "id": "junkrat-beachrat",
           "url": "/heroes/junkrat/icons/junkrat-beachrat.png",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "hero": "all",
@@ -4258,6 +4395,15 @@
           "id": "bells",
           "url": "/heroes/all/icons/bells.png",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Biathlon",
+          "id": "widowmaker-biathlon",
+          "url": "/heroes/widowmaker/icons/widowmaker-biathlon.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -4279,8 +4425,7 @@
           "name": "Casual",
           "id": "hanzo-casual",
           "url": "/heroes/hanzo/icons/hanzo-casual.png",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "hero": "all",
@@ -4295,6 +4440,15 @@
           "id": "dreidel",
           "url": "/heroes/all/icons/dreidel.png",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Figure Skater",
+          "id": "symmetra-figure-skater",
+          "url": "/heroes/symmetra/icons/symmetra-figure-skater.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -4330,8 +4484,7 @@
           "name": "Ice Fisherman",
           "id": "roadhog-ice-fisherman",
           "url": "/heroes/roadhog/icons/roadhog-ice-fisherman.png",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Tracer",
@@ -4340,6 +4493,15 @@
           "id": "tracer-jingle",
           "url": "/heroes/tracer/icons/tracer-jingle.png",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Krampus",
+          "id": "junkrat-krampus",
+          "url": "/heroes/junkrat/icons/junkrat-krampus.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -4362,6 +4524,14 @@
           "id": "ornament",
           "url": "/heroes/all/icons/ornament.png",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "hero": "all",
+          "name": "Pachicracker",
+          "id": "pachicracker",
+          "url": "/heroes/all/icons/pachicracker.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -4397,8 +4567,7 @@
           "name": "Rime",
           "id": "sombra-rime",
           "url": "/heroes/sombra/icons/sombra-rime.png",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Torbjörn",
@@ -4407,6 +4576,15 @@
           "id": "torbjorn-santaclad",
           "url": "/heroes/torbjorn/icons/torbjorn-santaclad.png",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Snow Fox",
+          "id": "lucio-snow-fox",
+          "url": "/heroes/lucio/icons/lucio-snow-fox.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -4421,7 +4599,23 @@
           "name": "Snow Owl",
           "id": "ana-snow-owl",
           "url": "/heroes/ana/icons/ana-snow-owl.png",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Snowboarder",
+          "id": "zarya-snowboarder",
+          "url": "/heroes/zarya/icons/zarya-snowboarder.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "Snowimari",
+          "id": "snowimari",
+          "url": "/heroes/all/icons/snowimari.png",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -4437,6 +4631,15 @@
           "id": "stocking",
           "url": "/heroes/all/icons/stocking.png",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Sugar Plum Fairy",
+          "id": "mercy-sugar-plum-fairy",
+          "url": "/heroes/mercy/icons/mercy-sugar-plum-fairy.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -4457,7 +4660,14 @@
           "name": "Winter Wonderland 2017",
           "id": "winter-wonderland-2017",
           "url": "/heroes/all/icons/winter-wonderland-2017.png",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "hero": "all",
+          "name": "Winter Wonderland 2018",
+          "id": "winter-wonderland-2018",
+          "url": "/heroes/all/icons/winter-wonderland-2018.png",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -4480,8 +4690,7 @@
           "name": "Yetimari",
           "id": "yetimari",
           "url": "/heroes/all/icons/yetimari.png",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         }
       ],
       "sprays": [
@@ -4497,6 +4706,18 @@
           "secondUrl": "/heroes/ana/sprays/ana-ornament.png"
         },
         {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Snowball Fight",
+          "id": "ashe-snowball-fight",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-snowball-fight.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true,
+          "secondId": "ashe-ornament",
+          "secondUrl": "/heroes/ashe/sprays/ashe-ornament.png"
+        },
+        {
           "heroName": "Bastion",
           "hero": "bastion",
           "name": "FESTIVE",
@@ -4506,6 +4727,18 @@
           "group": "WINTER_WONDERLAND_2016",
           "secondId": "bastion-ornament",
           "secondUrl": "/heroes/bastion/sprays/bastion-ornament.png"
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Knitting",
+          "id": "brigitte-knitting",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-knitting.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true,
+          "secondId": "brigitte-ornament",
+          "secondUrl": "/heroes/brigitte/sprays/brigitte-ornament.png"
         },
         {
           "heroName": "D.Va",
@@ -4526,7 +4759,6 @@
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-snow-punch.png",
           "group": "WINTER_WONDERLAND_2017",
-          "isNew": true,
           "secondId": "doomfist-ornament",
           "secondUrl": "/heroes/doomfist/sprays/doomfist-ornament.png"
         },
@@ -4540,6 +4772,18 @@
           "group": "WINTER_WONDERLAND_2016",
           "secondId": "genji-ornament",
           "secondUrl": "/heroes/genji/sprays/genji-ornament.png"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Stocking",
+          "id": "wrecking-ball-stocking",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-stocking.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true,
+          "secondId": "wrecking-ball-ornament",
+          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-ornament.png"
         },
         {
           "heroName": "Hanzo",
@@ -4615,7 +4859,6 @@
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-chimney.png",
           "group": "WINTER_WONDERLAND_2017",
-          "isNew": true,
           "secondId": "moira-ornament",
           "secondUrl": "/heroes/moira/sprays/moira-ornament.png"
         },
@@ -4627,7 +4870,6 @@
           "quality": "common",
           "url": "/heroes/orisa/sprays/orisa-star.png",
           "group": "WINTER_WONDERLAND_2017",
-          "isNew": true,
           "secondId": "orisa-ornament",
           "secondUrl": "/heroes/orisa/sprays/orisa-ornament.png"
         },
@@ -4791,9 +5033,23 @@
         },
         {
           "hidden": true,
+          "hero": "ashe",
+          "id": "ashe-ornament",
+          "group": "WINTER_WONDERLAND_2018",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
           "hero": "bastion",
           "id": "bastion-ornament",
           "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "brigitte",
+          "id": "brigitte-ornament",
+          "group": "WINTER_WONDERLAND_2018",
           "quality": "common"
         },
         {
@@ -4952,6 +5208,13 @@
         },
         {
           "hidden": true,
+          "hero": "wrecking-ball",
+          "id": "wrecking-ball-ornament",
+          "group": "WINTER_WONDERLAND_2018",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
           "hero": "zarya",
           "id": "zarya-ornament",
           "group": "WINTER_WONDERLAND_2016",
@@ -4963,6 +5226,26 @@
           "id": "zenyatta-ornament",
           "group": "WINTER_WONDERLAND_2016",
           "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Bonk",
+          "id": "bonk",
+          "url": "/heroes/all/sprays/bonk.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true,
+          "achievement": true,
+          "description": "Kill 2 enemies with a single use of Mei's Flurry in Mei's Snowball Offensive."
+        },
+        {
+          "hero": "all",
+          "name": "Frozen Throne",
+          "id": "frozen-throne",
+          "url": "/heroes/all/sprays/frozen-throne.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true,
+          "achievement": true,
+          "description": "Win a round as the sole survivor in Mei's Snowball Offensive."
         },
         {
           "hero": "all",
@@ -5006,7 +5289,6 @@
           "id": "yeti",
           "url": "/heroes/all/sprays/yeti.png",
           "group": "WINTER_WONDERLAND_2017",
-          "isNew": true,
           "achievement": true,
           "description": "Eat 4 meat as the Yeti in Yeti Hunter."
         },
@@ -5016,9 +5298,18 @@
           "id": "yeti-hunter",
           "url": "/heroes/all/sprays/yeti-hunter.png",
           "group": "WINTER_WONDERLAND_2017",
-          "isNew": true,
           "achievement": true,
           "description": "Trap the Yeti as a Hunter in Yeti Hunter."
+        },
+        {
+          "hero": "all",
+          "name": "Yeti Rage",
+          "id": "yeti-rage",
+          "url": "/heroes/all/sprays/yeti-rage.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true,
+          "achievement": true,
+          "description": "Kill 3 enemies as the Yeti in Yeti Hunt."
         }
       ],
       "voicelines": [
@@ -5029,8 +5320,7 @@
           "id": "ana-im-too-old-for-surprises",
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-im-too-old-for-surprises.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Ana",
@@ -5042,14 +5332,33 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Girl Who Has Everything",
+          "id": "ashe-girl-who-has-everything",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-girl-who-has-everything.ogg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "It's a giving time of year",
+          "id": "ashe-its-a-giving-time-of-year",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-its-a-giving-time-of-year.ogg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Bastion",
           "hero": "bastion",
           "name": "BWOO BWOO BWOO",
           "id": "bastion-bwoo-bwoo-bwoo",
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-bwoo-bwoo-bwoo.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Bastion",
@@ -5059,6 +5368,26 @@
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-dwee-doo-hoo.ogg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "I Made That Just for You",
+          "id": "brigitte-i-made-that-just-for-you",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-i-made-that-just-for-you.ogg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Merry Christmas",
+          "id": "brigitte-merry-christmas",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-merry-christmas.ogg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
         },
         {
           "heroName": "D.Va",
@@ -5076,8 +5405,7 @@
           "id": "dva-happy-holidays",
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-happy-holidays.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Doomfist",
@@ -5086,8 +5414,7 @@
           "id": "doomfist-did-you-bring-me-a-present",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-did-you-bring-me-a-present.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Doomfist",
@@ -5096,8 +5423,7 @@
           "id": "doomfist-they-say-chivalry-is-dead",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-they-say-chivalry-is-dead.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Genji",
@@ -5106,8 +5432,7 @@
           "id": "genji-count-your-blessings",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-count-your-blessings.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Genji",
@@ -5117,6 +5442,26 @@
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-merry-christmas.ogg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Deck the halls",
+          "id": "wrecking-ball-deck-the-halls",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-deck-the-halls.ogg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Ho. Ho. Ho.",
+          "id": "wrecking-ball-ho-ho-ho",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-ho-ho-ho.ogg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
         },
         {
           "heroName": "Hanzo",
@@ -5134,7 +5479,16 @@
           "id": "hanzo-cold-as-ice",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-cold-as-ice.ogg",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Out Cold",
+          "id": "hanzo-out-cold",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-out-cold.ogg",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -5144,7 +5498,16 @@
           "id": "junkrat-go-on-give-it-a-shake",
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-go-on-give-it-a-shake.ogg",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Happy Holidays",
+          "id": "junkrat-happy-holidays",
+          "quality": "common",
+          "url": "/heroes/junkrat/voicelines/junkrat-happy-holidays.ogg",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -5163,8 +5526,7 @@
           "id": "lucio-climbing-the-charts",
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-climbing-the-charts.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Lúcio",
@@ -5191,8 +5553,7 @@
           "id": "mccree-youve-been-snowed-in",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-youve-been-snowed-in.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Mei",
@@ -5201,8 +5562,7 @@
           "id": "mei-dont-you-love-surprises",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-dont-you-love-surprises.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Mei",
@@ -5214,14 +5574,23 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Snowball Fight!",
+          "id": "mei-snowball-fight",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-snowball-fight.ogg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Mercy",
           "hero": "mercy",
           "name": "I could use the time off",
           "id": "mercy-i-could-use-the-time-off",
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-i-could-use-the-time-off.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Mercy",
@@ -5239,8 +5608,7 @@
           "id": "moira-absolute-zero",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-absolute-zero.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Moira",
@@ -5249,7 +5617,16 @@
           "id": "moira-happy-christmas",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-happy-christmas.ogg",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "The Gift of Knowledge",
+          "id": "moira-the-gift-of-knowledge",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-the-gift-of-knowledge.ogg",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -5259,8 +5636,7 @@
           "id": "orisa-annual-performance-analysis",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-annual-performance-analysis.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Orisa",
@@ -5269,8 +5645,7 @@
           "id": "orisa-cant-i-guide-your-way-tonight",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-cant-i-guide-your-way-tonight.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Pharah",
@@ -5279,7 +5654,16 @@
           "id": "pharah-at-ease",
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-at-ease.ogg",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Cool It",
+          "id": "pharah-cool-it",
+          "quality": "common",
+          "url": "/heroes/pharah/voicelines/pharah-cool-it.ogg",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -5307,8 +5691,7 @@
           "id": "reaper-youre-on-ice",
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-youre-on-ice.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Reinhardt",
@@ -5317,8 +5700,7 @@
           "id": "reinhardt-forgive-and-forget",
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-forgive-and-forget.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Reinhardt",
@@ -5345,8 +5727,7 @@
           "id": "roadhog-i-have-your-present-right-here",
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-i-have-your-present-right-here.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Soldier: 76",
@@ -5355,8 +5736,7 @@
           "id": "soldier-76-merry-christmas",
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-merry-christmas.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Soldier: 76",
@@ -5374,8 +5754,7 @@
           "id": "sombra-i-can-be-nice",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-i-can-be-nice.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Sombra",
@@ -5387,14 +5766,23 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Merry Christmas",
+          "id": "sombra-merry-christmas",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-merry-christmas.ogg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Symmetra",
           "hero": "symmetra",
           "name": "Expecting a miracle?",
           "id": "symmetra-expecting-a-miracle",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-expecting-a-miracle.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Symmetra",
@@ -5412,8 +5800,7 @@
           "id": "torbjorn-expert-craftsmanship",
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-expert-craftsmanship.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Torbjörn",
@@ -5431,8 +5818,7 @@
           "id": "tracer-ho-ho-ho",
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-ho-ho-ho.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Tracer",
@@ -5455,11 +5841,30 @@
         {
           "heroName": "Widowmaker",
           "hero": "widowmaker",
+          "name": "Happy Holidays",
+          "id": "widowmaker-happy-holidays",
+          "quality": "common",
+          "url": "/heroes/widowmaker/voicelines/widowmaker-happy-holidays.ogg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
           "name": "Merry Christmas",
           "id": "widowmaker-merry-christmas",
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-merry-christmas.ogg",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "I'm a Party Animal",
+          "id": "winston-im-a-party-animal",
+          "quality": "common",
+          "url": "/heroes/winston/voicelines/winston-im-a-party-animal.ogg",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -5478,8 +5883,7 @@
           "id": "winston-party-mode-engaged",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-party-mode-engaged.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Zarya",
@@ -5488,8 +5892,7 @@
           "id": "zarya-cool-it",
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-cool-it.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Zarya",
@@ -5501,14 +5904,23 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Is It Cold in Here?",
+          "id": "zarya-is-it-cold-in-here",
+          "quality": "common",
+          "url": "/heroes/zarya/voicelines/zarya-is-it-cold-in-here.ogg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
           "name": "Joy to the world",
           "id": "zenyatta-joy-to-the-world",
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-joy-to-the-world.ogg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Zenyatta",
@@ -5518,6 +5930,16 @@
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-no-snowflake.ogg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Snowball Fight?",
+          "id": "zenyatta-snowball-fight",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-snowball-fight.ogg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
         }
       ],
       "poses": [
@@ -5538,7 +5960,16 @@
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/bastion-toast.jpg",
           "standardItem": true,
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Toast",
+          "id": "brigitte-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/brigitte-toast.jpg",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -5551,13 +5982,32 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Toast",
+          "id": "doomfist-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/doomfist-toast.jpg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Genji",
           "hero": "genji",
           "name": "Toast",
           "id": "genji-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/genji-toast.jpg",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Toast",
+          "id": "junkrat-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/junkrat-toast.jpg",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -5576,7 +6026,16 @@
           "id": "mercy-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/mercy-toast.jpg",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Toast",
+          "id": "moira-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/moira-toast.jpg",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -5587,6 +6046,16 @@
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/pharah-toast.jpg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Toast",
+          "id": "reaper-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/reaper-toast.jpg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
         },
         {
           "heroName": "Reinhardt",
@@ -5604,8 +6073,7 @@
           "id": "roadhog-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/roadhog-toast.jpg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Soldier: 76",
@@ -5624,8 +6092,7 @@
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/sombra-toast.jpg",
           "standardItem": true,
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Torbjörn",
@@ -5637,14 +6104,23 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Toast",
+          "id": "tracer-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/tracer-toast.jpg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
           "heroName": "Widowmaker",
           "hero": "widowmaker",
           "name": "Toast",
           "id": "widowmaker-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/widowmaker-toast.jpg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Zarya",
@@ -5653,8 +6129,7 @@
           "id": "zarya-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/zarya-toast.jpg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Zenyatta",
@@ -5663,123 +6138,20 @@
           "id": "zenyatta-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/zenyatta-toast.jpg",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
-        }
-      ],
-      "skins": [
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Andes",
-          "id": "lucio-andes",
-          "quality": "epic",
-          "url": "/updates/WINTER_WONDERLAND/skins/lucio-andes.jpg",
-          "description": "When the weather gets cold, Lúcio heads to the Andes to hit the slopes.",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Scrooge",
-          "id": "mccree-scrooge",
-          "quality": "epic",
-          "url": "/updates/WINTER_WONDERLAND/skins/mccree-scrooge.jpg",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Frostbite",
-          "id": "pharah-frostbite",
-          "quality": "epic",
-          "url": "/updates/WINTER_WONDERLAND/skins/pharah-frostbite.jpg",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "Shiver",
-          "id": "reaper-shiver",
-          "quality": "epic",
-          "url": "/updates/WINTER_WONDERLAND/skins/reaper-shiver.jpg",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "Rudolph",
-          "id": "roadhog-rudolph",
-          "quality": "epic",
-          "url": "/updates/WINTER_WONDERLAND/skins/roadhog-rudolph.jpg",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Sombra",
-          "hero": "sombra",
-          "name": "Peppermint",
-          "id": "sombra-peppermint",
-          "quality": "epic",
-          "url": "/updates/WINTER_WONDERLAND/skins/sombra-peppermint.jpg",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Frosted",
-          "id": "zarya-frosted",
-          "quality": "epic",
-          "url": "/updates/WINTER_WONDERLAND/skins/zarya-frosted.jpg",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Mei-rry",
-          "id": "mei-meirry",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skins/mei-meirry.jpg",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Santaclad",
-          "id": "torbjorn-santaclad",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skins/torbjorn-santaclad.jpg",
-          "description": "At the gentle urging of his wife, Ingrid, Torbjörn dresses up as Santa for the Lindholm holiday celebrations.",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Jingle",
-          "id": "tracer-jingle",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skins/tracer-jingle.jpg",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "Yeti",
-          "id": "winston-yeti",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skins/winston-yeti.jpg",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Nutcracker",
-          "id": "zenyatta-nutcracker",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skins/zenyatta-nutcracker.jpg",
-          "group": "WINTER_WONDERLAND_2016"
+          "group": "WINTER_WONDERLAND_2017"
         }
       ],
       "emotes": [
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Paper Stars",
+          "id": "genji-paper-stars",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/emotes/genji-paper-stars.webm",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
         {
           "heroName": "McCree",
           "hero": "mccree",
@@ -5806,7 +6178,16 @@
           "id": "orisa-puppy",
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/emotes/orisa-puppy.webm",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "My Babies",
+          "id": "torbjorn-my-babies",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/emotes/torbjorn-my-babies.webm",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         },
         {
@@ -5826,11 +6207,82 @@
           "id": "zenyatta-snowflake",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/emotes/zenyatta-snowflake.webm",
-          "group": "WINTER_WONDERLAND_2017",
+          "group": "WINTER_WONDERLAND_2017"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Krampus",
+          "id": "junkrat-krampus",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/junkrat-krampus.jpg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Snow Fox",
+          "id": "lucio-snow-fox",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/lucio-snow-fox.jpg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Sugar Plum Fairy",
+          "id": "mercy-sugar-plum-fairy",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/mercy-sugar-plum-fairy.jpg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Figure Skater",
+          "id": "symmetra-figure-skater",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/symmetra-figure-skater.jpg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Biathlon",
+          "id": "widowmaker-biathlon",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/widowmaker-biathlon.jpg",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Snowboarder",
+          "id": "zarya-snowboarder",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/zarya-snowboarder.jpg",
+          "group": "WINTER_WONDERLAND_2018",
           "isNew": true
         }
       ],
       "intros": [
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Festive",
+          "id": "wrecking-ball-festive",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/intros/wrecking-ball-festive.webm",
+          "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
         {
           "heroName": "Reinhardt",
           "hero": "reinhardt",
@@ -5838,8 +6290,7 @@
           "id": "reinhardt-snowball-fight",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/intros/reinhardt-snowball-fight.webm",
-          "group": "WINTER_WONDERLAND_2017",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "heroName": "Symmetra",
