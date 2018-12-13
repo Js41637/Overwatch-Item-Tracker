@@ -376,7 +376,7 @@ OWI.directive('lazyLoad', [function() {
   }
 }])
 
-/* OWI.directive("particles", function() {
+OWI.directive("particles", function() {
   return {
     restrict: 'E',
     scope: {},
@@ -437,4 +437,4 @@ OWI.directive('lazyLoad', [function() {
       })
     }
   }
-}) */
+})
