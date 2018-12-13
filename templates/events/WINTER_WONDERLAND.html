@@ -6,6 +6,27 @@
 </div>
 <div class="col-md-8 col-padding">
   <legendary-skins></legendary-skins>
+  <div id="skins" class="section">
+    <section-header select-modal="selectModal" name="Other Winter Wonderland Skins" type="skins" totals="totals.skins"></section-header>
+    <div class="section-content items flex-4">
+      <div
+        ng-repeat="item in ::data.items.skins track by $index"
+        ng-init="type = 'skins'"
+        class="item"
+        uib-tooltip-template="'imagePreviewTemplate.html'"
+        tooltip-popup-delay="225"
+        tooltip-class="img-preview"
+        tooltip-enable="{{::canPlayType(type)}}"
+        tooltip-placement="auto">
+        <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
+        <label for="{{type + item.id + $index}}">
+          <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
+          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'WINTER_WONDERLAND' }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
+        </label>
+      </div>
+    </div>
+  </div>
   <div id="voicelines" class="section">
     <section-header select-modal="selectModal" name="Voicelines" type="voicelines" totals="totals.voicelines"></section-header>
     <div class="section-content items flex-3">
@@ -56,27 +77,6 @@
 </div>
 
 <div class="col-md-4 col-padding">
-  <div id="skins" class="section">
-    <section-header select-modal="selectModal" name="Winter Wonderland 2016 Skins" type="skins" totals="totals.skins"></section-header>
-    <div class="section-content items flex-2">
-      <div
-        ng-repeat="item in ::data.items.skins track by $index"
-        ng-init="type = 'skins'"
-        class="item"
-        uib-tooltip-template="'imagePreviewTemplate.html'"
-        tooltip-popup-delay="225"
-        tooltip-class="img-preview"
-        tooltip-enable="{{::canPlayType(type)}}"
-        tooltip-placement="auto">
-        <input type="checkbox" id="{{type + item.id + $index}}" ng-model="checked[item.hero][type][item.id]" ng-change="onSelect(item, type)">
-        <label for="{{type + item.id + $index}}">
-          <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
-          <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'WINTER_WONDERLAND' }}</small></h3>
-          <span ng-if="item.isNew" class="new">NEW</span>
-        </label>
-      </div>
-    </div>
-  </div>
   <div id="victoryposes" class="section">
     <section-header select-modal="selectModal" name="Victory Poses" type="poses" totals="totals.poses"></section-header>
     <div class="section-content items flex-2">
