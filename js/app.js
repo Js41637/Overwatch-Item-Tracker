@@ -245,7 +245,7 @@ OWI.run(["$transitions", "$state", "DataService", function($transitions, $state,
   $transitions.onError({}, function(error) {
     if (error.error().detail === 'INVALID_EVENT') {
       $state.go('events', { id: Data.currentEvent });
-    } else if (error.error().type !== RejectType.IGNORED) {
+    } else if (error.error().type !== 5) {
       $state.go('home');
     }
   })
