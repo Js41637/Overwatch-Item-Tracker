@@ -50,7 +50,8 @@ const data = {
       'anduin',
       'jaina',
       'sylvanas',
-      'varok'
+      'varok',
+      'bastet'
     ],
     icons: [
       // Diablo
