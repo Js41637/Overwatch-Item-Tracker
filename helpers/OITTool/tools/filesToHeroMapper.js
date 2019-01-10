@@ -9,8 +9,8 @@ const weirdHeroes = {
   uprising: 'uprising-bots'
 };
 
-const fileRx = /^[\w-.]+\.(webm|jpg|png|dds|ogg)+$/
-const renameRx = /^[\w- .]+\.(webm|jpg|png|dds|ogg)+$/
+const fileRx = /^[\w-.]+\.(webm|jpg|png|dds|ogg)+$/i
+const renameRx = /^[\w- .]+\.(webm|jpg|png|dds|ogg)+$/i
 
 const mapFilesToHeroes = (args, internal) => {
   return new Promise((resolve, reject) => {
@@ -43,7 +43,7 @@ const mapFilesToHeroes = (args, internal) => {
 
             if (rename) {
               let fileType = file.match(/\.(\w+)$/i)[1]
-              newFile = `${getCleanID(newFile)}.${fileType}`
+              newFile = `${getCleanID(newFile)}.${fileType.toLowerCase()}`
             }
 
             fs.rename(`${dir}${file}`, `${dir}${hero}${type}/${newFile}`, r);

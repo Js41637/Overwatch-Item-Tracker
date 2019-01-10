@@ -1,5 +1,7 @@
 const { EVENTS } = require('./EVENTDATA');
 
+const OWLTEAMS = ['atlanta-reign', 'boston-uprising', 'chengdu-hunters', 'dallas-fuel', 'florida-mayhem', 'guangzhou-charge', 'hangzhou-spark', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'los-angeles-valiant', 'new-york-excelsior', 'overwatch-league', 'paris-eternal', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons', 'toronto-defiant', 'vancouver-titans', 'washington-justice']
+const OWLTEAMLOGOS = OWLTEAMS.map(team => team === 'overwatch-league' ? team : `${team}-logo`)
 // All class items have no attributes provided so we need to manually add them
 // ids correlate to item ids.
 const data = {
@@ -15,7 +17,11 @@ const data = {
     "sprays/saurfang": "varok",
     "sprays/watchparty-gibraltar": "watchpoint-gibraltar",
     "icons/2018-pacific-allstars": "pacific-allstars-2018",
-    "icons/2018-atlantic-allstars": "atlantic-allstars-2018"
+    "icons/2018-atlantic-allstars": "atlantic-allstars-2018",
+    "icons/competitive-ctf-competitor-2018": "competitive-ctf-competitor",
+    "icons/competitive-ctf-hero-2018": "competitive-ctf-hero",
+    "sprays/competitive-ctf-competitor-2018": "competitive-ctf-competitor",
+    "sprays/competitive-ctf-hero-2018": "competitive-ctf-hero"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
@@ -24,8 +30,8 @@ const data = {
     '>_\\<': ">_<"
   },
   defaultItems: {
-    sprays: ['logo', 'you-are-not-prepared', 'da-de-los-muertos', 'boston-uprising-logo', 'dallas-fuel-logo', 'florida-mayhem-logo', 'houston-outlaws-logo', 'london-spitfire-logo', 'los-angeles-gladiators-logo', 'los-angeles-valiant-logo', 'new-york-excelsior-logo', 'overwatch-league', 'philadelphia-fusion-logo', 'san-francisco-shock-logo', 'seoul-dynasty-logo', 'shanghai-dragons-logo'],
-    icons: ['overwatch-light', 'overwatch-dark', 'you-are-not-prepared', 'boston-uprising', 'dallas-fuel', 'florida-mayhem', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'los-angeles-valiant', 'new-york-excelsior', 'overwatch-league', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons'],
+    sprays: ['logo', 'you-are-not-prepared', 'da-de-los-muertos', ...OWLTEAMLOGOS],
+    icons: ['overwatch-light', 'overwatch-dark', 'you-are-not-prepared', ...OWLTEAMS],
   },
   hiddenItems: { // Hidden all classItems
     sprays: [],
@@ -74,8 +80,8 @@ const data = {
       icons: ['nexus']
     },
     "overwatch league": {
-      icons: ['boston-uprising', 'dallas-fuel', 'florida-mayhem', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'los-angeles-valiant', 'new-york-excelsior', 'overwatch-league', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons', 'inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018'],
-      sprays: ['boston-uprising-logo', 'dallas-fuel-logo', 'florida-mayhem-logo', 'houston-outlaws-logo', 'london-spitfire-logo', 'los-angeles-gladiators-logo', 'los-angeles-valiant-logo', 'new-york-excelsior-logo', 'overwatch-league', 'philadelphia-fusion-logo', 'san-francisco-shock-logo', 'seoul-dynasty-logo', 'shanghai-dragons-logo', 'inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar']
+      icons: [...OWLTEAMS, 'inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018'],
+      sprays: [...OWLTEAMLOGOS, 'inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar']
     }
   },
   achievementSprays: [
