@@ -80,9 +80,11 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
     },
     getHeroOrEventName: function(type, id) {
       return service.waitForInitialization().then(function() {
+        var heroOrEvent = service[type][id] || {}
+
         return {
-          name: service[type][id].name,
-          dates: service[type][id].dates,
+          name: heroOrEvent.name,
+          dates: heroOrEvent.dates,
           type: type,
           id: id
         };

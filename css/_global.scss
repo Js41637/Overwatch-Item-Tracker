@@ -1095,7 +1095,6 @@ strong {
   font-size: 8px;
   font-family: Futura, century gothic, arial, sans-serif;
   text-transform: uppercase;
-
 }
 
 [achievement="true"] .new {
@@ -1106,138 +1105,159 @@ strong {
  * TOOLTIPS
  **/
 
-.section .tooltip {
-  font-size: 15px;
-  font-family: Futura, century gothic, arial, sans-serif;
-}
-
-.section .tooltip.in {
-  opacity: 1;
-}
-
-.section .tooltip.fade {
-  -webkit-transition: opacity 125ms linear;
-  -o-transition: opacity 125ms linear;
-  transition: opacity 125ms linear;
-}
-
-.section .tooltip .tooltip-inner {
-  max-width: none;
-  padding: 4px;
-}
-
-
-/* All Skin and poses, icons and MOST sprays are 1:1 */
-
-#icons .tooltip .preview.img {
-  width: 256px;
-  height: 256px;
-}
-
-#sprays .tooltip .preview.img {
-  width: 380px;
-  height: 380px;
-  background-image: url("../resources/portrait-bg.jpg");
-  background-size: cover;
-}
-
-#sprays .tooltip .preview.img.two {
-  display: flex;
-  width: 420px;
-  height: 420px;
-}
-
-#sprays .tooltip .preview.img.two .i:nth-of-type(2) {
-  background-size: 120%;
-}
-
-#sprays .tooltip .preview.img.two .i:nth-of-type(2) {
-  width: 60%;
-  background-size: 170%;
-}
-
-.section .tooltip .preview.img {
-  width: 450px;
-  height: 450px;
-  position: relative;
-}
-
-.section .tooltip .preview.img .i {
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 3px;
-}
-
-.section .tooltip .preview.img .description {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  line-height: 1.2;
-  padding: 3px 4px;
-  text-shadow: 1px 1px 1px black;
-  font-size: 14px;
-}
-
-.section .tooltip .preview.video {
-  position: relative;
-}
-
-
-/* Highlight Intro videos are 16:9 */
-
-#intros .tooltip .preview.video {
-  width: 640px;
-  height: 360px;
-}
-
-
-/* Emote videos should be 1:1 */
-
-#emotes .tooltip .preview.video {
-  width: 450px;
-  height: 450px;
-}
-
-.section .tooltip .preview.video video {
-  height: 100%;
-  width: 100%;
-}
-
-
-.section .tooltip.img-preview .tooltip-arrow {
-  border-top-color: rgb(240, 240, 240);
-  border-bottom-color: rgb(240, 240, 240);
-}
-
-.tooltip.bottom .tooltip-arrow, .tooltip.bottom-left .tooltip-arrow, .tooltip.bottom-right .tooltip-arrow {
-  border-width: 0 8px 8px;
-}
-
-.tooltip.top .tooltip-arrow {
-  border-width: 8px 8px 0;
-  margin-left: -8px;
-}
-
-.tooltip.bottom {
-  margin-top: 0px;
-  padding: 8px 0;
-}
-
-.tooltip {
-  pointer-events: none;
-}
-
-.tooltip.top {
-  padding: 8px 0;
-}
-
 .section .tooltip.img-preview .tooltip-inner {
   background-color: rgb(240, 240, 240);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  .tooltip {
+    pointer-events: none;
+    font-size: 15px;
+    font-family: Futura, century gothic, arial, sans-serif;
+
+    .tooltip-inner {
+      max-width: none;
+      padding: 4px;
+    }
+
+    .preview {
+      &.img {
+        width: 450px;
+        height: 450px;
+        position: relative;
+
+        .i {
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 3px;
+        }
+
+        .description {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.3);
+          line-height: 1.2;
+          padding: 3px 4px;
+          text-shadow: 1px 1px 1px black;
+          font-size: 14px;
+        }
+      }
+
+      &.video {
+        position: relative;
+
+        video {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    &.img-preview {
+      .tooltip-arrow {
+        border-top-color: rgb(240, 240, 240);
+        border-bottom-color: rgb(240, 240, 240);
+      }
+    }
+
+    &.fade {
+      -webkit-transition: opacity 125ms linear;
+      -o-transition: opacity 125ms linear;
+      transition: opacity 125ms linear;
+    }
+
+    &.in {
+      opacity: 1;
+    }
+
+    &.bottom,
+    &.bottom-left,
+    &.bottom-right .tooltip-arrow {
+      border-width: 0 8px 8px;
+    }
+
+    &.top {
+      padding: 8px 0;
+
+      .tooltip-arrow {
+        border-width: 8px 8px 0;
+        margin-left: -8px;
+      }
+    }
+
+    &.bottom {
+      margin-top: 0;
+      padding: 8px 0;
+    }
+  }
+}
+
+/* All Skin, poses, icons, weapons, and MOST sprays are 1:1 */
+#icons {
+  .tooltip {
+    .preview.img {
+      width: 256px;
+      height: 256px;
+    }
+  }
+}
+
+#weapons {
+  .tooltip {
+    .preview.img {
+      width: 450px;
+      height: 450px;
+      background-image: url("../resources/portrait-bg.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+#sprays {
+  .tooltip {
+    .preview.img {
+      width: 380px;
+      height: 380px;
+      background-image: url("../resources/portrait-bg.jpg");
+      background-size: cover;
+
+      &.two {
+        display: flex;
+        width: 420px;
+        height: 420px;
+
+        .i:nth-of-type(2) {
+          width: 60%;
+          background-size: 170%;
+        }
+      }
+    }
+  }
+}
+
+/* Highlight Intro videos are 16:9 */
+#intros {
+  .tooltip {
+    .preview.video {
+      width: 640px;
+      height: 360px;
+    }
+  }
+}
+
+/* Emote videos should be 1:1 */
+#emotes {
+  .tooltip {
+    .preview.video {
+      width: 450px;
+      height: 450px;
+    }
+  }
 }
 
 @media screen and (max-width: 1650px) {

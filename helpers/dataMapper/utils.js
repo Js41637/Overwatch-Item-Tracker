@@ -76,6 +76,8 @@ const getPreviewURL = (type, id, hero, event) => {
     url = `/heroes/${hero}/${type}/${id}`
   }
   switch (type) {
+    case 'weapons':
+      return `${url}.png`
     case 'voicelines':
       return `${url}.ogg`
     case 'emotes':

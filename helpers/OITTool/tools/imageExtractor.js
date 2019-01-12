@@ -5,7 +5,7 @@ const { eachLimit } = require('async');
 const { exec } = require('child_process');
 
 var TYPES = {
-  Icon: 'icons',
+  Portrait: 'icons',
   Spray: 'sprays'
 };
 
@@ -13,7 +13,7 @@ const checkDirs = () => {
   fs.stat(`./!toBeConverted`, err => {
     if (err) {
       fs.mkdirSync(`./!toBeConverted`);
-      fs.mkdirSync(`./!toBeConverted/Icon`);
+      fs.mkdirSync(`./!toBeConverted/Portrait`);
       fs.mkdirSync(`./!toBeConverted/Spray`);
     }
   });
@@ -28,10 +28,10 @@ const findImages = hero => {
     const heroID = getCleanID(hero);
 
     getDirectories(`./${base}${hero}`).then(types => {
-      if (!types.includes('Icon') && !types.includes('Spray')) return resolve();
+      if (!types.includes('Portrait') && !types.includes('Spray')) return resolve();
       Promise.all(types.map(type => {
         return new Promise(res => {
-          if (type !== 'Icon' & type !== 'Spray') return res();
+          if (type !== 'Portrait' && type !== 'Spray') return res();
           moveImages(hero, type, heroID).then(res);
         });
       })).then(resolve);

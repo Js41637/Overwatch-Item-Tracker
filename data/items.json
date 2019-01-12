@@ -167,6 +167,14 @@
           "url": "/heroes/all/icons/assassin.png"
         },
         {
+          "name": "Atlanta Reign",
+          "id": "atlanta-reign",
+          "url": "/heroes/all/icons/atlanta-reign.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Aurisa",
           "id": "orisa-aurisa",
           "url": "/heroes/orisa/icons/orisa-aurisa.png",
@@ -262,6 +270,14 @@
           "event": "SUMMER_GAMES",
           "hero": "pharah",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Bastet",
+          "id": "ana-bastet",
+          "url": "/heroes/ana/icons/ana-bastet.png",
+          "description": "Unlocked by participating in Ana's Bastet Challenge",
+          "achievement": "blizzard",
+          "hero": "ana"
         },
         {
           "name": "Bastion",
@@ -502,6 +518,14 @@
           "url": "/heroes/all/icons/cheers.png"
         },
         {
+          "name": "Chengdu Hunters",
+          "id": "chengdu-hunters",
+          "url": "/heroes/all/icons/chengdu-hunters.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Chief Engineer",
           "id": "torbjorn-chief-engineer",
           "url": "/heroes/torbjorn/icons/torbjorn-chief-engineer.png",
@@ -576,7 +600,7 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive 6v6 Elimination"
         },
         {
-          "name": "Competitive CTF Competitor",
+          "name": "Competitive CTF Competitor 2018",
           "id": "competitive-ctf-competitor",
           "url": "/heroes/all/icons/competitive-ctf-competitor.png",
           "achievement": true,
@@ -584,7 +608,7 @@
           "description": "Unlocked by completing competitive Capture The Flag placement matches"
         },
         {
-          "name": "Competitive CTF Hero",
+          "name": "Competitive CTF Hero 2018",
           "id": "competitive-ctf-hero",
           "url": "/heroes/all/icons/competitive-ctf-hero.png",
           "achievement": true,
@@ -1351,6 +1375,14 @@
           "isNew": true
         },
         {
+          "name": "Guangzhou Charge",
+          "id": "guangzhou-charge",
+          "url": "/heroes/all/icons/guangzhou-charge.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Guardian Angel",
           "id": "mercy-guardian-angel",
           "url": "/heroes/mercy/icons/mercy-guardian-angel.png",
@@ -1427,6 +1459,14 @@
           "hero": "moira",
           "group": "SUMMER_GAMES_2018",
           "isNew": true
+        },
+        {
+          "name": "Hangzhou Spark",
+          "id": "hangzhou-spark",
+          "url": "/heroes/all/icons/hangzhou-spark.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Hanzo",
@@ -2146,6 +2186,14 @@
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/icons/paquemari.png",
           "group": "pachi"
+        },
+        {
+          "name": "Paris Eternal",
+          "id": "paris-eternal",
+          "url": "/heroes/all/icons/paris-eternal.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Particle Barrier",
@@ -3080,6 +3128,14 @@
           "hero": "torbjorn"
         },
         {
+          "name": "Toronto Defiant",
+          "id": "toronto-defiant",
+          "url": "/heroes/all/icons/toronto-defiant.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Totally 80's",
           "id": "zarya-totally-80s",
           "url": "/heroes/zarya/icons/zarya-totally-80s.png",
@@ -3149,6 +3205,14 @@
           "group": "pachi"
         },
         {
+          "name": "Vancouver Titans",
+          "id": "vancouver-titans",
+          "url": "/heroes/all/icons/vancouver-titans.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Van Helsing",
           "id": "mccree-van-helsing",
           "url": "/heroes/mccree/icons/mccree-van-helsing.png",
@@ -3202,6 +3266,14 @@
           "id": "pharah-wadjet",
           "url": "/heroes/pharah/icons/pharah-wadjet.png",
           "hero": "pharah"
+        },
+        {
+          "name": "Washington Justice",
+          "id": "washington-justice",
+          "url": "/heroes/all/icons/washington-justice.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Watcher",
@@ -3450,12 +3522,27 @@
           "description": "Unlocked with purchase of World of Warcraft: Battle for Azeroth Collector's Edition or Digital Deluxe Edition"
         },
         {
+          "name": "Atlanta Reign Logo",
+          "id": "atlanta-reign-logo",
+          "url": "/heroes/all/sprays/atlanta-reign-logo.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Barbarian",
           "id": "barbarian",
           "url": "/heroes/all/sprays/barbarian.png",
           "achievement": "blizzard",
           "group": "diablo",
           "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
+        },
+        {
+          "name": "Bastet",
+          "id": "bastet",
+          "url": "/heroes/all/sprays/bastet.png",
+          "achievement": "blizzard",
+          "description": "Unlocked by participating in Ana's Bastet Challenge"
         },
         {
           "name": "Beyond the Moon",
@@ -3483,6 +3570,14 @@
           "id": "caution",
           "url": "/heroes/all/sprays/caution.png",
           "quality": "common"
+        },
+        {
+          "name": "Chengdu Hunters Logo",
+          "id": "chengdu-hunters-logo",
+          "url": "/heroes/all/sprays/chengdu-hunters-logo.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Competitive 3v3 Group Elimination Competitor",
@@ -3517,7 +3612,7 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive 6v6 Elimination"
         },
         {
-          "name": "Competitive CTF Competitor",
+          "name": "Competitive CTF Competitor 2018",
           "id": "competitive-ctf-competitor",
           "url": "/heroes/all/sprays/competitive-ctf-competitor.png",
           "achievement": true,
@@ -3692,6 +3787,22 @@
           "quality": "common"
         },
         {
+          "name": "Guangzhou Charge Logo",
+          "id": "guangzhou-charge-logo",
+          "url": "/heroes/all/sprays/guangzhou-charge-logo.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Hangzhou Spark Logo",
+          "id": "hangzhou-spark-logo",
+          "url": "/heroes/all/sprays/hangzhou-spark-logo.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Houston Outlaws Logo",
           "id": "houston-outlaws-logo",
           "url": "/heroes/all/sprays/houston-outlaws-logo.png",
@@ -3857,6 +3968,14 @@
           "url": "/heroes/all/sprays/pachimari.png",
           "quality": "common",
           "group": "pachi"
+        },
+        {
+          "name": "Paris Eternal Logo",
+          "id": "paris-eternal-logo",
+          "url": "/heroes/all/sprays/paris-eternal-logo.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Philadelphia Fusion Logo",
@@ -4242,6 +4361,22 @@
           "description": "Earn 21 postgame cards in Quick or Competitive Play."
         },
         {
+          "name": "Toronto Defiant Logo",
+          "id": "toronto-defiant-logo",
+          "url": "/heroes/all/sprays/toronto-defiant-logo.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Vancouver Titans Logo",
+          "id": "vancouver-titans-logo",
+          "url": "/heroes/all/sprays/vancouver-titans-logo.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Victory",
           "id": "victory",
           "url": "/heroes/all/sprays/victory.png",
@@ -4253,6 +4388,14 @@
           "id": "vivis-adventure",
           "url": "/heroes/all/sprays/vivis-adventure.png",
           "quality": "common"
+        },
+        {
+          "name": "Washington Justice Logo",
+          "id": "washington-justice-logo",
+          "url": "/heroes/all/sprays/washington-justice-logo.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "Watchparty: Gibraltar",
@@ -4857,6 +5000,14 @@
           "description": "Recently, Ana has operated under the alias of \"Shrike\" and is wanted for espionage, assault, and theft in Egypt."
         },
         {
+          "name": "Bastet",
+          "id": "ana-bastet",
+          "quality": "epic",
+          "url": "/heroes/ana/skins/ana-bastet.jpg",
+          "description": "They say that a masked vigilante named Bastet stalks the streets of Cairo, striking fear into the hearts of the corrupt.",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Ghoul",
           "id": "ana-ghoul",
           "quality": "epic",
@@ -5043,6 +5194,14 @@
           "name": "Wedjat",
           "id": "ana-wedjat",
           "url": "/heroes/ana/icons/ana-wedjat.png",
+          "hero": "ana"
+        },
+        {
+          "name": "Bastet",
+          "id": "ana-bastet",
+          "url": "/heroes/ana/icons/ana-bastet.png",
+          "description": "Unlocked by participating in Ana's Bastet Challenge",
+          "achievement": "blizzard",
           "hero": "ana"
         },
         {
@@ -5253,6 +5412,30 @@
           "url": "/heroes/ana/sprays/ana-pixel.png",
           "achievement": true,
           "description": "Interrupt an enemy ultimate ability with Ana's Sleep Dart in Quick or Competitive Play."
+        },
+        {
+          "name": "Mask",
+          "id": "ana-mask",
+          "quality": "common",
+          "url": "/heroes/ana/sprays/ana-mask.png",
+          "description": "Unlocked by watching participating streams during Ana's Bastet Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "On the Prowl",
+          "id": "ana-on-the-prowl",
+          "quality": "common",
+          "url": "/heroes/ana/sprays/ana-on-the-prowl.png",
+          "description": "Unlocked by watching participating streams during Ana's Bastet Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Protector",
+          "id": "ana-protector",
+          "quality": "common",
+          "url": "/heroes/ana/sprays/ana-protector.png",
+          "description": "Unlocked by watching participating streams during Ana's Bastet Challenge",
+          "achievement": "blizzard"
         },
         {
           "name": "Shooting",
@@ -5545,6 +5728,14 @@
           "url": "/heroes/ana/poses/ana-seated.jpg"
         },
         {
+          "name": "Kneeling",
+          "id": "ana-kneeling",
+          "quality": "rare",
+          "url": "/heroes/ana/poses/ana-kneeling.jpg",
+          "description": "Unlocked by participating in Ana's Bastet Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "R.I.P.",
           "id": "ana-rip",
           "quality": "rare",
@@ -5573,7 +5764,8 @@
         {
           "name": "GOLDEN",
           "id": "ana-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/ana/weapons/ana-golden.png"
         }
       ]
     }
@@ -6074,7 +6266,8 @@
         {
           "name": "GOLDEN",
           "id": "ashe-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/ashe/weapons/ashe-golden.png"
         }
       ]
     }
@@ -6871,7 +7064,8 @@
         {
           "name": "GOLDEN",
           "id": "bastion-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/bastion/weapons/bastion-golden.png"
         }
       ]
     }
@@ -7551,7 +7745,8 @@
         {
           "name": "GOLDEN",
           "id": "brigitte-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/brigitte/weapons/brigitte-golden.png"
         }
       ]
     }
@@ -8429,7 +8624,8 @@
         {
           "name": "GOLDEN",
           "id": "dva-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/dva/weapons/dva-golden.png"
         }
       ]
     }
@@ -9222,7 +9418,8 @@
         {
           "name": "GOLDEN",
           "id": "doomfist-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/doomfist/weapons/doomfist-golden.png"
         }
       ]
     }
@@ -9989,7 +10186,8 @@
         {
           "name": "GOLDEN",
           "id": "genji-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/genji/weapons/genji-golden.png"
         }
       ]
     }
@@ -10750,7 +10948,8 @@
         {
           "name": "GOLDEN",
           "id": "hanzo-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/hanzo/weapons/hanzo-golden.png"
         }
       ]
     }
@@ -11568,7 +11767,8 @@
         {
           "name": "GOLDEN",
           "id": "junkrat-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/junkrat/weapons/junkrat-golden.png"
         }
       ]
     }
@@ -12377,7 +12577,8 @@
         {
           "name": "GOLDEN",
           "id": "lucio-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/lucio/weapons/lucio-golden.png"
         }
       ]
     }
@@ -13193,7 +13394,8 @@
         {
           "name": "GOLDEN",
           "id": "mccree-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/mccree/weapons/mccree-golden.png"
         }
       ]
     }
@@ -14007,7 +14209,8 @@
         {
           "name": "GOLDEN",
           "id": "mei-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/mei/weapons/mei-golden.png"
         }
       ]
     }
@@ -14866,7 +15069,8 @@
         {
           "name": "GOLDEN",
           "id": "mercy-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/mercy/weapons/mercy-golden.png"
         }
       ]
     }
@@ -15648,7 +15852,8 @@
         {
           "name": "GOLDEN",
           "id": "moira-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/moira/weapons/moira-golden.png"
         }
       ]
     }
@@ -16383,7 +16588,8 @@
         {
           "name": "GOLDEN",
           "id": "orisa-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/orisa/weapons/orisa-golden.png"
         }
       ]
     }
@@ -17163,7 +17369,8 @@
         {
           "name": "GOLDEN",
           "id": "pharah-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/pharah/weapons/pharah-golden.png"
         }
       ]
     }
@@ -17953,7 +18160,8 @@
         {
           "name": "GOLDEN",
           "id": "reaper-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/reaper/weapons/reaper-golden.png"
         }
       ]
     }
@@ -18731,7 +18939,8 @@
         {
           "name": "GOLDEN",
           "id": "reinhardt-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/reinhardt/weapons/reinhardt-golden.png"
         }
       ]
     }
@@ -19525,7 +19734,8 @@
         {
           "name": "GOLDEN",
           "id": "roadhog-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/roadhog/weapons/roadhog-golden.png"
         }
       ]
     }
@@ -19978,6 +20188,14 @@
           "description": "Get 2 killing blows with a single use of Soldier: 76's Helix Rockets in Quick or Competitive Play."
         },
         {
+          "name": "Jack and Vincent",
+          "id": "soldier-76-jack-and-vincent",
+          "quality": "common",
+          "url": "/heroes/soldier-76/sprays/soldier-76-jack-and-vincent.png",
+          "description": "Unlocked by watching participating streams during Ana's Bastet Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Golf",
           "id": "soldier-76-golf",
           "quality": "common",
@@ -20305,7 +20523,8 @@
         {
           "name": "GOLDEN",
           "id": "soldier-76-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/soldier-76/weapons/soldier-76-golden.png"
         }
       ]
     }
@@ -21121,7 +21340,8 @@
         {
           "name": "GOLDEN",
           "id": "sombra-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/sombra/weapons/sombra-golden.png"
         }
       ]
     }
@@ -21903,7 +22123,8 @@
         {
           "name": "GOLDEN",
           "id": "symmetra-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/symmetra/weapons/symmetra-golden.png"
         }
       ]
     }
@@ -22706,7 +22927,8 @@
         {
           "name": "GOLDEN",
           "id": "torbjorn-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/torbjorn/weapons/torbjorn-golden.png"
         }
       ]
     }
@@ -23539,7 +23761,8 @@
         {
           "name": "GOLDEN",
           "id": "tracer-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/tracer/weapons/tracer-golden.png"
         }
       ]
     }
@@ -24338,7 +24561,8 @@
         {
           "name": "GOLDEN",
           "id": "widowmaker-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/widowmaker/weapons/widowmaker-golden.png"
         }
       ]
     }
@@ -25137,7 +25361,8 @@
         {
           "name": "GOLDEN",
           "id": "winston-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/winston/weapons/winston-golden.png"
         }
       ]
     }
@@ -25717,7 +25942,8 @@
         {
           "name": "GOLDEN",
           "id": "wrecking-ball-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/wrecking-ball/weapons/wrecking-ball-golden.png"
         }
       ]
     }
@@ -26526,7 +26752,8 @@
         {
           "name": "GOLDEN",
           "id": "zarya-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/zarya/weapons/zarya-golden.png"
         }
       ]
     }
@@ -27311,7 +27538,8 @@
         {
           "name": "GOLDEN",
           "id": "zenyatta-golden",
-          "quality": "golden"
+          "quality": "golden",
+          "url": "/heroes/zenyatta/weapons/zenyatta-golden.png"
         }
       ]
     }

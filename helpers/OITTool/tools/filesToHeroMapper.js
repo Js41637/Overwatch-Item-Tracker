@@ -2,15 +2,15 @@ const fs = require('fs');
 const HERODATA = require('../../dataMapper/HERODATA.js');
 const { checkDirectorys, getDirectories, getCleanID } = require('./utils');
 
-const validTypes = ['emotes', 'intros', 'icons', 'poses', 'sprays', 'skins', 'skinsEpic', 'skinsLegendary', 'voicelines', 'owlskins', 'none'];
+const validTypes = ['emotes', 'intros', 'icons', 'poses', 'sprays', 'skins', 'skinsEpic', 'skinsLegendary', 'voicelines', 'none', 'weapons'];
 const weirdHeroes = {
   halloween: 'halloween-bots',
   training: 'training-bot',
   uprising: 'uprising-bots'
 };
 
-const fileRx = /^[\w-.]+\.(webm|jpg|png|dds|ogg)+$/
-const renameRx = /^[\w- .]+\.(webm|jpg|png|dds|ogg)+$/
+const fileRx = /^[\w-.]+\.(webm|jpg|png|dds|ogg)+$/i
+const renameRx = /^[\w- .]+\.(webm|jpg|png|dds|ogg)+$/i
 
 const mapFilesToHeroes = (args, internal) => {
   return new Promise((resolve, reject) => {
@@ -43,7 +43,7 @@ const mapFilesToHeroes = (args, internal) => {
 
             if (rename) {
               let fileType = file.match(/\.(\w+)$/i)[1]
-              newFile = `${getCleanID(newFile)}.${fileType}`
+              newFile = `${getCleanID(newFile)}.${fileType.toLowerCase()}`
             }
 
             fs.rename(`${dir}${file}`, `${dir}${hero}${type}/${newFile}`, r);
