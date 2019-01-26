@@ -113,9 +113,13 @@ const EVENTTIMES = {
     start: '1544547600000',
     end: '1546513200000'
   },
-  [EVENTS.LUNAR]: {
+  [EVENTS.LUNAR18]: {
     start: '1518112800000',
     end: '1520330400000'
+  },
+  [EVENTS.LUNAR]: {
+    start: '1548349200000',
+    end: '1550574000000'
   },
 };
 
