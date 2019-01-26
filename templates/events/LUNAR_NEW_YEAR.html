@@ -22,6 +22,7 @@
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
           <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'LUNAR_NEW_YEAR' }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>
@@ -47,6 +48,7 @@
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
           <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'LUNAR_NEW_YEAR' }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>
@@ -55,7 +57,7 @@
 
 <div class="col-md-4 col-padding">
   <div id="skins" class="section">
-    <section-header select-modal="selectModal" name="Lunar New Year 2017 Skins" type="skins" totals="totals.skins"></section-header>
+    <section-header select-modal="selectModal" name="Other Lunar New Year Skins" type="skins" totals="totals.skins"></section-header>
     <div class="section-content items flex-2">
       <div
         ng-repeat="item in ::data.items.skins track by $index"
@@ -70,6 +72,7 @@
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
           <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'LUNAR_NEW_YEAR' }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>
@@ -90,6 +93,7 @@
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
           <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'LUNAR_NEW_YEAR' }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>
@@ -110,6 +114,7 @@
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
           <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'LUNAR_NEW_YEAR' }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>
@@ -130,6 +135,7 @@
         <label for="{{type + item.id + $index}}">
           <h4 ng-if="::item.heroName">{{::item.heroName}}</h4>
           <h3 class="{{::item.quality}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'LUNAR_NEW_YEAR' }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>
@@ -150,6 +156,7 @@
         <label for="{{type + item.id + $index}}">
           <h4>{{::item.heroName || 'All'}}</h4>
           <h3 class="{{::item.quality || 'common'}}">{{::item.name}} <small class="color-cost">{{ ::item | itemPrice:type:'LUNAR_NEW_YEAR' }}</small></h3>
+          <span ng-if="item.isNew" class="new">NEW</span>
         </label>
       </div>
     </div>

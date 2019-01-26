@@ -10,7 +10,7 @@ const weirdHeroes = {
 };
 
 const fileRx = /^[\w-.]+\.(webm|jpg|png|dds|ogg)+$/i
-const renameRx = /^[\w- .]+\.(webm|jpg|png|dds|ogg)+$/i
+const renameRx = /.+\.(webm|jpg|png|dds|ogg)+$/i
 
 const mapFilesToHeroes = (args, internal) => {
   return new Promise((resolve, reject) => {
