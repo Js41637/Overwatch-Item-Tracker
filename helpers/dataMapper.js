@@ -576,7 +576,7 @@ _.forEach(heroes, hero => _.forEach(hero.items, (items, type) => {
     (a => a.standardItem && a.event ? 1 : a.standardItem ? 0 : 1), // Standard items at top (if they're not in an event)
     (b => qualityOrder[b.quality]), // sort by quality. rare, epic, legendary
     (c => !c.achievement && !c.event ? 0 : 1), // non achievement/event items on top
-    (d => d.achievement ? 0 : 1), // achievement items above event items
+    (d => d.achievement ? 1 : 0), // achievement items below event items
     (e => _.isString(e.achievement)), // Put special achievements below normal achievments (cute/pixel)
     (f => EVENTORDER[EVENTORDER[f.group] ? f.group : f.event]), // sort events by event order
     (g => g.name.toLowerCase()) // everything in their respective groups is sorted by name

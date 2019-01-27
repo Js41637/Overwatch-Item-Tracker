@@ -6317,8 +6317,8 @@
     "name": "Lunar New Year",
     "id": "LUNAR_NEW_YEAR",
     "dates": {
-      "start": "1518112800000",
-      "end": "1520330400000"
+      "start": "1548349200000",
+      "end": "1550574000000"
     },
     "items": {
       "skins": [
@@ -6341,6 +6341,16 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "General",
+          "id": "brigitte-general",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/brigitte-general.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Junkrat",
           "hero": "junkrat",
           "name": "Firework",
@@ -6357,6 +6367,16 @@
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/skins/mercy-fortune.jpg",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Sanye",
+          "id": "orisa-sanye",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/orisa-sanye.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
         },
         {
           "heroName": "Symmetra",
@@ -6386,6 +6406,24 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Baihu",
+          "id": "genji-baihu",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/genji-baihu.jpg",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Magistrate",
+          "id": "mccree-magistrate",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/mccree-magistrate.jpg",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
           "heroName": "Mei",
           "hero": "mei",
           "name": "Chang'e",
@@ -6402,6 +6440,24 @@
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skins/mei-luna.jpg",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Zhuque",
+          "id": "mercy-zhuque",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/mercy-zhuque.jpg",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Qinglong",
+          "id": "pharah-qinglong",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/pharah-qinglong.jpg",
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Reinhardt",
@@ -6422,6 +6478,15 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Black Lily",
+          "id": "widowmaker-black-lily",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/widowmaker-black-lily.jpg",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
           "heroName": "Winston",
           "hero": "winston",
           "name": "Wukong",
@@ -6431,6 +6496,15 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Xuanwu",
+          "id": "zarya-xuanwu",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/zarya-xuanwu.jpg",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
           "name": "Sanzang",
@@ -6438,6 +6512,73 @@
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skins/zenyatta-sanzang.jpg",
           "group": "LUNAR_NEW_YEAR_2017"
+        }
+      ],
+      "emotes": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Yut Nori",
+          "id": "ana-yut-nori",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/ana-yut-nori.webm",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Bow",
+          "id": "dva-bow",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/dva-bow.webm",
+          "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Crushing",
+          "id": "doomfist-crushing",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/doomfist-crushing.webm",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Dud?",
+          "id": "junkrat-dud",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/junkrat-dud.webm",
+          "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "So Excited",
+          "id": "mei-so-excited",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/mei-so-excited.webm",
+          "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Secret Friend",
+          "id": "roadhog-secret-friend",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/roadhog-secret-friend.webm",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Rattle Drum",
+          "id": "soldier-76-rattle-drum",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/soldier-76-rattle-drum.webm",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -6453,6 +6594,18 @@
           "secondUrl": "/heroes/ana/sprays/ana-dragon-dance.png"
         },
         {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Red Envelopes",
+          "id": "ashe-red-envelopes",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-red-envelopes.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true,
+          "secondId": "ashe-dragon-dance",
+          "secondUrl": "/heroes/ashe/sprays/ashe-dragon-dance.png"
+        },
+        {
           "heroName": "Bastion",
           "hero": "bastion",
           "name": "Bast-yum",
@@ -6462,6 +6615,18 @@
           "group": "LUNAR_NEW_YEAR_2017",
           "secondId": "bastion-dragon-dance",
           "secondUrl": "/heroes/bastion/sprays/bastion-dragon-dance.png"
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Feast",
+          "id": "brigitte-feast",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-feast.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true,
+          "secondId": "brigitte-dragon-dance",
+          "secondUrl": "/heroes/brigitte/sprays/brigitte-dragon-dance.png"
         },
         {
           "heroName": "D.Va",
@@ -6482,7 +6647,6 @@
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-lionfist.png",
           "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true,
           "secondId": "doomfist-dragon-dance",
           "secondUrl": "/heroes/doomfist/sprays/doomfist-dragon-dance.png"
         },
@@ -6496,6 +6660,18 @@
           "group": "LUNAR_NEW_YEAR_2017",
           "secondId": "genji-dragon-dance",
           "secondUrl": "/heroes/genji/sprays/genji-dragon-dance.png"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Snacks",
+          "id": "wrecking-ball-snacks",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-snacks.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true,
+          "secondId": "wrecking-ball-dragon-dance",
+          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png"
         },
         {
           "heroName": "Hanzo",
@@ -6571,7 +6747,6 @@
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-dog-person.png",
           "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true,
           "secondId": "moira-dragon-dance",
           "secondUrl": "/heroes/moira/sprays/moira-dragon-dance.png"
         },
@@ -6583,7 +6758,6 @@
           "quality": "common",
           "url": "/heroes/orisa/sprays/orisa-drum-dance.png",
           "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true,
           "secondId": "orisa-dragon-dance",
           "secondUrl": "/heroes/orisa/sprays/orisa-dragon-dance.png"
         },
@@ -6744,7 +6918,6 @@
           "id": "good-fortune",
           "url": "/heroes/all/sprays/good-fortune.png",
           "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true,
           "quality": "common"
         },
         {
@@ -6768,8 +6941,7 @@
           "name": "Year of the Dog",
           "id": "year-of-the-dog-2018",
           "url": "/heroes/all/sprays/year-of-the-dog-2018.png",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "hero": "all",
@@ -6787,9 +6959,23 @@
         },
         {
           "hidden": true,
+          "hero": "ashe",
+          "id": "ashe-dragon-dance",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
           "hero": "bastion",
           "id": "bastion-dragon-dance",
           "group": "LUNAR_NEW_YEAR_2017",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "brigitte",
+          "id": "brigitte-dragon-dance",
+          "group": "LUNAR_NEW_YEAR_2019",
           "quality": "common"
         },
         {
@@ -6948,6 +7134,13 @@
         },
         {
           "hidden": true,
+          "hero": "wrecking-ball",
+          "id": "wrecking-ball-dragon-dance",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
           "hero": "zarya",
           "id": "zarya-dragon-dance",
           "group": "LUNAR_NEW_YEAR_2017",
@@ -6977,6 +7170,24 @@
           "group": "LUNAR_NEW_YEAR_2017",
           "achievement": true,
           "description": "Win Capture the Flag with a score of 3 to 0."
+        },
+        {
+          "hero": "all",
+          "name": "Captured Flag",
+          "id": "captured-flag",
+          "url": "/heroes/all/sprays/captured-flag.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true,
+          "achievement": true
+        },
+        {
+          "hero": "all",
+          "name": "Interrupted Delivery",
+          "id": "interrupted-delivery",
+          "url": "/heroes/all/sprays/interrupted-delivery.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true,
+          "achievement": true
         }
       ],
       "voicelines": [
@@ -6987,8 +7198,7 @@
           "id": "ana-i-make-my-own-luck",
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-i-make-my-own-luck.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Ana",
@@ -7000,14 +7210,33 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "No one likes a squealer",
+          "id": "ashe-no-one-likes-a-squealer",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-no-one-likes-a-squealer.ogg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Ready for the fireworks",
+          "id": "ashe-ready-for-the-fireworks",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-ready-for-the-fireworks.ogg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Bastion",
           "hero": "bastion",
           "name": "Doo wee doo wee woo!",
           "id": "bastion-doo-wee-doo-wee-woo",
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-doo-wee-doo-wee-woo.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Bastion",
@@ -7019,14 +7248,33 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "All that glitters",
+          "id": "brigitte-all-that-glitters",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-all-that-glitters.ogg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Who's ready to party",
+          "id": "brigitte-whos-ready-to-party",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-whos-ready-to-party.ogg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
           "heroName": "D.Va",
           "hero": "dva",
           "name": "Happy new year",
           "id": "dva-happy-new-year",
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-happy-new-year.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "D.Va",
@@ -7044,8 +7292,7 @@
           "id": "doomfist-fortune-favors-the-bold",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-fortune-favors-the-bold.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Doomfist",
@@ -7054,8 +7301,7 @@
           "id": "doomfist-ill-throw-you-a-bone",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-ill-throw-you-a-bone.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Genji",
@@ -7064,8 +7310,7 @@
           "id": "genji-all-bark-no-bite",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-all-bark-no-bite.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Genji",
@@ -7077,13 +7322,42 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Assessing luck",
+          "id": "wrecking-ball-assessing-luck",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-assessing-luck.ogg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Engaging festive mode",
+          "id": "wrecking-ball-engaging-festive-mode",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-engaging-festive-mode.ogg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Insolent cur",
           "id": "hanzo-insolent-cur",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-insolent-cur.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Pointless frivolity",
+          "id": "hanzo-pointless-frivolity",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-pointless-frivolity.ogg",
+          "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
         },
         {
@@ -7107,12 +7381,21 @@
         {
           "heroName": "Junkrat",
           "hero": "junkrat",
+          "name": "Happy New Year",
+          "id": "junkrat-happy-new-year",
+          "quality": "common",
+          "url": "/heroes/junkrat/voicelines/junkrat-happy-new-year.ogg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
           "name": "My dog is barking",
           "id": "junkrat-my-dog-is-barking",
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-my-dog-is-barking.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Lúcio",
@@ -7130,8 +7413,7 @@
           "id": "lucio-just-how-i-like-it",
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-just-how-i-like-it.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "McCree",
@@ -7149,7 +7431,16 @@
           "id": "mccree-hair-of-the-dog",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-hair-of-the-dog.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "How's that for fireworks",
+          "id": "mccree-hows-that-for-fireworks",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-hows-that-for-fireworks.ogg",
+          "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
         },
         {
@@ -7159,8 +7450,7 @@
           "id": "mei-give-me-a-red-envelope",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-give-me-a-red-envelope.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Mei",
@@ -7187,8 +7477,7 @@
           "id": "mercy-how-lucky-for-you",
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-how-lucky-for-you.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Moira",
@@ -7197,8 +7486,7 @@
           "id": "moira-slinte",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-slinte.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Moira",
@@ -7207,8 +7495,7 @@
           "id": "moira-youve-made-a-dogs-breakfast",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-youve-made-a-dogs-breakfast.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Orisa",
@@ -7217,8 +7504,7 @@
           "id": "orisa-the-moon-that-wanes",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-the-moon-that-wanes.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Orisa",
@@ -7227,8 +7513,7 @@
           "id": "orisa-who-is-ready-to-party",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-who-is-ready-to-party.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Pharah",
@@ -7246,8 +7531,7 @@
           "id": "pharah-ready-for-some-fireworks",
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-ready-for-some-fireworks.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Reaper",
@@ -7256,8 +7540,7 @@
           "id": "reaper-i-have-the-devils-own-luck",
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-i-have-the-devils-own-luck.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Reaper",
@@ -7284,8 +7567,7 @@
           "id": "reinhardt-fortune-favors-the-bold",
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-fortune-favors-the-bold.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Roadhog",
@@ -7294,8 +7576,7 @@
           "id": "roadhog-its-all-gone-to-the-dogs",
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-its-all-gone-to-the-dogs.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Roadhog",
@@ -7313,8 +7594,7 @@
           "id": "soldier-76-respect-your-elders",
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-respect-your-elders.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Soldier: 76",
@@ -7341,8 +7621,7 @@
           "id": "sombra-youre-in-the-doghouse",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-youre-in-the-doghouse.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Symmetra",
@@ -7351,8 +7630,7 @@
           "id": "symmetra-cause-for-celebration",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-cause-for-celebration.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Symmetra",
@@ -7370,8 +7648,7 @@
           "id": "torbjorn-everyone-get-in-here",
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-everyone-get-in-here.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Torbjörn",
@@ -7389,8 +7666,7 @@
           "id": "tracer-im-over-the-moon",
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-im-over-the-moon.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Tracer",
@@ -7408,8 +7684,7 @@
           "id": "widowmaker-barking-up-the-wrong-tree",
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-barking-up-the-wrong-tree.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Widowmaker",
@@ -7427,8 +7702,7 @@
           "id": "winston-moon-sweet-home",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-moon-sweet-home.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Winston",
@@ -7438,6 +7712,16 @@
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-that-was-awesome.ogg",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "To the moon and back",
+          "id": "winston-to-the-moon-and-back",
+          "quality": "common",
+          "url": "/heroes/winston/voicelines/winston-to-the-moon-and-back.ogg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
         },
         {
           "heroName": "Zarya",
@@ -7455,8 +7739,7 @@
           "id": "zarya-where-the-dog-is-buried",
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-where-the-dog-is-buried.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Zenyatta",
@@ -7474,8 +7757,7 @@
           "id": "zenyatta-fortune-favors-me",
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-fortune-favors-me.ogg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         }
       ],
       "poses": [
@@ -7487,6 +7769,16 @@
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/ana-folded-hands.jpg",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Lighting the fuse",
+          "id": "ashe-lighting-the-fuse",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/ashe-lighting-the-fuse.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
         },
         {
           "heroName": "Bastion",
@@ -7507,6 +7799,36 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Fireworks",
+          "id": "doomfist-fireworks",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/doomfist-fireworks.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Armament",
+          "id": "wrecking-ball-armament",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/wrecking-ball-armament.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Firework",
+          "id": "hanzo-firework",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/hanzo-firework.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Junkrat",
           "hero": "junkrat",
           "name": "Bad for Your Health",
@@ -7516,14 +7838,23 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Drumming",
+          "id": "lucio-drumming",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/lucio-drumming.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
           "heroName": "McCree",
           "hero": "mccree",
           "name": "Fire in the Hole",
           "id": "mccree-fire-in-the-hole",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/mccree-fire-in-the-hole.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Mei",
@@ -7533,6 +7864,16 @@
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/mei-lucky.jpg",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Stockpile",
+          "id": "reaper-stockpile",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/reaper-stockpile.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
         },
         {
           "heroName": "Roadhog",
@@ -7559,8 +7900,7 @@
           "id": "symmetra-fan",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/symmetra-fan.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Tracer",
@@ -7569,8 +7909,7 @@
           "id": "tracer-fireworks",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/tracer-fireworks.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Widowmaker",
@@ -7579,8 +7918,7 @@
           "id": "widowmaker-fans",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/widowmaker-fans.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Winston",
@@ -7589,8 +7927,7 @@
           "id": "winston-sparklers",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/winston-sparklers.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Zarya",
@@ -7599,57 +7936,7 @@
           "id": "zarya-big-one",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/zarya-big-one.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
-        }
-      ],
-      "emotes": [
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Bow",
-          "id": "dva-bow",
-          "quality": "epic",
-          "url": "/updates/LUNAR_NEW_YEAR/emotes/dva-bow.webm",
-          "group": "LUNAR_NEW_YEAR_2017"
-        },
-        {
-          "heroName": "Doomfist",
-          "hero": "doomfist",
-          "name": "Crushing",
-          "id": "doomfist-crushing",
-          "quality": "epic",
-          "url": "/updates/LUNAR_NEW_YEAR/emotes/doomfist-crushing.webm",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "Dud?",
-          "id": "junkrat-dud",
-          "quality": "epic",
-          "url": "/updates/LUNAR_NEW_YEAR/emotes/junkrat-dud.webm",
-          "group": "LUNAR_NEW_YEAR_2017"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "So Excited",
-          "id": "mei-so-excited",
-          "quality": "epic",
-          "url": "/updates/LUNAR_NEW_YEAR/emotes/mei-so-excited.webm",
-          "group": "LUNAR_NEW_YEAR_2017"
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "Secret Friend",
-          "id": "roadhog-secret-friend",
-          "quality": "epic",
-          "url": "/updates/LUNAR_NEW_YEAR/emotes/roadhog-secret-friend.webm",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         }
       ],
       "icons": [
@@ -7662,13 +7949,21 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Hanzhong",
+          "id": "hanzo-hanzhong",
+          "url": "/heroes/hanzo/icons/hanzo-hanzhong.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
           "heroName": "McCree",
           "hero": "mccree",
           "name": "Magistrate",
           "id": "mccree-magistrate",
           "url": "/heroes/mccree/icons/mccree-magistrate.png",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Mei",
@@ -7677,6 +7972,33 @@
           "id": "mei-change",
           "url": "/heroes/mei/icons/mei-change.png",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Sanye",
+          "id": "orisa-sanye",
+          "url": "/heroes/orisa/icons/orisa-sanye.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Reaping General",
+          "id": "reaper-reaping-general",
+          "url": "/heroes/reaper/icons/reaper-reaping-general.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Beautiful Beard",
+          "id": "reinhardt-beautiful-beard",
+          "url": "/heroes/reinhardt/icons/reinhardt-beautiful-beard.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
         },
         {
           "heroName": "Reinhardt",
@@ -7695,13 +8017,30 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Serpent Spear",
+          "id": "torbjorn-serpent-spear",
+          "url": "/heroes/torbjorn/icons/torbjorn-serpent-spear.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Noble Thief",
+          "id": "tracer-noble-thief",
+          "url": "/heroes/tracer/icons/tracer-noble-thief.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Widowmaker",
           "hero": "widowmaker",
           "name": "Black Lily",
           "id": "widowmaker-black-lily",
           "url": "/heroes/widowmaker/icons/widowmaker-black-lily.png",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Winston",
@@ -7710,6 +8049,15 @@
           "id": "winston-monkey",
           "url": "/heroes/winston/icons/winston-monkey.png",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Crouching Dragon",
+          "id": "zenyatta-crouching-dragon",
+          "url": "/heroes/zenyatta/icons/zenyatta-crouching-dragon.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
         },
         {
           "heroName": "Zenyatta",
@@ -7724,8 +8072,7 @@
           "name": "Baihu",
           "id": "baihu",
           "url": "/heroes/all/icons/baihu.png",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "hero": "all",
@@ -7774,7 +8121,14 @@
           "name": "Good Fortune",
           "id": "good-fortune",
           "url": "/heroes/all/icons/good-fortune.png",
-          "group": "LUNAR_NEW_YEAR_2018",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "hero": "all",
+          "name": "Guan Yu",
+          "id": "guan-yu",
+          "url": "/heroes/all/icons/guan-yu.png",
+          "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
         },
         {
@@ -7786,11 +8140,26 @@
         },
         {
           "hero": "all",
+          "name": "Hong Gildong",
+          "id": "hong-gildong",
+          "url": "/heroes/all/icons/hong-gildong.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "Huang Zhong",
+          "id": "huang-zhong",
+          "url": "/heroes/all/icons/huang-zhong.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "hero": "all",
           "name": "Huchimari",
           "id": "huchimari",
           "url": "/heroes/all/icons/huchimari.png",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "hero": "all",
@@ -7815,6 +8184,14 @@
         },
         {
           "hero": "all",
+          "name": "Lü Bu",
+          "id": "l-bu",
+          "url": "/heroes/all/icons/l-bu.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "hero": "all",
           "name": "New Year Cake",
           "id": "new-year-cake",
           "url": "/heroes/all/icons/new-year-cake.png",
@@ -7832,16 +8209,14 @@
           "name": "Paqingmari",
           "id": "paqingmari",
           "url": "/heroes/all/icons/paqingmari.png",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "hero": "all",
           "name": "Paquemari",
           "id": "paquemari",
           "url": "/heroes/all/icons/paquemari.png",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "hero": "all",
@@ -7852,11 +8227,18 @@
         },
         {
           "hero": "all",
+          "name": "Piggimari",
+          "id": "piggimari",
+          "url": "/heroes/all/icons/piggimari.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "hero": "all",
           "name": "Qinglong",
           "id": "qinglong",
           "url": "/heroes/all/icons/qinglong.png",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "hero": "all",
@@ -7884,23 +8266,28 @@
           "name": "Wuchimari",
           "id": "wuchimari",
           "url": "/heroes/all/icons/wuchimari.png",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "hero": "all",
           "name": "Xuanwu",
           "id": "xuanwu",
           "url": "/heroes/all/icons/xuanwu.png",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "hero": "all",
           "name": "Year of the Dog 2018",
           "id": "year-of-the-dog-2018",
           "url": "/heroes/all/icons/year-of-the-dog-2018.png",
-          "group": "LUNAR_NEW_YEAR_2018",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "hero": "all",
+          "name": "Year of the Pig 2019",
+          "id": "year-of-the-pig-2019",
+          "url": "/heroes/all/icons/year-of-the-pig-2019.png",
+          "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
         },
         {
@@ -7912,76 +8299,101 @@
         },
         {
           "hero": "all",
+          "name": "Zhang Fei",
+          "id": "zhang-fei",
+          "url": "/heroes/all/icons/zhang-fei.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "Zhuge Liang",
+          "id": "zhuge-liang",
+          "url": "/heroes/all/icons/zhuge-liang.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
+        {
+          "hero": "all",
           "name": "Zhuque",
           "id": "zhuque",
           "url": "/heroes/all/icons/zhuque.png",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         }
       ],
       "skinsLegendary": [
         {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Baihu",
-          "id": "genji-baihu",
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Huang Zhong",
+          "id": "hanzo-huang-zhong",
           "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/genji-baihu.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
+          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/hanzo-huang-zhong.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
         },
         {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Magistrate",
-          "id": "mccree-magistrate",
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Lü Bu",
+          "id": "reaper-l-bu",
           "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/mccree-magistrate.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
+          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/reaper-l-bu.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
         },
         {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Zhuque",
-          "id": "mercy-zhuque",
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Guan Yu",
+          "id": "reinhardt-guan-yu",
           "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/mercy-zhuque.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
+          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/reinhardt-guan-yu.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
         },
         {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Qinglong",
-          "id": "pharah-qinglong",
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Zhang Fei",
+          "id": "torbjorn-zhang-fei",
           "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/pharah-qinglong.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
+          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/torbjorn-zhang-fei.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
         },
         {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Black Lily",
-          "id": "widowmaker-black-lily",
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Hong Gildong",
+          "id": "tracer-hong-gildong",
           "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/widowmaker-black-lily.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
+          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/tracer-hong-gildong.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
         },
         {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Xuanwu",
-          "id": "zarya-xuanwu",
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Zhuge Liang",
+          "id": "zenyatta-zhuge-liang",
           "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/zarya-xuanwu.jpg",
-          "group": "LUNAR_NEW_YEAR_2018",
+          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/zenyatta-zhuge-liang.jpg",
+          "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
         }
       ],
       "intros": [
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Drumming",
+          "id": "lucio-drumming",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/intros/lucio-drumming.webm",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "isNew": true
+        },
         {
           "heroName": "McCree",
           "hero": "mccree",
@@ -7989,8 +8401,7 @@
           "id": "mccree-spark",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/intros/mccree-spark.webm",
-          "group": "LUNAR_NEW_YEAR_2018",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2018"
         },
         {
           "heroName": "Mercy",
