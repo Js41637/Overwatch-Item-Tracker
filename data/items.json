@@ -257,6 +257,12 @@
           "url": "/heroes/all/icons/bao.png"
         },
         {
+          "name": "Baptiste",
+          "id": "baptiste-baptiste",
+          "url": "/heroes/baptiste/icons/baptiste-baptiste.png",
+          "hero": "baptiste"
+        },
+        {
           "name": "Barbarian",
           "id": "barbarian",
           "url": "/heroes/all/icons/barbarian.png",
@@ -592,7 +598,7 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive 3v3 Group Elimination"
         },
         {
-          "name": "Competitive 6v6 Elimination Competitor",
+          "name": "Competitive 6v6 Elimination Competitor 2018",
           "id": "competitive-6v6-elimination-competitor",
           "url": "/heroes/all/icons/competitive-6v6-elimination-competitor.png",
           "achievement": true,
@@ -600,12 +606,26 @@
           "description": "Unlocked by completing Competitive 6v6 Elimination placement matches"
         },
         {
-          "name": "Competitive 6v6 Elimination Hero",
+          "name": "Competitive 6v6 Elimination Competitor 2019",
+          "id": "competitive-6v6-elimination-competitor-2019",
+          "url": "/heroes/all/icons/competitive-6v6-elimination-competitor-2019.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Competitive 6v6 Elimination Hero 2018",
           "id": "competitive-6v6-elimination-hero",
           "url": "/heroes/all/icons/competitive-6v6-elimination-hero.png",
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive 6v6 Elimination"
+        },
+        {
+          "name": "Competitive 6v6 Elimination Hero 2019",
+          "id": "competitive-6v6-elimination-hero-2019",
+          "url": "/heroes/all/icons/competitive-6v6-elimination-hero-2019.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Competitive CTF Competitor 2018",
@@ -1295,6 +1315,12 @@
           "group": "pachi"
         },
         {
+          "name": "Goddess",
+          "id": "baptiste-goddess",
+          "url": "/heroes/baptiste/icons/baptiste-goddess.png",
+          "hero": "baptiste"
+        },
+        {
           "name": "God of War",
           "id": "genji-god-of-war",
           "url": "/heroes/genji/icons/genji-god-of-war.png",
@@ -1766,6 +1792,12 @@
           "id": "moira-knot",
           "url": "/heroes/moira/icons/moira-knot.png",
           "hero": "moira"
+        },
+        {
+          "name": "Kraken",
+          "id": "baptiste-kraken",
+          "url": "/heroes/baptiste/icons/baptiste-kraken.png",
+          "hero": "baptiste"
         },
         {
           "name": "Krampus",
@@ -2816,6 +2848,20 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Season 14"
         },
         {
+          "name": "Season 15 Competitor",
+          "id": "season-15-competitor",
+          "url": "/heroes/all/icons/season-15-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 15 Hero",
+          "id": "season-15-hero",
+          "url": "/heroes/all/icons/season-15-hero.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Sentry",
           "id": "symmetra-sentry",
           "url": "/heroes/symmetra/icons/symmetra-sentry.png",
@@ -3720,7 +3766,7 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive 3v3 Group Elimination"
         },
         {
-          "name": "Competitive 6v6 Elimination Competitor",
+          "name": "Competitive 6v6 Elimination Competitor 2018",
           "id": "competitive-6v6-elimination-competitor",
           "url": "/heroes/all/sprays/competitive-6v6-elimination-competitor.png",
           "achievement": true,
@@ -3728,12 +3774,26 @@
           "description": "Unlocked by completing Competitive 6v6 Elimination placement matches"
         },
         {
-          "name": "Competitive 6v6 Elimination Hero",
+          "name": "Competitive 6v6 Elimination Competitor 2019",
+          "id": "competitive-6v6-elimination-competitor-2019",
+          "url": "/heroes/all/sprays/competitive-6v6-elimination-competitor-2019.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Competitive 6v6 Elimination Hero 2018",
           "id": "competitive-6v6-elimination-hero",
           "url": "/heroes/all/sprays/competitive-6v6-elimination-hero.png",
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive 6v6 Elimination"
+        },
+        {
+          "name": "Competitive 6v6 Elimination Hero 2019",
+          "id": "competitive-6v6-elimination-hero-2019",
+          "url": "/heroes/all/sprays/competitive-6v6-elimination-hero-2019.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Competitive CTF Competitor 2018",
@@ -4428,6 +4488,20 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Season 14"
+        },
+        {
+          "name": "Season 15 Competitor",
+          "id": "season-15-competitor",
+          "url": "/heroes/all/sprays/season-15-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 15 Hero",
+          "id": "season-15-hero",
+          "url": "/heroes/all/sprays/season-15-hero.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Seoul Dynasty Logo",
@@ -6477,6 +6551,439 @@
           "id": "ashe-golden",
           "quality": "golden",
           "url": "/heroes/ashe/weapons/ashe-golden.png"
+        }
+      ]
+    }
+  },
+  "baptiste": {
+    "name": "Baptiste",
+    "id": "baptiste",
+    "class": "Support",
+    "description": "An elite combat medic and ex-Talon operative, Baptiste now uses his skills to help those whose lives have been impacted by war.",
+    "colors": {
+      "primary": "#f08d35",
+      "highlight": "#f08d35"
+    },
+    "items": {
+      "skins": [
+        {
+          "name": "Classic",
+          "id": "baptiste-classic",
+          "quality": "common",
+          "url": "/heroes/baptiste/skins/baptiste-classic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Ble",
+          "id": "baptiste-ble",
+          "quality": "rare",
+          "url": "/heroes/baptiste/skins/baptiste-ble.jpg"
+        },
+        {
+          "name": "Vyolèt",
+          "id": "baptiste-vyolt",
+          "quality": "rare",
+          "url": "/heroes/baptiste/skins/baptiste-vyolt.jpg"
+        },
+        {
+          "name": "Vèt",
+          "id": "baptiste-vt",
+          "quality": "rare",
+          "url": "/heroes/baptiste/skins/baptiste-vt.jpg"
+        },
+        {
+          "name": "Wouj",
+          "id": "baptiste-wouj",
+          "quality": "rare",
+          "url": "/heroes/baptiste/skins/baptiste-wouj.jpg"
+        },
+        {
+          "name": "Camouflage",
+          "id": "baptiste-camouflage",
+          "quality": "epic",
+          "url": "/heroes/baptiste/skins/baptiste-camouflage.jpg"
+        },
+        {
+          "name": "Wasteland",
+          "id": "baptiste-wasteland",
+          "quality": "epic",
+          "url": "/heroes/baptiste/skins/baptiste-wasteland.jpg"
+        },
+        {
+          "name": "Buccaneer",
+          "id": "baptiste-buccaneer",
+          "quality": "legendary",
+          "url": "/heroes/baptiste/skins/baptiste-buccaneer.jpg"
+        },
+        {
+          "name": "Desert Ops",
+          "id": "baptiste-desert-ops",
+          "quality": "legendary",
+          "url": "/heroes/baptiste/skins/baptiste-desert-ops.jpg"
+        },
+        {
+          "name": "Pirate",
+          "id": "baptiste-pirate",
+          "quality": "legendary",
+          "url": "/heroes/baptiste/skins/baptiste-pirate.jpg"
+        },
+        {
+          "name": "Spec Ops",
+          "id": "baptiste-spec-ops",
+          "quality": "legendary",
+          "url": "/heroes/baptiste/skins/baptiste-spec-ops.jpg"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "id": "baptiste-heroic",
+          "quality": "common",
+          "url": "/heroes/baptiste/emotes/baptiste-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Come at me",
+          "id": "baptiste-come-at-me",
+          "quality": "epic",
+          "url": "/heroes/baptiste/emotes/baptiste-come-at-me.webm"
+        },
+        {
+          "name": "Good one",
+          "id": "baptiste-good-one",
+          "quality": "epic",
+          "url": "/heroes/baptiste/emotes/baptiste-good-one.webm"
+        },
+        {
+          "name": "Nice smile",
+          "id": "baptiste-nice-smile",
+          "quality": "epic",
+          "url": "/heroes/baptiste/emotes/baptiste-nice-smile.webm"
+        },
+        {
+          "name": "Scout",
+          "id": "baptiste-scout",
+          "quality": "epic",
+          "url": "/heroes/baptiste/emotes/baptiste-scout.webm"
+        },
+        {
+          "name": "Take a knee",
+          "id": "baptiste-take-a-knee",
+          "quality": "epic",
+          "url": "/heroes/baptiste/emotes/baptiste-take-a-knee.webm"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "id": "baptiste-heroic",
+          "quality": "common",
+          "url": "/heroes/baptiste/intros/baptiste-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Blast Off",
+          "id": "baptiste-blast-off",
+          "quality": "epic",
+          "url": "/heroes/baptiste/intros/baptiste-blast-off.webm"
+        },
+        {
+          "name": "Closeup",
+          "id": "baptiste-closeup",
+          "quality": "epic",
+          "url": "/heroes/baptiste/intros/baptiste-closeup.webm"
+        },
+        {
+          "name": "Safe Zone",
+          "id": "baptiste-safe-zone",
+          "quality": "epic",
+          "url": "/heroes/baptiste/intros/baptiste-safe-zone.webm"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Baptiste",
+          "id": "baptiste-baptiste",
+          "url": "/heroes/baptiste/icons/baptiste-baptiste.png",
+          "hero": "baptiste"
+        },
+        {
+          "name": "Goddess",
+          "id": "baptiste-goddess",
+          "url": "/heroes/baptiste/icons/baptiste-goddess.png",
+          "hero": "baptiste"
+        },
+        {
+          "name": "Kraken",
+          "id": "baptiste-kraken",
+          "url": "/heroes/baptiste/icons/baptiste-kraken.png",
+          "hero": "baptiste"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Attention",
+          "id": "baptiste-attention",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-attention.png"
+        },
+        {
+          "name": "Baptiste",
+          "id": "baptiste-baptiste",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-baptiste.png"
+        },
+        {
+          "name": "Choices",
+          "id": "baptiste-choices",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-choices.png"
+        },
+        {
+          "name": "Close shave",
+          "id": "baptiste-close-shave",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-close-shave.png"
+        },
+        {
+          "name": "Cool story",
+          "id": "baptiste-cool-story",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-cool-story.png"
+        },
+        {
+          "name": "Do you even lift",
+          "id": "baptiste-do-you-even-lift",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-do-you-even-lift.png"
+        },
+        {
+          "name": "Goddess",
+          "id": "baptiste-goddess",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-goddess.png"
+        },
+        {
+          "name": "Hammock",
+          "id": "baptiste-hammock",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-hammock.png"
+        },
+        {
+          "name": "Helmet",
+          "id": "baptiste-helmet",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-helmet.png"
+        },
+        {
+          "name": "Hey there",
+          "id": "baptiste-hey-there",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-hey-there.png"
+        },
+        {
+          "name": "Icon",
+          "id": "baptiste-icon",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-icon.png"
+        },
+        {
+          "name": "Immortal",
+          "id": "baptiste-immortal",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-immortal.png"
+        },
+        {
+          "name": "Lieutenant Augustin",
+          "id": "baptiste-lieutenant-augustin",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-lieutenant-augustin.png"
+        },
+        {
+          "name": "Long shadows",
+          "id": "baptiste-long-shadows",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-long-shadows.png"
+        },
+        {
+          "name": "Maneuvers",
+          "id": "baptiste-maneuvers",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-maneuvers.png"
+        },
+        {
+          "name": "Mission complete",
+          "id": "baptiste-mission-complete",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-mission-complete.png"
+        },
+        {
+          "name": "One Up",
+          "id": "baptiste-one-up",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-one-up.png"
+        },
+        {
+          "name": "Origin",
+          "id": "baptiste-origin",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-origin.png"
+        },
+        {
+          "name": "Schematic",
+          "id": "baptiste-schematic",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-schematic.png"
+        },
+        {
+          "name": "Taunt",
+          "id": "baptiste-taunt",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-taunt.png"
+        },
+        {
+          "name": "Too powerful!",
+          "id": "baptiste-too-powerful",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-too-powerful.png"
+        },
+        {
+          "name": "Tropical",
+          "id": "baptiste-tropical",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-tropical.png"
+        },
+        {
+          "name": "Watchful",
+          "id": "baptiste-watchful",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-watchful.png"
+        },
+        {
+          "name": "Cute",
+          "id": "baptiste-cute",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-cute.png",
+          "achievement": true,
+          "description": "Amplify 2500 combined damage and healing without dying as Baptiste in Quick or Competitive play."
+        },
+        {
+          "name": "Pixel",
+          "id": "baptiste-pixel",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-pixel.png",
+          "achievement": true,
+          "description": "Prevent 4 deaths with a single use of Baptiste's Immortality Field in Quick or Competitive play."
+        }
+      ],
+      "voicelines": [
+        {
+          "name": "Bandage",
+          "id": "baptiste-bandage",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-bandage.ogg",
+          "standardItem": true
+        },
+        {
+          "name": "An apple a day",
+          "id": "baptiste-an-apple-a-day",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-an-apple-a-day.ogg"
+        },
+        {
+          "name": "Appreciation",
+          "id": "baptiste-appreciation",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-appreciation.ogg"
+        },
+        {
+          "name": "Buy you a drink",
+          "id": "baptiste-buy-you-a-drink",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-buy-you-a-drink.ogg"
+        },
+        {
+          "name": "Damn",
+          "id": "baptiste-damn",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-damn.ogg"
+        },
+        {
+          "name": "Expert opinion",
+          "id": "baptiste-expert-opinion",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-expert-opinion.ogg"
+        },
+        {
+          "name": "Going to sting",
+          "id": "baptiste-going-to-sting",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-going-to-sting.ogg"
+        },
+        {
+          "name": "Settle down",
+          "id": "baptiste-settle-down",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-settle-down.ogg"
+        },
+        {
+          "name": "Some kind of angel",
+          "id": "baptiste-some-kind-of-angel",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-some-kind-of-angel.ogg"
+        },
+        {
+          "name": "Survival Tip",
+          "id": "baptiste-survival-tip",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-survival-tip.ogg"
+        },
+        {
+          "name": "Time's up, pencils down",
+          "id": "baptiste-times-up-pencils-down",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-times-up-pencils-down.ogg"
+        },
+        {
+          "name": "What are you trying to pull",
+          "id": "baptiste-what-are-you-trying-to-pull",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-what-are-you-trying-to-pull.ogg"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "id": "baptiste-heroic",
+          "quality": "common",
+          "url": "/heroes/baptiste/poses/baptiste-heroic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "On Alert",
+          "id": "baptiste-on-alert",
+          "quality": "rare",
+          "url": "/heroes/baptiste/poses/baptiste-on-alert.jpg"
+        },
+        {
+          "name": "Peace Out",
+          "id": "baptiste-peace-out",
+          "quality": "rare",
+          "url": "/heroes/baptiste/poses/baptiste-peace-out.jpg"
+        },
+        {
+          "name": "Say Cheese",
+          "id": "baptiste-say-cheese",
+          "quality": "rare",
+          "url": "/heroes/baptiste/poses/baptiste-say-cheese.jpg"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "baptiste-golden",
+          "quality": "golden",
+          "url": "/heroes/baptiste/weapons/baptiste-golden.png"
         }
       ]
     }

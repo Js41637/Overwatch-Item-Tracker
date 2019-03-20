@@ -27,6 +27,14 @@ const data = {
       highlight: "#7e7c7a"
     }
   },
+  baptiste: {
+    class: CLASSES.SUPPORT,
+    description: "An elite combat medic and ex-Talon operative, Baptiste now uses his skills to help those whose lives have been impacted by war.",
+    colors: {
+      primary: "#f08d35",
+      highlight: "#f08d35"
+    }
+  },
   bastion: {
     class: CLASSES.DAMAGE,
     description: "Once a frontline combatant in the Omnic Crisis, this curious Bastion unit now explores the world, fascinated by nature but wary of a fearful humanity.",
