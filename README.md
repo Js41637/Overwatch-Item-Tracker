@@ -1,5 +1,5 @@
 # Overwatch Item Tracker
-**Overwatch Item Tracker enables you to track your Overwatch collection progess for every hero and event added to the game.**
+**Overwatch Item Tracker enables you to track your Overwatch collection progress for every hero and event added to the game.**
 
 ## Development
 Development is done locally. You will need to host the site locally for it to work successfully. There are many methods to do this however it is recommended to use the provided package.json with NodeJS and NPM.
