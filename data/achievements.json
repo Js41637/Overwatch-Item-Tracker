@@ -1390,6 +1390,38 @@
     },
     "bastet": {
       "description": "Unlocked by participating in Ana's Bastet Challenge"
+    },
+    "captured": {
+      "name": "Captured",
+      "reward": "Captured Flag",
+      "quality": "common",
+      "type": "spray",
+      "description": "Capture a flag in a game of Capture the Flag.",
+      "hero": null
+    },
+    "delivery-interruption": {
+      "name": "Delivery Interruption",
+      "reward": "Interrupted Delivery",
+      "quality": "common",
+      "type": "spray",
+      "description": "Kill an enemy as they carry the flag in a game of Capture the Flag.",
+      "hero": null
+    },
+    "window-of-opportunity": {
+      "name": "Window of Opportunity",
+      "reward": "Cute",
+      "quality": "common",
+      "type": "spray",
+      "description": "Amplify 2500 combined damage and healing without dying as Baptiste in Quick or Competitive play.",
+      "hero": null
+    },
+    "stand-by-me": {
+      "name": "Stand By Me",
+      "reward": "Pixel",
+      "quality": "common",
+      "type": "spray",
+      "description": "Prevent 4 deaths with a single use of Baptiste's Immortality Field in Quick or Competitive play.",
+      "hero": null
     }
   },
   "mappings": {
@@ -1449,6 +1481,8 @@
     "wrecking-ball-cute": "strike",
     "ashe-pixel": "short-fuse",
     "ashe-cute": "served-up",
+    "baptiste-pixel": "stand-by-me",
+    "baptiste-cute": "window-of-opportunity",
     "jail": "lockdown",
     "beyond-the-moon": "double-cap",
     "out-of-my-way": "escort-duty",
@@ -1567,6 +1601,8 @@
     "bonk": "a-couple-of-flakes",
     "frozen-throne": "hot-hand",
     "yeti-rage": "rampage",
+    "captured-flag": "captured",
+    "interrupted-delivery": "delivery-interruption",
     "bastet": "bastet"
   }
 }

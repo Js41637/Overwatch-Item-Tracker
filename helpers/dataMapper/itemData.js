@@ -21,7 +21,11 @@ const data = {
     "icons/competitive-ctf-competitor-2018": "competitive-ctf-competitor",
     "icons/competitive-ctf-hero-2018": "competitive-ctf-hero",
     "sprays/competitive-ctf-competitor-2018": "competitive-ctf-competitor",
-    "sprays/competitive-ctf-hero-2018": "competitive-ctf-hero"
+    "sprays/competitive-ctf-hero-2018": "competitive-ctf-hero",
+    "icons/competitive-6v6-elimination-competitor-2018": "competitive-6v6-elimination-competitor",
+    "icons/competitive-6v6-elimination-hero-2018": "competitive-6v6-elimination-hero",
+    "sprays/competitive-6v6-elimination-competitor-2018": "competitive-6v6-elimination-competitor",
+    "sprays/competitive-6v6-elimination-hero-2018": "competitive-6v6-elimination-hero"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
