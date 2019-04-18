@@ -96,6 +96,10 @@
   width: calc(25% - 1px);
 }
 
+#event-container .section .flex-5 .item {
+  width: calc(20% - 1px);
+}
+
 #event-container .section .item label {
   width: 100%;
   cursor: pointer;
@@ -114,16 +118,17 @@
 }
 
 #event-container .section .item h4 {
-  font-size: 14px;
+  font-size: 13px;
   color: rgba(220, 220, 220, 0.75);
   width: 100%;
+  letter-spacing: 0.7;
   display: initial;
 }
 
 #event-container .section .item h3 {
   text-shadow: 1px 1px 2px rgb(54, 54, 54);
   letter-spacing: 0.3;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #event-container .section .item small {
@@ -235,5 +240,17 @@
 
   #event-container .section .flex-4 .item {
     width: calc(25% - 1px);
+  }
+}
+
+#UPRISING #legendary-skins {
+  height: 402px;
+
+  .images {
+    .card {
+      height: 360px;
+      background-size: auto 130%;
+      background-position-y: 20%;
+    }
   }
 }

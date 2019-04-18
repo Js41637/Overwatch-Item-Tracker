@@ -176,7 +176,16 @@ const data = {
     'bonk',
     // LUNAR19
     'captured-flag',
-    'interrupted-delivery'
+    'interrupted-delivery',
+    // ARCHIVES 2019
+    'almendron',
+    'ambush',
+    'big-plans',
+    'cut-the-brakes',
+    'hot-pursuit',
+    'light-the-way',
+    'new-strike-team',
+    'the-broker'
   ],
   allClassEventItems: {
     sprays: {
