@@ -82,46 +82,51 @@ const EVENTTIMES = {
     start: '1485280800000',
     end: '1487066400000'
   },
-  [EVENTS.UPRISING]: {
+  [EVENTS.UPRISING18]: {
     start: '1523386800000',
     end: '1525220550912'
-  },
-  [EVENTS.ANNIVERSARY]: {
-    start: '1527015600000',
-    end: '1528797600000'
   },
   [EVENTS.SUMMER17]: {
     start: '1502204400000',
     end: '1504000800000'
   },
-  [EVENTS.SUMMER]: {
-    start: '1533837600000',
-    end: '1535709600000'
-  },
   [EVENTS.HALLOWEEN17]: {
     start: '1507658400000',
     end: '1509613200000'
-  },
-  [EVENTS.HALLOWEEN]: {
-    start: '1539104400000',
-    end: '1541062800000'
   },
   [EVENTS.WINTER17]: {
     start: '1513101600000',
     end: '1514890800000'
   },
-  [EVENTS.WINTER]: {
-    start: '1544547600000',
-    end: '1546513200000'
-  },
   [EVENTS.LUNAR18]: {
     start: '1518112800000',
     end: '1520330400000'
+  },
+
+  [EVENTS.SUMMER]: {
+    start: '1533837600000',
+    end: '1535709600000'
+  },
+  [EVENTS.HALLOWEEN]: {
+    start: '1539104400000',
+    end: '1541062800000'
+  },
+  [EVENTS.WINTER]: {
+    start: '1544547600000',
+    end: '1546513200000'
   },
   [EVENTS.LUNAR]: {
     start: '1548349200000',
     end: '1550574000000'
   },
+  [EVENTS.UPRISING]: {
+    start: '1555437600000',
+    end: '1557230400000'
+  },
+  [EVENTS.ANNIVERSARY]: {
+    start: '1527015600000',
+    end: '1528797600000'
+  }
 };
 
 const EVENT_ITEM_ORDER = {
