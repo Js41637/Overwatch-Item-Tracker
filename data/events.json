@@ -8719,73 +8719,10 @@
         },
         {
           "hero": "all",
-          "name": "Almendrón",
-          "id": "almendron",
-          "url": "/heroes/all/sprays/almendron.png",
-          "group": "UPRISING_2019",
-          "isNew": true,
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Ambush",
-          "id": "ambush",
-          "url": "/heroes/all/sprays/ambush.png",
-          "group": "UPRISING_2019",
-          "isNew": true,
-          "quality": "common"
-        },
-        {
-          "hero": "all",
           "name": "Archives",
           "id": "archives",
           "url": "/heroes/all/sprays/archives.png",
           "group": "UPRISING_2018",
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Big Plans",
-          "id": "big-plans",
-          "url": "/heroes/all/sprays/big-plans.png",
-          "group": "UPRISING_2019",
-          "isNew": true,
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Cut the Brakes",
-          "id": "cut-the-brakes",
-          "url": "/heroes/all/sprays/cut-the-brakes.png",
-          "group": "UPRISING_2019",
-          "isNew": true,
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Hot Pursuit",
-          "id": "hot-pursuit",
-          "url": "/heroes/all/sprays/hot-pursuit.png",
-          "group": "UPRISING_2019",
-          "isNew": true,
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Light the Way",
-          "id": "light-the-way",
-          "url": "/heroes/all/sprays/light-the-way.png",
-          "group": "UPRISING_2019",
-          "isNew": true,
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "New Strike Team",
-          "id": "new-strike-team",
-          "url": "/heroes/all/sprays/new-strike-team.png",
-          "group": "UPRISING_2019",
-          "isNew": true,
           "quality": "common"
         },
         {
@@ -8798,12 +8735,23 @@
         },
         {
           "hero": "all",
-          "name": "The Broker",
-          "id": "the-broker",
-          "url": "/heroes/all/sprays/the-broker.png",
+          "name": "Almendrón",
+          "id": "almendron",
+          "url": "/heroes/all/sprays/almendron.png",
           "group": "UPRISING_2019",
           "isNew": true,
-          "quality": "common"
+          "achievement": true,
+          "description": "Complete Storm Rising (All Heroes) with 8 different heroes."
+        },
+        {
+          "hero": "all",
+          "name": "Ambush",
+          "id": "ambush",
+          "url": "/heroes/all/sprays/ambush.png",
+          "group": "UPRISING_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Complete Storm Rising (Story) on Hard difficulty."
         },
         {
           "hero": "all",
@@ -8813,6 +8761,26 @@
           "group": "UPRISING_2017",
           "achievement": true,
           "description": "Complete Uprising on Expert difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Big Plans",
+          "id": "big-plans",
+          "url": "/heroes/all/sprays/big-plans.png",
+          "group": "UPRISING_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Complete Storm Rising (All Heroes) on Hard difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Cut the Brakes",
+          "id": "cut-the-brakes",
+          "url": "/heroes/all/sprays/cut-the-brakes.png",
+          "group": "UPRISING_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Complete Storm Rising (Story) on Legendary difficulty."
         },
         {
           "hero": "all",
@@ -8831,6 +8799,36 @@
           "group": "UPRISING_2017",
           "achievement": true,
           "description": "Complete Uprising on Hard difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Hot Pursuit",
+          "id": "hot-pursuit",
+          "url": "/heroes/all/sprays/hot-pursuit.png",
+          "group": "UPRISING_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Complete Storm Rising (Story) on Expert difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Light the Way",
+          "id": "light-the-way",
+          "url": "/heroes/all/sprays/light-the-way.png",
+          "group": "UPRISING_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Complete Storm Rising (Story) with each of the 4 heroes."
+        },
+        {
+          "hero": "all",
+          "name": "New Strike Team",
+          "id": "new-strike-team",
+          "url": "/heroes/all/sprays/new-strike-team.png",
+          "group": "UPRISING_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Complete Storm Rising (All Heroes) on Legendary difficulty with no incapacitations."
         },
         {
           "hero": "all",
@@ -8912,6 +8910,16 @@
           "group": "UPRISING_2018",
           "achievement": true,
           "description": "Complete Retribution with each of the 4 heroes."
+        },
+        {
+          "hero": "all",
+          "name": "The Broker",
+          "id": "the-broker",
+          "url": "/heroes/all/sprays/the-broker.png",
+          "group": "UPRISING_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Complete Storm Rising (All Heroes) on Expert difficulty."
         }
       ],
       "voicelines": [
