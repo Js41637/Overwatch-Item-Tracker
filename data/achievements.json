@@ -920,6 +920,38 @@
       "type": "spray",
       "hero": "all"
     },
+    "season-15-competitor": {
+      "name": null,
+      "description": "Unlocked by completing Season 15 placement matches",
+      "reward": "Season 15 Competitor",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "season-15-hero": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 15",
+      "reward": "Season 15 Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "season-16-competitor": {
+      "name": null,
+      "description": "Unlocked by completing Season 16 placement matches",
+      "reward": "Season 16 Competitor",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "season-16-hero": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 16",
+      "reward": "Season 16 Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
     "competitive-ctf-competitor": {
       "name": null,
       "description": "Unlocked by completing competitive Capture The Flag placement matches",
@@ -1406,6 +1438,76 @@
       "type": "spray",
       "description": "Prevent 4 deaths with a single use of Baptiste's Immortality Field in Quick or Competitive play.",
       "hero": null
+    },
+    "storm-warning": {
+      "name": "Storm Warning",
+      "reward": "Light the Way",
+      "quality": "common",
+      "type": "spray",
+      "description": "Complete Storm Rising (Story) with each of the 4 heroes."
+    },
+    "maelstrom": {
+      "name": "Maelstrom",
+      "reward": "Hot Pursuit",
+      "quality": "common",
+      "type": "spray",
+      "description": "Complete Storm Rising (Story) on Expert difficulty."
+    },
+    "tempest": {
+      "name": "Tempest",
+      "reward": "Ambush",
+      "quality": "common",
+      "type": "spray",
+      "description": "Complete Storm Rising (Story) on Hard difficulty."
+    },
+    "hurricane": {
+      "name": "Hurricane",
+      "reward": "Cut the Brakes",
+      "quality": "common",
+      "type": "spray",
+      "description": "Complete Storm Rising (Story) on Legendary difficulty."
+    },
+    "freelancers": {
+      "name": "Freelancers",
+      "reward": "Almendrón",
+      "quality": "common",
+      "type": "spray",
+      "description": "Complete Storm Rising (All Heroes) with 8 different heroes."
+    },
+    "storm-rider": {
+      "name": "Storm Rider",
+      "reward": "The Broker",
+      "quality": "common",
+      "type": "spray",
+      "description": "Complete Storm Rising (All Heroes) on Expert difficulty."
+    },
+    "storm-chaser": {
+      "name": "Storm Chaser",
+      "reward": "Big Plans",
+      "quality": "common",
+      "type": "spray",
+      "description": "Complete Storm Rising (All Heroes) on Hard difficulty."
+    },
+    "eye-of-the-hurricane": {
+      "name": "Eye of the Hurricane",
+      "reward": "New Strike Team",
+      "quality": "common",
+      "type": "spray",
+      "description": "Complete Storm Rising (All Heroes) on Legendary difficulty with no incapacitations."
+    },
+    "window-of-opportunity": {
+      "name": "Window of Opportunity",
+      "reward": "Cute",
+      "quality": "common",
+      "type": "spray",
+      "description": "Amplify 2500 combined damage and healing without dying as Baptiste in Quick or Competitive play."
+    },
+    "stand-by-me": {
+      "name": "Stand By Me",
+      "reward": "Pixel",
+      "quality": "common",
+      "type": "spray",
+      "description": "Prevent 4 deaths with a single use of Baptiste's Immortality Field in Quick or Competitive play."
     }
   },
   "mappings": {
@@ -1530,6 +1632,10 @@
     "season-13-hero": "season-13-hero",
     "season-14-competitor": "season-14-competitor",
     "season-14-hero": "season-14-hero",
+    "season-15-competitor": "season-15-competitor",
+    "season-15-hero": "season-15-hero",
+    "season-16-competitor": "season-16-competitor",
+    "season-16-hero": "season-16-hero",
     "competitive-ctf-competitor": "competitive-ctf-competitor",
     "competitive-ctf-hero": "competitive-ctf-hero",
     "competitive-deathmatch-competitor": "competitive-deathmatch-competitor",
@@ -1587,6 +1693,16 @@
     "yeti-rage": "rampage",
     "captured-flag": "captured",
     "interrupted-delivery": "delivery-interruption",
-    "bastet": "bastet"
+    "bastet": "bastet",
+    "light-the-way": "storm-warning",
+    "hot-pursuit": "maelstrom",
+    "ambush": "tempest",
+    "cut-the-brakes": "hurricane",
+    "almendron": "freelancers",
+    "the-broker": "storm-rider",
+    "big-plans": "storm-chaser",
+    "new-strike-team": "eye-of-the-hurricane",
+    "cute": "window-of-opportunity",
+    "pixel": "stand-by-me"
   }
 }
