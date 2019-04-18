@@ -18,14 +18,22 @@ const data = {
     "sprays/watchparty-gibraltar": "watchpoint-gibraltar",
     "icons/2018-pacific-allstars": "pacific-allstars-2018",
     "icons/2018-atlantic-allstars": "atlantic-allstars-2018",
+
+
     "icons/competitive-ctf-competitor-2018": "competitive-ctf-competitor",
     "icons/competitive-ctf-hero-2018": "competitive-ctf-hero",
     "sprays/competitive-ctf-competitor-2018": "competitive-ctf-competitor",
     "sprays/competitive-ctf-hero-2018": "competitive-ctf-hero",
+
     "icons/competitive-6v6-elimination-competitor-2018": "competitive-6v6-elimination-competitor",
     "icons/competitive-6v6-elimination-hero-2018": "competitive-6v6-elimination-hero",
     "sprays/competitive-6v6-elimination-competitor-2018": "competitive-6v6-elimination-competitor",
-    "sprays/competitive-6v6-elimination-hero-2018": "competitive-6v6-elimination-hero"
+    "sprays/competitive-6v6-elimination-hero-2018": "competitive-6v6-elimination-hero",
+
+    "sprays/competitive-deathmatch-competitor-2018": "competitive-deathmatch-competitor",
+    "sprays/competitive-deathmatch-hero-2018": "competitive-deathmatch-hero",
+    "icons/competitive-deathmatch-competitor-2018": "competitive-deathmatch-competitor",
+    "icons/competitive-deathmatch-hero-2018": "competitive-deathmatch-hero"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
@@ -168,7 +176,16 @@ const data = {
     'bonk',
     // LUNAR19
     'captured-flag',
-    'interrupted-delivery'
+    'interrupted-delivery',
+    // ARCHIVES 2019
+    'almendron',
+    'ambush',
+    'big-plans',
+    'cut-the-brakes',
+    'hot-pursuit',
+    'light-the-way',
+    'new-strike-team',
+    'the-broker'
   ],
   allClassEventItems: {
     sprays: {
@@ -176,7 +193,7 @@ const data = {
       [EVENTS.HALLOWEEN]: ['never-die', 'bats', 'boo', 'boop', 'candyball', 'fangs', 'gummy-hog', 'halloween-terror', 'pumpkins', 'witchs-brew', 'halloween-special', 'junkensteins-revenge', 'rise-of-the-zomnics', 'the-reapening', 'my-creations', 'the-monster', 'the-reaper', 'the-witch', 'zomnic', 'zombardier', 'flaming-pumpkin'],
       [EVENTS.WINTER]: ['snowcree', 'snowhog', 'snowmei', 'snowreaper', 'winter-wonderland', 'yeti', 'yeti-hunter', 'frozen-throne', 'yeti-rage', 'bonk'],
       [EVENTS.LUNAR]: ['auspicious-lion', 'awakened-lion', 'dragons-head', 'lucky-pouch', 'red-envelope', 'year-of-the-rooster-2017', 'year-of-the-dog-2018', 'good-fortune', 'captured-flag', 'interrupted-delivery'],
-      [EVENTS.UPRISING]: ['b73ns', 'eradicator', 'null-sector', 'nullmari', 'nulltrooper', 'or14ns', 'slicer', 'archives', 'talon-assassin', 'droppachi', 'talon-enforcer', 'talon-heavy-assault', 'talon-sniper', 'talon-trooper'],
+      [EVENTS.UPRISING]: ['b73ns', 'eradicator', 'null-sector', 'nullmari', 'nulltrooper', 'or14ns', 'slicer', 'archives', 'talon-assassin', 'droppachi', 'talon-enforcer', 'talon-heavy-assault', 'talon-sniper', 'talon-trooper', 'almendron', 'ambush', 'big-plans', 'cut-the-brakes', 'hot-pursuit', 'light-the-way', 'new-strike-team', 'the-broker'],
       [EVENTS.ANNIVERSARY]: ['anniversary-2017']
     },
     icons: {
@@ -184,7 +201,7 @@ const data = {
       [EVENTS.HALLOWEEN]: ["calavera", "vampachimari", "eyeball", "superstition", "witchs-hat", "ghostymari", "tombstone", "bewitching", "candle", "never-die", "wolf", "witchs-brew", "spider", "junkensteins-pachimonster", "pachimummy", "pumpkimari", "skelemari", "witchymari",  "halloween-terror-2016", "halloween-terror-2017", "halloween-terror-2018"],
       [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "winter-wonderland-2018", "snowman", "present", "pachimerry", "gingermari", "pachicracker", "snowimari", "2017", "2018", "2019", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
       [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu", 'guan-yu', 'hong-gildong', 'huang-zhong', 'l-bu', 'piggimari', 'year-of-the-pig-2019', 'zhang-fei', 'zhuge-liang'],
-      [EVENTS.UPRISING]: ['archives-2018', 'uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'assassin', 'enforcer', 'heavy-assault', 'maximilien', 'sniper', 'trooper'],
+      [EVENTS.UPRISING]: ['archives-2019', 'archives-2018', 'uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'assassin', 'enforcer', 'heavy-assault', 'maximilien', 'sniper', 'trooper'],
       [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'anniversary-2018', 'pachiversary'],
     }
   },

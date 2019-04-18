@@ -149,6 +149,12 @@
           "url": "/heroes/all/icons/archives-2018.png"
         },
         {
+          "name": "Archives 2019",
+          "id": "archives-2019",
+          "event": "UPRISING",
+          "url": "/heroes/all/icons/archives-2019.png"
+        },
+        {
           "name": "Argentina",
           "id": "argentina",
           "event": "SUMMER_GAMES",
@@ -449,6 +455,15 @@
           "hero": "dva"
         },
         {
+          "name": "Butler",
+          "id": "ashe-butler",
+          "url": "/heroes/ashe/icons/ashe-butler.png",
+          "event": "UPRISING",
+          "hero": "ashe",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Cabana",
           "id": "ana-cabana",
           "url": "/heroes/ana/icons/ana-cabana.png",
@@ -560,13 +575,21 @@
           "url": "/heroes/all/icons/coin.png"
         },
         {
+          "name": "Coinín",
+          "id": "moira-coinn",
+          "url": "/heroes/moira/icons/moira-coinn.png",
+          "event": "UPRISING",
+          "hero": "moira",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Colomar",
           "id": "sombra-colomar",
           "url": "/heroes/sombra/icons/sombra-colomar.png",
           "event": "UPRISING",
           "hero": "sombra",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Colossus",
@@ -658,7 +681,7 @@
           "group": "competitive"
         },
         {
-          "name": "Competitive Deathmatch Competitor",
+          "name": "Competitive Deathmatch Competitor 2018",
           "id": "competitive-deathmatch-competitor",
           "url": "/heroes/all/icons/competitive-deathmatch-competitor.png",
           "achievement": true,
@@ -666,7 +689,7 @@
           "description": "Unlocked by completing Competitive Deathmatch placement matches"
         },
         {
-          "name": "Competitive Deathmatch Hero",
+          "name": "Competitive Deathmatch Hero 2018",
           "id": "competitive-deathmatch-hero",
           "url": "/heroes/all/icons/competitive-deathmatch-hero.png",
           "achievement": true,
@@ -1000,6 +1023,15 @@
           "hero": "mccree"
         },
         {
+          "name": "Deadlock McCree",
+          "id": "mccree-deadlock-mccree",
+          "url": "/heroes/mccree/icons/mccree-deadlock-mccree.png",
+          "event": "UPRISING",
+          "hero": "mccree",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Deadlock Rebels",
           "id": "ashe-deadlock-rebels",
           "url": "/heroes/ashe/icons/ashe-deadlock-rebels.png",
@@ -1113,8 +1145,7 @@
           "url": "/heroes/lucio/icons/lucio-equalizer.png",
           "event": "UPRISING",
           "hero": "lucio",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Equestrian",
@@ -1212,6 +1243,15 @@
           "event": "ANNIVERSARY",
           "hero": "doomfist",
           "group": "ANNIVERSARY_2018",
+          "isNew": true
+        },
+        {
+          "name": "Formal: 76",
+          "id": "soldier-76-formal-76",
+          "url": "/heroes/soldier-76/icons/soldier-76-formal-76.png",
+          "event": "UPRISING",
+          "hero": "soldier-76",
+          "group": "UPRISING_2019",
           "isNew": true
         },
         {
@@ -1450,6 +1490,15 @@
           "id": "mercy-guardian-angel",
           "url": "/heroes/mercy/icons/mercy-guardian-angel.png",
           "hero": "mercy"
+        },
+        {
+          "name": "Gwishin",
+          "id": "bastion-gwishin",
+          "url": "/heroes/bastion/icons/bastion-gwishin.png",
+          "event": "UPRISING",
+          "hero": "bastion",
+          "group": "UPRISING_2019",
+          "isNew": true
         },
         {
           "name": "Gymnastics",
@@ -1865,6 +1914,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "name": "Lieutenant Augustin",
+          "id": "baptiste-lieutenant-augustin",
+          "url": "/heroes/baptiste/icons/baptiste-lieutenant-augustin.png",
+          "event": "UPRISING",
+          "hero": "baptiste",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Lion Dance",
           "id": "lion-dance",
           "event": "LUNAR_NEW_YEAR",
@@ -2069,8 +2127,7 @@
           "url": "/heroes/mei/icons/mei-mug.png",
           "event": "UPRISING",
           "hero": "mei",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Nano Cola",
@@ -2171,8 +2228,7 @@
           "url": "/heroes/moira/icons/moira-odeorain.png",
           "event": "UPRISING",
           "hero": "moira",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Ogundimu",
@@ -2180,8 +2236,7 @@
           "url": "/heroes/doomfist/icons/doomfist-ogundimu.png",
           "event": "UPRISING",
           "hero": "doomfist",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Oni",
@@ -2615,8 +2670,7 @@
           "url": "/heroes/hanzo/icons/hanzo-scion.png",
           "event": "UPRISING",
           "hero": "hanzo",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Scooter",
@@ -2852,14 +2906,32 @@
           "id": "season-15-competitor",
           "url": "/heroes/all/icons/season-15-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 15 placement matches"
         },
         {
           "name": "Season 15 Hero",
           "id": "season-15-hero",
           "url": "/heroes/all/icons/season-15-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 15"
+        },
+        {
+          "name": "Season 16 Competitor",
+          "id": "season-16-competitor",
+          "url": "/heroes/all/icons/season-16-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 16 placement matches"
+        },
+        {
+          "name": "Season 16 Hero",
+          "id": "season-16-hero",
+          "url": "/heroes/all/icons/season-16-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 16"
         },
         {
           "name": "Sentry",
@@ -3031,8 +3103,7 @@
           "url": "/heroes/reaper/icons/reaper-soldier-24.png",
           "event": "UPRISING",
           "hero": "reaper",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Soldier: 76",
@@ -3070,8 +3141,7 @@
           "url": "/heroes/winston/icons/winston-specimen-28.png",
           "event": "UPRISING",
           "hero": "winston",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Spider",
@@ -3826,7 +3896,7 @@
           "group": "competitive"
         },
         {
-          "name": "Competitive Deathmatch Competitor",
+          "name": "Competitive Deathmatch Competitor 2018",
           "id": "competitive-deathmatch-competitor",
           "url": "/heroes/all/sprays/competitive-deathmatch-competitor.png",
           "achievement": true,
@@ -3834,7 +3904,7 @@
           "description": "Unlocked by completing Competitive Deathmatch placement matches"
         },
         {
-          "name": "Competitive Deathmatch Hero",
+          "name": "Competitive Deathmatch Hero 2018",
           "id": "competitive-deathmatch-hero",
           "url": "/heroes/all/sprays/competitive-deathmatch-hero.png",
           "achievement": true,
@@ -4494,14 +4564,32 @@
           "id": "season-15-competitor",
           "url": "/heroes/all/sprays/season-15-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 15 placement matches"
         },
         {
           "name": "Season 15 Hero",
           "id": "season-15-hero",
           "url": "/heroes/all/sprays/season-15-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 15"
+        },
+        {
+          "name": "Season 16 Competitor",
+          "id": "season-16-competitor",
+          "url": "/heroes/all/sprays/season-16-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 16 placement matches"
+        },
+        {
+          "name": "Season 16 Hero",
+          "id": "season-16-hero",
+          "url": "/heroes/all/sprays/season-16-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 16"
         },
         {
           "name": "Seoul Dynasty Logo",
@@ -5039,6 +5127,24 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "Almendrón",
+          "id": "almendron",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/almendron.png",
+          "achievement": true,
+          "group": "UPRISING_2019",
+          "description": "Complete Storm Rising (All Heroes) with 8 different heroes."
+        },
+        {
+          "name": "Ambush",
+          "id": "ambush",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/ambush.png",
+          "achievement": true,
+          "group": "UPRISING_2019",
+          "description": "Complete Storm Rising (Story) on Hard difficulty."
+        },
+        {
           "name": "Archives",
           "id": "archives",
           "event": "UPRISING",
@@ -5054,6 +5160,24 @@
           "achievement": true,
           "group": "UPRISING_2017",
           "description": "Complete Uprising on Expert difficulty."
+        },
+        {
+          "name": "Big Plans",
+          "id": "big-plans",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/big-plans.png",
+          "achievement": true,
+          "group": "UPRISING_2019",
+          "description": "Complete Storm Rising (All Heroes) on Hard difficulty."
+        },
+        {
+          "name": "Cut the Brakes",
+          "id": "cut-the-brakes",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/cut-the-brakes.png",
+          "achievement": true,
+          "group": "UPRISING_2019",
+          "description": "Complete Storm Rising (Story) on Legendary difficulty."
         },
         {
           "name": "Droppachi",
@@ -5072,6 +5196,33 @@
           "achievement": true,
           "group": "UPRISING_2017",
           "description": "Complete Uprising on Hard difficulty."
+        },
+        {
+          "name": "Hot Pursuit",
+          "id": "hot-pursuit",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/hot-pursuit.png",
+          "achievement": true,
+          "group": "UPRISING_2019",
+          "description": "Complete Storm Rising (Story) on Expert difficulty."
+        },
+        {
+          "name": "Light the Way",
+          "id": "light-the-way",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/light-the-way.png",
+          "achievement": true,
+          "group": "UPRISING_2019",
+          "description": "Complete Storm Rising (Story) with each of the 4 heroes."
+        },
+        {
+          "name": "New Strike Team",
+          "id": "new-strike-team",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/new-strike-team.png",
+          "achievement": true,
+          "group": "UPRISING_2019",
+          "description": "Complete Storm Rising (All Heroes) on Legendary difficulty with no incapacitations."
         },
         {
           "name": "Nullmari",
@@ -5161,6 +5312,15 @@
           "achievement": true,
           "group": "UPRISING_2018",
           "description": "Complete Retribution with each of the 4 heroes."
+        },
+        {
+          "name": "The Broker",
+          "id": "the-broker",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/the-broker.png",
+          "achievement": true,
+          "group": "UPRISING_2019",
+          "description": "Complete Storm Rising (All Heroes) on Expert difficulty."
         },
         {
           "name": "Anniversary",
@@ -5910,8 +6070,7 @@
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-were-not-keeping-score.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Follow me",
@@ -6094,6 +6253,16 @@
           "id": "ashe-safari",
           "quality": "legendary",
           "url": "/heroes/ashe/skins/ashe-safari.jpg"
+        },
+        {
+          "name": "Socialite",
+          "id": "ashe-socialite",
+          "quality": "legendary",
+          "url": "/heroes/ashe/skins/ashe-socialite.jpg",
+          "description": "As the daughter of socialites, Ashe feels just as comfortable at charity balls as she does on a motorcycle.",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         }
       ],
       "emotes": [
@@ -6180,6 +6349,15 @@
           "id": "ashe-deadlock-rebels",
           "url": "/heroes/ashe/icons/ashe-deadlock-rebels.png",
           "hero": "ashe"
+        },
+        {
+          "name": "Butler",
+          "id": "ashe-butler",
+          "url": "/heroes/ashe/icons/ashe-butler.png",
+          "event": "UPRISING",
+          "hero": "ashe",
+          "group": "UPRISING_2019",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -6358,6 +6536,15 @@
           "isNew": true
         },
         {
+          "name": "Playground Victory",
+          "id": "ashe-playground-victory",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-playground-victory.png",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Cute",
           "id": "ashe-cute",
           "quality": "common",
@@ -6507,6 +6694,33 @@
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
+        },
+        {
+          "name": "Do you trust me?",
+          "id": "ashe-do-you-trust-me",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-do-you-trust-me.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
+          "name": "Fetch my butler",
+          "id": "ashe-fetch-my-butler",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-fetch-my-butler.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
+          "name": "Mind your manners",
+          "id": "ashe-mind-your-manners",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-mind-your-manners.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         }
       ],
       "poses": [
@@ -6632,6 +6846,16 @@
           "id": "baptiste-spec-ops",
           "quality": "legendary",
           "url": "/heroes/baptiste/skins/baptiste-spec-ops.jpg"
+        },
+        {
+          "name": "Talon",
+          "id": "baptiste-talon",
+          "quality": "legendary",
+          "url": "/heroes/baptiste/skins/baptiste-talon.jpg",
+          "description": "After his service in the Caribbean Coalition was complete, Baptiste struggled to find a demand for his unique skills. Talon was more than happy to help.",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         }
       ],
       "emotes": [
@@ -6718,6 +6942,15 @@
           "id": "baptiste-kraken",
           "url": "/heroes/baptiste/icons/baptiste-kraken.png",
           "hero": "baptiste"
+        },
+        {
+          "name": "Lieutenant Augustin",
+          "id": "baptiste-lieutenant-augustin",
+          "url": "/heroes/baptiste/icons/baptiste-lieutenant-augustin.png",
+          "event": "UPRISING",
+          "hero": "baptiste",
+          "group": "UPRISING_2019",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -6860,6 +7093,15 @@
           "url": "/heroes/baptiste/sprays/baptiste-watchful.png"
         },
         {
+          "name": "Carry",
+          "id": "baptiste-carry",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-carry.png",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Cute",
           "id": "baptiste-cute",
           "quality": "common",
@@ -6949,6 +7191,33 @@
           "id": "baptiste-what-are-you-trying-to-pull",
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-what-are-you-trying-to-pull.ogg"
+        },
+        {
+          "name": "Associates",
+          "id": "baptiste-associates",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-associates.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
+          "name": "Caribbean Coalition",
+          "id": "baptiste-caribbean-coalition",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-caribbean-coalition.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
+          "name": "Lieutenant Augustin",
+          "id": "baptiste-lieutenant-augustin",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-lieutenant-augustin.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         }
       ],
       "poses": [
@@ -7118,6 +7387,16 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "name": "Gwishin",
+          "id": "bastion-gwishin",
+          "quality": "legendary",
+          "url": "/heroes/bastion/skins/bastion-gwishin.jpg",
+          "description": "The Gwishin omnic colossus rose from the omnium in the East China Sea. The Mobile Exo-Force of the Korean Army, or MEKA, was formed in response to the Gwishin's constant attacks.",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Dune Buggy",
           "id": "bastion-dune-buggy",
           "quality": "legendary",
@@ -7280,6 +7559,15 @@
           "event": "WINTER_WONDERLAND",
           "hero": "bastion",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Gwishin",
+          "id": "bastion-gwishin",
+          "url": "/heroes/bastion/icons/bastion-gwishin.png",
+          "event": "UPRISING",
+          "hero": "bastion",
+          "group": "UPRISING_2019",
+          "isNew": true
         },
         {
           "name": "Goldbot",
@@ -7685,8 +7973,7 @@
           "quality": "common",
           "url": "/heroes/bastion/voicelines/bastion-zwing-zwing-zwing.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "BEW-WOO BEW-WOO",
@@ -8223,8 +8510,7 @@
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-frustrated.png",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Eight of Spades",
@@ -8398,8 +8684,7 @@
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-a-chicken-out-of-a-feather.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Don't get caught",
@@ -8407,7 +8692,15 @@
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-dont-get-caught.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
+          "group": "UPRISING_2018"
+        },
+        {
+          "name": "If you make your bed, lie in it",
+          "id": "brigitte-if-you-make-your-bed-lie-in-it",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-if-you-make-your-bed-lie-in-it.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
           "isNew": true
         },
         {
@@ -8416,8 +8709,7 @@
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-time-to-roll-up-my-sleeves.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "It's just a flesh wound",
@@ -8497,8 +8789,7 @@
           "quality": "rare",
           "url": "/heroes/brigitte/poses/brigitte-kneel.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         }
       ],
       "weapons": [
@@ -9274,8 +9565,7 @@
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-amazing.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Not taking me seriously",
@@ -9491,8 +9781,7 @@
           "url": "/heroes/doomfist/skins/doomfist-talon.jpg",
           "description": "Doomfist rose in power in Talon after killing his mentor, Akinjide Adeyemi, the Scourge of Numbani.",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Formal",
@@ -9592,7 +9881,15 @@
           "quality": "epic",
           "url": "/heroes/doomfist/intros/doomfist-combo.webm",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
+          "group": "UPRISING_2018"
+        },
+        {
+          "name": "Seismic Slam",
+          "id": "doomfist-seismic-slam",
+          "quality": "epic",
+          "url": "/heroes/doomfist/intros/doomfist-seismic-slam.webm",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
           "isNew": true
         }
       ],
@@ -9644,8 +9941,7 @@
           "url": "/heroes/doomfist/icons/doomfist-ogundimu.png",
           "event": "UPRISING",
           "hero": "doomfist",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Akandeversary",
@@ -9874,8 +10170,7 @@
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-thumbs-down.png",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Nine of Clubs",
@@ -10056,8 +10351,7 @@
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-i-am-not-your-savior.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "I didn't ask for your opinion",
@@ -10065,8 +10359,7 @@
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-i-didnt-ask-for-your-opinion.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "I know you can do better",
@@ -10074,8 +10367,7 @@
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-i-know-you-can-do-better.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Take it on the chin",
@@ -10863,8 +11155,7 @@
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-your-eyes-deceive-you.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "I'm Not Impressed",
@@ -11071,8 +11362,7 @@
           "url": "/heroes/hanzo/skins/hanzo-scion.jpg",
           "description": "Over the centuries, the Shimada clan grew to profit from a lucrative trade in arms and other illegal substances.",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Cyberninja",
@@ -11171,6 +11461,15 @@
           "url": "/heroes/hanzo/intros/hanzo-target-practice.webm",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "name": "Storm Arrow",
+          "id": "hanzo-storm-arrow",
+          "quality": "epic",
+          "url": "/heroes/hanzo/intros/hanzo-storm-arrow.webm",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         }
       ],
       "icons": [
@@ -11229,8 +11528,7 @@
           "url": "/heroes/hanzo/icons/hanzo-scion.png",
           "event": "UPRISING",
           "hero": "hanzo",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Kinenbi",
@@ -11638,13 +11936,21 @@
           "group": "UPRISING_2017"
         },
         {
+          "name": "History forged by the sword",
+          "id": "hanzo-history-forged-by-the-sword",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-history-forged-by-the-sword.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "My fate is written in blood",
           "id": "hanzo-my-fate-is-written-in-blood",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-my-fate-is-written-in-blood.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Unacceptable",
@@ -11821,6 +12127,15 @@
           "url": "/heroes/junkrat/skins/junkrat-firework.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Circus",
+          "id": "junkrat-circus",
+          "quality": "epic",
+          "url": "/heroes/junkrat/skins/junkrat-circus.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         },
         {
           "name": "Fool",
@@ -12453,8 +12768,7 @@
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-i-really-blew-that-one.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Too right",
@@ -12563,8 +12877,7 @@
           "quality": "rare",
           "url": "/heroes/junkrat/poses/junkrat-mug-shot.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         }
       ],
       "weapons": [
@@ -12714,8 +13027,7 @@
           "quality": "legendary",
           "url": "/heroes/lucio/skins/lucio-equalizer.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Jazzy",
@@ -12880,8 +13192,7 @@
           "url": "/heroes/lucio/icons/lucio-equalizer.png",
           "event": "UPRISING",
           "hero": "lucio",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Lúciouro",
@@ -13296,8 +13607,7 @@
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-turn-it-up-in-my-headphones.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Can you hear me now?",
@@ -13547,6 +13857,16 @@
           "group": "UPRISING_2017"
         },
         {
+          "name": "Deadlock",
+          "id": "mccree-deadlock",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-deadlock.jpg",
+          "description": "In their younger days, Jesse McCree and Elizabeth \"Calamity\" Ashe co-founded the Deadlock Gang.",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Sherlock",
           "id": "mccree-sherlock",
           "quality": "legendary",
@@ -13703,6 +14023,15 @@
           "event": "UPRISING",
           "hero": "mccree",
           "group": "UPRISING_2017"
+        },
+        {
+          "name": "Deadlock McCree",
+          "id": "mccree-deadlock-mccree",
+          "url": "/heroes/mccree/icons/mccree-deadlock-mccree.png",
+          "event": "UPRISING",
+          "hero": "mccree",
+          "group": "UPRISING_2019",
+          "isNew": true
         },
         {
           "name": "GAMF",
@@ -14118,7 +14447,15 @@
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-dont-sass-me.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
+          "group": "UPRISING_2018"
+        },
+        {
+          "name": "Gathering no moss",
+          "id": "mccree-gathering-no-moss",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-gathering-no-moss.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
           "isNew": true
         },
         {
@@ -14360,8 +14697,7 @@
           "url": "/heroes/mei/skins/mei-pajamei.jpg",
           "description": "Due to a malfunction of Ecopoint: Antarctica's cryogenics facility, Mei was kept in hibernation for almost a decade and woke up to find a new, unfamiliar world.",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Beekeeper",
@@ -14542,8 +14878,7 @@
           "url": "/heroes/mei/icons/mei-mug.png",
           "event": "UPRISING",
           "hero": "mei",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "May",
@@ -14928,13 +15263,21 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "A new adventure",
+          "id": "mei-a-new-adventure",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-a-new-adventure.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "I'm just a scientist",
           "id": "mei-im-just-a-scientist",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-im-just-a-scientist.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Science this",
@@ -15765,7 +16108,15 @@
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-a-timely-intervention.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
+          "group": "UPRISING_2018"
+        },
+        {
+          "name": "I'm needed somewhere",
+          "id": "mercy-im-needed-somewhere",
+          "quality": "common",
+          "url": "/heroes/mercy/voicelines/mercy-im-needed-somewhere.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
           "isNew": true
         },
         {
@@ -16002,7 +16353,16 @@
           "url": "/heroes/moira/skins/moira-blackwatch.jpg",
           "description": "In addition to her research as a part of Blackwatch, Moira occasionally participated in clandestine operations, including the Venice Incident.",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
+          "group": "UPRISING_2018"
+        },
+        {
+          "name": "Scientist",
+          "id": "moira-scientist",
+          "quality": "legendary",
+          "url": "/heroes/moira/skins/moira-scientist.jpg",
+          "description": "To this day, Dr. O'Deorain remains a controversial figure in genetic research. Her brilliance was never in question; her ethics, almost always.",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
           "isNew": true
         }
       ],
@@ -16140,13 +16500,21 @@
           "isNew": true
         },
         {
+          "name": "Coinín",
+          "id": "moira-coinn",
+          "url": "/heroes/moira/icons/moira-coinn.png",
+          "event": "UPRISING",
+          "hero": "moira",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "O'Deorain",
           "id": "moira-odeorain",
           "url": "/heroes/moira/icons/moira-odeorain.png",
           "event": "UPRISING",
           "hero": "moira",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Cothrom an Lae",
@@ -16368,8 +16736,7 @@
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-foundation.png",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Nine of Hearts",
@@ -16549,13 +16916,21 @@
           "group": "LUNAR_NEW_YEAR_2018"
         },
         {
+          "name": "Faith in science",
+          "id": "moira-faith-in-science",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-faith-in-science.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Get off the stage",
           "id": "moira-get-off-the-stage",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-get-off-the-stage.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "This is to my liking",
@@ -16563,8 +16938,7 @@
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-this-is-to-my-liking.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "You're mistaken",
@@ -16572,8 +16946,7 @@
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-youre-mistaken.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Good news, everyone",
@@ -16662,8 +17035,7 @@
           "quality": "rare",
           "url": "/heroes/moira/poses/moira-erlenmeyer.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         }
       ],
       "weapons": [
@@ -16885,8 +17257,7 @@
           "quality": "epic",
           "url": "/heroes/orisa/intros/orisa-immovable.webm",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         }
       ],
       "icons": [
@@ -17343,8 +17714,7 @@
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-i-was-only-trying-to-help.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Have a bad feeling about this",
@@ -17412,8 +17782,7 @@
           "quality": "rare",
           "url": "/heroes/orisa/poses/orisa-puppy.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         }
       ],
       "weapons": [
@@ -18102,6 +18471,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "name": "From my mother",
+          "id": "pharah-from-my-mother",
+          "quality": "common",
+          "url": "/heroes/pharah/voicelines/pharah-from-my-mother.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "I am the Rocket Queen",
           "id": "pharah-i-am-the-rocket-queen",
           "quality": "common",
@@ -18115,8 +18493,7 @@
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-i-live-for-a-good-fight.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Fly casual",
@@ -18339,8 +18716,7 @@
           "url": "/heroes/reaper/skins/reaper-soldier-24.jpg",
           "description": "Before serving on the original Overwatch strike team, Gabriel Reyes was selected to be a member of the government's classified soldier enhancement program.",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Blackwatch Reyes",
@@ -18503,8 +18879,7 @@
           "url": "/heroes/reaper/icons/reaper-soldier-24.png",
           "event": "UPRISING",
           "hero": "reaper",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Reapiversary",
@@ -18916,8 +19291,7 @@
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-revenge-is-sweet.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "I'll see you in hell",
@@ -19719,8 +20093,7 @@
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-prost.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Unstoppable",
@@ -19804,8 +20177,7 @@
           "quality": "rare",
           "url": "/heroes/reinhardt/poses/reinhardt-kneel.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         }
       ],
       "weapons": [
@@ -20504,8 +20876,7 @@
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-you-wanna-scrap-with-me.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "I don't like talkers",
@@ -20597,8 +20968,7 @@
           "quality": "rare",
           "url": "/heroes/roadhog/poses/roadhog-mug-shot.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         }
       ],
       "weapons": [
@@ -20732,6 +21102,16 @@
           "url": "/heroes/soldier-76/skins/soldier-76-alpine-76.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Formal: 76",
+          "id": "soldier-76-formal-76",
+          "quality": "legendary",
+          "url": "/heroes/soldier-76/skins/soldier-76-formal-76.jpg",
+          "description": "During his service in Overwatch, Jack Morrison received many commendations for his leadership.",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         },
         {
           "name": "Cyborg: 76",
@@ -20896,6 +21276,15 @@
           "event": "WINTER_WONDERLAND",
           "hero": "soldier-76",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Formal: 76",
+          "id": "soldier-76-formal-76",
+          "url": "/heroes/soldier-76/icons/soldier-76-formal-76.png",
+          "event": "UPRISING",
+          "hero": "soldier-76",
+          "group": "UPRISING_2019",
+          "isNew": true
         },
         {
           "name": "Gold Soldier",
@@ -21293,8 +21682,7 @@
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-dont-call-me-a-hero.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Not getting any younger",
@@ -21537,8 +21925,7 @@
           "url": "/heroes/sombra/skins/sombra-talon.jpg",
           "description": "Sombra is only too happy to utilize the power and reach of Talon while pursuing her own goals.",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Demon Hunter",
@@ -21685,8 +22072,7 @@
           "url": "/heroes/sombra/icons/sombra-colomar.png",
           "event": "UPRISING",
           "hero": "sombra",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Aniversario",
@@ -22109,8 +22495,7 @@
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-back-to-la-medianoche.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Don't be a coward",
@@ -22127,6 +22512,15 @@
           "url": "/heroes/sombra/voicelines/sombra-id-love-to-stay-and-chat.ogg",
           "event": "UPRISING",
           "group": "UPRISING_2017"
+        },
+        {
+          "name": "Nice working with you",
+          "id": "sombra-nice-working-with-you",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-nice-working-with-you.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         },
         {
           "name": "I need a drink",
@@ -22212,6 +22606,15 @@
           "url": "/heroes/sombra/poses/sombra-sparklers.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Data Cube",
+          "id": "sombra-data-cube",
+          "quality": "rare",
+          "url": "/heroes/sombra/poses/sombra-data-cube.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         }
       ],
       "weapons": [
@@ -22907,7 +23310,15 @@
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-timepass.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
+          "group": "UPRISING_2018"
+        },
+        {
+          "name": "What the future holds",
+          "id": "symmetra-what-the-future-holds",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-what-the-future-holds.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
           "isNew": true
         },
         {
@@ -23704,8 +24115,7 @@
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-bingo.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Just start hammering",
@@ -24560,8 +24970,7 @@
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-time-is-on-my-side.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Did I miss something?",
@@ -25358,8 +25767,7 @@
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-always-the-hunters.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "The performance begins",
@@ -25460,6 +25868,15 @@
           "url": "/heroes/widowmaker/poses/widowmaker-fans.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "name": "Surveillance",
+          "id": "widowmaker-surveillance",
+          "quality": "rare",
+          "url": "/heroes/widowmaker/poses/widowmaker-surveillance.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         }
       ],
       "weapons": [
@@ -25591,8 +26008,7 @@
           "url": "/heroes/winston/skins/winston-specimen-28.jpg",
           "description": "The gorilla known as Specimen 28 showed rapid brain development from genetic therapy, surpassing that of the other subjects.",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         }
       ],
       "emotes": [
@@ -25756,8 +26172,7 @@
           "url": "/heroes/winston/icons/winston-specimen-28.png",
           "event": "UPRISING",
           "hero": "winston",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Goldrilla",
@@ -26181,8 +26596,7 @@
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-primal-punch.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Can't keep a good ape down",
@@ -26334,6 +26748,15 @@
           "url": "/heroes/wrecking-ball/skins/wrecking-ball-wooden-ball.jpg"
         },
         {
+          "name": "High Roller",
+          "id": "wrecking-ball-high-roller",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-high-roller.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Horizon",
           "id": "wrecking-ball-horizon",
           "quality": "legendary",
@@ -26443,6 +26866,15 @@
           "url": "/heroes/wrecking-ball/intros/wrecking-ball-festive.webm",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2018",
+          "isNew": true
+        },
+        {
+          "name": "Dramatic",
+          "id": "wrecking-ball-dramatic",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/intros/wrecking-ball-dramatic.webm",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
           "isNew": true
         }
       ],
@@ -26681,6 +27113,15 @@
           "isNew": true
         },
         {
+          "name": "Exercise",
+          "id": "wrecking-ball-exercise",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-exercise.png",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Cute",
           "id": "wrecking-ball-cute",
           "quality": "common",
@@ -26842,6 +27283,42 @@
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2019",
           "isNew": true
+        },
+        {
+          "name": "Access denied",
+          "id": "wrecking-ball-access-denied",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-access-denied.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
+          "name": "K.O.",
+          "id": "wrecking-ball-ko",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-ko.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
+          "name": "Laughter",
+          "id": "wrecking-ball-laughter",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-laughter.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
+          "name": "Translation not found",
+          "id": "wrecking-ball-translation-not-found",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-translation-not-found.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         }
       ],
       "poses": [
@@ -26966,6 +27443,15 @@
           "url": "/heroes/zarya/skins/zarya-frosted.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Racer",
+          "id": "zarya-racer",
+          "quality": "epic",
+          "url": "/heroes/zarya/skins/zarya-racer.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         },
         {
           "name": "Arctic",
@@ -27138,8 +27624,7 @@
           "quality": "epic",
           "url": "/heroes/zarya/intros/zarya-graviton-surge.webm",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         }
       ],
       "icons": [
@@ -27605,8 +28090,7 @@
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-you-have-failed-your-team.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Is that all?",
@@ -28404,6 +28888,15 @@
           "group": "LUNAR_NEW_YEAR_2018"
         },
         {
+          "name": "Not ready to learn",
+          "id": "zenyatta-not-ready-to-learn",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-not-ready-to-learn.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
           "name": "Path to enlightenment",
           "id": "zenyatta-path-to-enlightenment",
           "quality": "common",
@@ -28425,8 +28918,7 @@
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-your-lesson-for-today.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2018",
-          "isNew": true
+          "group": "UPRISING_2018"
         },
         {
           "name": "Existence is mysterious",
@@ -28503,6 +28995,15 @@
           "url": "/heroes/zenyatta/poses/zenyatta-toast.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Meditation",
+          "id": "zenyatta-meditation",
+          "quality": "rare",
+          "url": "/heroes/zenyatta/poses/zenyatta-meditation.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019",
+          "isNew": true
         }
       ],
       "weapons": [
