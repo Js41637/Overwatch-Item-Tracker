@@ -164,7 +164,7 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
     const isOtherCompItem = item.id.match(/^(top-500|(copa-lucioball|competitive-ctf|competitive-(6v6|3v3)-(group-)?elimination|competitive-(team-)?deathmatch)-\w+(-\d+)?)$/)
     const isCompItem =  isSeasonCompItem || isOtherCompItem ? { group: 'competitive' } : undefined;
     const isOWLItem = item.id.match(/^(inaugural-season)$/)
-    const isPachiItem = item.id.startsWith('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined;
+    const isPachiItem = item.id.includes('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined;
     const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined;
     let isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem)
       ? { achievement: true }

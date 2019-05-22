@@ -1,5 +1,5 @@
 const { qualityOrder } = require('./utils.js');
-const CURRENTEVENT = 'LUNAR_NEW_YEAR';
+const CURRENTEVENT = 'ANNIVERSARY';
 
 const EVENTS = {
   SUMMER16: 'SUMMER_GAMES_2016',
@@ -24,6 +24,7 @@ const EVENTS = {
 
   ANNIVERSARY17: 'ANNIVERSARY_2017',
   ANNIVERSARY18: 'ANNIVERSARY_2018',
+  ANNIVERSARY19: 'ANNIVERSARY_2019',
 
   SUMMER: 'SUMMER_GAMES',
   HALLOWEEN: 'HALLOWEEN',
@@ -39,7 +40,7 @@ const LATEST_EVENTS = {
   [EVENTS.WINTER]: EVENTS.CHRISTMAS18,
   [EVENTS.LUNAR]: EVENTS.LUNAR19,
   [EVENTS.UPRISING]: EVENTS.UPRISING19,
-  [EVENTS.ANNIVERSARY]: EVENTS.ANNIVERSARY18
+  [EVENTS.ANNIVERSARY]: EVENTS.ANNIVERSARY19
 }
 
 const EVENTORDER = {
@@ -145,7 +146,7 @@ const EVENT_ITEM_ORDER = {
   [EVENTS.ANNIVERSARY]: {
     skins: [a => qualityOrder[a.quality], 'heroName', 'name'],
     icons: ['heroName', 'name'],
-    voicelines: ['heroName', item => item.isNew ? 1 : 0, 'name']
+    voicelines: ['isNew', 'heroName', 'name']
   },
   [EVENTS.LUNAR]: {
     skins: [a => qualityOrder[a.quality], 'heroName', 'name'],
