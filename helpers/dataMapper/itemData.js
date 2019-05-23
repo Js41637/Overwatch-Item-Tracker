@@ -210,6 +210,15 @@ const data = {
       skins: ['mercy-pink'],
       sprays: ['mercy-pink', 'mercy-cure', 'mercy-ribbon', 'mercy-together'],
       icons: ['mercy-pink', 'mercy-ribbon']
+    },
+    owl: {
+      emotes: ['lucio-dance-party'],
+      skins: [
+        'genji-2018-pacific-allstars',
+        'tracer-2018-atlantic-allstars',
+        'lucio-2019-pacific-allstars',
+        'mercy-2019-atlantic-allstars'
+      ]
     }
   },
   noLongerPurchaseableItems: {
