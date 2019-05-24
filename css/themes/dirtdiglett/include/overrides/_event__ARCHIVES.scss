@@ -9,28 +9,7 @@ $color__smeared-ice: rgb(167, 192, 206);
 $color__special-blue: rgb(81, 148, 200);
 $opacity__ice-blue: 0.8;
 
-// Specific event override
-#hero-nav .gallery.event .block[href$="/UPRISING"] .img,
-body#UPRISING .header-content::before {
-  background-image: url($ROOT + '/resources/updates/UPRISING/archives_logo.png') !important;
-}
-
 body#UPRISING {
-  .event-logo {
-    opacity: 0;
-  }
-
-  .header-content::before {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    height: $font__page-title--lg;
-    width: solve-ratio($width: 39.7rem, $height: 12rem, $denominator: $font__page-title--lg);
-  }
-
   #legendary-skins {
     .images .card {
       &::before {

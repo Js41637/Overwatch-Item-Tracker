@@ -93,7 +93,7 @@ const data = {
       icons: ['nexus']
     },
     "overwatch league": {
-      icons: [...OWLTEAMS, 'inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018'],
+      icons: [...OWLTEAMS, 'inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars'],
       sprays: [...OWLTEAMLOGOS, 'inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar']
     }
   },
@@ -202,7 +202,7 @@ const data = {
       [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "winter-wonderland-2018", "snowman", "present", "pachimerry", "gingermari", "pachicracker", "snowimari", "2017", "2018", "2019", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
       [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu", 'guan-yu', 'hong-gildong', 'huang-zhong', 'l-bu', 'piggimari', 'year-of-the-pig-2019', 'zhang-fei', 'zhuge-liang'],
       [EVENTS.UPRISING]: ['archives-2019', 'archives-2018', 'uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'assassin', 'enforcer', 'heavy-assault', 'maximilien', 'sniper', 'trooper'],
-      [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'anniversary-2018', 'pachiversary'],
+      [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'anniversary-2018', 'anniversary-2019', 'cupachicake', 'pachiversary'],
     }
   },
   specialAchievementItems: {
@@ -210,6 +210,15 @@ const data = {
       skins: ['mercy-pink'],
       sprays: ['mercy-pink', 'mercy-cure', 'mercy-ribbon', 'mercy-together'],
       icons: ['mercy-pink', 'mercy-ribbon']
+    },
+    owl: {
+      emotes: ['lucio-dance-party'],
+      skins: [
+        'genji-2018-pacific-allstars',
+        'tracer-2018-atlantic-allstars',
+        'lucio-2019-pacific-allstars',
+        'mercy-2019-atlantic-allstars'
+      ]
     }
   },
   noLongerPurchaseableItems: {

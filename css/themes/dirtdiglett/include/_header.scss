@@ -11,6 +11,7 @@
   .right {
     display: flex;
     align-items: center;
+    white-space: nowrap;
   }
 
   #header-logo {
@@ -51,7 +52,7 @@
 
       .img {
         display: inline-block;
-        height: 100%;
+        height: $size__navigation-height;
         width: solve-ratio($width: nth($size__hero-icon, 1), $height: nth($size__hero-icon, 2), $denominator: $size__navigation-height);
         background-size: cover;
         margin-right: 1.6rem;
