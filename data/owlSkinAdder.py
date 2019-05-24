@@ -12,6 +12,24 @@ for hero in masterData['heroes']:
 	if(hero != 'all'): 
 		heroesList.append(hero)
 		
+		if(hero == 'mercy'):
+			extraSkins =  {
+				"name": "2019 Atlantic All-Stars",
+				"id": hero + "-2019-atlantic-all-stars",
+				"url": "/owlskins/" + hero + "-2019-atlantic-all-stars.jpg",
+				"quality": "legendary",
+				"achievement": "owl"
+			}
+		
+		if(hero == 'lucio'):
+			extraSkins =  {
+				"name": "2019 Pacific All-Stars",
+				"id": hero + "-2019-pacific-all-stars",
+				"url": "/owlskins/" + hero + "-2019-pacific-all-stars.jpg",
+				"quality": "legendary",
+				"achievement": "owl"
+			}
+		
 		if(hero == 'tracer'):
 			extraSkins =  {
 				"name": "2018 Atlantic All-Stars",
@@ -64,12 +82,12 @@ for hero in masterData['heroes']:
 			owlSkinsData.append(homeSkin)
 			owlSkinsData.append(awaySkin)
 		
-		try:
-			owlSkinsData.insert(0, extraSkins)
-			del extraSkins
-			print('Extras exist for ' + hero)
-		except NameError:
-			print('No extras for ' + hero)
+		# try:
+			# owlSkinsData.insert(0, extraSkins)
+			# del extraSkins
+			# print('Extras exist for ' + hero)
+		# except NameError:
+			# print('No extras for ' + hero)
 		
 		masterData['heroes'][hero]['items']['owlskins'] = owlSkinsData
 
