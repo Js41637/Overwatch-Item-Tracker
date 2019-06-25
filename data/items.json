@@ -624,6 +624,14 @@
         },
         {
           "name": "Combat Medic",
+          "id": "baptiste-combat-medic",
+          "url": "/heroes/baptiste/icons/baptiste-combat-medic.png",
+          "description": "Unlocked by participating in Baptiste's Reunion Challenge",
+          "achievement": "blizzard",
+          "hero": "baptiste"
+        },
+        {
+          "name": "Combat Medic",
           "id": "mercy-combat-medic",
           "url": "/heroes/mercy/icons/mercy-combat-medic.png",
           "event": "UPRISING",
@@ -6993,6 +7001,14 @@
           "url": "/heroes/baptiste/skins/baptiste-wasteland.jpg"
         },
         {
+          "name": "Combat Medic",
+          "id": "baptiste-combat-medic",
+          "quality": "epic",
+          "url": "/heroes/baptiste/skins/baptiste-combat-medic.jpg",
+          "description": "After leaving Talon, Baptiste aided in humanitarian efforts around the globe. But he never stayed in one place for too long.",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Buccaneer",
           "id": "baptiste-buccaneer",
           "quality": "legendary",
@@ -7138,6 +7154,14 @@
           "hero": "baptiste",
           "group": "ANNIVERSARY_2019",
           "isNew": true
+        },
+        {
+          "name": "Combat Medic",
+          "id": "baptiste-combat-medic",
+          "url": "/heroes/baptiste/icons/baptiste-combat-medic.png",
+          "description": "Unlocked by participating in Baptiste's Reunion Challenge",
+          "achievement": "blizzard",
+          "hero": "baptiste"
         }
       ],
       "sprays": [
@@ -7312,6 +7336,70 @@
           "url": "/heroes/baptiste/sprays/baptiste-pixel.png",
           "achievement": true,
           "description": "Prevent 4 deaths with a single use of Baptiste's Immortality Field in Quick or Competitive play."
+        },
+        {
+          "name": "Analyst Nguyen",
+          "id": "baptiste-analyst-nguyen",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-analyst-nguyen.png",
+          "description": "Unlocked by watching participating streams during Baptiste's Reunion Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Combat Medic",
+          "id": "baptiste-combat-medic",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-combat-medic.png",
+          "description": "Unlocked by participating in Baptiste's Reunion Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Getaway",
+          "id": "baptiste-getaway",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-getaway.png",
+          "description": "Unlocked by watching participating streams during Baptiste's Reunion Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Mauga",
+          "id": "baptiste-mauga",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-mauga.png",
+          "description": "Unlocked by participating in Baptiste's Reunion Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Old Buddies",
+          "id": "baptiste-old-buddies",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-old-buddies.png",
+          "description": "Unlocked by watching participating streams during Baptiste's Reunion Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "So done",
+          "id": "baptiste-so-done",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-so-done.png",
+          "description": "Unlocked by watching participating streams during Baptiste's Reunion Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "So Fresh",
+          "id": "baptiste-so-fresh",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-so-fresh.png",
+          "description": "Unlocked by watching participating streams during Baptiste's Reunion Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Working vacation",
+          "id": "baptiste-working-vacation",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-working-vacation.png",
+          "description": "Unlocked by watching participating streams during Baptiste's Reunion Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -8945,6 +9033,15 @@
           "group": "UPRISING_2018"
         },
         {
+          "name": "Get out of here",
+          "id": "brigitte-take-a-hike",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-take-a-hike.ogg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2019",
+          "isNew": true
+        },
+        {
           "name": "It's just a flesh wound",
           "id": "brigitte-its-just-a-flesh-wound",
           "quality": "common",
@@ -8967,15 +9064,6 @@
           "url": "/heroes/brigitte/voicelines/brigitte-no-problem.ogg",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2018"
-        },
-        {
-          "name": "Take a hike",
-          "id": "brigitte-take-a-hike",
-          "quality": "common",
-          "url": "/heroes/brigitte/voicelines/brigitte-take-a-hike.ogg",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
         }
       ],
       "poses": [
@@ -21341,6 +21429,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "name": "I'm beached as, bro",
+          "id": "roadhog-youre-a-talker",
+          "quality": "common",
+          "url": "/heroes/roadhog/voicelines/roadhog-youre-a-talker.ogg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2019",
+          "isNew": true
+        },
+        {
           "name": "I'm going hog wild!",
           "id": "roadhog-im-going-hog-wild",
           "quality": "common",
@@ -21355,15 +21452,6 @@
           "url": "/heroes/roadhog/voicelines/roadhog-thats-my-business.ogg",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2018"
-        },
-        {
-          "name": "You're a talker",
-          "id": "roadhog-youre-a-talker",
-          "quality": "common",
-          "url": "/heroes/roadhog/voicelines/roadhog-youre-a-talker.ogg",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
         }
       ],
       "poses": [

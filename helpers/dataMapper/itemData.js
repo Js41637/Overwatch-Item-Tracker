@@ -19,6 +19,9 @@ const data = {
     "icons/2018-pacific-allstars": "pacific-allstars-2018",
     "icons/2018-atlantic-allstars": "atlantic-allstars-2018",
 
+    "voicelines/roadhog-im-beached-as-bro": "roadhog-youre-a-talker",
+    "voicelines/brigitte-get-out-of-here": "brigitte-take-a-hike",
+
 
     "icons/competitive-ctf-competitor-2018": "competitive-ctf-competitor",
     "icons/competitive-ctf-hero-2018": "competitive-ctf-hero",
