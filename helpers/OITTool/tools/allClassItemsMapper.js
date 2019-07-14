@@ -27,6 +27,7 @@ const mapAllClassData = () => {
       return getDirectories(`${base}${type}`).then(groups => {
         return Promise.all(groups.map(group => {
           return getDirectories(`${base}${type}/${group}`).then(files => {
+            files = files.filter(x => !fs.statSync(`${base}${type}/${group}/${x}`).isDirectory())
             files = cleanFileIDs(files);
             return Promise.all(files.map(({ name, cleanName }) => {
               data[TYPES[type]].push({ name: name.slice(0, -4), id: cleanName });
