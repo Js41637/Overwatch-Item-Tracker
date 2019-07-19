@@ -790,7 +790,8 @@
           "id": "footballmari",
           "url": "/heroes/all/icons/footballmari.png",
           "group": "SUMMER_GAMES_2019",
-          "isNew": true
+          "isNew": true,
+          "description": "Unlocked by participating in the Summer Games 2019 week 3 challenge"
         },
         {
           "hero": "all",
@@ -903,7 +904,8 @@
           "id": "punchimari",
           "url": "/heroes/all/icons/punchimari.png",
           "group": "SUMMER_GAMES_2019",
-          "isNew": true
+          "isNew": true,
+          "description": "Unlocked by participating in the Summer Games 2019 week 1 challenge"
         },
         {
           "hero": "all",
@@ -945,7 +947,8 @@
           "name": "Summer Games 2016",
           "id": "summer-games-2016",
           "url": "/heroes/all/icons/summer-games-2016.png",
-          "group": "SUMMER_GAMES_2016"
+          "group": "SUMMER_GAMES_2016",
+          "description": "Unlocked with Summer Games 2016"
         },
         {
           "hero": "all",
@@ -989,7 +992,8 @@
           "id": "tennismari",
           "url": "/heroes/all/icons/tennismari.png",
           "group": "SUMMER_GAMES_2019",
-          "isNew": true
+          "isNew": true,
+          "description": "Unlocked by participating in the Summer Games 2019 week 2 challenge"
         },
         {
           "hero": "all",
@@ -1281,33 +1285,6 @@
         },
         {
           "hero": "all",
-          "name": "Sand Castle",
-          "id": "sand-castle",
-          "url": "/heroes/all/sprays/sand-castle.png",
-          "group": "SUMMER_GAMES_2019",
-          "isNew": true,
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Shark Attack",
-          "id": "shark-attack",
-          "url": "/heroes/all/sprays/shark-attack.png",
-          "group": "SUMMER_GAMES_2019",
-          "isNew": true,
-          "quality": "common"
-        },
-        {
-          "hero": "all",
-          "name": "Snorkling",
-          "id": "snorkling",
-          "url": "/heroes/all/sprays/snorkling.png",
-          "group": "SUMMER_GAMES_2019",
-          "isNew": true,
-          "quality": "common"
-        },
-        {
-          "hero": "all",
           "name": "Summer Games",
           "id": "summer-games",
           "url": "/heroes/all/sprays/summer-games.png",
@@ -1319,7 +1296,8 @@
           "name": "Summer Games 2016",
           "id": "summer-games-2016",
           "url": "/heroes/all/sprays/summer-games-2016.png",
-          "group": "SUMMER_GAMES_2016"
+          "group": "SUMMER_GAMES_2016",
+          "description": "Unlocked with Summer Games 2016"
         },
         {
           "hero": "all",
@@ -1347,6 +1325,36 @@
           "group": "SUMMER_GAMES_2017",
           "achievement": true,
           "description": "Score 3 saves in a row in Lúcioball."
+        },
+        {
+          "hero": "all",
+          "name": "Sand Castle",
+          "id": "sand-castle",
+          "url": "/heroes/all/sprays/sand-castle.png",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Unlocked by participating in the Summer Games 2019 week 3 challenge"
+        },
+        {
+          "hero": "all",
+          "name": "Shark Attack",
+          "id": "shark-attack",
+          "url": "/heroes/all/sprays/shark-attack.png",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Unlocked by participating in the Summer Games 2019 week 1 challenge"
+        },
+        {
+          "hero": "all",
+          "name": "Snorkling",
+          "id": "snorkling",
+          "url": "/heroes/all/sprays/snorkling.png",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Unlocked by participating in the Summer Games 2019 week 2 challenge"
         }
       ],
       "voicelines": [
@@ -10460,7 +10468,8 @@
           "name": "B73-NS",
           "id": "b73ns",
           "url": "/heroes/all/icons/b73ns.png",
-          "group": "UPRISING_2017"
+          "group": "UPRISING_2017",
+          "description": "Complete Uprising on Expert difficulty."
         },
         {
           "hero": "all",
@@ -10502,7 +10511,8 @@
           "name": "Nullmari",
           "id": "nullmari",
           "url": "/heroes/all/icons/nullmari.png",
-          "group": "UPRISING_2017"
+          "group": "UPRISING_2017",
+          "description": "Complete Uprising (All Heroes) with 8 different heroes."
         },
         {
           "hero": "all",

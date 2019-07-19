@@ -183,7 +183,7 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
     let description;
     const desc = getAchievementForItem(item.id);
 
-    if (desc && (type !== 'icons' || (type === 'icons' && !event))) {
+    if (desc && (type !== 'icons' || (type === 'icons' && !event) || (type === 'icons' && event && _.get(allClassEventItems, [type, event], []).includes(item.id)))) {
       description = { description: desc };
     }
 
@@ -475,10 +475,11 @@ _.forEach(allClassEventItems, (types, type) => {
       const isAchivement = achievementSprays.includes(itemID);
       if (isAchivement && type === 'sprays') {
         Object.assign(out, { achievement: true });
-        var desc = getAchievementForItem(itemID);
-        if (desc) {
-          Object.assign(out, { description: desc });
-        }
+      }
+
+      var desc = getAchievementForItem(itemID);
+      if (desc) {
+        Object.assign(out, { description: desc });
       }
 
       const isNoLongerPurchasble = noLongerPurchaseableItems[type] && noLongerPurchaseableItems[type].includes(itemID)

@@ -248,7 +248,8 @@
           "name": "B73-NS",
           "id": "b73ns",
           "event": "UPRISING",
-          "url": "/heroes/all/icons/b73ns.png"
+          "url": "/heroes/all/icons/b73ns.png",
+          "description": "Complete Uprising on Expert difficulty."
         },
         {
           "name": "Badge",
@@ -784,7 +785,8 @@
           "id": "copa-lucioball-competitor-2019",
           "url": "/heroes/all/icons/copa-lucioball-competitor-2019.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Copa Lúcioball 2019 placement matches"
         },
         {
           "name": "Copa Lúcioball Hero",
@@ -807,7 +809,8 @@
           "id": "copa-lucioball-hero-2019",
           "url": "/heroes/all/icons/copa-lucioball-hero-2019.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Copa Lúcioball 2019"
         },
         {
           "name": "Corsair",
@@ -1294,7 +1297,8 @@
           "id": "footballmari",
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/icons/footballmari.png",
-          "group": "pachi"
+          "group": "pachi",
+          "description": "Unlocked by participating in the Summer Games 2019 week 3 challenge"
         },
         {
           "name": "Forest Spirit",
@@ -2330,7 +2334,8 @@
           "id": "nullmari",
           "event": "UPRISING",
           "url": "/heroes/all/icons/nullmari.png",
-          "group": "pachi"
+          "group": "pachi",
+          "description": "Complete Uprising (All Heroes) with 8 different heroes."
         },
         {
           "name": "Null Sector",
@@ -2623,7 +2628,8 @@
           "id": "punchimari",
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/icons/punchimari.png",
-          "group": "pachi"
+          "group": "pachi",
+          "description": "Unlocked by participating in the Summer Games 2019 week 1 challenge"
         },
         {
           "name": "Qinglong",
@@ -3385,7 +3391,8 @@
           "name": "Summer Games 2016",
           "id": "summer-games-2016",
           "event": "SUMMER_GAMES",
-          "url": "/heroes/all/icons/summer-games-2016.png"
+          "url": "/heroes/all/icons/summer-games-2016.png",
+          "description": "Unlocked with Summer Games 2016"
         },
         {
           "name": "Summer Games 2017",
@@ -3499,7 +3506,8 @@
           "id": "tennismari",
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/icons/tennismari.png",
-          "group": "pachi"
+          "group": "pachi",
+          "description": "Unlocked by participating in the Summer Games 2019 week 2 challenge"
         },
         {
           "name": "Terran",
@@ -4203,7 +4211,8 @@
           "id": "copa-lucioball-competitor-2019",
           "url": "/heroes/all/sprays/copa-lucioball-competitor-2019.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Copa Lúcioball 2019 placement matches"
         },
         {
           "id": "copa-lucioball-hero",
@@ -4226,7 +4235,8 @@
           "id": "copa-lucioball-hero-2019",
           "url": "/heroes/all/sprays/copa-lucioball-hero-2019.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Copa Lúcioball 2019"
         },
         {
           "name": "Crusader",
@@ -5053,24 +5063,27 @@
           "id": "sand-castle",
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/sprays/sand-castle.png",
-          "quality": "common",
-          "group": "SUMMER_GAMES_2019"
+          "achievement": true,
+          "group": "SUMMER_GAMES_2019",
+          "description": "Unlocked by participating in the Summer Games 2019 week 3 challenge"
         },
         {
           "name": "Shark Attack",
           "id": "shark-attack",
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/sprays/shark-attack.png",
-          "quality": "common",
-          "group": "SUMMER_GAMES_2019"
+          "achievement": true,
+          "group": "SUMMER_GAMES_2019",
+          "description": "Unlocked by participating in the Summer Games 2019 week 1 challenge"
         },
         {
           "name": "Snorkling",
           "id": "snorkling",
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/sprays/snorkling.png",
-          "quality": "common",
-          "group": "SUMMER_GAMES_2019"
+          "achievement": true,
+          "group": "SUMMER_GAMES_2019",
+          "description": "Unlocked by participating in the Summer Games 2019 week 2 challenge"
         },
         {
           "name": "Summer Games",

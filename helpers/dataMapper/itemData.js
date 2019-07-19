@@ -188,7 +188,10 @@ const data = {
     'hot-pursuit',
     'light-the-way',
     'new-strike-team',
-    'the-broker'
+    'the-broker',
+    'shark-attack',
+    'snorkling',
+    'sand-castle'
   ],
   allClassEventItems: {
     sprays: {
