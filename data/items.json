@@ -428,8 +428,7 @@
           "url": "/heroes/wrecking-ball/icons/wrecking-ball-bowling.png",
           "event": "SUMMER_GAMES",
           "hero": "wrecking-ball",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Boxing",
@@ -495,8 +494,7 @@
           "url": "/heroes/ana/icons/ana-cabana.png",
           "event": "SUMMER_GAMES",
           "hero": "ana",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Cadet",
@@ -549,8 +547,7 @@
           "url": "/heroes/winston/icons/winston-catcher.png",
           "event": "SUMMER_GAMES",
           "hero": "winston",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Chang'e",
@@ -783,6 +780,13 @@
           "description": "Unlocked by completing Copa Lúcioball 2018 placement matches"
         },
         {
+          "name": "Copa Lúcioball Competitor 2019",
+          "id": "copa-lucioball-competitor-2019",
+          "url": "/heroes/all/icons/copa-lucioball-competitor-2019.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Copa Lúcioball Hero",
           "id": "copa-lucioball-hero",
           "url": "/heroes/all/icons/copa-lucioball-hero.png",
@@ -797,6 +801,13 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Copa Lúcioball 2018"
+        },
+        {
+          "name": "Copa Lúcioball Hero 2019",
+          "id": "copa-lucioball-hero-2019",
+          "url": "/heroes/all/icons/copa-lucioball-hero-2019.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Corsair",
@@ -1050,8 +1061,7 @@
           "url": "/heroes/dva/icons/dva-dvacation.png",
           "event": "SUMMER_GAMES",
           "hero": "dva",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Dallas Fuel",
@@ -1232,8 +1242,7 @@
           "url": "/heroes/zenyatta/icons/zenyatta-fastball.png",
           "event": "SUMMER_GAMES",
           "hero": "zenyatta",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Fencing",
@@ -1279,6 +1288,13 @@
           "event": "SUMMER_GAMES",
           "hero": "lucio",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Footballmari",
+          "id": "footballmari",
+          "event": "SUMMER_GAMES",
+          "url": "/heroes/all/icons/footballmari.png",
+          "group": "pachi"
         },
         {
           "name": "Forest Spirit",
@@ -1543,8 +1559,7 @@
           "url": "/heroes/reinhardt/icons/reinhardt-gridironhardt.png",
           "event": "SUMMER_GAMES",
           "hero": "reinhardt",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Guangzhou Charge",
@@ -1628,8 +1643,7 @@
           "url": "/heroes/brigitte/icons/brigitte-hammer-throw.png",
           "event": "SUMMER_GAMES",
           "hero": "brigitte",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Hanaversary",
@@ -1653,8 +1667,7 @@
           "url": "/heroes/moira/icons/moira-handball.png",
           "event": "SUMMER_GAMES",
           "hero": "moira",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Hangzhou Spark",
@@ -1816,8 +1829,7 @@
           "url": "/heroes/zenyatta/icons/zenyatta-iris.png",
           "event": "SUMMER_GAMES",
           "hero": "zenyatta",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Israel",
@@ -1922,6 +1934,15 @@
           "hero": "brigitte"
         },
         {
+          "name": "Kendoka",
+          "id": "genji-kendoka",
+          "url": "/heroes/genji/icons/genji-kendoka.png",
+          "event": "SUMMER_GAMES",
+          "hero": "genji",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Kinenbi",
           "id": "hanzo-kinenbi",
           "url": "/heroes/hanzo/icons/hanzo-kinenbi.png",
@@ -1977,8 +1998,7 @@
           "url": "/heroes/roadhog/icons/roadhog-lacrosse.png",
           "event": "SUMMER_GAMES",
           "hero": "roadhog",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Lantern",
@@ -2099,6 +2119,15 @@
           "id": "lucio-lucio",
           "url": "/heroes/lucio/icons/lucio-lucio.png",
           "hero": "lucio"
+        },
+        {
+          "name": "Lúcioball",
+          "id": "wrecking-ball-lucioball",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-lucioball.png",
+          "event": "SUMMER_GAMES",
+          "hero": "wrecking-ball",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Lúciouro",
@@ -2544,6 +2573,15 @@
           "hero": "mercy"
         },
         {
+          "name": "Pole Vault",
+          "id": "baptiste-pole-vault",
+          "url": "/heroes/baptiste/icons/baptiste-pole-vault.png",
+          "event": "SUMMER_GAMES",
+          "hero": "baptiste",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Portugal",
           "id": "portugal",
           "event": "SUMMER_GAMES",
@@ -2578,6 +2616,13 @@
           "id": "pumpkimari",
           "event": "HALLOWEEN",
           "url": "/heroes/all/icons/pumpkimari.png",
+          "group": "pachi"
+        },
+        {
+          "name": "Punchimari",
+          "id": "punchimari",
+          "event": "SUMMER_GAMES",
+          "url": "/heroes/all/icons/punchimari.png",
           "group": "pachi"
         },
         {
@@ -3137,6 +3182,15 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "name": "Shooting",
+          "id": "ashe-shooting",
+          "url": "/heroes/ashe/icons/ashe-shooting.png",
+          "event": "SUMMER_GAMES",
+          "hero": "ashe",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Shotput",
           "id": "doomfist-shotput",
           "url": "/heroes/doomfist/icons/doomfist-shotput.png",
@@ -3346,10 +3400,25 @@
           "url": "/heroes/all/icons/summer-games-2018.png"
         },
         {
+          "name": "Summer Games 2019",
+          "id": "summer-games-2019",
+          "event": "SUMMER_GAMES",
+          "url": "/heroes/all/icons/summer-games-2019.png"
+        },
+        {
           "name": "Superstition",
           "id": "superstition",
           "event": "HALLOWEEN",
           "url": "/heroes/all/icons/superstition.png"
+        },
+        {
+          "name": "Surf 'n' Splash",
+          "id": "torbjorn-surf-n-splash",
+          "url": "/heroes/torbjorn/icons/torbjorn-surf-n-splash.png",
+          "event": "SUMMER_GAMES",
+          "hero": "torbjorn",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Svyatogor",
@@ -3424,6 +3493,13 @@
           "event": "SUMMER_GAMES",
           "hero": "junkrat",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Tennismari",
+          "id": "tennismari",
+          "event": "SUMMER_GAMES",
+          "url": "/heroes/all/icons/tennismari.png",
+          "group": "pachi"
         },
         {
           "name": "Terran",
@@ -3663,13 +3739,21 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "name": "Wave",
+          "id": "hanzo-wave",
+          "url": "/heroes/hanzo/icons/hanzo-wave.png",
+          "event": "SUMMER_GAMES",
+          "hero": "hanzo",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Waveracer",
           "id": "dva-waveracer",
           "url": "/heroes/dva/icons/dva-waveracer.png",
           "event": "SUMMER_GAMES",
           "hero": "dva",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Wedjat",
@@ -4115,6 +4199,13 @@
           "description": "Unlocked by completing Copa Lúcioball 2018 placement matches"
         },
         {
+          "name": "Copa Lúcioball Competitor 2019",
+          "id": "copa-lucioball-competitor-2019",
+          "url": "/heroes/all/sprays/copa-lucioball-competitor-2019.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "id": "copa-lucioball-hero",
           "name": "Copa Lúcioball Hero",
           "url": "/heroes/all/sprays/copa-lucioball-hero.png",
@@ -4129,6 +4220,13 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Copa Lúcioball 2018"
+        },
+        {
+          "name": "Copa Lúcioball Hero 2019",
+          "id": "copa-lucioball-hero-2019",
+          "url": "/heroes/all/sprays/copa-lucioball-hero-2019.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Crusader",
@@ -4951,6 +5049,30 @@
           "description": "Score 3 saves in a row in Lúcioball."
         },
         {
+          "name": "Sand Castle",
+          "id": "sand-castle",
+          "event": "SUMMER_GAMES",
+          "url": "/heroes/all/sprays/sand-castle.png",
+          "quality": "common",
+          "group": "SUMMER_GAMES_2019"
+        },
+        {
+          "name": "Shark Attack",
+          "id": "shark-attack",
+          "event": "SUMMER_GAMES",
+          "url": "/heroes/all/sprays/shark-attack.png",
+          "quality": "common",
+          "group": "SUMMER_GAMES_2019"
+        },
+        {
+          "name": "Snorkling",
+          "id": "snorkling",
+          "event": "SUMMER_GAMES",
+          "url": "/heroes/all/sprays/snorkling.png",
+          "quality": "common",
+          "group": "SUMMER_GAMES_2019"
+        },
+        {
           "name": "Summer Games",
           "id": "summer-games",
           "event": "SUMMER_GAMES",
@@ -5632,8 +5754,7 @@
           "quality": "legendary",
           "url": "/heroes/ana/skins/ana-cabana.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Corsair",
@@ -5788,8 +5909,7 @@
           "url": "/heroes/ana/icons/ana-cabana.png",
           "event": "SUMMER_GAMES",
           "hero": "ana",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Shooting",
@@ -6171,6 +6291,15 @@
           "group": "SUMMER_GAMES_2017"
         },
         {
+          "name": "Do less",
+          "id": "ana-do-less",
+          "quality": "common",
+          "url": "/heroes/ana/voicelines/ana-do-less.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Learn from the Pain",
           "id": "ana-learn-from-the-pain",
           "quality": "common",
@@ -6184,8 +6313,7 @@
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-you-seem-stressed.ogg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Are you scared?",
@@ -6309,6 +6437,15 @@
           "id": "ana-seated",
           "quality": "rare",
           "url": "/heroes/ana/poses/ana-seated.jpg"
+        },
+        {
+          "name": "Medal",
+          "id": "ana-medal",
+          "quality": "rare",
+          "url": "/heroes/ana/poses/ana-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "R.I.P.",
@@ -6546,6 +6683,15 @@
           "hero": "ashe"
         },
         {
+          "name": "Shooting",
+          "id": "ashe-shooting",
+          "url": "/heroes/ashe/icons/ashe-shooting.png",
+          "event": "SUMMER_GAMES",
+          "hero": "ashe",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Butler",
           "id": "ashe-butler",
           "url": "/heroes/ashe/icons/ashe-butler.png",
@@ -6702,6 +6848,15 @@
           "id": "ashe-wanted",
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-wanted.png"
+        },
+        {
+          "name": "Shooting",
+          "id": "ashe-shooting",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-shooting.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Ornament",
@@ -6999,6 +7154,15 @@
           "url": "/heroes/ashe/poses/ashe-relaxing.jpg"
         },
         {
+          "name": "Medal",
+          "id": "ashe-medal",
+          "quality": "rare",
+          "url": "/heroes/ashe/poses/ashe-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Lighting the fuse",
           "id": "ashe-lighting-the-fuse",
           "quality": "rare",
@@ -7188,6 +7352,15 @@
           "id": "baptiste-safe-zone",
           "quality": "epic",
           "url": "/heroes/baptiste/intros/baptiste-safe-zone.webm"
+        },
+        {
+          "name": "Discus",
+          "id": "baptiste-discus",
+          "quality": "epic",
+          "url": "/heroes/baptiste/intros/baptiste-discus.webm",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         }
       ],
       "icons": [
@@ -7208,6 +7381,15 @@
           "id": "baptiste-kraken",
           "url": "/heroes/baptiste/icons/baptiste-kraken.png",
           "hero": "baptiste"
+        },
+        {
+          "name": "Pole Vault",
+          "id": "baptiste-pole-vault",
+          "url": "/heroes/baptiste/icons/baptiste-pole-vault.png",
+          "event": "SUMMER_GAMES",
+          "hero": "baptiste",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Lieutenant Augustin",
@@ -7374,6 +7556,15 @@
           "id": "baptiste-watchful",
           "quality": "common",
           "url": "/heroes/baptiste/sprays/baptiste-watchful.png"
+        },
+        {
+          "name": "Pole vault",
+          "id": "baptiste-pole-vault",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-pole-vault.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Carry",
@@ -7547,6 +7738,33 @@
           "id": "baptiste-what-are-you-trying-to-pull",
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-what-are-you-trying-to-pull.ogg"
+        },
+        {
+          "name": "It's your lucky day",
+          "id": "baptiste-its-your-lucky-day",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-its-your-lucky-day.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
+          "name": "No point rushing in",
+          "id": "baptiste-no-point-rushing-in",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-no-point-rushing-in.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
+          "name": "Still looks bad",
+          "id": "baptiste-still-looks-bad",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-still-looks-bad.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Associates",
@@ -8512,8 +8730,7 @@
           "quality": "epic",
           "url": "/heroes/brigitte/skins/brigitte-tre-kronor.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "General",
@@ -8676,8 +8893,7 @@
           "url": "/heroes/brigitte/icons/brigitte-hammer-throw.png",
           "event": "SUMMER_GAMES",
           "hero": "brigitte",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Björn",
@@ -8850,8 +9066,7 @@
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-hammer-throw.png",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Trick or Treat",
@@ -9005,8 +9220,7 @@
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-dare-to-lindholm.ogg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Scandinavian style?",
@@ -9014,8 +9228,7 @@
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-scandinavian-style.ogg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Not scared, are you",
@@ -9163,6 +9376,15 @@
           "id": "brigitte-relaxed",
           "quality": "rare",
           "url": "/heroes/brigitte/poses/brigitte-relaxed.jpg"
+        },
+        {
+          "name": "Medal",
+          "id": "brigitte-medal",
+          "quality": "rare",
+          "url": "/heroes/brigitte/poses/brigitte-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Pumpkin",
@@ -9325,8 +9547,7 @@
           "quality": "legendary",
           "url": "/heroes/dva/skins/dva-waveracer.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Palanquin",
@@ -9490,8 +9711,7 @@
           "url": "/heroes/dva/icons/dva-dvacation.png",
           "event": "SUMMER_GAMES",
           "hero": "dva",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Waveracer",
@@ -9499,8 +9719,7 @@
           "url": "/heroes/dva/icons/dva-waveracer.png",
           "event": "SUMMER_GAMES",
           "hero": "dva",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Hanbok",
@@ -10742,8 +10961,7 @@
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-step-into-the-ring.ogg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "I have something for you",
@@ -10874,8 +11092,7 @@
           "quality": "rare",
           "url": "/heroes/doomfist/poses/doomfist-medal.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Pumpkin",
@@ -11018,6 +11235,15 @@
           "quality": "legendary",
           "url": "/heroes/genji/skins/genji-young-genji.jpg",
           "description": "The younger scion of the Shimada clan, Genji had little interest in carrying on the family's business, and spent his days on frivolous pursuits."
+        },
+        {
+          "name": "Kendoka",
+          "id": "genji-kendoka",
+          "quality": "legendary",
+          "url": "/heroes/genji/skins/genji-kendoka.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Baihu",
@@ -11188,6 +11414,15 @@
           "event": "SUMMER_GAMES",
           "hero": "genji",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Kendoka",
+          "id": "genji-kendoka",
+          "url": "/heroes/genji/icons/genji-kendoka.png",
+          "event": "SUMMER_GAMES",
+          "hero": "genji",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Cyborg",
@@ -11808,6 +12043,15 @@
           "description": "Hanzo was the son of the former master of the Shimada clan. He had been groomed to take over leadership of the family as his father's successor."
         },
         {
+          "name": "Wave",
+          "id": "hanzo-wave",
+          "quality": "legendary",
+          "url": "/heroes/hanzo/skins/hanzo-wave.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Casual",
           "id": "hanzo-casual",
           "quality": "legendary",
@@ -11973,6 +12217,15 @@
           "event": "SUMMER_GAMES",
           "hero": "hanzo",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Wave",
+          "id": "hanzo-wave",
+          "url": "/heroes/hanzo/icons/hanzo-wave.png",
+          "event": "SUMMER_GAMES",
+          "hero": "hanzo",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Casual",
@@ -14007,8 +14260,7 @@
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-come-on-ref.ogg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Suboptimal",
@@ -14156,8 +14408,7 @@
           "quality": "rare",
           "url": "/heroes/lucio/poses/lucio-medal.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Pumpkin Control",
@@ -15019,8 +15270,7 @@
           "quality": "rare",
           "url": "/heroes/mccree/poses/mccree-medal.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "R.I.P.",
@@ -15118,6 +15368,17 @@
           "url": "/heroes/mei/skins/mei-pumpkin.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2018",
+          "isNew": true
+        },
+        {
+          "name": "Zhongguo",
+          "id": "mei-zhongguo",
+          "quality": "epic",
+          "url": "/heroes/mei/skins/mei-zhongguo.jpg",
+          "description": "Unlocked by participating in the Summer Games 2019 week 2 challenge",
+          "achievement": true,
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
           "isNew": true
         },
         {
@@ -15256,8 +15517,7 @@
           "quality": "epic",
           "url": "/heroes/mei/emotes/mei-table-tennis.webm",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Hopping",
@@ -16844,8 +17104,7 @@
           "quality": "epic",
           "url": "/heroes/moira/skins/moira-eireannach.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Glam",
@@ -16987,8 +17246,7 @@
           "quality": "epic",
           "url": "/heroes/moira/intros/moira-serve.webm",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         }
       ],
       "icons": [
@@ -17022,8 +17280,7 @@
           "url": "/heroes/moira/icons/moira-handball.png",
           "event": "SUMMER_GAMES",
           "hero": "moira",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Banshee",
@@ -17211,8 +17468,7 @@
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-handball.png",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Banshee",
@@ -17377,8 +17633,7 @@
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-better-living-through-science.ogg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Performance enhanced",
@@ -17386,8 +17641,7 @@
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-performance-enhanced.ogg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Despair has its own calms",
@@ -17547,8 +17801,7 @@
           "quality": "rare",
           "url": "/heroes/moira/poses/moira-medal.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Pumpkin",
@@ -17738,6 +17991,15 @@
           "url": "/heroes/orisa/emotes/orisa-sit.webm"
         },
         {
+          "name": "Dressage",
+          "id": "orisa-dressage",
+          "quality": "epic",
+          "url": "/heroes/orisa/emotes/orisa-dressage.webm",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Dance",
           "id": "orisa-dance",
           "quality": "epic",
@@ -17786,8 +18048,7 @@
           "quality": "epic",
           "url": "/heroes/orisa/intros/orisa-goalkeeper.webm",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Immovable",
@@ -18180,6 +18441,15 @@
           "url": "/heroes/orisa/voicelines/orisa-grease-to-your-elbow.ogg",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "name": "Thank you for understanding",
+          "id": "orisa-thank-you-for-understanding",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-thank-you-for-understanding.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Be careful",
@@ -18970,6 +19240,15 @@
           "group": "SUMMER_GAMES_2017"
         },
         {
+          "name": "On autopilot",
+          "id": "pharah-on-autopilot",
+          "quality": "common",
+          "url": "/heroes/pharah/voicelines/pharah-on-autopilot.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "We are in this together",
           "id": "pharah-we-are-in-this-together",
           "quality": "common",
@@ -19229,6 +19508,17 @@
           "url": "/heroes/reaper/skins/reaper-shiver.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "American",
+          "id": "reaper-american",
+          "quality": "epic",
+          "url": "/heroes/reaper/skins/reaper-american.jpg",
+          "description": "Unlocked by participating in the Summer Games 2019 week 1 challenge",
+          "achievement": true,
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "El Blanco",
@@ -20066,6 +20356,17 @@
           "group": "UPRISING_2017"
         },
         {
+          "name": "Bundesadler",
+          "id": "reinhardt-bundesadler",
+          "quality": "epic",
+          "url": "/heroes/reinhardt/skins/reinhardt-bundesadler.jpg",
+          "description": "Unlocked by participating in the Summer Games 2019 week 3 challenge",
+          "achievement": true,
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Balderich",
           "id": "reinhardt-balderich",
           "quality": "legendary",
@@ -20116,8 +20417,7 @@
           "quality": "legendary",
           "url": "/heroes/reinhardt/skins/reinhardt-gridironhardt.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Guan Yu",
@@ -20258,8 +20558,7 @@
           "url": "/heroes/reinhardt/icons/reinhardt-gridironhardt.png",
           "event": "SUMMER_GAMES",
           "hero": "reinhardt",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Wrestling",
@@ -20884,8 +21183,7 @@
           "quality": "legendary",
           "url": "/heroes/roadhog/skins/roadhog-lacrosse.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Junkenstein's Monster",
@@ -21059,8 +21357,7 @@
           "url": "/heroes/roadhog/icons/roadhog-lacrosse.png",
           "event": "SUMMER_GAMES",
           "hero": "roadhog",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "The Monster",
@@ -22395,8 +22692,7 @@
           "quality": "rare",
           "url": "/heroes/soldier-76/poses/soldier-76-medal.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "R.I.P.",
@@ -22485,8 +22781,7 @@
           "quality": "epic",
           "url": "/heroes/sombra/skins/sombra-mexicana.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Peppermint",
@@ -23868,6 +24163,15 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "name": "Reality is my playground",
+          "id": "symmetra-reality-is-my-playground",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-reality-is-my-playground.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Victory is everything",
           "id": "symmetra-victory-is-everything",
           "quality": "common",
@@ -24152,6 +24456,15 @@
           "url": "/heroes/torbjorn/skins/torbjorn-magni.jpg"
         },
         {
+          "name": "Surf 'n' Splash",
+          "id": "torbjorn-surf-n-splash",
+          "quality": "legendary",
+          "url": "/heroes/torbjorn/skins/torbjorn-surf-n-splash.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Viking",
           "id": "torbjorn-viking",
           "quality": "legendary",
@@ -24327,6 +24640,15 @@
           "id": "torbjorn-torbjorn",
           "url": "/heroes/torbjorn/icons/torbjorn-torbjorn.png",
           "hero": "torbjorn"
+        },
+        {
+          "name": "Surf 'n' Splash",
+          "id": "torbjorn-surf-n-splash",
+          "url": "/heroes/torbjorn/icons/torbjorn-surf-n-splash.png",
+          "event": "SUMMER_GAMES",
+          "hero": "torbjorn",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Water Polo",
@@ -25532,6 +25854,15 @@
           "url": "/heroes/tracer/voicelines/tracer-you-need-a-time-out.ogg"
         },
         {
+          "name": "Bit dodgy",
+          "id": "tracer-bit-dodgy",
+          "quality": "common",
+          "url": "/heroes/tracer/voicelines/tracer-bit-dodgy.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Eat my dust",
           "id": "tracer-eat-my-dust",
           "quality": "common",
@@ -26369,6 +26700,15 @@
           "group": "SUMMER_GAMES_2017"
         },
         {
+          "name": "Dame chance",
+          "id": "widowmaker-dame-chance",
+          "quality": "common",
+          "url": "/heroes/widowmaker/voicelines/widowmaker-dame-chance.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "I don't miss",
           "id": "widowmaker-i-dont-miss",
           "quality": "common",
@@ -26662,8 +27002,7 @@
           "quality": "legendary",
           "url": "/heroes/winston/skins/winston-catcher.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Yeti",
@@ -26828,8 +27167,7 @@
           "url": "/heroes/winston/icons/winston-catcher.png",
           "event": "SUMMER_GAMES",
           "hero": "winston",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Volleyball",
@@ -27482,6 +27820,15 @@
           "description": "Wrecking Ball climbed the ranks to become the champion of the Scrapyard, Junkertown's mech combat arena."
         },
         {
+          "name": "Lúcioball",
+          "id": "wrecking-ball-lucioball",
+          "quality": "legendary",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-lucioball.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
           "name": "Jack-o'-lantern",
           "id": "wrecking-ball-jackolantern",
           "quality": "legendary",
@@ -27609,7 +27956,15 @@
           "url": "/heroes/wrecking-ball/icons/wrecking-ball-bowling.png",
           "event": "SUMMER_GAMES",
           "hero": "wrecking-ball",
-          "group": "SUMMER_GAMES_2018",
+          "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "name": "Lúcioball",
+          "id": "wrecking-ball-lucioball",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-lucioball.png",
+          "event": "SUMMER_GAMES",
+          "hero": "wrecking-ball",
+          "group": "SUMMER_GAMES_2019",
           "isNew": true
         },
         {
@@ -27770,8 +28125,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-bowling.png",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Jack-o'-lantern",
@@ -27942,8 +28296,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-be-the-ball.ogg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Keep your eye on the ball",
@@ -27951,7 +28304,15 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-keep-your-eye-on-the-ball.ogg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
+          "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "name": "More power!",
+          "id": "wrecking-ball-more-power",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-more-power.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
           "isNew": true
         },
         {
@@ -28325,6 +28686,15 @@
           "id": "zarya-take-a-knee",
           "quality": "epic",
           "url": "/heroes/zarya/emotes/zarya-take-a-knee.webm"
+        },
+        {
+          "name": "Burpees",
+          "id": "zarya-burpees",
+          "quality": "epic",
+          "url": "/heroes/zarya/emotes/zarya-burpees.webm",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Dance",
@@ -28759,7 +29129,15 @@
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-russian-judge.ogg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
+          "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "name": "Strongest woman",
+          "id": "zarya-strongest-woman",
+          "quality": "common",
+          "url": "/heroes/zarya/voicelines/zarya-strongest-woman.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
           "isNew": true
         },
         {
@@ -28909,8 +29287,7 @@
           "quality": "rare",
           "url": "/heroes/zarya/poses/zarya-medals.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "R.I.P.",
@@ -29053,8 +29430,7 @@
           "quality": "legendary",
           "url": "/heroes/zenyatta/skins/zenyatta-fastball.jpg",
           "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Cultist",
@@ -29211,8 +29587,7 @@
           "url": "/heroes/zenyatta/icons/zenyatta-fastball.png",
           "event": "SUMMER_GAMES",
           "hero": "zenyatta",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Iris",
@@ -29220,8 +29595,7 @@
           "url": "/heroes/zenyatta/icons/zenyatta-iris.png",
           "event": "SUMMER_GAMES",
           "hero": "zenyatta",
-          "group": "SUMMER_GAMES_2018",
-          "isNew": true
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Taekwondo",
@@ -29588,6 +29962,15 @@
           "url": "/heroes/zenyatta/voicelines/zenyatta-strive-for-improvement.ogg",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "What weighs upon your mind",
+          "id": "zenyatta-what-weighs-upon-your-mind",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-what-weighs-upon-your-mind.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2019",
+          "isNew": true
         },
         {
           "name": "Frightening",
