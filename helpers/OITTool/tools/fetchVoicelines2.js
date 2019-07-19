@@ -17,6 +17,10 @@ const fetchVoicelines2 = () => {
     return Promise.all(heroes.map(hero => {
       const heroId = getCleanID(hero)
 
+      if (!fs.existsSync(`./${hero}/${BASE_DIR}`)) {
+        return Promise.resolve()
+      }
+
       return getDirectories(`./${hero}/${BASE_DIR}`).then(events => {
         if (!events.length) return Promise.resolve()
         return Promise.all(events.map(event => {

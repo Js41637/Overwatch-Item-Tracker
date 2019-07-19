@@ -53,7 +53,7 @@
   font-weight: inherit;
 }
 
-#event-container #sprays .item[achievement="true"] label:after {
+#event-container .item[achievement="true"] label:after {
   background-image: url("../resources/icons/achievement.svg");
   content: "";
   width: 25px;
@@ -252,6 +252,18 @@
       height: 360px;
       background-size: auto 130%;
       background-position-y: 20%;
+    }
+  }
+}
+
+#SUMMER_GAMES #legendary-skins {
+  height: 372px;
+
+  .images {
+    .card {
+      height: 330px;
+      background-size: auto 120%;
+      background-position-y: 10%;
     }
   }
 }

@@ -1192,6 +1192,22 @@
       "type": "spray",
       "hero": "all"
     },
+    "copa-lucioball-competitor-2019": {
+      "name": null,
+      "description": "Unlocked by completing Copa Lúcioball 2019 placement matches",
+      "reward": "Copa Lúcioball Competitor 2019",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "copa-lucioball-hero-2019": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Copa Lúcioball 2019",
+      "reward": "Copa Lúcioball Hero 2019",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
     "survivor": {
       "name": "Survivor",
       "description": "Survive 4 bonus waves in Junkenstein Endless on Expert difficulty.",
@@ -1492,16 +1508,14 @@
       "reward": "Cute",
       "quality": "common",
       "type": "spray",
-      "description": "Amplify 2500 combined damage and healing without dying as Baptiste in Quick or Competitive play.",
-      "hero": null
+      "description": "Amplify 2500 combined damage and healing without dying as Baptiste in Quick or Competitive play."
     },
     "stand-by-me": {
       "name": "Stand By Me",
       "reward": "Pixel",
       "quality": "common",
       "type": "spray",
-      "description": "Prevent 4 deaths with a single use of Baptiste's Immortality Field in Quick or Competitive play.",
-      "hero": null
+      "description": "Prevent 4 deaths with a single use of Baptiste's Immortality Field in Quick or Competitive play."
     },
     "storm-warning": {
       "name": "Storm Warning",
@@ -1559,19 +1573,14 @@
       "type": "spray",
       "description": "Complete Storm Rising (All Heroes) on Legendary difficulty with no incapacitations."
     },
-    "window-of-opportunity": {
-      "name": "Window of Opportunity",
-      "reward": "Cute",
-      "quality": "common",
-      "type": "spray",
-      "description": "Amplify 2500 combined damage and healing without dying as Baptiste in Quick or Competitive play."
+    "summer-games-2019-1": {
+      "description": "Unlocked by participating in the Summer Games 2019 week 1 challenge"
     },
-    "stand-by-me": {
-      "name": "Stand By Me",
-      "reward": "Pixel",
-      "quality": "common",
-      "type": "spray",
-      "description": "Prevent 4 deaths with a single use of Baptiste's Immortality Field in Quick or Competitive play."
+    "summer-games-2019-2": {
+      "description": "Unlocked by participating in the Summer Games 2019 week 2 challenge"
+    },
+    "summer-games-2019-3": {
+      "description": "Unlocked by participating in the Summer Games 2019 week 3 challenge"
     }
   },
   "mappings": {
@@ -1730,6 +1739,8 @@
     "copa-lucioball-hero": "copa-lucioball-hero",
     "copa-lucioball-competitor-2018": "copa-lucioball-competitor-2018",
     "copa-lucioball-hero-2018": "copa-lucioball-hero-2018",
+    "copa-lucioball-competitor-2019": "copa-lucioball-competitor-2019",
+    "copa-lucioball-hero-2019": "copa-lucioball-hero-2019",
     "the-witch": "survivor",
     "the-reaper": "dawn-breaks",
     "my-creations": "six-they-were",
@@ -1775,6 +1786,12 @@
     "big-plans": "storm-chaser",
     "new-strike-team": "eye-of-the-hurricane",
     "cute": "window-of-opportunity",
-    "pixel": "stand-by-me"
+    "pixel": "stand-by-me",
+    "punchimari": "summer-games-2019-1",
+    "tennismari": "summer-games-2019-2",
+    "footballmari": "summer-games-2019-3",
+    "shark-attack": "summer-games-2019-1",
+    "snorkling": "summer-games-2019-2",
+    "sand-castle": "summer-games-2019-3"
   }
 }
