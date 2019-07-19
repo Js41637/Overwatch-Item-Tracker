@@ -109,7 +109,7 @@ const EVENTTIMES = {
     end: '1528797600000'
   },
 
-  [EVENTS.SUMMER]: {
+  [EVENTS.SUMMER18]: {
     start: '1533837600000',
     end: '1535709600000'
   },
@@ -132,6 +132,10 @@ const EVENTTIMES = {
   [EVENTS.ANNIVERSARY]: {
     start: '1558461600000',
     end: '1560254400000'
+  },
+  [EVENTS.SUMMER]: {
+    start: '1563300000000',
+    end: '1565092800000'
   }
 };
 
