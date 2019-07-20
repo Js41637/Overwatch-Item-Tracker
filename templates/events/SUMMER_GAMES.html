@@ -57,6 +57,7 @@
       <div
         ng-repeat="item in ::data.items.skins track by $index"
         ng-init="type = 'skins'"
+        achievement="{{::item.achievement}}"
         class="item"
         uib-tooltip-template="'imagePreviewTemplate.html'"
         tooltip-popup-delay="225"
