@@ -171,6 +171,14 @@ const data = {
       highlight: "#cdaa93"
     }
   },
+  sigma: {
+    class: CLASSES.TANK,
+    description: "Brilliant astrophysicist Siebren de Kuiper gained the ability to control gravity when an experiment went terribly wrong. Now, Talon manipulates him to their own ends.",
+    colors: {
+      primary: "#33bbaa ",
+      highlight: "#6ec4b9"
+    }
+  },
   "soldier-76": {
     class: CLASSES.DAMAGE,
     description: "Currently the target of an international manhunt, the vigilante known as Soldier: 76 wages a personal war to expose the truth behind Overwatch's collapse.",
