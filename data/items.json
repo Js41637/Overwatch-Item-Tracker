@@ -379,6 +379,12 @@
           "group": "ANNIVERSARY_2018"
         },
         {
+          "name": "Black Hole",
+          "id": "sigma-black-hole",
+          "url": "/heroes/sigma/icons/sigma-black-hole.png",
+          "hero": "sigma"
+        },
+        {
           "name": "Black Lily",
           "id": "widowmaker-black-lily",
           "url": "/heroes/widowmaker/icons/widowmaker-black-lily.png",
@@ -1800,6 +1806,12 @@
           "group": "pachi"
         },
         {
+          "name": "Hypersphere",
+          "id": "sigma-hypersphere",
+          "url": "/heroes/sigma/icons/sigma-hypersphere.png",
+          "hero": "sigma"
+        },
+        {
           "name": "Ice Fisherman",
           "id": "roadhog-ice-fisherman",
           "url": "/heroes/roadhog/icons/roadhog-ice-fisherman.png",
@@ -3129,6 +3141,22 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Season 17"
         },
         {
+          "name": "Season 18 Competitor",
+          "id": "season-18-competitor",
+          "url": "/heroes/all/icons/season-18-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 18 placement matches"
+        },
+        {
+          "name": "Season 18 Hero",
+          "id": "season-18-hero",
+          "url": "/heroes/all/icons/season-18-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 18"
+        },
+        {
           "name": "Sentry",
           "id": "symmetra-sentry",
           "url": "/heroes/symmetra/icons/symmetra-sentry.png",
@@ -3181,20 +3209,20 @@
         },
         {
           "name": "Shooting",
-          "id": "ana-shooting",
-          "url": "/heroes/ana/icons/ana-shooting.png",
-          "event": "SUMMER_GAMES",
-          "hero": "ana",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
-          "name": "Shooting",
           "id": "ashe-shooting",
           "url": "/heroes/ashe/icons/ashe-shooting.png",
           "event": "SUMMER_GAMES",
           "hero": "ashe",
           "group": "SUMMER_GAMES_2019",
           "isNew": true
+        },
+        {
+          "name": "Shooting",
+          "id": "ana-shooting",
+          "url": "/heroes/ana/icons/ana-shooting.png",
+          "event": "SUMMER_GAMES",
+          "hero": "ana",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Shotput",
@@ -3208,6 +3236,12 @@
           "name": "Siege Mode",
           "id": "siege-mode",
           "url": "/heroes/all/icons/siege-mode.png"
+        },
+        {
+          "name": "Sigma",
+          "id": "sigma-sigma",
+          "url": "/heroes/sigma/icons/sigma-sigma.png",
+          "hero": "sigma"
         },
         {
           "name": "Six-Gun Killer",
@@ -4885,6 +4919,22 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Season 17"
+        },
+        {
+          "name": "Season 18 Competitor",
+          "id": "season-18-competitor",
+          "url": "/heroes/all/sprays/season-18-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 18 placement matches"
+        },
+        {
+          "name": "Season 18 Hero",
+          "id": "season-18-hero",
+          "url": "/heroes/all/sprays/season-18-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 18"
         },
         {
           "name": "Seoul Dynasty Logo",
@@ -21909,6 +21959,439 @@
           "id": "roadhog-golden",
           "quality": "golden",
           "url": "/heroes/roadhog/weapons/roadhog-golden.png"
+        }
+      ]
+    }
+  },
+  "sigma": {
+    "name": "Sigma",
+    "id": "sigma",
+    "class": "Tank",
+    "description": "Brilliant astrophysicist Siebren de Kuiper gained the ability to control gravity when an experiment went terribly wrong. Now, Talon manipulates him to their own ends.",
+    "colors": {
+      "primary": "#33bbaa ",
+      "highlight": "#6ec4b9"
+    },
+    "items": {
+      "skins": [
+        {
+          "name": "Classic",
+          "id": "sigma-classic",
+          "quality": "common",
+          "url": "/heroes/sigma/skins/sigma-classic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Blauw",
+          "id": "sigma-blauw",
+          "quality": "rare",
+          "url": "/heroes/sigma/skins/sigma-blauw.jpg"
+        },
+        {
+          "name": "Groen",
+          "id": "sigma-groen",
+          "quality": "rare",
+          "url": "/heroes/sigma/skins/sigma-groen.jpg"
+        },
+        {
+          "name": "Oranje",
+          "id": "sigma-oranje",
+          "quality": "rare",
+          "url": "/heroes/sigma/skins/sigma-oranje.jpg"
+        },
+        {
+          "name": "Roze",
+          "id": "sigma-roze",
+          "quality": "rare",
+          "url": "/heroes/sigma/skins/sigma-roze.jpg"
+        },
+        {
+          "name": "Dr. de Kuiper",
+          "id": "sigma-dr-de-kuiper",
+          "quality": "epic",
+          "url": "/heroes/sigma/skins/sigma-dr-de-kuiper.jpg"
+        },
+        {
+          "name": "Talon",
+          "id": "sigma-talon",
+          "quality": "epic",
+          "url": "/heroes/sigma/skins/sigma-talon.jpg"
+        },
+        {
+          "name": "Asylum",
+          "id": "sigma-asylum",
+          "quality": "legendary",
+          "url": "/heroes/sigma/skins/sigma-asylum.jpg"
+        },
+        {
+          "name": "Oracle",
+          "id": "sigma-oracle",
+          "quality": "legendary",
+          "url": "/heroes/sigma/skins/sigma-oracle.jpg"
+        },
+        {
+          "name": "Prophet",
+          "id": "sigma-prophet",
+          "quality": "legendary",
+          "url": "/heroes/sigma/skins/sigma-prophet.jpg"
+        },
+        {
+          "name": "Subject Sigma",
+          "id": "sigma-subject-sigma",
+          "quality": "legendary",
+          "url": "/heroes/sigma/skins/sigma-subject-sigma.jpg"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "id": "sigma-heroic",
+          "quality": "common",
+          "url": "/heroes/sigma/emotes/sigma-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Applause",
+          "id": "sigma-applause",
+          "quality": "epic",
+          "url": "/heroes/sigma/emotes/sigma-applause.webm"
+        },
+        {
+          "name": "Inconsequential",
+          "id": "sigma-inconsequential",
+          "quality": "epic",
+          "url": "/heroes/sigma/emotes/sigma-inconsequential.webm"
+        },
+        {
+          "name": "Laugh",
+          "id": "sigma-laugh",
+          "quality": "epic",
+          "url": "/heroes/sigma/emotes/sigma-laugh.webm"
+        },
+        {
+          "name": "Observations",
+          "id": "sigma-observations",
+          "quality": "epic",
+          "url": "/heroes/sigma/emotes/sigma-observations.webm"
+        },
+        {
+          "name": "Relaxation",
+          "id": "sigma-relaxation",
+          "quality": "epic",
+          "url": "/heroes/sigma/emotes/sigma-relaxation.webm"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "id": "sigma-heroic",
+          "quality": "common",
+          "url": "/heroes/sigma/intros/sigma-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Accretion",
+          "id": "sigma-accretion",
+          "quality": "epic",
+          "url": "/heroes/sigma/intros/sigma-accretion.webm"
+        },
+        {
+          "name": "Kinetic Grasp",
+          "id": "sigma-kinetic-grasp",
+          "quality": "epic",
+          "url": "/heroes/sigma/intros/sigma-kinetic-grasp.webm"
+        },
+        {
+          "name": "What comes up",
+          "id": "sigma-what-comes-up",
+          "quality": "epic",
+          "url": "/heroes/sigma/intros/sigma-what-comes-up.webm"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Black Hole",
+          "id": "sigma-black-hole",
+          "url": "/heroes/sigma/icons/sigma-black-hole.png",
+          "hero": "sigma"
+        },
+        {
+          "name": "Hypersphere",
+          "id": "sigma-hypersphere",
+          "url": "/heroes/sigma/icons/sigma-hypersphere.png",
+          "hero": "sigma"
+        },
+        {
+          "name": "Sigma",
+          "id": "sigma-sigma",
+          "url": "/heroes/sigma/icons/sigma-sigma.png",
+          "hero": "sigma"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Accretion",
+          "id": "sigma-accretion",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-accretion.png"
+        },
+        {
+          "name": "Cerebral",
+          "id": "sigma-cerebral",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-cerebral.png"
+        },
+        {
+          "name": "Damage",
+          "id": "sigma-damage",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-damage.png"
+        },
+        {
+          "name": "Diagnosis",
+          "id": "sigma-diagnosis",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-diagnosis.png"
+        },
+        {
+          "name": "Equations",
+          "id": "sigma-equations",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-equations.png"
+        },
+        {
+          "name": "Escher",
+          "id": "sigma-escher",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-escher.png"
+        },
+        {
+          "name": "Fall",
+          "id": "sigma-fall",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-fall.png"
+        },
+        {
+          "name": "Flux",
+          "id": "sigma-flux",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-flux.png"
+        },
+        {
+          "name": "Fractured",
+          "id": "sigma-fractured",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-fractured.png"
+        },
+        {
+          "name": "Galileo",
+          "id": "sigma-galileo",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-galileo.png"
+        },
+        {
+          "name": "Harnessed",
+          "id": "sigma-harnessed",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-harnessed.png"
+        },
+        {
+          "name": "Hypersphere",
+          "id": "sigma-hypersphere",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-hypersphere.png"
+        },
+        {
+          "name": "Icon",
+          "id": "sigma-icon",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-icon.png"
+        },
+        {
+          "name": "Maatjesharing",
+          "id": "sigma-maatjesharing",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-maatjesharing.png"
+        },
+        {
+          "name": "Night sky",
+          "id": "sigma-night-sky",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-night-sky.png"
+        },
+        {
+          "name": "Rise",
+          "id": "sigma-rise",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-rise.png"
+        },
+        {
+          "name": "Schrödinger's cat",
+          "id": "sigma-schrodingers-cat",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-schrodingers-cat.png"
+        },
+        {
+          "name": "Sigma",
+          "id": "sigma-sigma",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-sigma.png"
+        },
+        {
+          "name": "Sigma's Apple",
+          "id": "sigma-sigmas-apple",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-sigmas-apple.png"
+        },
+        {
+          "name": "Spaghettification",
+          "id": "sigma-spaghettification",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-spaghettification.png"
+        },
+        {
+          "name": "Symphony",
+          "id": "sigma-symphony",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-symphony.png"
+        },
+        {
+          "name": "Unstoppable force",
+          "id": "sigma-unstoppable-force",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-unstoppable-force.png"
+        },
+        {
+          "name": "Zero gravity",
+          "id": "sigma-zero-gravity",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-zero-gravity.png"
+        },
+        {
+          "name": "Cute",
+          "id": "sigma-cute",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-cute.png",
+          "achievement": true,
+          "description": "Get 3 killing blows during a single use of Sigma's Gravitic Flux in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "sigma-pixel",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-pixel.png",
+          "achievement": true,
+          "description": "Gain 350 shields with a single use of Sigma's Kinetic Grasp in Quick or Competitive Play."
+        }
+      ],
+      "voicelines": [
+        {
+          "name": "Gravity of the situation",
+          "id": "sigma-gravity-of-the-situation",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-gravity-of-the-situation.ogg",
+          "standardItem": true
+        },
+        {
+          "name": "A pattern forms",
+          "id": "sigma-a-pattern-forms",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-a-pattern-forms.ogg"
+        },
+        {
+          "name": "Approaching escape velocity",
+          "id": "sigma-approaching-escape-velocity",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-approaching-escape-velocity.ogg"
+        },
+        {
+          "name": "Beyond our stars",
+          "id": "sigma-beyond-our-stars",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-beyond-our-stars.ogg"
+        },
+        {
+          "name": "Can you hear that music?",
+          "id": "sigma-can-you-hear-that-music",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-can-you-hear-that-music.ogg"
+        },
+        {
+          "name": "Fascinating",
+          "id": "sigma-fascinating",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-fascinating.ogg"
+        },
+        {
+          "name": "Hold it together",
+          "id": "sigma-hold-it-together",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-hold-it-together.ogg"
+        },
+        {
+          "name": "Humming",
+          "id": "sigma-humming",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-humming.ogg"
+        },
+        {
+          "name": "I've got it!",
+          "id": "sigma-ive-got-it",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-ive-got-it.ogg"
+        },
+        {
+          "name": "If you can't handle criticism",
+          "id": "sigma-if-you-cant-handle-criticism",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-if-you-cant-handle-criticism.ogg"
+        },
+        {
+          "name": "Just act normal",
+          "id": "sigma-just-act-normal",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-just-act-normal.ogg"
+        },
+        {
+          "name": "The beauty of the universe",
+          "id": "sigma-the-beauty-of-the-universe",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-the-beauty-of-the-universe.ogg"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "id": "sigma-heroic",
+          "quality": "common",
+          "url": "/heroes/sigma/poses/sigma-heroic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Observations",
+          "id": "sigma-observations",
+          "quality": "rare",
+          "url": "/heroes/sigma/poses/sigma-observations.jpg"
+        },
+        {
+          "name": "Poised",
+          "id": "sigma-poised",
+          "quality": "rare",
+          "url": "/heroes/sigma/poses/sigma-poised.jpg"
+        },
+        {
+          "name": "Relaxation",
+          "id": "sigma-relaxation",
+          "quality": "rare",
+          "url": "/heroes/sigma/poses/sigma-relaxation.jpg"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "sigma-golden",
+          "quality": "golden",
+          "url": "/heroes/sigma/weapons/sigma-golden.png"
         }
       ]
     }

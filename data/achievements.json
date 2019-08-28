@@ -968,6 +968,22 @@
       "type": "spray",
       "hero": "all"
     },
+    "season-18-competitor": {
+      "name": null,
+      "description": "Unlocked by completing Season 18 placement matches",
+      "reward": "Season 18 Competitor",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "season-18-hero": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 18",
+      "reward": "Season 18 Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
     "competitive-ctf-competitor": {
       "name": null,
       "description": "Unlocked by completing competitive Capture The Flag 2018 placement matches",
@@ -1589,6 +1605,15 @@
       "type": "spray",
       "description": "Complete Storm Rising (All Heroes) on Legendary difficulty with no incapacitations."
     },
+    "event-horizon": {
+      "description": "Get 3 killing blows during a single use of Sigma's Gravitic Flux in Quick or Competitive Play."
+    },
+    "conservation-of-energy": {
+      "description": "Gain 350 shields with a single use of Sigma's Kinetic Grasp in Quick or Competitive Play."
+    },
+    "summer-games-2019-1": {
+      "description": "Unlocked by participating in the Summer Games 2019 week 1 challenge"
+    },
     "summer-games-2019-1": {
       "description": "Unlocked by participating in the Summer Games 2019 week 1 challenge"
     },
@@ -1656,6 +1681,8 @@
     "wrecking-ball-cute": "strike",
     "ashe-pixel": "short-fuse",
     "ashe-cute": "served-up",
+    "sigma-pixel": "conservation-of-energy",
+    "sigma-cute": "event-horizon",
     "baptiste-pixel": "stand-by-me",
     "baptiste-cute": "window-of-opportunity",
     "jail": "lockdown",
@@ -1727,6 +1754,8 @@
     "season-16-hero": "season-16-hero",
     "season-17-competitor": "season-17-competitor",
     "season-17-hero": "season-17-hero",
+    "season-18-competitor": "season-18-competitor",
+    "season-18-hero": "season-18-hero",
     "competitive-ctf-competitor": "competitive-ctf-competitor",
     "competitive-ctf-hero": "competitive-ctf-hero",
     "competitive-ctf-competitor-2019": "competitive-ctf-competitor-2019",
