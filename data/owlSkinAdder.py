@@ -12,38 +12,56 @@ for hero in masterData['heroes']:
 	if(hero != 'all'): 
 		heroesList.append(hero)
 		
-		if(hero == 'mercy'):
+		# if(hero == 'mercy'):
+			# extraSkins =  {
+				# "name": "2019 Atlantic All-Stars",
+				# "id": hero + "-2019-atlantic-all-stars",
+				# "url": "/owlskins/" + hero + "-2019-atlantic-all-stars.jpg",
+				# "quality": "legendary",
+				# "achievement": "owl"
+			# }
+		
+		# if(hero == 'lucio'):
+			# extraSkins =  {
+				# "name": "2019 Pacific All-Stars",
+				# "id": hero + "-2019-pacific-all-stars",
+				# "url": "/owlskins/" + hero + "-2019-pacific-all-stars.jpg",
+				# "quality": "legendary",
+				# "achievement": "owl"
+			# }
+		
+		# if(hero == 'tracer'):
+			# extraSkins =  {
+				# "name": "2018 Atlantic All-Stars",
+				# "id": hero + "-2018-atlantic-all-stars",
+				# "url": "/owlskins/" + hero + "-2018-atlantic-all-stars.jpg",
+				# "quality": "legendary",
+				# "achievement": "owl"
+			# }
+		
+		# if(hero == 'genji'):
+			# extraSkins =  {
+				# "name": "2018 Pacific All-Stars",
+				# "id": hero + "-2018-pacific-all-stars",
+				# "url": "/owlskins/" + hero + "-2018-pacific-all-stars.jpg",
+				# "quality": "legendary",
+				# "achievement": "owl"
+			# }
+			
+		if(hero == 'winston'):
 			extraSkins =  {
-				"name": "2019 Atlantic All-Stars",
-				"id": hero + "-2019-atlantic-all-stars",
-				"url": "/owlskins/" + hero + "-2019-atlantic-all-stars.jpg",
+				"name": "Flying Ace",
+				"id": hero + "-flying-ace",
+				"url": "/owlskins/" + hero + "-flying-ace.jpg",
 				"quality": "legendary",
 				"achievement": "owl"
 			}
 		
-		if(hero == 'lucio'):
+		if(hero == 'zenyatta'):
 			extraSkins =  {
-				"name": "2019 Pacific All-Stars",
-				"id": hero + "-2019-pacific-all-stars",
-				"url": "/owlskins/" + hero + "-2019-pacific-all-stars.jpg",
-				"quality": "legendary",
-				"achievement": "owl"
-			}
-		
-		if(hero == 'tracer'):
-			extraSkins =  {
-				"name": "2018 Atlantic All-Stars",
-				"id": hero + "-2018-atlantic-all-stars",
-				"url": "/owlskins/" + hero + "-2018-atlantic-all-stars.jpg",
-				"quality": "legendary",
-				"achievement": "owl"
-			}
-		
-		if(hero == 'genji'):
-			extraSkins =  {
-				"name": "2018 Pacific All-Stars",
-				"id": hero + "-2018-pacific-all-stars",
-				"url": "/owlskins/" + hero + "-2018-pacific-all-stars.jpg",
+				"name": "Zen-Nakji",
+				"id": hero + "-zen-nakji",
+				"url": "/owlskins/" + hero + "-zen-nakji.jpg",
 				"quality": "legendary",
 				"achievement": "owl"
 			}
@@ -82,12 +100,12 @@ for hero in masterData['heroes']:
 			owlSkinsData.append(homeSkin)
 			owlSkinsData.append(awaySkin)
 		
-		# try:
-			# owlSkinsData.insert(0, extraSkins)
-			# del extraSkins
-			# print('Extras exist for ' + hero)
-		# except NameError:
-			# print('No extras for ' + hero)
+		try:
+			owlSkinsData.insert(0, extraSkins)
+			del extraSkins
+			print('Extras exist for ' + hero)
+		except NameError:
+			print('No extras for ' + hero)
 		
 		masterData['heroes'][hero]['items']['owlskins'] = owlSkinsData
 
