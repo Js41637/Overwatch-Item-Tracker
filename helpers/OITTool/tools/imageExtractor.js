@@ -47,6 +47,10 @@ const _moveImages = (files, heroId, type, where) => {
     files = cleanFileIDs(files, heroId);
     let total = 0
     files.forEach(file => {
+      if (fs.statSync(`${where}/${file.name}`).isDirectory()) {
+        return
+      }
+
       total++;
       fs.createReadStream(`${where}/${file.name}`).pipe(fs.createWriteStream(`./!toBeConverted/${type}/${file.cleanName}.TIF`));
     });

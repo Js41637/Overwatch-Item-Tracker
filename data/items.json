@@ -452,6 +452,22 @@
           "url": "/heroes/all/icons/brazil.png"
         },
         {
+          "name": "Brick Ganymede",
+          "id": "bastion-brick-ganymede",
+          "url": "/heroes/bastion/icons/bastion-brick-ganymede.png",
+          "description": "Unlocked by participating in the Bastion’s Brick Challenge",
+          "achievement": "blizzard",
+          "hero": "bastion"
+        },
+        {
+          "name": "Brickstion",
+          "id": "bastion-brickstion",
+          "url": "/heroes/bastion/icons/bastion-brickstion.png",
+          "description": "Unlocked by participating in the Bastion’s Brick Challenge",
+          "achievement": "blizzard",
+          "hero": "bastion"
+        },
+        {
           "name": "Bride",
           "id": "sombra-bride",
           "url": "/heroes/sombra/icons/sombra-bride.png",
@@ -628,19 +644,19 @@
         },
         {
           "name": "Combat Medic",
-          "id": "mercy-combat-medic",
-          "url": "/heroes/mercy/icons/mercy-combat-medic.png",
-          "event": "UPRISING",
-          "hero": "mercy",
-          "group": "UPRISING_2017"
-        },
-        {
-          "name": "Combat Medic",
           "id": "baptiste-combat-medic",
           "url": "/heroes/baptiste/icons/baptiste-combat-medic.png",
           "description": "Unlocked by participating in Baptiste's Reunion Challenge",
           "achievement": "blizzard",
           "hero": "baptiste"
+        },
+        {
+          "name": "Combat Medic",
+          "id": "mercy-combat-medic",
+          "url": "/heroes/mercy/icons/mercy-combat-medic.png",
+          "event": "UPRISING",
+          "hero": "mercy",
+          "group": "UPRISING_2017"
         },
         {
           "name": "Competitive 3v3 Group Elimination Competitor",
@@ -1421,6 +1437,14 @@
           "hero": "genji"
         },
         {
+          "name": "Genji Minifig",
+          "id": "genji-genji-minifig",
+          "url": "/heroes/genji/icons/genji-genji-minifig.png",
+          "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
+          "achievement": "blizzard",
+          "hero": "genji"
+        },
+        {
           "name": "Germany",
           "id": "germany",
           "event": "SUMMER_GAMES",
@@ -1700,6 +1724,14 @@
           "name": "Hanzo",
           "id": "hanzo-hanzo",
           "url": "/heroes/hanzo/icons/hanzo-hanzo.png",
+          "hero": "hanzo"
+        },
+        {
+          "name": "Hanzo Minifig",
+          "id": "hanzo-hanzo-minifig",
+          "url": "/heroes/hanzo/icons/hanzo-hanzo-minifig.png",
+          "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
+          "achievement": "blizzard",
           "hero": "hanzo"
         },
         {
@@ -3646,6 +3678,14 @@
           "hero": "tracer"
         },
         {
+          "name": "Tracer Minifig",
+          "id": "tracer-tracer-minifig",
+          "url": "/heroes/tracer/icons/tracer-tracer-minifig.png",
+          "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
+          "achievement": "blizzard",
+          "hero": "tracer"
+        },
+        {
           "name": "Track",
           "id": "tracer-track",
           "url": "/heroes/tracer/icons/tracer-track.png",
@@ -3815,6 +3855,14 @@
           "name": "Widowmaker",
           "id": "widowmaker-widowmaker",
           "url": "/heroes/widowmaker/icons/widowmaker-widowmaker.png",
+          "hero": "widowmaker"
+        },
+        {
+          "name": "Widowmaker Minifig",
+          "id": "widowmaker-widowmaker-minifig",
+          "url": "/heroes/widowmaker/icons/widowmaker-widowmaker-minifig.png",
+          "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
+          "achievement": "blizzard",
           "hero": "widowmaker"
         },
         {
@@ -8077,6 +8125,14 @@
           "group": "ANNIVERSARY_2018"
         },
         {
+          "name": "Brick",
+          "id": "bastion-brick",
+          "quality": "legendary",
+          "url": "/heroes/bastion/skins/bastion-brick.jpg",
+          "description": "Unlocked by participating in the Bastion’s Brick Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Overgrown",
           "id": "bastion-overgrown",
           "quality": "legendary",
@@ -8247,6 +8303,22 @@
           "event": "ANNIVERSARY",
           "hero": "bastion",
           "group": "ANNIVERSARY_2018"
+        },
+        {
+          "name": "Brick Ganymede",
+          "id": "bastion-brick-ganymede",
+          "url": "/heroes/bastion/icons/bastion-brick-ganymede.png",
+          "description": "Unlocked by participating in the Bastion’s Brick Challenge",
+          "achievement": "blizzard",
+          "hero": "bastion"
+        },
+        {
+          "name": "Brickstion",
+          "id": "bastion-brickstion",
+          "url": "/heroes/bastion/icons/bastion-brickstion.png",
+          "description": "Unlocked by participating in the Bastion’s Brick Challenge",
+          "achievement": "blizzard",
+          "hero": "bastion"
         }
       ],
       "sprays": [
@@ -10107,6 +10179,14 @@
           "achievement": "blizzard"
         },
         {
+          "name": "Piece",
+          "id": "dva-piece",
+          "quality": "common",
+          "url": "/heroes/dva/sprays/dva-piece.png",
+          "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Refreshment",
           "id": "dva-refreshment",
           "quality": "common",
@@ -11502,6 +11582,14 @@
           "event": "ANNIVERSARY",
           "hero": "genji",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Genji Minifig",
+          "id": "genji-genji-minifig",
+          "url": "/heroes/genji/icons/genji-genji-minifig.png",
+          "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
+          "achievement": "blizzard",
+          "hero": "genji"
         }
       ],
       "sprays": [
@@ -11734,6 +11822,14 @@
           "url": "/heroes/genji/sprays/genji-pixel.png",
           "achievement": true,
           "description": "Kill 2 enemies with a single use of Genji's Deflection in Quick or Competitive Play."
+        },
+        {
+          "name": "Brickblade",
+          "id": "genji-brickblade",
+          "quality": "common",
+          "url": "/heroes/genji/sprays/genji-brickblade.png",
+          "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -12322,6 +12418,14 @@
           "event": "ANNIVERSARY",
           "hero": "hanzo",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Hanzo Minifig",
+          "id": "hanzo-hanzo-minifig",
+          "url": "/heroes/hanzo/icons/hanzo-hanzo-minifig.png",
+          "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
+          "achievement": "blizzard",
+          "hero": "hanzo"
         }
       ],
       "sprays": [
@@ -12548,6 +12652,14 @@
           "url": "/heroes/hanzo/sprays/hanzo-pixel.png",
           "achievement": true,
           "description": "Get 3 killing blows with a single use of Hanzo's Storm Arrows in Quick or Competitive Play."
+        },
+        {
+          "name": "Brick Dragon",
+          "id": "hanzo-brick-dragon",
+          "quality": "common",
+          "url": "/heroes/hanzo/sprays/hanzo-brick-dragon.png",
+          "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -16784,6 +16896,14 @@
           "description": "Restore 200 health for 5 allies without dying as Mercy in Quick or Competitive Play."
         },
         {
+          "name": "Reconstruction",
+          "id": "mercy-reconstruction",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-reconstruction.png",
+          "description": "Unlocked by participating in the Bastion’s Brick Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Cure",
           "id": "mercy-cure",
           "quality": "common",
@@ -19218,6 +19338,14 @@
           "url": "/heroes/pharah/sprays/pharah-pixel.png",
           "achievement": true,
           "description": "Knock an enemy to their death using Pharah's Concussive Blast in Quick or Competitive Play."
+        },
+        {
+          "name": "Bricks Rain from Above",
+          "id": "pharah-bricks-rain-from-above",
+          "quality": "common",
+          "url": "/heroes/pharah/sprays/pharah-bricks-rain-from-above.png",
+          "description": "Unlocked by participating in the Bastion’s Brick Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -22039,7 +22167,8 @@
           "name": "Subject Sigma",
           "id": "sigma-subject-sigma",
           "quality": "legendary",
-          "url": "/heroes/sigma/skins/sigma-subject-sigma.jpg"
+          "url": "/heroes/sigma/skins/sigma-subject-sigma.jpg",
+          "description": "Brilliant astrophysicist Siebren de Kuiper gained the ability to control gravity when an experiment went terribly wrong. Now, Talon manipulates him to their own ends."
         }
       ],
       "emotes": [
@@ -25848,20 +25977,20 @@
           "group": "ANNIVERSARY_2017"
         },
         {
-          "name": "2018 Atlantic All-Stars",
-          "id": "tracer-2018-atlantic-allstars",
-          "quality": "legendary",
-          "url": "/heroes/tracer/skins/tracer-2018-atlantic-allstars.jpg",
-          "description": "Unlocked with purchase of 2018 Atlantic All-Stars skin",
-          "achievement": "owl"
-        },
-        {
           "name": "Slipstream",
           "id": "tracer-slipstream",
           "quality": "legendary",
           "url": "/heroes/tracer/skins/tracer-slipstream.jpg",
           "description": "Before becoming an active agent of Overwatch, Tracer was a test pilot, until a mishap with the prototype Slipstream teleporting fighter.",
           "achievement": "blizzard"
+        },
+        {
+          "name": "2018 Atlantic All-Stars",
+          "id": "tracer-2018-atlantic-allstars",
+          "quality": "legendary",
+          "url": "/heroes/tracer/skins/tracer-2018-atlantic-allstars.jpg",
+          "description": "Unlocked with purchase of 2018 Atlantic All-Stars skin",
+          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -26041,6 +26170,14 @@
           "event": "ANNIVERSARY",
           "hero": "tracer",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Tracer Minifig",
+          "id": "tracer-tracer-minifig",
+          "url": "/heroes/tracer/icons/tracer-tracer-minifig.png",
+          "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
+          "achievement": "blizzard",
+          "hero": "tracer"
         }
       ],
       "sprays": [
@@ -26885,6 +27022,14 @@
           "event": "ANNIVERSARY",
           "hero": "widowmaker",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Widowmaker Minifig",
+          "id": "widowmaker-widowmaker-minifig",
+          "url": "/heroes/widowmaker/icons/widowmaker-widowmaker-minifig.png",
+          "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
+          "achievement": "blizzard",
+          "hero": "widowmaker"
         }
       ],
       "sprays": [
