@@ -7,6 +7,7 @@ const OWLTEAMLOGOS = OWLTEAMS.map(team => team === 'overwatch-league' ? team : `
 const data = {
   // Changes IDs and Names will eventually be fixed with a data migration.
   idsBlizzardChanged: {
+    "sprays/hanzo-brickstrike": "hanzo-brick-dragon",
     "sprays/year-of-the-dog": "year-of-the-dog-2018",
     "sprays/year-of-the-rooster": "year-of-the-rooster-2017",
     "sprays/junkrat-hayseed": "junkrat-scarecrow",
@@ -36,7 +37,12 @@ const data = {
     "sprays/competitive-deathmatch-competitor-2018": "competitive-deathmatch-competitor",
     "sprays/competitive-deathmatch-hero-2018": "competitive-deathmatch-hero",
     "icons/competitive-deathmatch-competitor-2018": "competitive-deathmatch-competitor",
-    "icons/competitive-deathmatch-hero-2018": "competitive-deathmatch-hero"
+    "icons/competitive-deathmatch-hero-2018": "competitive-deathmatch-hero",
+
+    "sprays/competitive-3v3-elimination-competitor-2018": "competitive-3v3-elimination-competitor",
+    "sprays/competitive-3v3-elimination-hero-2018": "competitive-3v3-elimination-hero",
+    "icons/competitive-3v3-elimination-competitor-2018": "competitive-3v3-elimination-competitor",
+    "icons/competitive-3v3-elimination-hero-2018": "competitive-3v3-elimination-hero"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
@@ -89,6 +95,10 @@ const data = {
       icons: ['kul-tiras', 'zandalar', 'for-the-alliance', 'for-the-horde', 'dark-lady', 'garrosh', 'jaina', 'lich-king', 'varian', 'you-are-not-prepared'],
       sprays: ['you-are-not-prepared', 'anduin', 'jaina', 'sylvanas', 'varok']
     },
+    warcraft: {
+      icons: ['arthas', 'thrall', 'tyrande', 'lich-king-1', 'kelthuzad'],
+      sprays: ['footman', 'ghoul', 'grunt', 'archer']
+    },
     hearthstone: {
       icons: ['hearthstone']
     },
@@ -96,8 +106,8 @@ const data = {
       icons: ['nexus']
     },
     "overwatch league": {
-      icons: [...OWLTEAMS, 'inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars'],
-      sprays: [...OWLTEAMLOGOS, 'inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar']
+      icons: [...OWLTEAMS, 'inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars', 'grand-finals-2019'],
+      sprays: [...OWLTEAMLOGOS, 'inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate"]
     }
   },
   achievementSprays: [
@@ -204,7 +214,7 @@ const data = {
     },
     icons: {
       [EVENTS.SUMMER]: ["summer-games-2016", "summer-games-2017", "summer-games-2018", "summer-games-2019", "meteor", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america", "argentina", "austria", "belgium", "canada", "denmark", "finland", "ireland", "israel", "italy", "jordan", "netherlands", "new-zealand", "portugal", "romania", "snorkelmari", "spain", "footballmari", "punchimari", "tennismari"],
-      [EVENTS.HALLOWEEN]: ["calavera", "vampachimari", "eyeball", "superstition", "witchs-hat", "ghostymari", "tombstone", "bewitching", "candle", "never-die", "wolf", "witchs-brew", "spider", "junkensteins-pachimonster", "pachimummy", "pumpkimari", "skelemari", "witchymari",  "halloween-terror-2016", "halloween-terror-2017", "halloween-terror-2018"],
+      [EVENTS.HALLOWEEN]: ["calavera", "vampachimari", "eyeball", "superstition", "witchs-hat", "ghostymari", "tombstone", "bewitching", "candle", "never-die", "wolf", "witchs-brew", "spider", "junkensteins-pachimonster", "pachimummy", "pumpkimari", "skelemari", "witchymari", "kittymari",  "halloween-terror-2016", "halloween-terror-2017", "halloween-terror-2018", "halloween-terror-2019"],
       [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "winter-wonderland-2018", "snowman", "present", "pachimerry", "gingermari", "pachicracker", "snowimari", "2017", "2018", "2019", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
       [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu", 'guan-yu', 'hong-gildong', 'huang-zhong', 'l-bu', 'piggimari', 'year-of-the-pig-2019', 'zhang-fei', 'zhuge-liang'],
       [EVENTS.UPRISING]: ['archives-2019', 'archives-2018', 'uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'assassin', 'enforcer', 'heavy-assault', 'maximilien', 'sniper', 'trooper'],
@@ -214,7 +224,10 @@ const data = {
   eventItemOverrides: {
     'reaper-american': EVENTS.SUMMER,
     'reinhardt-bundesadler': EVENTS.SUMMER,
-    'mei-zhongguo': EVENTS.SUMMER
+    'mei-zhongguo': EVENTS.SUMMER,
+    'sombra-demon-hunter': EVENTS.HALLOWEEN,
+    'baptiste-vampire': EVENTS.HALLOWEEN,
+    'junkrat-inferno': EVENTS.HALLOWEEN
   },
   specialAchievementItems: {
     bcrf: {
