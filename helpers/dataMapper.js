@@ -156,7 +156,10 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
       return r;
     }, {});
 
-    if (idCache[item.id]) console.warn("Duplicate allClassData detected", item.id);
+    if (idCache[item.id]) {
+      console.warn("Duplicate allClassData detected", item.id);
+      item.id += '-1'
+    }
     idCache[item.id] = true;
 
     // Check if the spray or icon is a Competitive reward

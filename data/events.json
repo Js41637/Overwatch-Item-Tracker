@@ -2372,8 +2372,8 @@
     "name": "Halloween Terror",
     "id": "HALLOWEEN",
     "dates": {
-      "start": "1539104400000",
-      "end": "1541062800000"
+      "start": "1571158800000",
+      "end": "1572951600000"
     },
     "items": {
       "skins": [
@@ -2385,6 +2385,18 @@
           "quality": "epic",
           "url": "/updates/HALLOWEEN/skins/ana-ghoul.jpg",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Vampire",
+          "id": "baptiste-vampire",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/skins/baptiste-vampire.jpg",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
+          "achievement": true,
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Bastion",
@@ -2405,14 +2417,35 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Inferno",
+          "id": "junkrat-inferno",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/skins/junkrat-inferno.jpg",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 1 challenge",
+          "achievement": true,
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Gorgon",
+          "id": "lucio-gorgon",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/skins/lucio-gorgon.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
           "heroName": "McCree",
           "hero": "mccree",
           "name": "Undead",
           "id": "mccree-undead",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/skins/mccree-undead.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Mei",
@@ -2421,8 +2454,7 @@
           "id": "mei-pumpkin",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/skins/mei-pumpkin.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Pharah",
@@ -2467,8 +2499,7 @@
           "id": "widowmaker-spider",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/skins/widowmaker-spider.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Zenyatta",
@@ -2487,6 +2518,24 @@
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skins/ana-corsair.jpg",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Swamp Monster",
+          "id": "doomfist-swamp-monster",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/doomfist-swamp-monster.jpg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Jack-o'-lantern",
+          "id": "wrecking-ball-jackolantern",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/wrecking-ball-jackolantern.jpg",
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Junkrat",
@@ -2527,6 +2576,24 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Banshee",
+          "id": "moira-banshee",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/moira-banshee.jpg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Enchanted Armor",
+          "id": "pharah-enchanted-armor",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/pharah-enchanted-armor.jpg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
           "heroName": "Reaper",
           "hero": "reaper",
           "name": "Dracula",
@@ -2554,6 +2621,24 @@
           "url": "/updates/HALLOWEEN/skins/roadhog-junkensteins-monster.jpg",
           "description": "Armed with the secret of creating artificial life, Dr. Jamison Junkenstein birthed a monster.",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Slasher: 76",
+          "id": "soldier-76-slasher-76",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/soldier-76-slasher-76.jpg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Bride",
+          "id": "sombra-bride",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/sombra-bride.jpg",
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Symmetra",
@@ -2594,6 +2679,69 @@
           "group": "HALLOWEEN_2017"
         }
       ],
+      "skinsLegendary": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Pharaoh",
+          "id": "ana-pharaoh",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/ana-pharaoh.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Warlock",
+          "id": "ashe-warlock",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/ashe-warlock.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Demon",
+          "id": "orisa-demon",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/orisa-demon.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Demon Hunter",
+          "id": "sombra-demon-hunter",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/sombra-demon-hunter.jpg",
+          "description": "Unlocked as part of the BlizzCon 2018 In-Game Goodies or by participating in the Halloween Terror 2019 week 3 challenge",
+          "achievement": true,
+          "isNew": true
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Will-o'-Wisp",
+          "id": "tracer-willowisp",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/tracer-willowisp.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Scorpion",
+          "id": "widowmaker-scorpion",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/widowmaker-scorpion.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        }
+      ],
       "emotes": [
         {
           "heroName": "Ana",
@@ -2611,8 +2759,7 @@
           "id": "bastion-zombie",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/emotes/bastion-zombie.webm",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Mei",
@@ -2649,6 +2796,16 @@
           "quality": "epic",
           "url": "/updates/HALLOWEEN/emotes/winston-shadow-puppets.webm",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Stretch",
+          "id": "zenyatta-stretch",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/emotes/zenyatta-stretch.webm",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         }
       ],
       "icons": [
@@ -2661,13 +2818,49 @@
           "group": "HALLOWEEN_2017"
         },
         {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Mummy",
+          "id": "ana-mummy",
+          "url": "/heroes/ana/icons/ana-mummy.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Summoned",
+          "id": "ashe-summoned",
+          "url": "/heroes/ashe/icons/ashe-summoned.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Warlock",
+          "id": "ashe-warlock",
+          "url": "/heroes/ashe/icons/ashe-warlock.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Vampire",
+          "id": "baptiste-vampire",
+          "url": "/heroes/baptiste/icons/baptiste-vampire.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
+          "achievement": true,
+          "isNew": true
+        },
+        {
           "heroName": "Doomfist",
           "hero": "doomfist",
           "name": "Swamp Monster",
           "id": "doomfist-swamp-monster",
           "url": "/heroes/doomfist/icons/doomfist-swamp-monster.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hammond",
@@ -2675,7 +2868,16 @@
           "name": "Scarecrow",
           "id": "wrecking-ball-scarecrow",
           "url": "/heroes/wrecking-ball/icons/wrecking-ball-scarecrow.png",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Inferno",
+          "id": "junkrat-inferno",
+          "url": "/heroes/junkrat/icons/junkrat-inferno.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 1 challenge",
+          "achievement": true,
           "isNew": true
         },
         {
@@ -2685,6 +2887,15 @@
           "id": "junkrat-the-doctor",
           "url": "/heroes/junkrat/icons/junkrat-the-doctor.png",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Gorgon",
+          "id": "lucio-gorgon",
+          "url": "/heroes/lucio/icons/lucio-gorgon.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "McCree",
@@ -2716,7 +2927,15 @@
           "name": "Banshee",
           "id": "moira-banshee",
           "url": "/heroes/moira/icons/moira-banshee.png",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Demon",
+          "id": "orisa-demon",
+          "url": "/heroes/orisa/icons/orisa-demon.png",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -2725,8 +2944,7 @@
           "name": "Enchanted",
           "id": "pharah-enchanted",
           "url": "/heroes/pharah/icons/pharah-enchanted.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Reaper",
@@ -2758,8 +2976,7 @@
           "name": "Slasher",
           "id": "soldier-76-slasher",
           "url": "/heroes/soldier-76/icons/soldier-76-slasher.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Sombra",
@@ -2767,7 +2984,16 @@
           "name": "Bride",
           "id": "sombra-bride",
           "url": "/heroes/sombra/icons/sombra-bride.png",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Demon Hunter",
+          "id": "sombra-demon-hunter",
+          "url": "/heroes/sombra/icons/sombra-demon-hunter.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 3 challenge",
+          "achievement": true,
           "isNew": true
         },
         {
@@ -2785,6 +3011,24 @@
           "id": "torbjorn-viking",
           "url": "/heroes/torbjorn/icons/torbjorn-viking.png",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Will-o'-Wisp",
+          "id": "tracer-willowisp",
+          "url": "/heroes/tracer/icons/tracer-willowisp.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Scorpion",
+          "id": "widowmaker-scorpion",
+          "url": "/heroes/widowmaker/icons/widowmaker-scorpion.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Zarya",
@@ -2863,7 +3107,14 @@
           "name": "Halloween Terror 2018",
           "id": "halloween-terror-2018",
           "url": "/heroes/all/icons/halloween-terror-2018.png",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "hero": "all",
+          "name": "Halloween Terror 2019",
+          "id": "halloween-terror-2019",
+          "url": "/heroes/all/icons/halloween-terror-2019.png",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -2872,6 +3123,14 @@
           "id": "junkensteins-pachimonster",
           "url": "/heroes/all/icons/junkensteins-pachimonster.png",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "hero": "all",
+          "name": "Kittymari",
+          "id": "kittymari",
+          "url": "/heroes/all/icons/kittymari.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -2885,16 +3144,14 @@
           "name": "Pumpkimari",
           "id": "pumpkimari",
           "url": "/heroes/all/icons/pumpkimari.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "hero": "all",
           "name": "Skelemari",
           "id": "skelemari",
           "url": "/heroes/all/icons/skelemari.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "hero": "all",
@@ -2943,8 +3200,7 @@
           "name": "Witchymari",
           "id": "witchymari",
           "url": "/heroes/all/icons/witchymari.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "hero": "all",
@@ -2958,11 +3214,62 @@
         {
           "heroName": "Ana",
           "hero": "ana",
+          "name": "Mummy",
+          "id": "ana-mummy",
+          "quality": "common",
+          "url": "/heroes/ana/sprays/ana-mummy.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Ana",
+          "hero": "ana",
           "name": "Trick or Treat",
           "id": "ana-trick-or-treat",
           "quality": "common",
           "url": "/heroes/ana/sprays/ana-trick-or-treat.png",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Trick or Treat",
+          "id": "ashe-trick-or-treat",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-trick-or-treat.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Warlock",
+          "id": "ashe-warlock",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-warlock.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Trick or Treat",
+          "id": "baptiste-trick-or-treat",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-trick-or-treat.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Vampire",
+          "id": "baptiste-vampire",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-vampire.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
+          "achievement": true,
+          "isNew": true
         },
         {
           "heroName": "Bastion",
@@ -2980,8 +3287,7 @@
           "id": "brigitte-trick-or-treat",
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-trick-or-treat.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "D.Va",
@@ -2999,8 +3305,7 @@
           "id": "doomfist-swamp-monster",
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-swamp-monster.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Doomfist",
@@ -3027,8 +3332,7 @@
           "id": "wrecking-ball-jackolantern",
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-jackolantern.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hammond",
@@ -3037,8 +3341,7 @@
           "id": "wrecking-ball-trick-or-treat",
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-trick-or-treat.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hanzo",
@@ -3057,6 +3360,27 @@
           "quality": "common",
           "url": "/heroes/junkrat/sprays/junkrat-trick-or-treat.png",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Inferno",
+          "id": "junkrat-inferno",
+          "quality": "common",
+          "url": "/heroes/junkrat/sprays/junkrat-inferno.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 1 challenge",
+          "achievement": true,
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Gorgon",
+          "id": "lucio-gorgon",
+          "quality": "common",
+          "url": "/heroes/lucio/sprays/lucio-gorgon.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Lúcio",
@@ -3101,8 +3425,7 @@
           "id": "moira-banshee",
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-banshee.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Moira",
@@ -3111,7 +3434,16 @@
           "id": "moira-trick-or-treat",
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-trick-or-treat.png",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Demon",
+          "id": "orisa-demon",
+          "quality": "common",
+          "url": "/heroes/orisa/sprays/orisa-demon.png",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -3130,8 +3462,7 @@
           "id": "pharah-enchanted",
           "quality": "common",
           "url": "/heroes/pharah/sprays/pharah-enchanted.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Pharah",
@@ -3170,14 +3501,23 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Trick or Treat",
+          "id": "sigma-trick-or-treat",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-trick-or-treat.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Slasher",
           "id": "soldier-76-slasher",
           "quality": "common",
           "url": "/heroes/soldier-76/sprays/soldier-76-slasher.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Soldier: 76",
@@ -3195,8 +3535,7 @@
           "id": "sombra-servants",
           "quality": "common",
           "url": "/heroes/sombra/sprays/sombra-servants.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Sombra",
@@ -3206,6 +3545,17 @@
           "quality": "common",
           "url": "/heroes/sombra/sprays/sombra-trick-or-treat.png",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Demon Hunter",
+          "id": "sombra-demon-hunter",
+          "quality": "common",
+          "url": "/heroes/sombra/sprays/sombra-demon-hunter.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 3 challenge",
+          "achievement": true,
+          "isNew": true
         },
         {
           "heroName": "Symmetra",
@@ -3233,6 +3583,26 @@
           "quality": "common",
           "url": "/heroes/tracer/sprays/tracer-trick-or-treat.png",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Will-o'-Wisp",
+          "id": "tracer-willowisp",
+          "quality": "common",
+          "url": "/heroes/tracer/sprays/tracer-willowisp.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Scorpion",
+          "id": "widowmaker-scorpion",
+          "quality": "common",
+          "url": "/heroes/widowmaker/sprays/widowmaker-scorpion.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Widowmaker",
@@ -3355,6 +3725,7 @@
           "name": "Flaming Pumpkin",
           "id": "flaming-pumpkin",
           "url": "/heroes/all/sprays/flaming-pumpkin.png",
+          "group": "HALLOWEEN_2018",
           "achievement": true,
           "description": "Survive 12 bonus waves in Junkenstein Endless."
         },
@@ -3435,6 +3806,7 @@
           "name": "Zombardier",
           "id": "zombardier",
           "url": "/heroes/all/sprays/zombardier.png",
+          "group": "HALLOWEEN_2018",
           "achievement": true,
           "description": "Survive 4 bonus waves in Junkenstein Endless on Hard difficulty."
         },
@@ -3443,6 +3815,7 @@
           "name": "Zomnic",
           "id": "zomnic",
           "url": "/heroes/all/sprays/zomnic.png",
+          "group": "HALLOWEEN_2018",
           "achievement": true,
           "description": "Win Junkenstein's Revenge with 6 different heroes."
         }
@@ -3465,6 +3838,36 @@
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-dont-be-scared.ogg",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Bandage or bullet?",
+          "id": "baptiste-bandage-or-bullet",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-bandage-or-bullet.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Don't cry",
+          "id": "baptiste-dont-cry",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-dont-cry.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Don't die on me",
+          "id": "baptiste-dont-die-on-me",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-dont-die-on-me.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Bastion",
@@ -3491,8 +3894,7 @@
           "id": "brigitte-not-scared-are-you",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-not-scared-are-you.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Brigitte",
@@ -3501,8 +3903,7 @@
           "id": "brigitte-supposed-to-scare-me",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-supposed-to-scare-me.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "D.Va",
@@ -3565,8 +3966,7 @@
           "id": "genji-trick-or-treat",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-trick-or-treat.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hammond",
@@ -3575,8 +3975,7 @@
           "id": "wrecking-ball-heart-rate-increasing",
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-heart-rate-increasing.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hammond",
@@ -3585,8 +3984,7 @@
           "id": "wrecking-ball-trick-or-treat",
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-trick-or-treat.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hanzo",
@@ -3649,7 +4047,16 @@
           "id": "lucio-trick-or-treat",
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-trick-or-treat.ogg",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Already dead",
+          "id": "mccree-already-dead",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-already-dead.ogg",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -3677,8 +4084,7 @@
           "id": "mccree-trick-or-treat",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-trick-or-treat.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Mei",
@@ -3697,6 +4103,26 @@
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-scary.ogg",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "You scared me",
+          "id": "mei-you-scared-me",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-you-scared-me.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "I'll cast a spell on you",
+          "id": "mercy-ill-cast-a-spell-on-you",
+          "quality": "common",
+          "url": "/heroes/mercy/voicelines/mercy-ill-cast-a-spell-on-you.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Mercy",
@@ -3723,8 +4149,7 @@
           "id": "moira-despair-has-its-own-calms",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-despair-has-its-own-calms.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Moira",
@@ -3733,7 +4158,16 @@
           "id": "moira-happy-halloween",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-happy-halloween.ogg",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Ignorance frightens me",
+          "id": "moira-ignorance-frightens-me",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-ignorance-frightens-me.ogg",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -3761,8 +4195,7 @@
           "id": "pharah-are-you-frightened",
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-are-you-frightened.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Pharah",
@@ -3798,8 +4231,7 @@
           "id": "reaper-im-dressed-to-kill",
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-im-dressed-to-kill.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Reaper",
@@ -3809,6 +4241,16 @@
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-things-are-looking-grim.ogg",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Too edgy for you?",
+          "id": "reaper-too-edgy-for-you",
+          "quality": "common",
+          "url": "/heroes/reaper/voicelines/reaper-too-edgy-for-you.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Reinhardt",
@@ -3847,6 +4289,36 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Frightful",
+          "id": "sigma-frightful",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-frightful.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Mouth full of teeth",
+          "id": "sigma-mouth-full-of-teeth",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-mouth-full-of-teeth.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "The knives are sharpened",
+          "id": "sigma-the-knives-are-sharpened",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-the-knives-are-sharpened.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Knock knock",
@@ -3854,6 +4326,16 @@
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-knock-knock.ogg",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Not much of a living",
+          "id": "soldier-76-not-much-of-a-living",
+          "quality": "common",
+          "url": "/heroes/soldier-76/voicelines/soldier-76-not-much-of-a-living.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Soldier: 76",
@@ -3894,6 +4376,16 @@
         {
           "heroName": "Symmetra",
           "hero": "symmetra",
+          "name": "Everything you see",
+          "id": "symmetra-everything-you-see",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-everything-you-see.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
           "name": "The treat is a lie",
           "id": "symmetra-the-treat-is-a-lie",
           "quality": "common",
@@ -3917,6 +4409,16 @@
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-if-you-build-it.ogg",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Mind the beard",
+          "id": "torbjorn-mind-the-beard",
+          "quality": "common",
+          "url": "/heroes/torbjorn/voicelines/torbjorn-mind-the-beard.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Tracer",
@@ -3943,7 +4445,16 @@
           "id": "tracer-trick-or-treat",
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-trick-or-treat.ogg",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "In your dreams",
+          "id": "widowmaker-in-your-dreams",
+          "quality": "common",
+          "url": "/heroes/widowmaker/voicelines/widowmaker-in-your-dreams.ogg",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -3971,8 +4482,7 @@
           "id": "winston-boo",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-boo.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Winston",
@@ -4022,6 +4532,16 @@
         {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
+          "name": "Look in the mirror",
+          "id": "zenyatta-look-in-the-mirror",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-look-in-the-mirror.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
           "name": "Trick or treat?",
           "id": "zenyatta-trick-or-treat",
           "quality": "common",
@@ -4056,8 +4576,7 @@
           "id": "brigitte-pumpkin",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/brigitte-pumpkin.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "D.Va",
@@ -4066,8 +4585,7 @@
           "id": "dva-pumpkin-selfie",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/dva-pumpkin-selfie.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "D.Va",
@@ -4085,8 +4603,7 @@
           "id": "doomfist-pumpkin",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/doomfist-pumpkin.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Genji",
@@ -4104,8 +4621,7 @@
           "id": "wrecking-ball-nibbling",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/wrecking-ball-nibbling.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hanzo",
@@ -4186,8 +4702,7 @@
           "id": "mercy-pumpkin",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/mercy-pumpkin.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Mercy",
@@ -4205,8 +4720,7 @@
           "id": "moira-pumpkin",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/moira-pumpkin.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Orisa",
@@ -4216,6 +4730,16 @@
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/orisa-pumpkin-head.jpg",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Pumpkin",
+          "id": "pharah-pumpkin",
+          "quality": "rare",
+          "url": "/updates/HALLOWEEN/poses/pharah-pumpkin.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Pharah",
@@ -4238,6 +4762,16 @@
         {
           "heroName": "Reinhardt",
           "hero": "reinhardt",
+          "name": "Pumpkin",
+          "id": "reinhardt-pumpkin",
+          "quality": "rare",
+          "url": "/updates/HALLOWEEN/poses/reinhardt-pumpkin.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
           "name": "R.I.P.",
           "id": "reinhardt-rip",
           "quality": "rare",
@@ -4252,6 +4786,16 @@
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/roadhog-rip.jpg",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Pumpkin",
+          "id": "sigma-pumpkin",
+          "quality": "rare",
+          "url": "/updates/HALLOWEEN/poses/sigma-pumpkin.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Soldier: 76",
@@ -4346,14 +4890,23 @@
       ],
       "intros": [
         {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Scream Queen",
+          "id": "ashe-scream-queen",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/intros/ashe-scream-queen.webm",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Brigitte",
           "hero": "brigitte",
           "name": "Shield Bash",
           "id": "brigitte-shield-bash",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/intros/brigitte-shield-bash.webm",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Genji",
@@ -4363,6 +4916,16 @@
           "quality": "epic",
           "url": "/updates/HALLOWEEN/intros/genji-pumpkin-carving.webm",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Undertaker",
+          "id": "mccree-undertaker",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/intros/mccree-undertaker.webm",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Mei",
@@ -4398,70 +4961,7 @@
           "id": "winston-pumpkin",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/intros/winston-pumpkin.webm",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        }
-      ],
-      "skinsLegendary": [
-        {
-          "heroName": "Doomfist",
-          "hero": "doomfist",
-          "name": "Swamp Monster",
-          "id": "doomfist-swamp-monster",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/doomfist-swamp-monster.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Jack-o'-lantern",
-          "id": "wrecking-ball-jackolantern",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/wrecking-ball-jackolantern.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Moira",
-          "hero": "moira",
-          "name": "Banshee",
-          "id": "moira-banshee",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/moira-banshee.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Enchanted Armor",
-          "id": "pharah-enchanted-armor",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/pharah-enchanted-armor.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "Slasher: 76",
-          "id": "soldier-76-slasher-76",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/soldier-76-slasher-76.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Sombra",
-          "hero": "sombra",
-          "name": "Bride",
-          "id": "sombra-bride",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/sombra-bride.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         }
       ]
     }
