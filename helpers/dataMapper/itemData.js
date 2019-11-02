@@ -72,7 +72,12 @@ const data = {
       'jaina',
       'sylvanas',
       'varok',
-      'bastet'
+      'bastet',
+      // Warcraft
+      'footman',
+      'ghoul',
+      'grunt',
+      'archer'
     ],
     icons: [
       // Diablo
@@ -111,6 +116,7 @@ const data = {
     }
   },
   achievementSprays: [
+    'path-to-pro-2019',
     'copa-lucioball-competitor',
     'copa-lucioball-hero',
     'competitive-ctf-competitor',
