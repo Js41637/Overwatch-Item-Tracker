@@ -649,19 +649,19 @@
         },
         {
           "name": "Combat Medic",
-          "id": "mercy-combat-medic",
-          "url": "/heroes/mercy/icons/mercy-combat-medic.png",
-          "event": "UPRISING",
-          "hero": "mercy",
-          "group": "UPRISING_2017"
-        },
-        {
-          "name": "Combat Medic",
           "id": "baptiste-combat-medic",
           "url": "/heroes/baptiste/icons/baptiste-combat-medic.png",
           "description": "Unlocked by participating in Baptiste's Reunion Challenge",
           "achievement": "blizzard",
           "hero": "baptiste"
+        },
+        {
+          "name": "Combat Medic",
+          "id": "mercy-combat-medic",
+          "url": "/heroes/mercy/icons/mercy-combat-medic.png",
+          "event": "UPRISING",
+          "hero": "mercy",
+          "group": "UPRISING_2017"
         },
         {
           "name": "Competitive 3v3 Elimination Competitor 2018",
@@ -792,7 +792,7 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive Deathmatch 2019"
         },
         {
-          "name": "Competitive Team Deathmatch Competitor",
+          "name": "Competitive Team Deathmatch Competitor 2018",
           "id": "competitive-team-deathmatch-competitor",
           "url": "/heroes/all/icons/competitive-team-deathmatch-competitor.png",
           "achievement": true,
@@ -800,12 +800,26 @@
           "description": "Unlocked by completing Competitive Team Deathmatch placement matches"
         },
         {
-          "name": "Competitive Team Deathmatch Hero",
+          "name": "Competitive Team Deathmatch Competitor 2019",
+          "id": "competitive-team-deathmatch-competitor-2019",
+          "url": "/heroes/all/icons/competitive-team-deathmatch-competitor-2019.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Competitive Team Deathmatch Hero 2018",
           "id": "competitive-team-deathmatch-hero",
           "url": "/heroes/all/icons/competitive-team-deathmatch-hero.png",
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch"
+        },
+        {
+          "name": "Competitive Team Deathmatch Hero 2019",
+          "id": "competitive-team-deathmatch-hero-2019",
+          "url": "/heroes/all/icons/competitive-team-deathmatch-hero-2019.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Copa Lúcioball Competitor",
@@ -1168,13 +1182,6 @@
         },
         {
           "name": "Demon Hunter",
-          "id": "demon-hunter",
-          "url": "/heroes/all/icons/demon-hunter.png",
-          "group": "diablo",
-          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
-        },
-        {
-          "name": "Demon Hunter",
           "id": "sombra-demon-hunter",
           "url": "/heroes/sombra/icons/sombra-demon-hunter.png",
           "description": "Unlocked by participating in the Halloween Terror 2019 week 3 challenge",
@@ -1182,6 +1189,13 @@
           "event": "HALLOWEEN",
           "hero": "sombra",
           "isNew": true
+        },
+        {
+          "name": "Demon Hunter",
+          "id": "demon-hunter",
+          "url": "/heroes/all/icons/demon-hunter.png",
+          "group": "diablo",
+          "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
           "name": "Denmark",
@@ -1208,6 +1222,14 @@
           "id": "doomfist-doomfist",
           "url": "/heroes/doomfist/icons/doomfist-doomfist.png",
           "hero": "doomfist"
+        },
+        {
+          "name": "Dr. Ziegler",
+          "id": "mercy-dr-ziegler",
+          "url": "/heroes/mercy/icons/mercy-dr-ziegler.png",
+          "description": "Unlocked by participating in Mercy's Recall Challenge",
+          "achievement": "blizzard",
+          "hero": "mercy"
         },
         {
           "name": "Dracula",
@@ -3304,6 +3326,20 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Season 18"
         },
         {
+          "name": "Season 19 Competitor",
+          "id": "season-19-competitor",
+          "url": "/heroes/all/icons/season-19-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 19 Hero",
+          "id": "season-19-hero",
+          "url": "/heroes/all/icons/season-19-hero.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Sentry",
           "id": "symmetra-sentry",
           "url": "/heroes/symmetra/icons/symmetra-sentry.png",
@@ -3356,20 +3392,20 @@
         },
         {
           "name": "Shooting",
-          "id": "ana-shooting",
-          "url": "/heroes/ana/icons/ana-shooting.png",
-          "event": "SUMMER_GAMES",
-          "hero": "ana",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
-          "name": "Shooting",
           "id": "ashe-shooting",
           "url": "/heroes/ashe/icons/ashe-shooting.png",
           "event": "SUMMER_GAMES",
           "hero": "ashe",
           "group": "SUMMER_GAMES_2019",
           "isNew": true
+        },
+        {
+          "name": "Shooting",
+          "id": "ana-shooting",
+          "url": "/heroes/ana/icons/ana-shooting.png",
+          "event": "SUMMER_GAMES",
+          "hero": "ana",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Shotput",
@@ -4445,7 +4481,7 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive Deathmatch 2019"
         },
         {
-          "name": "Competitive Team Deathmatch Competitor",
+          "name": "Competitive Team Deathmatch Competitor 2018",
           "id": "competitive-team-deathmatch-competitor",
           "url": "/heroes/all/sprays/competitive-team-deathmatch-competitor.png",
           "achievement": true,
@@ -4453,12 +4489,26 @@
           "description": "Unlocked by completing Competitive Team Deathmatch placement matches"
         },
         {
-          "name": "Competitive Team Deathmatch Hero",
+          "name": "Competitive Team Deathmatch Competitor 2019",
+          "id": "competitive-team-deathmatch-competitor-2019",
+          "url": "/heroes/all/sprays/competitive-team-deathmatch-competitor-2019.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Competitive Team Deathmatch Hero 2018",
           "id": "competitive-team-deathmatch-hero",
           "url": "/heroes/all/sprays/competitive-team-deathmatch-hero.png",
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch"
+        },
+        {
+          "name": "Competitive Team Deathmatch Hero 2019",
+          "id": "competitive-team-deathmatch-hero-2019",
+          "url": "/heroes/all/sprays/competitive-team-deathmatch-hero-2019.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Copa Lúcioball Competitor",
@@ -5201,6 +5251,20 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Season 18"
+        },
+        {
+          "name": "Season 19 Competitor",
+          "id": "season-19-competitor",
+          "url": "/heroes/all/sprays/season-19-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 19 Hero",
+          "id": "season-19-hero",
+          "url": "/heroes/all/sprays/season-19-hero.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Seoul Dynasty Logo",
@@ -16941,6 +17005,14 @@
           "group": "UPRISING_2017"
         },
         {
+          "name": "Dr. Ziegler",
+          "id": "mercy-dr-ziegler",
+          "quality": "legendary",
+          "url": "/heroes/mercy/skins/mercy-dr-ziegler.jpg",
+          "description": "Unlocked by participating in Mercy's Recall Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "2019 Atlantic All-Stars",
           "id": "mercy-2019-atlantic-allstars",
           "quality": "legendary",
@@ -17110,6 +17182,14 @@
           "event": "ANNIVERSARY",
           "hero": "mercy",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Dr. Ziegler",
+          "id": "mercy-dr-ziegler",
+          "url": "/heroes/mercy/icons/mercy-dr-ziegler.png",
+          "description": "Unlocked by participating in Mercy's Recall Challenge",
+          "achievement": "blizzard",
+          "hero": "mercy"
         },
         {
           "name": "Pink",
@@ -17360,11 +17440,75 @@
           "description": "Restore 200 health for 5 allies without dying as Mercy in Quick or Competitive Play."
         },
         {
+          "name": "Ascent",
+          "id": "mercy-ascent",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-ascent.png",
+          "description": "Unlocked by watching participating streams during Mercy's Recall Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Evaluation",
+          "id": "mercy-evaluation",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-evaluation.png",
+          "description": "Unlocked by participating in Mercy's Recall Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Hanan",
+          "id": "mercy-hanan",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-hanan.png",
+          "description": "Unlocked by watching participating streams during Mercy's Recall Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Healing touch",
+          "id": "mercy-healing-touch",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-healing-touch.png",
+          "description": "Unlocked by watching participating streams during Mercy's Recall Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Lab Coat",
+          "id": "mercy-lab-coat",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-lab-coat.png",
+          "description": "Unlocked by participating in Mercy's Recall Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Late night",
+          "id": "mercy-late-night",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-late-night.png",
+          "description": "Unlocked by watching participating streams during Mercy's Recall Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "On the clock",
+          "id": "mercy-on-the-clock",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-on-the-clock.png",
+          "description": "Unlocked by watching participating streams during Mercy's Recall Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Reconstruction",
           "id": "mercy-reconstruction",
           "quality": "common",
           "url": "/heroes/mercy/sprays/mercy-reconstruction.png",
           "description": "Unlocked by participating in the Bastion’s Brick Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Suit fitting",
+          "id": "mercy-suit-fitting",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-suit-fitting.png",
+          "description": "Unlocked by watching participating streams during Mercy's Recall Challenge",
           "achievement": "blizzard"
         },
         {

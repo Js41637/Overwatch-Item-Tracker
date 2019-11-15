@@ -42,7 +42,12 @@ const data = {
     "sprays/competitive-3v3-elimination-competitor-2018": "competitive-3v3-elimination-competitor",
     "sprays/competitive-3v3-elimination-hero-2018": "competitive-3v3-elimination-hero",
     "icons/competitive-3v3-elimination-competitor-2018": "competitive-3v3-elimination-competitor",
-    "icons/competitive-3v3-elimination-hero-2018": "competitive-3v3-elimination-hero"
+    "icons/competitive-3v3-elimination-hero-2018": "competitive-3v3-elimination-hero",
+
+    "sprays/competitive-team-deathmatch-competitor-2018": "competitive-team-deathmatch-competitor",
+    "sprays/competitive-team-deathmatch-hero-2018": "competitive-team-deathmatch-hero",
+    "icons/competitive-team-deathmatch-competitor-2018": "competitive-team-deathmatch-competitor",
+    "icons/competitive-team-deathmatch-hero-2018": "competitive-team-deathmatch-hero"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
