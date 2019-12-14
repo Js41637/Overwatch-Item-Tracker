@@ -846,7 +846,7 @@ const EVENTITEMS = {
       "sprays/baptiste-ornament",
       "sprays/sigma-ornament",
       "voicelines/baptiste-a-little-tlc",
-      "voicelines/baptiste-some-kind-of-angel",
+      "voicelines/baptiste-some-kind-of-angel-1",
       "voicelines/baptiste-today-i-give-you-a-choice",
       "voicelines/wrecking-ball-jingle-bells",
       "voicelines/junkrat-seasons-greetings",

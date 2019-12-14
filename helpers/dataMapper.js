@@ -131,7 +131,7 @@ var noLongerMissingAllClassData = _.reduce(missingAllClassData, (result, items, 
 // Add no longer missing allclass data onto allClassData
 _.forEach(noLongerMissingAllClassData, (items, type) => allClassData[type] = [...allClassData[type], ...items]);
 
-var shit = false
+var thanksBlizz = {}
 
 // Create object containing allclass item names by key so we can easily map event ids to items.
 // also check if any items are in allClassEventItems and mark them as event items
@@ -265,10 +265,18 @@ for (var hero in data) {
 
       // TODO: Remove this shit
       if (id === 'reinhardt-crusader' && type === 'sprays') {
-        if (shit) {
+        if (thanksBlizz['reinspray1']) {
           id = 'reinhardt-crusader-1'
         } else {
-          shit = true
+          thanksBlizz['reinspray1'] = true
+        }
+      }
+
+      if (id === 'baptiste-some-kind-of-angel' && type === 'voicelines') {
+        if (thanksBlizz['bapvl1']) {
+          id = 'baptiste-some-kind-of-angel-1'
+        } else {
+          thanksBlizz['bapvl1'] = true
         }
       }
 
