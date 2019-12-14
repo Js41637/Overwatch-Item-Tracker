@@ -644,8 +644,11 @@
           "id": "moira-coinn-nollag",
           "url": "/heroes/moira/icons/moira-coinn-nollag.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
-          "achievement": "blizzard",
-          "hero": "moira"
+          "achievement": true,
+          "event": "WINTER_WONDERLAND",
+          "hero": "moira",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         },
         {
           "name": "Colomar",
@@ -2081,6 +2084,7 @@
           "url": "/heroes/doomfist/icons/doomfist-jotunn.png",
           "event": "WINTER_WONDERLAND",
           "hero": "doomfist",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -3949,8 +3953,11 @@
           "id": "soldier-76-ugly-sweater",
           "url": "/heroes/soldier-76/icons/soldier-76-ugly-sweater.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
-          "achievement": "blizzard",
-          "hero": "soldier-76"
+          "achievement": true,
+          "event": "WINTER_WONDERLAND",
+          "hero": "soldier-76",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         },
         {
           "name": "United Kingdom",
@@ -11216,6 +11223,7 @@
           "quality": "legendary",
           "url": "/heroes/doomfist/skins/doomfist-jotunn.jpg",
           "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -11382,6 +11390,7 @@
           "url": "/heroes/doomfist/icons/doomfist-jotunn.png",
           "event": "WINTER_WONDERLAND",
           "hero": "doomfist",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -15305,6 +15314,7 @@
           "quality": "rare",
           "url": "/heroes/lucio/poses/lucio-toast.jpg",
           "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -17688,6 +17698,17 @@
           "description": "Restore 200 health for 5 allies without dying as Mercy in Quick or Competitive Play."
         },
         {
+          "name": "Winter spell",
+          "id": "mercy-winter-spell",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-winter-spell.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
+          "achievement": true,
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
           "name": "Ascent",
           "id": "mercy-ascent",
           "quality": "common",
@@ -17757,14 +17778,6 @@
           "quality": "common",
           "url": "/heroes/mercy/sprays/mercy-suit-fitting.png",
           "description": "Unlocked by watching participating streams during Mercy's Recall Challenge",
-          "achievement": "blizzard"
-        },
-        {
-          "name": "Winter spell",
-          "id": "mercy-winter-spell",
-          "quality": "common",
-          "url": "/heroes/mercy/sprays/mercy-winter-spell.png",
-          "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
           "achievement": "blizzard"
         },
         {
@@ -18385,8 +18398,11 @@
           "id": "moira-coinn-nollag",
           "url": "/heroes/moira/icons/moira-coinn-nollag.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
-          "achievement": "blizzard",
-          "hero": "moira"
+          "achievement": true,
+          "event": "WINTER_WONDERLAND",
+          "hero": "moira",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -18628,7 +18644,10 @@
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-presents.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
-          "achievement": "blizzard"
+          "achievement": true,
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -23940,8 +23959,11 @@
           "id": "soldier-76-ugly-sweater",
           "url": "/heroes/soldier-76/icons/soldier-76-ugly-sweater.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
-          "achievement": "blizzard",
-          "hero": "soldier-76"
+          "achievement": true,
+          "event": "WINTER_WONDERLAND",
+          "hero": "soldier-76",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -24178,19 +24200,22 @@
           "description": "Get 2 killing blows with a single use of Soldier: 76's Helix Rockets in Quick or Competitive Play."
         },
         {
-          "name": "Jack and Vincent",
-          "id": "soldier-76-jack-and-vincent",
-          "quality": "common",
-          "url": "/heroes/soldier-76/sprays/soldier-76-jack-and-vincent.png",
-          "description": "Unlocked by watching participating streams during Ana's Bastet Challenge",
-          "achievement": "blizzard"
-        },
-        {
           "name": "Ugly Sweater",
           "id": "soldier-76-ugly-sweater",
           "quality": "common",
           "url": "/heroes/soldier-76/sprays/soldier-76-ugly-sweater.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
+          "achievement": true,
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "name": "Jack and Vincent",
+          "id": "soldier-76-jack-and-vincent",
+          "quality": "common",
+          "url": "/heroes/soldier-76/sprays/soldier-76-jack-and-vincent.png",
+          "description": "Unlocked by watching participating streams during Ana's Bastet Challenge",
           "achievement": "blizzard"
         }
       ],

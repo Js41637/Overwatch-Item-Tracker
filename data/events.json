@@ -5365,6 +5365,17 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Coinín Nollag",
+          "id": "moira-coinn-nollag",
+          "url": "/heroes/moira/icons/moira-coinn-nollag.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
           "hero": "all",
           "name": "Dreidel",
           "id": "dreidel",
@@ -5429,6 +5440,7 @@
           "name": "Jötunn",
           "id": "doomfist-jotunn",
           "url": "/heroes/doomfist/icons/doomfist-jotunn.png",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -5616,6 +5628,17 @@
           "id": "tannenbaum",
           "url": "/heroes/all/icons/tannenbaum.png",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Ugly Sweater",
+          "id": "soldier-76-ugly-sweater",
+          "url": "/heroes/soldier-76/icons/soldier-76-ugly-sweater.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -5837,6 +5860,20 @@
           "secondUrl": "/heroes/mercy/sprays/mercy-ornament.png"
         },
         {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Winter spell",
+          "id": "mercy-winter-spell",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-winter-spell.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "secondId": "mercy-ornament",
+          "secondUrl": "/heroes/mercy/sprays/mercy-ornament.png"
+        },
+        {
           "heroName": "Moira",
           "hero": "moira",
           "name": "Chimney",
@@ -5844,6 +5881,20 @@
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-chimney.png",
           "group": "WINTER_WONDERLAND_2017",
+          "secondId": "moira-ornament",
+          "secondUrl": "/heroes/moira/sprays/moira-ornament.png"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Presents",
+          "id": "moira-presents",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-presents.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
           "secondId": "moira-ornament",
           "secondUrl": "/heroes/moira/sprays/moira-ornament.png"
         },
@@ -5934,6 +5985,20 @@
           "quality": "common",
           "url": "/heroes/soldier-76/sprays/soldier-76-army-man-76.png",
           "group": "WINTER_WONDERLAND_2016",
+          "secondId": "soldier-76-ornament",
+          "secondUrl": "/heroes/soldier-76/sprays/soldier-76-ornament.png"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Ugly Sweater",
+          "id": "soldier-76-ugly-sweater",
+          "quality": "common",
+          "url": "/heroes/soldier-76/sprays/soldier-76-ugly-sweater.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
           "secondId": "soldier-76-ornament",
           "secondUrl": "/heroes/soldier-76/sprays/soldier-76-ornament.png"
         },
@@ -7204,6 +7269,7 @@
           "id": "lucio-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/lucio-toast.jpg",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -7352,6 +7418,7 @@
           "id": "doomfist-jotunn",
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skinsLegendary/doomfist-jotunn.jpg",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {

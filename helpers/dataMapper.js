@@ -261,7 +261,7 @@ for (var hero in data) {
 
       // Generate ID of the item and check if we need to manually override it.
       var id = getCleanID(name, heroID);
-
+      const uniqueId = `${type}/${id}`
 
       // TODO: Remove this shit
       if (id === 'reinhardt-crusader' && type === 'sprays') {
@@ -272,8 +272,8 @@ for (var hero in data) {
         }
       }
 
-      id = idsBlizzardChanged[`${type}/${id}`] || id;
-      name = itemNamesIFuckedUp[`${type}/${id}`] || name;
+      id = idsBlizzardChanged[uniqueId] || id;
+      name = itemNamesIFuckedUp[uniqueId] || name;
 
       const url = getPreviewURL(type, id, heroID);
       const out = { name, id, quality, url };
@@ -313,8 +313,8 @@ for (var hero in data) {
             }
           }
 
-          if (id in eventItemOverrides) {
-            out.event = eventItemOverrides[id]
+          if (uniqueId in eventItemOverrides) {
+            out.event = eventItemOverrides[uniqueId]
             out.achievement = true
           }
           break;

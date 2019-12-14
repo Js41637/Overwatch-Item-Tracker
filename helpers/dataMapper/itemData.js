@@ -235,15 +235,27 @@ const data = {
     }
   },
   eventItemOverrides: {
-    'reaper-american': EVENTS.SUMMER,
-    'reinhardt-bundesadler': EVENTS.SUMMER,
-    'mei-zhongguo': EVENTS.SUMMER,
-    'sombra-demon-hunter': EVENTS.HALLOWEEN,
-    'baptiste-vampire': EVENTS.HALLOWEEN,
-    'junkrat-inferno': EVENTS.HALLOWEEN,
-    'mercy-snow-angel': EVENTS.WINTER,
-    'moira-holly': EVENTS.WINTER,
-    'soldier-76-ugly-sweater-76': EVENTS.WINTER
+    'skins/reaper-american': EVENTS.SUMMER,
+    'skins/reinhardt-bundesadler': EVENTS.SUMMER,
+    'skins/mei-zhongguo': EVENTS.SUMMER,
+    'skins/sombra-demon-hunter': EVENTS.HALLOWEEN,
+    'icons/sombra-demon-hunter': EVENTS.HALLOWEEN,
+    'sprays/sombra-demon-hunter': EVENTS.HALLOWEEN,
+    'icons/baptiste-vampire': EVENTS.HALLOWEEN,
+    'icons/junkrat-inferno': EVENTS.HALLOWEEN,
+    'sprays/junkrat-inferno': EVENTS.HALLOWEEN,
+    'skins/baptiste-vampire': EVENTS.HALLOWEEN,
+    'sprays/baptiste-vampire': EVENTS.HALLOWEEN,
+    'skins/junkrat-inferno': EVENTS.HALLOWEEN,
+    'skins/mercy-snow-angel': EVENTS.WINTER,
+    'icons/mercy-snow-angel': EVENTS.WINTER,
+    'sprays/mercy-winter-spell': EVENTS.WINTER,
+    'skins/moira-holly': EVENTS.WINTER,
+    'icons/moira-coinn-nollag': EVENTS.WINTER,
+    'sprays/moira-presents': EVENTS.WINTER,
+    'skins/soldier-76-ugly-sweater-76': EVENTS.WINTER,
+    'icons/soldier-76-ugly-sweater': EVENTS.WINTER,
+    'sprays/soldier-76-ugly-sweater': EVENTS.WINTER
   },
   specialAchievementItems: {
     bcrf: {
