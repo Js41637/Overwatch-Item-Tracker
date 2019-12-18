@@ -1644,6 +1644,15 @@
     },
     "owl-2019": {
       "description": "Unlocked by participating in the 2019 OWL Grand Finals event"
+    },
+    "caught-you": {
+      "description": "Kill an enemy with a caught snowball in Snowball Deathmatch."
+    },
+    "threepeat": {
+      "description": "Kill 3 enemies without reloading or dying in Snowball Deathmatch."
+    },
+    "breached": {
+      "description": "Kill an enemy after destroying part of their Ice Wall in Snowball Deathmatch."
     }
   },
   "mappings": {
@@ -1875,6 +1884,9 @@
     "lich-king-1": "warcraft-3-promo",
     "watching-ball": "owl-2019",
     "tailgate": "owl-2019",
-    "grand-finals-2019": "owl-2019"
+    "grand-finals-2019": "owl-2019",
+    "jotunn": "breached",
+    "mountain-man": "threepeat",
+    "ice-spheres": "caught-you"
   }
 }

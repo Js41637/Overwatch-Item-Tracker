@@ -5812,24 +5812,27 @@
           "id": "ice-spheres",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/ice-spheres.png",
-          "quality": "common",
-          "group": "WINTER_WONDERLAND_2019"
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "description": "Kill an enemy with a caught snowball in Snowball Deathmatch."
         },
         {
           "name": "Jötunn",
           "id": "jotunn",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/jotunn.png",
-          "quality": "common",
-          "group": "WINTER_WONDERLAND_2019"
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "description": "Kill an enemy after destroying part of their Ice Wall in Snowball Deathmatch."
         },
         {
           "name": "Mountain Man",
           "id": "mountain-man",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/mountain-man.png",
-          "quality": "common",
-          "group": "WINTER_WONDERLAND_2019"
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "description": "Kill 3 enemies without reloading or dying in Snowball Deathmatch."
         },
         {
           "name": "Polar bear",

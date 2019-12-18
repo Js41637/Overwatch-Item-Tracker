@@ -214,7 +214,11 @@ const data = {
     'the-broker',
     'shark-attack',
     'snorkling',
-    'sand-castle'
+    'sand-castle',
+    // CHRISTMAS19
+    'ice-spheres',
+    'mountain-man',
+    'jotunn'
   ],
   allClassEventItems: {
     sprays: {
