@@ -259,7 +259,19 @@ const data = {
     'sprays/moira-presents': EVENTS.WINTER,
     'skins/soldier-76-ugly-sweater-76': EVENTS.WINTER,
     'icons/soldier-76-ugly-sweater': EVENTS.WINTER,
-    'sprays/soldier-76-ugly-sweater': EVENTS.WINTER
+    'sprays/soldier-76-ugly-sweater': EVENTS.WINTER,
+
+    'skins/doomfist-monk': EVENTS.LUNAR,
+    'sprays/doomfist-focus': EVENTS.LUNAR,
+    'icons/doomfist-jingang': EVENTS.LUNAR,
+    'skins/winston-ancient-bronze': EVENTS.LUNAR,
+    'sprays/winston-ancient-bronze': EVENTS.LUNAR,
+    'icons/winston-ancient-bronze': EVENTS.LUNAR,
+    'skins/wrecking-ball-paper-cutting': EVENTS.LUNAR,
+    'sprays/wrecking-ball-spring': EVENTS.LUNAR,
+    'icons/wrecking-ball-rat': EVENTS.LUNAR,
+
+
   },
   specialAchievementItems: {
     bcrf: {

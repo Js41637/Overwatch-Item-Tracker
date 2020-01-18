@@ -1114,14 +1114,20 @@ const EVENTITEMS = {
       "intros/lucio-drumming"
     ],
     LUNAR_NEW_YEAR_2020: [
+      "skins/doomfist-monk",
+      "skins/wrecking-ball-paper-cutting",
+      "skins/winston-ancient-bronze",
       "emotes/bastion-kite-flying",
       "emotes/hanzo-sky-lantern",
       "sprays/baptiste-lion-dance",
       "sprays/brigitte-opera-warrior",
+      "sprays/doomfist-focus",
+      "sprays/wrecking-ball-spring",
       "sprays/lucio-samul-nori",
       "sprays/moira-talchum",
       "sprays/sigma-dumpling-grasp",
       "sprays/sombra-face-changer",
+      "sprays/winston-ancient-bronze",
       "sprays/year-of-the-rat-2020",
       "sprays/baptiste-dragon-dance",
       "sprays/sigma-dragon-dance",
@@ -1146,6 +1152,8 @@ const EVENTITEMS = {
       "skins/moira-mask-dancer",
       "skins/sombra-face-changer",
       "icons/brigitte-opera-warrior",
+      "icons/doomfist-jingang",
+      "icons/wrecking-ball-rat",
       "icons/lucio-samul-nori",
       "icons/moira-mask-dancer",
       "icons/sombra-blue-mask",
@@ -1154,6 +1162,7 @@ const EVENTITEMS = {
       "icons/sombra-orange-mask",
       "icons/sombra-sombra-mask",
       "icons/sombra-wukong-mask",
+      "icons/winston-ancient-bronze",
       "icons/year-of-the-rat-2020",
       "intros/junkrat-feast"
     ]
