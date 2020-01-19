@@ -115,7 +115,10 @@ const EVENTTIMES = {
     start: '1544547600000',
     end: '1546513200000'
   },
-
+  [EVENTS.LUNAR19]: {
+    start: '1548349200000',
+    end: '1550574000000'
+  },
   [EVENTS.SUMMER18]: {
     start: '1533837600000',
     end: '1535709600000'
@@ -133,8 +136,8 @@ const EVENTTIMES = {
     end: '1578049200000'
   },
   [EVENTS.LUNAR]: {
-    start: '1548349200000',
-    end: '1550574000000'
+    start: '1579201200000',
+    end: '1580900400000'
   },
   [EVENTS.UPRISING]: {
     start: '1555437600000',
