@@ -27,7 +27,7 @@ const HERODATA = require('./dataMapper/HERODATA.js');
 const {
   badNames, hiddenItems, defaultItems, achievementSprays, specialItems,
   specialAchievementItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp,
-  idsBlizzardChanged, noLongerPurchaseableItems, eventItemOverrides
+  idsBlizzardChanged, noLongerPurchaseableItems, eventItemOverrides, owlTeams
 } = require('./dataMapper/itemData.js');
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, LATEST_EVENTS } = require('./dataMapper/EVENTDATA.js');
 const { EVENTITEMS } = require('./dataMapper/EVENTITEMS.js');
@@ -168,7 +168,7 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
     const isCompItem =  isSeasonCompItem || isOtherCompItem ? { group: 'competitive' } : undefined;
     const isOWLItem = item.id.match(/^(inaugural-season)$/)
     const isPachiItem = item.id.includes('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined;
-    const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined;
+    let isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined;
     let isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem)
       ? { achievement: true }
       : blizzardItems[type].includes(item.id)
@@ -176,6 +176,13 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
         : isOWLItem
           ? { achievement: 'owl' }
           : undefined;
+
+    var group = undefined;
+    const owlTeamName = item.id.replace(/(-\d{4}-logo|-logo|-\d{4})$/, '')
+    if (owlTeams.includes(owlTeamName)) {
+      isStandard = { standardItem: true }
+      group = { group: 'overwatch league' }
+    }
 
     // Only purchasable items need a quality
     const isNoLongerPurchasble = noLongerPurchaseableItems[type] && noLongerPurchaseableItems[type].includes(item.id)
@@ -191,10 +198,11 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
     }
 
     // Check for specific item groups
-    var group = undefined;
-    for (let g in specialItems) {
-      if (specialItems[g][type] && specialItems[g][type].includes(item.id)) {
-        group = { group: g };
+    if (!group) {
+      for (let g in specialItems) {
+        if (specialItems[g][type] && specialItems[g][type].includes(item.id)) {
+          group = { group: g };
+        }
       }
     }
 

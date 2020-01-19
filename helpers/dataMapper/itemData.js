@@ -2,11 +2,11 @@ const {
   EVENTS
 } = require('./EVENTDATA');
 
-const OWLTEAMS = ['atlanta-reign', 'boston-uprising', 'chengdu-hunters', 'dallas-fuel', 'florida-mayhem', 'guangzhou-charge', 'hangzhou-spark', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'los-angeles-valiant', 'new-york-excelsior', 'overwatch-league', 'paris-eternal', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons', 'toronto-defiant', 'vancouver-titans', 'washington-justice']
-const OWLTEAMLOGOS = OWLTEAMS.map(team => team === 'overwatch-league' ? team : `${team}-logo`)
 // All class items have no attributes provided so we need to manually add them
 // ids correlate to item ids.
 const data = {
+  owlTeams: ['atlanta-reign', 'boston-uprising', 'chengdu-hunters', 'dallas-fuel', 'florida-mayhem', 'guangzhou-charge', 'hangzhou-spark', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'los-angeles-valiant', 'new-york-excelsior', 'overwatch-league', 'paris-eternal', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons', 'toronto-defiant', 'vancouver-titans', 'washington-justice'],
+
   // Changes IDs and Names will eventually be fixed with a data migration.
   idsBlizzardChanged: {
     "sprays/hanzo-brickstrike": "hanzo-brick-dragon",
@@ -58,8 +58,8 @@ const data = {
     '>_\\<': ">_<"
   },
   defaultItems: {
-    sprays: ['logo', 'you-are-not-prepared', 'da-de-los-muertos', ...OWLTEAMLOGOS],
-    icons: ['overwatch-light', 'overwatch-dark', 'you-are-not-prepared', ...OWLTEAMS],
+    sprays: ['logo', 'you-are-not-prepared', 'da-de-los-muertos'],
+    icons: ['overwatch-light', 'overwatch-dark', 'you-are-not-prepared'],
   },
   hiddenItems: { // Hidden all classItems
     sprays: [],
@@ -118,8 +118,8 @@ const data = {
       icons: ['nexus']
     },
     "overwatch league": {
-      icons: [...OWLTEAMS, 'inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars', 'grand-finals-2019'],
-      sprays: [...OWLTEAMLOGOS, 'inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate"]
+      icons: ['inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars', 'grand-finals-2019'],
+      sprays: ['inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate"]
     }
   },
   achievementSprays: [
