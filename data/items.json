@@ -130,6 +130,17 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "name": "Ancient Bronze",
+          "id": "winston-ancient-bronze",
+          "url": "/heroes/winston/icons/winston-ancient-bronze.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "winston",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Aniversario",
           "id": "sombra-aniversario",
           "url": "/heroes/sombra/icons/sombra-aniversario.png",
@@ -352,8 +363,7 @@
           "url": "/heroes/reinhardt/icons/reinhardt-beautiful-beard.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "reinhardt",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Belgium",
@@ -410,6 +420,15 @@
           "event": "UPRISING",
           "hero": "mccree",
           "group": "UPRISING_2017"
+        },
+        {
+          "name": "Blue Mask",
+          "id": "sombra-blue-mask",
+          "url": "/heroes/sombra/icons/sombra-blue-mask.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "BMX",
@@ -760,6 +779,13 @@
           "description": "Unlocked by completing competitive Capture The Flag 2019 placement matches"
         },
         {
+          "name": "Competitive CTF Competitor 2020",
+          "id": "competitive-ctf-competitor-2020",
+          "url": "/heroes/all/icons/competitive-ctf-competitor-2020.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Competitive CTF Hero 2018",
           "id": "competitive-ctf-hero",
           "url": "/heroes/all/icons/competitive-ctf-hero.png",
@@ -774,6 +800,13 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of competitive Capture The Flag 2019"
+        },
+        {
+          "name": "Competitive CTF Hero 2020",
+          "id": "competitive-ctf-hero-2020",
+          "url": "/heroes/all/icons/competitive-ctf-hero-2020.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Competitive Deathmatch Competitor 2018",
@@ -912,8 +945,7 @@
           "url": "/heroes/zenyatta/icons/zenyatta-crouching-dragon.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "zenyatta",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Crusader",
@@ -1339,6 +1371,15 @@
           "url": "/heroes/all/icons/eyeball.png"
         },
         {
+          "name": "Face Changer",
+          "id": "sombra-face-changer",
+          "url": "/heroes/sombra/icons/sombra-face-changer.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Fastball",
           "id": "zenyatta-fastball",
           "url": "/heroes/zenyatta/icons/zenyatta-fastball.png",
@@ -1378,6 +1419,14 @@
           "name": "Florida Mayhem",
           "id": "florida-mayhem",
           "url": "/heroes/all/icons/florida-mayhem.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Florida Mayhem 2018",
+          "id": "florida-mayhem-2018",
+          "url": "/heroes/all/icons/florida-mayhem-2018.png",
           "achievement": "owl",
           "standardItem": true,
           "group": "overwatch league"
@@ -1816,8 +1865,7 @@
           "url": "/heroes/hanzo/icons/hanzo-hanzhong.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "hanzo",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Hanzo",
@@ -2042,6 +2090,17 @@
           "id": "jim",
           "url": "/heroes/all/icons/jim.png",
           "group": "starcraft"
+        },
+        {
+          "name": "Jingang",
+          "id": "doomfist-jingang",
+          "url": "/heroes/doomfist/icons/doomfist-jingang.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 1 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "doomfist",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Jingle",
@@ -2275,6 +2334,14 @@
           "group": "overwatch league"
         },
         {
+          "name": "Los Angeles Valiant 2018",
+          "id": "los-angeles-valiant-2018",
+          "url": "/heroes/all/icons/los-angeles-valiant-2018.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Los Muertos",
           "id": "los-muertos",
           "url": "/heroes/all/icons/los-muertos.png"
@@ -2354,6 +2421,15 @@
           "name": "Mariachi",
           "id": "mariachi",
           "url": "/heroes/all/icons/mariachi.png"
+        },
+        {
+          "name": "Mask Dancer",
+          "id": "moira-mask-dancer",
+          "url": "/heroes/moira/icons/moira-mask-dancer.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "moira",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Maximilien",
@@ -2526,8 +2602,7 @@
           "url": "/heroes/tracer/icons/tracer-noble-thief.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "tracer",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Nullmari",
@@ -2574,10 +2649,28 @@
           "group": "UPRISING_2018"
         },
         {
+          "name": "Omnic Mask",
+          "id": "sombra-omnic-mask",
+          "url": "/heroes/sombra/icons/sombra-omnic-mask.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Oni",
           "id": "genji-oni",
           "url": "/heroes/genji/icons/genji-oni.png",
           "hero": "genji"
+        },
+        {
+          "name": "Opera Warrior",
+          "id": "brigitte-opera-warrior",
+          "url": "/heroes/brigitte/icons/brigitte-opera-warrior.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "brigitte",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "OR14-NS",
@@ -2586,6 +2679,15 @@
           "event": "UPRISING",
           "hero": "orisa",
           "group": "UPRISING_2017"
+        },
+        {
+          "name": "Orange Mask",
+          "id": "sombra-orange-mask",
+          "url": "/heroes/sombra/icons/sombra-orange-mask.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Orbital",
@@ -2866,6 +2968,17 @@
           "hero": "pharah"
         },
         {
+          "name": "Rat",
+          "id": "wrecking-ball-rat",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-rat.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "wrecking-ball",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Rat King",
           "id": "reaper-rat-king",
           "url": "/heroes/reaper/icons/reaper-rat-king.png",
@@ -2886,8 +2999,7 @@
           "url": "/heroes/reaper/icons/reaper-reaping-general.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "reaper",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Reapiversary",
@@ -3011,6 +3123,15 @@
           "url": "/heroes/all/icons/sakura.png"
         },
         {
+          "name": "Samul Nori",
+          "id": "lucio-samul-nori",
+          "url": "/heroes/lucio/icons/lucio-samul-nori.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "lucio",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Sandy",
           "id": "reinhardt-sandy",
           "url": "/heroes/reinhardt/icons/reinhardt-sandy.png",
@@ -3022,6 +3143,14 @@
           "name": "San Francisco Shock",
           "id": "san-francisco-shock",
           "url": "/heroes/all/icons/san-francisco-shock.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "San Francisco Shock 2018",
+          "id": "san-francisco-shock-2018",
+          "url": "/heroes/all/icons/san-francisco-shock-2018.png",
           "achievement": "owl",
           "standardItem": true,
           "group": "overwatch league"
@@ -3040,8 +3169,7 @@
           "url": "/heroes/orisa/icons/orisa-sanye.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "orisa",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Sanzang",
@@ -3429,8 +3557,7 @@
           "url": "/heroes/torbjorn/icons/torbjorn-serpent-spear.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "torbjorn",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Shanghai Dragons",
@@ -3608,6 +3735,15 @@
           "id": "sombra-sombra",
           "url": "/heroes/sombra/icons/sombra-sombra.png",
           "hero": "sombra"
+        },
+        {
+          "name": "Sombra Mask",
+          "id": "sombra-sombra-mask",
+          "url": "/heroes/sombra/icons/sombra-sombra-mask.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Soul",
@@ -4245,6 +4381,15 @@
           "group": "pachi"
         },
         {
+          "name": "Wukong Mask",
+          "id": "sombra-wukong-mask",
+          "url": "/heroes/sombra/icons/sombra-wukong-mask.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Xuanwu",
           "id": "xuanwu",
           "event": "LUNAR_NEW_YEAR",
@@ -4261,6 +4406,12 @@
           "id": "year-of-the-pig-2019",
           "event": "LUNAR_NEW_YEAR",
           "url": "/heroes/all/icons/year-of-the-pig-2019.png"
+        },
+        {
+          "name": "Year of the Rat 2020",
+          "id": "year-of-the-rat-2020",
+          "event": "LUNAR_NEW_YEAR",
+          "url": "/heroes/all/icons/year-of-the-rat-2020.png"
         },
         {
           "name": "Year of the Rooster 2017",
@@ -4522,6 +4673,13 @@
           "description": "Unlocked by completing competitive Capture The Flag 2019 placement matches"
         },
         {
+          "name": "Competitive CTF Competitor 2020",
+          "id": "competitive-ctf-competitor-2020",
+          "url": "/heroes/all/sprays/competitive-ctf-competitor-2020.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "id": "competitive-ctf-hero",
           "name": "Competitive CTF Hero",
           "url": "/heroes/all/sprays/competitive-ctf-hero.png",
@@ -4536,6 +4694,13 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of competitive Capture The Flag 2019"
+        },
+        {
+          "name": "Competitive CTF Hero 2020",
+          "id": "competitive-ctf-hero-2020",
+          "url": "/heroes/all/sprays/competitive-ctf-hero-2020.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Competitive Deathmatch Competitor 2018",
@@ -4702,6 +4867,14 @@
           "standardItem": true
         },
         {
+          "name": "Florida Mayhem 2018 Logo",
+          "id": "florida-mayhem-2018-logo",
+          "url": "/heroes/all/sprays/florida-mayhem-2018-logo.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
           "name": "Florida Mayhem Logo",
           "id": "florida-mayhem-logo",
           "url": "/heroes/all/sprays/florida-mayhem-logo.png",
@@ -4846,6 +5019,14 @@
           "name": "Los Angeles Gladiators Logo",
           "id": "los-angeles-gladiators-logo",
           "url": "/heroes/all/sprays/los-angeles-gladiators-logo.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Los Angeles Valiant 2018 Logo",
+          "id": "los-angeles-valiant-2018-logo",
+          "url": "/heroes/all/sprays/los-angeles-valiant-2018-logo.png",
           "achievement": "owl",
           "standardItem": true,
           "group": "overwatch league"
@@ -5018,6 +5199,14 @@
           "url": "/heroes/all/sprays/rise.png",
           "achievement": true,
           "description": "Reach level 25."
+        },
+        {
+          "name": "San Francisco Shock 2018 Logo",
+          "id": "san-francisco-shock-2018-logo",
+          "url": "/heroes/all/sprays/san-francisco-shock-2018-logo.png",
+          "achievement": "owl",
+          "standardItem": true,
+          "group": "overwatch league"
         },
         {
           "name": "San Francisco Shock Logo",
@@ -5997,6 +6186,13 @@
           "group": "LUNAR_NEW_YEAR_2018"
         },
         {
+          "name": "Year of the Rat",
+          "id": "year-of-the-rat-2020",
+          "event": "LUNAR_NEW_YEAR",
+          "url": "/heroes/all/sprays/year-of-the-rat-2020.png",
+          "group": "LUNAR_NEW_YEAR_2020"
+        },
+        {
           "name": "Year of the Rooster",
           "id": "year-of-the-rooster-2017",
           "event": "LUNAR_NEW_YEAR",
@@ -6410,8 +6606,7 @@
           "quality": "epic",
           "url": "/heroes/ana/emotes/ana-yut-nori.webm",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Dance",
@@ -7528,8 +7723,7 @@
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-dragon-dance.png",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Red Envelopes",
@@ -7537,8 +7731,7 @@
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-red-envelopes.png",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Playground Victory",
@@ -7704,8 +7897,7 @@
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-no-one-likes-a-squealer.ogg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Ready for the fireworks",
@@ -7713,8 +7905,7 @@
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-ready-for-the-fireworks.ogg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Do you trust me?",
@@ -7812,8 +8003,7 @@
           "quality": "rare",
           "url": "/heroes/ashe/poses/ashe-lighting-the-fuse.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         }
       ],
       "weapons": [
@@ -8259,6 +8449,24 @@
           "isNew": true
         },
         {
+          "name": "Dragon Dance",
+          "id": "baptiste-dragon-dance",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-dragon-dance.png",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "name": "Lion Dance",
+          "id": "baptiste-lion-dance",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-lion-dance.png",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Carry",
           "id": "baptiste-carry",
           "quality": "common",
@@ -8523,6 +8731,24 @@
           "isNew": true
         },
         {
+          "name": "Don't you worry",
+          "id": "baptiste-dont-you-worry",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-dont-you-worry.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "name": "Need something?",
+          "id": "baptiste-need-something",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-need-something.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Associates",
           "id": "baptiste-associates",
           "quality": "common",
@@ -8602,6 +8828,15 @@
           "id": "baptiste-say-cheese",
           "quality": "rare",
           "url": "/heroes/baptiste/poses/baptiste-say-cheese.jpg"
+        },
+        {
+          "name": "Hot Soup",
+          "id": "baptiste-hot-soup",
+          "quality": "rare",
+          "url": "/heroes/baptiste/poses/baptiste-hot-soup.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         }
       ],
       "weapons": [
@@ -8838,6 +9073,15 @@
           "url": "/heroes/bastion/emotes/bastion-zombie.webm",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2018"
+        },
+        {
+          "name": "Kite Flying",
+          "id": "bastion-kite-flying",
+          "quality": "epic",
+          "url": "/heroes/bastion/emotes/bastion-kite-flying.webm",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Robo Boogie",
@@ -9516,8 +9760,7 @@
           "quality": "epic",
           "url": "/heroes/brigitte/skins/brigitte-general.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Engineer",
@@ -9544,6 +9787,15 @@
           "id": "brigitte-sol",
           "quality": "legendary",
           "url": "/heroes/brigitte/skins/brigitte-sol.jpg"
+        },
+        {
+          "name": "Opera",
+          "id": "brigitte-opera",
+          "quality": "legendary",
+          "url": "/heroes/brigitte/skins/brigitte-opera.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Riot Police",
@@ -9671,6 +9923,15 @@
           "event": "SUMMER_GAMES",
           "hero": "brigitte",
           "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "name": "Opera Warrior",
+          "id": "brigitte-opera-warrior",
+          "url": "/heroes/brigitte/icons/brigitte-opera-warrior.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "brigitte",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Björn",
@@ -9875,8 +10136,7 @@
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-dragon-dance.png",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Feast",
@@ -9884,7 +10144,15 @@
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-feast.png",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "name": "Opera Warrior",
+          "id": "brigitte-opera-warrior",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-opera-warrior.png",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -10042,7 +10310,15 @@
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-all-that-glitters.ogg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "name": "Cheers!",
+          "id": "brigitte-cheers",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-cheers.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -10051,8 +10327,7 @@
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-whos-ready-to-party.ogg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "A chicken out of a feather",
@@ -11181,6 +11456,17 @@
           "isNew": true
         },
         {
+          "name": "Monk",
+          "id": "doomfist-monk",
+          "quality": "epic",
+          "url": "/heroes/doomfist/skins/doomfist-monk.jpg",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 1 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Avatar",
           "id": "doomfist-avatar",
           "quality": "legendary",
@@ -11419,6 +11705,17 @@
           "event": "ANNIVERSARY",
           "hero": "doomfist",
           "group": "ANNIVERSARY_2018"
+        },
+        {
+          "name": "Jingang",
+          "id": "doomfist-jingang",
+          "url": "/heroes/doomfist/icons/doomfist-jingang.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 1 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "doomfist",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -11653,6 +11950,17 @@
           "url": "/heroes/doomfist/sprays/doomfist-pixel.png",
           "achievement": true,
           "description": "Get a killing blow with Doomfist's full-power Seismic Slam in Quick or Competitive Play."
+        },
+        {
+          "name": "Focus",
+          "id": "doomfist-focus",
+          "quality": "common",
+          "url": "/heroes/doomfist/sprays/doomfist-focus.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 1 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -11906,8 +12214,7 @@
           "quality": "rare",
           "url": "/heroes/doomfist/poses/doomfist-fireworks.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Charging",
@@ -12875,8 +13182,7 @@
           "quality": "legendary",
           "url": "/heroes/hanzo/skins/hanzo-huang-zhong.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Scion",
@@ -12933,6 +13239,15 @@
           "id": "hanzo-victory",
           "quality": "epic",
           "url": "/heroes/hanzo/emotes/hanzo-victory.webm"
+        },
+        {
+          "name": "Sky Lantern",
+          "id": "hanzo-sky-lantern",
+          "quality": "epic",
+          "url": "/heroes/hanzo/emotes/hanzo-sky-lantern.webm",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Training",
@@ -13051,8 +13366,7 @@
           "url": "/heroes/hanzo/icons/hanzo-hanzhong.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "hanzo",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Scion",
@@ -13463,8 +13777,7 @@
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-pointless-frivolity.ogg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "When the moon is full",
@@ -13597,8 +13910,7 @@
           "quality": "rare",
           "url": "/heroes/hanzo/poses/hanzo-firework.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         }
       ],
       "weapons": [
@@ -13858,6 +14170,15 @@
           "url": "/heroes/junkrat/intros/junkrat-shot-put.webm",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Feast",
+          "id": "junkrat-feast",
+          "quality": "epic",
+          "url": "/heroes/junkrat/intros/junkrat-feast.webm",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         }
       ],
       "icons": [
@@ -14333,8 +14654,7 @@
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-happy-new-year.ogg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "My dog is barking",
@@ -14626,6 +14946,15 @@
           "group": "WINTER_WONDERLAND_2018"
         },
         {
+          "name": "Samul Nori",
+          "id": "lucio-samul-nori",
+          "quality": "legendary",
+          "url": "/heroes/lucio/skins/lucio-samul-nori.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Equalizer",
           "id": "lucio-equalizer",
           "quality": "legendary",
@@ -14752,8 +15081,7 @@
           "quality": "epic",
           "url": "/heroes/lucio/intros/lucio-drumming.webm",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         }
       ],
       "icons": [
@@ -14805,6 +15133,15 @@
           "event": "WINTER_WONDERLAND",
           "hero": "lucio",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "name": "Samul Nori",
+          "id": "lucio-samul-nori",
+          "url": "/heroes/lucio/icons/lucio-samul-nori.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "lucio",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Equalizer",
@@ -15024,6 +15361,15 @@
           "url": "/heroes/lucio/sprays/lucio-keep-ups.png",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Samul Nori",
+          "id": "lucio-samul-nori",
+          "quality": "common",
+          "url": "/heroes/lucio/sprays/lucio-samul-nori.png",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Skates",
@@ -15326,8 +15672,7 @@
           "quality": "rare",
           "url": "/heroes/lucio/poses/lucio-drumming.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Handstand",
@@ -16096,7 +16441,15 @@
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-hows-that-for-fireworks.ogg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "name": "I'll have another",
+          "id": "mccree-ill-have-another",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-ill-have-another.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -16970,6 +17323,15 @@
           "url": "/heroes/mei/voicelines/mei-give-me-a-red-envelope.ogg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "name": "I feel like dancing!",
+          "id": "mei-i-feel-like-dancing",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-i-feel-like-dancing.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Wishing you prosperity",
@@ -17956,6 +18318,15 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "How are you feeling",
+          "id": "mercy-how-are-you-feeling",
+          "quality": "common",
+          "url": "/heroes/mercy/voicelines/mercy-how-are-you-feeling.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "How lucky for you",
           "id": "mercy-how-lucky-for-you",
           "quality": "common",
@@ -18223,6 +18594,15 @@
           "group": "HALLOWEEN_2018"
         },
         {
+          "name": "Mask Dancer",
+          "id": "moira-mask-dancer",
+          "quality": "legendary",
+          "url": "/heroes/moira/skins/moira-mask-dancer.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Blackwatch",
           "id": "moira-blackwatch",
           "quality": "legendary",
@@ -18370,6 +18750,15 @@
           "event": "HALLOWEEN",
           "hero": "moira",
           "group": "HALLOWEEN_2018"
+        },
+        {
+          "name": "Mask Dancer",
+          "id": "moira-mask-dancer",
+          "url": "/heroes/moira/icons/moira-mask-dancer.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "moira",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Coinín",
@@ -18610,6 +18999,15 @@
           "group": "LUNAR_NEW_YEAR_2018"
         },
         {
+          "name": "Talchum",
+          "id": "moira-talchum",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-talchum.png",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Foundation",
           "id": "moira-foundation",
           "quality": "common",
@@ -18799,6 +19197,15 @@
           "url": "/heroes/moira/voicelines/moira-slinte.ogg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "name": "Superb",
+          "id": "moira-superb",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-superb.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "You've made a dogs breakfast",
@@ -19005,8 +19412,7 @@
           "quality": "epic",
           "url": "/heroes/orisa/skins/orisa-sanye.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Carbon Fiber",
@@ -19220,8 +19626,7 @@
           "url": "/heroes/orisa/icons/orisa-sanye.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "orisa",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "OR14-NS",
@@ -19613,6 +20018,15 @@
           "url": "/heroes/orisa/voicelines/orisa-cant-i-guide-your-way-tonight.ogg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Stack Overflow",
+          "id": "orisa-stack-overflow",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-stack-overflow.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "The moon that wanes",
@@ -20441,6 +20855,15 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "I don't think so",
+          "id": "pharah-i-dont-think-so",
+          "quality": "common",
+          "url": "/heroes/pharah/voicelines/pharah-i-dont-think-so.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "I keep the peace",
           "id": "pharah-i-keep-the-peace",
           "quality": "common",
@@ -20572,6 +20995,15 @@
           "url": "/heroes/pharah/poses/pharah-toast.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Lion Mask",
+          "id": "pharah-lion-mask",
+          "quality": "rare",
+          "url": "/heroes/pharah/poses/pharah-lion-mask.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         }
       ],
       "weapons": [
@@ -20728,8 +21160,7 @@
           "quality": "legendary",
           "url": "/heroes/reaper/skins/reaper-l-bu.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Soldier: 24",
@@ -20901,8 +21332,7 @@
           "url": "/heroes/reaper/icons/reaper-reaping-general.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "reaper",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Soldier: 24",
@@ -21428,8 +21858,7 @@
           "quality": "rare",
           "url": "/heroes/reaper/poses/reaper-stockpile.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Ready for Action",
@@ -21601,8 +22030,7 @@
           "quality": "legendary",
           "url": "/heroes/reinhardt/skins/reinhardt-guan-yu.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Wujing",
@@ -21750,8 +22178,7 @@
           "url": "/heroes/reinhardt/icons/reinhardt-beautiful-beard.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "reinhardt",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Sandy",
@@ -23445,6 +23872,24 @@
           "isNew": true
         },
         {
+          "name": "Dragon Dance",
+          "id": "sigma-dragon-dance",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-dragon-dance.png",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "name": "Dumpling Grasp",
+          "id": "sigma-dumpling-grasp",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-dumpling-grasp.png",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Cute",
           "id": "sigma-cute",
           "quality": "common",
@@ -23587,6 +24032,24 @@
           "url": "/heroes/sigma/voicelines/sigma-party-guy.ogg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "name": "An anomaly!",
+          "id": "sigma-an-anomaly",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-an-anomaly.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "name": "Happy New Year!",
+          "id": "sigma-happy-new-year",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-happy-new-year.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         }
       ],
@@ -23838,8 +24301,7 @@
           "quality": "epic",
           "url": "/heroes/soldier-76/emotes/soldier-76-rattle-drum.webm",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Push-ups",
@@ -24626,6 +25088,15 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "name": "Face Changer",
+          "id": "sombra-face-changer",
+          "quality": "legendary",
+          "url": "/heroes/sombra/skins/sombra-face-changer.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Talon",
           "id": "sombra-talon",
           "quality": "legendary",
@@ -24782,6 +25253,60 @@
           "event": "WINTER_WONDERLAND",
           "hero": "sombra",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Blue Mask",
+          "id": "sombra-blue-mask",
+          "url": "/heroes/sombra/icons/sombra-blue-mask.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "name": "Face Changer",
+          "id": "sombra-face-changer",
+          "url": "/heroes/sombra/icons/sombra-face-changer.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "name": "Omnic Mask",
+          "id": "sombra-omnic-mask",
+          "url": "/heroes/sombra/icons/sombra-omnic-mask.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "name": "Orange Mask",
+          "id": "sombra-orange-mask",
+          "url": "/heroes/sombra/icons/sombra-orange-mask.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "name": "Sombra Mask",
+          "id": "sombra-sombra-mask",
+          "url": "/heroes/sombra/icons/sombra-sombra-mask.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "name": "Wukong Mask",
+          "id": "sombra-wukong-mask",
+          "url": "/heroes/sombra/icons/sombra-wukong-mask.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "sombra",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Colomar",
@@ -25020,6 +25545,15 @@
           "url": "/heroes/sombra/sprays/sombra-dragon-dance.png",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Face Changer",
+          "id": "sombra-face-changer",
+          "quality": "common",
+          "url": "/heroes/sombra/sprays/sombra-face-changer.png",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Fortunate",
@@ -26054,6 +26588,15 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "If I can think it, I can create it",
+          "id": "symmetra-if-i-can-think-it-i-can-create-it",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-if-i-can-think-it-i-can-create-it.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "Kindly adjust",
           "id": "symmetra-kindly-adjust",
           "quality": "common",
@@ -26323,8 +26866,7 @@
           "quality": "legendary",
           "url": "/heroes/torbjorn/skins/torbjorn-zhang-fei.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Chief Engineer Lindholm",
@@ -26514,8 +27056,7 @@
           "url": "/heroes/torbjorn/icons/torbjorn-serpent-spear.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "torbjorn",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Chief Engineer",
@@ -27038,6 +27579,15 @@
           "url": "/heroes/torbjorn/poses/torbjorn-toast.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Firework",
+          "id": "torbjorn-firework",
+          "quality": "rare",
+          "url": "/heroes/torbjorn/poses/torbjorn-firework.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         }
       ],
       "weapons": [
@@ -27183,8 +27733,7 @@
           "quality": "legendary",
           "url": "/heroes/tracer/skins/tracer-hong-gildong.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Cadet Oxton",
@@ -27388,8 +27937,7 @@
           "url": "/heroes/tracer/icons/tracer-noble-thief.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "tracer",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Cadet",
@@ -28881,6 +29429,17 @@
           "description": "Most of Winston's formative years were spent as a test subject in the Horizon Lunar Colony."
         },
         {
+          "name": "Ancient Bronze",
+          "id": "winston-ancient-bronze",
+          "quality": "epic",
+          "url": "/heroes/winston/skins/winston-ancient-bronze.jpg",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "name": "BlizzCon 2017",
           "id": "winston-blizzcon-2017",
           "quality": "epic",
@@ -29141,6 +29700,17 @@
           "event": "ANNIVERSARY",
           "hero": "winston",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Ancient Bronze",
+          "id": "winston-ancient-bronze",
+          "url": "/heroes/winston/icons/winston-ancient-bronze.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "winston",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -29367,6 +29937,17 @@
           "url": "/heroes/winston/sprays/winston-pixel.png",
           "achievement": true,
           "description": "Destroy 10 turrets or traps using Winston's Tesla Cannon without dying in Quick or Competitive Play."
+        },
+        {
+          "name": "Ancient Bronze",
+          "id": "winston-ancient-bronze",
+          "quality": "common",
+          "url": "/heroes/winston/sprays/winston-ancient-bronze.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -29529,8 +30110,7 @@
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-to-the-moon-and-back.ogg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Have you seen my glasses?",
@@ -29711,6 +30291,17 @@
           "url": "/heroes/wrecking-ball/skins/wrecking-ball-high-roller.jpg",
           "event": "UPRISING",
           "group": "UPRISING_2019",
+          "isNew": true
+        },
+        {
+          "name": "Paper Cutting",
+          "id": "wrecking-ball-paper-cutting",
+          "quality": "epic",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-paper-cutting.jpg",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -29903,6 +30494,17 @@
           "hero": "wrecking-ball",
           "group": "ANNIVERSARY_2019",
           "isNew": true
+        },
+        {
+          "name": "Rat",
+          "id": "wrecking-ball-rat",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-rat.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "wrecking-ball",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -30084,8 +30686,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Snacks",
@@ -30093,8 +30694,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-snacks.png",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Exercise",
@@ -30129,6 +30729,17 @@
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-pixel.png",
           "achievement": true,
           "description": "Absorb 1500 damage with Wrecking Ball's Adaptive Shield without dying in Quick or Competitive Play."
+        },
+        {
+          "name": "Spring",
+          "id": "wrecking-ball-spring",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-spring.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
+          "achievement": true,
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -30277,8 +30888,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-assessing-luck.ogg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Engaging festive mode",
@@ -30286,7 +30896,15 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-engaging-festive-mode.ogg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "name": "Too early for flapjacks?",
+          "id": "wrecking-ball-too-early-for-flapjacks",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-too-early-for-flapjacks.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -30408,8 +31026,7 @@
           "quality": "rare",
           "url": "/heroes/wrecking-ball/poses/wrecking-ball-armament.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         }
       ],
       "weapons": [
@@ -31396,8 +32013,7 @@
           "quality": "legendary",
           "url": "/heroes/zenyatta/skins/zenyatta-zhuge-liang.jpg",
           "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         }
       ],
       "emotes": [
@@ -31570,8 +32186,7 @@
           "url": "/heroes/zenyatta/icons/zenyatta-crouching-dragon.png",
           "event": "LUNAR_NEW_YEAR",
           "hero": "zenyatta",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "name": "Sanzang",
