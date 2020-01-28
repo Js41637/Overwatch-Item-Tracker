@@ -1075,7 +1075,7 @@
     "competitive-6v6-elimination-competitor-2019": {
       "name": null,
       "description": "Unlocked by completing Competitive 6v6 Elimination 2019 placement matches",
-      "reward": "Competitive 6v6 Elimination Hero 2019",
+      "reward": "Competitive 6v6 Elimination Competitor 2019",
       "quality": "common",
       "type": "spray",
       "hero": "all"
@@ -1091,7 +1091,39 @@
     "competitive-3v3-group-elimination-competitor": {
       "name": null,
       "description": "Unlocked by completing Competitive 3v3 Group Elimination placement matches",
-      "reward": "Competitive 3v3 Group Elimination Hero",
+      "reward": "Competitive 3v3 Group Elimination Competitor",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "competitive-3v3-elimination-hero": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Competitive 3v3 Elimination 2018",
+      "reward": "Competitive 3v3 Elimination Hero",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "competitive-3v3-elimination-competitor": {
+      "name": null,
+      "description": "Unlocked by completing Competitive 3v3 Elimination 2018 placement matches",
+      "reward": "Competitive 3v3 Elimination Competitor",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "competitive-3v3-elimination-hero-2019": {
+      "name": null,
+      "description": "Unlocked by achieving top 500 ranking at the end of Competitive 3v3 Elimination 2019",
+      "reward": "Competitive 3v3 Elimination Hero 2019",
+      "quality": "common",
+      "type": "spray",
+      "hero": "all"
+    },
+    "competitive-3v3-elimination-competitor-2019": {
+      "name": null,
+      "description": "Unlocked by completing Competitive 3v3 Elimination 2019 placement matches",
+      "reward": "Competitive 3v3 Elimination Competitor 2019",
       "quality": "common",
       "type": "spray",
       "hero": "all"
@@ -1107,7 +1139,7 @@
     "competitive-team-deathmatch-competitor": {
       "name": null,
       "description": "Unlocked by completing Competitive Team Deathmatch placement matches",
-      "reward": "Competitive Team Deathmatch Hero",
+      "reward": "Competitive Team Deathmatch Competitor",
       "quality": "common",
       "type": "spray",
       "hero": "all"
@@ -1622,6 +1654,21 @@
     },
     "summer-games-2019-3": {
       "description": "Unlocked by participating in the Summer Games 2019 week 3 challenge"
+    },
+    "warcraft-3-promo": {
+      "description": "Unlocked with purchase of Warcraft III: Reforged Spoils of War Edition"
+    },
+    "owl-2019": {
+      "description": "Unlocked by participating in the 2019 OWL Grand Finals event"
+    },
+    "caught-you": {
+      "description": "Kill an enemy with a caught snowball in Snowball Deathmatch."
+    },
+    "threepeat": {
+      "description": "Kill 3 enemies without reloading or dying in Snowball Deathmatch."
+    },
+    "breached": {
+      "description": "Kill an enemy after destroying part of their Ice Wall in Snowball Deathmatch."
     }
   },
   "mappings": {
@@ -1772,6 +1819,10 @@
     "competitive-3v3-group-elimination-hero": "competitive-3v3-group-elimination-hero",
     "competitive-team-deathmatch-competitor": "competitive-team-deathmatch-competitor",
     "competitive-team-deathmatch-hero": "competitive-team-deathmatch-hero",
+    "competitive-3v3-elimination-competitor": "competitive-3v3-elimination-competitor",
+    "competitive-3v3-elimination-hero": "competitive-3v3-elimination-hero",
+    "competitive-3v3-elimination-competitor-2019": "competitive-3v3-elimination-competitor-2019",
+    "competitive-3v3-elimination-hero-2019": "competitive-3v3-elimination-hero-2019",
     "wizard": "wizard",
     "witch-doctor": "witch-doctor",
     "monk": "monk",
@@ -1837,6 +1888,21 @@
     "footballmari": "summer-games-2019-3",
     "shark-attack": "summer-games-2019-1",
     "snorkling": "summer-games-2019-2",
-    "sand-castle": "summer-games-2019-3"
+    "sand-castle": "summer-games-2019-3",
+    "arthas": "warcraft-3-promo",
+    "thrall": "warcraft-3-promo",
+    "tyrande": "warcraft-3-promo",
+    "kelthuzad": "warcraft-3-promo",
+    "footman": "warcraft-3-promo",
+    "ghoul": "warcraft-3-promo",
+    "grunt": "warcraft-3-promo",
+    "archer": "warcraft-3-promo",
+    "lich-king-1": "warcraft-3-promo",
+    "watching-ball": "owl-2019",
+    "tailgate": "owl-2019",
+    "grand-finals-2019": "owl-2019",
+    "jotunn": "breached",
+    "mountain-man": "threepeat",
+    "ice-spheres": "caught-you"
   }
 }

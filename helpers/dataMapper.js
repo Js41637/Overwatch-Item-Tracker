@@ -27,7 +27,7 @@ const HERODATA = require('./dataMapper/HERODATA.js');
 const {
   badNames, hiddenItems, defaultItems, achievementSprays, specialItems,
   specialAchievementItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp,
-  idsBlizzardChanged, noLongerPurchaseableItems, eventItemOverrides
+  idsBlizzardChanged, noLongerPurchaseableItems, eventItemOverrides, owlTeams
 } = require('./dataMapper/itemData.js');
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, LATEST_EVENTS } = require('./dataMapper/EVENTDATA.js');
 const { EVENTITEMS } = require('./dataMapper/EVENTITEMS.js');
@@ -131,7 +131,7 @@ var noLongerMissingAllClassData = _.reduce(missingAllClassData, (result, items, 
 // Add no longer missing allclass data onto allClassData
 _.forEach(noLongerMissingAllClassData, (items, type) => allClassData[type] = [...allClassData[type], ...items]);
 
-var shit = false
+var thanksBlizz = {}
 
 // Create object containing allclass item names by key so we can easily map event ids to items.
 // also check if any items are in allClassEventItems and mark them as event items
@@ -156,7 +156,10 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
       return r;
     }, {});
 
-    if (idCache[item.id]) console.warn("Duplicate allClassData detected", item.id);
+    if (idCache[item.id]) {
+      console.warn("Duplicate allClassData detected", item.id);
+      item.id += '-1'
+    }
     idCache[item.id] = true;
 
     // Check if the spray or icon is a Competitive reward
@@ -165,7 +168,7 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
     const isCompItem =  isSeasonCompItem || isOtherCompItem ? { group: 'competitive' } : undefined;
     const isOWLItem = item.id.match(/^(inaugural-season)$/)
     const isPachiItem = item.id.includes('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined;
-    const isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined;
+    let isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined;
     let isAchievement = ((type == 'sprays' && achievementSprays.includes(item.id)) || isCompItem)
       ? { achievement: true }
       : blizzardItems[type].includes(item.id)
@@ -173,6 +176,13 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
         : isOWLItem
           ? { achievement: 'owl' }
           : undefined;
+
+    var group = undefined;
+    const owlTeamName = item.id.replace(/(-\d{4}-logo|-logo|-\d{4})$/, '')
+    if (owlTeams.includes(owlTeamName)) {
+      isStandard = { standardItem: true }
+      group = { group: 'overwatch league' }
+    }
 
     // Only purchasable items need a quality
     const isNoLongerPurchasble = noLongerPurchaseableItems[type] && noLongerPurchaseableItems[type].includes(item.id)
@@ -188,10 +198,11 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
     }
 
     // Check for specific item groups
-    var group = undefined;
-    for (let g in specialItems) {
-      if (specialItems[g][type] && specialItems[g][type].includes(item.id)) {
-        group = { group: g };
+    if (!group) {
+      for (let g in specialItems) {
+        if (specialItems[g][type] && specialItems[g][type].includes(item.id)) {
+          group = { group: g };
+        }
       }
     }
 
@@ -258,19 +269,27 @@ for (var hero in data) {
 
       // Generate ID of the item and check if we need to manually override it.
       var id = getCleanID(name, heroID);
-
+      const uniqueId = `${type}/${id}`
 
       // TODO: Remove this shit
       if (id === 'reinhardt-crusader' && type === 'sprays') {
-        if (shit) {
+        if (thanksBlizz['reinspray1']) {
           id = 'reinhardt-crusader-1'
         } else {
-          shit = true
+          thanksBlizz['reinspray1'] = true
         }
       }
 
-      id = idsBlizzardChanged[`${type}/${id}`] || id;
-      name = itemNamesIFuckedUp[`${type}/${id}`] || name;
+      if (id === 'baptiste-some-kind-of-angel' && type === 'voicelines') {
+        if (thanksBlizz['bapvl1']) {
+          id = 'baptiste-some-kind-of-angel-1'
+        } else {
+          thanksBlizz['bapvl1'] = true
+        }
+      }
+
+      id = idsBlizzardChanged[uniqueId] || id;
+      name = itemNamesIFuckedUp[uniqueId] || name;
 
       const url = getPreviewURL(type, id, heroID);
       const out = { name, id, quality, url };
@@ -310,8 +329,8 @@ for (var hero in data) {
             }
           }
 
-          if (id in eventItemOverrides) {
-            out.event = eventItemOverrides[id]
+          if (uniqueId in eventItemOverrides) {
+            out.event = eventItemOverrides[uniqueId]
             out.achievement = true
           }
           break;
@@ -586,8 +605,10 @@ _.forEach(heroes, hero => _.forEach(hero.items, (items, type) => {
     (c => !c.achievement && !c.event ? 0 : 1), // non achievement/event items on top
     (d => d.achievement ? 1 : 0), // achievement items below event items
     (e => _.isString(e.achievement)), // Put special achievements below normal achievments (cute/pixel)
+    (d => d.achievement === 'blizzard' ? 0 : 1), // put blizzard special items above SUPER special items (pink mercy stuff)
     (f => EVENTORDER[EVENTORDER[f.group] ? f.group : f.event]), // sort events by event order
-    (g => g.name.toLowerCase()) // everything in their respective groups is sorted by name
+    (g => g.name.toLowerCase()), // everything in their respective groups is sorted by name
+    (g => g.hero)
   ]);
 }));
 

@@ -2372,8 +2372,8 @@
     "name": "Halloween Terror",
     "id": "HALLOWEEN",
     "dates": {
-      "start": "1539104400000",
-      "end": "1541062800000"
+      "start": "1571158800000",
+      "end": "1572951600000"
     },
     "items": {
       "skins": [
@@ -2385,6 +2385,18 @@
           "quality": "epic",
           "url": "/updates/HALLOWEEN/skins/ana-ghoul.jpg",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Vampire",
+          "id": "baptiste-vampire",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/skins/baptiste-vampire.jpg",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
+          "achievement": true,
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Bastion",
@@ -2405,14 +2417,35 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Inferno",
+          "id": "junkrat-inferno",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/skins/junkrat-inferno.jpg",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 1 challenge",
+          "achievement": true,
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Gorgon",
+          "id": "lucio-gorgon",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/skins/lucio-gorgon.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
           "heroName": "McCree",
           "hero": "mccree",
           "name": "Undead",
           "id": "mccree-undead",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/skins/mccree-undead.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Mei",
@@ -2421,8 +2454,7 @@
           "id": "mei-pumpkin",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/skins/mei-pumpkin.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Pharah",
@@ -2467,8 +2499,7 @@
           "id": "widowmaker-spider",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/skins/widowmaker-spider.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Zenyatta",
@@ -2487,6 +2518,24 @@
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skins/ana-corsair.jpg",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Swamp Monster",
+          "id": "doomfist-swamp-monster",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/doomfist-swamp-monster.jpg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Jack-o'-lantern",
+          "id": "wrecking-ball-jackolantern",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/wrecking-ball-jackolantern.jpg",
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Junkrat",
@@ -2527,6 +2576,24 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Banshee",
+          "id": "moira-banshee",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/moira-banshee.jpg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Enchanted Armor",
+          "id": "pharah-enchanted-armor",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/pharah-enchanted-armor.jpg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
           "heroName": "Reaper",
           "hero": "reaper",
           "name": "Dracula",
@@ -2554,6 +2621,24 @@
           "url": "/updates/HALLOWEEN/skins/roadhog-junkensteins-monster.jpg",
           "description": "Armed with the secret of creating artificial life, Dr. Jamison Junkenstein birthed a monster.",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Slasher: 76",
+          "id": "soldier-76-slasher-76",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/soldier-76-slasher-76.jpg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Bride",
+          "id": "sombra-bride",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/sombra-bride.jpg",
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Symmetra",
@@ -2594,6 +2679,69 @@
           "group": "HALLOWEEN_2017"
         }
       ],
+      "skinsLegendary": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Pharaoh",
+          "id": "ana-pharaoh",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/ana-pharaoh.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Warlock",
+          "id": "ashe-warlock",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/ashe-warlock.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Demon",
+          "id": "orisa-demon",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/orisa-demon.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Demon Hunter",
+          "id": "sombra-demon-hunter",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/sombra-demon-hunter.jpg",
+          "description": "Unlocked as part of the BlizzCon 2018 In-Game Goodies or by participating in the Halloween Terror 2019 week 3 challenge",
+          "achievement": true,
+          "isNew": true
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Will-o'-Wisp",
+          "id": "tracer-willowisp",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/tracer-willowisp.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Scorpion",
+          "id": "widowmaker-scorpion",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/widowmaker-scorpion.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        }
+      ],
       "emotes": [
         {
           "heroName": "Ana",
@@ -2611,8 +2759,7 @@
           "id": "bastion-zombie",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/emotes/bastion-zombie.webm",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Mei",
@@ -2649,6 +2796,16 @@
           "quality": "epic",
           "url": "/updates/HALLOWEEN/emotes/winston-shadow-puppets.webm",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Stretch",
+          "id": "zenyatta-stretch",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/emotes/zenyatta-stretch.webm",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         }
       ],
       "icons": [
@@ -2661,13 +2818,49 @@
           "group": "HALLOWEEN_2017"
         },
         {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Mummy",
+          "id": "ana-mummy",
+          "url": "/heroes/ana/icons/ana-mummy.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Summoned",
+          "id": "ashe-summoned",
+          "url": "/heroes/ashe/icons/ashe-summoned.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Warlock",
+          "id": "ashe-warlock",
+          "url": "/heroes/ashe/icons/ashe-warlock.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Vampire",
+          "id": "baptiste-vampire",
+          "url": "/heroes/baptiste/icons/baptiste-vampire.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
+          "achievement": true,
+          "isNew": true
+        },
+        {
           "heroName": "Doomfist",
           "hero": "doomfist",
           "name": "Swamp Monster",
           "id": "doomfist-swamp-monster",
           "url": "/heroes/doomfist/icons/doomfist-swamp-monster.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hammond",
@@ -2675,7 +2868,16 @@
           "name": "Scarecrow",
           "id": "wrecking-ball-scarecrow",
           "url": "/heroes/wrecking-ball/icons/wrecking-ball-scarecrow.png",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Inferno",
+          "id": "junkrat-inferno",
+          "url": "/heroes/junkrat/icons/junkrat-inferno.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 1 challenge",
+          "achievement": true,
           "isNew": true
         },
         {
@@ -2685,6 +2887,15 @@
           "id": "junkrat-the-doctor",
           "url": "/heroes/junkrat/icons/junkrat-the-doctor.png",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Gorgon",
+          "id": "lucio-gorgon",
+          "url": "/heroes/lucio/icons/lucio-gorgon.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "McCree",
@@ -2716,7 +2927,15 @@
           "name": "Banshee",
           "id": "moira-banshee",
           "url": "/heroes/moira/icons/moira-banshee.png",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Demon",
+          "id": "orisa-demon",
+          "url": "/heroes/orisa/icons/orisa-demon.png",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -2725,8 +2944,7 @@
           "name": "Enchanted",
           "id": "pharah-enchanted",
           "url": "/heroes/pharah/icons/pharah-enchanted.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Reaper",
@@ -2758,8 +2976,7 @@
           "name": "Slasher",
           "id": "soldier-76-slasher",
           "url": "/heroes/soldier-76/icons/soldier-76-slasher.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Sombra",
@@ -2767,7 +2984,16 @@
           "name": "Bride",
           "id": "sombra-bride",
           "url": "/heroes/sombra/icons/sombra-bride.png",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Demon Hunter",
+          "id": "sombra-demon-hunter",
+          "url": "/heroes/sombra/icons/sombra-demon-hunter.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 3 challenge",
+          "achievement": true,
           "isNew": true
         },
         {
@@ -2785,6 +3011,24 @@
           "id": "torbjorn-viking",
           "url": "/heroes/torbjorn/icons/torbjorn-viking.png",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Will-o'-Wisp",
+          "id": "tracer-willowisp",
+          "url": "/heroes/tracer/icons/tracer-willowisp.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Scorpion",
+          "id": "widowmaker-scorpion",
+          "url": "/heroes/widowmaker/icons/widowmaker-scorpion.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Zarya",
@@ -2863,7 +3107,14 @@
           "name": "Halloween Terror 2018",
           "id": "halloween-terror-2018",
           "url": "/heroes/all/icons/halloween-terror-2018.png",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "hero": "all",
+          "name": "Halloween Terror 2019",
+          "id": "halloween-terror-2019",
+          "url": "/heroes/all/icons/halloween-terror-2019.png",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -2872,6 +3123,14 @@
           "id": "junkensteins-pachimonster",
           "url": "/heroes/all/icons/junkensteins-pachimonster.png",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "hero": "all",
+          "name": "Kittymari",
+          "id": "kittymari",
+          "url": "/heroes/all/icons/kittymari.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -2885,16 +3144,14 @@
           "name": "Pumpkimari",
           "id": "pumpkimari",
           "url": "/heroes/all/icons/pumpkimari.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "hero": "all",
           "name": "Skelemari",
           "id": "skelemari",
           "url": "/heroes/all/icons/skelemari.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "hero": "all",
@@ -2943,8 +3200,7 @@
           "name": "Witchymari",
           "id": "witchymari",
           "url": "/heroes/all/icons/witchymari.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "hero": "all",
@@ -2958,11 +3214,62 @@
         {
           "heroName": "Ana",
           "hero": "ana",
+          "name": "Mummy",
+          "id": "ana-mummy",
+          "quality": "common",
+          "url": "/heroes/ana/sprays/ana-mummy.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Ana",
+          "hero": "ana",
           "name": "Trick or Treat",
           "id": "ana-trick-or-treat",
           "quality": "common",
           "url": "/heroes/ana/sprays/ana-trick-or-treat.png",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Trick or Treat",
+          "id": "ashe-trick-or-treat",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-trick-or-treat.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Warlock",
+          "id": "ashe-warlock",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-warlock.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Trick or Treat",
+          "id": "baptiste-trick-or-treat",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-trick-or-treat.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Vampire",
+          "id": "baptiste-vampire",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-vampire.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
+          "achievement": true,
+          "isNew": true
         },
         {
           "heroName": "Bastion",
@@ -2980,8 +3287,7 @@
           "id": "brigitte-trick-or-treat",
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-trick-or-treat.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "D.Va",
@@ -2999,8 +3305,7 @@
           "id": "doomfist-swamp-monster",
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-swamp-monster.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Doomfist",
@@ -3027,8 +3332,7 @@
           "id": "wrecking-ball-jackolantern",
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-jackolantern.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hammond",
@@ -3037,8 +3341,7 @@
           "id": "wrecking-ball-trick-or-treat",
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-trick-or-treat.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hanzo",
@@ -3057,6 +3360,27 @@
           "quality": "common",
           "url": "/heroes/junkrat/sprays/junkrat-trick-or-treat.png",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Inferno",
+          "id": "junkrat-inferno",
+          "quality": "common",
+          "url": "/heroes/junkrat/sprays/junkrat-inferno.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 1 challenge",
+          "achievement": true,
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Gorgon",
+          "id": "lucio-gorgon",
+          "quality": "common",
+          "url": "/heroes/lucio/sprays/lucio-gorgon.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Lúcio",
@@ -3101,8 +3425,7 @@
           "id": "moira-banshee",
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-banshee.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Moira",
@@ -3111,7 +3434,16 @@
           "id": "moira-trick-or-treat",
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-trick-or-treat.png",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Demon",
+          "id": "orisa-demon",
+          "quality": "common",
+          "url": "/heroes/orisa/sprays/orisa-demon.png",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -3130,8 +3462,7 @@
           "id": "pharah-enchanted",
           "quality": "common",
           "url": "/heroes/pharah/sprays/pharah-enchanted.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Pharah",
@@ -3170,14 +3501,23 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Trick or Treat",
+          "id": "sigma-trick-or-treat",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-trick-or-treat.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Slasher",
           "id": "soldier-76-slasher",
           "quality": "common",
           "url": "/heroes/soldier-76/sprays/soldier-76-slasher.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Soldier: 76",
@@ -3195,8 +3535,7 @@
           "id": "sombra-servants",
           "quality": "common",
           "url": "/heroes/sombra/sprays/sombra-servants.png",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Sombra",
@@ -3206,6 +3545,17 @@
           "quality": "common",
           "url": "/heroes/sombra/sprays/sombra-trick-or-treat.png",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Demon Hunter",
+          "id": "sombra-demon-hunter",
+          "quality": "common",
+          "url": "/heroes/sombra/sprays/sombra-demon-hunter.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 3 challenge",
+          "achievement": true,
+          "isNew": true
         },
         {
           "heroName": "Symmetra",
@@ -3233,6 +3583,26 @@
           "quality": "common",
           "url": "/heroes/tracer/sprays/tracer-trick-or-treat.png",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Will-o'-Wisp",
+          "id": "tracer-willowisp",
+          "quality": "common",
+          "url": "/heroes/tracer/sprays/tracer-willowisp.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Scorpion",
+          "id": "widowmaker-scorpion",
+          "quality": "common",
+          "url": "/heroes/widowmaker/sprays/widowmaker-scorpion.png",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Widowmaker",
@@ -3355,6 +3725,7 @@
           "name": "Flaming Pumpkin",
           "id": "flaming-pumpkin",
           "url": "/heroes/all/sprays/flaming-pumpkin.png",
+          "group": "HALLOWEEN_2018",
           "achievement": true,
           "description": "Survive 12 bonus waves in Junkenstein Endless."
         },
@@ -3435,6 +3806,7 @@
           "name": "Zombardier",
           "id": "zombardier",
           "url": "/heroes/all/sprays/zombardier.png",
+          "group": "HALLOWEEN_2018",
           "achievement": true,
           "description": "Survive 4 bonus waves in Junkenstein Endless on Hard difficulty."
         },
@@ -3443,6 +3815,7 @@
           "name": "Zomnic",
           "id": "zomnic",
           "url": "/heroes/all/sprays/zomnic.png",
+          "group": "HALLOWEEN_2018",
           "achievement": true,
           "description": "Win Junkenstein's Revenge with 6 different heroes."
         }
@@ -3465,6 +3838,36 @@
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-dont-be-scared.ogg",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Bandage or bullet?",
+          "id": "baptiste-bandage-or-bullet",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-bandage-or-bullet.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Don't cry",
+          "id": "baptiste-dont-cry",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-dont-cry.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Don't die on me",
+          "id": "baptiste-dont-die-on-me",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-dont-die-on-me.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Bastion",
@@ -3491,8 +3894,7 @@
           "id": "brigitte-not-scared-are-you",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-not-scared-are-you.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Brigitte",
@@ -3501,8 +3903,7 @@
           "id": "brigitte-supposed-to-scare-me",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-supposed-to-scare-me.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "D.Va",
@@ -3565,8 +3966,7 @@
           "id": "genji-trick-or-treat",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-trick-or-treat.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hammond",
@@ -3575,8 +3975,7 @@
           "id": "wrecking-ball-heart-rate-increasing",
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-heart-rate-increasing.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hammond",
@@ -3585,8 +3984,7 @@
           "id": "wrecking-ball-trick-or-treat",
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-trick-or-treat.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hanzo",
@@ -3649,7 +4047,16 @@
           "id": "lucio-trick-or-treat",
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-trick-or-treat.ogg",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Already dead",
+          "id": "mccree-already-dead",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-already-dead.ogg",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -3677,8 +4084,7 @@
           "id": "mccree-trick-or-treat",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-trick-or-treat.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Mei",
@@ -3697,6 +4103,26 @@
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-scary.ogg",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "You scared me",
+          "id": "mei-you-scared-me",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-you-scared-me.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "I'll cast a spell on you",
+          "id": "mercy-ill-cast-a-spell-on-you",
+          "quality": "common",
+          "url": "/heroes/mercy/voicelines/mercy-ill-cast-a-spell-on-you.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Mercy",
@@ -3723,8 +4149,7 @@
           "id": "moira-despair-has-its-own-calms",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-despair-has-its-own-calms.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Moira",
@@ -3733,7 +4158,16 @@
           "id": "moira-happy-halloween",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-happy-halloween.ogg",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Ignorance frightens me",
+          "id": "moira-ignorance-frightens-me",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-ignorance-frightens-me.ogg",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -3761,8 +4195,7 @@
           "id": "pharah-are-you-frightened",
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-are-you-frightened.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Pharah",
@@ -3798,8 +4231,7 @@
           "id": "reaper-im-dressed-to-kill",
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-im-dressed-to-kill.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Reaper",
@@ -3809,6 +4241,16 @@
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-things-are-looking-grim.ogg",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Too edgy for you?",
+          "id": "reaper-too-edgy-for-you",
+          "quality": "common",
+          "url": "/heroes/reaper/voicelines/reaper-too-edgy-for-you.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Reinhardt",
@@ -3847,6 +4289,36 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Frightful",
+          "id": "sigma-frightful",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-frightful.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Mouth full of teeth",
+          "id": "sigma-mouth-full-of-teeth",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-mouth-full-of-teeth.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "The knives are sharpened",
+          "id": "sigma-the-knives-are-sharpened",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-the-knives-are-sharpened.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Knock knock",
@@ -3854,6 +4326,16 @@
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-knock-knock.ogg",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Not much of a living",
+          "id": "soldier-76-not-much-of-a-living",
+          "quality": "common",
+          "url": "/heroes/soldier-76/voicelines/soldier-76-not-much-of-a-living.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Soldier: 76",
@@ -3894,6 +4376,16 @@
         {
           "heroName": "Symmetra",
           "hero": "symmetra",
+          "name": "Everything you see",
+          "id": "symmetra-everything-you-see",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-everything-you-see.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
           "name": "The treat is a lie",
           "id": "symmetra-the-treat-is-a-lie",
           "quality": "common",
@@ -3917,6 +4409,16 @@
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-if-you-build-it.ogg",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Mind the beard",
+          "id": "torbjorn-mind-the-beard",
+          "quality": "common",
+          "url": "/heroes/torbjorn/voicelines/torbjorn-mind-the-beard.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Tracer",
@@ -3943,7 +4445,16 @@
           "id": "tracer-trick-or-treat",
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-trick-or-treat.ogg",
-          "group": "HALLOWEEN_2018",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "In your dreams",
+          "id": "widowmaker-in-your-dreams",
+          "quality": "common",
+          "url": "/heroes/widowmaker/voicelines/widowmaker-in-your-dreams.ogg",
+          "group": "HALLOWEEN_2019",
           "isNew": true
         },
         {
@@ -3971,8 +4482,7 @@
           "id": "winston-boo",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-boo.ogg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Winston",
@@ -4022,6 +4532,16 @@
         {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
+          "name": "Look in the mirror",
+          "id": "zenyatta-look-in-the-mirror",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-look-in-the-mirror.ogg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
           "name": "Trick or treat?",
           "id": "zenyatta-trick-or-treat",
           "quality": "common",
@@ -4056,8 +4576,7 @@
           "id": "brigitte-pumpkin",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/brigitte-pumpkin.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "D.Va",
@@ -4066,8 +4585,7 @@
           "id": "dva-pumpkin-selfie",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/dva-pumpkin-selfie.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "D.Va",
@@ -4085,8 +4603,7 @@
           "id": "doomfist-pumpkin",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/doomfist-pumpkin.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Genji",
@@ -4104,8 +4621,7 @@
           "id": "wrecking-ball-nibbling",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/wrecking-ball-nibbling.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hanzo",
@@ -4186,8 +4702,7 @@
           "id": "mercy-pumpkin",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/mercy-pumpkin.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Mercy",
@@ -4205,8 +4720,7 @@
           "id": "moira-pumpkin",
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/moira-pumpkin.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Orisa",
@@ -4216,6 +4730,16 @@
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/orisa-pumpkin-head.jpg",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Pumpkin",
+          "id": "pharah-pumpkin",
+          "quality": "rare",
+          "url": "/updates/HALLOWEEN/poses/pharah-pumpkin.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Pharah",
@@ -4238,6 +4762,16 @@
         {
           "heroName": "Reinhardt",
           "hero": "reinhardt",
+          "name": "Pumpkin",
+          "id": "reinhardt-pumpkin",
+          "quality": "rare",
+          "url": "/updates/HALLOWEEN/poses/reinhardt-pumpkin.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
           "name": "R.I.P.",
           "id": "reinhardt-rip",
           "quality": "rare",
@@ -4252,6 +4786,16 @@
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/roadhog-rip.jpg",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Pumpkin",
+          "id": "sigma-pumpkin",
+          "quality": "rare",
+          "url": "/updates/HALLOWEEN/poses/sigma-pumpkin.jpg",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Soldier: 76",
@@ -4346,14 +4890,23 @@
       ],
       "intros": [
         {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Scream Queen",
+          "id": "ashe-scream-queen",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/intros/ashe-scream-queen.webm",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Brigitte",
           "hero": "brigitte",
           "name": "Shield Bash",
           "id": "brigitte-shield-bash",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/intros/brigitte-shield-bash.webm",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Genji",
@@ -4363,6 +4916,16 @@
           "quality": "epic",
           "url": "/updates/HALLOWEEN/intros/genji-pumpkin-carving.webm",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Undertaker",
+          "id": "mccree-undertaker",
+          "quality": "epic",
+          "url": "/updates/HALLOWEEN/intros/mccree-undertaker.webm",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "heroName": "Mei",
@@ -4398,70 +4961,7 @@
           "id": "winston-pumpkin",
           "quality": "epic",
           "url": "/updates/HALLOWEEN/intros/winston-pumpkin.webm",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        }
-      ],
-      "skinsLegendary": [
-        {
-          "heroName": "Doomfist",
-          "hero": "doomfist",
-          "name": "Swamp Monster",
-          "id": "doomfist-swamp-monster",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/doomfist-swamp-monster.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Jack-o'-lantern",
-          "id": "wrecking-ball-jackolantern",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/wrecking-ball-jackolantern.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Moira",
-          "hero": "moira",
-          "name": "Banshee",
-          "id": "moira-banshee",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/moira-banshee.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Enchanted Armor",
-          "id": "pharah-enchanted-armor",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/pharah-enchanted-armor.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "Slasher: 76",
-          "id": "soldier-76-slasher-76",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/soldier-76-slasher-76.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Sombra",
-          "hero": "sombra",
-          "name": "Bride",
-          "id": "sombra-bride",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/sombra-bride.jpg",
-          "group": "HALLOWEEN_2018",
-          "isNew": true
+          "group": "HALLOWEEN_2018"
         }
       ]
     }
@@ -4470,8 +4970,8 @@
     "name": "Winter Wonderland",
     "id": "WINTER_WONDERLAND",
     "dates": {
-      "start": "1544547600000",
-      "end": "1546513200000"
+      "start": "1576004400000",
+      "end": "1578049200000"
     },
     "items": {
       "skins": [
@@ -4482,8 +4982,7 @@
           "id": "ashe-winter",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/skins/ashe-winter.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Bastion",
@@ -4492,8 +4991,7 @@
           "id": "bastion-gift-wrap",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/skins/bastion-gift-wrap.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Lúcio",
@@ -4513,6 +5011,30 @@
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/skins/mccree-scrooge.jpg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Snow Angel",
+          "id": "mercy-snow-angel",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/mercy-snow-angel.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Holly",
+          "id": "moira-holly",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/moira-holly.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         },
         {
           "heroName": "Pharah",
@@ -4539,8 +5061,7 @@
           "id": "reinhardt-festive",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/skins/reinhardt-festive.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Roadhog",
@@ -4550,6 +5071,18 @@
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/skins/roadhog-rudolph.jpg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Ugly Sweater: 76",
+          "id": "soldier-76-ugly-sweater-76",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/soldier-76-ugly-sweater-76.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         },
         {
           "heroName": "Sombra",
@@ -4606,6 +5139,24 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Krampus",
+          "id": "junkrat-krampus",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/junkrat-krampus.jpg",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Snow Fox",
+          "id": "lucio-snow-fox",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/lucio-snow-fox.jpg",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
           "heroName": "Mei",
           "hero": "mei",
           "name": "Mei-rry",
@@ -4613,6 +5164,15 @@
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skins/mei-meirry.jpg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Sugar Plum Fairy",
+          "id": "mercy-sugar-plum-fairy",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/mercy-sugar-plum-fairy.jpg",
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Roadhog",
@@ -4642,6 +5202,15 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Figure Skater",
+          "id": "symmetra-figure-skater",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/symmetra-figure-skater.jpg",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
           "heroName": "Torbjörn",
           "hero": "torbjorn",
           "name": "Santaclad",
@@ -4661,6 +5230,15 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Biathlon",
+          "id": "widowmaker-biathlon",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/widowmaker-biathlon.jpg",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
           "heroName": "Winston",
           "hero": "winston",
           "name": "Yeti",
@@ -4668,6 +5246,15 @@
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skins/winston-yeti.jpg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Snowboarder",
+          "id": "zarya-snowboarder",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/zarya-snowboarder.jpg",
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Zenyatta",
@@ -4699,7 +5286,14 @@
           "name": "2019",
           "id": "2019",
           "url": "/heroes/all/icons/2019.png",
-          "group": "WINTER_WONDERLAND_2018",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "hero": "all",
+          "name": "2020",
+          "id": "2020",
+          "url": "/heroes/all/icons/2020.png",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -4739,8 +5333,7 @@
           "name": "Biathlon",
           "id": "widowmaker-biathlon",
           "url": "/heroes/widowmaker/icons/widowmaker-biathlon.png",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "hero": "all",
@@ -4772,6 +5365,17 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Coinín Nollag",
+          "id": "moira-coinn-nollag",
+          "url": "/heroes/moira/icons/moira-coinn-nollag.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
           "hero": "all",
           "name": "Dreidel",
           "id": "dreidel",
@@ -4784,8 +5388,7 @@
           "name": "Figure Skater",
           "id": "symmetra-figure-skater",
           "url": "/heroes/symmetra/icons/symmetra-figure-skater.png",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "hero": "all",
@@ -4832,13 +5435,21 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Jötunn",
+          "id": "doomfist-jotunn",
+          "url": "/heroes/doomfist/icons/doomfist-jotunn.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Junkrat",
           "hero": "junkrat",
           "name": "Krampus",
           "id": "junkrat-krampus",
           "url": "/heroes/junkrat/icons/junkrat-krampus.png",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "hero": "all",
@@ -4846,6 +5457,15 @@
           "id": "mochi",
           "url": "/heroes/all/icons/mochi.png",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Mountain Man",
+          "id": "mccree-mountain-man",
+          "url": "/heroes/mccree/icons/mccree-mountain-man.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         },
         {
           "heroName": "Zenyatta",
@@ -4867,8 +5487,7 @@
           "name": "Pachicracker",
           "id": "pachicracker",
           "url": "/heroes/all/icons/pachicracker.png",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "hero": "all",
@@ -4899,6 +5518,24 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Rat King",
+          "id": "reaper-rat-king",
+          "url": "/heroes/reaper/icons/reaper-rat-king.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Rime",
+          "id": "sigma-rime",
+          "url": "/heroes/sigma/icons/sigma-rime.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Sombra",
           "hero": "sombra",
           "name": "Rime",
@@ -4915,13 +5552,23 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Snow Angel",
+          "id": "mercy-snow-angel",
+          "url": "/heroes/mercy/icons/mercy-snow-angel.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Lúcio",
           "hero": "lucio",
           "name": "Snow Fox",
           "id": "lucio-snow-fox",
           "url": "/heroes/lucio/icons/lucio-snow-fox.png",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "hero": "all",
@@ -4944,16 +5591,14 @@
           "name": "Snowboarder",
           "id": "zarya-snowboarder",
           "url": "/heroes/zarya/icons/zarya-snowboarder.png",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "hero": "all",
           "name": "Snowimari",
           "id": "snowimari",
           "url": "/heroes/all/icons/snowimari.png",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "hero": "all",
@@ -4975,8 +5620,7 @@
           "name": "Sugar Plum Fairy",
           "id": "mercy-sugar-plum-fairy",
           "url": "/heroes/mercy/icons/mercy-sugar-plum-fairy.png",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "hero": "all",
@@ -4984,6 +5628,17 @@
           "id": "tannenbaum",
           "url": "/heroes/all/icons/tannenbaum.png",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Ugly Sweater",
+          "id": "soldier-76-ugly-sweater",
+          "url": "/heroes/soldier-76/icons/soldier-76-ugly-sweater.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -5004,7 +5659,14 @@
           "name": "Winter Wonderland 2018",
           "id": "winter-wonderland-2018",
           "url": "/heroes/all/icons/winter-wonderland-2018.png",
-          "group": "WINTER_WONDERLAND_2018",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "hero": "all",
+          "name": "Winter Wonderland 2019",
+          "id": "winter-wonderland-2019",
+          "url": "/heroes/all/icons/winter-wonderland-2019.png",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -5050,9 +5712,20 @@
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-snowball-fight.png",
           "group": "WINTER_WONDERLAND_2018",
-          "isNew": true,
           "secondId": "ashe-ornament",
           "secondUrl": "/heroes/ashe/sprays/ashe-ornament.png"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Snowball Fight",
+          "id": "baptiste-snowball-fight",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-snowball-fight.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "secondId": "baptiste-ornament",
+          "secondUrl": "/heroes/baptiste/sprays/baptiste-ornament.png"
         },
         {
           "heroName": "Bastion",
@@ -5073,7 +5746,6 @@
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-knitting.png",
           "group": "WINTER_WONDERLAND_2018",
-          "isNew": true,
           "secondId": "brigitte-ornament",
           "secondUrl": "/heroes/brigitte/sprays/brigitte-ornament.png"
         },
@@ -5118,7 +5790,6 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-stocking.png",
           "group": "WINTER_WONDERLAND_2018",
-          "isNew": true,
           "secondId": "wrecking-ball-ornament",
           "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-ornament.png"
         },
@@ -5189,6 +5860,20 @@
           "secondUrl": "/heroes/mercy/sprays/mercy-ornament.png"
         },
         {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Winter spell",
+          "id": "mercy-winter-spell",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-winter-spell.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "secondId": "mercy-ornament",
+          "secondUrl": "/heroes/mercy/sprays/mercy-ornament.png"
+        },
+        {
           "heroName": "Moira",
           "hero": "moira",
           "name": "Chimney",
@@ -5196,6 +5881,20 @@
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-chimney.png",
           "group": "WINTER_WONDERLAND_2017",
+          "secondId": "moira-ornament",
+          "secondUrl": "/heroes/moira/sprays/moira-ornament.png"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Presents",
+          "id": "moira-presents",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-presents.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
           "secondId": "moira-ornament",
           "secondUrl": "/heroes/moira/sprays/moira-ornament.png"
         },
@@ -5220,6 +5919,18 @@
           "group": "WINTER_WONDERLAND_2016",
           "secondId": "pharah-ornament",
           "secondUrl": "/heroes/pharah/sprays/pharah-ornament.png"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Rat King",
+          "id": "reaper-rat-king",
+          "quality": "common",
+          "url": "/heroes/reaper/sprays/reaper-rat-king.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "secondId": "reaper-ornament",
+          "secondUrl": "/heroes/reaper/sprays/reaper-ornament.png"
         },
         {
           "heroName": "Reaper",
@@ -5255,6 +5966,18 @@
           "secondUrl": "/heroes/roadhog/sprays/roadhog-ornament.png"
         },
         {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Ice Statue",
+          "id": "sigma-ice-statue",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-ice-statue.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "secondId": "sigma-ornament",
+          "secondUrl": "/heroes/sigma/sprays/sigma-ornament.png"
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Army Man: 76",
@@ -5262,6 +5985,20 @@
           "quality": "common",
           "url": "/heroes/soldier-76/sprays/soldier-76-army-man-76.png",
           "group": "WINTER_WONDERLAND_2016",
+          "secondId": "soldier-76-ornament",
+          "secondUrl": "/heroes/soldier-76/sprays/soldier-76-ornament.png"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Ugly Sweater",
+          "id": "soldier-76-ugly-sweater",
+          "quality": "common",
+          "url": "/heroes/soldier-76/sprays/soldier-76-ugly-sweater.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
           "secondId": "soldier-76-ornament",
           "secondUrl": "/heroes/soldier-76/sprays/soldier-76-ornament.png"
         },
@@ -5345,6 +6082,18 @@
         {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
+          "name": "Nutcracker",
+          "id": "zenyatta-nutcracker",
+          "quality": "common",
+          "url": "/heroes/zenyatta/sprays/zenyatta-nutcracker.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "secondId": "zenyatta-ornament",
+          "secondUrl": "/heroes/zenyatta/sprays/zenyatta-ornament.png"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
           "name": "Snowball Fight",
           "id": "zenyatta-snowball-fight",
           "quality": "common",
@@ -5352,6 +6101,33 @@
           "group": "WINTER_WONDERLAND_2016",
           "secondId": "zenyatta-ornament",
           "secondUrl": "/heroes/zenyatta/sprays/zenyatta-ornament.png"
+        },
+        {
+          "hero": "all",
+          "name": "Holiday surprise",
+          "id": "holiday-surprise",
+          "url": "/heroes/all/sprays/holiday-surprise.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Polar bear",
+          "id": "polar-bear",
+          "url": "/heroes/all/sprays/polar-bear.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Snow snow snow",
+          "id": "snow-snow-snow",
+          "url": "/heroes/all/sprays/snow-snow-snow.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "quality": "common"
         },
         {
           "hero": "all",
@@ -5373,6 +6149,13 @@
           "hero": "ashe",
           "id": "ashe-ornament",
           "group": "WINTER_WONDERLAND_2018",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "baptiste",
+          "id": "baptiste-ornament",
+          "group": "WINTER_WONDERLAND_2019",
           "quality": "common"
         },
         {
@@ -5496,6 +6279,13 @@
         },
         {
           "hidden": true,
+          "hero": "sigma",
+          "id": "sigma-ornament",
+          "group": "WINTER_WONDERLAND_2019",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
           "hero": "soldier-76",
           "id": "soldier-76-ornament",
           "group": "WINTER_WONDERLAND_2016",
@@ -5570,7 +6360,6 @@
           "id": "bonk",
           "url": "/heroes/all/sprays/bonk.png",
           "group": "WINTER_WONDERLAND_2018",
-          "isNew": true,
           "achievement": true,
           "description": "Kill 2 enemies with a single use of Mei's Flurry in Mei's Snowball Offensive."
         },
@@ -5580,9 +6369,38 @@
           "id": "frozen-throne",
           "url": "/heroes/all/sprays/frozen-throne.png",
           "group": "WINTER_WONDERLAND_2018",
-          "isNew": true,
           "achievement": true,
           "description": "Win a round as the sole survivor in Mei's Snowball Offensive."
+        },
+        {
+          "hero": "all",
+          "name": "Ice Spheres",
+          "id": "ice-spheres",
+          "url": "/heroes/all/sprays/ice-spheres.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Kill an enemy with a caught snowball in Snowball Deathmatch."
+        },
+        {
+          "hero": "all",
+          "name": "Jötunn",
+          "id": "jotunn",
+          "url": "/heroes/all/sprays/jotunn.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Kill an enemy after destroying part of their Ice Wall in Snowball Deathmatch."
+        },
+        {
+          "hero": "all",
+          "name": "Mountain Man",
+          "id": "mountain-man",
+          "url": "/heroes/all/sprays/mountain-man.png",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true,
+          "achievement": true,
+          "description": "Kill 3 enemies without reloading or dying in Snowball Deathmatch."
         },
         {
           "hero": "all",
@@ -5644,7 +6462,6 @@
           "id": "yeti-rage",
           "url": "/heroes/all/sprays/yeti-rage.png",
           "group": "WINTER_WONDERLAND_2018",
-          "isNew": true,
           "achievement": true,
           "description": "Kill 3 enemies as the Yeti in Yeti Hunt."
         }
@@ -5675,8 +6492,7 @@
           "id": "ashe-girl-who-has-everything",
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-girl-who-has-everything.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Ashe",
@@ -5685,7 +6501,36 @@
           "id": "ashe-its-a-giving-time-of-year",
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-its-a-giving-time-of-year.ogg",
-          "group": "WINTER_WONDERLAND_2018",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "A little T.L.C.",
+          "id": "baptiste-a-little-tlc",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-a-little-tlc.ogg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Some kind of angel",
+          "id": "baptiste-some-kind-of-angel-1",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-some-kind-of-angel-1.ogg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Today, I give you a choice",
+          "id": "baptiste-today-i-give-you-a-choice",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-today-i-give-you-a-choice.ogg",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -5713,8 +6558,7 @@
           "id": "brigitte-i-made-that-just-for-you",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-i-made-that-just-for-you.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Brigitte",
@@ -5723,8 +6567,7 @@
           "id": "brigitte-merry-christmas",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-merry-christmas.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "D.Va",
@@ -5787,8 +6630,7 @@
           "id": "wrecking-ball-deck-the-halls",
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-deck-the-halls.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Hammond",
@@ -5797,7 +6639,16 @@
           "id": "wrecking-ball-ho-ho-ho",
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-ho-ho-ho.ogg",
-          "group": "WINTER_WONDERLAND_2018",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Jingle bells",
+          "id": "wrecking-ball-jingle-bells",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-jingle-bells.ogg",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -5825,8 +6676,7 @@
           "id": "hanzo-out-cold",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-out-cold.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Junkrat",
@@ -5844,8 +6694,7 @@
           "id": "junkrat-happy-holidays",
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-happy-holidays.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Junkrat",
@@ -5855,6 +6704,16 @@
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-merry-christmas.ogg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Season's greetings!",
+          "id": "junkrat-seasons-greetings",
+          "quality": "common",
+          "url": "/heroes/junkrat/voicelines/junkrat-seasons-greetings.ogg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         },
         {
           "heroName": "Lúcio",
@@ -5917,8 +6776,7 @@
           "id": "mei-snowball-fight",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-snowball-fight.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Mercy",
@@ -5963,8 +6821,7 @@
           "id": "moira-the-gift-of-knowledge",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-the-gift-of-knowledge.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Orisa",
@@ -6000,8 +6857,7 @@
           "id": "pharah-cool-it",
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-cool-it.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Pharah",
@@ -6067,6 +6923,46 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Sweet as",
+          "id": "roadhog-sweet-as",
+          "quality": "common",
+          "url": "/heroes/roadhog/voicelines/roadhog-sweet-as.ogg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Glorious",
+          "id": "sigma-glorious",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-glorious.ogg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Happy Christmas!",
+          "id": "sigma-happy-christmas",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-happy-christmas.ogg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Party guy",
+          "id": "sigma-party-guy",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-party-guy.ogg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Merry Christmas",
@@ -6109,8 +7005,7 @@
           "id": "sombra-merry-christmas",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-merry-christmas.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Symmetra",
@@ -6120,6 +7015,16 @@
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-expecting-a-miracle.ogg",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Finding beauty",
+          "id": "symmetra-finding-beauty",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-finding-beauty.ogg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         },
         {
           "heroName": "Symmetra",
@@ -6182,8 +7087,7 @@
           "id": "widowmaker-happy-holidays",
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-happy-holidays.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Widowmaker",
@@ -6201,8 +7105,7 @@
           "id": "winston-im-a-party-animal",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-im-a-party-animal.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Winston",
@@ -6243,12 +7146,21 @@
         {
           "heroName": "Zarya",
           "hero": "zarya",
+          "name": "Happy New Year!",
+          "id": "zarya-happy-new-year",
+          "quality": "common",
+          "url": "/heroes/zarya/voicelines/zarya-happy-new-year.ogg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
           "name": "Is It Cold in Here?",
           "id": "zarya-is-it-cold-in-here",
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-is-it-cold-in-here.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Zenyatta",
@@ -6275,8 +7187,7 @@
           "id": "zenyatta-snowball-fight",
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-snowball-fight.ogg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         }
       ],
       "poses": [
@@ -6306,8 +7217,7 @@
           "id": "brigitte-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/brigitte-toast.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "D.Va",
@@ -6325,8 +7235,7 @@
           "id": "doomfist-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/doomfist-toast.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Genji",
@@ -6338,13 +7247,32 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Imbibe",
+          "id": "wrecking-ball-imbibe",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/wrecking-ball-imbibe.jpg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Junkrat",
           "hero": "junkrat",
           "name": "Toast",
           "id": "junkrat-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/junkrat-toast.jpg",
-          "group": "WINTER_WONDERLAND_2018",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Toast",
+          "id": "lucio-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/lucio-toast.jpg",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -6372,8 +7300,7 @@
           "id": "moira-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/moira-toast.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Pharah",
@@ -6391,8 +7318,7 @@
           "id": "reaper-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/reaper-toast.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Reinhardt",
@@ -6432,6 +7358,16 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Toast",
+          "id": "symmetra-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/symmetra-toast.jpg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Torbjörn",
           "hero": "torbjorn",
           "name": "Toast",
@@ -6447,8 +7383,7 @@
           "id": "tracer-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/tracer-toast.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "Widowmaker",
@@ -6478,6 +7413,48 @@
           "group": "WINTER_WONDERLAND_2017"
         }
       ],
+      "skinsLegendary": [
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Jötunn",
+          "id": "doomfist-jotunn",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/doomfist-jotunn.jpg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Mountain Man",
+          "id": "mccree-mountain-man",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/mccree-mountain-man.jpg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Rat King",
+          "id": "reaper-rat-king",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/reaper-rat-king.jpg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Rime",
+          "id": "sigma-rime",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/sigma-rime.jpg",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        }
+      ],
       "emotes": [
         {
           "heroName": "Genji",
@@ -6486,8 +7463,7 @@
           "id": "genji-paper-stars",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/emotes/genji-paper-stars.webm",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2018"
         },
         {
           "heroName": "McCree",
@@ -6518,13 +7494,32 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Regifted",
+          "id": "sombra-regifted",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/emotes/sombra-regifted.webm",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
+        },
+        {
           "heroName": "Torbjörn",
           "hero": "torbjorn",
           "name": "My Babies",
           "id": "torbjorn-my-babies",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/emotes/torbjorn-my-babies.webm",
-          "group": "WINTER_WONDERLAND_2018",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Hello, My Name Is",
+          "id": "winston-hello-my-name-is",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/emotes/winston-hello-my-name-is.webm",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -6547,68 +7542,6 @@
           "group": "WINTER_WONDERLAND_2017"
         }
       ],
-      "skinsLegendary": [
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "Krampus",
-          "id": "junkrat-krampus",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/junkrat-krampus.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Snow Fox",
-          "id": "lucio-snow-fox",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/lucio-snow-fox.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Sugar Plum Fairy",
-          "id": "mercy-sugar-plum-fairy",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/mercy-sugar-plum-fairy.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "Figure Skater",
-          "id": "symmetra-figure-skater",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/symmetra-figure-skater.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Biathlon",
-          "id": "widowmaker-biathlon",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/widowmaker-biathlon.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Snowboarder",
-          "id": "zarya-snowboarder",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/zarya-snowboarder.jpg",
-          "group": "WINTER_WONDERLAND_2018",
-          "isNew": true
-        }
-      ],
       "intros": [
         {
           "heroName": "Hammond",
@@ -6617,7 +7550,16 @@
           "id": "wrecking-ball-festive",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/intros/wrecking-ball-festive.webm",
-          "group": "WINTER_WONDERLAND_2018",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Festive",
+          "id": "mei-festive",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/intros/mei-festive.webm",
+          "group": "WINTER_WONDERLAND_2019",
           "isNew": true
         },
         {
@@ -6684,7 +7626,30 @@
           "id": "brigitte-general",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/skins/brigitte-general.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Monk",
+          "id": "doomfist-monk",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/doomfist-monk.jpg",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 1 challenge",
+          "achievement": true,
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Paper Cutting",
+          "id": "wrecking-ball-paper-cutting",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/wrecking-ball-paper-cutting.jpg",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
+          "achievement": true,
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -6712,8 +7677,7 @@
           "id": "orisa-sanye",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/skins/orisa-sanye.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Symmetra",
@@ -6734,6 +7698,18 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Ancient Bronze",
+          "id": "winston-ancient-bronze",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/winston-ancient-bronze.jpg",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
+          "achievement": true,
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "heroName": "D.Va",
           "hero": "dva",
           "name": "Palanquin",
@@ -6750,6 +7726,15 @@
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skins/genji-baihu.jpg",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Huang Zhong",
+          "id": "hanzo-huang-zhong",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/hanzo-huang-zhong.jpg",
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "McCree",
@@ -6797,6 +7782,24 @@
           "group": "LUNAR_NEW_YEAR_2018"
         },
         {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Lü Bu",
+          "id": "reaper-l-bu",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/reaper-l-bu.jpg",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Guan Yu",
+          "id": "reinhardt-guan-yu",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/reinhardt-guan-yu.jpg",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
           "heroName": "Reinhardt",
           "hero": "reinhardt",
           "name": "Wujing",
@@ -6813,6 +7816,24 @@
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skins/roadhog-bajie.jpg",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Zhang Fei",
+          "id": "torbjorn-zhang-fei",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/torbjorn-zhang-fei.jpg",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Hong Gildong",
+          "id": "tracer-hong-gildong",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/tracer-hong-gildong.jpg",
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Widowmaker",
@@ -6849,6 +7870,15 @@
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skins/zenyatta-sanzang.jpg",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Zhuge Liang",
+          "id": "zenyatta-zhuge-liang",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/zenyatta-zhuge-liang.jpg",
+          "group": "LUNAR_NEW_YEAR_2019"
         }
       ],
       "emotes": [
@@ -6859,7 +7889,16 @@
           "id": "ana-yut-nori",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/emotes/ana-yut-nori.webm",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Kite Flying",
+          "id": "bastion-kite-flying",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/bastion-kite-flying.webm",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -6879,6 +7918,16 @@
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/emotes/doomfist-crushing.webm",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Sky Lantern",
+          "id": "hanzo-sky-lantern",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/hanzo-sky-lantern.webm",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "heroName": "Junkrat",
@@ -6914,8 +7963,7 @@
           "id": "soldier-76-rattle-drum",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/emotes/soldier-76-rattle-drum.webm",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         }
       ],
       "sprays": [
@@ -6938,9 +7986,20 @@
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-red-envelopes.png",
           "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true,
           "secondId": "ashe-dragon-dance",
           "secondUrl": "/heroes/ashe/sprays/ashe-dragon-dance.png"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Lion Dance",
+          "id": "baptiste-lion-dance",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-lion-dance.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true,
+          "secondId": "baptiste-dragon-dance",
+          "secondUrl": "/heroes/baptiste/sprays/baptiste-dragon-dance.png"
         },
         {
           "heroName": "Bastion",
@@ -6961,6 +8020,17 @@
           "quality": "common",
           "url": "/heroes/brigitte/sprays/brigitte-feast.png",
           "group": "LUNAR_NEW_YEAR_2019",
+          "secondId": "brigitte-dragon-dance",
+          "secondUrl": "/heroes/brigitte/sprays/brigitte-dragon-dance.png"
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Opera Warrior",
+          "id": "brigitte-opera-warrior",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-opera-warrior.png",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true,
           "secondId": "brigitte-dragon-dance",
           "secondUrl": "/heroes/brigitte/sprays/brigitte-dragon-dance.png"
@@ -6988,6 +8058,20 @@
           "secondUrl": "/heroes/doomfist/sprays/doomfist-dragon-dance.png"
         },
         {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Focus",
+          "id": "doomfist-focus",
+          "quality": "common",
+          "url": "/heroes/doomfist/sprays/doomfist-focus.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 1 challenge",
+          "achievement": true,
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true,
+          "secondId": "doomfist-dragon-dance",
+          "secondUrl": "/heroes/doomfist/sprays/doomfist-dragon-dance.png"
+        },
+        {
           "heroName": "Genji",
           "hero": "genji",
           "name": "Green Dragon",
@@ -7006,6 +8090,19 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-snacks.png",
           "group": "LUNAR_NEW_YEAR_2019",
+          "secondId": "wrecking-ball-dragon-dance",
+          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Spring",
+          "id": "wrecking-ball-spring",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-spring.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
+          "achievement": true,
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true,
           "secondId": "wrecking-ball-dragon-dance",
           "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png"
@@ -7040,6 +8137,18 @@
           "quality": "common",
           "url": "/heroes/lucio/sprays/lucio-keep-ups.png",
           "group": "LUNAR_NEW_YEAR_2017",
+          "secondId": "lucio-dragon-dance",
+          "secondUrl": "/heroes/lucio/sprays/lucio-dragon-dance.png"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Samul Nori",
+          "id": "lucio-samul-nori",
+          "quality": "common",
+          "url": "/heroes/lucio/sprays/lucio-samul-nori.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true,
           "secondId": "lucio-dragon-dance",
           "secondUrl": "/heroes/lucio/sprays/lucio-dragon-dance.png"
         },
@@ -7084,6 +8193,18 @@
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-dog-person.png",
           "group": "LUNAR_NEW_YEAR_2018",
+          "secondId": "moira-dragon-dance",
+          "secondUrl": "/heroes/moira/sprays/moira-dragon-dance.png"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Talchum",
+          "id": "moira-talchum",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-talchum.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true,
           "secondId": "moira-dragon-dance",
           "secondUrl": "/heroes/moira/sprays/moira-dragon-dance.png"
         },
@@ -7143,6 +8264,18 @@
           "secondUrl": "/heroes/roadhog/sprays/roadhog-dragon-dance.png"
         },
         {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Dumpling Grasp",
+          "id": "sigma-dumpling-grasp",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-dumpling-grasp.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true,
+          "secondId": "sigma-dragon-dance",
+          "secondUrl": "/heroes/sigma/sprays/sigma-dragon-dance.png"
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Folded Hands",
@@ -7152,6 +8285,18 @@
           "group": "LUNAR_NEW_YEAR_2017",
           "secondId": "soldier-76-dragon-dance",
           "secondUrl": "/heroes/soldier-76/sprays/soldier-76-dragon-dance.png"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Face Changer",
+          "id": "sombra-face-changer",
+          "quality": "common",
+          "url": "/heroes/sombra/sprays/sombra-face-changer.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true,
+          "secondId": "sombra-dragon-dance",
+          "secondUrl": "/heroes/sombra/sprays/sombra-dragon-dance.png"
         },
         {
           "heroName": "Sombra",
@@ -7220,6 +8365,20 @@
           "secondUrl": "/heroes/winston/sprays/winston-dragon-dance.png"
         },
         {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Ancient Bronze",
+          "id": "winston-ancient-bronze",
+          "quality": "common",
+          "url": "/heroes/winston/sprays/winston-ancient-bronze.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
+          "achievement": true,
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true,
+          "secondId": "winston-dragon-dance",
+          "secondUrl": "/heroes/winston/sprays/winston-dragon-dance.png"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Calories",
@@ -7282,6 +8441,14 @@
         },
         {
           "hero": "all",
+          "name": "Year of the Rat",
+          "id": "year-of-the-rat-2020",
+          "url": "/heroes/all/sprays/year-of-the-rat-2020.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "hero": "all",
           "name": "Year of the Rooster",
           "id": "year-of-the-rooster-2017",
           "url": "/heroes/all/sprays/year-of-the-rooster-2017.png",
@@ -7299,6 +8466,13 @@
           "hero": "ashe",
           "id": "ashe-dragon-dance",
           "group": "LUNAR_NEW_YEAR_2019",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "baptiste",
+          "id": "baptiste-dragon-dance",
+          "group": "LUNAR_NEW_YEAR_2020",
           "quality": "common"
         },
         {
@@ -7422,6 +8596,13 @@
         },
         {
           "hidden": true,
+          "hero": "sigma",
+          "id": "sigma-dragon-dance",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
           "hero": "soldier-76",
           "id": "soldier-76-dragon-dance",
           "group": "LUNAR_NEW_YEAR_2017",
@@ -7514,7 +8695,6 @@
           "id": "captured-flag",
           "url": "/heroes/all/sprays/captured-flag.png",
           "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true,
           "achievement": true,
           "description": "Capture a flag in a game of Capture the Flag."
         },
@@ -7524,7 +8704,6 @@
           "id": "interrupted-delivery",
           "url": "/heroes/all/sprays/interrupted-delivery.png",
           "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true,
           "achievement": true,
           "description": "Kill an enemy as they carry the flag in a game of Capture the Flag."
         }
@@ -7555,8 +8734,7 @@
           "id": "ashe-no-one-likes-a-squealer",
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-no-one-likes-a-squealer.ogg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Ashe",
@@ -7565,7 +8743,26 @@
           "id": "ashe-ready-for-the-fireworks",
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-ready-for-the-fireworks.ogg",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Don't you worry",
+          "id": "baptiste-dont-you-worry",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-dont-you-worry.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Need something?",
+          "id": "baptiste-need-something",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-need-something.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -7593,7 +8790,16 @@
           "id": "brigitte-all-that-glitters",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-all-that-glitters.ogg",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Cheers!",
+          "id": "brigitte-cheers",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-cheers.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -7603,8 +8809,7 @@
           "id": "brigitte-whos-ready-to-party",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-whos-ready-to-party.ogg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "D.Va",
@@ -7667,8 +8872,7 @@
           "id": "wrecking-ball-assessing-luck",
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-assessing-luck.ogg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Hammond",
@@ -7677,7 +8881,16 @@
           "id": "wrecking-ball-engaging-festive-mode",
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-engaging-festive-mode.ogg",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Too early for flapjacks?",
+          "id": "wrecking-ball-too-early-for-flapjacks",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-too-early-for-flapjacks.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -7696,8 +8909,7 @@
           "id": "hanzo-pointless-frivolity",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-pointless-frivolity.ogg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Hanzo",
@@ -7724,8 +8936,7 @@
           "id": "junkrat-happy-new-year",
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-happy-new-year.ogg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Junkrat",
@@ -7779,7 +8990,16 @@
           "id": "mccree-hows-that-for-fireworks",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-hows-that-for-fireworks.ogg",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "I'll have another",
+          "id": "mccree-ill-have-another",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-ill-have-another.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -7790,6 +9010,16 @@
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-give-me-a-red-envelope.ogg",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "I feel like dancing!",
+          "id": "mei-i-feel-like-dancing",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-i-feel-like-dancing.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "heroName": "Mei",
@@ -7812,6 +9042,16 @@
         {
           "heroName": "Mercy",
           "hero": "mercy",
+          "name": "How are you feeling",
+          "id": "mercy-how-are-you-feeling",
+          "quality": "common",
+          "url": "/heroes/mercy/voicelines/mercy-how-are-you-feeling.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
           "name": "How lucky for you",
           "id": "mercy-how-lucky-for-you",
           "quality": "common",
@@ -7830,11 +9070,31 @@
         {
           "heroName": "Moira",
           "hero": "moira",
+          "name": "Superb",
+          "id": "moira-superb",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-superb.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
           "name": "You've made a dogs breakfast",
           "id": "moira-youve-made-a-dogs-breakfast",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-youve-made-a-dogs-breakfast.ogg",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Stack Overflow",
+          "id": "orisa-stack-overflow",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-stack-overflow.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "heroName": "Orisa",
@@ -7853,6 +9113,16 @@
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-who-is-ready-to-party.ogg",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "I don't think so",
+          "id": "pharah-i-dont-think-so",
+          "quality": "common",
+          "url": "/heroes/pharah/voicelines/pharah-i-dont-think-so.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "heroName": "Pharah",
@@ -7927,6 +9197,26 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "An anomaly!",
+          "id": "sigma-an-anomaly",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-an-anomaly.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Happy New Year!",
+          "id": "sigma-happy-new-year",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-happy-new-year.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Respect your elders",
@@ -7979,6 +9269,16 @@
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-good-fortune.ogg",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "If I can think it, I can create it",
+          "id": "symmetra-if-i-can-think-it-i-can-create-it",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-if-i-can-think-it-i-can-create-it.ogg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "heroName": "Torbjörn",
@@ -8059,8 +9359,7 @@
           "id": "winston-to-the-moon-and-back",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-to-the-moon-and-back.ogg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Zarya",
@@ -8116,7 +9415,16 @@
           "id": "ashe-lighting-the-fuse",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/ashe-lighting-the-fuse.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Hot Soup",
+          "id": "baptiste-hot-soup",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/baptiste-hot-soup.jpg",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -8144,8 +9452,7 @@
           "id": "doomfist-fireworks",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/doomfist-fireworks.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Hammond",
@@ -8154,8 +9461,7 @@
           "id": "wrecking-ball-armament",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/wrecking-ball-armament.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Hanzo",
@@ -8164,8 +9470,7 @@
           "id": "hanzo-firework",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/hanzo-firework.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Junkrat",
@@ -8183,8 +9488,7 @@
           "id": "lucio-drumming",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/lucio-drumming.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "McCree",
@@ -8205,14 +9509,23 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Lion Mask",
+          "id": "pharah-lion-mask",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/pharah-lion-mask.jpg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Reaper",
           "hero": "reaper",
           "name": "Stockpile",
           "id": "reaper-stockpile",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/reaper-stockpile.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Roadhog",
@@ -8240,6 +9553,16 @@
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/symmetra-fan.jpg",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Firework",
+          "id": "torbjorn-firework",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/torbjorn-firework.jpg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "heroName": "Tracer",
@@ -8278,7 +9601,58 @@
           "group": "LUNAR_NEW_YEAR_2018"
         }
       ],
+      "skinsLegendary": [
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Opera",
+          "id": "brigitte-opera",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/brigitte-opera.jpg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Samul Nori",
+          "id": "lucio-samul-nori",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/lucio-samul-nori.jpg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Mask Dancer",
+          "id": "moira-mask-dancer",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/moira-mask-dancer.jpg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Face Changer",
+          "id": "sombra-face-changer",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/sombra-face-changer.jpg",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        }
+      ],
       "icons": [
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Opera Warrior",
+          "id": "brigitte-opera-warrior",
+          "url": "/heroes/brigitte/icons/brigitte-opera-warrior.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
         {
           "heroName": "D.Va",
           "hero": "dva",
@@ -8288,12 +9662,42 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Jingang",
+          "id": "doomfist-jingang",
+          "url": "/heroes/doomfist/icons/doomfist-jingang.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 1 challenge",
+          "achievement": true,
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Rat",
+          "id": "wrecking-ball-rat",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-rat.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
+          "achievement": true,
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Hanzhong",
           "id": "hanzo-hanzhong",
           "url": "/heroes/hanzo/icons/hanzo-hanzhong.png",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Samul Nori",
+          "id": "lucio-samul-nori",
+          "url": "/heroes/lucio/icons/lucio-samul-nori.png",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -8313,13 +9717,21 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Mask Dancer",
+          "id": "moira-mask-dancer",
+          "url": "/heroes/moira/icons/moira-mask-dancer.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Orisa",
           "hero": "orisa",
           "name": "Sanye",
           "id": "orisa-sanye",
           "url": "/heroes/orisa/icons/orisa-sanye.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Reaper",
@@ -8327,8 +9739,7 @@
           "name": "Reaping General",
           "id": "reaper-reaping-general",
           "url": "/heroes/reaper/icons/reaper-reaping-general.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Reinhardt",
@@ -8336,8 +9747,7 @@
           "name": "Beautiful Beard",
           "id": "reinhardt-beautiful-beard",
           "url": "/heroes/reinhardt/icons/reinhardt-beautiful-beard.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Reinhardt",
@@ -8356,13 +9766,66 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Blue Mask",
+          "id": "sombra-blue-mask",
+          "url": "/heroes/sombra/icons/sombra-blue-mask.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Face Changer",
+          "id": "sombra-face-changer",
+          "url": "/heroes/sombra/icons/sombra-face-changer.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Omnic Mask",
+          "id": "sombra-omnic-mask",
+          "url": "/heroes/sombra/icons/sombra-omnic-mask.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Orange Mask",
+          "id": "sombra-orange-mask",
+          "url": "/heroes/sombra/icons/sombra-orange-mask.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Sombra Mask",
+          "id": "sombra-sombra-mask",
+          "url": "/heroes/sombra/icons/sombra-sombra-mask.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Wukong Mask",
+          "id": "sombra-wukong-mask",
+          "url": "/heroes/sombra/icons/sombra-wukong-mask.png",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Torbjörn",
           "hero": "torbjorn",
           "name": "Serpent Spear",
           "id": "torbjorn-serpent-spear",
           "url": "/heroes/torbjorn/icons/torbjorn-serpent-spear.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Tracer",
@@ -8370,8 +9833,7 @@
           "name": "Noble Thief",
           "id": "tracer-noble-thief",
           "url": "/heroes/tracer/icons/tracer-noble-thief.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Widowmaker",
@@ -8380,6 +9842,17 @@
           "id": "widowmaker-black-lily",
           "url": "/heroes/widowmaker/icons/widowmaker-black-lily.png",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Ancient Bronze",
+          "id": "winston-ancient-bronze",
+          "url": "/heroes/winston/icons/winston-ancient-bronze.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
+          "achievement": true,
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "heroName": "Winston",
@@ -8395,8 +9868,7 @@
           "name": "Crouching Dragon",
           "id": "zenyatta-crouching-dragon",
           "url": "/heroes/zenyatta/icons/zenyatta-crouching-dragon.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Zenyatta",
@@ -8467,8 +9939,7 @@
           "name": "Guan Yu",
           "id": "guan-yu",
           "url": "/heroes/all/icons/guan-yu.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "hero": "all",
@@ -8482,16 +9953,14 @@
           "name": "Hong Gildong",
           "id": "hong-gildong",
           "url": "/heroes/all/icons/hong-gildong.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "hero": "all",
           "name": "Huang Zhong",
           "id": "huang-zhong",
           "url": "/heroes/all/icons/huang-zhong.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "hero": "all",
@@ -8526,8 +9995,7 @@
           "name": "Lü Bu",
           "id": "l-bu",
           "url": "/heroes/all/icons/l-bu.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "hero": "all",
@@ -8569,8 +10037,7 @@
           "name": "Piggimari",
           "id": "piggimari",
           "url": "/heroes/all/icons/piggimari.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "hero": "all",
@@ -8626,7 +10093,14 @@
           "name": "Year of the Pig 2019",
           "id": "year-of-the-pig-2019",
           "url": "/heroes/all/icons/year-of-the-pig-2019.png",
-          "group": "LUNAR_NEW_YEAR_2019",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "hero": "all",
+          "name": "Year of the Rat 2020",
+          "id": "year-of-the-rat-2020",
+          "url": "/heroes/all/icons/year-of-the-rat-2020.png",
+          "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
         },
         {
@@ -8641,16 +10115,14 @@
           "name": "Zhang Fei",
           "id": "zhang-fei",
           "url": "/heroes/all/icons/zhang-fei.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "hero": "all",
           "name": "Zhuge Liang",
           "id": "zhuge-liang",
           "url": "/heroes/all/icons/zhuge-liang.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "hero": "all",
@@ -8660,69 +10132,17 @@
           "group": "LUNAR_NEW_YEAR_2018"
         }
       ],
-      "skinsLegendary": [
-        {
-          "heroName": "Hanzo",
-          "hero": "hanzo",
-          "name": "Huang Zhong",
-          "id": "hanzo-huang-zhong",
-          "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/hanzo-huang-zhong.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "Lü Bu",
-          "id": "reaper-l-bu",
-          "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/reaper-l-bu.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Guan Yu",
-          "id": "reinhardt-guan-yu",
-          "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/reinhardt-guan-yu.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Zhang Fei",
-          "id": "torbjorn-zhang-fei",
-          "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/torbjorn-zhang-fei.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Hong Gildong",
-          "id": "tracer-hong-gildong",
-          "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/tracer-hong-gildong.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Zhuge Liang",
-          "id": "zenyatta-zhuge-liang",
-          "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/zenyatta-zhuge-liang.jpg",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
-        }
-      ],
       "intros": [
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Feast",
+          "id": "junkrat-feast",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/intros/junkrat-feast.webm",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
+        },
         {
           "heroName": "Lúcio",
           "hero": "lucio",
@@ -8730,8 +10150,7 @@
           "id": "lucio-drumming",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/intros/lucio-drumming.webm",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "McCree",
