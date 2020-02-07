@@ -285,7 +285,8 @@ const data = {
         'genji-2018-pacific-allstars',
         'tracer-2018-atlantic-allstars',
         'lucio-2019-pacific-allstars',
-        'mercy-2019-atlantic-allstars'
+        'mercy-2019-atlantic-allstars',
+        'brigitte-goat'
       ]
     }
   },
