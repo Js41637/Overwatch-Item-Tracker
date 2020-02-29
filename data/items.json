@@ -2418,6 +2418,22 @@
           "url": "/heroes/all/icons/mama-pigs.png"
         },
         {
+          "name": "Mardi B.O.B.",
+          "id": "ashe-mardi-bob",
+          "url": "/heroes/ashe/icons/ashe-mardi-bob.png",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard",
+          "hero": "ashe"
+        },
+        {
+          "name": "Mardi Grashe",
+          "id": "ashe-mardi-grashe",
+          "url": "/heroes/ashe/icons/ashe-mardi-grashe.png",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard",
+          "hero": "ashe"
+        },
+        {
           "name": "Mariachi",
           "id": "mariachi",
           "url": "/heroes/all/icons/mariachi.png"
@@ -2813,9 +2829,14 @@
           "hero": "tracer"
         },
         {
-          "name": "Path to Pro",
+          "name": "Path to Pro 2019",
           "id": "path-to-pro",
           "url": "/heroes/all/icons/path-to-pro.png"
+        },
+        {
+          "name": "Path to Pro 2020",
+          "id": "path-to-pro-2020",
+          "url": "/heroes/all/icons/path-to-pro-2020.png"
         },
         {
           "name": "Peachimari",
@@ -3528,6 +3549,20 @@
           "name": "Season 20 Hero",
           "id": "season-20-hero",
           "url": "/heroes/all/icons/season-20-hero.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 21 Competitor",
+          "id": "season-21-competitor",
+          "url": "/heroes/all/icons/season-21-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 21 Hero",
+          "id": "season-21-hero",
+          "url": "/heroes/all/icons/season-21-hero.png",
           "achievement": true,
           "group": "competitive"
         },
@@ -5145,6 +5180,12 @@
           "achievement": true
         },
         {
+          "name": "Path to Pro 2020",
+          "id": "path-to-pro-2020",
+          "url": "/heroes/all/sprays/path-to-pro-2020.png",
+          "quality": "common"
+        },
+        {
           "name": "Philadelphia Fusion Logo",
           "id": "philadelphia-fusion-logo",
           "url": "/heroes/all/sprays/philadelphia-fusion-logo.png",
@@ -5555,6 +5596,20 @@
           "name": "Season 20 Hero",
           "id": "season-20-hero",
           "url": "/heroes/all/sprays/season-20-hero.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 21 Competitor",
+          "id": "season-21-competitor",
+          "url": "/heroes/all/sprays/season-21-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 21 Hero",
+          "id": "season-21-hero",
+          "url": "/heroes/all/sprays/season-21-hero.png",
           "achievement": true,
           "group": "competitive"
         },
@@ -7343,6 +7398,14 @@
           "group": "WINTER_WONDERLAND_2018"
         },
         {
+          "name": "Mardi Gras",
+          "id": "ashe-mardi-gras",
+          "quality": "epic",
+          "url": "/heroes/ashe/skins/ashe-mardi-gras.jpg",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Gangster",
           "id": "ashe-gangster",
           "quality": "legendary",
@@ -7533,6 +7596,22 @@
           "hero": "ashe",
           "group": "ANNIVERSARY_2019",
           "isNew": true
+        },
+        {
+          "name": "Mardi B.O.B.",
+          "id": "ashe-mardi-bob",
+          "url": "/heroes/ashe/icons/ashe-mardi-bob.png",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard",
+          "hero": "ashe"
+        },
+        {
+          "name": "Mardi Grashe",
+          "id": "ashe-mardi-grashe",
+          "url": "/heroes/ashe/icons/ashe-mardi-grashe.png",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard",
+          "hero": "ashe"
         }
       ],
       "sprays": [
@@ -7775,6 +7854,14 @@
           "url": "/heroes/ashe/sprays/ashe-pixel.png",
           "achievement": true,
           "description": "Kill an enemy by shooting Ashe’s Dynamite from at least 30 meters away in Quick or Competitive Play."
+        },
+        {
+          "name": "Gold Mask",
+          "id": "ashe-gold-mask",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-gold-mask.png",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         },
         {
           "name": "Loot",
@@ -10193,6 +10280,14 @@
           "url": "/heroes/brigitte/sprays/brigitte-pixel.png",
           "achievement": true,
           "description": "Interrupt an enemy ultimate ability with Brigitte's Shield Bash in Quick or Competitive Play."
+        },
+        {
+          "name": "Semlor",
+          "id": "brigitte-semlor",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-semlor.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -15409,6 +15504,14 @@
           "url": "/heroes/lucio/sprays/lucio-pixel.png",
           "achievement": true,
           "description": "Get 3 killing blows while wall riding as Lúcio without dying in Quick or Competitive Play."
+        },
+        {
+          "name": "Carnival",
+          "id": "lucio-carnival",
+          "quality": "common",
+          "url": "/heroes/lucio/sprays/lucio-carnival.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -16285,6 +16388,14 @@
           "url": "/heroes/mccree/sprays/mccree-pixel.png",
           "achievement": true,
           "description": "Interrupt an enemy ultimate ability with McCree's Flashbang in Quick or Competitive Play."
+        },
+        {
+          "name": "Rex",
+          "id": "mccree-rex",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-rex.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -21597,6 +21708,14 @@
           "url": "/heroes/reaper/sprays/reaper-pixel.png",
           "achievement": true,
           "description": "Get 3 solo kills with a single clip of Reaper's shotguns in Quick or Competitive Play."
+        },
+        {
+          "name": "Red Death",
+          "id": "reaper-red-death",
+          "quality": "common",
+          "url": "/heroes/reaper/sprays/reaper-red-death.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -23604,8 +23723,7 @@
           "name": "Subject Sigma",
           "id": "sigma-subject-sigma",
           "quality": "legendary",
-          "url": "/heroes/sigma/skins/sigma-subject-sigma.jpg",
-          "description": "Brilliant astrophysicist Siebren de Kuiper gained the ability to control gravity when an experiment went terribly wrong. Now, Talon manipulates him to their own ends."
+          "url": "/heroes/sigma/skins/sigma-subject-sigma.jpg"
         },
         {
           "name": "Rime",
@@ -30747,6 +30865,14 @@
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
+        },
+        {
+          "name": "King Cake Ball",
+          "id": "wrecking-ball-king-cake-ball",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-king-cake-ball.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -32445,6 +32571,14 @@
           "url": "/heroes/zenyatta/sprays/zenyatta-pixel.png",
           "achievement": true,
           "description": "Get 4 kills or assists with Zenyatta's Orb of Discord within 6 seconds in Quick or Competitive Play."
+        },
+        {
+          "name": "Beads",
+          "id": "zenyatta-beads",
+          "quality": "common",
+          "url": "/heroes/zenyatta/sprays/zenyatta-beads.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [

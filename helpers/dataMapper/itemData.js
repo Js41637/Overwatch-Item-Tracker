@@ -22,6 +22,7 @@ const data = {
     "sprays/watchparty-gibraltar": "watchpoint-gibraltar",
     "icons/2018-pacific-allstars": "pacific-allstars-2018",
     "icons/2018-atlantic-allstars": "atlantic-allstars-2018",
+    "icons/path-to-pro-2019": "path-to-pro",
 
     "voicelines/roadhog-im-beached-as-bro": "roadhog-youre-a-talker",
     "voicelines/brigitte-get-out-of-here": "brigitte-take-a-hike",
@@ -124,6 +125,7 @@ const data = {
   },
   achievementSprays: [
     'path-to-pro-2019',
+    'path-to-pro-2020',
     'copa-lucioball-competitor',
     'copa-lucioball-hero',
     'competitive-ctf-competitor',
