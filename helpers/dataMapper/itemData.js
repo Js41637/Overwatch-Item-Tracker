@@ -220,7 +220,14 @@ const data = {
     // CHRISTMAS19
     'ice-spheres',
     'mountain-man',
-    'jotunn'
+    'jotunn',
+    // ARCHIVES20
+    'aggressive',
+    'blood-moon-rising',
+    'carry',
+    'deadeye-strike',
+    'detonated',
+    'feeling-invincible'
   ],
   allClassEventItems: {
     sprays: {
@@ -228,7 +235,7 @@ const data = {
       [EVENTS.HALLOWEEN]: ['never-die', 'bats', 'boo', 'boop', 'candyball', 'fangs', 'gummy-hog', 'halloween-terror', 'pumpkins', 'witchs-brew', 'halloween-special', 'junkensteins-revenge', 'rise-of-the-zomnics', 'the-reapening', 'my-creations', 'the-monster', 'the-reaper', 'the-witch', 'zomnic', 'zombardier', 'flaming-pumpkin'],
       [EVENTS.WINTER]: ['snowcree', 'snowhog', 'snowmei', 'snowreaper', 'winter-wonderland', 'yeti', 'yeti-hunter', 'frozen-throne', 'yeti-rage', 'bonk', 'holiday-surprise', 'ice-spheres', 'jotunn', 'mountain-man', 'polar-bear', 'snow-snow-snow'],
       [EVENTS.LUNAR]: ['auspicious-lion', 'awakened-lion', 'dragons-head', 'lucky-pouch', 'red-envelope', 'year-of-the-rooster-2017', 'year-of-the-dog-2018', 'good-fortune', 'captured-flag', 'interrupted-delivery', 'year-of-the-rat-2020'],
-      [EVENTS.UPRISING]: ['b73ns', 'eradicator', 'null-sector', 'nullmari', 'nulltrooper', 'or14ns', 'slicer', 'archives', 'talon-assassin', 'droppachi', 'talon-enforcer', 'talon-heavy-assault', 'talon-sniper', 'talon-trooper', 'almendron', 'ambush', 'big-plans', 'cut-the-brakes', 'hot-pursuit', 'light-the-way', 'new-strike-team', 'the-broker'],
+      [EVENTS.UPRISING]: ['b73ns', 'eradicator', 'null-sector', 'nullmari', 'nulltrooper', 'or14ns', 'slicer', 'archives', 'talon-assassin', 'droppachi', 'talon-enforcer', 'talon-heavy-assault', 'talon-sniper', 'talon-trooper', 'almendron', 'ambush', 'big-plans', 'cut-the-brakes', 'hot-pursuit', 'light-the-way', 'new-strike-team', 'the-broker', 'aggressive', 'blood-moon-rising', 'carry', 'deadeye-strike', 'detonated', 'feeling-invincible', 'strike'],
       [EVENTS.ANNIVERSARY]: ['anniversary-2017']
     },
     icons: {
@@ -236,7 +243,7 @@ const data = {
       [EVENTS.HALLOWEEN]: ["calavera", "vampachimari", "eyeball", "superstition", "witchs-hat", "ghostymari", "tombstone", "bewitching", "candle", "never-die", "wolf", "witchs-brew", "spider", "junkensteins-pachimonster", "pachimummy", "pumpkimari", "skelemari", "witchymari", "kittymari", "halloween-terror-2016", "halloween-terror-2017", "halloween-terror-2018", "halloween-terror-2019"],
       [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "winter-wonderland-2018", "winter-wonderland-2019", "snowman", "present", "pachimerry", "gingermari", "pachicracker", "snowimari", "2017", "2018", "2019", "2020", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
       [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu", 'guan-yu', 'hong-gildong', 'huang-zhong', 'l-bu', 'piggimari', 'year-of-the-pig-2019', 'zhang-fei', 'zhuge-liang', 'year-of-the-rat-2020'],
-      [EVENTS.UPRISING]: ['archives-2019', 'archives-2018', 'uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'assassin', 'enforcer', 'heavy-assault', 'maximilien', 'sniper', 'trooper'],
+      [EVENTS.UPRISING]: ['archives-2020', 'archives-2019', 'archives-2018', 'uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'assassin', 'enforcer', 'heavy-assault', 'maximilien', 'sniper', 'trooper'],
       [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'anniversary-2018', 'anniversary-2019', 'cupachicake', 'pachiversary'],
     }
   },
