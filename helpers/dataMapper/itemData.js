@@ -273,7 +273,15 @@ const data = {
     'sprays/wrecking-ball-spring': EVENTS.LUNAR,
     'icons/wrecking-ball-rat': EVENTS.LUNAR,
 
-
+    'skins/symmetra-holi': EVENTS.UPRISING,
+    'sprays/symmetra-holi': EVENTS.UPRISING,
+    'icons/symmetra-holi': EVENTS.UPRISING,
+    'icons/torbjorn-rustclad': EVENTS.UPRISING,
+    'sprays/torbjorn-indigestion': EVENTS.UPRISING,
+    'skins/torbjorn-rustclad': EVENTS.UPRISING,
+    'icons/mei-snowbear': EVENTS.UPRISING,
+    'sprays/mei-bear-hug': EVENTS.UPRISING,
+    'skins/mei-bear': EVENTS.UPRISING
   },
   specialAchievementItems: {
     bcrf: {
