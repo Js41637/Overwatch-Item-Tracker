@@ -128,6 +128,10 @@ const EVENTTIMES = {
     start: '1539104400000',
     end: '1541062800000'
   },
+  [EVENTS.UPRISING19]: {
+    start: '1555437600000',
+    end: '1557230400000'
+  },
   [EVENTS.HALLOWEEN]: {
     start: '1571158800000',
     end: '1572951600000'
@@ -141,8 +145,8 @@ const EVENTTIMES = {
     end: '1580900400000'
   },
   [EVENTS.UPRISING]: {
-    start: '1555437600000',
-    end: '1557230400000'
+    start: '1584036000000',
+    end: '1585908000000'
   },
   [EVENTS.ANNIVERSARY]: {
     start: '1558461600000',
