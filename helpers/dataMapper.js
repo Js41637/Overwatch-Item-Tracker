@@ -178,9 +178,16 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
           : undefined;
 
     var group = undefined;
+
     const owlTeamName = item.id.replace(/(-\d{4}-logo|-logo|-\d{4})$/, '')
     if (owlTeams.includes(owlTeamName)) {
       isStandard = { standardItem: true }
+      group = { group: 'overwatch league' }
+    }
+
+    const owlTeamName2 = item.id.replace(/(-homestand-\d{4})$/, '')
+    if (owlTeams.includes(owlTeamName2)) {
+      isAchievement = { achievement: 'owl' }
       group = { group: 'overwatch league' }
     }
 

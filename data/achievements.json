@@ -1646,9 +1646,6 @@
     "summer-games-2019-1": {
       "description": "Unlocked by participating in the Summer Games 2019 week 1 challenge"
     },
-    "summer-games-2019-1": {
-      "description": "Unlocked by participating in the Summer Games 2019 week 1 challenge"
-    },
     "summer-games-2019-2": {
       "description": "Unlocked by participating in the Summer Games 2019 week 2 challenge"
     },
@@ -1669,6 +1666,24 @@
     },
     "breached": {
       "description": "Kill an enemy after destroying part of their Ice Wall in Snowball Deathmatch."
+    },
+    "molten-cores": {
+      "description": "Complete the Molten Cores Archives challenge mission."
+    },
+    "glass-cannon": {
+      "description": "Complete the Glass Cannon Archives challenge mission."
+    },
+    "surgical-strike": {
+      "description": "Complete the Surgical Strike Archives challenge mission."
+    },
+    "close-quarters": {
+      "description": "Complete the Close Quarters Archives challenge mission."
+    },
+    "blood-moon-rising": {
+      "description": "Complete the Blood Moon Rising Archives challenge mission."
+    },
+    "storm-raging": {
+      "description": "Complete the Storm Raging Archives challenge mission."
     }
   },
   "mappings": {
@@ -1903,6 +1918,12 @@
     "grand-finals-2019": "owl-2019",
     "jotunn": "breached",
     "mountain-man": "threepeat",
-    "ice-spheres": "caught-you"
+    "ice-spheres": "caught-you",
+    "aggressive": "glass-cannon",
+    "blood-moon-rising": "blood-moon-rising",
+    "carry": "storm-raging",
+    "deadeye-strike": "surgical-strike",
+    "detonated": "molten-cores",
+    "feeling-invincible": "close-quarters"
   }
 }

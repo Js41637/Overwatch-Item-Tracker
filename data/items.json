@@ -200,6 +200,12 @@
           "url": "/heroes/all/icons/archives-2019.png"
         },
         {
+          "name": "Archives 2020",
+          "id": "archives-2020",
+          "event": "UPRISING",
+          "url": "/heroes/all/icons/archives-2020.png"
+        },
+        {
           "name": "Argentina",
           "id": "argentina",
           "event": "SUMMER_GAMES",
@@ -267,6 +273,15 @@
           "event": "WINTER_WONDERLAND",
           "hero": "bastion",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Aviator",
+          "id": "pharah-aviator",
+          "url": "/heroes/pharah/icons/pharah-aviator.png",
+          "event": "UPRISING",
+          "hero": "pharah",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "B73-NS",
@@ -537,8 +552,7 @@
           "url": "/heroes/ashe/icons/ashe-butler.png",
           "event": "UPRISING",
           "hero": "ashe",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Cabana",
@@ -655,8 +669,7 @@
           "url": "/heroes/moira/icons/moira-coinn.png",
           "event": "UPRISING",
           "hero": "moira",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Coinín Nollag",
@@ -747,6 +760,13 @@
           "description": "Unlocked by completing Competitive 6v6 Elimination 2019 placement matches"
         },
         {
+          "name": "Competitive 6v6 Elimination Competitor 2020",
+          "id": "competitive-6v6-elimination-competitor-2020",
+          "url": "/heroes/all/icons/competitive-6v6-elimination-competitor-2020.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Competitive 6v6 Elimination Hero 2018",
           "id": "competitive-6v6-elimination-hero",
           "url": "/heroes/all/icons/competitive-6v6-elimination-hero.png",
@@ -761,6 +781,13 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive 6v6 Elimination 2019"
+        },
+        {
+          "name": "Competitive 6v6 Elimination Hero 2020",
+          "id": "competitive-6v6-elimination-hero-2020",
+          "url": "/heroes/all/icons/competitive-6v6-elimination-hero-2020.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Competitive CTF Competitor 2018",
@@ -1205,8 +1232,7 @@
           "url": "/heroes/mccree/icons/mccree-deadlock-mccree.png",
           "event": "UPRISING",
           "hero": "mccree",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Deadlock Rebels",
@@ -1475,8 +1501,7 @@
           "url": "/heroes/soldier-76/icons/soldier-76-formal-76.png",
           "event": "UPRISING",
           "hero": "soldier-76",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "For the Alliance",
@@ -1763,8 +1788,7 @@
           "url": "/heroes/bastion/icons/bastion-gwishin.png",
           "event": "UPRISING",
           "hero": "bastion",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Gymnastics",
@@ -1929,6 +1953,17 @@
           "event": "SUMMER_GAMES",
           "hero": "sombra",
           "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "name": "Holi",
+          "id": "symmetra-holi",
+          "url": "/heroes/symmetra/icons/symmetra-holi.png",
+          "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "hero": "symmetra",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Holly",
@@ -2183,6 +2218,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "name": "King Jamison",
+          "id": "junkrat-king-jamison",
+          "url": "/heroes/junkrat/icons/junkrat-king-jamison.png",
+          "event": "UPRISING",
+          "hero": "junkrat",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
           "name": "Kittymari",
           "id": "kittymari",
           "event": "HALLOWEEN",
@@ -2277,8 +2321,7 @@
           "url": "/heroes/baptiste/icons/baptiste-lieutenant-augustin.png",
           "event": "UPRISING",
           "hero": "baptiste",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Lion Dance",
@@ -2418,6 +2461,22 @@
           "url": "/heroes/all/icons/mama-pigs.png"
         },
         {
+          "name": "Mardi B.O.B.",
+          "id": "ashe-mardi-bob",
+          "url": "/heroes/ashe/icons/ashe-mardi-bob.png",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard",
+          "hero": "ashe"
+        },
+        {
+          "name": "Mardi Grashe",
+          "id": "ashe-mardi-grashe",
+          "url": "/heroes/ashe/icons/ashe-mardi-grashe.png",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard",
+          "hero": "ashe"
+        },
+        {
           "name": "Mariachi",
           "id": "mariachi",
           "url": "/heroes/all/icons/mariachi.png"
@@ -2485,6 +2544,15 @@
           "id": "mexico",
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/icons/mexico.png"
+        },
+        {
+          "name": "Militia",
+          "id": "roadhog-militia",
+          "url": "/heroes/roadhog/icons/roadhog-militia.png",
+          "event": "UPRISING",
+          "hero": "roadhog",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Mochi",
@@ -2813,9 +2881,14 @@
           "hero": "tracer"
         },
         {
-          "name": "Path to Pro",
+          "name": "Path to Pro 2019",
           "id": "path-to-pro",
           "url": "/heroes/all/icons/path-to-pro.png"
+        },
+        {
+          "name": "Path to Pro 2020",
+          "id": "path-to-pro-2020",
+          "url": "/heroes/all/icons/path-to-pro-2020.png"
         },
         {
           "name": "Peachimari",
@@ -3116,6 +3189,17 @@
           "id": "russia",
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/icons/russia.png"
+        },
+        {
+          "name": "Rustclad",
+          "id": "torbjorn-rustclad",
+          "url": "/heroes/torbjorn/icons/torbjorn-rustclad.png",
+          "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "hero": "torbjorn",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Sakura",
@@ -3532,6 +3616,20 @@
           "group": "competitive"
         },
         {
+          "name": "Season 21 Competitor",
+          "id": "season-21-competitor",
+          "url": "/heroes/all/icons/season-21-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 21 Hero",
+          "id": "season-21-hero",
+          "url": "/heroes/all/icons/season-21-hero.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Sentry",
           "id": "symmetra-sentry",
           "url": "/heroes/symmetra/icons/symmetra-sentry.png",
@@ -3650,6 +3748,15 @@
           "url": "/heroes/all/icons/sniper.png"
         },
         {
+          "name": "Sniper",
+          "id": "ana-sniper",
+          "url": "/heroes/ana/icons/ana-sniper.png",
+          "event": "UPRISING",
+          "hero": "ana",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
           "name": "Snorkelmari",
           "id": "snorkelmari",
           "event": "SUMMER_GAMES",
@@ -3672,6 +3779,17 @@
           "id": "mei-snowball",
           "url": "/heroes/mei/icons/mei-snowball.png",
           "hero": "mei"
+        },
+        {
+          "name": "Snowbear",
+          "id": "mei-snowbear",
+          "url": "/heroes/mei/icons/mei-snowbear.png",
+          "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "hero": "mei",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Snowboarder",
@@ -4354,6 +4472,15 @@
           "url": "/heroes/all/icons/wolf.png"
         },
         {
+          "name": "Workout",
+          "id": "zarya-workout",
+          "url": "/heroes/zarya/icons/zarya-workout.png",
+          "event": "UPRISING",
+          "hero": "zarya",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
           "name": "Wreath",
           "id": "wreath",
           "event": "WINTER_WONDERLAND",
@@ -4641,6 +4768,13 @@
           "description": "Unlocked by completing Competitive 6v6 Elimination 2019 placement matches"
         },
         {
+          "name": "Competitive 6v6 Elimination Competitor 2020",
+          "id": "competitive-6v6-elimination-competitor-2020",
+          "url": "/heroes/all/sprays/competitive-6v6-elimination-competitor-2020.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Competitive 6v6 Elimination Hero 2018",
           "id": "competitive-6v6-elimination-hero",
           "url": "/heroes/all/sprays/competitive-6v6-elimination-hero.png",
@@ -4655,6 +4789,13 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive 6v6 Elimination 2019"
+        },
+        {
+          "name": "Competitive 6v6 Elimination Hero 2020",
+          "id": "competitive-6v6-elimination-hero-2020",
+          "url": "/heroes/all/sprays/competitive-6v6-elimination-hero-2020.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Competitive CTF Competitor 2018",
@@ -4821,6 +4962,13 @@
           "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
+          "name": "Dallas Fuel Homestand 2020",
+          "id": "dallas-fuel-homestand-2020",
+          "url": "/heroes/all/sprays/dallas-fuel-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
+        },
+        {
           "name": "Dallas Fuel Logo",
           "id": "dallas-fuel-logo",
           "url": "/heroes/all/sprays/dallas-fuel-logo.png",
@@ -4872,6 +5020,13 @@
           "url": "/heroes/all/sprays/florida-mayhem-2018-logo.png",
           "achievement": "owl",
           "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Florida Mayhem Homestand 2020",
+          "id": "florida-mayhem-homestand-2020",
+          "url": "/heroes/all/sprays/florida-mayhem-homestand-2020.png",
+          "achievement": "owl",
           "group": "overwatch league"
         },
         {
@@ -4940,6 +5095,13 @@
           "description": "Unlocked with purchase of Warcraft III: Reforged Spoils of War Edition"
         },
         {
+          "name": "Guangzhou Charge Homestand 2020",
+          "id": "guangzhou-charge-homestand-2020",
+          "url": "/heroes/all/sprays/guangzhou-charge-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
+        },
+        {
           "name": "Guangzhou Charge Logo",
           "id": "guangzhou-charge-logo",
           "url": "/heroes/all/sprays/guangzhou-charge-logo.png",
@@ -4948,11 +5110,25 @@
           "group": "overwatch league"
         },
         {
+          "name": "Hangzhou Spark Homestand 2020",
+          "id": "hangzhou-spark-homestand-2020",
+          "url": "/heroes/all/sprays/hangzhou-spark-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
+        },
+        {
           "name": "Hangzhou Spark Logo",
           "id": "hangzhou-spark-logo",
           "url": "/heroes/all/sprays/hangzhou-spark-logo.png",
           "achievement": "owl",
           "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Houston Outlaws Homestand 2020",
+          "id": "houston-outlaws-homestand-2020",
+          "url": "/heroes/all/sprays/houston-outlaws-homestand-2020.png",
+          "achievement": "owl",
           "group": "overwatch league"
         },
         {
@@ -5070,6 +5246,13 @@
           "description": "Unlocked as part of the Diablo 20th Anniversary celebration"
         },
         {
+          "name": "New York Excelsior Homestand 2020",
+          "id": "new-york-excelsior-homestand-2020",
+          "url": "/heroes/all/sprays/new-york-excelsior-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
+        },
+        {
           "name": "New York Excelsior Logo",
           "id": "new-york-excelsior-logo",
           "url": "/heroes/all/sprays/new-york-excelsior-logo.png",
@@ -5143,6 +5326,19 @@
           "id": "path-to-pro-2019",
           "url": "/heroes/all/sprays/path-to-pro-2019.png",
           "achievement": true
+        },
+        {
+          "name": "Path to Pro 2020",
+          "id": "path-to-pro-2020",
+          "url": "/heroes/all/sprays/path-to-pro-2020.png",
+          "achievement": true
+        },
+        {
+          "name": "Philadelphia Fusion Homestand 2020",
+          "id": "philadelphia-fusion-homestand-2020",
+          "url": "/heroes/all/sprays/philadelphia-fusion-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
         },
         {
           "name": "Philadelphia Fusion Logo",
@@ -5559,11 +5755,39 @@
           "group": "competitive"
         },
         {
+          "name": "Season 21 Competitor",
+          "id": "season-21-competitor",
+          "url": "/heroes/all/sprays/season-21-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 21 Hero",
+          "id": "season-21-hero",
+          "url": "/heroes/all/sprays/season-21-hero.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Seoul Dynasty Homestand 2020",
+          "id": "seoul-dynasty-homestand-2020",
+          "url": "/heroes/all/sprays/seoul-dynasty-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
+        },
+        {
           "name": "Seoul Dynasty Logo",
           "id": "seoul-dynasty-logo",
           "url": "/heroes/all/sprays/seoul-dynasty-logo.png",
           "achievement": "owl",
           "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Shanghai Dragons Homestand 2020",
+          "id": "shanghai-dragons-homestand-2020",
+          "url": "/heroes/all/sprays/shanghai-dragons-homestand-2020.png",
+          "achievement": "owl",
           "group": "overwatch league"
         },
         {
@@ -5664,6 +5888,13 @@
           "id": "vivis-adventure",
           "url": "/heroes/all/sprays/vivis-adventure.png",
           "quality": "common"
+        },
+        {
+          "name": "Washington Justice Homestand 2020",
+          "id": "washington-justice-homestand-2020",
+          "url": "/heroes/all/sprays/washington-justice-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
         },
         {
           "name": "Washington Justice Logo",
@@ -6200,6 +6431,15 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "Aggressive",
+          "id": "aggressive",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/aggressive.png",
+          "achievement": true,
+          "group": "UPRISING_2020",
+          "description": "Complete the Glass Cannon Archives challenge mission."
+        },
+        {
           "name": "Almendrón",
           "id": "almendron",
           "event": "UPRISING",
@@ -6244,6 +6484,24 @@
           "description": "Complete Storm Rising (All Heroes) on Hard difficulty."
         },
         {
+          "name": "Blood Moon Rising",
+          "id": "blood-moon-rising",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/blood-moon-rising.png",
+          "achievement": true,
+          "group": "UPRISING_2020",
+          "description": "Complete the Blood Moon Rising Archives challenge mission."
+        },
+        {
+          "name": "Carry",
+          "id": "carry",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/carry.png",
+          "achievement": true,
+          "group": "UPRISING_2020",
+          "description": "Complete the Storm Raging Archives challenge mission."
+        },
+        {
           "name": "Cut the Brakes",
           "id": "cut-the-brakes",
           "event": "UPRISING",
@@ -6251,6 +6509,24 @@
           "achievement": true,
           "group": "UPRISING_2019",
           "description": "Complete Storm Rising (Story) on Legendary difficulty."
+        },
+        {
+          "name": "Deadeye Strike",
+          "id": "deadeye-strike",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/deadeye-strike.png",
+          "achievement": true,
+          "group": "UPRISING_2020",
+          "description": "Complete the Surgical Strike Archives challenge mission."
+        },
+        {
+          "name": "Detonated",
+          "id": "detonated",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/detonated.png",
+          "achievement": true,
+          "group": "UPRISING_2020",
+          "description": "Complete the Molten Cores Archives challenge mission."
         },
         {
           "name": "Droppachi",
@@ -6269,6 +6545,15 @@
           "achievement": true,
           "group": "UPRISING_2017",
           "description": "Complete Uprising on Hard difficulty."
+        },
+        {
+          "name": "Feeling Invincible",
+          "id": "feeling-invincible",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/feeling-invincible.png",
+          "achievement": true,
+          "group": "UPRISING_2020",
+          "description": "Complete the Close Quarters Archives challenge mission."
         },
         {
           "name": "Hot Pursuit",
@@ -6340,6 +6625,14 @@
           "achievement": true,
           "group": "UPRISING_2017",
           "description": "Deliver the payload with over 80% health in Uprising on Hard difficulty."
+        },
+        {
+          "name": "Strike",
+          "id": "strike",
+          "event": "UPRISING",
+          "url": "/heroes/all/sprays/strike.png",
+          "quality": "common",
+          "group": "UPRISING_2020"
         },
         {
           "name": "Talon Assassin",
@@ -6544,6 +6837,16 @@
           "url": "/heroes/ana/skins/ana-snow-owl.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Sniper",
+          "id": "ana-sniper",
+          "quality": "legendary",
+          "url": "/heroes/ana/skins/ana-sniper.jpg",
+          "description": "During the Omnic Crisis, the Egyptian military outfitted their elite snipers, including Ana Amari, with cybernetic ocular implants, greatly improving their efficiency in the defense of their country.",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "emotes": [
@@ -6715,6 +7018,15 @@
           "event": "WINTER_WONDERLAND",
           "hero": "ana",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Sniper",
+          "id": "ana-sniper",
+          "url": "/heroes/ana/icons/ana-sniper.png",
+          "event": "UPRISING",
+          "hero": "ana",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Anaversary",
@@ -6940,6 +7252,15 @@
           "url": "/heroes/ana/sprays/ana-dragon-dance.png",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Ghillie Suit",
+          "id": "ana-ghillie-suit",
+          "quality": "common",
+          "url": "/heroes/ana/sprays/ana-ghillie-suit.png",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Newborn",
@@ -7343,6 +7664,14 @@
           "group": "WINTER_WONDERLAND_2018"
         },
         {
+          "name": "Mardi Gras",
+          "id": "ashe-mardi-gras",
+          "quality": "epic",
+          "url": "/heroes/ashe/skins/ashe-mardi-gras.jpg",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Gangster",
           "id": "ashe-gangster",
           "quality": "legendary",
@@ -7382,8 +7711,7 @@
           "url": "/heroes/ashe/skins/ashe-socialite.jpg",
           "description": "As the daughter of socialites, Ashe feels just as comfortable at charity balls as she does on a motorcycle.",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         }
       ],
       "emotes": [
@@ -7522,8 +7850,7 @@
           "url": "/heroes/ashe/icons/ashe-butler.png",
           "event": "UPRISING",
           "hero": "ashe",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Rich Ashe",
@@ -7533,6 +7860,22 @@
           "hero": "ashe",
           "group": "ANNIVERSARY_2019",
           "isNew": true
+        },
+        {
+          "name": "Mardi B.O.B.",
+          "id": "ashe-mardi-bob",
+          "url": "/heroes/ashe/icons/ashe-mardi-bob.png",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard",
+          "hero": "ashe"
+        },
+        {
+          "name": "Mardi Grashe",
+          "id": "ashe-mardi-grashe",
+          "url": "/heroes/ashe/icons/ashe-mardi-grashe.png",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard",
+          "hero": "ashe"
         }
       ],
       "sprays": [
@@ -7739,8 +8082,7 @@
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-playground-victory.png",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Eight of Diamonds",
@@ -7775,6 +8117,14 @@
           "url": "/heroes/ashe/sprays/ashe-pixel.png",
           "achievement": true,
           "description": "Kill an enemy by shooting Ashe’s Dynamite from at least 30 meters away in Quick or Competitive Play."
+        },
+        {
+          "name": "Gold Mask",
+          "id": "ashe-gold-mask",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-gold-mask.png",
+          "description": "Unlocked by participating in Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         },
         {
           "name": "Loot",
@@ -7913,8 +8263,7 @@
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-do-you-trust-me.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Fetch my butler",
@@ -7922,7 +8271,15 @@
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-fetch-my-butler.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
+          "group": "UPRISING_2019"
+        },
+        {
+          "name": "It never gets fast enough for me",
+          "id": "ashe-it-never-gets-fast-enough-for-me",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-it-never-gets-fast-enough-for-me.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
           "isNew": true
         },
         {
@@ -7931,8 +8288,7 @@
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-mind-your-manners.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "I'm an easy rider",
@@ -8004,6 +8360,15 @@
           "url": "/heroes/ashe/poses/ashe-lighting-the-fuse.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "name": "The Spoils",
+          "id": "ashe-the-spoils",
+          "quality": "rare",
+          "url": "/heroes/ashe/poses/ashe-the-spoils.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "weapons": [
@@ -8120,8 +8485,7 @@
           "url": "/heroes/baptiste/skins/baptiste-talon.jpg",
           "description": "After his service in the Caribbean Coalition was complete, Baptiste struggled to find a demand for his unique skills. Talon was more than happy to help.",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         }
       ],
       "emotes": [
@@ -8242,8 +8606,7 @@
           "url": "/heroes/baptiste/icons/baptiste-lieutenant-augustin.png",
           "event": "UPRISING",
           "hero": "baptiste",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Lò",
@@ -8472,8 +8835,7 @@
           "quality": "common",
           "url": "/heroes/baptiste/sprays/baptiste-carry.png",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Eight of Hearts",
@@ -8754,8 +9116,7 @@
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-associates.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Caribbean Coalition",
@@ -8763,8 +9124,7 @@
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-caribbean-coalition.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Lieutenant Augustin",
@@ -8772,7 +9132,15 @@
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-lieutenant-augustin.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
+          "group": "UPRISING_2019"
+        },
+        {
+          "name": "That’s enough out of you",
+          "id": "baptiste-thats-enough-out-of-you",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-thats-enough-out-of-you.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
           "isNew": true
         },
         {
@@ -8984,8 +9352,7 @@
           "url": "/heroes/bastion/skins/bastion-gwishin.jpg",
           "description": "The Gwishin omnic colossus rose from the omnium in the East China Sea. The Mobile Exo-Force of the Korean Army, or MEKA, was formed in response to the Gwishin's constant attacks.",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Dune Buggy",
@@ -9172,8 +9539,7 @@
           "url": "/heroes/bastion/icons/bastion-gwishin.png",
           "event": "UPRISING",
           "hero": "bastion",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Goldbot",
@@ -9813,6 +10179,13 @@
           "url": "/heroes/brigitte/skins/brigitte-shieldmaiden.jpg",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2018"
+        },
+        {
+          "name": "Goat",
+          "id": "brigitte-goat",
+          "quality": "legendary",
+          "url": "/heroes/brigitte/skins/brigitte-goat.jpg",
+          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -9860,6 +10233,15 @@
           "url": "/updates/ANNIVERSARY/emotes/brigitte-dance.webm",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2018"
+        },
+        {
+          "name": "Katt",
+          "id": "brigitte-katt",
+          "quality": "legendary",
+          "url": "/heroes/brigitte/emotes/brigitte-katt.webm",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "intros": [
@@ -10186,6 +10568,14 @@
           "url": "/heroes/brigitte/sprays/brigitte-pixel.png",
           "achievement": true,
           "description": "Interrupt an enemy ultimate ability with Brigitte's Shield Bash in Quick or Competitive Play."
+        },
+        {
+          "name": "Semlor",
+          "id": "brigitte-semlor",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-semlor.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -10346,13 +10736,21 @@
           "group": "UPRISING_2018"
         },
         {
+          "name": "Hard work pays off",
+          "id": "brigitte-hard-work-pays-off",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-hard-work-pays-off.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
           "name": "If you make your bed, lie in it",
           "id": "brigitte-if-you-make-your-bed-lie-in-it",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-if-you-make-your-bed-lie-in-it.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Time to roll up my sleeves",
@@ -11628,8 +12026,7 @@
           "quality": "epic",
           "url": "/heroes/doomfist/intros/doomfist-seismic-slam.webm",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         }
       ],
       "icons": [
@@ -12132,6 +12529,15 @@
           "url": "/heroes/doomfist/voicelines/doomfist-i-know-you-can-do-better.ogg",
           "event": "UPRISING",
           "group": "UPRISING_2018"
+        },
+        {
+          "name": "Such potential wasted",
+          "id": "doomfist-such-potential-wasted",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-such-potential-wasted.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Take it on the chin",
@@ -12954,6 +13360,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "name": "Ryu-Ichimonji strikes",
+          "id": "genji-ryuichimonji-strikes",
+          "quality": "common",
+          "url": "/heroes/genji/voicelines/genji-ryuichimonji-strikes.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
           "name": "Your eyes deceive you",
           "id": "genji-your-eyes-deceive-you",
           "quality": "common",
@@ -13306,8 +13721,7 @@
           "quality": "epic",
           "url": "/heroes/hanzo/intros/hanzo-storm-arrow.webm",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         }
       ],
       "icons": [
@@ -13801,8 +14215,7 @@
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-history-forged-by-the-sword.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "My fate is written in blood",
@@ -14001,8 +14414,7 @@
           "quality": "epic",
           "url": "/heroes/junkrat/skins/junkrat-circus.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Inferno",
@@ -14072,6 +14484,16 @@
           "url": "/heroes/junkrat/skins/junkrat-krampus.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "name": "King Jamison",
+          "id": "junkrat-king-jamison",
+          "quality": "legendary",
+          "url": "/heroes/junkrat/skins/junkrat-king-jamison.jpg",
+          "description": "After escaping from the Australian Outback, Junkrat and Roadhog went on an international crime spree, earning them great notoriety across the world, and living up to their motto of, “No job too big, no score too small!”",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Bilgerat",
@@ -14237,6 +14659,15 @@
           "event": "WINTER_WONDERLAND",
           "hero": "junkrat",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "name": "King Jamison",
+          "id": "junkrat-king-jamison",
+          "url": "/heroes/junkrat/icons/junkrat-king-jamison.png",
+          "event": "UPRISING",
+          "hero": "junkrat",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Buccaneer",
@@ -14457,6 +14888,15 @@
           "url": "/heroes/junkrat/sprays/junkrat-im-flying.png",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Crown Jewels",
+          "id": "junkrat-crown-jewels",
+          "quality": "common",
+          "url": "/heroes/junkrat/sprays/junkrat-crown-jewels.png",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Sidecar",
@@ -15402,6 +15842,14 @@
           "url": "/heroes/lucio/sprays/lucio-pixel.png",
           "achievement": true,
           "description": "Get 3 killing blows while wall riding as Lúcio without dying in Quick or Competitive Play."
+        },
+        {
+          "name": "Carnival",
+          "id": "lucio-carnival",
+          "quality": "common",
+          "url": "/heroes/lucio/sprays/lucio-carnival.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -15850,8 +16298,7 @@
           "url": "/heroes/mccree/skins/mccree-deadlock.jpg",
           "description": "In their younger days, Jesse McCree and Elizabeth \"Calamity\" Ashe co-founded the Deadlock Gang.",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Sherlock",
@@ -16034,8 +16481,7 @@
           "url": "/heroes/mccree/icons/mccree-deadlock-mccree.png",
           "event": "UPRISING",
           "hero": "mccree",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "GAMF",
@@ -16278,6 +16724,14 @@
           "url": "/heroes/mccree/sprays/mccree-pixel.png",
           "achievement": true,
           "description": "Interrupt an enemy ultimate ability with McCree's Flashbang in Quick or Competitive Play."
+        },
+        {
+          "name": "Rex",
+          "id": "mccree-rex",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-rex.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -16474,7 +16928,15 @@
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-gathering-no-moss.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
+          "group": "UPRISING_2019"
+        },
+        {
+          "name": "That went against my better nature",
+          "id": "mccree-that-went-against-my-better-nature",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-that-went-against-my-better-nature.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
           "isNew": true
         },
         {
@@ -16659,6 +17121,17 @@
           "achievement": true,
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2019",
+          "isNew": true
+        },
+        {
+          "name": "Bear",
+          "id": "mei-bear",
+          "quality": "epic",
+          "url": "/heroes/mei/skins/mei-bear.jpg",
+          "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
           "isNew": true
         },
         {
@@ -16949,6 +17422,17 @@
           "event": "ANNIVERSARY",
           "hero": "mei",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Snowbear",
+          "id": "mei-snowbear",
+          "url": "/heroes/mei/icons/mei-snowbear.png",
+          "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "hero": "mei",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -17175,6 +17659,17 @@
           "url": "/heroes/mei/sprays/mei-pixel.png",
           "achievement": true,
           "description": "Block 1200 damage with a single use of Mei's Ice Wall in Quick or Competitive Play."
+        },
+        {
+          "name": "Bear Hug",
+          "id": "mei-bear-hug",
+          "quality": "common",
+          "url": "/heroes/mei/sprays/mei-bear-hug.png",
+          "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -17347,8 +17842,7 @@
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-a-new-adventure.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "I'm just a scientist",
@@ -18348,8 +18842,7 @@
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-im-needed-somewhere.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Not sure why I bother",
@@ -18618,8 +19111,7 @@
           "url": "/heroes/moira/skins/moira-scientist.jpg",
           "description": "To this day, Dr. O'Deorain remains a controversial figure in genetic research. Her brilliance was never in question; her ethics, almost always.",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         }
       ],
       "emotes": [
@@ -18766,8 +19258,7 @@
           "url": "/heroes/moira/icons/moira-coinn.png",
           "event": "UPRISING",
           "hero": "moira",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "O'Deorain",
@@ -19221,8 +19712,7 @@
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-faith-in-science.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Get off the stage",
@@ -20045,6 +20535,15 @@
           "group": "LUNAR_NEW_YEAR_2018"
         },
         {
+          "name": "Empathy module not responding",
+          "id": "orisa-empathy-module-not-responding",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-empathy-module-not-responding.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
           "name": "Error: division by 0",
           "id": "orisa-error-division-by-0",
           "quality": "common",
@@ -20291,6 +20790,15 @@
           "group": "LUNAR_NEW_YEAR_2018"
         },
         {
+          "name": "Aviator",
+          "id": "pharah-aviator",
+          "quality": "legendary",
+          "url": "/heroes/pharah/skins/pharah-aviator.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
           "name": "Bedouin",
           "id": "pharah-bedouin",
           "quality": "legendary",
@@ -20446,6 +20954,15 @@
           "event": "HALLOWEEN",
           "hero": "pharah",
           "group": "HALLOWEEN_2018"
+        },
+        {
+          "name": "Aviator",
+          "id": "pharah-aviator",
+          "url": "/heroes/pharah/icons/pharah-aviator.png",
+          "event": "UPRISING",
+          "hero": "pharah",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Anniversareeha",
@@ -20665,6 +21182,15 @@
           "url": "/heroes/pharah/sprays/pharah-happy-new-year.png",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "In the Zone",
+          "id": "pharah-in-the-zone",
+          "quality": "common",
+          "url": "/heroes/pharah/sprays/pharah-in-the-zone.png",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Target Practice",
@@ -20893,8 +21419,7 @@
           "quality": "common",
           "url": "/heroes/pharah/voicelines/pharah-from-my-mother.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "I am the Rocket Queen",
@@ -21590,6 +22115,14 @@
           "url": "/heroes/reaper/sprays/reaper-pixel.png",
           "achievement": true,
           "description": "Get 3 solo kills with a single clip of Reaper's shotguns in Quick or Competitive Play."
+        },
+        {
+          "name": "Red Death",
+          "id": "reaper-red-death",
+          "quality": "common",
+          "url": "/heroes/reaper/sprays/reaper-red-death.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -21859,6 +22392,15 @@
           "url": "/heroes/reaper/poses/reaper-stockpile.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "name": "Cackle",
+          "id": "reaper-cackle",
+          "quality": "rare",
+          "url": "/heroes/reaper/poses/reaper-cackle.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Ready for Action",
@@ -22823,6 +23365,16 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "Militia",
+          "id": "roadhog-militia",
+          "quality": "legendary",
+          "url": "/heroes/roadhog/skins/roadhog-militia.jpg",
+          "description": "After the Australian government displaced Mako Rutledge and other residents of the Outback from their homes, they turned to violent rebellion, forming the Australian Liberation Front.",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
           "name": "Toxic",
           "id": "roadhog-toxic",
           "quality": "legendary",
@@ -22994,6 +23546,15 @@
           "event": "LUNAR_NEW_YEAR",
           "hero": "roadhog",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Militia",
+          "id": "roadhog-militia",
+          "url": "/heroes/roadhog/icons/roadhog-militia.png",
+          "event": "UPRISING",
+          "hero": "roadhog",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Goldhog",
@@ -23205,6 +23766,15 @@
           "url": "/heroes/roadhog/sprays/roadhog-steamed-buns.png",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "ALF",
+          "id": "roadhog-alf",
+          "quality": "common",
+          "url": "/heroes/roadhog/sprays/roadhog-alf.png",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Chopper",
@@ -23597,8 +24167,7 @@
           "name": "Subject Sigma",
           "id": "sigma-subject-sigma",
           "quality": "legendary",
-          "url": "/heroes/sigma/skins/sigma-subject-sigma.jpg",
-          "description": "Brilliant astrophysicist Siebren de Kuiper gained the ability to control gravity when an experiment went terribly wrong. Now, Talon manipulates him to their own ends."
+          "url": "/heroes/sigma/skins/sigma-subject-sigma.jpg"
         },
         {
           "name": "Rime",
@@ -23674,6 +24243,15 @@
           "id": "sigma-what-comes-up",
           "quality": "epic",
           "url": "/heroes/sigma/intros/sigma-what-comes-up.webm"
+        },
+        {
+          "name": "Attraction",
+          "id": "sigma-attraction",
+          "quality": "epic",
+          "url": "/heroes/sigma/intros/sigma-attraction.webm",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "icons": [
@@ -23890,6 +24468,15 @@
           "isNew": true
         },
         {
+          "name": "Observation",
+          "id": "sigma-observation",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-observation.png",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
           "name": "Cute",
           "id": "sigma-cute",
           "quality": "common",
@@ -24051,6 +24638,33 @@
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
+        },
+        {
+          "name": "Extraordinary claims",
+          "id": "sigma-extraordinary-claims",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-extraordinary-claims.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
+          "name": "Reality is rarely what it seems",
+          "id": "sigma-reality-is-rarely-what-it-seems",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-reality-is-rarely-what-it-seems.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
+          "name": "The results are inconclusive",
+          "id": "sigma-the-results-are-inconclusive",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-the-results-are-inconclusive.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "poses": [
@@ -24086,6 +24700,15 @@
           "url": "/heroes/sigma/poses/sigma-pumpkin.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2019",
+          "isNew": true
+        },
+        {
+          "name": "Postulating",
+          "id": "sigma-postulating",
+          "quality": "rare",
+          "url": "/heroes/sigma/poses/sigma-postulating.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
           "isNew": true
         }
       ],
@@ -24237,8 +24860,7 @@
           "url": "/heroes/soldier-76/skins/soldier-76-formal-76.jpg",
           "description": "During his service in Overwatch, Jack Morrison received many commendations for his leadership.",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Cyborg: 76",
@@ -24408,8 +25030,7 @@
           "url": "/heroes/soldier-76/icons/soldier-76-formal-76.png",
           "event": "UPRISING",
           "hero": "soldier-76",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Gold Soldier",
@@ -24848,6 +25469,15 @@
           "group": "UPRISING_2017"
         },
         {
+          "name": "Show some respect",
+          "id": "soldier-76-show-some-respect",
+          "quality": "common",
+          "url": "/heroes/soldier-76/voicelines/soldier-76-show-some-respect.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
+        },
+        {
           "name": "Whatever you say",
           "id": "soldier-76-whatever-you-say",
           "quality": "common",
@@ -25203,6 +25833,15 @@
           "id": "sombra-undetected",
           "quality": "epic",
           "url": "/heroes/sombra/intros/sombra-undetected.webm"
+        },
+        {
+          "name": "Translocating",
+          "id": "sombra-translocating",
+          "quality": "epic",
+          "url": "/heroes/sombra/intros/sombra-translocating.webm",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "icons": [
@@ -25788,8 +26427,7 @@
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-nice-working-with-you.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "I need a drink",
@@ -25881,8 +26519,7 @@
           "quality": "rare",
           "url": "/heroes/sombra/poses/sombra-data-cube.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         }
       ],
       "weapons": [
@@ -25971,6 +26608,17 @@
           "url": "/heroes/symmetra/skins/symmetra-qipao.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Holi",
+          "id": "symmetra-holi",
+          "quality": "epic",
+          "url": "/heroes/symmetra/skins/symmetra-holi.jpg",
+          "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Architech",
@@ -26194,6 +26842,17 @@
           "event": "ANNIVERSARY",
           "hero": "symmetra",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Holi",
+          "id": "symmetra-holi",
+          "url": "/heroes/symmetra/icons/symmetra-holi.png",
+          "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "hero": "symmetra",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -26420,6 +27079,17 @@
           "url": "/heroes/symmetra/sprays/symmetra-pixel.png",
           "achievement": true,
           "description": "Hit an enemy with 3 beams simultaneously as Symmetra in Quick or Competitive Play."
+        },
+        {
+          "name": "Holi",
+          "id": "symmetra-holi",
+          "quality": "common",
+          "url": "/heroes/symmetra/sprays/symmetra-holi.png",
+          "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -26626,8 +27296,7 @@
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-what-the-future-holds.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Let us discuss your failures",
@@ -26802,6 +27471,17 @@
           "url": "/heroes/torbjorn/skins/torbjorn-tre-kronor.jpg",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Rustclad",
+          "id": "torbjorn-rustclad",
+          "quality": "epic",
+          "url": "/heroes/torbjorn/skins/torbjorn-rustclad.jpg",
+          "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Barbarossa",
@@ -27081,6 +27761,17 @@
           "event": "ANNIVERSARY",
           "hero": "torbjorn",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Rustclad",
+          "id": "torbjorn-rustclad",
+          "url": "/heroes/torbjorn/icons/torbjorn-rustclad.png",
+          "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "hero": "torbjorn",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -27307,6 +27998,17 @@
           "url": "/heroes/torbjorn/sprays/torbjorn-pixel.png",
           "achievement": true,
           "description": "Absorb 500 armor damage with Torbjörn's Overload without dying in Quick or Competitive Play."
+        },
+        {
+          "name": "Indigestion",
+          "id": "torbjorn-indigestion",
+          "quality": "common",
+          "url": "/heroes/torbjorn/sprays/torbjorn-indigestion.png",
+          "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
+          "achievement": true,
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -29359,8 +30061,7 @@
           "quality": "rare",
           "url": "/heroes/widowmaker/poses/widowmaker-surveillance.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         }
       ],
       "weapons": [
@@ -30290,8 +30991,7 @@
           "quality": "epic",
           "url": "/heroes/wrecking-ball/skins/wrecking-ball-high-roller.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Paper Cutting",
@@ -30438,8 +31138,7 @@
           "quality": "epic",
           "url": "/heroes/wrecking-ball/intros/wrecking-ball-dramatic.webm",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         }
       ],
       "icons": [
@@ -30702,8 +31401,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-exercise.png",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Eight of Clubs",
@@ -30740,6 +31438,14 @@
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
+        },
+        {
+          "name": "King Cake Ball",
+          "id": "wrecking-ball-king-cake-ball",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-king-cake-ball.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -30913,8 +31619,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-access-denied.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "K.O.",
@@ -30922,8 +31627,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-ko.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Laughter",
@@ -30931,8 +31635,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-laughter.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Translation not found",
@@ -30940,8 +31643,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-translation-not-found.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Rolled",
@@ -31107,8 +31809,7 @@
           "quality": "epic",
           "url": "/heroes/zarya/skins/zarya-racer.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Arctic",
@@ -31183,6 +31884,15 @@
           "url": "/heroes/zarya/skins/zarya-xuanwu.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "name": "Workout",
+          "id": "zarya-workout",
+          "quality": "legendary",
+          "url": "/heroes/zarya/skins/zarya-workout.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Cyberian",
@@ -31340,6 +32050,15 @@
           "event": "WINTER_WONDERLAND",
           "hero": "zarya",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "name": "Workout",
+          "id": "zarya-workout",
+          "url": "/heroes/zarya/icons/zarya-workout.png",
+          "event": "UPRISING",
+          "hero": "zarya",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "Zaryanoversary",
@@ -31542,6 +32261,15 @@
           "url": "/heroes/zarya/sprays/zarya-dragon-dance.png",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Pulse",
+          "id": "zarya-pulse",
+          "quality": "common",
+          "url": "/heroes/zarya/sprays/zarya-pulse.png",
+          "event": "UPRISING",
+          "group": "UPRISING_2020",
+          "isNew": true
         },
         {
           "name": "We can!",
@@ -32438,6 +33166,14 @@
           "url": "/heroes/zenyatta/sprays/zenyatta-pixel.png",
           "achievement": true,
           "description": "Get 4 kills or assists with Zenyatta's Orb of Discord within 6 seconds in Quick or Competitive Play."
+        },
+        {
+          "name": "Beads",
+          "id": "zenyatta-beads",
+          "quality": "common",
+          "url": "/heroes/zenyatta/sprays/zenyatta-beads.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
         }
       ],
       "voicelines": [
@@ -32610,8 +33346,7 @@
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-not-ready-to-learn.ogg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         },
         {
           "name": "Path to enlightenment",
@@ -32727,8 +33462,7 @@
           "quality": "rare",
           "url": "/heroes/zenyatta/poses/zenyatta-meditation.jpg",
           "event": "UPRISING",
-          "group": "UPRISING_2019",
-          "isNew": true
+          "group": "UPRISING_2019"
         }
       ],
       "weapons": [
