@@ -18,16 +18,6 @@
           "group": "SUMMER_GAMES_2018"
         },
         {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Taegeukgi",
-          "id": "dva-taegeukgi",
-          "quality": "epic",
-          "url": "/updates/SUMMER_GAMES/skins/dva-taegeukgi.jpg",
-          "description": "During her time as a professional gamer, D.Va proudly represented her country in tournaments around the world.",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
           "heroName": "Genji",
           "hero": "genji",
           "name": "Nihon",
@@ -134,15 +124,7 @@
           "id": "ana-cabana",
           "quality": "legendary",
           "url": "/updates/SUMMER_GAMES/skins/ana-cabana.jpg",
-          "group": "SUMMER_GAMES_2018"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Waveracer",
-          "id": "dva-waveracer",
-          "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skins/dva-waveracer.jpg",
+          "description": "When it was time for rest and relaxation, Ana's favorite choice was to pack her bags and head to Hawaii.",
           "group": "SUMMER_GAMES_2018"
         },
         {
@@ -420,30 +402,6 @@
           "name": "Hammer Throw",
           "id": "brigitte-hammer-throw",
           "url": "/heroes/brigitte/icons/brigitte-hammer-throw.png",
-          "group": "SUMMER_GAMES_2018"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Cycling",
-          "id": "dva-cycling",
-          "url": "/heroes/dva/icons/dva-cycling.png",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "D.Vacation",
-          "id": "dva-dvacation",
-          "url": "/heroes/dva/icons/dva-dvacation.png",
-          "group": "SUMMER_GAMES_2018"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Waveracer",
-          "id": "dva-waveracer",
-          "url": "/heroes/dva/icons/dva-waveracer.png",
           "group": "SUMMER_GAMES_2018"
         },
         {
@@ -1059,15 +1017,6 @@
           "group": "SUMMER_GAMES_2018"
         },
         {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Cycling",
-          "id": "dva-cycling",
-          "quality": "common",
-          "url": "/heroes/dva/sprays/dva-cycling.png",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
           "heroName": "Doomfist",
           "hero": "doomfist",
           "name": "Shot Put",
@@ -1460,24 +1409,6 @@
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-scandinavian-style.ogg",
           "group": "SUMMER_GAMES_2018"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "I'm #1",
-          "id": "dva-im-1",
-          "quality": "common",
-          "url": "/heroes/dva/voicelines/dva-im-1.ogg",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Scoreboard",
-          "id": "dva-scoreboard",
-          "quality": "common",
-          "url": "/heroes/dva/voicelines/dva-scoreboard.ogg",
-          "group": "SUMMER_GAMES_2017"
         },
         {
           "heroName": "Doomfist",
@@ -2697,6 +2628,7 @@
           "id": "ashe-warlock",
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skinsLegendary/ashe-warlock.jpg",
+          "description": "A master of forbidden magic, the Warlock bound even the most powerful demons to her will.",
           "group": "HALLOWEEN_2019",
           "isNew": true
         },
@@ -10229,6 +10161,7 @@
           "id": "pharah-aviator",
           "quality": "legendary",
           "url": "/updates/UPRISING/skinsLegendary/pharah-aviator.jpg",
+          "description": "Lieutenant Fareeha “Pharah” Amari was hand-picked by Helix after her meritorious career in the Egyptian armed forces. Bearing the famous Amari family name, she was considered a recruitment coup.",
           "group": "UPRISING_2020",
           "isNew": true
         },
@@ -12425,7 +12358,7 @@
           "id": "mccree-blackwatch",
           "quality": "legendary",
           "url": "/updates/UPRISING/skins/mccree-blackwatch.jpg",
-          "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch, or rot in prison.",
+          "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch or rot in prison.",
           "group": "UPRISING_2017"
         },
         {
@@ -12535,6 +12468,7 @@
           "id": "torbjorn-ironclad",
           "quality": "legendary",
           "url": "/updates/UPRISING/skins/torbjorn-ironclad.jpg",
+          "description": "Torbjörn was a prominent member of the Ironclad Guild, whose headquarters were in Gothenburg, Sweden.",
           "group": "UPRISING_2017"
         },
         {
@@ -14978,6 +14912,7 @@
           "id": "brigitte-shieldmaiden",
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skins/brigitte-shieldmaiden.jpg",
+          "description": "A prominent figure in her own legends, the Shieldmaiden is also known as the Viking's daughter in the tale of Junkenstein.",
           "group": "ANNIVERSARY_2018"
         },
         {
@@ -14996,6 +14931,7 @@
           "id": "doomfist-formal",
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skins/doomfist-formal.jpg",
+          "description": "As the heir to his family's prosthetic-technology company, Doomfist was no stranger to the finer things in life.",
           "group": "ANNIVERSARY_2018"
         },
         {
@@ -15105,6 +15041,7 @@
           "id": "torbjorn-cybjorn",
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skins/torbjorn-cybjorn.jpg",
+          "description": "\"...like the terrible culmination of a thousand of my worst nightmares. Are you kidding me?\"",
           "group": "ANNIVERSARY_2018"
         },
         {
