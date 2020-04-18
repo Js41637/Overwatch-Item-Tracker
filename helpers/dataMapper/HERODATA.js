@@ -67,6 +67,14 @@ const data = {
       highlight: "#ffa8e0"
     }
   },
+  echo: {
+    class: CLASSES.DAMAGE,
+    description: "Programmed and designed by Overwatch's Dr. Mina Liao, Echo is a robot with a rapidly adapting artificial intelligence.",
+    colors: {
+      primary: "#89c8ff",
+      highlight: "#add9ff"
+    }
+  },
   genji: {
     class: CLASSES.DAMAGE,
     description: "Genji Shimada has made peace with the cyborg body he once rejected, and in doing so, he has discovered a higher humanity.",

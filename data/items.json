@@ -764,7 +764,8 @@
           "id": "competitive-6v6-elimination-competitor-2020",
           "url": "/heroes/all/icons/competitive-6v6-elimination-competitor-2020.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Competitive 6v6 Elimination 2020 placement matches"
         },
         {
           "name": "Competitive 6v6 Elimination Hero 2018",
@@ -787,7 +788,8 @@
           "id": "competitive-6v6-elimination-hero-2020",
           "url": "/heroes/all/icons/competitive-6v6-elimination-hero-2020.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Competitive 6v6 Elimination 2020"
         },
         {
           "name": "Competitive CTF Competitor 2018",
@@ -810,7 +812,8 @@
           "id": "competitive-ctf-competitor-2020",
           "url": "/heroes/all/icons/competitive-ctf-competitor-2020.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing competitive Capture The Flag 2020 placement matches"
         },
         {
           "name": "Competitive CTF Hero 2018",
@@ -833,7 +836,8 @@
           "id": "competitive-ctf-hero-2020",
           "url": "/heroes/all/icons/competitive-ctf-hero-2020.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of competitive Capture The Flag 2020"
         },
         {
           "name": "Competitive Deathmatch Competitor 2018",
@@ -868,19 +872,36 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive Deathmatch 2019"
         },
         {
+          "name": "Competitive Open Queue Competitor",
+          "id": "competitive-open-queue-competitor",
+          "url": "/heroes/all/icons/competitive-open-queue-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Competitive Open Queue 2020 placement matches"
+        },
+        {
+          "name": "Competitive Open Queue Hero",
+          "id": "competitive-open-queue-hero",
+          "url": "/heroes/all/icons/competitive-open-queue-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Competitive Open Queue 2020"
+        },
+        {
           "name": "Competitive Team Deathmatch Competitor 2018",
           "id": "competitive-team-deathmatch-competitor",
           "url": "/heroes/all/icons/competitive-team-deathmatch-competitor.png",
           "achievement": true,
           "group": "competitive",
-          "description": "Unlocked by completing Competitive Team Deathmatch placement matches"
+          "description": "Unlocked by completing Competitive Team Deathmatch 2018 placement matches"
         },
         {
           "name": "Competitive Team Deathmatch Competitor 2019",
           "id": "competitive-team-deathmatch-competitor-2019",
           "url": "/heroes/all/icons/competitive-team-deathmatch-competitor-2019.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Competitive Team Deathmatch 2019 placement matches"
         },
         {
           "name": "Competitive Team Deathmatch Hero 2018",
@@ -888,14 +909,15 @@
           "url": "/heroes/all/icons/competitive-team-deathmatch-hero.png",
           "achievement": true,
           "group": "competitive",
-          "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch"
+          "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch 2018"
         },
         {
           "name": "Competitive Team Deathmatch Hero 2019",
           "id": "competitive-team-deathmatch-hero-2019",
           "url": "/heroes/all/icons/competitive-team-deathmatch-hero-2019.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch 2019"
         },
         {
           "name": "Copa Lúcioball Competitor",
@@ -1169,14 +1191,6 @@
           "group": "UPRISING_2017"
         },
         {
-          "name": "Cycling",
-          "id": "dva-cycling",
-          "url": "/heroes/dva/icons/dva-cycling.png",
-          "event": "SUMMER_GAMES",
-          "hero": "dva",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "D'or",
           "id": "widowmaker-dor",
           "url": "/heroes/widowmaker/icons/widowmaker-dor.png",
@@ -1189,14 +1203,6 @@
           "id": "dva-dva",
           "url": "/heroes/dva/icons/dva-dva.png",
           "hero": "dva"
-        },
-        {
-          "name": "D.Vacation",
-          "id": "dva-dvacation",
-          "url": "/heroes/dva/icons/dva-dvacation.png",
-          "event": "SUMMER_GAMES",
-          "hero": "dva",
-          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Dallas Fuel",
@@ -1330,6 +1336,12 @@
           "id": "drop-pod",
           "event": "UPRISING",
           "url": "/heroes/all/icons/drop-pod.png"
+        },
+        {
+          "name": "Echo",
+          "id": "echo-echo",
+          "url": "/heroes/echo/icons/echo-echo.png",
+          "hero": "echo"
         },
         {
           "name": "Efi",
@@ -2979,6 +2991,12 @@
           "url": "/heroes/all/icons/present.png"
         },
         {
+          "name": "Promise",
+          "id": "echo-promise",
+          "url": "/heroes/echo/icons/echo-promise.png",
+          "hero": "echo"
+        },
+        {
           "name": "Protector",
           "id": "orisa-protector",
           "url": "/heroes/orisa/icons/orisa-protector.png",
@@ -3592,42 +3610,64 @@
           "id": "season-19-competitor",
           "url": "/heroes/all/icons/season-19-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 19 placement matches"
         },
         {
           "name": "Season 19 Hero",
           "id": "season-19-hero",
           "url": "/heroes/all/icons/season-19-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 19"
         },
         {
           "name": "Season 20 Competitor",
           "id": "season-20-competitor",
           "url": "/heroes/all/icons/season-20-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 20 placement matches"
         },
         {
           "name": "Season 20 Hero",
           "id": "season-20-hero",
           "url": "/heroes/all/icons/season-20-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 20"
         },
         {
           "name": "Season 21 Competitor",
           "id": "season-21-competitor",
           "url": "/heroes/all/icons/season-21-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 21 placement matches"
         },
         {
           "name": "Season 21 Hero",
           "id": "season-21-hero",
           "url": "/heroes/all/icons/season-21-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 21"
+        },
+        {
+          "name": "Season 22 Competitor",
+          "id": "season-22-competitor",
+          "url": "/heroes/all/icons/season-22-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 22 placement matches"
+        },
+        {
+          "name": "Season 22 Hero",
+          "id": "season-22-hero",
+          "url": "/heroes/all/icons/season-22-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 22"
         },
         {
           "name": "Sentry",
@@ -4010,6 +4050,12 @@
           "hero": "symmetra"
         },
         {
+          "name": "Symmetry",
+          "id": "echo-symmetry",
+          "url": "/heroes/echo/icons/echo-symmetry.png",
+          "hero": "echo"
+        },
+        {
           "name": "Table Tennis",
           "id": "mei-table-tennis",
           "url": "/heroes/mei/icons/mei-table-tennis.png",
@@ -4358,14 +4404,6 @@
           "isNew": true
         },
         {
-          "name": "Waveracer",
-          "id": "dva-waveracer",
-          "url": "/heroes/dva/icons/dva-waveracer.png",
-          "event": "SUMMER_GAMES",
-          "hero": "dva",
-          "group": "SUMMER_GAMES_2018"
-        },
-        {
           "name": "Wedjat",
           "id": "ana-wedjat",
           "url": "/heroes/ana/icons/ana-wedjat.png",
@@ -4662,6 +4700,13 @@
           "description": "Unlocked with purchase of Warcraft III: Reforged Spoils of War Edition"
         },
         {
+          "name": "Atlanta Reign Homestand 2020",
+          "id": "atlanta-reign-homestand-2020",
+          "url": "/heroes/all/sprays/atlanta-reign-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
+        },
+        {
           "name": "Atlanta Reign Logo",
           "id": "atlanta-reign-logo",
           "url": "/heroes/all/sprays/atlanta-reign-logo.png",
@@ -4692,6 +4737,13 @@
           "description": "Capture both objectives on a Capture map without dying in Quick or Competitive Play."
         },
         {
+          "name": "Boston Uprising Homestand 2020",
+          "id": "boston-uprising-homestand-2020",
+          "url": "/heroes/all/sprays/boston-uprising-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
+        },
+        {
           "name": "Boston Uprising Logo",
           "id": "boston-uprising-logo",
           "url": "/heroes/all/sprays/boston-uprising-logo.png",
@@ -4710,6 +4762,13 @@
           "id": "caution",
           "url": "/heroes/all/sprays/caution.png",
           "quality": "common"
+        },
+        {
+          "name": "Chengdu Hunters Homestand 2020",
+          "id": "chengdu-hunters-homestand-2020",
+          "url": "/heroes/all/sprays/chengdu-hunters-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
         },
         {
           "name": "Chengdu Hunters Logo",
@@ -4772,7 +4831,8 @@
           "id": "competitive-6v6-elimination-competitor-2020",
           "url": "/heroes/all/sprays/competitive-6v6-elimination-competitor-2020.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Competitive 6v6 Elimination 2020 placement matches"
         },
         {
           "name": "Competitive 6v6 Elimination Hero 2018",
@@ -4795,7 +4855,8 @@
           "id": "competitive-6v6-elimination-hero-2020",
           "url": "/heroes/all/sprays/competitive-6v6-elimination-hero-2020.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Competitive 6v6 Elimination 2020"
         },
         {
           "name": "Competitive CTF Competitor 2018",
@@ -4818,7 +4879,8 @@
           "id": "competitive-ctf-competitor-2020",
           "url": "/heroes/all/sprays/competitive-ctf-competitor-2020.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing competitive Capture The Flag 2020 placement matches"
         },
         {
           "id": "competitive-ctf-hero",
@@ -4841,7 +4903,8 @@
           "id": "competitive-ctf-hero-2020",
           "url": "/heroes/all/sprays/competitive-ctf-hero-2020.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of competitive Capture The Flag 2020"
         },
         {
           "name": "Competitive Deathmatch Competitor 2018",
@@ -4876,19 +4939,36 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive Deathmatch 2019"
         },
         {
+          "name": "Competitive Open Queue Competitor",
+          "id": "competitive-open-queue-competitor",
+          "url": "/heroes/all/sprays/competitive-open-queue-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Competitive Open Queue 2020 placement matches"
+        },
+        {
+          "name": "Competitive Open Queue Hero",
+          "id": "competitive-open-queue-hero",
+          "url": "/heroes/all/sprays/competitive-open-queue-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Competitive Open Queue 2020"
+        },
+        {
           "name": "Competitive Team Deathmatch Competitor 2018",
           "id": "competitive-team-deathmatch-competitor",
           "url": "/heroes/all/sprays/competitive-team-deathmatch-competitor.png",
           "achievement": true,
           "group": "competitive",
-          "description": "Unlocked by completing Competitive Team Deathmatch placement matches"
+          "description": "Unlocked by completing Competitive Team Deathmatch 2018 placement matches"
         },
         {
           "name": "Competitive Team Deathmatch Competitor 2019",
           "id": "competitive-team-deathmatch-competitor-2019",
           "url": "/heroes/all/sprays/competitive-team-deathmatch-competitor-2019.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Competitive Team Deathmatch 2019 placement matches"
         },
         {
           "name": "Competitive Team Deathmatch Hero 2018",
@@ -4896,14 +4976,15 @@
           "url": "/heroes/all/sprays/competitive-team-deathmatch-hero.png",
           "achievement": true,
           "group": "competitive",
-          "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch"
+          "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch 2018"
         },
         {
           "name": "Competitive Team Deathmatch Hero 2019",
           "id": "competitive-team-deathmatch-hero-2019",
           "url": "/heroes/all/sprays/competitive-team-deathmatch-hero-2019.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch 2019"
         },
         {
           "name": "Copa Lúcioball Competitor",
@@ -5184,11 +5265,25 @@
           "standardItem": true
         },
         {
+          "name": "London Spitfire Homestand 2020",
+          "id": "london-spitfire-homestand-2020",
+          "url": "/heroes/all/sprays/london-spitfire-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
+        },
+        {
           "name": "London Spitfire Logo",
           "id": "london-spitfire-logo",
           "url": "/heroes/all/sprays/london-spitfire-logo.png",
           "achievement": "owl",
           "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Los Angeles Gladiators Homestand 2020",
+          "id": "los-angeles-gladiators-homestand-2020",
+          "url": "/heroes/all/sprays/los-angeles-gladiators-homestand-2020.png",
+          "achievement": "owl",
           "group": "overwatch league"
         },
         {
@@ -5205,6 +5300,13 @@
           "url": "/heroes/all/sprays/los-angeles-valiant-2018-logo.png",
           "achievement": "owl",
           "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Los Angeles Valiant Homestand 2020",
+          "id": "los-angeles-valiant-homestand-2020",
+          "url": "/heroes/all/sprays/los-angeles-valiant-homestand-2020.png",
+          "achievement": "owl",
           "group": "overwatch league"
         },
         {
@@ -5314,6 +5416,13 @@
           "group": "pachi"
         },
         {
+          "name": "Paris Eternal Homestand 2020",
+          "id": "paris-eternal-homestand-2020",
+          "url": "/heroes/all/sprays/paris-eternal-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
+        },
+        {
           "name": "Paris Eternal Logo",
           "id": "paris-eternal-logo",
           "url": "/heroes/all/sprays/paris-eternal-logo.png",
@@ -5402,6 +5511,13 @@
           "url": "/heroes/all/sprays/san-francisco-shock-2018-logo.png",
           "achievement": "owl",
           "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "San Francisco Shock Homestand 2020",
+          "id": "san-francisco-shock-homestand-2020",
+          "url": "/heroes/all/sprays/san-francisco-shock-homestand-2020.png",
+          "achievement": "owl",
           "group": "overwatch league"
         },
         {
@@ -5731,42 +5847,64 @@
           "id": "season-19-competitor",
           "url": "/heroes/all/sprays/season-19-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 19 placement matches"
         },
         {
           "name": "Season 19 Hero",
           "id": "season-19-hero",
           "url": "/heroes/all/sprays/season-19-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 19"
         },
         {
           "name": "Season 20 Competitor",
           "id": "season-20-competitor",
           "url": "/heroes/all/sprays/season-20-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 20 placement matches"
         },
         {
           "name": "Season 20 Hero",
           "id": "season-20-hero",
           "url": "/heroes/all/sprays/season-20-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 20"
         },
         {
           "name": "Season 21 Competitor",
           "id": "season-21-competitor",
           "url": "/heroes/all/sprays/season-21-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 21 placement matches"
         },
         {
           "name": "Season 21 Hero",
           "id": "season-21-hero",
           "url": "/heroes/all/sprays/season-21-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 21"
+        },
+        {
+          "name": "Season 22 Competitor",
+          "id": "season-22-competitor",
+          "url": "/heroes/all/sprays/season-22-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 22 placement matches"
+        },
+        {
+          "name": "Season 22 Hero",
+          "id": "season-22-hero",
+          "url": "/heroes/all/sprays/season-22-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 22"
         },
         {
           "name": "Seoul Dynasty Homestand 2020",
@@ -5861,11 +5999,25 @@
           "description": "Earn 21 postgame cards in Quick or Competitive Play."
         },
         {
+          "name": "Toronto Defiant Homestand 2020",
+          "id": "toronto-defiant-homestand-2020",
+          "url": "/heroes/all/sprays/toronto-defiant-homestand-2020.png",
+          "achievement": "owl",
+          "group": "overwatch league"
+        },
+        {
           "name": "Toronto Defiant Logo",
           "id": "toronto-defiant-logo",
           "url": "/heroes/all/sprays/toronto-defiant-logo.png",
           "achievement": "owl",
           "standardItem": true,
+          "group": "overwatch league"
+        },
+        {
+          "name": "Vancouver Titans Homestand 2020",
+          "id": "vancouver-titans-homestand-2020",
+          "url": "/heroes/all/sprays/vancouver-titans-homestand-2020.png",
+          "achievement": "owl",
           "group": "overwatch league"
         },
         {
@@ -6810,6 +6962,7 @@
           "id": "ana-cabana",
           "quality": "legendary",
           "url": "/heroes/ana/skins/ana-cabana.jpg",
+          "description": "When it was time for rest and relaxation, Ana's favorite choice was to pack her bags and head to Hawaii.",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2018"
         },
@@ -7700,6 +7853,7 @@
           "id": "ashe-warlock",
           "quality": "legendary",
           "url": "/heroes/ashe/skins/ashe-warlock.jpg",
+          "description": "A master of forbidden magic, the Warlock bound even the most powerful demons to her will.",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2019",
           "isNew": true
@@ -8464,7 +8618,8 @@
           "name": "Desert Ops",
           "id": "baptiste-desert-ops",
           "quality": "legendary",
-          "url": "/heroes/baptiste/skins/baptiste-desert-ops.jpg"
+          "url": "/heroes/baptiste/skins/baptiste-desert-ops.jpg",
+          "description": "During his time with the Caribbean Coalition, Baptiste was deployed into different environments throughout the region."
         },
         {
           "name": "Pirate",
@@ -10177,6 +10332,7 @@
           "id": "brigitte-shieldmaiden",
           "quality": "legendary",
           "url": "/heroes/brigitte/skins/brigitte-shieldmaiden.jpg",
+          "description": "A prominent figure in her own legends, the Shieldmaiden is also known as the Viking's daughter in the tale of Junkenstein.",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2018"
         },
@@ -10919,15 +11075,6 @@
           "url": "/heroes/dva/skins/dva-white-rabbit.jpg"
         },
         {
-          "name": "Taegeukgi",
-          "id": "dva-taegeukgi",
-          "quality": "epic",
-          "url": "/heroes/dva/skins/dva-taegeukgi.jpg",
-          "description": "During her time as a professional gamer, D.Va proudly represented her country in tournaments around the world.",
-          "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
           "name": "Midnight",
           "id": "dva-midnight",
           "quality": "epic",
@@ -10981,14 +11128,6 @@
           "quality": "legendary",
           "url": "/heroes/dva/skins/dva-scavenger.jpg",
           "description": "Mech battles are one of the most popular forms of entertainment in Junkertown."
-        },
-        {
-          "name": "Waveracer",
-          "id": "dva-waveracer",
-          "quality": "legendary",
-          "url": "/heroes/dva/skins/dva-waveracer.jpg",
-          "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Palanquin",
@@ -11137,30 +11276,6 @@
           "id": "dva-law",
           "url": "/heroes/dva/icons/dva-law.png",
           "hero": "dva"
-        },
-        {
-          "name": "Cycling",
-          "id": "dva-cycling",
-          "url": "/heroes/dva/icons/dva-cycling.png",
-          "event": "SUMMER_GAMES",
-          "hero": "dva",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
-          "name": "D.Vacation",
-          "id": "dva-dvacation",
-          "url": "/heroes/dva/icons/dva-dvacation.png",
-          "event": "SUMMER_GAMES",
-          "hero": "dva",
-          "group": "SUMMER_GAMES_2018"
-        },
-        {
-          "name": "Waveracer",
-          "id": "dva-waveracer",
-          "url": "/heroes/dva/icons/dva-waveracer.png",
-          "event": "SUMMER_GAMES",
-          "hero": "dva",
-          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Hanbok",
@@ -11355,14 +11470,6 @@
           "id": "dva-watching",
           "quality": "common",
           "url": "/heroes/dva/sprays/dva-watching.png"
-        },
-        {
-          "name": "Cycling",
-          "id": "dva-cycling",
-          "quality": "common",
-          "url": "/heroes/dva/sprays/dva-cycling.png",
-          "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Trick or Treat",
@@ -11598,22 +11705,6 @@
           "id": "dva-no-hacks-required",
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-no-hacks-required.ogg"
-        },
-        {
-          "name": "I'm #1",
-          "id": "dva-im-1",
-          "quality": "common",
-          "url": "/heroes/dva/voicelines/dva-im-1.ogg",
-          "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
-          "name": "Scoreboard",
-          "id": "dva-scoreboard",
-          "quality": "common",
-          "url": "/heroes/dva/voicelines/dva-scoreboard.ogg",
-          "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2017"
         },
         {
           "name": "Happy Halloween!",
@@ -11927,8 +12018,17 @@
           "id": "doomfist-formal",
           "quality": "legendary",
           "url": "/heroes/doomfist/skins/doomfist-formal.jpg",
+          "description": "As the heir to his family's prosthetic-technology company, Doomfist was no stranger to the finer things in life.",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2018"
+        },
+        {
+          "name": "Thunder",
+          "id": "doomfist-thunder",
+          "quality": "legendary",
+          "url": "/heroes/doomfist/skins/doomfist-thunder.jpg",
+          "description": "Unlocked with purchase of the San Francisco Shock 2019 Championship Doomfist Thunder skin",
+          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -12637,6 +12737,487 @@
           "id": "doomfist-golden",
           "quality": "golden",
           "url": "/heroes/doomfist/weapons/doomfist-golden.png"
+        }
+      ]
+    }
+  },
+  "echo": {
+    "name": "Echo",
+    "id": "echo",
+    "class": "Damage",
+    "description": "Programmed and designed by Overwatch's Dr. Mina Liao, Echo is a robot with a rapidly adapting artificial intelligence.",
+    "colors": {
+      "primary": "#89c8ff",
+      "highlight": "#add9ff"
+    },
+    "items": {
+      "skins": [
+        {
+          "name": "Classic",
+          "id": "echo-classic",
+          "quality": "common",
+          "url": "/heroes/echo/skins/echo-classic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Durian",
+          "id": "echo-durian",
+          "quality": "rare",
+          "url": "/heroes/echo/skins/echo-durian.jpg"
+        },
+        {
+          "name": "Marina",
+          "id": "echo-marina",
+          "quality": "rare",
+          "url": "/heroes/echo/skins/echo-marina.jpg"
+        },
+        {
+          "name": "Papaya",
+          "id": "echo-papaya",
+          "quality": "rare",
+          "url": "/heroes/echo/skins/echo-papaya.jpg"
+        },
+        {
+          "name": "Vanda",
+          "id": "echo-vanda",
+          "quality": "rare",
+          "url": "/heroes/echo/skins/echo-vanda.jpg"
+        },
+        {
+          "name": "Carbon Fiber",
+          "id": "echo-carbon-fiber",
+          "quality": "epic",
+          "url": "/heroes/echo/skins/echo-carbon-fiber.jpg"
+        },
+        {
+          "name": "Hot Rod",
+          "id": "echo-hot-rod",
+          "quality": "epic",
+          "url": "/heroes/echo/skins/echo-hot-rod.jpg"
+        },
+        {
+          "name": "Butterfly",
+          "id": "echo-butterfly",
+          "quality": "legendary",
+          "url": "/heroes/echo/skins/echo-butterfly.jpg"
+        },
+        {
+          "name": "Camo",
+          "id": "echo-camo",
+          "quality": "legendary",
+          "url": "/heroes/echo/skins/echo-camo.jpg"
+        },
+        {
+          "name": "Moth",
+          "id": "echo-moth",
+          "quality": "legendary",
+          "url": "/heroes/echo/skins/echo-moth.jpg"
+        },
+        {
+          "name": "Stealth",
+          "id": "echo-stealth",
+          "quality": "legendary",
+          "url": "/heroes/echo/skins/echo-stealth.jpg"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "id": "echo-heroic",
+          "quality": "common",
+          "url": "/heroes/echo/emotes/echo-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Analysis",
+          "id": "echo-analysis",
+          "quality": "epic",
+          "url": "/heroes/echo/emotes/echo-analysis.webm"
+        },
+        {
+          "name": "Curtsy",
+          "id": "echo-curtsy",
+          "quality": "epic",
+          "url": "/heroes/echo/emotes/echo-curtsy.webm"
+        },
+        {
+          "name": "Flourish",
+          "id": "echo-flourish",
+          "quality": "epic",
+          "url": "/heroes/echo/emotes/echo-flourish.webm"
+        },
+        {
+          "name": "Laugh",
+          "id": "echo-laugh",
+          "quality": "epic",
+          "url": "/heroes/echo/emotes/echo-laugh.webm"
+        },
+        {
+          "name": "Sit",
+          "id": "echo-sit",
+          "quality": "epic",
+          "url": "/heroes/echo/emotes/echo-sit.webm"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "id": "echo-heroic",
+          "quality": "common",
+          "url": "/heroes/echo/intros/echo-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Awakening",
+          "id": "echo-awakening",
+          "quality": "epic",
+          "url": "/heroes/echo/intros/echo-awakening.webm"
+        },
+        {
+          "name": "Evasion",
+          "id": "echo-evasion",
+          "quality": "epic",
+          "url": "/heroes/echo/intros/echo-evasion.webm"
+        },
+        {
+          "name": "Maneuvers",
+          "id": "echo-maneuvers",
+          "quality": "epic",
+          "url": "/heroes/echo/intros/echo-maneuvers.webm"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Echo",
+          "id": "echo-echo",
+          "url": "/heroes/echo/icons/echo-echo.png",
+          "hero": "echo"
+        },
+        {
+          "name": "Promise",
+          "id": "echo-promise",
+          "url": "/heroes/echo/icons/echo-promise.png",
+          "hero": "echo"
+        },
+        {
+          "name": "Symmetry",
+          "id": "echo-symmetry",
+          "url": "/heroes/echo/icons/echo-symmetry.png",
+          "hero": "echo"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Activation",
+          "id": "echo-activation",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-activation.png"
+        },
+        {
+          "name": "Alight",
+          "id": "echo-alight",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-alight.png"
+        },
+        {
+          "name": "Butterfly",
+          "id": "echo-butterfly",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-butterfly.png"
+        },
+        {
+          "name": "Cooking",
+          "id": "echo-cooking",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-cooking.png"
+        },
+        {
+          "name": "Echo Rage",
+          "id": "echo-echo-rage",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-echo-rage.png"
+        },
+        {
+          "name": "Echoblade",
+          "id": "echo-echoblade",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-echoblade.png"
+        },
+        {
+          "name": "Echoes",
+          "id": "echo-echoes",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-echoes.png"
+        },
+        {
+          "name": "Echofist",
+          "id": "echo-echofist",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-echofist.png"
+        },
+        {
+          "name": "Echohardt",
+          "id": "echo-echohardt",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-echohardt.png"
+        },
+        {
+          "name": "Echomorph",
+          "id": "echo-echomorph",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-echomorph.png"
+        },
+        {
+          "name": "Eye",
+          "id": "echo-eye",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-eye.png"
+        },
+        {
+          "name": "Finger Guns",
+          "id": "echo-finger-guns",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-finger-guns.png"
+        },
+        {
+          "name": "Focus",
+          "id": "echo-focus",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-focus.png"
+        },
+        {
+          "name": "Gardening",
+          "id": "echo-gardening",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-gardening.png"
+        },
+        {
+          "name": "Ghost",
+          "id": "echo-ghost",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-ghost.png"
+        },
+        {
+          "name": "Hitchhiking",
+          "id": "echo-hitchhiking",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-hitchhiking.png"
+        },
+        {
+          "name": "Icon",
+          "id": "echo-icon",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-icon.png"
+        },
+        {
+          "name": "Kung Fu",
+          "id": "echo-kung-fu",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-kung-fu.png"
+        },
+        {
+          "name": "Loading...",
+          "id": "echo-loading",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-loading.png"
+        },
+        {
+          "name": "Mina",
+          "id": "echo-mina",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-mina.png"
+        },
+        {
+          "name": "Sticky Bomb",
+          "id": "echo-sticky-bomb",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-sticky-bomb.png"
+        },
+        {
+          "name": "Symbol",
+          "id": "echo-symbol",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-symbol.png"
+        },
+        {
+          "name": "System Online",
+          "id": "echo-system-online",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-system-online.png"
+        },
+        {
+          "name": "Cute",
+          "id": "echo-cute",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-cute.png",
+          "achievement": true,
+          "description": "Use 2 other heroes’ ultimates without dying as Echo in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "echo-pixel",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-pixel.png",
+          "achievement": true,
+          "description": " Earn 2 killing blows with a single use of Echo’s Focusing Beam in Quick or Competitive Play."
+        },
+        {
+          "name": "Bright Idea",
+          "id": "echo-bright-idea",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-bright-idea.png",
+          "description": "Unlocked by watching participating streams during the Echo hero launch event",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Duplicate",
+          "id": "echo-duplicate",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-duplicate.png",
+          "description": "Unlocked by watching participating streams during the Echo hero launch event",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Echo Online",
+          "id": "echo-echo-online",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-echo-online.png",
+          "description": "Unlocked by watching participating streams during the Echo hero launch event",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Lift Off",
+          "id": "echo-lift-off",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-lift-off.png",
+          "description": "Unlocked by watching participating streams during the Echo hero launch event",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "My Legacy",
+          "id": "echo-my-legacy",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-my-legacy.png",
+          "description": "Unlocked by watching participating streams during the Echo hero launch event",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Taking Flight",
+          "id": "echo-taking-flight",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-taking-flight.png",
+          "description": "Unlocked by watching participating streams during the Echo hero launch event",
+          "achievement": "blizzard"
+        }
+      ],
+      "voicelines": [
+        {
+          "name": "Type: Echo",
+          "id": "echo-type-echo",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-type-echo.ogg",
+          "standardItem": true
+        },
+        {
+          "name": "Alamak!",
+          "id": "echo-alamak",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-alamak.ogg"
+        },
+        {
+          "name": "Can or not?",
+          "id": "echo-can-or-not",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-can-or-not.ogg"
+        },
+        {
+          "name": "Double confirmed",
+          "id": "echo-double-confirmed",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-double-confirmed.ogg"
+        },
+        {
+          "name": "Every Situation",
+          "id": "echo-every-situation",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-every-situation.ogg"
+        },
+        {
+          "name": "Flight Plan",
+          "id": "echo-flight-plan",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-flight-plan.ogg"
+        },
+        {
+          "name": "I’ll try anything once",
+          "id": "echo-ill-try-anything-once",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-ill-try-anything-once.ogg"
+        },
+        {
+          "name": "Jialat!",
+          "id": "echo-jialat",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-jialat.ogg"
+        },
+        {
+          "name": "Loading Modules",
+          "id": "echo-loading-modules",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-loading-modules.ogg"
+        },
+        {
+          "name": "Non-relevant?",
+          "id": "echo-nonrelevant",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-nonrelevant.ogg"
+        },
+        {
+          "name": "So awesome!",
+          "id": "echo-so-awesome",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-so-awesome.ogg"
+        },
+        {
+          "name": "That was different",
+          "id": "echo-that-was-different",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-that-was-different.ogg"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "id": "echo-heroic",
+          "quality": "common",
+          "url": "/heroes/echo/poses/echo-heroic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Empowered",
+          "id": "echo-empowered",
+          "quality": "rare",
+          "url": "/heroes/echo/poses/echo-empowered.jpg"
+        },
+        {
+          "name": "Prim",
+          "id": "echo-prim",
+          "quality": "rare",
+          "url": "/heroes/echo/poses/echo-prim.jpg"
+        },
+        {
+          "name": "Stasis",
+          "id": "echo-stasis",
+          "quality": "rare",
+          "url": "/heroes/echo/poses/echo-stasis.jpg"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "echo-golden",
+          "quality": "golden",
+          "url": "/heroes/echo/weapons/echo-golden.png"
         }
       ]
     }
@@ -14431,7 +15012,8 @@
           "name": "Fool",
           "id": "junkrat-fool",
           "quality": "legendary",
-          "url": "/heroes/junkrat/skins/junkrat-fool.jpg"
+          "url": "/heroes/junkrat/skins/junkrat-fool.jpg",
+          "description": "A fool and his money are soon... blown up!"
         },
         {
           "name": "Hayseed",
@@ -14443,7 +15025,8 @@
           "name": "Jester",
           "id": "junkrat-jester",
           "quality": "legendary",
-          "url": "/heroes/junkrat/skins/junkrat-jester.jpg"
+          "url": "/heroes/junkrat/skins/junkrat-jester.jpg",
+          "description": "A fool and his money are soon... blown up!"
         },
         {
           "name": "Scarecrow",
@@ -16287,7 +16870,7 @@
           "id": "mccree-blackwatch",
           "quality": "legendary",
           "url": "/heroes/mccree/skins/mccree-blackwatch.jpg",
-          "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch, or rot in prison.",
+          "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch or rot in prison.",
           "event": "UPRISING",
           "group": "UPRISING_2017"
         },
@@ -20794,6 +21377,7 @@
           "id": "pharah-aviator",
           "quality": "legendary",
           "url": "/heroes/pharah/skins/pharah-aviator.jpg",
+          "description": "Lieutenant Fareeha “Pharah” Amari was hand-picked by Helix after her meritorious career in the Egyptian armed forces. Bearing the famous Amari family name, she was considered a recruitment coup.",
           "event": "UPRISING",
           "group": "UPRISING_2020",
           "isNew": true
@@ -23317,7 +23901,8 @@
           "name": "Mako",
           "id": "roadhog-mako",
           "quality": "legendary",
-          "url": "/heroes/roadhog/skins/roadhog-mako.jpg"
+          "url": "/heroes/roadhog/skins/roadhog-mako.jpg",
+          "description": "Those who knew Roadhog from before call him by his real name, \"Mako.\""
         },
         {
           "name": "Sharkbait",
@@ -27562,6 +28147,7 @@
           "id": "torbjorn-ironclad",
           "quality": "legendary",
           "url": "/heroes/torbjorn/skins/torbjorn-ironclad.jpg",
+          "description": "Torbjörn was a prominent member of the Ironclad Guild, whose headquarters were in Gothenburg, Sweden.",
           "event": "UPRISING",
           "group": "UPRISING_2017"
         },
@@ -27570,6 +28156,7 @@
           "id": "torbjorn-cybjorn",
           "quality": "legendary",
           "url": "/heroes/torbjorn/skins/torbjorn-cybjorn.jpg",
+          "description": "\"...like the terrible culmination of a thousand of my worst nightmares. Are you kidding me?\"",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2018"
         }
