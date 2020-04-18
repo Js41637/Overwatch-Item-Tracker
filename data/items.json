@@ -1191,6 +1191,14 @@
           "group": "UPRISING_2017"
         },
         {
+          "name": "Cycling",
+          "id": "dva-cycling",
+          "url": "/heroes/dva/icons/dva-cycling.png",
+          "event": "SUMMER_GAMES",
+          "hero": "dva",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
           "name": "D'or",
           "id": "widowmaker-dor",
           "url": "/heroes/widowmaker/icons/widowmaker-dor.png",
@@ -1203,6 +1211,14 @@
           "id": "dva-dva",
           "url": "/heroes/dva/icons/dva-dva.png",
           "hero": "dva"
+        },
+        {
+          "name": "D.Vacation",
+          "id": "dva-dvacation",
+          "url": "/heroes/dva/icons/dva-dvacation.png",
+          "event": "SUMMER_GAMES",
+          "hero": "dva",
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Dallas Fuel",
@@ -4402,6 +4418,14 @@
           "hero": "hanzo",
           "group": "SUMMER_GAMES_2019",
           "isNew": true
+        },
+        {
+          "name": "Waveracer",
+          "id": "dva-waveracer",
+          "url": "/heroes/dva/icons/dva-waveracer.png",
+          "event": "SUMMER_GAMES",
+          "hero": "dva",
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Wedjat",
@@ -11075,6 +11099,15 @@
           "url": "/heroes/dva/skins/dva-white-rabbit.jpg"
         },
         {
+          "name": "Taegeukgi",
+          "id": "dva-taegeukgi",
+          "quality": "epic",
+          "url": "/heroes/dva/skins/dva-taegeukgi.jpg",
+          "description": "During her time as a professional gamer, D.Va proudly represented her country in tournaments around the world.",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
           "name": "Midnight",
           "id": "dva-midnight",
           "quality": "epic",
@@ -11128,6 +11161,14 @@
           "quality": "legendary",
           "url": "/heroes/dva/skins/dva-scavenger.jpg",
           "description": "Mech battles are one of the most popular forms of entertainment in Junkertown."
+        },
+        {
+          "name": "Waveracer",
+          "id": "dva-waveracer",
+          "quality": "legendary",
+          "url": "/heroes/dva/skins/dva-waveracer.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Palanquin",
@@ -11276,6 +11317,30 @@
           "id": "dva-law",
           "url": "/heroes/dva/icons/dva-law.png",
           "hero": "dva"
+        },
+        {
+          "name": "Cycling",
+          "id": "dva-cycling",
+          "url": "/heroes/dva/icons/dva-cycling.png",
+          "event": "SUMMER_GAMES",
+          "hero": "dva",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "D.Vacation",
+          "id": "dva-dvacation",
+          "url": "/heroes/dva/icons/dva-dvacation.png",
+          "event": "SUMMER_GAMES",
+          "hero": "dva",
+          "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "name": "Waveracer",
+          "id": "dva-waveracer",
+          "url": "/heroes/dva/icons/dva-waveracer.png",
+          "event": "SUMMER_GAMES",
+          "hero": "dva",
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "name": "Hanbok",
@@ -11470,6 +11535,14 @@
           "id": "dva-watching",
           "quality": "common",
           "url": "/heroes/dva/sprays/dva-watching.png"
+        },
+        {
+          "name": "Cycling",
+          "id": "dva-cycling",
+          "quality": "common",
+          "url": "/heroes/dva/sprays/dva-cycling.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
         },
         {
           "name": "Trick or Treat",
@@ -11705,6 +11778,22 @@
           "id": "dva-no-hacks-required",
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-no-hacks-required.ogg"
+        },
+        {
+          "name": "I'm #1",
+          "id": "dva-im-1",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-im-1.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Scoreboard",
+          "id": "dva-scoreboard",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-scoreboard.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2017"
         },
         {
           "name": "Happy Halloween!",
