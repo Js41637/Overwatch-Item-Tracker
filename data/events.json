@@ -12887,8 +12887,8 @@
     "name": "Anniversary",
     "id": "ANNIVERSARY",
     "dates": {
-      "start": "1558461600000",
-      "end": "1560254400000"
+      "start": "1589914800000",
+      "end": "1591786800000"
     },
     "items": {
       "emotes": [
@@ -12908,8 +12908,7 @@
           "id": "ashe-line-dance",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/ashe-line-dance.webm",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Baptiste",
@@ -12918,8 +12917,7 @@
           "id": "baptiste-konpa-dance",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/baptiste-konpa-dance.webm",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Bastion",
@@ -12958,6 +12956,16 @@
           "group": "ANNIVERSARY_2018"
         },
         {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Weightless",
+          "id": "echo-weightless",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/emotes/echo-weightless.webm",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Genji",
           "hero": "genji",
           "name": "Dance",
@@ -12973,8 +12981,7 @@
           "id": "wrecking-ball-hamster-dance",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/wrecking-ball-hamster-dance.webm",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Hanzo",
@@ -13078,11 +13085,31 @@
         {
           "heroName": "Roadhog",
           "hero": "roadhog",
+          "name": "Big Guy",
+          "id": "roadhog-big-guy",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/emotes/roadhog-big-guy.webm",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
           "name": "Dance",
           "id": "roadhog-dance",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/roadhog-dance.webm",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Dans",
+          "id": "sigma-dans",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/emotes/sigma-dans.webm",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
         },
         {
           "heroName": "Soldier: 76",
@@ -13178,11 +13205,28 @@
         {
           "heroName": "Ashe",
           "hero": "ashe",
+          "name": "Big Bad B.O.B.",
+          "id": "ashe-big-bad-bob",
+          "url": "/heroes/ashe/icons/ashe-big-bad-bob.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Little Red",
+          "id": "ashe-little-red",
+          "url": "/heroes/ashe/icons/ashe-little-red.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
           "name": "Rich Ashe",
           "id": "ashe-rich-ashe",
           "url": "/heroes/ashe/icons/ashe-rich-ashe.png",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Baptiste",
@@ -13190,8 +13234,7 @@
           "name": "Lò",
           "id": "baptiste-l",
           "url": "/heroes/baptiste/icons/baptiste-l.png",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Bastion",
@@ -13231,8 +13274,7 @@
           "name": "Riot Police",
           "id": "brigitte-riot-police",
           "url": "/heroes/brigitte/icons/brigitte-riot-police.png",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "D.Va",
@@ -13240,8 +13282,7 @@
           "name": "Academy",
           "id": "dva-academy",
           "url": "/heroes/dva/icons/dva-academy.png",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "D.Va",
@@ -13249,8 +13290,7 @@
           "name": "Hagwon",
           "id": "dva-hagwon",
           "url": "/heroes/dva/icons/dva-hagwon.png",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "D.Va",
@@ -13277,6 +13317,15 @@
           "group": "ANNIVERSARY_2018"
         },
         {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Echoversary",
+          "id": "echo-echoversary",
+          "url": "/heroes/echo/icons/echo-echoversary.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Genji",
           "hero": "genji",
           "name": "Goldborg",
@@ -13290,7 +13339,15 @@
           "name": "Gold Ball",
           "id": "wrecking-ball-gold-ball",
           "url": "/heroes/wrecking-ball/icons/wrecking-ball-gold-ball.png",
-          "group": "ANNIVERSARY_2019",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Submarine",
+          "id": "wrecking-ball-submarine",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-submarine.png",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
@@ -13336,6 +13393,17 @@
         {
           "heroName": "McCree",
           "hero": "mccree",
+          "name": "Masked Man",
+          "id": "mccree-masked-man",
+          "url": "/heroes/mccree/icons/mccree-masked-man.png",
+          "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
+          "achievement": true,
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
           "name": "Sherlock",
           "id": "mccree-sherlock",
           "url": "/heroes/mccree/icons/mccree-sherlock.png",
@@ -13347,8 +13415,7 @@
           "name": "Honeydew",
           "id": "mei-honeydew",
           "url": "/heroes/mei/icons/mei-honeydew.png",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Mei",
@@ -13357,6 +13424,15 @@
           "id": "mei-may",
           "url": "/heroes/mei/icons/mei-may.png",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Dragoon",
+          "id": "mercy-dragoon",
+          "url": "/heroes/mercy/icons/mercy-dragoon.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
         },
         {
           "heroName": "Mercy",
@@ -13404,7 +13480,15 @@
           "name": "Orbital",
           "id": "pharah-orbital",
           "url": "/heroes/pharah/icons/pharah-orbital.png",
-          "group": "ANNIVERSARY_2019",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Masquerade",
+          "id": "reaper-masquerade",
+          "url": "/heroes/reaper/icons/reaper-masquerade.png",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
@@ -13437,7 +13521,26 @@
           "name": "Toxic",
           "id": "roadhog-toxic",
           "url": "/heroes/roadhog/icons/roadhog-toxic.png",
-          "group": "ANNIVERSARY_2019",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Carbon Fiber",
+          "id": "sigma-carbon-fiber",
+          "url": "/heroes/sigma/icons/sigma-carbon-fiber.png",
+          "description": "Unlocked by participating in the Anniversary 2020 week 1 challenge",
+          "achievement": true,
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Sigmaversary",
+          "id": "sigma-sigmaversary",
+          "url": "/heroes/sigma/icons/sigma-sigmaversary.png",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
@@ -13505,13 +13608,23 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Fleur de Lis",
+          "id": "widowmaker-fleur-de-lis",
+          "url": "/heroes/widowmaker/icons/widowmaker-fleur-de-lis.png",
+          "description": "Unlocked by participating in the Anniversary 2020 week 2 challenge",
+          "achievement": true,
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Winston",
           "hero": "winston",
           "name": "Gargoyle",
           "id": "winston-gargoyle",
           "url": "/heroes/winston/icons/winston-gargoyle.png",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Winston",
@@ -13528,6 +13641,15 @@
           "id": "zarya-zaryanoversary",
           "url": "/heroes/zarya/icons/zarya-zaryanoversary.png",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Huitzilopochtli",
+          "id": "zenyatta-huitzilopochtli",
+          "url": "/heroes/zenyatta/icons/zenyatta-huitzilopochtli.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
         },
         {
           "heroName": "Zenyatta",
@@ -13556,7 +13678,14 @@
           "name": "Anniversary 2019",
           "id": "anniversary-2019",
           "url": "/heroes/all/icons/anniversary-2019.png",
-          "group": "ANNIVERSARY_2019",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "hero": "all",
+          "name": "Anniversary 2020",
+          "id": "anniversary-2020",
+          "url": "/heroes/all/icons/anniversary-2020.png",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
@@ -13564,7 +13693,14 @@
           "name": "Cupachicake",
           "id": "cupachicake",
           "url": "/heroes/all/icons/cupachicake.png",
-          "group": "ANNIVERSARY_2019",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "hero": "all",
+          "name": "Fanous",
+          "id": "fanous",
+          "url": "/heroes/all/icons/fanous.png",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
@@ -13592,7 +13728,16 @@
           "id": "ashe-eight-of-diamonds",
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-eight-of-diamonds.png",
-          "group": "ANNIVERSARY_2019",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Little Red",
+          "id": "ashe-little-red",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-little-red.png",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
@@ -13602,8 +13747,7 @@
           "id": "ashe-seven-of-spades",
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-seven-of-spades.png",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Baptiste",
@@ -13612,8 +13756,7 @@
           "id": "baptiste-eight-of-hearts",
           "quality": "common",
           "url": "/heroes/baptiste/sprays/baptiste-eight-of-hearts.png",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Bastion",
@@ -13652,6 +13795,16 @@
           "group": "ANNIVERSARY_2018"
         },
         {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Seven of Hearts",
+          "id": "echo-seven-of-hearts",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-seven-of-hearts.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Genji",
           "hero": "genji",
           "name": "Jack of Clubs",
@@ -13667,7 +13820,16 @@
           "id": "wrecking-ball-eight-of-clubs",
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-eight-of-clubs.png",
-          "group": "ANNIVERSARY_2019",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Submarine",
+          "id": "wrecking-ball-submarine",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-submarine.png",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
@@ -13707,6 +13869,18 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Masked Man",
+          "id": "mccree-masked-man",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-masked-man.png",
+          "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
+          "achievement": true,
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Mei",
           "hero": "mei",
           "name": "Ten of Diamonds",
@@ -13714,6 +13888,16 @@
           "quality": "common",
           "url": "/heroes/mei/sprays/mei-ten-of-diamonds.png",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Dragoon",
+          "id": "mercy-dragoon",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-dragoon.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
         },
         {
           "heroName": "Mercy",
@@ -13761,6 +13945,16 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Masquerade",
+          "id": "reaper-masquerade",
+          "quality": "common",
+          "url": "/heroes/reaper/sprays/reaper-masquerade.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Reinhardt",
           "hero": "reinhardt",
           "name": "King of Hearts",
@@ -13777,6 +13971,28 @@
           "quality": "common",
           "url": "/heroes/roadhog/sprays/roadhog-joker.png",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Eight of Spades",
+          "id": "sigma-eight-of-spades",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-eight-of-spades.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Carbon Fiber",
+          "id": "sigma-carbon-fiber",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-carbon-fiber.png",
+          "description": "Unlocked by participating in the Anniversary 2020 week 1 challenge",
+          "achievement": true,
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
         },
         {
           "heroName": "Soldier: 76",
@@ -13833,6 +14049,18 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Fleur de Lis",
+          "id": "widowmaker-fleur-de-lis",
+          "quality": "common",
+          "url": "/heroes/widowmaker/sprays/widowmaker-fleur-de-lis.png",
+          "description": "Unlocked by participating in the Anniversary 2020 week 2 challenge",
+          "achievement": true,
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Winston",
           "hero": "winston",
           "name": "Jack of Hearts",
@@ -13853,6 +14081,16 @@
         {
           "heroName": "Zenyatta",
           "hero": "zenyatta",
+          "name": "Huitzilopochtli",
+          "id": "zenyatta-huitzilopochtli",
+          "quality": "common",
+          "url": "/heroes/zenyatta/sprays/zenyatta-huitzilopochtli.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
           "name": "King of Spades",
           "id": "zenyatta-king-of-spades",
           "quality": "common",
@@ -13866,287 +14104,155 @@
           "url": "/heroes/all/sprays/anniversary-2017.png",
           "group": "ANNIVERSARY_2017",
           "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Fast",
+          "id": "fast",
+          "url": "/heroes/all/sprays/fast.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true,
+          "quality": "common"
+        },
+        {
+          "hero": "all",
+          "name": "Feast",
+          "id": "feast",
+          "url": "/heroes/all/sprays/feast.png",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true,
+          "quality": "common"
         }
       ],
       "voicelines": [
         {
-          "heroName": "Ashe",
-          "hero": "ashe",
-          "name": "I'm an easy rider",
-          "id": "ashe-im-an-easy-rider",
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "In the desert",
+          "id": "ana-in-the-desert",
           "quality": "common",
-          "url": "/heroes/ashe/voicelines/ashe-im-an-easy-rider.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/ana/voicelines/ana-in-the-desert.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
           "heroName": "Ashe",
           "hero": "ashe",
-          "name": "Life is a highway",
-          "id": "ashe-life-is-a-highway",
+          "name": "You follow?",
+          "id": "ashe-you-follow",
           "quality": "common",
-          "url": "/heroes/ashe/voicelines/ashe-life-is-a-highway.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Ashe",
-          "hero": "ashe",
-          "name": "You wanna try me?",
-          "id": "ashe-you-wanna-try-me",
-          "quality": "common",
-          "url": "/heroes/ashe/voicelines/ashe-you-wanna-try-me.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Baptiste",
-          "hero": "baptiste",
-          "name": "I'd recommend bed rest",
-          "id": "baptiste-id-recommend-bed-rest",
-          "quality": "common",
-          "url": "/heroes/baptiste/voicelines/baptiste-id-recommend-bed-rest.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Baptiste",
-          "hero": "baptiste",
-          "name": "Not my problem",
-          "id": "baptiste-not-my-problem",
-          "quality": "common",
-          "url": "/heroes/baptiste/voicelines/baptiste-not-my-problem.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Baptiste",
-          "hero": "baptiste",
-          "name": "Now that is funny",
-          "id": "baptiste-now-that-is-funny",
-          "quality": "common",
-          "url": "/heroes/baptiste/voicelines/baptiste-now-that-is-funny.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Brigitte",
-          "hero": "brigitte",
-          "name": "Get out of here",
-          "id": "brigitte-take-a-hike",
-          "quality": "common",
-          "url": "/heroes/brigitte/voicelines/brigitte-take-a-hike.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/ashe/voicelines/ashe-you-follow.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
           "heroName": "D.Va",
           "hero": "dva",
-          "name": "I know my KDR",
-          "id": "dva-i-know-my-kdr",
+          "name": "Yeah...!",
+          "id": "dva-yeah",
           "quality": "common",
-          "url": "/heroes/dva/voicelines/dva-i-know-my-kdr.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/dva/voicelines/dva-yeah.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "An elegant weapon",
-          "id": "genji-an-elegant-weapon",
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "A submarine can't swim",
+          "id": "echo-a-submarine-cant-swim",
           "quality": "common",
-          "url": "/heroes/genji/voicelines/genji-an-elegant-weapon.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/echo/voicelines/echo-a-submarine-cant-swim.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Rolled",
-          "id": "wrecking-ball-rolled",
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Another helping?",
+          "id": "echo-another-helping",
           "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-rolled.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/echo/voicelines/echo-another-helping.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Self-assessment",
-          "id": "wrecking-ball-selfassessment",
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Intriguing",
+          "id": "echo-intriguing",
           "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-selfassessment.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Victory",
-          "id": "wrecking-ball-victory",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-victory.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/echo/voicelines/echo-intriguing.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
           "heroName": "Hanzo",
           "hero": "hanzo",
-          "name": "The only destiny I know",
-          "id": "hanzo-the-only-destiny-i-know",
+          "name": "Puppet strings",
+          "id": "hanzo-puppet-strings",
           "quality": "common",
-          "url": "/heroes/hanzo/voicelines/hanzo-the-only-destiny-i-know.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "That was the bomb",
-          "id": "junkrat-that-was-the-bomb",
-          "quality": "common",
-          "url": "/heroes/junkrat/voicelines/junkrat-that-was-the-bomb.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Both kinds of music",
-          "id": "mccree-both-kinds-of-music",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-both-kinds-of-music.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Apologies",
-          "id": "mei-apologies",
-          "quality": "common",
-          "url": "/heroes/mei/voicelines/mei-apologies.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/hanzo/voicelines/hanzo-puppet-strings.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
           "heroName": "Mercy",
           "hero": "mercy",
-          "name": "Call the whambulance",
-          "id": "mercy-call-the-whambulance",
+          "name": "Are you quite done?",
+          "id": "mercy-are-you-quite-done",
           "quality": "common",
-          "url": "/heroes/mercy/voicelines/mercy-call-the-whambulance.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/mercy/voicelines/mercy-are-you-quite-done.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
-          "heroName": "Moira",
-          "hero": "moira",
-          "name": "Evolution's gifts",
-          "id": "moira-evolutions-gifts",
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Your eye in the sky",
+          "id": "pharah-your-eye-in-the-sky",
           "quality": "common",
-          "url": "/heroes/moira/voicelines/moira-evolutions-gifts.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/pharah/voicelines/pharah-your-eye-in-the-sky.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
-          "heroName": "Orisa",
-          "hero": "orisa",
-          "name": "If lost, please return to Efi",
-          "id": "orisa-if-lost-please-return-to-efi",
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Like a spherical cow",
+          "id": "sigma-like-a-spherical-cow",
           "quality": "common",
-          "url": "/heroes/orisa/voicelines/orisa-if-lost-please-return-to-efi.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/sigma/voicelines/sigma-like-a-spherical-cow.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Fetch me my hammer!",
-          "id": "reinhardt-fetch-me-my-hammer",
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Reduce your expectations",
+          "id": "sigma-reduce-your-expectations",
           "quality": "common",
-          "url": "/heroes/reinhardt/voicelines/reinhardt-fetch-me-my-hammer.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/sigma/voicelines/sigma-reduce-your-expectations.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "I'm beached as, bro",
-          "id": "roadhog-youre-a-talker",
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "The universe is a holovid",
+          "id": "sigma-the-universe-is-a-holovid",
           "quality": "common",
-          "url": "/heroes/roadhog/voicelines/roadhog-youre-a-talker.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/sigma/voicelines/sigma-the-universe-is-a-holovid.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "I've died a hero",
-          "id": "soldier-76-ive-died-a-hero",
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "I've got nothing to hide",
+          "id": "winston-ive-got-nothing-to-hide",
           "quality": "common",
-          "url": "/heroes/soldier-76/voicelines/soldier-76-ive-died-a-hero.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "So dramatic",
-          "id": "symmetra-so-dramatic",
-          "quality": "common",
-          "url": "/heroes/symmetra/voicelines/symmetra-so-dramatic.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Try my meatballs",
-          "id": "torbjorn-try-my-meatballs",
-          "quality": "common",
-          "url": "/heroes/torbjorn/voicelines/torbjorn-try-my-meatballs.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "I love this part!",
-          "id": "tracer-i-love-this-part",
-          "quality": "common",
-          "url": "/heroes/tracer/voicelines/tracer-i-love-this-part.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Lucky and good",
-          "id": "widowmaker-lucky-and-good",
-          "quality": "common",
-          "url": "/heroes/widowmaker/voicelines/widowmaker-lucky-and-good.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Fitness secret",
-          "id": "zarya-fitness-secret",
-          "quality": "common",
-          "url": "/heroes/zarya/voicelines/zarya-fitness-secret.ogg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Zenyatta",
-          "hero": "zenyatta",
-          "name": "Your flaws are revealed",
-          "id": "zenyatta-your-flaws-are-revealed",
-          "quality": "common",
-          "url": "/heroes/zenyatta/voicelines/zenyatta-your-flaws-are-revealed.ogg",
-          "group": "ANNIVERSARY_2019",
+          "url": "/heroes/winston/voicelines/winston-ive-got-nothing-to-hide.ogg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
@@ -14175,6 +14281,60 @@
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-you-need-to-learn-to-relax.ogg",
           "group": "ANNIVERSARY_2018"
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "I'm an easy rider",
+          "id": "ashe-im-an-easy-rider",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-im-an-easy-rider.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Life is a highway",
+          "id": "ashe-life-is-a-highway",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-life-is-a-highway.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "You wanna try me?",
+          "id": "ashe-you-wanna-try-me",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-you-wanna-try-me.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "I'd recommend bed rest",
+          "id": "baptiste-id-recommend-bed-rest",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-id-recommend-bed-rest.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Not my problem",
+          "id": "baptiste-not-my-problem",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-not-my-problem.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Now that is funny",
+          "id": "baptiste-now-that-is-funny",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-now-that-is-funny.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Bastion",
@@ -14206,6 +14366,15 @@
         {
           "heroName": "Brigitte",
           "hero": "brigitte",
+          "name": "Get out of here",
+          "id": "brigitte-take-a-hike",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-take-a-hike.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
           "name": "It's just a flesh wound",
           "id": "brigitte-its-just-a-flesh-wound",
           "quality": "common",
@@ -14229,6 +14398,15 @@
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-no-problem.ogg",
           "group": "ANNIVERSARY_2018"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "I know my KDR",
+          "id": "dva-i-know-my-kdr",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-i-know-my-kdr.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "D.Va",
@@ -14287,6 +14465,15 @@
         {
           "heroName": "Genji",
           "hero": "genji",
+          "name": "An elegant weapon",
+          "id": "genji-an-elegant-weapon",
+          "quality": "common",
+          "url": "/heroes/genji/voicelines/genji-an-elegant-weapon.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
           "name": "I'm Not Impressed",
           "id": "genji-im-not-impressed",
           "quality": "common",
@@ -14310,6 +14497,33 @@
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-you-seem-nice.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Rolled",
+          "id": "wrecking-ball-rolled",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-rolled.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Self-assessment",
+          "id": "wrecking-ball-selfassessment",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-selfassessment.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Victory",
+          "id": "wrecking-ball-victory",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-victory.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Hanzo",
@@ -14339,6 +14553,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "The only destiny I know",
+          "id": "hanzo-the-only-destiny-i-know",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-the-only-destiny-i-know.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
           "heroName": "Junkrat",
           "hero": "junkrat",
           "name": "Dipstick",
@@ -14364,6 +14587,15 @@
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-oops-dropped-something.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "That was the bomb",
+          "id": "junkrat-that-was-the-bomb",
+          "quality": "common",
+          "url": "/heroes/junkrat/voicelines/junkrat-that-was-the-bomb.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Lúcio",
@@ -14395,6 +14627,15 @@
         {
           "heroName": "McCree",
           "hero": "mccree",
+          "name": "Both kinds of music",
+          "id": "mccree-both-kinds-of-music",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-both-kinds-of-music.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
           "name": "Buckle up",
           "id": "mccree-buckle-up",
           "quality": "common",
@@ -14418,6 +14659,15 @@
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-next-rounds-on-me.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Apologies",
+          "id": "mei-apologies",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-apologies.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Mei",
@@ -14449,6 +14699,15 @@
         {
           "heroName": "Mercy",
           "hero": "mercy",
+          "name": "Call the whambulance",
+          "id": "mercy-call-the-whambulance",
+          "quality": "common",
+          "url": "/heroes/mercy/voicelines/mercy-call-the-whambulance.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
           "name": "I've seen worse",
           "id": "mercy-ive-seen-worse",
           "quality": "common",
@@ -14472,6 +14731,15 @@
           "quality": "common",
           "url": "/heroes/mercy/voicelines/mercy-youre-welcome.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Evolution's gifts",
+          "id": "moira-evolutions-gifts",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-evolutions-gifts.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Moira",
@@ -14508,6 +14776,15 @@
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-have-a-bad-feeling-about-this.ogg",
           "group": "ANNIVERSARY_2018"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "If lost, please return to Efi",
+          "id": "orisa-if-lost-please-return-to-efi",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-if-lost-please-return-to-efi.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Orisa",
@@ -14602,6 +14879,15 @@
         {
           "heroName": "Reinhardt",
           "hero": "reinhardt",
+          "name": "Fetch me my hammer!",
+          "id": "reinhardt-fetch-me-my-hammer",
+          "quality": "common",
+          "url": "/heroes/reinhardt/voicelines/reinhardt-fetch-me-my-hammer.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
           "name": "Honor! Justice! Reinhardt!",
           "id": "reinhardt-honor-justice-reinhardt",
           "quality": "common",
@@ -14616,6 +14902,15 @@
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-i-dont-like-talkers.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "I'm beached as, bro",
+          "id": "roadhog-youre-a-talker",
+          "quality": "common",
+          "url": "/heroes/roadhog/voicelines/roadhog-youre-a-talker.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Roadhog",
@@ -14643,6 +14938,15 @@
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-im-not-your-father.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "I've died a hero",
+          "id": "soldier-76-ive-died-a-hero",
+          "quality": "common",
+          "url": "/heroes/soldier-76/voicelines/soldier-76-ive-died-a-hero.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Soldier: 76",
@@ -14710,6 +15014,15 @@
         {
           "heroName": "Symmetra",
           "hero": "symmetra",
+          "name": "So dramatic",
+          "id": "symmetra-so-dramatic",
+          "quality": "common",
+          "url": "/heroes/symmetra/voicelines/symmetra-so-dramatic.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
           "name": "Your mind works",
           "id": "symmetra-your-mind-works",
           "quality": "common",
@@ -14733,6 +15046,15 @@
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-trust-me.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Try my meatballs",
+          "id": "torbjorn-try-my-meatballs",
+          "quality": "common",
+          "url": "/heroes/torbjorn/voicelines/torbjorn-try-my-meatballs.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Torbjörn",
@@ -14764,11 +15086,29 @@
         {
           "heroName": "Tracer",
           "hero": "tracer",
+          "name": "I love this part!",
+          "id": "tracer-i-love-this-part",
+          "quality": "common",
+          "url": "/heroes/tracer/voicelines/tracer-i-love-this-part.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
           "name": "Too slow!",
           "id": "tracer-too-slow",
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-too-slow.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Lucky and good",
+          "id": "widowmaker-lucky-and-good",
+          "quality": "common",
+          "url": "/heroes/widowmaker/voicelines/widowmaker-lucky-and-good.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Widowmaker",
@@ -14827,6 +15167,15 @@
         {
           "heroName": "Zarya",
           "hero": "zarya",
+          "name": "Fitness secret",
+          "id": "zarya-fitness-secret",
+          "quality": "common",
+          "url": "/heroes/zarya/voicelines/zarya-fitness-secret.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
           "name": "Is that all?",
           "id": "zarya-is-that-all",
           "quality": "common",
@@ -14877,6 +15226,68 @@
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-patience.ogg",
           "group": "ANNIVERSARY_2018"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Your flaws are revealed",
+          "id": "zenyatta-your-flaws-are-revealed",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-your-flaws-are-revealed.ogg",
+          "group": "ANNIVERSARY_2019"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Little Red",
+          "id": "ashe-little-red",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/ashe-little-red.jpg",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Submarine",
+          "id": "wrecking-ball-submarine",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/wrecking-ball-submarine.jpg",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Dragoon",
+          "id": "mercy-dragoon",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/mercy-dragoon.jpg",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Masquerade",
+          "id": "reaper-masquerade",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/reaper-masquerade.jpg",
+          "description": "“There are chords in the hearts of the most reckless which cannot be touched without emotion, even by the utterly lost, to whom life and death are equally jests, there are matters of which no jest can be made.”",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Huitzilopochtli",
+          "id": "zenyatta-huitzilopochtli",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skinsLegendary/zenyatta-huitzilopochtli.jpg",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
         }
       ],
       "skins": [
@@ -14887,8 +15298,7 @@
           "id": "dva-midnight",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/skins/dva-midnight.jpg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Doomfist",
@@ -14897,8 +15307,7 @@
           "id": "doomfist-carbon-fiber",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/skins/doomfist-carbon-fiber.jpg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Lúcio",
@@ -14910,13 +15319,36 @@
           "group": "ANNIVERSARY_2018"
         },
         {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Masked Man",
+          "id": "mccree-masked-man",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/skins/mccree-masked-man.jpg",
+          "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
+          "achievement": true,
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Pharah",
           "hero": "pharah",
           "name": "Carbon Fiber",
           "id": "pharah-carbon-fiber",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/skins/pharah-carbon-fiber.jpg",
-          "group": "ANNIVERSARY_2019",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Carbon Fiber",
+          "id": "sigma-carbon-fiber",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/skins/sigma-carbon-fiber.jpg",
+          "description": "Unlocked by participating in the Anniversary 2020 week 1 challenge",
+          "achievement": true,
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
@@ -14935,8 +15367,7 @@
           "id": "sombra-oro",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/skins/sombra-oro.jpg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Tracer",
@@ -14954,7 +15385,18 @@
           "id": "widowmaker-electric",
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/skins/widowmaker-electric.jpg",
-          "group": "ANNIVERSARY_2019",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Fleur de Lis",
+          "id": "widowmaker-fleur-de-lis",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/skins/widowmaker-fleur-de-lis.jpg",
+          "description": "Unlocked by participating in the Anniversary 2020 week 2 challenge",
+          "achievement": true,
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
@@ -14978,12 +15420,31 @@
         {
           "heroName": "Brigitte",
           "hero": "brigitte",
+          "name": "Riot Police",
+          "id": "brigitte-riot-police",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skins/brigitte-riot-police.jpg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
           "name": "Shieldmaiden",
           "id": "brigitte-shieldmaiden",
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skins/brigitte-shieldmaiden.jpg",
           "description": "A prominent figure in her own legends, the Shieldmaiden is also known as the Viking's daughter in the tale of Junkenstein.",
           "group": "ANNIVERSARY_2018"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Academy",
+          "id": "dva-academy",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skins/dva-academy.jpg",
+          "description": "While she was in high school, Hana \"D.Va\" Song held the #1 rank in Mecha Guardian V and won the world championship, surpassing her teammate, Yuna \"D.mon\" Lee, and her biggest rival, Kyung-soo \"King\" Han.",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "D.Va",
@@ -15060,6 +15521,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Honeydew",
+          "id": "mei-honeydew",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skins/mei-honeydew.jpg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
           "heroName": "Orisa",
           "hero": "orisa",
           "name": "Forest Spirit",
@@ -15076,6 +15546,24 @@
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skins/pharah-bedouin.jpg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Orbital",
+          "id": "pharah-orbital",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skins/pharah-orbital.jpg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Toxic",
+          "id": "roadhog-toxic",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skins/roadhog-toxic.jpg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Soldier: 76",
@@ -15124,6 +15612,15 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Gargoyle",
+          "id": "winston-gargoyle",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skins/winston-gargoyle.jpg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Cyberian",
@@ -15131,69 +15628,6 @@
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skins/zarya-cyberian.jpg",
           "group": "ANNIVERSARY_2017"
-        }
-      ],
-      "skinsLegendary": [
-        {
-          "heroName": "Brigitte",
-          "hero": "brigitte",
-          "name": "Riot Police",
-          "id": "brigitte-riot-police",
-          "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/brigitte-riot-police.jpg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "D.Va",
-          "hero": "dva",
-          "name": "Academy",
-          "id": "dva-academy",
-          "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/dva-academy.jpg",
-          "description": "While she was in high school, Hana \"D.Va\" Song held the #1 rank in Mecha Guardian V and won the world championship, surpassing her teammate, Yuna \"D.mon\" Lee, and her biggest rival, Kyung-soo \"King\" Han.",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Honeydew",
-          "id": "mei-honeydew",
-          "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/mei-honeydew.jpg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Orbital",
-          "id": "pharah-orbital",
-          "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/pharah-orbital.jpg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Roadhog",
-          "hero": "roadhog",
-          "name": "Toxic",
-          "id": "roadhog-toxic",
-          "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/roadhog-toxic.jpg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "Gargoyle",
-          "id": "winston-gargoyle",
-          "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skinsLegendary/winston-gargoyle.jpg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
         }
       ],
       "poses": [
@@ -15213,7 +15647,26 @@
           "id": "genji-over-the-shoulder",
           "quality": "rare",
           "url": "/updates/ANNIVERSARY/poses/genji-over-the-shoulder.jpg",
-          "group": "ANNIVERSARY_2019",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Salute",
+          "id": "hanzo-salute",
+          "quality": "rare",
+          "url": "/updates/ANNIVERSARY/poses/hanzo-salute.jpg",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Flashbang",
+          "id": "mccree-flashbang",
+          "quality": "rare",
+          "url": "/updates/ANNIVERSARY/poses/mccree-flashbang.jpg",
+          "group": "ANNIVERSARY_2020",
           "isNew": true
         },
         {
@@ -15232,8 +15685,7 @@
           "id": "orisa-beacon",
           "quality": "rare",
           "url": "/updates/ANNIVERSARY/poses/orisa-beacon.jpg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Reaper",
@@ -15242,8 +15694,7 @@
           "id": "reaper-ready-for-action",
           "quality": "rare",
           "url": "/updates/ANNIVERSARY/poses/reaper-ready-for-action.jpg",
-          "group": "ANNIVERSARY_2019",
-          "isNew": true
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Tracer",
@@ -15253,6 +15704,16 @@
           "quality": "rare",
           "url": "/updates/ANNIVERSARY/poses/tracer-wink.jpg",
           "group": "ANNIVERSARY_2018"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Beatdown",
+          "id": "zarya-beatdown",
+          "quality": "rare",
+          "url": "/updates/ANNIVERSARY/poses/zarya-beatdown.jpg",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
         }
       ]
     }
