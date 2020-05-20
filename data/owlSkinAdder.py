@@ -48,23 +48,23 @@ for hero in masterData['heroes']:
 				# "achievement": "owl"
 			# }
 			
-		if(hero == 'winston'):
-			extraSkins =  {
-				"name": "Flying Ace",
-				"id": hero + "-flying-ace",
-				"url": "/owlskins/" + hero + "-flying-ace.jpg",
-				"quality": "legendary",
-				"achievement": "owl"
-			}
+		# if(hero == 'winston'):
+			# extraSkins =  {
+				# "name": "Flying Ace",
+				# "id": hero + "-flying-ace",
+				# "url": "/owlskins/" + hero + "-flying-ace.jpg",
+				# "quality": "legendary",
+				# "achievement": "owl"
+			# }
 		
-		if(hero == 'zenyatta'):
-			extraSkins =  {
-				"name": "Zen-Nakji",
-				"id": hero + "-zen-nakji",
-				"url": "/owlskins/" + hero + "-zen-nakji.jpg",
-				"quality": "legendary",
-				"achievement": "owl"
-			}
+		# if(hero == 'zenyatta'):
+			# extraSkins =  {
+				# "name": "Zen-Nakji",
+				# "id": hero + "-zen-nakji",
+				# "url": "/owlskins/" + hero + "-zen-nakji.jpg",
+				# "quality": "legendary",
+				# "achievement": "owl"
+			# }
 		
 		owlSkinsData = [
 			{
