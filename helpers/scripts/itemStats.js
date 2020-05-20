@@ -31,7 +31,7 @@ _.forEach(heroData, hero => {
       totalCount++
       totalCounts[type]++
 
-      if (!item.standardItem && item.achievement !== 'blizzard') {
+      if (!item.standardItem) {
         heroCounts[hero.id][type]++
       }
 
@@ -43,6 +43,26 @@ _.forEach(heroData, hero => {
     })
   })
 })
+
+const bottomHeroes = _.reduce(heroCounts, (res, counts, hero) => {
+  if (hero === 'all' || hero === 'echo' || hero === 'sigma' || hero === 'baptiste' || hero === 'ashe' || hero === 'wrecking-ball' || hero === 'brigitte' || hero === 'orisa' || hero === 'moira') return res
+
+  _.forEach(counts, (val, type) => {
+    if (type === 'weapons') return
+    if (!res[type]) res[type] = { total: 0, heroes: [] }
+
+    if (res[type].total === val) {
+      res[type].heroes.push(hero)
+    }
+
+    if (res[type].total > val || res[type].total === 0) {
+      res[type].heroes = [hero]
+      res[type].total = val
+    }
+  })
+
+  return res
+}, {})
 
 const topHeroes = _.reduce(heroCounts, (res, counts, hero) => {
   if (hero === 'all') return res
@@ -65,3 +85,4 @@ const topHeroes = _.reduce(heroCounts, (res, counts, hero) => {
 }, {})
 
 console.log(topHeroes)
+console.log(bottomHeroes)
