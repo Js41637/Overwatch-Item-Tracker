@@ -133,7 +133,7 @@
           "id": "winston-ancient-bronze",
           "url": "/heroes/winston/icons/winston-ancient-bronze.png",
           "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "hero": "winston",
           "group": "LUNAR_NEW_YEAR_2020",
@@ -618,7 +618,7 @@
           "id": "sigma-carbon-fiber",
           "url": "/heroes/sigma/icons/sigma-carbon-fiber.png",
           "description": "Unlocked by participating in the Anniversary 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "ANNIVERSARY",
           "hero": "sigma",
           "group": "ANNIVERSARY_2020",
@@ -701,7 +701,7 @@
           "id": "moira-coinn-nollag",
           "url": "/heroes/moira/icons/moira-coinn-nollag.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "moira",
           "group": "WINTER_WONDERLAND_2019",
@@ -1329,7 +1329,7 @@
           "id": "sombra-demon-hunter",
           "url": "/heroes/sombra/icons/sombra-demon-hunter.png",
           "description": "Unlocked by participating in the Halloween Terror 2019 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "HALLOWEEN",
           "hero": "sombra",
           "isNew": true
@@ -1539,7 +1539,7 @@
           "id": "widowmaker-fleur-de-lis",
           "url": "/heroes/widowmaker/icons/widowmaker-fleur-de-lis.png",
           "description": "Unlocked by participating in the Anniversary 2020 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "ANNIVERSARY",
           "hero": "widowmaker",
           "group": "ANNIVERSARY_2020",
@@ -2060,7 +2060,7 @@
           "id": "symmetra-holi",
           "url": "/heroes/symmetra/icons/symmetra-holi.png",
           "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "hero": "symmetra",
           "group": "UPRISING_2020",
@@ -2155,7 +2155,7 @@
           "id": "junkrat-inferno",
           "url": "/heroes/junkrat/icons/junkrat-inferno.png",
           "description": "Unlocked by participating in the Halloween Terror 2019 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "HALLOWEEN",
           "hero": "junkrat",
           "isNew": true
@@ -2240,7 +2240,7 @@
           "id": "doomfist-jingang",
           "url": "/heroes/doomfist/icons/doomfist-jingang.png",
           "description": "Unlocked by participating in the Year of the Rat 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "hero": "doomfist",
           "group": "LUNAR_NEW_YEAR_2020",
@@ -2612,7 +2612,7 @@
           "id": "mccree-masked-man",
           "url": "/heroes/mccree/icons/mccree-masked-man.png",
           "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "ANNIVERSARY",
           "hero": "mccree",
           "group": "ANNIVERSARY_2020",
@@ -3187,7 +3187,7 @@
           "id": "wrecking-ball-rat",
           "url": "/heroes/wrecking-ball/icons/wrecking-ball-rat.png",
           "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "hero": "wrecking-ball",
           "group": "LUNAR_NEW_YEAR_2020",
@@ -3335,7 +3335,7 @@
           "id": "torbjorn-rustclad",
           "url": "/heroes/torbjorn/icons/torbjorn-rustclad.png",
           "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "hero": "torbjorn",
           "group": "UPRISING_2020",
@@ -3939,7 +3939,7 @@
           "id": "mercy-snow-angel",
           "url": "/heroes/mercy/icons/mercy-snow-angel.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "mercy",
           "group": "WINTER_WONDERLAND_2019",
@@ -3956,7 +3956,7 @@
           "id": "mei-snowbear",
           "url": "/heroes/mei/icons/mei-snowbear.png",
           "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "hero": "mei",
           "group": "UPRISING_2020",
@@ -4392,7 +4392,7 @@
           "id": "soldier-76-ugly-sweater",
           "url": "/heroes/soldier-76/icons/soldier-76-ugly-sweater.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "soldier-76",
           "group": "WINTER_WONDERLAND_2019",
@@ -4434,7 +4434,7 @@
           "id": "baptiste-vampire",
           "url": "/heroes/baptiste/icons/baptiste-vampire.png",
           "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "HALLOWEEN",
           "hero": "baptiste",
           "isNew": true
@@ -8816,23 +8816,23 @@
           "url": "/heroes/baptiste/skins/baptiste-wasteland.jpg"
         },
         {
-          "name": "Vampire",
-          "id": "baptiste-vampire",
-          "quality": "epic",
-          "url": "/heroes/baptiste/skins/baptiste-vampire.jpg",
-          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
-          "achievement": true,
-          "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2019",
-          "isNew": true
-        },
-        {
           "name": "Combat Medic",
           "id": "baptiste-combat-medic",
           "quality": "epic",
           "url": "/heroes/baptiste/skins/baptiste-combat-medic.jpg",
           "description": "After leaving Talon, Baptiste aided in humanitarian efforts around the globe. But he never stayed in one place for too long.",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Vampire",
+          "id": "baptiste-vampire",
+          "quality": "epic",
+          "url": "/heroes/baptiste/skins/baptiste-vampire.jpg",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2019",
+          "isNew": true
         },
         {
           "name": "Buccaneer",
@@ -8997,22 +8997,22 @@
           "group": "ANNIVERSARY_2019"
         },
         {
-          "name": "Vampire",
-          "id": "baptiste-vampire",
-          "url": "/heroes/baptiste/icons/baptiste-vampire.png",
-          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
-          "achievement": true,
-          "event": "HALLOWEEN",
-          "hero": "baptiste",
-          "isNew": true
-        },
-        {
           "name": "Combat Medic",
           "id": "baptiste-combat-medic",
           "url": "/heroes/baptiste/icons/baptiste-combat-medic.png",
           "description": "Unlocked by participating in Baptiste's Reunion Challenge",
           "achievement": "blizzard",
           "hero": "baptiste"
+        },
+        {
+          "name": "Vampire",
+          "id": "baptiste-vampire",
+          "url": "/heroes/baptiste/icons/baptiste-vampire.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "hero": "baptiste",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -9241,16 +9241,6 @@
           "description": "Prevent 4 deaths with a single use of Baptiste's Immortality Field in Quick or Competitive play."
         },
         {
-          "name": "Vampire",
-          "id": "baptiste-vampire",
-          "quality": "common",
-          "url": "/heroes/baptiste/sprays/baptiste-vampire.png",
-          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
-          "achievement": true,
-          "event": "HALLOWEEN",
-          "isNew": true
-        },
-        {
           "name": "Analyst Nguyen",
           "id": "baptiste-analyst-nguyen",
           "quality": "common",
@@ -9313,6 +9303,16 @@
           "url": "/heroes/baptiste/sprays/baptiste-working-vacation.png",
           "description": "Unlocked by watching participating streams during Baptiste's Reunion Challenge",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Vampire",
+          "id": "baptiste-vampire",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-vampire.png",
+          "description": "Unlocked by participating in the Halloween Terror 2019 week 2 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -12235,7 +12235,7 @@
           "quality": "epic",
           "url": "/heroes/doomfist/skins/doomfist-monk.jpg",
           "description": "Unlocked by participating in the Year of the Rat 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
@@ -12493,7 +12493,7 @@
           "id": "doomfist-jingang",
           "url": "/heroes/doomfist/icons/doomfist-jingang.png",
           "description": "Unlocked by participating in the Year of the Rat 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "hero": "doomfist",
           "group": "LUNAR_NEW_YEAR_2020",
@@ -12739,7 +12739,7 @@
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-focus.png",
           "description": "Unlocked by participating in the Year of the Rat 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
@@ -15357,7 +15357,7 @@
           "quality": "epic",
           "url": "/heroes/junkrat/skins/junkrat-inferno.jpg",
           "description": "Unlocked by participating in the Halloween Terror 2019 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2019",
           "isNew": true
@@ -15627,7 +15627,7 @@
           "id": "junkrat-inferno",
           "url": "/heroes/junkrat/icons/junkrat-inferno.png",
           "description": "Unlocked by participating in the Halloween Terror 2019 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "HALLOWEEN",
           "hero": "junkrat",
           "isNew": true
@@ -15873,7 +15873,7 @@
           "quality": "common",
           "url": "/heroes/junkrat/sprays/junkrat-inferno.png",
           "description": "Unlocked by participating in the Halloween Terror 2019 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "HALLOWEEN",
           "isNew": true
         }
@@ -17167,7 +17167,7 @@
           "quality": "epic",
           "url": "/heroes/mccree/skins/mccree-masked-man.jpg",
           "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2020",
           "isNew": true
@@ -17451,7 +17451,7 @@
           "id": "mccree-masked-man",
           "url": "/heroes/mccree/icons/mccree-masked-man.png",
           "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "ANNIVERSARY",
           "hero": "mccree",
           "group": "ANNIVERSARY_2020",
@@ -17684,23 +17684,23 @@
           "description": "Interrupt an enemy ultimate ability with McCree's Flashbang in Quick or Competitive Play."
         },
         {
-          "name": "Masked Man",
-          "id": "mccree-masked-man",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-masked-man.png",
-          "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
-          "achievement": true,
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2020",
-          "isNew": true
-        },
-        {
           "name": "Rex",
           "id": "mccree-rex",
           "quality": "common",
           "url": "/heroes/mccree/sprays/mccree-rex.png",
           "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Masked Man",
+          "id": "mccree-masked-man",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-masked-man.png",
+          "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
+          "achievement": "limited",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -18095,7 +18095,7 @@
           "quality": "epic",
           "url": "/heroes/mei/skins/mei-zhongguo.jpg",
           "description": "Unlocked by participating in the Summer Games 2019 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2019",
           "isNew": true
@@ -18106,7 +18106,7 @@
           "quality": "epic",
           "url": "/heroes/mei/skins/mei-bear.jpg",
           "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "group": "UPRISING_2020",
           "isNew": true
@@ -18403,7 +18403,7 @@
           "id": "mei-snowbear",
           "url": "/heroes/mei/icons/mei-snowbear.png",
           "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "hero": "mei",
           "group": "UPRISING_2020",
@@ -18641,7 +18641,7 @@
           "quality": "common",
           "url": "/heroes/mei/sprays/mei-bear-hug.png",
           "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "group": "UPRISING_2020",
           "isNew": true
@@ -19014,7 +19014,7 @@
           "quality": "epic",
           "url": "/heroes/mercy/skins/mercy-snow-angel.jpg",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2019",
           "isNew": true
@@ -19282,17 +19282,6 @@
           "group": "ANNIVERSARY_2017"
         },
         {
-          "name": "Snow Angel",
-          "id": "mercy-snow-angel",
-          "url": "/heroes/mercy/icons/mercy-snow-angel.png",
-          "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
-          "achievement": true,
-          "event": "WINTER_WONDERLAND",
-          "hero": "mercy",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
-        },
-        {
           "name": "Dr. Ziegler",
           "id": "mercy-dr-ziegler",
           "url": "/heroes/mercy/icons/mercy-dr-ziegler.png",
@@ -19315,6 +19304,17 @@
           "description": "Unlocked by participating in the 2018 BCRF charity event",
           "achievement": "bcrf",
           "hero": "mercy"
+        },
+        {
+          "name": "Snow Angel",
+          "id": "mercy-snow-angel",
+          "url": "/heroes/mercy/icons/mercy-snow-angel.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "mercy",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -19558,17 +19558,6 @@
           "description": "Restore 200 health for 5 allies without dying as Mercy in Quick or Competitive Play."
         },
         {
-          "name": "Winter spell",
-          "id": "mercy-winter-spell",
-          "quality": "common",
-          "url": "/heroes/mercy/sprays/mercy-winter-spell.png",
-          "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
-          "achievement": true,
-          "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
-        },
-        {
           "name": "Ascent",
           "id": "mercy-ascent",
           "quality": "common",
@@ -19671,6 +19660,17 @@
           "url": "/heroes/mercy/sprays/mercy-together.png",
           "description": "Unlocked by participating in the 2018 BCRF charity event",
           "achievement": "bcrf"
+        },
+        {
+          "name": "Winter spell",
+          "id": "mercy-winter-spell",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-winter-spell.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -20056,7 +20056,7 @@
           "quality": "epic",
           "url": "/heroes/moira/skins/moira-holly.jpg",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2019",
           "isNew": true
@@ -20290,7 +20290,7 @@
           "id": "moira-coinn-nollag",
           "url": "/heroes/moira/icons/moira-coinn-nollag.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "moira",
           "group": "WINTER_WONDERLAND_2019",
@@ -20545,7 +20545,7 @@
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-presents.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2019",
           "isNew": true
@@ -22628,7 +22628,7 @@
           "quality": "epic",
           "url": "/heroes/reaper/skins/reaper-american.jpg",
           "description": "Unlocked by participating in the Summer Games 2019 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2019",
           "isNew": true
@@ -23548,7 +23548,7 @@
           "quality": "epic",
           "url": "/heroes/reinhardt/skins/reinhardt-bundesadler.jpg",
           "description": "Unlocked by participating in the Summer Games 2019 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2019",
           "isNew": true
@@ -25197,7 +25197,7 @@
           "quality": "epic",
           "url": "/heroes/sigma/skins/sigma-carbon-fiber.jpg",
           "description": "Unlocked by participating in the Anniversary 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2020",
           "isNew": true
@@ -25362,7 +25362,7 @@
           "id": "sigma-carbon-fiber",
           "url": "/heroes/sigma/icons/sigma-carbon-fiber.png",
           "description": "Unlocked by participating in the Anniversary 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "ANNIVERSARY",
           "hero": "sigma",
           "group": "ANNIVERSARY_2020",
@@ -25593,7 +25593,7 @@
           "quality": "common",
           "url": "/heroes/sigma/sprays/sigma-carbon-fiber.png",
           "description": "Unlocked by participating in the Anniversary 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2020",
           "isNew": true
@@ -25931,7 +25931,7 @@
           "quality": "epic",
           "url": "/heroes/soldier-76/skins/soldier-76-ugly-sweater-76.jpg",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2019",
           "isNew": true
@@ -26178,7 +26178,7 @@
           "id": "soldier-76-ugly-sweater",
           "url": "/heroes/soldier-76/icons/soldier-76-ugly-sweater.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "soldier-76",
           "group": "WINTER_WONDERLAND_2019",
@@ -26419,23 +26419,23 @@
           "description": "Get 2 killing blows with a single use of Soldier: 76's Helix Rockets in Quick or Competitive Play."
         },
         {
-          "name": "Ugly Sweater",
-          "id": "soldier-76-ugly-sweater",
-          "quality": "common",
-          "url": "/heroes/soldier-76/sprays/soldier-76-ugly-sweater.png",
-          "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
-          "achievement": true,
-          "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
-        },
-        {
           "name": "Jack and Vincent",
           "id": "soldier-76-jack-and-vincent",
           "quality": "common",
           "url": "/heroes/soldier-76/sprays/soldier-76-jack-and-vincent.png",
           "description": "Unlocked by watching participating streams during Ana's Bastet Challenge",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Ugly Sweater",
+          "id": "soldier-76-ugly-sweater",
+          "quality": "common",
+          "url": "/heroes/soldier-76/sprays/soldier-76-ugly-sweater.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2019",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -26872,7 +26872,7 @@
           "quality": "legendary",
           "url": "/heroes/sombra/skins/sombra-demon-hunter.jpg",
           "description": "Unlocked as part of the BlizzCon 2018 In-Game Goodies or by participating in the Halloween Terror 2019 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "HALLOWEEN",
           "isNew": true
         }
@@ -27099,7 +27099,7 @@
           "id": "sombra-demon-hunter",
           "url": "/heroes/sombra/icons/sombra-demon-hunter.png",
           "description": "Unlocked by participating in the Halloween Terror 2019 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "HALLOWEEN",
           "hero": "sombra",
           "isNew": true
@@ -27371,7 +27371,7 @@
           "quality": "common",
           "url": "/heroes/sombra/sprays/sombra-demon-hunter.png",
           "description": "Unlocked by participating in the Halloween Terror 2019 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "HALLOWEEN",
           "isNew": true
         }
@@ -27746,7 +27746,7 @@
           "quality": "epic",
           "url": "/heroes/symmetra/skins/symmetra-holi.jpg",
           "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "group": "UPRISING_2020",
           "isNew": true
@@ -27979,7 +27979,7 @@
           "id": "symmetra-holi",
           "url": "/heroes/symmetra/icons/symmetra-holi.png",
           "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "hero": "symmetra",
           "group": "UPRISING_2020",
@@ -28217,7 +28217,7 @@
           "quality": "common",
           "url": "/heroes/symmetra/sprays/symmetra-holi.png",
           "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "group": "UPRISING_2020",
           "isNew": true
@@ -28608,7 +28608,7 @@
           "quality": "epic",
           "url": "/heroes/torbjorn/skins/torbjorn-rustclad.jpg",
           "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "group": "UPRISING_2020",
           "isNew": true
@@ -28899,7 +28899,7 @@
           "id": "torbjorn-rustclad",
           "url": "/heroes/torbjorn/icons/torbjorn-rustclad.png",
           "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "hero": "torbjorn",
           "group": "UPRISING_2020",
@@ -29137,7 +29137,7 @@
           "quality": "common",
           "url": "/heroes/torbjorn/sprays/torbjorn-indigestion.png",
           "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "UPRISING",
           "group": "UPRISING_2020",
           "isNew": true
@@ -30419,7 +30419,7 @@
           "quality": "epic",
           "url": "/heroes/widowmaker/skins/widowmaker-fleur-de-lis.jpg",
           "description": "Unlocked by participating in the Anniversary 2020 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2020",
           "isNew": true
@@ -30672,23 +30672,23 @@
           "group": "ANNIVERSARY_2017"
         },
         {
-          "name": "Fleur de Lis",
-          "id": "widowmaker-fleur-de-lis",
-          "url": "/heroes/widowmaker/icons/widowmaker-fleur-de-lis.png",
-          "description": "Unlocked by participating in the Anniversary 2020 week 2 challenge",
-          "achievement": true,
-          "event": "ANNIVERSARY",
-          "hero": "widowmaker",
-          "group": "ANNIVERSARY_2020",
-          "isNew": true
-        },
-        {
           "name": "Widowmaker Minifig",
           "id": "widowmaker-widowmaker-minifig",
           "url": "/heroes/widowmaker/icons/widowmaker-widowmaker-minifig.png",
           "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
           "achievement": "blizzard",
           "hero": "widowmaker"
+        },
+        {
+          "name": "Fleur de Lis",
+          "id": "widowmaker-fleur-de-lis",
+          "url": "/heroes/widowmaker/icons/widowmaker-fleur-de-lis.png",
+          "description": "Unlocked by participating in the Anniversary 2020 week 2 challenge",
+          "achievement": "limited",
+          "event": "ANNIVERSARY",
+          "hero": "widowmaker",
+          "group": "ANNIVERSARY_2020",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -30931,7 +30931,7 @@
           "quality": "common",
           "url": "/heroes/widowmaker/sprays/widowmaker-fleur-de-lis.png",
           "description": "Unlocked by participating in the Anniversary 2020 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2020",
           "isNew": true
@@ -31291,23 +31291,23 @@
           "description": "Most of Winston's formative years were spent as a test subject in the Horizon Lunar Colony."
         },
         {
-          "name": "Ancient Bronze",
-          "id": "winston-ancient-bronze",
-          "quality": "epic",
-          "url": "/heroes/winston/skins/winston-ancient-bronze.jpg",
-          "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
-          "achievement": true,
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2020",
-          "isNew": true
-        },
-        {
           "name": "BlizzCon 2017",
           "id": "winston-blizzcon-2017",
           "quality": "epic",
           "url": "/heroes/winston/skins/winston-blizzcon-2017.jpg",
           "description": "Unlocked as part of the BlizzCon 2017 In-Game Goodies",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Ancient Bronze",
+          "id": "winston-ancient-bronze",
+          "quality": "epic",
+          "url": "/heroes/winston/skins/winston-ancient-bronze.jpg",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
+          "achievement": "limited",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         },
         {
           "name": "Explorer",
@@ -31574,7 +31574,7 @@
           "id": "winston-ancient-bronze",
           "url": "/heroes/winston/icons/winston-ancient-bronze.png",
           "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "hero": "winston",
           "group": "LUNAR_NEW_YEAR_2020",
@@ -31812,7 +31812,7 @@
           "quality": "common",
           "url": "/heroes/winston/sprays/winston-ancient-bronze.png",
           "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
@@ -32175,7 +32175,7 @@
           "quality": "epic",
           "url": "/heroes/wrecking-ball/skins/wrecking-ball-paper-cutting.jpg",
           "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2020",
           "isNew": true
@@ -32391,7 +32391,7 @@
           "id": "wrecking-ball-rat",
           "url": "/heroes/wrecking-ball/icons/wrecking-ball-rat.png",
           "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
-          "achievement": true,
+          "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "hero": "wrecking-ball",
           "group": "LUNAR_NEW_YEAR_2020",
@@ -32629,23 +32629,23 @@
           "description": "Absorb 1500 damage with Wrecking Ball's Adaptive Shield without dying in Quick or Competitive Play."
         },
         {
-          "name": "Spring",
-          "id": "wrecking-ball-spring",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-spring.png",
-          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
-          "achievement": true,
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2020",
-          "isNew": true
-        },
-        {
           "name": "King Cake Ball",
           "id": "wrecking-ball-king-cake-ball",
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-king-cake-ball.png",
           "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Spring",
+          "id": "wrecking-ball-spring",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-spring.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
+          "achievement": "limited",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "isNew": true
         }
       ],
       "voicelines": [
