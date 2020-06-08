@@ -299,7 +299,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         service.heroes[hero].totals.overall.selected += val;
         service.qualities[quality].selected += val;
 
-        // If this is a special icon, update the totals but not if this is the `all` hero as specials are always included in the total
+        // If this is a special item (mercy pink, limited event items) then update the totals but not if this is the `all` hero as specials are always included in the total
         if (isSpecialItem && !isAllHero) {
           service.heroes[hero].totals.overall.total += val
           service.qualities[quality].total += val;
@@ -318,7 +318,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
        */
       if (isIcon) {
         // overwrite these to reflect the new state
-        hero = isAllHero ? item.hero : 'all' // any hero specific icons
+        hero = isAllHero ? item.hero : 'all'
         isAllHero = hero === 'all'
 
         // If we don't have a hero it means the icon isn't a hero icon so we don't need to do anything, this can only happen on the all page
