@@ -338,7 +338,7 @@ for (var hero in data) {
 
           if (uniqueId in eventItemOverrides) {
             out.event = eventItemOverrides[uniqueId]
-            out.achievement = true
+            out.achievement = 'limited'
           }
           break;
         case 'DEFAULT':
