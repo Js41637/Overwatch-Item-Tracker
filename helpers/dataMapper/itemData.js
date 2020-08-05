@@ -9,6 +9,8 @@ const data = {
 
   // Changes IDs and Names will eventually be fixed with a data migration.
   idsBlizzardChanged: {
+    "sprays/mccree-bad-luck": "mccree-noose",
+    "sprays/sombra-hax0red": "sombra-deafmute",
     "sprays/hanzo-brickstrike": "hanzo-brick-dragon",
     "sprays/year-of-the-dog": "year-of-the-dog-2018",
     "sprays/year-of-the-rooster": "year-of-the-rooster-2017",
