@@ -9,6 +9,8 @@ const data = {
 
   // Changes IDs and Names will eventually be fixed with a data migration.
   idsBlizzardChanged: {
+    "sprays/mccree-bad-luck": "mccree-noose",
+    "sprays/sombra-hax0red": "sombra-deafmute",
     "sprays/hanzo-brickstrike": "hanzo-brick-dragon",
     "sprays/year-of-the-dog": "year-of-the-dog-2018",
     "sprays/year-of-the-rooster": "year-of-the-rooster-2017",
@@ -50,7 +52,12 @@ const data = {
     "sprays/competitive-team-deathmatch-competitor-2018": "competitive-team-deathmatch-competitor",
     "sprays/competitive-team-deathmatch-hero-2018": "competitive-team-deathmatch-hero",
     "icons/competitive-team-deathmatch-competitor-2018": "competitive-team-deathmatch-competitor",
-    "icons/competitive-team-deathmatch-hero-2018": "competitive-team-deathmatch-hero"
+    "icons/competitive-team-deathmatch-hero-2018": "competitive-team-deathmatch-hero",
+
+    "sprays/open-queue-season-1-competitor": "competitive-open-queue-competitor",
+    "sprays/open-queue-season-1-hero": "competitive-open-queue-hero",
+    "icons/open-queue-season-1-competitor": "competitive-open-queue-competitor",
+    "icons/open-queue-season-1-hero": "competitive-open-queue-hero"
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
@@ -227,11 +234,17 @@ const data = {
     'carry',
     'deadeye-strike',
     'detonated',
-    'feeling-invincible'
+    'feeling-invincible',
+    // SUMMER20
+    'header',
+    'goalkeeper',
+    'surfimari',
+    'golfimari',
+    'baseballmari'
   ],
   allClassEventItems: {
     sprays: {
-      [EVENTS.SUMMER]: ['summer-games-2016', 'summer-games', 'goal-blossom', 'safe-hands', 'bicycle-kick', 'sand-castle', 'shark-attack', 'snorkling'],
+      [EVENTS.SUMMER]: ['summer-games-2016', 'summer-games', 'goal-blossom', 'safe-hands', 'bicycle-kick', 'sand-castle', 'shark-attack', 'snorkling', 'goalkeeper', 'header'],
       [EVENTS.HALLOWEEN]: ['never-die', 'bats', 'boo', 'boop', 'candyball', 'fangs', 'gummy-hog', 'halloween-terror', 'pumpkins', 'witchs-brew', 'halloween-special', 'junkensteins-revenge', 'rise-of-the-zomnics', 'the-reapening', 'my-creations', 'the-monster', 'the-reaper', 'the-witch', 'zomnic', 'zombardier', 'flaming-pumpkin'],
       [EVENTS.WINTER]: ['snowcree', 'snowhog', 'snowmei', 'snowreaper', 'winter-wonderland', 'yeti', 'yeti-hunter', 'frozen-throne', 'yeti-rage', 'bonk', 'holiday-surprise', 'ice-spheres', 'jotunn', 'mountain-man', 'polar-bear', 'snow-snow-snow'],
       [EVENTS.LUNAR]: ['auspicious-lion', 'awakened-lion', 'dragons-head', 'lucky-pouch', 'red-envelope', 'year-of-the-rooster-2017', 'year-of-the-dog-2018', 'good-fortune', 'captured-flag', 'interrupted-delivery', 'year-of-the-rat-2020'],
@@ -239,7 +252,7 @@ const data = {
       [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'fast', 'feast']
     },
     icons: {
-      [EVENTS.SUMMER]: ["summer-games-2016", "summer-games-2017", "summer-games-2018", "summer-games-2019", "meteor", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america", "argentina", "austria", "belgium", "canada", "denmark", "finland", "ireland", "israel", "italy", "jordan", "netherlands", "new-zealand", "portugal", "romania", "snorkelmari", "spain", "footballmari", "punchimari", "tennismari"],
+      [EVENTS.SUMMER]: ["summer-games-2016", "summer-games-2017", "summer-games-2018", "summer-games-2019", "summer-games-2020", "meteor", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america", "argentina", "austria", "belgium", "canada", "denmark", "finland", "ireland", "israel", "italy", "jordan", "netherlands", "new-zealand", "portugal", "romania", "snorkelmari", "spain", "footballmari", "punchimari", "tennismari", 'baseballmari', 'golfimari', 'surfimari'],
       [EVENTS.HALLOWEEN]: ["calavera", "vampachimari", "eyeball", "superstition", "witchs-hat", "ghostymari", "tombstone", "bewitching", "candle", "never-die", "wolf", "witchs-brew", "spider", "junkensteins-pachimonster", "pachimummy", "pumpkimari", "skelemari", "witchymari", "kittymari", "halloween-terror-2016", "halloween-terror-2017", "halloween-terror-2018", "halloween-terror-2019"],
       [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "winter-wonderland-2018", "winter-wonderland-2019", "snowman", "present", "pachimerry", "gingermari", "pachicracker", "snowimari", "2017", "2018", "2019", "2020", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
       [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu", 'guan-yu', 'hong-gildong', 'huang-zhong', 'l-bu', 'piggimari', 'year-of-the-pig-2019', 'zhang-fei', 'zhuge-liang', 'year-of-the-rat-2020'],
@@ -298,7 +311,18 @@ const data = {
     'sprays/sigma-carbon-fiber': EVENTS.ANNIVERSARY,
     'skins/mccree-masked-man': EVENTS.ANNIVERSARY,
     'icons/mccree-masked-man': EVENTS.ANNIVERSARY,
-    'sprays/mccree-masked-man': EVENTS.ANNIVERSARY
+    'sprays/mccree-masked-man': EVENTS.ANNIVERSARY,
+
+    'sprays/tracer-union-jack': EVENTS.SUMMER,
+    'skins/tracer-union-jack': EVENTS.SUMMER,
+    'sprays/bastion-sand-castle': EVENTS.SUMMER,
+    'skins/bastion-sand-castle': EVENTS.SUMMER,
+    'sprays/orisa-ice-cream': EVENTS.SUMMER,
+    'skins/orisa-ice-cream': EVENTS.SUMMER,
+
+    'icons/surfimari': EVENTS.SUMMER,
+    'icons/golfimari': EVENTS.SUMMER,
+    'icons/baseballmari': EVENTS.SUMMER,
   },
   specialAchievementItems: {
     bcrf: {
