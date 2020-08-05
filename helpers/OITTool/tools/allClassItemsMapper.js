@@ -4,6 +4,7 @@ const { getDirectories, cleanFileIDs, handleErr } = require('./utils');
 
 var TYPES = {
   Portrait: 'icons',
+  Icon: 'icons',
   Spray: 'sprays'
 };
 
@@ -23,7 +24,7 @@ const mapAllClassData = () => {
   const base = `./${isGeneral ? '' : 'General/'}`;
   getDirectories(base).then(types => {
     Promise.all(types.map(type => {
-      if (type !== 'Portrait' && type !== 'Spray') return Promise.resolve();
+      if (type !== 'Portrait' && type !== 'Icon' && type !== 'Spray') return Promise.resolve();
       return getDirectories(`${base}${type}`).then(groups => {
         return Promise.all(groups.map(group => {
           return getDirectories(`${base}${type}/${group}`).then(files => {

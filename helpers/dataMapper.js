@@ -164,8 +164,9 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
 
     // Check if the spray or icon is a Competitive reward
     const isSeasonCompItem = item.id.match(/^season-(\d+)-(competitor|hero)$/);
+    const isOpenQueueCompItem = item.id.match(/^open-queue-season-(\d+)-(competitor|hero)$/);
     const isOtherCompItem = item.id.match(/^(top-500|(copa-lucioball|competitive-ctf|competitive-(6v6|3v3)-(group-)?elimination|competitive-(team-)?deathmatch|competitive-open-queue)-\w+(-\d+)?)$/)
-    const isCompItem =  isSeasonCompItem || isOtherCompItem ? { group: 'competitive' } : undefined;
+    const isCompItem =  isSeasonCompItem || isOtherCompItem || isOpenQueueCompItem ? { group: 'competitive' } : undefined;
     const isOWLItem = item.id.match(/^(inaugural-season)$/)
     const isPachiItem = item.id.includes('pachi') || item.id.endsWith('mari') ? { group: 'pachi' } : undefined;
     let isStandard = defaultItems[type].includes(item.id) ? { standardItem: true } : undefined;
