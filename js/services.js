@@ -57,7 +57,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
 
     for (var hero in data.heroes) {
       out.checked[hero] = Object.assign(
-        { "skins": {}, "emotes": {}, "intros": {}, "sprays": {}, "voicelines": {}, "poses": {}, "icons": {}, "weapons": {} },
+        { "skins": {}, "emotes": {}, "intros": {}, "sprays": {}, "voicelines": {}, "poses": {}, "icons": {}, "weapons": {}, "owlskins": {} },
         storedData[hero]
       );
     }
@@ -191,11 +191,12 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
 
             var isSelected = DataService.checked[item.hero || hero.id][type][item.id];
             var isSpecialItem = 'achievement' in item && item.achievement !== true && heroId !== 'all'
+            var isOWLItem = 'achievement' in item && item.achievement === 'owl' && type === 'owlskins'
 
             // Unselected special items (blizzard unlocks, origin skins, mercy bcrf items) dont count unless unlocked
-            if (!isSelected && isSpecialItem) continue;
+            if (!isSelected && isSpecialItem && !isOWLItem) continue;
 
-            s_hero.totals.overall.total++;
+            if ((isOWLItem && isSelected) || !isOWLItem) { s_hero.totals.overall.total++; }
             s_hero.totals[type].total++;
 
             var quality = (type === 'icons' ? 'rare' : item.quality) || 'common'
@@ -208,7 +209,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
                 service.qualities[quality] = { selected: 0, total: 0 }
               }
 
-              if (shouldCountItemOrIcon) {
+              if (shouldCountItemOrIcon && ((isOWLItem && isSelected) || !isOWLItem)) {
                 service.qualities[quality].total++;
               }
 
@@ -276,6 +277,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
       var itemID = idOverride || item.id;
       var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
       var isSpecialItem = 'achievement' in item && item.achievement !== true
+      var isOWLItem = 'achievement' in item && item.achievement === 'owl' && type === 'owlskins'
       var isIcon = type === 'icons'
       var isAllHero = hero === 'all'
       var shouldCountItem = !isIcon || (isIcon && countIcons)
@@ -302,6 +304,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         // If this is a special item (mercy pink, limited event items) then update the totals but not if this is the `all` hero as specials are always included in the total
         if (isSpecialItem && !isAllHero) {
           service.heroes[hero].totals.overall.total += val
+          if (!isOWLItem) { service.heroes[hero].totals[type].total += val; }
           service.qualities[quality].total += val;
           service.heroes[hero].totals[type].total += val;
         }
@@ -382,8 +385,9 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
           if (item.standardItem) continue;
 
           var isSelected = DataService.checked[item.hero || hero][type][item.id];
+          var isOWLItem = 'achievement' in item && item.achievement === 'owl'
 
-          out.totals.overall.total++;
+          if (isOWLItem && isSelected || !isOWLItem) { out.totals.overall.total++; }
           out.totals[type].total++;
 
           if (isSelected) {
@@ -765,10 +769,7 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
 }]);
 
 OWI.factory('UrlService', function() {
-  var isLocal = location.host === 'localhost:5000'
-  var imageHost = isLocal
-    ? 'http://localhost:5000/resources'
-    : 'https://overwatchitemtracker.com/resources'
+  var imageHost = './resources'
 
   return {
     get: function(url) {

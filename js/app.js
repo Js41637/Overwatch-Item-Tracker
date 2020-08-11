@@ -40,7 +40,7 @@ OWI.run(function() {
       id: 6,
       run: function() {
         var events = ["SUMMER_GAMES_2016", "WINTER_WONDERLAND_2016", "YEAR_OF_THE_ROOSTER_2017", "HALLOWEEN_2016"];
-        var types = '{ "icons": {}, "intros": {}, "poses": {}, "skins": {}, "sprays": {}, "voicelines": {}, "emotes": {} }';
+        var types = '{ "icons": {}, "intros": {}, "poses": {}, "skins": {}, "sprays": {}, "voicelines": {}, "emotes": {}, "owlskins": {} }';
         var heroes = ["ana", "bastion", "dva", "genji", "hanzo", "junkrat", "lucio", "mccree", "mei", "mercy", "pharah", "reaper", "reinhardt", "roadhog", "soldier-76", "sombra", "symmetra", "torbjorn", "tracer", "widowmaker", "winston", "zarya", "zenyatta"];
         var hasEvents = events.filter(function(e) {
           return data[e];

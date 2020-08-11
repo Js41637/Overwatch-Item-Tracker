@@ -195,6 +195,8 @@ OWI.controller('HeroesCtrl', ["$scope", "$state", "$timeout", "$stateParams", "$
         return 'voice lines';
       case 'poses':
         return 'victory poses';
+      case 'owlskins':
+        return 'overwatch league skins';
       default:
         return name;
     }
@@ -510,7 +512,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     var url = URL.createObjectURL(new Blob([ JSON.stringify(DataService.checked, null, 2) ], { type: 'application/json' }));
     var el = document.createElement('a');
     el.setAttribute('href', url);
-    el.setAttribute('download', 'overwatch-item-tracker_backup_' + getDate() + '.json');
+    el.setAttribute('download', 'thetural-overwatch-item-tracker_backup_' + getDate() + '.json');
     document.body.appendChild(el);
     el.click();
     setTimeout(function() {
@@ -532,7 +534,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
   };
 
   vm.data = angular.toJson(DataService.checked, 2);
-  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines', 'weapons'];
+  var validTypes = ['emotes', 'icons', 'intros', 'poses', 'skins', 'sprays', 'voicelines', 'weapons', 'owlskins'];
   var validHeroes = Object.keys(DataService.heroes);
   function validateData(data) {
     try {
