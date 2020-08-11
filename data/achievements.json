@@ -1014,6 +1014,12 @@
     "season-23-hero": {
       "description": "Unlocked by achieving top 500 ranking at the end of Season 23"
     },
+    "season-24-competitor": {
+      "description": "Unlocked by completing Season 24 placement matches"
+    },
+    "season-24-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 24"
+    },
     "competitive-ctf-competitor": {
       "name": null,
       "description": "Unlocked by completing competitive Capture The Flag 2018 placement matches",
@@ -1189,10 +1195,16 @@
       "description": "Unlocked by completing Competitive Team Deathmatch 2019 placement matches"
     },
     "competitive-open-queue-hero": {
-      "description": "Unlocked by achieving top 500 ranking at the end of Competitive Open Queue 2020"
+      "description": "Unlocked by achieving top 500 ranking at the end of Competitive Open Queue Season 1"
     },
     "competitive-open-queue-competitor": {
-      "description": "Unlocked by completing Competitive Open Queue 2020 placement matches"
+      "description": "Unlocked by completing Competitive Open Queue Season 1 placement matches"
+    },
+    "open-queue-season-2-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Competitive Open Queue Season 2"
+    },
+    "open-queue-season-2-competitor": {
+      "description": "Unlocked by completing Competitive Open Queue Season 2 placement matches"
     },
     "wizard": {
       "name": null,
@@ -1305,6 +1317,12 @@
       "quality": "common",
       "type": "spray",
       "hero": "all"
+    },
+    "copa-lucioball-competitor-2020": {
+      "description": "Unlocked by completing Copa Lúcioball 2020 placement matches"
+    },
+    "copa-lucioball-hero-2020": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Copa Lúcioball 2020"
     },
     "survivor": {
       "name": "Survivor",
@@ -1708,6 +1726,15 @@
     "summer-games-2019-3": {
       "description": "Unlocked by participating in the Summer Games 2019 week 3 challenge"
     },
+    "summer-games-2020-1": {
+      "description": "Unlocked by participating in the Summer Games 2020 week 1 challenge"
+    },
+    "summer-games-2020-2": {
+      "description": "Unlocked by participating in the Summer Games 2020 week 2 challenge"
+    },
+    "summer-games-2020-3": {
+      "description": "Unlocked by participating in the Summer Games 2020 week 3 challenge"
+    },
     "warcraft-3-promo": {
       "description": "Unlocked with purchase of Warcraft III: Reforged Spoils of War Edition"
     },
@@ -1740,6 +1767,12 @@
     },
     "storm-raging": {
       "description": "Complete the Storm Raging Archives challenge mission."
+    },
+    "quick-brace": {
+      "description": "Score 2 goals within 5 seconds in a game of Lúcioball Remix."
+    },
+    "frenzied-defense": {
+      "description": "Earn 15 saves in a game of Lúcioball Remix."
     }
   },
   "mappings": {
@@ -1886,6 +1919,8 @@
     "season-22-hero": "season-22-hero",
     "season-23-competitor": "season-23-competitor",
     "season-23-hero": "season-23-hero",
+    "season-24-competitor": "season-24-competitor",
+    "season-24-hero": "season-24-hero",
     "competitive-ctf-competitor": "competitive-ctf-competitor",
     "competitive-ctf-hero": "competitive-ctf-hero",
     "competitive-ctf-competitor-2019": "competitive-ctf-competitor-2019",
@@ -1916,6 +1951,8 @@
     "competitive-3v3-elimination-hero-2019": "competitive-3v3-elimination-hero-2019",
     "competitive-open-queue-competitor": "competitive-open-queue-competitor",
     "competitive-open-queue-hero": "competitive-open-queue-hero",
+    "open-queue-season-2-competitor": "open-queue-season-2-competitor",
+    "open-queue-season-2-hero": "open-queue-season-2-hero",
     "wizard": "wizard",
     "witch-doctor": "witch-doctor",
     "monk": "monk",
@@ -1930,6 +1967,8 @@
     "copa-lucioball-hero-2018": "copa-lucioball-hero-2018",
     "copa-lucioball-competitor-2019": "copa-lucioball-competitor-2019",
     "copa-lucioball-hero-2019": "copa-lucioball-hero-2019",
+    "copa-lucioball-competitor-2020": "copa-lucioball-competitor-2020",
+    "copa-lucioball-hero-2020": "copa-lucioball-hero-2020",
     "the-witch": "survivor",
     "the-reaper": "dawn-breaks",
     "my-creations": "six-they-were",
@@ -1982,6 +2021,9 @@
     "shark-attack": "summer-games-2019-1",
     "snorkling": "summer-games-2019-2",
     "sand-castle": "summer-games-2019-3",
+    "baseballmari": "summer-games-2020-1",
+    "golfimari": "summer-games-2020-2",
+    "surfimari": "summer-games-2020-3",
     "arthas": "warcraft-3-promo",
     "thrall": "warcraft-3-promo",
     "tyrande": "warcraft-3-promo",
@@ -2002,6 +2044,8 @@
     "carry": "storm-raging",
     "deadeye-strike": "surgical-strike",
     "detonated": "molten-cores",
-    "feeling-invincible": "close-quarters"
+    "feeling-invincible": "close-quarters",
+    "header": "quick-brace",
+    "goalkeeper": "frenzied-defense"
   }
 }

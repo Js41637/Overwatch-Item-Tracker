@@ -276,54 +276,75 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
     updateItem: function(item, type, hero, event, idOverride) {
       var itemID = idOverride || item.id;
       var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
-      var isSpecialItem = 'achievement' in item && item.achievement !== true && hero !== 'all'
+      var isSpecialItem = 'achievement' in item && item.achievement !== true
       var isOWLItem = 'achievement' in item && item.achievement === 'owl' && type === 'owlskins'
+      var isIcon = type === 'icons'
+      var isAllHero = hero === 'all'
+      var shouldCountItem = !isIcon || (isIcon && countIcons)
       event = item.event || event;
 
       var eventType = (type === 'skins' && item.quality === 'legendary' && item.isNew) ? 'skinsLegendary' : type;
 
       var val = isSelected ? 1 : -1;
       var price = DataService.prices[item.quality] * ((event && DataService.latest_events[event] === item.group) ? 3 : 1);
-      var isValid = shouldCalculateItemCost(item, event);
-      var shouldCountItemOrIcon = countIcons || type !== 'icons'
-      var quality = (type === 'icons' ? 'rare' : item.quality) || 'common'
+      var isValid = shouldCalculateItemCost(item, event)
+      var quality = (isIcon ? 'rare' : item.quality) || 'common'
 
       service.heroes[hero].cost.prev = service.heroes[hero].cost.remaining;
       service.heroes[hero].totals[type].selected += val;
 
-      if (shouldCountItemOrIcon) {
+      /**
+       * Update the counts for the current hero we're on when selecting an item
+       * If we're not counting icons then don't do anything UNLESS we're on the all hero page because those are always counted
+       */
+      if (shouldCountItem || (isIcon && isAllHero)) {
         service.heroes[hero].totals.overall.selected += val;
         service.qualities[quality].selected += val;
 
-        if (isSpecialItem) {
+        // If this is a special item (mercy pink, limited event items) then update the totals but not if this is the `all` hero as specials are always included in the total
+        if (isSpecialItem && !isAllHero) {
           service.heroes[hero].totals.overall.total += val
           if (!isOWLItem) { service.heroes[hero].totals[type].total += val; }
           service.qualities[quality].total += val;
+          service.heroes[hero].totals[type].total += val;
         }
-      } else if (hero === 'all') {
-        service.heroes[hero].totals.overall.selected += val;
+      } else {
+        // If we're not counting icons above but this is a special icon and we're on a hero page, update the icon specific total
+        if (isSpecialItem && isIcon && !countIcons && !isAllHero) {
+          service.heroes[hero].totals[type].total += val;
+        }
       }
 
-      if (type === 'icons' && (item.hero && item.hero !== 'all')) {
-        var _hero = hero !== 'all' ? 'all' : item.hero
-        service.heroes[_hero].totals[type].selected += val;
+      /**
+       * If this is an icon, we need to do extra logic to update the All/Hero page specific counts as ALL includes hero specific icons unlike other item types.
+       * So if we select a Mercy icon on the ALL page, we need to update the counts on Mercys page as well and vice versa
+       */
+      if (isIcon) {
+        // overwrite these to reflect the new state
+        hero = isAllHero ? item.hero : 'all'
+        isAllHero = hero === 'all'
 
-        if (shouldCountItemOrIcon || _hero === 'all') {
-          service.heroes[_hero].totals.overall.selected += val;
+        // If we don't have a hero it means the icon isn't a hero icon so we don't need to do anything, this can only happen on the all page
+        if (hero) {
+          service.heroes[hero].totals[type].selected += val;
 
-          if (isSpecialItem) {
-            service.heroes[_hero].totals.overall.total += val
-            service.heroes[_hero].totals[type].total += val;
+          if (countIcons || isAllHero) {
+            service.heroes[hero].totals.overall.selected += val;
+          }
+
+          // If this is a special icon, update the totals but not if this is the `all` hero as specials are always included in the total
+          if (isSpecialItem && !isAllHero) {
+            if (countIcons) {
+              service.heroes[hero].totals.overall.total += val
+            }
+
+            service.heroes[hero].totals[type].total += val;
           }
         }
       }
 
-      if (type === 'icons' && isSpecialItem) {
-        service.heroes[hero].totals[type].total += val;
-      }
-
       // If this is a valid item, update the cost on the hero
-      if (type !== 'icons' && isValid) {
+      if (!isIcon && isValid) {
         if (isSelected) {
           service.heroes[hero].cost.selected += price;
           service.heroes[hero].cost.remaining -= price;
@@ -338,7 +359,7 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         service.events[event].totals[eventType].selected += val;
         service.events[event].cost.prev = service.events[event].cost.remaining;
 
-        if (type !== 'icons' && isValid) {
+        if (!isIcon && isValid) {
           if (isSelected) {
             service.events[event].cost.remaining -= price;
             service.events[event].cost.selected += price;
