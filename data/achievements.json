@@ -1020,6 +1020,30 @@
     "season-24-hero": {
       "description": "Unlocked by achieving top 500 ranking at the end of Season 24"
     },
+    "season-25-competitor": {
+      "description": "Unlocked by completing Season 25 placement matches"
+    },
+    "season-25-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 25"
+    },
+    "season-26-competitor": {
+      "description": "Unlocked by completing Season 26 placement matches"
+    },
+    "season-26-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 26"
+    },
+    "season-27-competitor": {
+      "description": "Unlocked by completing Season 27 placement matches"
+    },
+    "season-27-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 27"
+    },
+    "season-28-competitor": {
+      "description": "Unlocked by completing Season 28 placement matches"
+    },
+    "season-28-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 28"
+    },
     "competitive-ctf-competitor": {
       "name": null,
       "description": "Unlocked by completing competitive Capture The Flag 2018 placement matches",
@@ -1193,6 +1217,12 @@
     },
     "competitive-team-deathmatch-competitor-2019": {
       "description": "Unlocked by completing Competitive Team Deathmatch 2019 placement matches"
+    },
+    "competitive-team-deathmatch-hero-2020": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch 2020"
+    },
+    "competitive-team-deathmatch-competitor-2020": {
+      "description": "Unlocked by completing Competitive Team Deathmatch 2020 placement matches"
     },
     "competitive-open-queue-hero": {
       "description": "Unlocked by achieving top 500 ranking at the end of Competitive Open Queue Season 1"
@@ -1757,6 +1787,24 @@
     },
     "frenzied-defense": {
       "description": "Earn 15 saves in a game of Lúcioball Remix."
+    },
+    "shocking-surprise": {
+      "description": "Complete the Shocking Surprise Junkenstein challenge mission."
+    },
+    "mystery-swap": {
+      "description": "Complete the Mystery Swap Junkenstein challenge mission."
+    },
+    "volatile-zomnics": {
+      "description": "Complete the Volatile Zomnics Junkenstein challenge mission."
+    },
+    "three-they-were": {
+      "description": "Complete the Three They Were Junkenstein challenge mission."
+    },
+    "frenzied-stampede": {
+      "description": "Complete the Frenzied Stampede Junkenstein challenge mission."
+    },
+    "vengeful-ghost": {
+      "description": "Complete the Vengeful Ghost Junkenstein challenge mission."
     }
   },
   "mappings": {
@@ -1905,6 +1953,14 @@
     "season-23-hero": "season-23-hero",
     "season-24-competitor": "season-24-competitor",
     "season-24-hero": "season-24-hero",
+    "season-25-competitor": "season-25-competitor",
+    "season-25-hero": "season-25-hero",
+    "season-26-competitor": "season-26-competitor",
+    "season-26-hero": "season-26-hero",
+    "season-27-competitor": "season-27-competitor",
+    "season-27-hero": "season-27-hero",
+    "season-28-competitor": "season-28-competitor",
+    "season-28-hero": "season-28-hero",
     "competitive-ctf-competitor": "competitive-ctf-competitor",
     "competitive-ctf-hero": "competitive-ctf-hero",
     "competitive-ctf-competitor-2019": "competitive-ctf-competitor-2019",
@@ -1929,6 +1985,8 @@
     "competitive-team-deathmatch-hero": "competitive-team-deathmatch-hero",
     "competitive-team-deathmatch-competitor-2019": "competitive-team-deathmatch-competitor-2019",
     "competitive-team-deathmatch-hero-2019": "competitive-team-deathmatch-hero-2019",
+    "competitive-team-deathmatch-competitor-2020": "competitive-team-deathmatch-competitor-2020",
+    "competitive-team-deathmatch-hero-2020": "competitive-team-deathmatch-hero-2020",
     "competitive-3v3-elimination-competitor": "competitive-3v3-elimination-competitor",
     "competitive-3v3-elimination-hero": "competitive-3v3-elimination-hero",
     "competitive-3v3-elimination-competitor-2019": "competitive-3v3-elimination-competitor-2019",
@@ -2030,6 +2088,12 @@
     "detonated": "molten-cores",
     "feeling-invincible": "close-quarters",
     "header": "quick-brace",
-    "goalkeeper": "frenzied-defense"
+    "goalkeeper": "frenzied-defense",
+    "viking-fury": "shocking-surprise",
+    "quickdraw": "mystery-swap",
+    "zombarded": "volatile-zomnics",
+    "uncanny-speed": "three-they-were",
+    "frenzied-stampede": "frenzied-stampede",
+    "red-riding-hunt": "vengeful-ghost"
   }
 }
