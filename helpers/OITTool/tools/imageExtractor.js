@@ -1,73 +1,72 @@
-const fs = require('fs');
-const { getDirectories, getCleanID, cleanFileIDs, handleErr } = require('./utils');
-const { mapFilesToHeroes } = require('./filesToHeroMapper');
-const { eachLimit } = require('async');
-const { exec } = require('child_process');
+const fs = require('fs')
+const { getDirectories, getCleanID, cleanFileIDs, handleErr } = require('./utils')
+const { mapFilesToHeroes } = require('./filesToHeroMapper')
+const util = require('util')
+const exec = util.promisify(require('child_process').exec)
 
 var TYPES = {
   Portrait: 'icons',
   Icon: 'icons',
   Spray: 'sprays'
-};
+}
 
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 const checkDirs = () => {
   fs.stat(`./!toBeConverted`, err => {
     if (err) {
-      fs.mkdirSync(`./!toBeConverted`);
-      fs.mkdirSync(`./!toBeConverted/Icon`);
-      fs.mkdirSync(`./!toBeConverted/Spray`);
+      fs.mkdirSync(`./!toBeConverted`)
+      fs.mkdirSync(`./!toBeConverted/Icon`)
+      fs.mkdirSync(`./!toBeConverted/Spray`)
     }
-  });
+  })
   fs.stat('./images', err => {
-    if (err) fs.mkdirSync(`./images`);
-  });
-};
+    if (err) fs.mkdirSync(`./images`)
+  })
+}
 
-const findImages = hero => {
-  return new Promise(resolve => {
-    const base = hero.length ? 'Heroes/' : 'General';
-    const heroID = getCleanID(hero);
+async function findImages(hero) {
+  const base = hero.length ? 'Heroes/' : 'General'
+  const heroID = getCleanID(hero)
 
-    getDirectories(`./${base}${hero}`).then(types => {
-      if (!types.includes('Spray') && !types.includes('Icon')) return resolve();
-      Promise.all(types.map(type => {
-        return new Promise(res => {
-          if (type !== 'Spray' && type !== 'Icon') return res();
-          moveImages(hero, type, heroID).then(res);
-        });
-      })).then(resolve);
-    }).catch(err => {
-      console.error(err)
-      resolve()
-    });
-  });
-};
+  const types = await getDirectories(`./${base}${hero}`)
+  if (!types.includes('Spray') && !types.includes('Icon')) {
+    return
+  }
+
+  for (const type of types) {
+    if (type !== 'Spray' && type !== 'Icon') {
+      continue
+    }
+
+    await moveImages(hero, type, heroID)
+  }
+}
 
 const _moveImages = (files, heroId, type, where) => {
   return new Promise(res => {
-    files = cleanFileIDs(files, heroId);
+    files = cleanFileIDs(files, heroId)
     let total = 0
     files.forEach(file => {
       if (fs.statSync(`${where}/${file.name}`).isDirectory()) {
         return
       }
 
-      total++;
-      fs.createReadStream(`${where}/${file.name}`).pipe(fs.createWriteStream(`./!toBeConverted/${type}/${file.cleanName}.TIF`));
-    });
+      total++
+      fs.createReadStream(`${where}/${file.name}`).pipe(fs.createWriteStream(`./!toBeConverted/${type}/${file.cleanName}.TIF`))
+    })
     setTimeout(() => {
-      res(total);
-    }, 1000);
+      res(total)
+    }, 1000)
   })
 }
 
 const moveImages = (heroDir, type, heroID) => {
   return new Promise((resolve, reject) => {
-    const base = heroDir ? `Heroes/${heroDir}` : 'General';
+    const base = heroDir ? `Heroes/${heroDir}` : 'General'
     const isGeneral = base === 'General'
 
     return getDirectories(`./${base}/${type}`).then(events => {
-      var totalFiles = 0;
+      var totalFiles = 0
       return Promise.all(events.map(event => {
         return getDirectories(`./${base}/${type}/${event}`).then(typesOrFiles => {
           if (isGeneral) {
@@ -83,70 +82,81 @@ const moveImages = (heroDir, type, heroID) => {
               })
             })
           }))
-        });
+        })
       })).then(() => {
-        console.log(`[Hero] ${heroID || 'General'} - Got ${totalFiles} ${type} files`);
-        resolve();
-      });
-    }).catch(reject);
-  });
-};
+        console.log(`[Hero] ${heroID || 'General'} - Got ${totalFiles} ${type} files`)
+        resolve()
+      })
+    }).catch(reject)
+  })
+}
 
-const convertFiles = () => {
-  return new Promise((resolve, reject) => {
-    console.log("Preparing to convert files");
-    getDirectories('./!toBeConverted').then(types => {
-      eachLimit(types, 1, (type, cb) => {
-        console.log(`Starting to convert ${TYPES[type]}`);
-        console.log(`-- Converting images to png`);
-        // timeout prevents the first icon from being converted incorrectly for some reason
-        setTimeout(() => {
-          exec(`mogrify -path ./images -format png ./!toBeConverted/${type}/*.TIF`, err => {
-            if (err) return reject(`Error while mogrify'ing images! \n ${err}`);
-            console.log("-- Optimising images with pngquant");
-            exec(`pngquant ./images/*.png --ext=.png --speed 1 --force --strip`, err2 => {
-              if (err2) return reject(`Error while pngquant'ing images! \n ${err2}`);
-              // Need to set a timeout as this command seems to exit well before it is actually finished
-              setTimeout(() => {
-                console.log("-- Moving files to their hero dirs");
-                mapFilesToHeroes([TYPES[type], './images/']).then(() => {
-                  console.log("-- Finished moving files");
-                  cb();
-                });
-              }, 4500);
-            });
-          });
-        }, 1500);
-      }, () => {
-        console.log("Finished converting all images");
-      });
-    });
-  });
-};
+const convertFiles = async () => {
+  console.log("Preparing to convert files")
+  const types = await getDirectories('./!toBeConverted')
 
-const extractImages = (skipExtract) => {
+  for (const type of types) {
+    console.log(`Starting to convert ${TYPES[type]}`)
+    console.log(`-- Converting images to png`)
+
+
+    await convertImages(type)
+    console.log("-- Optimising images with pngquant")
+    await optimiseImages()
+
+
+    console.log("-- Moving files to their hero dirs")
+    await mapFilesToHeroes([TYPES[type], './images/'])
+    console.log("-- Finished moving files")
+  }
+
+  console.log("Finished converting all images")
+}
+
+async function convertImages(type) {
+  const { stderr } = await exec(`mogrify -path ./images -format png ./!toBeConverted/${type}/*.TIF`)
+  if (stderr) {
+    throw new Error(`Error while mogrify'ing images! \n ${stderr}`)
+  }
+
+  await delay(1200)
+}
+
+
+async function optimiseImages() {
+  const { stderr } = await exec(`pngquant ./images/*.png --ext=.png --speed 1 --force --strip`)
+  if (stderr) {
+    throw new Error(`Error while pngquant'ing images! \n ${stderr}`)
+  }
+
+  await delay(4000)
+}
+
+async function extractImages(skipExtract) {
   if (!process.cwd().match(/OverwatchAssets$/)) {
-    console.error("Needs to be run in OverwatchAssets");
-    process.exit();
+    console.error("Needs to be run in OverwatchAssets")
+    process.exit()
   }
 
-  skipExtract = (skipExtract[0] || '') == 'skip';
+  skipExtract = (skipExtract[0] || '') == 'skip'
 
-  console.log("Preparing to move all sprays and icons");
-  checkDirs();
+  console.log("Preparing to move all sprays and icons")
+  checkDirs()
+
   if (skipExtract) {
-    console.log("Skipping extraction, converting files");
-    convertFiles().catch(handleErr);
-    return;
+    console.log("Skipping extraction, converting files")
+    convertFiles().catch(handleErr)
+    return
   }
-  getDirectories('./Heroes').then(heroDirs => {
-    Promise.all([ ...heroDirs, ''].map(hero => {
-      return new Promise(resolve => findImages(hero).then(resolve));
-    })).then(() => {
-      console.log("Finished moving sprays and icons, starting conversion");
-      convertFiles().catch(handleErr);
-    });
-  }).catch(console.error);
-};
 
-module.exports = { extractImages };
+  const heroDirs = await getDirectories('./Heroes')
+  await Promise.all([ ...heroDirs, ''].map(async hero => {
+    await findImages(hero)
+  }))
+
+  await delay(500)
+  console.log("Finished moving sprays and icons, starting conversion")
+  await convertFiles()
+}
+
+module.exports = { extractImages }

@@ -244,6 +244,9 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
   return result;
 }, {});
 
+const duplicateNames = [['sprays', 'tracer-blink'], ['sprays', 'reinhardt-crusader'], ['voicelines', 'baptiste-some-kind-of-angel']]
+const seenDupes = {}
+
 // Goes through every hero and their item lists
 console.info('Generating hero data');
 var heroes = {};
@@ -266,7 +269,11 @@ for (var hero in data) {
     }
   });
 
-  _.forEach(itemGroups, (items, group) => {
+  // Jank hack to make sure we process DEFAULT items and BASE items before the event items
+  const { DEFAULT, BASE, ...others } = itemGroups
+  const newGroup = { DEFAULT, BASE, ...others }
+
+  _.forEach(newGroup, (items, group) => {
     items.forEach(item => {
       var [, name, itemType] = item.match(/(.+) \((.+)\)/);
       name = badNames[name.trim()] || name.trim();
@@ -279,20 +286,16 @@ for (var hero in data) {
       var id = getCleanID(name, heroID);
       const uniqueId = `${type}/${id}`
 
-      // TODO: Remove this shit
-      if (id === 'reinhardt-crusader' && type === 'sprays') {
-        if (thanksBlizz['reinspray1']) {
-          id = 'reinhardt-crusader-1'
-        } else {
-          thanksBlizz['reinspray1'] = true
-        }
-      }
+      for (const dupeSet of duplicateNames) {
+        if (type == dupeSet[0] && id === dupeSet[1]) {
+          const seen = seenDupes[uniqueId]
 
-      if (id === 'baptiste-some-kind-of-angel' && type === 'voicelines') {
-        if (thanksBlizz['bapvl1']) {
-          id = 'baptiste-some-kind-of-angel-1'
-        } else {
-          thanksBlizz['bapvl1'] = true
+          if (seen) {
+            console.log('Found dupe', uniqueId)
+            id = `${id}-1`
+          } else {
+            seenDupes[uniqueId] = true
+          }
         }
       }
 

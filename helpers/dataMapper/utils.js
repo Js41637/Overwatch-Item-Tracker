@@ -64,6 +64,7 @@ const getCleanID = (what, hero) => {
             .trim()
             .replace(/\s+/g, " ")
             .replace(/ /g, '-')
+            .replace('0f1', '')
 }
 
 // Returns the image or video URL for an item
