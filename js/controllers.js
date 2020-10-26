@@ -399,6 +399,14 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "$uibModal", "DataService"
   $scope.checked = Data.checked;
   $scope.data = event;
   $scope.canPlayType = CompatibilityService.canPlayType;
+  $scope.filteredItems = event.items
+
+  $scope.filters = {
+    selected: false,
+    unselected: false,
+    new: false,
+    groups: {}
+  }
 
   CostAndTotalService.waitForInitialization().then(function(data) {
     $scope.totals = data.events[event.id].totals;
@@ -418,6 +426,11 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "$uibModal", "DataService"
     $scope.checked[skin.hero].skins[skin.id] = !$scope.checked[skin.hero].skins[skin.id];
     $scope.onSelect(skin, 'skins');
   };
+
+  $scope.getGroupName = function(group) {
+    var split = group.split('_')
+    return split[split.length - 1]
+  }
 
   var resetCosts = function() {
     var cost = CostAndTotalService.events[event.id].cost;
@@ -451,19 +464,93 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "$uibModal", "DataService"
       return;
     }
 
-    for (var type in event.items) {
+    for (var type in $scope.filteredItems) {
       if (onlyType && type !== onlyType) {
         continue;
       }
 
-      for (var item of event.items[type]) {
-        $scope.checked[item.hero || 'all'][type][item.id] = !unselect;
+      for (var item of $scope.filteredItems[type]) {
+        $scope.checked[item.hero || 'all'][type.replace('skinsLegendary', 'skins')][item.id] = !unselect;
       }
     }
 
     StorageService.setData(Object.assign({}, Data.checked, $scope.checked));
     CostAndTotalService.recalculate();
     resetCosts();
+  };
+
+  $scope.updateFilters = function() {
+    $scope.isFiltering = true;
+    var selected = $scope.filters.selected;
+    var unselected = $scope.filters.unselected;
+    var newItems = $scope.filters.new;
+
+    var groupFilter = []
+    for (var g in $scope.filters.groups) {
+      if ($scope.filters.groups[g]) {
+        groupFilter.push(g)
+      }
+    }
+
+    // Disable filtering if nothing is selected
+    if (!selected && !unselected && !newItems && groupFilter.length === 0) {
+      $scope.clearFilters();
+      return;
+    }
+
+    $scope.filteredItems = filterItems(event.items, groupFilter);
+  }
+
+  // Filters the items and returms new data object
+  function filterItems(items, groupFilter) {
+    var out = {};
+
+    for (var type in items) {
+      var outType = [];
+      for (var item of items[type]) {
+        if ($scope.filters.selected || $scope.filters.unselected) {
+          var checked = $scope.isItemChecked(item, type);
+          if (($scope.filters.selected && !checked && !item.standardItem) || ($scope.filters.unselected && (checked || item.standardItem))) {
+            continue
+          }
+        }
+
+        if ($scope.filters.new && !item.isNew) {
+          continue
+        }
+
+        if (groupFilter.length > 0 && (!item.group || !groupFilter.includes(item.group))) {
+          continue
+        }
+
+        outType.push(item);
+      }
+
+      if (outType.length) {
+        out[type] = outType;
+      }
+    }
+
+    return out;
+  }
+
+  // Returns if an item is checked, use item.hero if one is available as allClass Icons includes icons from all heroes
+  $scope.isItemChecked = function(item, type) {
+    if (item.standardItem) return true
+
+    return $scope.checked[item.hero][type.replace('skinsLegendary', 'skins')][item.id];
+  };
+
+  $scope.clearFilters = function() {
+    $scope.filters = {
+      selected: false,
+      unselected: false,
+      new: false,
+      groups: {}
+    };
+
+    $scope.isFiltering = false
+    $scope.filteredItems = event.items
   };
 }]);
 

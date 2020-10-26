@@ -1,0 +1,44 @@
+<div id="event-header">
+  <div class="options">
+    <div class="btn btn-default" ng-show="isFiltering" uib-tooltip="Clear Filters" ng-click="clearFilters()" tooltip-append-to-body="true">Clear Filters</div>
+    <div class="btn-group" uib-dropdown is-open="showDropdown" auto-close="outsideClick">
+      <div class="btn btn-default" uib-dropdown-toggle uib-tooltip="Filter Items" tooltip-append-to-body="true">
+        Filter <span class="caret"></span>
+      </div>
+      <ul class="dropdown-menu dropdown-menu-right filters" uib-dropdown-menu>
+        <li>
+          <div>
+            <input id="filterSelected" type="checkbox" ng-change="filters.unselected = false;updateFilters()" ng-model="filters.selected" ng-disabled="totals.overall.selected == 0 && !isFiltering">
+            <label for="filterSelected">Selected</label>
+          </div>
+        </li>
+        <li>
+          <div>
+            <input id="filterUnselected" type="checkbox" ng-change="filters.selected = false;updateFilters()" ng-model="filters.unselected" ng-disabled="totals.overall.selected == 0 && !isFiltering">
+            <label for="filterUnselected">UnSelected</label>
+          </div>
+        </li>
+        <li>
+          <div>
+            <input id="newitems" type="checkbox" ng-change="updateFilters()" ng-model="filters.new">
+            <label for="newitems">New Items</label>
+          </div>
+        </li>
+        <li class="divider"></li>
+        <li ng-repeat="group in data.event_ids track by $index">
+          <div>
+            <input id="{{::group}}" type="checkbox" ng-change="updateFilters()" ng-model="filters.groups[group]">
+            <label for="{{::group}}">{{::getGroupName(group)}} Items</label>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="select-all btn btn-default" uib-tooltip="Select all items currently in view" ng-click="selectModal(false, 'select')" tooltip-append-to-body="true">Select All</div>
+    <div class="select-all btn btn-default" uib-tooltip="Unselect all items currently in view" ng-click="selectModal(false, 'unselect')" tooltip-append-to-body="true">Unselect All</div>
+  </div>
+
+  <div class="event-progress">
+    <div class="event-progress-bar progress-bar active" style="width: {{(totals.overall.selected / totals.overall.total) * 100}}%;" ng-class="{'progress-bar-striped': totals.overall.selected === totals.overall.total}"></div>
+    <span>{{totals.overall.selected}} / {{totals.overall.total}}  Unlocks</span>
+  </div>
+</div>

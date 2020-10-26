@@ -788,7 +788,7 @@ strong {
  **/
 
 .item-container {
-  margin-top: -28px;
+  margin-top: -34px;
   padding: 5px 8px 0;
   position: relative;
   box-sizing: border-box;
@@ -1332,6 +1332,43 @@ input.circle-checkbox:checked+label {
 
 .options .dropdown-menu li > div:hover  {
   background-color: rgb(245, 245, 245);
+}
+
+.options .dropdown-menu .divider {
+  margin: 6px 0;
+}
+
+.options .btn-group .dropdown-menu li label {
+  order: -1;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px 0;
+  width: 100%;
+}
+
+.options .btn-group li input {
+  margin-left: 15px;
+  min-height: 17px;
+  min-width: 17px;
+}
+
+.options .btn-group .btn .caret {
+  border-top: 6px dashed;
+  border-top: 6px solid\9;
+  border-right: 6px solid rgba(0, 0, 0, 0);
+  border-left: 6px solid rgba(0, 0, 0, 0);
+  margin-top: -1px;
+}
+
+.options {
+  .save-filters {
+    text-align: center;
+    margin-top: 8px;
+
+    button {
+      width: 70px;
+    }
+  }
 }
 
 home-progress-bars {

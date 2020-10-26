@@ -1,5 +1,11 @@
 #event-header {
   margin-bottom: $size__legendary-section-height + ($size__gutter * 2);
+
+  .options {
+    position: absolute;
+    bottom: 37px;
+    right: 6px;
+  }
 }
 
 .header-content {
@@ -61,6 +67,7 @@
     @extend %preview-two-bgs;
   }
 }
+
 
 // Import it after to override defined properties above.
 @import "event__legendary-skins";

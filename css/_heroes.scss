@@ -58,15 +58,6 @@
       font-size: 18px;
       display: flex;
       align-items: center;
-
-      .save-filters {
-        text-align: center;
-        margin-top: 8px;
-
-        button {
-          width: 70px;
-        }
-      }
     }
   }
 }
@@ -123,39 +114,13 @@
   text-transform: uppercase;
 }
 
-#hero-container .dropdown-menu .divider {
-  margin: 6px 0;
-}
-
-#hero-container .options .btn-group .dropdown-menu li label {
-  order: -1;
-  align-items: center;
-  cursor: pointer;
-  padding: 3px 0;
-  width: 100%;
-}
-
-#hero-container .options .btn-group li input {
-  margin-left: 15px;
-  min-height: 17px;
-  min-width: 17px;
-}
-
-#hero-container #hero-header .btn-group {
+#hero-header .btn-group {
   display: inline-block;
 }
 
-#hero-container #hero-header .btn {
+#hero-header .btn {
   font-size: 15px;
   margin: 0 3px;
-}
-
-#hero-container .btn-group .btn .caret {
-  border-top: 6px dashed;
-  border-top: 6px solid\9;
-  border-right: 6px solid rgba(0, 0, 0, 0);
-  border-left: 6px solid rgba(0, 0, 0, 0);
-  margin-top: -1px;
 }
 
 #hero-container #hero-header .toggle-grid {

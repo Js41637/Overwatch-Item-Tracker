@@ -158,6 +158,13 @@
   display: none;
 }
 
+#event-header .options {
+  width: 75%;
+  margin: 0 auto;
+  text-align: right;
+  margin-bottom: 4px;
+}
+
 #event-container #event-header {
   display: block;
   width: 100%;
@@ -174,6 +181,7 @@
   width: 75%;
   opacity: .9;
   margin: 0 auto;
+  position: relative;
 }
 
 #event-container .event-progress span {
@@ -222,8 +230,11 @@
     width: 100%;
   }
 
-  #event-container .event-progress {
-    width: 65%;
+  #event-container {
+    .event-progress,
+    .options {
+      width: 65%;
+    }
   }
 
   #event-container .section .item h3 {

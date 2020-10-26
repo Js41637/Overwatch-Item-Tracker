@@ -107,6 +107,8 @@ var sortObject = (o, update) => {
   for (let thing of array) {
     if (update) {
       delete thing.order
+
+      thing.event_ids = _.orderBy(thing.event_ids)
     }
 
     sorted[thing.id] = thing

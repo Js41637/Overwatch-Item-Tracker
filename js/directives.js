@@ -126,6 +126,14 @@ OWI.directive('subHeader', function() {
   };
 });
 
+OWI.directive('eventHeader', function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    templateUrl: './templates/event-header.html'
+  };
+});
+
 OWI.directive('heroNav', ["CostAndTotalService", "DataService", function(CostAndTotalService, DataService) {
   return {
     restrict: 'E',

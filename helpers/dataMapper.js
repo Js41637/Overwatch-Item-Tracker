@@ -395,13 +395,20 @@ _.forEach(heroes, hero => {
 
       const type = (tKey === 'skins' && item.isNew && item.quality == 'legendary') ? 'skinsLegendary' : tKey
 
-      if (!updates[event]) updates[event] = {
-        order: EVENTORDER[event],
-        name: EVENTNAMES[event],
-        id: event,
-        dates: EVENTTIMES[event],
-        items: {}
-      };
+      if (!updates[event]) {
+        updates[event] = {
+          order: EVENTORDER[event],
+          name: EVENTNAMES[event],
+          id: event,
+          dates: EVENTTIMES[event],
+          event_ids: [],
+          items: {}
+        };
+      }
+
+      if (!updates[event].event_ids.includes(actualEvent)) {
+        updates[event].event_ids.push(actualEvent)
+      }
 
       if (!updates[event].items[type]) {
         updates[event].items[type] = []
