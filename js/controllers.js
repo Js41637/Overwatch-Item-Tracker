@@ -650,7 +650,7 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     }
   }
 
-  vm.importData = function(data, test) {
+  vm.importData = function(test, overWrite) {
     vm.importErrors = null;
     var errors = validateData(vm.data);
 
@@ -659,11 +659,39 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     } else {
       vm.importErrors = false;
       if (!test) {
-        StorageService.setData(angular.fromJson(vm.data));
+        var json = angular.fromJson(vm.data)
+        if (overWrite) {
+          StorageService.setData(angular.fromJson(vm.data));
+        } else {
+          StorageService.setData(mergeDeep(DataService.checked, json))
+        }
+
         location.reload();
       }
     }
   };
+
+  function isObject(item) {
+    return (item && typeof item === 'object' && !Array.isArray(item));
+  }
+
+  function mergeDeep(target, source) {
+    var output = Object.assign({}, target);
+    if (isObject(target) && isObject(source)) {
+      Object.keys(source).forEach(function(key) {
+        if (isObject(source[key])) {
+          if (!(key in target)) {
+            Object.assign(output, { [key]: source[key] });
+          } else {
+            output[key] = mergeDeep(target[key], source[key]);
+          }
+        } else {
+          Object.assign(output, { [key]: source[key] });
+        }
+      });
+    }
+    return output;
+  }
 
   vm.selectTheme = function(what) {
     vm.currentTheme = what;

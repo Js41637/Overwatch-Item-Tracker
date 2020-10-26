@@ -69,8 +69,13 @@
           </div>
           <textarea type="text" class="form-control" ng-model="settings.data" rows="10"></textarea>
           <div class="btn btn-primary" ng-click="settings.downloadJSON()">Download JSON</div>
-          <div class="btn btn-primary" ng-click="settings.importData(settings.data, true)">Test Validity</div>
-          <div class="btn btn-danger" ng-click="settings.importData(settings.data)">Overwrite data!</div>
+          <div class="btn btn-primary" ng-click="settings.importData(true)">Test Validity</div>
+          <div class="btn btn-danger" ng-click="settings.importData()" uib-tooltip="Merges your existing data with what is entered above.">Merge Data!</div>
+          <div class="btn btn-danger" ng-click="settings.importData(false, true)" uib-tooltip="Overwrites all your data with what is entered above!">Overwrite data!</div>
+
+          <div class="alert alert-info" style="margin-top: 10px;">
+            <p><strong>Info!</strong> There is a way to import your existing unlocks from the game into Overwatch Item Tracker! Head over to this site for more details. <a href="https://overwatchitemtracker.com/unlocks-parser/" target="_blank">https://overwatchitemtracker.com/unlocks-parser/</a></p>
+          </div>
         </div>
         <div class="setting">
           <h3>Reset Saved Data</h3>
