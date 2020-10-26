@@ -6619,12 +6619,6 @@
           "group": "overwatch league"
         },
         {
-          "name": "Vengeful Ghost",
-          "id": "vengeful-ghost",
-          "url": "/heroes/all/sprays/vengeful-ghost.png",
-          "quality": "common"
-        },
-        {
           "name": "Victory",
           "id": "victory",
           "url": "/heroes/all/sprays/victory.png",
@@ -6984,6 +6978,13 @@
           "achievement": true,
           "group": "HALLOWEEN_2020",
           "description": "Complete the Three They Were Junkenstein challenge mission."
+        },
+        {
+          "name": "Vengeful Ghost",
+          "id": "vengeful-ghost",
+          "event": "HALLOWEEN",
+          "url": "/heroes/all/sprays/vengeful-ghost.png",
+          "quality": "common"
         },
         {
           "name": "Viking Fury",

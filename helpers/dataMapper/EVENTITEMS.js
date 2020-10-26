@@ -643,6 +643,7 @@ const EVENTITEMS = {
       "sprays/sombra-fantasma",
       "sprays/winston-werewolf",
       "sprays/halloween-elite",
+      "sprays/vengeful-ghost",
       "sprays/frenzied-stampede",
       "sprays/quickdraw",
       "sprays/red-riding-hunt",
