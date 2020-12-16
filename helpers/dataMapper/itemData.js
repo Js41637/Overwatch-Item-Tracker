@@ -247,13 +247,17 @@ const data = {
     'zombarded',
     'viking-fury',
     'uncanny-speed',
-    'red-riding-hunt'
+    'red-riding-hunt',
+    // CHRISTMAS20
+    'cookie-throw',
+    'frozen-elf',
+    'mutual-thaw'
   ],
   allClassEventItems: {
     sprays: {
       [EVENTS.SUMMER]: ['summer-games-2016', 'summer-games', 'goal-blossom', 'safe-hands', 'bicycle-kick', 'sand-castle', 'shark-attack', 'snorkling', 'goalkeeper', 'header'],
       [EVENTS.HALLOWEEN]: ['never-die', 'bats', 'boo', 'boop', 'candyball', 'fangs', 'gummy-hog', 'halloween-terror', 'pumpkins', 'witchs-brew', 'halloween-special', 'junkensteins-revenge', 'rise-of-the-zomnics', 'the-reapening', 'my-creations', 'the-monster', 'the-reaper', 'the-witch', 'zomnic', 'zombardier', 'flaming-pumpkin', 'frenzied-stampede', 'quickdraw', 'zombarded', 'viking-fury', 'uncanny-speed', 'red-riding-hunt', 'vengeful-ghost', 'halloween-elite'],
-      [EVENTS.WINTER]: ['snowcree', 'snowhog', 'snowmei', 'snowreaper', 'winter-wonderland', 'yeti', 'yeti-hunter', 'frozen-throne', 'yeti-rage', 'bonk', 'holiday-surprise', 'ice-spheres', 'jotunn', 'mountain-man', 'polar-bear', 'snow-snow-snow'],
+      [EVENTS.WINTER]: ['snowcree', 'snowhog', 'snowmei', 'snowreaper', 'winter-wonderland', 'yeti', 'yeti-hunter', 'frozen-throne', 'yeti-rage', 'bonk', 'holiday-surprise', 'ice-spheres', 'jotunn', 'mountain-man', 'polar-bear', 'snow-snow-snow', 'cookie-throw', 'frozen-elf', 'mutual-thaw'],
       [EVENTS.LUNAR]: ['auspicious-lion', 'awakened-lion', 'dragons-head', 'lucky-pouch', 'red-envelope', 'year-of-the-rooster-2017', 'year-of-the-dog-2018', 'good-fortune', 'captured-flag', 'interrupted-delivery', 'year-of-the-rat-2020'],
       [EVENTS.UPRISING]: ['b73ns', 'eradicator', 'null-sector', 'nullmari', 'nulltrooper', 'or14ns', 'slicer', 'archives', 'talon-assassin', 'droppachi', 'talon-enforcer', 'talon-heavy-assault', 'talon-sniper', 'talon-trooper', 'almendron', 'ambush', 'big-plans', 'cut-the-brakes', 'hot-pursuit', 'light-the-way', 'new-strike-team', 'the-broker', 'aggressive', 'blood-moon-rising', 'carry', 'deadeye-strike', 'detonated', 'feeling-invincible', 'strike'],
       [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'fast', 'feast']
@@ -261,7 +265,7 @@ const data = {
     icons: {
       [EVENTS.SUMMER]: ["summer-games-2016", "summer-games-2017", "summer-games-2018", "summer-games-2019", "summer-games-2020", "meteor", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america", "argentina", "austria", "belgium", "canada", "denmark", "finland", "ireland", "israel", "italy", "jordan", "netherlands", "new-zealand", "portugal", "romania", "snorkelmari", "spain", "footballmari", "punchimari", "tennismari", 'baseballmari', 'golfimari', 'surfimari'],
       [EVENTS.HALLOWEEN]: ["calavera", "vampachimari", "eyeball", "superstition", "witchs-hat", "ghostymari", "tombstone", "bewitching", "candle", "never-die", "wolf", "witchs-brew", "spider", "junkensteins-pachimonster", "pachimummy", "pumpkimari", "skelemari", "witchymari", "kittymari", "halloween-terror-2016", "halloween-terror-2017", "halloween-terror-2018", "halloween-terror-2019", 'clownmari', 'halloween-terror-2020'],
-      [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "winter-wonderland-2018", "winter-wonderland-2019", "snowman", "present", "pachimerry", "gingermari", "pachicracker", "snowimari", "2017", "2018", "2019", "2020", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
+      [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "winter-wonderland-2018", "winter-wonderland-2019", "snowman", "present", "pachimerry", "gingermari", "pachicracker", "snowimari", "2017", "2018", "2019", "2020", "2021", "end-of-2020", "winter-wonderland-2020", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
       [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu", 'guan-yu', 'hong-gildong', 'huang-zhong', 'l-bu', 'piggimari', 'year-of-the-pig-2019', 'zhang-fei', 'zhuge-liang', 'year-of-the-rat-2020'],
       [EVENTS.UPRISING]: ['archives-2020', 'archives-2019', 'archives-2018', 'uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'assassin', 'enforcer', 'heavy-assault', 'maximilien', 'sniper', 'trooper'],
       [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'anniversary-2018', 'anniversary-2019', 'anniversary-2020', 'fanous', 'cupachicake', 'pachiversary'],
@@ -333,14 +337,22 @@ const data = {
     'skins/sombra-fantasma': EVENTS.HALLOWEEN,
     'icons/sombra-fantasma': EVENTS.HALLOWEEN,
     'sprays/sombra-fantasma': EVENTS.HALLOWEEN,
-
     'skins/brigitte-stone': EVENTS.HALLOWEEN,
     'icons/brigitte-stone': EVENTS.HALLOWEEN,
     'sprays/brigitte-stone': EVENTS.HALLOWEEN,
-
     'skins/echo-ragdoll': EVENTS.HALLOWEEN,
     'icons/echo-ragdoll': EVENTS.HALLOWEEN,
     'sprays/echo-ragdoll': EVENTS.HALLOWEEN,
+
+    'skins/junkrat-elf': EVENTS.WINTER,
+    'icons/junkrat-elf': EVENTS.WINTER,
+    'sprays/junkrat-elf': EVENTS.WINTER,
+    'skins/ana-gingerbread': EVENTS.WINTER,
+    'icons/ana-gingerbread': EVENTS.WINTER,
+    'sprays/ana-gingerbread': EVENTS.WINTER,
+    'skins/roadhog-frosty': EVENTS.WINTER,
+    'icons/roadhog-frosty': EVENTS.WINTER,
+    'sprays/roadhog-frosty': EVENTS.WINTER,
   },
   specialAchievementItems: {
     bcrf: {

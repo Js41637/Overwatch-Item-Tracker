@@ -89,6 +89,12 @@
           "url": "/heroes/all/icons/2020-pacific-allstars.png"
         },
         {
+          "name": "2021",
+          "id": "2021",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/icons/2021.png"
+        },
+        {
           "name": "...Never Die",
           "id": "never-die",
           "event": "HALLOWEEN",
@@ -729,8 +735,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "moira",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Colomar",
@@ -960,6 +965,16 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive Deathmatch 2020"
         },
         {
+          "name": "Competitive No Limits Competitor 2020",
+          "id": "competitive-no-limits-competitor-2020",
+          "url": "/heroes/all/icons/competitive-no-limits-competitor-2020.png"
+        },
+        {
+          "name": "Competitive No Limits Hero 2020",
+          "id": "competitive-no-limits-hero-2020",
+          "url": "/heroes/all/icons/competitive-no-limits-hero-2020.png"
+        },
+        {
           "name": "Competitive Team Deathmatch Competitor 2018",
           "id": "competitive-team-deathmatch-competitor",
           "url": "/heroes/all/icons/competitive-team-deathmatch-competitor.png",
@@ -1006,6 +1021,15 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch 2020"
+        },
+        {
+          "name": "Conductor",
+          "id": "reinhardt-conductor",
+          "url": "/heroes/reinhardt/icons/reinhardt-conductor.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "reinhardt",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Copa Lúcioball Competitor",
@@ -1507,6 +1531,17 @@
           "url": "/heroes/all/icons/elephant.png"
         },
         {
+          "name": "Elf",
+          "id": "junkrat-elf",
+          "url": "/heroes/junkrat/icons/junkrat-elf.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 1 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "junkrat",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Emblem",
           "id": "reaper-emblem",
           "url": "/heroes/reaper/icons/reaper-emblem.png",
@@ -1519,6 +1554,12 @@
           "event": "HALLOWEEN",
           "hero": "pharah",
           "group": "HALLOWEEN_2018"
+        },
+        {
+          "name": "End of 2020",
+          "id": "end-of-2020",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/icons/end-of-2020.png"
         },
         {
           "name": "Enforcer",
@@ -1743,6 +1784,17 @@
           "url": "/heroes/all/icons/from-beyond-the-moon.png"
         },
         {
+          "name": "Frosty",
+          "id": "roadhog-frosty",
+          "url": "/heroes/roadhog/icons/roadhog-frosty.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 3 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "roadhog",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Fuchimari",
           "id": "fuchimari",
           "event": "LUNAR_NEW_YEAR",
@@ -1815,6 +1867,17 @@
           "id": "gingerbread",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/icons/gingerbread.png"
+        },
+        {
+          "name": "Gingerbread",
+          "id": "ana-gingerbread",
+          "url": "/heroes/ana/icons/ana-gingerbread.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 2 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "ana",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Gingermari",
@@ -2248,6 +2311,15 @@
           "hero": "sigma"
         },
         {
+          "name": "Ice Empress",
+          "id": "moira-ice-empress",
+          "url": "/heroes/moira/icons/moira-ice-empress.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "moira",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Ice Fisherman",
           "id": "roadhog-ice-fisherman",
           "url": "/heroes/roadhog/icons/roadhog-ice-fisherman.png",
@@ -2400,8 +2472,7 @@
           "url": "/heroes/doomfist/icons/doomfist-jotunn.png",
           "event": "WINTER_WONDERLAND",
           "hero": "doomfist",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Kambô",
@@ -2646,6 +2717,15 @@
           "url": "/heroes/all/icons/lucky-pouch.png"
         },
         {
+          "name": "Lumberjack",
+          "id": "torbjorn-lumberjack",
+          "url": "/heroes/torbjorn/icons/torbjorn-lumberjack.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "torbjorn",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Lunar Ops",
           "id": "winston-lunar-ops",
           "url": "/heroes/winston/icons/winston-lunar-ops.png",
@@ -2715,6 +2795,14 @@
           "name": "Mama Pig's",
           "id": "mama-pigs",
           "url": "/heroes/all/icons/mama-pigs.png"
+        },
+        {
+          "name": "Marammat",
+          "id": "symmetra-marammat",
+          "url": "/heroes/symmetra/icons/symmetra-marammat.png",
+          "description": "Unlocked by participating in Symmetra's Restoration Challenge",
+          "achievement": "blizzard",
+          "hero": "symmetra"
         },
         {
           "name": "Mardi B.O.B.",
@@ -2863,8 +2951,7 @@
           "url": "/heroes/mccree/icons/mccree-mountain-man.png",
           "event": "WINTER_WONDERLAND",
           "hero": "mccree",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Mug",
@@ -3215,6 +3302,15 @@
           "hero": "winston"
         },
         {
+          "name": "Penguin",
+          "id": "mei-penguin",
+          "url": "/heroes/mei/icons/mei-penguin.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "mei",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Peppermint",
           "id": "peppermint",
           "event": "WINTER_WONDERLAND",
@@ -3384,8 +3480,7 @@
           "url": "/heroes/reaper/icons/reaper-rat-king.png",
           "event": "WINTER_WONDERLAND",
           "hero": "reaper",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Reaper",
@@ -3475,8 +3570,7 @@
           "url": "/heroes/sigma/icons/sigma-rime.png",
           "event": "WINTER_WONDERLAND",
           "hero": "sigma",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Riot Police",
@@ -4024,6 +4118,22 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Season 25"
         },
         {
+          "name": "Season 26 Competitor",
+          "id": "season-26-competitor",
+          "url": "/heroes/all/icons/season-26-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 26 placement matches"
+        },
+        {
+          "name": "Season 26 Hero",
+          "id": "season-26-hero",
+          "url": "/heroes/all/icons/season-26-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 26"
+        },
+        {
           "name": "Sentry",
           "id": "symmetra-sentry",
           "url": "/heroes/symmetra/icons/symmetra-sentry.png",
@@ -4182,8 +4292,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "mercy",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Snowball",
@@ -4638,6 +4747,15 @@
           "group": "ANNIVERSARY_2019"
         },
         {
+          "name": "Toybot",
+          "id": "zenyatta-toybot",
+          "url": "/heroes/zenyatta/icons/zenyatta-toybot.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "zenyatta",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Tracer",
           "id": "tracer-tracer",
           "url": "/heroes/tracer/icons/tracer-tracer.png",
@@ -4694,8 +4812,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "soldier-76",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "United Kingdom",
@@ -4921,6 +5038,12 @@
           "id": "winter-wonderland-2019",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/icons/winter-wonderland-2019.png"
+        },
+        {
+          "name": "Winter Wonderland 2020",
+          "id": "winter-wonderland-2020",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/icons/winter-wonderland-2020.png"
         },
         {
           "name": "Witch's Brew",
@@ -5419,6 +5542,18 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive Deathmatch 2020"
+        },
+        {
+          "name": "Competitive No Limits Competitor 2020",
+          "id": "competitive-no-limits-competitor-2020",
+          "url": "/heroes/all/sprays/competitive-no-limits-competitor-2020.png",
+          "quality": "common"
+        },
+        {
+          "name": "Competitive No Limits Hero 2020",
+          "id": "competitive-no-limits-hero-2020",
+          "url": "/heroes/all/sprays/competitive-no-limits-hero-2020.png",
+          "quality": "common"
         },
         {
           "name": "Competitive Team Deathmatch Competitor 2018",
@@ -6497,6 +6632,22 @@
           "description": "Unlocked by achieving top 500 ranking at the end of Season 25"
         },
         {
+          "name": "Season 26 Competitor",
+          "id": "season-26-competitor",
+          "url": "/heroes/all/sprays/season-26-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 26 placement matches"
+        },
+        {
+          "name": "Season 26 Hero",
+          "id": "season-26-hero",
+          "url": "/heroes/all/sprays/season-26-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 26"
+        },
+        {
           "name": "Seoul Dynasty Homestand 2020",
           "id": "seoul-dynasty-homestand-2020",
           "url": "/heroes/all/sprays/seoul-dynasty-homestand-2020.png",
@@ -6984,7 +7135,8 @@
           "id": "vengeful-ghost",
           "event": "HALLOWEEN",
           "url": "/heroes/all/sprays/vengeful-ghost.png",
-          "quality": "common"
+          "quality": "common",
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Viking Fury",
@@ -7040,6 +7192,24 @@
           "description": "Kill 2 enemies with a single use of Mei's Flurry in Mei's Snowball Offensive."
         },
         {
+          "name": "Cookie Throw",
+          "id": "cookie-throw",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/sprays/cookie-throw.png",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2020",
+          "description": "Interrupt 3 enemy thaws in a round of Freezethaw Elimination."
+        },
+        {
+          "name": "Frozen Elf",
+          "id": "frozen-elf",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/sprays/frozen-elf.png",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2020",
+          "description": "Interrupt an enemy ultimate ability by freezing them in Freezethaw Elimination."
+        },
+        {
           "name": "Frozen Throne",
           "id": "frozen-throne",
           "event": "WINTER_WONDERLAND",
@@ -7082,6 +7252,15 @@
           "achievement": true,
           "group": "WINTER_WONDERLAND_2019",
           "description": "Kill 3 enemies without reloading or dying in Snowball Deathmatch."
+        },
+        {
+          "name": "Mutual Thaw",
+          "id": "mutual-thaw",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/sprays/mutual-thaw.png",
+          "achievement": true,
+          "group": "WINTER_WONDERLAND_2020",
+          "description": "Thaw a player who previously thawed you in a round of Freezethaw Elimination."
         },
         {
           "name": "Polar bear",
@@ -7625,6 +7804,17 @@
           "achievement": "blizzard"
         },
         {
+          "name": "Gingerbread",
+          "id": "ana-gingerbread",
+          "quality": "epic",
+          "url": "/heroes/ana/skins/ana-gingerbread.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 2 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Captain Amari",
           "id": "ana-captain-amari",
           "quality": "legendary",
@@ -7896,6 +8086,17 @@
           "description": "Unlocked by participating in Ana's Bastet Challenge",
           "achievement": "blizzard",
           "hero": "ana"
+        },
+        {
+          "name": "Gingerbread",
+          "id": "ana-gingerbread",
+          "url": "/heroes/ana/icons/ana-gingerbread.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 2 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "ana",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -8169,6 +8370,17 @@
           "url": "/heroes/ana/sprays/ana-protector.png",
           "description": "Unlocked by watching participating streams during Ana's Bastet Challenge",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Gingerbread",
+          "id": "ana-gingerbread",
+          "quality": "common",
+          "url": "/heroes/ana/sprays/ana-gingerbread.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 2 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -9198,6 +9410,15 @@
           "group": "WINTER_WONDERLAND_2018"
         },
         {
+          "name": "Wind down a mountain pass",
+          "id": "ashe-wind-down-a-mountain-pass",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-wind-down-a-mountain-pass.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "No one likes a squealer",
           "id": "ashe-no-one-likes-a-squealer",
           "quality": "common",
@@ -9506,6 +9727,15 @@
           "url": "/heroes/baptiste/emotes/baptiste-take-a-knee.webm"
         },
         {
+          "name": "Mistletoe",
+          "id": "baptiste-mistletoe",
+          "quality": "epic",
+          "url": "/heroes/baptiste/emotes/baptiste-mistletoe.webm",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Konpa Dance",
           "id": "baptiste-konpa-dance",
           "quality": "epic",
@@ -9781,8 +10011,7 @@
           "quality": "common",
           "url": "/heroes/baptiste/sprays/baptiste-ornament.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Snowball Fight",
@@ -9790,8 +10019,7 @@
           "quality": "common",
           "url": "/heroes/baptiste/sprays/baptiste-snowball-fight.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Dragon Dance",
@@ -10064,8 +10292,7 @@
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-a-little-tlc.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Some kind of angel",
@@ -10073,8 +10300,7 @@
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-some-kind-of-angel-1.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Today, I give you a choice",
@@ -10082,8 +10308,7 @@
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-today-i-give-you-a-choice.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Don't you worry",
@@ -12766,6 +12991,15 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "name": "Hotteok weather",
+          "id": "dva-hotteok-weather",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-hotteok-weather.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Happy new year",
           "id": "dva-happy-new-year",
           "quality": "common",
@@ -13044,8 +13278,7 @@
           "quality": "legendary",
           "url": "/heroes/doomfist/skins/doomfist-jotunn.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Talon",
@@ -13228,8 +13461,7 @@
           "url": "/heroes/doomfist/icons/doomfist-jotunn.png",
           "event": "WINTER_WONDERLAND",
           "hero": "doomfist",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Ogundimu",
@@ -14192,6 +14424,24 @@
           "isNew": true
         },
         {
+          "name": "Ornament",
+          "id": "echo-ornament",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-ornament.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "name": "Snowman",
+          "id": "echo-snowman",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-snowman.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Seven of Hearts",
           "id": "echo-seven-of-hearts",
           "quality": "common",
@@ -14393,6 +14643,24 @@
           "url": "/heroes/echo/voicelines/echo-spirits-live-within-me.ogg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2020",
+          "isNew": true
+        },
+        {
+          "name": "Happy holidays",
+          "id": "echo-happy-holidays",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-happy-holidays.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "name": "This experience is a gift",
+          "id": "echo-this-experience-is-a-gift",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-this-experience-is-a-gift.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
           "isNew": true
         },
         {
@@ -16338,6 +16606,17 @@
           "group": "HALLOWEEN_2019"
         },
         {
+          "name": "Elf",
+          "id": "junkrat-elf",
+          "quality": "epic",
+          "url": "/heroes/junkrat/skins/junkrat-elf.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 1 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Fool",
           "id": "junkrat-fool",
           "quality": "legendary",
@@ -16453,6 +16732,15 @@
           "id": "junkrat-vaudeville",
           "quality": "epic",
           "url": "/heroes/junkrat/emotes/junkrat-vaudeville.webm"
+        },
+        {
+          "name": "Unwrap",
+          "id": "junkrat-unwrap",
+          "quality": "epic",
+          "url": "/heroes/junkrat/emotes/junkrat-unwrap.webm",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Dud?",
@@ -16606,6 +16894,17 @@
           "event": "HALLOWEEN",
           "hero": "junkrat",
           "group": "HALLOWEEN_2019"
+        },
+        {
+          "name": "Elf",
+          "id": "junkrat-elf",
+          "url": "/heroes/junkrat/icons/junkrat-elf.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 1 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "junkrat",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -16851,6 +17150,17 @@
           "achievement": "limited",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2019"
+        },
+        {
+          "name": "Elf",
+          "id": "junkrat-elf",
+          "quality": "common",
+          "url": "/heroes/junkrat/sprays/junkrat-elf.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 1 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -16989,8 +17299,7 @@
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-seasons-greetings.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Gong Xi Fa Cai",
@@ -17916,6 +18225,15 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Swap these out for ice skates",
+          "id": "lucio-swap-these-out-for-ice-skates",
+          "quality": "common",
+          "url": "/heroes/lucio/voicelines/lucio-swap-these-out-for-ice-skates.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "I make this look good...",
           "id": "lucio-i-make-this-look-good",
           "quality": "common",
@@ -18036,8 +18354,7 @@
           "quality": "rare",
           "url": "/heroes/lucio/poses/lucio-toast.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Drumming",
@@ -18207,8 +18524,7 @@
           "quality": "legendary",
           "url": "/heroes/mccree/skins/mccree-mountain-man.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Magistrate",
@@ -18391,8 +18707,7 @@
           "url": "/heroes/mccree/icons/mccree-mountain-man.png",
           "event": "WINTER_WONDERLAND",
           "hero": "mccree",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Magistrate",
@@ -19147,6 +19462,15 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Penguin",
+          "id": "mei-penguin",
+          "quality": "legendary",
+          "url": "/heroes/mei/skins/mei-penguin.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Chang'e",
           "id": "mei-change",
           "quality": "legendary",
@@ -19307,8 +19631,7 @@
           "quality": "epic",
           "url": "/heroes/mei/intros/mei-festive.webm",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         }
       ],
       "icons": [
@@ -19351,6 +19674,15 @@
           "event": "HALLOWEEN",
           "hero": "mei",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "name": "Penguin",
+          "id": "mei-penguin",
+          "url": "/heroes/mei/icons/mei-penguin.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "mei",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Chang'e",
@@ -19566,6 +19898,15 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Penguin",
+          "id": "mei-penguin",
+          "quality": "common",
+          "url": "/heroes/mei/sprays/mei-penguin.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Sculpting",
           "id": "mei-sculpting",
           "quality": "common",
@@ -19772,6 +20113,15 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Let's have some hot cocoa",
+          "id": "mei-lets-have-some-hot-cocoa",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-lets-have-some-hot-cocoa.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Snowball Fight!",
           "id": "mei-snowball-fight",
           "quality": "common",
@@ -19912,6 +20262,15 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Toast",
+          "id": "mei-toast",
+          "quality": "rare",
+          "url": "/heroes/mei/poses/mei-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Lucky!",
           "id": "mei-lucky",
           "quality": "rare",
@@ -20009,8 +20368,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Devil",
@@ -20155,6 +20513,15 @@
           "id": "mercy-the-best-medicine",
           "quality": "epic",
           "url": "/heroes/mercy/emotes/mercy-the-best-medicine.webm"
+        },
+        {
+          "name": "Flurry",
+          "id": "mercy-flurry",
+          "quality": "epic",
+          "url": "/heroes/mercy/emotes/mercy-flurry.webm",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Hustle",
@@ -20306,8 +20673,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "mercy",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         }
       ],
       "sprays": [
@@ -20662,8 +21028,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         }
       ],
       "voicelines": [
@@ -21050,8 +21415,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Glam",
@@ -21086,6 +21450,15 @@
           "url": "/heroes/moira/skins/moira-banshee.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2018"
+        },
+        {
+          "name": "Ice Empress",
+          "id": "moira-ice-empress",
+          "quality": "legendary",
+          "url": "/heroes/moira/skins/moira-ice-empress.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Mask Dancer",
@@ -21245,6 +21618,15 @@
           "group": "HALLOWEEN_2018"
         },
         {
+          "name": "Ice Empress",
+          "id": "moira-ice-empress",
+          "url": "/heroes/moira/icons/moira-ice-empress.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "moira",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Mask Dancer",
           "id": "moira-mask-dancer",
           "url": "/heroes/moira/icons/moira-mask-dancer.png",
@@ -21285,8 +21667,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "moira",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         }
       ],
       "sprays": [
@@ -21467,6 +21848,15 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "name": "Ice Empress",
+          "id": "moira-ice-empress",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-ice-empress.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Ornament",
           "id": "moira-ornament",
           "quality": "common",
@@ -21547,8 +21937,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         }
       ],
       "voicelines": [
@@ -23755,8 +24144,7 @@
           "quality": "legendary",
           "url": "/heroes/reaper/skins/reaper-rat-king.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Lü Bu",
@@ -23937,8 +24325,7 @@
           "url": "/heroes/reaper/icons/reaper-rat-king.png",
           "event": "WINTER_WONDERLAND",
           "hero": "reaper",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Reaping General",
@@ -24155,8 +24542,7 @@
           "quality": "common",
           "url": "/heroes/reaper/sprays/reaper-rat-king.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Stocking",
@@ -24671,6 +25057,15 @@
           "group": "SUMMER_GAMES_2018"
         },
         {
+          "name": "Conductor",
+          "id": "reinhardt-conductor",
+          "quality": "legendary",
+          "url": "/heroes/reinhardt/skins/reinhardt-conductor.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Guan Yu",
           "id": "reinhardt-guan-yu",
           "quality": "legendary",
@@ -24834,6 +25229,15 @@
           "event": "SUMMER_GAMES",
           "hero": "reinhardt",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Conductor",
+          "id": "reinhardt-conductor",
+          "url": "/heroes/reinhardt/icons/reinhardt-conductor.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "reinhardt",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Beautiful Beard",
@@ -25030,6 +25434,15 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Alle Einsteigen",
+          "id": "reinhardt-alle-einsteigen",
+          "quality": "common",
+          "url": "/heroes/reinhardt/sprays/reinhardt-alle-einsteigen.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Ice Fishing",
           "id": "reinhardt-ice-fishing",
           "quality": "common",
@@ -25199,6 +25612,15 @@
           "url": "/heroes/reinhardt/voicelines/reinhardt-what-do-we-have-here.ogg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "name": "Cold? Me? Hah!",
+          "id": "reinhardt-cold-me-hah",
+          "quality": "common",
+          "url": "/heroes/reinhardt/voicelines/reinhardt-cold-me-hah.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Forgive and forget",
@@ -25419,6 +25841,17 @@
           "url": "/heroes/roadhog/skins/roadhog-rudolph.jpg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Frosty",
+          "id": "roadhog-frosty",
+          "quality": "epic",
+          "url": "/heroes/roadhog/skins/roadhog-frosty.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 3 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Butcher",
@@ -25699,6 +26132,17 @@
           "event": "ANNIVERSARY",
           "hero": "roadhog",
           "group": "ANNIVERSARY_2019"
+        },
+        {
+          "name": "Frosty",
+          "id": "roadhog-frosty",
+          "url": "/heroes/roadhog/icons/roadhog-frosty.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 3 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "roadhog",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -25934,6 +26378,17 @@
           "url": "/heroes/roadhog/sprays/roadhog-pixel.png",
           "achievement": true,
           "description": "Interrupt an enemy ultimate ability with Roadhog's Hook in Quick or Competitive Play."
+        },
+        {
+          "name": "Frosty",
+          "id": "roadhog-frosty",
+          "quality": "common",
+          "url": "/heroes/roadhog/sprays/roadhog-frosty.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 3 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -26073,8 +26528,7 @@
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-sweet-as.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "It's all gone to the dogs",
@@ -26330,8 +26784,7 @@
           "quality": "legendary",
           "url": "/heroes/sigma/skins/sigma-rime.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Maestro",
@@ -26477,8 +26930,7 @@
           "url": "/heroes/sigma/icons/sigma-rime.png",
           "event": "WINTER_WONDERLAND",
           "hero": "sigma",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Sigmaversary",
@@ -26680,8 +27132,7 @@
           "quality": "common",
           "url": "/heroes/sigma/sprays/sigma-ice-statue.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Ornament",
@@ -26689,8 +27140,7 @@
           "quality": "common",
           "url": "/heroes/sigma/sprays/sigma-ornament.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Dragon Dance",
@@ -26868,8 +27318,7 @@
           "quality": "common",
           "url": "/heroes/sigma/voicelines/sigma-glorious.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Happy Christmas!",
@@ -26877,8 +27326,7 @@
           "quality": "common",
           "url": "/heroes/sigma/voicelines/sigma-happy-christmas.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Party guy",
@@ -26886,8 +27334,7 @@
           "quality": "common",
           "url": "/heroes/sigma/voicelines/sigma-party-guy.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "An anomaly!",
@@ -27006,6 +27453,15 @@
           "group": "HALLOWEEN_2019"
         },
         {
+          "name": "Toast",
+          "id": "sigma-toast",
+          "quality": "rare",
+          "url": "/heroes/sigma/poses/sigma-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Postulating",
           "id": "sigma-postulating",
           "quality": "rare",
@@ -27103,8 +27559,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Commando: 76",
@@ -27351,8 +27806,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "soldier-76",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         }
       ],
       "sprays": [
@@ -27604,8 +28058,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         }
       ],
       "voicelines": [
@@ -28125,8 +28578,7 @@
           "quality": "epic",
           "url": "/heroes/sombra/emotes/sombra-regifted.webm",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Dance",
@@ -28733,6 +29185,15 @@
           "group": "WINTER_WONDERLAND_2018"
         },
         {
+          "name": "Who wants to buy me a present",
+          "id": "sombra-who-wants-to-buy-me-a-present",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-who-wants-to-buy-me-a-present.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "You're easily impressed",
           "id": "sombra-youre-easily-impressed",
           "quality": "common",
@@ -28959,6 +29420,14 @@
           "url": "/heroes/symmetra/skins/symmetra-qipao.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Marammat",
+          "id": "symmetra-marammat",
+          "quality": "epic",
+          "url": "/heroes/symmetra/skins/symmetra-marammat.jpg",
+          "description": "Unlocked by participating in Symmetra's Restoration Challenge",
+          "achievement": "blizzard"
         },
         {
           "name": "Holi",
@@ -29193,6 +29662,14 @@
           "event": "ANNIVERSARY",
           "hero": "symmetra",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Marammat",
+          "id": "symmetra-marammat",
+          "url": "/heroes/symmetra/icons/symmetra-marammat.png",
+          "description": "Unlocked by participating in Symmetra's Restoration Challenge",
+          "achievement": "blizzard",
+          "hero": "symmetra"
         },
         {
           "name": "Holi",
@@ -29432,6 +29909,54 @@
           "description": "Hit an enemy with 3 beams simultaneously as Symmetra in Quick or Competitive Play."
         },
         {
+          "name": "Incense",
+          "id": "symmetra-incense",
+          "quality": "common",
+          "url": "/heroes/symmetra/sprays/symmetra-incense.png",
+          "description": "Unlocked by watching participating streams during Symmetra's Restoration Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Light Weave",
+          "id": "symmetra-light-weave",
+          "quality": "common",
+          "url": "/heroes/symmetra/sprays/symmetra-light-weave.png",
+          "description": "Unlocked by watching participating streams during Symmetra's Restoration Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Marammat",
+          "id": "symmetra-marammat",
+          "quality": "common",
+          "url": "/heroes/symmetra/sprays/symmetra-marammat.png",
+          "description": "Unlocked by participating in Symmetra's Restoration Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Mealtime",
+          "id": "symmetra-mealtime",
+          "quality": "common",
+          "url": "/heroes/symmetra/sprays/symmetra-mealtime.png",
+          "description": "Unlocked by watching participating streams during Symmetra's Restoration Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Pilgrim",
+          "id": "symmetra-pilgrim",
+          "quality": "common",
+          "url": "/heroes/symmetra/sprays/symmetra-pilgrim.png",
+          "description": "Unlocked by watching participating streams during Symmetra's Restoration Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Sanjay",
+          "id": "symmetra-sanjay",
+          "quality": "common",
+          "url": "/heroes/symmetra/sprays/symmetra-sanjay.png",
+          "description": "Unlocked by watching participating streams during Symmetra's Restoration Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Sitar",
           "id": "symmetra-sitar",
           "quality": "common",
@@ -29587,8 +30112,7 @@
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-finding-beauty.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "I made you something",
@@ -29736,8 +30260,7 @@
           "quality": "rare",
           "url": "/heroes/symmetra/poses/symmetra-toast.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Fan",
@@ -29885,6 +30408,15 @@
           "description": "After his village was burned by a dragon's fire, the viking now travels the world, hunting them.",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "name": "Lumberjack",
+          "id": "torbjorn-lumberjack",
+          "quality": "legendary",
+          "url": "/heroes/torbjorn/skins/torbjorn-lumberjack.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Santaclad",
@@ -30077,6 +30609,15 @@
           "event": "HALLOWEEN",
           "hero": "torbjorn",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "name": "Lumberjack",
+          "id": "torbjorn-lumberjack",
+          "url": "/heroes/torbjorn/icons/torbjorn-lumberjack.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "torbjorn",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Santaclad",
@@ -30292,6 +30833,15 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "name": "Lumberjack",
+          "id": "torbjorn-lumberjack",
+          "quality": "common",
+          "url": "/heroes/torbjorn/sprays/torbjorn-lumberjack.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Ornament",
           "id": "torbjorn-ornament",
           "quality": "common",
@@ -30497,6 +31047,15 @@
           "url": "/heroes/torbjorn/voicelines/torbjorn-expert-craftsmanship.ogg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Give me a warm fire...",
+          "id": "torbjorn-give-me-a-warm-fire",
+          "quality": "common",
+          "url": "/heroes/torbjorn/voicelines/torbjorn-give-me-a-warm-fire.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Made to order",
@@ -31507,6 +32066,15 @@
           "url": "/heroes/tracer/voicelines/tracer-its-in-the-bag.ogg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Ready for some pudding",
+          "id": "tracer-ready-for-some-pudding",
+          "quality": "common",
+          "url": "/heroes/tracer/voicelines/tracer-ready-for-some-pudding.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "I'm over the moon",
@@ -32788,8 +33356,7 @@
           "quality": "epic",
           "url": "/heroes/winston/emotes/winston-hello-my-name-is.webm",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Twist",
@@ -33320,6 +33887,15 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Mountain Gorilla, Moon Gorilla",
+          "id": "winston-mountain-gorilla-moon-gorilla",
+          "quality": "common",
+          "url": "/heroes/winston/voicelines/winston-mountain-gorilla-moon-gorilla.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Party mode engaged",
           "id": "winston-party-mode-engaged",
           "quality": "common",
@@ -33450,6 +34026,15 @@
           "url": "/heroes/winston/poses/winston-rip.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Toast",
+          "id": "winston-toast",
+          "quality": "rare",
+          "url": "/heroes/winston/poses/winston-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Sparklers",
@@ -34153,8 +34738,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-jingle-bells.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Assessing luck",
@@ -34293,8 +34877,7 @@
           "quality": "rare",
           "url": "/heroes/wrecking-ball/poses/wrecking-ball-imbibe.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Armament",
@@ -35029,8 +35612,7 @@
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-happy-new-year.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Is It Cold in Here?",
@@ -35316,6 +35898,15 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "name": "Toybot",
+          "id": "zenyatta-toybot",
+          "quality": "legendary",
+          "url": "/heroes/zenyatta/skins/zenyatta-toybot.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "name": "Sanzang",
           "id": "zenyatta-sanzang",
           "quality": "legendary",
@@ -35511,6 +36102,15 @@
           "event": "WINTER_WONDERLAND",
           "hero": "zenyatta",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Toybot",
+          "id": "zenyatta-toybot",
+          "url": "/heroes/zenyatta/icons/zenyatta-toybot.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "zenyatta",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Crouching Dragon",
@@ -35713,8 +36313,7 @@
           "quality": "common",
           "url": "/heroes/zenyatta/sprays/zenyatta-nutcracker.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "name": "Ornament",
@@ -35731,6 +36330,15 @@
           "url": "/heroes/zenyatta/sprays/zenyatta-snowball-fight.png",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Toybot",
+          "id": "zenyatta-toybot",
+          "quality": "common",
+          "url": "/heroes/zenyatta/sprays/zenyatta-toybot.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Dragon Dance",
@@ -35795,6 +36403,14 @@
           "quality": "common",
           "url": "/heroes/zenyatta/sprays/zenyatta-beads.png",
           "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Perception",
+          "id": "zenyatta-perception",
+          "quality": "common",
+          "url": "/heroes/zenyatta/sprays/zenyatta-perception.png",
+          "description": "Unlocked by watching participating streams during Symmetra's Restoration Challenge",
           "achievement": "blizzard"
         }
       ],
@@ -35919,6 +36535,15 @@
           "url": "/heroes/zenyatta/voicelines/zenyatta-trick-or-treat.ogg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Blessings of the season",
+          "id": "zenyatta-blessings-of-the-season",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-blessings-of-the-season.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "name": "Joy to the world",
