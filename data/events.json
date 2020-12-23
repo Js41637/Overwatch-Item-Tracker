@@ -4339,6 +4339,8 @@
           "name": "Vengeful Ghost",
           "id": "vengeful-ghost",
           "url": "/heroes/all/sprays/vengeful-ghost.png",
+          "group": "HALLOWEEN_2020",
+          "isNew": true,
           "quality": "common"
         },
         {
@@ -5890,17 +5892,30 @@
     "name": "Winter Wonderland",
     "id": "WINTER_WONDERLAND",
     "dates": {
-      "start": "1576004400000",
-      "end": "1578049200000"
+      "start": "1608058800000",
+      "end": "1609930800000"
     },
     "event_ids": [
       "WINTER_WONDERLAND_2016",
       "WINTER_WONDERLAND_2017",
       "WINTER_WONDERLAND_2018",
-      "WINTER_WONDERLAND_2019"
+      "WINTER_WONDERLAND_2019",
+      "WINTER_WONDERLAND_2020"
     ],
     "items": {
       "skins": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Gingerbread",
+          "id": "ana-gingerbread",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/ana-gingerbread.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 2 challenge",
+          "achievement": "limited",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
         {
           "heroName": "Ashe",
           "hero": "ashe",
@@ -5918,6 +5933,18 @@
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/skins/bastion-gift-wrap.jpg",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Elf",
+          "id": "junkrat-elf",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/junkrat-elf.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 1 challenge",
+          "achievement": "limited",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "heroName": "Lúcio",
@@ -5947,8 +5974,7 @@
           "url": "/updates/WINTER_WONDERLAND/skins/mercy-snow-angel.jpg",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
           "achievement": "limited",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Moira",
@@ -5959,8 +5985,7 @@
           "url": "/updates/WINTER_WONDERLAND/skins/moira-holly.jpg",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
           "achievement": "limited",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Pharah",
@@ -5992,6 +6017,18 @@
         {
           "heroName": "Roadhog",
           "hero": "roadhog",
+          "name": "Frosty",
+          "id": "roadhog-frosty",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/skins/roadhog-frosty.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 3 challenge",
+          "achievement": "limited",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
           "name": "Rudolph",
           "id": "roadhog-rudolph",
           "quality": "epic",
@@ -6007,8 +6044,7 @@
           "url": "/updates/WINTER_WONDERLAND/skins/soldier-76-ugly-sweater-76.jpg",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
           "achievement": "limited",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Sombra",
@@ -6047,6 +6083,15 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Jötunn",
+          "id": "doomfist-jotunn",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/doomfist-jotunn.jpg",
+          "group": "WINTER_WONDERLAND_2019"
+        },
+        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Casual",
@@ -6083,6 +6128,15 @@
           "group": "WINTER_WONDERLAND_2018"
         },
         {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Mountain Man",
+          "id": "mccree-mountain-man",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/mccree-mountain-man.jpg",
+          "group": "WINTER_WONDERLAND_2019"
+        },
+        {
           "heroName": "Mei",
           "hero": "mei",
           "name": "Mei-rry",
@@ -6101,6 +6155,15 @@
           "group": "WINTER_WONDERLAND_2018"
         },
         {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Rat King",
+          "id": "reaper-rat-king",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/reaper-rat-king.jpg",
+          "group": "WINTER_WONDERLAND_2019"
+        },
+        {
           "heroName": "Roadhog",
           "hero": "roadhog",
           "name": "Ice Fisherman",
@@ -6108,6 +6171,15 @@
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skins/roadhog-ice-fisherman.jpg",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Rime",
+          "id": "sigma-rime",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skins/sigma-rime.jpg",
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Soldier: 76",
@@ -6219,7 +6291,14 @@
           "name": "2020",
           "id": "2020",
           "url": "/heroes/all/icons/2020.png",
-          "group": "WINTER_WONDERLAND_2019",
+          "group": "WINTER_WONDERLAND_2019"
+        },
+        {
+          "hero": "all",
+          "name": "2021",
+          "id": "2021",
+          "url": "/heroes/all/icons/2021.png",
+          "group": "WINTER_WONDERLAND_2020",
           "isNew": true
         },
         {
@@ -6298,7 +6377,15 @@
           "url": "/heroes/moira/icons/moira-coinn-nollag.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
           "achievement": "limited",
-          "group": "WINTER_WONDERLAND_2019",
+          "group": "WINTER_WONDERLAND_2019"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Conductor",
+          "id": "reinhardt-conductor",
+          "url": "/heroes/reinhardt/icons/reinhardt-conductor.png",
+          "group": "WINTER_WONDERLAND_2020",
           "isNew": true
         },
         {
@@ -6309,12 +6396,53 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Elf",
+          "id": "junkrat-elf",
+          "url": "/heroes/junkrat/icons/junkrat-elf.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 1 challenge",
+          "achievement": "limited",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "hero": "all",
+          "name": "End of 2020",
+          "id": "end-of-2020",
+          "url": "/heroes/all/icons/end-of-2020.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Symmetra",
           "hero": "symmetra",
           "name": "Figure Skater",
           "id": "symmetra-figure-skater",
           "url": "/heroes/symmetra/icons/symmetra-figure-skater.png",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Frosty",
+          "id": "roadhog-frosty",
+          "url": "/heroes/roadhog/icons/roadhog-frosty.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 3 challenge",
+          "achievement": "limited",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Gingerbread",
+          "id": "ana-gingerbread",
+          "url": "/heroes/ana/icons/ana-gingerbread.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 2 challenge",
+          "achievement": "limited",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -6345,6 +6473,15 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Ice Empress",
+          "id": "moira-ice-empress",
+          "url": "/heroes/moira/icons/moira-ice-empress.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Roadhog",
           "hero": "roadhog",
           "name": "Ice Fisherman",
@@ -6366,8 +6503,7 @@
           "name": "Jötunn",
           "id": "doomfist-jotunn",
           "url": "/heroes/doomfist/icons/doomfist-jotunn.png",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Junkrat",
@@ -6376,6 +6512,15 @@
           "id": "junkrat-krampus",
           "url": "/heroes/junkrat/icons/junkrat-krampus.png",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Lumberjack",
+          "id": "torbjorn-lumberjack",
+          "url": "/heroes/torbjorn/icons/torbjorn-lumberjack.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -6390,8 +6535,7 @@
           "name": "Mountain Man",
           "id": "mccree-mountain-man",
           "url": "/heroes/mccree/icons/mccree-mountain-man.png",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Zenyatta",
@@ -6430,6 +6574,15 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Penguin",
+          "id": "mei-penguin",
+          "url": "/heroes/mei/icons/mei-penguin.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "hero": "all",
           "name": "Peppermint",
           "id": "peppermint",
@@ -6449,8 +6602,7 @@
           "name": "Rat King",
           "id": "reaper-rat-king",
           "url": "/heroes/reaper/icons/reaper-rat-king.png",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Sigma",
@@ -6458,8 +6610,7 @@
           "name": "Rime",
           "id": "sigma-rime",
           "url": "/heroes/sigma/icons/sigma-rime.png",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Sombra",
@@ -6485,8 +6636,7 @@
           "url": "/heroes/mercy/icons/mercy-snow-angel.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
           "achievement": "limited",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Lúcio",
@@ -6556,6 +6706,15 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Toybot",
+          "id": "zenyatta-toybot",
+          "url": "/heroes/zenyatta/icons/zenyatta-toybot.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Ugly Sweater",
@@ -6563,8 +6722,7 @@
           "url": "/heroes/soldier-76/icons/soldier-76-ugly-sweater.png",
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
           "achievement": "limited",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "hero": "all",
@@ -6592,7 +6750,14 @@
           "name": "Winter Wonderland 2019",
           "id": "winter-wonderland-2019",
           "url": "/heroes/all/icons/winter-wonderland-2019.png",
-          "group": "WINTER_WONDERLAND_2019",
+          "group": "WINTER_WONDERLAND_2019"
+        },
+        {
+          "hero": "all",
+          "name": "Winter Wonderland 2020",
+          "id": "winter-wonderland-2020",
+          "url": "/heroes/all/icons/winter-wonderland-2020.png",
+          "group": "WINTER_WONDERLAND_2020",
           "isNew": true
         },
         {
@@ -6631,6 +6796,20 @@
           "secondUrl": "/heroes/ana/sprays/ana-ornament.png"
         },
         {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Gingerbread",
+          "id": "ana-gingerbread",
+          "quality": "common",
+          "url": "/heroes/ana/sprays/ana-gingerbread.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 2 challenge",
+          "achievement": "limited",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "secondId": "ana-ornament",
+          "secondUrl": "/heroes/ana/sprays/ana-ornament.png"
+        },
+        {
           "heroName": "Ashe",
           "hero": "ashe",
           "name": "Snowball Fight",
@@ -6649,7 +6828,6 @@
           "quality": "common",
           "url": "/heroes/baptiste/sprays/baptiste-snowball-fight.png",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "secondId": "baptiste-ornament",
           "secondUrl": "/heroes/baptiste/sprays/baptiste-ornament.png"
         },
@@ -6698,6 +6876,18 @@
           "secondUrl": "/heroes/doomfist/sprays/doomfist-ornament.png"
         },
         {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Snowman",
+          "id": "echo-snowman",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-snowman.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "secondId": "echo-ornament",
+          "secondUrl": "/heroes/echo/sprays/echo-ornament.png"
+        },
+        {
           "heroName": "Genji",
           "hero": "genji",
           "name": "Kadomatsu",
@@ -6742,6 +6932,20 @@
           "secondUrl": "/heroes/junkrat/sprays/junkrat-ornament.png"
         },
         {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Elf",
+          "id": "junkrat-elf",
+          "quality": "common",
+          "url": "/heroes/junkrat/sprays/junkrat-elf.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 1 challenge",
+          "achievement": "limited",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "secondId": "junkrat-ornament",
+          "secondUrl": "/heroes/junkrat/sprays/junkrat-ornament.png"
+        },
+        {
           "heroName": "Lúcio",
           "hero": "lucio",
           "name": "Hockey",
@@ -6762,6 +6966,18 @@
           "group": "WINTER_WONDERLAND_2016",
           "secondId": "mccree-ornament",
           "secondUrl": "/heroes/mccree/sprays/mccree-ornament.png"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Penguin",
+          "id": "mei-penguin",
+          "quality": "common",
+          "url": "/heroes/mei/sprays/mei-penguin.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "secondId": "mei-ornament",
+          "secondUrl": "/heroes/mei/sprays/mei-ornament.png"
         },
         {
           "heroName": "Mei",
@@ -6795,7 +7011,6 @@
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 3 challenge",
           "achievement": "limited",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "secondId": "mercy-ornament",
           "secondUrl": "/heroes/mercy/sprays/mercy-ornament.png"
         },
@@ -6813,6 +7028,18 @@
         {
           "heroName": "Moira",
           "hero": "moira",
+          "name": "Ice Empress",
+          "id": "moira-ice-empress",
+          "quality": "common",
+          "url": "/heroes/moira/sprays/moira-ice-empress.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "secondId": "moira-ornament",
+          "secondUrl": "/heroes/moira/sprays/moira-ornament.png"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
           "name": "Presents",
           "id": "moira-presents",
           "quality": "common",
@@ -6820,7 +7047,6 @@
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 2 challenge",
           "achievement": "limited",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "secondId": "moira-ornament",
           "secondUrl": "/heroes/moira/sprays/moira-ornament.png"
         },
@@ -6854,7 +7080,6 @@
           "quality": "common",
           "url": "/heroes/reaper/sprays/reaper-rat-king.png",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "secondId": "reaper-ornament",
           "secondUrl": "/heroes/reaper/sprays/reaper-ornament.png"
         },
@@ -6868,6 +7093,18 @@
           "group": "WINTER_WONDERLAND_2016",
           "secondId": "reaper-ornament",
           "secondUrl": "/heroes/reaper/sprays/reaper-ornament.png"
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Alle Einsteigen",
+          "id": "reinhardt-alle-einsteigen",
+          "quality": "common",
+          "url": "/heroes/reinhardt/sprays/reinhardt-alle-einsteigen.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "secondId": "reinhardt-ornament",
+          "secondUrl": "/heroes/reinhardt/sprays/reinhardt-ornament.png"
         },
         {
           "heroName": "Reinhardt",
@@ -6892,6 +7129,20 @@
           "secondUrl": "/heroes/roadhog/sprays/roadhog-ornament.png"
         },
         {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "Frosty",
+          "id": "roadhog-frosty",
+          "quality": "common",
+          "url": "/heroes/roadhog/sprays/roadhog-frosty.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2020 week 3 challenge",
+          "achievement": "limited",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "secondId": "roadhog-ornament",
+          "secondUrl": "/heroes/roadhog/sprays/roadhog-ornament.png"
+        },
+        {
           "heroName": "Sigma",
           "hero": "sigma",
           "name": "Ice Statue",
@@ -6899,7 +7150,6 @@
           "quality": "common",
           "url": "/heroes/sigma/sprays/sigma-ice-statue.png",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "secondId": "sigma-ornament",
           "secondUrl": "/heroes/sigma/sprays/sigma-ornament.png"
         },
@@ -6924,7 +7174,6 @@
           "description": "Unlocked by participating in the Winter Wonderland 2019 week 1 challenge",
           "achievement": "limited",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "secondId": "soldier-76-ornament",
           "secondUrl": "/heroes/soldier-76/sprays/soldier-76-ornament.png"
         },
@@ -6949,6 +7198,18 @@
           "group": "WINTER_WONDERLAND_2016",
           "secondId": "symmetra-ornament",
           "secondUrl": "/heroes/symmetra/sprays/symmetra-ornament.png"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Lumberjack",
+          "id": "torbjorn-lumberjack",
+          "quality": "common",
+          "url": "/heroes/torbjorn/sprays/torbjorn-lumberjack.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "secondId": "torbjorn-ornament",
+          "secondUrl": "/heroes/torbjorn/sprays/torbjorn-ornament.png"
         },
         {
           "heroName": "Torbjörn",
@@ -7013,7 +7274,6 @@
           "quality": "common",
           "url": "/heroes/zenyatta/sprays/zenyatta-nutcracker.png",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "secondId": "zenyatta-ornament",
           "secondUrl": "/heroes/zenyatta/sprays/zenyatta-ornament.png"
         },
@@ -7029,12 +7289,23 @@
           "secondUrl": "/heroes/zenyatta/sprays/zenyatta-ornament.png"
         },
         {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Toybot",
+          "id": "zenyatta-toybot",
+          "quality": "common",
+          "url": "/heroes/zenyatta/sprays/zenyatta-toybot.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "secondId": "zenyatta-ornament",
+          "secondUrl": "/heroes/zenyatta/sprays/zenyatta-ornament.png"
+        },
+        {
           "hero": "all",
           "name": "Holiday surprise",
           "id": "holiday-surprise",
           "url": "/heroes/all/sprays/holiday-surprise.png",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "quality": "common"
         },
         {
@@ -7043,7 +7314,6 @@
           "id": "polar-bear",
           "url": "/heroes/all/sprays/polar-bear.png",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "quality": "common"
         },
         {
@@ -7052,7 +7322,6 @@
           "id": "snow-snow-snow",
           "url": "/heroes/all/sprays/snow-snow-snow.png",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "quality": "common"
         },
         {
@@ -7110,6 +7379,13 @@
           "hero": "doomfist",
           "id": "doomfist-ornament",
           "group": "WINTER_WONDERLAND_2017",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "echo",
+          "id": "echo-ornament",
+          "group": "WINTER_WONDERLAND_2020",
           "quality": "common"
         },
         {
@@ -7291,6 +7567,26 @@
         },
         {
           "hero": "all",
+          "name": "Cookie Throw",
+          "id": "cookie-throw",
+          "url": "/heroes/all/sprays/cookie-throw.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "achievement": true,
+          "description": "Interrupt 3 enemy thaws in a round of Freezethaw Elimination."
+        },
+        {
+          "hero": "all",
+          "name": "Frozen Elf",
+          "id": "frozen-elf",
+          "url": "/heroes/all/sprays/frozen-elf.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "achievement": true,
+          "description": "Interrupt an enemy ultimate ability by freezing them in Freezethaw Elimination."
+        },
+        {
+          "hero": "all",
           "name": "Frozen Throne",
           "id": "frozen-throne",
           "url": "/heroes/all/sprays/frozen-throne.png",
@@ -7304,7 +7600,6 @@
           "id": "ice-spheres",
           "url": "/heroes/all/sprays/ice-spheres.png",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "achievement": true,
           "description": "Kill an enemy with a caught snowball in Snowball Deathmatch."
         },
@@ -7314,7 +7609,6 @@
           "id": "jotunn",
           "url": "/heroes/all/sprays/jotunn.png",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "achievement": true,
           "description": "Kill an enemy after destroying part of their Ice Wall in Snowball Deathmatch."
         },
@@ -7324,9 +7618,18 @@
           "id": "mountain-man",
           "url": "/heroes/all/sprays/mountain-man.png",
           "group": "WINTER_WONDERLAND_2019",
-          "isNew": true,
           "achievement": true,
           "description": "Kill 3 enemies without reloading or dying in Snowball Deathmatch."
+        },
+        {
+          "hero": "all",
+          "name": "Mutual Thaw",
+          "id": "mutual-thaw",
+          "url": "/heroes/all/sprays/mutual-thaw.png",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true,
+          "achievement": true,
+          "description": "Thaw a player who previously thawed you in a round of Freezethaw Elimination."
         },
         {
           "hero": "all",
@@ -7430,14 +7733,23 @@
           "group": "WINTER_WONDERLAND_2018"
         },
         {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Wind down a mountain pass",
+          "id": "ashe-wind-down-a-mountain-pass",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-wind-down-a-mountain-pass.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Baptiste",
           "hero": "baptiste",
           "name": "A little T.L.C.",
           "id": "baptiste-a-little-tlc",
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-a-little-tlc.ogg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Baptiste",
@@ -7446,8 +7758,7 @@
           "id": "baptiste-some-kind-of-angel-1",
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-some-kind-of-angel-1.ogg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Baptiste",
@@ -7456,8 +7767,7 @@
           "id": "baptiste-today-i-give-you-a-choice",
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-today-i-give-you-a-choice.ogg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Bastion",
@@ -7514,6 +7824,16 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Hotteok weather",
+          "id": "dva-hotteok-weather",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-hotteok-weather.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Doomfist",
           "hero": "doomfist",
           "name": "Did you bring me a present?",
@@ -7530,6 +7850,26 @@
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-they-say-chivalry-is-dead.ogg",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Happy holidays",
+          "id": "echo-happy-holidays",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-happy-holidays.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "This experience is a gift",
+          "id": "echo-this-experience-is-a-gift",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-this-experience-is-a-gift.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "heroName": "Genji",
@@ -7574,8 +7914,7 @@
           "id": "wrecking-ball-jingle-bells",
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-jingle-bells.ogg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Hanzo",
@@ -7638,8 +7977,7 @@
           "id": "junkrat-seasons-greetings",
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-seasons-greetings.ogg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Lúcio",
@@ -7658,6 +7996,16 @@
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-happy-holidays.ogg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Swap these out for ice skates",
+          "id": "lucio-swap-these-out-for-ice-skates",
+          "quality": "common",
+          "url": "/heroes/lucio/voicelines/lucio-swap-these-out-for-ice-skates.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "heroName": "McCree",
@@ -7694,6 +8042,16 @@
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-i-got-you-something.ogg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Let's have some hot cocoa",
+          "id": "mei-lets-have-some-hot-cocoa",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-lets-have-some-hot-cocoa.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "heroName": "Mei",
@@ -7815,6 +8173,16 @@
         {
           "heroName": "Reinhardt",
           "hero": "reinhardt",
+          "name": "Cold? Me? Hah!",
+          "id": "reinhardt-cold-me-hah",
+          "quality": "common",
+          "url": "/heroes/reinhardt/voicelines/reinhardt-cold-me-hah.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
           "name": "Forgive and forget",
           "id": "reinhardt-forgive-and-forget",
           "quality": "common",
@@ -7855,8 +8223,7 @@
           "id": "roadhog-sweet-as",
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-sweet-as.ogg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Sigma",
@@ -7865,8 +8232,7 @@
           "id": "sigma-glorious",
           "quality": "common",
           "url": "/heroes/sigma/voicelines/sigma-glorious.ogg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Sigma",
@@ -7875,8 +8241,7 @@
           "id": "sigma-happy-christmas",
           "quality": "common",
           "url": "/heroes/sigma/voicelines/sigma-happy-christmas.ogg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Sigma",
@@ -7885,8 +8250,7 @@
           "id": "sigma-party-guy",
           "quality": "common",
           "url": "/heroes/sigma/voicelines/sigma-party-guy.ogg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Soldier: 76",
@@ -7934,6 +8298,16 @@
           "group": "WINTER_WONDERLAND_2018"
         },
         {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Who wants to buy me a present",
+          "id": "sombra-who-wants-to-buy-me-a-present",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-who-wants-to-buy-me-a-present.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Symmetra",
           "hero": "symmetra",
           "name": "Expecting a miracle?",
@@ -7949,8 +8323,7 @@
           "id": "symmetra-finding-beauty",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-finding-beauty.ogg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Symmetra",
@@ -7969,6 +8342,16 @@
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-expert-craftsmanship.ogg",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Give me a warm fire...",
+          "id": "torbjorn-give-me-a-warm-fire",
+          "quality": "common",
+          "url": "/heroes/torbjorn/voicelines/torbjorn-give-me-a-warm-fire.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "heroName": "Torbjörn",
@@ -7996,6 +8379,16 @@
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-its-in-the-bag.ogg",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Ready for some pudding",
+          "id": "tracer-ready-for-some-pudding",
+          "quality": "common",
+          "url": "/heroes/tracer/voicelines/tracer-ready-for-some-pudding.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "heroName": "Widowmaker",
@@ -8045,6 +8438,16 @@
         {
           "heroName": "Winston",
           "hero": "winston",
+          "name": "Mountain Gorilla, Moon Gorilla",
+          "id": "winston-mountain-gorilla-moon-gorilla",
+          "quality": "common",
+          "url": "/heroes/winston/voicelines/winston-mountain-gorilla-moon-gorilla.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
           "name": "Party mode engaged",
           "id": "winston-party-mode-engaged",
           "quality": "common",
@@ -8076,8 +8479,7 @@
           "id": "zarya-happy-new-year",
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-happy-new-year.ogg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Zarya",
@@ -8087,6 +8489,16 @@
           "quality": "common",
           "url": "/heroes/zarya/voicelines/zarya-is-it-cold-in-here.ogg",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Blessings of the season",
+          "id": "zenyatta-blessings-of-the-season",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-blessings-of-the-season.ogg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "heroName": "Zenyatta",
@@ -8179,8 +8591,7 @@
           "id": "wrecking-ball-imbibe",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/wrecking-ball-imbibe.jpg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Junkrat",
@@ -8198,7 +8609,16 @@
           "id": "lucio-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/lucio-toast.jpg",
-          "group": "WINTER_WONDERLAND_2019",
+          "group": "WINTER_WONDERLAND_2019"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Toast",
+          "id": "mei-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/mei-toast.jpg",
+          "group": "WINTER_WONDERLAND_2020",
           "isNew": true
         },
         {
@@ -8265,6 +8685,16 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Toast",
+          "id": "sigma-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/sigma-toast.jpg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Toast",
@@ -8290,8 +8720,7 @@
           "id": "symmetra-toast",
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/symmetra-toast.jpg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Torbjörn",
@@ -8321,6 +8750,16 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Toast",
+          "id": "winston-toast",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/winston-toast.jpg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Toast",
@@ -8339,49 +8778,17 @@
           "group": "WINTER_WONDERLAND_2017"
         }
       ],
-      "skinsLegendary": [
-        {
-          "heroName": "Doomfist",
-          "hero": "doomfist",
-          "name": "Jötunn",
-          "id": "doomfist-jotunn",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/doomfist-jotunn.jpg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Mountain Man",
-          "id": "mccree-mountain-man",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/mccree-mountain-man.jpg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "Rat King",
-          "id": "reaper-rat-king",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/reaper-rat-king.jpg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
-        },
-        {
-          "heroName": "Sigma",
-          "hero": "sigma",
-          "name": "Rime",
-          "id": "sigma-rime",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/sigma-rime.jpg",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
-        }
-      ],
       "emotes": [
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Mistletoe",
+          "id": "baptiste-mistletoe",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/emotes/baptiste-mistletoe.webm",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
         {
           "heroName": "Genji",
           "hero": "genji",
@@ -8390,6 +8797,16 @@
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/emotes/genji-paper-stars.webm",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Unwrap",
+          "id": "junkrat-unwrap",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/emotes/junkrat-unwrap.webm",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
         },
         {
           "heroName": "McCree",
@@ -8410,6 +8827,16 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Flurry",
+          "id": "mercy-flurry",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/emotes/mercy-flurry.webm",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
           "heroName": "Orisa",
           "hero": "orisa",
           "legendary": true,
@@ -8426,8 +8853,7 @@
           "id": "sombra-regifted",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/emotes/sombra-regifted.webm",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Torbjörn",
@@ -8445,8 +8871,7 @@
           "id": "winston-hello-my-name-is",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/emotes/winston-hello-my-name-is.webm",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Zarya",
@@ -8468,6 +8893,58 @@
           "group": "WINTER_WONDERLAND_2017"
         }
       ],
+      "skinsLegendary": [
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Penguin",
+          "id": "mei-penguin",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/mei-penguin.jpg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Ice Empress",
+          "id": "moira-ice-empress",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/moira-ice-empress.jpg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Conductor",
+          "id": "reinhardt-conductor",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/reinhardt-conductor.jpg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Lumberjack",
+          "id": "torbjorn-lumberjack",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/torbjorn-lumberjack.jpg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Toybot",
+          "id": "zenyatta-toybot",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/zenyatta-toybot.jpg",
+          "group": "WINTER_WONDERLAND_2020",
+          "isNew": true
+        }
+      ],
       "intros": [
         {
           "heroName": "Hammond",
@@ -8485,8 +8962,7 @@
           "id": "mei-festive",
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/intros/mei-festive.webm",
-          "group": "WINTER_WONDERLAND_2019",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Reinhardt",

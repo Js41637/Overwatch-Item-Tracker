@@ -1805,6 +1805,15 @@
     },
     "vengeful-ghost": {
       "description": "Complete the Vengeful Ghost Junkenstein challenge mission."
+    },
+    "thaw-stopper": {
+      "description": "Interrupt 3 enemy thaws in a round of Freezethaw Elimination."
+    },
+    "relentless-cold": {
+      "description": "Interrupt an enemy ultimate ability by freezing them in Freezethaw Elimination."
+    },
+    "snow-trouble-field": {
+      "description": "Thaw a player who previously thawed you in a round of Freezethaw Elimination."
     }
   },
   "mappings": {
@@ -2094,6 +2103,9 @@
     "zombarded": "volatile-zomnics",
     "uncanny-speed": "three-they-were",
     "frenzied-stampede": "frenzied-stampede",
-    "red-riding-hunt": "vengeful-ghost"
+    "red-riding-hunt": "vengeful-ghost",
+    "cookie-throw": "thaw-stopper",
+    "frozen-elf": "relentless-cold",
+    "mutual-thaw": "snow-trouble-field"
   }
 }
