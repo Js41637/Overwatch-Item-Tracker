@@ -143,6 +143,7 @@ const data = {
   achievementSprays: [
     'path-to-pro-2019',
     'path-to-pro-2020',
+    'path-to-pro-2021',
     'copa-lucioball-competitor',
     'copa-lucioball-hero',
     'competitive-ctf-competitor',
@@ -370,7 +371,7 @@ const data = {
 
     'skins/baptiste-terracotta-medic': EVENTS.LUNAR,
     'icons/baptiste-stonefaced': EVENTS.LUNAR,
-    'sprays/baptiste-terracotta': EVENTS.LUNAR,
+    'sprays/baptiste-terracotta-squad': EVENTS.LUNAR,
     'skins/mccree-xiake': EVENTS.LUNAR,
     'icons/mccree-wanderer': EVENTS.LUNAR,
     'sprays/mccree-gunsmoke': EVENTS.LUNAR,

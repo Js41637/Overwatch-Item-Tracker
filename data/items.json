@@ -5275,11 +5275,6 @@
           "url": "/heroes/all/icons/year-of-the-pig-2019.png"
         },
         {
-          "name": "Year of the Rat",
-          "id": "year-of-the-rat",
-          "url": "/heroes/all/icons/year-of-the-rat.png"
-        },
-        {
           "name": "Year of the Rat 2020",
           "id": "year-of-the-rat-2020",
           "event": "LUNAR_NEW_YEAR",
@@ -6290,7 +6285,7 @@
           "name": "Path to Pro 2021",
           "id": "path-to-pro-2021",
           "url": "/heroes/all/sprays/path-to-pro-2021.png",
-          "quality": "common"
+          "achievement": true
         },
         {
           "name": "Pawttery",
@@ -10453,14 +10448,6 @@
           "achievement": "blizzard"
         },
         {
-          "name": "Terracotta Squad",
-          "id": "baptiste-terracotta-squad",
-          "quality": "common",
-          "url": "/heroes/baptiste/sprays/baptiste-terracotta-squad.png",
-          "description": "Unlocked by participating in the Year of the Ox 2021 Week 1 challenge",
-          "achievement": "blizzard"
-        },
-        {
           "name": "Working vacation",
           "id": "baptiste-working-vacation",
           "quality": "common",
@@ -10477,6 +10464,17 @@
           "achievement": "limited",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2019"
+        },
+        {
+          "name": "Terracotta Squad",
+          "id": "baptiste-terracotta-squad",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-terracotta-squad.png",
+          "description": "Unlocked by participating in the Year of the Ox 2021 Week 1 challenge",
+          "achievement": "limited",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2021",
+          "isNew": true
         }
       ],
       "voicelines": [
