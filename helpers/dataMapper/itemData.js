@@ -100,14 +100,16 @@ const data = {
       "pawttery",
       "shrine-district",
       "tato-takes-off",
-      "the-dragon-consumes"
+      "the-dragon-consumes",
+      'blizzards-30th-anniversary'
     ],
     icons: [
       // Diablo
       'dark-wanderer',
       // WoW
       'kul-tiras',
-      'zandalar'
+      'zandalar',
+      'blizzards-30th-anniversary'
     ]
   },
   specialItems: {
