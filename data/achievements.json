@@ -1814,6 +1814,18 @@
     },
     "snow-trouble-field": {
       "description": "Thaw a player who previously thawed you in a round of Freezethaw Elimination."
+    },
+    "kanezaka-challenge": {
+      "description": "Unlocked by participating in the Kanezaka Challenge."
+    },
+    "quick-on-the-draw": {
+      "description": "Kill 3 enemies without dying as the bounty target in Bounty Hunter."
+    },
+    "pay-up": {
+      "description": "Earn 8 bounties in a game of Bounty Hunter."
+    },
+    "not-so-fast-outlaw": {
+      "description": "Kill the Bounty Target while they are using an ultimate ability in Bounty Hunter."
     }
   },
   "mappings": {
@@ -2106,6 +2118,15 @@
     "red-riding-hunt": "vengeful-ghost",
     "cookie-throw": "thaw-stopper",
     "frozen-elf": "relentless-cold",
-    "mutual-thaw": "snow-trouble-field"
+    "mutual-thaw": "snow-trouble-field",
+    "bath-time": "kanezaka-challenge",
+    "catchamari": "kanezaka-challenge",
+    "pawttery": "kanezaka-challenge",
+    "shrine-district": "kanezaka-challenge",
+    "tato-takes-off": "kanezaka-challenge",
+    "the-dragon-consumes": "kanezaka-challenge",
+    "quick-on-the-draw": "quick-on-the-draw",
+    "pay-up": "pay-up",
+    "not-so-fast-outlaw": "not-so-fast-outlaw"
   }
 }

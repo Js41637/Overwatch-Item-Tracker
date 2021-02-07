@@ -2,8 +2,8 @@ const fs = require('fs')
 const _ = require('lodash')
 
 const events = require('../../data/events.json')
-const event = 'WINTER_WONDERLAND'
-const ignoreGroups = ['WINTER_WONDERLAND_2016', 'WINTER_WONDERLAND_2017', 'WINTER_WONDERLAND_2018', 'WINTER_WONDERLAND_2019']
+const event = 'LUNAR_NEW_YEAR'
+const ignoreGroups = ['LUNAR_NEW_YEAR_2020', 'LUNAR_NEW_YEAR_2017', 'LUNAR_NEW_YEAR_2018', 'LUNAR_NEW_YEAR_2019']
 
 const stuff = _.reduce(events[event].items, (res, items, type) => {
   type = type.includes('skins') ? 'skins' : type
