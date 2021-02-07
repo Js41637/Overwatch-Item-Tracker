@@ -1372,6 +1372,7 @@ const EVENTITEMS = {
       "icons/echo-magpie",
       "icons/mccree-wanderer",
       "icons/orisa-bull",
+      "icons/reaper-imperial",
       "icons/widowmaker-serpent",
       "icons/year-of-the-ox-2021",
       "intros/dva-finale",

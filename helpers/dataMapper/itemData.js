@@ -376,7 +376,7 @@ const data = {
     'icons/mccree-wanderer': EVENTS.LUNAR,
     'sprays/mccree-gunsmoke': EVENTS.LUNAR,
     'skins/reaper-imperial-guard': EVENTS.LUNAR,
-    'icons/reaper-imperial-guard': EVENTS.LUNAR,
+    'icons/reaper-imperial': EVENTS.LUNAR,
     'sprays/reaper-siwang': EVENTS.LUNAR,
   },
   specialAchievementItems: {
