@@ -11572,7 +11572,7 @@
         {
           "heroName": "Reaper",
           "hero": "reaper",
-          "name": "Imperial",
+          "name": "Imperial Guard",
           "id": "reaper-imperial",
           "url": "/heroes/reaper/icons/reaper-imperial.png",
           "description": "Unlocked by participating in the Year of the Ox 2021 Week 3 challenge",
@@ -12080,27 +12080,203 @@
     "name": "Overwatch Archives",
     "id": "UPRISING",
     "dates": {
-      "start": "1584036000000",
-      "end": "1585908000000"
+      "start": "1617735600000",
+      "end": "1619611200000"
     },
     "event_ids": [
       "UPRISING_2017",
       "UPRISING_2018",
       "UPRISING_2019",
-      "UPRISING_2020"
+      "UPRISING_2020",
+      "UPRISING_2021"
     ],
     "items": {
-      "skinsLegendary": [
+      "skins": [
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Null Sector",
+          "id": "bastion-null-sector",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/bastion-null-sector.jpg",
+          "description": "Bastion units were reengineered and upgraded by Null Sector and deployed during the King's Row Uprising.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "High Roller",
+          "id": "wrecking-ball-high-roller",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/wrecking-ball-high-roller.jpg",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Circus",
+          "id": "junkrat-circus",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/junkrat-circus.jpg",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Corredor",
+          "id": "lucio-corredor",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/lucio-corredor.jpg",
+          "description": "Unlocked by participating in the Archives 2021 week 1 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Bear",
+          "id": "mei-bear",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/mei-bear.jpg",
+          "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Camouflage",
+          "id": "mercy-camouflage",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/mercy-camouflage.jpg",
+          "description": "Unlocked by participating in the Archives 2021 week 3 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Lieutenant Wilhelm",
+          "id": "reinhardt-lieutenant-wilhelm",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/reinhardt-lieutenant-wilhelm.jpg",
+          "description": "Lieutenant Reinhardt Wilhelm served with distinction in his time during Overwatch, notably leading the strike team that ended the King's Row uprising.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Holi",
+          "id": "symmetra-holi",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/symmetra-holi.jpg",
+          "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Rustclad",
+          "id": "torbjorn-rustclad",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/torbjorn-rustclad.jpg",
+          "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Racer",
+          "id": "zarya-racer",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/zarya-racer.jpg",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Subaquatic",
+          "id": "zenyatta-subaquatic",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/zenyatta-subaquatic.jpg",
+          "description": "Unlocked by participating in the Archives 2021 week 2 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
         {
           "heroName": "Ana",
           "hero": "ana",
           "name": "Sniper",
           "id": "ana-sniper",
           "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/ana-sniper.jpg",
+          "url": "/updates/UPRISING/skins/ana-sniper.jpg",
           "description": "During the Omnic Crisis, the Egyptian military outfitted their elite snipers, including Ana Amari, with cybernetic ocular implants, greatly improving their efficiency in the defense of their country.",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Socialite",
+          "id": "ashe-socialite",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/ashe-socialite.jpg",
+          "description": "As the daughter of socialites, Ashe feels just as comfortable at charity balls as she does on a motorcycle.",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Talon",
+          "id": "baptiste-talon",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/baptiste-talon.jpg",
+          "description": "After his service in the Caribbean Coalition was complete, Baptiste struggled to find a demand for his unique skills. Talon was more than happy to help.",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Gwishin",
+          "id": "bastion-gwishin",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/bastion-gwishin.jpg",
+          "description": "The Gwishin omnic colossus rose from the omnium in the East China Sea. The Mobile Exo-Force of the Korean Army, or MEKA, was formed in response to the Gwishin's constant attacks.",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Talon",
+          "id": "doomfist-talon",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/doomfist-talon.jpg",
+          "description": "Doomfist rose in power in Talon after killing his mentor, Akinjide Adeyemi, the Scourge of Numbani.",
+          "group": "UPRISING_2018"
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Blackwatch",
+          "id": "genji-blackwatch",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/genji-blackwatch.jpg",
+          "description": "After agreeing to aid the organization, Genji was upgraded extensively by Overwatch's cyberneticists.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Scion",
+          "id": "hanzo-scion",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/hanzo-scion.jpg",
+          "description": "Over the centuries, the Shimada clan grew to profit from a lucrative trade in arms and other illegal substances.",
+          "group": "UPRISING_2018"
         },
         {
           "heroName": "Junkrat",
@@ -12108,10 +12284,88 @@
           "name": "King Jamison",
           "id": "junkrat-king-jamison",
           "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/junkrat-king-jamison.jpg",
+          "url": "/updates/UPRISING/skins/junkrat-king-jamison.jpg",
           "description": "After escaping from the Australian Outback, Junkrat and Roadhog went on an international crime spree, earning them great notoriety across the world, and living up to their motto of, “No job too big, no score too small!”",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Equalizer",
+          "id": "lucio-equalizer",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/lucio-equalizer.jpg",
+          "group": "UPRISING_2018"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Blackwatch",
+          "id": "mccree-blackwatch",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/mccree-blackwatch.jpg",
+          "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch or rot in prison.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Deadlock",
+          "id": "mccree-deadlock",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/mccree-deadlock.jpg",
+          "description": "In their younger days, Jesse McCree and Elizabeth \"Calamity\" Ashe co-founded the Deadlock Gang.",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Pajamei",
+          "id": "mei-pajamei",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/mei-pajamei.jpg",
+          "description": "Due to a malfunction of Ecopoint: Antarctica's cryogenics facility, Mei was kept in hibernation for almost a decade and woke up to find a new, unfamiliar world.",
+          "group": "UPRISING_2018"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Combat Medic Ziegler",
+          "id": "mercy-combat-medic-ziegler",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/mercy-combat-medic-ziegler.jpg",
+          "description": "When called upon, Mercy would don her Valkyrie swift-response suit to participate in Overwatch missions.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Blackwatch",
+          "id": "moira-blackwatch",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/moira-blackwatch.jpg",
+          "description": "In addition to her research as a part of Blackwatch, Moira occasionally participated in clandestine operations, including the Venice Incident.",
+          "group": "UPRISING_2018"
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Scientist",
+          "id": "moira-scientist",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/moira-scientist.jpg",
+          "description": "To this day, Dr. O'Deorain remains a controversial figure in genetic research. Her brilliance was never in question; her ethics, almost always.",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Null Sector",
+          "id": "orisa-null-sector",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/orisa-null-sector.jpg",
+          "description": "During the King's Row Uprising, Null Sector employed redesigned and upgraded OR14 Idina bots to secure the power station.",
+          "group": "UPRISING_2017"
         },
         {
           "heroName": "Pharah",
@@ -12119,10 +12373,19 @@
           "name": "Aviator",
           "id": "pharah-aviator",
           "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/pharah-aviator.jpg",
+          "url": "/updates/UPRISING/skins/pharah-aviator.jpg",
           "description": "Lieutenant Fareeha “Pharah” Amari was hand-picked by Helix after her meritorious career in the Egyptian armed forces. Bearing the famous Amari family name, she was considered a recruitment coup.",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Soldier: 24",
+          "id": "reaper-soldier-24",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/reaper-soldier-24.jpg",
+          "description": "Before serving on the original Overwatch strike team, Gabriel Reyes was selected to be a member of the government's classified soldier enhancement program.",
+          "group": "UPRISING_2018"
         },
         {
           "heroName": "Roadhog",
@@ -12130,10 +12393,78 @@
           "name": "Militia",
           "id": "roadhog-militia",
           "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/roadhog-militia.jpg",
+          "url": "/updates/UPRISING/skins/roadhog-militia.jpg",
           "description": "After the Australian government displaced Mako Rutledge and other residents of the Outback from their homes, they turned to violent rebellion, forming the Australian Liberation Front.",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Formal: 76",
+          "id": "soldier-76-formal-76",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/soldier-76-formal-76.jpg",
+          "description": "During his service in Overwatch, Jack Morrison received many commendations for his leadership.",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Talon",
+          "id": "sombra-talon",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/sombra-talon.jpg",
+          "description": "Sombra is only too happy to utilize the power and reach of Talon while pursuing her own goals.",
+          "group": "UPRISING_2018"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Chief Engineer Lindholm",
+          "id": "torbjorn-chief-engineer-lindholm",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/torbjorn-chief-engineer-lindholm.jpg",
+          "description": "For many years, Torbjörn Lindholm served as Overwatch's chief engineer, designing many of the organization's iconic weapons and technologies.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Torbjörn",
+          "hero": "torbjorn",
+          "name": "Ironclad",
+          "id": "torbjorn-ironclad",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/torbjorn-ironclad.jpg",
+          "description": "Torbjörn was a prominent member of the Ironclad Guild, whose headquarters were in Gothenburg, Sweden.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Cadet Oxton",
+          "id": "tracer-cadet-oxton",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/tracer-cadet-oxton.jpg",
+          "description": "Tracer was put into active duty as an Overwatch agent for the first time during the King's Row uprising.",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Talon",
+          "id": "widowmaker-talon",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/widowmaker-talon.jpg",
+          "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Specimen 28",
+          "id": "winston-specimen-28",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skins/winston-specimen-28.jpg",
+          "description": "The gorilla known as Specimen 28 showed rapid brain development from genetic therapy, surpassing that of the other subjects.",
+          "group": "UPRISING_2018"
         },
         {
           "heroName": "Zarya",
@@ -12141,9 +12472,8 @@
           "name": "Workout",
           "id": "zarya-workout",
           "quality": "legendary",
-          "url": "/updates/UPRISING/skinsLegendary/zarya-workout.jpg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "url": "/updates/UPRISING/skins/zarya-workout.jpg",
+          "group": "UPRISING_2020"
         }
       ],
       "icons": [
@@ -12153,8 +12483,7 @@
           "name": "Sniper",
           "id": "ana-sniper",
           "url": "/heroes/ana/icons/ana-sniper.png",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Ashe",
@@ -12191,6 +12520,15 @@
         {
           "heroName": "Genji",
           "hero": "genji",
+          "name": "Bushi",
+          "id": "genji-bushi",
+          "url": "/heroes/genji/icons/genji-bushi.png",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
           "name": "Cyborg",
           "id": "genji-cyborg",
           "url": "/heroes/genji/icons/genji-cyborg.png",
@@ -12210,7 +12548,17 @@
           "name": "King Jamison",
           "id": "junkrat-king-jamison",
           "url": "/heroes/junkrat/icons/junkrat-king-jamison.png",
-          "group": "UPRISING_2020",
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Corredor",
+          "id": "lucio-corredor",
+          "url": "/heroes/lucio/icons/lucio-corredor.png",
+          "description": "Unlocked by participating in the Archives 2021 week 1 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2021",
           "isNew": true
         },
         {
@@ -12253,7 +12601,17 @@
           "url": "/heroes/mei/icons/mei-snowbear.png",
           "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
           "achievement": "limited",
-          "group": "UPRISING_2020",
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Camouflage",
+          "id": "mercy-camouflage",
+          "url": "/heroes/mercy/icons/mercy-camouflage.png",
+          "description": "Unlocked by participating in the Archives 2021 week 3 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2021",
           "isNew": true
         },
         {
@@ -12294,8 +12652,7 @@
           "name": "Aviator",
           "id": "pharah-aviator",
           "url": "/heroes/pharah/icons/pharah-aviator.png",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Reaper",
@@ -12319,8 +12676,7 @@
           "name": "Militia",
           "id": "roadhog-militia",
           "url": "/heroes/roadhog/icons/roadhog-militia.png",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Soldier: 76",
@@ -12329,6 +12685,15 @@
           "id": "soldier-76-formal-76",
           "url": "/heroes/soldier-76/icons/soldier-76-formal-76.png",
           "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Soldier: 1776",
+          "id": "soldier-76-soldier-1776",
+          "url": "/heroes/soldier-76/icons/soldier-76-soldier-1776.png",
+          "group": "UPRISING_2021",
+          "isNew": true
         },
         {
           "heroName": "Sombra",
@@ -12346,8 +12711,7 @@
           "url": "/heroes/symmetra/icons/symmetra-holi.png",
           "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
           "achievement": "limited",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Torbjörn",
@@ -12365,8 +12729,7 @@
           "url": "/heroes/torbjorn/icons/torbjorn-rustclad.png",
           "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
           "achievement": "limited",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Tracer",
@@ -12377,12 +12740,30 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Cavalry",
+          "id": "tracer-cavalry",
+          "url": "/heroes/tracer/icons/tracer-cavalry.png",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Widowmaker",
           "hero": "widowmaker",
           "name": "Lacroix",
           "id": "widowmaker-lacroix",
           "url": "/heroes/widowmaker/icons/widowmaker-lacroix.png",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Mousquetaire",
+          "id": "widowmaker-mousquetaire",
+          "url": "/heroes/widowmaker/icons/widowmaker-mousquetaire.png",
+          "group": "UPRISING_2021",
+          "isNew": true
         },
         {
           "heroName": "Winston",
@@ -12395,10 +12776,29 @@
         {
           "heroName": "Zarya",
           "hero": "zarya",
+          "name": "Polyanitsa",
+          "id": "zarya-polyanitsa",
+          "url": "/heroes/zarya/icons/zarya-polyanitsa.png",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
           "name": "Workout",
           "id": "zarya-workout",
           "url": "/heroes/zarya/icons/zarya-workout.png",
-          "group": "UPRISING_2020",
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Subaquatic",
+          "id": "zenyatta-subaquatic",
+          "url": "/heroes/zenyatta/icons/zenyatta-subaquatic.png",
+          "description": "Unlocked by participating in the Archives 2021 week 2 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2021",
           "isNew": true
         },
         {
@@ -12420,7 +12820,14 @@
           "name": "Archives 2020",
           "id": "archives-2020",
           "url": "/heroes/all/icons/archives-2020.png",
-          "group": "UPRISING_2020",
+          "group": "UPRISING_2020"
+        },
+        {
+          "hero": "all",
+          "name": "Archives 2021",
+          "id": "archives-2021",
+          "url": "/heroes/all/icons/archives-2021.png",
+          "group": "UPRISING_2021",
           "isNew": true
         },
         {
@@ -12511,8 +12918,7 @@
           "id": "ana-ghillie-suit",
           "quality": "common",
           "url": "/heroes/ana/sprays/ana-ghillie-suit.png",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Ana",
@@ -12578,6 +12984,26 @@
           "group": "UPRISING_2018"
         },
         {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Promise",
+          "id": "echo-promise",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-promise.png",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Bushi",
+          "id": "genji-bushi",
+          "quality": "common",
+          "url": "/heroes/genji/sprays/genji-bushi.png",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Genji",
           "hero": "genji",
           "name": "Ramen",
@@ -12611,8 +13037,7 @@
           "id": "junkrat-crown-jewels",
           "quality": "common",
           "url": "/heroes/junkrat/sprays/junkrat-crown-jewels.png",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Junkrat",
@@ -12631,6 +13056,18 @@
           "quality": "common",
           "url": "/heroes/lucio/sprays/lucio-skates.png",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Turn Up The Heat",
+          "id": "lucio-turn-up-the-heat",
+          "quality": "common",
+          "url": "/heroes/lucio/sprays/lucio-turn-up-the-heat.png",
+          "description": "Unlocked by participating in the Archives 2021 week 1 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2021",
+          "isNew": true
         },
         {
           "heroName": "McCree",
@@ -12659,8 +13096,7 @@
           "url": "/heroes/mei/sprays/mei-bear-hug.png",
           "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
           "achievement": "limited",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Mercy",
@@ -12670,6 +13106,18 @@
           "quality": "common",
           "url": "/heroes/mercy/sprays/mercy-combat-medic.png",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Night Mission",
+          "id": "mercy-night-mission",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-night-mission.png",
+          "description": "Unlocked by participating in the Archives 2021 week 3 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2021",
+          "isNew": true
         },
         {
           "heroName": "Moira",
@@ -12696,8 +13144,7 @@
           "id": "pharah-in-the-zone",
           "quality": "common",
           "url": "/heroes/pharah/sprays/pharah-in-the-zone.png",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Pharah",
@@ -12733,8 +13180,7 @@
           "id": "roadhog-alf",
           "quality": "common",
           "url": "/heroes/roadhog/sprays/roadhog-alf.png",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Roadhog",
@@ -12752,8 +13198,7 @@
           "id": "sigma-observation",
           "quality": "common",
           "url": "/heroes/sigma/sprays/sigma-observation.png",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Soldier: 76",
@@ -12763,6 +13208,16 @@
           "quality": "common",
           "url": "/heroes/soldier-76/sprays/soldier-76-commando.png",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Soldier: 1776",
+          "id": "soldier-76-soldier-1776",
+          "quality": "common",
+          "url": "/heroes/soldier-76/sprays/soldier-76-soldier-1776.png",
+          "group": "UPRISING_2021",
+          "isNew": true
         },
         {
           "heroName": "Sombra",
@@ -12791,8 +13246,7 @@
           "url": "/heroes/symmetra/sprays/symmetra-holi.png",
           "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
           "achievement": "limited",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Torbjörn",
@@ -12812,7 +13266,16 @@
           "url": "/heroes/torbjorn/sprays/torbjorn-indigestion.png",
           "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
           "achievement": "limited",
-          "group": "UPRISING_2020",
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Cavalry",
+          "id": "tracer-cavalry",
+          "quality": "common",
+          "url": "/heroes/tracer/sprays/tracer-cavalry.png",
+          "group": "UPRISING_2021",
           "isNew": true
         },
         {
@@ -12823,6 +13286,16 @@
           "quality": "common",
           "url": "/heroes/tracer/sprays/tracer-slipstream.png",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Mousquetaire",
+          "id": "widowmaker-mousquetaire",
+          "quality": "common",
+          "url": "/heroes/widowmaker/sprays/widowmaker-mousquetaire.png",
+          "group": "UPRISING_2021",
+          "isNew": true
         },
         {
           "heroName": "Widowmaker",
@@ -12849,7 +13322,16 @@
           "id": "zarya-pulse",
           "quality": "common",
           "url": "/heroes/zarya/sprays/zarya-pulse.png",
-          "group": "UPRISING_2020",
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Warrior Woman",
+          "id": "zarya-warrior-woman",
+          "quality": "common",
+          "url": "/heroes/zarya/sprays/zarya-warrior-woman.png",
+          "group": "UPRISING_2021",
           "isNew": true
         },
         {
@@ -12869,6 +13351,18 @@
           "quality": "common",
           "url": "/heroes/zenyatta/sprays/zenyatta-shell.png",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Deep In Thought",
+          "id": "zenyatta-deep-in-thought",
+          "quality": "common",
+          "url": "/heroes/zenyatta/sprays/zenyatta-deep-in-thought.png",
+          "description": "Unlocked by participating in the Archives 2021 week 2 challenge",
+          "achievement": "limited",
+          "group": "UPRISING_2021",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -12892,7 +13386,6 @@
           "id": "strike",
           "url": "/heroes/all/sprays/strike.png",
           "group": "UPRISING_2020",
-          "isNew": true,
           "quality": "common"
         },
         {
@@ -12901,7 +13394,6 @@
           "id": "aggressive",
           "url": "/heroes/all/sprays/aggressive.png",
           "group": "UPRISING_2020",
-          "isNew": true,
           "achievement": true,
           "description": "Complete the Glass Cannon Archives challenge mission."
         },
@@ -12947,7 +13439,6 @@
           "id": "blood-moon-rising",
           "url": "/heroes/all/sprays/blood-moon-rising.png",
           "group": "UPRISING_2020",
-          "isNew": true,
           "achievement": true,
           "description": "Complete the Blood Moon Rising Archives challenge mission."
         },
@@ -12957,7 +13448,6 @@
           "id": "carry",
           "url": "/heroes/all/sprays/carry.png",
           "group": "UPRISING_2020",
-          "isNew": true,
           "achievement": true,
           "description": "Complete the Storm Raging Archives challenge mission."
         },
@@ -12976,7 +13466,6 @@
           "id": "deadeye-strike",
           "url": "/heroes/all/sprays/deadeye-strike.png",
           "group": "UPRISING_2020",
-          "isNew": true,
           "achievement": true,
           "description": "Complete the Surgical Strike Archives challenge mission."
         },
@@ -12986,7 +13475,6 @@
           "id": "detonated",
           "url": "/heroes/all/sprays/detonated.png",
           "group": "UPRISING_2020",
-          "isNew": true,
           "achievement": true,
           "description": "Complete the Molten Cores Archives challenge mission."
         },
@@ -13014,9 +13502,18 @@
           "id": "feeling-invincible",
           "url": "/heroes/all/sprays/feeling-invincible.png",
           "group": "UPRISING_2020",
-          "isNew": true,
           "achievement": true,
           "description": "Complete the Close Quarters Archives challenge mission."
+        },
+        {
+          "hero": "all",
+          "name": "High-Value Target",
+          "id": "highvalue-target",
+          "url": "/heroes/all/sprays/highvalue-target.png",
+          "group": "UPRISING_2021",
+          "isNew": true,
+          "achievement": true,
+          "description": "Complete the Thunderstorm Archives challenge mission."
         },
         {
           "hero": "all",
@@ -13047,6 +13544,16 @@
         },
         {
           "hero": "all",
+          "name": "Not Part of the Plan",
+          "id": "not-part-of-the-plan",
+          "url": "/heroes/all/sprays/not-part-of-the-plan.png",
+          "group": "UPRISING_2021",
+          "isNew": true,
+          "achievement": true,
+          "description": "Complete the Sympathy Gains Archives challenge mission."
+        },
+        {
+          "hero": "all",
           "name": "Nullmari",
           "id": "nullmari",
           "url": "/heroes/all/sprays/nullmari.png",
@@ -13071,6 +13578,16 @@
           "group": "UPRISING_2017",
           "achievement": true,
           "description": "Complete Uprising on Legendary difficulty."
+        },
+        {
+          "hero": "all",
+          "name": "Overworked",
+          "id": "overworked",
+          "url": "/heroes/all/sprays/overworked.png",
+          "group": "UPRISING_2021",
+          "isNew": true,
+          "achievement": true,
+          "description": "Complete the Bulletproof Barriers Archives challenge mission."
         },
         {
           "hero": "all",
@@ -13149,6 +13666,16 @@
         {
           "heroName": "Ana",
           "hero": "ana",
+          "name": "Remember Me?",
+          "id": "ana-remember-me",
+          "quality": "common",
+          "url": "/heroes/ana/voicelines/ana-remember-me.ogg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Ana",
+          "hero": "ana",
           "name": "The Ghost Watches",
           "id": "ana-the-ghost-watches",
           "quality": "common",
@@ -13189,8 +13716,7 @@
           "id": "ashe-it-never-gets-fast-enough-for-me",
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-it-never-gets-fast-enough-for-me.ogg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Ashe",
@@ -13235,8 +13761,7 @@
           "id": "baptiste-thats-enough-out-of-you",
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-thats-enough-out-of-you.ogg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Bastion",
@@ -13290,8 +13815,7 @@
           "id": "brigitte-hard-work-pays-off",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-hard-work-pays-off.ogg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Brigitte",
@@ -13319,6 +13843,16 @@
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-amazing.ogg",
           "group": "UPRISING_2018"
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "I'm A Professional!",
+          "id": "dva-im-a-professional",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-im-a-professional.ogg",
+          "group": "UPRISING_2021",
+          "isNew": true
         },
         {
           "heroName": "D.Va",
@@ -13372,7 +13906,26 @@
           "id": "doomfist-such-potential-wasted",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-such-potential-wasted.ogg",
-          "group": "UPRISING_2020",
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Mind If I Record This?",
+          "id": "echo-mind-if-i-record-this",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-mind-if-i-record-this.ogg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "No Off Switch",
+          "id": "echo-no-off-switch",
+          "quality": "common",
+          "url": "/heroes/echo/voicelines/echo-no-off-switch.ogg",
+          "group": "UPRISING_2021",
           "isNew": true
         },
         {
@@ -13400,8 +13953,7 @@
           "id": "genji-ryuichimonji-strikes",
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-ryuichimonji-strikes.ogg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Genji",
@@ -13532,6 +14084,16 @@
         {
           "heroName": "Lúcio",
           "hero": "lucio",
+          "name": "Sick Of Your Rules!",
+          "id": "lucio-sick-of-your-rules",
+          "quality": "common",
+          "url": "/heroes/lucio/voicelines/lucio-sick-of-your-rules.ogg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
           "name": "Turn it up in my headphones",
           "id": "lucio-turn-it-up-in-my-headphones",
           "quality": "common",
@@ -13568,12 +14130,21 @@
         {
           "heroName": "McCree",
           "hero": "mccree",
+          "name": "Take My Advice",
+          "id": "mccree-take-my-advice",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-take-my-advice.ogg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "McCree",
+          "hero": "mccree",
           "name": "That went against my better nature",
           "id": "mccree-that-went-against-my-better-nature",
           "quality": "common",
           "url": "/heroes/mccree/voicelines/mccree-that-went-against-my-better-nature.ogg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "McCree",
@@ -13641,6 +14212,16 @@
         {
           "heroName": "Mercy",
           "hero": "mercy",
+          "name": "My Expert Opinion",
+          "id": "mercy-my-expert-opinion",
+          "quality": "common",
+          "url": "/heroes/mercy/voicelines/mercy-my-expert-opinion.ogg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
           "name": "Not sure why I bother",
           "id": "mercy-not-sure-why-i-bother",
           "quality": "common",
@@ -13699,8 +14280,7 @@
           "id": "orisa-empathy-module-not-responding",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-empathy-module-not-responding.ogg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Orisa",
@@ -13723,11 +14303,31 @@
         {
           "heroName": "Orisa",
           "hero": "orisa",
+          "name": "I Will Take Your Statement",
+          "id": "orisa-i-will-take-your-statement",
+          "quality": "common",
+          "url": "/heroes/orisa/voicelines/orisa-i-will-take-your-statement.ogg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
           "name": "I was only trying to help",
           "id": "orisa-i-was-only-trying-to-help",
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-i-was-only-trying-to-help.ogg",
           "group": "UPRISING_2018"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Death From Above",
+          "id": "pharah-death-from-above",
+          "quality": "common",
+          "url": "/heroes/pharah/voicelines/pharah-death-from-above.ogg",
+          "group": "UPRISING_2021",
+          "isNew": true
         },
         {
           "heroName": "Pharah",
@@ -13813,6 +14413,16 @@
         {
           "heroName": "Reinhardt",
           "hero": "reinhardt",
+          "name": "Shields Up!",
+          "id": "reinhardt-shields-up",
+          "quality": "common",
+          "url": "/heroes/reinhardt/voicelines/reinhardt-shields-up.ogg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
           "name": "Unstoppable",
           "id": "reinhardt-unstoppable",
           "quality": "common",
@@ -13853,7 +14463,16 @@
           "id": "sigma-extraordinary-claims",
           "quality": "common",
           "url": "/heroes/sigma/voicelines/sigma-extraordinary-claims.ogg",
-          "group": "UPRISING_2020",
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Miscalculation",
+          "id": "sigma-miscalculation",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-miscalculation.ogg",
+          "group": "UPRISING_2021",
           "isNew": true
         },
         {
@@ -13863,8 +14482,7 @@
           "id": "sigma-reality-is-rarely-what-it-seems",
           "quality": "common",
           "url": "/heroes/sigma/voicelines/sigma-reality-is-rarely-what-it-seems.ogg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Sigma",
@@ -13873,8 +14491,7 @@
           "id": "sigma-the-results-are-inconclusive",
           "quality": "common",
           "url": "/heroes/sigma/voicelines/sigma-the-results-are-inconclusive.ogg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Soldier: 76",
@@ -13901,8 +14518,7 @@
           "id": "soldier-76-show-some-respect",
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-show-some-respect.ogg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Soldier: 76",
@@ -14051,6 +14667,16 @@
         {
           "heroName": "Widowmaker",
           "hero": "widowmaker",
+          "name": "The Night Holds Surprises",
+          "id": "widowmaker-the-night-holds-surprises",
+          "quality": "common",
+          "url": "/heroes/widowmaker/voicelines/widowmaker-the-night-holds-surprises.ogg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
           "name": "The performance begins",
           "id": "widowmaker-the-performance-begins",
           "quality": "common",
@@ -14114,6 +14740,16 @@
         {
           "heroName": "Zarya",
           "hero": "zarya",
+          "name": "The Dog Gnaws The Bone",
+          "id": "zarya-the-dog-gnaws-the-bone",
+          "quality": "common",
+          "url": "/heroes/zarya/voicelines/zarya-the-dog-gnaws-the-bone.ogg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
           "name": "You have failed your team",
           "id": "zarya-you-have-failed-your-team",
           "quality": "common",
@@ -14157,309 +14793,6 @@
           "group": "UPRISING_2018"
         }
       ],
-      "skins": [
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "Null Sector",
-          "id": "bastion-null-sector",
-          "quality": "epic",
-          "url": "/updates/UPRISING/skins/bastion-null-sector.jpg",
-          "description": "Bastion units were reengineered and upgraded by Null Sector and deployed during the King's Row Uprising.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "High Roller",
-          "id": "wrecking-ball-high-roller",
-          "quality": "epic",
-          "url": "/updates/UPRISING/skins/wrecking-ball-high-roller.jpg",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Junkrat",
-          "hero": "junkrat",
-          "name": "Circus",
-          "id": "junkrat-circus",
-          "quality": "epic",
-          "url": "/updates/UPRISING/skins/junkrat-circus.jpg",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Bear",
-          "id": "mei-bear",
-          "quality": "epic",
-          "url": "/updates/UPRISING/skins/mei-bear.jpg",
-          "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
-          "achievement": "limited",
-          "group": "UPRISING_2020",
-          "isNew": true
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Lieutenant Wilhelm",
-          "id": "reinhardt-lieutenant-wilhelm",
-          "quality": "epic",
-          "url": "/updates/UPRISING/skins/reinhardt-lieutenant-wilhelm.jpg",
-          "description": "Lieutenant Reinhardt Wilhelm served with distinction in his time during Overwatch, notably leading the strike team that ended the King's Row uprising.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Symmetra",
-          "hero": "symmetra",
-          "name": "Holi",
-          "id": "symmetra-holi",
-          "quality": "epic",
-          "url": "/updates/UPRISING/skins/symmetra-holi.jpg",
-          "description": "Unlocked by participating in the Archives 2020 week 1 challenge",
-          "achievement": "limited",
-          "group": "UPRISING_2020",
-          "isNew": true
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Rustclad",
-          "id": "torbjorn-rustclad",
-          "quality": "epic",
-          "url": "/updates/UPRISING/skins/torbjorn-rustclad.jpg",
-          "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
-          "achievement": "limited",
-          "group": "UPRISING_2020",
-          "isNew": true
-        },
-        {
-          "heroName": "Zarya",
-          "hero": "zarya",
-          "name": "Racer",
-          "id": "zarya-racer",
-          "quality": "epic",
-          "url": "/updates/UPRISING/skins/zarya-racer.jpg",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Ashe",
-          "hero": "ashe",
-          "name": "Socialite",
-          "id": "ashe-socialite",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/ashe-socialite.jpg",
-          "description": "As the daughter of socialites, Ashe feels just as comfortable at charity balls as she does on a motorcycle.",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Baptiste",
-          "hero": "baptiste",
-          "name": "Talon",
-          "id": "baptiste-talon",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/baptiste-talon.jpg",
-          "description": "After his service in the Caribbean Coalition was complete, Baptiste struggled to find a demand for his unique skills. Talon was more than happy to help.",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "Gwishin",
-          "id": "bastion-gwishin",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/bastion-gwishin.jpg",
-          "description": "The Gwishin omnic colossus rose from the omnium in the East China Sea. The Mobile Exo-Force of the Korean Army, or MEKA, was formed in response to the Gwishin's constant attacks.",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Doomfist",
-          "hero": "doomfist",
-          "name": "Talon",
-          "id": "doomfist-talon",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/doomfist-talon.jpg",
-          "description": "Doomfist rose in power in Talon after killing his mentor, Akinjide Adeyemi, the Scourge of Numbani.",
-          "group": "UPRISING_2018"
-        },
-        {
-          "heroName": "Genji",
-          "hero": "genji",
-          "name": "Blackwatch",
-          "id": "genji-blackwatch",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/genji-blackwatch.jpg",
-          "description": "After agreeing to aid the organization, Genji was upgraded extensively by Overwatch's cyberneticists.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Hanzo",
-          "hero": "hanzo",
-          "name": "Scion",
-          "id": "hanzo-scion",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/hanzo-scion.jpg",
-          "description": "Over the centuries, the Shimada clan grew to profit from a lucrative trade in arms and other illegal substances.",
-          "group": "UPRISING_2018"
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Equalizer",
-          "id": "lucio-equalizer",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/lucio-equalizer.jpg",
-          "group": "UPRISING_2018"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Blackwatch",
-          "id": "mccree-blackwatch",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/mccree-blackwatch.jpg",
-          "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch or rot in prison.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "McCree",
-          "hero": "mccree",
-          "name": "Deadlock",
-          "id": "mccree-deadlock",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/mccree-deadlock.jpg",
-          "description": "In their younger days, Jesse McCree and Elizabeth \"Calamity\" Ashe co-founded the Deadlock Gang.",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Mei",
-          "hero": "mei",
-          "name": "Pajamei",
-          "id": "mei-pajamei",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/mei-pajamei.jpg",
-          "description": "Due to a malfunction of Ecopoint: Antarctica's cryogenics facility, Mei was kept in hibernation for almost a decade and woke up to find a new, unfamiliar world.",
-          "group": "UPRISING_2018"
-        },
-        {
-          "heroName": "Mercy",
-          "hero": "mercy",
-          "name": "Combat Medic Ziegler",
-          "id": "mercy-combat-medic-ziegler",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/mercy-combat-medic-ziegler.jpg",
-          "description": "When called upon, Mercy would don her Valkyrie swift-response suit to participate in Overwatch missions.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Moira",
-          "hero": "moira",
-          "name": "Blackwatch",
-          "id": "moira-blackwatch",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/moira-blackwatch.jpg",
-          "description": "In addition to her research as a part of Blackwatch, Moira occasionally participated in clandestine operations, including the Venice Incident.",
-          "group": "UPRISING_2018"
-        },
-        {
-          "heroName": "Moira",
-          "hero": "moira",
-          "name": "Scientist",
-          "id": "moira-scientist",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/moira-scientist.jpg",
-          "description": "To this day, Dr. O'Deorain remains a controversial figure in genetic research. Her brilliance was never in question; her ethics, almost always.",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Orisa",
-          "hero": "orisa",
-          "name": "Null Sector",
-          "id": "orisa-null-sector",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/orisa-null-sector.jpg",
-          "description": "During the King's Row Uprising, Null Sector employed redesigned and upgraded OR14 Idina bots to secure the power station.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Reaper",
-          "hero": "reaper",
-          "name": "Soldier: 24",
-          "id": "reaper-soldier-24",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/reaper-soldier-24.jpg",
-          "description": "Before serving on the original Overwatch strike team, Gabriel Reyes was selected to be a member of the government's classified soldier enhancement program.",
-          "group": "UPRISING_2018"
-        },
-        {
-          "heroName": "Soldier: 76",
-          "hero": "soldier-76",
-          "name": "Formal: 76",
-          "id": "soldier-76-formal-76",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/soldier-76-formal-76.jpg",
-          "description": "During his service in Overwatch, Jack Morrison received many commendations for his leadership.",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Sombra",
-          "hero": "sombra",
-          "name": "Talon",
-          "id": "sombra-talon",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/sombra-talon.jpg",
-          "description": "Sombra is only too happy to utilize the power and reach of Talon while pursuing her own goals.",
-          "group": "UPRISING_2018"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Chief Engineer Lindholm",
-          "id": "torbjorn-chief-engineer-lindholm",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/torbjorn-chief-engineer-lindholm.jpg",
-          "description": "For many years, Torbjörn Lindholm served as Overwatch's chief engineer, designing many of the organization's iconic weapons and technologies.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Torbjörn",
-          "hero": "torbjorn",
-          "name": "Ironclad",
-          "id": "torbjorn-ironclad",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/torbjorn-ironclad.jpg",
-          "description": "Torbjörn was a prominent member of the Ironclad Guild, whose headquarters were in Gothenburg, Sweden.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Tracer",
-          "hero": "tracer",
-          "name": "Cadet Oxton",
-          "id": "tracer-cadet-oxton",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/tracer-cadet-oxton.jpg",
-          "description": "Tracer was put into active duty as an Overwatch agent for the first time during the King's Row uprising.",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Talon",
-          "id": "widowmaker-talon",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/widowmaker-talon.jpg",
-          "group": "UPRISING_2017"
-        },
-        {
-          "heroName": "Winston",
-          "hero": "winston",
-          "name": "Specimen 28",
-          "id": "winston-specimen-28",
-          "quality": "legendary",
-          "url": "/updates/UPRISING/skins/winston-specimen-28.jpg",
-          "description": "The gorilla known as Specimen 28 showed rapid brain development from genetic therapy, surpassing that of the other subjects.",
-          "group": "UPRISING_2018"
-        }
-      ],
       "poses": [
         {
           "heroName": "Ashe",
@@ -14468,7 +14801,16 @@
           "id": "ashe-the-spoils",
           "quality": "rare",
           "url": "/updates/UPRISING/poses/ashe-the-spoils.jpg",
-          "group": "UPRISING_2020",
+          "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Ta-da!",
+          "id": "baptiste-tada",
+          "quality": "rare",
+          "url": "/updates/UPRISING/poses/baptiste-tada.jpg",
+          "group": "UPRISING_2021",
           "isNew": true
         },
         {
@@ -14479,6 +14821,26 @@
           "quality": "rare",
           "url": "/updates/UPRISING/poses/brigitte-kneel.jpg",
           "group": "UPRISING_2018"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Polish",
+          "id": "doomfist-polish",
+          "quality": "rare",
+          "url": "/updates/UPRISING/poses/doomfist-polish.jpg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Hey There, Cowboy",
+          "id": "echo-hey-there-cowboy",
+          "quality": "rare",
+          "url": "/updates/UPRISING/poses/echo-hey-there-cowboy.jpg",
+          "group": "UPRISING_2021",
+          "isNew": true
         },
         {
           "heroName": "Genji",
@@ -14541,8 +14903,7 @@
           "id": "reaper-cackle",
           "quality": "rare",
           "url": "/updates/UPRISING/poses/reaper-cackle.jpg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Reinhardt",
@@ -14569,8 +14930,7 @@
           "id": "sigma-postulating",
           "quality": "rare",
           "url": "/updates/UPRISING/poses/sigma-postulating.jpg",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Sombra",
@@ -14629,6 +14989,16 @@
       ],
       "emotes": [
         {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Bird Feeder",
+          "id": "bastion-bird-feeder",
+          "quality": "epic",
+          "url": "/updates/UPRISING/emotes/bastion-bird-feeder.webm",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Brigitte",
           "hero": "brigitte",
           "legendary": true,
@@ -14636,8 +15006,7 @@
           "id": "brigitte-katt",
           "quality": "legendary",
           "url": "/updates/UPRISING/emotes/brigitte-katt.webm",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Hanzo",
@@ -14649,6 +15018,16 @@
           "group": "UPRISING_2017"
         },
         {
+          "heroName": "McCree",
+          "hero": "mccree",
+          "name": "Quick Draw",
+          "id": "mccree-quick-draw",
+          "quality": "epic",
+          "url": "/updates/UPRISING/emotes/mccree-quick-draw.webm",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Pharah",
           "hero": "pharah",
           "name": "Flair",
@@ -14656,6 +15035,16 @@
           "quality": "epic",
           "url": "/updates/UPRISING/emotes/pharah-flair.webm",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Gauging Options",
+          "id": "reaper-gauging-options",
+          "quality": "epic",
+          "url": "/updates/UPRISING/emotes/reaper-gauging-options.webm",
+          "group": "UPRISING_2021",
+          "isNew": true
         },
         {
           "heroName": "Soldier: 76",
@@ -14729,8 +15118,7 @@
           "id": "sigma-attraction",
           "quality": "epic",
           "url": "/updates/UPRISING/intros/sigma-attraction.webm",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Sombra",
@@ -14739,8 +15127,7 @@
           "id": "sombra-translocating",
           "quality": "epic",
           "url": "/updates/UPRISING/intros/sombra-translocating.webm",
-          "group": "UPRISING_2020",
-          "isNew": true
+          "group": "UPRISING_2020"
         },
         {
           "heroName": "Torbjörn",
@@ -14768,6 +15155,58 @@
           "quality": "epic",
           "url": "/updates/UPRISING/intros/zenyatta-perspective.webm",
           "group": "UPRISING_2017"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Bushi",
+          "id": "genji-bushi",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/genji-bushi.jpg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Soldier: 1776",
+          "id": "soldier-76-soldier-1776",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/soldier-76-soldier-1776.jpg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Cavalry",
+          "id": "tracer-cavalry",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/tracer-cavalry.jpg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Mousquetaire",
+          "id": "widowmaker-mousquetaire",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/widowmaker-mousquetaire.jpg",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Polyanitsa",
+          "id": "zarya-polyanitsa",
+          "quality": "legendary",
+          "url": "/updates/UPRISING/skinsLegendary/zarya-polyanitsa.jpg",
+          "group": "UPRISING_2021",
+          "isNew": true
         }
       ]
     }

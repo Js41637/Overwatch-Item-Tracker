@@ -1826,6 +1826,15 @@
     },
     "not-so-fast-outlaw": {
       "description": "Kill the Bounty Target while they are using an ultimate ability in Bounty Hunter."
+    },
+    "thunderstorm": {
+      "description": "Complete the Thunderstorm Archives challenge mission."
+    },
+    "bulletproof-barriers": {
+      "description": "Complete the Bulletproof Barriers Archives challenge mission."
+    },
+    "sympathy-gains": {
+      "description": "Complete the Sympathy Gains Archives challenge mission."
     }
   },
   "mappings": {
@@ -2127,6 +2136,9 @@
     "the-dragon-consumes": "kanezaka-challenge",
     "quick-on-the-draw": "quick-on-the-draw",
     "pay-up": "pay-up",
-    "not-so-fast-outlaw": "not-so-fast-outlaw"
+    "not-so-fast-outlaw": "not-so-fast-outlaw",
+    "highvalue-target": "thunderstorm",
+    "overworked": "bulletproof-barriers",
+    "not-part-of-the-plan": "sympathy-gains"
   }
 }

@@ -79,6 +79,10 @@ things.forEach((thingy, i) => {
         .replace('ARCHIVES', 'UPRISING')
         .replace('WINTER', 'WINTER_WONDERLAND')
 
+      if (groupName === 'INTERNAL') { // wtf blizz
+        continue
+      }
+
       items[groupName] = itemMatch[0].split(/\n\t\t(?!\t)/).slice(1).map(a => a.trim());
     }
 
@@ -284,7 +288,10 @@ for (var hero in data) {
 
       // Generate ID of the item and check if we need to manually override it.
       var id = getCleanID(name, heroID);
-      const uniqueId = `${type}/${id}`
+      let uniqueId = `${type}/${id}`
+      id = idsBlizzardChanged[uniqueId] || id;
+      uniqueId = `${type}/${id}`
+      name = itemNamesIFuckedUp[uniqueId] || name;
 
       for (const dupeSet of duplicateNames) {
         if (type == dupeSet[0] && id === dupeSet[1]) {
@@ -298,9 +305,6 @@ for (var hero in data) {
           }
         }
       }
-
-      id = idsBlizzardChanged[uniqueId] || id;
-      name = itemNamesIFuckedUp[uniqueId] || name;
 
       const url = getPreviewURL(type, id, heroID);
       const out = { name, id, quality, url };
