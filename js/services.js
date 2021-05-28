@@ -356,6 +356,12 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         service.events[event].totals[eventType].selected += val;
         service.events[event].cost.prev = service.events[event].cost.remaining;
 
+        // special items and limited items aren't included in the total so update the totals when they are toggled
+        if (isSpecialItem) {
+          service.events[event].totals.overall.total += val;
+          service.events[event].totals[eventType].total += val;
+        }
+
         if (!isIcon && isValid) {
           if (isSelected) {
             service.events[event].cost.remaining -= price;
