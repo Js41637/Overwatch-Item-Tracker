@@ -254,16 +254,18 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
               continue;
             }
 
+            // doesnt include sprays which are skipped above
             if (shouldCalculateItemCost(item)) {
               var price = DataService.prices[item.quality] * (
                 (item.event && DataService.latest_events[item.event] === item.group) ? 3 : 1
               );
+
               var sectionToUpdate = isSelected ? 'selected' : 'remaining'
 
               s_hero.cost.total += price;
               s_hero.cost[sectionToUpdate] += price
 
-              if (item.event && heroId !== 'all') {
+              if (item.event) {
                 service.events[item.event].cost.total += price;
                 service.events[item.event].cost[sectionToUpdate] += price
               }
