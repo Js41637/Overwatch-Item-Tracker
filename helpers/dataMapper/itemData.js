@@ -288,7 +288,7 @@ const data = {
       [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "winter-wonderland-2018", "winter-wonderland-2019", "snowman", "present", "pachimerry", "gingermari", "pachicracker", "snowimari", "2017", "2018", "2019", "2020", "2021", "end-of-2020", "winter-wonderland-2020", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
       [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu", 'guan-yu', 'hong-gildong', 'huang-zhong', 'l-bu', 'piggimari', 'year-of-the-pig-2019', 'zhang-fei', 'zhuge-liang', 'year-of-the-rat-2020', 'year-of-the-ox-2021',],
       [EVENTS.UPRISING]: ['archives-2021', 'archives-2020', 'archives-2019', 'archives-2018', 'uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'assassin', 'enforcer', 'heavy-assault', 'maximilien', 'sniper', 'trooper'],
-      [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'anniversary-2018', 'anniversary-2019', 'anniversary-2020', 'fanous', 'cupachicake', 'pachiversary'],
+      [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'anniversary-2018', 'anniversary-2019', 'anniversary-2020', 'anniversary-2021', 'fanous', 'cupachicake', 'pachiversary'],
     }
   },
   eventItemOverrides: {
@@ -393,6 +393,16 @@ const data = {
     'skins/mercy-camouflage': EVENTS.UPRISING,
     'icons/mercy-camouflage': EVENTS.UPRISING,
     'sprays/mercy-night-mission': EVENTS.UPRISING,
+
+    'skins/ana-cybermedic': EVENTS.ANNIVERSARY,
+    'icons/ana-cybermedic': EVENTS.ANNIVERSARY,
+    'sprays/ana-sentinel': EVENTS.ANNIVERSARY,
+    'skins/echo-bird-of-paradise': EVENTS.ANNIVERSARY,
+    'icons/echo-bird-of-paradise': EVENTS.ANNIVERSARY,
+    'sprays/echo-flutter': EVENTS.ANNIVERSARY,
+    'skins/wrecking-ball-8-ball': EVENTS.ANNIVERSARY,
+    'icons/wrecking-ball-8-ball': EVENTS.ANNIVERSARY,
+    'sprays/wrecking-ball-corner-pocket': EVENTS.ANNIVERSARY,
   },
   specialAchievementItems: {
     bcrf: {
