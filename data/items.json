@@ -1109,12 +1109,16 @@
         {
           "name": "Competitive No Limits Competitor 2020",
           "id": "competitive-no-limits-competitor-2020",
-          "url": "/heroes/all/icons/competitive-no-limits-competitor-2020.png"
+          "url": "/heroes/all/icons/competitive-no-limits-competitor-2020.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Competitive No Limits Hero 2020",
           "id": "competitive-no-limits-hero-2020",
-          "url": "/heroes/all/icons/competitive-no-limits-hero-2020.png"
+          "url": "/heroes/all/icons/competitive-no-limits-hero-2020.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Competitive Team Deathmatch Competitor 2018",
@@ -3387,7 +3391,9 @@
         {
           "name": "Overwatch Contenders",
           "id": "overwatch-contenders",
-          "url": "/heroes/all/icons/overwatch-contenders.png"
+          "url": "/heroes/all/icons/overwatch-contenders.png",
+          "achievement": "owl",
+          "group": "overwatch league"
         },
         {
           "name": "Overwatch Dark",
@@ -5944,13 +5950,15 @@
           "name": "Competitive No Limits Competitor 2020",
           "id": "competitive-no-limits-competitor-2020",
           "url": "/heroes/all/sprays/competitive-no-limits-competitor-2020.png",
-          "quality": "common"
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Competitive No Limits Hero 2020",
           "id": "competitive-no-limits-hero-2020",
           "url": "/heroes/all/sprays/competitive-no-limits-hero-2020.png",
-          "quality": "common"
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Competitive Team Deathmatch Competitor 2018",
@@ -6208,7 +6216,10 @@
           "name": "Grand Finals 2020",
           "id": "grand-finals-2020",
           "url": "/heroes/all/sprays/grand-finals-2020.png",
-          "quality": "common"
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by participating in the 2020 OWL Grand Finals event"
         },
         {
           "id": "grunt",
@@ -6487,7 +6498,9 @@
           "name": "Overwatch Contenders",
           "id": "overwatch-contenders",
           "url": "/heroes/all/sprays/overwatch-contenders.png",
-          "quality": "common"
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league"
         },
         {
           "name": "Overwatch League",

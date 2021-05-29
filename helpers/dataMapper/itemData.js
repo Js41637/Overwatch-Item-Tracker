@@ -137,8 +137,8 @@ const data = {
       icons: ['nexus']
     },
     "overwatch league": {
-      icons: ['inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars', 'grand-finals-2019'],
-      sprays: ['inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate"]
+      icons: ['inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars', 'grand-finals-2019', 'overwatch-contenders'],
+      sprays: ['inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate", 'overwatch-contenders', 'grand-finals-2020']
     }
   },
   achievementSprays: [
