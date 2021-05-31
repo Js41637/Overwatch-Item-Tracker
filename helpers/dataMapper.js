@@ -248,7 +248,7 @@ allClassData = _.reduce(allClassData, (result, items, type) => {
   return result;
 }, {});
 
-const duplicateNames = [['sprays', 'tracer-blink'], ['sprays', 'reinhardt-crusader'], ['voicelines', 'baptiste-some-kind-of-angel']]
+const duplicateNames = [['sprays', 'tracer-blink'], ['sprays', 'reinhardt-crusader'], ['voicelines', 'baptiste-some-kind-of-angel'], ['sprays', 'doomfist-thumbs-down']]
 const seenDupes = {}
 
 // Goes through every hero and their item lists

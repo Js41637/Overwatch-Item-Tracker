@@ -2071,7 +2071,7 @@ const EVENTITEMS = {
       "icons/anniversary-2021",
       "sprays/ana-sentinel",
       "sprays/baptiste-keepin-alive",
-      "sprays/doomfist-thumbs-down",
+      "sprays/doomfist-thumbs-down-1",
       "sprays/echo-flutter",
       "sprays/wrecking-ball-corner-pocket",
       "sprays/junkrat-jawbreaker",
