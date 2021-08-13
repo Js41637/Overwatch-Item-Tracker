@@ -1354,6 +1354,12 @@
     "copa-lucioball-hero-2020": {
       "description": "Unlocked by achieving top 500 ranking at the end of Copa Lúcioball 2020"
     },
+    "copa-lucioball-competitor-2021": {
+      "description": "Unlocked by completing Copa Lúcioball 2021 placement matches"
+    },
+    "copa-lucioball-hero-2021": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Copa Lúcioball 2021"
+    },
     "survivor": {
       "name": "Survivor",
       "description": "Survive 4 bonus waves in Junkenstein Endless on Expert difficulty.",
@@ -1543,12 +1549,6 @@
     },
     "watchparty-gibraltar": {
       "description": "Unlocked by participating in the 2018 OWL Grand Finals event"
-    },
-    "pacific-allstars-2018": {
-      "description": "Unlocked with purchase of Pacific All-Stars 2018 skin"
-    },
-    "atlantic-allstars-2018": {
-      "description": "Unlocked with purchase of Atlantic All-Stars 2018 skin"
     },
     "adaptation": {
       "name": "Adaptation",
@@ -1838,6 +1838,15 @@
     },
     "sympathy-gains": {
       "description": "Complete the Sympathy Gains Archives challenge mission."
+    },
+    "watching-owl": {
+      "description": "Unlocked by watched the Overwatch League"
+    },
+    "deadlock-challenge": {
+      "description": "Unlocked by participating in Ashe's Deadlock Challenge"
+    },
+    "pachimari-challenge": {
+      "description": "Unlocked by participating in the PachiMarchi Challenge"
     }
   },
   "mappings": {
@@ -2044,6 +2053,8 @@
     "copa-lucioball-hero-2019": "copa-lucioball-hero-2019",
     "copa-lucioball-competitor-2020": "copa-lucioball-competitor-2020",
     "copa-lucioball-hero-2020": "copa-lucioball-hero-2020",
+    "copa-lucioball-competitor-2021": "copa-lucioball-competitor-2021",
+    "copa-lucioball-hero-2021": "copa-lucioball-hero-2021",
     "the-witch": "survivor",
     "the-reaper": "dawn-breaks",
     "my-creations": "six-they-were",
@@ -2143,6 +2154,16 @@
     "not-so-fast-outlaw": "not-so-fast-outlaw",
     "highvalue-target": "thunderstorm",
     "overworked": "bulletproof-barriers",
-    "not-part-of-the-plan": "sympathy-gains"
+    "not-part-of-the-plan": "sympathy-gains",
+    "graduation": "deadlock-challenge",
+    "super-fans": "watching-owl",
+    "beach-fuel": "watching-owl",
+    "pachimada": "pachimari-challenge",
+    "doormari": "pachimari-challenge",
+    "pachirilla": "pachimari-challenge",
+    "tranquilimari": "pachimari-challenge",
+    "hackimari": "pachimari-challenge",
+    "junkimari": "pachimari-challenge",
+    "pachimari-hat": "pachimari-challenge"
   }
 }

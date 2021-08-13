@@ -95,14 +95,23 @@ const data = {
       'ghoul',
       'grunt',
       'archer',
-      // kensaka challenge thing
+      'blizzards-30th-anniversary',
+      // deadlock challenge
+      'graduation',
+      // pachimari challenge
+      'pachimada',
+      'doomari',
+      'pachirilla',
+      'tranquilimari',
+      'hackimari',
+      'junkimari',
+      // Kanezaka Challenge
       "bath-time",
       "catchamari",
       "pawttery",
       "shrine-district",
       "tato-takes-off",
       "the-dragon-consumes",
-      'blizzards-30th-anniversary'
     ],
     icons: [
       // Diablo
@@ -110,7 +119,14 @@ const data = {
       // WoW
       'kul-tiras',
       'zandalar',
-      'blizzards-30th-anniversary'
+      'blizzards-30th-anniversary',
+      // Warcraft
+      'arthas',
+      'thrall',
+      'tyrande',
+      'kelthuzad',
+      // pachimari challenge
+      'pachimari-hat'
     ]
   },
   specialItems: {
@@ -137,8 +153,8 @@ const data = {
       icons: ['nexus']
     },
     "overwatch league": {
-      icons: ['inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars', 'grand-finals-2019', 'overwatch-contenders'],
-      sprays: ['inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate", 'overwatch-contenders', 'grand-finals-2020']
+      icons: ['inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars', '2020-atlantic-allstars', '2020-pacific-allstars', 'grand-finals-2019', 'overwatch-contenders'],
+      sprays: ['inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate", 'overwatch-contenders', 'grand-finals-2020', 'beach-fuel', 'super-fans']
     }
   },
   achievementSprays: [
@@ -283,7 +299,7 @@ const data = {
       [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'fast', 'feast']
     },
     icons: {
-      [EVENTS.SUMMER]: ["summer-games-2016", "summer-games-2017", "summer-games-2018", "summer-games-2019", "summer-games-2020", "meteor", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america", "argentina", "austria", "belgium", "canada", "denmark", "finland", "ireland", "israel", "italy", "jordan", "netherlands", "new-zealand", "portugal", "romania", "snorkelmari", "spain", "footballmari", "punchimari", "tennismari", 'baseballmari', 'golfimari', 'surfimari'],
+      [EVENTS.SUMMER]: ["summer-games-2016", "summer-games-2017", "summer-games-2018", "summer-games-2019", "summer-games-2020", "summer-games-2021", "meteor", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america", "argentina", "austria", "belgium", "canada", "denmark", "finland", "ireland", "israel", "italy", "jordan", "netherlands", "new-zealand", "portugal", "romania", "snorkelmari", "spain", "footballmari", "punchimari", "tennismari", 'baseballmari', 'golfimari', 'surfimari'],
       [EVENTS.HALLOWEEN]: ["calavera", "vampachimari", "eyeball", "superstition", "witchs-hat", "ghostymari", "tombstone", "bewitching", "candle", "never-die", "wolf", "witchs-brew", "spider", "junkensteins-pachimonster", "pachimummy", "pumpkimari", "skelemari", "witchymari", "kittymari", "halloween-terror-2016", "halloween-terror-2017", "halloween-terror-2018", "halloween-terror-2019", 'clownmari', 'halloween-terror-2020'],
       [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "winter-wonderland-2018", "winter-wonderland-2019", "snowman", "present", "pachimerry", "gingermari", "pachicracker", "snowimari", "2017", "2018", "2019", "2020", "2021", "end-of-2020", "winter-wonderland-2020", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
       [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu", 'guan-yu', 'hong-gildong', 'huang-zhong', 'l-bu', 'piggimari', 'year-of-the-pig-2019', 'zhang-fei', 'zhuge-liang', 'year-of-the-rat-2020', 'year-of-the-ox-2021',],
@@ -403,6 +419,16 @@ const data = {
     'skins/wrecking-ball-8-ball': EVENTS.ANNIVERSARY,
     'icons/wrecking-ball-8-ball': EVENTS.ANNIVERSARY,
     'sprays/wrecking-ball-corner-pocket': EVENTS.ANNIVERSARY,
+
+    'skins/winston-ocean-king': EVENTS.SUMMER,
+    'icons/winston-ocean-king': EVENTS.SUMMER,
+    'sprays/winston-ocean-king': EVENTS.SUMMER,
+    'skins/pharah-sunset': EVENTS.SUMMER,
+    'icons/pharah-sunset': EVENTS.SUMMER,
+    'sprays/pharah-sunset-soar': EVENTS.SUMMER,
+    'skins/hanzo-nihon': EVENTS.SUMMER,
+    'icons/hanzo-nihon': EVENTS.SUMMER,
+    'sprays/hanzo-nihon': EVENTS.SUMMER
   },
   specialAchievementItems: {
     bcrf: {
@@ -430,7 +456,7 @@ const data = {
     }
   },
   noLongerPurchaseableItems: {
-    sprays: ['summer-games-2016', 'summer-games-2017', 'summer-games-2018', 'year-of-the-rooster-2017', 'year-of-the-dog-2018', 'year-of-the-rat-2020', 'year-of-the-ox-2021']
+    sprays: ['summer-games-2016', 'summer-games-2017', 'summer-games-2018', 'summer-games-2019', 'summer-games-2020', 'summer-games-2021', 'year-of-the-rooster-2017', 'year-of-the-dog-2018', 'year-of-the-rat-2020', 'year-of-the-ox-2021']
   }
 };
 

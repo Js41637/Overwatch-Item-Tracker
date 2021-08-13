@@ -3,15 +3,16 @@
     "name": "Summer Games",
     "id": "SUMMER_GAMES",
     "dates": {
-      "start": "1596564000000",
-      "end": "1598443200000"
+      "start": "1626807600000",
+      "end": "1628679600000"
     },
     "event_ids": [
       "SUMMER_GAMES_2016",
       "SUMMER_GAMES_2017",
       "SUMMER_GAMES_2018",
       "SUMMER_GAMES_2019",
-      "SUMMER_GAMES_2020"
+      "SUMMER_GAMES_2020",
+      "SUMMER_GAMES_2021"
     ],
     "items": {
       "skins": [
@@ -22,10 +23,9 @@
           "id": "bastion-sand-castle",
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/skins/bastion-sand-castle.jpg",
-          "description": "Unlocked by participating in the Summer Games 2020 week 2 challenge",
+          "description": "Unlocked by participating in the Summer Games 2021 week 2 challenge",
           "achievement": "limited",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Brigitte",
@@ -54,6 +54,18 @@
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/skins/genji-nihon.jpg",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Nihon",
+          "id": "hanzo-nihon",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/skins/hanzo-nihon.jpg",
+          "description": "Unlocked by participating in the Summer Games 2021 week 3 challenge",
+          "achievement": "limited",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "McCree",
@@ -103,7 +115,18 @@
           "url": "/updates/SUMMER_GAMES/skins/orisa-ice-cream.jpg",
           "description": "Unlocked by participating in the Summer Games 2020 week 3 challenge",
           "achievement": "limited",
-          "group": "SUMMER_GAMES_2020",
+          "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Sunset",
+          "id": "pharah-sunset",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/skins/pharah-sunset.jpg",
+          "description": "Unlocked by participating in the Summer Games 2021 week 2 challenge",
+          "achievement": "limited",
+          "group": "SUMMER_GAMES_2021",
           "isNew": true
         },
         {
@@ -155,8 +178,7 @@
           "url": "/updates/SUMMER_GAMES/skins/tracer-union-jack.jpg",
           "description": "Unlocked by participating in the Summer Games 2020 week 1 challenge",
           "achievement": "limited",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Widowmaker",
@@ -166,6 +188,18 @@
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/skins/widowmaker-tricolore.jpg",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Ocean King",
+          "id": "winston-ocean-king",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/skins/winston-ocean-king.jpg",
+          "description": "Unlocked by participating in the Summer Games 2021 week 1 challenge",
+          "achievement": "limited",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Ana",
@@ -178,6 +212,24 @@
           "group": "SUMMER_GAMES_2018"
         },
         {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Tropical",
+          "id": "baptiste-tropical",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/baptiste-tropical.jpg",
+          "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Feskarn",
+          "id": "brigitte-feskarn",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/brigitte-feskarn.jpg",
+          "group": "SUMMER_GAMES_2020"
+        },
+        {
           "heroName": "D.Va",
           "hero": "dva",
           "name": "Waveracer",
@@ -185,6 +237,24 @@
           "quality": "legendary",
           "url": "/updates/SUMMER_GAMES/skins/dva-waveracer.jpg",
           "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Karate",
+          "id": "doomfist-karate",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/doomfist-karate.jpg",
+          "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Surf's Up",
+          "id": "echo-surfs-up",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/echo-surfs-up.jpg",
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Genji",
@@ -260,6 +330,15 @@
           "quality": "legendary",
           "url": "/updates/SUMMER_GAMES/skins/mercy-winged-victory.jpg",
           "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Lifeguard",
+          "id": "pharah-lifeguard",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/pharah-lifeguard.jpg",
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Reaper",
@@ -401,6 +480,16 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Beach Mode",
+          "id": "wrecking-ball-beach-mode",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/emotes/wrecking-ball-beach-mode.webm",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Lúcio",
           "hero": "lucio",
           "name": "Juggle",
@@ -428,6 +517,16 @@
           "group": "SUMMER_GAMES_2019"
         },
         {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Marshmallows",
+          "id": "reinhardt-marshmallows",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/emotes/reinhardt-marshmallows.webm",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Symmetra",
           "hero": "symmetra",
           "name": "Ribbon",
@@ -443,8 +542,7 @@
           "id": "tracer-warm-up",
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/emotes/tracer-warm-up.webm",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Zarya",
@@ -464,8 +562,7 @@
           "id": "ana-vacation",
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/intros/ana-vacation.webm",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Ashe",
@@ -474,8 +571,7 @@
           "id": "ashe-target-practice",
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/intros/ashe-target-practice.webm",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Baptiste",
@@ -541,6 +637,16 @@
           "group": "SUMMER_GAMES_2017"
         },
         {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Grillmaster",
+          "id": "soldier-76-grillmaster",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/intros/soldier-76-grillmaster.webm",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Tracer",
           "hero": "tracer",
           "name": "Hurdle",
@@ -570,6 +676,24 @@
         {
           "heroName": "Ashe",
           "hero": "ashe",
+          "name": "Flamingo Floatie",
+          "id": "ashe-flamingo-floatie",
+          "url": "/heroes/ashe/icons/ashe-flamingo-floatie.png",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Poolside",
+          "id": "ashe-poolside",
+          "url": "/heroes/ashe/icons/ashe-poolside.png",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
           "name": "Shooting",
           "id": "ashe-shooting",
           "url": "/heroes/ashe/icons/ashe-shooting.png",
@@ -589,8 +713,7 @@
           "name": "Tropical",
           "id": "baptiste-tropical",
           "url": "/heroes/baptiste/icons/baptiste-tropical.png",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Bastion",
@@ -606,8 +729,7 @@
           "name": "Feskarn",
           "id": "brigitte-feskarn",
           "url": "/heroes/brigitte/icons/brigitte-feskarn.png",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Brigitte",
@@ -647,8 +769,7 @@
           "name": "Karate",
           "id": "doomfist-karate",
           "url": "/heroes/doomfist/icons/doomfist-karate.png",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Doomfist",
@@ -664,8 +785,7 @@
           "name": "Surf",
           "id": "echo-surf",
           "url": "/heroes/echo/icons/echo-surf.png",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Echo",
@@ -673,8 +793,7 @@
           "name": "Surf's up",
           "id": "echo-surfs-up",
           "url": "/heroes/echo/icons/echo-surfs-up.png",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Genji",
@@ -719,6 +838,17 @@
         {
           "heroName": "Hanzo",
           "hero": "hanzo",
+          "name": "Nihon",
+          "id": "hanzo-nihon",
+          "url": "/heroes/hanzo/icons/hanzo-nihon.png",
+          "description": "Unlocked by participating in the Summer Games 2021 week 3 challenge",
+          "achievement": "limited",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
           "name": "Wave",
           "id": "hanzo-wave",
           "url": "/heroes/hanzo/icons/hanzo-wave.png",
@@ -747,6 +877,15 @@
           "id": "mccree-equestrian",
           "url": "/heroes/mccree/icons/mccree-equestrian.png",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Sprinkles",
+          "id": "mei-sprinkles",
+          "url": "/heroes/mei/icons/mei-sprinkles.png",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Mei",
@@ -781,6 +920,15 @@
           "group": "SUMMER_GAMES_2017"
         },
         {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Referee",
+          "id": "orisa-referee",
+          "url": "/heroes/orisa/icons/orisa-referee.png",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Pharah",
           "hero": "pharah",
           "name": "Basketball",
@@ -794,7 +942,17 @@
           "name": "Lifeguard",
           "id": "pharah-lifeguard",
           "url": "/heroes/pharah/icons/pharah-lifeguard.png",
-          "group": "SUMMER_GAMES_2020",
+          "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Sunset",
+          "id": "pharah-sunset",
+          "url": "/heroes/pharah/icons/pharah-sunset.png",
+          "description": "Unlocked by participating in the Summer Games 2021 week 2 challenge",
+          "achievement": "limited",
+          "group": "SUMMER_GAMES_2021",
           "isNew": true
         },
         {
@@ -840,11 +998,19 @@
         {
           "heroName": "Sigma",
           "hero": "sigma",
+          "name": "Scuba",
+          "id": "sigma-scuba",
+          "url": "/heroes/sigma/icons/sigma-scuba.png",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
           "name": "Swimming",
           "id": "sigma-swimming",
           "url": "/heroes/sigma/icons/sigma-swimming.png",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Soldier: 76",
@@ -861,6 +1027,15 @@
           "id": "sombra-high-jump",
           "url": "/heroes/sombra/icons/sombra-high-jump.png",
           "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Mermaid",
+          "id": "symmetra-mermaid",
+          "url": "/heroes/symmetra/icons/symmetra-mermaid.png",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Symmetra",
@@ -909,6 +1084,17 @@
           "id": "winston-catcher",
           "url": "/heroes/winston/icons/winston-catcher.png",
           "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Ocean King",
+          "id": "winston-ocean-king",
+          "url": "/heroes/winston/icons/winston-ocean-king.png",
+          "description": "Unlocked by participating in the Summer Games 2021 week 1 challenge",
+          "achievement": "limited",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Winston",
@@ -977,7 +1163,6 @@
           "id": "baseballmari",
           "url": "/heroes/all/icons/baseballmari.png",
           "group": "SUMMER_GAMES_2020",
-          "isNew": true,
           "description": "Unlocked by participating in the Summer Games 2020 week 1 challenge"
         },
         {
@@ -1057,7 +1242,6 @@
           "id": "golfimari",
           "url": "/heroes/all/icons/golfimari.png",
           "group": "SUMMER_GAMES_2020",
-          "isNew": true,
           "description": "Unlocked by participating in the Summer Games 2020 week 2 challenge"
         },
         {
@@ -1228,7 +1412,14 @@
           "name": "Summer Games 2020",
           "id": "summer-games-2020",
           "url": "/heroes/all/icons/summer-games-2020.png",
-          "group": "SUMMER_GAMES_2020",
+          "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "hero": "all",
+          "name": "Summer Games 2021",
+          "id": "summer-games-2021",
+          "url": "/heroes/all/icons/summer-games-2021.png",
+          "group": "SUMMER_GAMES_2021",
           "isNew": true
         },
         {
@@ -1237,7 +1428,6 @@
           "id": "surfimari",
           "url": "/heroes/all/icons/surfimari.png",
           "group": "SUMMER_GAMES_2020",
-          "isNew": true,
           "description": "Unlocked by participating in the Summer Games 2020 week 3 challenge"
         },
         {
@@ -1290,6 +1480,16 @@
         {
           "heroName": "Ashe",
           "hero": "ashe",
+          "name": "Poolside",
+          "id": "ashe-poolside",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-poolside.png",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
           "name": "Shooting",
           "id": "ashe-shooting",
           "quality": "common",
@@ -1321,10 +1521,9 @@
           "id": "bastion-sand-castle",
           "quality": "common",
           "url": "/heroes/bastion/sprays/bastion-sand-castle.png",
-          "description": "Unlocked by participating in the Summer Games 2020 week 2 challenge",
+          "description": "Unlocked by participating in the Summer Games 2021 week 2 challenge",
           "achievement": "limited",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Brigitte",
@@ -1360,8 +1559,7 @@
           "id": "echo-surfs-up",
           "quality": "common",
           "url": "/heroes/echo/sprays/echo-surfs-up.png",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Genji",
@@ -1391,6 +1589,18 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Nihon",
+          "id": "hanzo-nihon",
+          "quality": "common",
+          "url": "/heroes/hanzo/sprays/hanzo-nihon.png",
+          "description": "Unlocked by participating in the Summer Games 2021 week 3 challenge",
+          "achievement": "limited",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Junkrat",
           "hero": "junkrat",
           "name": "Tennis",
@@ -1416,6 +1626,16 @@
           "quality": "common",
           "url": "/heroes/mccree/sprays/mccree-equestrian.png",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Sprinkles",
+          "id": "mei-sprinkles",
+          "quality": "common",
+          "url": "/heroes/mei/sprays/mei-sprinkles.png",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Mei",
@@ -1456,14 +1676,23 @@
         {
           "heroName": "Orisa",
           "hero": "orisa",
+          "name": "Referee",
+          "id": "orisa-referee",
+          "quality": "common",
+          "url": "/heroes/orisa/sprays/orisa-referee.png",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
           "name": "Ice Cream",
           "id": "orisa-ice-cream",
           "quality": "common",
           "url": "/heroes/orisa/sprays/orisa-ice-cream.png",
           "description": "Unlocked by participating in the Summer Games 2020 week 3 challenge",
           "achievement": "limited",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Pharah",
@@ -1473,6 +1702,18 @@
           "quality": "common",
           "url": "/heroes/pharah/sprays/pharah-basketball.png",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Sunset Soar",
+          "id": "pharah-sunset-soar",
+          "quality": "common",
+          "url": "/heroes/pharah/sprays/pharah-sunset-soar.png",
+          "description": "Unlocked by participating in the Summer Games 2021 week 2 challenge",
+          "achievement": "limited",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Reaper",
@@ -1504,12 +1745,21 @@
         {
           "heroName": "Sigma",
           "hero": "sigma",
+          "name": "Scuba",
+          "id": "sigma-scuba",
+          "quality": "common",
+          "url": "/heroes/sigma/sprays/sigma-scuba.png",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
           "name": "Swimming",
           "id": "sigma-swimming",
           "quality": "common",
           "url": "/heroes/sigma/sprays/sigma-swimming.png",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Soldier: 76",
@@ -1528,6 +1778,16 @@
           "quality": "common",
           "url": "/heroes/sombra/sprays/sombra-high-jump.png",
           "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Mermaid",
+          "id": "symmetra-mermaid",
+          "quality": "common",
+          "url": "/heroes/symmetra/sprays/symmetra-mermaid.png",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Symmetra",
@@ -1565,8 +1825,7 @@
           "url": "/heroes/tracer/sprays/tracer-union-jack.png",
           "description": "Unlocked by participating in the Summer Games 2020 week 1 challenge",
           "achievement": "limited",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Widowmaker",
@@ -1585,6 +1844,18 @@
           "quality": "common",
           "url": "/heroes/winston/sprays/winston-volleyball.png",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Ocean King",
+          "id": "winston-ocean-king",
+          "quality": "common",
+          "url": "/heroes/winston/sprays/winston-ocean-king.png",
+          "description": "Unlocked by participating in the Summer Games 2021 week 1 challenge",
+          "achievement": "limited",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Zarya",
@@ -1644,7 +1915,6 @@
           "id": "goalkeeper",
           "url": "/heroes/all/sprays/goalkeeper.png",
           "group": "SUMMER_GAMES_2020",
-          "isNew": true,
           "achievement": true,
           "description": "Earn 15 saves in a game of Lúcioball Remix."
         },
@@ -1654,7 +1924,6 @@
           "id": "header",
           "url": "/heroes/all/sprays/header.png",
           "group": "SUMMER_GAMES_2020",
-          "isNew": true,
           "achievement": true,
           "description": "Score 2 goals within 5 seconds in a game of Lúcioball Remix."
         },
@@ -1721,8 +1990,7 @@
           "id": "ana-its-not-that-hot",
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-its-not-that-hot.ogg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Ana",
@@ -1749,7 +2017,16 @@
           "id": "ashe-bullseye",
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-bullseye.ogg",
-          "group": "SUMMER_GAMES_2020",
+          "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "I'll get in the pool...",
+          "id": "ashe-ill-get-in-the-pool",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-ill-get-in-the-pool.ogg",
+          "group": "SUMMER_GAMES_2021",
           "isNew": true
         },
         {
@@ -1759,8 +2036,7 @@
           "id": "ashe-the-best-way-to-win",
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-the-best-way-to-win.ogg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Baptiste",
@@ -1823,7 +2099,16 @@
           "id": "brigitte-happy-midsummer",
           "quality": "common",
           "url": "/heroes/brigitte/voicelines/brigitte-happy-midsummer.ogg",
-          "group": "SUMMER_GAMES_2020",
+          "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "No sweat",
+          "id": "brigitte-no-sweat",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-no-sweat.ogg",
+          "group": "SUMMER_GAMES_2021",
           "isNew": true
         },
         {
@@ -1856,12 +2141,21 @@
         {
           "heroName": "D.Va",
           "hero": "dva",
+          "name": "See you at the finish line",
+          "id": "dva-see-you-at-the-finish-line",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-see-you-at-the-finish-line.ogg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
           "name": "Serious?",
           "id": "dva-serious",
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-serious.ogg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Doomfist",
@@ -1897,8 +2191,7 @@
           "id": "doomfist-you-picked-the-wrong-side",
           "quality": "common",
           "url": "/heroes/doomfist/voicelines/doomfist-you-picked-the-wrong-side.ogg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Echo",
@@ -1907,8 +2200,7 @@
           "id": "echo-break-down-tape-of-this",
           "quality": "common",
           "url": "/heroes/echo/voicelines/echo-break-down-tape-of-this.ogg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Echo",
@@ -1917,8 +2209,7 @@
           "id": "echo-imitate-the-best",
           "quality": "common",
           "url": "/heroes/echo/voicelines/echo-imitate-the-best.ogg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Echo",
@@ -1927,8 +2218,7 @@
           "id": "echo-you-learn-something-new",
           "quality": "common",
           "url": "/heroes/echo/voicelines/echo-you-learn-something-new.ogg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Genji",
@@ -1994,6 +2284,16 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Pool party?",
+          "id": "hanzo-pool-party",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-pool-party.ogg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Junkrat",
           "hero": "junkrat",
           "name": "I give it a 10!",
@@ -2012,6 +2312,16 @@
           "group": "SUMMER_GAMES_2017"
         },
         {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Watch the footy",
+          "id": "junkrat-watch-the-footy",
+          "quality": "common",
+          "url": "/heroes/junkrat/voicelines/junkrat-watch-the-footy.ogg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Lúcio",
           "hero": "lucio",
           "name": "Be champions",
@@ -2028,6 +2338,16 @@
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-come-on-ref.ogg",
           "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Put me in, coach!",
+          "id": "lucio-put-me-in-coach",
+          "quality": "common",
+          "url": "/heroes/lucio/voicelines/lucio-put-me-in-coach.ogg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Lúcio",
@@ -2073,6 +2393,16 @@
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-overcome-all-obstacles.ogg",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Time to cool off",
+          "id": "mei-time-to-cool-off",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-time-to-cool-off.ogg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Mercy",
@@ -2201,14 +2531,33 @@
           "group": "SUMMER_GAMES_2017"
         },
         {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "See my muscles?",
+          "id": "reinhardt-see-my-muscles",
+          "quality": "common",
+          "url": "/heroes/reinhardt/voicelines/reinhardt-see-my-muscles.ogg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "I'm on vacation",
+          "id": "roadhog-im-on-vacation",
+          "quality": "common",
+          "url": "/heroes/roadhog/voicelines/roadhog-im-on-vacation.ogg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Roadhog",
           "hero": "roadhog",
           "name": "No job too big",
           "id": "roadhog-no-job-too-big",
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-no-job-too-big.ogg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Roadhog",
@@ -2244,8 +2593,7 @@
           "id": "soldier-76-fore",
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-fore.ogg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Soldier: 76",
@@ -2255,6 +2603,16 @@
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-you-want-a-medal.ogg",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Got some sun once",
+          "id": "sombra-got-some-sun-once",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-got-some-sun-once.ogg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Sombra",
@@ -2392,6 +2750,16 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Why is it so warm?",
+          "id": "winston-why-is-it-so-warm",
+          "quality": "common",
+          "url": "/heroes/winston/voicelines/winston-why-is-it-so-warm.ogg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "It's only a game",
@@ -2502,14 +2870,33 @@
           "group": "SUMMER_GAMES_2018"
         },
         {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Medal",
+          "id": "echo-medal",
+          "quality": "rare",
+          "url": "/updates/SUMMER_GAMES/poses/echo-medal.jpg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Medal",
+          "id": "genji-medal",
+          "quality": "rare",
+          "url": "/updates/SUMMER_GAMES/poses/genji-medal.jpg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Hammond",
           "hero": "wrecking-ball",
           "name": "Medal",
           "id": "wrecking-ball-medal",
           "quality": "rare",
           "url": "/updates/SUMMER_GAMES/poses/wrecking-ball-medal.jpg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Hanzo",
@@ -2581,8 +2968,7 @@
           "id": "orisa-medal",
           "quality": "rare",
           "url": "/updates/SUMMER_GAMES/poses/orisa-medal.jpg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Pharah",
@@ -2603,6 +2989,16 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Medal",
+          "id": "reinhardt-medal",
+          "quality": "rare",
+          "url": "/updates/SUMMER_GAMES/poses/reinhardt-medal.jpg",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
           "heroName": "Roadhog",
           "hero": "roadhog",
           "name": "Medal",
@@ -2618,8 +3014,7 @@
           "id": "sigma-medal",
           "quality": "rare",
           "url": "/updates/SUMMER_GAMES/poses/sigma-medal.jpg",
-          "group": "SUMMER_GAMES_2020",
-          "isNew": true
+          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Soldier: 76",
@@ -2714,53 +3109,53 @@
       ],
       "skinsLegendary": [
         {
-          "heroName": "Baptiste",
-          "hero": "baptiste",
-          "name": "Tropical",
-          "id": "baptiste-tropical",
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Poolside",
+          "id": "ashe-poolside",
           "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/baptiste-tropical.jpg",
-          "group": "SUMMER_GAMES_2020",
+          "url": "/updates/SUMMER_GAMES/skinsLegendary/ashe-poolside.jpg",
+          "group": "SUMMER_GAMES_2021",
           "isNew": true
         },
         {
-          "heroName": "Brigitte",
-          "hero": "brigitte",
-          "name": "Feskarn",
-          "id": "brigitte-feskarn",
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Sprinkles",
+          "id": "mei-sprinkles",
           "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/brigitte-feskarn.jpg",
-          "group": "SUMMER_GAMES_2020",
+          "url": "/updates/SUMMER_GAMES/skinsLegendary/mei-sprinkles.jpg",
+          "group": "SUMMER_GAMES_2021",
           "isNew": true
         },
         {
-          "heroName": "Doomfist",
-          "hero": "doomfist",
-          "name": "Karate",
-          "id": "doomfist-karate",
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Referee",
+          "id": "orisa-referee",
           "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/doomfist-karate.jpg",
-          "group": "SUMMER_GAMES_2020",
+          "url": "/updates/SUMMER_GAMES/skinsLegendary/orisa-referee.jpg",
+          "group": "SUMMER_GAMES_2021",
           "isNew": true
         },
         {
-          "heroName": "Echo",
-          "hero": "echo",
-          "name": "Surf's Up",
-          "id": "echo-surfs-up",
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Scuba",
+          "id": "sigma-scuba",
           "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/echo-surfs-up.jpg",
-          "group": "SUMMER_GAMES_2020",
+          "url": "/updates/SUMMER_GAMES/skinsLegendary/sigma-scuba.jpg",
+          "group": "SUMMER_GAMES_2021",
           "isNew": true
         },
         {
-          "heroName": "Pharah",
-          "hero": "pharah",
-          "name": "Lifeguard",
-          "id": "pharah-lifeguard",
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Mermaid",
+          "id": "symmetra-mermaid",
           "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skinsLegendary/pharah-lifeguard.jpg",
-          "group": "SUMMER_GAMES_2020",
+          "url": "/updates/SUMMER_GAMES/skinsLegendary/symmetra-mermaid.jpg",
+          "group": "SUMMER_GAMES_2021",
           "isNew": true
         }
       ]
