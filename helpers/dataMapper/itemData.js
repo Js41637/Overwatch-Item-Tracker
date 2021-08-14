@@ -125,6 +125,7 @@ const data = {
       'thrall',
       'tyrande',
       'kelthuzad',
+      'lich-king-1',
       // pachimari challenge
       'pachimari-hat'
     ]
@@ -451,7 +452,10 @@ const data = {
         'zenyatta-zen-nakji',
         'zarya-alien',
         'roadhog-midas',
-        'echo-good-and-evil'
+        'echo-good-and-evil',
+        'mei-mmmei',
+        'ana-haroeris',
+        'widowmaker-ange-de-la-mort'
       ]
     }
   },
