@@ -125,6 +125,7 @@ const data = {
       'thrall',
       'tyrande',
       'kelthuzad',
+      'lich-king-1',
       // pachimari challenge
       'pachimari-hat'
     ]
