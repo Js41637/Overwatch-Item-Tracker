@@ -1212,8 +1212,18 @@ strong {
     .preview.img {
       width: 450px;
       height: 450px;
+      padding: 20px;
       background-image: url("../resources/portrait-bg.jpg");
       background-size: cover;
+    }
+  }
+}
+
+#moira #weapons {
+  .tooltip {
+    .preview.img .i {
+      border-radius: 12px;
+      overflow: hidden;
     }
   }
 }
