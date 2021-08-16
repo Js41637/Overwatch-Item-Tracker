@@ -135,8 +135,6 @@ var noLongerMissingAllClassData = _.reduce(missingAllClassData, (result, items, 
 // Add no longer missing allclass data onto allClassData
 _.forEach(noLongerMissingAllClassData, (items, type) => allClassData[type] = [...allClassData[type], ...items]);
 
-var thanksBlizz = {}
-
 // Create object containing allclass item names by key so we can easily map event ids to items.
 // also check if any items are in allClassEventItems and mark them as event items
 console.info('Generating allClass data');

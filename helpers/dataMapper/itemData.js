@@ -1,9 +1,5 @@
-const {
-  EVENTS
-} = require('./EVENTDATA');
+const { EVENTS } = require('./EVENTDATA')
 
-// All class items have no attributes provided so we need to manually add them
-// ids correlate to item ids.
 const data = {
   owlTeams: ['atlanta-reign', 'boston-uprising', 'chengdu-hunters', 'dallas-fuel', 'florida-mayhem', 'guangzhou-charge', 'hangzhou-spark', 'houston-outlaws', 'london-spitfire', 'los-angeles-gladiators', 'los-angeles-valiant', 'new-york-excelsior', 'overwatch-league', 'paris-eternal', 'philadelphia-fusion', 'san-francisco-shock', 'seoul-dynasty', 'shanghai-dragons', 'toronto-defiant', 'vancouver-titans', 'washington-justice'],
 
@@ -12,10 +8,6 @@ const data = {
     "sprays/mccree-bad-luck": "mccree-noose",
     "sprays/sombra-hax0red": "sombra-deafmute",
     "sprays/hanzo-brickstrike": "hanzo-brick-dragon",
-    "sprays/year-of-the-dog": "year-of-the-dog-2018",
-    "sprays/year-of-the-rooster": "year-of-the-rooster-2017",
-    "sprays/year-of-the-rat": "year-of-the-rat-2020",
-    "sprays/year-of-the-ox": "year-of-the-ox-2021",
     "sprays/junkrat-hayseed": "junkrat-scarecrow",
     "skins/junkrat-bilgerat": "junkrat-buccaneer",
     "sprays/anniversary": "anniversary-2017",
@@ -59,7 +51,20 @@ const data = {
     "sprays/open-queue-season-1-competitor": "competitive-open-queue-competitor",
     "sprays/open-queue-season-1-hero": "competitive-open-queue-hero",
     "icons/open-queue-season-1-competitor": "competitive-open-queue-competitor",
-    "icons/open-queue-season-1-hero": "competitive-open-queue-hero"
+    "icons/open-queue-season-1-hero": "competitive-open-queue-hero",
+
+    // lunar names are so broken, wtf is blizzard doing
+    "sprays/year-of-the-rooster": "year-of-the-rooster-2017",
+    "sprays/year-of-the-dog": "year-of-the-dog-2018",
+    "sprays/year-of-the-pig": "year-of-the-pig-2019",
+    "sprays/year-of-the-rat": "year-of-the-rat-2020",
+    "sprays/year-of-the-ox": "year-of-the-ox-2021",
+
+    "icons/year-of-the-rooster": "year-of-the-rooster-2017",
+    "icons/year-of-the-dog": "year-of-the-dog-2018",
+    "icons/year-of-the-pig": "year-of-the-pig-2019",
+    "icons/year-of-the-rat": "year-of-the-rat-2020",
+    "icons/year-of-the-ox": "year-of-the-ox-2021",
   },
   itemNamesIFuckedUp: {
     "voicelines/reinhardt-100-german-power": "100% German power"
