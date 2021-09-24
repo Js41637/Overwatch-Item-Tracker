@@ -160,7 +160,7 @@ const data = {
     },
     "overwatch league": {
       icons: ['inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars', '2020-atlantic-allstars', '2020-pacific-allstars', 'grand-finals-2019', 'overwatch-contenders'],
-      sprays: ['inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate", 'overwatch-contenders', 'grand-finals-2020', 'beach-fuel', 'super-fans']
+      sprays: ['inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate", 'overwatch-contenders', 'grand-finals-2020', 'beach-fuel', 'dragons-treasure', 'super-fans']
     }
   },
   achievementSprays: [
@@ -460,7 +460,8 @@ const data = {
         'echo-good-and-evil',
         'mei-mmmei',
         'ana-haroeris',
-        'widowmaker-ange-de-la-mort'
+        'widowmaker-ange-de-la-mort',
+        'bastion-pirate-ship'
       ]
     }
   },
