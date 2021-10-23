@@ -812,11 +812,31 @@
           "url": "/heroes/all/icons/china.png"
         },
         {
+          "name": "Clown",
+          "id": "roadhog-clown",
+          "url": "/heroes/roadhog/icons/roadhog-clown.png",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 3 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "hero": "roadhog",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Clownmari",
           "id": "clownmari",
           "event": "HALLOWEEN",
           "url": "/heroes/all/icons/clownmari.png",
           "group": "pachi"
+        },
+        {
+          "name": "Coffin",
+          "id": "bastion-coffin",
+          "url": "/heroes/bastion/icons/bastion-coffin.png",
+          "event": "HALLOWEEN",
+          "hero": "bastion",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Coin",
@@ -1164,6 +1184,13 @@
           "description": "Unlocked by completing Competitive Team Deathmatch 2020 placement matches"
         },
         {
+          "name": "Competitive Team Deathmatch Competitor 2021",
+          "id": "competitive-team-deathmatch-competitor-2021",
+          "url": "/heroes/all/icons/competitive-team-deathmatch-competitor-2021.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Competitive Team Deathmatch Hero 2018",
           "id": "competitive-team-deathmatch-hero",
           "url": "/heroes/all/icons/competitive-team-deathmatch-hero.png",
@@ -1186,6 +1213,13 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch 2020"
+        },
+        {
+          "name": "Competitive Team Deathmatch Hero 2021",
+          "id": "competitive-team-deathmatch-hero-2021",
+          "url": "/heroes/all/icons/competitive-team-deathmatch-hero-2021.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Conductor",
@@ -1557,8 +1591,7 @@
           "url": "/heroes/hanzo/icons/hanzo-daitengu.png",
           "event": "HALLOWEEN",
           "hero": "hanzo",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Dallas Fuel",
@@ -1706,6 +1739,15 @@
           "group": "ANNIVERSARY_2020"
         },
         {
+          "name": "Draugr",
+          "id": "reinhardt-draugr",
+          "url": "/heroes/reinhardt/icons/reinhardt-draugr.png",
+          "event": "HALLOWEEN",
+          "hero": "reinhardt",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Dreidel",
           "id": "dreidel",
           "event": "WINTER_WONDERLAND",
@@ -1742,6 +1784,17 @@
           "id": "egypt",
           "event": "SUMMER_GAMES",
           "url": "/heroes/all/icons/egypt.png"
+        },
+        {
+          "name": "Einherjar",
+          "id": "zarya-einherjar",
+          "url": "/heroes/zarya/icons/zarya-einherjar.png",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 2 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "hero": "zarya",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Elephant",
@@ -1835,8 +1888,7 @@
           "achievement": "limited",
           "event": "HALLOWEEN",
           "hero": "sombra",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Fastball",
@@ -1923,8 +1975,7 @@
           "url": "/heroes/sigma/icons/sigma-flying-dutchman.png",
           "event": "HALLOWEEN",
           "hero": "sigma",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Football",
@@ -2363,6 +2414,13 @@
           "url": "/heroes/all/icons/halloween-terror-2020.png"
         },
         {
+          "name": "Halloween Terror 2021",
+          "id": "halloween-terror-2021",
+          "event": "HALLOWEEN",
+          "url": "/heroes/all/icons/halloween-terror-2021.png",
+          "group": "pachi"
+        },
+        {
           "name": "Hammer Throw",
           "id": "brigitte-hammer-throw",
           "url": "/heroes/brigitte/icons/brigitte-hammer-throw.png",
@@ -2745,8 +2803,7 @@
           "url": "/heroes/genji/icons/genji-karasutengu.png",
           "event": "HALLOWEEN",
           "hero": "genji",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Karate",
@@ -3790,8 +3847,7 @@
           "achievement": "limited",
           "event": "HALLOWEEN",
           "hero": "echo",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Rainbow",
@@ -4039,6 +4095,15 @@
           "event": "LUNAR_NEW_YEAR",
           "hero": "zenyatta",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Satyr",
+          "id": "lucio-satyr",
+          "url": "/heroes/lucio/icons/lucio-satyr.png",
+          "event": "HALLOWEEN",
+          "hero": "lucio",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Scar",
@@ -4561,6 +4626,20 @@
           "group": "competitive"
         },
         {
+          "name": "Season 31 Competitor",
+          "id": "season-31-competitor",
+          "url": "/heroes/all/icons/season-31-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 31 Hero",
+          "id": "season-31-hero",
+          "url": "/heroes/all/icons/season-31-hero.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Sentry",
           "id": "symmetra-sentry",
           "url": "/heroes/symmetra/icons/symmetra-sentry.png",
@@ -4625,8 +4704,7 @@
           "url": "/heroes/dva/icons/dva-shinryeong.png",
           "event": "HALLOWEEN",
           "hero": "dva",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Shooting",
@@ -4682,6 +4760,17 @@
           "event": "HALLOWEEN",
           "url": "/heroes/all/icons/skelemari.png",
           "group": "pachi"
+        },
+        {
+          "name": "Skeleton",
+          "id": "genji-skeleton",
+          "url": "/heroes/genji/icons/genji-skeleton.png",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 1 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "hero": "genji",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Skull",
@@ -4887,8 +4976,7 @@
           "achievement": "limited",
           "event": "HALLOWEEN",
           "hero": "brigitte",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Stonefaced",
@@ -5351,6 +5439,24 @@
           "group": "HALLOWEEN_2019"
         },
         {
+          "name": "Vampire Bat",
+          "id": "echo-vampire-bat",
+          "url": "/heroes/echo/icons/echo-vampire-bat.png",
+          "event": "HALLOWEEN",
+          "hero": "echo",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
+          "name": "Vampire Hunter",
+          "id": "brigitte-vampire-hunter",
+          "url": "/heroes/brigitte/icons/brigitte-vampire-hunter.png",
+          "event": "HALLOWEEN",
+          "hero": "brigitte",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Vancouver Titans",
           "id": "vancouver-titans",
           "url": "/heroes/all/icons/vancouver-titans.png",
@@ -5490,8 +5596,7 @@
           "url": "/heroes/winston/icons/winston-werewolf.png",
           "event": "HALLOWEEN",
           "hero": "winston",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Widowmaker",
@@ -6178,6 +6283,13 @@
           "description": "Unlocked by completing Competitive Team Deathmatch 2020 placement matches"
         },
         {
+          "name": "Competitive Team Deathmatch Competitor 2021",
+          "id": "competitive-team-deathmatch-competitor-2021",
+          "url": "/heroes/all/sprays/competitive-team-deathmatch-competitor-2021.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Competitive Team Deathmatch Hero 2018",
           "id": "competitive-team-deathmatch-hero",
           "url": "/heroes/all/sprays/competitive-team-deathmatch-hero.png",
@@ -6200,6 +6312,13 @@
           "achievement": true,
           "group": "competitive",
           "description": "Unlocked by achieving top 500 ranking at the end of Competitive Team Deathmatch 2020"
+        },
+        {
+          "name": "Competitive Team Deathmatch Hero 2021",
+          "id": "competitive-team-deathmatch-hero-2021",
+          "url": "/heroes/all/sprays/competitive-team-deathmatch-hero-2021.png",
+          "achievement": true,
+          "group": "competitive"
         },
         {
           "name": "Copa Lúcioball Competitor",
@@ -6344,13 +6463,22 @@
           "group": "pachi"
         },
         {
+          "name": "Dragons' Fireworks",
+          "id": "dragons-fireworks",
+          "url": "/heroes/all/sprays/dragons-fireworks.png",
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by watching the 2021 OWL Summer Showdown Tournament"
+        },
+        {
           "name": "Dragons' Treasure",
           "id": "dragons-treasure",
           "url": "/heroes/all/sprays/dragons-treasure.png",
           "achievement": "owl",
           "quality": "common",
           "group": "overwatch league",
-          "description": "Unlocked by watching the Overwatch League 2021 June Joust Tournament"
+          "description": "Unlocked by watching the 2021 OWL June Joust Tournament"
         },
         {
           "name": "Día de los Muertos",
@@ -7395,6 +7523,20 @@
           "group": "competitive"
         },
         {
+          "name": "Season 31 Competitor",
+          "id": "season-31-competitor",
+          "url": "/heroes/all/sprays/season-31-competitor.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Season 31 Hero",
+          "id": "season-31-hero",
+          "url": "/heroes/all/sprays/season-31-hero.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Seoul Dynasty Homestand 2020",
           "id": "seoul-dynasty-homestand-2020",
           "url": "/heroes/all/sprays/seoul-dynasty-homestand-2020.png",
@@ -7515,6 +7657,15 @@
           "url": "/heroes/all/sprays/the-dragon-consumes.png",
           "achievement": "blizzard",
           "description": "Unlocked by participating in the Kanezaka Challenge."
+        },
+        {
+          "name": "Tiny Champion",
+          "id": "tiny-champion",
+          "url": "/heroes/all/sprays/tiny-champion.png",
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by watching the 2021 OWL Grand Finals"
         },
         {
           "name": "Toronto Defiant Homestand 2020",
@@ -9402,8 +9553,7 @@
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-listen-to-your-mummy.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "I'm too old for surprises",
@@ -10410,8 +10560,7 @@
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-is-that-a-costume.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "The Outlaw's ghost",
@@ -10419,8 +10568,7 @@
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-the-outlaws-ghost.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "You scared?",
@@ -10428,8 +10576,7 @@
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-you-scared.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Girl Who Has Everything",
@@ -10586,8 +10733,7 @@
           "quality": "rare",
           "url": "/heroes/ashe/poses/ashe-pumpkin.jpg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Lighting the fuse",
@@ -10788,6 +10934,15 @@
           "id": "baptiste-take-a-knee",
           "quality": "epic",
           "url": "/heroes/baptiste/emotes/baptiste-take-a-knee.webm"
+        },
+        {
+          "name": "Zombie Walk",
+          "id": "baptiste-zombie-walk",
+          "quality": "epic",
+          "url": "/heroes/baptiste/emotes/baptiste-zombie-walk.webm",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Mistletoe",
@@ -11358,8 +11513,7 @@
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-behind-you.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Don't cry",
@@ -11383,8 +11537,7 @@
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-long-ago.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "A little T.L.C.",
@@ -11524,8 +11677,7 @@
           "quality": "rare",
           "url": "/heroes/baptiste/poses/baptiste-pumpkin.jpg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Hot Soup",
@@ -11684,6 +11836,15 @@
           "id": "bastion-woodbot",
           "quality": "legendary",
           "url": "/heroes/bastion/skins/bastion-woodbot.jpg"
+        },
+        {
+          "name": "Coffin",
+          "id": "bastion-coffin",
+          "quality": "legendary",
+          "url": "/heroes/bastion/skins/bastion-coffin.jpg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Avalanche",
@@ -11899,6 +12060,15 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "name": "Coffin",
+          "id": "bastion-coffin",
+          "url": "/heroes/bastion/icons/bastion-coffin.png",
+          "event": "HALLOWEEN",
+          "hero": "bastion",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Avalanche",
           "id": "bastion-avalanche",
           "url": "/heroes/bastion/icons/bastion-avalanche.png",
@@ -12108,6 +12278,15 @@
           "url": "/heroes/bastion/sprays/bastion-boxing.png",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Coffin",
+          "id": "bastion-coffin",
+          "quality": "common",
+          "url": "/heroes/bastion/sprays/bastion-coffin.png",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Trick or Treat",
@@ -12537,8 +12716,7 @@
           "description": "Unlocked by participating in the Halloween Terror 2020 week 2 challenge",
           "achievement": "limited",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Engineer",
@@ -12573,6 +12751,15 @@
           "url": "/heroes/brigitte/skins/brigitte-feskarn.jpg",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "name": "Vampire Hunter",
+          "id": "brigitte-vampire-hunter",
+          "quality": "legendary",
+          "url": "/heroes/brigitte/skins/brigitte-vampire-hunter.jpg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Opera",
@@ -12742,6 +12929,15 @@
           "group": "SUMMER_GAMES_2018"
         },
         {
+          "name": "Vampire Hunter",
+          "id": "brigitte-vampire-hunter",
+          "url": "/heroes/brigitte/icons/brigitte-vampire-hunter.png",
+          "event": "HALLOWEEN",
+          "hero": "brigitte",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Opera Warrior",
           "id": "brigitte-opera-warrior",
           "url": "/heroes/brigitte/icons/brigitte-opera-warrior.png",
@@ -12781,8 +12977,7 @@
           "achievement": "limited",
           "event": "HALLOWEEN",
           "hero": "brigitte",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         }
       ],
       "sprays": [
@@ -12941,6 +13136,15 @@
           "group": "HALLOWEEN_2018"
         },
         {
+          "name": "Vampire Hunter",
+          "id": "brigitte-vampire-hunter",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-vampire-hunter.png",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Knitting",
           "id": "brigitte-knitting",
           "quality": "common",
@@ -13028,8 +13232,7 @@
           "description": "Unlocked by participating in the Halloween Terror 2020 week 2 challenge",
           "achievement": "limited",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         }
       ],
       "voicelines": [
@@ -13471,8 +13674,7 @@
           "quality": "legendary",
           "url": "/heroes/dva/skins/dva-shinryeong.jpg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Palanquin",
@@ -13668,8 +13870,7 @@
           "url": "/heroes/dva/icons/dva-shinryeong.png",
           "event": "HALLOWEEN",
           "hero": "dva",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Hanbok",
@@ -13877,8 +14078,7 @@
           "quality": "common",
           "url": "/heroes/dva/sprays/dva-shinryeong.png",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Trick or Treat",
@@ -15088,6 +15288,15 @@
           "group": "HALLOWEEN_2017"
         },
         {
+          "name": "Knock knock",
+          "id": "doomfist-knock-knock",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-knock-knock.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "You should be scared",
           "id": "doomfist-you-should-be-scared",
           "quality": "common",
@@ -15332,8 +15541,7 @@
           "description": "Unlocked by participating in the Halloween Terror 2020 week 3 challenge",
           "achievement": "limited",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Bird of Paradise",
@@ -15377,6 +15585,15 @@
           "url": "/heroes/echo/skins/echo-surfs-up.jpg",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "name": "Vampire Bat",
+          "id": "echo-vampire-bat",
+          "quality": "legendary",
+          "url": "/heroes/echo/skins/echo-vampire-bat.jpg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Kkachi",
@@ -15515,6 +15732,15 @@
           "group": "SUMMER_GAMES_2020"
         },
         {
+          "name": "Vampire Bat",
+          "id": "echo-vampire-bat",
+          "url": "/heroes/echo/icons/echo-vampire-bat.png",
+          "event": "HALLOWEEN",
+          "hero": "echo",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Magpie",
           "id": "echo-magpie",
           "url": "/heroes/echo/icons/echo-magpie.png",
@@ -15539,8 +15765,7 @@
           "achievement": "limited",
           "event": "HALLOWEEN",
           "hero": "echo",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Bird of Paradise",
@@ -15707,7 +15932,15 @@
           "quality": "common",
           "url": "/heroes/echo/sprays/echo-trick-or-treat.png",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
+          "group": "HALLOWEEN_2020"
+        },
+        {
+          "name": "Vampire Bat",
+          "id": "echo-vampire-bat",
+          "quality": "common",
+          "url": "/heroes/echo/sprays/echo-vampire-bat.png",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
           "isNew": true
         },
         {
@@ -15844,8 +16077,7 @@
           "description": "Unlocked by participating in the Halloween Terror 2020 week 3 challenge",
           "achievement": "limited",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Flutter",
@@ -15963,8 +16195,7 @@
           "quality": "common",
           "url": "/heroes/echo/voicelines/echo-do-you-believe-in-ghosts.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Spirits live within me",
@@ -15972,8 +16203,7 @@
           "quality": "common",
           "url": "/heroes/echo/voicelines/echo-spirits-live-within-me.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Happy holidays",
@@ -16095,8 +16325,7 @@
           "quality": "rare",
           "url": "/heroes/echo/poses/echo-pumpkin.jpg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Hey There, Cowboy",
@@ -16181,6 +16410,17 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "name": "Skeleton",
+          "id": "genji-skeleton",
+          "quality": "epic",
+          "url": "/heroes/genji/skins/genji-skeleton.jpg",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 1 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Bedouin",
           "id": "genji-bedouin",
           "quality": "legendary",
@@ -16228,8 +16468,7 @@
           "quality": "legendary",
           "url": "/heroes/genji/skins/genji-karasutengu.jpg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Baihu",
@@ -16431,8 +16670,7 @@
           "url": "/heroes/genji/icons/genji-karasutengu.png",
           "event": "HALLOWEEN",
           "hero": "genji",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Bushi",
@@ -16466,6 +16704,17 @@
           "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
           "achievement": "blizzard",
           "hero": "genji"
+        },
+        {
+          "name": "Skeleton",
+          "id": "genji-skeleton",
+          "url": "/heroes/genji/icons/genji-skeleton.png",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 1 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "hero": "genji",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -16633,8 +16882,7 @@
           "quality": "common",
           "url": "/heroes/genji/sprays/genji-karasutengu.png",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Trick or Treat",
@@ -16724,6 +16972,17 @@
           "url": "/heroes/genji/sprays/genji-brickblade.png",
           "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Skeleton",
+          "id": "genji-skeleton",
+          "quality": "common",
+          "url": "/heroes/genji/sprays/genji-skeleton.png",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 1 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -16838,8 +17097,7 @@
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-sword-in-the-shadows.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Trick or treat",
@@ -17160,8 +17418,7 @@
           "quality": "legendary",
           "url": "/heroes/hanzo/skins/hanzo-daitengu.jpg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Casual",
@@ -17350,8 +17607,7 @@
           "url": "/heroes/hanzo/icons/hanzo-daitengu.png",
           "event": "HALLOWEEN",
           "hero": "hanzo",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Casual",
@@ -17572,8 +17828,7 @@
           "quality": "common",
           "url": "/heroes/hanzo/sprays/hanzo-daitengu.png",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Trick or Treat",
@@ -17789,13 +18044,21 @@
           "group": "HALLOWEEN_2017"
         },
         {
+          "name": "The archer vanished...",
+          "id": "hanzo-the-archer-vanished",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-the-archer-vanished.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "The Shimada will rise again",
           "id": "hanzo-the-shimada-will-rise-again",
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-the-shimada-will-rise-again.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "You are already dead",
@@ -18788,6 +19051,15 @@
           "isNew": true
         },
         {
+          "name": "Can't scare me",
+          "id": "junkrat-cant-scare-me",
+          "quality": "common",
+          "url": "/heroes/junkrat/voicelines/junkrat-cant-scare-me.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Happy Halloween",
           "id": "junkrat-happy-halloween",
           "quality": "common",
@@ -19151,6 +19423,15 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "name": "Satyr",
+          "id": "lucio-satyr",
+          "quality": "legendary",
+          "url": "/heroes/lucio/skins/lucio-satyr.jpg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Snow Fox",
           "id": "lucio-snow-fox",
           "quality": "legendary",
@@ -19336,6 +19617,15 @@
           "event": "HALLOWEEN",
           "hero": "lucio",
           "group": "HALLOWEEN_2019"
+        },
+        {
+          "name": "Satyr",
+          "id": "lucio-satyr",
+          "url": "/heroes/lucio/icons/lucio-satyr.png",
+          "event": "HALLOWEEN",
+          "hero": "lucio",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Snow Fox",
@@ -19541,6 +19831,15 @@
           "url": "/heroes/lucio/sprays/lucio-gorgon.png",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2019"
+        },
+        {
+          "name": "Satyr",
+          "id": "lucio-satyr",
+          "quality": "common",
+          "url": "/heroes/lucio/sprays/lucio-satyr.png",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Trick or Treat",
@@ -19771,8 +20070,7 @@
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-no-such-thing-as-ghosts.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "So good it's scary!",
@@ -23280,6 +23578,15 @@
           "url": "/heroes/moira/emotes/moira-waiting.webm"
         },
         {
+          "name": "Boo",
+          "id": "moira-boo",
+          "quality": "epic",
+          "url": "/heroes/moira/emotes/moira-boo.webm",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Dance",
           "id": "moira-dance",
           "quality": "epic",
@@ -24744,8 +25051,7 @@
           "quality": "common",
           "url": "/heroes/orisa/voicelines/orisa-exterminate.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Your pulse has increased",
@@ -25211,8 +25517,7 @@
           "quality": "epic",
           "url": "/heroes/pharah/intros/pharah-target-practice.webm",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         }
       ],
       "icons": [
@@ -26652,6 +26957,15 @@
           "group": "HALLOWEEN_2019"
         },
         {
+          "name": "Where's my candy?",
+          "id": "reaper-wheres-my-candy",
+          "quality": "common",
+          "url": "/heroes/reaper/voicelines/reaper-wheres-my-candy.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Holiday spirit",
           "id": "reaper-holiday-spirit",
           "quality": "common",
@@ -26976,6 +27290,15 @@
           "group": "SUMMER_GAMES_2018"
         },
         {
+          "name": "Draugr",
+          "id": "reinhardt-draugr",
+          "quality": "legendary",
+          "url": "/heroes/reinhardt/skins/reinhardt-draugr.jpg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Conductor",
           "id": "reinhardt-conductor",
           "quality": "legendary",
@@ -27078,8 +27401,7 @@
           "quality": "epic",
           "url": "/heroes/reinhardt/emotes/reinhardt-zombie-walk.webm",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Sweethardt",
@@ -27165,6 +27487,15 @@
           "event": "SUMMER_GAMES",
           "hero": "reinhardt",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Draugr",
+          "id": "reinhardt-draugr",
+          "url": "/heroes/reinhardt/icons/reinhardt-draugr.png",
+          "event": "HALLOWEEN",
+          "hero": "reinhardt",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Conductor",
@@ -27360,6 +27691,15 @@
           "url": "/heroes/reinhardt/sprays/reinhardt-wrestling.png",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Draugr",
+          "id": "reinhardt-draugr",
+          "quality": "common",
+          "url": "/heroes/reinhardt/sprays/reinhardt-draugr.png",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Trick or Treat",
@@ -27823,6 +28163,17 @@
           "achievement": "blizzard"
         },
         {
+          "name": "Clown",
+          "id": "roadhog-clown",
+          "quality": "epic",
+          "url": "/heroes/roadhog/skins/roadhog-clown.jpg",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 3 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Frosty",
           "id": "roadhog-frosty",
           "quality": "epic",
@@ -28119,6 +28470,17 @@
           "group": "ANNIVERSARY_2019"
         },
         {
+          "name": "Clown",
+          "id": "roadhog-clown",
+          "url": "/heroes/roadhog/icons/roadhog-clown.png",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 3 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "hero": "roadhog",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Frosty",
           "id": "roadhog-frosty",
           "url": "/heroes/roadhog/icons/roadhog-frosty.png",
@@ -28364,6 +28726,17 @@
           "description": "Interrupt an enemy ultimate ability with Roadhog's Hook in Quick or Competitive Play."
         },
         {
+          "name": "Clown",
+          "id": "roadhog-clown",
+          "quality": "common",
+          "url": "/heroes/roadhog/sprays/roadhog-clown.png",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 3 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Frosty",
           "id": "roadhog-frosty",
           "quality": "common",
@@ -28481,6 +28854,15 @@
           "url": "/heroes/roadhog/voicelines/roadhog-whats-mine-is-mine.ogg",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Beneath your bed",
+          "id": "roadhog-beneath-your-bed",
+          "quality": "common",
+          "url": "/heroes/roadhog/voicelines/roadhog-beneath-your-bed.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Boo!",
@@ -28784,8 +29166,7 @@
           "quality": "legendary",
           "url": "/heroes/sigma/skins/sigma-flying-dutchman.jpg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Rime",
@@ -28841,6 +29222,15 @@
           "id": "sigma-relaxation",
           "quality": "epic",
           "url": "/heroes/sigma/emotes/sigma-relaxation.webm"
+        },
+        {
+          "name": "Magic Pumpkins",
+          "id": "sigma-magic-pumpkins",
+          "quality": "epic",
+          "url": "/heroes/sigma/emotes/sigma-magic-pumpkins.webm",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "Dans",
@@ -28936,8 +29326,7 @@
           "url": "/heroes/sigma/icons/sigma-flying-dutchman.png",
           "event": "HALLOWEEN",
           "hero": "sigma",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Rime",
@@ -29136,8 +29525,7 @@
           "quality": "common",
           "url": "/heroes/sigma/sprays/sigma-flying-dutchman.png",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Trick or Treat",
@@ -30220,6 +30608,15 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "name": "Everyone has ghosts",
+          "id": "soldier-76-everyone-has-ghosts",
+          "quality": "common",
+          "url": "/heroes/soldier-76/voicelines/soldier-76-everyone-has-ghosts.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Knock knock",
           "id": "soldier-76-knock-knock",
           "quality": "common",
@@ -30249,8 +30646,7 @@
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-what-are-you-scared.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Merry Christmas",
@@ -30401,6 +30797,15 @@
           "group": "SUMMER_GAMES_2018"
         },
         {
+          "name": "Pumpkin",
+          "id": "soldier-76-pumpkin",
+          "quality": "rare",
+          "url": "/heroes/soldier-76/poses/soldier-76-pumpkin.jpg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "R.I.P.",
           "id": "soldier-76-rip",
           "quality": "rare",
@@ -30522,8 +30927,7 @@
           "description": "Unlocked by participating in the Halloween Terror 2020 week 1 challenge",
           "achievement": "limited",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Augmented",
@@ -30848,8 +31252,7 @@
           "achievement": "limited",
           "event": "HALLOWEEN",
           "hero": "sombra",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         }
       ],
       "sprays": [
@@ -31138,8 +31541,7 @@
           "description": "Unlocked by participating in the Halloween Terror 2020 week 1 challenge",
           "achievement": "limited",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         }
       ],
       "voicelines": [
@@ -31262,6 +31664,15 @@
           "url": "/heroes/sombra/voicelines/sombra-you-trying-to-be-scary.ogg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "name": "You're not alone in here",
+          "id": "sombra-youre-not-alone-in-here",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-youre-not-alone-in-here.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "I can be nice",
@@ -33200,13 +33611,21 @@
           "group": "HALLOWEEN_2019"
         },
         {
+          "name": "Not a costume",
+          "id": "torbjorn-not-a-costume",
+          "quality": "common",
+          "url": "/heroes/torbjorn/voicelines/torbjorn-not-a-costume.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "The Viking's quest",
           "id": "torbjorn-the-vikings-quest",
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-the-vikings-quest.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Expert craftsmanship",
@@ -33364,6 +33783,15 @@
           "url": "/heroes/torbjorn/poses/torbjorn-medal.jpg",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Pumpkin",
+          "id": "torbjorn-pumpkin",
+          "quality": "rare",
+          "url": "/heroes/torbjorn/poses/torbjorn-pumpkin.jpg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "R.I.P.",
@@ -34254,6 +34682,15 @@
           "group": "HALLOWEEN_2017"
         },
         {
+          "name": "Is that a costume?",
+          "id": "tracer-is-that-a-costume",
+          "quality": "common",
+          "url": "/heroes/tracer/voicelines/tracer-is-that-a-costume.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Ooh, Scary!",
           "id": "tracer-ooh-scary",
           "quality": "common",
@@ -34744,8 +35181,7 @@
           "quality": "epic",
           "url": "/heroes/widowmaker/intros/widowmaker-itsy-bitsy-spider.webm",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Under the Mistletoe",
@@ -35232,8 +35668,7 @@
           "quality": "common",
           "url": "/heroes/widowmaker/voicelines/widowmaker-feared-by-all.ogg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "In your dreams",
@@ -35564,8 +35999,7 @@
           "quality": "legendary",
           "url": "/heroes/winston/skins/winston-werewolf.jpg",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Yeti",
@@ -35760,8 +36194,7 @@
           "url": "/heroes/winston/icons/winston-werewolf.png",
           "event": "HALLOWEEN",
           "hero": "winston",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Yeti",
@@ -35992,8 +36425,7 @@
           "quality": "common",
           "url": "/heroes/winston/sprays/winston-werewolf.png",
           "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2020",
-          "isNew": true
+          "group": "HALLOWEEN_2020"
         },
         {
           "name": "Ornament",
@@ -36178,6 +36610,15 @@
           "url": "/heroes/winston/voicelines/winston-why-is-it-so-warm.ogg",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2021",
+          "isNew": true
+        },
+        {
+          "name": "A full moon?",
+          "id": "winston-a-full-moon",
+          "quality": "common",
+          "url": "/heroes/winston/voicelines/winston-a-full-moon.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
           "isNew": true
         },
         {
@@ -37354,6 +37795,17 @@
           "group": "UPRISING_2019"
         },
         {
+          "name": "Einherjar",
+          "id": "zarya-einherjar",
+          "quality": "epic",
+          "url": "/heroes/zarya/skins/zarya-einherjar.jpg",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 2 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
           "name": "Arctic",
           "id": "zarya-arctic",
           "quality": "legendary",
@@ -37632,6 +38084,17 @@
           "event": "ANNIVERSARY",
           "hero": "zarya",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Einherjar",
+          "id": "zarya-einherjar",
+          "url": "/heroes/zarya/icons/zarya-einherjar.png",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 2 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "hero": "zarya",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -37875,6 +38338,17 @@
           "url": "/heroes/zarya/sprays/zarya-pixel.png",
           "achievement": true,
           "description": "Keep Zarya's particle cannon above 70 power for 60 seconds in Quick or Competitive Play."
+        },
+        {
+          "name": "Einherjar",
+          "id": "zarya-einherjar",
+          "quality": "common",
+          "url": "/heroes/zarya/sprays/zarya-einherjar.png",
+          "description": "Unlocked by participating in the Halloween Terror 2021 week 2 challenge",
+          "achievement": "limited",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -39130,6 +39604,15 @@
           "url": "/heroes/zenyatta/poses/zenyatta-medals.jpg",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Pumpkin",
+          "id": "zenyatta-pumpkin",
+          "quality": "rare",
+          "url": "/heroes/zenyatta/poses/zenyatta-pumpkin.jpg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         },
         {
           "name": "R.I.P.",
