@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { getDirectories, getCleanID, cleanFileIDs, handleErr } = require('./utils')
+const { getDirectories, getCleanHeroID, cleanFileIDs, handleErr } = require('./utils')
 const { mapFilesToHeroes } = require('./filesToHeroMapper')
 const util = require('util')
 const exec = util.promisify(require('child_process').exec)
@@ -26,7 +26,7 @@ const checkDirs = () => {
 
 async function findImages(hero) {
   const base = hero.length ? 'Heroes/' : 'General'
-  const heroID = getCleanID(hero)
+  const heroID = getCleanHeroID(hero)
 
   const types = await getDirectories(`./${base}${hero}`)
   if (!types.includes('Spray') && !types.includes('Icon')) {
@@ -44,7 +44,7 @@ async function findImages(hero) {
 
 const _moveImages = (files, heroId, type, where) => {
   return new Promise(res => {
-    files = cleanFileIDs(files, heroId)
+    files = cleanFileIDs(files, heroId, TYPES[type])
     let total = 0
     files.forEach(file => {
       if (fs.statSync(`${where}/${file.name}`).isDirectory()) {
@@ -135,7 +135,7 @@ async function optimiseImages() {
 async function extractImages(skipExtract) {
   if (!process.cwd().match(/OverwatchAssets$/)) {
     console.error("Needs to be run in OverwatchAssets")
-    process.exit()
+    //process.exit()
   }
 
   skipExtract = (skipExtract[0] || '') == 'skip'

@@ -110,6 +110,12 @@
           "url": "/heroes/all/icons/2021.png"
         },
         {
+          "name": "2022",
+          "id": "2022",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/icons/2022.png"
+        },
+        {
           "name": "...Never Die",
           "id": "never-die",
           "event": "HALLOWEEN",
@@ -745,6 +751,12 @@
           "group": "ANNIVERSARY_2020"
         },
         {
+          "name": "Cassidy",
+          "id": "mccree-mccree",
+          "url": "/heroes/mccree/icons/mccree-mccree.png",
+          "hero": "mccree"
+        },
+        {
           "name": "Casual",
           "id": "hanzo-casual",
           "url": "/heroes/hanzo/icons/hanzo-casual.png",
@@ -1153,9 +1165,23 @@
           "group": "competitive"
         },
         {
+          "name": "Competitive No Limits Competitor 2021",
+          "id": "competitive-no-limits-competitor-2021",
+          "url": "/heroes/all/icons/competitive-no-limits-competitor-2021.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Competitive No Limits Hero 2020",
           "id": "competitive-no-limits-hero-2020",
           "url": "/heroes/all/icons/competitive-no-limits-hero-2020.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Competitive No Limits Hero 2021",
+          "id": "competitive-no-limits-hero-2021",
+          "url": "/heroes/all/icons/competitive-no-limits-hero-2021.png",
           "achievement": true,
           "group": "competitive"
         },
@@ -1227,8 +1253,7 @@
           "url": "/heroes/reinhardt/icons/reinhardt-conductor.png",
           "event": "WINTER_WONDERLAND",
           "hero": "reinhardt",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Copa Lúcioball Competitor",
@@ -1385,6 +1410,12 @@
           "hero": "bastion"
         },
         {
+          "name": "Cute Cassidy",
+          "id": "mccree-cute-mccree",
+          "url": "/heroes/mccree/icons/mccree-cute-mccree.png",
+          "hero": "mccree"
+        },
+        {
           "name": "Cute D.Va",
           "id": "dva-cute-dva",
           "url": "/heroes/dva/icons/dva-cute-dva.png",
@@ -1419,12 +1450,6 @@
           "id": "lucio-cute-lucio",
           "url": "/heroes/lucio/icons/lucio-cute-lucio.png",
           "hero": "lucio"
-        },
-        {
-          "name": "Cute McCree",
-          "id": "mccree-cute-mccree",
-          "url": "/heroes/mccree/icons/mccree-cute-mccree.png",
-          "hero": "mccree"
         },
         {
           "name": "Cute Mei",
@@ -1630,7 +1655,7 @@
           "hero": "ashe"
         },
         {
-          "name": "Deadlock McCree",
+          "name": "Deadlock Cassidy",
           "id": "mccree-deadlock-mccree",
           "url": "/heroes/mccree/icons/mccree-deadlock-mccree.png",
           "event": "UPRISING",
@@ -1809,8 +1834,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "junkrat",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Emblem",
@@ -2066,8 +2090,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "roadhog",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Fuchimari",
@@ -2160,8 +2183,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "ana",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Gingermari",
@@ -2614,8 +2636,7 @@
           "url": "/heroes/moira/icons/moira-ice-empress.png",
           "event": "WINTER_WONDERLAND",
           "hero": "moira",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Ice Fisherman",
@@ -2624,6 +2645,15 @@
           "event": "WINTER_WONDERLAND",
           "hero": "roadhog",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Ice Wraith",
+          "id": "genji-ice-wraith",
+          "url": "/heroes/genji/icons/genji-ice-wraith.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "genji",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Imperial Guard",
@@ -3043,8 +3073,7 @@
           "url": "/heroes/torbjorn/icons/torbjorn-lumberjack.png",
           "event": "WINTER_WONDERLAND",
           "hero": "torbjorn",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Lunar Ops",
@@ -3196,12 +3225,6 @@
           "group": "ANNIVERSARY_2017"
         },
         {
-          "name": "McCree",
-          "id": "mccree-mccree",
-          "url": "/heroes/mccree/icons/mccree-mccree.png",
-          "hero": "mccree"
-        },
-        {
           "name": "Mech",
           "id": "mech",
           "url": "/heroes/all/icons/mech.png"
@@ -3252,6 +3275,17 @@
           "event": "UPRISING",
           "hero": "roadhog",
           "group": "UPRISING_2020"
+        },
+        {
+          "name": "Mistletoe",
+          "id": "symmetra-mistletoe",
+          "url": "/heroes/symmetra/icons/symmetra-mistletoe.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 2 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "symmetra",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Mochi",
@@ -3693,14 +3727,24 @@
           "url": "/heroes/mei/icons/mei-penguin.png",
           "event": "WINTER_WONDERLAND",
           "hero": "mei",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Peppermint",
           "id": "peppermint",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/icons/peppermint.png"
+        },
+        {
+          "name": "Peppermint Bark",
+          "id": "brigitte-peppermint-bark",
+          "url": "/heroes/brigitte/icons/brigitte-peppermint-bark.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 3 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "brigitte",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Pharah",
@@ -3933,6 +3977,15 @@
           "isNew": true
         },
         {
+          "name": "Reindeer",
+          "id": "orisa-reindeer",
+          "url": "/heroes/orisa/icons/orisa-reindeer.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "orisa",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Reinhardt",
           "id": "reinhardt-reinhardt",
           "url": "/heroes/reinhardt/icons/reinhardt-reinhardt.png",
@@ -4049,6 +4102,14 @@
           "group": "LUNAR_NEW_YEAR_2020"
         },
         {
+          "name": "Sandstorm",
+          "id": "mccree-sandstorm",
+          "url": "/heroes/mccree/icons/mccree-sandstorm.png",
+          "description": "Unlocked by participating in Cassidy's New Blood Challenge",
+          "achievement": "blizzard",
+          "hero": "mccree"
+        },
+        {
           "name": "Sandy",
           "id": "reinhardt-sandy",
           "url": "/heroes/reinhardt/icons/reinhardt-sandy.png",
@@ -4079,6 +4140,15 @@
           "event": "WINTER_WONDERLAND",
           "hero": "torbjorn",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Santa Claws",
+          "id": "wrecking-ball-santa-claws",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-santa-claws.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "wrecking-ball",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Sanye",
@@ -4602,42 +4672,64 @@
           "id": "season-29-competitor",
           "url": "/heroes/all/icons/season-29-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 29 placement matches"
         },
         {
           "name": "Season 29 Hero",
           "id": "season-29-hero",
           "url": "/heroes/all/icons/season-29-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 29"
         },
         {
           "name": "Season 30 Competitor",
           "id": "season-30-competitor",
           "url": "/heroes/all/icons/season-30-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 30 placement matches"
         },
         {
           "name": "Season 30 Hero",
           "id": "season-30-hero",
           "url": "/heroes/all/icons/season-30-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 30"
         },
         {
           "name": "Season 31 Competitor",
           "id": "season-31-competitor",
           "url": "/heroes/all/icons/season-31-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 31 placement matches"
         },
         {
           "name": "Season 31 Hero",
           "id": "season-31-hero",
           "url": "/heroes/all/icons/season-31-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 31"
+        },
+        {
+          "name": "Season 32 Competitor",
+          "id": "season-32-competitor",
+          "url": "/heroes/all/icons/season-32-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 32 placement matches"
+        },
+        {
+          "name": "Season 32 Hero",
+          "id": "season-32-hero",
+          "url": "/heroes/all/icons/season-32-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 32"
         },
         {
           "name": "Sentry",
@@ -4842,6 +4934,15 @@
           "group": "WINTER_WONDERLAND_2018"
         },
         {
+          "name": "Snowboarder",
+          "id": "baptiste-snowboarder",
+          "url": "/heroes/baptiste/icons/baptiste-snowboarder.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "baptiste",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Snow Fox",
           "id": "lucio-snow-fox",
           "url": "/heroes/lucio/icons/lucio-snow-fox.png",
@@ -4875,6 +4976,15 @@
           "event": "WINTER_WONDERLAND",
           "hero": "ana",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Snow Pals",
+          "id": "dva-snow-pals",
+          "url": "/heroes/dva/icons/dva-snow-pals.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "dva",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Soldier: 24",
@@ -5077,7 +5187,7 @@
           "name": "Sunset",
           "id": "pharah-sunset",
           "url": "/heroes/pharah/icons/pharah-sunset.png",
-          "description": "Unlocked by participating in the Summer Games 2021 week 2 challenge",
+          "description": "Unlocked by participating in the Summer Games 2020 week 2 challenge",
           "achievement": "limited",
           "event": "SUMMER_GAMES",
           "hero": "pharah",
@@ -5335,8 +5445,7 @@
           "url": "/heroes/zenyatta/icons/zenyatta-toybot.png",
           "event": "WINTER_WONDERLAND",
           "hero": "zenyatta",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Tracer",
@@ -5657,6 +5766,12 @@
           "url": "/heroes/all/icons/winter-wonderland-2020.png"
         },
         {
+          "name": "Winter Wonderland 2021",
+          "id": "winter-wonderland-2021",
+          "event": "WINTER_WONDERLAND",
+          "url": "/heroes/all/icons/winter-wonderland-2021.png"
+        },
+        {
           "name": "Witch's Brew",
           "id": "witchs-brew",
           "event": "HALLOWEEN",
@@ -5694,6 +5809,17 @@
           "id": "wolf",
           "event": "HALLOWEEN",
           "url": "/heroes/all/icons/wolf.png"
+        },
+        {
+          "name": "Wooltide",
+          "id": "tracer-wooltide",
+          "url": "/heroes/tracer/icons/tracer-wooltide.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 1 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "tracer",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Workout",
@@ -6252,9 +6378,23 @@
           "group": "competitive"
         },
         {
+          "name": "Competitive No Limits Competitor 2021",
+          "id": "competitive-no-limits-competitor-2021",
+          "url": "/heroes/all/sprays/competitive-no-limits-competitor-2021.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
           "name": "Competitive No Limits Hero 2020",
           "id": "competitive-no-limits-hero-2020",
           "url": "/heroes/all/sprays/competitive-no-limits-hero-2020.png",
+          "achievement": true,
+          "group": "competitive"
+        },
+        {
+          "name": "Competitive No Limits Hero 2021",
+          "id": "competitive-no-limits-hero-2021",
+          "url": "/heroes/all/sprays/competitive-no-limits-hero-2021.png",
           "achievement": true,
           "group": "competitive"
         },
@@ -6543,6 +6683,15 @@
           "achievement": "blizzard",
           "group": "warcraft",
           "description": "Unlocked with purchase of Warcraft III: Reforged Spoils of War Edition"
+        },
+        {
+          "name": "Gladiators Unleashed",
+          "id": "gladiators-unleashed",
+          "url": "/heroes/all/sprays/gladiators-unleashed.png",
+          "achievement": "owl",
+          "quality": "common",
+          "group": "overwatch league",
+          "description": "Unlocked by watching the 2021 Overwatch League Countdown Cup Tournament"
         },
         {
           "name": "GL HF",
@@ -7499,42 +7648,64 @@
           "id": "season-29-competitor",
           "url": "/heroes/all/sprays/season-29-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 29 placement matches"
         },
         {
           "name": "Season 29 Hero",
           "id": "season-29-hero",
           "url": "/heroes/all/sprays/season-29-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 29"
         },
         {
           "name": "Season 30 Competitor",
           "id": "season-30-competitor",
           "url": "/heroes/all/sprays/season-30-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 30 placement matches"
         },
         {
           "name": "Season 30 Hero",
           "id": "season-30-hero",
           "url": "/heroes/all/sprays/season-30-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 30"
         },
         {
           "name": "Season 31 Competitor",
           "id": "season-31-competitor",
           "url": "/heroes/all/sprays/season-31-competitor.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by completing Season 31 placement matches"
         },
         {
           "name": "Season 31 Hero",
           "id": "season-31-hero",
           "url": "/heroes/all/sprays/season-31-hero.png",
           "achievement": true,
-          "group": "competitive"
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 31"
+        },
+        {
+          "name": "Season 32 Competitor",
+          "id": "season-32-competitor",
+          "url": "/heroes/all/sprays/season-32-competitor.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by completing Season 32 placement matches"
+        },
+        {
+          "name": "Season 32 Hero",
+          "id": "season-32-hero",
+          "url": "/heroes/all/sprays/season-32-hero.png",
+          "achievement": true,
+          "group": "competitive",
+          "description": "Unlocked by achieving top 500 ranking at the end of Season 32"
         },
         {
           "name": "Seoul Dynasty Homestand 2020",
@@ -7629,6 +7800,13 @@
           "quality": "common",
           "group": "overwatch league",
           "description": "Unlocked by participating in the 2019 OWL Grand Finals event"
+        },
+        {
+          "name": "Talon Spotted",
+          "id": "talon-spotted",
+          "url": "/heroes/all/sprays/talon-spotted.png",
+          "quality": "common",
+          "description": "Unlocked by participating in Cassidy's New Blood Challenge"
         },
         {
           "name": "Tato Takes Off",
@@ -8207,7 +8385,7 @@
           "group": "WINTER_WONDERLAND_2019"
         },
         {
-          "name": "Snowcree",
+          "name": "Snowcole",
           "id": "snowcree",
           "event": "WINTER_WONDERLAND",
           "url": "/heroes/all/sprays/snowcree.png",
@@ -8808,8 +8986,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2020 week 2 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Cybermedic",
@@ -9108,8 +9285,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "ana",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Cybermedic",
@@ -9395,6 +9571,14 @@
           "achievement": "blizzard"
         },
         {
+          "name": "Tea Break",
+          "id": "ana-tea-break",
+          "quality": "common",
+          "url": "/heroes/ana/sprays/ana-tea-break.png",
+          "description": "Unlocked by participating in Cassidy's New Blood Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Gingerbread",
           "id": "ana-gingerbread",
           "quality": "common",
@@ -9402,8 +9586,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2020 week 2 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Sentinel",
@@ -9554,6 +9737,15 @@
           "url": "/heroes/ana/voicelines/ana-listen-to-your-mummy.ogg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2020"
+        },
+        {
+          "name": "Happy Holidays",
+          "id": "ana-happy-holidays",
+          "quality": "common",
+          "url": "/heroes/ana/voicelines/ana-happy-holidays.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "I'm too old for surprises",
@@ -9882,7 +10074,7 @@
           "id": "ashe-deadlock",
           "quality": "legendary",
           "url": "/heroes/ashe/skins/ashe-deadlock.jpg",
-          "description": "A young Elizabeth Ashe co-founded the infamous Deadlock Gang alongside B.O.B. and Jesse McCree.",
+          "description": "A young Elizabeth Ashe co-founded the infamous Deadlock Gang alongside B.O.B. and Cole Cassidy.",
           "achievement": "blizzard"
         }
       ],
@@ -10600,8 +10792,7 @@
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-wind-down-a-mountain-pass.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Life's a rodeo",
@@ -10734,6 +10925,15 @@
           "url": "/heroes/ashe/poses/ashe-pumpkin.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2020"
+        },
+        {
+          "name": "Toast",
+          "id": "ashe-toast",
+          "quality": "rare",
+          "url": "/heroes/ashe/poses/ashe-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Lighting the fuse",
@@ -10879,6 +11079,15 @@
           "group": "SUMMER_GAMES_2020"
         },
         {
+          "name": "Snowboarder",
+          "id": "baptiste-snowboarder",
+          "quality": "legendary",
+          "url": "/heroes/baptiste/skins/baptiste-snowboarder.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Talon",
           "id": "baptiste-talon",
           "quality": "legendary",
@@ -10950,8 +11159,7 @@
           "quality": "epic",
           "url": "/heroes/baptiste/emotes/baptiste-mistletoe.webm",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Konpa Dance",
@@ -11031,6 +11239,15 @@
           "event": "SUMMER_GAMES",
           "hero": "baptiste",
           "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "name": "Snowboarder",
+          "id": "baptiste-snowboarder",
+          "url": "/heroes/baptiste/icons/baptiste-snowboarder.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "baptiste",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Lieutenant Augustin",
@@ -11257,6 +11474,15 @@
           "url": "/heroes/baptiste/sprays/baptiste-snowball-fight.png",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2019"
+        },
+        {
+          "name": "Snowboarder",
+          "id": "baptiste-snowboarder",
+          "quality": "common",
+          "url": "/heroes/baptiste/sprays/baptiste-snowboarder.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Dragon Dance",
@@ -11548,6 +11774,15 @@
           "group": "WINTER_WONDERLAND_2019"
         },
         {
+          "name": "Let's Go Sledding!",
+          "id": "baptiste-lets-go-sledding",
+          "quality": "common",
+          "url": "/heroes/baptiste/voicelines/baptiste-lets-go-sledding.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Some kind of angel",
           "id": "baptiste-some-kind-of-angel-1",
           "quality": "common",
@@ -11808,7 +12043,7 @@
           "id": "bastion-sand-castle",
           "quality": "epic",
           "url": "/heroes/bastion/skins/bastion-sand-castle.jpg",
-          "description": "Unlocked by participating in the Summer Games 2021 week 2 challenge",
+          "description": "Unlocked by participating in the Summer Games 2020 week 2 challenge",
           "achievement": "limited",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2020"
@@ -12374,7 +12609,7 @@
           "id": "bastion-sand-castle",
           "quality": "common",
           "url": "/heroes/bastion/sprays/bastion-sand-castle.png",
-          "description": "Unlocked by participating in the Summer Games 2021 week 2 challenge",
+          "description": "Unlocked by participating in the Summer Games 2020 week 2 challenge",
           "achievement": "limited",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2020"
@@ -12719,6 +12954,17 @@
           "group": "HALLOWEEN_2020"
         },
         {
+          "name": "Peppermint Bark",
+          "id": "brigitte-peppermint-bark",
+          "quality": "epic",
+          "url": "/heroes/brigitte/skins/brigitte-peppermint-bark.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 3 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Engineer",
           "id": "brigitte-engineer",
           "quality": "legendary",
@@ -12978,6 +13224,17 @@
           "event": "HALLOWEEN",
           "hero": "brigitte",
           "group": "HALLOWEEN_2020"
+        },
+        {
+          "name": "Peppermint Bark",
+          "id": "brigitte-peppermint-bark",
+          "url": "/heroes/brigitte/icons/brigitte-peppermint-bark.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 3 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "brigitte",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -13233,6 +13490,17 @@
           "achievement": "limited",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2020"
+        },
+        {
+          "name": "Peppermint Bark",
+          "id": "brigitte-peppermint-bark",
+          "quality": "common",
+          "url": "/heroes/brigitte/sprays/brigitte-peppermint-bark.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 3 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -13367,6 +13635,15 @@
           "url": "/heroes/brigitte/voicelines/brigitte-merry-christmas.ogg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "name": "Present for You",
+          "id": "brigitte-present-for-you",
+          "quality": "common",
+          "url": "/heroes/brigitte/voicelines/brigitte-present-for-you.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "All that glitters",
@@ -13543,6 +13820,1053 @@
       ]
     }
   },
+  "mccree": {
+    "name": "Cassidy",
+    "id": "mccree",
+    "class": "Damage",
+    "description": "Armed with his Peacekeeper revolver, the outlaw Jesse McCree doles out justice on his own terms.",
+    "colors": {
+      "primary": "#8d3939",
+      "highlight": "#aa4545"
+    },
+    "items": {
+      "skins": [
+        {
+          "name": "Classic",
+          "id": "mccree-classic",
+          "quality": "common",
+          "url": "/heroes/mccree/skins/mccree-classic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Ebony",
+          "id": "mccree-ebony",
+          "quality": "rare",
+          "url": "/heroes/mccree/skins/mccree-ebony.jpg"
+        },
+        {
+          "name": "Lake",
+          "id": "mccree-lake",
+          "quality": "rare",
+          "url": "/heroes/mccree/skins/mccree-lake.jpg"
+        },
+        {
+          "name": "Sage",
+          "id": "mccree-sage",
+          "quality": "rare",
+          "url": "/heroes/mccree/skins/mccree-sage.jpg"
+        },
+        {
+          "name": "Wheat",
+          "id": "mccree-wheat",
+          "quality": "rare",
+          "url": "/heroes/mccree/skins/mccree-wheat.jpg"
+        },
+        {
+          "name": "On the Range",
+          "id": "mccree-on-the-range",
+          "quality": "epic",
+          "url": "/heroes/mccree/skins/mccree-on-the-range.jpg"
+        },
+        {
+          "name": "Royal",
+          "id": "mccree-royal",
+          "quality": "epic",
+          "url": "/heroes/mccree/skins/mccree-royal.jpg"
+        },
+        {
+          "name": "White Hat",
+          "id": "mccree-white-hat",
+          "quality": "epic",
+          "url": "/heroes/mccree/skins/mccree-white-hat.jpg"
+        },
+        {
+          "name": "American",
+          "id": "mccree-american",
+          "quality": "epic",
+          "url": "/heroes/mccree/skins/mccree-american.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Undead",
+          "id": "mccree-undead",
+          "quality": "epic",
+          "url": "/heroes/mccree/skins/mccree-undead.jpg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "name": "Scrooge",
+          "id": "mccree-scrooge",
+          "quality": "epic",
+          "url": "/heroes/mccree/skins/mccree-scrooge.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Sandstorm",
+          "id": "mccree-sandstorm",
+          "quality": "epic",
+          "url": "/heroes/mccree/skins/mccree-sandstorm.jpg",
+          "description": "Unlocked by participating in Cassidy's New Blood Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Xiake",
+          "id": "mccree-xiake",
+          "quality": "epic",
+          "url": "/heroes/mccree/skins/mccree-xiake.jpg",
+          "description": "Unlocked by participating in the Year of the Ox 2021 Week 2 challenge",
+          "achievement": "limited",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2021",
+          "isNew": true
+        },
+        {
+          "name": "Masked Man",
+          "id": "mccree-masked-man",
+          "quality": "epic",
+          "url": "/heroes/mccree/skins/mccree-masked-man.jpg",
+          "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
+          "achievement": "limited",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2020"
+        },
+        {
+          "name": "Gambler",
+          "id": "mccree-gambler",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-gambler.jpg"
+        },
+        {
+          "name": "Mystery Man",
+          "id": "mccree-mystery-man",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-mystery-man.jpg"
+        },
+        {
+          "name": "Riverboat",
+          "id": "mccree-riverboat",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-riverboat.jpg"
+        },
+        {
+          "name": "Vigilante",
+          "id": "mccree-vigilante",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-vigilante.jpg"
+        },
+        {
+          "name": "Lifeguard",
+          "id": "mccree-lifeguard",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-lifeguard.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "name": "Van Helsing",
+          "id": "mccree-van-helsing",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-van-helsing.jpg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2017"
+        },
+        {
+          "name": "Mountain Man",
+          "id": "mccree-mountain-man",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-mountain-man.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2019"
+        },
+        {
+          "name": "Magistrate",
+          "id": "mccree-magistrate",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-magistrate.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "name": "Blackwatch",
+          "id": "mccree-blackwatch",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-blackwatch.jpg",
+          "description": "A young Cole Cassidy was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch or rot in prison.",
+          "event": "UPRISING",
+          "group": "UPRISING_2017"
+        },
+        {
+          "name": "Deadlock",
+          "id": "mccree-deadlock",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-deadlock.jpg",
+          "description": "In their younger days, Cole Cassidy and Elizabeth \"Calamity\" Ashe co-founded the Deadlock Gang.",
+          "event": "UPRISING",
+          "group": "UPRISING_2019"
+        },
+        {
+          "name": "Sherlock",
+          "id": "mccree-sherlock",
+          "quality": "legendary",
+          "url": "/heroes/mccree/skins/mccree-sherlock.jpg",
+          "description": "\"My mind,\" he said, \"rebels at stagnation. Give me problems, give me work, give me the most abstruse cryptogram or the most intricate analysis, and I am in my proper atmosphere.\"",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2018"
+        }
+      ],
+      "emotes": [
+        {
+          "name": "Heroic",
+          "id": "mccree-heroic",
+          "quality": "common",
+          "url": "/heroes/mccree/emotes/mccree-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Gunspinning",
+          "id": "mccree-gunspinning",
+          "quality": "epic",
+          "url": "/heroes/mccree/emotes/mccree-gunspinning.webm"
+        },
+        {
+          "name": "Hat Tip",
+          "id": "mccree-hat-tip",
+          "quality": "epic",
+          "url": "/heroes/mccree/emotes/mccree-hat-tip.webm"
+        },
+        {
+          "name": "Joker",
+          "id": "mccree-joker",
+          "quality": "epic",
+          "url": "/heroes/mccree/emotes/mccree-joker.webm"
+        },
+        {
+          "name": "Spit",
+          "id": "mccree-spit",
+          "quality": "epic",
+          "url": "/heroes/mccree/emotes/mccree-spit.webm"
+        },
+        {
+          "name": "Take a load off",
+          "id": "mccree-take-a-load-off",
+          "quality": "epic",
+          "url": "/heroes/mccree/emotes/mccree-take-a-load-off.webm"
+        },
+        {
+          "name": "Hat Trick",
+          "id": "mccree-hat-trick",
+          "quality": "epic",
+          "url": "/heroes/mccree/emotes/mccree-hat-trick.webm",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Quick Draw",
+          "id": "mccree-quick-draw",
+          "quality": "epic",
+          "url": "/heroes/mccree/emotes/mccree-quick-draw.webm",
+          "event": "UPRISING",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "name": "Line Dance",
+          "id": "mccree-line-dance",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/emotes/mccree-line-dance.webm",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2017"
+        }
+      ],
+      "intros": [
+        {
+          "name": "Heroic",
+          "id": "mccree-heroic",
+          "quality": "common",
+          "url": "/heroes/mccree/intros/mccree-heroic.webm",
+          "standardItem": true
+        },
+        {
+          "name": "Rolling into Action",
+          "id": "mccree-rolling-into-action",
+          "quality": "epic",
+          "url": "/heroes/mccree/intros/mccree-rolling-into-action.webm"
+        },
+        {
+          "name": "The Duel",
+          "id": "mccree-the-duel",
+          "quality": "epic",
+          "url": "/heroes/mccree/intros/mccree-the-duel.webm"
+        },
+        {
+          "name": "The name's Cassidy",
+          "id": "mccree-the-names-mccree",
+          "quality": "epic",
+          "url": "/heroes/mccree/intros/mccree-the-names-mccree.webm"
+        },
+        {
+          "name": "Undertaker",
+          "id": "mccree-undertaker",
+          "quality": "epic",
+          "url": "/heroes/mccree/intros/mccree-undertaker.webm",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2019"
+        },
+        {
+          "name": "Spark",
+          "id": "mccree-spark",
+          "quality": "epic",
+          "url": "/heroes/mccree/intros/mccree-spark.webm",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2018"
+        }
+      ],
+      "icons": [
+        {
+          "name": "Badge",
+          "id": "mccree-badge",
+          "url": "/heroes/mccree/icons/mccree-badge.png",
+          "hero": "mccree"
+        },
+        {
+          "name": "Cassidy",
+          "id": "mccree-mccree",
+          "url": "/heroes/mccree/icons/mccree-mccree.png",
+          "hero": "mccree"
+        },
+        {
+          "name": "Cute Cassidy",
+          "id": "mccree-cute-mccree",
+          "url": "/heroes/mccree/icons/mccree-cute-mccree.png",
+          "hero": "mccree"
+        },
+        {
+          "name": "Deadeye",
+          "id": "mccree-deadeye",
+          "url": "/heroes/mccree/icons/mccree-deadeye.png",
+          "hero": "mccree"
+        },
+        {
+          "name": "Equestrian",
+          "id": "mccree-equestrian",
+          "url": "/heroes/mccree/icons/mccree-equestrian.png",
+          "event": "SUMMER_GAMES",
+          "hero": "mccree",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Van Helsing",
+          "id": "mccree-van-helsing",
+          "url": "/heroes/mccree/icons/mccree-van-helsing.png",
+          "event": "HALLOWEEN",
+          "hero": "mccree",
+          "group": "HALLOWEEN_2017"
+        },
+        {
+          "name": "Mountain Man",
+          "id": "mccree-mountain-man",
+          "url": "/heroes/mccree/icons/mccree-mountain-man.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "mccree",
+          "group": "WINTER_WONDERLAND_2019"
+        },
+        {
+          "name": "Magistrate",
+          "id": "mccree-magistrate",
+          "url": "/heroes/mccree/icons/mccree-magistrate.png",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "mccree",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "name": "Blackwatch",
+          "id": "mccree-blackwatch",
+          "url": "/heroes/mccree/icons/mccree-blackwatch.png",
+          "event": "UPRISING",
+          "hero": "mccree",
+          "group": "UPRISING_2017"
+        },
+        {
+          "name": "Deadlock Cassidy",
+          "id": "mccree-deadlock-mccree",
+          "url": "/heroes/mccree/icons/mccree-deadlock-mccree.png",
+          "event": "UPRISING",
+          "hero": "mccree",
+          "group": "UPRISING_2019"
+        },
+        {
+          "name": "GAMF",
+          "id": "mccree-gamf",
+          "url": "/heroes/mccree/icons/mccree-gamf.png",
+          "event": "ANNIVERSARY",
+          "hero": "mccree",
+          "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Sherlock",
+          "id": "mccree-sherlock",
+          "url": "/heroes/mccree/icons/mccree-sherlock.png",
+          "event": "ANNIVERSARY",
+          "hero": "mccree",
+          "group": "ANNIVERSARY_2018"
+        },
+        {
+          "name": "Sandstorm",
+          "id": "mccree-sandstorm",
+          "url": "/heroes/mccree/icons/mccree-sandstorm.png",
+          "description": "Unlocked by participating in Cassidy's New Blood Challenge",
+          "achievement": "blizzard",
+          "hero": "mccree"
+        },
+        {
+          "name": "Wanderer",
+          "id": "mccree-wanderer",
+          "url": "/heroes/mccree/icons/mccree-wanderer.png",
+          "description": "Unlocked by participating in the Year of the Ox 2021 Week 2 challenge",
+          "achievement": "limited",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "mccree",
+          "group": "LUNAR_NEW_YEAR_2021",
+          "isNew": true
+        },
+        {
+          "name": "Masked Man",
+          "id": "mccree-masked-man",
+          "url": "/heroes/mccree/icons/mccree-masked-man.png",
+          "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
+          "achievement": "limited",
+          "event": "ANNIVERSARY",
+          "hero": "mccree",
+          "group": "ANNIVERSARY_2020"
+        }
+      ],
+      "sprays": [
+        {
+          "name": "Bad Luck",
+          "id": "mccree-noose",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-noose.png"
+        },
+        {
+          "name": "Badge",
+          "id": "mccree-badge",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-badge.png"
+        },
+        {
+          "name": "BAMF",
+          "id": "mccree-bamf",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-bamf.png"
+        },
+        {
+          "name": "Bang!",
+          "id": "mccree-bang",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-bang.png"
+        },
+        {
+          "name": "Buckle",
+          "id": "mccree-buckle",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-buckle.png"
+        },
+        {
+          "name": "Bullet",
+          "id": "mccree-bullet",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-bullet.png"
+        },
+        {
+          "name": "Cole",
+          "id": "mccree-jesse",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-jesse.png"
+        },
+        {
+          "name": "Deadeye",
+          "id": "mccree-deadeye",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-deadeye.png"
+        },
+        {
+          "name": "Draw",
+          "id": "mccree-draw",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-draw.png"
+        },
+        {
+          "name": "Enigma",
+          "id": "mccree-enigma",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-enigma.png"
+        },
+        {
+          "name": "Gunslinger",
+          "id": "mccree-gunslinger",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-gunslinger.png"
+        },
+        {
+          "name": "High Noon",
+          "id": "mccree-high-noon",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-high-noon.png"
+        },
+        {
+          "name": "Icon",
+          "id": "mccree-icon",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-icon.png"
+        },
+        {
+          "name": "Outlaw",
+          "id": "mccree-outlaw",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-outlaw.png"
+        },
+        {
+          "name": "Skull",
+          "id": "mccree-skull",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-skull.png"
+        },
+        {
+          "name": "Spin",
+          "id": "mccree-spin",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-spin.png"
+        },
+        {
+          "name": "Take It Easy",
+          "id": "mccree-take-it-easy",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-take-it-easy.png"
+        },
+        {
+          "name": "Target",
+          "id": "mccree-target",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-target.png"
+        },
+        {
+          "name": "The Name's",
+          "id": "mccree-the-names",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-the-names.png"
+        },
+        {
+          "name": "Thumbs Up",
+          "id": "mccree-thumbs-up",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-thumbs-up.png"
+        },
+        {
+          "name": "Tumbleweed",
+          "id": "mccree-tumbleweed",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-tumbleweed.png"
+        },
+        {
+          "name": "Vigilante",
+          "id": "mccree-vigilante",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-vigilante.png"
+        },
+        {
+          "name": "Wanted",
+          "id": "mccree-wanted",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-wanted.png"
+        },
+        {
+          "name": "Your Face Here",
+          "id": "mccree-your-face-here",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-your-face-here.png"
+        },
+        {
+          "name": "Equestrian",
+          "id": "mccree-equestrian",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-equestrian.png",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Trick or Treat",
+          "id": "mccree-trick-or-treat",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-trick-or-treat.png",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Ornament",
+          "id": "mccree-ornament",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-ornament.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Ugly Sweater",
+          "id": "mccree-ugly-sweater",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-ugly-sweater.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "Call It",
+          "id": "mccree-call-it",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-call-it.png",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Dragon Dance",
+          "id": "mccree-dragon-dance",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-dragon-dance.png",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Target Practice",
+          "id": "mccree-target-practice",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-target-practice.png",
+          "event": "UPRISING",
+          "group": "UPRISING_2017"
+        },
+        {
+          "name": "Jack of Spades",
+          "id": "mccree-jack-of-spades",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-jack-of-spades.png",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "Cute",
+          "id": "mccree-cute",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-cute.png",
+          "achievement": true,
+          "description": "Get 4 killing blows with a single use of Cassidy's Deadeye in Quick or Competitive Play."
+        },
+        {
+          "name": "Pixel",
+          "id": "mccree-pixel",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-pixel.png",
+          "achievement": true,
+          "description": "Interrupt an enemy ultimate ability with Cassidy's Flashbang in Quick or Competitive Play."
+        },
+        {
+          "name": "Back to Back",
+          "id": "mccree-back-to-back",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-back-to-back.png",
+          "description": "Unlocked by participating in Cassidy's New Blood Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Cute Bike",
+          "id": "mccree-cute-bike",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-cute-bike.png",
+          "description": "Unlocked by participating in Cassidy's New Blood Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Hat Tip",
+          "id": "mccree-hat-tip",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-hat-tip.png",
+          "description": "Unlocked by participating in Cassidy's New Blood Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Old Friends",
+          "id": "mccree-old-friends",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-old-friends.png",
+          "description": "Unlocked by participating in Cassidy's New Blood Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Rex",
+          "id": "mccree-rex",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-rex.png",
+          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Young Cole",
+          "id": "mccree-young-jesse",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-young-jesse.png",
+          "description": "Unlocked by participating in Ashe's Deadlock Challenge",
+          "achievement": "blizzard"
+        },
+        {
+          "name": "Gunsmoke",
+          "id": "mccree-gunsmoke",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-gunsmoke.png",
+          "description": "Unlocked by participating in the Year of the Ox 2021 Week 2 challenge",
+          "achievement": "limited",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2021",
+          "isNew": true
+        },
+        {
+          "name": "Masked Man",
+          "id": "mccree-masked-man",
+          "quality": "common",
+          "url": "/heroes/mccree/sprays/mccree-masked-man.png",
+          "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
+          "achievement": "limited",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2020"
+        }
+      ],
+      "voicelines": [
+        {
+          "name": "Watch and learn",
+          "id": "mccree-watch-and-learn",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-watch-and-learn.ogg",
+          "standardItem": true
+        },
+        {
+          "name": "After you",
+          "id": "mccree-after-you",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-after-you.ogg"
+        },
+        {
+          "name": "Ain't I killed you before",
+          "id": "mccree-aint-i-killed-you-before",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-aint-i-killed-you-before.ogg"
+        },
+        {
+          "name": "Happens to the best of us",
+          "id": "mccree-happens-to-the-best-of-us",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-happens-to-the-best-of-us.ogg"
+        },
+        {
+          "name": "I tried being reasonable",
+          "id": "mccree-i-tried-being-reasonable",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-i-tried-being-reasonable.ogg"
+        },
+        {
+          "name": "I'm the quick...",
+          "id": "mccree-im-the-quick",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-im-the-quick.ogg"
+        },
+        {
+          "name": "I'm your huckleberry",
+          "id": "mccree-im-your-huckleberry",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-im-your-huckleberry.ogg"
+        },
+        {
+          "name": "I've got a bullet...",
+          "id": "mccree-ive-got-a-bullet",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-ive-got-a-bullet.ogg"
+        },
+        {
+          "name": "Reach for the sky",
+          "id": "mccree-reach-for-the-sky",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-reach-for-the-sky.ogg"
+        },
+        {
+          "name": "Sure as hell ain't ugly",
+          "id": "mccree-sure-as-hell-aint-ugly",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-sure-as-hell-aint-ugly.ogg"
+        },
+        {
+          "name": "Wanted: dead or alive",
+          "id": "mccree-wanted-dead-or-alive",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-wanted-dead-or-alive.ogg"
+        },
+        {
+          "name": "You done?",
+          "id": "mccree-you-done",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-you-done.ogg"
+        },
+        {
+          "name": "Boom goes the dynamite",
+          "id": "mccree-boom-goes-the-dynamite",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-boom-goes-the-dynamite.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2017"
+        },
+        {
+          "name": "I don't much like losing",
+          "id": "mccree-i-dont-much-like-losing",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-i-dont-much-like-losing.ogg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "Already dead",
+          "id": "mccree-already-dead",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-already-dead.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2019"
+        },
+        {
+          "name": "I hear you, pumpkin",
+          "id": "mccree-i-hear-you-pumpkin",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-i-hear-you-pumpkin.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2017"
+        },
+        {
+          "name": "It's your funeral",
+          "id": "mccree-its-your-funeral",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-its-your-funeral.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Trick or treat",
+          "id": "mccree-trick-or-treat",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-trick-or-treat.ogg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "name": "Had to break the ice",
+          "id": "mccree-had-to-break-the-ice",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-had-to-break-the-ice.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "name": "You've been snowed in",
+          "id": "mccree-youve-been-snowed-in",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-youve-been-snowed-in.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Calls for a celebration",
+          "id": "mccree-calls-for-a-celebration",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-calls-for-a-celebration.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "name": "Hair of the dog",
+          "id": "mccree-hair-of-the-dog",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-hair-of-the-dog.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "name": "How's that for fireworks",
+          "id": "mccree-hows-that-for-fireworks",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-hows-that-for-fireworks.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "name": "I'll have another",
+          "id": "mccree-ill-have-another",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-ill-have-another.ogg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2020"
+        },
+        {
+          "name": "A man's gotta have rules",
+          "id": "mccree-a-mans-gotta-have-rules",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-a-mans-gotta-have-rules.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2017"
+        },
+        {
+          "name": "Don't sass me",
+          "id": "mccree-dont-sass-me",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-dont-sass-me.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2018"
+        },
+        {
+          "name": "Gathering no moss",
+          "id": "mccree-gathering-no-moss",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-gathering-no-moss.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2019"
+        },
+        {
+          "name": "Take My Advice",
+          "id": "mccree-take-my-advice",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-take-my-advice.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2021",
+          "isNew": true
+        },
+        {
+          "name": "That went against my better nature",
+          "id": "mccree-that-went-against-my-better-nature",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-that-went-against-my-better-nature.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2020"
+        },
+        {
+          "name": "The Old Fashioned Way",
+          "id": "mccree-the-old-fashioned-way",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-the-old-fashioned-way.ogg",
+          "event": "UPRISING",
+          "group": "UPRISING_2017"
+        },
+        {
+          "name": "Both kinds of music",
+          "id": "mccree-both-kinds-of-music",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-both-kinds-of-music.ogg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "name": "Buckle up",
+          "id": "mccree-buckle-up",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-buckle-up.ogg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2017"
+        },
+        {
+          "name": "How do you like me now?",
+          "id": "mccree-how-do-you-like-me-now",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-how-do-you-like-me-now.ogg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2018"
+        },
+        {
+          "name": "Next round's on me",
+          "id": "mccree-next-rounds-on-me",
+          "quality": "common",
+          "url": "/heroes/mccree/voicelines/mccree-next-rounds-on-me.ogg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2017"
+        }
+      ],
+      "poses": [
+        {
+          "name": "Heroic",
+          "id": "mccree-heroic",
+          "quality": "common",
+          "url": "/heroes/mccree/poses/mccree-heroic.jpg",
+          "standardItem": true
+        },
+        {
+          "name": "Contemplative",
+          "id": "mccree-contemplative",
+          "quality": "rare",
+          "url": "/heroes/mccree/poses/mccree-contemplative.jpg"
+        },
+        {
+          "name": "Over the Shoulder",
+          "id": "mccree-over-the-shoulder",
+          "quality": "rare",
+          "url": "/heroes/mccree/poses/mccree-over-the-shoulder.jpg"
+        },
+        {
+          "name": "Take it easy",
+          "id": "mccree-take-it-easy",
+          "quality": "rare",
+          "url": "/heroes/mccree/poses/mccree-take-it-easy.jpg"
+        },
+        {
+          "name": "Medal",
+          "id": "mccree-medal",
+          "quality": "rare",
+          "url": "/heroes/mccree/poses/mccree-medal.jpg",
+          "event": "SUMMER_GAMES",
+          "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "name": "R.I.P.",
+          "id": "mccree-rip",
+          "quality": "rare",
+          "url": "/heroes/mccree/poses/mccree-rip.jpg",
+          "event": "HALLOWEEN",
+          "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Fire in the Hole",
+          "id": "mccree-fire-in-the-hole",
+          "quality": "rare",
+          "url": "/heroes/mccree/poses/mccree-fire-in-the-hole.jpg",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "name": "Showdown",
+          "id": "mccree-showdown",
+          "quality": "rare",
+          "url": "/heroes/mccree/poses/mccree-showdown.jpg",
+          "event": "UPRISING",
+          "group": "UPRISING_2017"
+        },
+        {
+          "name": "Flashbang",
+          "id": "mccree-flashbang",
+          "quality": "rare",
+          "url": "/heroes/mccree/poses/mccree-flashbang.jpg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_2020"
+        }
+      ],
+      "weapons": [
+        {
+          "name": "GOLDEN",
+          "id": "mccree-golden",
+          "quality": "golden",
+          "url": "/heroes/mccree/weapons/mccree-golden.png"
+        }
+      ]
+    }
+  },
   "dva": {
     "name": "D.Va",
     "id": "dva",
@@ -13675,6 +14999,15 @@
           "url": "/heroes/dva/skins/dva-shinryeong.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2020"
+        },
+        {
+          "name": "Sleighing",
+          "id": "dva-sleighing",
+          "quality": "legendary",
+          "url": "/heroes/dva/skins/dva-sleighing.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Palanquin",
@@ -13871,6 +15204,15 @@
           "event": "HALLOWEEN",
           "hero": "dva",
           "group": "HALLOWEEN_2020"
+        },
+        {
+          "name": "Snow Pals",
+          "id": "dva-snow-pals",
+          "url": "/heroes/dva/icons/dva-snow-pals.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "dva",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Hanbok",
@@ -14087,6 +15429,15 @@
           "url": "/heroes/dva/sprays/dva-trick-or-treat.png",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Bag of Gifts",
+          "id": "dva-bag-of-gifts",
+          "quality": "common",
+          "url": "/heroes/dva/sprays/dva-bag-of-gifts.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "COOKIE",
@@ -14386,8 +15737,7 @@
           "quality": "common",
           "url": "/heroes/dva/voicelines/dva-hotteok-weather.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Happy new year",
@@ -15313,6 +16663,15 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "name": "Hot Cocoa",
+          "id": "doomfist-hot-cocoa",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-hot-cocoa.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "They say chivalry is dead",
           "id": "doomfist-they-say-chivalry-is-dead",
           "quality": "common",
@@ -15652,6 +17011,15 @@
           "url": "/heroes/echo/emotes/echo-sit.webm"
         },
         {
+          "name": "Snowfall",
+          "id": "echo-snowfall",
+          "quality": "epic",
+          "url": "/heroes/echo/emotes/echo-snowfall.webm",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Weightless",
           "id": "echo-weightless",
           "quality": "epic",
@@ -15949,8 +17317,7 @@
           "quality": "common",
           "url": "/heroes/echo/sprays/echo-ornament.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Snowman",
@@ -15958,8 +17325,7 @@
           "quality": "common",
           "url": "/heroes/echo/sprays/echo-snowman.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Among the Lanterns",
@@ -16211,8 +17577,7 @@
           "quality": "common",
           "url": "/heroes/echo/voicelines/echo-happy-holidays.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "This experience is a gift",
@@ -16220,8 +17585,7 @@
           "quality": "common",
           "url": "/heroes/echo/voicelines/echo-this-experience-is-a-gift.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Congratulations!",
@@ -16326,6 +17690,15 @@
           "url": "/heroes/echo/poses/echo-pumpkin.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2020"
+        },
+        {
+          "name": "Toast",
+          "id": "echo-toast",
+          "quality": "rare",
+          "url": "/heroes/echo/poses/echo-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Hey There, Cowboy",
@@ -16469,6 +17842,15 @@
           "url": "/heroes/genji/skins/genji-karasutengu.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2020"
+        },
+        {
+          "name": "Ice Wraith",
+          "id": "genji-ice-wraith",
+          "quality": "legendary",
+          "url": "/heroes/genji/skins/genji-ice-wraith.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Baihu",
@@ -16671,6 +18053,15 @@
           "event": "HALLOWEEN",
           "hero": "genji",
           "group": "HALLOWEEN_2020"
+        },
+        {
+          "name": "Ice Wraith",
+          "id": "genji-ice-wraith",
+          "url": "/heroes/genji/icons/genji-ice-wraith.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "genji",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Bushi",
@@ -16891,6 +18282,15 @@
           "url": "/heroes/genji/sprays/genji-trick-or-treat.png",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Ice Wraith",
+          "id": "genji-ice-wraith",
+          "quality": "common",
+          "url": "/heroes/genji/sprays/genji-ice-wraith.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Kadomatsu",
@@ -18240,6 +19640,15 @@
           "group": "HALLOWEEN_2017"
         },
         {
+          "name": "Toast",
+          "id": "hanzo-toast",
+          "quality": "rare",
+          "url": "/heroes/hanzo/poses/hanzo-toast.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Firework",
           "id": "hanzo-firework",
           "quality": "rare",
@@ -18364,8 +19773,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2020 week 1 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Fool",
@@ -18506,8 +19914,7 @@
           "quality": "epic",
           "url": "/heroes/junkrat/emotes/junkrat-unwrap.webm",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Dud?",
@@ -18677,8 +20084,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "junkrat",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         }
       ],
       "sprays": [
@@ -18947,8 +20353,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2020 week 1 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         }
       ],
       "voicelines": [
@@ -19090,6 +20495,15 @@
           "url": "/heroes/junkrat/voicelines/junkrat-happy-holidays.ogg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "name": "It's Snowing!",
+          "id": "junkrat-its-snowing",
+          "quality": "common",
+          "url": "/heroes/junkrat/voicelines/junkrat-its-snowing.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Merry Christmas",
@@ -19517,6 +20931,15 @@
           "url": "/heroes/lucio/emotes/lucio-juggle.webm",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "name": "A Suave Gift",
+          "id": "lucio-a-suave-gift",
+          "quality": "epic",
+          "url": "/heroes/lucio/emotes/lucio-a-suave-gift.webm",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Smooth",
@@ -20089,6 +21512,15 @@
           "group": "HALLOWEEN_2018"
         },
         {
+          "name": "Avalanche!",
+          "id": "lucio-avalanche",
+          "quality": "common",
+          "url": "/heroes/lucio/voicelines/lucio-avalanche.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Climbing the charts!",
           "id": "lucio-climbing-the-charts",
           "quality": "common",
@@ -20110,8 +21542,7 @@
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-swap-these-out-for-ice-skates.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "I make this look good...",
@@ -20272,1005 +21703,6 @@
       ]
     }
   },
-  "mccree": {
-    "name": "McCree",
-    "id": "mccree",
-    "class": "Damage",
-    "description": "Armed with his Peacekeeper revolver, the outlaw Jesse McCree doles out justice on his own terms.",
-    "colors": {
-      "primary": "#8d3939",
-      "highlight": "#aa4545"
-    },
-    "items": {
-      "skins": [
-        {
-          "name": "Classic",
-          "id": "mccree-classic",
-          "quality": "common",
-          "url": "/heroes/mccree/skins/mccree-classic.jpg",
-          "standardItem": true
-        },
-        {
-          "name": "Ebony",
-          "id": "mccree-ebony",
-          "quality": "rare",
-          "url": "/heroes/mccree/skins/mccree-ebony.jpg"
-        },
-        {
-          "name": "Lake",
-          "id": "mccree-lake",
-          "quality": "rare",
-          "url": "/heroes/mccree/skins/mccree-lake.jpg"
-        },
-        {
-          "name": "Sage",
-          "id": "mccree-sage",
-          "quality": "rare",
-          "url": "/heroes/mccree/skins/mccree-sage.jpg"
-        },
-        {
-          "name": "Wheat",
-          "id": "mccree-wheat",
-          "quality": "rare",
-          "url": "/heroes/mccree/skins/mccree-wheat.jpg"
-        },
-        {
-          "name": "On the Range",
-          "id": "mccree-on-the-range",
-          "quality": "epic",
-          "url": "/heroes/mccree/skins/mccree-on-the-range.jpg"
-        },
-        {
-          "name": "Royal",
-          "id": "mccree-royal",
-          "quality": "epic",
-          "url": "/heroes/mccree/skins/mccree-royal.jpg"
-        },
-        {
-          "name": "White Hat",
-          "id": "mccree-white-hat",
-          "quality": "epic",
-          "url": "/heroes/mccree/skins/mccree-white-hat.jpg"
-        },
-        {
-          "name": "American",
-          "id": "mccree-american",
-          "quality": "epic",
-          "url": "/heroes/mccree/skins/mccree-american.jpg",
-          "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
-          "name": "Undead",
-          "id": "mccree-undead",
-          "quality": "epic",
-          "url": "/heroes/mccree/skins/mccree-undead.jpg",
-          "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2018"
-        },
-        {
-          "name": "Scrooge",
-          "id": "mccree-scrooge",
-          "quality": "epic",
-          "url": "/heroes/mccree/skins/mccree-scrooge.jpg",
-          "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "name": "Xiake",
-          "id": "mccree-xiake",
-          "quality": "epic",
-          "url": "/heroes/mccree/skins/mccree-xiake.jpg",
-          "description": "Unlocked by participating in the Year of the Ox 2021 Week 2 challenge",
-          "achievement": "limited",
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
-        },
-        {
-          "name": "Masked Man",
-          "id": "mccree-masked-man",
-          "quality": "epic",
-          "url": "/heroes/mccree/skins/mccree-masked-man.jpg",
-          "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
-          "achievement": "limited",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2020"
-        },
-        {
-          "name": "Gambler",
-          "id": "mccree-gambler",
-          "quality": "legendary",
-          "url": "/heroes/mccree/skins/mccree-gambler.jpg"
-        },
-        {
-          "name": "Mystery Man",
-          "id": "mccree-mystery-man",
-          "quality": "legendary",
-          "url": "/heroes/mccree/skins/mccree-mystery-man.jpg"
-        },
-        {
-          "name": "Riverboat",
-          "id": "mccree-riverboat",
-          "quality": "legendary",
-          "url": "/heroes/mccree/skins/mccree-riverboat.jpg"
-        },
-        {
-          "name": "Vigilante",
-          "id": "mccree-vigilante",
-          "quality": "legendary",
-          "url": "/heroes/mccree/skins/mccree-vigilante.jpg"
-        },
-        {
-          "name": "Lifeguard",
-          "id": "mccree-lifeguard",
-          "quality": "legendary",
-          "url": "/heroes/mccree/skins/mccree-lifeguard.jpg",
-          "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2017"
-        },
-        {
-          "name": "Van Helsing",
-          "id": "mccree-van-helsing",
-          "quality": "legendary",
-          "url": "/heroes/mccree/skins/mccree-van-helsing.jpg",
-          "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2017"
-        },
-        {
-          "name": "Mountain Man",
-          "id": "mccree-mountain-man",
-          "quality": "legendary",
-          "url": "/heroes/mccree/skins/mccree-mountain-man.jpg",
-          "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2019"
-        },
-        {
-          "name": "Magistrate",
-          "id": "mccree-magistrate",
-          "quality": "legendary",
-          "url": "/heroes/mccree/skins/mccree-magistrate.jpg",
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2018"
-        },
-        {
-          "name": "Blackwatch",
-          "id": "mccree-blackwatch",
-          "quality": "legendary",
-          "url": "/heroes/mccree/skins/mccree-blackwatch.jpg",
-          "description": "A young Jesse McCree was recruited into Blackwatch after Gabriel Reyes saw his potential and gave him a choice: join Blackwatch or rot in prison.",
-          "event": "UPRISING",
-          "group": "UPRISING_2017"
-        },
-        {
-          "name": "Deadlock",
-          "id": "mccree-deadlock",
-          "quality": "legendary",
-          "url": "/heroes/mccree/skins/mccree-deadlock.jpg",
-          "description": "In their younger days, Jesse McCree and Elizabeth \"Calamity\" Ashe co-founded the Deadlock Gang.",
-          "event": "UPRISING",
-          "group": "UPRISING_2019"
-        },
-        {
-          "name": "Sherlock",
-          "id": "mccree-sherlock",
-          "quality": "legendary",
-          "url": "/heroes/mccree/skins/mccree-sherlock.jpg",
-          "description": "\"My mind,\" he said, \"rebels at stagnation. Give me problems, give me work, give me the most abstruse cryptogram or the most intricate analysis, and I am in my proper atmosphere.\"",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2018"
-        }
-      ],
-      "emotes": [
-        {
-          "name": "Heroic",
-          "id": "mccree-heroic",
-          "quality": "common",
-          "url": "/heroes/mccree/emotes/mccree-heroic.webm",
-          "standardItem": true
-        },
-        {
-          "name": "Gunspinning",
-          "id": "mccree-gunspinning",
-          "quality": "epic",
-          "url": "/heroes/mccree/emotes/mccree-gunspinning.webm"
-        },
-        {
-          "name": "Hat Tip",
-          "id": "mccree-hat-tip",
-          "quality": "epic",
-          "url": "/heroes/mccree/emotes/mccree-hat-tip.webm"
-        },
-        {
-          "name": "Joker",
-          "id": "mccree-joker",
-          "quality": "epic",
-          "url": "/heroes/mccree/emotes/mccree-joker.webm"
-        },
-        {
-          "name": "Spit",
-          "id": "mccree-spit",
-          "quality": "epic",
-          "url": "/heroes/mccree/emotes/mccree-spit.webm"
-        },
-        {
-          "name": "Take a load off",
-          "id": "mccree-take-a-load-off",
-          "quality": "epic",
-          "url": "/heroes/mccree/emotes/mccree-take-a-load-off.webm"
-        },
-        {
-          "name": "Hat Trick",
-          "id": "mccree-hat-trick",
-          "quality": "epic",
-          "url": "/heroes/mccree/emotes/mccree-hat-trick.webm",
-          "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "name": "Quick Draw",
-          "id": "mccree-quick-draw",
-          "quality": "epic",
-          "url": "/heroes/mccree/emotes/mccree-quick-draw.webm",
-          "event": "UPRISING",
-          "group": "UPRISING_2021",
-          "isNew": true
-        },
-        {
-          "name": "Line Dance",
-          "id": "mccree-line-dance",
-          "quality": "epic",
-          "url": "/updates/ANNIVERSARY/emotes/mccree-line-dance.webm",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2017"
-        }
-      ],
-      "intros": [
-        {
-          "name": "Heroic",
-          "id": "mccree-heroic",
-          "quality": "common",
-          "url": "/heroes/mccree/intros/mccree-heroic.webm",
-          "standardItem": true
-        },
-        {
-          "name": "Rolling into Action",
-          "id": "mccree-rolling-into-action",
-          "quality": "epic",
-          "url": "/heroes/mccree/intros/mccree-rolling-into-action.webm"
-        },
-        {
-          "name": "The Duel",
-          "id": "mccree-the-duel",
-          "quality": "epic",
-          "url": "/heroes/mccree/intros/mccree-the-duel.webm"
-        },
-        {
-          "name": "The name's McCree",
-          "id": "mccree-the-names-mccree",
-          "quality": "epic",
-          "url": "/heroes/mccree/intros/mccree-the-names-mccree.webm"
-        },
-        {
-          "name": "Undertaker",
-          "id": "mccree-undertaker",
-          "quality": "epic",
-          "url": "/heroes/mccree/intros/mccree-undertaker.webm",
-          "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2019"
-        },
-        {
-          "name": "Spark",
-          "id": "mccree-spark",
-          "quality": "epic",
-          "url": "/heroes/mccree/intros/mccree-spark.webm",
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2018"
-        }
-      ],
-      "icons": [
-        {
-          "name": "Badge",
-          "id": "mccree-badge",
-          "url": "/heroes/mccree/icons/mccree-badge.png",
-          "hero": "mccree"
-        },
-        {
-          "name": "Cute McCree",
-          "id": "mccree-cute-mccree",
-          "url": "/heroes/mccree/icons/mccree-cute-mccree.png",
-          "hero": "mccree"
-        },
-        {
-          "name": "Deadeye",
-          "id": "mccree-deadeye",
-          "url": "/heroes/mccree/icons/mccree-deadeye.png",
-          "hero": "mccree"
-        },
-        {
-          "name": "McCree",
-          "id": "mccree-mccree",
-          "url": "/heroes/mccree/icons/mccree-mccree.png",
-          "hero": "mccree"
-        },
-        {
-          "name": "Equestrian",
-          "id": "mccree-equestrian",
-          "url": "/heroes/mccree/icons/mccree-equestrian.png",
-          "event": "SUMMER_GAMES",
-          "hero": "mccree",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
-          "name": "Van Helsing",
-          "id": "mccree-van-helsing",
-          "url": "/heroes/mccree/icons/mccree-van-helsing.png",
-          "event": "HALLOWEEN",
-          "hero": "mccree",
-          "group": "HALLOWEEN_2017"
-        },
-        {
-          "name": "Mountain Man",
-          "id": "mccree-mountain-man",
-          "url": "/heroes/mccree/icons/mccree-mountain-man.png",
-          "event": "WINTER_WONDERLAND",
-          "hero": "mccree",
-          "group": "WINTER_WONDERLAND_2019"
-        },
-        {
-          "name": "Magistrate",
-          "id": "mccree-magistrate",
-          "url": "/heroes/mccree/icons/mccree-magistrate.png",
-          "event": "LUNAR_NEW_YEAR",
-          "hero": "mccree",
-          "group": "LUNAR_NEW_YEAR_2018"
-        },
-        {
-          "name": "Blackwatch",
-          "id": "mccree-blackwatch",
-          "url": "/heroes/mccree/icons/mccree-blackwatch.png",
-          "event": "UPRISING",
-          "hero": "mccree",
-          "group": "UPRISING_2017"
-        },
-        {
-          "name": "Deadlock McCree",
-          "id": "mccree-deadlock-mccree",
-          "url": "/heroes/mccree/icons/mccree-deadlock-mccree.png",
-          "event": "UPRISING",
-          "hero": "mccree",
-          "group": "UPRISING_2019"
-        },
-        {
-          "name": "GAMF",
-          "id": "mccree-gamf",
-          "url": "/heroes/mccree/icons/mccree-gamf.png",
-          "event": "ANNIVERSARY",
-          "hero": "mccree",
-          "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Sherlock",
-          "id": "mccree-sherlock",
-          "url": "/heroes/mccree/icons/mccree-sherlock.png",
-          "event": "ANNIVERSARY",
-          "hero": "mccree",
-          "group": "ANNIVERSARY_2018"
-        },
-        {
-          "name": "Wanderer",
-          "id": "mccree-wanderer",
-          "url": "/heroes/mccree/icons/mccree-wanderer.png",
-          "description": "Unlocked by participating in the Year of the Ox 2021 Week 2 challenge",
-          "achievement": "limited",
-          "event": "LUNAR_NEW_YEAR",
-          "hero": "mccree",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
-        },
-        {
-          "name": "Masked Man",
-          "id": "mccree-masked-man",
-          "url": "/heroes/mccree/icons/mccree-masked-man.png",
-          "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
-          "achievement": "limited",
-          "event": "ANNIVERSARY",
-          "hero": "mccree",
-          "group": "ANNIVERSARY_2020"
-        }
-      ],
-      "sprays": [
-        {
-          "name": "Bad Luck",
-          "id": "mccree-noose",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-noose.png"
-        },
-        {
-          "name": "Badge",
-          "id": "mccree-badge",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-badge.png"
-        },
-        {
-          "name": "BAMF",
-          "id": "mccree-bamf",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-bamf.png"
-        },
-        {
-          "name": "Bang!",
-          "id": "mccree-bang",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-bang.png"
-        },
-        {
-          "name": "Buckle",
-          "id": "mccree-buckle",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-buckle.png"
-        },
-        {
-          "name": "Bullet",
-          "id": "mccree-bullet",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-bullet.png"
-        },
-        {
-          "name": "Deadeye",
-          "id": "mccree-deadeye",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-deadeye.png"
-        },
-        {
-          "name": "Draw",
-          "id": "mccree-draw",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-draw.png"
-        },
-        {
-          "name": "Enigma",
-          "id": "mccree-enigma",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-enigma.png"
-        },
-        {
-          "name": "Gunslinger",
-          "id": "mccree-gunslinger",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-gunslinger.png"
-        },
-        {
-          "name": "High Noon",
-          "id": "mccree-high-noon",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-high-noon.png"
-        },
-        {
-          "name": "Icon",
-          "id": "mccree-icon",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-icon.png"
-        },
-        {
-          "name": "Jesse",
-          "id": "mccree-jesse",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-jesse.png"
-        },
-        {
-          "name": "Outlaw",
-          "id": "mccree-outlaw",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-outlaw.png"
-        },
-        {
-          "name": "Skull",
-          "id": "mccree-skull",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-skull.png"
-        },
-        {
-          "name": "Spin",
-          "id": "mccree-spin",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-spin.png"
-        },
-        {
-          "name": "Take It Easy",
-          "id": "mccree-take-it-easy",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-take-it-easy.png"
-        },
-        {
-          "name": "Target",
-          "id": "mccree-target",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-target.png"
-        },
-        {
-          "name": "The Name's",
-          "id": "mccree-the-names",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-the-names.png"
-        },
-        {
-          "name": "Thumbs Up",
-          "id": "mccree-thumbs-up",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-thumbs-up.png"
-        },
-        {
-          "name": "Tumbleweed",
-          "id": "mccree-tumbleweed",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-tumbleweed.png"
-        },
-        {
-          "name": "Vigilante",
-          "id": "mccree-vigilante",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-vigilante.png"
-        },
-        {
-          "name": "Wanted",
-          "id": "mccree-wanted",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-wanted.png"
-        },
-        {
-          "name": "Your Face Here",
-          "id": "mccree-your-face-here",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-your-face-here.png"
-        },
-        {
-          "name": "Equestrian",
-          "id": "mccree-equestrian",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-equestrian.png",
-          "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
-          "name": "Trick or Treat",
-          "id": "mccree-trick-or-treat",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-trick-or-treat.png",
-          "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2016"
-        },
-        {
-          "name": "Ornament",
-          "id": "mccree-ornament",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-ornament.png",
-          "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "name": "Ugly Sweater",
-          "id": "mccree-ugly-sweater",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-ugly-sweater.png",
-          "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "name": "Call It",
-          "id": "mccree-call-it",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-call-it.png",
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2017"
-        },
-        {
-          "name": "Dragon Dance",
-          "id": "mccree-dragon-dance",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-dragon-dance.png",
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2017"
-        },
-        {
-          "name": "Target Practice",
-          "id": "mccree-target-practice",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-target-practice.png",
-          "event": "UPRISING",
-          "group": "UPRISING_2017"
-        },
-        {
-          "name": "Jack of Spades",
-          "id": "mccree-jack-of-spades",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-jack-of-spades.png",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Cute",
-          "id": "mccree-cute",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-cute.png",
-          "achievement": true,
-          "description": "Get 4 killing blows with a single use of McCree's Deadeye in Quick or Competitive Play."
-        },
-        {
-          "name": "Pixel",
-          "id": "mccree-pixel",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-pixel.png",
-          "achievement": true,
-          "description": "Interrupt an enemy ultimate ability with McCree's Flashbang in Quick or Competitive Play."
-        },
-        {
-          "name": "Rex",
-          "id": "mccree-rex",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-rex.png",
-          "description": "Unlocked by watching participating streams during Ashe's Mardi Gras Challenge",
-          "achievement": "blizzard"
-        },
-        {
-          "name": "Young Jesse",
-          "id": "mccree-young-jesse",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-young-jesse.png",
-          "description": "Unlocked by participating in Ashe's Deadlock Challenge",
-          "achievement": "blizzard"
-        },
-        {
-          "name": "Gunsmoke",
-          "id": "mccree-gunsmoke",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-gunsmoke.png",
-          "description": "Unlocked by participating in the Year of the Ox 2021 Week 2 challenge",
-          "achievement": "limited",
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
-        },
-        {
-          "name": "Masked Man",
-          "id": "mccree-masked-man",
-          "quality": "common",
-          "url": "/heroes/mccree/sprays/mccree-masked-man.png",
-          "description": "Unlocked by participating in the Anniversary 2020 week 3 challenge",
-          "achievement": "limited",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2020"
-        }
-      ],
-      "voicelines": [
-        {
-          "name": "Watch and learn",
-          "id": "mccree-watch-and-learn",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-watch-and-learn.ogg",
-          "standardItem": true
-        },
-        {
-          "name": "After you",
-          "id": "mccree-after-you",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-after-you.ogg"
-        },
-        {
-          "name": "Ain't I killed you before",
-          "id": "mccree-aint-i-killed-you-before",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-aint-i-killed-you-before.ogg"
-        },
-        {
-          "name": "Happens to the best of us",
-          "id": "mccree-happens-to-the-best-of-us",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-happens-to-the-best-of-us.ogg"
-        },
-        {
-          "name": "I tried being reasonable",
-          "id": "mccree-i-tried-being-reasonable",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-i-tried-being-reasonable.ogg"
-        },
-        {
-          "name": "I'm the quick...",
-          "id": "mccree-im-the-quick",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-im-the-quick.ogg"
-        },
-        {
-          "name": "I'm your huckleberry",
-          "id": "mccree-im-your-huckleberry",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-im-your-huckleberry.ogg"
-        },
-        {
-          "name": "I've got a bullet...",
-          "id": "mccree-ive-got-a-bullet",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-ive-got-a-bullet.ogg"
-        },
-        {
-          "name": "Reach for the sky",
-          "id": "mccree-reach-for-the-sky",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-reach-for-the-sky.ogg"
-        },
-        {
-          "name": "Sure as hell ain't ugly",
-          "id": "mccree-sure-as-hell-aint-ugly",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-sure-as-hell-aint-ugly.ogg"
-        },
-        {
-          "name": "Wanted: dead or alive",
-          "id": "mccree-wanted-dead-or-alive",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-wanted-dead-or-alive.ogg"
-        },
-        {
-          "name": "You done?",
-          "id": "mccree-you-done",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-you-done.ogg"
-        },
-        {
-          "name": "Boom goes the dynamite",
-          "id": "mccree-boom-goes-the-dynamite",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-boom-goes-the-dynamite.ogg",
-          "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2017"
-        },
-        {
-          "name": "I don't much like losing",
-          "id": "mccree-i-dont-much-like-losing",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-i-dont-much-like-losing.ogg",
-          "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2016"
-        },
-        {
-          "name": "Already dead",
-          "id": "mccree-already-dead",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-already-dead.ogg",
-          "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2019"
-        },
-        {
-          "name": "I hear you, pumpkin",
-          "id": "mccree-i-hear-you-pumpkin",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-i-hear-you-pumpkin.ogg",
-          "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2017"
-        },
-        {
-          "name": "It's your funeral",
-          "id": "mccree-its-your-funeral",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-its-your-funeral.ogg",
-          "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2016"
-        },
-        {
-          "name": "Trick or treat",
-          "id": "mccree-trick-or-treat",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-trick-or-treat.ogg",
-          "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2018"
-        },
-        {
-          "name": "Had to break the ice",
-          "id": "mccree-had-to-break-the-ice",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-had-to-break-the-ice.ogg",
-          "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2016"
-        },
-        {
-          "name": "You've been snowed in",
-          "id": "mccree-youve-been-snowed-in",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-youve-been-snowed-in.ogg",
-          "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2017"
-        },
-        {
-          "name": "Calls for a celebration",
-          "id": "mccree-calls-for-a-celebration",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-calls-for-a-celebration.ogg",
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2017"
-        },
-        {
-          "name": "Hair of the dog",
-          "id": "mccree-hair-of-the-dog",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-hair-of-the-dog.ogg",
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2018"
-        },
-        {
-          "name": "How's that for fireworks",
-          "id": "mccree-hows-that-for-fireworks",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-hows-that-for-fireworks.ogg",
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2019"
-        },
-        {
-          "name": "I'll have another",
-          "id": "mccree-ill-have-another",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-ill-have-another.ogg",
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2020"
-        },
-        {
-          "name": "A man's gotta have rules",
-          "id": "mccree-a-mans-gotta-have-rules",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-a-mans-gotta-have-rules.ogg",
-          "event": "UPRISING",
-          "group": "UPRISING_2017"
-        },
-        {
-          "name": "Don't sass me",
-          "id": "mccree-dont-sass-me",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-dont-sass-me.ogg",
-          "event": "UPRISING",
-          "group": "UPRISING_2018"
-        },
-        {
-          "name": "Gathering no moss",
-          "id": "mccree-gathering-no-moss",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-gathering-no-moss.ogg",
-          "event": "UPRISING",
-          "group": "UPRISING_2019"
-        },
-        {
-          "name": "Take My Advice",
-          "id": "mccree-take-my-advice",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-take-my-advice.ogg",
-          "event": "UPRISING",
-          "group": "UPRISING_2021",
-          "isNew": true
-        },
-        {
-          "name": "That went against my better nature",
-          "id": "mccree-that-went-against-my-better-nature",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-that-went-against-my-better-nature.ogg",
-          "event": "UPRISING",
-          "group": "UPRISING_2020"
-        },
-        {
-          "name": "The Old Fashioned Way",
-          "id": "mccree-the-old-fashioned-way",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-the-old-fashioned-way.ogg",
-          "event": "UPRISING",
-          "group": "UPRISING_2017"
-        },
-        {
-          "name": "Both kinds of music",
-          "id": "mccree-both-kinds-of-music",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-both-kinds-of-music.ogg",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2019"
-        },
-        {
-          "name": "Buckle up",
-          "id": "mccree-buckle-up",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-buckle-up.ogg",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "How do you like me now?",
-          "id": "mccree-how-do-you-like-me-now",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-how-do-you-like-me-now.ogg",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2018"
-        },
-        {
-          "name": "Next round's on me",
-          "id": "mccree-next-rounds-on-me",
-          "quality": "common",
-          "url": "/heroes/mccree/voicelines/mccree-next-rounds-on-me.ogg",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2017"
-        }
-      ],
-      "poses": [
-        {
-          "name": "Heroic",
-          "id": "mccree-heroic",
-          "quality": "common",
-          "url": "/heroes/mccree/poses/mccree-heroic.jpg",
-          "standardItem": true
-        },
-        {
-          "name": "Contemplative",
-          "id": "mccree-contemplative",
-          "quality": "rare",
-          "url": "/heroes/mccree/poses/mccree-contemplative.jpg"
-        },
-        {
-          "name": "Over the Shoulder",
-          "id": "mccree-over-the-shoulder",
-          "quality": "rare",
-          "url": "/heroes/mccree/poses/mccree-over-the-shoulder.jpg"
-        },
-        {
-          "name": "Take it easy",
-          "id": "mccree-take-it-easy",
-          "quality": "rare",
-          "url": "/heroes/mccree/poses/mccree-take-it-easy.jpg"
-        },
-        {
-          "name": "Medal",
-          "id": "mccree-medal",
-          "quality": "rare",
-          "url": "/heroes/mccree/poses/mccree-medal.jpg",
-          "event": "SUMMER_GAMES",
-          "group": "SUMMER_GAMES_2018"
-        },
-        {
-          "name": "R.I.P.",
-          "id": "mccree-rip",
-          "quality": "rare",
-          "url": "/heroes/mccree/poses/mccree-rip.jpg",
-          "event": "HALLOWEEN",
-          "group": "HALLOWEEN_2016"
-        },
-        {
-          "name": "Fire in the Hole",
-          "id": "mccree-fire-in-the-hole",
-          "quality": "rare",
-          "url": "/heroes/mccree/poses/mccree-fire-in-the-hole.jpg",
-          "event": "LUNAR_NEW_YEAR",
-          "group": "LUNAR_NEW_YEAR_2018"
-        },
-        {
-          "name": "Showdown",
-          "id": "mccree-showdown",
-          "quality": "rare",
-          "url": "/heroes/mccree/poses/mccree-showdown.jpg",
-          "event": "UPRISING",
-          "group": "UPRISING_2017"
-        },
-        {
-          "name": "Flashbang",
-          "id": "mccree-flashbang",
-          "quality": "rare",
-          "url": "/heroes/mccree/poses/mccree-flashbang.jpg",
-          "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2020"
-        }
-      ],
-      "weapons": [
-        {
-          "name": "GOLDEN",
-          "id": "mccree-golden",
-          "quality": "golden",
-          "url": "/heroes/mccree/weapons/mccree-golden.png"
-        }
-      ]
-    }
-  },
   "mei": {
     "name": "Mei",
     "id": "mei",
@@ -21417,8 +21849,7 @@
           "quality": "legendary",
           "url": "/heroes/mei/skins/mei-penguin.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Chang'e",
@@ -21648,8 +22079,7 @@
           "url": "/heroes/mei/icons/mei-penguin.png",
           "event": "WINTER_WONDERLAND",
           "hero": "mei",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Chang'e",
@@ -21878,8 +22308,7 @@
           "quality": "common",
           "url": "/heroes/mei/sprays/mei-penguin.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Sculpting",
@@ -22080,6 +22509,15 @@
           "group": "HALLOWEEN_2019"
         },
         {
+          "name": "Cold Never Bothered Me",
+          "id": "mei-cold-never-bothered-me",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-cold-never-bothered-me.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Don't you love surprises",
           "id": "mei-dont-you-love-surprises",
           "quality": "common",
@@ -22101,8 +22539,7 @@
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-lets-have-some-hot-cocoa.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Snowball Fight!",
@@ -22258,8 +22695,7 @@
           "quality": "rare",
           "url": "/heroes/mei/poses/mei-toast.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Lucky!",
@@ -22530,8 +22966,7 @@
           "quality": "epic",
           "url": "/heroes/mercy/emotes/mercy-flurry.webm",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Hustle",
@@ -23494,8 +23929,7 @@
           "quality": "legendary",
           "url": "/heroes/moira/skins/moira-ice-empress.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Mask Dancer",
@@ -23677,8 +24111,7 @@
           "url": "/heroes/moira/icons/moira-ice-empress.png",
           "event": "WINTER_WONDERLAND",
           "hero": "moira",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Mask Dancer",
@@ -23915,8 +24348,7 @@
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-ice-empress.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Ornament",
@@ -24131,6 +24563,15 @@
           "url": "/heroes/moira/voicelines/moira-absolute-zero.ogg",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Coal for You",
+          "id": "moira-coal-for-you",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-coal-for-you.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Happy Christmas",
@@ -24445,6 +24886,15 @@
           "group": "HALLOWEEN_2019"
         },
         {
+          "name": "Reindeer",
+          "id": "orisa-reindeer",
+          "quality": "legendary",
+          "url": "/heroes/orisa/skins/orisa-reindeer.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Bull Demon",
           "id": "orisa-bull-demon",
           "quality": "legendary",
@@ -24626,6 +25076,15 @@
           "event": "HALLOWEEN",
           "hero": "orisa",
           "group": "HALLOWEEN_2019"
+        },
+        {
+          "name": "Reindeer",
+          "id": "orisa-reindeer",
+          "url": "/heroes/orisa/icons/orisa-reindeer.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "orisa",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Bull",
@@ -24854,6 +25313,15 @@
           "url": "/heroes/orisa/sprays/orisa-ornament.png",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2017"
+        },
+        {
+          "name": "Reindeer",
+          "id": "orisa-reindeer",
+          "quality": "common",
+          "url": "/heroes/orisa/sprays/orisa-reindeer.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Star",
@@ -25328,7 +25796,7 @@
           "id": "pharah-sunset",
           "quality": "epic",
           "url": "/heroes/pharah/skins/pharah-sunset.jpg",
-          "description": "Unlocked by participating in the Summer Games 2021 week 2 challenge",
+          "description": "Unlocked by participating in the Summer Games 2020 week 2 challenge",
           "achievement": "limited",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2021",
@@ -25597,7 +26065,7 @@
           "name": "Sunset",
           "id": "pharah-sunset",
           "url": "/heroes/pharah/icons/pharah-sunset.png",
-          "description": "Unlocked by participating in the Summer Games 2021 week 2 challenge",
+          "description": "Unlocked by participating in the Summer Games 2020 week 2 challenge",
           "achievement": "limited",
           "event": "SUMMER_GAMES",
           "hero": "pharah",
@@ -25855,11 +26323,19 @@
           "achievement": "blizzard"
         },
         {
+          "name": "Determined",
+          "id": "pharah-determined",
+          "quality": "common",
+          "url": "/heroes/pharah/sprays/pharah-determined.png",
+          "description": "Unlocked by participating in Cassidy's New Blood Challenge",
+          "achievement": "blizzard"
+        },
+        {
           "name": "Sunset Soar",
           "id": "pharah-sunset-soar",
           "quality": "common",
           "url": "/heroes/pharah/sprays/pharah-sunset-soar.png",
-          "description": "Unlocked by participating in the Summer Games 2021 week 2 challenge",
+          "description": "Unlocked by participating in the Summer Games 2020 week 2 challenge",
           "achievement": "limited",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2021",
@@ -27304,8 +27780,7 @@
           "quality": "legendary",
           "url": "/heroes/reinhardt/skins/reinhardt-conductor.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Guan Yu",
@@ -27503,8 +27978,7 @@
           "url": "/heroes/reinhardt/icons/reinhardt-conductor.png",
           "event": "WINTER_WONDERLAND",
           "hero": "reinhardt",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Beautiful Beard",
@@ -27715,8 +28189,7 @@
           "quality": "common",
           "url": "/heroes/reinhardt/sprays/reinhardt-alle-einsteigen.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Ice Fishing",
@@ -27899,13 +28372,21 @@
           "group": "HALLOWEEN_2017"
         },
         {
+          "name": "Call this Cold?",
+          "id": "reinhardt-call-this-cold",
+          "quality": "common",
+          "url": "/heroes/reinhardt/voicelines/reinhardt-call-this-cold.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Cold? Me? Hah!",
           "id": "reinhardt-cold-me-hah",
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-cold-me-hah.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Forgive and forget",
@@ -28181,8 +28662,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2020 week 3 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Butcher",
@@ -28488,8 +28968,7 @@
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
           "hero": "roadhog",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         }
       ],
       "sprays": [
@@ -28744,8 +29223,7 @@
           "description": "Unlocked by participating in the Winter Wonderland 2020 week 3 challenge",
           "achievement": "limited",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         }
       ],
       "voicelines": [
@@ -29733,6 +30211,15 @@
           "group": "WINTER_WONDERLAND_2019"
         },
         {
+          "name": "Merry Christmas!",
+          "id": "sigma-merry-christmas",
+          "quality": "common",
+          "url": "/heroes/sigma/voicelines/sigma-merry-christmas.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Party guy",
           "id": "sigma-party-guy",
           "quality": "common",
@@ -29871,8 +30358,7 @@
           "quality": "rare",
           "url": "/heroes/sigma/poses/sigma-toast.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Postulating",
@@ -31704,8 +32190,7 @@
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-who-wants-to-buy-me-a-present.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "You work too hard",
@@ -31960,6 +32445,17 @@
           "url": "/heroes/symmetra/skins/symmetra-marammat.jpg",
           "description": "Unlocked by participating in Symmetra's Restoration Challenge",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Mistletoe",
+          "id": "symmetra-mistletoe",
+          "quality": "epic",
+          "url": "/heroes/symmetra/skins/symmetra-mistletoe.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 2 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Holi",
@@ -32228,6 +32724,17 @@
           "description": "Unlocked by participating in Symmetra's Restoration Challenge",
           "achievement": "blizzard",
           "hero": "symmetra"
+        },
+        {
+          "name": "Mistletoe",
+          "id": "symmetra-mistletoe",
+          "url": "/heroes/symmetra/icons/symmetra-mistletoe.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 2 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "symmetra",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Holi",
@@ -32529,6 +33036,17 @@
           "url": "/heroes/symmetra/sprays/symmetra-sitar.png",
           "description": "Unlocked by watching participating streams during Sigma's Maestro Challenge",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Mistletoe",
+          "id": "symmetra-mistletoe",
+          "quality": "common",
+          "url": "/heroes/symmetra/sprays/symmetra-mistletoe.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 2 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Holi",
@@ -32996,8 +33514,7 @@
           "quality": "legendary",
           "url": "/heroes/torbjorn/skins/torbjorn-lumberjack.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Santaclad",
@@ -33134,6 +33651,15 @@
           "url": "/heroes/torbjorn/intros/torbjorn-ride-em.webm"
         },
         {
+          "name": "Lava Angel",
+          "id": "torbjorn-lava-angel",
+          "quality": "epic",
+          "url": "/heroes/torbjorn/intros/torbjorn-lava-angel.webm",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "My baby",
           "id": "torbjorn-my-baby",
           "quality": "epic",
@@ -33197,8 +33723,7 @@
           "url": "/heroes/torbjorn/icons/torbjorn-lumberjack.png",
           "event": "WINTER_WONDERLAND",
           "hero": "torbjorn",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Santaclad",
@@ -33418,8 +33943,7 @@
           "quality": "common",
           "url": "/heroes/torbjorn/sprays/torbjorn-lumberjack.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Ornament",
@@ -33641,8 +34165,7 @@
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-give-me-a-warm-fire.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Made to order",
@@ -33924,6 +34447,17 @@
           "achievement": "limited",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "name": "Wooltide",
+          "id": "tracer-wooltide",
+          "quality": "epic",
+          "url": "/heroes/tracer/skins/tracer-wooltide.jpg",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 1 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Mach T",
@@ -34258,6 +34792,17 @@
           "description": "Unlocked by watching participating streams during Bastion's Brick Challenge",
           "achievement": "blizzard",
           "hero": "tracer"
+        },
+        {
+          "name": "Wooltide",
+          "id": "tracer-wooltide",
+          "url": "/heroes/tracer/icons/tracer-wooltide.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 1 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "hero": "tracer",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -34573,6 +35118,17 @@
           "achievement": "limited",
           "event": "SUMMER_GAMES",
           "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "name": "Wooltide",
+          "id": "tracer-wooltide",
+          "quality": "common",
+          "url": "/heroes/tracer/sprays/tracer-wooltide.png",
+          "description": "Unlocked by participating in the Winter Wonderland 2021 week 1 challenge",
+          "achievement": "limited",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         }
       ],
       "voicelines": [
@@ -34728,8 +35284,7 @@
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-ready-for-some-pudding.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "I'm over the moon",
@@ -35693,6 +36248,15 @@
           "url": "/heroes/widowmaker/voicelines/widowmaker-the-party-is-over.ogg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2016"
+        },
+        {
+          "name": "Cookies",
+          "id": "widowmaker-cookies",
+          "quality": "common",
+          "url": "/heroes/widowmaker/voicelines/widowmaker-cookies.ogg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Exquisite",
@@ -36667,8 +37231,7 @@
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-mountain-gorilla-moon-gorilla.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Party mode engaged",
@@ -36816,8 +37379,7 @@
           "quality": "rare",
           "url": "/heroes/winston/poses/winston-toast.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Sparklers",
@@ -36974,6 +37536,15 @@
           "group": "HALLOWEEN_2018"
         },
         {
+          "name": "Snowman",
+          "id": "wrecking-ball-snowman",
+          "quality": "legendary",
+          "url": "/heroes/wrecking-ball/skins/wrecking-ball-snowman.jpg",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
           "name": "Submarine",
           "id": "wrecking-ball-submarine",
           "quality": "legendary",
@@ -37123,6 +37694,15 @@
           "event": "HALLOWEEN",
           "hero": "wrecking-ball",
           "group": "HALLOWEEN_2018"
+        },
+        {
+          "name": "Santa Claws",
+          "id": "wrecking-ball-santa-claws",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-santa-claws.png",
+          "event": "WINTER_WONDERLAND",
+          "hero": "wrecking-ball",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Gold Ball",
@@ -37326,6 +37906,15 @@
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-ornament.png",
           "event": "WINTER_WONDERLAND",
           "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "name": "Snowman",
+          "id": "wrecking-ball-snowman",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-snowman.png",
+          "event": "WINTER_WONDERLAND",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
         },
         {
           "name": "Stocking",
@@ -38805,8 +39394,7 @@
           "quality": "legendary",
           "url": "/heroes/zenyatta/skins/zenyatta-toybot.jpg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Sanzang",
@@ -39010,8 +39598,7 @@
           "url": "/heroes/zenyatta/icons/zenyatta-toybot.png",
           "event": "WINTER_WONDERLAND",
           "hero": "zenyatta",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Crouching Dragon",
@@ -39248,8 +39835,7 @@
           "quality": "common",
           "url": "/heroes/zenyatta/sprays/zenyatta-toybot.png",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Dragon Dance",
@@ -39463,8 +40049,7 @@
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-blessings-of-the-season.ogg",
           "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2020",
-          "isNew": true
+          "group": "WINTER_WONDERLAND_2020"
         },
         {
           "name": "Joy to the world",

@@ -1,5 +1,7 @@
 const fs = require('fs');
 const _getCleanID = require('../../dataMapper/utils').getCleanID;
+const _getCleanHeroID = require('../../dataMapper/utils').getCleanHeroId;
+const idsBlizzardChanged = require('../../dataMapper/itemData').idsBlizzardChanged
 
 const handleErr = err => console.log(`Error while doing stuff!!\n==ERROR==\n${err}\n==ENDERROR==`);
 
@@ -7,6 +9,10 @@ const getCleanID = (what, hero) => {
   if (!what.length) return undefined;
   return _getCleanID(what.replace(/\.(png|dds|tif|jpg|wem|ogg)|$/i, ''), hero);
 };
+
+const getCleanHeroID = heroId => {
+  return _getCleanHeroID(heroId)
+}
 
 const hardCodedIds = {
   "Cheers!.dds": "cheers",
@@ -18,10 +24,15 @@ const badItems = {
   'oni': 'genji-oni'
 };
 
-const cleanFileIDs = (files, heroID) => {
+const cleanFileIDs = (files, heroID, itemType) => {
   var itemIDCache = {};
   return files.map(file => {
     var id = getCleanID(file, heroID);
+
+    
+    const uniqueId = `${itemType}/${id}`
+    id = idsBlizzardChanged[uniqueId] || id
+    
     if (itemIDCache[id]) {
       console.warn("ItemID collision found", id);
       id = `${id}1`;
@@ -83,4 +94,4 @@ const copyFile = (source, target, cb) => {
   }
 };
 
-module.exports = { getDirectories, getCleanID, checkDirectorys, cleanFileIDs, copyFile, handleErr };
+module.exports = { getDirectories, getCleanID, checkDirectorys, cleanFileIDs, copyFile, handleErr, getCleanHeroID };

@@ -117,7 +117,7 @@
       "reward": "Pixel",
       "quality": "common",
       "type": "spray",
-      "description": "Interrupt an enemy ultimate ability with McCree's Flashbang in Quick or Competitive Play.",
+      "description": "Interrupt an enemy ultimate ability with Cassidy's Flashbang in Quick or Competitive Play.",
       "hero": "mccree"
     },
     "its-high-noon": {
@@ -125,7 +125,7 @@
       "reward": "Cute",
       "quality": "common",
       "type": "spray",
-      "description": "Get 4 killing blows with a single use of McCree's Deadeye in Quick or Competitive Play.",
+      "description": "Get 4 killing blows with a single use of Cassidy's Deadeye in Quick or Competitive Play.",
       "hero": "mccree"
     },
     "death-from-above": {
@@ -1044,6 +1044,54 @@
     "season-28-hero": {
       "description": "Unlocked by achieving top 500 ranking at the end of Season 28"
     },
+    "season-29-competitor": {
+      "description": "Unlocked by completing Season 29 placement matches"
+    },
+    "season-29-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 29"
+    },
+    "season-30-competitor": {
+      "description": "Unlocked by completing Season 30 placement matches"
+    },
+    "season-30-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 30"
+    },
+    "season-31-competitor": {
+      "description": "Unlocked by completing Season 31 placement matches"
+    },
+    "season-31-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 31"
+    },
+    "season-32-competitor": {
+      "description": "Unlocked by completing Season 32 placement matches"
+    },
+    "season-32-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 32"
+    },
+    "season-33-competitor": {
+      "description": "Unlocked by completing Season 33 placement matches"
+    },
+    "season-33-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 33"
+    },
+    "season-34-competitor": {
+      "description": "Unlocked by completing Season 34 placement matches"
+    },
+    "season-34-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 34"
+    },
+    "season-35-competitor": {
+      "description": "Unlocked by completing Season 35 placement matches"
+    },
+    "season-35-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 35"
+    },
+    "season-36-competitor": {
+      "description": "Unlocked by completing Season 36 placement matches"
+    },
+    "season-36-hero": {
+      "description": "Unlocked by achieving top 500 ranking at the end of Season 36"
+    },
     "competitive-ctf-competitor": {
       "name": null,
       "description": "Unlocked by completing competitive Capture The Flag 2018 placement matches",
@@ -1856,9 +1904,17 @@
     },
     "tiny-champion": {
       "description": "Unlocked by watching the 2021 OWL Grand Finals"
+    },
+    "gladiators-unleashed": {
+      "description": "Unlocked by watching the 2021 Overwatch League Countdown Cup Tournament"
+    },
+    "newbloodchallenge": {
+      "description": "Unlocked by participating in Cassidy's New Blood Challenge"
     }
   },
   "mappings": {
+    "talon-spotted": "newbloodchallenge",
+    "gladiators-unleashed": "gladiators-unleashed",
     "reaper-cute": "die-die-die-die",
     "victory": "centenary",
     "forge-onward": "level-10",
@@ -2012,6 +2068,22 @@
     "season-27-hero": "season-27-hero",
     "season-28-competitor": "season-28-competitor",
     "season-28-hero": "season-28-hero",
+    "season-29-competitor": "season-29-competitor",
+    "season-29-hero": "season-29-hero",
+    "season-30-competitor": "season-30-competitor",
+    "season-30-hero": "season-30-hero",
+    "season-31-competitor": "season-31-competitor",
+    "season-31-hero": "season-31-hero",
+    "season-32-competitor": "season-32-competitor",
+    "season-32-hero": "season-32-hero",
+    "season-33-competitor": "season-33-competitor",
+    "season-33-hero": "season-33-hero",
+    "season-34-competitor": "season-34-competitor",
+    "season-34-hero": "season-34-hero",
+    "season-35-competitor": "season-35-competitor",
+    "season-35-hero": "season-35-hero",
+    "season-36-competitor": "season-36-competitor",
+    "season-36-hero": "season-36-hero",
     "competitive-ctf-competitor": "competitive-ctf-competitor",
     "competitive-ctf-hero": "competitive-ctf-hero",
     "competitive-ctf-competitor-2019": "competitive-ctf-competitor-2019",

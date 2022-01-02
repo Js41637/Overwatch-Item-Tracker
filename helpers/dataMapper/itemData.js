@@ -5,6 +5,15 @@ const data = {
 
   // Changes IDs and Names will eventually be fixed with a data migration.
   idsBlizzardChanged: {
+    // stupid ass mccree change
+    "sprays/snowcole": "snowcree",
+    "sprays/mccree-cole": "mccree-jesse",
+    "sprays/mccree-young-cole": "mccree-young-jesse",
+    "icons/mccree-cassidy": "mccree-mccree",
+    "icons/mccree-cute-cassidy": "mccree-cute-mccree",
+    "icons/mccree-deadlock-cassidy": "mccree-deadlock-mccree",
+    "intros/mccree-the-names-cassidy": "mccree-the-names-mccree",
+
     "sprays/mccree-bad-luck": "mccree-noose",
     "sprays/sombra-hax0red": "sombra-deafmute",
     "sprays/hanzo-brickstrike": "hanzo-brick-dragon",
@@ -163,7 +172,7 @@ const data = {
     },
     "overwatch league": {
       icons: ['inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars', '2020-atlantic-allstars', '2020-pacific-allstars', 'grand-finals-2019', 'overwatch-contenders'],
-      sprays: ['inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate", 'overwatch-contenders', 'grand-finals-2020', 'beach-fuel', 'dragons-treasure', 'super-fans', 'dragons-fireworks', 'tiny-champion']
+      sprays: ['inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate", 'overwatch-contenders', 'grand-finals-2020', 'beach-fuel', 'dragons-treasure', 'super-fans', 'dragons-fireworks', 'tiny-champion', 'gladiators-unleashed']
     }
   },
   achievementSprays: [
@@ -310,7 +319,7 @@ const data = {
     icons: {
       [EVENTS.SUMMER]: ["summer-games-2016", "summer-games-2017", "summer-games-2018", "summer-games-2019", "summer-games-2020", "summer-games-2021", "meteor", "australia", "brazil", "china", "egypt", "france", "germany", "greece", "japan", "mexico", "nepal", "numbani", "russia", "south-korea", "sweden", "switzerland", "united-kingdom", "united-states-of-america", "argentina", "austria", "belgium", "canada", "denmark", "finland", "ireland", "israel", "italy", "jordan", "netherlands", "new-zealand", "portugal", "romania", "snorkelmari", "spain", "footballmari", "punchimari", "tennismari", 'baseballmari', 'golfimari', 'surfimari'],
       [EVENTS.HALLOWEEN]: ["calavera", "vampachimari", "eyeball", "superstition", "witchs-hat", "ghostymari", "tombstone", "bewitching", "candle", "never-die", "wolf", "witchs-brew", "spider", "junkensteins-pachimonster", "pachimummy", "pumpkimari", "skelemari", "witchymari", "kittymari", "halloween-terror-2016", "halloween-terror-2017", "halloween-terror-2018", "halloween-terror-2019", 'clownmari', 'halloween-terror-2020', 'halloween-terror-2021'],
-      [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "winter-wonderland-2018", "winter-wonderland-2019", "snowman", "present", "pachimerry", "gingermari", "pachicracker", "snowimari", "2017", "2018", "2019", "2020", "2021", "end-of-2020", "winter-wonderland-2020", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari"],
+      [EVENTS.WINTER]: ["winter-wonderland-2016", "winter-wonderland-2017", "winter-wonderland-2018", "winter-wonderland-2019", "snowman", "present", "pachimerry", "gingermari", "pachicracker", "snowimari", "2017", "2018", "2019", "2020", "2021", "end-of-2020", "winter-wonderland-2020", "holly", "tannenbaum", "bubbly", "gingerbread", "candy-cane", "ornament", "hot-cocoa", "cheers", "wreath", "mochi", "dreidel", "bells", "peppermint", "snow-globe", "pachireindeer", "stocking", "yetimari", "winter-wonderland-2021", "2022"],
       [EVENTS.LUNAR]: ["bokimari", "coin", "dragon-dance", "fortune", "fuchimari", "gold", "have-fish", "lantern", "lion-dance", "lucky-pouch", "peachimari", "new-year-cake", "pachilantern", "red-envelope", "seollal", "tangerines", "year-of-the-rooster-2017", "year-of-the-dog-2018", "wuchimari", "huchimari", "paquemari", "paqingmari", "good-fortune", "baihu", "zhuque", "qinglong", "xuanwu", 'guan-yu', 'hong-gildong', 'huang-zhong', 'l-bu', 'piggimari', 'year-of-the-pig-2019', 'zhang-fei', 'zhuge-liang', 'year-of-the-rat-2020', 'year-of-the-ox-2021',],
       [EVENTS.UPRISING]: ['archives-2021', 'archives-2020', 'archives-2019', 'archives-2018', 'uprising-2017', 'null-sector', 'drop-pod', 'b73ns', 'nullmari', 'assassin', 'enforcer', 'heavy-assault', 'maximilien', 'sniper', 'trooper'],
       [EVENTS.ANNIVERSARY]: ['anniversary-2017', 'anniversary-2018', 'anniversary-2019', 'anniversary-2020', 'anniversary-2021', 'fanous', 'cupachicake', 'pachiversary'],
@@ -447,7 +456,17 @@ const data = {
     'sprays/zarya-einherjar': EVENTS.HALLOWEEN,
     'skins/roadhog-clown': EVENTS.HALLOWEEN,
     'icons/roadhog-clown': EVENTS.HALLOWEEN,
-    'sprays/roadhog-clown': EVENTS.HALLOWEEN
+    'sprays/roadhog-clown': EVENTS.HALLOWEEN,
+
+    'skins/tracer-wooltide': EVENTS.WINTER,
+    'icons/tracer-wooltide': EVENTS.WINTER,
+    'sprays/tracer-wooltide': EVENTS.WINTER,
+    'skins/symmetra-mistletoe': EVENTS.WINTER,
+    'icons/symmetra-mistletoe': EVENTS.WINTER,
+    'sprays/symmetra-mistletoe': EVENTS.WINTER,
+    'skins/brigitte-peppermint-bark': EVENTS.WINTER,
+    'icons/brigitte-peppermint-bark': EVENTS.WINTER,
+    'sprays/brigitte-peppermint-bark': EVENTS.WINTER
   },
   specialAchievementItems: {
     bcrf: {

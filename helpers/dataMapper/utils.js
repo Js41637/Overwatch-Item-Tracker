@@ -67,6 +67,10 @@ const getCleanID = (what, hero) => {
             .replace('0f1', '')
 }
 
+const getCleanHeroId = (hero) => {
+  return getCleanID(hero).replace('cassidy', 'mccree')
+}
+
 // Returns the image or video URL for an item
 const getPreviewURL = (type, id, hero, event) => {
   let url
@@ -151,5 +155,6 @@ module.exports = {
   stupidNames,
   qualityOrder,
   getAchievementForItem,
-  getOriginalItemsList
+  getOriginalItemsList,
+  getCleanHeroId
 }

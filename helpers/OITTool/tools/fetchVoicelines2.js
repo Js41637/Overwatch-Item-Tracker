@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { getDirectories, checkDirectorys, getCleanID } = require('./utils');
+const { getDirectories, checkDirectorys, getCleanHeroID, getCleanID } = require('./utils');
 
 const BASE_DIR = 'Voiceline'
 
@@ -15,7 +15,7 @@ const fetchVoicelines2 = () => {
 
   getDirectories('./').then(heroes => {
     return Promise.all(heroes.map(hero => {
-      const heroId = getCleanID(hero)
+      const heroId = getCleanHeroID(hero)
 
       if (!fs.existsSync(`./${hero}/${BASE_DIR}`)) {
         return Promise.resolve()

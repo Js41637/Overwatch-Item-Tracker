@@ -31,7 +31,7 @@ const {
 } = require('./dataMapper/itemData.js');
 const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, LATEST_EVENTS } = require('./dataMapper/EVENTDATA.js');
 const { EVENTITEMS } = require('./dataMapper/EVENTITEMS.js');
-const { getCleanID, getItemType, getPreviewURL, sortObject, qualityOrder, getAchievementForItem, getOriginalItemsList } = require('./dataMapper/utils.js');
+const { getCleanID, getCleanHeroId, getItemType, getPreviewURL, sortObject, qualityOrder, getAchievementForItem, getOriginalItemsList } = require('./dataMapper/utils.js');
 const originalData = require('../data/master.json')
 
 var allClassData, missingAllClassData = {}, allClassDataKeys = {};
@@ -254,7 +254,7 @@ console.info('Generating hero data');
 var heroes = {};
 for (var hero in data) {
   const itemGroups = data[hero].items;
-  const heroID = getCleanID(hero);
+  const heroID = getCleanHeroId(hero);
   const heroData = Object.assign({
     name: hero,
     id: heroID,
