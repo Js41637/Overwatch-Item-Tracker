@@ -126,6 +126,8 @@ const data = {
       "shrine-district",
       "tato-takes-off",
       "the-dragon-consumes",
+      // new blood challenge
+      'talon-spotted'
     ],
     icons: [
       // Diablo
