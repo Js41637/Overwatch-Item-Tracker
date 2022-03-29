@@ -29,7 +29,7 @@ const {
   specialAchievementItems, blizzardItems, allClassEventItems, itemNamesIFuckedUp,
   idsBlizzardChanged, noLongerPurchaseableItems, eventItemOverrides, owlTeams
 } = require('./dataMapper/itemData.js');
-const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, LATEST_EVENTS } = require('./dataMapper/EVENTDATA.js');
+const { EVENTS, EVENTNAMES, EVENTTIMES, EVENTORDER, CURRENTEVENT, EVENT_ITEM_ORDER, EVENT_PREVIEWS, LATEST_EVENTS, EVENT_CONFIG } = require('./dataMapper/EVENTDATA.js');
 const { EVENTITEMS } = require('./dataMapper/EVENTITEMS.js');
 const { getCleanID, getCleanHeroId, getItemType, getPreviewURL, sortObject, qualityOrder, getAchievementForItem, getOriginalItemsList } = require('./dataMapper/utils.js');
 const originalData = require('../data/master.json')
@@ -395,7 +395,10 @@ _.forEach(heroes, hero => {
         item.isNew = true // we do this because it mutates the original item, super fucking jank but it works
       }
 
-      const type = (tKey === 'skins' && item.isNew && item.quality == 'legendary') ? 'skinsLegendary' : tKey
+      let type = (tKey === 'skins' && item.isNew && item.quality == 'legendary') ? 'skinsLegendary' : tKey
+      if (type === 'skinsLegendary' && EVENT_CONFIG[event]?.disable_seperate_legendary_skins) {
+        type = 'skins'
+      }
 
       if (!updates[event]) {
         updates[event] = {
@@ -642,6 +645,7 @@ var masterData = {
     legendary: 1000,
     golden: 0 // golden weapons
   },
+  event_config: EVENT_CONFIG,
   latest_events: LATEST_EVENTS,
   events: updates,
   heroes

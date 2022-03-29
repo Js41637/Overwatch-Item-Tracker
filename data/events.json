@@ -10160,15 +10160,16 @@
     "name": "Lunar New Year",
     "id": "LUNAR_NEW_YEAR",
     "dates": {
-      "start": "1612465200000",
-      "end": "1614337200000"
+      "start": "1643137200000",
+      "end": "1645009200000"
     },
     "event_ids": [
       "LUNAR_NEW_YEAR_2017",
       "LUNAR_NEW_YEAR_2018",
       "LUNAR_NEW_YEAR_2019",
       "LUNAR_NEW_YEAR_2020",
-      "LUNAR_NEW_YEAR_2021"
+      "LUNAR_NEW_YEAR_2021",
+      "LUNAR_NEW_YEAR_2022"
     ],
     "items": {
       "skins": [
@@ -10190,8 +10191,7 @@
           "url": "/updates/LUNAR_NEW_YEAR/skins/baptiste-terracotta-medic.jpg",
           "description": "Unlocked by participating in the Year of the Ox 2021 Week 1 challenge",
           "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Bastion",
@@ -10220,8 +10220,7 @@
           "url": "/updates/LUNAR_NEW_YEAR/skins/mccree-xiake.jpg",
           "description": "Unlocked by participating in the Year of the Ox 2021 Week 2 challenge",
           "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Doomfist",
@@ -10244,6 +10243,18 @@
           "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
           "achievement": "limited",
           "group": "LUNAR_NEW_YEAR_2020"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Porcelain",
+          "id": "wrecking-ball-porcelain",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/wrecking-ball-porcelain.jpg",
+          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 3 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         },
         {
           "heroName": "Junkrat",
@@ -10281,7 +10292,18 @@
           "url": "/updates/LUNAR_NEW_YEAR/skins/reaper-imperial-guard.jpg",
           "description": "Unlocked by participating in the Year of the Ox 2021 Week 3 challenge",
           "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2021",
+          "group": "LUNAR_NEW_YEAR_2021"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Auspicious",
+          "id": "soldier-76-auspicious",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/soldier-76-auspicious.jpg",
+          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 2 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
           "isNew": true
         },
         {
@@ -10314,6 +10336,24 @@
           "group": "LUNAR_NEW_YEAR_2020"
         },
         {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Tiger Huntress",
+          "id": "ashe-tiger-huntress",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/ashe-tiger-huntress.jpg",
+          "group": "LUNAR_NEW_YEAR_2021"
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Dragonfire",
+          "id": "bastion-dragonfire",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/bastion-dragonfire.jpg",
+          "group": "LUNAR_NEW_YEAR_2021"
+        },
+        {
           "heroName": "Brigitte",
           "hero": "brigitte",
           "name": "Opera",
@@ -10339,6 +10379,15 @@
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skins/dva-palanquin.jpg",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Kkachi",
+          "id": "echo-kkachi",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/echo-kkachi.jpg",
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Genji",
@@ -10388,6 +10437,16 @@
         {
           "heroName": "Mercy",
           "hero": "mercy",
+          "name": "Seolbim",
+          "id": "mercy-seolbim",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/mercy-seolbim.jpg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
           "name": "Zhuque",
           "id": "mercy-zhuque",
           "quality": "legendary",
@@ -10402,6 +10461,15 @@
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skins/moira-mask-dancer.jpg",
           "group": "LUNAR_NEW_YEAR_2020"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Bull Demon",
+          "id": "orisa-bull-demon",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/orisa-bull-demon.jpg",
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Pharah",
@@ -10476,6 +10544,16 @@
           "group": "LUNAR_NEW_YEAR_2019"
         },
         {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Nezha",
+          "id": "tracer-nezha",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/tracer-nezha.jpg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
           "heroName": "Widowmaker",
           "hero": "widowmaker",
           "name": "Black Lily",
@@ -10483,6 +10561,15 @@
           "quality": "legendary",
           "url": "/updates/LUNAR_NEW_YEAR/skins/widowmaker-black-lily.jpg",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Pale Serpent",
+          "id": "widowmaker-pale-serpent",
+          "quality": "legendary",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/widowmaker-pale-serpent.jpg",
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Winston",
@@ -10559,6 +10646,16 @@
           "group": "LUNAR_NEW_YEAR_2018"
         },
         {
+          "heroName": "Genji",
+          "hero": "genji",
+          "name": "Sky Lantern",
+          "id": "genji-sky-lantern",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/genji-sky-lantern.webm",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Sky Lantern",
@@ -10602,6 +10699,16 @@
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/emotes/soldier-76-rattle-drum.webm",
           "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Widowmaker",
+          "hero": "widowmaker",
+          "name": "Fan Tricks",
+          "id": "widowmaker-fan-tricks",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/emotes/widowmaker-fan-tricks.webm",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -10624,7 +10731,6 @@
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-garlic.png",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "secondId": "ashe-dragon-dance",
           "secondUrl": "/heroes/ashe/sprays/ashe-dragon-dance.png"
         },
@@ -10660,7 +10766,6 @@
           "description": "Unlocked by participating in the Year of the Ox 2021 Week 1 challenge",
           "achievement": "limited",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "secondId": "baptiste-dragon-dance",
           "secondUrl": "/heroes/baptiste/sprays/baptiste-dragon-dance.png"
         },
@@ -10683,7 +10788,6 @@
           "quality": "common",
           "url": "/heroes/bastion/sprays/bastion-thunder.png",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "secondId": "bastion-dragon-dance",
           "secondUrl": "/heroes/bastion/sprays/bastion-dragon-dance.png"
         },
@@ -10730,7 +10834,6 @@
           "description": "Unlocked by participating in the Year of the Ox 2021 Week 2 challenge",
           "achievement": "limited",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "secondId": "mccree-dragon-dance",
           "secondUrl": "/heroes/mccree/sprays/mccree-dragon-dance.png"
         },
@@ -10777,7 +10880,6 @@
           "quality": "common",
           "url": "/heroes/echo/sprays/echo-among-the-lanterns.png",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "secondId": "echo-dragon-dance",
           "secondUrl": "/heroes/echo/sprays/echo-dragon-dance.png"
         },
@@ -10789,7 +10891,6 @@
           "quality": "common",
           "url": "/heroes/echo/sprays/echo-dragonflight.png",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "secondId": "echo-dragon-dance",
           "secondUrl": "/heroes/echo/sprays/echo-dragon-dance.png"
         },
@@ -10801,7 +10902,6 @@
           "quality": "common",
           "url": "/heroes/echo/sprays/echo-gratitude.png",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "secondId": "echo-dragon-dance",
           "secondUrl": "/heroes/echo/sprays/echo-dragon-dance.png"
         },
@@ -10824,6 +10924,20 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/sprays/wrecking-ball-snacks.png",
           "group": "LUNAR_NEW_YEAR_2019",
+          "secondId": "wrecking-ball-dragon-dance",
+          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Porcelain",
+          "id": "wrecking-ball-porcelain",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-porcelain.png",
+          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 3 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true,
           "secondId": "wrecking-ball-dragon-dance",
           "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png"
         },
@@ -10907,6 +11021,18 @@
           "secondUrl": "/heroes/mercy/sprays/mercy-dragon-dance.png"
         },
         {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Seolbim",
+          "id": "mercy-seolbim",
+          "quality": "common",
+          "url": "/heroes/mercy/sprays/mercy-seolbim.png",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true,
+          "secondId": "mercy-dragon-dance",
+          "secondUrl": "/heroes/mercy/sprays/mercy-dragon-dance.png"
+        },
+        {
           "heroName": "Moira",
           "hero": "moira",
           "name": "Dog Person",
@@ -10936,7 +11062,6 @@
           "quality": "common",
           "url": "/heroes/orisa/sprays/orisa-bulls-fury.png",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "secondId": "orisa-dragon-dance",
           "secondUrl": "/heroes/orisa/sprays/orisa-dragon-dance.png"
         },
@@ -10983,7 +11108,6 @@
           "description": "Unlocked by participating in the Year of the Ox 2021 Week 3 challenge",
           "achievement": "limited",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "secondId": "reaper-dragon-dance",
           "secondUrl": "/heroes/reaper/sprays/reaper-dragon-dance.png"
         },
@@ -11028,6 +11152,20 @@
           "quality": "common",
           "url": "/heroes/soldier-76/sprays/soldier-76-folded-hands.png",
           "group": "LUNAR_NEW_YEAR_2017",
+          "secondId": "soldier-76-dragon-dance",
+          "secondUrl": "/heroes/soldier-76/sprays/soldier-76-dragon-dance.png"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Practicing Forms",
+          "id": "soldier-76-practicing-forms",
+          "quality": "common",
+          "url": "/heroes/soldier-76/sprays/soldier-76-practicing-forms.png",
+          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 2 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true,
           "secondId": "soldier-76-dragon-dance",
           "secondUrl": "/heroes/soldier-76/sprays/soldier-76-dragon-dance.png"
         },
@@ -11087,6 +11225,18 @@
           "secondUrl": "/heroes/tracer/sprays/tracer-dragon-dance.png"
         },
         {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Nezha's Mischief",
+          "id": "tracer-nezhas-mischief",
+          "quality": "common",
+          "url": "/heroes/tracer/sprays/tracer-nezhas-mischief.png",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true,
+          "secondId": "tracer-dragon-dance",
+          "secondUrl": "/heroes/tracer/sprays/tracer-dragon-dance.png"
+        },
+        {
           "heroName": "Widowmaker",
           "hero": "widowmaker",
           "name": "Eye to Eye",
@@ -11094,7 +11244,6 @@
           "quality": "common",
           "url": "/heroes/widowmaker/sprays/widowmaker-eye-to-eye.png",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "secondId": "widowmaker-dragon-dance",
           "secondUrl": "/heroes/widowmaker/sprays/widowmaker-dragon-dance.png"
         },
@@ -11199,8 +11348,7 @@
           "name": "Year of the Ox",
           "id": "year-of-the-ox-2021",
           "url": "/heroes/all/sprays/year-of-the-ox-2021.png",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "hero": "all",
@@ -11215,6 +11363,14 @@
           "id": "year-of-the-rooster-2017",
           "url": "/heroes/all/sprays/year-of-the-rooster-2017.png",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "hero": "all",
+          "name": "Year of the Tiger",
+          "id": "year-of-the-tiger-2022",
+          "url": "/heroes/all/sprays/year-of-the-tiger-2022.png",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         },
         {
           "hidden": true,
@@ -11475,7 +11631,6 @@
           "id": "not-so-fast-outlaw",
           "url": "/heroes/all/sprays/not-so-fast-outlaw.png",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "achievement": true,
           "description": "Kill the Bounty Target while they are using an ultimate ability in Bounty Hunter."
         },
@@ -11485,7 +11640,6 @@
           "id": "pay-up",
           "url": "/heroes/all/sprays/pay-up.png",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "achievement": true,
           "description": "Earn 8 bounties in a game of Bounty Hunter."
         },
@@ -11495,12 +11649,21 @@
           "id": "quick-on-the-draw",
           "url": "/heroes/all/sprays/quick-on-the-draw.png",
           "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true,
           "achievement": true,
           "description": "Kill 3 enemies without dying as the bounty target in Bounty Hunter."
         }
       ],
       "voicelines": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Good Kitty",
+          "id": "ana-good-kitty",
+          "quality": "common",
+          "url": "/heroes/ana/voicelines/ana-good-kitty.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
         {
           "heroName": "Ana",
           "hero": "ana",
@@ -11517,8 +11680,7 @@
           "id": "ana-stubborn-as-an-ox",
           "quality": "common",
           "url": "/heroes/ana/voicelines/ana-stubborn-as-an-ox.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Ana",
@@ -11532,12 +11694,21 @@
         {
           "heroName": "Ashe",
           "hero": "ashe",
+          "name": "Earned My Stripes",
+          "id": "ashe-earned-my-stripes",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-earned-my-stripes.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
           "name": "Life's a rodeo",
           "id": "ashe-lifes-a-rodeo",
           "quality": "common",
           "url": "/heroes/ashe/voicelines/ashe-lifes-a-rodeo.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Ashe",
@@ -11582,8 +11753,7 @@
           "id": "baptiste-persistence",
           "quality": "common",
           "url": "/heroes/baptiste/voicelines/baptiste-persistence.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Bastion",
@@ -11678,6 +11848,16 @@
         {
           "heroName": "D.Va",
           "hero": "dva",
+          "name": "One Year Older",
+          "id": "dva-one-year-older",
+          "quality": "common",
+          "url": "/heroes/dva/voicelines/dva-one-year-older.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
           "name": "The best things in life",
           "id": "dva-the-best-things-in-life",
           "quality": "common",
@@ -11703,14 +11883,23 @@
           "group": "LUNAR_NEW_YEAR_2018"
         },
         {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "More Dumplings",
+          "id": "doomfist-more-dumplings",
+          "quality": "common",
+          "url": "/heroes/doomfist/voicelines/doomfist-more-dumplings.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
           "heroName": "Echo",
           "hero": "echo",
           "name": "Congratulations!",
           "id": "echo-congratulations",
           "quality": "common",
           "url": "/heroes/echo/voicelines/echo-congratulations.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Echo",
@@ -11719,8 +11908,7 @@
           "id": "echo-i-wish-i-could-eat",
           "quality": "common",
           "url": "/heroes/echo/voicelines/echo-i-wish-i-could-eat.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Genji",
@@ -11775,6 +11963,16 @@
           "quality": "common",
           "url": "/heroes/hanzo/voicelines/hanzo-insolent-cur.ogg",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "No Mercy for the Tiger",
+          "id": "hanzo-no-mercy-for-the-tiger",
+          "quality": "common",
+          "url": "/heroes/hanzo/voicelines/hanzo-no-mercy-for-the-tiger.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         },
         {
           "heroName": "Hanzo",
@@ -11851,6 +12049,16 @@
         {
           "heroName": "Mei",
           "hero": "mei",
+          "name": "Happy Year of the Tiger",
+          "id": "mei-happy-year-of-the-tiger",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-happy-year-of-the-tiger.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
           "name": "I feel like dancing!",
           "id": "mei-i-feel-like-dancing",
           "quality": "common",
@@ -11864,8 +12072,7 @@
           "id": "mei-moo",
           "quality": "common",
           "url": "/heroes/mei/voicelines/mei-moo.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Mei",
@@ -11924,12 +12131,21 @@
         {
           "heroName": "Moira",
           "hero": "moira",
+          "name": "Tiger by the Tail",
+          "id": "moira-tiger-by-the-tail",
+          "quality": "common",
+          "url": "/heroes/moira/voicelines/moira-tiger-by-the-tail.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
           "name": "Unsavory",
           "id": "moira-unsavory",
           "quality": "common",
           "url": "/heroes/moira/voicelines/moira-unsavory.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Moira",
@@ -12006,6 +12222,16 @@
         {
           "heroName": "Reaper",
           "hero": "reaper",
+          "name": "Lucky Color",
+          "id": "reaper-lucky-color",
+          "quality": "common",
+          "url": "/heroes/reaper/voicelines/reaper-lucky-color.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
           "name": "Now those are fireworks",
           "id": "reaper-now-those-are-fireworks",
           "quality": "common",
@@ -12037,7 +12263,16 @@
           "id": "reinhardt-strong-as-oxen",
           "quality": "common",
           "url": "/heroes/reinhardt/voicelines/reinhardt-strong-as-oxen.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
+          "group": "LUNAR_NEW_YEAR_2021"
+        },
+        {
+          "heroName": "Roadhog",
+          "hero": "roadhog",
+          "name": "I'll Catch You",
+          "id": "roadhog-ill-catch-you",
+          "quality": "common",
+          "url": "/heroes/roadhog/voicelines/roadhog-ill-catch-you.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
           "isNew": true
         },
         {
@@ -12083,8 +12318,7 @@
           "id": "sigma-happy-year-of-the-ox",
           "quality": "common",
           "url": "/heroes/sigma/voicelines/sigma-happy-year-of-the-ox.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Soldier: 76",
@@ -12107,12 +12341,21 @@
         {
           "heroName": "Sombra",
           "hero": "sombra",
+          "name": "This One Has Teeth",
+          "id": "sombra-this-one-has-teeth",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-this-one-has-teeth.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
           "name": "You work too hard",
           "id": "sombra-you-work-too-hard",
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-you-work-too-hard.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Sombra",
@@ -12148,8 +12391,7 @@
           "id": "symmetra-chaos",
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-chaos.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Symmetra",
@@ -12226,6 +12468,16 @@
         {
           "heroName": "Winston",
           "hero": "winston",
+          "name": "Delightful Get-Together",
+          "id": "winston-delightful-gettogether",
+          "quality": "common",
+          "url": "/heroes/winston/voicelines/winston-delightful-gettogether.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
           "name": "Moon sweet home",
           "id": "winston-moon-sweet-home",
           "quality": "common",
@@ -12239,8 +12491,7 @@
           "id": "winston-red-and-green",
           "quality": "common",
           "url": "/heroes/winston/voicelines/winston-red-and-green.ogg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Winston",
@@ -12295,6 +12546,16 @@
           "quality": "common",
           "url": "/heroes/zenyatta/voicelines/zenyatta-fortune-favors-me.ogg",
           "group": "LUNAR_NEW_YEAR_2018"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "One Moon",
+          "id": "zenyatta-one-moon",
+          "quality": "common",
+          "url": "/heroes/zenyatta/voicelines/zenyatta-one-moon.ogg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         }
       ],
       "poses": [
@@ -12341,8 +12602,7 @@
           "id": "brigitte-sparkling-company",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/brigitte-sparkling-company.jpg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Cassidy",
@@ -12370,6 +12630,16 @@
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/doomfist-fireworks.jpg",
           "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Fan",
+          "id": "echo-fan",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/echo-fan.jpg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         },
         {
           "heroName": "Hammond",
@@ -12417,13 +12687,32 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Lantern",
+          "id": "mercy-lantern",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/mercy-lantern.jpg",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
           "heroName": "Moira",
           "hero": "moira",
           "name": "The Lion Roars",
           "id": "moira-the-lion-roars",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/moira-the-lion-roars.jpg",
-          "group": "LUNAR_NEW_YEAR_2021",
+          "group": "LUNAR_NEW_YEAR_2021"
+        },
+        {
+          "heroName": "Orisa",
+          "hero": "orisa",
+          "name": "Sparklers",
+          "id": "orisa-sparklers",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/orisa-sparklers.jpg",
+          "group": "LUNAR_NEW_YEAR_2022",
           "isNew": true
         },
         {
@@ -12460,8 +12749,7 @@
           "id": "soldier-76-hongbao",
           "quality": "rare",
           "url": "/updates/LUNAR_NEW_YEAR/poses/soldier-76-hongbao.jpg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Sombra",
@@ -12527,58 +12815,6 @@
           "group": "LUNAR_NEW_YEAR_2018"
         }
       ],
-      "skinsLegendary": [
-        {
-          "heroName": "Ashe",
-          "hero": "ashe",
-          "name": "Tiger Huntress",
-          "id": "ashe-tiger-huntress",
-          "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/ashe-tiger-huntress.jpg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
-        },
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "Dragonfire",
-          "id": "bastion-dragonfire",
-          "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/bastion-dragonfire.jpg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
-        },
-        {
-          "heroName": "Echo",
-          "hero": "echo",
-          "name": "Kkachi",
-          "id": "echo-kkachi",
-          "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/echo-kkachi.jpg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
-        },
-        {
-          "heroName": "Orisa",
-          "hero": "orisa",
-          "name": "Bull Demon",
-          "id": "orisa-bull-demon",
-          "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/orisa-bull-demon.jpg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
-        },
-        {
-          "heroName": "Widowmaker",
-          "hero": "widowmaker",
-          "name": "Pale Serpent",
-          "id": "widowmaker-pale-serpent",
-          "quality": "legendary",
-          "url": "/updates/LUNAR_NEW_YEAR/skinsLegendary/widowmaker-pale-serpent.jpg",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
-        }
-      ],
       "icons": [
         {
           "heroName": "Ashe",
@@ -12586,8 +12822,7 @@
           "name": "Bandit",
           "id": "ashe-bandit",
           "url": "/heroes/ashe/icons/ashe-bandit.png",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Ashe",
@@ -12595,8 +12830,7 @@
           "name": "Tiger",
           "id": "ashe-tiger",
           "url": "/heroes/ashe/icons/ashe-tiger.png",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Baptiste",
@@ -12606,8 +12840,7 @@
           "url": "/heroes/baptiste/icons/baptiste-stonefaced.png",
           "description": "Unlocked by participating in the Year of the Ox 2021 Week 1 challenge",
           "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Bastion",
@@ -12615,8 +12848,7 @@
           "name": "Dragonhead",
           "id": "bastion-dragonhead",
           "url": "/heroes/bastion/icons/bastion-dragonhead.png",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Brigitte",
@@ -12642,8 +12874,7 @@
           "url": "/heroes/mccree/icons/mccree-wanderer.png",
           "description": "Unlocked by participating in the Year of the Ox 2021 Week 2 challenge",
           "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "D.Va",
@@ -12669,8 +12900,7 @@
           "name": "Magpie",
           "id": "echo-magpie",
           "url": "/heroes/echo/icons/echo-magpie.png",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Hammond",
@@ -12681,6 +12911,17 @@
           "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
           "achievement": "limited",
           "group": "LUNAR_NEW_YEAR_2020"
+        },
+        {
+          "heroName": "Hammond",
+          "hero": "wrecking-ball",
+          "name": "Tea",
+          "id": "wrecking-ball-tea",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-tea.png",
+          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 3 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         },
         {
           "heroName": "Hanzo",
@@ -12707,6 +12948,15 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Seolbim",
+          "id": "mercy-seolbim",
+          "url": "/heroes/mercy/icons/mercy-seolbim.png",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
           "heroName": "Moira",
           "hero": "moira",
           "name": "Mask Dancer",
@@ -12720,8 +12970,7 @@
           "name": "Bull",
           "id": "orisa-bull",
           "url": "/heroes/orisa/icons/orisa-bull.png",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Orisa",
@@ -12739,8 +12988,7 @@
           "url": "/heroes/reaper/icons/reaper-imperial.png",
           "description": "Unlocked by participating in the Year of the Ox 2021 Week 3 challenge",
           "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Reaper",
@@ -12773,6 +13021,17 @@
           "id": "roadhog-pigsy",
           "url": "/heroes/roadhog/icons/roadhog-pigsy.png",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Auspicious",
+          "id": "soldier-76-auspicious",
+          "url": "/heroes/soldier-76/icons/soldier-76-auspicious.png",
+          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 2 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         },
         {
           "heroName": "Sombra",
@@ -12833,6 +13092,15 @@
         {
           "heroName": "Tracer",
           "hero": "tracer",
+          "name": "Nezha",
+          "id": "tracer-nezha",
+          "url": "/heroes/tracer/icons/tracer-nezha.png",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
           "name": "Noble Thief",
           "id": "tracer-noble-thief",
           "url": "/heroes/tracer/icons/tracer-noble-thief.png",
@@ -12852,8 +13120,7 @@
           "name": "Serpent",
           "id": "widowmaker-serpent",
           "url": "/heroes/widowmaker/icons/widowmaker-serpent.png",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Winston",
@@ -13104,8 +13371,7 @@
           "name": "Year of the Ox 2021",
           "id": "year-of-the-ox-2021",
           "url": "/heroes/all/icons/year-of-the-ox-2021.png",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "hero": "all",
@@ -13127,6 +13393,14 @@
           "id": "year-of-the-rooster-2017",
           "url": "/heroes/all/icons/year-of-the-rooster-2017.png",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "hero": "all",
+          "name": "Year of the Tiger 2022",
+          "id": "year-of-the-tiger-2022",
+          "url": "/heroes/all/icons/year-of-the-tiger-2022.png",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         },
         {
           "hero": "all",
@@ -13167,8 +13441,7 @@
           "id": "dva-finale",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/intros/dva-finale.webm",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Echo",
@@ -13177,8 +13450,7 @@
           "id": "echo-fan-dance",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/intros/echo-fan-dance.webm",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Junkrat",
@@ -13223,8 +13495,7 @@
           "id": "symmetra-shining-bull",
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/intros/symmetra-shining-bull.webm",
-          "group": "LUNAR_NEW_YEAR_2021",
-          "isNew": true
+          "group": "LUNAR_NEW_YEAR_2021"
         },
         {
           "heroName": "Tracer",
@@ -13234,6 +13505,16 @@
           "quality": "epic",
           "url": "/updates/LUNAR_NEW_YEAR/intros/tracer-lion-dance.webm",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Release",
+          "id": "zenyatta-release",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/intros/zenyatta-release.webm",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         }
       ]
     }

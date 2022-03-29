@@ -424,7 +424,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "$uibModal", "DataService"
   $scope.selectLegendarySkin = function($event, skin) {
     $event.preventDefault();
     $scope.checked[skin.hero].skins[skin.id] = !$scope.checked[skin.hero].skins[skin.id];
-    $scope.onSelect(skin, 'skins');
+    $scope.onSelect(skin, 'skinsLegendary');
   };
 
   $scope.getGroupName = function(group) {

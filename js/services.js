@@ -74,6 +74,7 @@ OWI.factory("DataService", ["$http", "$q", "StorageService", "$timeout", functio
     events: {},
     heroes: {},
     latest_events: {},
+    event_config: {},
     initialized: false,
     isItemChecked: function(who, type, id) {
       return (service.checked[who] ? (service.checked[who][type] ? service.checked[who][type][id] : false) : false);
@@ -200,6 +201,11 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
 
             var quality = (type === 'icons' ? 'rare' : item.quality) || 'common'
             var eventType = (type === 'skins' && item.quality === 'legendary' && item.isNew) ? 'skinsLegendary' : type;
+
+            if (eventType === 'skinsLegendary' && (DataService.event_config[item.event] || {}).disable_seperate_legendary_skins) {
+              eventType = 'skins'
+            }
+
             var shouldCountItem = heroId !== 'all' || (heroId === 'all' && !item.hero)
             var shouldCountItemOrIcon = countIcons || type !== 'icons'
 
@@ -274,16 +280,16 @@ OWI.factory('CostAndTotalService', ["DataService", "StorageService", "$q", "$tim
         }
       }
     },
-    updateItem: function(item, type, hero, event, idOverride) {
+    updateItem: function(item, rawType, hero, event, idOverride) {
+      var type = TYPES[rawType] || rawType
       var itemID = idOverride || item.id;
       var isSelected = DataService.checked[item.hero || hero][TYPES[type] || type][itemID];
       var isSpecialItem = 'achievement' in item && item.achievement !== true
       var isIcon = type === 'icons'
       var isAllHero = hero === 'all'
       var shouldCountItem = !isIcon || (isIcon && countIcons)
+      var eventType = rawType
       event = item.event || event;
-
-      var eventType = (type === 'skins' && item.quality === 'legendary' && item.isNew) ? 'skinsLegendary' : type;
 
       var val = isSelected ? 1 : -1;
       var price = DataService.prices[item.quality] * ((event && DataService.latest_events[event] === item.group) ? 3 : 1);
