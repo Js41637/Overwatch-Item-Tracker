@@ -1,3 +1,5 @@
+const { EVENTS } = require('../dataMapper/EVENTDATA')
+
 const EVENTITEMS = {
   SUMMER_GAMES: {
     SUMMER_GAMES_2016: [
@@ -2262,6 +2264,15 @@ const EVENTITEMS = {
       "poses/dva-at-ease",
       "poses/mei-peace",
       "poses/torbjorn-taking-a-break"
+    ],
+    [EVENTS.ANNIVERSARY_REMIX_VOL_1]: [
+      "icons/anniversary-2022",
+      "skins/dva-white-cat",
+      "skins/genji-demon",
+      "skins/mercy-mage",
+      "skins/reaper-evermore",
+      "skins/reinhardt-steelhardt",
+      "skins/zenyatta-zealot"
     ]
   }
 }

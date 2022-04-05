@@ -428,8 +428,14 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "$uibModal", "DataService"
   };
 
   $scope.getGroupName = function(group) {
+    var groupConfig = Data.event_config[group]
+    if (groupConfig && groupConfig.display_name) {
+      return groupConfig.display_name
+    }
+
     var split = group.split('_')
-    return split[split.length - 1]
+    split.splice(0, 1)
+    return split.join(' ')
   }
 
   var resetCosts = function() {

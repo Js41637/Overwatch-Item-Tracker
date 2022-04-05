@@ -1,9 +1,11 @@
 const fs = require('fs')
 const _ = require('lodash')
+const { EVENTS } = require('../dataMapper/EVENTDATA')
 
 const events = require('../../data/events.json')
-const event = 'LUNAR_NEW_YEAR'
-const ignoreGroups = ['LUNAR_NEW_YEAR_2016', 'LUNAR_NEW_YEAR_2017', 'LUNAR_NEW_YEAR_2018', 'LUNAR_NEW_YEAR_2019', 'LUNAR_NEW_YEAR_2020', 'LUNAR_NEW_YEAR_2021']
+const event = 'ANNIVERSARY'
+const newEvent = EVENTS.ANNIVERSARY_REMIX_VOL_1
+const ignoreGroups = Object.values(EVENTS).filter(x => x !== newEvent)
 
 const stuff = _.reduce(events[event].items, (res, items, type) => {
   type = type.includes('skins') ? 'skins' : type

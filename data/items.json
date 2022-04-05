@@ -16,8 +16,7 @@
           "achievement": "limited",
           "event": "ANNIVERSARY",
           "hero": "wrecking-ball",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "16-Bit Hero",
@@ -220,6 +219,12 @@
           "id": "anniversary-2021",
           "event": "ANNIVERSARY",
           "url": "/heroes/all/icons/anniversary-2021.png"
+        },
+        {
+          "name": "Anniversary 2022",
+          "id": "anniversary-2022",
+          "event": "ANNIVERSARY",
+          "url": "/heroes/all/icons/anniversary-2022.png"
         },
         {
           "name": "Anubis",
@@ -502,8 +507,7 @@
           "achievement": "limited",
           "event": "ANNIVERSARY",
           "hero": "echo",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Björn",
@@ -519,8 +523,7 @@
           "url": "/heroes/sombra/icons/sombra-black-cat.png",
           "event": "ANNIVERSARY",
           "hero": "sombra",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Black Hole",
@@ -556,8 +559,7 @@
           "url": "/heroes/moira/icons/moira-bloom.png",
           "event": "ANNIVERSARY",
           "hero": "moira",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Blue Mask",
@@ -1598,8 +1600,7 @@
           "achievement": "limited",
           "event": "ANNIVERSARY",
           "hero": "ana",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Cybjörn",
@@ -2149,8 +2150,7 @@
           "url": "/heroes/baptiste/icons/baptiste-funky.png",
           "event": "ANNIVERSARY",
           "hero": "baptiste",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "GAMF",
@@ -2242,8 +2242,7 @@
           "url": "/heroes/doomfist/icons/doomfist-gladiator.png",
           "event": "ANNIVERSARY",
           "hero": "doomfist",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Goddess",
@@ -2847,8 +2846,7 @@
           "url": "/heroes/junkrat/icons/junkrat-junkfood.png",
           "event": "ANNIVERSARY",
           "hero": "junkrat",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Junkrat",
@@ -4950,8 +4948,10 @@
           "id": "ashe-skullcap",
           "url": "/heroes/ashe/icons/ashe-skullcap.png",
           "description": "Unlocked by participating in the Year of the Tiger 2022 Week 1 challenge",
-          "achievement": "blizzard",
-          "hero": "ashe"
+          "achievement": "limited",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "ashe",
+          "isNew": true
         },
         {
           "name": "Slasher",
@@ -5601,6 +5601,7 @@
         {
           "name": "Ukraine",
           "id": "ukraine",
+          "event": "SUMMER_GAMES",
           "url": "/heroes/all/icons/ukraine.png"
         },
         {
@@ -9149,8 +9150,7 @@
           "description": "Unlocked by participating in the Anniversary 2021 week 1 challenge",
           "achievement": "limited",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Captain Amari",
@@ -9219,14 +9219,6 @@
           "description": "During the Omnic Crisis, the Egyptian military outfitted their elite snipers, including Ana Amari, with cybernetic ocular implants, greatly improving their efficiency in the defense of their country.",
           "event": "UPRISING",
           "group": "UPRISING_2020"
-        },
-        {
-          "name": "Haroeris",
-          "id": "ana-haroeris",
-          "quality": "legendary",
-          "url": "/heroes/ana/skins/ana-haroeris.jpg",
-          "description": "Unlocked with purchase of the Overwatch League 2021 Summer Showdown Tournament Skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -9448,8 +9440,7 @@
           "achievement": "limited",
           "event": "ANNIVERSARY",
           "hero": "ana",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "sprays": [
@@ -9749,8 +9740,7 @@
           "description": "Unlocked by participating in the Anniversary 2021 week 1 challenge",
           "achievement": "limited",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "voicelines": [
@@ -10168,7 +10158,9 @@
           "quality": "epic",
           "url": "/heroes/ashe/skins/ashe-prosperity.jpg",
           "description": "Unlocked by participating in the Year of the Tiger 2022 Week 1 challenge",
-          "achievement": "blizzard"
+          "achievement": "limited",
+          "event": "LUNAR_NEW_YEAR",
+          "isNew": true
         },
         {
           "name": "Gangster",
@@ -10298,8 +10290,7 @@
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/ashe-round-em-up.webm",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "intros": [
@@ -10483,8 +10474,10 @@
           "id": "ashe-skullcap",
           "url": "/heroes/ashe/icons/ashe-skullcap.png",
           "description": "Unlocked by participating in the Year of the Tiger 2022 Week 1 challenge",
-          "achievement": "blizzard",
-          "hero": "ashe"
+          "achievement": "limited",
+          "event": "LUNAR_NEW_YEAR",
+          "hero": "ashe",
+          "isNew": true
         }
       ],
       "sprays": [
@@ -11290,8 +11283,7 @@
           "quality": "legendary",
           "url": "/heroes/baptiste/skins/baptiste-funky.jpg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "emotes": [
@@ -11451,8 +11443,7 @@
           "url": "/heroes/baptiste/icons/baptiste-funky.png",
           "event": "ANNIVERSARY",
           "hero": "baptiste",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Lò",
@@ -11709,8 +11700,7 @@
           "quality": "common",
           "url": "/heroes/baptiste/sprays/baptiste-keepin-alive.png",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Cute",
@@ -12322,14 +12312,6 @@
           "url": "/heroes/bastion/skins/bastion-overgrown.jpg",
           "description": "Damaged in one of the battles of the Omnic Crisis, this lone Bastion unit was reactivated in the Black Forest near Eichenwalde years later.",
           "achievement": "blizzard"
-        },
-        {
-          "name": "Pirate Ship",
-          "id": "bastion-pirate-ship",
-          "quality": "legendary",
-          "url": "/heroes/bastion/skins/bastion-pirate-ship.jpg",
-          "description": "Unlocked with purchase of the Overwatch League 2021 Countdown Cup Tournament Skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -13028,15 +13010,6 @@
           "group": "HALLOWEEN_2016"
         },
         {
-          "name": "Toast",
-          "id": "bastion-toast",
-          "quality": "rare",
-          "url": "/heroes/bastion/poses/bastion-toast.jpg",
-          "standardItem": true,
-          "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2017"
-        },
-        {
           "name": "Firework",
           "id": "bastion-firework",
           "quality": "rare",
@@ -13213,13 +13186,6 @@
           "description": "A prominent figure in her own legends, the Shieldmaiden is also known as the Viking's daughter in the tale of Junkenstein.",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2018"
-        },
-        {
-          "name": "Goat",
-          "id": "brigitte-goat",
-          "quality": "legendary",
-          "url": "/heroes/brigitte/skins/brigitte-goat.jpg",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -13274,8 +13240,7 @@
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/brigitte-power-flail.webm",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Katt",
@@ -15213,12 +15178,13 @@
           "group": "ANNIVERSARY_2017"
         },
         {
-          "name": "2020 Pacific All-Stars",
-          "id": "dva-2020-pacific-allstars",
+          "name": "White Cat",
+          "id": "dva-white-cat",
           "quality": "legendary",
-          "url": "/heroes/dva/skins/dva-2020-pacific-allstars.jpg",
-          "description": "Unlocked with purchase of 2020 Pacific All-Stars skin",
-          "achievement": "owl"
+          "url": "/heroes/dva/skins/dva-white-cat.jpg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_REMIX_VOL_1",
+          "isNew": true
         }
       ],
       "emotes": [
@@ -16079,8 +16045,7 @@
           "quality": "rare",
           "url": "/heroes/dva/poses/dva-at-ease.jpg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "weapons": [
@@ -16245,16 +16210,7 @@
           "quality": "legendary",
           "url": "/heroes/doomfist/skins/doomfist-gladiator.jpg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
-        },
-        {
-          "name": "Thunder",
-          "id": "doomfist-thunder",
-          "quality": "legendary",
-          "url": "/heroes/doomfist/skins/doomfist-thunder.jpg",
-          "description": "Unlocked with purchase of the San Francisco Shock 2019 Championship Doomfist Thunder skin",
-          "achievement": "owl"
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "emotes": [
@@ -16442,8 +16398,7 @@
           "url": "/heroes/doomfist/icons/doomfist-gladiator.png",
           "event": "ANNIVERSARY",
           "hero": "doomfist",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Jingang",
@@ -16679,8 +16634,7 @@
           "quality": "common",
           "url": "/heroes/doomfist/sprays/doomfist-thumbs-down-1.png",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Cute",
@@ -17105,8 +17059,7 @@
           "description": "Unlocked by participating in the Anniversary 2021 week 2 challenge",
           "achievement": "limited",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Butterfly",
@@ -17156,14 +17109,6 @@
           "url": "/heroes/echo/skins/echo-kkachi.jpg",
           "event": "LUNAR_NEW_YEAR",
           "group": "LUNAR_NEW_YEAR_2021"
-        },
-        {
-          "name": "Good and Evil",
-          "id": "echo-good-and-evil",
-          "quality": "legendary",
-          "url": "/heroes/echo/skins/echo-good-and-evil.jpg",
-          "description": "Unlocked with purchase of the Overwatch League 2020 MVP Good and Evil skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -17335,8 +17280,7 @@
           "achievement": "limited",
           "event": "ANNIVERSARY",
           "hero": "echo",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "sprays": [
@@ -17642,8 +17586,7 @@
           "description": "Unlocked by participating in the Anniversary 2021 week 2 challenge",
           "achievement": "limited",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "voicelines": [
@@ -18075,6 +18018,15 @@
           "isNew": true
         },
         {
+          "name": "Demon",
+          "id": "genji-demon",
+          "quality": "legendary",
+          "url": "/heroes/genji/skins/genji-demon.jpg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_REMIX_VOL_1",
+          "isNew": true
+        },
+        {
           "name": "Sentai",
           "id": "genji-sentai",
           "quality": "legendary",
@@ -18089,14 +18041,6 @@
           "url": "/heroes/genji/skins/genji-illidan.jpg",
           "description": "Unlocked as part of the BlizzCon 2019 In-Game Goodies",
           "achievement": "blizzard"
-        },
-        {
-          "name": "2018 Pacific All-Stars",
-          "id": "genji-2018-pacific-allstars",
-          "quality": "legendary",
-          "url": "/heroes/genji/skins/genji-2018-pacific-allstars.jpg",
-          "description": "Unlocked with purchase of 2018 Pacific All-Stars skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -18798,8 +18742,7 @@
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-my-blade-never-dulls.ogg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "You need healing",
@@ -20072,8 +20015,7 @@
           "quality": "legendary",
           "url": "/heroes/junkrat/skins/junkrat-junkfood.jpg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "emotes": [
@@ -20277,8 +20219,7 @@
           "url": "/heroes/junkrat/icons/junkrat-junkfood.png",
           "event": "ANNIVERSARY",
           "hero": "junkrat",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Inferno",
@@ -20522,8 +20463,7 @@
           "quality": "common",
           "url": "/heroes/junkrat/sprays/junkrat-jawbreaker.png",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Joker",
@@ -20805,8 +20745,7 @@
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-not-a-hog.ogg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Oops... Dropped Something",
@@ -21090,14 +21029,6 @@
           "url": "/heroes/lucio/skins/lucio-jazzy.jpg",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "2019 Pacific All-Stars",
-          "id": "lucio-2019-pacific-allstars",
-          "quality": "legendary",
-          "url": "/heroes/lucio/skins/lucio-2019-pacific-allstars.jpg",
-          "description": "Unlocked with purchase of 2019 Pacific All-Stars skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -21162,13 +21093,6 @@
           "url": "/updates/ANNIVERSARY/emotes/lucio-smooth.webm",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Dance Party",
-          "id": "lucio-dance-party",
-          "quality": "legendary",
-          "url": "/heroes/lucio/emotes/lucio-dance-party.webm",
-          "achievement": "owl"
         }
       ],
       "intros": [
@@ -22105,14 +22029,6 @@
           "url": "/heroes/mei/skins/mei-honeydew.jpg",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2019"
-        },
-        {
-          "name": "MM-Mei",
-          "id": "mei-mmmei",
-          "quality": "legendary",
-          "url": "/heroes/mei/skins/mei-mmmei.jpg",
-          "description": "Unlocked with purchase of the Overwatch League 2021 May Melee Tournament Skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -22933,8 +22849,7 @@
           "quality": "rare",
           "url": "/heroes/mei/poses/mei-peace.jpg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "weapons": [
@@ -23123,20 +23038,21 @@
           "group": "ANNIVERSARY_2020"
         },
         {
+          "name": "Mage",
+          "id": "mercy-mage",
+          "quality": "legendary",
+          "url": "/heroes/mercy/skins/mercy-mage.jpg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_REMIX_VOL_1",
+          "isNew": true
+        },
+        {
           "name": "Dr. Ziegler",
           "id": "mercy-dr-ziegler",
           "quality": "legendary",
           "url": "/heroes/mercy/skins/mercy-dr-ziegler.jpg",
           "description": "Unlocked by participating in Mercy's Recall Challenge",
           "achievement": "blizzard"
-        },
-        {
-          "name": "2019 Atlantic All-Stars",
-          "id": "mercy-2019-atlantic-allstars",
-          "quality": "legendary",
-          "url": "/heroes/mercy/skins/mercy-2019-atlantic-allstars.jpg",
-          "description": "Unlocked with purchase of 2019 Atlantic All-Stars skin",
-          "achievement": "owl"
         },
         {
           "name": "Pink",
@@ -24221,8 +24137,7 @@
           "quality": "legendary",
           "url": "/heroes/moira/skins/moira-venus.jpg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "emotes": [
@@ -24401,8 +24316,7 @@
           "url": "/heroes/moira/icons/moira-bloom.png",
           "event": "ANNIVERSARY",
           "hero": "moira",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Cothrom an Lae",
@@ -24654,8 +24568,7 @@
           "quality": "common",
           "url": "/heroes/moira/sprays/moira-mind-the-thorns.png",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Nine of Hearts",
@@ -27098,6 +27011,15 @@
           "group": "UPRISING_2018"
         },
         {
+          "name": "Evermore",
+          "id": "reaper-evermore",
+          "quality": "legendary",
+          "url": "/heroes/reaper/skins/reaper-evermore.jpg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_REMIX_VOL_1",
+          "isNew": true
+        },
+        {
           "name": "Masquerade",
           "id": "reaper-masquerade",
           "quality": "legendary",
@@ -27876,8 +27798,7 @@
           "quality": "common",
           "url": "/heroes/reaper/voicelines/reaper-smile.ogg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "poses": [
@@ -28148,20 +28069,21 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
+          "name": "Steelhardt",
+          "id": "reinhardt-steelhardt",
+          "quality": "legendary",
+          "url": "/heroes/reinhardt/skins/reinhardt-steelhardt.jpg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_REMIX_VOL_1",
+          "isNew": true
+        },
+        {
           "name": "Raynhardt",
           "id": "reinhardt-raynhardt",
           "quality": "legendary",
           "url": "/heroes/reinhardt/skins/reinhardt-raynhardt.jpg",
           "description": "Unlocked by purchasing the Celebration Collection",
           "achievement": "blizzard"
-        },
-        {
-          "name": "2020 Atlantic All-Stars",
-          "id": "reinhardt-2020-atlantic-allstars",
-          "quality": "legendary",
-          "url": "/heroes/reinhardt/skins/reinhardt-2020-atlantic-allstars.jpg",
-          "description": "Unlocked with purchase of 2020 Atlantic All-Stars skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -29092,14 +29014,6 @@
           "url": "/heroes/roadhog/skins/roadhog-toxic.jpg",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2019"
-        },
-        {
-          "name": "Midas",
-          "id": "roadhog-midas",
-          "quality": "legendary",
-          "url": "/heroes/roadhog/skins/roadhog-midas.jpg",
-          "description": "Unlocked with purchase of the San Francisco Shock 2020 Championship Roadhog Midas skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -29809,8 +29723,7 @@
           "quality": "common",
           "url": "/heroes/roadhog/voicelines/roadhog-not-a-rat.ogg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "That's my business",
@@ -31609,8 +31522,7 @@
           "quality": "common",
           "url": "/heroes/soldier-76/voicelines/soldier-76-settle-down.ogg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Want something done right?",
@@ -31876,16 +31788,7 @@
           "quality": "legendary",
           "url": "/heroes/sombra/skins/sombra-black-cat.jpg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
-        },
-        {
-          "name": "Zhulong",
-          "id": "sombra-zhulong",
-          "quality": "legendary",
-          "url": "/heroes/sombra/skins/sombra-zhulong.jpg",
-          "description": "Unlocked with purchase of the Overwatch League 2021 Championship Sombra Zhulong skin",
-          "achievement": "owl"
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Demon Hunter",
@@ -32113,8 +32016,7 @@
           "url": "/heroes/sombra/icons/sombra-black-cat.png",
           "event": "ANNIVERSARY",
           "hero": "sombra",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Demon Hunter",
@@ -32378,8 +32280,7 @@
           "quality": "common",
           "url": "/heroes/sombra/sprays/sombra-on-the-prowl.png",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Queen of Spades",
@@ -32675,8 +32576,7 @@
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-were-a-good-team.ogg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Were you done talking?",
@@ -32728,15 +32628,6 @@
           "url": "/heroes/sombra/poses/sombra-pumpkinette.jpg",
           "event": "HALLOWEEN",
           "group": "HALLOWEEN_2017"
-        },
-        {
-          "name": "Toast",
-          "id": "sombra-toast",
-          "quality": "rare",
-          "url": "/heroes/sombra/poses/sombra-toast.jpg",
-          "standardItem": true,
-          "event": "WINTER_WONDERLAND",
-          "group": "WINTER_WONDERLAND_2017"
         },
         {
           "name": "Sparklers",
@@ -33702,8 +33593,7 @@
           "quality": "common",
           "url": "/heroes/symmetra/voicelines/symmetra-your-judgement-is-flawed.ogg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Your mind works",
@@ -34631,8 +34521,7 @@
           "quality": "common",
           "url": "/heroes/torbjorn/voicelines/torbjorn-how-riveting.ogg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Trust me",
@@ -34748,8 +34637,7 @@
           "quality": "rare",
           "url": "/heroes/torbjorn/poses/torbjorn-taking-a-break.jpg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "weapons": [
@@ -34967,14 +34855,6 @@
           "url": "/heroes/tracer/skins/tracer-slipstream.jpg",
           "description": "Before becoming an active agent of Overwatch, Tracer was a test pilot, until a mishap with the prototype Slipstream teleporting fighter.",
           "achievement": "blizzard"
-        },
-        {
-          "name": "2018 Atlantic All-Stars",
-          "id": "tracer-2018-atlantic-allstars",
-          "quality": "legendary",
-          "url": "/heroes/tracer/skins/tracer-2018-atlantic-allstars.jpg",
-          "description": "Unlocked with purchase of 2018 Atlantic All-Stars skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -35043,8 +34923,7 @@
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/tracer-kickin.webm",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Alliance Banner",
@@ -35769,8 +35648,7 @@
           "quality": "common",
           "url": "/heroes/tracer/voicelines/tracer-give-up.ogg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "I knew I forgot something",
@@ -36075,14 +35953,6 @@
           "url": "/heroes/widowmaker/skins/widowmaker-noire.jpg",
           "description": "Unlocked by pre-purchasing Overwatch",
           "achievement": "blizzard"
-        },
-        {
-          "name": "Ange de la mort",
-          "id": "widowmaker-ange-de-la-mort",
-          "quality": "legendary",
-          "url": "/heroes/widowmaker/skins/widowmaker-ange-de-la-mort.jpg",
-          "description": "Unlocked with purchase of the Overwatch League 2021 June Joust Tournament Skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -37032,14 +36902,6 @@
           "url": "/heroes/winston/skins/winston-gargoyle.jpg",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2019"
-        },
-        {
-          "name": "Flying Ace",
-          "id": "winston-flying-ace",
-          "quality": "legendary",
-          "url": "/heroes/winston/skins/winston-flying-ace.jpg",
-          "description": "Unlocked with purchase of the London Spitfire 2018 Championship Winston Flying Ace skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -37942,8 +37804,7 @@
           "description": "Unlocked by participating in the Anniversary 2021 week 3 challenge",
           "achievement": "limited",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Horizon",
@@ -38203,8 +38064,7 @@
           "achievement": "limited",
           "event": "ANNIVERSARY",
           "hero": "wrecking-ball",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "sprays": [
@@ -38482,8 +38342,7 @@
           "description": "Unlocked by participating in the Anniversary 2021 week 3 challenge",
           "achievement": "limited",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         }
       ],
       "voicelines": [
@@ -38686,8 +38545,7 @@
           "quality": "common",
           "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-amusement.ogg",
           "event": "ANNIVERSARY",
-          "group": "ANNIVERSARY_2021",
-          "isNew": true
+          "group": "ANNIVERSARY_2021"
         },
         {
           "name": "Rolled",
@@ -38968,14 +38826,6 @@
           "url": "/heroes/zarya/skins/zarya-cyberian.jpg",
           "event": "ANNIVERSARY",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "name": "Alien",
-          "id": "zarya-alien",
-          "quality": "legendary",
-          "url": "/heroes/zarya/skins/zarya-alien.jpg",
-          "description": "Unlocked with purchase of the Overwatch League 2019 MVP Alien skin",
-          "achievement": "owl"
         }
       ],
       "emotes": [
@@ -39897,12 +39747,13 @@
           "group": "ANNIVERSARY_2020"
         },
         {
-          "name": "Zen-nakji",
-          "id": "zenyatta-zennakji",
+          "name": "Zealot",
+          "id": "zenyatta-zealot",
           "quality": "legendary",
-          "url": "/heroes/zenyatta/skins/zenyatta-zennakji.jpg",
-          "description": "Unlocked with purchase of the Overwatch League 2018 MVP Zen-nakji skin",
-          "achievement": "blizzard"
+          "url": "/heroes/zenyatta/skins/zenyatta-zealot.jpg",
+          "event": "ANNIVERSARY",
+          "group": "ANNIVERSARY_REMIX_VOL_1",
+          "isNew": true
         }
       ],
       "emotes": [
