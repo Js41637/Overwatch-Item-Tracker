@@ -474,7 +474,7 @@ const data = {
 
     'skins/ashe-prosperity': EVENTS.LUNAR,
     'icons/ashe-skullcap': EVENTS.LUNAR,
-    'sprays/ashe-sprint-couplets': EVENTS.LUNAR,
+    'sprays/ashe-spring-couplets': EVENTS.LUNAR,
     'skins/soldier-76-auspicious': EVENTS.LUNAR,
     'icons/soldier-76-auspicious': EVENTS.LUNAR,
     'sprays/soldier-76-practicing-forms': EVENTS.LUNAR,

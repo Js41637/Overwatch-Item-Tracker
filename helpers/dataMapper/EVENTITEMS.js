@@ -1515,10 +1515,14 @@ const EVENTITEMS = {
       "intros/symmetra-shining-bull"
     ],
     LUNAR_NEW_YEAR_2022: [
+      "skins/ashe-prosperity",
       "skins/wrecking-ball-porcelain",
       "skins/soldier-76-auspicious",
+      "skins/mercy-seolbim",
+      "skins/tracer-nezha",
       "emotes/genji-sky-lantern",
       "emotes/widowmaker-fan-tricks",
+      "sprays/ashe-spring-couplets",
       "sprays/wrecking-ball-porcelain",
       "sprays/mercy-seolbim",
       "sprays/soldier-76-practicing-forms",
@@ -1539,14 +1543,13 @@ const EVENTITEMS = {
       "poses/echo-fan",
       "poses/mercy-lantern",
       "poses/orisa-sparklers",
+      "icons/ashe-skullcap",
       "icons/wrecking-ball-tea",
       "icons/mercy-seolbim",
       "icons/soldier-76-auspicious",
       "icons/tracer-nezha",
       "icons/year-of-the-tiger-2022",
-      "intros/zenyatta-release",
-      "skins/mercy-seolbim",
-      "skins/tracer-nezha"
+      "intros/zenyatta-release"
     ]
   },
   UPRISING: {

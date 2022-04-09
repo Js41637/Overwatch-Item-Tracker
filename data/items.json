@@ -4951,6 +4951,7 @@
           "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "hero": "ashe",
+          "group": "LUNAR_NEW_YEAR_2022",
           "isNew": true
         },
         {
@@ -10160,6 +10161,7 @@
           "description": "Unlocked by participating in the Year of the Tiger 2022 Week 1 challenge",
           "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2022",
           "isNew": true
         },
         {
@@ -10477,6 +10479,7 @@
           "achievement": "limited",
           "event": "LUNAR_NEW_YEAR",
           "hero": "ashe",
+          "group": "LUNAR_NEW_YEAR_2022",
           "isNew": true
         }
       ],
@@ -10789,14 +10792,6 @@
           "achievement": "blizzard"
         },
         {
-          "name": "Spring Couplets",
-          "id": "ashe-spring-couplets",
-          "quality": "common",
-          "url": "/heroes/ashe/sprays/ashe-spring-couplets.png",
-          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 1 challenge",
-          "achievement": "blizzard"
-        },
-        {
           "name": "Triplets",
           "id": "ashe-triplets",
           "quality": "common",
@@ -10819,6 +10814,17 @@
           "url": "/heroes/ashe/sprays/ashe-waffles.png",
           "description": "Unlocked by participating in Ashe's Deadlock Challenge",
           "achievement": "blizzard"
+        },
+        {
+          "name": "Spring Couplets",
+          "id": "ashe-spring-couplets",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-spring-couplets.png",
+          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 1 challenge",
+          "achievement": "limited",
+          "event": "LUNAR_NEW_YEAR",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         }
       ],
       "voicelines": [

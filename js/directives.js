@@ -101,17 +101,18 @@ OWI.directive('tooltipImagePreview', ["StorageService", "UrlService", function(S
   };
 }]);
 
-OWI.directive('legendarySkins', function() {
+OWI.directive('legendarySkins', ['DataService', function(DataService) {
   return {
     restrict: 'E',
     replace: true,
     templateUrl: './templates/legendary-skins.html',
     link: function($scope, $elm, $attr) {
+      $scope.skinCost = DataService.latest_events[$elm.attr('event-id')] !== 'NONE' ? 3000 : 1000
       $scope.ss = $attr.ss;
       $scope.ssURL = $attr.ssurl;
     }
-  };
-});
+  }
+}])
 
 OWI.directive('subHeader', function() {
   return {

@@ -391,7 +391,7 @@ _.forEach(heroes, hero => {
       }
 
       // If the item to a new event. e.g. summergames 2017 instead of 2016
-      if (LATEST_EVENTS[event] === actualEvent || !actualEvent) {
+      if (LATEST_EVENTS[event] === actualEvent || !actualEvent || EVENT_CONFIG[event]?.latest_event === actualEvent) {
         item.isNew = true // we do this because it mutates the original item, super fucking jank but it works
       }
 
@@ -510,7 +510,7 @@ _.forEach(allClassEventItems, (types, type) => {
       }
 
       // If the item to a new event. e.g. summergames 2017 instead of 2016
-      if (LATEST_EVENTS[event] === actualEvent) {
+      if (actualEvent && (LATEST_EVENTS[event] === actualEvent || EVENT_CONFIG[event]?.latest_event === actualEvent)) {
         out.isNew = true;
       }
 

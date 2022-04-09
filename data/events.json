@@ -10155,8 +10155,7 @@
       "LUNAR_NEW_YEAR_2019",
       "LUNAR_NEW_YEAR_2020",
       "LUNAR_NEW_YEAR_2021",
-      "LUNAR_NEW_YEAR_2022",
-      null
+      "LUNAR_NEW_YEAR_2022"
     ],
     "items": {
       "skins": [
@@ -10178,6 +10177,7 @@
           "url": "/updates/LUNAR_NEW_YEAR/skins/ashe-prosperity.jpg",
           "description": "Unlocked by participating in the Year of the Tiger 2022 Week 1 challenge",
           "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
           "isNew": true
         },
         {
@@ -10740,6 +10740,20 @@
           "quality": "common",
           "url": "/heroes/ashe/sprays/ashe-red-envelopes.png",
           "group": "LUNAR_NEW_YEAR_2019",
+          "secondId": "ashe-dragon-dance",
+          "secondUrl": "/heroes/ashe/sprays/ashe-dragon-dance.png"
+        },
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Spring Couplets",
+          "id": "ashe-spring-couplets",
+          "quality": "common",
+          "url": "/heroes/ashe/sprays/ashe-spring-couplets.png",
+          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 1 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true,
           "secondId": "ashe-dragon-dance",
           "secondUrl": "/heroes/ashe/sprays/ashe-dragon-dance.png"
         },
@@ -12830,6 +12844,7 @@
           "url": "/heroes/ashe/icons/ashe-skullcap.png",
           "description": "Unlocked by participating in the Year of the Tiger 2022 Week 1 challenge",
           "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
           "isNew": true
         },
         {
