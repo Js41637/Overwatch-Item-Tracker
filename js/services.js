@@ -779,9 +779,9 @@ OWI.factory('GoogleAPI', ["$rootScope", "$timeout", "$q", "$http", "StorageServi
 }]);
 
 OWI.factory('UrlService', function() {
-  var isLocal = location.host === 'localhost:5000'
+  var isLocal = location.host.startsWith('localhost')
   var imageHost = isLocal
-    ? 'http://localhost:5000/resources'
+    ? 'http://' + location.host + '/resources'
     : 'https://overwatchitemtracker.com/resources'
 
   return {

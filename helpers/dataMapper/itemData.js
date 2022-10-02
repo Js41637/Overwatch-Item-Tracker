@@ -176,7 +176,7 @@ const data = {
     },
     "overwatch league": {
       icons: ['inaugural-season', 'pacific-allstars-2018', 'atlantic-allstars-2018', '2019-atlantic-allstars', '2019-pacific-allstars', '2020-atlantic-allstars', '2020-pacific-allstars', 'grand-finals-2019', 'overwatch-contenders'],
-      sprays: ['inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate", 'overwatch-contenders', 'grand-finals-2020', 'beach-fuel', 'dragons-treasure', 'super-fans', 'dragons-fireworks', 'tiny-champion', 'gladiators-unleashed']
+      sprays: ['inaugural-season', '1-fan', 'living-room', 'matchs-on', 'watchpoint-gibraltar', "watching-ball", "tailgate", 'overwatch-contenders', 'grand-finals-2020', 'beach-fuel', 'dragons-treasure', 'super-fans', 'dragons-fireworks', 'tiny-champion', 'gladiators-unleashed', "2022-boston-uprising", "2022-chengdu-hunters", "2022-dallas-fuel", "2022-florida-mayhem", "2022-guangzhou-charge", "2022-hangzhou-spark", "2022-houston-outlaws", "2022-london-spitfire", "2022-los-angeles-gladiators", "2022-los-angeles-valiant", "2022-new-york-excelsior", "2022-paris-eternal", "2022-philadelphia-fusion", "2022-san-francisco-shock", "2022-seoul-dynasty", "2022-shanghai-dragons", "2022-toronto-defiant", "2022-vancouver-titans", "2022-washington-justice", "overwatch-collegiate-2022"]
     }
   },
   achievementSprays: [

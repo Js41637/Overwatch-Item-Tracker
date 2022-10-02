@@ -2276,6 +2276,22 @@ const EVENTITEMS = {
       "skins/reaper-evermore",
       "skins/reinhardt-steelhardt",
       "skins/zenyatta-zealot"
+    ],
+    [EVENTS.ANNIVERSARY_REMIX_VOL_2]: [
+      "skins/ana-night-owl",
+      "skins/hanzo-dark-wolf",
+      "skins/lucio-poison-dart",
+      "skins/roadhog-noxious",
+      "skins/sombra-neon-cat",
+      "skins/symmetra-hydra"
+    ],
+    [EVENTS.ANNIVERSARY_REMIX_VOL_3]: [
+      "skins/tracer-tagged",
+      "skins/soldier-76-proteus-76",
+      "skins/pharah-mechatron",
+      "skins/dva-varsity",
+      "skins/baptiste-arctic-ops",
+      "skins/genji-genjiman",
     ]
   }
 }
