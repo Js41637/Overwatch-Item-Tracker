@@ -508,7 +508,9 @@ const data = {
         'ana-haroeris',
         'sombra-zhulong',
         'widowmaker-ange-de-la-mort',
-        'bastion-pirate-ship'
+        'bastion-pirate-ship',
+        'genji-happi',
+        'mercy-royal-knight'
       ]
     }
   },

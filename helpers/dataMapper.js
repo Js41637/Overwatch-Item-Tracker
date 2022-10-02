@@ -628,6 +628,7 @@ _.forEach(heroes, hero => _.forEach(hero.items, (items, type) => {
     (c => !c.achievement && !c.event ? 0 : 1), // non achievement/event items on top
     (d => d.achievement ? 1 : 0), // achievement items below event items
     (e => _.isString(e.achievement)), // Put special achievements below normal achievments (cute/pixel)
+    (d => d.achievement === 'owl' ? 0 : 1), // owl items above blizzard quality
     (d => d.achievement === 'blizzard' ? 0 : 1), // put blizzard special items above SUPER special items (pink mercy stuff)
     (f => EVENTORDER[EVENTORDER[f.group] ? f.group : f.event]), // sort events by event order
     (g => g.name.toLowerCase()), // everything in their respective groups is sorted by name
