@@ -5,21 +5,6 @@
         <div class="bg"></div>
         Home
       </div>
-      <div class="block" ng-repeat="event in events track by $index" ui-sref="events({id: event.id})" ui-sref-active="selected">
-        <div class="block-content">
-          <div class="bg"></div>
-          <div class="imgcont">
-            <div class="img" style="background-image: url({{::event.id | eventImageUrl}})"></div>
-          </div>
-          <div class="text" ng-if="::totals">
-            <!-- <h2>{{::event.name}}</h2> -->
-            <div class="progresscont">
-              <h3>{{::totals.events[event.id].totals.overall.selected}}/{{::totals.events[event.id].totals.overall.total}}</h3>
-              <div class="hero-progress-bar progress-bar-success" style="width: {{(totals.events[event.id].totals.overall.selected / totals.events[event.id].totals.overall.total) * 100}}%;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <div class="gallery hero">

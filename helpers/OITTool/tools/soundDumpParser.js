@@ -8,8 +8,6 @@ const { orderBy, reduce, get, cloneDeep, keyBy, merge, flatten, uniq } = require
 const { eachLimit, eachOfLimit } = require('async');
 const moment = require('moment');
 
-const consoleColors = require('../../consoleColors');
-consoleColors.load();
 const { getDirectories, checkDirectorys, getCleanID, copyFile } = require('./utils');
 
 console.info('Sound Dump Parser starting up');

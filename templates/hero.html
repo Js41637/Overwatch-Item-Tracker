@@ -1,10 +1,8 @@
-<sub-header></sub-header>
-
 <div id="hero-container" ng-if="hero.id" ng-show="hero.loaded" ng-class="{ filtering: hero.filtering && !hero.noFilteredLayout }">
   <div id="hero-header">
     <div class="hero-overview">
       <div class="hero-image">
-        <img ng-src="{{ hero.id | heroImg:'career' }}" />
+        <img ng-src="{{ hero.id | heroImg:'portrait' }}" />
       </div>
       <div class="hero-info">
         <h2 class="hero-name">{{::hero.name}}</h2>
@@ -137,7 +135,7 @@
           <input type="checkbox" id="{{type + item.id}}" ng-checked="::item.standardItem || hero.checked[item.hero || hero.id][type][item.id]" ng-disabled="::item.standardItem" ng-change="hero.onSelect(item, type)" ng-model="hero.checked[item.hero || hero.id][type][item.id]">
           <label for="{{type + item.id}}">
             <h3 class="{{::item.quality}}">{{::item.name}}</h3>
-            <small class="color-cost">{{ ::item | itemPrice:type:false:item.group }}</small>
+            <!-- <small class="color-cost">{{ ::item | itemPrice:type:false:item.group }}</small> -->
           </label>
         </span>
       </div>

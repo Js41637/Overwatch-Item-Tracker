@@ -5,10 +5,11 @@ const qualityOrder = {
   common: 0,
   rare: 1,
   epic: 2,
-  legendary: 3
+  legendary: 3,
+  mythic: 4
 }
 
-const qualities = ['common', 'epic', 'rare', 'legendary']
+const qualities = ['common', 'epic', 'rare', 'legendary', 'mythic']
 const types = [
   { m: 'skin', name: 'skins' },
   { m: 'icon', name: 'icons' },

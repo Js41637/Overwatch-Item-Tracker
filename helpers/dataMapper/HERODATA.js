@@ -91,12 +91,27 @@ const data = {
       highlight: "#ada057"
     }
   },
+  "junker-queen": {
+    class: CLASSES.TANK,
+    colors: {
+      primary: "#579fcf",
+      highlight: "#559fcf"
+    }
+  },
   junkrat: {
     class: CLASSES.DAMAGE,
     description: "Junkrat is an explosives-obsessed freak who lives to cause chaos and destruction.",
     colors: {
-      primary: "#d39308 ",
+      primary: "#d39308",
       highlight: "#f5ac0f"
+    }
+  },
+  kiriko: {
+    class: CLASSES.SUPPORT,
+    description: "A former member of Overwatch, Kiriko is a skilled healer who uses her abilities to protect her allies.",
+    colors: {
+      primary: "#e1acea",
+      highlight: "#e8b5f1"
     }
   },
   lucio: {
@@ -155,6 +170,13 @@ const data = {
       highlight: "#2778e2"
     }
   },
+  ramattra: {
+    class: CLASSES.TANK,
+    colors: {
+      primary: "#7d55c7",
+      highlight: "#835acf"
+    }
+  },
   reaper: {
     class: CLASSES.DAMAGE,
     description: "Some speak of a black-robed terrorist known only as the Reaper. His identity and motives are a mystery. What is known is that where he appears, death follows.",
@@ -185,6 +207,13 @@ const data = {
     colors: {
       primary: "#33bbaa ",
       highlight: "#6ec4b9"
+    }
+  },
+  sojourn: {
+    class: CLASSES.DAMAGE,
+    colors: {
+      primary: "#d73e2c",
+      highlight: "#d64534"
     }
   },
   "soldier-76": {
@@ -244,8 +273,6 @@ const data = {
     }
   },
   "wrecking-ball": {
-    name: 'Hammond',
-    sortName: 'Wrecking Ball',
     class: CLASSES.TANK,
     description: "Wrecking Ball is piloted by an intelligent, genetically engineered hamster named Hammond, who explores the world, searching for adventure.",
     colors: {

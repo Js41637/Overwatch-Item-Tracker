@@ -1,0 +1,276 @@
+#event-container {
+  padding-bottom: 20px;
+}
+
+#event-container .section {
+  margin-top: 13px;
+}
+
+#event-container .section-header {
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#event-container .section-header .options {
+  opacity: 0;
+  transition: opacity 125ms;
+  z-index: 1;
+  margin-right: 5px;
+}
+
+#event-container .section:hover .section-header .options {
+  opacity: 0.9;
+}
+
+#event-container .section-header .options .glyphicon {
+  color: white;
+  font-size: 18px;
+  margin-top: -1px;
+}
+
+#event-container .section-header .options li a {
+  padding: 3px 15px;
+}
+
+#event-container .section-header .options .btn:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#event-container .section-header .options .btn {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+#event-container h2 small:not(.itemTotal) {
+  font-size: 0.7em;
+  margin-left: 2px;
+  font-style: italic;
+  vertical-align: middle;
+  top: 0px;
+  position: relative;
+  color: inherit;
+  font-weight: inherit;
+}
+
+#event-container .item[achievement="true"] label:after {
+  background-image: url("../resources/icons/achievement.svg");
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  filter: brightness(0.98);
+}
+
+#event-container .item[achievement="true"] label {
+  padding-right: 27px;
+}
+
+#event-container .section .item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2px;
+  margin: 1px 1px 0 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: rgba(40, 53, 79, 0.6);
+  position: relative;
+  font-family: Futura, century gothic, arial, sans-serif;
+  text-transform: uppercase;
+}
+
+#event-container .section .flex-2 .item {
+  width: calc(50% - 1px);
+}
+
+#event-container .section .flex-3 .item {
+  width: calc(33.33% - 1px);
+}
+
+#event-container .section .flex-4 .item {
+  width: calc(25% - 1px);
+}
+
+#event-container .section .flex-5 .item {
+  width: calc(20% - 1px);
+}
+
+#event-container .section .item label {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: 6px 0;
+  align-items: left;
+  flex-wrap: wrap;
+}
+
+#event-container .section .item input {
+  height: 24px;
+  margin: 1px 5px 1px 4px;
+  float: left;
+  cursor: pointer;
+  min-width: 24px;
+}
+
+#event-container .section .item h4 {
+  font-size: 13px;
+  color: rgba(220, 220, 220, 0.75);
+  width: 100%;
+  letter-spacing: 0.7;
+  display: initial;
+}
+
+#event-container .section .item h3 {
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  letter-spacing: 0.3;
+  font-size: 15px;
+}
+
+#event-container .section .item small {
+  font-size: 15px;
+  padding-top: 1px;
+}
+
+#event-container .section-header h2, #legendary-skins .inner h2 {
+  color: rgb(64, 82, 117);
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.section-header h2 .itemTotal {
+  font-size: 0.7em;
+  margin-left: 2px;
+  color: inherit;
+  font-weight: inherit;
+}
+
+#legendary-skins h2 small {
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  letter-spacing: 0.3;
+}
+
+.section-header h2 .itemTotal:before, .section-header h2 .itemTotal:after, #legendary-skins h2 small:before, #legendary-skins h2 small:after {
+  display: none;
+}
+
+#event-header .options {
+  width: 75%;
+  margin: 0 auto;
+  text-align: right;
+  margin-bottom: 4px;
+}
+
+#event-container #event-header {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+#event-container .event-progress {
+  background-color: rgba(24,34,62,.7);
+  height: 22px;
+  padding: 2px;
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: content-box;
+  width: 75%;
+  opacity: .9;
+  margin: 0 auto;
+  position: relative;
+}
+
+#event-container .event-progress span {
+  line-height: 26px;
+  font-size: 20px;
+  display: block;
+  position: absolute;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgb(54, 54, 54);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#event-container .event-progress .event-progress-bar {
+  width: 0;
+  border-radius: 3px;
+  transition: width .8s ease-in-out;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#event-container .event-progress .event-progress-bar.progress-bar-striped {
+  border: none;
+}
+
+/* SMALL MODE CSS */
+
+@media screen and (max-width: 1250px) {
+  #event-container {
+    margin-top: 10px !important;
+  }
+}
+
+
+@media screen and (max-width: 1650px) {
+  #event-container {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: -20px auto 0;
+  }
+
+  .col-padding {
+    width: 100%;
+  }
+
+  #event-container .event-progress,
+  #event-container .options {
+    width: 65%;
+  }
+
+  #event-container .section .item h3 {
+    font-size: 16px;
+  }
+
+  #event-container .section .flex-2 .item {
+    width: calc(25% - 1px);
+  }
+
+  #event-container .section .flex-3 .item {
+    width: calc(33.33% - 1px);
+  }
+
+  #event-container .section .flex-4 .item {
+    width: calc(25% - 1px);
+  }
+}
+
+#UPRISING #legendary-skins,
+#ANNIVERSARY #legendary-skins {
+  height: 402px;
+}
+
+#UPRISING #legendary-skins .images .card,
+#ANNIVERSARY #legendary-skins .images .card {
+  height: 360px;
+  background-size: auto 130%;
+  background-position-y: 20%;
+}
+
+#SUMMER_GAMES #legendary-skins {
+  height: 372px;
+}
+
+#SUMMER_GAMES #legendary-skins .images .card {
+  height: 330px;
+  background-size: auto 120%;
+  background-position-y: 10%;
+}
+

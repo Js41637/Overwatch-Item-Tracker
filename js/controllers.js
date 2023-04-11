@@ -560,7 +560,7 @@ OWI.controller("UpdateCtrl", ["$scope", "$rootScope", "$uibModal", "DataService"
   };
 }]);
 
-OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalInstance", "$state", "StorageService", "DataService", "GoogleAPI", function($rootScope, $scope, $uibModal, $uibModalInstance, $state, StorageService, DataService, GoogleAPI) {
+OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalInstance", "StorageService", "DataService", function($rootScope, $scope, $uibModal, $uibModalInstance, StorageService, DataService) {
   var vm = this;
   var settings = StorageService.settings;
   vm.particles = settings['particles'];
@@ -573,10 +573,6 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
   vm.importErrors = null;
 
   vm.willEnableSync = false;
-
-  vm.googleUser = GoogleAPI.user;
-  vm.googleSignedIn = GoogleAPI.isSignedIn;
-  vm.googleMessage = null;
 
   vm.close = function() {
     $uibModalInstance.dismiss('close');
@@ -721,124 +717,4 @@ OWI.controller('SettingsCtrl', ["$rootScope", "$scope", "$uibModal", "$uibModalI
     StorageService.setData(DataService.checked);
     location.reload()
   };
-
-  vm.toggleSync = function() {
-    if (vm.syncDisabled && !vm.willEnableSync) {
-      vm.willEnableSync = true;
-    }
-
-    if (!vm.syncDisabled) {
-      vm.syncDisabled = true;
-      StorageService.setSetting('syncDisabled', true);
-    } else {
-      vm.syncDisabled = !vm.syncDisabled;
-    }
-  };
-
-  $rootScope.$on('google:login', function(event, data) {
-    switch (data.event) {
-      case 'ERROR':
-        vm.googleSignedIn = false;
-        vm.googleUser = {};
-        vm.googleMessage = ['danger', 'Error! Something went wrong while logging into Google! - ' + data.message];
-        break;
-      case 'SIGN_IN':
-        vm.googleSignedIn = true;
-        vm.googleUser = data.user;
-        vm.googleMessage = ['success', 'Successfully logged in with Google! You can choose to download your data now if you have any saved.'];
-        break;
-      case 'SIGN_OUT':
-        vm.googleSignedIn = false;
-        vm.googleUser = {};
-        break;
-    }
-
-    $scope.$digest();
-  });
-
-  vm.googleLogin = function() {
-    vm.googleMessage = null;
-    GoogleAPI.login();
-  };
-
-  vm.googleSignOut = function() {
-    vm.googleMessage = null;
-    GoogleAPI.signOut();
-  };
-
-  vm.uploadToDrive = function() {
-    vm.googleMessage = null;
-    var modal = $uibModal.open({
-      templateUrl: './templates/modals/select.html',
-      controller: function($scope) {
-        $scope.message = 'Are you sure you want to upload your data to Google Drive?';
-        $scope.submessage = 'This will overwrite any existing data in Google Drive! If you are unsure remember to create backups';
-      }
-    });
-    modal.result.then(function(goahead) {
-      if (goahead) {
-        onUploadToDrive();
-      }
-    }, function() {});
-  };
-
-  vm.downloadFromDrive = function() {
-    vm.googleMessage = null;
-    var modal = $uibModal.open({
-      templateUrl: './templates/modals/select.html',
-      controller: function($scope) {
-        $scope.message = 'Are you sure you want to download your data from Google Drive?';
-        $scope.submessage = 'This will overwrite any existing local data! If you are unsure remember to create backups';
-      }
-    });
-    modal.result.then(function(goahead) {
-      if (goahead) {
-        onDownloadFromDrive();
-      }
-    }, function() {});
-  };
-
-  function onUploadToDrive() {
-    GoogleAPI.update(DataService.checked).then(function(success) {
-      if (success) {
-        if (vm.willEnableSync) {
-          vm.willEnableSync = false;
-          vm.syncDisabled = false;
-          StorageService.setSetting('syncDisabled', false);
-        }
-
-        vm.googleMessage = ['success', 'Successfully uploaded to Google Drive... maybe... probably...'];
-      } else {
-        vm.googleMessage = ['danger', 'An error occured while uploading to Google Drive!'];
-      }
-    });
-  }
-
-  function onDownloadFromDrive() {
-    GoogleAPI.getData().then(function(response) {
-      if (!response || !response.data) {
-        vm.googleMessage = ['danger', 'Error: Got an unexpected response while downloading data from Google Drive!'];
-        return;
-      }
-
-      var errors = validateData(response.data);
-      if (errors) {
-        vm.googleMessage = ['danger', 'Error: Data returned by Google Drive does not matched expected data'];
-        return;
-      }
-
-      if (vm.willEnableSync) {
-        vm.willEnableSync = false;
-        vm.syncDisabled = false;
-        StorageService.setSetting('syncDisabled', false);
-      }
-
-      vm.googleMessage = ['success', 'Success! Updating local data... This page will reload in a couple seconds.'];
-
-      setTimeout(function() {
-        StorageService.setData(response.data);
-        location.reload();
-      }, 2250);
-    });
-  }
 }]);

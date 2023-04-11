@@ -275,15 +275,6 @@
           "group": "SUMMER_GAMES_2019"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Lúcioball",
-          "id": "wrecking-ball-lucioball",
-          "quality": "legendary",
-          "url": "/updates/SUMMER_GAMES/skins/wrecking-ball-lucioball.jpg",
-          "group": "SUMMER_GAMES_2019"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Wave",
@@ -431,6 +422,15 @@
           "group": "SUMMER_GAMES_2018"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Lúcioball",
+          "id": "wrecking-ball-lucioball",
+          "quality": "legendary",
+          "url": "/updates/SUMMER_GAMES/skins/wrecking-ball-lucioball.jpg",
+          "group": "SUMMER_GAMES_2019"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Champion",
@@ -478,16 +478,6 @@
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/emotes/bastion-boxing.webm",
           "group": "SUMMER_GAMES_2016"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Beach Mode",
-          "id": "wrecking-ball-beach-mode",
-          "quality": "epic",
-          "url": "/updates/SUMMER_GAMES/emotes/wrecking-ball-beach-mode.webm",
-          "group": "SUMMER_GAMES_2021",
-          "isNew": true
         },
         {
           "heroName": "Lúcio",
@@ -543,6 +533,16 @@
           "quality": "epic",
           "url": "/updates/SUMMER_GAMES/emotes/tracer-warm-up.webm",
           "group": "SUMMER_GAMES_2020"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Beach Mode",
+          "id": "wrecking-ball-beach-mode",
+          "quality": "epic",
+          "url": "/updates/SUMMER_GAMES/emotes/wrecking-ball-beach-mode.webm",
+          "group": "SUMMER_GAMES_2021",
+          "isNew": true
         },
         {
           "heroName": "Zarya",
@@ -820,22 +820,6 @@
           "group": "SUMMER_GAMES_2019"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Bowling",
-          "id": "wrecking-ball-bowling",
-          "url": "/heroes/wrecking-ball/icons/wrecking-ball-bowling.png",
-          "group": "SUMMER_GAMES_2018"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Lúcioball",
-          "id": "wrecking-ball-lucioball",
-          "url": "/heroes/wrecking-ball/icons/wrecking-ball-lucioball.png",
-          "group": "SUMMER_GAMES_2019"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Archery",
@@ -1103,6 +1087,22 @@
           "id": "winston-volleyball",
           "url": "/heroes/winston/icons/winston-volleyball.png",
           "group": "SUMMER_GAMES_2016"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Bowling",
+          "id": "wrecking-ball-bowling",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-bowling.png",
+          "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Lúcioball",
+          "id": "wrecking-ball-lucioball",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-lucioball.png",
+          "group": "SUMMER_GAMES_2019"
         },
         {
           "heroName": "Zarya",
@@ -1586,15 +1586,6 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Bowling",
-          "id": "wrecking-ball-bowling",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-bowling.png",
-          "group": "SUMMER_GAMES_2018"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Archery",
@@ -1862,6 +1853,15 @@
           "achievement": "limited",
           "group": "SUMMER_GAMES_2021",
           "isNew": true
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Bowling",
+          "id": "wrecking-ball-bowling",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-bowling.png",
+          "group": "SUMMER_GAMES_2018"
         },
         {
           "heroName": "Zarya",
@@ -2261,33 +2261,6 @@
           "quality": "common",
           "url": "/heroes/genji/voicelines/genji-touche.ogg",
           "group": "SUMMER_GAMES_2017"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Be the ball",
-          "id": "wrecking-ball-be-the-ball",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-be-the-ball.ogg",
-          "group": "SUMMER_GAMES_2018"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Keep your eye on the ball",
-          "id": "wrecking-ball-keep-your-eye-on-the-ball",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-keep-your-eye-on-the-ball.ogg",
-          "group": "SUMMER_GAMES_2018"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "More power!",
-          "id": "wrecking-ball-more-power",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-more-power.ogg",
-          "group": "SUMMER_GAMES_2019"
         },
         {
           "heroName": "Hanzo",
@@ -2766,6 +2739,33 @@
           "isNew": true
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Be the ball",
+          "id": "wrecking-ball-be-the-ball",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-be-the-ball.ogg",
+          "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Keep your eye on the ball",
+          "id": "wrecking-ball-keep-your-eye-on-the-ball",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-keep-your-eye-on-the-ball.ogg",
+          "group": "SUMMER_GAMES_2018"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "More power!",
+          "id": "wrecking-ball-more-power",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-more-power.ogg",
+          "group": "SUMMER_GAMES_2019"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "It's only a game",
@@ -2903,15 +2903,6 @@
           "url": "/updates/SUMMER_GAMES/poses/genji-medal.jpg",
           "group": "SUMMER_GAMES_2021",
           "isNew": true
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Medal",
-          "id": "wrecking-ball-medal",
-          "quality": "rare",
-          "url": "/updates/SUMMER_GAMES/poses/wrecking-ball-medal.jpg",
-          "group": "SUMMER_GAMES_2020"
         },
         {
           "heroName": "Hanzo",
@@ -3095,6 +3086,15 @@
           "group": "SUMMER_GAMES_2016"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Medal",
+          "id": "wrecking-ball-medal",
+          "quality": "rare",
+          "url": "/updates/SUMMER_GAMES/poses/wrecking-ball-medal.jpg",
+          "group": "SUMMER_GAMES_2020"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Medals",
@@ -3180,7 +3180,8 @@
       "HALLOWEEN_2018",
       "HALLOWEEN_2019",
       "HALLOWEEN_2020",
-      "HALLOWEEN_2021"
+      "HALLOWEEN_2021",
+      null
     ],
     "items": {
       "skins": [
@@ -3393,15 +3394,6 @@
           "group": "HALLOWEEN_2017"
         },
         {
-          "heroName": "Ana",
-          "hero": "ana",
-          "name": "Pharaoh",
-          "id": "ana-pharaoh",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skins/ana-pharaoh.jpg",
-          "group": "HALLOWEEN_2019"
-        },
-        {
           "heroName": "Ashe",
           "hero": "ashe",
           "name": "Warlock",
@@ -3446,15 +3438,6 @@
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skins/genji-karasutengu.jpg",
           "group": "HALLOWEEN_2020"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Jack-o'-lantern",
-          "id": "wrecking-ball-jackolantern",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skins/wrecking-ball-jackolantern.jpg",
-          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hanzo",
@@ -3636,6 +3619,15 @@
           "group": "HALLOWEEN_2020"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Jack-o'-lantern",
+          "id": "wrecking-ball-jackolantern",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skins/wrecking-ball-jackolantern.jpg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Totally 80's",
@@ -3652,6 +3644,67 @@
           "quality": "legendary",
           "url": "/updates/HALLOWEEN/skins/zenyatta-cultist.jpg",
           "group": "HALLOWEEN_2017"
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Mummy",
+          "id": "ana-mummy",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/ana-mummy.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Coffin",
+          "id": "bastion-coffin",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/bastion-coffin.jpg",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Vampire Hunter",
+          "id": "brigitte-vampire-hunter",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/brigitte-vampire-hunter.jpg",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Vampire Bat",
+          "id": "echo-vampire-bat",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/echo-vampire-bat.jpg",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Lúcio",
+          "hero": "lucio",
+          "name": "Satyr",
+          "id": "lucio-satyr",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/lucio-satyr.jpg",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
+          "name": "Draugr",
+          "id": "reinhardt-draugr",
+          "quality": "legendary",
+          "url": "/updates/HALLOWEEN/skinsLegendary/reinhardt-draugr.jpg",
+          "group": "HALLOWEEN_2021",
+          "isNew": true
         }
       ],
       "emotes": [
@@ -3892,14 +3945,6 @@
           "isNew": true
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Scarecrow",
-          "id": "wrecking-ball-scarecrow",
-          "url": "/heroes/wrecking-ball/icons/wrecking-ball-scarecrow.png",
-          "group": "HALLOWEEN_2018"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Dai-Tengu",
@@ -4109,6 +4154,14 @@
           "id": "winston-werewolf",
           "url": "/heroes/winston/icons/winston-werewolf.png",
           "group": "HALLOWEEN_2020"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Scarecrow",
+          "id": "wrecking-ball-scarecrow",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-scarecrow.png",
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Zarya",
@@ -4533,24 +4586,6 @@
           "isNew": true
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Jack-o'-lantern",
-          "id": "wrecking-ball-jackolantern",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-jackolantern.png",
-          "group": "HALLOWEEN_2018"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Trick or Treat",
-          "id": "wrecking-ball-trick-or-treat",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-trick-or-treat.png",
-          "group": "HALLOWEEN_2018"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Dai-Tengu",
@@ -4884,6 +4919,24 @@
           "quality": "common",
           "url": "/heroes/winston/sprays/winston-werewolf.png",
           "group": "HALLOWEEN_2020"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Jack-o'-lantern",
+          "id": "wrecking-ball-jackolantern",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-jackolantern.png",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Trick or Treat",
+          "id": "wrecking-ball-trick-or-treat",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-trick-or-treat.png",
+          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Zarya",
@@ -5221,6 +5274,16 @@
           "group": "HALLOWEEN_2020"
         },
         {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Zomnics Under The Moon",
+          "id": "ashe-zomnics-under-the-moon",
+          "quality": "common",
+          "url": "/heroes/ashe/voicelines/ashe-zomnics-under-the-moon.ogg",
+          "description": "Unlocked by completing the Re-Tired challenge from the Halloween Terror event.",
+          "isNew": true
+        },
+        {
           "heroName": "Baptiste",
           "hero": "baptiste",
           "name": "Bandage or bullet?",
@@ -5438,24 +5501,6 @@
           "group": "HALLOWEEN_2018"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Heart rate increasing",
-          "id": "wrecking-ball-heart-rate-increasing",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-heart-rate-increasing.ogg",
-          "group": "HALLOWEEN_2018"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Trick or treat",
-          "id": "wrecking-ball-trick-or-treat",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-trick-or-treat.ogg",
-          "group": "HALLOWEEN_2018"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Master your fears",
@@ -5493,6 +5538,16 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "heroName": "Junker Queen",
+          "hero": "junker-queen",
+          "name": "Bodies to Bag",
+          "id": "junker-queen-bodies-to-bag",
+          "quality": "common",
+          "url": "/heroes/junker-queen/voicelines/junker-queen-bodies-to-bag.ogg",
+          "description": "Unlocked by completing the Council of the Bride challenge from the Halloween Terror event.",
+          "isNew": true
+        },
+        {
           "heroName": "Junkrat",
           "hero": "junkrat",
           "name": "Can't scare me",
@@ -5519,6 +5574,26 @@
           "quality": "common",
           "url": "/heroes/junkrat/voicelines/junkrat-im-alive.ogg",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "Scry Some More",
+          "id": "kiriko-scry-some-more",
+          "quality": "common",
+          "url": "/heroes/kiriko/voicelines/kiriko-scry-some-more.ogg",
+          "description": "Unlocked by completing the Knock, knock... challenge from the Halloween Terror event.",
+          "isNew": true
+        },
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "Tarot Reading",
+          "id": "kiriko-tarot-reading",
+          "quality": "rare",
+          "url": "/heroes/kiriko/voicelines/kiriko-tarot-reading.ogg",
+          "description": "Unlocked by completing the Ominous Portent challenge from the Halloween Terror event.",
+          "isNew": true
         },
         {
           "heroName": "Lúcio",
@@ -5740,6 +5815,16 @@
         {
           "heroName": "Reinhardt",
           "hero": "reinhardt",
+          "name": "Our Tale Begins",
+          "id": "reinhardt-our-tale-begins",
+          "quality": "common",
+          "url": "/heroes/reinhardt/voicelines/reinhardt-our-tale-begins.ogg",
+          "description": "Unlocked by completing the Wrath of the Bride challenge from the Halloween Terror event.",
+          "isNew": true
+        },
+        {
+          "heroName": "Reinhardt",
+          "hero": "reinhardt",
           "name": "Smashing",
           "id": "reinhardt-smashing",
           "quality": "common",
@@ -5811,6 +5896,16 @@
           "group": "HALLOWEEN_2019"
         },
         {
+          "heroName": "Sojourn",
+          "hero": "sojourn",
+          "name": "It's Always The Widow",
+          "id": "sojourn-its-always-the-widow",
+          "quality": "common",
+          "url": "/heroes/sojourn/voicelines/sojourn-its-always-the-widow.ogg",
+          "description": "Unlocked by completing the Witch's Brew challenge from the Halloween Terror event.",
+          "isNew": true
+        },
+        {
           "heroName": "Soldier: 76",
           "hero": "soldier-76",
           "name": "Everyone has ghosts",
@@ -5864,6 +5959,16 @@
           "quality": "common",
           "url": "/heroes/sombra/voicelines/sombra-aw-isnt-that-sweet.ogg",
           "group": "HALLOWEEN_2017"
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Never Cross the Bride",
+          "id": "sombra-never-cross-the-bride",
+          "quality": "common",
+          "url": "/heroes/sombra/voicelines/sombra-never-cross-the-bride.ogg",
+          "description": "Unlocked by completing the Photozomb challenge from the Halloween Terror event.",
+          "isNew": true
         },
         {
           "heroName": "Sombra",
@@ -6068,6 +6173,24 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Heart rate increasing",
+          "id": "wrecking-ball-heart-rate-increasing",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-heart-rate-increasing.ogg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Trick or treat",
+          "id": "wrecking-ball-trick-or-treat",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-trick-or-treat.ogg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Don't be scared",
@@ -6213,15 +6336,6 @@
           "quality": "rare",
           "url": "/updates/HALLOWEEN/poses/genji-rip.jpg",
           "group": "HALLOWEEN_2016"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Nibbling",
-          "id": "wrecking-ball-nibbling",
-          "quality": "rare",
-          "url": "/updates/HALLOWEEN/poses/wrecking-ball-nibbling.jpg",
-          "group": "HALLOWEEN_2018"
         },
         {
           "heroName": "Hanzo",
@@ -6478,6 +6592,15 @@
           "group": "HALLOWEEN_2016"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Nibbling",
+          "id": "wrecking-ball-nibbling",
+          "quality": "rare",
+          "url": "/updates/HALLOWEEN/poses/wrecking-ball-nibbling.jpg",
+          "group": "HALLOWEEN_2018"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "R.I.P.",
@@ -6597,58 +6720,6 @@
           "url": "/updates/HALLOWEEN/intros/winston-pumpkin.webm",
           "group": "HALLOWEEN_2018"
         }
-      ],
-      "skinsLegendary": [
-        {
-          "heroName": "Bastion",
-          "hero": "bastion",
-          "name": "Coffin",
-          "id": "bastion-coffin",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/bastion-coffin.jpg",
-          "group": "HALLOWEEN_2021",
-          "isNew": true
-        },
-        {
-          "heroName": "Brigitte",
-          "hero": "brigitte",
-          "name": "Vampire Hunter",
-          "id": "brigitte-vampire-hunter",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/brigitte-vampire-hunter.jpg",
-          "group": "HALLOWEEN_2021",
-          "isNew": true
-        },
-        {
-          "heroName": "Echo",
-          "hero": "echo",
-          "name": "Vampire Bat",
-          "id": "echo-vampire-bat",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/echo-vampire-bat.jpg",
-          "group": "HALLOWEEN_2021",
-          "isNew": true
-        },
-        {
-          "heroName": "Lúcio",
-          "hero": "lucio",
-          "name": "Satyr",
-          "id": "lucio-satyr",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/lucio-satyr.jpg",
-          "group": "HALLOWEEN_2021",
-          "isNew": true
-        },
-        {
-          "heroName": "Reinhardt",
-          "hero": "reinhardt",
-          "name": "Draugr",
-          "id": "reinhardt-draugr",
-          "quality": "legendary",
-          "url": "/updates/HALLOWEEN/skinsLegendary/reinhardt-draugr.jpg",
-          "group": "HALLOWEEN_2021",
-          "isNew": true
-        }
       ]
     }
   },
@@ -6665,7 +6736,8 @@
       "WINTER_WONDERLAND_2018",
       "WINTER_WONDERLAND_2019",
       "WINTER_WONDERLAND_2020",
-      "WINTER_WONDERLAND_2021"
+      "WINTER_WONDERLAND_2021",
+      null
     ],
     "items": {
       "skins": [
@@ -7503,7 +7575,7 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
-          "heroName": "Hammond",
+          "heroName": "Wrecking Ball",
           "hero": "wrecking-ball",
           "name": "Santa Claws",
           "id": "wrecking-ball-santa-claws",
@@ -7884,29 +7956,6 @@
           "secondUrl": "/heroes/genji/sprays/genji-ornament.png"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Snowman",
-          "id": "wrecking-ball-snowman",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-snowman.png",
-          "group": "WINTER_WONDERLAND_2021",
-          "isNew": true,
-          "secondId": "wrecking-ball-ornament",
-          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-ornament.png"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Stocking",
-          "id": "wrecking-ball-stocking",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-stocking.png",
-          "group": "WINTER_WONDERLAND_2018",
-          "secondId": "wrecking-ball-ornament",
-          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-ornament.png"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Kadomatsu",
@@ -8276,6 +8325,29 @@
           "secondUrl": "/heroes/winston/sprays/winston-ornament.png"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Snowman",
+          "id": "wrecking-ball-snowman",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-snowman.png",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true,
+          "secondId": "wrecking-ball-ornament",
+          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-ornament.png"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Stocking",
+          "id": "wrecking-ball-stocking",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-stocking.png",
+          "group": "WINTER_WONDERLAND_2018",
+          "secondId": "wrecking-ball-ornament",
+          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-ornament.png"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Matryoshka",
@@ -8430,9 +8502,21 @@
         },
         {
           "hidden": true,
+          "hero": "junker-queen",
+          "id": "junker-queen-ornament",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
           "hero": "junkrat",
           "id": "junkrat-ornament",
           "group": "WINTER_WONDERLAND_2016",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "kiriko",
+          "id": "kiriko-ornament",
           "quality": "common"
         },
         {
@@ -8479,6 +8563,12 @@
         },
         {
           "hidden": true,
+          "hero": "ramattra",
+          "id": "ramattra-ornament",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
           "hero": "reaper",
           "id": "reaper-ornament",
           "group": "WINTER_WONDERLAND_2016",
@@ -8503,6 +8593,12 @@
           "hero": "sigma",
           "id": "sigma-ornament",
           "group": "WINTER_WONDERLAND_2019",
+          "quality": "common"
+        },
+        {
+          "hidden": true,
+          "hero": "sojourn",
+          "id": "sojourn-ornament",
           "quality": "common"
         },
         {
@@ -8960,33 +9056,6 @@
           "group": "WINTER_WONDERLAND_2016"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Deck the halls",
-          "id": "wrecking-ball-deck-the-halls",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-deck-the-halls.ogg",
-          "group": "WINTER_WONDERLAND_2018"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Ho. Ho. Ho.",
-          "id": "wrecking-ball-ho-ho-ho",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-ho-ho-ho.ogg",
-          "group": "WINTER_WONDERLAND_2018"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Jingle bells",
-          "id": "wrecking-ball-jingle-bells",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-jingle-bells.ogg",
-          "group": "WINTER_WONDERLAND_2019"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "A gift for you",
@@ -9200,11 +9269,11 @@
         {
           "heroName": "Orisa",
           "hero": "orisa",
-          "name": "Annual performance analysis",
-          "id": "orisa-annual-performance-analysis",
+          "name": "Annual performance",
+          "id": "orisa-annual-performance",
           "quality": "common",
-          "url": "/heroes/orisa/voicelines/orisa-annual-performance-analysis.ogg",
-          "group": "WINTER_WONDERLAND_2017"
+          "url": "/heroes/orisa/voicelines/orisa-annual-performance.ogg",
+          "isNew": true
         },
         {
           "heroName": "Orisa",
@@ -9570,6 +9639,33 @@
           "group": "WINTER_WONDERLAND_2017"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Deck the halls",
+          "id": "wrecking-ball-deck-the-halls",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-deck-the-halls.ogg",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Ho. Ho. Ho.",
+          "id": "wrecking-ball-ho-ho-ho",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-ho-ho-ho.ogg",
+          "group": "WINTER_WONDERLAND_2018"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Jingle bells",
+          "id": "wrecking-ball-jingle-bells",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-jingle-bells.ogg",
+          "group": "WINTER_WONDERLAND_2019"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Cool it",
@@ -9717,15 +9813,6 @@
           "quality": "rare",
           "url": "/updates/WINTER_WONDERLAND/poses/genji-toast.jpg",
           "group": "WINTER_WONDERLAND_2017"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Imbibe",
-          "id": "wrecking-ball-imbibe",
-          "quality": "rare",
-          "url": "/updates/WINTER_WONDERLAND/poses/wrecking-ball-imbibe.jpg",
-          "group": "WINTER_WONDERLAND_2019"
         },
         {
           "heroName": "Hanzo",
@@ -9901,6 +9988,15 @@
           "group": "WINTER_WONDERLAND_2020"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Imbibe",
+          "id": "wrecking-ball-imbibe",
+          "quality": "rare",
+          "url": "/updates/WINTER_WONDERLAND/poses/wrecking-ball-imbibe.jpg",
+          "group": "WINTER_WONDERLAND_2019"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Toast",
@@ -9951,22 +10047,22 @@
           "isNew": true
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Snowman",
-          "id": "wrecking-ball-snowman",
-          "quality": "legendary",
-          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/wrecking-ball-snowman.jpg",
-          "group": "WINTER_WONDERLAND_2021",
-          "isNew": true
-        },
-        {
           "heroName": "Orisa",
           "hero": "orisa",
           "name": "Reindeer",
           "id": "orisa-reindeer",
           "quality": "legendary",
           "url": "/updates/WINTER_WONDERLAND/skinsLegendary/orisa-reindeer.jpg",
+          "group": "WINTER_WONDERLAND_2021",
+          "isNew": true
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Snowman",
+          "id": "wrecking-ball-snowman",
+          "quality": "legendary",
+          "url": "/updates/WINTER_WONDERLAND/skinsLegendary/wrecking-ball-snowman.jpg",
           "group": "WINTER_WONDERLAND_2021",
           "isNew": true
         }
@@ -10105,15 +10201,6 @@
       ],
       "intros": [
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Festive",
-          "id": "wrecking-ball-festive",
-          "quality": "epic",
-          "url": "/updates/WINTER_WONDERLAND/intros/wrecking-ball-festive.webm",
-          "group": "WINTER_WONDERLAND_2018"
-        },
-        {
           "heroName": "Mei",
           "hero": "mei",
           "name": "Festive",
@@ -10158,6 +10245,15 @@
           "quality": "epic",
           "url": "/updates/WINTER_WONDERLAND/intros/widowmaker-under-the-mistletoe.webm",
           "group": "WINTER_WONDERLAND_2016"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Festive",
+          "id": "wrecking-ball-festive",
+          "quality": "epic",
+          "url": "/updates/WINTER_WONDERLAND/intros/wrecking-ball-festive.webm",
+          "group": "WINTER_WONDERLAND_2018"
         }
       ]
     }
@@ -10252,29 +10348,6 @@
           "group": "LUNAR_NEW_YEAR_2020"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Paper Cutting",
-          "id": "wrecking-ball-paper-cutting",
-          "quality": "epic",
-          "url": "/updates/LUNAR_NEW_YEAR/skins/wrecking-ball-paper-cutting.jpg",
-          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
-          "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2020"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Porcelain",
-          "id": "wrecking-ball-porcelain",
-          "quality": "epic",
-          "url": "/updates/LUNAR_NEW_YEAR/skins/wrecking-ball-porcelain.jpg",
-          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 3 challenge",
-          "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2022",
-          "isNew": true
-        },
-        {
           "heroName": "Junkrat",
           "hero": "junkrat",
           "name": "Firework",
@@ -10352,6 +10425,29 @@
           "description": "Unlocked by participating in the Year of the Rat 2020 week 2 challenge",
           "achievement": "limited",
           "group": "LUNAR_NEW_YEAR_2020"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Paper Cutting",
+          "id": "wrecking-ball-paper-cutting",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/wrecking-ball-paper-cutting.jpg",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2020"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Porcelain",
+          "id": "wrecking-ball-porcelain",
+          "quality": "epic",
+          "url": "/updates/LUNAR_NEW_YEAR/skins/wrecking-ball-porcelain.jpg",
+          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 3 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         },
         {
           "heroName": "Ashe",
@@ -10949,44 +11045,6 @@
           "secondUrl": "/heroes/genji/sprays/genji-dragon-dance.png"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Snacks",
-          "id": "wrecking-ball-snacks",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-snacks.png",
-          "group": "LUNAR_NEW_YEAR_2019",
-          "secondId": "wrecking-ball-dragon-dance",
-          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Porcelain",
-          "id": "wrecking-ball-porcelain",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-porcelain.png",
-          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 3 challenge",
-          "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2022",
-          "isNew": true,
-          "secondId": "wrecking-ball-dragon-dance",
-          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Spring",
-          "id": "wrecking-ball-spring",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-spring.png",
-          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
-          "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2020",
-          "secondId": "wrecking-ball-dragon-dance",
-          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Blue Dragon",
@@ -11313,6 +11371,44 @@
           "group": "LUNAR_NEW_YEAR_2020",
           "secondId": "winston-dragon-dance",
           "secondUrl": "/heroes/winston/sprays/winston-dragon-dance.png"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Snacks",
+          "id": "wrecking-ball-snacks",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-snacks.png",
+          "group": "LUNAR_NEW_YEAR_2019",
+          "secondId": "wrecking-ball-dragon-dance",
+          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Porcelain",
+          "id": "wrecking-ball-porcelain",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-porcelain.png",
+          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 3 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true,
+          "secondId": "wrecking-ball-dragon-dance",
+          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Spring",
+          "id": "wrecking-ball-spring",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-spring.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2020",
+          "secondId": "wrecking-ball-dragon-dance",
+          "secondUrl": "/heroes/wrecking-ball/sprays/wrecking-ball-dragon-dance.png"
         },
         {
           "heroName": "Zarya",
@@ -11961,33 +12057,6 @@
           "group": "LUNAR_NEW_YEAR_2017"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Assessing luck",
-          "id": "wrecking-ball-assessing-luck",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-assessing-luck.ogg",
-          "group": "LUNAR_NEW_YEAR_2019"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Engaging festive mode",
-          "id": "wrecking-ball-engaging-festive-mode",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-engaging-festive-mode.ogg",
-          "group": "LUNAR_NEW_YEAR_2019"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Too early for flapjacks?",
-          "id": "wrecking-ball-too-early-for-flapjacks",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-too-early-for-flapjacks.ogg",
-          "group": "LUNAR_NEW_YEAR_2020"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Insolent cur",
@@ -12544,6 +12613,33 @@
           "group": "LUNAR_NEW_YEAR_2019"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Assessing luck",
+          "id": "wrecking-ball-assessing-luck",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-assessing-luck.ogg",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Engaging festive mode",
+          "id": "wrecking-ball-engaging-festive-mode",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-engaging-festive-mode.ogg",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Too early for flapjacks?",
+          "id": "wrecking-ball-too-early-for-flapjacks",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-too-early-for-flapjacks.ogg",
+          "group": "LUNAR_NEW_YEAR_2020"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Get pumped",
@@ -12672,15 +12768,6 @@
           "url": "/updates/LUNAR_NEW_YEAR/poses/echo-fan.jpg",
           "group": "LUNAR_NEW_YEAR_2022",
           "isNew": true
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Armament",
-          "id": "wrecking-ball-armament",
-          "quality": "rare",
-          "url": "/updates/LUNAR_NEW_YEAR/poses/wrecking-ball-armament.jpg",
-          "group": "LUNAR_NEW_YEAR_2019"
         },
         {
           "heroName": "Hanzo",
@@ -12838,6 +12925,15 @@
           "group": "LUNAR_NEW_YEAR_2018"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Armament",
+          "id": "wrecking-ball-armament",
+          "quality": "rare",
+          "url": "/updates/LUNAR_NEW_YEAR/poses/wrecking-ball-armament.jpg",
+          "group": "LUNAR_NEW_YEAR_2019"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Big One",
@@ -12944,27 +13040,6 @@
           "id": "echo-magpie",
           "url": "/heroes/echo/icons/echo-magpie.png",
           "group": "LUNAR_NEW_YEAR_2021"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Rat",
-          "id": "wrecking-ball-rat",
-          "url": "/heroes/wrecking-ball/icons/wrecking-ball-rat.png",
-          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
-          "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2020"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Tea",
-          "id": "wrecking-ball-tea",
-          "url": "/heroes/wrecking-ball/icons/wrecking-ball-tea.png",
-          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 3 challenge",
-          "achievement": "limited",
-          "group": "LUNAR_NEW_YEAR_2022",
-          "isNew": true
         },
         {
           "heroName": "Hanzo",
@@ -13182,6 +13257,27 @@
           "id": "winston-monkey",
           "url": "/heroes/winston/icons/winston-monkey.png",
           "group": "LUNAR_NEW_YEAR_2017"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Rat",
+          "id": "wrecking-ball-rat",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-rat.png",
+          "description": "Unlocked by participating in the Year of the Rat 2020 week 3 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2020"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Tea",
+          "id": "wrecking-ball-tea",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-tea.png",
+          "description": "Unlocked by participating in the Year of the Tiger 2022 Week 3 challenge",
+          "achievement": "limited",
+          "group": "LUNAR_NEW_YEAR_2022",
+          "isNew": true
         },
         {
           "heroName": "Zenyatta",
@@ -13589,15 +13685,6 @@
           "group": "UPRISING_2017"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "High Roller",
-          "id": "wrecking-ball-high-roller",
-          "quality": "epic",
-          "url": "/updates/UPRISING/skins/wrecking-ball-high-roller.jpg",
-          "group": "UPRISING_2019"
-        },
-        {
           "heroName": "Junkrat",
           "hero": "junkrat",
           "name": "Circus",
@@ -13626,7 +13713,6 @@
           "quality": "epic",
           "url": "/updates/UPRISING/skins/mei-bear.jpg",
           "description": "Unlocked by participating in the Archives 2020 week 3 challenge",
-          "achievement": "limited",
           "group": "UPRISING_2020"
         },
         {
@@ -13670,8 +13756,16 @@
           "quality": "epic",
           "url": "/updates/UPRISING/skins/torbjorn-rustclad.jpg",
           "description": "Unlocked by participating in the Archives 2020 week 2 challenge",
-          "achievement": "limited",
           "group": "UPRISING_2020"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "High Roller",
+          "id": "wrecking-ball-high-roller",
+          "quality": "epic",
+          "url": "/updates/UPRISING/skins/wrecking-ball-high-roller.jpg",
+          "group": "UPRISING_2019"
         },
         {
           "heroName": "Zarya",
@@ -14508,15 +14602,6 @@
           "group": "UPRISING_2017"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Exercise",
-          "id": "wrecking-ball-exercise",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-exercise.png",
-          "group": "UPRISING_2019"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Ramen",
@@ -14800,6 +14885,15 @@
           "quality": "common",
           "url": "/heroes/winston/sprays/winston-building.png",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Exercise",
+          "id": "wrecking-ball-exercise",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-exercise.png",
+          "group": "UPRISING_2019"
         },
         {
           "heroName": "Zarya",
@@ -15506,42 +15600,6 @@
           "group": "UPRISING_2018"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Access denied",
-          "id": "wrecking-ball-access-denied",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-access-denied.ogg",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "K.O.",
-          "id": "wrecking-ball-ko",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-ko.ogg",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Laughter",
-          "id": "wrecking-ball-laughter",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-laughter.ogg",
-          "group": "UPRISING_2019"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Translation not found",
-          "id": "wrecking-ball-translation-not-found",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-translation-not-found.ogg",
-          "group": "UPRISING_2019"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Beauty in simplicity",
@@ -15640,6 +15698,15 @@
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-turn-it-up-in-my-headphones.ogg",
           "group": "UPRISING_2018"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "A new adventure",
+          "id": "mei-a-new-adventure",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-a-new-adventure.ogg",
+          "group": "UPRISING_2019"
         },
         {
           "heroName": "Mei",
@@ -16206,6 +16273,42 @@
           "group": "UPRISING_2018"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Access denied",
+          "id": "wrecking-ball-access-denied",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-access-denied.ogg",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "K.O.",
+          "id": "wrecking-ball-ko",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-ko.ogg",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Laughter",
+          "id": "wrecking-ball-laughter",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-laughter.ogg",
+          "group": "UPRISING_2019"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Translation not found",
+          "id": "wrecking-ball-translation-not-found",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-translation-not-found.ogg",
+          "group": "UPRISING_2019"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "I was born in battle",
@@ -16571,15 +16674,6 @@
           "group": "UPRISING_2019"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Dramatic",
-          "id": "wrecking-ball-dramatic",
-          "quality": "epic",
-          "url": "/updates/UPRISING/intros/wrecking-ball-dramatic.webm",
-          "group": "UPRISING_2019"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "Storm Arrow",
@@ -16623,6 +16717,15 @@
           "quality": "epic",
           "url": "/updates/UPRISING/intros/torbjorn-my-baby.webm",
           "group": "UPRISING_2017"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Dramatic",
+          "id": "wrecking-ball-dramatic",
+          "quality": "epic",
+          "url": "/updates/UPRISING/intros/wrecking-ball-dramatic.webm",
+          "group": "UPRISING_2019"
         },
         {
           "heroName": "Zarya",
@@ -16768,17 +16871,6 @@
           "group": "ANNIVERSARY_2021"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "8 Ball",
-          "id": "wrecking-ball-8-ball",
-          "quality": "epic",
-          "url": "/updates/ANNIVERSARY/skins/wrecking-ball-8-ball.jpg",
-          "description": "Unlocked by participating in the Anniversary 2021 week 3 challenge",
-          "achievement": "limited",
-          "group": "ANNIVERSARY_2021"
-        },
-        {
           "heroName": "Lúcio",
           "hero": "lucio",
           "name": "Bitrate",
@@ -16853,6 +16945,17 @@
           "description": "Unlocked by participating in the Anniversary 2020 week 2 challenge",
           "achievement": "limited",
           "group": "ANNIVERSARY_2020"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "8 Ball",
+          "id": "wrecking-ball-8-ball",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/skins/wrecking-ball-8-ball.jpg",
+          "description": "Unlocked by participating in the Anniversary 2021 week 3 challenge",
+          "achievement": "limited",
+          "group": "ANNIVERSARY_2021"
         },
         {
           "heroName": "Ana",
@@ -16992,15 +17095,6 @@
           "quality": "legendary",
           "url": "/updates/ANNIVERSARY/skins/genji-sentai.jpg",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Submarine",
-          "id": "wrecking-ball-submarine",
-          "quality": "legendary",
-          "url": "/updates/ANNIVERSARY/skins/wrecking-ball-submarine.jpg",
-          "group": "ANNIVERSARY_2020"
         },
         {
           "heroName": "Hanzo",
@@ -17257,6 +17351,15 @@
           "group": "ANNIVERSARY_2019"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Submarine",
+          "id": "wrecking-ball-submarine",
+          "quality": "legendary",
+          "url": "/updates/ANNIVERSARY/skins/wrecking-ball-submarine.jpg",
+          "group": "ANNIVERSARY_2020"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Cyberian",
@@ -17392,15 +17495,6 @@
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/genji-dance.webm",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Hamster Dance",
-          "id": "wrecking-ball-hamster-dance",
-          "quality": "epic",
-          "url": "/updates/ANNIVERSARY/emotes/wrecking-ball-hamster-dance.webm",
-          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Hanzo",
@@ -17590,6 +17684,15 @@
           "quality": "epic",
           "url": "/updates/ANNIVERSARY/emotes/winston-twist.webm",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Hamster Dance",
+          "id": "wrecking-ball-hamster-dance",
+          "quality": "epic",
+          "url": "/updates/ANNIVERSARY/emotes/wrecking-ball-hamster-dance.webm",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Zarya",
@@ -17808,32 +17911,6 @@
           "id": "genji-goldborg",
           "url": "/heroes/genji/icons/genji-goldborg.png",
           "group": "ANNIVERSARY_2017"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "8 Ball",
-          "id": "wrecking-ball-8-ball",
-          "url": "/heroes/wrecking-ball/icons/wrecking-ball-8-ball.png",
-          "description": "Unlocked by participating in the Anniversary 2021 week 3 challenge",
-          "achievement": "limited",
-          "group": "ANNIVERSARY_2021"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Gold Ball",
-          "id": "wrecking-ball-gold-ball",
-          "url": "/heroes/wrecking-ball/icons/wrecking-ball-gold-ball.png",
-          "group": "ANNIVERSARY_2019"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Submarine",
-          "id": "wrecking-ball-submarine",
-          "url": "/heroes/wrecking-ball/icons/wrecking-ball-submarine.png",
-          "group": "ANNIVERSARY_2020"
         },
         {
           "heroName": "Hanzo",
@@ -18112,6 +18189,32 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "8 Ball",
+          "id": "wrecking-ball-8-ball",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-8-ball.png",
+          "description": "Unlocked by participating in the Anniversary 2021 week 3 challenge",
+          "achievement": "limited",
+          "group": "ANNIVERSARY_2021"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Gold Ball",
+          "id": "wrecking-ball-gold-ball",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-gold-ball.png",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Submarine",
+          "id": "wrecking-ball-submarine",
+          "url": "/heroes/wrecking-ball/icons/wrecking-ball-submarine.png",
+          "group": "ANNIVERSARY_2020"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Zaryanoversary",
@@ -18360,35 +18463,6 @@
           "group": "ANNIVERSARY_2017"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Eight of Clubs",
-          "id": "wrecking-ball-eight-of-clubs",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-eight-of-clubs.png",
-          "group": "ANNIVERSARY_2019"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Submarine",
-          "id": "wrecking-ball-submarine",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-submarine.png",
-          "group": "ANNIVERSARY_2020"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Corner Pocket",
-          "id": "wrecking-ball-corner-pocket",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-corner-pocket.png",
-          "description": "Unlocked by participating in the Anniversary 2021 week 3 challenge",
-          "achievement": "limited",
-          "group": "ANNIVERSARY_2021"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "King of Diamonds",
@@ -18625,6 +18699,35 @@
           "quality": "common",
           "url": "/heroes/winston/sprays/winston-jack-of-hearts.png",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Eight of Clubs",
+          "id": "wrecking-ball-eight-of-clubs",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-eight-of-clubs.png",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Submarine",
+          "id": "wrecking-ball-submarine",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-submarine.png",
+          "group": "ANNIVERSARY_2020"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Corner Pocket",
+          "id": "wrecking-ball-corner-pocket",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/sprays/wrecking-ball-corner-pocket.png",
+          "description": "Unlocked by participating in the Anniversary 2021 week 3 challenge",
+          "achievement": "limited",
+          "group": "ANNIVERSARY_2021"
         },
         {
           "heroName": "Zarya",
@@ -19022,42 +19125,6 @@
           "group": "ANNIVERSARY_2017"
         },
         {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Amusement",
-          "id": "wrecking-ball-amusement",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-amusement.ogg",
-          "group": "ANNIVERSARY_2021"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Rolled",
-          "id": "wrecking-ball-rolled",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-rolled.ogg",
-          "group": "ANNIVERSARY_2019"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Self-assessment",
-          "id": "wrecking-ball-selfassessment",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-selfassessment.ogg",
-          "group": "ANNIVERSARY_2019"
-        },
-        {
-          "heroName": "Hammond",
-          "hero": "wrecking-ball",
-          "name": "Victory",
-          "id": "wrecking-ball-victory",
-          "quality": "common",
-          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-victory.ogg",
-          "group": "ANNIVERSARY_2019"
-        },
-        {
           "heroName": "Hanzo",
           "hero": "hanzo",
           "name": "An Error in Judgment",
@@ -19173,6 +19240,15 @@
           "quality": "common",
           "url": "/heroes/lucio/voicelines/lucio-have-some-lucioohs.ogg",
           "group": "ANNIVERSARY_2017"
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Apologies",
+          "id": "mei-apologies",
+          "quality": "common",
+          "url": "/heroes/mei/voicelines/mei-apologies.ogg",
+          "group": "ANNIVERSARY_2019"
         },
         {
           "heroName": "Mei",
@@ -19796,6 +19872,42 @@
           "group": "ANNIVERSARY_2017"
         },
         {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Amusement",
+          "id": "wrecking-ball-amusement",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-amusement.ogg",
+          "group": "ANNIVERSARY_2021"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Rolled",
+          "id": "wrecking-ball-rolled",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-rolled.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Self-assessment",
+          "id": "wrecking-ball-selfassessment",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-selfassessment.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Victory",
+          "id": "wrecking-ball-victory",
+          "quality": "common",
+          "url": "/heroes/wrecking-ball/voicelines/wrecking-ball-victory.ogg",
+          "group": "ANNIVERSARY_2019"
+        },
+        {
           "heroName": "Zarya",
           "hero": "zarya",
           "name": "Fitness secret",
@@ -20038,6 +20150,536 @@
           "quality": "rare",
           "url": "/updates/ANNIVERSARY/poses/zarya-beatdown.jpg",
           "group": "ANNIVERSARY_2020"
+        }
+      ]
+    }
+  },
+  "INTERNAL": {
+    "id": "INTERNAL",
+    "event_ids": [
+      null
+    ],
+    "items": {
+      "skins": [
+        {
+          "heroName": "Ana",
+          "hero": "ana",
+          "name": "Midnight Camo",
+          "id": "ana-midnight-camo",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/ana-midnight-camo.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Baptiste",
+          "hero": "baptiste",
+          "name": "Deluxe",
+          "id": "baptiste-deluxe",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/baptiste-deluxe.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Brigitte",
+          "hero": "brigitte",
+          "name": "Pearlescent",
+          "id": "brigitte-pearlescent",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/brigitte-pearlescent.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Kìnìún",
+          "id": "doomfist-knun",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/doomfist-knun.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Koi",
+          "id": "hanzo-koi",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/hanzo-koi.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "Ajisai",
+          "id": "kiriko-ajisai",
+          "quality": "rare",
+          "url": "/updates/INTERNAL/skins/kiriko-ajisai.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "Amaterasu",
+          "id": "kiriko-amaterasu",
+          "quality": "mythic",
+          "url": "/updates/INTERNAL/skins/kiriko-amaterasu.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "Fuji",
+          "id": "kiriko-fuji",
+          "quality": "rare",
+          "url": "/updates/INTERNAL/skins/kiriko-fuji.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "Matsuri",
+          "id": "kiriko-matsuri",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/kiriko-matsuri.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "Take",
+          "id": "kiriko-take",
+          "quality": "rare",
+          "url": "/updates/INTERNAL/skins/kiriko-take.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "Tanpopo",
+          "id": "kiriko-tanpopo",
+          "quality": "rare",
+          "url": "/updates/INTERNAL/skins/kiriko-tanpopo.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Mercy",
+          "hero": "mercy",
+          "name": "Honey Bee",
+          "id": "mercy-honey-bee",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/mercy-honey-bee.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Pharah",
+          "hero": "pharah",
+          "name": "Punk",
+          "id": "pharah-punk",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/pharah-punk.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Ramattra",
+          "hero": "ramattra",
+          "name": "Construction",
+          "id": "ramattra-construction",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/ramattra-construction.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Ramattra",
+          "hero": "ramattra",
+          "name": "Detachment",
+          "id": "ramattra-detachment",
+          "quality": "rare",
+          "url": "/updates/INTERNAL/skins/ramattra-detachment.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Ramattra",
+          "hero": "ramattra",
+          "name": "Discipline",
+          "id": "ramattra-discipline",
+          "quality": "rare",
+          "url": "/updates/INTERNAL/skins/ramattra-discipline.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Ramattra",
+          "hero": "ramattra",
+          "name": "Reverence",
+          "id": "ramattra-reverence",
+          "quality": "rare",
+          "url": "/updates/INTERNAL/skins/ramattra-reverence.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Ramattra",
+          "hero": "ramattra",
+          "name": "Wisdom",
+          "id": "ramattra-wisdom",
+          "quality": "rare",
+          "url": "/updates/INTERNAL/skins/ramattra-wisdom.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Galactic",
+          "id": "sigma-galactic",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/sigma-galactic.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Golfer: 76",
+          "id": "soldier-76-golfer-76",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/soldier-76-golfer-76.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Folklórica",
+          "id": "sombra-folklorica",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/sombra-folklorica.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Sombra",
+          "hero": "sombra",
+          "name": "Jester",
+          "id": "sombra-jester",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/sombra-jester.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Winston",
+          "hero": "winston",
+          "name": "Monkey Business",
+          "id": "winston-monkey-business",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/winston-monkey-business.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Wrecking Ball",
+          "hero": "wrecking-ball",
+          "name": "Sugar Bomb",
+          "id": "wrecking-ball-sugar-bomb",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/wrecking-ball-sugar-bomb.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Zarya",
+          "hero": "zarya",
+          "name": "Tactical",
+          "id": "zarya-tactical",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/skins/zarya-tactical.jpg",
+          "isNew": true
+        }
+      ],
+      "skinsLegendary": [
+        {
+          "heroName": "Ashe",
+          "hero": "ashe",
+          "name": "Raijin",
+          "id": "ashe-raijin",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/ashe-raijin.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Bastion",
+          "hero": "bastion",
+          "name": "Gingerbread",
+          "id": "bastion-gingerbread",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/bastion-gingerbread.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Cassidy",
+          "hero": "mccree",
+          "name": "Invisible Man",
+          "id": "mccree-invisible-man",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/mccree-invisible-man.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Cassidy",
+          "hero": "mccree",
+          "name": "Space Raider",
+          "id": "mccree-space-raider",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/mccree-space-raider.jpg",
+          "description": "Available as part of the Watchpoint Pack",
+          "isNew": true
+        },
+        {
+          "heroName": "D.Va",
+          "hero": "dva",
+          "name": "Turtle Ship",
+          "id": "dva-turtle-ship",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/dva-turtle-ship.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Doomfist",
+          "hero": "doomfist",
+          "name": "Saitama",
+          "id": "doomfist-saitama",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/doomfist-saitama.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Echo",
+          "hero": "echo",
+          "name": "Good and Evil",
+          "id": "echo-good-and-evil",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/echo-good-and-evil.jpg",
+          "description": "Team: Overwatch League",
+          "isNew": true
+        },
+        {
+          "heroName": "Hanzo",
+          "hero": "hanzo",
+          "name": "Cupid",
+          "id": "hanzo-cupid",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/hanzo-cupid.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Junker Queen",
+          "hero": "junker-queen",
+          "name": "Circuit Breaker",
+          "id": "junker-queen-circuit-breaker",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/junker-queen-circuit-breaker.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Junkrat",
+          "hero": "junkrat",
+          "name": "Hong Hai Er",
+          "id": "junkrat-hong-hai-er",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/junkrat-hong-hai-er.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "Athleisure",
+          "id": "kiriko-athleisure",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/kiriko-athleisure.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "Sukajan",
+          "id": "kiriko-sukajan",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/kiriko-sukajan.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Mei",
+          "hero": "mei",
+          "name": "Empress",
+          "id": "mei-empress",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/mei-empress.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Moira",
+          "hero": "moira",
+          "name": "Demon Queen",
+          "id": "moira-demon-queen",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/moira-demon-queen.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Ramattra",
+          "hero": "ramattra",
+          "name": "Travelling Monk",
+          "id": "ramattra-travelling-monk",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/ramattra-travelling-monk.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Ramattra",
+          "hero": "ramattra",
+          "name": "Wandering Monk",
+          "id": "ramattra-wandering-monk",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/ramattra-wandering-monk.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Chasa",
+          "id": "reaper-chasa",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/reaper-chasa.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Lion Luchador",
+          "id": "reaper-lion-luchador",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/reaper-lion-luchador.jpg",
+          "description": "Team: Overwatch League",
+          "isNew": true
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Luchador",
+          "id": "reaper-luchador",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/reaper-luchador.jpg",
+          "description": "Team: Overwatch League",
+          "isNew": true
+        },
+        {
+          "heroName": "Reaper",
+          "hero": "reaper",
+          "name": "Tiger Luchador",
+          "id": "reaper-tiger-luchador",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/reaper-tiger-luchador.jpg",
+          "description": "Team: Overwatch League",
+          "isNew": true
+        },
+        {
+          "heroName": "Sigma",
+          "hero": "sigma",
+          "name": "Beekeeper",
+          "id": "sigma-beekeeper",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/sigma-beekeeper.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Sojourn",
+          "hero": "sojourn",
+          "name": "Polar",
+          "id": "sojourn-polar",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/sojourn-polar.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Sojourn",
+          "hero": "sojourn",
+          "name": "Troop Commander",
+          "id": "sojourn-troop-commander",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/sojourn-troop-commander.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Mumen Rider",
+          "id": "soldier-76-mumen-rider",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/soldier-76-mumen-rider.jpg",
+          "description": "Unlocked by completing the Becoming Mumen Rider challenge from the One Punch Man event.",
+          "isNew": true
+        },
+        {
+          "heroName": "Soldier: 76",
+          "hero": "soldier-76",
+          "name": "Space Raider",
+          "id": "soldier-76-space-raider",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/soldier-76-space-raider.jpg",
+          "description": "Available as part of the Watchpoint Pack",
+          "isNew": true
+        },
+        {
+          "heroName": "Tracer",
+          "hero": "tracer",
+          "name": "Polar",
+          "id": "tracer-polar",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/tracer-polar.jpg",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Clockwork",
+          "id": "zenyatta-clockwork",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/zenyatta-clockwork.jpg",
+          "description": "Team: Overwatch League",
+          "isNew": true
+        },
+        {
+          "heroName": "Zenyatta",
+          "hero": "zenyatta",
+          "name": "Takoyaki",
+          "id": "zenyatta-takoyaki",
+          "quality": "legendary",
+          "url": "/updates/INTERNAL/skinsLegendary/zenyatta-takoyaki.jpg",
+          "isNew": true
+        }
+      ],
+      "intros": [
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "On the Wind",
+          "id": "kiriko-on-the-wind",
+          "quality": "epic",
+          "url": "/updates/INTERNAL/intros/kiriko-on-the-wind.webm",
+          "isNew": true
+        }
+      ],
+      "weapons": [
+        {
+          "heroName": "Kiriko",
+          "hero": "kiriko",
+          "name": "GOLDEN",
+          "id": "kiriko-golden",
+          "quality": "common",
+          "url": "/heroes/kiriko/weapons/kiriko-golden.png",
+          "isNew": true
+        }
+      ],
+      "poses": [
+        {
+          "heroName": "Symmetra",
+          "hero": "symmetra",
+          "name": "Photon Projector",
+          "id": "symmetra-photon-projector",
+          "quality": "rare",
+          "url": "/updates/INTERNAL/poses/symmetra-photon-projector.jpg",
+          "isNew": true
         }
       ]
     }

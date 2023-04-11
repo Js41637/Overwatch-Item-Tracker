@@ -3,9 +3,6 @@ const eventData = require('../../data/events.json')
 const path = require('path')
 const fs = require('fs')
 
-const consoleColors = require('../consoleColors');
-consoleColors.load();
-
 const cache = []
 
 for (let hero in itemData) {

@@ -20,8 +20,6 @@ console.log(`
 ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰╯╱╰╯
 `);
 
-const consoleColors = require('./consoleColors');
-consoleColors.load();
 
 const HERODATA = require('./dataMapper/HERODATA.js');
 const {
@@ -78,10 +76,6 @@ things.forEach((thingy, i) => {
         .toUpperCase()
         .replace('ARCHIVES', 'UPRISING')
         .replace('WINTER', 'WINTER_WONDERLAND')
-
-      if (groupName === 'INTERNAL') { // wtf blizz
-        continue
-      }
 
       items[groupName] = itemMatch[0].split(/\n\t\t(?!\t)/).slice(1).map(a => a.trim());
     }
